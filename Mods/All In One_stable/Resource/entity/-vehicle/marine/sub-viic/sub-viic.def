@@ -1,0 +1,83 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(0.9) scaley(0.6))
+	{mass 8800}
+	{TexMods
+		{"u37" "1"}
+		{"u143" "2"}
+	}
+	{patherid "water"}
+	{props "vehicle" "marine" "emit_on_sink" "flag" "uboat"}
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 80}
+	}
+	{volume "body"
+		{tags "body"}
+		{thickness 70}
+	}
+	{volume "body1"
+		{tags "body"}
+		{thickness 70}
+	}
+	{volume "body2"
+		{tags "body"}
+		{thickness 70}
+	}
+	{volume "panel1"
+		{thickness 20}
+	}
+	{volume "panel2"
+		{thickness 20}
+	}
+	{component "body"
+		{able {break_by_pierce}}
+	}
+	{component "body1"
+		{able {break_by_pierce}}
+	}
+	{component "body2"
+		{able {break_by_pierce}}
+	}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "torp_launcher"}
+			{Mounted}
+			{weapon {ammo "ammo torp" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{Box
+			{size 8 6}
+			{item  "ammo torp" 9}
+		}
+	}
+	{extension "crew.ext"}
+	{Extension "sub-viic.mdl"}
+	{chassis
+		{waterline 3.8}
+		{Locomotion ("locomotion")
+			{TurnRadius	20}
+			{SplineRadius	15}
+			{TurnTime	0.1}
+			{TurnStart	5}
+			{TurnStop	2}
+		}
+	}
+	{sensor
+		{Visor "main"
+			{vision "airbag3-main"}
+			{bone "visor1"}
+		}
+		{Visor "gunner"
+			{vision "airbag3-gunner"}
+			{bone "visor2"}
+		}
+	}
+}

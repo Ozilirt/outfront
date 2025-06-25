@@ -1,0 +1,308 @@
+{mission
+	{Camera
+		{Position 2738.82 3431.73}
+		{Distance 1200}
+		{ViewAngle 0.733038}
+		{YawAngle 13.3879}
+	}
+	{Environment "day_tropic"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "map_point" 0x8000
+		{Position 3137.1 3650.43 202.321}
+		{Turn 130.366}
+		{Extender "map_point"
+			{name "a"}
+			{caption "ATeam"}
+			{visor "SpawnPoints"}
+			{teams "a"}
+			{unitset "man|marine"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "map_point" 0x8001
+		{Position 2980.74 3819.22 207}
+		{Turn 76.3602}
+		{Extender "map_point"
+			{name "d"}
+			{caption "DTeam"}
+			{visor "SpawnPoints"}
+			{teams "d"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "start_point" 0x8002
+		{Position 3376.33 4791.06 22.9611}
+		{Turn -122.173}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "start_point" 0x8003
+		{Position 519.772 5489.25 46.0697}
+		{Turn -14.0096}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "fishboat" 0x8004
+		{Position 999.822 4325.63 20}
+		{Turn 73.5939}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "start_point" 0x8005
+		{Position 464.786 5348.58 48.2813}
+		{Turn -18.2786}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "start_point" 0x8006
+		{Position 2309.69 2473.95 86.3511}
+		{Turn 48.4537}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "flag_point" 0x8007
+		{Position 2967.16 3696.46 207}
+		{Extender "map_point"
+			{show "All"}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "start_point" 0x8008
+		{Position 5113.71 1249.24 17.1043}
+		{Turn 138.262}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "start_point" 0x8009
+		{Position 5360.33 1522.2 19.2779}
+		{Turn 133.993}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "start_point" 0x800a
+		{Position 2414.4 2426.12 90}
+		{Turn 78.6254}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "start_point" 0x800b
+		{Position 3268.13 4835.48 21.5435}
+		{Turn -98.4788}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "side_star" 0x800c
+		{Position 2967.05 3696.44 338.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Link 0x800c To 0x8007 "side_pointer"}
+	{Brain 0x8004
+		{HoldFire}
+	}
+	{Tags 0x8007 "watch"}
+	{Helpers
+		{event "delete_boat" id 0 state 0}
+		{event "x" id 1 state 0}
+		{trigger "1"
+			{actions
+				{"task"
+					{name "def"}
+				}
+				{"task"
+					{name "ass"}
+				}
+			}
+		}
+		{trigger "addpoint1"
+			{condition
+				{type 2}
+				{expression "1 & !2 & 3"}
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+					}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+					}
+				}
+				{term 3 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "x"}
+				}
+				{"event"
+					{event 1}
+					{mode "toggle"}
+					{delay "1"}
+				}
+			}
+		}
+		{trigger "addpoint2"
+			{condition
+				{type 2}
+				{expression "1 & !2 & 3"}
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+					}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+					}
+				}
+				{term 3 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "z"}
+				}
+				{"event"
+					{event 1}
+					{mode "toggle"}
+					{delay "1"}
+				}
+			}
+		}
+		{trigger "st"
+			{actions
+				{"event"
+					{event 0}
+					{mode "set"}
+					{delay "0"}
+				}
+				{"event"
+					{event 1}
+					{mode "set"}
+					{delay "0"}
+				}
+			}
+		}
+		{trigger "zone"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "island"}
+						{"actors/type" "vehicle"}
+						{"actors/state" "not inhabited"}
+					}
+				}
+				{term 2 "event"
+					{id 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"delete"
+					{selector
+						{"actors/zone" "island"}
+						{"actors/type" "vehicle"}
+						{"actors/state" "not inhabited"}
+					}
+				}
+				{"event"
+					{event 0}
+					{mode "toggle"}
+					{delay "2"}
+				}
+			}
+		}
+		{waypoints
+		}
+		{zone "circle"
+			{position 3008.47 3649.2 207}
+			{Name "island"}
+			{Radius 2325.22}
+		}
+		{zone "circle"
+			{position 2973.3 3692.45 207}
+			{Name "zone"}
+			{Radius 258.491}
+		}
+		{task
+			{name "def"}
+			{desc "mission/mp/island/as_def"}
+			{primary}
+			{team "d"}
+		}
+		{task
+			{name "ass"}
+			{desc "mission/mp/island/as_ass"}
+			{primary}
+			{team "a"}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

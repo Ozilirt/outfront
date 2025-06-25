@@ -1,0 +1,49 @@
+{construction
+	(include "/properties/building.inc")
+  	{DecalView
+		{ownershadow  256 256}
+		{name "shadow"}
+  	}
+	{props "concrete" "construction" "gate"}
+	{Extension "door_metal.mdl"}
+	{Volume "door5"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "door1"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "door8"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "door6"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "door4"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "door2"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "switch"
+		{tags "gate_lock"}
+		{able clear {touch} {contact}}
+	}
+	{Volume "switch2"
+		{tags "gate_open"}
+		{able clear {touch} {contact}}
+	}
+	{Volume "door7"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "door3"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+}

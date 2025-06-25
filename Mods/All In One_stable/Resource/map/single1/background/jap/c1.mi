@@ -1,0 +1,170 @@
+{mission
+	{Camera
+		{Position 830.213 -238.488}
+		{Distance 1360}
+		{ViewAngle 0.246906}
+		{YawAngle 2.02109}
+	}
+	{Environment "bluemoon2"}
+	{User 1}
+	{GameProgress 0 0}
+	{Human "jap.infantry_rifle" 0x8000
+		{Position 1393.6 -387.695 15.64}
+		{Turn -176.24}
+		{Player 0}
+		{MID 1}
+		{NameId 18 25}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_rifle" 0x8001
+		{Position 1393.53 -352.123 16.7876}
+		{Turn 165.907}
+		{Player 0}
+		{MID 2}
+		{NameId 2 10}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_rifle" 0x8002
+		{Position 1416.71 -329.422 19.0578}
+		{Turn 177.839}
+		{Player 0}
+		{MID 3}
+		{NameId 61 19}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_rifle" 0x8003
+		{Position 1303.56 -354.739 20.3053}
+		{Turn 177.839}
+		{Player 0}
+		{MID 4}
+		{NameId 73 78}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_rifle" 0x8004
+		{Position 1311.42 -325.768 20.9185}
+		{Turn 177.839}
+		{Player 0}
+		{MID 5}
+		{NameId 68 32}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_rifle" 0x8005
+		{Position 1330.94 -304.736 21.9556}
+		{Turn 177.839}
+		{Player 0}
+		{MID 6}
+		{NameId 31 51}
+		{FsmState "stand"}
+	}
+	{Human "jap.oficer" 0x8006
+		{Position 1393.72 -195.361 32.4639}
+		{Turn -126.763}
+		{Player 0}
+		{MID 7}
+		{NameId 1 45}
+		{FsmState "stand"}
+	}
+	{Entity "isuzu-ammo" 0x8007
+		{Position 913.952 -538.22 49.8448}
+		{Turn 97.1777}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "isuzu-ammo2" 0x8008
+		{Position 673.208 165.139 71.5392}
+		{Turn -142.852}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "ke-nu" 0x8009
+		{Position 789.717 -719.816 51.8501}
+		{Turn 41.0525}
+		{Player 0}
+		{MID 10}
+	}
+	{Human "jap.bazooka" 0x800a
+		{Position 885.757 -636.874 48}
+		{Turn -22.0188}
+		{Player 0}
+		{MID 11}
+		{NameId 13 87}
+		{FsmState "stand"}
+	}
+	{Human "jap.ofitank" 0x800b
+		{Position 841.78 -667.52 48}
+		{Turn -63.3049}
+		{Player 0}
+		{MID 12}
+		{NameId 0 87}
+		{FsmState "stand"}
+	}
+	{Human "jap.tankman" 0x800c
+		{Position 850.892 -693.832 48}
+		{Turn 87.053}
+		{Player 0}
+		{MID 13}
+		{NameId 88 57}
+		{FsmState "stand"}
+	}
+	{Brain 0x8007
+		{HoldFire}
+	}
+	{Brain 0x8008
+		{HoldFire}
+	}
+	{Helpers
+		{trigger "ini"
+			{actions
+				{"actor_state"
+					{selector
+						{"actors/mids" 1 2 3 4 5 6}
+					}
+					{speed fast}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 1 2 3 4 5 6}
+					}
+					{"waypoint/uid" 0}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 1071.29 -250.636 32.8713}
+				{transition 1}
+			}
+			{1
+				{position 227.25 -191.935 22.4691}
+				{transition 2}
+			}
+			{2
+				{position -557.215 -542.846 32.4372}
+				{transition 3}
+			}
+			{3
+				{position -189.256 -1208.15 45.7782}
+				{transition 4}
+			}
+			{4
+				{position 631.055 -1124.34 48}
+				{transition 5}
+			}
+			{5
+				{position 922.364 -1179.24 38.5459}
+				{transition 6}
+			}
+			{6
+				{position 1135.41 -815.734 31.5764}
+				{transition 7}
+			}
+			{7
+				{position 1515.53 -436.457 10.6435}
+				{transition 0}
+			}
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

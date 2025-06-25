@@ -1,0 +1,36 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "flak" "barrel1" "turret_rotator" "turret_ai_rotate"}
+	(include "/properties/dummy_fsm2.inc")
+	{TexMods
+		{"ambush1" "green"}
+	}
+	{simulation {able 1}}
+	
+	("crew_stan_gunner")
+	
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_oerlikon"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet20 zenite" 60}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet20 zenite" 180}
+		}
+	}
+	{mass 10000}
+	{Extension "shipflak2.mdl"}
+}

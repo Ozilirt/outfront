@@ -1,0 +1,70 @@
+;Exported by: Dinsen
+;Date:        Sun Jan 22 21:24:38 2012
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\bunker call\Nueva carpeta\curve1_x.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "piece1"
+			{Position -2.4592	58.9417	27.9748}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Position -25.0856	1.9330	61.4379}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Position -12.4283	21.6494	45.4315}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece4"
+			{Position -21.0165	59.5647	49.9835}
+			{VolumeView "piece4.ply"}
+		}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -1.20153 0}
+		{Extent 13.3061 32.9676}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane01"
+	{Obb2
+		{Center -2.28404 -25.3296}
+		{Extent 17.6706 58.6118}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position -0.0000	0.0000	1.1671}
+}
+{Volume "piece4"
+	{Polyhedron "piece4.vol"}
+	{Bone "piece4"}
+	{Position 0.3777	0.0000	0.0000}
+}
+{Volume "piece3"
+	{Polyhedron "piece3.vol"}
+	{Bone "piece3"}
+	{Position 0.0000	0.4476	0.0000}
+}
+{Volume "piece2"
+	{Polyhedron "piece2.vol"}
+	{Bone "piece2"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "piece1"
+	{Polyhedron "piece1.vol"}
+	{Bone "piece1"}
+	{Position -1.7228	-0.0000	-0.7246}
+}

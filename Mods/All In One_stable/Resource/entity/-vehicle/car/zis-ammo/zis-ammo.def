@@ -1,0 +1,58 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "truck" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-midcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	{boarder
+		{anm "passenger"
+			{forward	{begin	"board_body"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "bodyback"
+		{thickness 5}
+	}
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "ZIS-5.mdl"}
+
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "ammo bullet57 ap" 80}
+				{item "ammo bullet57 fg" 50}
+				{item "ammo bullet76 ap" 60}
+				{item "ammo bullet76 fg" 50}
+				{item "ammo bullet85 ap" 50}
+				{item "ammo bullet85 fg" 40}
+				{item "ammo bullet100 ap" 40}
+			}
+		}
+	)
+}

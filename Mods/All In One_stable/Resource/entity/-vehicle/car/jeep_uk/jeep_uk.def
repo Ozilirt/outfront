@@ -1,0 +1,68 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{PatherId "vehicle.small"}
+	
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+
+	("crew_2_human")
+
+	("board_animation"
+		place(driver)
+		board_begin(board_willis_driver)
+		board_end(seat_Willis_driver)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_willis)
+		board_end(seat_Willis_passenger)
+		base(doorright)
+	)
+ 	("crew_human" place(seat1)	bone(passenger1)	door(emit4)	animation(passenger))
+	("crew_human" place(seat2)	bone(passenger2)	door(emit3)	animation(passenger))
+
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "commander"	{group "crew"}}
+	}
+	{extender "inventory"
+		{box
+			{size 5 6}
+			{weight 6000}
+		}
+	}
+	{mass 1000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{Maxspeed 40}
+			{StartTime	3}		; время разгона до макс. скорости с 0, seconds
+		}
+	}
+	{Extension "jeep.mdl"}
+	{Volume "Body"
+		{tags "body"}
+		{component "body"}
+		{thickness 7}   
+	}
+      (mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "grenade n73at" 2 {cell 6 2}}
+                        {item "grenade 50mm_mine" 25}
+			}
+		}
+	)
+}
+

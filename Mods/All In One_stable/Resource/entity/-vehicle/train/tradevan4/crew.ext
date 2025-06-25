@@ -1,0 +1,88 @@
+;SDL
+(define "board_animation"
+	{boarder
+		{anm "%name"
+			{forward	{begin	"board_bigcar"} {end "stand_idle_empty_1"} };{base "%name"}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+)
+
+(define "link"
+	{link "%door"	"%place"	{anm "%animation"} {forward putoff} {reverse puton}}
+)
+
+("board_animation"	name(doorright))
+
+{placer
+	{place "seat03" {group "passanger"} {linkbone "seat03"} {turnoff {sensor} {shadow}}}
+	{place "seat08" {group "passanger"} {linkbone "seat08"} {turnoff {sensor} {shadow}}}
+	{place "seat04" {group "passanger"} {linkbone "seat04"} {turnoff {sensor} {shadow}}}
+	{place "seat09" {group "passanger"} {linkbone "seat09"} {turnoff {sensor} {shadow}}}
+	{place "seat05" {group "passanger"} {linkbone "seat05"} {turnoff {sensor} {shadow}}}
+	{place "seat10" {group "passanger"} {linkbone "seat10"} {turnoff {sensor} {shadow}}}
+	{place "seat06" {group "passanger"} {linkbone "seat06"} {turnoff {sensor} {shadow}}}
+	{place "seat11" {group "passanger"} {linkbone "seat11"} {turnoff {sensor} {shadow}}}
+	{place "seat07" {group "passanger"} {linkbone "seat07"} {turnoff {sensor} {shadow}}}
+	{place "seat12" {group "passanger"} {linkbone "seat12"} {turnoff {sensor} {shadow}}}
+	{place "seat02" {group "passanger"} {linkbone "seat02"} {turnoff {sensor} {shadow}}}
+	{place "seat13" {group "passanger"} {linkbone "seat13"} {turnoff {sensor} {shadow}}}
+
+}
+{boarder
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit6"}
+	{door "emit7"}
+	("link" door(emit2) place(seat03) animation(doorright))
+	("link" door(emit2) place(seat08) animation(doorright))
+	("link" door(emit2) place(seat04) animation(doorright))
+	("link" door(emit2) place(seat09) animation(doorright))
+	("link" door(emit2) place(seat05) animation(doorright))
+	("link" door(emit2) place(seat10) animation(doorright))
+	("link" door(emit2) place(seat06) animation(doorright))
+	("link" door(emit2) place(seat11) animation(doorright))
+	("link" door(emit2) place(seat07) animation(doorright))
+	("link" door(emit2) place(seat12) animation(doorright))
+	("link" door(emit2) place(seat02) animation(doorright))
+	("link" door(emit2) place(seat13) animation(doorright))
+
+	("link" door(emit3) place(seat03) animation(doorright))
+	("link" door(emit3) place(seat08) animation(doorright))
+	("link" door(emit3) place(seat04) animation(doorright))
+	("link" door(emit3) place(seat09) animation(doorright))
+	("link" door(emit3) place(seat05) animation(doorright))
+	("link" door(emit3) place(seat10) animation(doorright))
+	("link" door(emit3) place(seat06) animation(doorright))
+	("link" door(emit3) place(seat11) animation(doorright))
+	("link" door(emit3) place(seat07) animation(doorright))
+	("link" door(emit3) place(seat12) animation(doorright))
+	("link" door(emit3) place(seat02) animation(doorright))
+	("link" door(emit3) place(seat13) animation(doorright))
+
+	("link" door(emit6) place(seat03) animation(doorright))
+	("link" door(emit6) place(seat08) animation(doorright))
+	("link" door(emit6) place(seat04) animation(doorright))
+	("link" door(emit6) place(seat09) animation(doorright))
+	("link" door(emit6) place(seat05) animation(doorright))
+	("link" door(emit6) place(seat10) animation(doorright))
+	("link" door(emit6) place(seat06) animation(doorright))
+	("link" door(emit6) place(seat11) animation(doorright))
+	("link" door(emit6) place(seat07) animation(doorright))
+	("link" door(emit6) place(seat12) animation(doorright))
+	("link" door(emit6) place(seat02) animation(doorright))
+	("link" door(emit6) place(seat13) animation(doorright))
+
+	("link" door(emit7) place(seat03) animation(doorright))
+	("link" door(emit7) place(seat08) animation(doorright))
+	("link" door(emit7) place(seat04) animation(doorright))
+	("link" door(emit7) place(seat09) animation(doorright))
+	("link" door(emit7) place(seat05) animation(doorright))
+	("link" door(emit7) place(seat10) animation(doorright))
+	("link" door(emit7) place(seat06) animation(doorright))
+	("link" door(emit7) place(seat11) animation(doorright))
+	("link" door(emit7) place(seat07) animation(doorright))
+	("link" door(emit7) place(seat12) animation(doorright))
+	("link" door(emit7) place(seat02) animation(doorright))
+	("link" door(emit7) place(seat13) animation(doorright))
+}

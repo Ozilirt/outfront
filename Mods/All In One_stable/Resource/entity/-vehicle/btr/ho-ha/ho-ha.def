@@ -1,0 +1,93 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "ho-ha.mdl"}
+	{extension "crew.ext"}
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew"}
+	{TexMods
+		{"IJN" "1"}
+	}
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "type99"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 30}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{Box
+			{item "ammo mgun" 900}
+			{item "repair_kit"}
+                }
+	}
+
+	{sensor
+		{Visor "crew"
+			{vision "sdkfz251-crew"}
+			{bone "visor3"}
+		}  
+	}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "engine"
+		{thickness 20}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+
+	{Chassis
+		{Locomotion ("locomotion")}
+		{FuelBag
+			{volume 150 }	; liters
+			{rate    50 }	; liters per kilometer
+			{remain 150 }
+			{fuel "fuel"}
+		}
+	}
+	{Chassis
+	; left track must be first
+   		{Track "left"
+			{Tracer
+				{View "tracks"}
+				{Bone "FXtraceL1"}
+				{Step 0.7}			; in meters
+   		 	}
+			{TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 0.6}		; meters per animation
+   		 	}
+   		}
+   		{Track "right"
+			{Tracer 
+			   	{View "tracks"}
+   		 		{Bone "FXtraceR1"}
+   		 		{Step 0.7}			; in meters
+			}
+			{TextureScroller
+		    	{Bone "TrackR"}	
+		 		{Length 0.6}		; meters per animation
+	 		}
+ 		}
+	}
+	{mass 7000}
+}

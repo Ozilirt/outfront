@@ -1,0 +1,52 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(1.8) scaleY(1.0))
+	{mass 7000}
+	{Extension "tendor2.mdl"}
+	{props "vehicle" "steel" "carriage" "train_part" "platform"}
+
+	{Volume "body1"
+		{thickness 30}
+		{component "body"}
+	}
+	{Volume "body"
+		{thickness 30}
+		{component "body"}
+	}
+	{Volume "body2"
+		{thickness 30}
+	}
+	{Volume "body3"
+		{thickness 30}
+	}
+	{Volume "suspender_right"
+		{thickness 20}
+	}
+	{Volume "suspender_left"
+		{thickness 20}
+	}
+	{Volume "suspender_right1"
+		{thickness 20}
+	}
+	{Volume "suspender_left1"
+		{thickness 20}
+	}
+	{component "body"
+		{Able {break_by_pierce}}
+	}
+	{component "body1"
+		{Able {break_by_pierce}}
+	}
+	{component "suspender_right"
+		{Able {break_by_pierce}}
+	}
+	{component "suspender_right1"
+		{Able {break_by_pierce}}
+	}
+	{component "suspender_left"
+		{Able {break_by_pierce}}
+	}
+	{component "suspender_left1"
+		{Able {break_by_pierce}}
+	}
+}

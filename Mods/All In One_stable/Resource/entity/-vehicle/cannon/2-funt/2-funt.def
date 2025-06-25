@@ -1,0 +1,73 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret" "wheeled"}
+	(include "/properties/dummy_fsm.inc")
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("crew_2_human")
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "OQF 2-pdr"}
+			{RestoreIKAfterAim}
+			{Mounted}
+                  {weapon {ammo "ammo bullet40 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet40 ap" 44}
+			{item "bullet40 fg" 25}
+		      {item "plant" 5}
+                }
+	}
+	{mass 10000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    11} ;  kmph
+			{StartTime 		 6} ;  seconds
+			{BrakeTime 		1} ; seconds
+			{StopTime		 1} ; seconds
+			{TurnRadius     5} ;meter
+			{TurnTime		12} ; seconds
+			{TurnStart		 2}	; seconds
+			{TurnStop	   0.5}	; seconds
+		}
+	}
+
+      {Extension "2-funt.mdl"}
+	
+	(mod "mp"
+		{sensor
+			{visor "main"
+				{vision "Visor_Cannon"}
+			}
+		}
+	)
+}
+  
+

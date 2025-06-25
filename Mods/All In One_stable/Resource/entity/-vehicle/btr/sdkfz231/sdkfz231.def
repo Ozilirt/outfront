@@ -1,0 +1,88 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "zenite" "wheeled" "with_gun"}
+
+	{extension "crew.ext"}
+	{volume "body"
+		{thickness 15}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 10
+			{front 15}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_kwk38"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet20 ap" 48}}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg13"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 25}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 1400}
+			{item "bullet20 ap" 152}
+		}
+	}
+ 	{Sensor
+		{Visor "crew"
+			{vision "Visor_BTR"}
+			{bone "visor1"}
+		}
+		{Visor "driver"
+			{vision "apc-driver"}
+			{bone "visor2"}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{mass 6000}
+	{Chassis
+	{FuelBag
+		{volume 110 }	; liters
+		{rate	5.3 }   ; liters per kilometer
+		{remain 110 }
+		{fuel "fuel"}
+	}
+		{Locomotion ("locomotion")}
+	}
+	{Extension "sdkfz231.mdl"}
+}
+ 

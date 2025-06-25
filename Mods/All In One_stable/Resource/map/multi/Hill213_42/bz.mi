@@ -1,0 +1,166 @@
+{mission
+	{Camera
+		{Position 2282.426270 1608.637207}
+		{Distance 1311.056030}
+		{ViewAngle 0.415537}
+		{YawAngle -0.333649}
+	}
+	{Environment "day_tropic"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "flag_point" 0x8001
+		{Position 1327.674561 -926.430603 35.745724}
+		{Turn 0.000000}
+		{Extender "map_point"
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 1}
+	}
+        {Entity "flag_point" 0x8002
+		{Position 884.631958 1890.260010 81.598846}
+		{Turn 0.000000}
+		{Extender "map_point"
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 2}
+	}
+        {Entity "flag_point" 0x8003
+		{Position 932.690674 -3313.964844 -5.311381}
+		{Turn 0.000000}
+		{Extender "map_point"
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 3}
+	}
+	{Entity "start_point" 0x8801
+		{Position -1578.298096 2162.868652 0.112696}
+		{Turn 0.000000}
+		{Extender "start_point"
+			{mapPoint "xteam"}
+		}
+		{Player 1}
+		{MID 4}
+	}
+	{Entity "start_point" 0x8803
+		{Position -1558.270508 -125.835999 24.239862}
+		{Turn 0.000000}
+		{Extender "start_point"
+			{mapPoint "xteam"}
+		}
+		{Player 1}
+		{MID 6}
+	}
+        {Entity "start_point" 0x8810
+		{Position -1531.452637 -3146.427734 -0.499483}
+		{Turn 0.000000}
+		{Extender "start_point"
+			{mapPoint "xteam"}
+		}
+		{Player 1}
+		{MID 10}
+	}
+        {Entity "start_point" 0x8811
+		{Position 3831.128906 2276.319824 1.636968}
+		{Turn 180.000000}
+		{Extender "start_point"
+			{mapPoint "zteam"}
+		}
+		{Player 1}
+		{MID 11}
+	}
+        {Entity "start_point" 0x8812
+		{Position 3825.765869 -514.581909 9.955280}
+		{Turn 180.000000}
+		{Extender "start_point"
+			{mapPoint "zteam"}
+		}
+		{Player 1}
+		{MID 12}
+	}
+        {Entity "start_point" 0x8813
+		{Position 3806.049561 -3457.576172 -3.864715}
+		{Turn 180.000000}
+		{Extender "start_point"
+			{mapPoint "zteam"}
+		}
+		{Player 1}
+		{MID 13}
+	}
+	{Entity "map_point" 0x8805
+		{Position -10.708549 -1125.347046 -9.136487}
+		{Turn 0.000000}
+		{Extender "map_point"
+			{name "xteam"}
+			{caption "xteam"}
+			{visor "SpawnPoints"}
+			{teams "x"}
+			{unitset "light"}
+		}
+		{Player 1}
+		{MID 5}
+	}
+	{Entity "map_point" 0x8806
+		{Position 2142.814209 -1560.363159 0.000000}
+		{Turn 180.000000}
+		{Extender "map_point"
+			{name "zteam"}
+			{caption "zteam"}
+			{visor "SpawnPoints"}
+			{teams "z"}
+			{unitset "light"}
+		}
+		{Player 1}
+		{MID 7}
+	}
+	{Entity "side_star" 0x8008
+		{Position 1325.886108 2126.139160 131.498}
+		{Orientation 0.000000 -1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8009
+		{Position 1909.973633 295.109161 131.498}
+		{Orientation 0.000000 -1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8010
+		{Position 1728.658691 3945.956787 162.304479}
+		{Orientation 0.000000 -1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Link 0x8008 To 0x8001 "side_pointer"}
+	{Link 0x8009 To 0x8002 "side_pointer"}
+	{Link 0x8010 To 0x8000 "side_pointer"}
+	{Helpers
+		{trigger "1"
+			{actions
+				{"task"
+					{name "task00"}
+				}
+			}
+		}
+		{waypoints}
+	}
+	{Players
+		{count 17}
+		{diplomacy 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1}
+	}
+	{MissionMusic "STOP"}
+}

@@ -1,0 +1,119 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "light" "self_propelled" "average"}
+	{PatherId "vehicle.small"}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+			{front  10}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+			{front  10}
+		}
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+			{front  10}
+		}
+	}
+	{volume "engine"	
+		{thickness 9}
+	}
+	{volume "gun"	
+		{thickness 8}
+	}
+	{component "engine"	
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "gun"	
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "57mm_ZIS2"}
+			{Mounted}
+			{weapon {ammo "ammo bullet57 ap" 1}}
+		}
+		{place "mgun"
+			{Rotate}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mgdt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+            {Box
+			{size 5 6}
+			{item "ammo bullet57 ap" 29 {cell 0 0}}
+			{item "ammo bullet57 fg" 5 {cell 0 1}}
+			{item "ammo mgun" 660 {cell 0 2}}
+            }
+	}
+        
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	("crew_human_visible"	place(driver) bone(driver) door1(emit2)  visor(driver))
+	("crew_human_visible"	place(gunner) bone(gunner) door1(emit4)  visor(main))
+	("crew_human_visible"	place(charger) bone(charger) door1(emit3)  visor(main))
+	("crew_human_visible"	place(commander) bone(commander) door1(emit1)  visor(main))
+
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "gunner"		{group "crew"} {worker charger}}
+		{place "charger"		{group "crew"}}
+		{place "commander"	{group "crew"}}
+	}
+
+	("tracks")
+
+	{mass 4750}
+	{Chassis
+		{speed
+			{Slow	13	}
+			{Normal	16	}
+			{Fast	25	}
+		}
+		{FuelBag
+			{volume 140 }	; liters
+			{rate    45 }   	; liters per kilometer
+			{remain 140 }
+          		{fuel "fuel"}
+		}
+		{Locomotion ("locomotion")
+			{Maxspeed 25}
+			{StartTime	2.5}
+		}
+	}
+	{Extension "zis-30.mdl"}
+}

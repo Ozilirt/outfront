@@ -1,0 +1,17 @@
+{actor
+	(include "/properties/cannon_mgun50.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "50cal"}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 110}}
+		}
+	}
+	{extender "inventory"
+		{box
+			{item "ammo mgun2" 330}
+		}
+	}
+	{Extension "50cal_stan.mdl"}
+}

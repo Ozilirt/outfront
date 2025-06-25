@@ -1,0 +1,114 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.3) scaleY(1.0))
+	(include "/properties/car_crew.ext")
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed 20}	;kmph
+			{StartTime 3}	;seconds
+			{BrakeTime 3}	;seconds
+		}
+	}
+	{TexMods
+		{"ambush" "1"}
+	}
+	{Extension "autodraesine.mdl"}
+	{props "vehicle"}
+	{props "steel"}
+	{props "car"}
+	{placer
+		{place "driver"
+			{group "driver"}
+			{linkbone "driver"}
+			{turnoff
+				{sensor}
+				{shadow}
+			}
+		}
+		{place "gunner" {worker charger}}
+	}
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_bigcar"} {end "seat_driver_car"} {base "doorleft"}}
+			{reverse 	{end	"emit_tank_1"} {base "doorleft" -1}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_bigcar"} {end "seat_gunner_stand"} {base "doorright"}}
+			{reverse 	{end	"emit_tank_1"} {base "doorright" -1}}
+		}
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+		{link "emit2" "gunner" {anm "gunner"} {forward putoff} {reverse puton}}
+	}
+	("crew_human" place(driver)	door(emit1) bone(driver) group(crew))
+	("crew_human" place(gunner) door(emit2) bone(gunner) group(crew))
+	(define "moto_equipment")
+	{placer
+		{place "vehicle"
+			{linkbone "attach_vehicle"}
+			{handlebone "basis"}
+		}
+	}
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "on"}
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{Box
+			{weight 2000}
+			{size 8 6}
+			{item "repair_kit"}
+			{item "ammo mgun" 200}
+		}
+	}
+	{extension "crew.ext"}
+	{component "body"
+		{RepairTime 25}
+		{Able
+			{repair}
+			{break_by_pierce}
+		}
+	}
+	{component "engine"
+		{RepairTime 15}
+		{Able
+			{repair}
+			{break_by_pierce}
+		}
+	}
+	{component "gun_rot"
+		{RepairTime 20}
+		{Able
+			{repair}
+			{break_by_pierce}
+		}
+	}
+	{volume "turret"
+		{thickness 3}
+	}
+	{volume "engine"
+		{thickness 5}
+	}
+	{volume "wheelleft2"
+		{thickness 40}
+	}
+	{volume "wheelleft1"
+		{thickness 40}
+	}
+	{volume "wheelright1"
+		{thickness 40}
+	}
+	{volume "wheelright2"
+		{thickness 40}
+	}
+}

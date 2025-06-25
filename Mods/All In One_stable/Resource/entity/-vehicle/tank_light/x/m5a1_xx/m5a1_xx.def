@@ -1,0 +1,17 @@
+{game_entity
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	{Extension "m5a1_xx.mdl"}
+	{obstacleId "tank"}
+	{Volume "Turret"
+		{thickness 15}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{Volume "Body"
+		{thickness  13
+			{top	10}
+			{bottom	 6}
+		}
+	}
+}

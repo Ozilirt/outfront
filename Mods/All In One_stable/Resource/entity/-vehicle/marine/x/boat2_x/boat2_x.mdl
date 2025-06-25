@@ -1,0 +1,29 @@
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "CommonMesh;ID=body;"}
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-5.3699	-0.0228	0.1097
+			}
+			{VolumeView "Body.ply"}
+			{bone "engine"
+				{parameters "ID=body;"}
+				{Matrix34
+					0.8415	0.0000	0.5402
+					0.4077	0.6561	-0.6351
+					-0.3544	0.7547	0.5521
+					34.5978	-6.0983	-1.6928
+				}
+				{VolumeView "engine.ply"}
+			}
+		}
+	}
+}

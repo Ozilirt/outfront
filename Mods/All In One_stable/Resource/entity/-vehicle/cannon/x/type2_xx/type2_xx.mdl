@@ -1,0 +1,124 @@
+;Modified by: Albus
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -6.6957	-0.6105	-1.7403}
+			{VolumeView "Body.ply"}
+			{bone "part1"
+				{Position -12.6000	0.0000	6.9300}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{Position 0.0000	15.8000	10.8000}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part3"
+				{Position -0.0900	-16.2000	10.6000}
+				{VolumeView "part3.ply"}
+			}
+			{bone revolute "Turret"
+				{parameters "ID=Turret;"}
+				{speed 0.0150}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	1.0000
+					 -0.5486	0.0000	14.0000
+				}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{limits -20.0000 65.0000}
+					{speed 0.0200}
+					{Matrix34
+						0.9622	0.0000	0.2720
+						-0.2720	0.0000	0.9622
+						0.0000	-1.0000	0.0000
+						4.8083	0.0000	12.9121
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "part4"
+						{Position 0.0000	0.0000	0.0000}
+						{VolumeView "part4.ply"}
+					}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	0.0000
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "Body"}
+	{Matrix34
+		1.8571	0.0000	0.2751
+		0.0000	1.5406	0.0000
+		-0.3154	0.0000	0.9699
+		-22.4342	-0.2000	5.4372
+	}
+}
+{Volume "Turret"
+	{Box 14.2645 16.0979 16.3304}
+	{Bone "Turret"}
+	{Position 2.4971	0.0000	6.2327}
+}
+{Volume "gun"
+	{Cylinder 0.5318 34.87454}
+	{Bone "gun"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.1100	0.6000	17.1900
+	}
+}
+{Volume "part1"
+	{Box 6.0000 25.000 3.3300}
+	{Bone "part1"}
+	{Matrix34
+		0.9858	0.0000	0.1678
+		0.0000	1.0000	0.0000
+		-0.1678	0.0000	0.9858
+		0.0000	0.0000	0.0000
+	}
+}
+{Volume "part2"
+	{Cylinder 8.7318 4.17454}
+	{Bone "part2"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	0.0000
+	}
+}
+{Volume "part3"
+	{Cylinder 8.4318 4.17454}
+	{Bone "part3"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	0.0000
+	}
+}
+{Volume "part4"
+	{Box 3.7880 6.2600 1.8000}
+	{Bone "part4"}
+	{Position 0.0000	0.0000	0.0000}
+}

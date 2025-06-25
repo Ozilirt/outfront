@@ -1,0 +1,19 @@
+{game_entity
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	{Extension "t-38_xx.mdl"}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{thickness 15}
+	}
+	{TexMods
+		{"n23" "1"}
+		{"n27" "2"}
+	}
+}

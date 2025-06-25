@@ -1,0 +1,65 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "cannon" "medium" "turret" "turret_rotator" "explosion_throw_crew"}
+	(include "/properties/dummy_fsm2.inc")
+	{sensor
+		{Visor "main"
+			{vision "mortar"}
+			{bone "visor"}
+		}
+	}
+
+	{Volume "body"
+		{thickness 250}
+	}
+	{Volume "turret"
+		{thickness 250}
+	}
+	{Volume "gun_rot"	
+		{thickness 250}
+	}
+	{Volume "inventory"	
+		{thickness 250}
+	}
+	{Volume "gun"
+		{thickness 250}
+	}
+	{Volume "shield"
+		{thickness 250}
+	}
+
+	{boarder
+		{anm "gunner" {forward {end "seat_gunner_stand"}}}
+		{anm "passenger" {forward {end "seat_passenger"}}}
+	}
+
+	("crew_human" place(gunner)	bone(gunner)		door(emit1) animation(gunner))
+	("crew_human" place(commander)	bone(commander)		door(emit2) animation(passenger))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "150mm_mortar"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet150m" 1}}
+		}
+	}  	
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet150m" 24}
+		}
+	}
+	{mass 60000}
+	{Extension "mortar150.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+}

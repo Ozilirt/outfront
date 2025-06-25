@@ -1,0 +1,65 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "truck" "wheeled" "with_doors" "fuel_tank"}
+	{Props "emit_on_attack"}
+
+	("crew_2_human")
+      ("board_animation"
+		place(commander)
+		board_begin(board_big-highcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(driver)
+		board_begin(board_big-highcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+	
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{Volume "bodyback"
+		{thickness 2}
+	}
+	{mass 5000}
+	{Chassis
+		{Locomotion
+			{MaxSpeed	30	}		; максимальная скорость, kmph
+			{StartTime	6	}		; время разгона до макс. скорости с 0, seconds
+			{BrakeTime	2	}		; время торможения с макс. скорости до 0, seconds
+			{StopTime	4	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius	7	}		; мин. радиус разворота, meter
+			{Gears		0.35 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears	0.33 0.5}	; передаточные коэф-ты коробки передач
+			{SteerOn	40}			; скорость поворота колес, градусов в секунду
+			{SteerOff	40}         ; скорость возврата колес в исх. состояние, градусов в секунду
+			{SplineRadius 1}		; ограничение радиуса поворота на сплайнах, метров
+		}
+                 {FuelBag
+                   {volume 5200}	; liters
+	             {rate    20 }   	; liters per kilometer
+	             {remain 5200 }
+                   {fuel "fuel"}
+                  }
+	}
+	{Extension "BedF-Fuel.mdl"}
+	
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "ammo fire" 600}
+                        {item "barrel" 5 filling "fuel" 75}
+			}
+		}
+	)
+	
+}

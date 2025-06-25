@@ -1,0 +1,159 @@
+;Exported by: dinsen
+;Date:        Sat Feb 19 17:15:54 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\hecho\m8ground_x.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_front"
+			{Position 33.8740	-0.4240	11.1145}
+			{bone revolute "steer_R1"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0045
+					0.0000	-0.0045	-1.0000
+					0.0000	-18.8025	0.0000
+				}
+				{bone revolute "wheelR1"
+					{parameters "ID=wheelright1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0045	-1.0000
+						0.0000	-1.0000	-0.0045
+						0.0000	-0.0001	0.0000
+					}
+					{VolumeView "wheelR1.ply"}
+				}
+			}
+			{bone revolute "steer_L1"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0045
+					0.0000	-0.0045	-1.0000
+					0.0000	18.5430	0.0000
+				}
+				{bone revolute "wheelL1"
+					{parameters "ID=wheelleft1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0045	-1.0000
+						-0.0000	-1.0000	-0.0045
+						0.0000	-0.0001	0.0000
+					}
+					{VolumeView "wheelL1.ply"}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -21.1261	-0.4227	11.1145}
+			{bone "spring_R2"
+				{Position 12.6621	-18.7748	0.0000}
+				{bone revolute "wheelR2"
+					{parameters "ID=wheelright2;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						0.0000	0.0001	0.0000
+					}
+					{VolumeView "wheelR2.ply"}
+				}
+			}
+			{bone "spring_R3"
+				{Position -10.8774	-18.7593	0.0000}
+				{bone revolute "wheelR3"
+					{parameters "ID=wheelright3;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						0.0001	0.0002	0.0000
+					}
+					{VolumeView "wheelR3.ply"}
+				}
+			}
+			{bone "spring_L2"
+				{Position 12.6621	18.5272	0.0000}
+				{bone revolute "wheelL2"
+					{parameters "ID=wheelleft2;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						0.0000	0.0000	0.0000
+					}
+					{VolumeView "wheelL2.ply"}
+				}
+			}
+			{bone "spring_L3"
+				{Position -10.8774	18.5842	0.0000}
+				{bone revolute "wheelL3"
+					{parameters "ID=wheelleft3;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						0.0000	0.0002	0.0000
+					}
+					{VolumeView "wheelL3.ply"}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				1.0000	-0.0001	0.0000
+				0.0001	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				1.3915	-0.8304	20.5609
+			}
+			{VolumeView "body.ply"}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Position -30.9586	0.2125	8.7967}
+				{VolumeView "engine.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0100}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	1.0000	-0.0033
+					0.0000	0.0033	1.0000
+					0.9865	0.2391	11.3765
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 10.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						15.6527	0.1972	6.3697
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone revolute "mgun"
+						{parameters "ID=mgun;"}
+						{limits -10.0000 10.0000}
+						{Position 1.8929	0.6956	3.5756}
+						{VolumeView "mgun.ply"}
+					}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0055
+							0.0055	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							18.2405	0.5446	0.2492
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}

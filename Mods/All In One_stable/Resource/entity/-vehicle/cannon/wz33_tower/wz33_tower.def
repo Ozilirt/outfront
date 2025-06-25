@@ -1,0 +1,20 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{simulation {able 1}}
+	{sensor 
+		{visor "main" 
+			{bone "visor"}
+			{vision "watchtower"}
+		}
+	}
+	{placer	{place "gunner" {visor "main"} {worker charger}}}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "wz33"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 250}}
+		}
+	}  	
+	{Extension "wz33_tower.mdl"}
+}

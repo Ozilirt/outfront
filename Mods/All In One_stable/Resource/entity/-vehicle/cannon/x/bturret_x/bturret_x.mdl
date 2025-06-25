@@ -1,0 +1,37 @@
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{parameters "CommonMesh;ID=Turret;"}
+			{Position 0.1442	0.2318	2.0225}
+			{VolumeView "turret.ply"}
+			{bone revolute "Gun_rot"
+				{parameters "ID=Turret;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					8.3273	-0.1610	55.6081
+				}
+				{VolumeView "Gun_rot.ply"}
+				{bone "Gun"
+					{parameters "CommonMesh;ID=gun;"}
+					{Position -20.1055	0.4582	0.0000}
+					{VolumeView "Gun.ply"}
+					{bone "Foresight1"
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							148.0371	0.1168	0.2293
+						}
+					}
+				}
+			}
+		}
+	}
+}

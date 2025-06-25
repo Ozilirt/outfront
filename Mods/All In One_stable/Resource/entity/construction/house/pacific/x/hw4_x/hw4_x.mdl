@@ -1,0 +1,249 @@
+;Exported by: dinsen
+;Date:        Sun Oct 02 20:53:50 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\hw4_x.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "piece1"
+			{Position 0.7725	0.3563	36.8690}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Position 0.1797	0.2927	41.8241}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Position 30.3625	-29.7228	19.4124}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece4"
+			{Position 30.6013	31.2630	19.4124}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "piece5"
+			{Position -29.1361	31.2630	19.4124}
+			{VolumeView "piece5.ply"}
+		}
+		{bone "piece6"
+			{Position -29.3517	-29.7228	19.4124}
+			{VolumeView "piece6.ply"}
+		}
+		{bone "piece7"
+			{Position -34.2738	-24.2143	14.0354}
+			{VolumeView "piece7.ply"}
+		}
+		{bone "piece8"
+			{Position 1.0324	36.3672	16.7923}
+			{VolumeView "piece8.ply"}
+		}
+		{bone "piece9"
+			{Position 36.2675	-0.5857	14.9536}
+			{VolumeView "piece9.ply"}
+		}
+		{bone "piece10"
+			{Position 0.7725	0.3563	36.8690}
+			{VolumeView "piece10.ply"}
+		}
+		{bone "piece11"
+			{Position 0.7725	0.3563	36.8690}
+			{VolumeView "piece11.ply"}
+		}
+		{bone "FX_fire1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-25.0898	28.1982	0.0000
+			}
+		}
+		{bone "FX_smoke1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-13.9478	20.3789	0.0000
+			}
+		}
+		{bone "FX_fire2"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				19.7525	-7.1409	0.0000
+			}
+		}
+		{bone "FX_smoke2"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-10.6455	-19.4765	0.0000
+			}
+		}
+	}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -30.1094 20.1559}
+		{Extent 1.47232 10.4289}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -29.7473 -22.8369}
+		{Extent 1.10424 11.2878}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 31.8133 -1.54445}
+		{Extent 1.04109 30.8856}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 1.10127 30.2413}
+		{Extent 31.7532 1.04109}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 1.10127 -32.1039}
+		{Extent 31.7532 1.04109}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "piece11"
+	{Polyhedron "piece11.vol"}
+	{Bone "piece11"}
+	{Matrix34
+		-1.0000	0.0100	0.0000
+		-0.0100	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0564	-0.0299	19.9790
+	}
+}
+{Volume "piece10"
+	{Polyhedron "piece10.vol"}
+	{Bone "piece10"}
+	{Matrix34
+		0.0055	-1.0000	0.0000
+		1.0000	0.0055	0.0000
+		0.0000	0.0000	1.0000
+		-0.0564	-0.0299	19.9790
+	}
+}
+{Volume "body5"
+	{Box 2.94464 20.8579 20}
+	{Bone "body"}
+	{Position -30.1094	-20.1559	6.5189}
+}
+{Volume "body1"
+	{Box 2.20848 22.5756 20}
+	{Bone "body"}
+	{Position -29.7473	22.8369	6.5189}
+}
+{Volume "body3"
+	{Box 2.08217 61.7712 20}
+	{Bone "body"}
+	{Position 31.8133	1.5445	6.5189}
+}
+{Volume "body4"
+	{Box 63.5063 2.08218 20}
+	{Bone "body"}
+	{Position 1.1013	-30.2413	6.5189}
+}
+{Volume "body2"
+	{Box 63.5063 2.08218 20}
+	{Bone "body"}
+	{Position 1.1013	32.1039	6.5189}
+}
+{Volume "body"
+	{Box 68.7345 70.5042 2.8925}
+	{Bone "body"}
+	{Position 0.7623	0.8911	1.6049}
+}
+{Volume "piece9"
+	{Cylinder 1.57372 78.0239}
+	{Bone "piece9"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-0.1612	0.5600	-0.0413
+	}
+}
+{Volume "piece8"
+	{Cylinder 1.12005 78.3915}
+	{Bone "piece8"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		0.0515	0.5202	-0.2000
+	}
+}
+{Volume "piece7"
+	{Cylinder 0.962048 30.6971}
+	{Bone "piece7"}
+	{Matrix34
+		0.9962	-0.0872	-0.0000
+		0.0000	-0.0000	1.0000
+		-0.0872	-0.9962	0.0000
+		-0.1994	0.0067	0.0086
+	}
+}
+{Volume "piece6"
+	{Cylinder 1.17813 45.3758}
+	{Bone "piece6"}
+	{Position -0.1556	0.1080	-0.2056}
+}
+{Volume "piece5"
+	{Cylinder 1.17813 45.3758}
+	{Bone "piece5"}
+	{Position -0.0326	0.0985	-0.2056}
+}
+{Volume "piece4"
+	{Cylinder 1.17813 45.3758}
+	{Bone "piece4"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	-0.0000
+		-0.0000	0.0000	1.0000
+		0.0133	0.0986	-0.2056
+	}
+}
+{Volume "piece3"
+	{Cylinder 1.17813 45.3758}
+	{Bone "piece3"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	-0.0000
+		-0.0000	0.0000	1.0000
+		0.0535	0.1080	-0.2056
+	}
+}
+{Volume "piece2"
+	{Box 63.5367 63.2796 3.37754}
+	{Bone "piece2"}
+	{Position 0.0000	-0.0000	-0.0516}
+}
+{Volume "piece1"
+	{Polyhedron "piece1.vol"}
+	{Bone "piece1"}
+	{Position -0.0564	-0.0299	19.9790}
+}

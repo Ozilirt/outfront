@@ -1,0 +1,40 @@
+;Exported by: sat
+;Date:        Tue Jul 06 18:32:23 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\tropics\palm1.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "palm1"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "palm1.ply"}
+		{bone "emit"
+			{parameters "Group=gunner;"}
+			{Position -3.7852	-0.8429	0.8176}
+			{visibility 0}
+		}
+		{bone "attach1"
+			{Position 0.3219	-1.0663	116.3493}
+		}
+	}
+}
+{Volume "bole"
+	{Box 8.37464 8.13241 96.5268}
+	{Bone "palm1"}
+	{Position 3.5249	-0.7962	48.2634}
+}
+{Volume "crown"
+	{Box 89.8596 62.9311 73.4076}
+	{Bone "palm1"}
+	{Position 2.1190	3.5111	106.4091}
+}
+{Volume "place1"
+	{Box 19.685 19.685 5.905}
+	{Bone "palm1"}
+	{Position 0.0408	0.4505	116.1190}
+}

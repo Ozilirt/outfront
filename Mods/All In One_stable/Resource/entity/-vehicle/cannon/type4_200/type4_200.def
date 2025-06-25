@@ -1,0 +1,24 @@
+{actor
+	(include "/properties/minomet.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "heavy" "minomet" "explosion_throw_crew"}
+
+	("crew_2_human")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "minomet_200mm"}
+			{Mounted}
+			{weapon {ammo "ammo 200mm_mine" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo 200mm_mine" 24}
+		}
+	}
+	{mass 2000}
+	{Extension "type4_200.mdl"}
+}

@@ -1,0 +1,110 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "truck" "wheeled" "turret" "heavy" "minomet" "with_gun" "with_doors" "explosion_throw_crew"}
+	(include "/properties/car_crew.ext")
+	(include "/properties/dummy_fsm.inc")
+	(include "/properties/structure/bedf_aa.ext")
+	{PatherId "tank"}
+
+	("crew_2_human")
+
+	{volume "turret"
+		{thickness 20}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{volume "cabin"
+		{tags "bodyback"}
+		{component "bodyback"}
+		{thickness 15}
+	}
+	{volume "bodyback"
+		{thickness 18}
+	}
+	{volume "engine"
+		{thickness 8}
+	}
+	{volume "gun"
+		{thickness 10}
+	}
+	{component "gun"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+	{boarder
+		{anm "gunner"
+			{forward	{begin	"board_body"} {end "squat_from_stand_empty"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+ 
+	("crew_human" place(gunner)	bone(gunner)	door(emit3) animation(gunner))
+        
+	{placer
+		{place "driver"		{visor "driver"} {nouseVision} }
+		{place "gunner"		{worker charger} {visor "main"} {nouseVision} }
+		{place "commander"	{visor "main"} {nouseVision} }
+	}
+
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "gunner"		{group "crew"}}
+		{place "commander"	{group "crew"}}
+	}
+
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-midcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	{Sensor
+		{Visor "main"
+			{vision "Visor_cannon"}
+			{bone	"visor1"}
+		}
+		{Visor "driver"
+			{vision "Visor_BTR"}
+			{bone "visor2"}
+		}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "minomet_120mm"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo 120mm_mine" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun"
+			{fixed}
+		}
+		{box
+			{size 5 6}
+			{item "ammo 120mm_mine" 20}
+		}
+	}
+	{mass 6800}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "isuzu_mortar.mdl"}
+}

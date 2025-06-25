@@ -1,0 +1,25 @@
+{actor
+	(include "/properties/minomet.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "medium" "minomet"}
+
+	("crew_1_human")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "minomet_81mm"}
+			{Mounted}
+			{weapon {ammo "ammo 81mm_mine" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo 81mm_mine" 40}
+			{item "plant" 3}
+		}
+	}
+	{mass 400}
+	{Extension "minomet_80.mdl"}
+}

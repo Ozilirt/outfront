@@ -1,0 +1,75 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{mass 2600}
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{PatherId "vehicle.small"}
+	{extension "/properties/structure/car6x4.ext"}
+	{sensor
+		{Visor "main"
+			{vision "dodgewc56"}
+			{bone "visor"}
+		}
+	}
+	{TexMods
+		{"open" "1"}
+	}
+
+	("crew_inside")
+	{boarder
+		{anm "driver"
+    			{forward	{begin	"board_willis_driver"} {end "seat_driver_car"}}
+			{reverse 	{end	"board_willis_driver" -1}}
+		}
+		{anm "passenger1"
+			{forward	{begin	"board_Dodge"} {end "seat_passenger"}}
+			{reverse 	{end	"board_Dodge" -1}}
+		}
+		{anm "passenger2"
+			{forward	{begin	"board_Dodge_bodyBack"} {end "seat_passenger"}}   
+			{reverse 	{end	"emit_tank_1" 1}}
+			}
+		}
+	
+	("crew_human" place(driver)	door(emit1)	bone(driver)	animation(driver))
+	("crew_human" place(seat0)	door(emit2)	bone(passenger)	animation(passenger1))
+	("crew_human" place(seat1)	bone(seat01)	door(emit4)	animation(passenger2))
+	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger2))
+	("crew_human" place(seat3)	bone(seat03)	door(emit4)	animation(passenger2))
+	("crew_human" place(seat4)	bone(seat04)	door(emit3)	animation(passenger2))
+	("crew_human" place(seat5)	bone(seat05)	door(emit3)	animation(passenger2))
+	("crew_human" place(seat6)	bone(seat06)	door(emit3)	animation(passenger2))
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{Chassis
+		{Locomotion
+			{MaxSpeed	35}
+			{StartTime	6}
+			{BrakeTime	2}
+			{StopTime	4}
+			{TurnRadius	7}
+			{Gears		0.35 0.5 0.7 1.0}
+			{RearGears	0.33 0.5}
+			{SteerOn	40}
+			{SteerOff	40}
+			{SplineRadius	1}
+		}
+	}
+	{Extension "krupp_protze.mdl"}
+
+        (mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+			}
+		}
+	)
+}

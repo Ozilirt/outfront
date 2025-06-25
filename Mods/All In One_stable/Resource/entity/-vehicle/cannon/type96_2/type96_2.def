@@ -1,0 +1,67 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "flak" "turret_ai_rotate"}
+	(include "/properties/dummy_fsm2.inc")
+	{sensor
+		{Visor "aa"
+			{vision "type96"}
+			{bone "visor"}
+		}
+	}
+
+	("crew_2_human")
+
+	{Boarder
+		{anm "gunner"
+			{forward	{end "seat_driver_car"}}
+		}
+		{anm "commander"
+			{forward	{end "seat_driver_car"}}
+		}
+		{place "gunner"}
+		{door "emit1"}
+		{link "emit1" "gunner"	{forward putoff} {reverse puton} {anm "gunner"}}
+		{place "commander"}
+		{door "emit2"}
+		{link "emit2" "commander"	{forward putoff} {reverse puton} {anm "commander"}}
+	}
+
+	{Volume "body"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume "gun"
+		{thickness 5
+			{front  10}
+		}
+	}
+	{Volume "gun_rot"
+		{thickness 5}
+	}
+	{volume "shield1"
+		{thickness 10}
+	}
+	{volume "shield2"
+		{thickness 10}
+	}
+	{Weaponry
+		{place "gun"
+			{foresight "foresight1"}
+			{Barrels 2}
+			{DefaultWeapon "25mm_type96_2"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet25 zenite" 30}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet25 zenite" 180}
+		}
+	}
+	{mass 2700}
+	{Extension "type96_2.mdl"}
+}

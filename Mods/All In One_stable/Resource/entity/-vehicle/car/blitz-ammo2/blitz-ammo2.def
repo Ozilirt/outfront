@@ -1,0 +1,59 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{extension "/properties/structure/truck4x4.ext"}
+	
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-highcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-highcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "bodyback"
+		{thickness 2}
+	}
+
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "Blitz-3.6.mdl"}
+
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+                        {item "ammo bullet88 fg" 60 {cell 4 0}}
+				{item "ammo bullet88 ap" 50 {cell 0 2}}
+                        {item "ammo bullet75 fg" 50 {cell 7 0}}
+				{item "ammo bullet75 ap" 60 {cell 2 0}}
+			}
+		}
+	)
+	(mod "game:escort"
+		{props "escort_truck"}
+		{component "body"
+			{Able {break_by_pierce 0}}
+		}
+		{volume "wheelright1"	{thickness 4}}
+		{volume "wheelleft1"	{thickness 4}}
+		{volume "wheelright2"	{thickness 4}}
+		{volume "wheelleft2"	{thickness 4}}
+	)
+}

@@ -1,0 +1,31 @@
+{Skeleton
+	{bone "garand_kn"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "garand_kn.ply"}
+		{bone "foresight3"
+			{Position 15.4967	1.4537	0.0543}
+		}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				5.6134	1.4229	0.0022
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 29.9047 11.1349 3.05727}
+	{Bone "garand_kn"}
+	{Position 5.74285	0.214491	-0.0875636}
+}
+{Volume "body"
+	{Box 20.887 4.30972 1.17113}
+	{Bone "garand_kn"}
+	{Position 4.5755	-0.11942	0.00109482}
+}

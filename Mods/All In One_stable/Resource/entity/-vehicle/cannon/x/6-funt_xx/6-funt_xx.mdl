@@ -1,0 +1,134 @@
+;Exported by: dinsen
+;Date:        Sun Apr 24 13:30:07 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\hecho\6-funt_xx.max
+{Skeleton
+	{bone revolute "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Position -50.9274	-0.9858	0.1375}
+			{VolumeView "body.ply"}
+			{bone "part4"
+				{Position 51.7477	-0.7199	22.5603}
+				{VolumeView "part4.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 10.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						1.0367	1.5516	-7.0154
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "part1"
+						{Matrix34
+							0.9999	-0.0162	0.0000
+							0.0000	0.0000	-1.0000
+							0.0162	0.9999	0.0000
+							17.0964	6.6679	0.2945
+						}
+						{VolumeView "part1.ply"}
+						{bone "part2"
+							{Position -34.1815	-0.0415	-1.1336}
+							{VolumeView "part2.ply"}
+						}
+					}
+				}
+			}
+			{bone revolute "wheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					58.6514	-18.4040	8.4184
+				}
+				{VolumeView "wheelR.ply"}
+			}
+			{bone "part3"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					58.8745	20.0312	8.4313
+				}
+				{VolumeView "part3.ply"}
+			}
+		}
+	}
+}
+{Volume "body2"
+	{Box 50.731 2.96673 2.67005}
+	{Bone "body"}
+	{Matrix34
+		1.1790	0.7269	0.1597
+		-0.1745	-0.0000	1.2882
+		0.7822	-0.9739	0.1060
+		29.2721	-16.8122	5.1901
+	}
+}
+{Volume "body1"
+	{Box 50.731 2.96673 2.67005}
+	{Bone "body"}
+	{Matrix34
+		1.1940	-0.7015	0.1618
+		-0.1745	-0.0000	1.2882
+		-0.4775	-1.1573	-0.0647
+		27.5903	20.0967	4.9622
+	}
+}
+{Volume "part3"
+	{Cylinder 6.50654 2.93691}
+	{Bone "part3"}
+	{Matrix34
+		-1.3000	0.0000	0.0000
+		0.0000	1.3000	0.0000
+		0.0000	0.0000	-1.3000
+		0.0783	-0.0469	0.1278
+	}
+}
+{Volume "wheelright"
+	{Cylinder 6.50654 2.93691}
+	{Bone "wheelR"}
+	{Matrix34
+		-1.3000	0.0000	0.0000
+		0.0000	1.3000	0.0000
+		0.0000	0.0000	-1.3000
+		-0.1448	-0.0339	0.0409
+	}
+}
+{Volume "part4"
+	{Box 13.1112 24.8588 25.2784}
+	{Bone "part4"}
+	{Matrix34
+		1.3629	0.0000	0.0000
+		0.0000	0.0000	0.9512
+		0.0000	-1.9007	0.0000
+		0.8455	1.6673	-0.2300
+	}
+}
+{Volume "part2"
+	{Box 8.08433 8.01016 6.67513}
+	{Bone "part2"}
+	{Matrix34
+		0.9999	0.0000	0.0162
+		-0.0162	0.0000	0.9999
+		0.0000	-1.0000	0.0000
+		0.0010	0.2739	-0.0572
+	}
+}
+{Volume "part1"
+	{Box 46.7259 2.52172 3.56007}
+	{Bone "part1"}
+	{Matrix34
+		1.2997	0.0000	0.0258
+		-0.0258	0.0000	1.2997
+		0.0000	-1.3000	0.0000
+		0.2445	-0.1791	0.0503
+	}
+}

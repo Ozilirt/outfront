@@ -1,0 +1,30 @@
+;Created by Albus
+;Date:        Wed May 21 16:40:20 2008
+{Skeleton
+	{bone "maps1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "maps1.ply"}
+		{bone "handle"
+			{Matrix34
+				0.0103	-0.9999	0.0000
+				-0.9999	-0.0103	0.0000
+				0.0000	0.0000	-1.0000
+				0.2440	2.3114	0.8192
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 11.898 5.96113 3.70755}
+	{Bone "maps1"}
+	{Position -0.0417	0.0291	1.0858}
+}
+{Volume "body"
+	{Box 7.72472 4.21671 2.21392}
+	{Bone "maps1"}
+	{Position 0.2076	0.0291	1.0024}
+}

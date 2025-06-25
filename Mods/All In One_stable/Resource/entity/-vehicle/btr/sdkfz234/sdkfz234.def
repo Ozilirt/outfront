@@ -1,0 +1,114 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "with_gun"}
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+	{extension "crew.ext"}	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	30 0.6}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	30 0.6}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 30
+		    {front 40 0.6}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{volume "engine"
+		{thickness 15
+			{rear	15}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "50mm_kwk39"}
+			{Mounted}
+                  {weapon {ammo "ammo bullet50 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 600}
+			{item "ammo bullet50 ap" 39}
+			{item "ammo bullet50 fg" 15}
+		}
+	}
+	{sensor
+		{Visor "main"
+		      {vision "Visor_Tank"}
+		}  
+	}
+   
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+	("wheel" args "wheelright4")
+	("wheel" args "wheelleft4")
+
+	{mass 11000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "SdKfz234.mdl"}
+      (mod "mp"
+		{Chassis
+			{Locomotion ("locomotion")
+				{maxspeed 30}
+			}
+			{speed
+				{Slow	15	}
+				{Normal   20}
+				{Fast	28	}
+			}
+{FuelBag
+          {volume 240 }	; liters
+	    {rate    50 }   	; liters per kilometer
+	    {remain 240 }
+          {fuel "fuel"}
+        }
+
+		}
+	)
+}

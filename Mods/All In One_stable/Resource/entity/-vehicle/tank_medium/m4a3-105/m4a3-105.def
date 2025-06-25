@@ -1,0 +1,135 @@
+;Model created by: <Eger>
+;BTRH Mod (c) Copyright 2005 by BTRH clan developers team
+;http://rus-hammers.com
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_m4.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+
+	{props "medium" "high"}
+	
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 38
+			{front  51 0.2}
+                        {rear 38}
+                             {top 25}
+                             {bottom 12}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 38
+			{front  51 0.2}
+                        {rear 38}
+                             {top 25}
+                             {bottom 12}
+		}
+	}
+	{volume "turret"
+		{thickness 64
+			{front  89}
+                        {left 64 0.2}
+                        {right 64 0.2} 
+                             {top 25}
+		}
+	}
+
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "105mm"}
+			{Mounted}
+		        {weapon {ammo "ammo bullet105 fg" 1}}
+                }
+		{place "mgun"
+			{DefaultWeapon "browning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+            {place "mgun2"
+			{Rotate}
+			{DefaultWeapon "browning_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 600}
+			{item "ammo bullet105 fg" 30}
+                  {item "ammo bullet105 ap" 10}
+		}
+	}
+	
+	{mass 30500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    21} ; максимальная скорость, kmph
+			{StartTime 		 6} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		0.6} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{Extension "M4A2.mdl"}
+
+(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+            {Chassis
+            {speed
+		  {Slow	8}
+		  {Normal	14}
+		  {Fast	21}
+		}
+    {FuelBag
+          {volume 636 }	; liters
+	    {rate   324 }   	; liters per kilometer
+	    {remain 636 }
+          {fuel "fuel"}
+        }
+
+            }
+	)
+}

@@ -1,0 +1,68 @@
+{construction
+	(include "/properties/construction.inc")
+  	{DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+ 	}
+	{Extension "watch-tower2.mdl"}
+	{props "two" "staged" "wood" "construction" "watch_tower" "disable_area" "no_destroyed_stamp"}
+	{Volume "Body7"
+		{able {visible 0} {bullet 0}}
+		{thickness 5}
+	}
+	{Volume "Body6"	
+		{able {visible 0} {bullet 0}}
+		{thickness 5}
+	}
+	{Volume "Body5"	
+		{able {visible 0} {bullet 0}}	
+		{thickness 5}
+	}
+	{Volume "Body4"
+		{able {visible 0} {bullet 0}}
+		{thickness 5}
+	}
+
+	{Volume "Body3"
+		{tags "body"}
+		{thickness 5}
+	}
+	{Volume "Body2"
+		{tags "body"}
+		{thickness 5}
+	}
+	{Volume "Body1"
+		{tags "body"}
+		{thickness 5}
+	}
+	{Volume "Body"
+		{tags "body"}
+		{thickness 5}
+	}
+
+	{Placer
+		{place "mgun"
+			{linkbone 	"attach"}
+			{entity 	"mg34_tower"}
+			{handlebone "basis"}
+			{turnoff {shadow}}
+		}
+	}
+	{Boarder
+		{door "emit" {queue 0}}
+		{node "node_ladder_bottom"}
+		{node "node_ladder_top"}
+		{anm "ladder_bind"
+			{forward	{begin	"stand_climb_stairs"}}
+			{reverse	{end	"stand_climb_stairs" -1}}
+		}
+		{anm "ladder"
+			{forward	{speed 1} {loop "stand_upstairs"}}
+			{reverse	{speed 1} {loop "stand_upstairs" -1}}
+		}
+		{link "emit" "node_ladder_bottom" {anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_ladder_bottom" "node_ladder_top" {anm "ladder"}}
+		{link "node_ladder_top" "mgun"}
+	}
+
+}

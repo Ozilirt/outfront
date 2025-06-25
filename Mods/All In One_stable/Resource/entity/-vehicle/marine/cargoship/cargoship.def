@@ -1,0 +1,51 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(0.9) scaley(0.6))
+	{mass 20000}
+	{patherid "shallow water"}
+	{props "vehicle" "marine" "emit_on_sink"}
+	{TexMods
+		{"variant" "1"}
+	}
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 80}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{thickness 70}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{thickness 70}
+	}
+	{Volume "body3"
+		{tags "body"}
+		{thickness 70}
+	}
+	{component "body1"
+		{able {break_by_pierce}}
+	}
+	{component "body2"
+		{able {break_by_pierce}}
+	}
+	{component "body3"
+		{able {break_by_pierce}}
+	}
+	{extension "crew.ext"}
+	{Extension "cargoship.mdl"}
+	{chassis
+		{waterline 1.5}
+		{Locomotion ("locomotion")
+                  {MaxSpeed	15	}
+	            {TurnRadius	20	}
+	            {SplineRadius 15}
+	            {TurnTime		0.1}
+	            {TurnStart		 5}
+	            {TurnStop	   3}
+
+		}
+	}
+}

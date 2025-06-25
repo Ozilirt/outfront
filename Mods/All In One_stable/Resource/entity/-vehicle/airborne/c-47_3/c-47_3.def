@@ -1,0 +1,181 @@
+{actor
+	(include "/properties/airborne.ext")
+	{PatherID  "airborne"}
+	(include "/properties/shadow/tank.inc" scale(1.5))
+	(include "/properties/selection/vehicle.inc" scale(2.0))
+	{extension "crew.ext"}
+	{Chassis ("chassis_defaults")
+		{Locomotion ("locomotion") 
+			{Maxspeed 80}
+			{SplineRadius 7}
+			{TurnRadius 7}
+		}
+		{sideSlopeSpeed 15}	;degree/s
+		{ignitiontime 5}
+    		{maxSideSlope 30}	;degree
+    		{onAirTurnRadius 40}
+		{maxElevationSpeed 4}		;m/s
+		{elevationAcceleration 1}	;m/s^2
+	       	{speed
+       			{Slow	9	}	; km/h
+       			{Normal	40	}
+       			{Fast	90	}
+       		}
+	}
+	{mass 3000}
+	{TexMods
+		{"n1" "1"}
+		{"n2" "2"}
+	}
+	{extender "inventory"
+		{Box
+			{clear}
+		}
+	}
+	{Sensor
+		{Visor "main"
+			{bone	 "pivot_back"}
+		}
+	}
+	{Extension "c-47_3.mdl"}
+	{Volume "steer_back"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "engine1"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "propeller1"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "retract_whelR"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "WingR1" 
+		{component "wingright"}
+	}
+	{Volume "WingR2" 
+		{component "wingright"}
+	}
+	{Volume "WingR3" 
+		{component "wingright"}
+	}
+	{Volume "WingL1" 
+		{component "wingleft"}
+	}
+	{Volume "WingL2" 
+		{component "wingleft"}
+	}
+	{Volume "WingL3" 
+		{component "wingleft"}
+	}
+
+	(define "part"
+		{volume %0
+			{tags "part"}
+			{thickness 0.5}
+			{able {visible 0}}
+		}
+		{component %0}
+	)
+	(define "wing"
+		("part" args %0)
+		{volume %0
+			{tags "wing"}
+		}
+	)
+	("part" args "rudder")
+	("wing" args "WingL1")
+	("wing" args "WingL2")
+	("wing" args "WingL3")
+	("wing" args "WingR1")
+	("wing" args "WingR2")
+	("wing" args "WingR3")
+
+
+	{Volume "engine2"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "propeller2"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "retract_whelL"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "body"
+		{thickness 0.5}
+	}
+	{Volume "bodyback"
+		{component "body"}
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "door1"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "door"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "elevator2"
+		{component "body"}
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "elevator1"
+		{component "body"}
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "rudder"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "cabin"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "glass12"
+		{thickness 0.5}
+	}
+	{Volume "glass11"
+		{thickness 0.5}
+	}
+	{Volume "glass10"
+		{thickness 0.5}
+	}
+	{Volume "glass09"
+		{thickness 0.5}
+	}
+	{Volume "glass08"
+		{thickness 0.5}
+	}
+	{Volume "glass07"
+		{thickness 0.5}
+	}
+	{Volume "glass06"
+		{thickness 0.5}
+	}
+	{Volume "glass05"
+		{thickness 0.5}
+	}
+	{Volume "glass04"
+		{thickness 0.5}
+	}
+	{Volume "glass03"
+		{thickness 0.5}
+	}
+	{Volume "glass02"
+		{thickness 0.5}
+	}
+	{Volume "glass01"
+		{thickness 0.5}
+	}
+}

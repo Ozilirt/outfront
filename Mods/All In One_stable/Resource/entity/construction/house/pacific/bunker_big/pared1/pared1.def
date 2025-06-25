@@ -1,0 +1,33 @@
+{game_entity
+	(include "/properties/building.inc")
+  	{DecalView
+		{ownershadow  128 128}
+		{name "shadow"}
+  	}
+	{TexMods
+    		{"1" "1"}
+	}
+	{props "wall" "cornered" "concrete" "parts" "construction" "disable_area"}
+	{Constrain surface}
+	{Extension "pared1.mdl"}
+	{Volume "body"
+		{tags "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "piece3"
+		{tags "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "piece2"
+		{tags "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "piece1"
+		{tags "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+}

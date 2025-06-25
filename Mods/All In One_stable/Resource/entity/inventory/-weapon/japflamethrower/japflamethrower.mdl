@@ -1,0 +1,31 @@
+{Skeleton
+	{bone "japflamethrower"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "japflame.ply"}
+		{bone "Foresight3"
+			{Position 12.7854	1.4654	0.0000}
+		}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				4.5715	1.8391	0.0199
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 21.6701 10.3101 3.05727}
+	{Bone "japflamethrower"}
+	{Position 5.2915	0.2237	-0.0459}
+}
+{Volume "body"
+	{Box 13.629 5.34201 1.23277}
+	{Bone "japflamethrower"}
+	{Position 5.2915	0.1642	-0.0730}
+}

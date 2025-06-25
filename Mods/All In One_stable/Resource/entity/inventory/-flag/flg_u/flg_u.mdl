@@ -1,0 +1,32 @@
+{Skeleton
+	{animation
+		{sequence "flattern" {speed 1}}
+	}
+	{bone "mp_flag"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "flag_red.ply"}
+		{bone "handle"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				-0.0000	-1.0000	-0.0000
+				0.1111	0.3256	5.3296
+			}
+		}
+	}
+}
+{Volume "Select"
+	{Box 11.8612 3.3078 39.1637}
+	{Bone "mp_flag"}
+	{Position 5.5882	0.2911	19.5818}
+}
+{Volume "body"
+	{Cylinder 0.511401 39.3701}
+	{Bone "mp_flag"}
+	{Position -0.0027	0.2940	19.7085}
+}

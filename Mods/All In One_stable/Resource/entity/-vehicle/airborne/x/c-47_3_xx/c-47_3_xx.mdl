@@ -1,0 +1,118 @@
+;Exported by: Dinsen
+;Date:        Sat Feb 11 15:19:06 2012
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\c-47_3_xx.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_front"
+			{Position 50.0000	0.0000	-19.7751}
+			{bone "WingL1"
+				{parameters "ID=wingL1;"}
+				{Position -12.7706	130.1295	48.5806}
+				{VolumeView "WingL1.ply"}
+				{bone "WingL2"
+					{parameters "ID=WingL2;"}
+					{Position -14.5350	70.3746	9.7584}
+					{VolumeView "WingL2.ply"}
+					{bone "WingL3"
+						{parameters "ID=WingL3;"}
+						{Position -10.0916	40.5784	7.7233}
+						{VolumeView "WingL3.ply"}
+					}
+				}
+				{bone "retract_whelL"
+					{parameters "ID=retract_whelL;"}
+					{Position 56.7563	-74.2962	-11.9726}
+					{VolumeView "retract_whelL.ply"}
+				}
+				{bone "engine2"
+					{parameters "ID=engine2;"}
+					{Position 49.9014	-71.2764	-8.6378}
+					{VolumeView "engine2.ply"}
+					{bone "propeller2"
+						{parameters "ID=propeller2;"}
+						{Position 32.5221	-2.9279	1.0021}
+						{VolumeView "propeller2.ply"}
+					}
+				}
+			}
+			{bone "WingR1"
+				{parameters "ID=WingR1;"}
+				{Position -13.7619	-114.2455	47.7230}
+				{VolumeView "WingR1.ply"}
+				{bone "wingR2"
+					{parameters "ID=wingR2;"}
+					{Position -2.9170	-60.5391	5.4202}
+					{VolumeView "wingR2.ply"}
+					{bone "WingR3"
+						{parameters "ID=WingR3;"}
+						{Position -23.4150	-72.5198	13.7130}
+						{VolumeView "WingR3.ply"}
+					}
+				}
+				{bone "retract_whelR"
+					{parameters "ID=retract_whelR;"}
+					{Position 57.7475	58.7755	-11.1150}
+					{VolumeView "retract_whelR.ply"}
+				}
+				{bone "engine1"
+					{parameters "ID=engine1;"}
+					{Position 47.8353	59.3851	-6.6523}
+					{VolumeView "engine1.ply"}
+					{bone "propeller1"
+						{parameters "ID=propeller1;"}
+						{Position 35.5794	0.0100	0.4503}
+						{VolumeView "propeller1.ply"}
+					}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -151.0000	-0.0000	26.2249}
+			{bone "steer_back"
+				{parameters "ID=bodyback;"}
+				{Position 4.1736	0.6392	6.8532}
+				{VolumeView "steer_back.ply"}
+			}
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				1.0000	0.0000	-0.0044
+				0.0000	1.0000	0.0087
+				0.0044	-0.0087	1.0000
+				25.4532	18.4381	76.9875
+			}
+			{VolumeView "body.ply"}
+			{bone "bodyback"
+				{parameters "ID=bodyback;"}
+				{Matrix34
+					1.0000	0.0000	0.0044
+					0.0000	1.0000	-0.0087
+					-0.0044	0.0087	1.0000
+					-156.3198	-18.4667	-14.7203
+				}
+				{VolumeView "bodyback.ply"}
+				{bone "rudder"
+					{parameters "ID=bodyback;"}
+					{Position -57.4672	0.7616	24.7659}
+					{VolumeView "rudder.ply"}
+				}
+				{bone "elevator1"
+					{parameters "ID=bodyback;"}
+					{Position -63.8557	41.1239	-10.8189}
+					{VolumeView "elevator1.ply"}
+				}
+				{bone "elevator2"
+					{parameters "ID=bodyback;"}
+					{Position -63.3425	-47.8228	-10.1913}
+					{VolumeView "elevator2.ply"}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,137 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/spg_jagdtiger.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "-turret" "self_propelled" "huge"}
+
+	{sensor
+		{Visor "main"
+			{vision "Visor_CAY"}
+			{bone "visor1"}
+		}
+		{Visor "driver"
+			{vision "tank-driver"}
+			{bone "visor2"}
+		}
+		{visor "turret2"
+			{vision "tank-driver"}
+			{bone "visor3"}
+		}
+	}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 80 0.2
+			{front  250}
+			{bottom	40}
+			{top    40}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 80 0.2
+			{front  250}
+			{bottom	40}
+			{top    40}
+		}   
+	}
+	
+	("crew_4_human")
+	("seat_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+	{boarder
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "105mm_type6"}
+			{Mounted}
+			{weapon {ammo "ammo bullet105 ap" 1}}
+		}
+		{place "gun2"
+			{DefaultWeapon "37mm_type94_2"}
+			{Mounted}
+			{weapon {ammo "ammo bullet37 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "type99"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 30}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{item "ammo bullet105 ap" 24}
+			{item "ammo bullet105 fg" 9}
+			{item "ammo bullet37 ap" 46}
+			{item "ammo mgun" 600}
+		}
+	}
+
+	{mass 75000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed	15}
+			{StartTime	5}
+			{BrakeTime	0.5}
+			{StopTime	1}
+			{TurnRadius	7}
+			{TurnTime	6}
+			{TurnStart	3}
+			{TurnStop	0.8}
+			{Gears		0.2 0.3 0.5 0.7 1.0}
+			{RearGears	0.2 0.5}
+		}
+		{speed
+			{Slow	7}	; km/h
+			{Normal	10}
+			{Fast	15}
+		}
+		{FuelBag
+			{volume 500}	; liters
+			{rate   300}  	; liters per kilometer
+			{remain 500}
+			{fuel "fuel"}
+		}
+	}
+	{Extension "ho-ri.mdl"}
+
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_CAY"}
+				{bone "visor1"}
+			}
+			{Visor "driver"
+				{vision "tank-driver"}
+				{bone "visor2"}
+			}
+			{visor "turret2"
+				{vision "Visor_CAY"}
+				{bone "visor3"}
+			}
+		}
+	)
+}

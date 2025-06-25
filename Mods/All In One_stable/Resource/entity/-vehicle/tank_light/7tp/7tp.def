@@ -1,0 +1,105 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_t26.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "low"}
+	
+	{TexMods
+		{"variant1" "1"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	6}
+			{bottom	 6}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	 6}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{thickness 8
+			{front	17}
+                  {left 12}
+                  {right 12}
+
+		}
+	}
+
+	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(driver))
+	("crew_human" 			place(gunner)		door1(emit1) door2(emit2) visor(main))
+	("crew_human" 			place(charger)		door1(emit1) door2(emit2) visor(main))
+
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_A7"}
+			{Mounted}
+			{weapon {ammo "ammo bullet37 ap" 1}}
+
+		}
+		{place "mgun"
+			{DefaultWeapon "wz33"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 250}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 500}
+                  {item "ammo bullet37 ap" 32}
+		}
+	}
+	
+	{mass 10250}
+	
+      {Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+            {MaxSpeed 	    14}
+      }
+   {FuelBag
+          {volume 280 }	; liters
+	    {rate   200 }   	; liters per kilometer
+	    {remain 280 }
+          {fuel "fuel"}
+        }
+	}
+	{Extension "Vickers-B.mdl"}
+
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+	)
+
+}

@@ -1,0 +1,195 @@
+{mission
+	{Camera
+		{Position 2890.54 2572.76}
+		{Distance 1150}
+		{ViewAngle 0.632973}
+		{YawAngle 0.539769}
+	}
+	{Environment "day1_old"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "start_point" 0x8000
+		{Position 2000.8 4292.7 0}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "start_point" 0x8006
+		{Position 2000 4592.7 0}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "map_point" 0x8001
+		{Position 884.6 154.9 1.8}
+		{Turn 90}
+		{Extender "map_point"
+			{name "z"}
+			{caption "Common"}
+			{teams "z"}
+			{unitset "light"}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "start_point" 0x8005
+		{Position 2007.2 184.6 0}
+		{Turn 90}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "start_point" 0x800e
+		{Position 542.9 4563.7 0}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 15}
+	}
+	{Entity "start_point" 0x800f
+		{Position 200.1 4544.2 45.4}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 16}
+	}
+	{Entity "start_point" 0x8011
+		{Position 250.1 4544.2 45.4}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 18}
+	}
+	{Entity "map_point" 0x8003
+		{Position 300.1 4544.2 45.4}
+		{Turn -90}
+		{Extender "map_point"
+			{name "x"}
+			{visor "SpawnPoints"}
+			{teams "x"}
+			{unitset "light"}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "birds" 0x8004
+		{Position 3040.879883 4439.790039 -0.021118}
+		{Extender "speaker"
+			{SoundName "world.birds02"}
+		}
+	}
+	{Entity "birds" 0x8007
+		{Position 2150.709961 2137.929932 61.141201}
+	}
+	{Entity "birds" 0x800a
+		{Position 734.383972 2912.659912 0.000000}
+		{Extender "speaker"
+			{SoundName "world.nature"}
+		}
+	}
+	{Entity "birds" 0x800b
+		{Position 2491.659912 1625.640015 55.209801}
+		{Extender "speaker"
+			{SoundName "world.birds02"}
+		}
+	}
+	{Entity "birds" 0x8010
+		{Position 4886.470215 3098.659912 0.000000}
+		{Extender "speaker"
+			{SoundName "world.nature"}
+		}
+	}
+	{Entity "map_point" 0x8012
+		{Position 2832.15 3037.97 67}
+		{Extender "map_point"
+			{name "dm"}
+			{match "DeathMatch"}
+			{unitset "reg"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "start_point" 0x9000
+		{Position 2000.8 4292.7 0}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "start_point" 0x9001
+		{Position 1561.1 4614.3 0.2}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "start_point" 0x9002
+		{Position 540.9 4563.7 0}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "start_point" 0x9005
+		{Position 1119.6 272.4 29.8}
+		{Turn 90}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 19}
+	}
+	{Entity "start_point" 0x9006
+		{Position 784.6 154.9 1.8}
+		{Turn 90}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 20}
+	}
+	{Entity "start_point" 0x9007
+		{Position 2007.2 184.6 0}
+		{Turn 90}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 21}
+	}
+	{Helpers
+		{trigger "11111"
+			{actions
+				{"task"
+					{name "primary1"}
+				}
+			}
+		}
+		{waypoints}
+		}
+	{Players
+		{count 17}
+		{diplomacy 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1}
+	}
+	{MissionMusic "STOP"}
+}

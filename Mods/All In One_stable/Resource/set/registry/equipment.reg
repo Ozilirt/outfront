@@ -1,0 +1,1131 @@
+{equipment
+	(define "tank_equipment"
+		{mass "37 218"}
+		{holder_area_location "200 10"}
+		{holder_area_size "292 264"}
+	)
+	(define "car_equipment"
+		{mass "83 147"}
+		{holder_area_location "302 10"}
+		{holder_area_size "200 264"}
+	)
+	(define "cannon_equipment"
+		{mass "37 218"}
+		{holder_area_location "200 10"}
+		{holder_area_size "292 264"}
+	)
+	(define "moto_equipment"
+		{mass "37 218"}
+		{holder_area_location "200 10"}
+		{holder_area_size "292 264"}
+	)
+	{"human"
+		{bkg "/interface/scene/inventory/human/human_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/human/human_inventory_bkg.ebm"}
+			{location "5 325"}
+			{box_offset "17 56"}
+		}
+		{holder "head"
+			{view "/interface/scene/inventory/human/head.ebm"}
+			{location "126 24"}
+		}
+		{holder "body"
+			{view "/interface/scene/inventory/human/body.ebm"}
+			{location "104 62"}
+		}
+		{holder "hand_right"
+			{view "/interface/scene/inventory/human/hand_right.ebm"}
+			{location "89 142"}
+		}
+		{holder "hand_left"
+			{view "/interface/scene/inventory/human/hand_left.ebm"}
+			{location "148 165"}
+		}
+		{mass "83 15"}
+		{holder_area_location "10 10"}
+		{holder_area_size "272 315"}
+	}
+	{"tank"
+		{bkg "/interface/scene/inventory/tank/tank_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "275 106"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "342 162"}
+		}
+		("tank_equipment")
+	}
+	{"car"
+		{bkg "/interface/scene/inventory/car/car_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/car/car_inventory_bkg.ebm"}
+			{location "20 55"}
+			{box_offset "12 8"}
+		}
+		("car_equipment")
+	}
+	{"moto"
+		{bkg "/interface/scene/inventory/moto/moto_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/moto/moto_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "350 137"}
+		}
+		("moto_equipment")
+	}
+	{"box"
+		{inventory
+			{view "/interface/scene/inventory/box/box_inventory_bkg.ebm"}
+			{box_offset "15 12"}
+		}
+		{mass "86 221"}
+	}
+	{"truck_aa"
+		{bkg "/interface/scene/inventory/car/car_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "227 110"}
+		}
+		("tank_equipment")
+	}
+	{"buldozer"
+		{bkg "/interface/scene/inventory/car/bulldozer_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/car/car_inventory_bkg.ebm"}
+			{location "20 55"}
+			{box_offset "12 8"}
+		}
+		("car_equipment")
+	}
+	{"cannon"
+		{bkg "/interface/scene/inventory/cannon/cannon_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/moto/moto_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "222 108"}
+		}
+		("cannon_equipment")
+	}
+	{"maxim_2"
+		{bkg "/interface/scene/inventory/cannon/cannon_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/moto/moto_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "252 105"}
+		}
+		("cannon_equipment")
+	}
+	{"t-38"
+		{bkg "/interface/scene/inventory/tank/T-38_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "280 74"}
+		}
+		("tank_equipment")
+	}
+	{"t-40"
+		{bkg "/interface/scene/inventory/tank/T-60_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"} 
+			{location "16 23"} 
+			{box_offset "12 7"} 
+		} 
+		{holder "mgun" 
+			{view "/interface/scene/inventory/tank/mgun.ebm"} 
+			{location "287 110"} 
+		} 
+		{holder "mgun2"
+			{view "/interface/scene/inventory/tank/mgun.ebm"} 
+			{location "270 60"} 
+		} 
+		("tank_equipment")
+	}
+	{"t-60"
+		{bkg "/interface/scene/inventory/tank/T-60_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "265 98"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "270 70"}
+		}
+		("tank_equipment")
+	}
+	{"pz-1b"
+		{bkg "/interface/scene/inventory/tank/pz-1b_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "291 131"}
+		}
+		("tank_equipment")
+	}
+	{"ft17"
+		{bkg "/interface/scene/inventory/tank/ft17_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "304 124"}
+		}
+		("tank_equipment")
+	}
+	{"ft17-31"
+		{bkg "/interface/scene/inventory/tank/ft17_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "291 131"}
+		}
+		("tank_equipment")
+	}
+	{"pz-2f"
+		{bkg "/interface/scene/inventory/tank/pz-2f_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "283 74"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "312 128"}
+		}
+		("tank_equipment")
+	}
+	{"pz-5"
+		{bkg "/interface/scene/inventory/tank/pz-5_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "256 111"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "352 147"}
+		}
+		("tank_equipment")
+	}
+	{"pz-6"
+		{bkg "/interface/scene/inventory/tank/pz-6_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "251 114"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "330 149"}
+		}
+		("tank_equipment")
+	}
+	{"pz-6b"
+		{bkg "/interface/scene/inventory/tank/pz-6b_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "265 110"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "353 145"}
+		}
+		("tank_equipment")
+	}
+	{"ferdinand"
+		{bkg "/interface/scene/inventory/tank/ferdinand_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "189 111"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "345 146"}
+		}
+		("tank_equipment")
+	}
+	{"hummel"
+		{bkg "/interface/scene/inventory/tank/hummel_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "203 108"}
+		}
+		("tank_equipment")
+	}
+	{"nashorn"
+		{bkg "/interface/scene/inventory/tank/hummel_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "203 108"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "345 146"}
+		}
+		("tank_equipment")
+	}
+	{"isu-122"
+		{bkg "/interface/scene/inventory/tank/isu-152_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "304 124"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "299 74"}
+		}
+		("tank_equipment")
+	}
+	{"isu-152"
+		{bkg "/interface/scene/inventory/tank/isu-152_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "304 124"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "299 74"}
+		}
+		("tank_equipment")
+	}
+	{"su-152"
+		{bkg "/interface/scene/inventory/tank/isu-152_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "304 124"}
+		}
+		("tank_equipment")
+	}
+	{"su-100"
+		{bkg "/interface/scene/inventory/tank/su-100_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "304 124"}
+		}
+		("tank_equipment")
+	}
+	{"jugdpanther"
+		{bkg "/interface/scene/inventory/tank/jugdpanther_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "279 114"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "326 164"}
+		}
+		("tank_equipment")
+	}
+	{"jagdtiger"
+		{bkg "/interface/scene/inventory/tank/jagdtiger_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "304 108"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "300 60"}
+		}
+		("tank_equipment")
+	}
+	{"bergepz"
+		{bkg "/interface/scene/inventory/tank/jugdpanther_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg_1.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "279 114"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "326 164"}
+		}
+		("tank_equipment")
+	}
+	{"stug"
+		{bkg "/interface/scene/inventory/tank/stug_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "286 118"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "255 172"}
+		}
+		("tank_equipment")
+	}
+	{"su76m"
+		{bkg "/interface/scene/inventory/tank/stug_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "286 118"}
+		}
+		("tank_equipment")
+	}
+	{"m4"
+		{bkg "/interface/scene/inventory/tank/m4_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "277 109"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "371 151"}
+		}
+		("tank_equipment")
+	}
+	{"m5"
+		{bkg "/interface/scene/inventory/tank/m4_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "277 109"}
+		}
+		("tank_equipment")
+	}
+	{"m4a3mineexpl"
+		{bkg "/interface/scene/inventory/tank/m4_min_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		("tank_equipment")
+	}
+	{"minenraumpanzer"
+		{bkg "/interface/scene/inventory/tank/pz4d_min_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		("tank_equipment")
+	}
+	{"t-34mineexpl"
+		{bkg "/interface/scene/inventory/tank/t34_min_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		("tank_equipment")
+	}
+	{"cromwell"
+		{bkg "/interface/scene/inventory/tank/cromwell_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "304 114"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "390 84"}
+		}
+		("tank_equipment")
+	}
+      {"Star"
+		{bkg "/interface/scene/inventory/tank/Star_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "304 114"}
+		}
+		("tank_equipment")
+	}
+	{"matilda"
+		{bkg "/interface/scene/inventory/tank/matilda_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "316 113"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "319 154"}
+		}
+		("tank_equipment")
+	}
+	{"kv-1"
+		{bkg "/interface/scene/inventory/tank/kv-1_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "287 105"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "382 76"}
+		}
+		("tank_equipment")
+	}
+	{"t-34-76-41"
+		{bkg "/interface/scene/inventory/tank/t-34-76-41_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "293 110"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "362 153"}
+		}
+		("tank_equipment")
+	}
+	{"bt-7"
+		{bkg "/interface/scene/inventory/tank/bt-7_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+			{mass "45 240"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "305 109"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "309 153"}
+		}
+		("tank_equipment")
+	}
+	{"t-26"
+		{bkg "/interface/scene/inventory/tank/t26_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "288 96"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "313 150"}
+		}
+		("tank_equipment")
+	}
+	{"7tpw" 
+		{bkg "/interface/scene/inventory/tank/t-26-2_bkg.ebm"} 
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"} 
+			{location "16 23"} 
+			{box_offset "12 7"} 
+		} 
+		{holder "mgun" 
+			{view "/interface/scene/inventory/tank/mgun.ebm"} 
+			{location "287 70"} 
+		} 
+		{holder "mgun2"
+			{view "/interface/scene/inventory/tank/mgun.ebm"} 
+			{location "287 155"} 
+		} 
+		("tank_equipment") 
+	} 
+	{"SdKfz234"
+		{bkg "/interface/scene/inventory/tank/puma_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "296 111"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "312 159"}
+		}
+		("tank_equipment")
+	}
+	{"M8Grayhound"
+		{bkg "/interface/scene/inventory/tank/puma_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "296 111"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "312 159"}
+		}
+		("tank_equipment")
+	}
+	{"m7priest"
+		{bkg "/interface/scene/inventory/tank/m7priest_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "268 124"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "311 181"}
+		}
+		("tank_equipment")
+	}
+	{"priest_kangaroo"
+		{bkg "/interface/scene/inventory/tank/m7priest_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "311 181"}
+		}
+		("tank_equipment")
+	}
+	{"m8-scott"
+		{bkg "/interface/scene/inventory/tank/m8scott_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "291 109"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "219 146"}
+		}
+		("tank_equipment")
+	}
+	{"mkivchurchill"
+		{bkg "/interface/scene/inventory/tank/churchill_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "266 113"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "299 74"}
+		}
+		("tank_equipment")
+	}
+	{"mk3crusader"
+		{bkg "/interface/scene/inventory/tank/crusader_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "266 111"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "342 162"}
+		}
+		("tank_equipment")
+	}
+	{"mk4crusader"
+		{bkg "/interface/scene/inventory/tank/crusader_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "266 111"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "299 74"}
+		}
+		("tank_equipment")
+	}
+	{"kv-85"
+		{bkg "/interface/scene/inventory/tank/kv-85_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "266 110"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "299 74"}
+		}
+		("tank_equipment")
+	}
+	{"m26pershing"
+		{bkg "/interface/scene/inventory/tank/pershing_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "266 109"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "299 74"}
+		}
+		("tank_equipment")
+	}
+	{"m10achilles"
+		{bkg "/interface/scene/inventory/tank/slagger_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "206 109"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "299 74"}
+		}
+		("tank_equipment")
+	}
+	{"panzerflak"
+		{bkg "/interface/scene/inventory/tank/panzerflak_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "233 102"}
+		}
+		("tank_equipment")
+	}
+	{"wz-34"
+		{bkg "/interface/scene/inventory/tank/sdkfz250_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "227 110"}
+		}
+		("tank_equipment")
+	}
+	{"sdkfz-223"
+		{bkg "/interface/scene/inventory/tank/sdkfz223_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "270 112"}
+		}
+		("tank_equipment")
+	}
+	{"sdkfz-222"
+		{bkg "/interface/scene/inventory/tank/sdkfz223_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "270 120"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "270 80"}
+		}
+		("tank_equipment")
+	}
+	{"sdkfz251"
+		{bkg "/interface/scene/inventory/tank/sdkfz251_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "233 112"}
+		}
+		("tank_equipment")
+	}
+	{"sdkfz250"
+		{bkg "/interface/scene/inventory/tank/sdkfz250_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "227 110"}
+		}
+		("tank_equipment")
+	}
+	{"panzerwerfer42"
+		{bkg "/interface/scene/inventory/tank/sdkfz250_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "227 110"}
+		}
+		("tank_equipment")
+	}
+	{"arm_car_m3"
+		{bkg "/interface/scene/inventory/tank/m3_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "238 174"}
+		}
+		("tank_equipment")
+	}
+	{"willysmb"
+		{bkg "/interface/scene/inventory/car/willys_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "232 116"}
+		}
+		{mass "37 218"}
+		{holder_area_location "200 10"}
+		{holder_area_size "292 264"}
+	}
+	{"jeep"
+		{bkg "/interface/scene/inventory/car/jeep_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{mass "37 218"}
+		("car_equipment")
+	}
+	{"dodgewc56"
+		{bkg "/interface/scene/inventory/car/dodge_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/car/car_inventory_bkg.ebm"}
+			{location "20 55"}
+			{box_offset "12 8"}
+		}
+		("car_equipment")
+	}
+	{"gazmg"
+		{bkg "/interface/scene/inventory/car/dodge_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "230 152"}
+		}
+		("tank_equipment")
+	}
+	{"kubel"
+		{bkg "/interface/scene/inventory/car/kubelwagn_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/car/car_inventory_bkg.ebm"}
+			{location "20 55"}
+			{box_offset "12 8"}
+		}
+		("car_equipment")
+	}
+	{"kubelmg"
+		{bkg "/interface/scene/inventory/car/kubelwagn_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "310 152"}
+		}
+		("tank_equipment")
+	}
+      {"Carrier"
+		{bkg "/interface/scene/inventory/tank/Carrier_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg_1.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "312 109"}
+		}
+		("tank_equipment")
+	}
+      {"GunCarrier"
+		{bkg "/interface/scene/inventory/tank/Carrier_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "212 110"}
+		}
+		("tank_equipment")
+	}
+      {"t-20"
+		{bkg "/interface/scene/inventory/tank/t-20_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg_1.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "340 150"}
+		}
+		("tank_equipment")
+	}
+      {"zis-30"
+		{bkg "/interface/scene/inventory/tank/t-20_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "227 110"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "340 150"}
+		}
+		("tank_equipment")
+	}
+	{"flak41"
+		{bkg "/interface/scene/inventory/cannon/flak41_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/moto/moto_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "gun"
+			{view "/interface/scene/inventory/tank/gun.ebm"}
+			{location "182 107"}
+		}
+		("cannon_equipment")
+	}
+	{"flak-38-1"
+		{bkg "/interface/scene/inventory/cannon/flak38_1_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/moto/moto_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		("cannon_equipment")
+	}
+	{"flak38"
+		{bkg "/interface/scene/inventory/cannon/flak38_4_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/moto/moto_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		("cannon_equipment")
+	}
+	{"nebelwerfer41"
+		{bkg "/interface/scene/inventory/cannon/nebelwerfer41_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/moto/moto_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		("cannon_equipment")
+	}
+}

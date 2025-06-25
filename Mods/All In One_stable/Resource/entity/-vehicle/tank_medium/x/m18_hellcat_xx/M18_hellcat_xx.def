@@ -1,0 +1,17 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	{obstacleId "tank"}
+	{volume "body"
+		{component "body"}
+		{tags "body"}
+		{thickness 50
+			{front  75}
+		}   
+	}
+	{volume "turret"
+		{thickness 50 0.3
+			{front  75}
+		}
+	}
+	{Extension "M18_hellcat_xx.mdl"}
+}

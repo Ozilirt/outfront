@@ -1,0 +1,52 @@
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Position 16.1204	-0.0236	10.3724}
+			{VolumeView "body.ply"}
+				{bone "cabin"
+					{parameters "CommonMesh;ID=cabin;"}
+					{Position 29.0008	0.0211	21.2304}
+					{VolumeView "cabin.ply"}
+					{bone revolute "projector1"
+						{Matrix34
+							-0.9397	0.0000	-0.3420
+							0.0000	-1.0000	0.0000
+							-0.3420	0.0000	0.9397
+							-0.2748	0.2646	66.4008
+						}
+						{VolumeView "projector1.ply"}
+					}
+				}
+				{bone revolute "attach_gun2"
+					{Position -42.9207	0.0451	25.3089}
+					{VolumeView "attach_gun2.ply"}
+				}
+				{bone "body_rear"
+					{parameters "ID=body_rear;"}
+					{Position -158.4923	0.0211	2.4557}
+					{VolumeView "body_rear.ply"}
+				}
+				{bone "body_front"
+					{parameters "ID=body_front;"}
+					{Position 141.7149	0.0000	2.6763}
+					{VolumeView "body_front.ply"}
+						{bone revolute "attach_gun1"
+							{Position -36.3258	0.0211	18.6270}
+							{VolumeView "attach_gun1.ply"}
+						}
+					{bone revolute "FX_exp4"
+						{limits -2.0000 2.0000}
+						{Position -48.8354	0.0211	5.1806}
+					}
+				}
+		}
+		{bone "volume_holder"
+		}
+	}
+}

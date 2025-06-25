@@ -1,0 +1,99 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "with_gun"}
+
+	{extension "crew.ext"}
+	{TexMods
+		{"early" "1"}
+	}
+
+	{volume "body"
+		{thickness 15}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 15
+		    {front 15}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_kwk38"}
+			{RestoreIKAfterAim}
+			{Mounted}
+                  {weapon {ammo "ammo bullet20 ap" 48}}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 800}
+		      {item "ammo bullet20 ap" 480}
+		}
+	}
+	{sensor
+		{Visor "crew"
+		      {vision "Visor_BTR"}
+		}  
+	}
+   
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+	("wheel" args "wheelright4")
+	("wheel" args "wheelleft4")
+
+	{mass 5000}
+	{Chassis
+		{speed
+				{Slow	15	}
+				{Normal	20	}
+				{Fast	35	}
+			}
+	{FuelBag
+          {volume 240 }	; liters
+	    {rate    50 }   	; liters per kilometer
+	    {remain 240 }
+          {fuel "fuel"}
+        }
+
+		{Locomotion ("locomotion")
+			{Maxspeed 35}
+			{StartTime	4}		; время разгона до макс. скорости с 0, seconds
+		}
+	}
+	{Extension "SdKfz232.mdl"}
+}
+ 

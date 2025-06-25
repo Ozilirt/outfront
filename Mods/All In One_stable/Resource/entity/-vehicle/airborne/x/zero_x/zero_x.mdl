@@ -1,0 +1,177 @@
+;Exported by: Dinsen y Albus
+;Date:  Ago 2010      
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=45;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	-1.0000	0.0000
+				-9.7981	0.9260	21.0000
+			}
+			{VolumeView "body.ply"}
+			{bone "body_back"
+				{parameters "ID=body_back;"}
+				{Matrix34
+					0.9999	0.0015	-0.0131
+					-0.0016	1.0000	-0.0063
+					0.0131	0.0063	0.9999
+					-49.1000	-4.7902	-1.7818
+				}
+				{VolumeView "body_back.ply"}
+				{bone "rudder"
+					{parameters "ID=body_back;"}
+					{Matrix34
+						0.9999	-0.0092	-0.0115
+						0.0091	0.9999	-0.0119
+						0.0116	0.0118	0.9999
+						3.6627	-3.6773	-0.9649
+					}
+					{VolumeView "rudder.ply"}
+				}
+				{bone "elevator2"
+					{parameters "ID=body_back;"}
+					{Matrix34
+						0.9999	-0.0116	0.0000
+						0.0116	0.9999	0.0000
+						0.0000	0.0000	1.0000
+						16.8019	0.8157	-3.8010
+					}
+					{VolumeView "elevator2.ply"}
+				}
+				{bone "elevator1"
+					{parameters "ID=body_back;"}
+					{Matrix34
+						0.9999	-0.0116	0.0000
+						0.0116	0.9999	0.0000
+						0.0000	0.0000	1.0000
+						15.7400	0.5342	2.1017
+					}
+					{VolumeView "elevator1.ply"}
+				}
+				{bone "support3"
+					{Position -50.2683	-22.7256	0.0627}
+				}
+			}
+			{bone "cabine"
+				{parameters "CommonMesh;ID=cabine;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					2.0000	6.0946	0.0000
+				}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Matrix34
+					1.0000	0.0028	0.0000
+					-0.0028	1.0000	0.0000
+					0.0000	0.0000	1.0000
+					-4.0036	1.2888	0.0000
+				}
+				{VolumeView "engine.ply"}
+				{bone "propeller_work"
+					{parameters "ID=propeller;"}
+					{Matrix34
+						0.0000	0.0000	-1.0000
+						-0.0518	0.9986	0.0000
+						0.9986	0.0518	0.0000
+						65.0000	-5.0000	0.0000
+					}
+					{VolumeView "propeller_work.ply"}
+					{visibility 0}
+				}
+				{bone revolute "propeller"
+					{parameters "CommonMesh;ID=propeller;"}
+					{Matrix34
+						-0.0650	0.7971	-0.6000
+						-0.0300	0.5993	0.8000
+						0.9972	0.0709	-0.0153
+						67.0000	-5.0000	-0.5000
+					}
+					{VolumeView "propeller.ply"}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -84.0175	-0.4164	-1.1648}
+		}
+		{bone "pivot_front"
+			{Position 31.4362 -0.2851 -9.6785}
+			{bone "wingL1"
+				{parameters "ID=wingleft;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					-56.0135	-6.3113	30.2000
+				}
+				{VolumeView "wingL1.ply"}
+				{bone "flap1"
+					{parameters "ID=wingleft;"}
+					{Position 0.0000	0.0000	0.0000}
+					{VolumeView "flap1.ply"}
+				}
+				{bone revolute "retract_wheelL"
+					{parameters "ID=retract_wheelL;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	1.0000	0.0000
+						0.0000	0.0000	1.0000
+						44.8899	-37.3781	-40.6455
+					}
+					{VolumeView "retract_wheelL.ply"}
+					{bone "support2"
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	-1.0000	0.0000
+							0.0000	0.0000	1.0000
+							0.0000	-4.3000	0.0000
+						}
+					}
+				}
+			}
+			{bone "wingR1"
+				{parameters "ID=wingright;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					-59.9183	5.9267	30.7500
+				}
+				{VolumeView "wingR1.ply"}
+				{bone "flap2"
+					{parameters "ID=wingright;"}
+					{Position 0.0000	0.0000	0.0000}
+					{VolumeView "flap2.ply"}
+				}
+				{bone revolute "retract_wheelR"
+					{parameters "ID=retract_wheelR;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	1.0000	0.0000
+						0.0000	0.0000	1.0000
+						48.7000	-38.3500	35.0000
+					}
+					{VolumeView "retract_wheelR.ply"}
+					{bone "support1"
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	-1.0000	0.0000
+							0.0000	0.0000	1.0000
+							0.0000	-3.9000	0.0000
+						}
+					}
+				}
+			}
+		}
+	}
+}

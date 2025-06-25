@@ -1,0 +1,138 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.45))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	(include "/properties/dummy_fsm2.inc")
+	{Extension "radar_sq.mdl"}
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+	{sensor
+		{Visor "aa"
+			{vision "type96"}
+			{bone "visor"}
+		}
+	}
+	{props "vehicle" "cannon" "turret"}
+	{Volume "body"
+		{Thickness 50}
+		{tags "body"}
+		{component "body"}
+		{able {visible 0}}
+	}
+	{Volume "turret"
+		{Tags  "turret"}
+		{component "turret"}
+		{Thickness 50}
+	}
+	{Volume "Box14"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box13"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box12"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box11"
+		{Tags  "body"}
+		{component "body"}
+		{able {visible 0}}
+	}
+	{Volume "Box10"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box09"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box08"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box07"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box06"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box05"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box04"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box03"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box02"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Box01"
+		{Tags  "body"}
+		{component "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{component "body"
+		{RepairTime 50}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "gun"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+	("crew_gunner")
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "searchlight"}
+			{Mounted}
+		}
+	}
+	{extender "inventory"		
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon searchlight"}
+		}
+		{box
+			{size 8 6}
+		}
+	}
+	{mass 10000}
+}

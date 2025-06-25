@@ -1,0 +1,24 @@
+; By Albus 2012
+{Skeleton
+	{bone "stuff6"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "stuff6.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.142456 -0.11972}
+		{Extent 8.6360 5.4374}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 17.0017 10.7789 6.25611}
+	{Bone "stuff6"}
+	{Position 0.1425	0.1197	3.0727}
+}

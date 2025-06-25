@@ -1,0 +1,87 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "-turret" "self_propelled"}
+	{extension "crew.ext"}
+	{TexMods
+		{"winter" "1"}
+		{"desert" "2"}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 20
+			{front  30}
+			{rear	10}
+		}
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 20
+			{front  30}
+			{rear	10}
+		}
+	}
+	{volume "body3"
+		{component "body"}
+		{tags "body"}
+		{thickness 20
+			{front  30}
+			{rear	10}
+		}
+	}
+	{volume "gun"
+		{thickness 9}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mm_pak40"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 ap" 1}}
+		}
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+ 	 		{item "ammo bullet75 ap" 26}
+			{item "ammo mgun" 300}
+			{item "plant" 3}
+		}
+	}
+	
+	{mass 13500}
+	{Chassis
+		{speed
+			{Slow	9}	; km/h
+			{Normal	15}
+			{Fast	21}
+		}
+		{Locomotion ("locomotion")
+			{MaxSpeed 21}
+		}
+		{FuelBag
+			{volume 310} ; liters
+			{rate   175} ; liters per kilometer
+			{remain 310}
+			{fuel "fuel"}
+          	}
+	}
+	{Extension "marder3m.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_CAY"}
+			}
+		}
+	)
+}

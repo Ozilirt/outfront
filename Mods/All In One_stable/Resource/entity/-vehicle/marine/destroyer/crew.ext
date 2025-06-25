@@ -1,0 +1,151 @@
+;SDL
+
+{Placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "commander"
+		{Group "crew"}	
+		{LinkBone "commander"}	
+		{turnoff {sensor} {shadow} {visible}}
+		{worker charger}
+	}
+	{place "passenger1"
+		{Group "crew"}	
+		{LinkBone "passenger1"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}	
+	{place "passenger2"
+		{Group "crew"}	
+		{LinkBone "passenger2"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}	
+	{place "passenger3"
+		{Group "crew"}	
+		{LinkBone "passenger3"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "passenger4"
+		{Group "crew"}	
+		{LinkBone "passenger4"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}	
+	{place "passenger5"
+		{Group "crew"}	
+		{LinkBone "passenger5"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}	
+	{place "passenger6"
+		{Group "crew"}	
+		{LinkBone "passenger6"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "passenger7"
+		{Group "crew"}	
+		{LinkBone "passenger7"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "passenger8"
+		{Group "crew"}	
+		{LinkBone "passenger8"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "front"
+		{entity "gun75"}
+		{Linkbone "attach_gun1"}
+		{handlebone "no"}
+	}
+	{place "rear"
+		{entity "gun75"}
+		{Linkbone "attach_gun2"}
+		{handlebone "no"}
+	}
+	{place "center"
+		{entity "flak38s"}
+		{Linkbone "attach_gun3"}
+		{handlebone "no"}
+	}
+	{place "mg1"
+		{entity "mg34_ship"}
+		{Linkbone "attach_mg1"}
+		{handlebone "no"}
+	}
+	{place "mg2"
+		{entity "mg34_ship"}
+		{Linkbone "attach_mg2"}
+		{handlebone "no"}
+	}
+	{place "mg3"
+		{entity "mg34_ship"}
+		{Linkbone "attach_mg3"}
+		{handlebone "no"}
+	}
+	{place "mg4"
+		{entity "mg34_ship"}
+		{Linkbone "attach_mg4"}
+		{handlebone "no"}
+	}
+	{place "light"
+		{entity "searchlight"}
+		{Linkbone "attach_light"}
+		{handlebone "no"}
+	}
+}
+
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit4"}
+	{door "emit5"}
+	{door "emit6"}
+	{door "emit7"}
+	{door "emit8"}
+	{door "emit9"}
+	{door "emit0"}
+	{door "emita"}
+	{door "emitb"}
+	{door "emitx"}
+	{door "emitz"}
+
+	{anm "seat" {forward {end "seat_passenger"}}}
+
+	{link "emitx"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"commander"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"commander"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger1"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger2"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger3"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger4"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger5"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger6"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger7"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger8"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"passenger1"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"passenger2"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"passenger3"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"passenger4"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"passenger5"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"passenger6"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"passenger7"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitz"	"passenger8"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit1"	"front"		{forward putoff} {reverse puton}}
+	{link "emit2"	"front"		{forward putoff} {reverse puton}}
+	{link "emit3"	"rear"		{forward putoff} {reverse puton}}
+	{link "emit4"	"rear"		{forward putoff} {reverse puton}}
+	{link "emit5"	"center"		{forward putoff} {reverse puton}}
+	{link "emit6"	"center"		{forward putoff} {reverse puton}}
+	{link "emita"	"light"		{forward putoff} {reverse puton}}
+	{link "emitb"	"light"		{forward putoff} {reverse puton}}
+	{link "emit8"	"mg1"		{forward putoff} {reverse puton}}
+	{link "emit0"	"mg1"		{forward putoff} {reverse puton}}
+	{link "emit7"	"mg2"		{forward putoff} {reverse puton}}
+	{link "emit9"	"mg2"		{forward putoff} {reverse puton}}
+	{link "emit0"	"mg3"		{forward putoff} {reverse puton}}
+	{link "emit8"	"mg3"		{forward putoff} {reverse puton}}
+	{link "emit7"	"mg4"		{forward putoff} {reverse puton}}
+	{link "emit9"	"mg4"		{forward putoff} {reverse puton}}
+}

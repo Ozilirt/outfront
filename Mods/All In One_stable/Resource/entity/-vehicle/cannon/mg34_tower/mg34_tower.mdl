@@ -1,0 +1,54 @@
+;Exported by: garry
+;Date:        Mon Nov 24 11:49:11 2003
+;File:        D:\-Projects-\-3DWork-\Model\soldiers\weapons\mg34_tower.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "stan"
+			{Position 0.4145	2.2698	6.6575}
+			{VolumeView "stan.ply"}
+			{bone revolute "turret"
+				{speed 0.0400}
+				{Position -0.7799	-2.2699	15.6399}
+				{bone revolute "gun_rot"
+					{limits -40.0000 15.0000}
+					{speed 0.0500}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						-0.0000	-0.0000	1.0000
+						0.0000	-1.0000	-0.0000
+						-0.0189	-0.0206	-0.0984
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "mgun"
+						{Position -1.9409	2.3593	-0.0328}
+					}
+				}
+				{bone "visor"
+					{Position 2.8471	0.0085	10.1588}
+				}
+				{bone "gunner"
+					{Matrix34
+						1.0000	-0.0000	-0.0013
+						0.0000	1.0000	0.0001
+						0.0013	-0.0001	1.0000
+						-13.8819	-0.2251	-21.7290
+					}
+				}
+			}
+		}
+		{bone "emit"
+			{Position -23.4876	-0.0254	0.0000}
+			{visibility 0}
+		}
+	}
+}
+{Volume "body"
+	{Box 4.17742 3.36232 19.9905}
+	{Bone "stan"}
+	{Position -1.4806	-2.3208	3.3378}
+}

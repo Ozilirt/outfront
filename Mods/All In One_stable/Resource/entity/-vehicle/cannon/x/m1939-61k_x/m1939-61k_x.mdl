@@ -1,0 +1,52 @@
+;Modified by: Albus
+;Date:        Tue May 27 23:36:52 2008
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{animation
+				{sequence "break" {file "body_b.anm"}}
+			}
+			{Position -6.6957	-0.6105	-1.7403}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=Turret;"}
+				{speed 0.0150}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	1.0000
+					 -0.5486	-0.0001	9.8189
+				}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{limits -20.0000 50.0000}
+					{speed 0.0200}
+					{Matrix34
+						0.9997	0.0000	0.0207
+						-0.0207	-0.0000	0.9997
+						0.0000	-1.0000	-0.0000
+						-2.7654	-1.0351	17.8147
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							-0.0000	-0.0000	-1.0000
+							-0.0000	1.0000	-0.0000
+							1.0000	-0.0000	-0.0000
+							-5.6957	-0.0000	0.0000
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}

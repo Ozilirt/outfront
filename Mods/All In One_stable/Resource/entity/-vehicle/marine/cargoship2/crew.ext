@@ -1,0 +1,41 @@
+;SDL
+{placer
+	{place "1"
+		{entity "naval_105"}
+		{Linkbone "front"}
+		{handlebone "no"}
+	}
+	{place "2"
+		{entity "mg_cab"}
+		{Linkbone "rear1"}
+		{handlebone "no"}
+	}
+	{place "3"
+		{entity "vickers_ship"}
+		{Linkbone "rear2"}
+		{handlebone "no"}
+	}
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+}
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit4"}
+	{door "emit5"}
+	{door "emit6"}
+
+	{anm "seat" {forward {end "seat_passenger"}}}
+
+	{link "emit1"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit2"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+
+	{link "emit3"	"1"		{forward putoff} {reverse puton}}
+	{link "emit5"	"1"		{forward putoff} {reverse puton}}
+	{link "emit4"	"3"		{forward putoff} {reverse puton}}
+	{link "emit6"	"3"		{forward putoff} {reverse puton}}
+}

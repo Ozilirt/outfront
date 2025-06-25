@@ -1,0 +1,30 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	{obstacleId "tank"}
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 45
+			{top	20}
+			{bottom	20}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 45
+			{top	20}
+			{bottom	20}
+		}
+	}
+	{volume "turret"
+		{thickness 47 0.3
+			{front  52}
+		}
+	}
+	{Extension "valentine_xx.mdl"}
+}

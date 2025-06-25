@@ -1,0 +1,40 @@
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{parameters "ID=Turret;"}
+			{speed 0.0100}
+			{Position 0.1442	0.2318	-0.0225}
+			{VolumeView "turret.ply"}
+			{bone revolute "Gun_rot"
+				{parameters "ID=Turret;"}
+				{limits -5.0000 25.0000}
+				{speed 0.0100}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					0.0273	-0.1610	30.6081
+				}
+				{VolumeView "Gun_rot.ply"}
+				{bone "Gun"
+					{parameters "ID=Turret;"}
+					{Position -9.1055	0.4582	-0.0000}
+					{VolumeView "Gun.ply"}
+				}
+			}
+		}
+	}
+}
+{Obstacle "obstacle"
+	{Obb2
+		{Center -2.4991 -0.4144}
+		{Extent 28.4210 25.0562}
+		{Axis 1 0}
+	}
+	{Rotate}
+}

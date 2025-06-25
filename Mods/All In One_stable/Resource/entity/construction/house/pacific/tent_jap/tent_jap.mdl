@@ -1,0 +1,202 @@
+;Exported by: Dinsen
+;Date:        Thu Feb 16 20:17:04 2012
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\tienda_jap1ani.max
+{Skeleton
+	{animation
+		{sequence "crush"}
+	}
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "palos"
+			{Position 0.1447	-0.0377	0.3291}
+			{VolumeView "palos.ply"}
+		}
+		{bone "cable1"
+			{Position 41.5241	-93.5074	1.4193}
+			{VolumeView "cable1.ply"}
+		}
+		{bone "cable2"
+			{Position 103.7301	-45.4365	0.9393}
+			{VolumeView "cable2.ply"}
+		}
+		{bone "cable3"
+			{Position -40.1691	-87.5992	1.1669}
+			{VolumeView "cable3.ply"}
+		}
+		{bone "cable4"
+			{Position -88.9511	-38.8698	1.4678}
+			{VolumeView "cable4.ply"}
+		}
+		{bone "cable5"
+			{Position -88.6933	33.4816	0.5861}
+			{VolumeView "cable5.ply"}
+		}
+		{bone "cable6"
+			{Position -35.9877	81.3705	2.3970}
+			{VolumeView "cable6.ply"}
+		}
+		{bone "cable7"
+			{Position 35.6470	77.5557	1.4657}
+			{VolumeView "cable7.ply"}
+		}
+		{bone "cable8"
+			{Position 102.7624	44.8313	1.4723}
+			{VolumeView "cable8.ply"}
+		}
+		{bone "Exterior"
+			{VolumeView "Exterior.ply"}
+		}
+		{bone "suport"
+			{Position 0.1447	-0.0377	0.3291}
+			{VolumeView "suport.ply"}
+		}
+	}
+}
+{Obstacle "Box07"
+	{Obb2
+		{Center -35.847 36.3251}
+		{Extent 23.8833 7.55988}
+		{Axis 0.694951 0.719057}
+	}
+	{Rotate}
+}
+{Obstacle "Box06"
+	{Obb2
+		{Center -35.847 -34.9573}
+		{Extent 7.57865 23.8862}
+		{Axis 0.71961 0.694378}
+	}
+	{Rotate}
+}
+{Obstacle "Box05"
+	{Obb2
+		{Center -50.5974 1.29769}
+		{Extent 7.88674 23.8511}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box04"
+	{Obb2
+		{Center 46.4923 -37.5961}
+		{Extent 31.1793 6.57993}
+		{Axis 0.883064 0.469253}
+	}
+	{Rotate}
+}
+{Obstacle "Box02"
+	{Obb2
+		{Center 0.151745 50.5237}
+		{Extent 25.4074 5.65876}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box01"
+	{Obb2
+		{Center 46.4923 36.8317}
+		{Extent 6.57896 31.1791}
+		{Axis 0.454487 0.890753}
+	}
+	{Rotate}
+}
+{Obstacle "Box03"
+	{Obb2
+		{Center 0.151745 -51.1667}
+		{Extent 25.4074 6.89352}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Circle2
+		{Radius 57.2417}
+		{Center 4.15258 0.4199}
+	}
+	{Rotate}
+}
+{Volume "Box07"
+	{Box 12.4894 8.03191 1.06383}
+	{Bone "body"}
+	{Matrix34
+		2.6454	-2.7277	0.0377
+		0.9839	1.0030	3.5307
+		2.5443	2.4482	-1.4045
+		-35.8470	-36.3251	15.9046
+	}
+}
+{Volume "Box06"
+	{Box 12.4894 8.03191 1.06383}
+	{Bone "body"}
+	{Matrix34
+		2.6454	2.7277	0.0377
+		0.9839	-1.0030	3.5307
+		2.5443	-2.4482	-1.4045
+		-35.8470	34.9573	15.9046
+	}
+}
+{Volume "Box05"
+	{Box 1.20213 12.5532 8.29787}
+	{Bone "body"}
+	{Matrix34
+		3.5373	0.0000	-1.3885
+		0.0000	3.8000	0.0000
+		1.3885	0.0000	3.5373
+		-50.5974	-1.2977	14.6759
+	}
+}
+{Volume "Box04"
+	{Box 16.383 8.79787 0.744681}
+	{Bone "body"}
+	{Matrix34
+		3.3704	-1.7551	0.0000
+		-0.5218	-1.0020	3.6282
+		1.6758	3.2180	1.1297
+		46.4923	37.5961	16.0346
+	}
+}
+{Volume "Box02"
+	{Box 13.3723 8.26596 0.851064}
+	{Bone "body"}
+	{Matrix34
+		3.8000	0.0000	0.0000
+		0.0000	0.9915	3.6684
+		0.0000	-3.6684	0.9915
+		0.1517	-50.5237	15.1920
+	}
+}
+{Volume "Box01"
+	{Box 16.383 8.79787 0.744681}
+	{Bone "body"}
+	{Matrix34
+		3.3704	1.7551	-0.0000
+		-0.5218	1.0020	3.6282
+		1.6758	-3.2180	1.1297
+		46.4923	-36.8317	16.0346
+	}
+}
+{Volume "Box03"
+	{Box 13.3723 8.26596 0.851064}
+	{Bone "body"}
+	{Matrix34
+		-3.8000	0.0000	0.0000
+		0.0000	-1.3003	3.5706
+		0.0000	-3.5706	-1.3003
+		0.1517	51.1667	15.5744
+	}
+}
+{Volume "exterior"
+	{Polyhedron "exterior.vol"}
+	{Bone "Exterior"}
+	{Matrix34
+		0.9218	-0.3877	0.0000
+		0.3877	0.9218	0.0000
+		0.0000	0.0000	1.0000
+		0.0253	1.2952	30.6447
+	}
+}

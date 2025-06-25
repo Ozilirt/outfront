@@ -1,0 +1,48 @@
+{game_entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{mass 3500}
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{PatherId "vehicle.small"}
+	{extension "crew.ext"}
+
+	{sensor
+		{Visor "main"
+			{vision "dodgewc56"}
+			{bone "visor"}
+		}
+	}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 2}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 2}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Chassis
+		{FuelBag
+			{volume	150}
+			{rate	2.2}
+			{remain	150}
+			{fuel "fuel"}
+		}
+   	 	{Locomotion ("locomotion")
+      		{TurnRadius 4}
+			{Maxspeed 28}
+			{StartTime 5}
+   		}
+	}
+	{Extension "quad.mdl"}
+}

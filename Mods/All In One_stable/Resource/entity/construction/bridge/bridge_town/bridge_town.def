@@ -1,0 +1,44 @@
+{game_entity
+	{Extension "bridge_town.mdl"}
+	{props "cornered" "parts" "construction" "bridge"}
+	{obstacleid "unbreakable"}
+	{TexMods
+		{"mode1" "1"}
+		{"mode2" "2"}
+	}
+	{Volume "body"
+		{tags "body"}
+		{able clear {blast}}
+		{thickness 20}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{able clear {blast}}
+		{thickness 20}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{able clear {blast}}
+		{thickness 20}
+	}
+	{Volume "body3"
+		{tags "body"}
+		{able clear {blast}}
+		{thickness 20}
+	}
+	{Volume "railing"
+		{thickness 5}
+	}
+	{Volume "railing1"
+		{thickness 5}
+	}
+	{extender "land"
+		{Heightmap "bridge_town.net"}
+		{Boundary
+			{Box2
+				{Origin -102 -157}
+				{Destination 102 157}
+			}
+		}
+	}
+}

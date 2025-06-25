@@ -1,0 +1,83 @@
+;Exported by: garry
+;Date:        Mon Feb 23 17:38:25 2004
+;File:        D:\-Projects-\-3DWork-\Model\cannons\zenit\flak38-4\flak-38_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "Body"
+			{parameters "ID=body;"}
+			{Position -7.8841	-0.4305	3.2395}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{animation
+					{sequence "break" {file "turret.anm"} {speed 0.6}}
+				}
+				{Position 4.2629	0.2445	4.7239}
+				{VolumeView "Turret.ply"}
+					{bone revolute "gun_rot"
+						{parameters "ID=gun;"}
+						{limits -45.0000 10.0000}
+						{speed 0.0200}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							-0.0000	-0.0000	-1.0000
+							-0.0000	1.0000	-0.0000
+							3.9962	-0.1136	12.1149
+						}
+						{VolumeView "gun_rot.ply"}
+						{bone "gun2"
+							{parameters "ID=gun;"}
+							{Matrix34
+								-0.0000	-0.9994	0.0349
+								-0.0000	-0.0349	-0.9994
+								1.0000	-0.0000	-0.0000
+								7.5159	2.4136	4.9879
+							}
+							{VolumeView "gun2.ply"}
+						}
+						{bone "gun4"
+							{parameters "ID=gun;"}
+							{Matrix34
+								0.0000	0.9994	-0.0349
+								0.1219	-0.0346	-0.9919
+								0.9925	0.0043	0.1218
+								7.5159	2.4136	-5.1763
+							}
+							{VolumeView "gun4.ply"}
+						}
+						{bone "gun3"
+							{parameters "ID=gun;"}
+							{Matrix34
+								0.1045	0.9939	-0.0347
+								-0.0000	-0.0349	-0.9994
+								0.9945	-0.1045	0.0036
+								7.5159	-3.5217	-5.3329
+							}
+							{VolumeView "gun3.ply"}
+						}
+					}
+				{bone revolute "shield_left"
+					{parameters "CommonMesh;ID=shield_left;"}
+					{animation
+						{sequence "break" {file "shield_left_b.anm"} {speed 0.6}}
+					}
+					{Position 17.5468	0.0000	-0.3189}
+					{VolumeView "shield_left.ply"}
+				}
+				{bone revolute "shield_right"
+					{parameters "CommonMesh;ID=shield_right;"}
+					{animation
+						{sequence "break" {file "shield_right_b.anm"} {speed 0.6}}
+					}
+					{Position 17.5468	0.0000	-0.3189}
+					{VolumeView "shield_right.ply"}
+				}
+			}
+		}
+	}
+}

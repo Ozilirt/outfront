@@ -1,0 +1,61 @@
+;SDL
+
+{boarder
+	{anm "passenger"
+		{forward	{begin	"board_rubber_boat"} {end "seat_passenger"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+	{anm "gunner"
+		{forward	{begin	"board_rubber_boat"} {end "seat_gunner_stand"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+	{anm "driver"
+		{forward	{begin	"board_rubber_boat"} {end "seat_driver_car"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "crew"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+		{link "%door" "rear" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+("crew_human" place(driver)	bone(driver)	 door(emit1)	animation(driver))
+("crew_human" place(gunner)	bone(gunner)	 door(emit1)	animation(gunner))
+("crew_human" place(seat1)	bone(passenger1) door(emit3)	animation(passenger))
+("crew_human" place(seat2)	bone(passenger2) door(emit3)	animation(passenger))
+("crew_human" place(seat3)	bone(passenger3) door(emit3)	animation(passenger))
+("crew_human" place(seat4)	bone(passenger4) door(emit3)	animation(passenger))
+
+{boarder
+	{door "emit1"}
+	{link "emit2" "driver" {anm "driver"}}
+	{link "emit2" "gunner" {anm "gunner"}}
+	{link "emit3" "seat1" {anm "passenger"} {forward putoff} {reverse puton}}
+	{link "emit3" "seat2" {anm "passenger"} {forward putoff} {reverse puton}}
+	{link "emit3" "seat3" {anm "passenger"} {forward putoff} {reverse puton}}
+	{link "emit3" "seat4" {anm "passenger"} {forward putoff} {reverse puton}}
+	{door "emit4"}
+	{link "emit4" "rear" {anm "gunner"}	{forward putoff} {reverse puton}}
+	{door "emit5"}
+	{link "emit5" "rear" {anm "gunner"} {forward putoff} {reverse puton}}
+}
+
+{placer
+	{place "driver"		{group "crew"}}
+	{place "gunner"		{group "crew"} {worker charger}}
+	{place "seat1"		{group "crew"}}
+	{place "seat2"		{group "crew"}}
+	{place "seat3"		{group "crew"}}
+	{place "seat4"		{group "crew"}}
+	{place "rear"
+		{entity "ubgun20"}
+		{Linkbone "attach1"}
+		{handlebone "no"}
+	}
+}

@@ -1,0 +1,51 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret_rotator"}
+	(include "/properties/dummy_fsm2.inc")
+
+	("crew_2_human")
+	{sensor
+		{Visor "main"
+			{vision "flak41"}
+			{bone "visor"}
+		}
+	}
+
+	{Volume "body"
+		{thickness 20}
+	}
+	{Volume "gun"
+		{thickness 10}
+	}
+	{volume "gun_rot"
+		{thickness 10}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "88mm_flak41"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet88 ap" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{size 5 6}
+			{item "bullet88 fg" 16}
+			{item "bullet88 ap" 15}
+		}
+	}
+	{mass 8000}
+	{Extension "ubgun88.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+}

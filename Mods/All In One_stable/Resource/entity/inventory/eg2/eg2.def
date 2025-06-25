@@ -1,0 +1,23 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{obstacleID "unbreakable"}
+	{props "antitank_hedgehog"}
+	{body {proper body sensible} {permit body}}
+	{extender "stuff"
+		{item "oz"}
+	}
+	{Extension "eg2.mdl"}
+	{Volume "hedgehog2"
+		{thickness 30}
+	}
+	{Volume "hedgehog1"
+		{thickness 30}
+	}
+	{Volume "hedgehog"
+		{thickness 30}
+	}
+	{DecalView
+		{ownershadow  64 64}
+		{name "shadow"}
+	}
+}

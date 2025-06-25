@@ -1,0 +1,99 @@
+; made by Albus Dec 2010
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{limits -150.0000 150.0000}
+			{speed 0.0250}
+			{Position 0.0000	0.0000	24.0000}
+			{VolumeView "turret.ply"}
+			{bone "gunner"
+				{Matrix34
+					1.0000	0.0000	-0.0013
+					0.0000	1.0000	0.0001
+					0.0013	-0.0001	1.0000
+					-4.0548	-0.0002	-18.5000
+				}
+			}
+			{bone revolute "gun_rot"
+				{limits -14.0000 14.0000}
+				{speed 0.0500}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					7.8130	0.1000	-0.6729
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "mgun"
+					{parameters "ID=gun;"}
+					{Position -4.0000	3.0000	0.0000}
+					{VolumeView "mgun.ply"}
+					{bone "foresight1"
+						{Position 40.5249	2.5931	0.0000}
+					}
+					{bone "shooter00"
+						{Position 30.0759	2.5931	0.0000}
+					}
+					{bone "FXshell1"
+						{Matrix34
+							0.0000	0.0000	1.0000
+							-1.0000	0.0000	0.0000
+							0.0000	1.0000	0.0000
+							1.3950	0.5792	7.2507
+						}
+					}
+				}
+				{bone "Visor"
+					{Matrix34
+						1.0000	0.0018	-0.0002
+						0.0018	-0.9998	-0.0175
+						-0.0002	0.0175	-0.9998
+						12.6125	12.7688	0.0825
+					}
+				}
+			}
+		}
+		{bone "emit"
+			{Position -34.9948	-0.0002	0.2406}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "obstacle"
+	{Obb2
+		{Center -0.0991 -0.0144}
+		{Extent 30.0464 28.5478}
+		{Axis 0 0}
+	}
+	{Rotate}
+}
+{Volume "gun"
+	{Box 7.87728 4.21995 34.4273}
+	{Bone "mgun"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		0.0000	1.0000	0.0000
+		1.0000	0.0000	0.0000
+		8.2982	1.4850	0.2000
+	}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		-26.0077	-0.1751	-8.0864
+	}
+}
+{Volume "body"
+	{Cylinder 29.84871 3.80311}
+	{Bone "turret"}
+	{Position 0.0000	0.0000	-19.2000}
+}

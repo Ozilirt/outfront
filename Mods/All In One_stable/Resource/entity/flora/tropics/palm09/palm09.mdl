@@ -1,0 +1,28 @@
+;Exported by: dinsen
+;Date:        Sun Mar 20 00:11:04 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\autoback\palmera06_recover.max
+{Skeleton
+	{bone "palm09"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "palm09.ply"}
+	}
+}
+{Volume "bole"
+	{Polyhedron "bole.vol"}
+	{Bone "palm09"}
+	{Position 0.0000	1.0000	0.0000}
+}
+{Volume "crown"
+	{Box 52.391 52.669 50.192}
+	{Bone "palm09"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.1600	-0.0700	78.0000
+	}
+}

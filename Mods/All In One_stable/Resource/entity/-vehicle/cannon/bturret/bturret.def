@@ -1,0 +1,48 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	(include "/properties/structure/cannon_100.ext")
+	{props "vehicle" "cannon" "mortar" "turret_rotator"}
+	(include "/properties/dummy_fsm2.inc")
+	{sensor
+		{Visor "main"
+			{vision "Visor_Tank_Long"}
+			{bone "visor"}
+		}
+	}
+
+	("crew_3_human")
+	{volume "turret"
+		{thickness 300}
+	}
+	{Volume "gun"
+		{thickness 200}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "155mm"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet155 fg" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet155 fg" 24}
+			{item "ammo bullet155 ap" 5}
+		}
+	}
+	{component "turret"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 85}
+	}
+	{component "gun"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 45}
+	}
+	{mass 15000}
+	{Extension "bturret.mdl"}
+}

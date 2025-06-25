@@ -1,0 +1,34 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	{obstacleId "tank"}
+	{Extension "t-70_xx.mdl"}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		    {front  45}
+			{top	10}
+			{bottom	 10}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+			{top	10}
+			{bottom	 10}
+		}
+	}
+	{volume "turret"
+		{thickness 35 0.3 
+			{front	65}
+		}
+	}
+	{TexMods
+		{"winter" "1"}
+		{"n366" "2"}
+		{"n309" "3"}
+		{"n304" "4"}
+		{"n303" "5"}
+	}
+}

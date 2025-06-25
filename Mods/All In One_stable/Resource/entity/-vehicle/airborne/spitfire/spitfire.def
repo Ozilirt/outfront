@@ -1,0 +1,69 @@
+{actor
+	(include "/properties/airborne.ext")
+	{PatherID  "airborne"}
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/airborne.inc" scale(2.0))
+	(include "/properties/car_crew.ext")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_plane_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"board_plane_left" -1}}
+		}
+	}
+	("crew_human"
+		place(driver)
+		bone(driver)
+		door(emit2)
+		animation(driver)
+	)
+	{Placer
+		{place "driver" {worker charger}}	
+	}
+
+	{Chassis ("chassis_defaults")
+		{Locomotion ("locomotion") 
+			{Maxspeed 45}
+		}
+    	{maxSideSlope 50}	;degree
+    	{onAirTurnRadius 25}
+       	{speed
+       		{Slow	15  }	; km/h
+       		{Normal	75	}
+       		{Fast	90	}
+       	}
+	}
+	{mass 3000}
+	{TexMods
+		{"n1" "1"}
+		{"n2" "2"}
+		{"n3" "3"}
+	}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "BESA"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 225}}
+		}
+		{place "gun"
+			{defaultweapon "bomb-dropper"}
+			{Mounted}
+			{weapon {ammo "ammo air bomb" 4}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"{fixed}}
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 1125}
+			{item  "ammo air bomb" 4}
+		}
+	}
+	{Sensor
+		{Visor "main"
+			{vision "fw190"}
+			{bone	 "pivot_back"}
+		}
+	}
+	{Extension "spitfire.mdl"}
+}

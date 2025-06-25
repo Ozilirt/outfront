@@ -1,0 +1,150 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "sdkfz251_22.mdl"}
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew"}
+	{extension "crew.ext"}	
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mm_pak40"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 ap" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{Box
+			{item "ammo bullet75 ap" 30}
+			{item "ammo bullet75 fg" 22}
+		}
+	}
+
+	{sensor
+		{Visor "crew"
+			{vision
+				{uncover 2}
+			    {human 30
+			    	{crawl 10}
+			    }
+			    {actor "vehicle" 31}
+			    {actor 32}
+				{h_fov 360}
+				{v_fov 30}
+				{fog_range 30}
+				{fog_fov 360}
+			}
+			{bone "visor3"}
+		}  
+	}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+		   	{front  14.5}
+			{top	5}
+			{bottom	5}
+			{rear   8}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+		   	{front  14.5}
+			{top	5}
+			{bottom	5}
+			{rear   8}
+		}   
+	}
+	{volume "engine"
+		{thickness 20}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+	{volume "gun"
+		{thickness 30}
+	}
+	{component "Gun"
+		{RepairTime 30}
+		{Able {repair} {break_by_pierce}}
+	}
+	{volume "shield_right"
+		{thickness 15}
+	}
+	{volume "shield_left"
+		{thickness 15}
+	}
+	{component "shield_right"
+		{RepairTime 30}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "shield_left"
+		{RepairTime 30}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+
+	{Chassis
+		{Locomotion ("locomotion")
+			{Gears 0.05 0.1 0.2 0.5 1.0}
+			{RearGears 0.1 0.4} 
+		}
+	}
+	{Chassis
+	; left track must be first
+   		{Track "left"
+			{Tracer
+				{View "tracks"}
+				{Bone "FXtraceL1"}
+				{Step 0.7}			; in meters
+   		 	}
+			{TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 0.6}		; meters per animation
+   		 	}
+   		}
+   		{Track "right"
+			{Tracer 
+			   	{View "tracks"}
+   		 		{Bone "FXtraceR1"}
+   		 		{Step 0.7}			; in meters
+			}
+			{TextureScroller
+		    	{Bone "TrackR"}	
+		 		{Length 0.6}		; meters per animation
+	 		}
+ 		}
+	}
+	{mass 8000}
+	(mod "mp"
+		{Chassis
+			{FuelBag
+			{volume 120 }	; liters
+			{rate	38}   ; liters per kilometer
+			{remain 120 }
+			{fuel "fuel"}
+			}
+			{Locomotion ("locomotion")
+				{maxspeed 29}
+				{Gears 0.05 0.1 0.2 0.5 1.0}
+				{RearGears 0.1 0.4}
+			}
+			{speed
+				{Slow	18	}
+				{Normal	23	}
+				{Fast	29	}
+			}
+		}
+	)
+}

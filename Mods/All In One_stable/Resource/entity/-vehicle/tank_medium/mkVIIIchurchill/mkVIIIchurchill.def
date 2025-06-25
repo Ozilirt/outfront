@@ -1,0 +1,130 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "turret_rotator" "huge"}
+
+	{sensor
+		{Visor "main"
+			{vision "churchill"}
+			{bone "visor1"}
+		}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 76
+			{front	102}
+			{rear	64}
+			{top	22}
+			{bottom	19}
+		}
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 76
+			{front	102}
+			{rear	64}
+			{top	25}
+			{bottom	19}
+		}
+	}
+	{volume "turret"
+		{thickness 95 0.5
+			{front  152 0.2}
+			{top    35}
+		}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor1))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "87mm_QQF"}
+			{Mounted}
+			{weapon {ammo "ammo bullet87 fg" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "BESA"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 225}}
+		}
+		{place "mgun2"
+			{Rotate}
+			{DefaultWeapon "BESA_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 225}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 900}
+			{item "ammo bullet87 fg" 30}
+		}
+	}
+	
+	{mass 40600}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed		13} ;kmph
+			{StartTime		6} ;seconds
+			{BrakeTime		0.6} ;seconds
+			{StopTime		1} ;seconds
+			{TurnRadius		5} ;meter
+			{TurnTime		5} ;seconds
+			{TurnStart		2} ;seconds
+			{TurnStop		0.5} ;seconds
+			{Gears			0.2 0.3 0.5 0.7 1.0}
+			{RearGears		0.2 0.5}
+		}
+	}
+	{Extension "mkVIIIchurchill.mdl"}
+
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+		{Chassis
+			{speed
+				{Slow	6}
+				{Normal	9}
+				{Fast	13}
+			}
+			{FuelBag
+				{volume 682 }	; liters
+				{rate   490 }   ; liters per kilometer
+				{remain 682 }
+				{fuel "fuel"}
+			}
+		}
+	)
+}

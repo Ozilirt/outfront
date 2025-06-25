@@ -1,0 +1,17 @@
+{actor
+	(include "/properties/cannon_mgun50.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "dshk"}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 50}}
+		}
+	}
+	{extender "inventory"
+		{box
+			{item "ammo mgun2" 380}
+		}
+	}
+	{Extension "dshk_ship.mdl"}
+}

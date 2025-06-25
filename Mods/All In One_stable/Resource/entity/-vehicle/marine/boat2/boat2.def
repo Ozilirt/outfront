@@ -1,0 +1,46 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(0.9) scaley(0.6))
+	{mass 100}
+	{chassis
+		{waterline -0.05}
+	}
+	{patherid "shallow water"}
+	{props "vehicle" "marine" "flag"}
+	{TexMods
+		{"type1" "1"}
+		{"type2" "2"}
+	}
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 0.001}
+	}
+	{volume "body"
+		{tags "body"}
+		{thickness 5}
+	}
+	{component "body"
+		{able {break_by_pierce}}
+	}
+	{extension "crew.ext"}
+	{Extension "boat2.mdl"}
+	{volume "ballast"
+		{thickness 2}
+	}
+	{sensor
+		{Visor "main"
+			{bone "visor1"}
+			{vision "fishboat"}
+		}
+		{Visor "driver"
+			{bone "visor2"}
+		}
+	}
+	{chassis
+		{Locomotion ("locomotion")
+            	{MaxSpeed 	    10}
+		}
+	}
+}

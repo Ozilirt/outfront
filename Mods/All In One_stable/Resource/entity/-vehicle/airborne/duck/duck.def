@@ -1,0 +1,64 @@
+{actor
+	(include "/properties/airborne.ext")
+	{PatherID  "airborne"}
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/airborne.inc" scale(2.0))
+	(include "/properties/car_crew.ext")
+	{props "emit_on_sink"}
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_plane_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"board_plane_left" -1}}
+		}
+	}
+	("crew_human"
+		place(driver)
+		bone(driver)
+		door(emit1)
+		animation(driver)
+	)
+	{Placer
+		{place "driver" {worker charger}}	
+	}
+
+	{Chassis ("chassis_defaults")
+		{Locomotion ("locomotion") 
+			{Maxspeed 40}
+		}
+		{maxSideSlope 70}	;degree
+		{onAirTurnRadius 50}
+		{speed
+       			{Slow	15	} ; km/h
+       			{Normal	30	}
+       			{Fast	40	}
+		}
+	}
+	{mass 3000}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "browning100"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+		{place "gun"
+			{defaultweapon "bomb-dropper2"}
+			{Mounted}
+			{weapon {ammo "ammo air bomb" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"{fixed}}
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 750}
+			{item  "ammo air bomb" 1}
+		}
+	}
+	{Sensor
+		{Visor "main"
+			{bone	 "pivot_back"}
+		}
+	}
+	{Extension "duck.mdl"}
+}

@@ -1,0 +1,80 @@
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{parameters "ID=Turret;"}
+			{speed 0.0100}
+			{Position 0.1442	0.2318	-0.0225}
+			{VolumeView "turret.ply"}
+			{bone "part1"
+				{parameters "ID=Turret;"}
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{parameters "ID=Turret;"}
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "part2.ply"}
+			}
+			{bone revolute "Gun_rot"
+				{parameters "ID=Turret;"}
+				{limits -5.0000 25.0000}
+				{speed 0.0100}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					0.0273	-0.1610	32.8081
+				}
+				{VolumeView "Gun_rot.ply"}
+				{bone "Gun"
+					{parameters "ID=gun;"}
+					{Position -9.1055	0.4582	0.0000}
+					{VolumeView "Gun.ply"}
+				}
+			}
+		}
+	}
+}
+{Obstacle "obstacle"
+	{Obb2
+		{Center -1.4991 0.5856}
+		{Extent 28.4210 22.7948}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "turret"
+	{Box 55.3345 48.6578 35.3408}
+	{Bone "turret"}
+	{Position 0.7573	-0.2318	17.3929}
+}
+{Volume "part1"
+	{Box 29.3345 20.3345 22.3408}
+	{Bone "part1"}
+	{Position -10.0000	-12.6000	33.6000}
+}
+{Volume "part2"
+	{Box 34.3345 26.3345 20.3408}
+	{Bone "part2"}
+	{Position -7.4427	9.0318	34.1929}
+}
+{Volume "gun_rot"
+	{Box 49.3345 22.3345 18.3408}
+	{Bone "gun_rot"}
+	{Position 8.4000	-1.4000	0.2000}
+}
+{Volume "Gun"
+	{Cylinder 2.05755 60.1881}
+	{Bone "Gun"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		1.0000	0.0000	0.0000
+		39.2160	0.0539	0.0293
+	}
+}

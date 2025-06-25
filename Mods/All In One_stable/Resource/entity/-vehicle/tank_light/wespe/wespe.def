@@ -1,0 +1,83 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "-turret" "self_propelled"}
+	{extension "crew.ext"}
+	{TexMods
+		{"winter" "1"}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 20
+			{front  30}
+			{rear	10}
+		}
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 20
+			{front  30}
+			{rear	10}
+		}
+	}
+	{volume "body3"
+		{component "body"}
+		{tags "body"}
+		{thickness 20
+			{front  30}
+			{rear	10}
+		}
+	}
+	{volume "gun"
+		{thickness 9}
+	}
+	{Weaponry
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "105mm_leFH18"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet105 fg" 1}}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+ 	 		{item "ammo bullet105 fg" 28}
+			{item "ammo bullet105 ap" 3}
+			{item "mg34i" filling "ammo mgun" 50}
+			{item "ammo mgun" 50}
+			{item "plant" 3}
+		}
+	}
+	
+	{mass 13500}
+	{Chassis
+		{speed
+			{Slow	9}	; km/h
+			{Normal	15}
+			{Fast	21}
+		}
+		{Locomotion ("locomotion")
+			{MaxSpeed 21}
+		}
+		{FuelBag
+			{volume 146}	; liters
+			{rate    85}	; liters per kilometer
+			{remain 146}
+			{fuel "fuel"}
+          	}
+	}
+	{Extension "wespe.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Artil"}
+			}
+		}
+	)
+}

@@ -1,0 +1,184 @@
+;
+;
+;
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{animation
+				{sequence "break" {file "trackL_b.anm"}}
+			}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				-7.5652	25.7145	10.7263
+			}
+			{VolumeView "WheelsL.ply"}
+			{bone "TrackL"
+				{parameters "CommonMesh;ID=trackleft;"}
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					0.0397	3.2348	-0.5206
+				}
+				{VolumeView "TrackL.ply"}
+			}
+			{bone revolute "wheelL2"
+				{Position -38.3042	-1.6740	0.0000}
+				{VolumeView "wheelL2.ply"}
+			}
+			{bone revolute "wheelL3"
+				{Position -20.1933	-1.6740	0.0000}
+				{VolumeView "wheelL3.ply"}
+			}
+			{bone revolute "wheelL4"
+				{Position 0.0000	-1.6740	0.0000}
+				{VolumeView "wheelL4.ply"}
+			}
+			{bone revolute "wheelL5"
+				{Position 20.4237	-1.6740	0.0000}
+				{VolumeView "wheelL5.ply"}
+			}
+			{bone revolute "wheelL6"
+				{Position 38.7225	-1.6740	0.0000}
+				{VolumeView "wheelL6.ply"}
+			}
+		}
+		{bone "wheelsR"
+			{parameters "ID=trackright;"}
+			{animation
+				{sequence "break" {file "trackR_b.anm"}}
+			}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.0000	-1.0000	0.0000
+				-7.5652	-26.3103	9.0523
+			}
+			{VolumeView "wheelsR.ply"}
+			{bone "TrackR"
+				{parameters "CommonMesh;ID=trackright;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					-0.0000	-0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					0.0397	4.9088	0.0083
+				}
+				{VolumeView "TrackR.ply"}
+			}
+			{bone revolute "wheelR2"
+				{Position -38.3042	-0.0000	-0.0000}
+				{VolumeView "wheelR2.ply"}
+			}
+			{bone revolute "wheelR3"
+				{Position -20.1933	-0.0000	-0.0000}
+				{VolumeView "wheelR3.ply"}
+			}
+			{bone revolute "wheelR4"
+				{Position -0.0000	-0.0000	-0.0000}
+				{VolumeView "wheelR4.ply"}
+			}
+			{bone revolute "wheelR5"
+				{Position 20.4237	-0.0000	0.0000}
+				{VolumeView "wheelR5.ply"}
+			}
+			{bone revolute "wheelR6"
+				{Position 38.7225	-0.0000	0.0000}
+				{VolumeView "wheelR6.ply"}
+			}
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{animation
+				{sequence "break" {file "body_b.anm"} {speed 0.5}}
+			}
+			{Position -7.8279	-0.6444	19.9572}
+			{VolumeView "Body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{animation
+					{sequence "break" {file "turret_b.anm"}}
+				}
+				{speed 0.0100}
+				{Position 8.2158	0.2128	11.2163}
+				{VolumeView "turret.ply"}
+				{bone "luk_"
+					{Matrix34
+						1.0000	-0.0000	-0.0000
+						-0.0000	1.0000	0.0000
+						-0.0000	0.0000	1.0000
+						5.3643	19.8711	2.9053
+					}
+					{bone "cover1"
+						{Position -9.0005	-8.9705	15.9704}
+						{VolumeView "cover1.ply"}
+					}
+					{bone "cover2"
+						{Position 0.3401	-8.9705	15.9704}
+						{VolumeView "cover2.ply"}
+					}
+				}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -13.0000 15.0000}
+					{speed 0.0100}
+					{Matrix34
+						-1.0000	-0.0000	-0.0000
+						-0.0000	0.0000	1.0000
+						-0.0000	1.0000	-0.0000
+						19.4643	0.5711	7.4053
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Position -0.8758	-1.5614	-1.7586}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+			{bone revolute "wheelL7"
+				{Matrix34
+					-1.0000	-0.0000	-0.0085
+					-0.0085	-0.0153	0.9998
+					-0.0001	0.9999	0.0153
+					-55.5547	28.3441	-5.6154
+				}
+				{VolumeView "wheelL7.ply"}
+			}
+			{bone revolute "wheelL1"
+				{Matrix34
+					-1.0000	-0.0000	-0.0085
+					-0.0085	-0.0153	0.9998
+					-0.0001	0.9999	0.0153
+					55.11152	28.6928	-5.1289
+				}
+				{VolumeView "wheelL1.ply"}
+			}
+			{bone revolute "wheelR1"
+				{Matrix34
+					-1.0000	-0.0000	-0.0085
+					-0.0085	-0.0153	0.9998
+					0.0001	-0.9999	-0.0153
+					55.0259	-29.4477	-5.2172
+				}
+				{VolumeView "wheelR1.ply"}
+			}
+			{bone revolute "wheelR7"
+				{Matrix34
+					-1.0000	-0.0000	-0.0085
+					-0.0085	-0.0153	0.9998
+					0.0001	-0.9999	-0.0153
+					-55.5543	-28.4231	-5.6822
+				}
+				{VolumeView "wheelR7.ply"}
+			}
+		}
+	}
+}

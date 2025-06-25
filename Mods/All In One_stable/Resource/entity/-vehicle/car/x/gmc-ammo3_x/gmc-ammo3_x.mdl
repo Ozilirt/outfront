@@ -1,0 +1,166 @@
+;Exported by: Albus
+;Date:        Tue May 31 13:37:32 2011
+;File:        C:\Archivos de programa\3dsMax8\scenes\gmc-ammo3_x.max
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=30;WheelRadius=0.5;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 3.3115	2.9040	18.4163}
+			{VolumeView "body.ply"}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Position 36.9262	-1.7917	1.9085}
+				{VolumeView "engine.ply"}
+			}
+			{bone "cabin"
+				{parameters "ID=cabin;"}
+				{Position 23.3802	-3.3164	12.1261}
+				{VolumeView "cabin.ply"}
+				{bone "doorL"
+					{parameters "ID=cabin;"}
+					{Matrix34
+						0.9999	0.0103	-0.0087
+						-0.0103	0.9999	0.0000
+						0.0087	0.0001	1.0000
+						8.3338	14.5718	-1.4217
+					}
+					{VolumeView "doorL.ply"}
+				}
+				{bone "doorR"
+					{parameters "ID=cabin;"}
+					{Matrix34
+						0.9999	-0.0122	-0.0068
+						0.0122	0.9999	0.0010
+						0.0068	-0.0011	1.0000
+						8.1611	-13.9105	-1.6045
+					}
+					{VolumeView "doorR.ply"}
+				}
+				{bone "glass"
+					{parameters "ID=glass;"}
+					{Matrix34
+						0.0000	-1.0000	0.0000
+						-0.2849	0.0000	0.9586
+						-0.9586	0.0000	-0.2849
+						7.8668	0.0440	10.1294
+					}
+					{VolumeView "glass.ply"}
+				}
+			}
+			{bone "bodyback"
+				{parameters "ID=bodyback;"}
+				{Position -30.8752	-2.9976	20.0920}
+				{VolumeView "bodyback.ply"}
+				{bone "cargo"
+					{parameters "ID=bodyback;"}
+					{Position 1.2125	-0.1896	-4.6520}
+					{VolumeView "cargo.ply"}
+				}
+			}
+		}
+		{bone "pivot_front"
+			{parameters "ID=body;"}
+			{Position 52.5423	-0.2976	10.4006}
+			{VolumeView "pivot_front.ply"}
+			{bone revolute "steer_R1"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0045
+					0.0000	-0.0045	-1.0000
+					0.3252	-18.2826	-0.0233
+				}
+				{bone revolute "wheelR1"
+					{parameters "ID=wheelright1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0045	-1.0000
+						0.0000	-1.0000	-0.0045
+						-0.0775	0.6584	0.0709
+					}
+					{VolumeView "wheelR1.ply"}
+				}
+			}
+			{bone revolute "steer_L1"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0045
+					0.0000	-0.0045	-1.0000
+					0.3252	16.5749	-0.0383
+				}
+				{bone revolute "wheelL1"
+					{parameters "ID=wheelleft1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0045	-1.0000
+						0.0000	-1.0000	-0.0045
+						-0.1412	-2.8241	-0.0011
+					}
+					{VolumeView "wheelL1.ply"}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{parameters "ID=body;"}
+			{Position -48.6701	-3.2909	10.3322}
+			{VolumeView "pivot_back.ply"}
+			{bone "spring_R2"
+				{Position 24.1194	-15.2917	0.1975}
+				{bone revolute "wheelR2"
+					{parameters "ID=wheelright2;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						0.0927	1.1353	-0.2723
+					}
+					{VolumeView "wheelR2.ply"}
+				}
+			}
+			{bone "spring_R3"
+				{Position -0.2796	-15.2894	0.1854}
+				{bone revolute "wheelR3"
+					{parameters "ID=wheelright3;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						0.4490	1.0774	-0.2769
+					}
+					{VolumeView "wheelR3.ply"}
+				}
+			}
+			{bone "spring_L2"
+				{Position 24.1215	19.5681	0.1409}
+				{bone revolute "wheelL2"
+					{parameters "ID=wheelleft2;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						0.0332	0.7442	-0.1784
+					}
+					{VolumeView "wheelL2.ply"}
+				}
+			}
+			{bone "spring_L3"
+				{Position -0.3015	19.5681	0.1409}
+				{bone revolute "wheelL3"
+					{parameters "ID=wheelleft3;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						0.6017	0.6891	-0.1951
+					}
+					{VolumeView "wheelL3.ply"}
+				}
+			}
+		}
+	}
+}

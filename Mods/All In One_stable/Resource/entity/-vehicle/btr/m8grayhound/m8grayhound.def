@@ -1,0 +1,111 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "with_gun"}
+	(include "/properties/tank_crew.ext")
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	16}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 19
+			{front 22}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{volume "engine"
+		{thickness 15
+			{rear	15}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "Gun"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+	("crew_human"	place(driver)		door1(emit1) door2(emit2) visor(driver))
+	("crew_human"	place(gunner)		door1(emit1) door2(emit2) visor(main))
+	("crew_human"	place(charger)		door1(emit1) door2(emit2) visor(main))
+	("crew_human"	place(commander)	door1(emit1) door2(emit2) visor(main))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_m6"}
+			{Mounted}
+			{weapon {ammo "ammo bullet37 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "browning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}  
+	{sensor
+		{Visor "crew"
+		      {vision "Visor_BTR"}
+		}  
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 1200}
+			{item "ammo bullet37 ap" 39}
+			{item "ammo bullet37 fg" 32}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{mass 8000}
+	{Chassis
+		{Locomotion ("locomotion")}
+		{speed
+			{Slow	15}
+			{Normal	25}
+			{Fast	31}
+		}
+		{FuelBag
+			{volume 170}	; liters
+			{rate    50}   ; liters per kilometer
+			{remain 170}
+			{fuel "fuel"}
+		}
+	}
+	{Extension "M8Grayhound.mdl"}
+}

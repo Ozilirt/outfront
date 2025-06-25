@@ -1,0 +1,84 @@
+;Exported by: Albus
+;Date:        Mon Feb 27 02:08:06 2012
+;File:        C:\DOCUME~1\Albus\ESCRIT~1\shw\M45QUA~1.MAX
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.9998	-0.0218	0.0000
+				0.0218	0.9998	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	-0.0000	0.2494
+			}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0130}
+				{Matrix34
+					0.9998	0.0218	0.0000
+					-0.0218	0.9998	0.0000
+					0.0000	0.0000	1.0000
+					-0.2796	-0.0250	-6.9740
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 65.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-0.2458	0.5823	29.0998
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun3"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							1.2702	-3.3283	13.1420
+						}
+						{VolumeView "gun3.ply"}
+					}
+					{bone "gun1"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							1.2095	-3.2630	-12.9912
+						}
+						{VolumeView "gun1.ply"}
+					}
+					{bone "gun2"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							7.7588	1.6678	-9.8875
+						}
+						{VolumeView "gun2.ply"}
+					}
+					{bone "gun4"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							7.7392	1.6214	10.0106
+						}
+						{VolumeView "gun4.ply"}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,143 @@
+;Exported by: dinsen
+;Date:        Sun Oct 02 20:49:48 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\hw2_x.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "piece1"
+			{Position -1.6294	20.4567	53.6220}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Position 0.0453	-20.9077	51.5991}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Position -1.2614	-1.9192	35.5151}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece4"
+			{Position -0.2018	-1.3715	25.2172}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "FX_fire1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-8.2851	4.3176	0.0000
+			}
+		}
+		{bone "FX_smoke1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				3.7854	-0.8124	0.0000
+			}
+		}
+	}
+}
+{Obstacle "Plane06"
+	{Obb2
+		{Center -0.317705 -41.6689}
+		{Extent 1.2362 1.15379}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane05"
+	{Obb2
+		{Center 0.176701 43.1343}
+		{Extent 1.2362 1.56585}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane04"
+	{Obb2
+		{Center -39.052 42.887}
+		{Extent 1.07137 1.31861}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane03"
+	{Obb2
+		{Center 37.6747 43.0518}
+		{Extent 1.15379 1.15379}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane02"
+	{Obb2
+		{Center 36.6857 -41.257}
+		{Extent 1.15379 1.07137}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane01"
+	{Obb2
+		{Center -40.2059 -41.6691}
+		{Extent 1.07137 0.98896}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 162.342 189.66 2.9308}
+	{Bone "body"}
+	{Matrix34
+		0.5206	0.0000	0.0000
+		0.0000	0.4767	-0.0000
+		0.0000	-0.0000	1.0000
+		-1.5826	-0.5552	1.7398
+	}
+}
+{Volume "piece4"
+	{Cylinder 1.42703 90.9834}
+	{Bone "piece4"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	0.0000
+		-0.0568	1.1956	23.5911
+	}
+}
+{Volume "piece3"
+	{Cylinder 0.928595 90.8456}
+	{Bone "piece3"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-0.1625	0.7238	33.3437
+	}
+}
+{Volume "piece2"
+	{Box 87.6877 48.5056 3.1287}
+	{Bone "piece2"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		0.0000	-0.8934	-0.4492
+		0.0000	-0.4492	0.8934
+		-0.2232	-0.4585	7.1053
+	}
+}
+{Volume "piece1"
+	{Box 87.6877 48.5056 3.1287}
+	{Bone "piece1"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	0.8934	-0.4492
+		0.0000	0.4492	0.8934
+		1.4516	0.0799	5.0825
+	}
+}

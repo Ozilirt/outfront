@@ -1,0 +1,73 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "truck" "wheeled" "with_doors" "emit_on_attack"}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-highcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-highcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+	
+	{boarder
+		{anm "passenger"
+			{forward	{begin	"board_body"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+ 	("crew_human" place(seat1)	bone(seat01)	door(emit3)	animation(passenger))
+	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger))
+	("crew_human" place(seat3)	bone(seat03)	door(emit3)	animation(passenger))
+	("crew_human" place(seat4)	bone(seat04)	door(emit4)	animation(passenger))
+         
+        {Volume "bodyback"
+		{thickness 6}
+	}
+
+	{mass 5300}
+	{Chassis
+		{Locomotion
+			{MaxSpeed	30}
+			{StartTime	6}
+			{BrakeTime	2}
+			{StopTime	4}
+			{TurnRadius	7}
+			{Gears		0.35 0.5 0.7 1.0}
+			{RearGears	0.33 0.5}
+			{SteerOn	40}
+			{SteerOff	40}
+			{SplineRadius 1}
+		}
+	}
+	{Extension "isuzu94-engin.mdl"}
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "dynamite" 5 {cell 2 2}}
+				{item "repair_kit" {cell 0 0}}
+				{item "mine antitank" 30 {cell 4 0}}
+				{item "mine antipersonnel" 60 {cell 0 2}}
+				{item "mine_detector" 5}
+ 				{item "molotov_coctail" 10 {cell 4 2}}
+			}
+		}
+	)
+}

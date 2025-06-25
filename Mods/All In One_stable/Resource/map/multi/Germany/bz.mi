@@ -1,0 +1,226 @@
+{mission
+	{Camera
+		{Position 693.392 1446.15}
+		{Distance 906.165}
+		{ViewAngle 0.621346}
+		{YawAngle 49.812}
+	}
+	{Environment "main-germany"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "radio" 0x800d
+		{Position 1444.12 1238.45 -100}
+		{Extender "speaker"
+			{SoundName "battle.can02"}
+		}
+	}
+	{Entity "battle" 0x8007
+		{Position -920.533 2847.42 39.9144}
+	}
+	{Entity "battle" 0x8033
+		{Position 1116.8 868.51 0}
+		{Extender "speaker"
+			{SoundName "battle.can04"}
+		}
+	}
+	{Entity "birds" 0x8066
+		{Position 573.245 818.658 0}
+	}
+	{Entity "birds" 0x8005
+		{Position 2721.72 465.488 0}
+	}
+	{Entity "map_point" 0x802c
+		{Position 4554.94 -1822.07 0}
+		{Turn 135}
+		{Extender "map_point"
+			{name "z"}
+			{caption "ZTeam"}
+			{teams "z"}
+			{unitset "reg"}
+		}
+		{Player 0}
+		{MID 45}
+	}
+	{Entity "map_point" 0x802d
+		{Position -1031.71 4056.98 0}
+		{Turn -45}
+		{Extender "map_point"
+			{name "x"}
+			{caption "XTeam"}
+			{teams "x"}
+			{unitset "reg"}
+		}
+		{Player 0}
+		{MID 46}
+	}
+	{Entity "start_point" 0x8001
+		{Position 4844.15 -1543.13 0}
+		{Turn 129.76}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "start_point" 0x8009
+		{Position -872.745 4682.49 0}
+		{Turn -54.9758}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "start_point" 0x9000
+		{Position 4416.92 -2151.9 0}
+		{Turn 119.59}
+		{Extender "map_point"
+			{name "z"}
+			{caption "ZTeam"}
+			{teams "z"}
+			{unitset "reg"}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "start_point" 0x9001
+		{Position 4877.47 -2043.96 0}
+		{Turn 126.999}
+		{Extender "map_point"
+			{name "z"}
+			{caption "ZTeam"}
+			{teams "z"}
+			{unitset "reg"}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "start_point" 0x800a
+		{Position -1432.7 4094.05 0}
+		{Turn -51.9061}
+		{Extender "map_point"
+			{name "x"}
+			{caption "XTeam"}
+			{teams "x"}
+			{unitset "reg"}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "start_point" 0x800b
+		{Position -1291.56 4511.36 0}
+		{Turn -38.5799}
+		{Extender "map_point"
+			{name "x"}
+			{caption "XTeam"}
+			{teams "x"}
+			{unitset "reg"}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "flag_point" 0x8004
+		{Position 1392.41 1194.91 -50}
+		{OffsetZ 50}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "x z"}
+			{"allow/release" "x z"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "flag_point" 0x8006
+		{Position -1151.39 -899.931 70.265}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "x z"}
+			{"allow/release" "x z"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "flag_point" 0x8088
+		{Position 3994.42 4263.33 0}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "x z"}
+			{"allow/release" "x z"}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "side_star" 0x8000
+		{Position 1392.3 1194.89 81.4977}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8002
+		{Position -1151.51 -899.947 201.763}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8003
+		{Position 3994.31 4263.32 131.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Link 0x8000 To 0x8004 "side_pointer"}
+	{Link 0x8002 To 0x8006 "side_pointer"}
+	{Link 0x8003 To 0x8088 "side_pointer"}
+	{Helpers
+		{trigger "1111"
+			{actions
+				{"task"
+					{name "primary1"}
+				}
+			}
+		}
+		{waypoints
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

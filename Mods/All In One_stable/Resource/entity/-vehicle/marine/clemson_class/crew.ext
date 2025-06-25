@@ -1,0 +1,61 @@
+;SDL
+
+{Placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "gun1"
+		{entity "cannon_105"}
+		{Linkbone "attach_gun1"}
+		{handlebone "no"}
+	}
+	{place "gun2"
+		{entity "cannon_105"}
+		{Linkbone "attach_gun2"}
+		{handlebone "no"}
+	}
+	{place "aa1"
+		{entity "oerlikon"}
+		{Linkbone "attach_aa1"}
+		{handlebone "no"}
+	}
+	{place "aa2"
+		{entity "oerlikon"}
+		{Linkbone "attach_aa2"}
+		{handlebone "no"}
+	}
+	{place "aa3"
+		{entity "oerlikon"}
+		{Linkbone "attach_aa3"}
+		{handlebone "no"}
+	}
+}
+
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit4"}
+	{door "emit5"}
+	{door "emit6"}
+	{door "emit7"}
+	{door "emit8"}
+
+	{anm "seat" {forward {end "seat_passenger"}}}
+
+	{link "emit1"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit2"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+
+	{link "emit3"	"gun1"		{forward putoff} {reverse puton}}
+	{link "emit4"	"gun1"		{forward putoff} {reverse puton}}
+	{link "emit3"	"aa1"			{forward putoff} {reverse puton}}
+	{link "emit4"	"aa1"			{forward putoff} {reverse puton}}
+	{link "emit5"	"gun2"		{forward putoff} {reverse puton}}
+	{link "emit6"	"gun2"		{forward putoff} {reverse puton}}
+	{link "emit7"	"aa2"			{forward putoff} {reverse puton}}
+	{link "emit8"	"aa2"			{forward putoff} {reverse puton}}
+	{link "emit7"	"aa3"			{forward putoff} {reverse puton}}
+	{link "emit8"	"aa3"			{forward putoff} {reverse puton}}
+}

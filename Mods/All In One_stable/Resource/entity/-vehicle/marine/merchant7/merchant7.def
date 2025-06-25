@@ -1,0 +1,103 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(4.0) scaleY(2.0))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(3.6) scaley(1.6))
+	{Extension "merchant7.mdl"}
+	{TexMods
+		{"skin1" "1"}
+		{"skin2" "2"}
+		{"skin3" "3"}
+		{"skin4" "4"}
+		{"skin5" "5"}
+	}
+	{mass 10500}
+	{props "vehicle" "marine" "flag" "light_boat" "emit_on_sink"}
+
+	{extension "crew.ext"}
+	{rejectColliderByVolume}
+
+	{Volume "ballast1"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "ballast2"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "ballast3"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "ballast4"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{volume "body_front"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 45}
+	}
+	{volume "body"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 45}
+	}
+	{volume "body_rear"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 45}
+	}
+	{volume "body2"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 45}
+	}
+	{Volume "cabin"
+		{thickness hollow 8}
+	}
+	{Volume "lamp1"
+		{thickness 4}
+	}
+
+	{component "body_front" 
+		{able {repair}}
+	} ;to _x view
+	{component "body" 
+		{able {repair}}
+	}
+	{component "body_rear" 
+		{able {repair}}
+	}
+	{component "cabin"
+		{RepairTime 15}
+		{Able {repair}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{RestoreIKAfterAim}
+			{DefaultWeapon ""}
+		}
+	}
+	{extender "inventory"
+		{box
+		}
+	}
+	{extender "light"
+		{lightfx "light_boat"}
+		{breakfx "glass_hit"}
+		{lamp "1"}
+	}
+	{patherID "water"}
+	{Sensor
+		{Visor "main"
+			{vision "mtbd3"}
+			{bone	"foresight1"}
+		}
+	}
+	{chassis
+		{Locomotion ("locomotion")
+			{TurnRadius	16}
+		}
+	}
+}

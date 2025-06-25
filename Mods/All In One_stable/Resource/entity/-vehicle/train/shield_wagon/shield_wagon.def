@@ -1,0 +1,70 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.1) scaleY(1.0))
+    	{mass 22000}
+    	{props "vehicle" "steel" "carriage" "platform" "train_part"}
+
+	(include "crew.ext")
+	{autooperatable 1}
+	{Extension "shield_wagon.mdl"}
+
+	{sensor
+		{Visor "visor1"
+			{vision
+				{uncover 1}
+				{human 80
+				{crawl 50}
+			}
+			{actor "marine" 80}
+			{actor "vehicle" 80}
+			{actor 80}
+				{h_fov 30}
+				{wide 2.5}
+				{v_fov 30}
+				{fog_range 30}
+				{fog_fov 60}
+			}
+			{bone "visor1"}
+		}
+		{Visor "visor2"
+			{vision
+				{uncover 1}
+				{human 80
+				{crawl 50}
+			}
+			{actor "marine" 80}
+			{actor "vehicle" 80}
+			{actor 80}
+				{h_fov 30}
+				{wide 2.5}
+				{v_fov 30}
+				{fog_range 30}
+				{fog_fov 60}
+			}
+			{bone "visor2"}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "body1"
+		{tags "body"}
+		{thickness 30}
+		{component "body"}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{thickness 30}
+		{component "body"}
+	}
+	{Volume "body3"
+		{tags "body"}
+		{thickness 30}
+		{component "body"}
+	}
+	{component "body"
+		{Able {repair} {break_by_pierce}}
+	}
+}

@@ -1,0 +1,174 @@
+{mission
+	{Camera
+		{Position 1278.14 1370.4}
+		{Distance 982.008}
+		{ViewAngle 0.523599}
+		{YawAngle -0.843683}
+	}
+	{Environment "day"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "start_point" 0x8000
+		{Position -1482.340820 -2141.365723 71.000000}
+		{Turn 0.218}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "flag_point" 0x8005
+		{Position 1389.451172 -545.542297 0.741512}
+		{Extender "map_point"
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "flag_point" 0x8004
+		{Position 3096.191895 451.955719 53.132816}
+		{Extender "map_point"
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "flag_point" 0x8003
+		{Position -1465.960815 2835.735107 20.197746}
+		{Extender "map_point"
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "start_point" 0x8001
+		{Position -1502.330820 -2201.365723 71.000000}
+		{Turn 0.8015}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "start_point" 0x8002
+		{Position -1502.340820 -2191.365723 71.000000}
+		{Turn -0.0114}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "start_point" 0x8008
+		{Position 5191.542969 3041.246338 47.754635}
+		{Turn -90.9648}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "start_point" 0x8009
+		{Position 5191.542969 3041.246338 47.754635}
+		{Turn -90.2262}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "start_point" 0x800a
+		{Position 5191.542969 3041.246338 47.754635}
+		{Turn -90.9224}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "map_point" 0x802c
+		{Position 1039.694946 1831.998901 3.304147}
+		{Turn 86.2169}
+		{Extender "map_point"
+			{name "z"}
+			{caption "ZTeam"}
+			{teams "z"}
+			{unitset "oi|auto"}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "map_point" 0x802d
+		{Position -1482.340820 -2141.365723 71.000000}
+		{Turn -94.4386}
+		{Extender "map_point"
+			{name "x"}
+			{caption "XTeam"}
+			{teams "x"}
+			{unitset "oi|auto"}
+		}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "flag_point" 0x802f
+		{Position 4551.610352 -1911.053345 95.495506}
+		{Extender "map_point"
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "flag_point" 0x8030
+		{Position 1100.694946 1861.998901 3.304147}
+		{Extender "map_point"
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 0}
+		{MID 13}
+	}
+	{Entity "battle" 0x8033
+		{Position 1100.694946 1861.998901 3.304147}
+		{Extender "speaker"
+			{SoundName "battle.can04"}
+		}
+	}
+	{Link 0x8035 To 0x802f "side_pointer"}
+	{Link 0x8036 To 0x8030 "side_pointer"}
+	{Link 0x8037 To 0x8031 "side_pointer"}
+	{Link 0x8038 To 0x8032 "side_pointer"}
+	{Helpers
+		{trigger "1111"
+			{actions
+				{"task"
+					{name "primary1"}
+				}
+			}
+		}
+		{waypoints}
+	}
+	{Players
+		{count 17}
+		{diplomacy 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1}
+	}
+	{MissionMusic "STOP"}
+}

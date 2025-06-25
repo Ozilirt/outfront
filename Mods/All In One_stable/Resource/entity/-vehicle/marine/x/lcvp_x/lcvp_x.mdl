@@ -1,0 +1,86 @@
+;Exported by: dinsen
+;modify by: albus
+;Date:        Wed Oct 13 20:12:58 2010
+;File:        C:\Documents and Settings\dinsen\Escritorio\desant_boat\barca.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Position 22.1031	-2.6113	-8.3388}
+			{VolumeView "body.ply"}
+			{bone "steer_rudder"
+				{Matrix34
+					0.0009	-1.0000	0.0000
+					-0.0032	0.0000	1.0000
+					-1.0000	-0.0009	-0.0032
+					1.9464	0.0018	11.4952
+				}
+				{VolumeView "steer_rudder.ply"}
+			}
+			{bone "ruder"
+				{Matrix34
+					0.0009	-1.0000	0.0000
+					-0.0032	0.0000	1.0000
+					-1.0000	-0.0009	-0.0032
+					1.9464	0.0018	11.4952
+				}
+				{VolumeView "ruder.ply"}
+			}
+			{bone "rampa"
+				{parameters "CommonMesh;ID=body;"}
+				{Matrix34
+					0.0009	-1.0000	0.0000
+					-0.7371	-0.0007	0.6758
+					-0.6758	-0.0006	-0.7371
+					84.4531	0.0898	13.5483
+				}
+				{VolumeView "rampa.ply"}
+			}
+			{bone revolute "mgun_rot"
+				{limits -10.0000 10.0000}
+				{speed 0.0300}
+				{Matrix34
+					1.0000	-0.0000	-0.0005
+					-0.0005	-0.0098	-1.0000
+					-0.0000	1.0000	-0.0098
+					-45.2048	11.9349	47.4337
+				}
+				{VolumeView "mgun_rot.ply"}
+				{bone revolute "mgun"
+					{limits -20.0000 20.0000}
+					{speed 0.0300}
+					{Matrix34
+						1.0000	0.0053	0.0001
+						0.0000	-0.0098	1.0000
+						0.0053	-0.9999	-0.0098
+						-0.0236	-0.4729	0.0117
+					}
+					{VolumeView "mgun.ply"}
+				}
+			}
+			{bone "body2"
+				{parameters "CommonMesh;ID=body;"}
+				{Matrix34
+					0.0009	-1.0000	0.0000
+					-0.0032	-0.0000	1.0000
+					-1.0000	-0.0009	-0.0032
+					1.9464	0.0018	11.4952
+				}
+				{VolumeView "body2.ply"}
+			}
+			{bone "engine"
+				{VolumeView "engine.ply"}
+			}
+			{bone "land"
+				{parameters "CommonMesh;ID=body;"}
+				{Position 20.1244	0.0190	1.3609}
+				{VolumeView "land.ply"}
+			}
+		}
+	}
+}

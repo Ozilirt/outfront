@@ -1,0 +1,80 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{mass 2000}
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{PatherId "vehicle.small"}
+
+	{sensor
+		{Visor "main"
+			{vision "dodgewc56"}
+			{bone "visor"}
+		}
+	}
+
+	("crew_inside")
+	{TexMods
+		{"uk" "1"}
+	}
+
+	{boarder
+		{anm "driver"
+    		{forward	{begin	"board_Dodge"} {end "seat_driver_car"}}
+			{reverse 	{end	"board_Dodge" -1}}
+		}
+		{anm "commander"
+			{forward	{begin	"board_Dodge"} {end "seat_passenger"}}
+			{reverse 	{end	"board_Dodge" -1}}
+		}
+		{anm "passenger1"
+			{forward	{begin	"board_Dodge_body"} {end "seat_passenger"}}   
+			{reverse 	{end	"emit_body" 1}}
+			}
+		{anm "passenger2"
+			{forward	{begin	"board_Dodge_bodyBack"} {end "seat_passenger"}}   
+			{reverse 	{end	"emit_tank_1" 1}}
+			}
+		}
+	
+	("crew_human" place(driver)	door(emit1)		bone(driver) animation(driver))
+	("crew_human" place(commander) door(emit1)	bone(commander) animation(commander))
+	("crew_human" place(seat1)	bone(seat01)	door(emit3)	animation(passenger1))
+	("crew_human" place(seat2)	bone(seat02)	door(emit3)	animation(passenger1))
+	("crew_human" place(seat3)	bone(seat03)	door(emit4)	animation(passenger2))
+	("crew_human" place(seat4)	bone(seat04)	door(emit5)	animation(passenger2))
+	("crew_human" place(seat5)	bone(seat05)	door(emit6)	animation(passenger1))
+	("crew_human" place(seat6)	bone(seat06)	door(emit6)	animation(passenger1))
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Chassis
+		{Locomotion
+			{MaxSpeed	35	}		; максимальная скорость, kmph
+			{StartTime	6	}		; время разгона до макс. скорости с 0, seconds
+			{BrakeTime	2	}		; время торможения с макс. скорости до 0, seconds
+			{StopTime	4	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius	7	}		; мин. радиус разворота, meter
+			{Gears		0.35 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears	0.33 0.5}	; передаточные коэф-ты коробки передач
+			{SteerOn	40}			; скорость поворота колес, градусов в секунду
+			{SteerOff	40}         ; скорость возврата колес в исх. состояние, градусов в секунду
+			{SplineRadius 1}		; ограничение радиуса поворота на сплайнах, метров
+		}
+	}
+	{Extension "DodgeWC56.mdl"}
+
+        (mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "n73at" 2 {cell 6 2}}
+                        {item "grenade 50mm_mine" 30}
+			}
+		}
+	)
+}

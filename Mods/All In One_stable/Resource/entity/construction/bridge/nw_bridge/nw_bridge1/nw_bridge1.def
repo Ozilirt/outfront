@@ -1,0 +1,24 @@
+{game_entity
+	{Extension "nw_bridge1.mdl"}
+	{props "cornered" "parts" "construction" "bridge"}
+	{obstacleid "unbreakable"}
+	{Volume "body"
+		{tags "body"}
+		{able clear {blast}}
+		{thickness 20}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{able clear {blast}}
+		{thickness 20}
+	}
+	{Extender "land"
+		{Heightmap "nw_bridge1.net"}
+		{Boundary
+			{Box2
+				{Origin -685 -371}
+				{Destination -468 -106}
+			}
+		}
+	}
+}

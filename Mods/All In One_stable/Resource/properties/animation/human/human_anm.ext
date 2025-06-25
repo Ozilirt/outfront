@@ -1,0 +1,291 @@
+;SDL
+{animation
+
+	; STAND IDLE
+	{sequence "stand_idle_1hand"}
+	{sequence "stand_idle_empty_1" {speed 0.4}}
+	{sequence "stand_idle_empty_2" {speed 0.4}}
+	{sequence "stand_idle_empty_3" {speed 0.4}}
+	{sequence "stand_idle_empty_4" {speed 0.4}}
+	{sequence "stand_idle_strap_1" {speed 0.4}}
+	{sequence "stand_idle_strap_2" {speed 0.4}}
+	{sequence "stand_idle_strap_3" {speed 0.4}}
+	{sequence "stand_look_around_gun"}
+	{sequence "stand_look_around_gun_1"}
+	{sequence "stand_smoke_1" {speed 0.5}}
+	{sequence "stand_smoke_2" {speed 0.5}}
+	{sequence "stand_smoke_3" {speed 0.5}}
+
+	{sequence "stand_climb_stairs"}
+	{sequence "stand_upstairs"}
+
+	; STAND OPERATIONS
+	{sequence "stand_down"}
+	{sequence "stand_put_small"}
+	{sequence "stand_take_small"}
+	{sequence "stand_take_gun_down"}
+	{sequence "stand_take_gun_up"}
+	{sequence "stand_take_mgun_up"}
+	{sequence "stand_take_mgun_down"}
+	{sequence "stand_take_pistol_up"}
+	{sequence "stand_take_pistol_up_begin" {speed 0.7}}
+	{sequence "stand_take_pistol_up_end" {speed 0.7}}
+	{sequence "stand_take_bazooka" {speed 0.6}}
+	{sequence "stand_fire_mgun" 	{speed 2.1}}
+	{sequence "stand_fire_gun" 		{speed 10.1}}
+	{sequence "stand_fire_pistol" 	{speed 2.1}}
+	{sequence "stand_fire_bazooka"}
+	{sequence "stand_reload_mgun" {speed 0.8}}
+	{sequence "stand_reload_gun" {speed 0.6}}
+	{sequence "stand_reload_pistol"}
+	{sequence "stand_reload_bazooka" {speed 0.35}}
+	{sequence "stand_pick_2hand_begin" {speed 0.7}}
+	{sequence "stand_pick_2hand_end" {speed 0.7}}
+	{sequence "stand_pick_small_begin"}
+	{sequence "stand_pick_small_end"}
+	{sequence "stand_holdback_gun_up"}
+	{sequence "stand_holdback_mgun_up"}
+	{sequence "stand_holdback_pistol_up"}
+	{sequence "stand_holdback_gun_down"}
+	{sequence "stand_holdback_mgun_down"}
+	{sequence "stand_holdback_pistol_down"}
+	{sequence "stand_flag"}
+	{sequence "stand_ring_gong_up"}
+	{sequence "stand_pourin_barrel"}
+	{sequence "stand_pourin_can"}
+	{sequence "stand_pourout_barrel"}
+	{sequence "stand_pourout_can"}
+	{sequence "stand_turn_railswitch" {movement}}
+
+	; WALK/RUN
+	{sequence "walk_1hand" 		{speed 0.56} {resume}}
+	{sequence "walk_2hand" 		{speed 0.35} {resume}}
+	{sequence "walk_gun_down" 	{speed 0.48} {resume}}
+	{sequence "walk_gun_up" 	{speed 0.48} {resume}}
+	{sequence "walk_down" 		{speed 0.48} {resume}}
+	{sequence "walk_empty_up" 	{speed 0.48} {resume}}
+	{sequence "walk_strap_up" 	{speed 0.48} {resume}}
+	{sequence "run_down" 		{speed 0.77} {resume}}
+	{sequence "run_empty_up" 	{speed 0.77} {resume}}
+	{sequence "run_strap_up" 	{speed 0.77} {resume}}
+	{sequence "run_gun_up" 		{speed 0.77} {resume}}
+	{sequence "run_bow_flag"	{speed 0.70} {resume}}
+	{sequence "walk_with_body"	{speed 0.43} {resume}}
+	{sequence "body"			{speed 0.43} {resume}}
+	{sequence "body_take"		{speed 0.43} {resume}}
+	{sequence "run_strap"		{speed 0.43} {resume}}
+	{sequence "run_bazooka_up"	{speed 0.77} {resume}}
+
+	; STAND THROW
+	{sequence "stand_throw_1hand_begin"}
+	{sequence "stand_throw_1hand_end"}
+	{sequence "stand_throw_small_begin"}
+	{sequence "stand_throw_small_end"}
+	{sequence "stand_throw_item_begin"}
+	{sequence "stand_throw_item_end"}
+	{sequence "stand_throw_item_1_begin"}
+	{sequence "stand_throw_item_1_end"}
+	{sequence "stand_throw_item_2_begin"}
+	{sequence "stand_throw_item_2_end"}
+	{sequence "stand_front_throw_knife_begin"}
+	{sequence "stand_front_throw_knife_end"      {movement}}
+	{sequence "stand_front_throw_knife_end_1"}
+	{sequence "stand_back_throw_knife_begin"}
+	{sequence "stand_back_throw_knife_end"}
+	{sequence "stand_throw_grenade_begin"}
+	{sequence "stand_throw_grenade_end"}
+
+	; DYING
+	{sequence "stand_die_1" }
+	{sequence "stand_die_2" }
+	{sequence "stand_die_back_1"	{movement}}
+	{sequence "stand_die_back_2"	{movement}}
+	{sequence "stand_die_back_3"	{movement}}
+	{sequence "stand_die_back_4"	{movement}}
+	{sequence "stand_die_back_5"	{movement}}		
+    {sequence "stand_die_front_1"   {movement}}
+	{sequence "stand_die_front_2"   {movement}}
+	{sequence "stand_die_front_3"   {movement}}
+	{sequence "stand_die_front_4"   {movement}}
+	{sequence "stand_die_drowin" }
+	{sequence "squat_die" {speed 0.6}}
+	{sequence "lie_die_drowin" }
+	{sequence "lie_die"}
+
+	{sequence "fly_back"}
+	{sequence "fly_back_end"}
+	{sequence "fly_forward"}
+	{sequence "fly_forward_end"}
+
+	; SQUAT
+	{sequence "squat_from_stand_empty" {speed 0.6}}
+	{sequence "squat_from_stand_gun" {speed 0.6}}
+	{sequence "squat_from_stand_bazooka"}
+	{sequence "squat_hide"}
+	{sequence "squat_take_gun" {speed 0.6}}
+	{sequence "squat_take_pistol"}
+	{sequence "squat_take_small"}
+	{sequence "squat_put_small"}
+	{sequence "squat_reload_gun" {speed 0.6}}
+	{sequence "squat_reload_pistol"}
+	{sequence "squat_take_bazooka" {speed 0.6}}
+	{sequence "squat_fire_pistol"}
+	{sequence "squat_fire_bazooka" {speed 2.1}}
+	{sequence "squat_reload_bazooka" {speed 0.35}}
+	{sequence "squat_throw_small_begin"}
+	{sequence "squat_throw_small_end"}
+	{sequence "squat_throw_grenade_begin"}
+	{sequence "squat_throw_grenade_end"}								
+	{sequence "squat_throw_knife_begin"}
+	{sequence "squat_throw_knife_end"}								
+	{sequence "squat_repair_1"}
+	{sequence "squat_repair_2"}
+	{sequence "squat_holdback_gun"}
+	{sequence "squat_holdback_pistol"}
+
+	; LIE
+	{sequence "crawl" {speed 0.5} {resume}}
+	{sequence "crawl_gun" {speed 0.5} {resume}}
+	{sequence "lie_from_squat_gun" {speed 0.6}}
+	{sequence "lie_from_squat_empty" {speed 0.6}}
+	{sequence "lie_from_stand" {speed 0.8}}
+	{sequence "lie_from_stand_1" {speed 0.8}}
+	{sequence "lie_fire_gun" {speed 10.1}}
+	{sequence "lie_fire_pistol"}
+	{sequence "lie_take_pistol" {speed 0.6}}
+	{sequence "lie_take_small" {speed 0.6}}
+	{sequence "lie_put_small" {speed 0.6}}
+	{sequence "lie_take_gun" {speed 0.3}}
+	{sequence "lie_take_item_begin"}
+	{sequence "lie_take_item_end"}
+	{sequence "lie_reload_gun" {speed 0.6}}
+	{sequence "lie_reload_pistol" {speed 0.6}}
+	{sequence "lie_throw_small_begin" {speed 0.6}}
+	{sequence "lie_throw_small_end" {speed 0.6}}
+	{sequence "lie_rotate_l45" {movement}}
+	{sequence "lie_rotate_r45" {movement}}
+	{sequence "lie_rotate_l45_gun" {movement}}
+	{sequence "lie_rotate_r45_gun" {movement}}
+	{sequence "lie_holdback_gun"}
+	{sequence "lie_holdback_pistol"}
+
+	; RLOOK / LLOOK
+	{sequence "rlook_gun"		{movement}}
+	{sequence "llook_gun" 		{movement}}
+	{sequence "rlook_pistol"	{movement}}
+	{sequence "llook_pistol" 	{movement}}
+	{sequence "rlook_item" 		{movement}}
+	{sequence "rlook_throw_item_begin" {pinback 2}}
+	{sequence "rlook_throw_item_end" {pinback 2}}
+	{sequence "llook_item" 		{movement}}
+	{sequence "llook_throw_item_begin" {pinback 2}}
+	{sequence "llook_throw_item_end" {pinback 2}}
+
+	{sequence "rlook_peep" {movement}}
+	{sequence "llook_peep_gun" {movement}}
+	{sequence "llook_stealth_gun" {movement}}
+	{sequence "rlook_stealth_gun" {movement}}
+	{sequence "llook_stealth_item" {movement}}
+	{sequence "llook_stealth_throw_item_begin" {pinback 2}}
+	{sequence "llook_stealth_throw_item_end" {pinback 2}}
+	{sequence "rlook_stealth_item" {movement}}
+	{sequence "rlook_stealth_throw_item_begin" {pinback 2}}
+	{sequence "rlook_stealth_throw_item_end" {pinback 2}}
+
+	; SNIPE/COVER
+	{sequence "snipe_take_pistol"}
+	{sequence "cover_from_stand_empty" {movement}}
+	{sequence "cover_from_snipe_gun" {movement}}
+	{sequence "cover_from_snipe_gun_for_wind" {file "cover_from_snipe_gun.anm"}}
+;	{sequence "snipe_from_cover_gun" {movement}}
+;	{sequence "snipe_from_cover_gun_for_wind" {file "snipe_from_cover_gun.anm"}}
+;	{sequence "snipe_put_gun"}
+;	{sequence "snipe_reload_gun"}
+
+	; SWIM
+	{sequence "swim_from_stand_gun" {movement} {speed 0.7}}
+	{sequence "swim_gun"			{speed 0.6}}
+	{sequence "swim_spot_gun"}
+	{sequence "swim_from_stand_empty" {movement}}
+	{sequence "swim_on_the_spot_empty" {pinback}}
+	{sequence "swim_empty" {pinback} {speed 0.5}}
+	{sequence "swim_fast_empty" {pinback} {speed 0.5}}
+
+	; GET OVER
+	{sequence "getover_middle" {movement}}
+
+	;FIGHT
+	{sequence "fight_front_knife" {movement}}
+	{sequence "fight_front_punch" {movement}}
+	{sequence "fight_front_club"}
+	{sequence "fight_club_finish"}
+	{sequence "fight_kick_lying"}
+
+	; BOARD
+	{sequence "board_bigcar" {speed 0.5}}
+	{sequence "board_tank" {speed 0.5}}
+	{sequence "board_plane_right"}
+	{sequence "board_plane_left"}
+	{sequence "board_rubber_boat"}
+	{sequence "board_torpedo_boat"}
+	{sequence "board_steam_locomotive"}
+	{sequence "board_ju-52"}
+	{sequence "board_big-midcar_driver"}
+	{sequence "board_big-midcar"}
+	{sequence "board_big-highcar_driver"}
+	{sequence "board_big-highcar"}
+	{sequence "board_willis"}
+	{sequence "board_willis_driver"}
+	{sequence "board_gaz-m"}
+	{sequence "board_gaz-m_driver"}
+	{sequence "board_pz-6"}
+	{sequence "board_T-34"}
+	{sequence "board_Sherman_left"}
+	{sequence "board_Sherman_right"}
+	{sequence "board_cromwell"}
+	{sequence "board_Kv"}
+	{sequence "board_SdKfz7"}
+	{sequence "board_SdKfz251-1"}
+	{sequence "board_body"}
+	{sequence "board_Kv-85"}
+	{sequence "board_Is-2"}
+	{sequence "board_tank_right"}
+	{sequence "board_tank_left"}
+	{sequence "board_Horch_passanger_left"}
+	{sequence "board_Ba-20m_driver"}
+	{sequence "board_Ba-20m"}
+	{sequence "board_SdKfz-232_left"}
+	{sequence "board_SdKfz-232_right"}
+	{sequence "board_Kubel_driver"}
+	{sequence "board_Kubel_commander"}
+	{sequence "board_Kubel_leftpassenger"}
+	{sequence "board_Kubel_rightpassenger"}
+	{sequence "board_LowTank_left"}
+	{sequence "board_LowArmor"}
+	{sequence "board_LowTank_stand"}
+	{sequence "board_LowTank_stand_1"}
+	{sequence "board_HighArmor"}
+	{sequence "board_Dodge"}
+	{sequence "board_Dodge_body"}
+	{sequence "board_Dodge_bodyBack"}
+	{sequence "board_MiddleArmor"}	
+
+
+	       
+	{sequence "seat_armor"}
+	{sequence "seat_driver_car"}
+	{sequence "seat_driver_moto"}
+	{sequence "seat_gunner_moto"}
+	{sequence "seat_gunner_stand"}
+	{sequence "seat_passenger"}
+	{sequence "seat_willis_driver"}
+	{sequence "seat_willis_passenger"}
+
+	{sequence "emit_tank_1"}
+	{sequence "emit_tank_1_hold"}
+	{sequence "emit_tank_2_hold"}
+	{sequence "emit_tank_2"}
+	{sequence "emit_torpedo_boat"}
+	{sequence "emit_body" {movement}}
+}
+ 

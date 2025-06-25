@@ -1,0 +1,45 @@
+;Exported by: dinsen
+;Date:        Wed Jun 15 21:33:38 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\hecho\rayban.max
+{Skeleton
+	{bone "sun_glass"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "sun_glass.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	1.0000	-0.0000
+				0.0000	0.0000	1.0000
+				0.5644	-0.0000	2.4893
+			}
+		}
+		{bone "glass"
+			{Position 2.1495	0.6524	2.5570}
+			{VolumeView "glass.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Box 70.8667 62.7634 24.5308}
+	{Bone "sun_glass"}
+	{Matrix34
+		0.0432	0.0000	-0.0000
+		-0.0000	0.0432	0.0000
+		0.0000	-0.0000	0.0432
+		0.5644	-0.0000	2.4893
+	}
+}
+{Volume "select"
+	{Box 70.8667 62.7634 24.5308}
+	{Bone "sun_glass"}
+	{Matrix34
+		0.0432	-0.0000	0.0000
+		-0.0000	0.0432	-0.0000
+		0.0000	0.0000	0.0432
+		0.5644	-0.0000	2.4893
+	}
+}

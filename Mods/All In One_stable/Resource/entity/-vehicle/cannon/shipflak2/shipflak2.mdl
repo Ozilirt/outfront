@@ -1,0 +1,98 @@
+;Exported by: garry
+;Date:        Mon Mar 01 17:44:47 2004
+;File:        D:\-Projects-\-3DWork-\Model\-Marine\MTB_D3\guns.max
+{Skeleton
+	{animation
+		{sequence "recoil"}
+	}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "Turret"
+			{parameters "ID=turret;"}
+			{limits -135.0000 135.0000}
+			{speed 0.0100}
+			{Position 0.0000	0.0000	0.0985}
+			{VolumeView "Turret.ply"}
+			{bone "gunner"
+				{Position -22.5618	0.2003	3.1918}
+			}
+			{bone revolute "gun_rot"
+				{parameters "ID=gun;"}
+				{limits -10.0000 10.0000}
+				{speed 0.0500}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					0.2268	0.0340	20.3024
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "Visor"
+					{Matrix34
+						1.0000	-0.0018	0.0002
+						0.0018	0.9998	0.0175
+						-0.0002	-0.0175	0.9998
+						2.4377	-14.7994	6.1794
+					}
+				}
+				{bone "gun"
+					{parameters "CommonMesh;ID=gun;"}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						-0.0000	-1.0000	-0.0000
+						-0.0000	0.0000	-1.0000
+						-0.4016	-4.7938	-0.1681
+					}
+					{VolumeView "gun.ply"}
+					{bone "Foresight1"
+						{Matrix34
+							1.0000	0.0000	-0.0000
+							0.0000	-0.0000	-1.0000
+							0.0000	1.0000	-0.0000
+							44.4995	5.0065	-0.2872
+						}
+					}
+					{bone "shooter00"
+						{Matrix34
+							1.0000	0.0000	-0.0000
+							0.0000	-0.0000	-1.0000
+							0.0000	1.0000	-0.0000
+							29.5070	5.0065	-0.2872
+						}
+					}
+					{bone "FXshell1"
+						{Matrix34
+							-0.0000	0.2839	-0.9589
+							-1.0000	-0.0000	0.0000
+							-0.0000	0.9589	0.2839
+							-10.5485	4.1968	-2.6622
+						}
+					}
+				}
+			}
+			{bone "emit"
+				{Position -22.5618	0.2003	3.1918}
+				{visibility 0}
+			}
+		}
+	}
+}
+{Volume "gun"
+	{Box 2.18557 1.93756 27.987}
+	{Bone "gun"}
+	{Matrix34
+		-0.0000	0.0000	-1.0000
+		-0.0000	1.0000	0.0000
+		1.0000	0.0000	0.0000
+		12.3215	4.7331	-0.1841
+	}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "Turret"}
+	{Position 0.1522	-0.0534	-0.0805}
+}

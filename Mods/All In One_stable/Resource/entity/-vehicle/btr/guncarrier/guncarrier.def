@@ -1,0 +1,80 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "guncarrier.mdl"}
+	{extension "crew.ext"}
+	{props "armored_car" "tank" "turret" "self_propelled" "explosion_throw_crew"}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "minomet_76mm"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo 76mm_mine" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{Box
+			{item "ammo 76mm_mine" 30}
+			{item "plant" 5}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front  10}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front  10}
+		}
+	}
+	{volume "engine"	
+		{thickness 10}
+	}
+	{component "engine"	
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	("tracks")
+
+	{mass 5000}
+	{Chassis
+		{speed
+			{Slow	16	}
+			{Normal	21	}
+			{Fast	25	}
+		}
+	        {FuelBag
+			{volume 110 }
+			{rate    45 }
+			{remain 110 }
+        		{fuel "fuel"}
+		}
+
+		{Locomotion ("locomotion")
+			{Maxspeed 25}
+			{StartTime	2.5}
+		}
+	}
+	{Sensor
+		{Visor "crew"
+		      {vision "Visor_cannon"}
+                      {bone "visor1"}
+		}
+		{Visor "driver"
+		      {vision "Visor_BTR"}
+		      {bone "visor2"}
+		}
+	}
+}

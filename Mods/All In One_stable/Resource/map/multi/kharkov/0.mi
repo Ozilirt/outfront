@@ -1,0 +1,1809 @@
+{mission
+	{Camera
+		{Position 1749.64 -3105.94}
+		{Distance 600}
+		{ViewAngle 0.687657}
+		{YawAngle -15.8566}
+	}
+	{Environment "main-rus2"}
+	{User 1}
+	{GameProgress 0 0}
+	{Entity "battle" 0x8002
+		{Position 749.952 2764 0}
+		{Extender "speaker"
+			{SoundName "battle.can03"}
+		}
+	}
+	{Entity "birds" 0x8005
+		{Position 2491.66 1625.64 0}
+		{Extender "speaker"
+			{SoundName "world.birds02"}
+		}
+	}
+	{Entity "birds" 0x8006
+		{Position 4886.47 3098.66 55}
+		{Extender "speaker"
+			{SoundName "world.nature"}
+		}
+	}
+	{Human "rus.specnaz2" 0x9000
+		{Position 1887.17 -3089.47 0}
+		{Turn 105.612}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "grenade rgd33" {cell 6 0}}
+				{item "ammo pistol" 100 {cell 4 1}}
+				{item "morphine" 3 {cell 6 1}}
+				{item "grenade smoke" {cell 0 2}}
+				{item "grenade smoke" {cell 1 2}}
+				{item "grenade smoke" {cell 2 2}}
+				{item "grenade rpg40" {cell 3 2}}
+				{item "grenade rpg40" {cell 0 3}}
+				{item "grenade rpg40" {cell 2 3}}
+			}
+			{armor "head"
+				{Item "helmet2_rus"}
+			}
+		}
+		{Player 1}
+		{MID 1}
+		{Able {personage 1}}
+		{Weaponry
+			{State
+				{Mounted "ppsh"}
+				{Weapon
+					{Ammo "ammo pistol" 71}
+				}
+			}
+		}
+		{NameId 51 91}
+		{FsmState "stand"}
+	}
+	{Human "rus.specnaz2" 0x9001
+		{Position 1777.93 -3075.72 -7.63501}
+		{Turn 105.612}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "grenade rgd33" {cell 6 0}}
+				{item "ammo pistol" 100 {cell 4 1}}
+				{item "morphine" 3 {cell 6 1}}
+				{item "grenade rpg43" {cell 0 0}}
+				{item "grenade rpg43" {cell 2 0}}
+				{item "grenade rpg43" {cell 0 1}}
+			}
+			{armor "head"
+				{Item "helmet2_rus"}
+			}
+		}
+		{Player 1}
+		{MID 2}
+		{Able {personage 1}}
+		{Weaponry
+			{State
+				{Mounted "ppsh"}
+				{Weapon
+					{Ammo "ammo pistol" 71}
+				}
+			}
+		}
+		{NameId 43 27}
+		{FsmState "stand"}
+	}
+	{Human "rus.sniper" 0x9002
+		{Position 1852.96 -3086.65 0}
+		{Turn 105.612}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 15 {cell 4 0}}
+				{item "tt" filling "ammo pistol" 8 {cell 5 0}}
+				{item "ammo pistol" 16 {cell 4 1}}
+				{item "knife" {cell 6 1}}
+			}
+		}
+		{Player 1}
+		{MID 3}
+		{Able {personage 1}}
+		{Weaponry
+			{State
+				{Mounted "mosin_m91-30"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 40 99}
+		{FsmState "stand"}
+	}
+	{Human "rus.sniper" 0x9003
+		{Position 1815.52 -3087.64 -2.44806}
+		{Turn 105.612}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 15 {cell 4 0}}
+				{item "tt" filling "ammo pistol" 8 {cell 5 0}}
+				{item "ammo pistol" 16 {cell 4 1}}
+				{item "knife" {cell 6 1}}
+			}
+		}
+		{Player 1}
+		{MID 4}
+		{Able {personage 1}}
+		{Weaponry
+			{State
+				{Mounted "mosin_m91-30"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 87 22}
+		{FsmState "stand"}
+	}
+	{Entity "mg42_stan" 0x9004
+		{Position 2848.91 -1721.37 50.1221}
+		{Turn -124.558}
+		{Player 2}
+		{MID 5}
+	}
+	{Entity "mg42_stan" 0x9005
+		{Position 2822.89 -1674.16 47.416}
+		{Turn 171.578}
+		{Player 2}
+		{MID 6}
+	}
+	{Entity "box_metal" 0x9006
+		{Position 2893.16 -1693.24 50.64}
+		{Turn 38.8208}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 1000 {cell 6 5}}
+				{item "ammo pistol" 1000 {cell 6 4}}
+				{item "ammo rifle" 1000 {cell 7 3}}
+			}
+		}
+	}
+	{Human "ger.fallsch3" 0x8000
+		{Position 2836.95 -1676.47 47.416}
+		{Turn 171.578}
+		{Extender "inventory"
+			{box
+				{clear}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 7}
+		{NameId 123 101}
+		{FsmState "board"}
+	}
+	{Human "ger.fallsch3" 0x8001
+		{Position 2857.18 -1709.76 50.1221}
+		{Turn -124.558}
+		{Extender "inventory"
+			{box
+				{clear}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 8}
+		{NameId 9 53}
+		{FsmState "board"}
+	}
+	{Human "ger.mp44soldier" 0x8003
+		{Position 1977.64 -1063.47 0}
+		{Turn -94.0239}
+		{Extender "inventory"
+			{box
+				{clear}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 9}
+		{NameId 126 137}
+		{FsmState "board"}
+	}
+	{Human "ger.mp44soldier" 0x8004
+		{Position 2008.11 -1023.53 0}
+		{Extender "inventory"
+			{box
+				{clear}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 10}
+		{NameId 1 133}
+		{FsmState "board"}
+	}
+	{Entity "mg34_stan" 0x8007
+		{Position 1976.42 -1077.67 0}
+		{Turn -94.0239}
+		{Player 2}
+		{MID 11}
+	}
+	{Entity "mg34_stan" 0x8008
+		{Position 2022.36 -1023.76 0}
+		{Player 2}
+		{MID 12}
+	}
+	{Human "ger.sniper" 0x8009
+		{Position 1787.91 -842.443 3.3613}
+		{Turn 21.8758}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+				{item "knife_ger" {cell 5 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 13}
+		{Weaponry
+			{State
+				{Mounted "g41"}
+				{Weapon
+					{Ammo "ammo rifle" 10}
+				}
+			}
+		}
+		{NameId 39 117}
+		{Cover
+			{sector 1787.91 -842.443 {type "snipe_cover"}
+				{wall 0 0 1790.68 -830.555 1798.14 -849.114}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.sniper" 0x800a
+		{Position 1779.34 -894.427 67.4645}
+		{Turn -68.1238}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+				{item "knife_ger" {cell 5 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 14}
+		{Weaponry
+			{State
+				{Mounted "g41"}
+				{Weapon
+					{Ammo "ammo rifle" 10}
+				}
+			}
+		}
+		{NameId 25 112}
+		{Cover
+			{sector 1779.34 -894.427 {type "squat_lie"}
+				{wall 0 0 1791.22 -897.197 1772.66 -904.649}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "ger.rifleman" 0x800b
+		{Position 1414.77 205.293 168.587}
+		{Turn 110.21}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 15 {cell 4 0}}
+				{item "bayonet" {cell 5 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 15}
+		{Weaponry
+			{State
+				{Mounted "mauzer"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 140 20}
+		{LastItem "mp40"}
+		{Cover
+			{sector 1414.77 205.293 {type "squat_lie"}
+				{wall 0 0 1402.97 208.408 1421.74 215.317}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "ger.rifleman" 0x800c
+		{Position 1470.14 175.416 168.587}
+		{Turn -34.7907}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 15 {cell 4 0}}
+				{item "bayonet" {cell 5 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 16}
+		{Weaponry
+			{State
+				{Mounted "mauzer"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 60 99}
+		{LastItem "mp40"}
+		{Cover
+			{sector 1470.14 175.416 {type "squat_lie"}
+				{wall 0 0 1481.6 179.634 1470.19 163.209}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Entity "sdkfz-222" 0x800d
+		{Position 1569.66 -569.755 38.7374}
+		{Turn -83.0448}
+		{Player 2}
+		{MID 17}
+	}
+	{Human "ger.tank_crew" 0x800e
+		{Position 1572.3 -572.572 51.3263}
+		{Orientation
+			  0.584893  -0.661302   0.469539
+			  0.773685   0.628723  -0.078062
+			 -0.243570   0.408980   0.879412
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 18}
+		{NameId 122 37}
+		{FsmState "board"}
+	}
+	{Human "ger.tank_crew" 0x800f
+		{Position 1576.88 -585.778 48.7234}
+		{Orientation
+			  0.115695  -0.894065   0.432648
+			  0.992596   0.120286  -0.016862
+			 -0.036966   0.431395   0.901362
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 19}
+		{NameId 21 98}
+		{FsmState "board"}
+	}
+	{Human "ger.tank_crew" 0x8010
+		{Position 1569.14 -563.912 49.8953}
+		{Orientation
+			  0.120959  -0.991536   0.047168
+			  0.992596   0.120286  -0.016862
+			  0.011045   0.048859   0.998745
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 20}
+		{NameId 11 126}
+		{FsmState "board"}
+	}
+	{Human "ger.tank_crew" 0x8011
+		{Position 1565.85 -587.115 48.9108}
+		{Orientation
+			  0.115695  -0.894065   0.432648
+			  0.992596   0.120286  -0.016862
+			 -0.036966   0.431395   0.901362
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 21}
+		{NameId 43 11}
+		{FsmState "board"}
+	}
+	{Human "ger.elite_ss" 0x8012
+		{Position 1315.69 161.158 0}
+		{Turn 162.329}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 90 {cell 0 0}}
+				{item "bandage" {cell 1 0}}
+				{item "grenade m24" {cell 3 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "sg44" filling "ammo rifle" 30 {cell 0 1}}
+				{item "grenade molotov_coctail" {cell 4 1}}
+			}
+		}
+		{Player 2}
+		{MID 22}
+		{NameId 57 120}
+		{FsmState "stand"}
+	}
+	{Human "ger.elite_ss" 0x8013
+		{Position 1300.39 140.082 0}
+		{Turn 121.665}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 90 {cell 0 0}}
+				{item "bandage" {cell 1 0}}
+				{item "grenade m24" {cell 3 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "sg44" filling "ammo rifle" 30 {cell 0 1}}
+				{item "grenade molotov_coctail" {cell 4 1}}
+			}
+		}
+		{Player 2}
+		{MID 23}
+		{NameId 58 42}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_mgun" 0x8014
+		{Position 1272.32 125.234 0}
+		{Turn 110.741}
+		{Player 2}
+		{MID 24}
+		{NameId 48 135}
+		{FsmState "stand"}
+	}
+	{Human "ger.elite_ss" 0x8015
+		{Position 1232.77 144.646 0}
+		{Turn 21.0833}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 90 {cell 0 0}}
+				{item "bandage" {cell 1 0}}
+				{item "grenade m24" {cell 3 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "sg44" filling "ammo rifle" 30 {cell 0 1}}
+				{item "grenade molotov_coctail" {cell 4 1}}
+			}
+		}
+		{Player 2}
+		{MID 25}
+		{NameId 138 0}
+		{FsmState "stand"}
+	}
+	{Human "ger.elite_ss" 0x8016
+		{Position 1214.81 172.363 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 90 {cell 0 0}}
+				{item "bandage" {cell 1 0}}
+				{item "grenade m24" {cell 3 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "sg44" filling "ammo rifle" 30 {cell 0 1}}
+				{item "grenade molotov_coctail" {cell 4 1}}
+			}
+		}
+		{Player 2}
+		{MID 26}
+		{NameId 2 122}
+		{FsmState "stand"}
+	}
+	{Human "ger.elite_ss" 0x8017
+		{Position 1233.08 202.705 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 90 {cell 0 0}}
+				{item "bandage" {cell 1 0}}
+				{item "grenade m24" {cell 3 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "sg44" filling "ammo rifle" 30 {cell 0 1}}
+				{item "grenade molotov_coctail" {cell 4 1}}
+			}
+		}
+		{Player 2}
+		{MID 27}
+		{NameId 58 88}
+		{FsmState "stand"}
+	}
+	{Human "ger.elite_ss" 0x8018
+		{Position 1261.66 210.282 0}
+		{Turn -55.8722}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 90 {cell 0 0}}
+				{item "bandage" {cell 1 0}}
+				{item "grenade m24" {cell 3 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "sg44" filling "ammo rifle" 30 {cell 0 1}}
+				{item "grenade molotov_coctail" {cell 4 1}}
+			}
+		}
+		{Player 2}
+		{MID 28}
+		{NameId 46 133}
+		{FsmState "stand"}
+	}
+	{Human "ger.rifleman" 0x8019
+		{Position 1312.71 185.963 0}
+		{Turn -147.753}
+		{Player 2}
+		{MID 29}
+		{NameId 123 29}
+		{FsmState "stand"}
+	}
+	{Human "ger.rifleman" 0x801a
+		{Position 1288.85 207.96 0}
+		{Turn -104.061}
+		{Player 2}
+		{MID 30}
+		{NameId 13 101}
+		{FsmState "stand"}
+	}
+	{Entity "pz-3g" 0x801b
+		{Position 2340.8 1562.77 0}
+		{Turn -73.8764}
+		{Player 2}
+		{MID 31}
+	}
+	{Entity "ash_tree2" 0x9007
+		{Position 2339.51 1472.52 0}
+	}
+	{Entity "ash_tree2" 0x9008
+		{Position 2401.3 1512.76 0}
+	}
+	{Entity "ash_tree3" 0x9009
+		{Position 2283.03 1499.02 0}
+	}
+	{Entity "m19" 0x801c
+		{Position 2246.86 1901 0}
+		{Turn -73.7403}
+		{Player 2}
+		{MID 32}
+	}
+	{Entity "common_use1" 0x900a
+		{Position 2194.89 1798.99 0}
+		{Volume "crown"
+			{Able {visible 0}}
+		}
+	}
+	{Entity "common_use1" 0x900b
+		{Position 2216.48 1661.33 0}
+		{Volume "crown"
+			{Able {visible 0}}
+		}
+	}
+	{Human "ger.infantry_ss" 0x801d
+		{Position 2601.61 1566.81 0}
+		{Player 2}
+		{MID 33}
+		{NameId 75 146}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_ss" 0x801e
+		{Position 2663.03 1562.47 0}
+		{Player 2}
+		{MID 34}
+		{NameId 23 66}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_ss" 0x801f
+		{Position 2689.29 1559.67 0}
+		{Player 2}
+		{MID 35}
+		{NameId 46 147}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_ss" 0x8020
+		{Position 2626.48 1518.47 0}
+		{Player 2}
+		{MID 36}
+		{NameId 108 147}
+		{FsmState "stand"}
+	}
+	{Human "ger.fallsch1" 0x8021
+		{Position 2772.07 1588.21 0}
+		{Player 2}
+		{MID 37}
+		{NameId 57 112}
+		{FsmState "stand"}
+	}
+	{Human "ger.fallsch1" 0x8022
+		{Position 2791.74 1592.37 0}
+		{Player 2}
+		{MID 38}
+		{NameId 92 48}
+		{FsmState "stand"}
+	}
+	{Human "ger.fallsch1" 0x8023
+		{Position 2839.6 1617.28 0}
+		{Player 2}
+		{MID 39}
+		{NameId 49 63}
+		{FsmState "stand"}
+	}
+	{Human "ger.fallsch1" 0x8024
+		{Position 2867 1611.19 0}
+		{Player 2}
+		{MID 40}
+		{NameId 9 145}
+		{FsmState "stand"}
+	}
+	{Human "ger.rifleman" 0x8025
+		{Position 3046.35 1674.74 0}
+		{Turn 37.0801}
+		{Player 2}
+		{MID 41}
+		{NameId 24 145}
+		{FsmState "stand"}
+	}
+	{Human "ger.rifleman" 0x8026
+		{Position 3019.65 1622.07 0}
+		{Turn 119.018}
+		{Player 2}
+		{MID 42}
+		{NameId 26 78}
+		{FsmState "stand"}
+	}
+	{Human "ger.rifleman" 0x8027
+		{Position 3055.55 1633.21 0}
+		{Turn 57.9453}
+		{Player 2}
+		{MID 43}
+		{NameId 77 150}
+		{FsmState "stand"}
+	}
+	{Human "x.g.automatic_rifle_42" 0x8028
+		{Position 3082.27 1652.47 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 70 {cell 4 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "grenade m24x5" {cell 6 1}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "bandage" 5 {cell 0 2}}
+			}
+		}
+		{Player 2}
+		{MID 44}
+		{Weaponry
+			{State
+				{Mounted "g41automatic"}
+				{Weapon
+					{Ammo "ammo rifle" 10}
+				}
+			}
+		}
+		{NameId 0 14}
+		{LastItem "weapon panzershreck"}
+		{FsmState "stand"}
+	}
+	{Human "x.g.automatic_rifle_42" 0x8029
+		{Position 3104.67 1648.44 0}
+		{Turn 118.874}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 70 {cell 4 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "grenade m24x5" {cell 6 1}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "bandage" 5 {cell 0 2}}
+			}
+		}
+		{Player 2}
+		{MID 45}
+		{Weaponry
+			{State
+				{Mounted "g41automatic"}
+				{Weapon
+					{Ammo "ammo rifle" 10}
+				}
+			}
+		}
+		{NameId 98 68}
+		{LastItem "weapon panzershreck"}
+		{FsmState "stand"}
+	}
+	{Human "x.g.automatic_rifle_42" 0x802a
+		{Position 3074.73 1691.28 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 70 {cell 4 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "grenade m24x5" {cell 6 1}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "bandage" 5 {cell 0 2}}
+			}
+		}
+		{Player 2}
+		{MID 46}
+		{Weaponry
+			{State
+				{Mounted "g41automatic"}
+				{Weapon
+					{Ammo "ammo rifle" 10}
+				}
+			}
+		}
+		{NameId 122 97}
+		{LastItem "weapon panzershreck"}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_smg" 0x802b
+		{Position 3159.86 1670.23 0}
+		{Turn 168.521}
+		{Player 2}
+		{MID 47}
+		{NameId 6 18}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_smg" 0x802c
+		{Position 3139.85 1668.29 0}
+		{Player 2}
+		{MID 48}
+		{NameId 105 121}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_smg" 0x802d
+		{Position 3132.95 1715.62 0}
+		{Player 2}
+		{MID 49}
+		{NameId 87 17}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_smg" 0x802e
+		{Position 3126.39 1699.45 0}
+		{Player 2}
+		{MID 50}
+		{NameId 83 135}
+		{FsmState "stand"}
+	}
+	{Entity "pz-6e" 0x802f
+		{Position 2633.1 1831.89 0}
+		{Turn 17.8956}
+		{Player 2}
+		{MID 51}
+	}
+	{Human "ger.tank_crew" 0x8030
+		{Position 2728.6 1953.33 0}
+		{Player 2}
+		{MID 52}
+		{NameId 50 9}
+		{FsmState "stand"}
+	}
+	{Human "ger.tank_crew" 0x8031
+		{Position 2738.86 1922.47 0}
+		{Player 2}
+		{MID 53}
+		{NameId 46 112}
+		{FsmState "stand"}
+	}
+	{Human "ger.tank_crew" 0x8032
+		{Position 2762.16 1909.81 0}
+		{Turn 74.2263}
+		{Player 2}
+		{MID 54}
+		{NameId 24 53}
+		{FsmState "stand"}
+	}
+	{Human "ger.tank_com" 0x8033
+		{Position 2775.59 1938.24 0}
+		{Turn -157.731}
+		{Player 2}
+		{MID 55}
+		{NameId 101 20}
+		{FsmState "stand"}
+	}
+	{Human "ger.tank_crew" 0x8034
+		{Position 2762.16 1963.43 0}
+		{Turn -127.817}
+		{Player 2}
+		{MID 56}
+		{NameId 30 94}
+		{FsmState "stand"}
+	}
+	{Human "ger.rifleman" 0x8036
+		{Position 2792.73 2413.83 150.009}
+		{Turn 16.189}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 15 {cell 4 0}}
+				{item "bayonet" {cell 5 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 58}
+		{Weaponry
+			{State
+				{Mounted "mauzer"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 50 25}
+		{Cover
+			{sector 2792.73 2413.83 {type "squat_lie"}
+				{wall 0 0 2796.67 2425.39 2802.24 2406.18}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Entity "besa_stan" 0x8035
+		{Position 2128.05 -187.027 0}
+		{Turn -144.476}
+		{Player 2}
+		{MID 57}
+	}
+	{Entity "besa_stan" 0x8037
+		{Position 2207.31 -157.357 0}
+		{Turn -33.4471}
+		{Player 2}
+		{MID 59}
+	}
+	{Human "ger.rifleman" 0x900c
+		{Position 392.233 -2055.26 0}
+		{Turn -87.6046}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 15 {cell 4 0}}
+				{item "bayonet" {cell 5 0}}
+			}
+		}
+		{Player 2}
+		{MID 60}
+		{Weaponry
+			{State
+				{Mounted "mauzer"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 81 44}
+		{Cover
+			{sector 392.233 -2055.26 {type "snipe_cover"}
+				{wall 0 0 431.039 -2060.64 349.998 -2064.03}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.dominik" 0x900d
+		{Position 376.089 -2055.93 0}
+		{Turn -87.6046}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 35 {cell 4 0}}
+			}
+		}
+		{Player 2}
+		{MID 61}
+		{Weaponry
+			{State
+				{Mounted "mauzer"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 82 16}
+		{Cover
+			{sector 376.089 -2055.93 {type "snipe_cover"}
+				{wall 0 0 431.039 -2060.64 349.998 -2064.03}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.fallsch1" 0x900e
+		{Position 405.528 -2040.07 0}
+		{Turn 2.1699}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 100 {cell 4 0}}
+				{item "grenade m39" {cell 5 0}}
+				{item "grenade smoke" {cell 6 0}}
+				{item "knife_ger" {cell 4 1}}
+				{item "bandage" 4 {cell 6 1}}
+			}
+		}
+		{Player 2}
+		{MID 62}
+		{Weaponry
+			{State
+				{Mounted "fg42"}
+				{Weapon
+					{Ammo "ammo rifle" 20}
+				}
+			}
+		}
+		{NameId 6 94}
+		{Cover
+			{sector 405.528 -2040.07 {type "snipe_cover"}
+				{wall 0 0 410.927 -1997.69 413.998 -2078.74}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.sniper" 0x900f
+		{Position 393.603 -1978.91 0}
+		{Turn 93.2935}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+				{item "knife_ger" {cell 5 0}}
+			}
+		}
+		{Player 2}
+		{MID 63}
+		{Weaponry
+			{State
+				{Mounted "g41"}
+				{Weapon
+					{Ammo "ammo rifle" 10}
+				}
+			}
+		}
+		{NameId 70 15}
+		{Cover
+			{sector 393.603 -1978.91 {type "snipe_cover"}
+				{wall 0 0 345.538 -1974.66 426.517 -1970}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.infantry_mgun" 0x9010
+		{Position 403.61 -1987.65 0}
+		{Turn 2.16992}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 6 0}}
+				{item "grenade m24" {cell 6 1}}
+			}
+		}
+		{Player 2}
+		{MID 64}
+		{Weaponry
+			{State
+				{Mounted "mg34"}
+				{Weapon
+					{Ammo "ammo mgun" 100}
+				}
+			}
+		}
+		{NameId 143 116}
+		{Cover
+			{sector 403.61 -1987.65 {type "snipe_cover"}
+				{wall 0 0 409.322 -1953.53 412.393 -2034.58}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.bazoker" 0x9011
+		{Position 342.01 -2056.92 0}
+		{Turn -87.6047}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 2 0}}
+				{item "ammo bazooka" {cell 4 0}}
+				{item "ammo pistol" 16 {cell 6 0}}
+				{item "weapon panzershreck" filling "ammo bazooka" {cell 2 1}}
+			}
+		}
+		{Player 2}
+		{MID 65}
+		{Weaponry
+			{State
+				{Mounted "valter"}
+				{Weapon
+					{Ammo "ammo pistol" 8}
+				}
+			}
+		}
+		{NameId 50 11}
+		{Cover
+			{sector 342.01 -2056.92 {type "snipe_cover"}
+				{wall 0 0 367.855 -2062.85 286.814 -2066.24}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.infantry_ss" 0x9012
+		{Position 404.31 -2006.13 0}
+		{Turn 2.16992}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 96 {cell 3 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "grenade m24" {cell 3 1}}
+				{item "bandage" 2 {cell 5 1}}
+			}
+		}
+		{Player 2}
+		{MID 66}
+		{Weaponry
+			{State
+				{Mounted "mp41"}
+				{Weapon
+					{Ammo "ammo pistol" 32}
+				}
+			}
+		}
+		{NameId 101 144}
+		{Cover
+			{sector 404.31 -2006.13 {type "snipe_cover"}
+				{wall 0 0 409.322 -1953.53 412.393 -2034.58}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.oficer_ss" 0x9013
+		{Position 325.45 -2057.62 0}
+		{Turn -87.6047}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 2 0}}
+				{item "bino" {cell 4 0}}
+			}
+		}
+		{Player 2}
+		{MID 67}
+		{Weaponry
+			{State
+				{Mounted "valter"}
+				{Weapon
+					{Ammo "ammo pistol" 8}
+				}
+			}
+		}
+		{NameId 32 129}
+		{Cover
+			{sector 325.45 -2057.62 {type "snipe_cover"}
+				{wall 0 0 367.855 -2062.85 286.814 -2066.24}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.infantry_rifle" 0x9014
+		{Position 374.264 -1980.02 0}
+		{Turn 93.2935}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 25 {cell 4 0}}
+				{item "grenade m24" {cell 5 0}}
+			}
+		}
+		{Player 2}
+		{MID 68}
+		{Weaponry
+			{State
+				{Mounted "mauzer"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 93 62}
+		{Cover
+			{sector 374.264 -1980.02 {type "snipe_cover"}
+				{wall 0 0 345.538 -1974.66 426.517 -1970}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.fallsch2" 0x9015
+		{Position 404.9 -2023.51 0}
+		{Turn 2.1699}
+		{Fogable never}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 96 {cell 3 0}}
+				{item "grenade m24" {cell 5 0}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "knife_ger" {cell 3 1}}
+				{item "bandage" 2 {cell 5 1}}
+			}
+		}
+		{Player 2}
+		{MID 69}
+		{Weaponry
+			{State
+				{Mounted "mp40"}
+				{Weapon
+					{Ammo "ammo pistol" 32}
+				}
+			}
+		}
+		{NameId 40 114}
+		{Cover
+			{sector 404.9 -2023.51 {type "snipe_cover"}
+				{wall 0 0 410.927 -1997.69 413.998 -2078.74}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Entity "wirbelwind" 0x8038
+		{Position -498.274 -1549.24 0}
+		{Turn -8.13095}
+		{Player 2}
+		{MID 70}
+	}
+	{Human "ger.tank_crew" 0x803a
+		{Position -632.169 -1597.2 0}
+		{Extender "inventory"
+			{box
+				{clear}
+			}
+		}
+		{Player 2}
+		{MID 72}
+		{NameId 137 29}
+		{FsmState "stand"}
+	}
+	{Human "ger.tank_crew" 0x803b
+		{Position -684.221 -1529.59 0}
+		{Player 2}
+		{MID 73}
+		{NameId 138 79}
+		{FsmState "stand"}
+	}
+	{Human "ger.tank_crew" 0x803c
+		{Position -620.59 -1536.59 0}
+		{Player 2}
+		{MID 74}
+		{NameId 127 61}
+		{FsmState "stand"}
+	}
+	{Human "ger.tank_com" 0x803d
+		{Position -652.7 -1482.31 0}
+		{Player 2}
+		{MID 75}
+		{NameId 9 28}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_mgun" 0x803e
+		{Position -779.011 -1946.89 141.527}
+		{Turn -87.6899}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 6 0}}
+				{item "grenade m24" {cell 6 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 76}
+		{Weaponry
+			{State
+				{Mounted "mg34"}
+				{Weapon
+					{Ammo "ammo mgun" 100}
+				}
+			}
+		}
+		{NameId 142 61}
+		{Cover
+			{sector -779.011 -1946.89 {type "snipe_cover"}
+				{wall 0 0 -768.737 -1953.48 -788.721 -1954.29}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.infantry_mgun" 0x803f
+		{Position -795.866 -1712.41 141.127}
+		{Turn 92.3101}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 6 0}}
+				{item "grenade m24" {cell 6 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 77}
+		{Weaponry
+			{State
+				{Mounted "mg34"}
+				{Weapon
+					{Ammo "ammo mgun" 100}
+				}
+			}
+		}
+		{NameId 93 110}
+		{Cover
+			{sector -795.866 -1712.41 {type "snipe_cover"}
+				{wall 0 0 -806.14 -1705.82 -786.157 -1705.02}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.infantry_mgun" 0x8040
+		{Position -479.921 -1923.07 141.527}
+		{Turn -87.8467}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 6 0}}
+				{item "grenade m24" {cell 6 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 78}
+		{Weaponry
+			{State
+				{Mounted "mg34"}
+				{Weapon
+					{Ammo "ammo mgun" 100}
+				}
+			}
+		}
+		{NameId 142 84}
+		{Cover
+			{sector -479.921 -1923.07 {type "snipe_cover"}
+				{wall 0 0 -469.665 -1929.68 -489.651 -1930.44}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.infantry_mgun" 0x8041
+		{Position -496.134 -1688.54 141.127}
+		{Turn 92.1533}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 6 0}}
+				{item "grenade m24" {cell 6 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 79}
+		{Weaponry
+			{State
+				{Mounted "mg34"}
+				{Weapon
+					{Ammo "ammo mgun" 100}
+				}
+			}
+		}
+		{NameId 1 85}
+		{Cover
+			{sector -496.134 -1688.54 {type "snipe_cover"}
+				{wall 0 0 -506.39 -1681.92 -486.404 -1681.17}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Entity "pz38tc" 0x9800
+		{Position 121.164 -1007.83 0}
+		{Turn 2.81297}
+		{Player 2}
+		{MID 80}
+	}
+	{Human "ger.tank_crew" 0x8042
+		{Position 121.164 -1007.83 0}
+		{Orientation
+			  0.998795   0.049076   0.000000
+			  0.049076  -0.998795   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 2}
+		{MID 81}
+		{NameId 100 50}
+		{FsmState "board"}
+	}
+	{Human "ger.tank_crew" 0x8043
+		{Position 121.164 -1007.83 0}
+		{Orientation
+			  0.998795   0.049076   0.000000
+			  0.049076  -0.998795   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 2}
+		{MID 82}
+		{NameId 132 114}
+		{FsmState "board"}
+	}
+	{Human "ger.tank_com" 0x8044
+		{Position 121.164 -1007.83 0}
+		{Orientation
+			  0.998795   0.049076   0.000000
+			  0.049076  -0.998795   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 2}
+		{MID 83}
+		{NameId 126 138}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_mgun" 0x8045
+		{Position -157.363 -1269.19 0}
+		{Turn -38.6579}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 6 0}}
+				{item "grenade m24" {cell 6 1}}
+			}
+		}
+		{Player 2}
+		{MID 84}
+		{Weaponry
+			{State
+				{Mounted "mg34"}
+				{Weapon
+					{Ammo "ammo mgun" 100}
+				}
+			}
+		}
+		{NameId 1 134}
+		{Cover
+			{sector -157.363 -1269.19 {type "snipe_cover"}
+				{wall 0 0 -109.685 -1220.8 -168.289 -1294.06}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "ger.tank_crew" 0x8046
+		{Position 121.164 -1007.83 0}
+		{Orientation
+			  0.998795   0.049076   0.000000
+			  0.049076  -0.998795   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 2}
+		{MID 85}
+		{NameId 9 54}
+		{FsmState "board"}
+	}
+	{Entity "box_wood" 0x8039
+		{Position 355.539 -2016.26 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "repair_kit" {cell 0 0}}
+				{item "morphine" 10 {cell 2 0}}
+				{item "ammo pistol" 1000 {cell 4 0}}
+				{item "ammo mgun" 1000 {cell 6 0}}
+				{item "ammo rifle" 1000 {cell 7 1}}
+				{item "ammo piat" 50 {cell 4 1}}
+				{item "weapon piat" filling "ammo piat" {cell 0 2}}
+				{item "grenade gr31" 50 {cell 6 1}}
+				{item "cube" {cell 5 2}}
+				{item "grenade m24x5" 5 {cell 0 4}}
+				{item "ammo bazooka" 50 {cell 2 4}}
+			}
+		}
+	}
+	{Link 0x8000 To 0x9005 "gunner"}
+	{Link 0x8001 To 0x9004 "gunner"}
+	{Link 0x8003 To 0x8007 "gunner"}
+	{Link 0x8004 To 0x8008 "gunner"}
+	{Link 0x8009 To 0x579 "1"}
+	{Link 0x800a To 0x579 "4"}
+	{Link 0x800b To 0x662 "2"}
+	{Link 0x800c To 0x662 "7"}
+	{Link 0x800e To 0x800d "radist"}
+	{Link 0x800f To 0x800d "commander"}
+	{Link 0x8010 To 0x800d "gunner"}
+	{Link 0x8011 To 0x800d "driver"}
+	{Link 0x8036 To 0x57a "3"}
+	{Link 0x803e To 0x2aa "3"}
+	{Link 0x803f To 0x2aa "1"}
+	{Link 0x8040 To 0x1033 "3"}
+	{Link 0x8041 To 0x1033 "1"}
+	{Link 0x8042 To 0x9800 "commander"}
+	{Link 0x8043 To 0x9800 "gunner"}
+	{Link 0x8044 To 0x9800 "driver"}
+	{Link 0x8046 To 0x9800 "charger"}
+	{Brain 0x9000
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x9001
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x9002
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x9003
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8000
+		{FixInventory}
+	}
+	{Brain 0x8001
+		{FixInventory}
+	}
+	{Brain 0x8003
+		{FixInventory}
+	}
+	{Brain 0x8004
+		{FixInventory}
+	}
+	{Brain 0x8009
+		{FixInventory}
+	}
+	{Brain 0x800b
+		{FixInventory}
+	}
+	{Brain 0x800c
+		{FixInventory}
+	}
+	{Brain 0x900c
+		{FixInventory}
+	}
+	{Brain 0x900d
+		{FixInventory}
+	}
+	{Brain 0x900e
+		{HoldPosition}
+		{FixInventory}
+	}
+	{Brain 0x900f
+		{FixInventory}
+	}
+	{Brain 0x9010
+		{FixInventory}
+	}
+	{Brain 0x9011
+		{HoldPosition}
+		{FixInventory}
+	}
+	{Brain 0x9012
+		{FixInventory}
+	}
+	{Brain 0x9013
+		{HoldPosition}
+		{FixInventory}
+	}
+	{Brain 0x9014
+		{FixInventory}
+	}
+	{Brain 0x9015
+		{HoldPosition}
+		{FixInventory}
+	}
+	{Brain 0x803a
+		{FixInventory}
+	}
+	{Tags 0x9000 "игрок"}
+	{Tags 0x9001 "игрок"}
+	{Tags 0x9002 "игрок"}
+	{Tags 0x9003 "игрок"}
+	{Tags 0x803a "танкисты1"}
+	{Tags 0x803b "танкисты1"}
+	{Tags 0x803c "танкисты1"}
+	{Tags 0x803d "танкисты1"}
+	{Tags 0x8030 "танкисты2"}
+	{Tags 0x8031 "танкисты2"}
+	{Tags 0x8032 "танкисты2"}
+	{Tags 0x8033 "танкисты2"}
+	{Tags 0x8034 "танкисты2"}
+	{Tags 0x801d "засада1"}
+	{Tags 0x801e "засада1"}
+	{Tags 0x801f "засада1"}
+	{Tags 0x8020 "засада1"}
+	{Tags 0x8021 "засада1"}
+	{Tags 0x8022 "засада1"}
+	{Tags 0x8023 "засада1"}
+	{Tags 0x8024 "засада1"}
+	{Tags 0x8025 "засада1"}
+	{Tags 0x8026 "засада1"}
+	{Tags 0x8027 "засада1"}
+	{Tags 0x8028 "засада1"}
+	{Tags 0x8029 "засада1"}
+	{Tags 0x802a "засада1"}
+	{Tags 0x802b "засада1"}
+	{Tags 0x802c "засада1"}
+	{Tags 0x802d "засада1"}
+	{Tags 0x802e "засада1"}
+	{Tags 0x801c "засада2"}
+	{Tags 0x801b "засада2"}
+	{Tags 0x8012 "засада3"}
+	{Tags 0x8016 "засада3"}
+	{Tags 0x8018 "засада3"}
+	{Tags 0x8017 "засада3"}
+	{Tags 0x8015 "засада3"}
+	{Tags 0x8013 "засада3"}
+	{Tags 0x900c "правый"}
+	{Tags 0x900d "правый"}
+	{Tags 0x900e "правый"}
+	{Tags 0x900f "правый"}
+	{Tags 0x9010 "правый"}
+	{Tags 0x9011 "правый"}
+	{Tags 0x9012 "правый"}
+	{Tags 0x9013 "правый"}
+	{Tags 0x9014 "правый"}
+	{Tags 0x9015 "правый"}
+	{Tags 0x9800 "засада4"}
+	{Tags 0x8045 "правый"}
+	{Helpers
+		{event "зенит" id 0 state 0}
+		{trigger "зенит двиг"
+			{condition
+				{term 1 "event"
+					{id 0}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 70}
+					}
+					{"waypoint/uid" 0}
+				}
+			}
+		}
+		{trigger "игра окончена"
+			{condition
+				{type 2}
+				{expression "!1"}
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "игрок"}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{actions
+				{"gameover"
+					{result loose}
+				}
+			}
+		}
+		{trigger "победа"
+			{condition
+				{type 2}
+				{expression "!1"}
+				{term 1 "actors"
+					{selector
+						{"actors/player" "2"}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{actions
+				{"message"
+					{text "Риспект, мужики!"}
+					{sound "talk_russian_triumph.0"}
+				}
+				{"gameover"
+					{result win}
+					{message "норм, че?"}
+				}
+			}
+		}
+		{trigger "подход лев"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "игрок"}
+						{"actors/zone" "лев"}
+					}
+				}
+			}
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "засада1"}
+					}
+					{inactive off}
+				}
+				{"board"
+					{selector
+						{"actors/tag" "танкисты2"}
+					}
+					{vehicle
+						{"actors/mids" 51}
+					}
+				}
+			}
+		}
+		{trigger "подход прав"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "игрок"}
+						{"actors/zone" "прав"}
+					}
+				}
+			}
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "засада4"}
+					}
+					{inactive off}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "засада4"}
+					}
+					{"waypoint/uid" 2}
+				}
+			}
+		}
+		{trigger "сокрытие"
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "танкисты1"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "засада1"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "засада2"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "засада3"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "засада4"}
+					}
+					{inactive on}
+				}
+			}
+		}
+		{trigger "старт"
+			{condition
+				{term 1 "actors"
+					{mode on}
+					{selector
+						{"actors/tag" "игрок"}
+						{"actors/zone" "старт"}
+					}
+				}
+			}
+			{actions
+				{"message"
+					{text "Тут все сложно."}
+					{quant_mode disable}
+				}
+				{"task"
+					{name "Главная задача"}
+				}
+			}
+		}
+		{trigger "урон прав"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "правый"}
+						{"actors/state" dead}
+					}
+				}
+			}
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "танкисты1"}
+					}
+					{inactive off}
+				}
+				{"board"
+					{selector
+						{"actors/tag" "танкисты1"}
+					}
+					{vehicle
+						{"actors/mids" 70}
+					}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 15}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position -316.554 -1597.51 0}
+				{transition 1}
+			}
+			{1
+				{position 41.733 -2010.65 4}
+			}
+			{2
+				{position 285.584 -1102.23 0}
+				{transition 3}
+			}
+			{3
+				{position 383.294 -1575.89 0}
+			}
+		}
+		{zone "poly"
+			{position 2567.06 1714.16 15}
+			{Name "лев"}
+			{Point -52.3247 -291.56}
+			{Point -338.188 579.444}
+			{Point 403.662 846.877}
+			{Point 674.05 -58.4185}
+		}
+		{zone "circle"
+			{position 353.229 -1994.51 0}
+			{Name "прав"}
+			{Radius 436.336}
+		}
+		{zone "circle"
+			{position 1831.08 -3069.67 -1.03296}
+			{Name "старт"}
+			{Radius 150}
+		}
+		{task
+			{name "Главная задача"}
+			{desc "Нужно всех убить"}
+			{primary}
+		}
+	}
+	{Players
+		{count 4}
+		{alias 1 "rus"}
+		{alias 2 "ger"}
+		{diplomacy
+			1 0 0 0
+			0 1 1 1
+			0 1 1 1
+			0 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

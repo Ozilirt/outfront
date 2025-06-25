@@ -1,0 +1,72 @@
+{entity
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.3) scaleY(1.0))
+      {mass 25000}
+      {Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed	20	}		; максимальная скорость, kmph
+			{StartTime	3	}		; время разгона до макс. скорости с 0, seconds
+			{BrakeTime	3	}		; время торможения с макс. скорости до 0, seconds
+		}
+	}
+
+	{props "vehicle" "steel" "turret_rotator" "train_part" "platform" "crane_m" "carriage"}
+
+	{extension "crew.ext"}
+
+	{component "body"
+		{RepairTime 25}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "turret"
+		{RepairTime 25}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "engine"
+		{RepairTime 25}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{volume "body"
+		{tags "body"}
+		{thickness 8}
+		{component "body"}
+	}
+	{volume "body2"
+		{tags "body"}
+		{thickness 8}
+		{able {obstacle 0}}
+		{component "body"}
+	}
+	{volume "engine"
+		{tags "body"}
+		{thickness 8}
+		{able {visible 0}}		
+	}
+
+	{volume "turret"
+		{tags "body"}
+		{thickness 8}
+		{component "turret"}
+	}
+
+	{volume "wheelleft1"
+		{thickness 40}
+	}
+	{volume "wheelleft2"
+		{thickness 40}
+	}
+	{volume "wheelright1"
+		{thickness 40}
+	}
+	{volume "wheelright2"
+		{thickness 40}
+	}
+	{Placer
+		{place "vehicle"
+			{Linkbone "hook"}
+			{handlebone "handle"}
+		}
+	}
+	{Extension "crane_m.mdl"}
+}

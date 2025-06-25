@@ -1,0 +1,34 @@
+;Exported by: dinsen
+;Date:        Mon Feb 15 01:29:27 2010
+;File:        (null)
+{Skeleton
+	{bone "fg42"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fg42.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				-0.0000	1.0000	-0.0000
+				5.8092	1.8058	0.0219
+			}
+		}
+		{bone "Foresight3"
+			{Position 14.5733 0.6691 	-0.0005}
+		}
+	}
+}
+{Volume "body"
+	{Box 20.5482 6.48784 1.11484}
+	{Bone "fg42"}
+	{Position 3.9836	-0.5414	0.0336}
+}
+{Volume "select"
+	{Box 25.0588 10.1372 3.9035}
+	{Bone "fg42"}
+	{Position 3.2978	-0.5414	-0.0277}
+}

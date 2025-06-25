@@ -1,0 +1,33 @@
+;Exported by: dinsen
+;Date:        Tue Nov 08 02:25:33 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\marine_pruebas.max
+{Skeleton
+	{animation
+		{sequence "start" {speed 0.3} {autostart}}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body1"
+			{Position 1.4956	1.4140	69.5229}
+			{VolumeView "body1.ply"}
+			{bone "skin"
+				{Position 0.5474	0.3916	-39.1549}
+				{VolumeView "skin.ply"}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 11.5256 11.2887 34.8899}
+	{Bone "skin"}
+	{Position -0.5442	-0.6621	-0.5344}
+}
+{Volume "body1"
+	{Box 0.5 0.546843 24.9995}
+	{Bone "body1"}
+	{Position -0.0034	0.0100	-12.3217}
+}

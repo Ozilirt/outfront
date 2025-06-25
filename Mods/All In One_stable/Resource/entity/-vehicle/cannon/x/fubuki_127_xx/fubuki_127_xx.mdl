@@ -1,0 +1,108 @@
+;Exported by: Albus
+;Date:        Fri Feb 17 00:11:27 2012
+;File:        
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 3.4034	0.5739	0.8546}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -110.0000 110.0000}
+				{speed 0.0030}
+				{Matrix34
+					0.9999	-0.0173	0.0000
+					0.0173	0.9999	0.0000
+					-0.0000	-0.0000	1.0000
+					1.9039	0.6572	2.4314
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 45.0000}
+					{speed 0.0030}
+					{Matrix34
+						0.9998	0.0173	-0.0004
+						0.0007	0.0000	1.0000
+						0.0173	-0.9999	-0.0000
+						-0.2078	0.8672	28.3579
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							0.9998	0.0007	0.0173
+							0.0173	-0.0000	-0.9999
+							-0.0012	1.0000	-0.0001
+							19.8027	0.7912	3.5231
+						}
+						{VolumeView "gun.ply"}
+						{bone "part1"
+							{Matrix34
+								0.9998	0.0173	-0.0004
+								-0.0173	0.9999	0.0000
+								0.0004	-0.0000	1.0000
+								41.8035	9.1528	0.1228
+							}
+							{VolumeView "part1.ply"}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+{Obstacle "turret"
+	{Obb2
+		{Center -1.86204 -1.39397}
+		{Extent 40.93 31.5663}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 10.6948 10.2771 4.76005}
+	{Bone "body"}
+	{Matrix34
+		1.2600	0.0000	-0.0000
+		-0.0000	1.2600	-0.0000
+		0.0000	-0.0000	1.2600
+		1.6281	0.7205	3.6140
+	}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Matrix34
+		0.9999	0.0173	-0.0000
+		-0.0173	0.9999	0.0000
+		0.0000	0.0000	1.0000
+		-9.9352	-0.0091	-1.5650
+	}
+}
+{Volume "part1"
+	{Cylinder 3.99176 78.8537}
+	{Bone "part1"}
+	{Matrix34
+		-0.0000	0.7000	-0.0000
+		0.0001	-0.0000	0.7000
+		0.7000	0.0000	0.0001
+		0.0440	0.2251	-0.0618
+	}
+}
+{Volume "gun"
+	{Box 54.4048 4.95686 4.36872}
+	{Bone "gun"}
+	{Matrix34
+		1.2589	0.0218	-0.0476
+		-0.0218	1.2598	0.0000
+		0.0478	0.0008	1.2591
+		28.4466	-3.0442	-0.6333
+	}
+}

@@ -1,0 +1,62 @@
+{Game_entity
+	{Extension "puente1.mdl"}
+	{props "cornered" "parts" "construction" "bridge" "wood"}
+	{obstacleid "construction"}
+	{constrain zero}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 10}
+		{able clear {blast}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 10}
+		{able clear {blast}}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 10}
+		{able clear {blast}}
+	}
+	{Volume "b12"
+	}
+	{Volume "b11"
+	}
+	{Volume "b10"
+	}
+	{Volume "b9"
+	}
+	{Volume "b8"
+	}
+	{Volume "b7"
+	}
+	{Volume "b6"
+	}
+	{Volume "b5"
+	}
+	{Volume "b4"
+	}
+	{Volume "b3"
+	}
+	{Volume "b2"
+	}
+	{Volume "b1"
+	}
+	{Volume "box01"
+		{Tags  "body"}
+		{able {bullet 0} {visible 0}}
+	}
+	{Volume "box02"
+		{Tags  "body"}
+		{able {bullet 0} {visible 0}}
+	}
+	{Extender "land"
+		{Heightmap "puente1.net"}
+		{Boundary
+			{Box2
+				{Origin -84 -40}
+				{Destination 83 37}
+			}
+		}
+	}
+}

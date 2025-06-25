@@ -1,0 +1,82 @@
+{entity
+	(include "/properties/tank_multyturret.ext")
+	(include "/properties/tank_crew.ext")	
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props  "light" "tank2" "turret2" "turret_rotator" "mg7tpw"}
+	{extension "crew.ext"}
+	{TexMods
+		{"variant1" "1"}
+	}
+
+	{boarder
+	
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}	
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	6}
+			{bottom	 6}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	 6}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 6 0.3 
+			{front	13}
+		}
+	}
+	{volume "turret2"
+		{tags "turret2"}
+		{component "turret2"}		
+		{thickness 6 0.3 
+			{front	13}
+		}
+	}
+
+	{Volume "fxlight"
+		{thickness 1}
+	}	
+	("seat_4_human")	
+	("seat_human" place(seat1) bone(seat01) door(emit3)   animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)   animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit3)   animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit4)   animation(armor))
+	{Weaponry		
+		{place "mgun"
+			{DefaultWeapon "wz33"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 250}}
+		}
+		{place "mgun2"
+			{foresight "foresight2"}			
+			{DefaultWeapon "wz33"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 250}}
+		}
+	}
+	{extender "inventory"		
+		{box
+			{item "ammo mgun" 1500}			
+		}
+	}	
+	{mass 10250}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{Extension "7tpw.mdl"}
+}

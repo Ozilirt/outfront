@@ -1,0 +1,21 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.1) scaleY(1.0))
+    	{mass 10000}
+    	{props "platform" "train_part"}
+	{Extension "coal_wagon2.mdl"}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "body1"
+		{tags "body"}
+		{thickness 12}
+		{component "body"}
+	}
+	{component "body"
+		{Able {repair} {break_by_pierce}}
+	}
+}

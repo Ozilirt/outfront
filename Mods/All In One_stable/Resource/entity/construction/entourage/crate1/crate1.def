@@ -1,0 +1,62 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/entourage.inc" sx(0.45) sy(1.3) pturn(0) ofsx(5) ofsy(-4))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "crate1.mdl"}
+	{props "small" "inventory_box" "one" "staged" "wood" "construction" "no_destroyed_stamp" "disable_area"}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+		{"4" "4"}
+		{"5" "5"}
+		{"6" "6"}
+		{"7" "7"}
+		{"8" "8"}
+		{"9" "9"}
+		{"10" "10"}
+	}
+	{extender "inventory"
+		{box
+			{weight 5000}
+			{size 6 6}
+		}
+	}
+
+	{Volume "Body4"
+		{thickness 3}
+		{tags "body"}
+		{able {touch}}
+
+	}
+	{Volume "body3"
+		{thickness 3}
+		{tags "body"}
+		{able {touch}}
+
+	}
+	{Volume "body2"
+		{thickness 3}
+		{tags "body"}
+		{able {touch}}
+
+	}
+	{Volume "body1"
+		{thickness 3}
+		{tags "body"}
+		{able {touch}}
+	}
+	{Volume "body"
+		{thickness 3}
+		{able {touch}}
+		{tags "body"}
+	}
+	("declare_fire_volumes")
+}

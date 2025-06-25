@@ -1,0 +1,23 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{thickness 15}
+	}
+	{Extension "SdKfz-222_xx.mdl"}
+}

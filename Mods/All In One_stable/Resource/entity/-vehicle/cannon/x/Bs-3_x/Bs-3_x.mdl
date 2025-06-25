@@ -1,0 +1,72 @@
+;Exported by: serh
+;Date:        Sun May 9 11:51:16 2006
+;File:        D:\-Projects-\-3DWork-\Пушки\Bc-3\Bc-3_x.max
+{Skeleton
+	{bone revolute "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "CommonMesh;ID=body;"}
+			{Matrix34
+				0.9998	-0.0175	-0.0000
+				0.0175	0.9998	0.0000
+				-0.0000	-0.0000	1.0000
+				-59.3499	0.9704	0.6016
+			}
+			{VolumeView "Body.ply"}
+			{bone "WheelL"
+				{parameters "ID=wheelleft;"}
+				{Matrix34
+					-1.0000	-0.0071	0.0024
+					0.0024	-0.0005	1.0000
+					-0.0071	1.0000	0.0005
+					59.4028	16.5479	9.0833
+				}
+				{VolumeView "WheelL.ply"}
+			}
+			{bone "WheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					-1.0000	0.0000	-0.0000
+					-0.0000	0.1107	0.9939
+					0.0000	-0.9939	0.1107
+					59.4029	-16.3292	9.0833
+				}
+				{VolumeView "WheelR.ply"}
+			}
+			{bone revolute "Turret"
+				{parameters "CommonMesh;ID=turret;"}
+				{Matrix34
+					1.0000	-0.0000	0.0000
+					-0.0000	-0.0000	-1.0000
+					-0.0000	1.0000	-0.0000
+					59.8792	0.0318	12.7928
+				}
+				{VolumeView "Turret.ply"}
+			}
+			{bone revolute "gun_rot"
+				{parameters "ID=gun;"}
+				{Matrix34
+					1.0000	-0.0000	-0.0000
+					0.0000	-0.0000	-1.0000
+					-0.0000	1.0000	-0.0000
+					59.6972	-0.0000	11.9060
+				}
+				{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							-0.0000	0.0000	1.0000
+							-0.0000	-1.0000	0.0000
+							22.3589	-6.5605	0.4618
+						}
+						{VolumeView "gun.ply"}
+					}
+			}
+		}
+	}
+}

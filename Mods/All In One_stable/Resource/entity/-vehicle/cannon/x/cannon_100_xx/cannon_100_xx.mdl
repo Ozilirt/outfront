@@ -1,0 +1,100 @@
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{parameters "ID=Turret;"}
+			{speed 0.0100}
+			{Position 0.1442	0.2318	-0.0225}
+			{VolumeView "turret.ply"}
+			{bone "part1"
+				{parameters "ID=Turret;"}
+				{Position -11.6000	0.0000	47.8000}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{parameters "ID=Turret;"}
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part3"
+				{parameters "ID=Turret;"}
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "part3.ply"}
+			}
+			{bone "part4"
+				{parameters "ID=Turret;"}
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "part4.ply"}
+			}
+			{bone revolute "Gun_rot"
+				{parameters "ID=Turret;"}
+				{limits -5.0000 25.0000}
+				{speed 0.0100}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					0.0273	-0.1610	30.6081
+				}
+				{VolumeView "Gun_rot.ply"}
+				{bone "Gun"
+					{parameters "ID=Turret;"}
+					{Position -9.1055	0.4582	0.0000}
+					{VolumeView "Gun.ply"}
+				}
+			}
+		}
+	}
+}
+{Obstacle "obstacle"
+	{Obb2
+		{Center -2.4991 -0.4144}
+		{Extent 28.4210 25.0562}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "turret"
+	{Box 50.3345 49.6578 34.3408}
+	{Bone "turret"}
+	{Position 0.6573	-0.2318	16.5929}
+}
+{Volume "part1"
+	{Box 40.3345 33.3345 2.3408}
+	{Bone "part1"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "part2"
+	{Box 46.3345 2.8345 42.3408}
+	{Bone "part2"}
+	{Position -0.2000	-24.0000	28.1000}
+}
+{Volume "part3"
+	{Box 49.3345 49.3345 2.3408}
+	{Bone "part3"}
+	{Matrix34
+		0.2130	0.0000	-0.9770
+		0.0000	1.0000	0.0000
+		0.9770	0.0000	0.2130
+		18.9514	0.0000	25.5342
+	}
+}
+{Volume "part4"
+	{Box 40.4802 2.1791 22.8008}
+	{Bone "part4"}
+	{Position -11.4000	24.0000	39.1000}
+}
+{Volume "Gun"
+	{Cylinder 3.55755 93.1881}
+	{Bone "Gun"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		1.0000	0.0000	0.0000
+		48.6160	0.5539	0.0293
+	}
+}

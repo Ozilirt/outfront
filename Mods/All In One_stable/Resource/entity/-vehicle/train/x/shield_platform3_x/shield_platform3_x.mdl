@@ -1,0 +1,121 @@
+;Modified by: Albus
+;Date:        Dec 23 14:49:13 2010
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Matrix34
+				1.0000	0.0000	-0.0024
+				-0.0000	1.0000	0.0000
+				0.0024	-0.0000	1.0000
+				5.8607	-2.0641	32.7917
+			}
+			{VolumeView "body.ply"}
+		}
+		{bone revolute "pivot_back"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.9998	0.0175	0.0000
+				-0.0175	0.9998	0.0000
+				0.0000	0.0000	1.0000
+				-39.3142	-1.4946	12.8385
+			}
+			{VolumeView "pivot_back.ply"}
+			{bone revolute "wheel_L2"
+				{parameters "ID=wheelleft2;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					0.4494	14.6094	-3.2554
+				}
+				{VolumeView "wheel_L2.ply"}
+			}
+			{bone revolute "wheel_R2"
+				{parameters "ID=wheelright2;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					-0.1136	-16.1120	-3.2554
+				}
+				{VolumeView "wheel_R2.ply"}
+			}
+			{bone revolute "wheel_L4"
+				{parameters "ID=wheelleft2;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					-50.1494	15.4194	-3.2554
+				}
+				{VolumeView "wheel_L2.ply"}
+			}
+			{bone revolute "wheel_R4"
+				{parameters "ID=wheelright2;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					-50.7136	-15.1220	-3.2554
+				}
+				{VolumeView "wheel_R2.ply"}
+			}
+		}
+		{bone revolute "pivot_front"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.9998	0.0175	0.0000
+				-0.0175	0.9998	0.0000
+				0.0000	0.0000	1.0000
+				53.3939	-1.6450	12.5585
+			}
+			{VolumeView "pivot_front.ply"}
+			{bone revolute "wheel_L1"
+				{parameters "ID=wheelleft1;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					0.0858	14.6571	-3.0000
+				}
+				{VolumeView "wheel_L1.ply"}
+			}
+			{bone revolute "wheel_R1"
+				{parameters "ID=wheelright1;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					-0.5539	-15.7089	-3.0000
+				}
+				{VolumeView "wheel_R1.ply"}
+			}
+			{bone revolute "wheel_L3"
+				{parameters "ID=wheelleft1;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					50.0858	13.8571	-3.0000
+				}
+				{VolumeView "wheel_L1.ply"}
+			}
+			{bone revolute "wheel_R3"
+				{parameters "ID=wheelright1;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					49.5539	-16.7089	-3.0000
+				}
+				{VolumeView "wheel_R1.ply"}
+			}
+		}
+	}
+}

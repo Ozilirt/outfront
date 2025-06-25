@@ -1,0 +1,91 @@
+; made by Albus & Dinsen Jul 2010
+{Skeleton
+	{bone revolute "Basis"
+		{limits -0.0000 0.0000}
+		{speed 0.0100}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Position -21.3858	-0.0899	5.8716}
+			{VolumeView "body.ply"}
+				{bone revolute "WheelR"
+					{parameters "ID=wheelright;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	1.0000	0.0000
+						24.6171	-18.6579	4.1566
+					}
+					{VolumeView "WheelR.ply"}
+				}
+				{bone revolute "WheelL"
+					{parameters "ID=wheelleft;"}
+					{Matrix34
+						0.9962	0.0000	0.0872
+						0.0872	0.0000	-0.9962
+						0.0000	1.0000	0.0000
+						24.6171	18.6416	4.1566
+					}
+					{VolumeView "WheelL.ply"}
+				}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -15.0000 15.0000}
+				{speed 0.0100}
+				{Matrix34
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					24.1597	0.0376	4.8001
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 25.0000}
+					{speed 0.0100}
+					{Matrix34
+						0.0000	-1.0000	0.0000
+						0.0000	0.0000	1.0000
+						-1.0000	0.0000	0.0000
+						0.0000	0.9400	10.7309
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							0.0000	0.0000	-1.0000
+							-1.0000	0.0000	0.0000
+							0.0000	1.0000	0.0000
+							-7.6961	2.4146	2.4129
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}
+{Volume "wheelleft"
+	{Cylinder 9.84871 4.80311}
+	{Bone "WheelL"}
+	{Matrix34
+		0.9962	0.0872	0.0000
+		0.0872	-0.9962	0.0000
+		0.0000	0.0000	-1.0000
+		0.0000	0.0000	-0.0280
+	}
+}
+{Volume "wheelright"
+	{Cylinder 9.84871 4.80311}
+	{Bone "WheelR"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.0000	0.0000	0.0461
+	}
+}

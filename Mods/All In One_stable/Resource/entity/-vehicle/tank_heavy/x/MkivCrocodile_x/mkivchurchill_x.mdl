@@ -1,0 +1,169 @@
+;Exported by: sk
+;Date:        Wed Jun 16 13:07:12 2004
+;File:        D:\-Projects-\-3DWork-\Model\-Tank\MkIV_Churchill\MkIV_Churchill_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=Body;"}
+			{Position -12.2226	-0.2891	24.2517}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=turret;"}
+				{speed 0.0100}
+				{Position 8.5559	0.6747	19.5467}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=turret;"}
+					{limits -8.0000 20.0000}
+					{speed 0.1000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						22.1172	-0.6747	-0.2294
+					}
+					{VolumeView "Gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=turret;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							9.7584	0.3590	0.0000
+						}
+						{VolumeView "Gun.ply"}
+					}
+					{bone "Foresight3"
+						{parameters "ID=turret;"}
+						{Matrix34
+							1.0000	-0.0000	-0.0000
+							-0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							10.0089	0.3085	-4.2020
+						}
+						{VolumeView "Foresight3.ply"}
+					}
+				}
+				{bone "Cower1"
+					{parameters "ID=Turret;"}
+					{Matrix34
+						0.9848	-0.1736	-0.0000
+						0.1736	0.9848	0.0000
+						0.0000	-0.0000	1.0000
+						3.2467	5.8434	7.8774
+					}
+					{VolumeView "Cower1.ply"}
+				}
+				{bone "Cower"
+					{parameters "ID=Turret;"}
+					{Matrix34
+						0.9848	-0.1736	-0.0000
+						0.1736	0.9848	-0.0000
+						0.0000	-0.0000	1.0000
+						-11.8431	9.2958	8.9034
+					}
+					{VolumeView "Cower.ply"}
+				}
+			}
+			{bone "shield_left"
+				{parameters "ID=shield_left;"}
+				{VolumeView "shield_left.ply"}
+			}
+			{bone "shield_right"
+				{parameters "ID=shield_right;"}
+				{VolumeView "shield_right.ply"}
+			}
+			{bone "WheelL1"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					-0.0000	-0.0000	1.0000
+					0.0000	1.0000	0.0000
+					73.6301	19.7954	-2.8542
+				}
+				{VolumeView "WheelL1.ply"}
+			}
+			{bone "WheelL2"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					-0.0000	-0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-60.9645	19.7954	-1.5315
+				}
+				{VolumeView "WheelL2.ply"}
+			}
+			{bone "WheelR1"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					-0.0000	-0.0000	1.0000
+					0.0000	1.0000	0.0000
+					73.6301	-19.2278	-2.8542
+				}
+				{VolumeView "WheelR1.ply"}
+			}
+			{bone "WheelR2"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					-0.0000	-0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-60.9645	-19.2278	-1.5315
+				}
+				{VolumeView "WheelR2.ply"}
+			}
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{animation
+				{sequence "break" {file "trackL_b.anm"} {speed 0.8}}
+			}
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-0.0000	1.0000
+				-0.0000	1.0000	0.0000
+				-6.3259	26.5555	16.5936
+			}
+			{VolumeView "WheelsL.ply"}
+			{bone "TrackL"
+				{parameters "CommonMesh;ID=trackleft;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					-0.0000	1.0000	-0.0000
+					0.0000	0.0000	1.0000
+					3.9618	-4.2488	-1.0244
+				}
+				{VolumeView "TrackL.ply"}
+			}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{animation
+				{sequence "break" {file "trackR_b.anm"} {speed 0.8}}
+			}
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-0.0000	1.0000
+				-0.0000	1.0000	0.0000
+				-6.3259	-26.2253	16.5936
+			}
+			{VolumeView "WheelsR.ply"}
+			{bone "TrackR"
+				{parameters "CommonMesh;ID=trackright;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					-0.0000	1.0000	-0.0000
+					0.0000	0.0000	1.0000
+					3.9618	-4.2488	3.6153
+				}
+				{VolumeView "TrackR.ply"}
+			}
+		}
+	}
+}

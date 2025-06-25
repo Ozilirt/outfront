@@ -1,0 +1,71 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "bulldozer" "self_propelled" "emit_on_attack"}
+	
+
+
+	("crew_1_human")
+	{Placer
+		{place "driver"
+			{Group "crew"}	
+			{LinkBone "driver"}	
+			{turnoff {sensor} {shadow}}
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{door "emit1"}
+		{link "emit1"	"driver"	{forward putoff} {reverse puton} {anm "left"}}
+
+	}
+
+	("tracks_forced")
+
+	{mass 23000}
+	{Chassis
+		{FuelBag
+          		{volume 90 }	; liters
+	   		{rate   15 }   	; liters per kilometer
+	    		{remain 90 }
+          		{fuel "fuel"}
+ 		}
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    9} ; kmph
+			{StartTime 		 6} ; 0, seconds
+			{BrakeTime 		0.6} ; 0, seconds
+			{StopTime		 1} ; 0, seconds
+			{TurnRadius     8} ; meter
+			{TurnTime		10} ; seconds
+			{TurnStart		 3}	; 0, seconds
+			{TurnStop	   0.5}	; 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0}
+			{RearGears 0.2 0.5}
+		}
+	}
+
+	{Extension "bulldozer.mdl"}
+
+	{Volume "inventory"
+	}
+	{Volume "fuel"
+	}
+	{Volume "engine"
+		{thickness 1}
+	}
+	{Volume "body"
+		{thickness 2}
+	}
+	{Volume "body"
+		{thickness 2}
+	}
+	{Volume "body2"
+		{thickness 2}
+	}
+}

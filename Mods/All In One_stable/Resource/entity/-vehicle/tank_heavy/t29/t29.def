@@ -1,0 +1,141 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "turret_rotator" "huge" "dualmgun"}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 90 0.2
+			{front  260}
+			{rear 75 0.2}
+			{bottom	35}
+			{top    35}
+		}   
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 90 0.2
+			{front  260}
+			{rear 75 0.2}
+			{bottom	35}
+			{top    35}
+		}  
+	}
+	{volume "turret"
+		{thickness 78 0.5
+			{front  120 0.5}        
+			{top 25}
+		}
+	}
+	{component "turret"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 75}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_MiddleArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+	("seat_human" place(seat5) bone(seat05) door(emit7)  animation(armor1))
+	("seat_human" place(seat6) bone(seat06) door(emit8)  animation(armor))
+	("seat_human" place(seat7) bone(seat07) door(emit9)  animation(armor))
+	("seat_human" place(seat8) bone(seat08) door(emit10)  animation(armor1))
+	("seat_human" place(seat9) bone(seat09) door(emit11)  animation(armor1))
+	("seat_human" place(seat10) bone(seat10) door(emit12)  animation(armor))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "105mm_T5E2"}
+			{Mounted}
+			{weapon {ammo "ammo bullet105 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "50cal_dual"}
+			{Barrels 2}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 220}}
+		}
+		{place "mgun2"
+			{DefaultWeapon "browning_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+		{place "mgun3"
+			{foresight "foresight4"}
+			{DefaultWeapon "50cal_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 110}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{item "ammo mgun2" 990}
+			{item "ammo mgun" 600}
+			{item "ammo bullet105 ap" 39}
+			{item "ammo bullet105 fg" 23}
+		}
+	}
+
+	{mass 64200}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    15} ; максимальная скорость, kmph
+			{StartTime 		 6} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		0.6} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+		{speed
+			{Slow		7}
+			{Normal		11}
+			{Fast		15} 
+		}
+		{FuelBag
+			{volume 880 }	; liters
+			{rate   520 }	; liters per kilometer
+			{remain 880 }
+			{fuel "fuel"}
+		}
+	}
+	{Extension "t29.mdl"}
+
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+	)
+}

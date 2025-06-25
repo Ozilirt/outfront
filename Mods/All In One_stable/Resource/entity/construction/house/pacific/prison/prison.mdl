@@ -1,0 +1,170 @@
+;Exported by: dinsen
+;Date:        Mon Oct 10 23:31:40 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\prision_ultimo.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.4} {resume}}
+	}
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "door"
+			{Position -9.0085	24.8128	21.1683}
+			{VolumeView "door.ply"}
+		}
+		{bone "exterior"
+			{Position -0.4623	3.7254	38.2876}
+			{VolumeView "exterior.ply"}
+		}
+		{bone "open_point"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				4.3583	20.4004	0.0000
+			}
+		}
+		{bone "body1"
+			{Position -45.6259	23.8256	0.0000}
+		}
+		{bone "body2"
+			{Position -45.7850	-18.2548	0.0000}
+		}
+		{bone "body3"
+			{Position 46.0837	22.9558	0.0000}
+		}
+		{bone "body4"
+			{Position 46.4536	-18.5139	0.0000}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -0.111637 -2.84425}
+		{Extent 45.3961 20.6123}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "close"
+	{Obb2
+		{Center -0.202692 -26.4712}
+		{Extent 10.1528 0.981537}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane05"
+	{Obb2
+		{Center -45.546 -3.02994}
+		{Extent 1.10423 22.6981}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane04"
+	{Obb2
+		{Center 0.996506 18.0869}
+		{Extent 47.6046 0.981539}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane03"
+	{Obb2
+		{Center 46.2699 -1.91197}
+		{Extent 1.10423 22.4527}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane02"
+	{Obb2
+		{Center 29.0316 -24.2784}
+		{Extent 17.6677 0.736153}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane01"
+	{Obb2
+		{Center -29.4313 -23.7934}
+		{Extent 18.2811 1.34962}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "fire0"
+	{Polyhedron "fire0.vol"}
+	{Bone "body"}
+	{Position 0.2740	1.0017	41.8179}
+}
+{Volume "fire4"
+	{Box 44.0142 38.7648 2.4228}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		46.4885	2.6131	19.9450
+	}
+}
+{Volume "fire3"
+	{Box 44.0142 38.7648 2.4228}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-45.1343	2.6131	19.9450
+	}
+}
+{Volume "fire2"
+	{Box 93.7069 39.0891 2.40961}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		0.1882	23.3827	19.8305
+	}
+}
+{Volume "fire1"
+	{Box 93.7069 39.0891 2.40961}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		0.1882	-18.1694	19.8305
+	}
+}
+{Volume "body"
+	{Box 91.9619 42.3372 3.12324}
+	{Bone "body"}
+	{Position 0.2487	3.2368	1.5616}
+}
+{Volume "exterior"
+	{Polyhedron "exterior.vol"}
+	{Bone "exterior"}
+	{Position 0.7363	-2.7237	3.5303}
+}
+{Volume "switch2"
+	{Box 9.63917 3.89576 16.6369}
+	{Bone "door"}
+	{Position 13.1664	0.1300	1.7900}
+}
+{Volume "switch"
+	{Box 9.63917 3.89576 16.6369}
+	{Bone "door"}
+	{Position 13.1664	2.5995	1.7900}
+}
+{Volume "door"
+	{Box 22.2633 5.11548 40.2548}
+	{Bone "door"}
+	{Position 8.8977	-0.0000	-0.0000}
+}

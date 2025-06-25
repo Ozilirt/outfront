@@ -1,0 +1,114 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "high"}
+		
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30 
+                        {front	60 0.4}
+                        {rear	30 0.2}
+		        {top	18}
+			{bottom	18}
+			
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+                        {front	60 0.4}
+                        {rear	30 0.2}
+		        {top	18}
+			{bottom	18}
+		}   
+	}
+	{volume "turret"
+		{thickness 30 0.3                       
+                        {front	57 0.6}
+                        {rear	30 0.3}
+                        {left	30 0.3}
+                        {right	30 0.3}
+			{top	18}
+			{bottom	18}
+		}
+	}
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_cromwell"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_cromwell"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "bigflamethrower"}
+			{foresight "foresight1"}
+			{Mounted}
+			{weapon {ammo "ammo fire" 50}}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 300}
+			{item "ammo fire" 200}
+		}
+	}
+	{mass 22500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed	23} ; kmph
+			{StartTime	7} ; seconds
+			{BrakeTime	1} ; seconds
+			{StopTime	1} ; seconds
+			{TurnRadius	5} ; meter
+			{TurnTime	5} ; seconds
+			{TurnStart	2} ; seconds
+			{TurnStop	0.5} ; seconds
+			{Gears		0.2 0.3 0.5 0.7 1.0}
+			{RearGears	0.2 0.5}
+		}
+	}
+	{Extension "pz-3flam.mdl"}
+
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_BTR"}
+			}
+		}
+		{Chassis 
+			{speed
+				{Slow	10}
+				{Normal	14}
+				{Fast	21}
+			}
+			{FuelBag
+				{volume 320} ; liters
+				{rate   193} ; liters per kilometer
+				{remain 320}
+				{fuel "fuel"}
+			}
+		}
+	)
+}

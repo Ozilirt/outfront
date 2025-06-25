@@ -1,0 +1,138 @@
+;Model created by: <Eger and Kesha >
+;BTRH Mod (c) Copyright 2005 by BTRH clan developers team
+;http://rus-hammers.com
+{
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc" scale(1.3))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "Light" "-turret" "self_propelled" "high"}
+	
+	{TexMods
+		{"ambush" "1"}
+	}
+	{Volume "Turret"
+		{thickness 15}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 30
+			{front  30}
+		    {rear	20}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 30
+			{front  30}
+		    {rear	20}
+		}   
+	}
+
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	""}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+		{anm "charger"
+			{forward	{begin	""} {end "seat_armor"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+		{anm "gunner"
+			{forward	{begin	""} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+		{anm "commander"
+			{forward	{begin	""} {end "seat_armor"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+
+	(define "crew_human"
+		{placer
+			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
+		}
+		{boarder
+			{door "%door1"}
+			{door "%door2"}
+			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	{placer
+		{place "driver" {group "crew"} {visor "driver"}}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+		{link "emit2" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+	}
+
+	("crew_human" place(commander)	door1(emit1) door2(emit2))
+	("crew_human" place(gunner)	    door1(emit1) door2(emit2))
+	("crew_human" place(charger)	door1(emit1) door2(emit2))
+
+
+
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "88mm_pak43"}
+			{Mounted}
+                  {weapon {ammo "ammo bullet88 ap" 1}}
+		}
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mg34"}
+			{Mounted}
+                  {weapon {ammo "ammo mgun" 100}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 300}
+			{item "ammo bullet88 ap" 23}
+			{item "ammo bullet88 fg" 10}
+		}
+	}
+	
+	{mass 22900}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{maxspeed 23}
+		}
+		{speed
+			{Slow	11	}	; km/h
+			{Normal	15	}
+			{Fast	23}
+		}
+   {FuelBag
+          {volume 470}	; liters
+	    {rate   255}   	; liters per kilometer
+	    {remain 470}
+          {fuel "fuel"}
+        }
+
+	}
+	("tracks_forced")
+	{Extension "Nashorn.mdl"}
+
+(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_CAY"}
+			}
+		}
+	)
+
+}

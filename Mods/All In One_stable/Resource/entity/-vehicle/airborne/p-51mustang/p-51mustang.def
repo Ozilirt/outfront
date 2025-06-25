@@ -1,0 +1,65 @@
+{actor
+	(include "/properties/airborne.ext")
+	{PatherID  "airborne"}
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/airborne.inc" scale(2.0))
+	(include "/properties/car_crew.ext")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_plane_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"board_plane_left" -1}}
+		}
+	}
+	("crew_human"
+		place(driver)
+		bone(driver)
+		door(emit2)
+		animation(driver)
+	)
+	{Placer
+		{place "driver" {worker charger}}	
+	}
+
+	{Chassis ("chassis_defaults")
+		{Locomotion ("locomotion") 
+			{Maxspeed 60}
+		}
+    		{maxSideSlope 70}	;degree
+    		{onAirTurnRadius 25}
+		{sideSlopeSpeed 35}			;degree/s
+		{maxElevationSpeed 10}		;m/s
+		{elevationAcceleration 3}	;m/s^2
+       	{speed
+       		{Slow	33  }	; km/h
+       		{Normal	48	}
+       		{Fast	60	}
+       	}
+	}
+	{mass 3000}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "browning"}
+			{Mounted}
+                  {weapon {ammo "ammo mgun" 200}}
+		}
+		{place "gun"
+			{defaultweapon "bomb-dropper"}
+			{Mounted}
+			{weapon {ammo "ammo air bomb" 8}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"{fixed}}
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 400}
+		}
+	}
+	{Sensor
+		{Visor "main"
+			{bone	 "pivot_back"}
+		}
+	}
+	{Extension "P-51Mustang.mdl"}
+}

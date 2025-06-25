@@ -1,0 +1,52 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "small" "turret" "barrel1"}
+	(include "/properties/dummy_fsm2.inc")
+	{sensor
+		{Visor "aa"
+			{vision "type96"}
+			{bone "visor"}
+		}
+	}
+
+	("crew_stan_gunner")
+
+	{Boarder
+		{place "gunner"}
+		{door "emit1"}
+		{link "emit1" "gunner"	{forward putoff} {reverse puton} {anm "gunner"}}
+	}
+
+	{Volume "body"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume "turret"
+		{thickness 10
+			{front  15}
+		}
+	}
+	{Volume "body1"
+		{thickness 10}
+		{tags "body"}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_Oerlikon"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet20 zenite" 60}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet20 zenite" 480}
+		}
+	}
+	{mass 4000}
+	{Extension "oerlikon.mdl"}
+}

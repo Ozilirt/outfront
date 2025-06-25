@@ -1,0 +1,46 @@
+;Exported by: GARRY
+;Date:        Mon Jun 02 14:14:26 2003
+
+{Skeleton
+	{animation
+		{sequence {name "run"} {file "run.anm"}}
+		{sequence {name "eat"} {file "eat.anm"}}
+		{sequence {name "walk"} {file "walk.anm"}}
+		{sequence {name "passive"} {file "passive.anm"}}
+	}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0017
+			0.0000	-1.0000	0.0000
+			-0.0017	-0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "CommonMesh;"}
+			{Matrix34
+				0.0017	1.0000	-0.0000
+				-1.0000	0.0017	0.0017
+				0.0017	0.0000	1.0000
+				0.3712	0.0317	4.4150
+			}
+			{VolumeView "Body.ply"}
+			{bone "Visor"
+				{Matrix34
+					0.0017	-1.0000	0.0000
+					1.0000	0.0017	0.0000
+					-0.0000	0.0000	1.0000
+					-0.0652	-5.8311	3.6545
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 9.93742 5.00382 5.32464}
+	{Bone "Body"}
+		{Matrix34
+			0.0017	-1.0000	0.0000
+			1.0000	0.0017	-0.0000
+			0.0000	0.0000	1.0000
+			0.0030	-0.5907	0.6600
+		}
+}

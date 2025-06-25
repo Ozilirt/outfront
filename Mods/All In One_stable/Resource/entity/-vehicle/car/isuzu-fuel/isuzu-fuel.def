@@ -1,0 +1,63 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "truck" "wheeled" "with_doors" "fuel_tank"}
+	{props "emit_on_attack"}
+	{extension "/properties/structure/truck4x4.ext"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-midcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "bodyback"
+		{thickness 2}
+	}
+	{mass 5000}
+	{Chassis
+		{Locomotion
+			{MaxSpeed	29}
+			{StartTime	6}
+			{BrakeTime	2}
+			{StopTime	4}
+			{TurnRadius	7}
+			{Gears		0.35 0.5 0.7 1.0}
+			{RearGears	0.33 0.5}
+			{SteerOn	40}
+			{SteerOff	40}
+			{SplineRadius 1}
+		}
+		{FuelBag
+			{volume 5200}	; liters
+			{rate    20}   	; liters per kilometer
+			{remain 5200}
+			{fuel "fuel"}
+		}
+	}
+	{Extension "isuzu-fuel.mdl"}
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "ammo fire" 600}
+                        	{item "barrel" 5 filling "fuel" 75}
+			}
+		}
+	)
+}

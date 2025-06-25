@@ -1,0 +1,151 @@
+;;; ¬ыбор оптимального оружи€ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;все таги должны быть
+		;прописаны в stuff.set
+{select_ammo
+	{"bullet ap ptr"
+		{tank		10	{volume "track"}}
+		{tank		8	{volume "gun"}}
+		{lighttank	8	{volume "track"}}
+		{lighttank	7}
+		{armcar		6}
+		{cannon		5}
+		{human		4}
+		{car		4}
+		{tank		4}
+		{heavytank	4     {volume "track"}}
+		{unknown	0}
+		(mod "dl_easy"
+			{unknown	5}
+		)
+	}
+	{"bullet ap"			;крупный калибр 12,7
+		{armcar		13}
+		{human		12}
+		{car		10}
+		{lighttank	7}
+		{cannon		5}
+		{tank		0}
+		{heavytank	0}
+		{unknown	0}
+		(mod "dl_easy"
+			{unknown	5}
+		)
+	}
+	{"zenite"
+		{armcar		15}
+		{lighttank	11}
+		{cannon		10}
+		{human		10					}
+		{car		10					}
+		{tank		5					}
+		{heavytank	0}
+		;{unknown	5					}
+		{unknown	0					}
+	}
+	{"rpg"
+		{heavytank	11	{volume "body"}}
+		{heavytank	9	{volume "turret"}}
+		{tank	 	10	{volume "body"}}
+		{tank		8	{volume "turret"}}
+		{lighttank	7}
+		{armcar		6}
+		{car		5			}
+		{human		3			}
+		{unknown	0			}
+	}
+	{"grenade ap"
+		{heavytank		10}
+		{tank		10}
+		{lighttank		10}
+		{armcar		10}
+		{car		9}
+		{unknown	2}
+		{human		1}
+	}
+
+	{"grenade fg"
+		{car		10 {ground}}
+		{tank		9 {ground}}
+		{lighttank	9 {ground}}
+		{armcar		9 {ground}}
+		{human		8 {ground}}
+		{unknown	9 {ground}}
+		(mod "dl_easy"
+			{unknown 1 {ground}}
+		)
+	}
+      {"bullet"
+		{human		15					}
+		{car		10					}
+		{heavytank	0}
+		{tank		0}
+		{lighttank	0}
+		{armcar		0}
+		{unknown	0}
+		(mod "dl_easy"
+			{unknown	5}
+		)
+	}
+      {"huge ap"
+            {heavytank 10 }
+            {tank 8 }
+            {lighttank 7 }
+            {armcar 6 }
+            {car 5 }
+            {human 4 }
+            {unknown 5 }
+          ; {tank 0 }
+          ; {lighttank 0 }
+          ; {armcar 0 }
+          ; {car 0 }
+          ; {human 0 }
+          ; {unknown 0 }
+       }
+       {"big ap"
+            {heavytank 10 {volume "gun"}}
+            {tank 10 {volume "turret"}}
+            {heavytank 8 }
+            {tank 8 }
+            {lighttank 7 }
+            {armcar 6 }
+            {car 5 }
+            {human 4 }
+            {unknown 5 }
+       }
+       {"ap"
+            {heavytank 10 {volume "gun"}}
+            {heavytank 8 {volume "turret"}}
+            {tank 10 {volume "body"}}
+            {tank 8 {volume "turret"}}
+            {heavytank 7 {volume "body"}}
+            {lighttank 7 }
+            {armcar 6 }
+            {car 5 }
+            {human 4 }
+            {unknown 5 }
+        }
+
+        {"huge fg"
+            {human 10 {ground}}
+          ; {humans 15 {ground}}
+            {car 10 }
+            {heavytank 6 }
+            {tank 5 }
+            {lighttank 5 }
+            {armcar 5 }
+            {unknown 4 }
+        }
+        {"fg"
+            {human 10 {ground}}
+         ;  {humans 15 {ground}}
+            {car 10 }
+            {heavytank 0 }
+            {tank 0 }
+            {lighttank 5 }
+            {armcar 5 }
+            {unknown 4 }
+        }
+	  {"knife"
+		{human		10					}
+	}
+}

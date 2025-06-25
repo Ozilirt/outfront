@@ -1,0 +1,59 @@
+{game_entity
+	(include "/properties/crane.ext")
+	(include "/properties/shadow/construction.inc" sx(0.3) sy(0.5) ofsx(0) ofsy(0))
+	(include "/properties/selection/vehicle.inc"  scale(0.6))
+	{Extension "crane_big.mdl"}
+    	{mass 22000}
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+	{sensor
+		{Visor "main"
+			{vision "searchlight"}
+			{bone "visor"}
+		}
+	}
+	{props "vehicle" "steel" "searchlight"}
+	{Volume "body"
+		{tags "body"}
+		{thickness 50}
+		{component "body"}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{thickness 50}
+		{component "body"}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{thickness 50}
+		{component "body"}
+	}
+	{Volume "body3"
+		{tags "body"}
+		{thickness 50}
+		{component "body"}
+	}
+	{Volume "turret"
+		{tags "body"}
+		{thickness 50}
+		{able {obstacle 0}}
+		{component "turret"}
+	}
+	{Volume "engine"
+		{tags "body"}
+		{thickness 50}
+		{able {visible 0}{obstacle 0}}		
+	}
+	("crew_bigcrane")
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "searchlight"}
+			{Mounted}
+		}
+	}
+	{extender "inventory"		
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon searchlight"}
+		}
+	}
+}

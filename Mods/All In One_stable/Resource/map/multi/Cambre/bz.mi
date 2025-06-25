@@ -1,0 +1,158 @@
+{mission
+	{Camera
+		{Position 403.426 4270.57}
+		{Distance 2762.31}
+		{ViewAngle 0.73202}
+		{YawAngle -0.414256}
+	}
+	{Environment "day"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "flag_point" 0x8001
+		{Position 2140 1366.7 0}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 1}
+	}
+	{Entity "flag_point" 0x8003
+		{Position 3454 3496 0}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 3}
+	}
+	{Entity "flag_point" 0x8004
+		{Position 1051.73 -392.34 0}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 8}
+	}
+	{Entity "start_point" 0x8801
+		{Position 5254.31 -1004.25 0}
+		{Turn 127.864}
+		{Extender "start_point"
+			{mapPoint "xteam"}
+		}
+		{Player 1}
+		{MID 4}
+	}
+	{Entity "start_point" 0x8803
+		{Position -257.85 4653.84 32.7747}
+		{Turn -63.7125}
+		{Extender "start_point"
+			{mapPoint "zteam"}
+		}
+		{Player 1}
+		{MID 6}
+	}
+	{Entity "map_point" 0x8805
+		{Position 952.964 1056.83 0}
+		{Turn 86.1859}
+		{Extender "map_point"
+			{name "xteam"}
+			{caption "xteam"}
+			{visor SpawnPoints}
+			{teams "x"}
+			{unitset "reg"}
+		}
+		{Player 1}
+		{MID 5}
+	}
+	{Entity "map_point" 0x8806
+		{Position 1543.8 2592.14 0}
+		{Turn -90}
+		{Extender "map_point"
+			{name "zteam"}
+			{caption "zteam"}
+			{visor SpawnPoints}
+			{teams "z"}
+			{unitset "reg"}
+		}
+		{Player 1}
+		{MID 7}
+	}
+	{Entity "side_star" 0x8000
+		{Position 2139.89 1366.68 131.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8002
+		{Position 3453.89 3495.98 131.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8005
+		{Position 1051.62 -392.356 131.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Link 0x8000 To 0x8001 "side_pointer"}
+	{Link 0x8002 To 0x8003 "side_pointer"}
+	{Link 0x8005 To 0x8004 "side_pointer"}
+	{Helpers
+		{trigger "1"
+			{actions
+				{"task"
+					{name "task00"}
+				}
+			}
+		}
+		{waypoints
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

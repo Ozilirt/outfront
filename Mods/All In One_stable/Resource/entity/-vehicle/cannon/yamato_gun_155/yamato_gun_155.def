@@ -1,0 +1,59 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	(include "/properties/structure/cannon_100.ext")
+	{props "vehicle" "cannon" "155mm" "turret_rotator"}
+	(include "/properties/dummy_fsm2.inc")
+	{colliderID "construction"}
+	{obstacleID "tank"}
+	("crew_2_human")
+	
+	{volume "turret"
+		{tags "turret"}
+		{thickness 180}
+		{component "turret"}
+	}
+	{Volume "gun1"
+		{tags "gun"}
+		{thickness 180}
+		{component "gun"}
+	}
+	{Volume "gun2"
+		{tags "gun"}
+		{thickness 180}
+		{component "gun"}
+	}
+	{Volume "gun3"
+		{tags "gun"}
+		{thickness 180}
+		{component "gun"}
+	}
+	{component "gun"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 30}
+	}
+	{component "turret"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 35}
+	}
+
+	{Weaponry
+		{place "gun"
+			{foresight "foresight1"}
+			{DefaultWeapon "155mm"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet155 fg" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet155 fg" 60 {cell 0 0}}
+			{item "ammo bullet155 ap" 30 {cell 0 1}}
+		}
+	}
+	{mass 9000}
+	{Extension "yamato_gun_155.mdl"}
+}

@@ -1,0 +1,17 @@
+{building
+	(include "/properties/construction.inc")
+	{Extension "choza.mdl"}
+	{props "stack" "animated_crush" "tent"}
+
+	{mass 200}
+	{Volume "body1"
+		{Tags  "body" "fire"}
+		{Thickness 20}
+		{able {visible 0} {obstacle 0}}
+	}
+	{Volume "body2"
+		{Tags  "body" "fire"}
+		{Thickness 20}
+		{able {visible 0} {obstacle 0}}
+	}
+}

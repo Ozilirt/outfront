@@ -1,0 +1,29 @@
+{construction
+	(include "/properties/post.inc")
+	{props "steel"}
+	{Extension "steel_post.mdl"}
+	{Volume "body"
+		{thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "lamp1"
+		{thickness 1}
+	}
+	{Volume "lamp2"
+		{thickness 1}
+	}
+	{Volume "lamp3"
+		{thickness 1}
+	}
+	{Volume "lamp4"
+		{thickness 1}
+	}
+	{extender "light"
+		{lightfx "light_boat"}
+		{breakfx "glass_hit"}
+		{lamp "1"}
+		{lamp "2"}
+		{lamp "3"}
+		{lamp "4"}
+	}
+}

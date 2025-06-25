@@ -1,0 +1,152 @@
+;Exported by: dinsen
+;Date:        Mon Oct 10 23:44:34 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\prision_x.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "piece1"
+			{Position -9.0085	24.8128	21.1683}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Position -0.4623	3.7254	38.2876}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "open_point"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				4.3583	20.4004	0.0000
+			}
+		}
+		{bone "piece3"
+			{Position 5.2285	0.7361	28.7864}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece4"
+			{Position -19.9428	5.4135	28.5930}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "piece5"
+			{Position 22.9581	-22.6939	23.7087}
+			{VolumeView "piece5.ply"}
+		}
+		{bone "piece6"
+			{Position -21.2777	-16.9797	22.6293}
+			{VolumeView "piece6.ply"}
+		}
+		{bone "FX_fire1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-35.6367	12.9008	0.0000
+			}
+		}
+		{bone "FX_smoke1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-23.5663	7.7708	0.0000
+			}
+		}
+		{bone "FX_fire2"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				28.5184	-3.7211	0.0000
+			}
+		}
+		{bone "FX_smoke2"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				18.5602	-5.2299	0.0000
+			}
+		}
+	}
+}
+{Obstacle "Plane05"
+	{Obb2
+		{Center -45.546 -3.02994}
+		{Extent 1.10423 22.6981}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane04"
+	{Obb2
+		{Center 0.996506 18.0869}
+		{Extent 47.6046 0.981539}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane03"
+	{Obb2
+		{Center 46.2699 -1.91197}
+		{Extent 1.10423 22.4527}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane02"
+	{Obb2
+		{Center 29.0316 -24.2784}
+		{Extent 17.6677 0.736153}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane01"
+	{Obb2
+		{Center -29.4313 -23.7934}
+		{Extent 18.2811 1.34962}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "piece6"
+	{Box 3.68077 3.43538 40}
+	{Bone "piece6"}
+	{Position -24.5073	-1.2750	-2.6293}
+}
+{Volume "piece5"
+	{Box 2.6027 2.94972 40}
+	{Bone "piece5"}
+	{Position 23.4955	4.1800	-3.7087}
+}
+{Volume "piece4"
+	{Box 1.64837 2.80643 40}
+	{Bone "piece4"}
+	{Position -25.6831	18.4120	-8.5930}
+}
+{Volume "piece3"
+	{Box 2.6027 3.29675 40}
+	{Bone "piece3"}
+	{Position 40.8552	22.2198	-8.7864}
+}
+{Volume "body"
+	{Box 91.9619 42.3372 3.12324}
+	{Bone "body"}
+	{Position 0.2487	3.2368	1.5616}
+}
+{Volume "piece2"
+	{Polyhedron "piece2.vol"}
+	{Bone "piece2"}
+	{Position 0.7363	-2.7237	3.5303}
+}
+{Volume "piece1"
+	{Box 22.2633 5.11548 40.2548}
+	{Bone "piece1"}
+	{Position 8.8977	-0.0000	-0.0000}
+}

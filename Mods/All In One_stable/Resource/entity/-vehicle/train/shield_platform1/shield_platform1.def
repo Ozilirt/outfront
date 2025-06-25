@@ -1,0 +1,24 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.1) scaleY(1.0))
+    	{mass 12000}
+    	{props "platform2" "steel" "train_part"}
+	{TexMods
+ 		{"ambush" "1"}
+	}
+	{Extension "shield_platform1.mdl"}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "body1"
+		{tags "body"}
+		{thickness 20}
+		{component "body"}
+	}
+	{component "body"
+		{Able {repair} {break_by_pierce}}
+	}
+}

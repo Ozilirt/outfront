@@ -1,0 +1,70 @@
+;Model created by: Dinsen & Albus
+;date : Feb 2010
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 16.1204	-0.0236	10.3724}
+			{VolumeView "body.ply"}
+			{bone "cabin"
+				{parameters "ID=cabin;"}
+				{Position -11.2000	-0.5000	23.8000}
+				{VolumeView "cabin.ply"}
+				{bone "projector1"
+					{Position 48.5193	0.7000	41.8260}
+				}
+				{bone "projector"
+					{Position -16.2193	13.5000	63.8260}
+				}
+			}
+			{bone "attach_gun2"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					-186.0000	0.9000	24.3089
+				}
+			}
+			{bone "attach_mg1"
+				{Matrix34
+					0.0000	-1.0000	0.0000
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-108.4000	-28.2000	22.8000
+				}
+			}
+			{bone "attach_mg2"
+				{Matrix34
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-108.4000	31.2000	22.8000
+				}
+			}
+			{bone "body_rear"
+				{parameters "ID=body_rear;"}
+				{Position -190.0000	0.0000	0.0000}
+				{VolumeView "body_rear.ply"}
+			}
+			{bone "body_front"
+				{parameters "ID=body_front;"}
+				{Position 140.0000	0.0000	0.0000}
+				{VolumeView "body_front.ply"}
+				{bone "attach_gun1"
+					{Position -28.3258	0.7500	24.1270}
+				}
+				{bone revolute "FX_exp4"
+					{limits -2.0000 2.0000}
+					{Position -48.8354	0.0211	5.1806}
+				}
+			}
+		}
+		{bone "volume_holder"
+		}
+	}
+}

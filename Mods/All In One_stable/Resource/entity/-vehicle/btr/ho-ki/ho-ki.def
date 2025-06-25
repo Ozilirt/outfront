@@ -1,0 +1,117 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "self_propelled" "explosion_throw_crew" "emit_on_attack" }
+	{PatherId "vehicle.small"}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 16
+			{front  16}
+		}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 16
+			{front  16}
+		}
+	}
+	{volume "engine"	
+		{thickness 10}
+	}
+	{Volume "bodyback"
+		{tags "body"}
+		{component "body"}
+		{thickness 16}
+	}
+	{component "engine"	
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{extender "inventory"
+		{Box
+			{size 8 4}
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"} {base "door1"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "door1" -1}}
+		}
+		{anm "left2"
+			{forward	{begin	"board_tank_right"} {end "seat_passenger"} {base "door2"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "door2" -1}}
+		}
+		{anm "backl"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_passenger"}{base "door4"}}
+			{reverse 	{end	"emit_body"} {base "door4" -1}}
+		}
+		{anm "backr"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_passenger"}{base "door3"}}
+			{reverse 	{end	"emit_body"} {base "door3" -1}}
+		}
+		{anm "rear"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	("crew_human_visible"	place(driver) bone(driver) door1(emit1) visor(driver))
+
+	{placer
+		{place "driver"		{group "crew"}}
+	}
+	("seat_human" place(seat0) bone(seat00) door(emit2)  visor(main) animation(left2))
+	("seat_human" place(seat1) bone(seat01) door(emit6)  animation(rear))
+	("seat_human" place(seat2) bone(seat02) door(emit5)  animation(rear))
+	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(rear))
+	("seat_human" place(seat4) bone(seat04) door(emit5)  animation(rear))
+	("seat_human" place(seat5) bone(seat05) door(emit5)  animation(rear))
+	("seat_human" place(seat6) bone(seat06) door(emit3)  animation(backl))
+	("seat_human" place(seat7) bone(seat07) door(emit6)  animation(rear))
+	("seat_human" place(seat8) bone(seat08) door(emit4)  animation(backr))
+	("seat_human" place(seat9) bone(seat09) door(emit3)  animation(backl))
+	("seat_human" place(seat10) bone(seat10) door(emit4)  animation(backr))
+	("seat_human" place(seat11) bone(seat11) door(emit3)  animation(backl))
+	("seat_human" place(seat12) bone(seat12) door(emit4)  animation(backr))
+
+	("tracks")
+
+	{mass 5500}
+	{Chassis
+		{speed
+			{Slow	13}
+			{Normal	18}
+			{Fast	22}
+		}
+	        {FuelBag
+			{volume 150 }
+			{rate    40 }
+			{remain 150 }
+        		{fuel "fuel"}
+		}
+
+		{Locomotion ("locomotion")
+			{Maxspeed	22}
+			{StartTime	2.5}
+		}
+	}
+	{Extension "ho-ki.mdl"}
+        (mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "repair_kit"}
+				{item "can" filling "fuel" 25}
+				{item "type99" filling "ammo mgun" 30}
+				{item "ammo mgun" 90}
+				{item "type3at" 2}
+			}
+		}
+	)
+}

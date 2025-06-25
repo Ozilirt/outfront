@@ -1,0 +1,44 @@
+;Exported by: Albus
+;Date:        Fri Mar 02 20:49:20 2012
+;File:        C:\Documents and Settings\Albus\Mis documentos\Downloads\SKYPE\37mmgunm1_x.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 6.2830	-1.2515	8.0013}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0180}
+				{Position -6.2830	1.2515	-2.9125}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -30.0000 30.0000}
+					{Matrix34
+						0.8910	0.0000	0.4540
+						-0.4540	0.0000	0.8910
+						0.0000	-1.0000	0.0000
+						-4.0297	0.0000	16.2109
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							29.9823	-0.1341	0.0533
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}

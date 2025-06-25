@@ -1,0 +1,134 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "-turret" "self_propelled" "huge"}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 178
+			{front  228}
+			{rear 100 0.2}
+			{bottom	40}
+			{top    45}
+		}   
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 178
+			{front  228}
+			{rear 100 0.2}
+			{bottom	40}
+			{top    45}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 178
+			{front  228}
+			{rear 100 0.2}
+			{bottom	40}
+			{top    45}
+		}  
+	}
+	{volume "turret"
+		{thickness 28 0.5
+			{front  30 0.5}        
+			{top 25}
+			{bottom	25}
+		}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_MiddleArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor1))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "93mm_QQF"}
+			{Mounted}
+			{weapon {ammo "ammo bullet93 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "besa"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 225}}
+			{Barrels 2}
+		}
+		{place "mgun2"
+			{DefaultWeapon "besa_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 225}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{item "ammo mgun" 1000}
+			{item "ammo bullet93 ap" 39}
+			{item "ammo bullet93 fg" 18}
+		}
+	}
+
+	{mass 78500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed	15} ; kmph
+			{StartTime	6} ; seconds
+			{BrakeTime	0.6} ; seconds
+			{StopTime	1} ; seconds
+			{TurnRadius	5} ; meter
+			{TurnTime	5} ; seconds
+			{TurnStart	2}	; seconds
+			{TurnStop	0.5}	; seconds
+			{Gears		0.2 0.3 0.5 0.7 1.0}
+			{RearGears	0.2 0.5}
+		}
+		{speed
+			{Slow	7}
+			{Normal	11}
+			{Fast	15} 
+		}
+		{FuelBag
+			{volume 832 }	; liters
+			{rate   517 }	; liters per kilometer
+			{remain 832 }
+			{fuel "fuel"}
+		}
+	}
+	{Extension "A39.mdl"}
+
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+	)
+}

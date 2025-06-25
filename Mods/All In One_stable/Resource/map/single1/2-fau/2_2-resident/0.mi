@@ -1,0 +1,6547 @@
+{mission
+	{Camera
+		{Position 3879.39 4453.29}
+		{Distance 951}
+		{ViewAngle 0.299038}
+		{YawAngle 82.1561}
+	}
+	{Environment "day_norainy2"}
+	{User 2}
+	{GameProgress 0 0}
+	{Human "usa.marine.mgun" 0x8000
+		{Position 3796.49 4729.16 0}
+		{Turn 3.05828}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bar" filling "ammo mgun" 20 {cell 0 0}}
+				{item "ammo mgun" 80 {cell 6 0}}
+				{item "ammo mgun" 80 {cell 6 1}}
+				{item "bandage" 4 {cell 6 3}}
+				{item "knife" {cell 6 2}}
+			}
+		}
+		{Player 2}
+		{MID 1}
+		{NameId 69 61}
+		{Cover
+			{sector 3796.49 4729.16 {type "hide_stand"}
+				{wall 0 0 3791.71 4687.32 3788.08 4755.26}
+			}
+		}
+		{FsmState "stand"}
+	}
+	{Human "usa.marine.smg" 0x8001
+		{Position 4013.29 4739.39 0}
+		{Turn 3.35034}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "thompson" filling "ammo pistol" 30 {cell 0 0}}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade n73at" {cell 6 1}}
+				{item "grenade m61" {cell 7 0}}
+				{item "grenade smoke" {cell 6 0}}
+				{item "grenade tntpack" {cell 6 2}}
+				{item "ammo pistol" 90 {cell 4 1}}
+				{item "dynamite" {cell 4 2}}
+			}
+		}
+		{Player 2}
+		{MID 2}
+		{NameId 125 12}
+		{Cover
+			{sector 4013.29 4739.39 {type "squat_lie"}
+				{wall 0 0 4019.57 4751.9 4021.92 4711.76}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "usa.marine.smg" 0x8002
+		{Position 3935.88 4670.61 0}
+		{Turn -129.48}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade m61" {cell 7 0}}
+				{item "ammo pistol" 90 {cell 5 0}}
+				{item "m3a" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{Player 2}
+		{MID 3}
+		
+		{NameId 102 99}
+		{FsmState "squat"}
+	}
+	{Human "usa.marine2.smg" 0x8003
+		{Position 4007.2 4603.03 0}
+		{Turn 96.3824}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 6 0}}
+				{item "ammo pistol" 90 {cell 6 1}}
+				{item "grenade an_m14" {cell 4 0}}
+				{item "grenade m61" {cell 5 1}}
+				{item "grenade m61" {cell 4 1}}
+				{item "bandage" 3 {cell 6 2}}
+			}
+		}
+		{Player 2}
+		{MID 4}
+		{Weaponry
+			{State
+				{Mounted "m3a"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 87 22}
+		{Cover
+			{sector 4007.2 4603.03 {type "look_left"}
+				{wall 0 0 4020.1 4597.43 3994.62 4594.58}
+			}
+		}
+		{FsmState "stand"}
+	}
+	{Human "usa.marine.rifle" 0x8004
+		{Position 3931.51 4619.76 0}
+		{Turn 118.721}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "m1_kn" filling "ammo rifle" 8 {cell 0 0}}
+				{item "ammo rifle" 40 {cell 7 0}}
+				{item "bandage" 4 {cell 5 0}}
+				{item "grenade an_m14" {cell 6 1}}
+				{item "grenade m61" {cell 4 0}}
+			}
+		}
+		{Player 2}
+		{MID 5}
+		{NameId 99 40}
+		{LastThrowItem "bayonet"}
+		{FsmState "squat"}
+	}
+	{Human "usa.marine.rifle" 0x8005
+		{Position 3801.63 4635.86 0}
+		{Turn -176.765}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "grenade m61" {cell 6 0}}
+				{item "ammo rifle" 40 {cell 5 0}}
+				{item "grenade m61" {cell 6 1}}
+				{item "grenade m61" {cell 5 1}}
+				{item "bandage" 4 {cell 6 3}}
+			}
+		}
+		{Player 2}
+		{MID 6}
+		{Weaponry
+			{State
+				{Mounted "m1"}
+				{Weapon
+					{Ammo "ammo rifle" 8}
+				}
+			}
+		}
+		{NameId 74 27}
+		{Cover
+			{sector 3801.63 4635.86 {type "squat_lie"}
+				{wall 0 0 3798.13 4573.78 3791.52 4690.72}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "usa.marine_medic" 0x8006
+		{Position 3894.01 4622.12 0}
+		{Turn 11.4932}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bandage" 5 {cell 6 0}}
+				{item "bandage" 5 {cell 6 1}}
+				{item "morphine" 10 {cell 6 2}}
+				{item "colt" filling "ammo pistol" 7 {cell 4 0}}
+				{item "ammo pistol" 21 {cell 4 3}}
+				{item "knife" {cell 4 2}}
+				{item "ammo rifle" 30 {cell 4 1}}
+				{item "grenade smoke" {cell 5 1}}
+				{item "m2_carbine" filling "ammo rifle" 15 {cell 0 0}}
+			}
+		}
+		{Player 2}
+		{MID 7}
+		{NameId 125 13}
+		{FsmState "squat"}
+	}
+	{Human "usa.marine.all" 0x8007
+		{Position 3911.59 4673.29 0}
+		{Turn -59.7818}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "m3a" filling "ammo pistol" 30 {cell 0 0}}
+			}
+			{armor "body"
+				{Item "usa_equip3"}
+			}
+		}
+		{Player 2}
+		{MID 8}
+		
+		{NameId 69 63}
+		{LastItem "thompson"}
+		{FsmState "squat"}
+	}
+	{Entity "watch-tower" 0x800e
+		{Position 2010.41 1600.04 0}
+		{Turn 142.704}
+	}
+	{Entity "type1_tower" 0x8008
+		{Position 2009.51 1599.39 121.349}
+		{Orientation
+			 -0.795516   0.605933   0.000000
+			 -0.605933  -0.795516   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 9}
+		
+	}
+	{Entity "watch-tower" 0x800f
+		{Position 2013.36 978.547 0}
+		{Turn -141.209}
+	}
+	{Entity "type1_tower" 0x8009
+		{Position 2013.78 977.514 121.349}
+		{Orientation
+			 -0.779437  -0.626481   0.000000
+			  0.626481  -0.779437   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 10}
+		
+	}
+	{Entity "watch-tower" 0x8010
+		{Position 3269.12 962.085 0}
+		{Turn -47.4393}
+	}
+	{Entity "type1_tower" 0x800a
+		{Position 3270.12 962.569 121.349}
+		{Orientation
+			  0.676371  -0.736561   0.000000
+			  0.736561   0.676371   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 11}
+		
+	}
+	{Entity "watch-tower" 0x8011
+		{Position 3577.48 2336.63 0}
+		{Turn 39.6346}
+	}
+	{Entity "type1_tower" 0x800b
+		{Position 3577.05 2337.66 121.349}
+		{Orientation
+			  0.770128   0.637889   0.000000
+			 -0.637889   0.770128   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 12}
+		
+	}
+	{Entity "watch-tower" 0x8012
+		{Position 3655.73 1358.69 0}
+		{Turn -34.5099}
+	}
+	{Entity "type1_tower" 0x800c
+		{Position 3656.6 1359.39 121.349}
+		{Orientation
+			  0.824028  -0.566549   0.000000
+			  0.566549   0.824028   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 13}
+		
+	}
+	{Entity "watch-tower" 0x8013
+		{Position 2027.18 2381.87 0}
+		{Turn 119.486}
+	}
+	{Entity "type1_tower" 0x800d
+		{Position 2026.09 2381.63 121.349}
+		{Orientation
+			 -0.492211   0.870476   0.000000
+			 -0.870476  -0.492211   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 14}
+	}
+	{Human "jap.oficer" 0x8014
+		{Position 2053.25 744.098 0}
+		{Turn 129.899}
+		{Player 1}
+		{MID 15}
+		{NameId 18 25}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8015
+		{Position 2076.55 722.153 0}
+		{Turn 146.942}
+		{Player 1}
+		{MID 16}
+		{NameId 2 10}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8016
+		{Position 2100.97 703.598 0}
+		{Turn 147.442}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "arisaka_kn" filling "ammo rifle" 5 {cell 0 0}}
+				{item "ammo rifle" 20 {cell 4 0}}
+				{item "grenade type23" {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 17}
+		{NameId 61 19}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8017
+		{Position 2124.11 687.609 0}
+		{Turn 153.093}
+		{Player 1}
+		{MID 18}
+		{NameId 73 78}
+		{FsmState "stand"}
+	}
+	{Entity "ha-go" 0x8018
+		{Position 201.619 254.122 0}
+		{TexMod "ambush"}
+		{Player 1}
+		{MID 19}
+	}
+	{Entity "ha-go" 0x8019
+		{Position 124.418 253.01 0}
+		{Turn 1.70217}
+		{TexMod "ambush"}
+		{Player 1}
+		{MID 20}
+		
+	}
+	{Entity "ho-ha" 0x801a
+		{Position 5822.94 1478.08 0}
+		{Turn -153.616}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 900 {cell 0 0}}
+				{item "pala" {cell 0 2}}
+				{item "grenade type3at" {cell 0 3}}
+				{item "grenade type23" {cell 3 5}}
+				{item "grenade type23" {cell 4 5}}
+				{item "wires" {cell 0 4}}
+				{item "can" {cell 3 1}}
+			}
+		}
+		{Player 1}
+		{MID 21}
+		
+	}
+	{Entity "isuzu-ammo" 0x801b
+		{Position 5849.26 1492.52 0}
+		{Turn -148.753}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item 0x8052 "small_box" {cell 0 0}}
+				{item 0x8051 "small_box" {cell 0 2}}
+				{item 0x8061 "box" {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 22}
+		
+	}
+	{Entity "isuzu" 0x801c
+		{Position 112.732 3767.31 0}
+		{Turn 42.9169}
+		{Player 1}
+		{MID 23}
+		
+	}
+	{Entity "type93" 0x801d
+		{Position 134.001 3786.44 0}
+		{Turn 42.2148}
+		{Player 1}
+		{MID 24}
+		
+	}
+	{Entity "bmw-r12j" 0x801e
+		{Position 186.772 3833.98 0}
+		{Turn 44.2293}
+		{Player 1}
+		{MID 25}
+		
+	}
+	{Entity "bike" 0x801f
+		{Position 1673.68 5007.43 0}
+		{Turn -37.6898}
+		{Player 1}
+		{MID 26}
+	}
+	{Entity "isuzu" 0x8020
+		{Position 1600.62 5048.29 0}
+		{Turn -35.8624}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "barrel" filling "fuel" 75 {cell 0 0}}
+				{item 0x803c "box" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 27}
+	}
+	{Entity "oscar" 0x8021
+		{Position 3050.87 1824.98 -10.5055}
+		{Turn -103.916}
+		{Player 1}
+		{MID 28}
+		
+	}
+	{Entity "oscar" 0x8022
+		{Position 2653.71 1835.54 -10.5055}
+		{Turn -103.863}
+		{Player 1}
+		{MID 29}
+		
+	}
+	{Human "jap.tankman" 0x8023
+		{Position 201.619 254.122 0}
+		{Orientation
+			  1.000000   0.000000   0.000000
+			  0.000000  -1.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 30}
+		{NameId 18 26}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8024
+		{Position 201.619 254.122 0}
+		{Orientation
+			  1.000000   0.000000   0.000000
+			  0.000000  -1.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 31}
+		{NameId 2 11}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8025
+		{Position 201.619 254.122 0}
+		{Orientation
+			  1.000000   0.000000   0.000000
+			  0.000000  -1.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 32}
+		{NameId 61 20}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8026
+		{Position 124.418 253.01 0}
+		{Orientation
+			  0.999559   0.029704   0.000000
+			  0.029704  -0.999559   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 33}
+		{NameId 73 79}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8027
+		{Position 124.418 253.01 0}
+		{Orientation
+			  0.999559   0.029704   0.000000
+			  0.029704  -0.999559   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 34}
+		{NameId 68 32}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8028
+		{Position 124.418 253.01 0}
+		{Orientation
+			  0.999559   0.029704   0.000000
+			  0.029704  -0.999559   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 35}
+		{NameId 31 51}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8029
+		{Position 168.344 233.196 17}
+		{Turn -90}
+		{DisableObstacles}
+		{Player 1}
+		{MID 36}
+		{NameId 1 45}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x802a
+		{Position 179.344 233.196 17}
+		{Turn -90}
+		{DisableObstacles}
+		{Player 1}
+		{MID 37}
+		{NameId 13 87}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x802b
+		{Position 1017.32 -148.7 33.8699}
+		{Turn -19.6121}
+		{Player 1}
+		{MID 38}
+		{NameId 0 87}
+		{Cover
+			{sector 1017.32 -148.7 {type "snipe_cover"}
+				{wall 0 0 1034.87 -120.292 1020.47 -160.705}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.infantry_rifle" 0x802c
+		{Position 91.7789 231.105 17}
+		{Turn -88.2978}
+		{DisableObstacles}
+		{Player 1}
+		{MID 39}
+		{NameId 88 57}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x802d
+		{Position 102.774 231.432 17}
+		{Turn -88.2978}
+		{DisableObstacles}
+		{Player 1}
+		{MID 40}
+		{NameId 66 99}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x802e
+		{Position 998.82 -112.395 29.2394}
+		{Turn -15.5811}
+		{Player 1}
+		{MID 41}
+		{NameId 52 50}
+		{Cover
+			{sector 998.82 -112.395 {type "look_left"}
+				{wall 0 0 989.324 -120.388 1001.12 -78.0856}
+			}
+		}
+		{FsmState "stand"}
+	}
+	{Human "jap.tankman" 0x802f
+		{Position 1665.52 5005.57 -0.8506}
+		{Orientation
+			  0.787059  -0.608085  -0.103900
+			  0.611386   0.791332   0.000000
+			  0.082219  -0.063523   0.994600
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 42}
+		{NameId 52 45}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x8030
+		{Position 1609.13 5050 14.9179}
+		{Orientation
+			  0.797026  -0.576154   0.180607
+			  0.585841   0.810426   0.000000
+			 -0.146369   0.105807   0.983465
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 7 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 43}
+		{NameId 81 90}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8031
+		{Position 1659.01 5010.6 6.953}
+		{Orientation
+			  0.779304  -0.602093   0.173600
+			  0.611386   0.791332   0.000000
+			 -0.137375   0.106137   0.984800
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 44}
+		{NameId 37 34}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_mgun" 0x8032
+		{Position 1545.86 5077.07 19.2319}
+		{Orientation
+			  0.674008   0.716337   0.180604
+			 -0.728226   0.685225  -0.000045
+			 -0.123798  -0.131503   0.983512
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 80 {cell 6 0}}
+				{item "type97" filling "ammo mgun" 20 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 45}
+		{NameId 3 52}
+		{LastItem "type97"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x8033
+		{Position 1554.71 5070.05 19.8472}
+		{Orientation
+			  0.500632   0.846603   0.180599
+			 -0.860667   0.509009   0.000026
+			 -0.092009  -0.155471   0.983516
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 46}
+		{NameId 29 71}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x8034
+		{Position 1572.09 5057.49 20.2166}
+		{Orientation
+			  0.560440   0.808304   0.180558
+			 -0.821810   0.569762  -0.000002
+			 -0.102955  -0.148422   0.983543
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 47}
+		{NameId 90 7}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x8035
+		{Position 1580.19 5051.63 19.2328}
+		{Orientation
+			  0.500632   0.846603   0.180599
+			 -0.860667   0.509009   0.000026
+			 -0.092009  -0.155471   0.983516
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 48}
+		{NameId 34 0}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x8036
+		{Position 1563.99 5063.34 19.2324}
+		{Orientation
+			  0.638602   0.766980   0.063113
+			 -0.768135   0.640163  -0.008242
+			 -0.046716  -0.043226   0.997926
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 49}
+		{NameId 26 85}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x9000
+		{Position 1600.14 5042.39 15.1503}
+		{Turn -35.8624}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 60 {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 50}
+		{NameId 42 71}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8037
+		{Position 1574.15 5079.95 19.2323}
+		{Orientation
+			 -0.633722  -0.771002   0.063190
+			  0.772102  -0.635380  -0.008167
+			  0.046394   0.043583   0.997895
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade type23" {cell 6 0}}
+				{item "grenade type23" {cell 7 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 51}
+		{NameId 8 47}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8038
+		{Position 1557.88 5091.56 19.2319}
+		{Orientation
+			 -0.495319  -0.849704   0.180633
+			  0.863872  -0.503552  -0.000016
+			  0.090940   0.155996   0.983514
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade type3at" {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 52}
+		{NameId 54 87}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8039
+		{Position 1583.47 5073.3 19.8476}
+		{Orientation
+			 -0.495319  -0.849704   0.180633
+			  0.863872  -0.503552  -0.000016
+			  0.090940   0.155996   0.983514
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 53}
+		{NameId 29 16}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x803a
+		{Position 1566.02 5085.75 20.2161}
+		{Orientation
+			 -0.555282  -0.811787   0.180572
+			  0.825339  -0.564539   0.000005
+			  0.102004   0.149109   0.983487
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 54}
+		{NameId 83 53}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x803b
+		{Position 1592.37 5066.34 19.2328}
+		{Orientation
+			 -0.669537  -0.720433   0.180629
+			  0.732506  -0.680669   0.000031
+			  0.122964   0.132353   0.983517
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 55}
+		{NameId 88 6}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Entity "box1" 0x803c
+		{Position 1575.97 5040.78 0}
+		{Turn 19.3325}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "ammo pistol" 30 {cell 2 0}}
+				{item "ammo pistol" 30 {cell 0 1}}
+				{item "ammo pistol" 30 {cell 0 2}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "ammo pistol" 30 {cell 2 2}}
+				{item "ammo pistol" 30 {cell 0 3}}
+				{item "ammo pistol" 30 {cell 2 3}}
+				{item "ammo pistol" 30 {cell 4 0}}
+				{item "ammo pistol" 30 {cell 4 1}}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "ammo pistol" 30 {cell 6 1}}
+				{item "ammo pistol" 30 {cell 4 2}}
+				{item "ammo pistol" 30 {cell 6 2}}
+				{item "ammo pistol" 30 {cell 4 3}}
+				{item "ammo pistol" 30 {cell 6 3}}
+				{item "ammo mgun" 20 {cell 0 5}}
+				{item "ammo mgun" 20 {cell 2 5}}
+				{item "ammo mgun" 20 {cell 0 4}}
+				{item "ammo mgun" 20 {cell 2 4}}
+				{item "ammo mgun" 20 {cell 4 4}}
+				{item "ammo mgun" 20 {cell 4 5}}
+				{item "ammo rifle" 30 {cell 6 4}}
+				{item "ammo rifle" 30 {cell 7 4}}
+				{item "ammo rifle" 30 {cell 6 5}}
+				{item "ammo rifle" 30 {cell 7 5}}
+			}
+		}
+	}
+	{Human "jap.infantry_smg" 0x803d
+		{Position 174.964 3833.89 0.3124}
+		{Turn 44.2293}
+		{DisableObstacles}
+		{Player 1}
+		{MID 56}
+		{NameId 70 76}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x803e
+		{Position 187.466 3825.64 -0.8506}
+		{Orientation
+			  0.712685   0.693765  -0.103900
+			 -0.697532   0.716554   0.000000
+			  0.074450   0.072474   0.994600
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 57}
+		{NameId 40 15}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x803f
+		{Position 181.569 3819.9 6.953}
+		{Orientation
+			  0.705662   0.686929   0.173600
+			 -0.697532   0.716554   0.000000
+			 -0.124394  -0.121092   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 58}
+		{NameId 15 98}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8040
+		{Position 134.001 3786.44 0}
+		{Orientation
+			  0.740631   0.671912   0.000000
+			  0.671912  -0.740631   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 59}
+		{NameId 7 8}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8041
+		{Position 134.001 3786.44 0}
+		{Orientation
+			  0.740631   0.671912   0.000000
+			  0.671912  -0.740631   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 60}
+		{NameId 75 57}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8042
+		{Position 134.001 3786.44 0}
+		{Orientation
+			  0.740631   0.671912   0.000000
+			  0.671912  -0.740631   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 61}
+		{NameId 79 30}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8043
+		{Position 134.001 3786.44 0}
+		{Orientation
+			  0.740631   0.671912   0.000000
+			  0.671912  -0.740631   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 62}
+		{NameId 38 5}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x8044
+		{Position 118.425 3765.69 15.1503}
+		{Turn 42.9169}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+			{armor "body"
+				{Removed}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 63}
+		{NameId 86 93}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x8045
+		{Position 112.712 3775.99 14.9179}
+		{Orientation
+			  0.720233   0.669678   0.180607
+			 -0.680937   0.732342   0.000000
+			 -0.132266  -0.122982   0.983465
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+			{armor "body"
+				{Removed}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 64}
+		{NameId 88 96}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x8046
+		{Position 73.851 3719.2 19.2319}
+		{Orientation
+			 -0.571490   0.800516   0.180604
+			 -0.813832  -0.580969  -0.000045
+			  0.104900  -0.147021   0.983512
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 65}
+		{NameId 30 69}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x8047
+		{Position 61.9771 3733.81 19.2319}
+		{Orientation
+			  0.737078  -0.651193   0.180633
+			  0.662026   0.749374  -0.000016
+			 -0.135319   0.119557   0.983514
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 66}
+		{NameId 23 78}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x8048
+		{Position 105.478 3747.92 19.2328}
+		{Orientation
+			 -0.733003   0.655802   0.180599
+			 -0.666755  -0.745168   0.000026
+			  0.134595  -0.120503   0.983516
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 67}
+		{NameId 31 85}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x8049
+		{Position 90.8392 3734.31 19.2324}
+		{Orientation
+			 -0.628055   0.775641   0.063113
+			 -0.777397  -0.628884  -0.008242
+			  0.033310  -0.054234   0.997926
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 68}
+		{NameId 22 35}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x804a
+		{Position 69.2538 3740.66 20.2161}
+		{Orientation
+			  0.688218  -0.702632   0.180572
+			  0.714349   0.699710   0.000005
+			 -0.126410   0.129069   0.983487
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 69}
+		{NameId 82 88}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x804b
+		{Position 98.1585 3741.11 20.2166}
+		{Orientation
+			 -0.683798   0.707014   0.180558
+			 -0.718786  -0.695232  -0.000002
+			  0.125551  -0.129868   0.983543
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 70}
+		{NameId 22 50}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.oficer" 0x804c
+		{Position 82.4559 3726.51 19.8472}
+		{Orientation
+			 -0.733003   0.655802   0.180599
+			 -0.666755  -0.745168   0.000026
+			  0.134595  -0.120503   0.983516
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 71}
+		{NameId 64 64}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x804d
+		{Position 93.4239 3762.73 19.2328}
+		{Orientation
+			  0.576378  -0.796927   0.180629
+			  0.810195   0.586054   0.000031
+			 -0.105896   0.146368   0.983517
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 60 {cell 5 0}}
+				{item "grenade type23" {cell 7 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 72}
+		{NameId 33 6}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x804e
+		{Position 84.8649 3755.36 19.8476}
+		{Orientation
+			  0.737078  -0.651193   0.180633
+			  0.662026   0.749374  -0.000016
+			 -0.135319   0.119557   0.983514
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 60 {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 73}
+		{NameId 60 92}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x804f
+		{Position 76.5306 3747.51 19.2323}
+		{Orientation
+			  0.632949  -0.771636   0.063190
+			  0.773477   0.633705  -0.008167
+			 -0.033722   0.053988   0.997895
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 2 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 74}
+		{NameId 12 75}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Entity "box_metal" 0x8050
+		{Position 3913.86 4639.34 0}
+		{Turn 9.83298}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade m61" {cell 0 0}}
+				{item "grenade m61" {cell 0 1}}
+				{item "grenade m61" {cell 1 0}}
+				{item "grenade m61" {cell 1 1}}
+				{item "bandage" 5 {cell 6 1}}
+				{item "knife" {cell 0 3}}
+				{item "knife" {cell 0 4}}
+				{item "knife" {cell 0 5}}
+				{item "pala" {cell 2 5}}
+				{item "pala" {cell 4 5}}
+				{item "grenade smoke" {cell 2 4}}
+				{item "grenade smoke" {cell 3 4}}
+				{item "grenade smoke" {cell 4 4}}
+				{item "grenade smoke" {cell 5 4}}
+				{item "tnt" {cell 6 4}}
+				{item "tnt" {cell 6 5}}
+				{item "dynamite" {cell 6 2}}
+				{item "bino" {cell 2 2}}
+				{item "mine antipersonnel" {cell 4 2}}
+				{item "mine antipersonnel" {cell 4 3}}
+				{item "medkit" {cell 3 0}}
+				{item "bandage" 5 {cell 6 0}}
+				{item "grenade mk1" {cell 2 0}}
+				{item "grenade mk1" {cell 2 1}}
+				{item "grenade n73at" {cell 0 2}}
+			}
+		}
+	}
+	{Entity "box2" 0x8051
+		{Position 5837.29 1459.76 0}
+		{Turn 72.2077}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 25 {cell 0 5}}
+				{item "ammo rifle" 25 {cell 1 5}}
+				{item "ammo rifle" 25 {cell 2 5}}
+				{item "ammo rifle" 25 {cell 3 5}}
+				{item "ammo rifle" 25 {cell 0 4}}
+				{item "ammo rifle" 25 {cell 1 4}}
+				{item "ammo rifle" 25 {cell 0 3}}
+				{item "ammo rifle" 25 {cell 1 3}}
+				{item "ammo rifle" 25 {cell 2 4}}
+				{item "ammo rifle" 25 {cell 2 3}}
+				{item "ammo rifle" 25 {cell 3 4}}
+				{item "ammo rifle" 25 {cell 3 3}}
+				{item "ammo rifle" 25 {cell 4 5}}
+				{item "ammo rifle" 25 {cell 4 4}}
+				{item "ammo rifle" 25 {cell 4 3}}
+				{item "ammo rifle" 25 {cell 5 5}}
+				{item "ammo rifle" 25 {cell 5 4}}
+				{item "ammo rifle" 25 {cell 5 3}}
+				{item "ammo rifle" 25 {cell 6 3}}
+				{item "ammo rifle" 25 {cell 7 3}}
+				{item "ammo rifle" 25 {cell 6 4}}
+				{item "ammo rifle" 25 {cell 7 4}}
+				{item "ammo rifle" 25 {cell 6 5}}
+				{item "ammo rifle" 25 {cell 7 5}}
+				{item "ammo rifle" 25 {cell 0 2}}
+				{item "ammo rifle" 25 {cell 1 2}}
+				{item "ammo rifle" 25 {cell 2 0}}
+				{item "ammo rifle" 25 {cell 2 2}}
+				{item "ammo rifle" 25 {cell 3 2}}
+				{item "ammo rifle" 25 {cell 0 1}}
+				{item "ammo rifle" 25 {cell 1 1}}
+				{item "ammo rifle" 25 {cell 2 1}}
+				{item "ammo rifle" 25 {cell 3 0}}
+				{item "ammo rifle" 25 {cell 3 1}}
+				{item "ammo rifle" 25 {cell 5 0}}
+				{item "ammo rifle" 25 {cell 4 0}}
+				{item "ammo rifle" 25 {cell 4 1}}
+				{item "ammo rifle" 25 {cell 4 2}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "ammo rifle" 25 {cell 7 0}}
+				{item "ammo rifle" 25 {cell 7 1}}
+				{item "ammo rifle" 25 {cell 5 1}}
+				{item "ammo rifle" 25 {cell 6 1}}
+				{item "ammo rifle" 25 {cell 7 2}}
+				{item "ammo rifle" 25 {cell 6 2}}
+				{item "ammo rifle" 25 {cell 1 0}}
+				{item "ammo rifle" 25 {cell 5 2}}
+				{item "ammo rifle" 25 {cell 0 0}}
+			}
+		}
+	}
+	{Entity "box2" 0x8052
+		{Position 5825.73 1451.33 0}
+		{Turn 62.6986}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 1}}
+				{item "ammo pistol" 30 {cell 0 2}}
+				{item "ammo pistol" 30 {cell 0 3}}
+				{item "ammo pistol" 30 {cell 0 4}}
+				{item "ammo pistol" 30 {cell 2 0}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "ammo pistol" 30 {cell 2 2}}
+				{item "ammo pistol" 30 {cell 4 0}}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "ammo pistol" 30 {cell 4 2}}
+				{item "ammo pistol" 30 {cell 4 1}}
+				{item "ammo pistol" 30 {cell 6 1}}
+				{item "ammo pistol" 30 {cell 6 2}}
+				{item "ammo pistol" 30 {cell 2 3}}
+				{item "ammo pistol" 30 {cell 2 4}}
+				{item "ammo pistol" 30 {cell 4 3}}
+				{item "ammo pistol" 30 {cell 0 5}}
+				{item "ammo pistol" 30 {cell 2 5}}
+				{item "ammo pistol" 30 {cell 4 4}}
+				{item "ammo pistol" 30 {cell 4 5}}
+				{item "ammo pistol" 30 {cell 6 4}}
+				{item "ammo pistol" 30 {cell 6 5}}
+				{item "ammo pistol" 30 {cell 6 3}}
+				{item "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+	}
+	{Human "jap.infantry_rifle" 0x8053
+		{Position 5857.13 1503.86 12.857}
+		{Orientation
+			  0.438705  -0.881686   0.173600
+			  0.895303   0.445460   0.000000
+			 -0.077324   0.155428   0.984800
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 75}
+		{NameId 18 27}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x8054
+		{Position 5856.63 1484.56 12.857}
+		{Orientation
+			 -0.437630   0.882219   0.173600
+			 -0.895836  -0.444385   0.000000
+			  0.077145  -0.155517   0.984800
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 76}
+		{NameId 2 12}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x8055
+		{Position 5866.56 1489.48 12.857}
+		{Orientation
+			 -0.437630   0.882219   0.173600
+			 -0.895836  -0.444385   0.000000
+			  0.077145  -0.155517   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 77}
+		{NameId 61 21}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x8056
+		{Position 5876.86 1494.59 12.857}
+		{Orientation
+			 -0.437630   0.882219   0.173600
+			 -0.895836  -0.444385   0.000000
+			  0.077145  -0.155517   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 78}
+		{NameId 73 80}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x8057
+		{Position 5848.01 1499.33 12.857}
+		{Orientation
+			  0.438705  -0.881686   0.173600
+			  0.895303   0.445460   0.000000
+			 -0.077324   0.155428   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "bandage" 2 {cell 5 1}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 79}
+		{NameId 68 33}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8058
+		{Position 5837.63 1494.18 12.857}
+		{Orientation
+			  0.438705  -0.881686   0.173600
+			  0.895303   0.445460   0.000000
+			 -0.077324   0.155428   0.984800
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 80}
+		{NameId 31 52}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8059
+		{Position 5846.8 1479.68 12.857}
+		{Orientation
+			 -0.437630   0.882219   0.173600
+			 -0.895836  -0.444385   0.000000
+			  0.077145  -0.155517   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "knife" {cell 6 1}}
+				{item "grenade type3at" {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 81}
+		{NameId 1 46}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x805a
+		{Position 5827.54 1489.18 12.857}
+		{Orientation
+			  0.438705  -0.881686   0.173600
+			  0.895303   0.445460   0.000000
+			 -0.077324   0.155428   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 82}
+		{NameId 13 88}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x805b
+		{Position 5866.98 1508.75 12.857}
+		{Orientation
+			  0.438705  -0.881686   0.173600
+			  0.895303   0.445460   0.000000
+			 -0.077324   0.155428   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 83}
+		{NameId 0 88}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x805c
+		{Position 5806.67 1458.64 11.0485}
+		{Orientation
+			 -0.838682  -0.416033   0.351600
+			  0.444385  -0.895836   0.000000
+			  0.314976   0.156246   0.936200
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+				{item "ammo pistol" 90 {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 84}
+		{NameId 88 58}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_mgun" 0x805d
+		{Position 5805.22 1477 22.1882}
+		{Turn -152.711}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "type97" filling "ammo mgun" 20 {cell 0 0}}
+				{item "ammo mgun" 80 {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 85}
+		{NameId 66 100}
+		{FsmState "board"}
+	}
+	{Human "jap.oficer" 0x805e
+		{Position 5837 1474.82 12.857}
+		{Orientation
+			 -0.437630   0.882219   0.173600
+			 -0.895836  -0.444385   0.000000
+			  0.077145  -0.155517   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bino" {cell 6 0}}
+				{item "ammo pistol" 24 {cell 4 1}}
+				{item "morphine" {cell 6 2}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 86}
+		{NameId 52 51}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x805f
+		{Position 5847.52 1484.02 14.9179}
+		{Orientation
+			 -0.840803  -0.510151   0.180607
+			  0.518728  -0.854939   0.000000
+			  0.154408   0.093686   0.983465
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 60 {cell 6 0}}
+				{item "bandage" 3 {cell 4 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 87}
+		{NameId 52 46}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x8060
+		{Position 5841.38 1493.66 15.0964}
+		{Turn -148.753}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 6 0}}
+				{item "grenade type23" {cell 5 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 88}
+		{NameId 81 91}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Entity "box1" 0x8061
+		{Position 5839.9 1461.24 0}
+		{Turn 75.6398}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 20 {cell 0 0}}
+				{item "ammo mgun" 20 {cell 2 0}}
+				{item "ammo mgun" 20 {cell 0 1}}
+				{item "ammo mgun" 20 {cell 2 1}}
+				{item "ammo mgun" 20 {cell 4 0}}
+				{item "ammo mgun" 20 {cell 4 1}}
+				{item "ammo mgun" 20 {cell 0 2}}
+				{item "ammo mgun" 20 {cell 2 2}}
+				{item "ammo mgun" 20 {cell 4 2}}
+				{item "grenade type23" {cell 6 0}}
+				{item "grenade type23" {cell 6 1}}
+				{item "grenade type23" {cell 6 2}}
+				{item "grenade type23" {cell 7 0}}
+				{item "grenade type23" {cell 7 1}}
+				{item "grenade type23" {cell 7 2}}
+				{item "grenade type3at" {cell 6 5}}
+				{item "dynamite" {cell 0 4}}
+				{item "dynamite" {cell 2 4}}
+				{item "grenade 50mm_mine" 2 {cell 2 3}}
+				{item "grenade 50mm_mine" 2 {cell 0 3}}
+				{item "grenade 50mm_mine" 2 {cell 4 3}}
+				{item "grenade 50mm_mine" 2 {cell 6 3}}
+				{item "grenade type3at" {cell 4 5}}
+				{item "pala" {cell 4 4}}
+				{item "pala" {cell 6 4}}
+			}
+		}
+	}
+	{Entity "chi-ha47" 0x8062
+		{Position 4319.98 -1207.74 0}
+		{Turn 116.614}
+		{Player 1}
+		{MID 89}
+	}
+	{Entity "ke-nu" 0x8063
+		{Position 3256.61 2203.25 0}
+		{Turn -89.5735}
+		{TexMod "ambush"}
+		{Player 1}
+		{MID 90}
+		
+	}
+	{Entity "ke-nu" 0x8064
+		{Position 3392.26 2202.16 0}
+		{Turn -89.5132}
+		{TexMod "ambush"}
+		{Player 1}
+		{MID 91}
+		
+	}
+	{Entity "te-ke" 0x8065
+		{Position 2798.78 1062.56 0}
+		{Turn -88.6154}
+		{Player 1}
+		{MID 92}
+	}
+	{Entity "type96_2" 0x8066
+		{Position 3414.74 1212 -1}
+		{Turn -38.5848}
+		{Player 1}
+		{MID 93}
+		
+	}
+	{Entity "type96_2" 0x8067
+		{Position 1901.64 834.121 0}
+		{Turn -110.271}
+		{Player 1}
+		{MID 94}
+		
+	}
+	{Entity "type96_2" 0x8068
+		{Position 1892.56 1707.79 0}
+		{Turn 134.539}
+		{Player 1}
+		{MID 95}
+		
+	}
+	{Entity "type96_2" 0x8069
+		{Position 2879.71 2536.17 0}
+		{Turn 91.9617}
+		{Player 1}
+		{MID 96}
+		
+	}
+	{Human "jap.soldier" 0x806a
+		{Position 3644.99 1367.64 121.918}
+		{Turn -34.5099}
+		{DisableObstacles}
+		{Player 1}
+		{MID 97}
+		{NameId 18 28}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x806b
+		{Position 3260.65 973.216 121.918}
+		{Turn -47.4393}
+		{DisableObstacles}
+		{Player 1}
+		{MID 98}
+		{NameId 2 13}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x806c
+		{Position 2025.02 986.264 121.918}
+		{Turn -141.209}
+		{DisableObstacles}
+		{Player 1}
+		{MID 99}
+		{NameId 61 22}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x806d
+		{Position 2020.71 1590.57 121.918}
+		{Turn 142.704}
+		{DisableObstacles}
+		{Player 1}
+		{MID 100}
+		{NameId 73 81}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x806e
+		{Position 2032.91 2369.11 121.918}
+		{Turn 119.486}
+		{DisableObstacles}
+		{Player 1}
+		{MID 101}
+		{NameId 68 34}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x806f
+		{Position 3565.93 2328.74 121.918}
+		{Turn 39.6346}
+		{DisableObstacles}
+		{Player 1}
+		{MID 102}
+		{NameId 31 53}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8070
+		{Position 2901.86 2533.64 1.2167}
+		{Turn 91.9617}
+		{DisableObstacles}
+		{Player 1}
+		{MID 103}
+		{NameId 1 47}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8071
+		{Position 2856.88 2532.2 1.7167}
+		{Turn 91.9617}
+		{DisableObstacles}
+		{Player 1}
+		{MID 104}
+		{NameId 13 89}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8072
+		{Position 3426.57 1231.93 0.7167}
+		{Turn -38.5848}
+		{DisableObstacles}
+		{Player 1}
+		{MID 105}
+		{NameId 0 89}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8073
+		{Position 3398.42 1196.81 0.2167}
+		{Turn -38.5848}
+		{DisableObstacles}
+		{Player 1}
+		{MID 106}
+		{NameId 88 59}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8074
+		{Position 1882.09 844.839 1.2167}
+		{Turn -110.271}
+		{DisableObstacles}
+		{Player 1}
+		{MID 107}
+		{NameId 66 101}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8075
+		{Position 1924.27 829.154 1.7167}
+		{Turn -110.271}
+		{DisableObstacles}
+		{Player 1}
+		{MID 108}
+		{NameId 52 52}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8076
+		{Position 1910.58 1720.91 1.2167}
+		{Turn 134.539}
+		{DisableObstacles}
+		{Player 1}
+		{MID 109}
+		{NameId 52 47}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8077
+		{Position 1878.43 1689.42 1.7167}
+		{Turn 134.539}
+		{DisableObstacles}
+		{Player 1}
+		{MID 110}
+		{NameId 81 92}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8078
+		{Position 2798.78 1062.56 0}
+		{Orientation
+			  0.024163  -0.999708   0.000000
+			 -0.999708  -0.024163   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 111}
+		{NameId 18 29}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8079
+		{Position 2798.78 1062.56 0}
+		{Orientation
+			  0.024163  -0.999708   0.000000
+			 -0.999708  -0.024163   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{Player 1}
+		{MID 112}
+		{NameId 2 14}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Entity "crate3" 0x807a
+		{Position 3646.31 1593 0}
+		{Turn -53.8021}
+		{TexMod "5"}
+		{Impregnability}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "wires" {cell 0 0}}
+				{item "wires" {cell 0 2}}
+				{item "wires" {cell 2 1}}
+				{item "ammo mgun" 100 {cell 2 4}}
+				{item "ammo mgun" 100 {cell 0 4}}
+				{item "ammo mgun" 100 {cell 2 5}}
+				{item "ammo mgun" 100 {cell 0 5}}
+				{item "bullet25 zenite" 20 {cell 6 2}}
+				{item "bullet25 zenite" 20 {cell 6 4}}
+				{item "bullet25 zenite" 20 {cell 6 0}}
+				{item "bullet25 zenite" 20 {cell 4 4}}
+				{item "bullet25 zenite" 20 {cell 4 2}}
+				{item "bullet25 zenite" 20 {cell 4 0}}
+			}
+		}
+	}
+	{Entity "crate3" 0x807b
+		{Position 2906.17 2304.73 0}
+		{Turn 174.467}
+		{TexMod "5"}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade type23" {cell 0 0}}
+				{item "grenade type23" {cell 1 0}}
+				{item "grenade type23" {cell 0 1}}
+				{item "grenade type23" {cell 1 1}}
+				{item "grenade type23" {cell 2 0}}
+				{item "grenade type23" {cell 2 1}}
+				{item "grenade type23" {cell 3 0}}
+				{item "grenade type23" {cell 3 1}}
+				{item "grenade type23" {cell 0 2}}
+				{item "grenade type23" {cell 1 2}}
+				{item "grenade type23" {cell 2 2}}
+				{item "grenade type23" {cell 3 2}}
+				{item "grenade type3at" {cell 5 0}}
+				{item "grenade type3at" {cell 5 1}}
+				{item "grenade type3at" {cell 5 2}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "grenade smoke" {cell 7 1}}
+				{item "grenade smoke" {cell 7 2}}
+				{item "repair_kit" {cell 2 4}}
+				{item "helmet3_jap" {cell 6 3}}
+			}
+		}
+	}
+	{Entity "crate4" 0x807c
+		{Position 2828.37 2284.56 0}
+		{Turn -179.013}
+		{TexMod "5"}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "type97at" {cell 0 0}}
+				{item "ammo ptr20" 7 {cell 1 3}}
+				{item "ammo ptr20" 7 {cell 3 3}}
+				{item "ammo ptr20" 7 {cell 5 3}}
+			}
+		}
+	}
+	{Entity "hang_corner1" 0x807d
+		{Position 3383.34 2197.16 0}
+		{Turn 90.0009}
+	}
+	{Entity "hang_corner0" 0x807e
+		{Position 3383.34 2197.16 0}
+		{Turn 90.0009}
+	}
+	{Entity "hang_corner1" 0x807f
+		{Position 3251.71 2197.18 0}
+		{Turn 90.0009}
+	}
+	{Entity "hang_corner0" 0x8080
+		{Position 3251.71 2197.18 0}
+		{Turn 90.0009}
+	}
+	{Entity "hang_corner1" 0x8081
+		{Position 2393.88 2283.67 0}
+		{Turn -0.361082}
+	}
+	{Entity "hang_corner0" 0x8082
+		{Position 2393.88 2283.67 0}
+		{Turn -0.361082}
+	}
+	{Human "jap.tankman" 0x8083
+		{Position 3392.26 2202.16 0}
+		{Orientation
+			  0.008496  -0.999964   0.000000
+			 -0.999964  -0.008496   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 113}
+		{NameId 18 30}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8084
+		{Position 3392.26 2202.16 0}
+		{Orientation
+			  0.008496  -0.999964   0.000000
+			 -0.999964  -0.008496   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 114}
+		{NameId 2 15}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8085
+		{Position 3392.26 2202.16 0}
+		{Orientation
+			  0.008496  -0.999964   0.000000
+			 -0.999964  -0.008496   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "cap1_jap"}
+			}
+		}
+		{Player 1}
+		{MID 115}
+		{NameId 61 23}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8086
+		{Position 3256.61 2203.25 0}
+		{Orientation
+			  0.007444  -0.999972   0.000000
+			 -0.999972  -0.007444   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "cap1_jap"}
+			}
+		}
+		{Player 1}
+		{MID 116}
+		{NameId 73 82}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8087
+		{Position 3256.61 2203.25 0}
+		{Orientation
+			  0.007444  -0.999972   0.000000
+			 -0.999972  -0.007444   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 117}
+		{NameId 68 35}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8088
+		{Position 3256.61 2203.25 0}
+		{Orientation
+			  0.007444  -0.999972   0.000000
+			 -0.999972  -0.007444   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 118}
+		{NameId 31 54}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8089
+		{Position 3412.51 2301.73 0}
+		{Turn -99.6185}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade type23" {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 119}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 1 48}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_rifle" 0x808a
+		{Position 3238.87 2282.98 0}
+		{Turn -99.6185}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 120}
+		{Weaponry
+			{State
+				{Mounted "arisaka"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 13 90}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_rifle" 0x808b
+		{Position 3277.83 2287.54 0}
+		{Turn -99.6185}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 121}
+		{Weaponry
+			{State
+				{Mounted "arisaka"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 0 90}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_rifle" 0x808c
+		{Position 3384.46 2302.98 0}
+		{Turn -89.6689}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 122}
+		{Weaponry
+			{State
+				{Mounted "arisaka"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 88 60}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_rifle" 0x808d
+		{Position 3435.16 2319.04 0}
+		{Turn -89.6689}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 123}
+		{Weaponry
+			{State
+				{Mounted "arisaka"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 66 0}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_smg" 0x808e
+		{Position 3350.77 2312.49 0}
+		{Turn -89.6689}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 6 0}}
+			}
+			{armor "head"
+				{Item "cap2_jap"}
+			}
+		}
+		{Player 1}
+		{MID 124}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 52 53}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_mgun" 0x808f
+		{Position 3293.9 2318.26 0}
+		{Turn -98.7537}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 80 {cell 5 0}}
+			}
+		}
+		{Player 1}
+		{MID 125}
+		{Weaponry
+			{State
+				{Mounted "type97"}
+				{Weapon
+					{Ammo "ammo mgun" 20}
+				}
+			}
+		}
+		{NameId 52 48}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_smg" 0x8090
+		{Position 3217.96 2307.73 0}
+		{Turn -93.3252}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 126}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 81 93}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8091
+		{Position 3560.37 1575.05 0}
+		{Turn 154.294}
+		{Player 1}
+		{MID 127}
+		{NameId 37 35}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8092
+		{Position 3537.49 1585.51 0}
+		{Turn -73.7227}
+		{Player 1}
+		{MID 128}
+		{NameId 3 53}
+		{FsmState "stand"}
+	}
+	{Human "jap.oficer" 0x8093
+		{Position 3169.22 1189.6 0}
+		{Turn 0.510296}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "nambu" filling "ammo pistol" 8 {cell 6 0}}
+				{item "bino" {cell 6 1}}
+				{item "ammo pistol" 60 {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 129}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 29 72}
+		{Cover
+			{sector 3169.22 1189.6 {type "look_right"}
+				{wall 0 0 3162.46 1162.73 3162.13 1199.79}
+			}
+		}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8094
+		{Position 3168.39 1252.33 0}
+		{Turn -179.485}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "grenade type23" {cell 7 1}}
+			}
+		}
+		{Player 1}
+		{MID 130}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 90 8}
+		{Cover
+			{sector 3168.39 1252.33 {type "snipe_cover"}
+				{wall 0 0 3161.71 1217.02 3161.03 1292.65}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.soldier" 0x8095
+		{Position 3239.43 1207.52 0}
+		{Turn 0.510093}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "arisaka_kn" filling "ammo rifle" 5 {cell 0 0}}
+				{item "ammo rifle" 20 {cell 7 0}}
+				{item "grenade type23" {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 131}
+		{NameId 34 1}
+		{Cover
+			{sector 3239.43 1207.52 {type "snipe_cover"}
+				{wall 0 0 3245.66 1293.56 3246.82 1163.25}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.soldier" 0x8096
+		{Position 3136.14 1177.4 0}
+		{Turn -179.925}
+		{Player 1}
+		{MID 132}
+		{NameId 26 86}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8097
+		{Position 3472.44 2392.48 0}
+		{Turn -177.895}
+		{Player 1}
+		{MID 133}
+		{NameId 42 72}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8098
+		{Position 2255.56 2389.75 0}
+		{Turn 4.75134}
+		{Player 1}
+		{MID 134}
+		{NameId 8 48}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8099
+		{Position 2044.16 1928.33 0}
+		{Turn 92.3904}
+		{Player 1}
+		{MID 135}
+		{NameId 54 88}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x809a
+		{Position 3283.41 1230.2 0}
+		{Turn -86.2127}
+		{Player 1}
+		{MID 136}
+		{NameId 29 17}
+		{FsmState "stand"}
+	}
+	{Entity "chi-ha47" 0x809b
+		{Position 1567.13 5068.57 0}
+		{Turn -34.6447}
+		{Player 1}
+		{MID 137}
+		
+	}
+	{Human "jap.ofitank" 0x809c
+		{Position 4319.98 -1207.74 0}
+		{Orientation
+			 -0.447978   0.894045   0.000000
+			  0.894045   0.447978   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 138}
+		{NameId 18 31}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x809d
+		{Position 4319.98 -1207.74 0}
+		{Orientation
+			 -0.447978   0.894045   0.000000
+			  0.894045   0.447978   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 6 0}}
+				{item "grenade type3at" {cell 6 1}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "cap1_jap"}
+			}
+		}
+		{Player 1}
+		{MID 139}
+		{NameId 2 16}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x809e
+		{Position 4319.98 -1207.74 0}
+		{Orientation
+			 -0.447978   0.894045   0.000000
+			  0.894045   0.447978   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 140}
+		{NameId 61 24}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x809f
+		{Position 4319.98 -1207.74 0}
+		{Orientation
+			 -0.447978   0.894045   0.000000
+			  0.894045   0.447978   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{Player 1}
+		{MID 141}
+		{NameId 73 83}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x80a0
+		{Position 4347.38 -1249.89 16.6603}
+		{Turn -63.386}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 142}
+		{NameId 68 36}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x80a1
+		{Position 4351.82 -1224.51 17.1603}
+		{Turn 26.614}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 143}
+		{NameId 31 55}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x80a2
+		{Position 4333.69 -1256.75 16.6603}
+		{Turn -63.386}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 144}
+		{NameId 1 49}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x80a3
+		{Position 4311.33 -1246.37 17.1603}
+		{Turn -153.386}
+		{DisableObstacles}
+		{Player 1}
+		{MID 145}
+		{NameId 13 91}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x80a4
+		{Position 1531.15 5067.96 17.1603}
+		{Turn -124.645}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 25 {cell 7 0}}
+				{item "arisaka_kn" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 146}
+		{NameId 0 91}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x80a5
+		{Position 1556.14 5106.6 17.1603}
+		{Turn 55.3553}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade type23" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka_kn" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 147}
+		{NameId 88 61}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x80a6
+		{Position 1522.84 5092.35 16.6603}
+		{Turn 145.355}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "grenade type23" {cell 6 0}}
+				{item "ammo rifle" 25 {cell 5 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 148}
+		{NameId 66 1}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_rifle" 0x80a7
+		{Position 1531.54 5104.95 16.6603}
+		{Turn 145.355}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 149}
+		{NameId 52 54}
+		{LastItem "arisaka"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x80a8
+		{Position 1567.13 5068.57 0}
+		{Orientation
+			  0.822693  -0.568486   0.000000
+			 -0.568486  -0.822693   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{Player 1}
+		{MID 150}
+		{NameId 52 49}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x80a9
+		{Position 1567.13 5068.57 0}
+		{Orientation
+			  0.822693  -0.568486   0.000000
+			 -0.568486  -0.822693   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "grenade type23" {cell 5 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "cap1_jap"}
+			}
+		}
+		{Player 1}
+		{MID 151}
+		{NameId 81 94}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x80aa
+		{Position 1567.13 5068.57 0}
+		{Orientation
+			  0.822693  -0.568486   0.000000
+			 -0.568486  -0.822693   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 152}
+		{NameId 37 36}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.ofitank" 0x80ab
+		{Position 1567.13 5068.57 0}
+		{Orientation
+			  0.822693  -0.568486   0.000000
+			 -0.568486  -0.822693   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 153}
+		{NameId 3 54}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Entity "ha-go" 0x80ac
+		{Position 107.109 3677.18 0}
+		{Turn 43.1628}
+		{TexMod "ambush"}
+		{Player 1}
+		{MID 154}
+		
+	}
+	{Human "jap.soldier" 0x80ad
+		{Position 97.1524 3639.15 17}
+		{Turn -46.8372}
+		{DisableObstacles}
+		{Player 1}
+		{MID 155}
+		{NameId 29 73}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.soldier" 0x80ae
+		{Position 105.176 3646.68 17}
+		{Turn -46.8372}
+		{DisableObstacles}
+		{Player 1}
+		{MID 156}
+		{NameId 90 9}
+		{LastItem "arisaka_kn"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x80af
+		{Position 107.109 3677.18 0}
+		{Orientation
+			  0.729413   0.684074   0.000000
+			  0.684074  -0.729413   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 157}
+		{NameId 34 2}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x80b0
+		{Position 107.109 3677.18 0}
+		{Orientation
+			  0.729413   0.684074   0.000000
+			  0.684074  -0.729413   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 16 {cell 6 0}}
+				{item "grenade type23" {cell 5 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "cap1_jap"}
+			}
+		}
+		{Player 1}
+		{MID 158}
+		{NameId 26 87}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x80b1
+		{Position 107.109 3677.18 0}
+		{Orientation
+			  0.729413   0.684074   0.000000
+			  0.684074  -0.729413   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 1}
+		{MID 159}
+		{NameId 42 73}
+		{LastItem "type100"}
+		{FsmState "board"}
+	}
+	{Human "jap.elite1" 0x80b2
+		{Position 5748.94 -1184.7 0}
+		{Turn 137.831}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade type3at" {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 160}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 18 32}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite1" 0x80b3
+		{Position 5827.54 -1201.54 0}
+		{Turn 137.831}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "knife" {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 161}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 2 17}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite1" 0x80b4
+		{Position 5763.81 -1151.57 0}
+		{Turn 137.831}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade type23" {cell 7 0}}
+				{item "ammo pistol" 90 {cell 5 0}}
+			}
+		}
+		{Player 1}
+		{MID 162}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 61 25}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite1" 0x80b5
+		{Position 5799.2 -1146.07 0}
+		{Turn 137.831}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "knife" {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 163}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 73 84}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite2" 0x80b6
+		{Position 5792.67 -1202.47 0}
+		{Turn 137.831}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 20 {cell 5 1}}
+				{item "dynamite" {cell 0 2}}
+				{item "knife" {cell 2 2}}
+			}
+		}
+		{Player 1}
+		{MID 164}
+		{Weaponry
+			{State
+				{Mounted "type99"}
+				{Weapon
+					{Ammo "ammo mgun" 30}
+				}
+			}
+		}
+		{NameId 68 37}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite2" 0x80b7
+		{Position 5821.09 -1169.69 0}
+		{Turn 137.831}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 20 {cell 5 1}}
+			}
+		}
+		{Player 1}
+		{MID 165}
+		{Weaponry
+			{State
+				{Mounted "type99"}
+				{Weapon
+					{Ammo "ammo mgun" 30}
+				}
+			}
+		}
+		{NameId 31 56}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite1" 0x80b8
+		{Position 5773.85 -1237.92 0}
+		{Turn 137.831}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade type23" {cell 6 0}}
+				{item "grenade type3at" {cell 4 1}}
+				{item "knife" {cell 6 1}}
+			}
+		}
+		{Player 1}
+		{MID 166}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 1 50}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite1" 0x80b9
+		{Position 5812.06 -1241.47 0}
+		{Turn 137.831}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "knife" {cell 6 1}}
+				{item "ammo pistol" 90 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 167}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 13 92}
+		{FsmState "stand"}
+	}
+	{Human "jap.tankman" 0x80ba
+		{Position 2767.65 2021.9 0}
+		{Turn -134.272}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{Player 1}
+		{MID 168}
+		{NameId 18 33}
+		{FsmState "stand"}
+	}
+	{Human "jap.tankman" 0x80bb
+		{Position 2975.43 2076.04 0}
+		{Turn -46.094}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{Player 1}
+		{MID 169}
+		{NameId 2 18}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80bc
+		{Position 2732.88 2031.04 0}
+		{Turn -78.501}
+		{Player 1}
+		{MID 170}
+		{NameId 61 26}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80bd
+		{Position 2734.29 1992.99 0}
+		{Turn 121.433}
+		{Player 1}
+		{MID 171}
+		{NameId 73 85}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80be
+		{Position 2715.75 2012.48 0}
+		{Turn -16.0321}
+		{Player 1}
+		{MID 172}
+		{NameId 68 38}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80bf
+		{Position 3031.47 2235.57 0}
+		{Turn -139.69}
+		{Player 1}
+		{MID 173}
+		{NameId 31 57}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c0
+		{Position 3008.57 2235.5 0}
+		{Turn -24.4517}
+		{Player 1}
+		{MID 174}
+		{NameId 1 51}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c1
+		{Position 2156.96 1692.29 0}
+		{Turn -83.6796}
+		{Player 1}
+		{MID 175}
+		{NameId 13 93}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c2
+		{Position 2850.6 2281.19 0}
+		{Turn 44.8631}
+		{Player 1}
+		{MID 176}
+		{NameId 0 92}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c3
+		{Position 2865.5 2302.03 0}
+		{Turn -107.285}
+		{Player 1}
+		{MID 177}
+		{NameId 88 62}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c4
+		{Position 2954.77 1040.89 0}
+		{Turn -84.6826}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "arisaka_kn" filling "ammo rifle" 5 {cell 0 0}}
+				{item "ammo rifle" 20 {cell 7 0}}
+				{item "grenade smoke" {cell 4 0}}
+				{item "pala" {cell 5 0}}
+			}
+			{armor "body"
+				{Item "jap_equip5"}
+			}
+		}
+		{Player 1}
+		{MID 178}
+		{NameId 66 2}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c5
+		{Position 2930.87 1041.19 0}
+		{Turn -92.0449}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "arisaka_kn" filling "ammo rifle" 5 {cell 0 0}}
+				{item "ammo rifle" 20 {cell 7 0}}
+				{item "grenade smoke" {cell 4 0}}
+				{item "pala" {cell 5 0}}
+			}
+			{armor "body"
+				{Item "jap_equip5"}
+			}
+		}
+		{Player 1}
+		{MID 179}
+		{NameId 52 55}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c6
+		{Position 2922.9 1010.64 0}
+		{Turn 48.027}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 60 {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "cap1_jap"}
+			}
+		}
+		{Player 1}
+		{MID 180}
+		{NameId 52 56}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c7
+		{Position 2929.08 1970.44 0}
+		{Turn -98.9209}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "grenade smoke" {cell 7 1}}
+				{item "grenade type23" {cell 5 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "helmet1_jap"}
+			}
+		}
+		{Player 1}
+		{MID 181}
+		{NameId 81 95}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c8
+		{Position 2913.12 1966.01 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 7 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "helmet1_jap"}
+			}
+		}
+		{Player 1}
+		{MID 182}
+		{NameId 37 37}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80c9
+		{Position 2806.84 2058.6 0}
+		{Turn -42.6627}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "helmet1_jap"}
+			}
+			{armor "body"
+				{Item "jap_equip2"}
+			}
+		}
+		{Player 1}
+		{MID 183}
+		{NameId 3 55}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80ca
+		{Position 2912.11 2231.85 0}
+		{Turn -115.37}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "helmet1_jap"}
+			}
+		}
+		{Player 1}
+		{MID 184}
+		{NameId 29 74}
+		{FsmState "squat"}
+	}
+	{Human "jap.soldier" 0x80cb
+		{Position 2821.24 2061.85 0}
+		{Turn -95.2883}
+		{Player 1}
+		{MID 185}
+		{NameId 90 10}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80cc
+		{Position 2823.86 2033.29 0}
+		{Turn 126.388}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 7 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "helmet1_jap"}
+			}
+			{armor "body"
+				{Item "jap_equip3"}
+			}
+		}
+		{Player 1}
+		{MID 186}
+		{NameId 34 3}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80cd
+		{Position 2499.94 2309.09 0}
+		{Turn -156.012}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 187}
+		{Weaponry
+			{State
+				{Mounted "arisaka_kn"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 26 88}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80ce
+		{Position 2442.88 2309.02 0}
+		{Turn -129.559}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 188}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 42 74}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80cf
+		{Position 2390.43 2311.86 0}
+		{Turn -142.18}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 189}
+		{Weaponry
+			{State
+				{Mounted "arisaka_kn"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 8 49}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80d0
+		{Position 2503 2237.84 0}
+		{Turn 161.088}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 190}
+		{Weaponry
+			{State
+				{Mounted "arisaka_kn"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 54 89}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80d1
+		{Position 2444.06 2238.84 0}
+		{Turn 153.594}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 191}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 29 18}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80d2
+		{Position 2390.05 2234.02 0}
+		{Turn 111.446}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 192}
+		{Weaponry
+			{State
+				{Mounted "arisaka_kn"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 83 54}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80d3
+		{Position 2130.77 2157.58 0}
+		{Turn -179.65}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 193}
+		{Weaponry
+			{State
+				{Mounted "arisaka_kn"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 88 7}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80d4
+		{Position 2114.76 2121.1 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 194}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 70 77}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80d5
+		{Position 2402.85 2091.94 0}
+		{Turn -113.859}
+		{Player 1}
+		{MID 195}
+		{NameId 40 16}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80d6
+		{Position 2176.12 2157.85 0}
+		{Turn 3.99167}
+		{Player 1}
+		{MID 196}
+		{NameId 15 99}
+		{Cover
+			{sector 2176.12 2157.85 {type "snipe_cover"}
+				{wall 0 0 2179.63 2208.18 2188.09 2086.94}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.soldier" 0x80d7
+		{Position 2107.15 1956.8 0}
+		{Turn -177.577}
+		{Player 1}
+		{MID 197}
+		{NameId 7 9}
+		{Cover
+			{sector 2107.15 1956.8 {type "snipe_cover"}
+				{wall 0 0 2102.02 1912.54 2097.72 2014.18}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.soldier" 0x80d8
+		{Position 2393.38 2049.59 0}
+		{Turn 93.9503}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+		}
+		{Player 1}
+		{MID 198}
+		{NameId 75 58}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80d9
+		{Position 2152.9 1956.01 0}
+		{Turn -129.133}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 199}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 79 31}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80da
+		{Position 2191.74 1953.28 0}
+		{Turn 2.42096}
+		{Player 1}
+		{MID 200}
+		{NameId 38 6}
+		{Cover
+			{sector 2191.74 1953.28 {type "snipe_cover"}
+				{wall 0 0 2196.19 2013.76 2201.87 1879.41}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.soldier" 0x80db
+		{Position 2124.94 2022.14 0}
+		{Turn -149.582}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 201}
+		{Weaponry
+			{State
+				{Mounted "arisaka_kn"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 86 94}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80dc
+		{Position 2198.82 1822.44 0}
+		{Turn 2.41938}
+		{Player 1}
+		{MID 202}
+		{NameId 88 97}
+		{Cover
+			{sector 2198.82 1822.44 {type "snipe_cover"}
+				{wall 0 0 2201.81 1917.45 2207.64 1779.47}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.soldier" 0x80dd
+		{Position 2124.91 1845.27 0}
+		{Turn -167.293}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 80 {cell 6 0}}
+			}
+			{armor "body"
+				{Item "jap_equip4"}
+			}
+		}
+		{Player 1}
+		{MID 203}
+		{Weaponry
+			{State
+				{Mounted "type97"}
+				{Weapon
+					{Ammo "ammo mgun" 20}
+				}
+			}
+		}
+		{NameId 30 70}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80de
+		{Position 2151.56 1822.85 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 204}
+		{Weaponry
+			{State
+				{Mounted "arisaka_kn"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 23 79}
+		{FsmState "stand"}
+	}
+	{Entity "boxes1" 0x80df
+		{Position 2191.13 1887.28 0}
+		{Turn 85.7534}
+		{Impregnability}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade type23" {cell 0 5}}
+				{item "grenade type23" {cell 1 5}}
+				{item "grenade type23" {cell 2 5}}
+				{item "grenade type23" {cell 0 4}}
+				{item "grenade type23" {cell 1 4}}
+				{item "grenade type23" {cell 2 4}}
+				{item "grenade smoke" {cell 7 2}}
+				{item "grenade smoke" {cell 7 3}}
+				{item "grenade molotov_coctail" {cell 6 5}}
+				{item "bandage" 5 {cell 0 0}}
+				{item "bandage" 5 {cell 0 1}}
+				{item "ammo pistol" 30 {cell 3 4}}
+				{item "ammo pistol" 30 {cell 3 5}}
+				{item "ammo pistol" 30 {cell 5 4}}
+				{item "ammo pistol" 30 {cell 5 2}}
+				{item "ammo pistol" 30 {cell 5 3}}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "ammo pistol" 30 {cell 6 1}}
+				{item "morphine" {cell 2 2}}
+				{item "ammo pistol" 30 {cell 4 1}}
+				{item "ammo pistol" 30 {cell 4 0}}
+				{item "ammo rifle" 25 {cell 1 3}}
+				{item "ammo rifle" 25 {cell 1 2}}
+			}
+		}
+	}
+	{Entity "box_metal" 0x80e0
+		{Position 3160.46 2208.01 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 0 0}}
+				{item "ammo mgun" 100 {cell 0 2}}
+				{item "ammo mgun" 100 {cell 0 4}}
+				{item "ammo mgun" 100 {cell 3 0}}
+				{item "ammo mgun" 100 {cell 3 2}}
+				{item "ammo mgun" 100 {cell 3 4}}
+				{item "ammo mgun" 100 {cell 6 0}}
+				{item "ammo mgun" 100 {cell 6 2}}
+				{item "ammo mgun" 100 {cell 6 4}}
+			}
+		}
+	}
+	{Entity "box_metal" 0x80e1
+		{Position 3158.45 2248.56 0}
+		{Impregnability}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "dynamite" {cell 0 0}}
+				{item "dynamite" {cell 0 2}}
+				{item "dynamite" {cell 3 2}}
+				{item "dynamite" {cell 3 0}}
+				{item "tnt" {cell 6 0}}
+				{item "tnt" {cell 6 2}}
+				{item "tnt" {cell 6 4}}
+				{item "tnt" {cell 4 5}}
+				{item "tnt" {cell 1 5}}
+			}
+		}
+	}
+	{Entity "boxes3" 0x80e2
+		{Position 2728.18 2284.73 0}
+		{Impregnability}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "morphine" {cell 3 4}}
+				{item "medkit" {cell 0 2}}
+				{item "bandage" 5 {cell 4 2}}
+				{item "bandage" 5 {cell 4 3}}
+				{item "bandage" 5 {cell 6 3}}
+				{item "bandage" 5 {cell 6 2}}
+				{item "bino" {cell 0 4}}
+				{item "raf-helmet" {cell 0 0}}
+				{item "raf-helmet" {cell 2 0}}
+			}
+		}
+	}
+	{Human "jap.infantry_smg" 0x80e3
+		{Position 2130.9 891.828 0}
+		{Turn -10.7959}
+		{Player 1}
+		{MID 205}
+		{NameId 18 34}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_smg" 0x80e4
+		{Position 2167.61 875.265 0}
+		{Turn 41.053}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade type23" {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 206}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 2 19}
+		{Cover
+			{sector 2167.61 875.265 {type "squat_lie"}
+				{wall 0 0 2156.67 898.481 2189.1 861.244}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "jap.infantry_rifle" 0x80e5
+		{Position 2218.69 878.576 0}
+		{Player 1}
+		{MID 207}
+		{NameId 61 27}
+		{FsmState "stand"}
+	}
+	{Entity "gate_wire" 0x80e6
+		{Position 2289.45 708.9 0}
+		{Turn 178.051}
+		{TexMod "5"}
+		{AreaDisable "left"}
+		{AreaDisable "right"}
+	}
+	{Entity "boxes2" 0x80e7
+		{Position 988.174 -198.75 38.8977}
+		{Turn -104.091}
+		{TexMod "5"}
+		{Scale 0.6}
+		{Impregnability}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade type3at" {cell 6 0}}
+				{item "ammo pistol" 30 {cell 2 0}}
+				{item "ammo pistol" 30 {cell 4 0}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "ammo pistol" 30 {cell 0 1}}
+				{item "ammo pistol" 30 {cell 4 1}}
+				{item "ammo mgun" 50 {cell 6 1}}
+				{item 0x80e8 "med_box" {cell 0 3}}
+			}
+		}
+	}
+	{Entity "box4" 0x80e8
+		{Position 970.958 -193.048 39.2755}
+		{Turn -15.7926}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "morphine" {cell 6 4}}
+				{item "bandage" 5 {cell 2 0}}
+				{item "bandage" 5 {cell 0 0}}
+				{item "bandage" 5 {cell 0 1}}
+				{item "bandage" 5 {cell 2 1}}
+				{item "morphine" {cell 6 2}}
+				{item "medkit" {cell 3 3}}
+			}
+		}
+	}
+	{Human "jap.infantry_mgun" 0x80e9
+		{Position 1134.99 26.2553 9.12308}
+		{Turn 64.906}
+		{Player 1}
+		{MID 208}
+		{NameId 18 35}
+		{Cover
+			{sector 1134.99 26.2553 {type "squat_lie"}
+				{wall 0 0 1096.34 52.0828 1162.27 21.2073}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "jap.infantry_rifle" 0x80ea
+		{Position 929.083 -202.017 43.2931}
+		{Turn -176.384}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+				{item "bayonet" {cell 7 0}}
+				{item "ammo rifle" 25 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 209}
+		{NameId 2 20}
+		{FsmState "stand"}
+	}
+	{Human "jap.infantry_smg" 0x80eb
+		{Position 885.708 -190.598 45.1194}
+		{Turn -174.781}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+				{item "ammo pistol" 90 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 210}
+		{NameId 61 28}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80ec
+		{Position 3514.85 -1208.61 0}
+		{Turn -0.953733}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 60 {cell 6 0}}
+			}
+			{armor "body"
+				{Item "jap_equip4"}
+			}
+		}
+		{Player 1}
+		{MID 211}
+		{Weaponry
+			{State
+				{Mounted "type97"}
+				{Weapon
+					{Ammo "ammo mgun" 20}
+				}
+			}
+		}
+		{NameId 18 36}
+		{Cover
+			{sector 3514.85 -1208.61 {type "snipe_cover"}
+				{wall 0 0 3523.03 -1137.88 3521.68 -1218.98}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.soldier" 0x80ed
+		{Position 3428.34 -1109.29 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 212}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 2 21}
+		{Cover
+			{sector 3428.34 -1109.29 {type "look_left"}
+				{wall 0 0 3421.34 -1118.29 3421.34 -1074.37}
+			}
+		}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80ee
+		{Position 3457.63 -1113.54 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 6 0}}
+				{item "grenade type23" {cell 7 0}}
+				{item "bayonet" {cell 7 1}}
+			}
+		}
+		{Player 1}
+		{MID 213}
+		{Weaponry
+			{State
+				{Mounted "arisaka"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 61 29}
+		{Cover
+			{sector 3457.63 -1113.54 {type "squat_lie"}
+				{wall 0 0 3464.63 -1104.54 3464.63 -1147.44}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "jap.soldier" 0x80ef
+		{Position 3213.19 -1119.71 -0.680786}
+		{Turn -179.533}
+		{Player 1}
+		{MID 214}
+		{NameId 73 86}
+		{Cover
+			{sector 3213.19 -1119.71 {type "snipe_cover"}
+				{wall 0 0 3206.41 -1146.3 3206.06 -1103.4}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.soldier" 0x80f0
+		{Position 3242.67 -1141.26 0}
+		{Turn -179.517}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "grenade type23" {cell 7 1}}
+			}
+		}
+		{Player 1}
+		{MID 215}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 68 39}
+		{Cover
+			{sector 3242.67 -1141.26 {type "look_left"}
+				{wall 0 0 3249.59 -1132.2 3249.96 -1176.12}
+			}
+		}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80f1
+		{Position 3318 -1010.61 0}
+		{Turn 88.5728}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 60 {cell 6 0}}
+			}
+			{armor "body"
+				{Item "jap_equip4"}
+			}
+		}
+		{Player 1}
+		{MID 216}
+		{Weaponry
+			{State
+				{Mounted "type97"}
+				{Weapon
+					{Ammo "ammo mgun" 20}
+				}
+			}
+		}
+		{NameId 31 58}
+		{Cover
+			{sector 3318 -1010.61 {type "snipe_cover"}
+				{wall 0 0 3267.95 -1002.36 3349.03 -1004.38}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "jap.soldier" 0x80f2
+		{Position 3442.15 -1230.88 0}
+		{Player 1}
+		{MID 217}
+		{NameId 1 52}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x80f3
+		{Position 3249.79 -1242.27 0}
+		{Turn 48.7488}
+		{Player 1}
+		{MID 218}
+		{NameId 13 94}
+		{FsmState "stand"}
+	}
+	{Entity "val" 0x80f4
+		{Position 2362.28 1327.92 -8.16607}
+		{Turn -178.643}
+		{Player 1}
+		{MID 219}
+	}
+	{Human "jap.tankman" 0x80f5
+		{Position 2370.84 1328.09 20.1017}
+		{Orientation
+			  0.976375   0.019227  -0.215261
+			 -0.024847   0.999696  -0.004361
+			  0.215092   0.009606   0.976562
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 220}
+		{NameId 18 37}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x80f6
+		{Position 2346.21 1328.69 24.1789}
+		{Orientation
+			 -0.951442  -0.031134   0.306146
+			  0.031787  -0.999489  -0.002699
+			  0.306029   0.007173   0.952048
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 6 0}}
+				{item "nambu" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 221}
+		{NameId 2 22}
+		{LastItem "nambu"}
+		{FsmState "board"}
+	}
+	{Entity "pointer" 0x80f7
+		{Position 2855.12 1835.62 0}
+	}
+	{Link 0x8008 To 0x800e "mgun"}
+	{Link 0x8009 To 0x800f "mgun"}
+	{Link 0x800a To 0x8010 "mgun"}
+	{Link 0x800b To 0x8011 "mgun"}
+	{Link 0x800c To 0x8012 "mgun"}
+	{Link 0x800d To 0x8013 "mgun"}
+	{Link 0x8023 To 0x8018 "charger"}
+	{Link 0x8024 To 0x8018 "gunner"}
+	{Link 0x8025 To 0x8018 "driver"}
+	{Link 0x8026 To 0x8019 "charger"}
+	{Link 0x8027 To 0x8019 "gunner"}
+	{Link 0x8028 To 0x8019 "driver"}
+	{Link 0x8029 To 0x8018 "seat2"}
+	{Link 0x802a To 0x8018 "seat1"}
+	{Link 0x802c To 0x8019 "seat2"}
+	{Link 0x802d To 0x8019 "seat1"}
+	{Link 0x802f To 0x801f "driver"}
+	{Link 0x8030 To 0x8020 "commander"}
+	{Link 0x8031 To 0x801f "passenger"}
+	{Link 0x8032 To 0x8020 "seat5"}
+	{Link 0x8033 To 0x8020 "seat4"}
+	{Link 0x8034 To 0x8020 "seat2"}
+	{Link 0x8035 To 0x8020 "seat1"}
+	{Link 0x8036 To 0x8020 "seat3"}
+	{Link 0x9000 To 0x8020 "driver"}
+	{Link 0x8037 To 0x8020 "seat8"}
+	{Link 0x8038 To 0x8020 "seat6"}
+	{Link 0x8039 To 0x8020 "seat9"}
+	{Link 0x803a To 0x8020 "seat7"}
+	{Link 0x803b To 0x8020 "seat10"}
+	{Link 0x803d To 0x801e "gunner"}
+	{Link 0x803e To 0x801e "driver"}
+	{Link 0x803f To 0x801e "passenger"}
+	{Link 0x8040 To 0x801d "gunner"}
+	{Link 0x8041 To 0x801d "commander"}
+	{Link 0x8042 To 0x801d "charger"}
+	{Link 0x8043 To 0x801d "driver"}
+	{Link 0x8044 To 0x801c "driver"}
+	{Link 0x8045 To 0x801c "commander"}
+	{Link 0x8046 To 0x801c "seat5"}
+	{Link 0x8047 To 0x801c "seat6"}
+	{Link 0x8048 To 0x801c "seat1"}
+	{Link 0x8049 To 0x801c "seat3"}
+	{Link 0x804a To 0x801c "seat7"}
+	{Link 0x804b To 0x801c "seat2"}
+	{Link 0x804c To 0x801c "seat4"}
+	{Link 0x804d To 0x801c "seat10"}
+	{Link 0x804e To 0x801c "seat9"}
+	{Link 0x804f To 0x801c "seat8"}
+	{Link 0x8053 To 0x801a "seat4"}
+	{Link 0x8054 To 0x801a "seat6"}
+	{Link 0x8055 To 0x801a "seat5"}
+	{Link 0x8056 To 0x801a "seat8"}
+	{Link 0x8057 To 0x801a "seat3"}
+	{Link 0x8058 To 0x801a "seat2"}
+	{Link 0x8059 To 0x801a "seat7"}
+	{Link 0x805a To 0x801a "seat1"}
+	{Link 0x805b To 0x801a "seat9"}
+	{Link 0x805c To 0x801a "driver"}
+	{Link 0x805d To 0x801a "gunner"}
+	{Link 0x805e To 0x801a "seat10"}
+	{Link 0x805f To 0x801b "commander"}
+	{Link 0x8060 To 0x801b "driver"}
+	{Link 0x806a To 0x800c "gunner"}
+	{Link 0x806b To 0x800a "gunner"}
+	{Link 0x806c To 0x8009 "gunner"}
+	{Link 0x806d To 0x8008 "gunner"}
+	{Link 0x806e To 0x800d "gunner"}
+	{Link 0x806f To 0x800b "gunner"}
+	{Link 0x8070 To 0x8069 "gunner"}
+	{Link 0x8071 To 0x8069 "commander"}
+	{Link 0x8072 To 0x8066 "commander"}
+	{Link 0x8073 To 0x8066 "gunner"}
+	{Link 0x8074 To 0x8067 "gunner"}
+	{Link 0x8075 To 0x8067 "commander"}
+	{Link 0x8076 To 0x8068 "gunner"}
+	{Link 0x8077 To 0x8068 "commander"}
+	{Link 0x8078 To 0x8065 "driver"}
+	{Link 0x8079 To 0x8065 "gunner"}
+	{Link 0x8083 To 0x8064 "gunner"}
+	{Link 0x8084 To 0x8064 "driver"}
+	{Link 0x8085 To 0x8064 "charger"}
+	{Link 0x8086 To 0x8063 "charger"}
+	{Link 0x8087 To 0x8063 "driver"}
+	{Link 0x8088 To 0x8063 "gunner"}
+	{Link 0x809c To 0x8062 "commander"}
+	{Link 0x809d To 0x8062 "charger"}
+	{Link 0x809e To 0x8062 "driver"}
+	{Link 0x809f To 0x8062 "gunner"}
+	{Link 0x80a0 To 0x8062 "seat3"}
+	{Link 0x80a1 To 0x8062 "seat4"}
+	{Link 0x80a2 To 0x8062 "seat2"}
+	{Link 0x80a3 To 0x8062 "seat1"}
+	{Link 0x80a4 To 0x809b "seat4"}
+	{Link 0x80a5 To 0x809b "seat1"}
+	{Link 0x80a6 To 0x809b "seat3"}
+	{Link 0x80a7 To 0x809b "seat2"}
+	{Link 0x80a8 To 0x809b "commander"}
+	{Link 0x80a9 To 0x809b "driver"}
+	{Link 0x80aa To 0x809b "gunner"}
+	{Link 0x80ab To 0x809b "charger"}
+	{Link 0x80ad To 0x80ac "seat2"}
+	{Link 0x80ae To 0x80ac "seat1"}
+	{Link 0x80af To 0x80ac "driver"}
+	{Link 0x80b0 To 0x80ac "charger"}
+	{Link 0x80b1 To 0x80ac "gunner"}
+	{Link 0x80f5 To 0x80f4 "commander"}
+	{Link 0x80f6 To 0x80f4 "driver"}
+	{Brain 0x8000
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8001
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8002
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x8003
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8004
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8005
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8006
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8007
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x8008
+		{LookAround 1}
+	}
+	{Brain 0x8009
+		{LookAround 1}
+	}
+	{Brain 0x800a
+		{LookAround 1}
+	}
+	{Brain 0x800b
+		{LookAround 1}
+	}
+	{Brain 0x800c
+		{LookAround 1}
+	}
+	{Brain 0x800d
+		{LookAround 1}
+	}
+	{Brain 0x801b
+		{HoldFire}
+	}
+	{Brain 0x801c
+		{HoldFire}
+	}
+	{Brain 0x801f
+		{HoldFire}
+	}
+	{Brain 0x8020
+		{HoldFire}
+	}
+	{Brain 0x802b
+		{HoldPosition}
+	}
+	{Brain 0x8066
+		{LookAround 1}
+	}
+	{Brain 0x8067
+		{LookAround 1}
+	}
+	{Brain 0x8068
+		{LookAround 1}
+	}
+	{Brain 0x8069
+		{LookAround 1}
+	}
+	{Brain 0x8093
+		{HoldPosition}
+	}
+	{Brain 0x8094
+		{HoldPosition}
+	}
+	{Brain 0x8095
+		{HoldPosition}
+	}
+	{Brain 0x80ba
+		{ReturnFire}
+		{HoldPosition}
+	}
+	{Brain 0x80bb
+		{ReturnFire}
+		{HoldPosition}
+	}
+	{Brain 0x80d6
+		{HoldPosition}
+	}
+	{Brain 0x80d7
+		{HoldPosition}
+	}
+	{Brain 0x80da
+		{HoldPosition}
+	}
+	{Brain 0x80dc
+		{HoldPosition}
+	}
+	{Brain 0x80e4
+		{HoldPosition}
+	}
+	{Brain 0x80e9
+		{HoldPosition}
+	}
+	{Brain 0x80ec
+		{HoldPosition}
+	}
+	{Brain 0x80ee
+		{HoldPosition}
+	}
+	{Brain 0x80ef
+		{HoldPosition}
+	}
+	{Brain 0x80f1
+		{HoldPosition}
+	}
+	{Tags 0x8000 "pl pl_assign pl_replace"}
+	{Tags 0x8001 "pl pl_assign pl_replace"}
+	{Tags 0x8003 "pl pl_assign pl_replace"}
+	{Tags 0x8004 "pl pl_assign pl_replace"}
+	{Tags 0x8005 "pl pl_assign pl_replace"}
+	{Tags 0x8006 "pl pl_assign pl_replace"}
+	{Tags 0x801f "cv1"}
+	{Tags 0x8020 "cv1"}
+	{Tags 0x801c "cv2"}
+	{Tags 0x801d "cv2"}
+	{Tags 0x801e "cv2"}
+	{Tags 0x8050 "box1"}
+	{Tags 0x801a "cv3 cv3_1"}
+	{Tags 0x801b "cv3 cv3_2"}
+	{Tags 0x8018 "lt1"}
+	{Tags 0x8019 "lt1"}
+	{Tags 0x8064 "lt2"}
+	{Tags 0x8063 "lt2"}
+	{Tags 0x807d "hg1"}
+	{Tags 0x8081 "hg3"}
+	{Tags 0x808a "lt2"}
+	{Tags 0x808b "lt2"}
+	{Tags 0x808f "lt2"}
+	{Tags 0x8090 "lt2"}
+	{Tags 0x8089 "lt2"}
+	{Tags 0x808c "lt2"}
+	{Tags 0x808d "lt2"}
+	{Tags 0x808e "lt2"}
+	{Tags 0x807f "hg1"}
+	{Tags 0x8062 "tm1"}
+	{Tags 0x809b "tm2"}
+	{Tags 0x80ac "tl3"}
+	{Tags 0x80b2 "elite"}
+	{Tags 0x80b3 "elite"}
+	{Tags 0x80b4 "elite"}
+	{Tags 0x80b5 "elite"}
+	{Tags 0x80b6 "elite"}
+	{Tags 0x80b7 "elite"}
+	{Tags 0x80b8 "elite"}
+	{Tags 0x80b9 "elite"}
+	{Tags 0x80cd "3"}
+	{Tags 0x80d0 "3"}
+	{Tags 0x80d1 "3"}
+	{Tags 0x80d2 "3"}
+	{Tags 0x80ce "3"}
+	{Tags 0x80cf "3"}
+	{Tags 0x80dd "2"}
+	{Tags 0x80de "2"}
+	{Tags 0x80d9 "2"}
+	{Tags 0x80db "2"}
+	{Tags 0x80d3 "2"}
+	{Tags 0x80d4 "2"}
+	{Tags 0x80e6 "gate"}
+	{Tags 0x80f7 "pointer m2 hidden"}
+	{Tags 0x8022 "mis2"}
+	{Tags 0x8021 "mis2"}
+	{Tags 0x80bb "p1"}
+	{Tags 0x80ba "p2"}
+	{Tags 0x803c "box"}
+	{Tags 0x8051 "box"}
+	{Tags 0x8052 "box"}
+	{Tags 0x8061 "box"}
+	{Tags 0x80e8 "meds"}
+	{Tags 0x8073 "m1"}
+	{Tags 0x8072 "m1"}
+	{Tags 0x8074 "m1"}
+	{Tags 0x8075 "m1"}
+	{Tags 0x8077 "m1"}
+	{Tags 0x8076 "m1"}
+	{Tags 0x8071 "m1"}
+	{Tags 0x8070 "m1"}
+	{Tags 0x806f "m1"}
+	{Tags 0x806e "m1"}
+	{Tags 0x806d "m1"}
+	{Tags 0x806c "m1"}
+	{Tags 0x806b "m1"}
+	{Tags 0x806a "m1"}
+	{Helpers
+		{event "inicio" id 0 state 0}
+		{event "cv3on" id 1 state 0}
+		{event "cv3_2" id 2 state 0}
+		{event "v1" id 3 state 0}
+		{event "v2" id 4 state 0}
+		{event "cv2_ko" id 5 state 0}
+		{event "cv2_1" id 6 state 0}
+		{event "cv2_2" id 7 state 0}
+		{event "cv1_2" id 8 state 0}
+		{event "cv1_ko" id 9 state 0}
+		{event "lt1" id 10 state 0}
+		{event "val" id 11 state 0}
+		{event "oscar1" id 12 state 0}
+		{event "oscar2" id 13 state 0}
+		{event "mis3" id 14 state 0}
+		{event "mis3_on" id 15 state 0}
+		{trigger "cv1_2"
+			{condition
+				{term 1 "event"
+					{id 8}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 27}
+					}
+					{"waypoint/uid" 100}
+				}
+			}
+		}
+		{trigger "cv1_ko"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "cv1"}
+						{"actors/type" vehicle}
+						{"actors/state" "not inhabited"}
+					}
+					{"limits/>=" 2}
+				}
+			}
+			{actions
+				{"event"
+					{event 9}
+					{mode set}
+					{delay 12}
+				}
+			}
+		}
+		{trigger "cv1on"
+			{condition
+				{term 1 "event"
+					{id 5}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 26}
+					}
+					{"waypoint/uid" 100}
+				}
+				{"event"
+					{event 8}
+					{mode set}
+					{delay 5}
+				}
+			}
+		}
+		{trigger "cv2_1"
+			{condition
+				{term 1 "event"
+					{id 6}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 24}
+					}
+					{"waypoint/uid" 78}
+				}
+				{"event"
+					{event 7}
+					{mode set}
+					{delay 5}
+				}
+			}
+		}
+		{trigger "cv2_2"
+			{condition
+				{term 1 "event"
+					{id 7}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 23}
+					}
+					{"waypoint/uid" 78}
+				}
+			}
+		}
+		{trigger "cv2_ko"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "cv2"}
+						{"actors/type" vehicle}
+						{"actors/state" "not inhabited"}
+					}
+					{"limits/>=" 3}
+				}
+			}
+			{actions
+				{"event"
+					{event 5}
+					{mode set}
+					{delay 8}
+				}
+			}
+		}
+		{trigger "cv2on"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/zone" "pl"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/<<=" 7}
+				}
+			}
+			{actions
+				{"actor_state"
+					{selector
+						{"actors/mids" 23 24 25}
+					}
+					{speed normal}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 25}
+					}
+					{"waypoint/uid" 78}
+				}
+				{"event"
+					{event 6}
+					{mode set}
+					{delay 5}
+				}
+			}
+		}
+		{trigger "cv3_2on"
+			{condition
+				{term 1 "event"
+					{id 2}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "cv3_2"}
+					}
+					{"waypoint/uid" 59}
+					{clone}
+				}
+				{"event"
+					{event 2}
+					{mode reset}
+					{delay 1}
+				}
+				{"event"
+					{event 4}
+					{mode reset}
+				}
+			}
+		}
+		{trigger "cv3on"
+			{condition
+				{term 1 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "cv3_1"}
+						{"actors/type" vehicle}
+					}
+					{"waypoint/uid" 35}
+					{clone}
+				}
+				{"event"
+					{event 2}
+					{mode set}
+					{delay "5.5"}
+				}
+				{"event"
+					{event 1}
+					{mode reset}
+					{delay 1}
+				}
+				{"event"
+					{event 3}
+					{mode reset}
+				}
+			}
+		}
+		{trigger "cv3rep"
+			{condition
+				{type 1}
+				{term 1 "event"
+					{id 3}
+				}
+				{term 2 "event"
+					{id 4}
+				}
+			}
+			{autoreset}
+			{actions
+				{"event"
+					{event 1}
+					{mode set}
+					{delay 270}
+				}
+			}
+		}
+		{trigger "gate_close"
+			{condition
+				{type 2}
+				{expression "!1"}
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "gate"}
+						{"actors/player" "1"}
+						{"actors/type" vehicle}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "gate"}
+					}
+					{effect "close"}
+				}
+			}
+		}
+		{trigger "gate_open"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "gate"}
+						{"actors/player" "1"}
+						{"actors/type" vehicle}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "gate"}
+					}
+					{effect "open"}
+				}
+			}
+		}
+		{trigger "hg1on"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/zone" "zona5"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"delete"
+					{selector
+						{"entities/tag" "hg1"}
+					}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 91}
+					}
+					{"waypoint/uid" 60}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 124}
+					}
+					{"waypoint/uid" 164}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 122}
+					}
+					{"waypoint/uid" 165}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 119 123}
+					}
+					{"waypoint/uid" 160}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 90}
+					}
+					{"waypoint/uid" 169}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 121 125}
+					}
+					{"waypoint/uid" 61}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 120 126}
+					}
+					{"waypoint/uid" 172}
+				}
+				{"event"
+					{event 15}
+					{mode set}
+					{delay 20}
+				}
+			}
+		}
+		{trigger "hg3on"
+			{condition
+				{type 1}
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/zone" "zona4"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/>=" 1}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/zone" "zona3"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/>=" 1}
+				}
+				{term 3 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/zone" "zona2"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"delete"
+					{selector
+						{"entities/tag" "hg3"}
+					}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 189}
+					}
+					{"waypoint/uid" 136}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 190}
+					}
+					{"waypoint/uid" 137}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 187}
+					}
+					{"waypoint/uid" 138}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 188}
+					}
+					{"waypoint/uid" 139}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 191}
+					}
+					{"waypoint/uid" 140}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 192}
+					}
+					{"waypoint/uid" 141}
+				}
+			}
+		}
+		{trigger "inicio"
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "cv2"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "cv1"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "cv3"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "lt1"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "lt2"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "tm1"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "tm2"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "tl3"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "elite"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" 3}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" 2}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "p1"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "p2"}
+					}
+					{inactive on}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 3}
+				}
+				{"event"
+					{event 1}
+					{mode set}
+					{delay 6}
+				}
+				{"event"
+					{event 11}
+					{mode set}
+					{delay 15}
+				}
+				{"event"
+					{event 12}
+					{mode set}
+					{delay 3540}
+				}
+				{"event"
+					{event 13}
+					{mode set}
+					{delay 3546}
+				}
+			}
+		}
+		{trigger "lt1_1"
+			{condition
+				{term 1 "event"
+					{id 10}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 20}
+					}
+					{"waypoint/uid" 19}
+				}
+			}
+		}
+		{trigger "lt1on"
+			{condition
+				{type 1}
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/zone" "zona6"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/>=" 1}
+				}
+				{term 2 "see_enemy"
+					{selector
+						{"actors/mids" 38 41 208 209 210}
+					}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 19}
+					}
+					{"waypoint/uid" 19}
+				}
+				{"event"
+					{event 10}
+					{mode set}
+					{delay "4.5"}
+				}
+			}
+		}
+		{trigger "mid89_ko"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 89}
+						{"actors/type" tank}
+						{"actors/state" "not inhabited"}
+					}
+				}
+			}
+			{actions
+				{"actor_component"
+					{selector
+						{"actors/mids" 89}
+					}
+					{component "engine"}
+					{operation destroy}
+				}
+			}
+		}
+		{trigger "mision 1y2"
+			{condition
+				{term 1 "event"
+					{id 0}
+				}
+			}
+			{actions
+				{"message"
+					{text "mission/13_2/start"}
+				}
+				{"task"
+					{name "mision1"}
+				}
+				{"task"
+					{name "mision2"}
+				}
+				{"actor_state"
+					{selector
+						{"actors/mids" 3 8}
+					}
+					{speed fast}
+					{weapon_prepare on}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 3 8}
+					}
+					{"waypoint/uid" 187}
+				}
+			}
+		}
+		{trigger "mision1_ok"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "m1"}
+						{"actors/player" "1"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/<<=" 0}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "aerodromo"}
+						{"actors/player" "1"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/<<=" 0}
+				}
+				{term 3 "actors"
+					{selector
+						{"actors/zone" "aerodromo2"}
+						{"actors/player" "1"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/<<=" 0}
+				}
+				{term 4 "trigger"
+					{name "hg3on"}
+				}
+				{term 5 "trigger"
+					{name "storeon"}
+				}
+				{term 6 "trigger"
+					{name "hg1on"}
+				}
+			}
+			{actions
+				{"task"
+					{name "mision1"}
+					{state complete}
+				}
+				{"message"
+					{text "mission/13_2/m1_ok"}
+				}
+			}
+		}
+		{trigger "mision2_ko"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "mis2"}
+						{"actors/zone" "allmap"}
+						{"actors/type" vehicle}
+					}
+					{"limits/<<=" 1}
+				}
+			}
+			{actions
+				{"task"
+					{name "mision2"}
+					{state fail}
+				}
+				{"gameover"
+					{result loose}
+					{message "mission/13_2/m2_ko"}
+				}
+			}
+		}
+		{trigger "mision2_ok"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 28}
+						{"actors/tag" "broken"}
+					}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/mids" 29}
+						{"actors/tag" "broken"}
+					}
+				}
+			}
+			{actions
+				{"task"
+					{name "mision2"}
+					{state complete}
+				}
+			}
+		}
+		{trigger "mision3_ok"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "allmap"}
+						{"actors/player" "1"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/<<=" 0}
+				}
+				{term 2 "task"
+					{name "mision2"}
+				}
+				{term 3 "task"
+					{name "mision1"}
+				}
+			}
+			{actions
+				{"task"
+					{name "mision3"}
+					{state complete}
+				}
+				{"event"
+					{event 14}
+					{mode set}
+					{delay 5}
+				}
+			}
+		}
+		{trigger "mision3_on"
+			{condition
+				{term 1 "event"
+					{id 15}
+				}
+			}
+			{actions
+				{"task"
+					{name "mision3"}
+				}
+			}
+		}
+		{trigger "oscar1_go"
+			{condition
+				{term 1 "event"
+					{id 12}
+				}
+			}
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "p1"}
+					}
+					{inactive off}
+				}
+				{"actor_state"
+					{selector
+						{"actors/mids" 169}
+					}
+					{speed fast}
+				}
+				{"board"
+					{selector
+						{"actors/mids" 169}
+					}
+					{vehicle
+						{"actors/mids" 28}
+					}
+				}
+			}
+		}
+		{trigger "oscar1crew"
+			{condition
+				{term 1 "crew"
+					{vehicle 28}
+					{units
+						{"actors/mids" 169}
+					}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 28}
+					}
+					{"waypoint/uid" 186}
+				}
+			}
+		}
+		{trigger "oscar2_go"
+			{condition
+				{term 1 "event"
+					{id 13}
+				}
+			}
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "p2"}
+					}
+					{inactive off}
+				}
+				{"actor_state"
+					{selector
+						{"actors/mids" 168}
+					}
+					{speed fast}
+				}
+				{"board"
+					{selector
+						{"actors/mids" 168}
+					}
+					{vehicle
+						{"actors/mids" 29}
+					}
+				}
+			}
+		}
+		{trigger "oscar2crew"
+			{condition
+				{term 1 "crew"
+					{vehicle 29}
+					{units
+						{"actors/mids" 168}
+					}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 29}
+					}
+					{"waypoint/uid" 185}
+				}
+			}
+		}
+		{trigger "pl_ko"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/<<=" 0}
+				}
+			}
+			{actions
+				{"gameover"
+					{result loose}
+					{message "mission/13_2/pl_ko"}
+				}
+			}
+		}
+		{trigger "pl_zona1"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/zone" "zona1"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 89}
+					}
+					{"waypoint/uid" 106}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 163 165 161}
+					}
+					{"waypoint/uid" 119}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 162 164 167}
+					}
+					{"waypoint/uid" 125}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 160 166}
+					}
+					{"waypoint/uid" 131}
+				}
+			}
+		}
+		{trigger "storeon"
+			{condition
+				{type 1}
+				{term 1 "see_enemy"
+					{selector
+						{"actors/mids" 196 200 202 197}
+					}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/zone" "zona2"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" 2}
+					}
+					{inactive off}
+				}
+			}
+		}
+		{trigger "tl3-tm2"
+			{condition
+				{term 1 "event"
+					{id 9}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 154}
+					}
+					{"waypoint/uid" 78}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 137}
+					}
+					{"waypoint/uid" 100}
+				}
+			}
+		}
+		{trigger "v1del"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "v1"}
+						{"actors/zone" "hg"}
+						{"actors/type" vehicle}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"delete"
+					{selector
+						{"entities/tag" "v1"}
+					}
+				}
+				{"event"
+					{event 3}
+					{mode set}
+					{delay 10}
+				}
+			}
+		}
+		{trigger "v2del"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "v2"}
+						{"actors/zone" "hg"}
+						{"actors/type" vehicle}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"delete"
+					{selector
+						{"entities/tag" "v2"}
+					}
+				}
+				{"event"
+					{event 4}
+					{mode set}
+					{delay 10}
+				}
+			}
+		}
+		{trigger "val_on"
+			{condition
+				{term 1 "event"
+					{id 11}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 219}
+					}
+					{"waypoint/uid" 174}
+				}
+			}
+		}
+		{trigger "victory"
+			{condition
+				{term 1 "event"
+					{id 14}
+				}
+			}
+			{actions
+				{"gameover"
+					{result win}
+					{message "mission/13_2/win"}
+				}
+			}
+		}
+		{trigger "wp"
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 15 16 17 18}
+					}
+					{"waypoint/uid" 1}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 133}
+					}
+					{"waypoint/uid" 67}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 134}
+					}
+					{"waypoint/uid" 69}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 135}
+					}
+					{"waypoint/uid" 70}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 136}
+					}
+					{"waypoint/uid" 75}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 210 209}
+					}
+					{"waypoint/uid" 142}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 217}
+					}
+					{"waypoint/uid" 156}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 2134.73 676.415 0}
+				{radius 50}
+				{transition 1}
+			}
+			{1
+				{position 1963.13 909.739 0}
+				{radius 50}
+				{transition 2}
+			}
+			{2
+				{position 1005.84 914.364 0}
+				{radius 50}
+				{transition 3}
+			}
+			{3
+				{position 70.7592 909.458 0}
+				{radius 50}
+				{commands
+					{"actor_to_waypoint"
+						{"waypoint/uid" 4}
+						{approach "teleport & rotate"}
+					}
+				}
+			}
+			{4
+				{position 84.1768 1639.81 0}
+				{radius 50}
+				{transition 5}
+			}
+			{5
+				{position 901.854 1643.28 0}
+				{radius 50}
+				{transition 6}
+			}
+			{6
+				{position 1885.84 1632.53 0}
+				{radius 50}
+				{transition 7}
+			}
+			{7
+				{position 1969.08 1700.7 0}
+				{radius 50}
+				{transition 8}
+			}
+			{8
+				{position 1923.28 2403.46 0}
+				{radius 50}
+				{transition 9}
+			}
+			{9
+				{position 2020.77 2474.69 0}
+				{radius 50}
+				{transition 10}
+			}
+			{10
+				{position 3538.44 2487.09 0}
+				{radius 50}
+				{transition 11}
+			}
+			{11
+				{position 3734.82 2311.15 0}
+				{radius 50}
+				{transition 12}
+			}
+			{12
+				{position 3763.46 1286.82 0}
+				{radius 50}
+				{transition 13}
+			}
+			{13
+				{position 3533.9 1149.93 0}
+				{radius 50}
+				{transition 14}
+			}
+			{14
+				{position 3347.8 874.783 0}
+				{radius 50}
+				{transition 15}
+			}
+			{15
+				{position 2929.95 856.362 0}
+				{radius 50}
+				{transition 16}
+			}
+			{16
+				{position 2832.44 944.167 -1.58321}
+				{radius 50}
+				{transition 17}
+			}
+			{17
+				{position 2677.64 944.067 -0.453348}
+				{radius 50}
+				{transition 18}
+			}
+			{18
+				{position 2421.72 663.916 0}
+				{radius 50}
+				{transition 0}
+			}
+			{19
+				{position 383.188 261.93 0}
+				{radius 100}
+				{transition 20}
+				{commands
+					{"actor_state"
+						{speed_kph 9}
+					}
+				}
+			}
+			{20
+				{position 700.843 261.471 0.147186}
+				{radius 100}
+				{transition 21}
+			}
+			{21
+				{position 1210.59 304.043 -3.21517}
+				{radius 100}
+				{transition 22}
+			}
+			{22
+				{position 1549.3 316.548 -0.345093}
+				{radius 100}
+				{transition 23}
+			}
+			{23
+				{position 1807.28 439.012 2.09871}
+				{radius 100}
+				{transition 24}
+			}
+			{24
+				{position 2051.55 468.549 0}
+				{radius 100}
+				{transition 25}
+			}
+			{25
+				{position 2170.91 388.248 0}
+				{radius 100}
+				{transition 26}
+			}
+			{26
+				{position 2181.61 216.133 0}
+				{radius 100}
+				{transition 27}
+			}
+			{27
+				{position 2098 8.76025 0}
+				{radius 100}
+				{transition 28}
+			}
+			{28
+				{position 1930.11 -184.957 0}
+				{radius 100}
+				{transition 29}
+			}
+			{29
+				{position 1765.97 -329.622 1}
+				{radius 100}
+				{transition 30}
+			}
+			{30
+				{position 1688.62 -517.247 0}
+				{radius 100}
+				{transition 31}
+			}
+			{31
+				{position 1694.26 -772.889 0}
+				{radius 100}
+				{transition 32}
+			}
+			{32
+				{position 1780.4 -991.372 2.13711}
+				{radius 100}
+				{transition 33}
+			}
+			{33
+				{position 1793.89 -1229.64 20}
+				{radius 50}
+				{commands
+					{"actor_to_waypoint"
+						{"waypoint/uid" 34}
+						{approach "teleport & rotate"}
+					}
+				}
+			}
+			{34
+				{position 130.436 247.312 0}
+				{radius 100}
+				{transition 19}
+			}
+			{35
+				{position 5682.99 1424.44 0}
+				{radius 50}
+				{transition 36}
+				{commands
+					{"actor_state"
+						{speed_kph 13}
+					}
+					{"entity_state"
+						{tag_remove "cv3"}
+					}
+					{"entity_state"
+						{tag_remove "cv3_1"}
+					}
+					{"entity_state"
+						{tag_add "v1"}
+					}
+				}
+			}
+			{36
+				{position 5489.36 1404.01 0}
+				{radius 100}
+				{transition 37}
+			}
+			{37
+				{position 5237.6 1458.02 0}
+				{radius 100}
+				{transition 38}
+			}
+			{38
+				{position 5039.5 1441.27 0}
+				{radius 100}
+				{transition 39}
+			}
+			{39
+				{position 4862.53 1348.62 0}
+				{radius 100}
+				{transition 40}
+			}
+			{40
+				{position 4713.7 1179.42 0}
+				{radius 100}
+				{transition 41}
+			}
+			{41
+				{position 4553.62 1062.88 0}
+				{radius 100}
+				{transition 42}
+			}
+			{42
+				{position 4250.55 939.043 1}
+				{radius 100}
+				{transition 43}
+			}
+			{43
+				{position 4079.28 806.055 12.7057}
+				{radius 100}
+				{transition 44}
+			}
+			{44
+				{position 3950.55 561.845 6.12936}
+				{radius 100}
+				{transition 45}
+			}
+			{45
+				{position 3795.18 480.682 6}
+				{radius 100}
+				{transition 46}
+			}
+			{46
+				{position 3493.44 429.445 2}
+				{radius 100}
+				{transition 47}
+			}
+			{47
+				{position 3240.49 364.535 3.95078}
+				{radius 100}
+				{transition 48}
+			}
+			{48
+				{position 2858.22 370.858 23}
+				{radius 100}
+				{transition 49}
+			}
+			{49
+				{position 2606.41 376.9 12.3313}
+				{radius 100}
+				{transition 50}
+			}
+			{50
+				{position 2385.93 361.68 0}
+				{radius 100}
+				{transition 51}
+			}
+			{51
+				{position 2183.17 222.845 0}
+				{radius 100}
+				{transition 52}
+			}
+			{52
+				{position 2100.85 10.6353 0}
+				{radius 100}
+				{transition 53}
+			}
+			{53
+				{position 1934.29 -184.336 0}
+				{radius 100}
+				{transition 54}
+			}
+			{54
+				{position 1763.23 -329.878 1}
+				{radius 100}
+				{transition 55}
+			}
+			{55
+				{position 1687.63 -511.797 0}
+				{radius 100}
+				{transition 56}
+			}
+			{56
+				{position 1688.93 -766.614 0}
+				{radius 100}
+				{transition 57}
+			}
+			{57
+				{position 1778.29 -987.771 1.777}
+				{radius 100}
+				{transition 58}
+			}
+			{58
+				{position 1793.28 -1223.93 20}
+				{radius 50}
+			}
+			{59
+				{position 5706.82 1429.24 0}
+				{radius 50}
+				{transition 36}
+				{commands
+					{"actor_state"
+						{speed_kph 13}
+					}
+					{"entity_state"
+						{tag_remove "cv3"}
+					}
+					{"entity_state"
+						{tag_remove "cv3_2"}
+					}
+					{"entity_state"
+						{tag_add "v2"}
+					}
+				}
+			}
+			{60
+				{position 3389.63 1900.37 0}
+				{radius 50}
+			}
+			{61
+				{position 3266.97 1736.46 0}
+				{radius 100}
+				{transition 62}
+				{commands
+					{"wait"
+						{time 2}
+					}
+				}
+			}
+			{62
+				{position 3060.71 1473.84 0}
+				{radius 100}
+				{transition 63}
+			}
+			{63
+				{position 2948.99 1210.9 0}
+				{radius 100}
+				{transition 64}
+			}
+			{64
+				{position 2644.81 1139.51 0}
+				{radius 100}
+				{transition 65}
+			}
+			{65
+				{position 2452.48 908.82 0}
+				{radius 100}
+				{transition 166}
+				{commands
+					{"wait"
+						{time 8}
+					}
+				}
+			}
+			{66
+				{position 3474.29 2391.18 0}
+				{radius 50}
+				{transition 67}
+			}
+			{67
+				{position 2876.32 2392.62 0}
+				{radius 50}
+				{transition 66}
+			}
+			{68
+				{position 2284.66 2391.09 0}
+				{radius 50}
+				{transition 69}
+			}
+			{69
+				{position 2845.35 2391.44 0}
+				{radius 50}
+				{transition 68}
+			}
+			{70
+				{position 2055.36 1664.55 0}
+				{radius 50}
+				{transition 71}
+			}
+			{71
+				{position 2031.1 2286.25 0}
+				{radius 50}
+				{transition 70}
+			}
+			{72
+				{position 3633.61 1522.37 0}
+				{radius 50}
+				{transition 73}
+			}
+			{73
+				{position 3520.33 1344.58 0}
+				{radius 50}
+				{transition 74}
+			}
+			{74
+				{position 3283.26 1335.7 0}
+				{radius 50}
+				{transition 75}
+			}
+			{75
+				{position 3279.51 1058.27 0}
+				{radius 50}
+				{transition 76}
+			}
+			{76
+				{position 3282.11 1335.8 0}
+				{radius 50}
+				{transition 77}
+			}
+			{77
+				{position 3520.63 1344.77 0}
+				{radius 50}
+				{transition 72}
+			}
+			{78
+				{position 259.466 3903.03 0}
+				{radius 50}
+				{transition 79}
+				{commands
+					{"actor_state"
+						{speed_kph 9}
+					}
+				}
+			}
+			{79
+				{position 554.472 4143.96 0}
+				{radius 100}
+				{transition 80}
+			}
+			{80
+				{position 812.339 4269.17 0}
+				{radius 100}
+				{transition 81}
+			}
+			{81
+				{position 1073.73 4454.31 0}
+				{radius 100}
+				{transition 82}
+			}
+			{82
+				{position 1286.53 4541.89 0}
+				{radius 100}
+				{transition 83}
+			}
+			{83
+				{position 1539.4 4556.62 0}
+				{radius 100}
+				{transition 84}
+			}
+			{84
+				{position 1777.71 4558.78 0}
+				{radius 100}
+				{transition 85}
+			}
+			{85
+				{position 2033.33 4588.42 0}
+				{radius 100}
+				{transition 86}
+			}
+			{86
+				{position 2235.9 4567.78 0}
+				{radius 100}
+				{transition 87}
+			}
+			{87
+				{position 2713.08 4290.79 0}
+				{radius 100}
+				{transition 88}
+			}
+			{88
+				{position 3072.37 4133.84 0}
+				{radius 100}
+				{transition 89}
+			}
+			{89
+				{position 3383.78 3972.39 0}
+				{radius 100}
+				{transition 90}
+			}
+			{90
+				{position 3747.72 3824.34 0}
+				{radius 100}
+				{transition 91}
+			}
+			{91
+				{position 4081.52 3732.43 0}
+				{radius 100}
+				{transition 92}
+			}
+			{92
+				{position 4400.39 3783.22 0}
+				{radius 100}
+				{transition 93}
+			}
+			{93
+				{position 4679.91 3854.34 0}
+				{radius 100}
+				{transition 94}
+			}
+			{94
+				{position 4968.44 3833.77 0}
+				{radius 100}
+				{transition 95}
+			}
+			{95
+				{position 5317.47 3668.12 0}
+				{radius 100}
+				{transition 96}
+			}
+			{96
+				{position 5508.81 3516.95 0}
+				{radius 100}
+				{transition 97}
+			}
+			{97
+				{position 5656.97 3324.49 0}
+				{radius 100}
+				{transition 98
+					{filter
+						{tag "cv2"}
+					}
+				}
+				{transition 102
+					{filter
+						{tag "cv1"}
+					}
+				}
+				{transition 104
+					{filter
+						{tag "tm2"}
+					}
+				}
+				{transition 105
+					{filter
+						{tag "tl3"}
+					}
+				}
+			}
+			{98
+				{position 5903.38 3155.46 0}
+				{radius 50}
+				{commands
+					{"actor_to_waypoint"
+						{"waypoint/uid" 99}
+						{approach "teleport & rotate"}
+					}
+				}
+			}
+			{99
+				{position 92.6008 3736.01 0}
+				{radius 50}
+				{transition 78}
+			}
+			{100
+				{position 1760.65 4943.22 0}
+				{radius 50}
+				{transition 101}
+				{commands
+					{"actor_state"
+						{speed_kph 10}
+					}
+				}
+			}
+			{101
+				{position 1955.2 4809.34 0}
+				{radius 50}
+				{transition 86}
+			}
+			{102
+				{position 5886.58 3166.76 0}
+				{radius 50}
+				{commands
+					{"actor_to_waypoint"
+						{"waypoint/uid" 103}
+						{approach "teleport & rotate"}
+					}
+				}
+			}
+			{103
+				{position 1563.82 5075.93 0}
+				{radius 50}
+				{transition 100}
+			}
+			{104
+				{position 5867.16 3178.93 0}
+				{radius 50}
+				{commands
+					{"actor_to_waypoint"
+						{"waypoint/uid" 103}
+						{approach "teleport & rotate"}
+					}
+				}
+			}
+			{105
+				{position 5877 3176.97 0}
+				{radius 50}
+				{commands
+					{"actor_to_waypoint"
+						{"waypoint/uid" 99}
+						{approach "teleport & rotate"}
+					}
+				}
+			}
+			{106
+				{position 4243.23 -1078.93 0}
+				{radius 100}
+				{transition 107}
+			}
+			{107
+				{position 4028.35 -851.36 0}
+				{radius 100}
+				{transition 108}
+			}
+			{108
+				{position 3861.23 -608.314 0}
+				{radius 100}
+				{transition 109}
+			}
+			{109
+				{position 3806.53 -337.282 0}
+				{radius 100}
+				{transition 110}
+			}
+			{110
+				{position 3839.31 -84.7116 0}
+				{radius 100}
+				{transition 111}
+			}
+			{111
+				{position 3931.66 229.873 -4.82329}
+				{radius 100}
+				{transition 112}
+			}
+			{112
+				{position 4098.65 575.799 -3.86523}
+				{radius 100}
+				{commands
+					{"emit"
+						{"waypoint/uid" 113}
+						{"emit/mode" passengers}
+					}
+				}
+			}
+			{113
+				{position 4194.67 614.607 -4.2873}
+				{radius 50}
+				{transition 114
+					{filter
+						{mids "145"}
+					}
+				}
+				{transition 115
+					{filter
+						{mids "143"}
+					}
+				}
+				{transition 116
+					{filter
+						{mids "144"}
+					}
+				}
+				{transition 117
+					{filter
+						{mids "142"}
+					}
+				}
+			}
+			{114
+				{position 4306.21 689.05 0}
+				{radius 50}
+				{commands
+					{"actor_state"
+						{movement crawl}
+						{hold_position on}
+						{weapon_prepare on}
+					}
+				}
+			}
+			{115
+				{position 4183.58 753.166 0.75523}
+				{radius 50}
+			}
+			{116
+				{position 3838.42 848.994 38}
+				{radius 50}
+			}
+			{117
+				{position 3897.52 869.656 37}
+				{radius 50}
+				{transition 118}
+			}
+			{118
+				{position 3895.75 962.75 33.8418}
+				{radius 50}
+			}
+			{119
+				{position 5450.2 -377.512 0}
+				{radius 100}
+				{transition 120}
+			}
+			{120
+				{position 5295.97 991.517 0}
+				{radius 100}
+				{transition 121}
+			}
+			{121
+				{position 5233.31 1925.62 3}
+				{radius 50}
+				{transition 122}
+				{transition 123}
+				{transition 124}
+			}
+			{122
+				{position 5366.84 2133.93 3}
+				{radius 50}
+			}
+			{123
+				{position 5094.87 2140.94 3}
+				{radius 50}
+			}
+			{124
+				{position 4898.16 2103.03 3}
+				{radius 50}
+			}
+			{125
+				{position 5277.33 -461.976 0}
+				{radius 100}
+				{transition 126}
+			}
+			{126
+				{position 4661.54 800.043 0}
+				{radius 100}
+				{transition 127}
+			}
+			{127
+				{position 4340.44 1852.51 0}
+				{radius 50}
+				{transition 128}
+				{transition 129}
+				{transition 130}
+			}
+			{128
+				{position 4483.86 2186.38 0}
+				{radius 50}
+			}
+			{129
+				{position 4255.06 2292.99 0}
+				{radius 50}
+			}
+			{130
+				{position 4116.78 2133.72 0}
+				{radius 50}
+			}
+			{131
+				{position 5139.77 -498.598 0}
+				{radius 100}
+				{transition 132}
+			}
+			{132
+				{position 4588.62 335.06 25.0681}
+				{radius 100}
+				{transition 133}
+			}
+			{133
+				{position 4205.82 1509.8 0}
+				{radius 50}
+				{transition 134}
+				{transition 135}
+			}
+			{134
+				{position 4234.88 1657.4 0}
+				{radius 50}
+			}
+			{135
+				{position 4064.22 1628.8 0}
+				{radius 50}
+			}
+			{136
+				{position 2159.47 2282.49 0}
+				{radius 50}
+				{commands
+					{"actor_to_cover"}
+				}
+			}
+			{137
+				{position 2011.81 2099.6 0}
+			}
+			{138
+				{position 2383.54 2378.42 0}
+			}
+			{139
+				{position 2524.2 1965.43 0}
+			}
+			{140
+				{position 2229.28 1752.38 0}
+			}
+			{141
+				{position 2454.1 2005.68 0}
+			}
+			{142
+				{position 774.12 -159.57 45.9138}
+				{radius 100}
+				{transition 143}
+			}
+			{143
+				{position 655.902 -202.039 65.3242}
+				{radius 100}
+				{transition 144}
+			}
+			{144
+				{position 504.368 -313.163 67}
+				{radius 100}
+				{transition 145}
+			}
+			{145
+				{position 375.674 -439.668 67}
+				{radius 100}
+				{transition 146}
+			}
+			{146
+				{position 210.904 -552.528 75.0677}
+				{radius 100}
+				{transition 147}
+			}
+			{147
+				{position 82.3473 -657.653 68}
+				{radius 100}
+				{commands
+					{"actor_to_waypoint"
+						{"waypoint/uid" 148}
+						{approach "teleport & rotate"}
+					}
+				}
+			}
+			{148
+				{position 2243.85 -1250.76 21.8481}
+				{radius 100}
+				{transition 149}
+			}
+			{149
+				{position 1984.43 -1017.55 23.8864}
+				{radius 100}
+				{transition 150}
+			}
+			{150
+				{position 1798.51 -862.234 1}
+				{radius 100}
+				{transition 151}
+			}
+			{151
+				{position 1496.33 -560.246 6.37578}
+				{radius 100}
+				{transition 152}
+			}
+			{152
+				{position 1350.65 -477.162 21.9348}
+				{radius 100}
+				{transition 153}
+			}
+			{153
+				{position 1170.1 -436.715 40.9966}
+				{radius 100}
+				{transition 154}
+			}
+			{154
+				{position 1054.39 -345.927 48.7397}
+				{radius 100}
+				{transition 155}
+			}
+			{155
+				{position 983.336 -228.372 41.8371}
+				{radius 100}
+				{transition 142}
+			}
+			{156
+				{position 3490.9 -1223.38 0}
+				{radius 50}
+				{transition 157}
+				{commands
+					{"wait"
+						{time 5}
+					}
+				}
+			}
+			{157
+				{position 3501.64 -1035.94 0}
+				{radius 50}
+				{transition 158}
+				{commands
+					{"wait"
+						{time 9}
+					}
+				}
+			}
+			{158
+				{position 3345.81 -1039.11 0}
+				{radius 50}
+				{transition 159}
+			}
+			{159
+				{position 3276.64 -1198.02 0}
+				{radius 50}
+				{transition 156}
+			}
+			{160
+				{position 3479.14 2005.75 0}
+				{radius 100}
+				{transition 161}
+			}
+			{161
+				{position 3497.66 1644.9 0}
+				{radius 100}
+				{transition 162}
+			}
+			{162
+				{position 3194.23 1422.32 0}
+				{radius 100}
+				{transition 163}
+			}
+			{163
+				{position 2991.56 1096.01 0}
+				{radius 100}
+				{transition 160}
+			}
+			{164
+				{position 3595.19 2172.45 0}
+				{radius 50}
+				{commands
+					{"actor_state"
+						{hold_position on}
+						{weapon_prepare on}
+					}
+					{"actor_to_cover"}
+				}
+			}
+			{165
+				{position 3580.97 1996.81 0}
+				{radius 50}
+				{commands
+					{"actor_state"
+						{hold_position on}
+						{weapon_prepare on}
+					}
+					{"actor_to_cover"}
+				}
+			}
+			{166
+				{position 2116.52 1518.34 0}
+				{radius 100}
+				{transition 167}
+			}
+			{167
+				{position 2794.03 1678.79 0}
+				{radius 100}
+				{transition 168}
+			}
+			{168
+				{position 2938.14 1911.67 0}
+				{radius 100}
+				{transition 61}
+			}
+			{169
+				{position 3260.81 1678.34 0}
+				{transition 170}
+			}
+			{170
+				{position 2355.59 1087.71 0}
+				{transition 171}
+			}
+			{171
+				{position 2315.8 891.768 0}
+			}
+			{172
+				{position 3264.29 1869.49 0}
+				{radius 100}
+				{transition 173}
+			}
+			{173
+				{position 2306.48 1909.47 0}
+				{radius 100}
+				{transition 172}
+			}
+			{174
+				{position 1769.8 1293.46 0}
+				{transition 175}
+				{commands
+					{"air_state"
+						{altitude 25}
+					}
+				}
+			}
+			{175
+				{position 864.355 1280.76 0}
+				{transition 176}
+				{transition 183
+					{filter
+						{tag "mis2"}
+					}
+				}
+				{commands
+					{"air_state"
+						{altitude 50}
+					}
+				}
+			}
+			{176
+				{position 62.5588 1275.8 0}
+				{transition 177}
+				{commands
+					{"air_state"
+						{altitude 75}
+					}
+				}
+			}
+			{177
+				{position -843.172 2483.79 0}
+				{transition 178}
+				{commands
+					{"air_state"
+						{altitude 100}
+					}
+				}
+			}
+			{178
+				{position 1654.6 4382.73 0}
+				{transition 179}
+			}
+			{179
+				{position 3907.74 4681.76 0}
+				{radius 100}
+				{transition 180}
+				{commands
+					{"spawn"
+						{entity "air_bomb"}
+						{"waypoint/uid" 182}
+					}
+				}
+			}
+			{180
+				{position 5764.8 4862.7 0}
+				{transition 181}
+			}
+			{181
+				{position 6859.65 4448.4 0}
+				{commands
+					{"delete"}
+				}
+			}
+			{182
+				{position 3907.35 4644.45 0}
+				{radius 50}
+				{offsetz 500}
+			}
+			{183
+				{position 63.0823 1252.54 0}
+				{transition 184}
+				{commands
+					{"air_state"
+						{altitude 75}
+					}
+				}
+			}
+			{184
+				{position -1246.72 674.34 0}
+				{commands
+					{"delete"}
+				}
+			}
+			{185
+				{position 2481.69 1365.29 0}
+				{radius 100}
+				{transition 174}
+			}
+			{186
+				{position 2766.87 1386.51 0}
+				{radius 100}
+				{transition 174}
+			}
+			{187
+				{position 3834.43 5094.51 0}
+				{radius 50}
+				{commands
+					{"delete"}
+				}
+			}
+		}
+		{zone "poly"
+			{position 2933.79 1664 0}
+			{Name "aerodromo"}
+			{Point 367.221 -318.163}
+			{Point -901.276 -81.4137}
+			{Point -934.481 751.335}
+			{Point 750.602 740.51}
+			{Point 744.577 -322.897}
+		}
+		{zone "poly"
+			{position 2367.5 1082.18 0}
+			{Name "aerodromo2"}
+			{Point -373.087 -319.876}
+			{Point -336.832 501.355}
+			{Point 934.443 263.708}
+			{Point 932.601 -161.397}
+		}
+		{zone "poly"
+			{position 1993.71 893.965 0}
+			{Name "allmap"}
+			{Point -1976.26 -2177.22}
+			{Point -1976 4232.54}
+			{Point 3970.52 4228.83}
+			{Point 3980.63 -2173.67}
+		}
+		{zone "poly"
+			{position 2283.29 727.322 0}
+			{Name "gate"}
+			{Point -110.848 -154.473}
+			{Point -85.3586 96.1417}
+			{Point 100.048 88.6379}
+			{Point 117.041 -171.456}
+		}
+		{zone "circle"
+			{position 1792.33 -1220.53 20}
+			{Name "hg"}
+			{Radius 54.0385}
+		}
+		{zone "poly"
+			{position 3920.01 4678.44 0}
+			{Name "pl"}
+			{Point -146.108 -139.709}
+			{Point -160.583 90.9351}
+			{Point 126.994 100.419}
+			{Point 135.462 -128.052}
+		}
+		{zone "poly"
+			{position 2904.77 2742.91 -18.6277}
+			{Name "zona1"}
+			{Point -2891.99 -378.005}
+			{Point -2892.61 -209.355}
+			{Point 3026.96 -177.422}
+			{Point 3016.9 -341.096}
+		}
+		{zone "circle"
+			{position 2177.52 1893.03 0}
+			{Name "zona2"}
+			{Radius 81.8542}
+		}
+		{zone "circle"
+			{position 2709 2265.75 0}
+			{Name "zona3"}
+			{Radius 76.8446}
+		}
+		{zone "circle"
+			{position 3113.37 2227.22 0}
+			{Name "zona4"}
+			{Radius 71.9126}
+		}
+		{zone "poly"
+			{position 2773.06 1816.53 0}
+			{Name "zona5"}
+			{Point -704.537 -440.636}
+			{Point -728.683 524.374}
+			{Point 809.933 534.462}
+			{Point 838.868 -436.753}
+		}
+		{zone "circle"
+			{position 1053.58 -75.1815 27.0361}
+			{Name "zona6"}
+			{Radius 172.195}
+		}
+		{task
+			{name "mision1"}
+			{desc "mission/13_2/mision1"}
+			{primary}
+			{state hidden}
+		}
+		{task
+			{name "mision2"}
+			{desc "mission/13_2/mision2"}
+			{primary}
+			{state hidden}
+			{point "m2"}
+		}
+		{task
+			{name "mision3"}
+			{desc "mission/13_2/mision3"}
+			{primary}
+			{state hidden}
+		}
+	}
+	{Players
+		{count 3}
+		{alias 1 "jap"}
+		{alias 2 "usa"}
+		{diplomacy
+			1 2 0
+			2 1 1
+			0 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}
+
+
+
+

@@ -1,0 +1,18 @@
+;SDL
+{placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+}
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+
+	{anm "seat" {forward {end "seat_passenger"}}}
+
+	{link "emit1"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit2"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+
+}

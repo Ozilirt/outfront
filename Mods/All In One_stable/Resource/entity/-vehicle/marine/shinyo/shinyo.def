@@ -1,0 +1,37 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(0.9) scaley(0.6))
+	{extension "crew.ext"}
+	{mass 1900}
+	{chassis
+		{waterline -0.05}
+	}
+	{patherid "shallow water"}
+	{props "vehicle" "marine" "emit_on_sink"}
+
+	{volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{volume "body"
+		{tags "body"}
+		{thickness 10}
+	}
+	{component "body" 
+		{able {repair}}
+	}
+
+	{extension "shinyo.mdl"}
+	{sensor
+		{Visor "main"
+			{bone "visor1"}
+			{vision "fishboat"}
+		}
+	}
+	{chassis
+		{Locomotion ("locomotion")
+            	{MaxSpeed 	    30}
+		}
+	}
+}

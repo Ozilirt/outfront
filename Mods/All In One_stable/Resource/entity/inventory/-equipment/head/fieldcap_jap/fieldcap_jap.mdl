@@ -1,0 +1,28 @@
+{Skeleton
+	{bone "fieldcap_jap"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fieldcap_jap.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	-1.0000	0.0000
+				0.1731	-1.4870	2.6737
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 9.84252 9.84252 3.68412}
+	{Bone "fieldcap_jap"}
+	{Position 0.1220	0.0123	3.7330}
+}
+{Volume "body"
+	{Box 3.85597 3.60074 2.97107}
+	{Bone "fieldcap_jap"}
+	{Position 0.1220	0.0123	3.3765}
+}

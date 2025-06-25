@@ -1,0 +1,141 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.4))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "huge"}
+	
+	{TexMods
+		{"n416" "1"}
+		{"n421" "2"}
+		{"n423" "3"}
+		{"n534" "4"}
+		{"ambush" "5"}
+		{"ambush121" "6"}
+		{"ambush123" "7"}
+		{"ambush126" "8"}
+		{"ambush335" "9"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 40 0.2
+			{front  60 0.2}
+			{rear 40 0.3}
+			{bottom	 33}
+			{top 40}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 40 0.2
+			{front  60 0.2}
+			{rear 40 0.3}
+			{bottom	 33}
+			{top 40}
+		}
+	}
+	{volume "turret"
+		{thickness 45 0.3
+			{front	90 0.4}
+			{rear	40  0.3}
+			{top	15}
+		}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"}	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_MiddleArmor"}	{end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mm_kwk42"}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+		{place "mgun2"
+			{DefaultWeapon "mg34_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 900}
+			{item "ammo bullet75 ap" 44}
+			{item "ammo bullet75 fg" 18}
+		}
+	}
+	
+	{mass 28500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed	21} ; kmph
+			{StartTime	7} ; seconds
+			{BrakeTime	1} ; seconds
+			{StopTime	1} ; seconds
+			{TurnRadius     5} ; meter
+			{TurnTime	10} ; seconds
+			{TurnStart	2} ; seconds
+			{TurnStop	0.5} ; seconds
+			{Gears		0.2 0.3 0.5 0.7 1.0}
+			{RearGears	0.2 0.5}
+		}
+	}
+	{Extension "pz-5a.mdl"}
+
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank_Long"}
+			}
+		}
+		{bone "turret"
+			{speed 0.0062}
+		}
+		{Chassis
+			{speed
+				{Slow	12}
+				{Normal	15}
+				{Fast	23}
+			}
+			{FuelBag
+				{volume 730} ; liters
+				{rate	365} ; liters per kilometer
+				{remain 730}
+				{fuel "fuel"}
+			}
+		}
+	)
+}

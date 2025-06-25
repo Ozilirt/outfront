@@ -1,0 +1,94 @@
+{Car
+	(include "/properties/sdkfz10.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "car" "wheeled" "truck" "emit_on_sink" "emit_on_attack"}
+
+	{PatherId "vehicle.small"}
+
+
+	("crew_2_human")
+	{TexMods
+		{"ambush1" "1"}
+		{"winter" "2"}
+	}
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_LowArmor"}  {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1" 1}}
+		}
+		{anm "commander"
+			{forward	{begin	"board_LowArmor"}  {end "seat_passenger"}}
+			{reverse 	{end	"emit_tank_1" 1}}
+		}
+    	}
+
+ 	("crew_human" place(seat1)	bone(seat01)	door(emit3)	animation(passenger1))
+	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger2))
+
+	{boarder
+		{anm "passenger1"
+			{forward	{begin	"board_LowArmor"}  {end "seat_passenger"}}
+			{reverse 	{end	"emit_tank_1" 1}}
+		}
+	}
+
+	{boarder
+		{anm "passenger2"
+			{forward	{begin	"board_LowArmor"}  {end "seat_passenger"}}
+			{reverse 	{end	"emit_tank_1" 1}}
+		}
+	}
+	{placer
+		{place "driver" 	{group "crew"}}
+		{place "commander"	{group "crew"}}
+		{place "seat1"	{group "passengers"}}
+		{place "seat2"	{group "passengers"}}
+	}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 6
+		}   
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Chassis
+	; left track must be first
+   		{Track "left"
+			{Tracer
+				{View "tracks"}
+				{Bone "FXtraceL1"}
+				{Step 0.7}			; in meters
+   		 	}
+			{TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 0.6}		; meters per animation
+   		 	}
+   		}
+   		{Track "right"
+			{Tracer 
+			   	{View "tracks"}
+   		 		{Bone "FXtraceR1"}
+   		 		{Step 0.7}			; in meters
+			}
+			{TextureScroller
+		    	{Bone "TrackR"}	
+		 		{Length 0.6}		; meters per animation
+	 		}
+ 		}
+	}
+	{Extension "sdkfz10-D7.mdl"}
+}

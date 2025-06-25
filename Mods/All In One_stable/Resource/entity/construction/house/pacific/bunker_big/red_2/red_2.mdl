@@ -1,0 +1,49 @@
+;Exported by: Dinsen
+;Date:        Sun Jan 22 17:03:44 2012
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\bunker call\Nueva carpeta\red_1.max
+{Skeleton
+	{bone "exterior"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "exterior.ply"}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -16.3033 -32.1875}
+		{Extent 80.1513 38.6502}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 64.2138 -69.8383}
+		{Extent 0.9 0.900002}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 2.5 2.5 2.5}
+	{Bone "exterior"}
+	{Matrix34
+		-0.0000	-0.7200	-0.0000
+		-0.0000	-0.0000	0.7200
+		-0.7200	0.0000	-0.0000
+		64.2138	69.8383	51.8622
+	}
+}
+{Volume "body"
+	{Box 221.731 102.706 10.822}
+	{Bone "exterior"}
+	{Matrix34
+		0.7200	0.0000	0.0000
+		0.0000	0.7200	0.0000
+		0.0000	0.0000	0.7200
+		-15.6312	33.3235	51.8990
+	}
+}

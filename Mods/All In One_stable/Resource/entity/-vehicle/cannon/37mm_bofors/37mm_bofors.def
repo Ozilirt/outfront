@@ -1,0 +1,71 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret" "wheeled"}
+	(include "/properties/dummy_fsm.inc")
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+	{TexMods
+ 		{"ambush" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "turret2"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	("crew_2_human")
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_A7"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet37 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet37 ap" 41}
+			{item "bullet37 fg" 29}
+			{item "plant" 2}
+		}
+	}
+	{mass 10000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    11} ;  kmph
+			{StartTime 		 6} ;  seconds
+			{BrakeTime 		1} ; seconds
+			{StopTime		 1} ; seconds
+			{TurnRadius     5} ;meter
+			{TurnTime		12} ; seconds
+			{TurnStart		 2}	; seconds
+			{TurnStop	   0.5}	; seconds
+		}
+	}
+	{Extension "37mm_bofors.mdl"}
+}
+  
+

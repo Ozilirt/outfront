@@ -1,0 +1,61 @@
+;SDL
+
+{Placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "gun1"
+		{entity "fubuki_127"}
+		{Linkbone "attach_gun1"}
+		{handlebone "no"}
+	}
+	{place "gun2"
+		{entity "fubuki_127"}
+		{Linkbone "attach_gun2"}
+		{handlebone "no"}
+	}
+	{place "gun3"
+		{entity "fubuki_127"}
+		{Linkbone "attach_gun3"}
+		{handlebone "no"}
+	}
+	{place "mg1"
+		{entity "type93_stan"}
+		{Linkbone "attach_mg1"}
+		{handlebone "no"}
+	}
+	{place "mg2"
+		{entity "type93_stan"}
+		{Linkbone "attach_mg2"}
+		{handlebone "no"}
+	}
+}
+
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit4"}
+	{door "emit5"}
+	{door "emit6"}
+	{door "emit7"}
+	{door "emit8"}
+	{door "emit9"}
+	{door "emit10"}
+
+	{anm "seat" {forward {end "seat_passenger"}}}
+
+	{link "emit1"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit2"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+
+	{link "emit3"	"gun1"		{forward putoff} {reverse puton}}
+	{link "emit4"	"gun1"		{forward putoff} {reverse puton}}
+	{link "emit5"	"gun2"		{forward putoff} {reverse puton}}
+	{link "emit6"	"gun2"		{forward putoff} {reverse puton}}
+	{link "emit7"	"gun3"		{forward putoff} {reverse puton}}
+	{link "emit8"	"gun3"		{forward putoff} {reverse puton}}
+	{link "emit9"	"mg1"			{forward putoff} {reverse puton}}
+	{link "emit10"	"mg2"			{forward putoff} {reverse puton}}
+}

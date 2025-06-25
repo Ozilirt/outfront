@@ -1,0 +1,49 @@
+;Exported by: Albus
+;Date:        Mon Mar 10 11:55:29 2014
+;File:        C:\DOCUME~1\Albus\ESCRIT~1\shw\trailers\trailer.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{Position -6.1644	-2.3410	15.2492}
+			{VolumeView "body.ply"}
+			{bone "body1"
+				{Position 23.9397	-14.2361	-5.6954}
+				{VolumeView "body1.ply"}
+			}
+			{bone "body2"
+				{Position 24.0164	18.1352	-5.3711}
+				{VolumeView "body2.ply"}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 75.7273 28.5764 9.79761}
+	{Bone "body"}
+	{Position 8.4558	1.6548	-2.0019}
+}
+{Volume "body2"
+	{Cylinder 9.98012 4.86061}
+	{Bone "body2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	0.0000
+		0.0217	0.0967	-0.0965
+	}
+}
+{Volume "body1"
+	{Cylinder 9.98012 4.86061}
+	{Bone "body1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	0.0000
+		0.0985	0.0238	0.2277
+	}
+}

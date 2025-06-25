@@ -1,0 +1,90 @@
+;SDL
+{PatherID  "vehicle.large"}
+{obstacleID "tank"}
+{Simulation {Able 1}}
+{colliderId "vehicle"}
+{collideWith  "construction" "vehicle" "armored" "tank" "tree" "bush" "human" "particle" "particle.big" "mine_at" "mine_ap"}
+{noContactWith "particle" "particle.big" "human" "bush" "stuff" "mine_at" "mine_ap"}
+{props "steel" "vehicle" "examinable"}
+
+(include "dummy_fsm.inc")
+
+{sensor
+	{Visor "main"
+		{vision "vehicle-main"}
+		{bone "visor"}
+	}
+}
+
+{boarder}
+
+{brain "vehicle"
+	{state "vehicle"}
+	{const "crush/min_danger_zone_time" 	1}
+	{const "crush/min_danger_zone_length"	1}
+}
+
+(define "chassis_defaults"
+	{FuelBag
+		{volume 200 }	; liters
+		{rate	50 }   	; liters per kilometer
+		{remain 200 }
+		{fuel "fuel"}
+	}
+	{speed
+		{Slow	10	}	; km/h
+		{Normal	17	}
+		{Fast	28	}
+	}
+)
+
+(define "wheel"
+	{volume %0
+		{thickness 0.5}
+		{tags "mover" "wheel"}
+		{component %0}
+	}
+	{component %0
+		{RepairTime 10}
+		{Able {repair}}
+		{tags "mover" "wheel"}
+	}
+)
+
+(define "tracks"
+	{volume "trackleft"
+		{thickness 15}
+		{tags "mover" "track"}
+	}
+	{volume "trackright"
+		{thickness 15}
+		{tags "mover" "track"}
+	}
+	{component "trackleft"
+		{RepairTime 10}
+		{Able {Repair}}
+		{tags "mover" "track"}
+	}
+	{component "trackright"
+		{RepairTime 10}
+		{Able {Repair}}
+		{tags "mover" "track"}
+	}
+)
+
+(define "tracks_forced"
+	{volume "trackleft"
+		{thickness 30}
+	}
+	{volume "trackright"
+		{thickness 30}
+	}
+)
+
+(mod "mp"
+	{able {ally_crew}}
+)
+
+(mod "coop"
+	{able {ally_crew}}
+)

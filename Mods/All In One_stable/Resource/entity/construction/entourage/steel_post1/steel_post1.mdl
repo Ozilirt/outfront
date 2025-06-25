@@ -1,0 +1,89 @@
+;Exported by: dinsen
+;Date:        Sun Dec 18 20:06:26 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\steel_post1.max
+{Skeleton
+	{bone "steel_post"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "steel_post.ply"}
+		{bone "lamp_glass1"
+			{Position 1.8910	-11.0042	98.3346}
+			{VolumeView "lamp_glass1.ply"}
+			{bone "lamp_light_spot1"
+				{Matrix34
+					0.3448	-0.7843	-0.5157
+					0.9387	0.2881	0.1894
+					-0.0000	-0.5494	0.8356
+					-0.1391	-2.0252	-1.0516
+				}
+			}
+		}
+		{bone "lamp_glass2"
+			{Position 10.1534	-0.0389	108.7985}
+			{VolumeView "lamp_glass2.ply"}
+			{bone "lamp_light_spot2"
+				{Matrix34
+					0.8414	0.0000	-0.5405
+					0.0000	1.0000	0.0000
+					0.5405	0.0000	0.8414
+					1.5370	0.2026	0.2839
+				}
+			}
+		}
+		{bone "lamp_glass3"
+			{Position 2.2770	11.0672	86.0481}
+			{VolumeView "lamp_glass3.ply"}
+			{bone "lamp_light_spot3"
+				{Matrix34
+					0.5758	0.6864	-0.4442
+					-0.7309	0.6756	0.0966
+					0.3664	0.2690	0.8907
+					0.4241	0.0311	0.2829
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 7 7.04416 62.4946}
+	{Bone "steel_post"}
+	{Matrix34
+		2.0000	0.0000	0.0000
+		0.0000	2.0000	0.0000
+		0.0000	0.0000	2.0000
+		-0.0858	-0.0136	61.9935
+	}
+}
+{Volume "lamp3"
+	{Box 5.22933 4.43664 5.06687}
+	{Bone "lamp_glass3"}
+	{Matrix34
+		2.0000	0.0000	0.0000
+		0.0000	2.0000	0.0000
+		0.0000	0.0000	2.0000
+		-0.0000	-0.0001	0.0000
+	}
+}
+{Volume "lamp2"
+	{Box 3.58216 6.04026 5.93699}
+	{Bone "lamp_glass2"}
+	{Matrix34
+		2.0000	0.0000	0.0000
+		0.0000	2.0000	0.0000
+		0.0000	0.0000	2.0000
+		0.0000	-0.0000	-0.0000
+	}
+}
+{Volume "lamp1"
+	{Box 5.26342 6.16891 4.96222}
+	{Bone "lamp_glass1"}
+	{Matrix34
+		2.0000	0.0000	0.0000
+		0.0000	2.0000	0.0000
+		0.0000	0.0000	2.0000
+		0.0000	-0.0000	-0.0000
+	}
+}

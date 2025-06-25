@@ -1,0 +1,109 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_m4.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "high" "turret_rotator"}
+	
+	{volume "body"
+		{component "body"}
+		{tags "body"}
+		{thickness 40
+			{front  51 0.2}
+			{rear	34}
+			{top	25}
+			{bottom	19}
+		}   
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 40
+			{front  51 0.2}
+			{rear	34}
+			{top	25}
+			{bottom	19}
+		}
+	}
+	{volume "turret"
+		{thickness 64
+			{front	89}
+			{rear	75}
+			{left	64 0.3}
+			{right	64 0.3} 
+			{top	25}
+		}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "bigflamethrower"}
+			{foresight "foresight1"}
+			{Mounted}
+			{weapon {ammo "ammo fire" 50}}
+		}
+		{place "mgun"
+			{DefaultWeapon "browning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 400}
+			{item "ammo fire" 250}
+		}
+	}
+	
+	{mass 30000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    21} ; максимальная скорость, kmph
+			{StartTime 		 6} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		0.6} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{Extension "m4a3r3.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank_Long"}
+			}
+		}
+		{Chassis
+			{speed
+				{Slow	8}
+				{Normal	14}
+				{Fast	21}
+			}
+			{FuelBag
+				{volume 636 }	; liters
+				{rate   314 }	; liters per kilometer
+				{remain 636 }
+				{fuel "fuel"}
+			}
+		}
+	)
+}

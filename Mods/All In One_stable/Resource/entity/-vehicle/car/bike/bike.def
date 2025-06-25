@@ -1,0 +1,69 @@
+{moto
+	(include "/properties/moto2.ext")
+	(include "/properties/shadow/moto.inc"  scX(0.5) scY(0.6) psfX(-7) psfY(0))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{Props "emit_on_attack" "explosion_throw_crew"}
+	{PatherId "vehicle.small"}
+	{TexMods
+		{"camo" "1"}
+		{"green"  "2"}
+	}
+	{sensor
+		{Visor "main"
+			{bone "visor1"}
+		}
+		{Visor "crew"
+			{vision "moto-crew"}
+			{bone "visor2"}
+		}  
+	}
+	
+	{Placer
+		{place "driver"		{Group "driver"}	{LinkBone "driver"}		{visor "main"} {turnoff {sensor}{shadow}}}
+		{place "passenger" 	{Group "driver"} 	{LinkBone "passenger"}	{visor "crew"} {turnoff {sensor}{shadow}}}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+
+		{anm "driver" {forward  {end "seat_driver_moto"}}}
+		{anm "passenger" {forward  {end "seat_passenger"}}}
+
+		{link "emit1" "driver"    {anm "driver"} {forward putoff} {reverse puton}}
+		{link "emit2" "passenger" {anm "passenger"} {forward putoff} {reverse puton}}
+	}
+
+	("wheel" args "wheel1")
+	("wheel" args "wheel2")
+
+	{extender "inventory"
+		{Box
+			{clear}
+		}
+	}
+	{mass 900}
+	{Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed	40}
+			{StartTime	10}
+			{BrakeTime	2}
+			{StopTime	4}
+			{TurnRadius	2}
+			{Gears		0.35 0.5 0.7 1.0}
+			{RearGears	0.33 0.5}
+			{SteerOn	40}
+			{SteerOff	40}
+			{SplineRadius 2}
+		}	
+		{FuelBag
+			{volume 50 }	; liters
+			{rate	10 }   	; liters per kilometer
+			{remain 50 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Slow	7	}	; km/h
+		}
+	}
+	{Extension "bike.mdl"}
+}

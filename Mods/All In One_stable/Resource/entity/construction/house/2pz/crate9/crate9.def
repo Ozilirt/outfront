@@ -1,0 +1,20 @@
+{game_entity
+	{Extension "crate9.mdl"}
+	{TexMods
+		{"1" "1"}
+	}
+	{volume "body" {able {blast}}}
+	{props "tnt" "steel"}
+	{ObstacleID "stuff"}
+	{colliderID "construction"}
+	{body {proper body sensible} {permit body}}
+
+	{extender "stuff"
+		{item "dynamite"}
+	}
+	(include "/properties/shadow/round.inc")
+	{Volume "body"
+		{thickness	10}
+		{tags "body"}
+	}	
+}

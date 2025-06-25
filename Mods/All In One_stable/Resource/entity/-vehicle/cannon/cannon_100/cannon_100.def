@@ -1,0 +1,55 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	(include "/properties/structure/cannon_100.ext")
+	{props "vehicle" "cannon" "medium" "turret_rotator"}
+	(include "/properties/dummy_fsm2.inc")
+	{simulation {able 0}}
+
+	("crew_2_human")
+	
+	{TexMods
+		{"green" "1"}
+	}
+
+	{volume "turret"
+		{thickness 90}
+	}
+	{volume "turret2"
+		{thickness 90}
+	}
+	{volume "turret3"
+		{thickness 90}
+	}
+	{Volume "gun"
+		{thickness 80}
+	}
+
+	{component "gun"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 35}
+	}
+	{component "turret"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 40}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "100mm_wz14/19"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet100 fg" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet100 fg" 48}
+			{item "ammo bullet100 ap" 8}
+		}
+	}
+	{mass 10000}
+	{Extension "cannon_100.mdl"}
+}

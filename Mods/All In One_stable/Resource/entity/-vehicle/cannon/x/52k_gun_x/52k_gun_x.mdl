@@ -1,0 +1,71 @@
+;Exported by: Albus
+;Date:        Tue Nov 18 12:09:56 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\52k_gun\52kgun_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position -0.1018	-0.1759	8.3086}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{Position -0.0820	0.1503	16.7126}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 45.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-13.3514	-0.2196	11.3597
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							36.7939	-0.1221	-0.4713
+						}
+						{VolumeView "gun.ply"}
+						{bone "foresight1"
+							{Position 53.5849	-0.2261	0.1993}
+						}
+					}
+				}
+				{bone "shield_front"
+					{parameters "ID=turret;"}
+					{Position 9.9823	-0.4498	2.6704}
+					{VolumeView "shield_front.ply"}
+				}
+			}
+			{bone "body4"
+				{parameters "ID=body;"}
+				{Position -46.2814	20.6896	1.4263}
+				{VolumeView "body4.ply"}
+			}
+			{bone "body3"
+				{parameters "ID=body;"}
+				{Position 37.5308	20.7081	1.3760}
+				{VolumeView "body3.ply"}
+			}
+			{bone "body1"
+				{parameters "ID=body;"}
+				{Position 37.4999	-20.6973	1.3920}
+				{VolumeView "body1.ply"}
+			}
+			{bone "body2"
+				{parameters "ID=body;"}
+				{Position -46.3022	-20.7527	1.4364}
+				{VolumeView "body2.ply"}
+			}
+		}
+	}
+}

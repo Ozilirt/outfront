@@ -1,0 +1,82 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_pz-2f.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "light"}
+	
+	{TexMods
+		{"ambush1" "1"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		    {front  30}
+			{bottom	 6}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		    {front  30}
+			{bottom	 6}
+		}   
+	}
+	{volume "turret"
+		{thickness 15 0.3
+			{front  30}
+		}
+	}
+	 
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_kwk30"}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{item  "ammo mgun" 700}
+			{item "ammo bullet20 ap" 50}
+		}
+	}
+	
+	{mass 9500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{Extension "Pz-2F.mdl"}
+}

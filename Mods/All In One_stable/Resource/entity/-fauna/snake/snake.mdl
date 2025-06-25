@@ -1,0 +1,51 @@
+;Exported by: dinsen
+;Date:        Tue Feb 01 01:00:12 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\serpiente.max
+{Skeleton
+	{animation
+		{sequence "walk"}
+		{sequence "run" {speed 1.5}}
+		{sequence "eat" {speed 0.5}}
+		{sequence "passive"}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "chik"
+			{parameters "CommonMesh;"}
+			{Position -0.1430	0.3676	1.5105}
+			{VolumeView "chik.ply"}
+			{bone "head"
+				{Matrix34
+					0.9641	-0.2422	0.1093
+					0.2429	0.9700	0.0065
+					-0.1076	0.0203	0.9940
+					34.3923	-1.3602	0.2227
+				}
+				{VolumeView "head.ply"}
+				{bone "lengua"
+					{Matrix34
+						0.9940	-0.0003	-0.1094
+						-0.0003	1.0000	-0.0049
+						0.1094	0.0049	0.9940
+						0.4328	-0.0347	0.2101
+					}
+					{VolumeView "lengua.ply"}
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "chik"}
+	{Position -1.8938	-0.2634	-1.4246}
+}
+{Volume "snake"
+	{Polyhedron "body.vol"}
+	{Bone "chik"}
+	{Position -1.8938	-0.2634	-1.4246}
+}

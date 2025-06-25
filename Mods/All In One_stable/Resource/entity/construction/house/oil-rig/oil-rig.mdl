@@ -1,0 +1,132 @@
+;Exported by: micha
+;Date:        Mon Nov 07 18:32:41 2005
+;File:        \\syk0\_soldiers\_models\static\desert\oil rig\rig_ani.max
+{Skeleton
+	{animation
+		{sequence "pump"}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "ani5"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	1.0000	0.0075
+				0.0000	-0.0075	1.0000
+				44.3803	61.5810	37.3828
+			}
+			{VolumeView "ani5.ply"}
+			{bone "ani4"
+				{Matrix34
+					-0.0000	-1.0000	0.0075
+					-0.0000	0.0075	1.0000
+					-1.0000	0.0000	-0.0000
+					0.0000	-0.2123	-13.7066
+				}
+				{bone "ani3"
+					{Matrix34
+						0.0000	0.0000	-1.0000
+						-0.9998	0.0213	-0.0000
+						0.0213	0.9998	0.0000
+						-0.0721	0.1271	0.0000
+					}
+					{VolumeView "ani3.ply"}
+				}
+			}
+		}
+		{bone "ani1"
+			{Position -0.0161	-68.7130	124.0348}
+			{VolumeView "ani1.ply"}
+		}
+		{bone "obj1"
+			{Position 44.3803	2.9499	22.5488}
+			{VolumeView "obj1.ply"}
+		}
+		{bone "obj3"
+			{Position 44.3803	7.4136	22.5488}
+			{VolumeView "obj3.ply"}
+		}
+		{bone "body"
+			{Position 44.3803	7.4136	22.5488}
+			{VolumeView "body.ply"}
+			{bone "ani2"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.9461	-0.3240
+					0.0000	0.3240	0.9461
+					0.0000	-2.4071	109.8618
+				}
+				{VolumeView "ani2.ply"}
+			}
+		}
+	}
+}
+{Obstacle "vol02"
+	{Obb2
+		{Center 0.906124 -30.2256}
+		{Extent 33.6746 53.4245}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "vol01"
+	{Obb2
+		{Center 0 70}
+		{Extent 10 10}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "vol07"
+	{Box 35.4768 65.1218 19.685}
+	{Bone "ani2"}
+	{Matrix34
+		-0.0000	-0.9797	0.2006
+		0.0000	0.2006	0.9797
+		-1.0000	0.0000	0.0000
+		-44.7730	-59.2973	0.0948
+	}
+}
+{Volume "vol05"
+	{Box 98.4252 19.685 10}
+	{Bone "ani2"}
+	{Matrix34
+		-0.0000	-1.0000	0.0047
+		-0.0000	0.0047	1.0000
+		-1.0000	0.0000	-0.0000
+		-44.3803	10.9250	10.2382
+	}
+}
+{Volume "vol04"
+	{Box 14.4109 20.7751 130}
+	{Bone "body"}
+	{Position -69.9434	-2.4017	42.4512}
+}
+{Volume "vol03"
+	{Box 36.815 34.0084 70}
+	{Bone "body"}
+	{Position -44.2597	-2.5219	69.4381}
+}
+{Volume "vol02"
+	{Box 67.3492 106.849 55}
+	{Bone "obj3"}
+	{Position -43.4742	22.8121	4.9512}
+}
+{Volume "vol01"
+	{Box 20 20 137.795}
+	{Bone "ani1"}
+	{Position 0.0161	-1.2870	-55.1372}
+}
+{Volume "vol06"
+	{Box 56.689 6.51838 90}
+	{Bone "ani3"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	0.9998	-0.0213
+		0.0000	0.0213	0.9998
+		-45.5235	-0.2268	42.2196
+	}
+}

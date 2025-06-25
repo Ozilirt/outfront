@@ -1,0 +1,81 @@
+{fx
+	{SpriteView "FlashSSP"
+		{Sprite "/fx/_BMP/Flash/FlashSSP.ebm"
+			{Light
+				{Linear
+					{min 1}
+					{max 0}
+				}
+			}
+			{ScaleX
+				{Linear
+					{min 0.3}
+					{max 0.6}
+				}
+			}
+			{ScaleY
+				{Linear
+					{min 0.3}
+					{max 0.7}
+				}
+			}
+			{timer
+				{duration 0.08}
+			}
+		}
+		{orientation trace}
+		{AutoVisible}
+	}
+	{SpriteView "FlashSSP"
+		{Sprite "/fx/_BMP/Flash/Flash.ebm"
+			{Light
+				{Linear
+					{min 1}
+					{max 0}
+				}
+			}
+			{ScaleX
+				{Linear
+					{min 0.3}
+					{max 0.7}
+				}
+			}
+			{ScaleY
+				{Linear
+					{min 0.3}
+					{max 0.6}
+				}
+			}
+			{timer
+				{duration 0.08}
+				{mode play pingpong}
+			}
+		}
+		{orientation trace}
+		{AutoVisible}
+	}
+	{LightView
+		{type point}
+		{Animator
+			{scale
+				{linear
+					{min 1}
+					{max 0.5}
+				}
+			}
+			{visibility
+				{linear
+					{min 1}
+					{max 0}
+				}
+			}
+			{Highlight 0x00A0A0A0 }
+			{timer
+				{Duration 0.06 0.02}
+			}
+		}
+		{attenuation0 0.5}
+		{radius 40}
+		{effectonground}
+	}
+}

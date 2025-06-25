@@ -1,0 +1,58 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "small" "turret" "barrel1"}
+	(include "/properties/dummy_fsm2.inc")
+	{sensor
+		{Visor "main"
+			{vision "flak38"}
+			{bone "visor"}
+		}
+	}
+
+	("crew_stan_gunner")
+
+	{Boarder
+		{place "gunner"}
+		{door "emit1"}
+		{link "emit1" "gunner"}
+	}
+
+	{Volume "body"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume "gun_rot1"
+		{thickness 5
+			{front  15}
+		}
+	}
+	{Volume "gun_rot"
+		{thickness 5}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_flak38"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet20 zenite" 48}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet20 zenite" 180}
+		}
+	}
+	{mass 3000}
+	{Extension "ubgun20.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+}

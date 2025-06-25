@@ -1,0 +1,48 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{extension "/properties/structure/truck4x4.ext"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-midcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "bodyback"
+		{thickness 4}
+	}
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "isuzu-ammo2.mdl"}
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "ammo bullet105 fg" 40}
+				{item "ammo bullet120 fg" 30}
+				{item "ammo bullet120 ap" 10}
+				{item "ammo bullet150 fg" 30}
+			}
+		}
+	)
+}

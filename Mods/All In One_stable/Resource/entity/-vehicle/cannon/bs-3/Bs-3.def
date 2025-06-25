@@ -1,0 +1,73 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "wheeled" "medium" }
+	(include "/properties/dummy_fsm.inc")
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("crew_4_human")
+	
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "100mm_D10_L54"}
+			{Mounted}
+			{weapon {ammo "ammo bullet100 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet100 ap" 15}
+			{item "bullet100 fg" 15}
+		      {item "plant" 7}
+                }
+	}
+	{mass 10000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    5} ;  kmph
+			{StartTime 		 7} ;  seconds
+			{BrakeTime 		1} ; seconds
+			{StopTime		 1} ; seconds
+			{TurnRadius     5} ;meter
+			{TurnTime		15} ; seconds
+			{TurnStart		 2}	; seconds
+			{TurnStop	   0.5}	; seconds
+		}
+	}
+
+
+
+        {Extension "Bs-3.mdl"}
+
+(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_artil"}
+			}
+		}
+	)
+
+}

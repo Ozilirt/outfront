@@ -1,0 +1,72 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors" "emit_on_attack"}
+	(include "/properties/structure/car4x4.ext")
+	{PatherId "vehicle.small"}
+
+	{Volume "Body"
+		{tags "body"}
+		{component "body"}
+		{thickness 4}   
+	}
+	{Volume "engine"
+		{thickness 2}
+	}
+
+	("crew_2_human")
+
+	("board_animation"
+		place(driver)
+		board_begin(board_gaz-m)
+		board_end(seat_driver_car)
+		base(doorright)
+	)
+
+	{boarder
+		{anm "seat"
+			{forward	{begin	"board_gaz-m_driver"} {end "seat_passenger"} {base "doorleft"}}
+			{reverse 	{end	"board_gaz-m_driver" -1} {base "doorleft" -1}}
+		}
+	}
+	
+	("crew_human"	place(seat1)	bone(seat01)	door(emit2)	animation(seat))
+	("crew_human"	place(seat2)	bone(seat02)	door(emit2)	animation(seat))
+
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "seat2"		{group "crew"}}
+		{place "seat1"		{group "crew"}}
+	}
+
+	{extender "inventory"
+		{box
+			{clear}
+			{item "type23" 2}
+		}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{mass 800}
+	{Chassis
+		{Locomotion ("locomotion")
+			{Maxspeed	38}
+			{StartTime	3}
+		}
+	}
+	{Extension "kurogane.mdl"}
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "grenade type3at" 2}
+				{item "grenade 50mm_mine" 25}
+			}
+		}
+	)
+}

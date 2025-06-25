@@ -1,0 +1,36 @@
+{game_entity
+	(include "/properties/railway_part.inc")
+	{extension "switcher/switcher.mdl"}
+
+	{props "railway_switch"}
+	{obstacleID "stuff"}
+
+	{DecalView "right"
+		{Sprite "railroad1_branch1R.ebm"}
+		{orientation normal}
+		{layer grounddecal }
+		{UseDirection }
+	}
+	{DecalView "left"
+		{Sprite "railroad1_branch1L.ebm"}
+		{orientation normal}
+		{layer grounddecal }
+		{UseDirection }
+	}
+	{DecalView "broken"
+		{Sprite "railroad1_branch1B.ebm"}
+		{orientation normal}
+		{layer grounddecal }
+		{UseDirection }
+	}
+	(include "/properties/shadow/bush.inc" sx(0.12) sy(0.25) ofsx(0) ofsy(0))
+
+	{extender "railway"
+		{LinkPoint   2 85}
+		{LinkPoint 166 75}
+		{LinkPoint 347.5 30}
+		{LinkPoint 357 85.2}
+		{path 0 3}
+		{path 0 1 2}
+	}
+}

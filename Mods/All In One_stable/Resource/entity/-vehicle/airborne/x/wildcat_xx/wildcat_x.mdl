@@ -1,0 +1,152 @@
+;Exported by: Alberto
+;Date:        Fri Nov 05 12:49:19 2010
+;File:        C:\DOCUME~1\Alberto\ESCRIT~1\f4fa\f4test.max
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=45;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_back"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-61.9571	-0.0000	18.6656
+			}
+		}
+		{bone "pivot_front"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				8.1241	0.0000	11.5477
+			}
+			{bone "WingR1"
+				{parameters "ID=wingright;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	-1.0000
+					0.0000	1.0000	0.0000
+					1.6198	25.3890	61.6693
+				}
+				{VolumeView "wingR1.ply"}
+				{bone "retract_wheelR"
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-1.0000	0.0000
+						0.0000	0.0000	1.0000
+						3.0065	82.1857	-22.9114
+					}
+					{bone "support1"
+						{Position 20.7533	0.6773	-13.6852}
+					}
+				}
+			}
+			{bone "WingL1"
+				{parameters "ID=wingleft;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	-1.0000
+					0.0000	1.0000	0.0000
+					1.7230	25.2642	-63.1184
+				}
+				{VolumeView "wingL1.ply"}
+				{bone "retract_wheelL"
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-1.0000	0.0000
+						0.0000	0.0000	1.0000
+						2.9033	-83.2401	-22.7866
+					}
+					{bone "support2"
+						{Position 20.7533	-0.6098	-13.6852}
+					}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	-1.0000
+				-23.7619	-0.3148	47.9191
+			}
+			{VolumeView "body.ply"}
+			{bone "cabine"
+				{parameters "CommonMesh;ID=cabine;"}
+				{Position 31.8609	-0.0291	-10.0766}
+				{VolumeView "cabine.ply"}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					79.2354	0.1042	10.9584
+				}
+				{VolumeView "engine.ply"}
+				{bone revolute "propeller"
+					{parameters "CommonMesh;ID=propeller;"}
+					{Matrix34
+						0.0000	-1.0000	0.0000
+						0.0000	0.0000	1.0000
+						-1.0000	0.0000	0.0000
+						13.7190	-0.1966	-0.5484
+					}
+					{VolumeView "propeller.ply"}
+				}
+				{bone revolute "visor"
+					{limits -15.0000 15.0000}
+					{speed 0.0300}
+					{Position 10.5637	-0.1409	10.9613}
+					{bone "foresight3"
+						{Position 1.2320	0.0000	0.0000}
+					}
+				}
+			}
+			{bone "ruedas_out"
+				{parameters "ID=body;"}
+				{Position 56.7265	-0.0100	30.7502}
+				{VolumeView "ruedas_out.ply"}
+			}
+			{bone "ruedas_in"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					56.1963	1.7453	18.3808
+				}
+				{VolumeView "ruedas_in.ply"}
+			}
+			{bone "body_back"
+				{parameters "ID=body_back;"}
+				{Position -58.6815	-0.4725	1.9223}
+				{VolumeView "body_back.ply"}
+				{bone "rudder"
+					{parameters "ID=body_back;"}
+					{Position -14.9828	-0.2696	-10.8079}
+					{VolumeView "rudder.ply"}
+				}
+				{bone "elevator"
+					{parameters "ID=body_back;"}
+					{Position -15.5502	-0.0427	-1.0578}
+					{VolumeView "elevator.ply"}
+				}
+				{bone "support3"
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-1.0000	0.0000
+						0.0000	0.0000	-1.0000
+						1.5678	0.7873	25.6828
+					}
+				}
+			}
+		}
+	}
+}

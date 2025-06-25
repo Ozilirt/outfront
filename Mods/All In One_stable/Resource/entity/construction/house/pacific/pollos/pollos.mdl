@@ -1,0 +1,78 @@
+;Exported by: dinsen
+;Date:        Sun Mar 27 17:22:10 2011
+;File:        (null)
+{Skeleton
+	{animation
+		{sequence "start" {autostart}}
+	}
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "barra"
+			{Position 12.2903	0.0358	14.3820}
+			{VolumeView "barra.ply"}
+			{bone "pollo2"
+				{Position -8.2338	0.0489	-0.8988}
+				{VolumeView "pollo2.ply"}
+			}
+			{bone "pollo1"
+				{Position -17.6598	-0.2432	-0.8147}
+				{VolumeView "pollo1.ply"}
+			}
+		}
+	}
+}
+{Volume "body1"
+	{Box 0.711707 8.30324 0.854048}
+	{Bone "body"}
+	{Matrix34
+		1.9773	0.0000	-0.1036
+		0.1036	-0.0000	1.9773
+		-0.0000	-1.9800	-0.0000
+		12.0141	-0.4488	8.4208
+	}
+}
+{Volume "body"
+	{Box 0.711706 8.44558 0.806601}
+	{Bone "body"}
+	{Matrix34
+		1.9800	0.0000	0.0000
+		0.0000	-0.0000	1.9800
+		0.0000	-1.9800	-0.0000
+		-12.7582	1.1952	8.2799
+	}
+}
+{Volume "barra"
+	{Box 16.7963 0.569365 0.427024}
+	{Bone "barra"}
+	{Matrix34
+		1.9800	-0.0000	-0.0000
+		-0.0000	-0.0000	1.9800
+		0.0000	-1.9800	-0.0000
+		-12.4129	0.0535	0.1922
+	}
+}
+{Volume "pollo1"
+	{Sphere 1.42873}
+	{Bone "pollo1"}
+	{Matrix34
+		1.9800	0.0000	0.0000
+		0.0000	-0.0000	1.9800
+		0.0000	-1.9800	-0.0000
+		-0.6418	0.6041	0.0526
+	}
+}
+{Volume "pollo2"
+	{Sphere 1.42873}
+	{Bone "pollo2"}
+	{Matrix34
+		1.9800	0.0000	0.0000
+		0.0000	-0.0000	1.9800
+		0.0000	-1.9800	-0.0000
+		-0.6299	0.3121	0.1367
+	}
+}

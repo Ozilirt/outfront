@@ -1,0 +1,49 @@
+;Exported by: garry
+;Date:        Fri Mar 19 17:00:09 2004
+;File:        \\TERM\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon.max
+{Skeleton
+	{bone "Thompson"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Thompson.ply"}
+		{bone "Foresight3"
+			{Matrix34
+				0.9976	-0.0698	-0.0000
+				0.0698	0.9976	0.0000
+				-0.0000	-0.0000	1.0000
+				12.2195	0.6668	0.0093
+			}
+		}
+		{bone "handle"
+			{Matrix34
+				0.9976	-0.0698	0.0000
+				0.0000	-0.0000	-1.0000
+				0.0698	0.9976	-0.0000
+				6.3669	1.3583	0.0317
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 22.9654 11.0459 4.99249}
+	{Bone "Thompson"}
+	{Matrix34
+		0.9976	-0.0698	0.0000
+		0.0698	0.9976	0.0000
+		-0.0000	-0.0000	1.0000
+		3.4326	-0.9925	0.3172
+	}
+}
+{Volume "body"
+	{Box 16.3055 6.53143 2.69594}
+	{Bone "Thompson"}
+	{Matrix34
+		0.9976	-0.0698	0.0000
+		0.0698	0.9976	0.0000
+		-0.0000	-0.0000	1.0000
+		3.1194	-0.9706	0.2033
+	}
+}

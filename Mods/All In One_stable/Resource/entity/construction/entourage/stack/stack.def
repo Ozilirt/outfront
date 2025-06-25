@@ -1,0 +1,44 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{Extension "stack.mdl"}
+	{props "stack"}
+	{TexMods
+    	{"Autumn" "aut"	  }
+		{"burned" "burned"}
+	}
+	{volume	"stack"
+		{thickness 3}
+		{tags "body"}
+	}
+	{volume "body"
+		{thickness 3}
+		{able {touch}}
+	}
+	("declare_fire_volumes")	
+;	{DecalView
+;	{OwnerShadow stencil 64 64}
+;	{Sprite "/properties/shadow/round2.ebm"
+;  		{PrescaleX 2.1 }
+;  		{PrescaleY 2.1 }
+;		{Visibility 0.7}
+;		{PreshiftX -30}
+;		{PreshiftY -40}
+;	}
+;	{name "shadow"}
+;	{UseDirection}    
+;	{layer groundshadow}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+{extender "inventory"
+	{box
+		{size 5 2}
+		{weight 1000}
+	}
+}
+
+
+
+}

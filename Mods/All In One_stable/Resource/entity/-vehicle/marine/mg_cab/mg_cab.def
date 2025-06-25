@@ -1,0 +1,17 @@
+{game_entity
+	(include "/properties/construction.inc")
+	(include "/properties/shadow/construction.inc" sx(0.4) sy(1.0) ofsx(0) ofsy(0))
+	{Extension "mg_cab.mdl"}
+
+	{props "steel" "parts" "construction"}
+
+	{Volume "cab"
+		{tags "body"}
+		{thickness hollow 10}
+	}
+	{Placer
+		{place "1"
+			{Linkbone "attach"}
+		}
+	}
+}

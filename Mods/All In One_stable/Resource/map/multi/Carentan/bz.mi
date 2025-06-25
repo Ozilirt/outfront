@@ -1,0 +1,257 @@
+{mission
+	{Camera
+		{Position 2572.92 4907.95}
+		{Distance 2750}
+		{ViewAngle 0.439824}
+		{YawAngle -15.105}
+	}
+	{Environment "main-rus"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "flag_point" 0x8001
+		{Position 2562.91 4232.86 0}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 1}
+	}
+	{Entity "flag_point" 0x8002
+		{Position 3763.55 5896.2 0}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 2}
+	}
+	{Entity "flag_point" 0x8003
+		{Position 3104.11 2341 0}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 3}
+	}
+	{Entity "flag_point" 0x8004
+		{Position 4557.88 3811.05 0}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 8}
+	}
+	{Entity "flag_point" 0x8005
+		{Position 2931.46 5492.86 0}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 1}
+		{MID 13}
+	}
+	{Entity "start_point" 0x8812
+		{Position 866.673 1765.33 0}
+		{Turn 47.3321}
+		{Extender "start_point"
+			{mapPoint "xteam"}
+		}
+		{Player 1}
+		{MID 12}
+	}
+	{Entity "start_point" 0x8809
+		{Position 6002.12 7737.82 0}
+		{Turn -128.639}
+		{Extender "start_point"
+			{mapPoint "zteam"}
+		}
+		{Player 1}
+		{MID 9}
+	}
+	{Entity "map_point" 0x8805
+		{Position 722.303 1622.7 0}
+		{Turn 46.2215}
+		{Extender "map_point"
+			{name "xteam"}
+			{caption "xteam"}
+			{visor SpawnPoints}
+			{teams "x"}
+			{unitset "reg"}
+		}
+		{Player 1}
+		{MID 5}
+	}
+	{Entity "map_point" 0x8806
+		{Position 6149.21 7894.72 0}
+		{Turn -121.212}
+		{Extender "map_point"
+			{name "zteam"}
+			{caption "zteam"}
+			{visor SpawnPoints}
+			{teams "z"}
+			{unitset "reg"}
+		}
+		{Player 1}
+		{MID 7}
+	}
+	{Entity "side_star" 0x8008
+		{Position 2562.8 4232.84 131.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8009
+		{Position 3763.44 5896.18 131.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8000
+		{Position 3104 2340.98 131.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8006
+		{Position 4557.77 3811.03 131.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8007
+		{Position 2931.35 5492.84 131.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "birds" 0x800a
+		{Position 1211.23 2053.34 0}
+		{Extender "speaker"
+			{SoundName "world.birds01"}
+		}
+	}
+	{Entity "birds" 0x800b
+		{Position 5762.21 7330.29 0}
+		{Extender "speaker"
+			{SoundName "world.birds01"}
+		}
+	}
+	{Entity "birds" 0x9000
+		{Position 4307.5 6687.47 0}
+		{Extender "speaker"
+			{SoundName "world.nature"}
+		}
+	}
+	{Entity "birds" 0x9001
+		{Position 2210.02 6118.44 -109}
+		{Extender "speaker"
+			{SoundName "world.birds02"}
+		}
+	}
+	{Entity "birds" 0x9002
+		{Position 5023.68 2316.67 0}
+		{Extender "speaker"
+			{SoundName "world.birds03"}
+		}
+	}
+	{Entity "birds" 0x9003
+		{Position 3061.09 2253.48 0}
+		{Extender "speaker"
+			{SoundName "world.nature"}
+		}
+	}
+	{Entity "landing" 0x800c
+		{Position 4135.33 4179.95 0}
+		{Extender "speaker"
+			{SoundName "battle.can00"}
+		}
+	}
+	{Entity "birds" 0x800d
+		{Position 3666.18 4313.82 0}
+		{Extender "speaker"
+			{SoundName "world.chepel"}
+		}
+	}
+	{Link 0x8008 To 0x8001 "side_pointer"}
+	{Link 0x8009 To 0x8002 "side_pointer"}
+	{Link 0x8000 To 0x8003 "side_pointer"}
+	{Link 0x8006 To 0x8004 "side_pointer"}
+	{Link 0x8007 To 0x8005 "side_pointer"}
+	{Helpers
+		{trigger "1"
+			{actions
+				{"task"
+					{name "task00"}
+				}
+			}
+		}
+		{waypoints
+		}
+		{task
+			{name "task00"}
+			{desc "mission/mp/suburb/vp"}
+			{primary}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

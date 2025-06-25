@@ -1,0 +1,17 @@
+{game_entity
+	{Extension "boxes3.mdl"}
+	{mass 20}
+	{props "wood" "inventory_box"}
+	{ObstacleID "stuff"}
+	{colliderID "construction"}
+	{Volume "box"
+		{thickness 1}
+		{able {touch}}
+	}
+	{extender "inventory"
+		{box
+			{weight 3000}
+			{size 8 6}
+		}
+	}
+}

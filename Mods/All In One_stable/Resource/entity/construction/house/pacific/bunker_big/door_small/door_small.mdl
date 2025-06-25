@@ -1,0 +1,130 @@
+;Exported by: Dinsen
+;Date:        Sun Jan 22 21:15:33 2012
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\bunker call\Nueva carpeta\puerta_small.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.2} {resume}}
+	}
+	{bone "door_small"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "door1"
+			{Position -24.8302	0.2859	37.2640}
+			{VolumeView "door1.ply"}
+		}
+		{bone "door5"
+			{Position -124.6697	1.4690	37.2073}
+			{VolumeView "door5.ply"}
+			{bone "Box"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					6.5539	-0.4098	-23.0388
+				}
+				{VolumeView "Box.ply"}
+			}
+		}
+		{bone "door2"
+			{Position 24.7287	0.3140	37.9188}
+			{VolumeView "door2.ply"}
+		}
+		{bone "door4"
+			{Position 74.2099	0.8064	38.3154}
+			{VolumeView "door4.ply"}
+		}
+		{bone "door6"
+			{Position 124.3351	1.2859	38.5316}
+			{VolumeView "door6.ply"}
+		}
+		{bone "door3"
+			{Position -74.3470	0.7612	37.2485}
+			{VolumeView "door3.ply"}
+		}
+		{bone "open_point"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-118.0000	-11.0000	0.0000
+			}
+		}
+	}
+}
+{Obstacle "open1"
+	{Obb2
+		{Center -100.809 -1.51755}
+		{Extent 38.827 2.92025}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "open"
+	{Obb2
+		{Center 100.878 -1.32752}
+		{Extent 37.1087 3.11249}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "close"
+	{Obb2
+		{Center -0.433807 -1.46666}
+		{Extent 139.308 2.92025}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "door3"
+	{Box 49.8209 10 75.6165}
+	{Bone "door3"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "door6"
+	{Polyhedron "door6.vol"}
+	{Bone "door6"}
+	{Position 0.0000	0.0001	0.0000}
+}
+{Volume "door4"
+	{Box 49.7889 10 76.4878}
+	{Bone "door4"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "door2"
+	{Box 49.8245 10 76.062}
+	{Bone "door2"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "switch"
+	{Box 6.2336 5.96891 24.3348}
+	{Bone "Box"}
+	{Matrix34
+		0.4937	0.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.0000	0.4190	0.0000
+		-1.7770	0.0000	2.9845
+	}
+}
+{Volume "switch2"
+	{Box 6.2336 5.96891 24.3348}
+	{Bone "Box"}
+	{Matrix34
+		0.4937	0.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.0000	0.4190	0.0000
+		1.8770	0.0000	2.9845
+	}
+}
+{Volume "door5"
+	{Polyhedron "door5.vol"}
+	{Bone "door5"}
+	{Position 0.0000	-0.0000	-0.0000}
+}
+{Volume "door1"
+	{Box 49.8172 10 75.61}
+	{Bone "door1"}
+	{Position 0.0000	-0.0000	0.0000}
+}

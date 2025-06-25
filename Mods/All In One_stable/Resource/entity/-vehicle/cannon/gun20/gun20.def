@@ -1,0 +1,42 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "small" "turret_rotator"}
+	(include "/properties/dummy_fsm2.inc")
+
+	{simulation {able 0}}
+
+	("crew_stan_gunner")
+	
+	{Boarder
+		{place "gunner"}
+		{door "emit1"}
+		{link "emit1" "gunner"}
+	}
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+	{Volume "gun_rot"
+		{thickness 10}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_kwk30"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet20 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet20 ap" 60}
+		}
+	}
+	{mass 10000}
+	{Extension "gun20.mdl"}
+
+}

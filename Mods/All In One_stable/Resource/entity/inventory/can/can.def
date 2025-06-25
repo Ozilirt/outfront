@@ -1,0 +1,13 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{extension "can.mdl"}
+	{extender "stuff"
+		{item "can" filling "fuel" 20}
+	}
+	{props "can" "capacity"}
+	{collidewith "-vehicle" "-armored" "-tank"}
+	{nocontactwith "vehicle" "armored" "tank"}
+	{volume "body"
+		{thickness 3}
+	}
+}

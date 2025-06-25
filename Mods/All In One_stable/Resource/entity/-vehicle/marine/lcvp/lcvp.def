@@ -1,0 +1,81 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.5) scaleY(2.0))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(1.8) scaley(1.0))
+	{mass 15000}
+	{props "vehicle" "marine" "emit_on_sink"}
+	{patherID "shallow water"}
+	{rejectColliderByVolume}
+	{extension "crew.ext"}
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 5}
+	}
+	{Volume "land1"
+		{tags "body"}
+		{Thickness 10}
+	}
+	{Volume "body"
+		{tags "body"}
+		{Thickness 10}
+	}
+	{Volume "body01"
+		{component "body"}
+		{tags "body"}
+		{Thickness 10}
+	}
+	{Volume "body02"
+		{component "body"}
+		{tags "body"}
+		{Thickness 10}
+	}
+	{Volume "body03"
+		{component "body"}
+		{tags "body"}
+		{Thickness 10}
+	}
+	{Volume "body2"
+		{component "body"}
+		{Thickness 10}
+	}
+	{Volume "rampa"
+		{Thickness 10}
+	}
+	{component "body"
+		{able {break_by_pierce}}
+	}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "50cal"}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 110}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{Box
+			{size 8 6}
+			{item  "ammo mgun2" 440}
+		}
+	}
+	{sensor
+		{Visor "main"
+			{vision "airbag3-main"}
+			{bone "visor1"}
+		}
+		{Visor "gunner"
+			{vision "airbag3-gunner"}
+			{bone "visor2"}
+		}
+	}
+	{extension "lcvp.mdl"}
+	{chassis
+		{Locomotion ("locomotion")
+			{TurnRadius	10}
+		}
+	}
+}

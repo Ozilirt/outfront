@@ -1,0 +1,59 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	(include "/properties/structure/cannon_100.ext")
+	{props "vehicle" "cannon" "460mm" "turret_rotator"}
+	(include "/properties/dummy_fsm2.inc")
+	("crew_2_human")
+	{colliderID "construction"}
+	{obstacleID "tank"}	
+
+	{volume "turret"
+		{tags "turret"}
+		{thickness 280}
+		{component "turret"}
+	}
+	{Volume "gun1"
+		{tags "gun"}
+		{thickness 280}
+		{component "gun"}
+	}
+	{Volume "gun2"
+		{tags "gun"}
+		{thickness 280}
+		{component "gun"}
+	}
+	{Volume "gun3"
+		{tags "gun"}
+		{thickness 280}
+		{component "gun"}
+	}
+
+	{component "gun"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 30}
+	}
+	{component "turret"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 35}
+	}
+
+	{Weaponry
+		{place "gun"
+			{foresight "foresight1"}
+			{DefaultWeapon "460mm_type94"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet460" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet460" 33 {cell 0 0}}
+		}
+	}
+	{mass 30000}
+	{Extension "yamato_gun_460.mdl"}
+}

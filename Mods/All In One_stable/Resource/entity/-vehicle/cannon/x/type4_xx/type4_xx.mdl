@@ -1,0 +1,103 @@
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -0.0982	-0.1784	4.3469}
+			{VolumeView "Body.ply"}
+			{bone "part2"
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part3"
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "part3.ply"}
+			}
+			{bone "part4"
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "part4.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{speed 0.0130}
+				{Position 0.0000	0.0000	16.1466}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -60.0000 10.0000}
+					{speed 0.0045}
+					{Matrix34
+						0.7156	0.0000	0.6985
+						-0.6985	0.0000	0.7156
+						0.0000	-1.0000	0.0000
+						-7.0990	0.1163	15.9265
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "part1"
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							-10.0347	1.4825	-0.0194
+						}
+						{VolumeView "part1.ply"}
+					}
+				}
+			}
+		}
+	}
+}
+{Volume "body1"
+	{Box 69.482 4.52468 8.66051}
+	{Bone "Body"}
+	{Position -1.5335	-0.2899	5.3834}
+}
+{Volume "body2"
+	{Box 69.482 4.52468 8.66051}
+	{Bone "Body"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.1665	0.0101	5.5834
+	}
+}
+{Volume "part1"
+	{Cylinder 1.59074 57.607}
+	{Bone "part1"}
+	{Matrix34
+		0.0024	-0.9987	-0.0510
+		-0.0004	-0.0511	0.9987
+		-1.0000	-0.0024	-0.0006
+		46.7092	0.0078	0.6087
+	}
+}
+{Volume "body3"
+	{Box 18.482 36.5247 20.6605}
+	{Bone "Body"}
+	{Position -35.1335	-0.1899	5.8834}
+}
+{Volume "part2"
+	{Box 6.482 27.5247 9.6605}
+	{Bone "part2"}
+	{Position 0.2000	-28.2000	4.4000}
+}
+{Volume "part3"
+	{Box 18.482 4.5247 18.3605}
+	{Bone "part3"}
+	{Position -35.2400	16.1300	7.0000}
+}
+{Volume "part4"
+	{Box 18.482 36.5247 20.6605}
+	{Bone "part4"}
+	{Position 31.8665	0.0101	6.0834}
+}
+{Volume "turret"
+	{Box 19.2684 15.9982 26.7271}
+	{Bone "turret"}
+	{Position 0.3579	0.1222	6.8475}
+}

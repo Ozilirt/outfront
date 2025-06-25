@@ -1,0 +1,125 @@
+{entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{Extension "Rolls_Royce.mdl"}
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled"}
+	(include "/properties/tank_crew.ext")
+	{PatherId "vehicle.small"}
+              	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 9}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 9}
+	}
+	{volume "engine"
+		{thickness 8}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 9}
+	}
+	{Volume "wheelleftZ"
+		{thickness 6}
+	}
+	{volume "wheelrightZ"
+		{thickness 6}
+	}
+	{volume "Kuzov"
+		{thickness 6}
+	}
+	{Volume "lamp1"
+		{thickness 2}
+	}
+	{Volume "lamp2"
+		{thickness 2}
+	}
+
+	{component "turret"
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(driver))
+	("crew_human" 			place(gunner)		door1(emit1) door2(emit2) visor(main))
+	("crew_human" 			place(charger)		door1(emit1) door2(emit2) visor(main))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+	
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "Vickers_Mk_I"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	} 
+ 	{sensor
+		{Visor "crew"
+		      {vision "Visor_BTR"}
+		}  
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{Box
+			{item "ammo mgun" 900}
+		}
+	}
+	{extender "light"
+		{lightfx "light_boat"}
+		{breakfx "glass_hit"}
+		{lamp "1" off}
+		{lamp "2" off}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	{mass 3860}
+	{Chassis
+		{speed
+			{Slow	19}
+			{Normal 24}
+			{Fast	27}
+		}
+		{FuelBag
+			{volume 98}	; liters
+			{rate 32}  	; liters per kilometer
+			{remain 98}
+			{fuel "fuel"}
+		}
+		{Locomotion ("locomotion")
+			{Maxspeed 27}
+			{StartTime	6}		; время разгона до макс. скорости с 0, seconds
+		}
+	}
+}

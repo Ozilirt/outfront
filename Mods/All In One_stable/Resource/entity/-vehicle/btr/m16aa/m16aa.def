@@ -1,0 +1,135 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "m16aa.mdl"}
+	{props "vehicle" "armored_car" "tank" "50cal_tank" "turret" "turret_rotator" "wheeled" "explosion_throw_crew"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-midcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+	{boarder
+		{anm "gunner"
+			{forward	{begin	"board_body"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+	
+	("crew_human"		place(gunner)	bone(gunner)	door(emit3)		animation(gunner))
+
+	{placer
+		{place "driver"		{visor "driver"} {group "crew"}}
+		{place "commander"	{group "crew"}}
+		{place "gunner"		{visor "main"} {group "crew"} {worker charger}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "Quad_50cal"}
+			{Barrels 4}
+			{Mounted}
+			{weapon {ammo "bullet12.7 zenite" 440}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet12.7 zenite" 2200}
+		}
+	}
+	{Sensor
+		{Visor "crew"
+		      {vision "Visor_BTR"}
+                 	{bone "visor1"}
+		}
+		{Visor "driver"
+			{vision "apc-driver"}
+			{bone "visor2"}
+		}
+	}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 20}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 20}
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 20}
+	}
+	{volume "engine"
+		{thickness 22}
+	}
+	{volume "turret"
+		{thickness 25}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+	
+	{Chassis
+		{speed
+				{Slow	15	}
+				{Normal	23	}
+				{Fast	27	}
+			}
+	{FuelBag
+          {volume 180 }	; liters
+	    {rate    60 }   	; liters per kilometer
+	    {remain 180 }
+          {fuel "fuel"}
+        }
+
+		{Locomotion ("locomotion")
+			{Maxspeed 27}
+			{StartTime	3}		; время разгона до макс. скорости с 0, seconds
+		}
+	}
+	{Chassis
+	; left track must be first
+   		{Track "left"
+			{Tracer
+				{View "tracks"}
+				{Bone "FXtraceL1"}
+				{Step 0.7}			; in meters
+   		 	}
+			{TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 0.6}		; meters per animation
+   		 	}
+   		}
+   		{Track "right"
+			{Tracer 
+			   	{View "tracks"}
+   		 		{Bone "FXtraceR1"}
+   		 		{Step 0.7}			; in meters
+			}
+			{TextureScroller
+		    	{Bone "TrackR"}	
+		 		{Length 0.6}		; meters per animation
+	 		}
+ 		}
+	}
+	{mass 7500}
+}

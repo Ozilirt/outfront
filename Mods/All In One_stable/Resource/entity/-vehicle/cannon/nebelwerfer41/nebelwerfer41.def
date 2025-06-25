@@ -1,0 +1,74 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "turret" "nebelwerfer"}
+	{props "emit_on_attack"}
+	(include "/properties/dummy_fsm.inc")
+;	{simulation {able 0}}
+
+	{TexMods
+ 		{"ambush" "1"}
+		{"ambush1" "2"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+
+	("crew_2_human")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "weapon nebel"}
+			{Barrels 6}
+			{Mounted}
+			{weapon {ammo "ammo nebel" 6}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo nebel" 30}
+		}
+	}
+
+	{mass 10000}
+	{Extension "Nebelwerfer41.mdl"}
+ 	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed	4} ; kmph
+			{StartTime	8} ; seconds
+			{BrakeTime	2} ; seconds
+			{StopTime	3} ; seconds
+			{TurnRadius	10} ; meter
+			{TurnTime	15} ; seconds
+			{TurnStart	5} ; seconds
+			{TurnStop	1} ; seconds
+		}
+	}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+
+}

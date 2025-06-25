@@ -1,0 +1,77 @@
+;Done by Dinsen & Albus
+;Date:        Sat May 24 21:08:19 2008
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	0.0000	1.0000
+			0.0000	1.0000	0.0000
+		}
+		{VolumeView "body.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -5.3415 -0.4083}
+		{Extent 99.9645 64.2047}
+		{Axis 0 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 91.2000 72.0000}
+		{Extent 3.1645 8.2047}
+		{Axis 0 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 91.2000 -72.0000}
+		{Extent 3.1645 8.2047}
+		{Axis 0 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -102.5000 72.0000}
+		{Extent 3.1645 8.2047}
+		{Axis 0 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -102.5000 -72.0000}
+		{Extent 3.1645 8.2047}
+		{Axis 0 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 200.776 160.077 130.443}
+	{Bone "body"}
+	{Position -5.5000	80.0000	0.0000}
+}
+{Volume "body1"
+	{Box 6.576 50.077 15.743}
+	{Bone "body"}
+	{Position 91.2000	25.0000	72.0000}
+}
+{Volume "body2"
+	{Box 6.576 50.077 15.743}
+	{Bone "body"}
+	{Position 91.2000	25.0000	-72.0000}
+}
+{Volume "body3"
+	{Box 6.576 50.077 15.743}
+	{Bone "body"}
+	{Position -102.5000	25.0000	72.0000}
+}
+{Volume "body4"
+	{Box 6.576 50.077 15.743}
+	{Bone "body"}
+	{Position -102.5000	25.0000	-72.0000}
+}

@@ -1,0 +1,71 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret" "wheeled"}
+	(include "/properties/dummy_fsm.inc")
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+	{TexMods
+ 		{"ambush" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("crew_4_human")
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mmM8"}
+			{RestoreIKAfterAim}
+			{Mounted}
+                  {weapon {ammo "ammo bullet75 fg" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+		      {item "ammo bullet75 fg" 25}
+		      {item "plant" 5}
+            }
+	}
+	{mass 10000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	     8} ;  kmph
+			{StartTime 		 7} ;  seconds
+			{BrakeTime 		2} ; seconds
+			{StopTime		 1.5} ; seconds
+			{TurnRadius     7} ;meter
+			{TurnTime		15} ; seconds
+			{TurnStart		 3}	; seconds
+			{TurnStop	   1}	; seconds
+		}
+	}
+
+        {Extension "M8.mdl"}
+
+(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+
+}
+  
+

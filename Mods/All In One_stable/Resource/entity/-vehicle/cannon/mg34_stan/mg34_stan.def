@@ -1,0 +1,17 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}
+	{extender "inventory"
+		{box
+			{item "ammo mgun" 150}
+		}
+	}
+	{Extension "mg34_stan.mdl"}
+}

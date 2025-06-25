@@ -1,0 +1,119 @@
+;Exported by: Albus
+;Date:        Tue Aug 23 12:47:58 2011
+;File:        C:\ARCHIV~1\3dsMax8\scenes\YA467F~1.MAX
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{parameters "ID=turret;"}
+			{limits -100.0000 100.0000}
+			{speed 0.0010}
+			{Position 0.1652	0.0687	-39.0466}
+			{VolumeView "turret.ply"}
+			{bone revolute "gun_rot"
+				{parameters "ID=gun;"}
+				{limits -10.0000 10.0000}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					101.1646	-0.4055	87.9376
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "gun"
+					{parameters "ID=gun;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	1.0000	0.0000
+						224.4829	-7.0156	86.6012
+					}
+					{VolumeView "gun.ply"}
+				}
+				{bone "part2"
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	1.0000	0.0000
+						224.4829	-7.0194	86.6012
+					}
+					{VolumeView "part2.ply"}
+				}
+				{bone "part1"
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	1.0000	0.0000
+						224.4829	-7.0233	86.6032
+					}
+					{VolumeView "part1.ply"}
+				}
+			}
+			{bone "part3"
+				{Position -177.4913	193.3506	99.8398}
+				{VolumeView "part3.ply"}
+			}
+			{bone "part4"
+				{Position -181.5101	-43.2717	143.2735}
+				{VolumeView "part4.ply"}
+			}
+		}
+	}
+}
+{Obstacle "obstacle3"
+	{Obb2
+		{Center -35.5227 -1.66023}
+		{Extent 239.97 208.702}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "part4"
+	{Polyhedron "part4.vol"}
+	{Bone "part4"}
+	{Position -3.6794	-0.0694	19.9437}
+}
+{Volume "part3"
+	{Polyhedron "part3.vol"}
+	{Bone "part3"}
+	{Position -1.3455	-0.9805	-1.0703}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Position -29.1866	-1.7199	41.6112}
+}
+{Volume "part1"
+	{Box 486.201 40.633 253.866}
+	{Bone "part1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	0.1423
+		0.0000	0.0077	4.6089
+	}
+}
+{Volume "part2"
+	{Box 486.201 40.633 253.866}
+	{Bone "part2"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	0.1423
+		0.0000	83.9775	4.6060
+	}
+}
+{Volume "gun1"
+	{Box 486.201 40.633 253.866}
+	{Bone "gun"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	0.1423
+		0.0000	166.3836	4.5983
+	}
+}

@@ -1,0 +1,102 @@
+;SDL
+
+;//////////////////////////////////////////////////////////////////////////////
+(define "crew_inside"
+	{boarder
+		{anm "gunner"
+			{forward	{end "squat_from_stand_empty"}}
+		}
+		{anm "commander"
+			{forward	{end "squat_from_stand_empty"}}
+		}
+		{anm "passenger"
+			{forward	{end "squat_from_stand_empty"}}
+		}
+		{anm "passenger2"
+			{forward	{end "seat_gunner_stand"}}
+		}
+	}
+)
+(define "crew_insidecrane"
+	{boarder
+		{door "emit" {queue 0}}
+		{node "node_bottom"}
+		{node "node_top"}
+		{anm "ladder_bind"
+			{forward	{begin	"stand_climb_stairs"}}
+			{reverse	{end	"stand_climb_stairs" -1}}
+		}
+		{anm "ladder"
+			{forward	{speed 1.2} {loop "stand_upstairs"}}
+			{reverse	{speed 1.2} {loop "stand_upstairs" -1}}
+		}
+		{link "emit" "node_bottom" {anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_bottom" "node_top" {anm "ladder"} {forward puton} {reverse putoff}}
+	}
+)
+(define "crew_human"
+	{placer
+		{place "%place" {group "%place"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+(define "crew_crane"
+	{placer
+		{place "%place" {group "%place"} {linkbone "%bone"} {turnoff {sensor} {visible}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+(define "crew_2_human"
+	("crew_inside")
+	("crew_human" place(gunner)		bone(gunner)	door(emit1) animation(gunner))
+	("crew_human" place(commander)	bone(commander)	door(emit2) animation(commander))
+)
+(define "crew_3_human"
+	("crew_inside")
+	("crew_human" place(gunner)		bone(gunner)	door(emit1) animation(gunner))
+	("crew_human" place(commander)	bone(commander)	door(emit2) animation(commander))
+	("crew_human" place(charger)		bone(charger) door(emit3) animation(passenger2))
+)
+(define "crew_4_human"
+	("crew_inside")
+	("crew_human" place(gunner)		bone(gunner) door(emit1) visor(main) animation(gunner))
+	("crew_human" place(charger)		bone(charger) door(emit2) visor(driver) animation(commander))
+	("crew_human" place(driver)	bone(driver) door(emit3) animation(passenger)) 
+	("crew_human" place(commander)	bone(commander)	door(emit4) animation(passenger))
+)
+(define "crew_gunner"
+	("crew_inside")
+	("crew_human" place(gunner)		bone(gunner)	door(emit) animation(gunner))
+)
+(define "crew_bigcrane"
+	("crew_insidecrane")
+	("crew_crane" place(gunner)		bone(node_top)	door(emit) animation(ladder))
+)
+
+(define "stand_human"
+	{placer
+		{place "%place" {group "%place"} {linkbone "%bone"} {turnoff {sensor}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff}}
+	}
+)
+
+(define "crew_stan_gunner"
+	{boarder
+		{anm "gunner"
+			{forward	{end "seat_gunner_stand"}}
+		}
+	}
+	("stand_human" place(gunner)	bone(gunner)	door(emit) animation(gunner))
+)
+{placer
+	{place "gunner" {worker charger}}
+}

@@ -1,0 +1,126 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "self_propelled" "-turret" "average"}
+		
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		    {front  35 0.3}
+			{top	10}
+			{bottom	8}
+			{rear   10}
+		}   
+	}
+      {volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		    {front  35 0.3}
+			{top	10}
+			{bottom	8}
+			{rear   10}
+		}   
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		    {front  35 0.25}
+			{top	10}
+			{bottom	8}
+			{rear   10}
+		}   
+	}
+
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "76mm_zis3"}
+			{Mounted}
+			{weapon {ammo "ammo bullet76 ap" 1}}
+		}
+		
+	}
+	
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+     
+	("crew_human" 			place(driver)		door1(emit2) door2(emit2) visor(main))
+	("crew_human_visible" 			place(gunner)		door1(emit1) door2(emit1) visor(main))
+	("crew_human_visible" 	place(commander)	door1(emit1) door2(emit1) visor(main))
+	("crew_human_visible" 			place(charger)		door1(emit1) door2(emit1) visor(main))
+
+	{sensor
+		{visor "main"
+			{vision "stug4g-main"}
+			{bone "visor1"}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet76 ap" 30}
+			{item "ammo bullet76 fg" 30}
+		}
+	}
+	
+	{mass 23900}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    20} ; максимальная скорость, kmph
+			{StartTime 		 7} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		1} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		15} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{Extension "su76m.mdl"}
+
+	{Bone "turret" {speed 0.02}}
+
+	(mod "mp"
+		{Chassis
+			{FuelBag
+			{volume 310 }	; liters
+			{rate	155}   ; liters per kilometer
+			{remain 310 }
+			{fuel "fuel"}
+			}
+			{Locomotion ("locomotion")
+				{maxspeed 24}
+			}
+			{speed
+				{Slow	18	}
+				{Normal	20	}
+				{Fast	24	}
+			}
+		}
+            {sensor
+			{Visor "main"
+				{vision "Visor_CAY"}
+			}
+
+		}
+
+	)
+
+}

@@ -1,0 +1,62 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "with_gun"}
+	{TexMods
+		{"ambush" "1"}
+	}
+	{extension "crew.ext"}
+	
+	{volume "body"
+		{thickness 15}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 10
+			{front 15}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mg13"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 25}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 300}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+	("wheel" args "wheelright4")
+	("wheel" args "wheelleft4")
+
+	{mass 8500}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "sdkfz263.mdl"}
+}
+ 

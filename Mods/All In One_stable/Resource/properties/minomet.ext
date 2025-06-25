@@ -1,0 +1,56 @@
+;SDL только для миномета, шоб ездил
+actor
+
+(include "vehicle2.ext")
+(include "minomet_crew.ext")
+
+{Weaponry
+	{place "gun"
+		{Rotate}
+	}
+
+	
+}
+{extender "inventory"
+	{box
+		{size 8 6}
+		{weight 10000}
+	}
+}
+
+{props "cannon_ai" "with_gun"}
+
+{obstacleID "car" "operatable"}
+{obstacleID "car_empty" "empty"}
+{obstacleID "car_broken" "broken"}
+
+{sensor
+	{visor "main"
+		{vision "tank-main"}
+		{bone "visor"}
+	}
+
+}
+
+{placer	{place "gunner" {visor "main"} {useVision} {worker charger}}}	
+
+{volume "body"
+	{thickness 10}
+}
+{volume "gun"
+	{thickness 10}
+}
+	
+{component "body"
+	{RepairTime 25}
+	{Able {repair} {break_by_pierce}}
+}
+{component "gun"
+	{RepairTime 30}
+	{Able {Repair} {break_by_pierce}}
+}
+
+{extender "talk"
+	{talker "cannon"}
+	{update_period 1.5}
+}

@@ -1,0 +1,649 @@
+{mission
+	{Camera
+		{Position 694.698 1793.37}
+		{Distance 547.29}
+		{ViewAngle 0.0965067}
+		{YawAngle 0.684166}
+	}
+	{Environment "main-rus2"}
+	{User 1}
+	{GameProgress 0 0}
+	{Human "jap.elite1" 0x8000
+		{Position 946.396 2038.73 -10.4317}
+		{Turn -107.525}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade type3at" {cell 4 1}}
+				{item "knife" {cell 6 1}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+			}
+			{hand_right
+				{Item 0x8003 "grenade type23"}
+			}
+		}
+		{Player 0}
+		{MID 1}
+		{NameId 18 25}
+		{LastThrowItem "grenade type23"}
+		{Cover
+			{sector 946.396 2038.73 {type "squat_lie"}
+				{wall 0 0 972.498 2023.14 895.258 2047.53}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "jap.elite2" 0x8001
+		{Position 852.913 2054.23 -6.04023}
+		{Turn -100.989}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 20 {cell 5 1}}
+				{item "grenade type23" {cell 7 0}}
+				{item "grenade type23" {cell 7 1}}
+				{item "dynamite" {cell 0 2}}
+				{item "knife" {cell 2 2}}
+			}
+		}
+		{Player 0}
+		{MID 2}
+		{Weaponry
+			{State
+				{Mounted "type5"}
+				{Weapon
+					{Ammo "ammo rifle" 10}
+				}
+			}
+		}
+		{NameId 2 10}
+		{Cover
+			{sector 852.913 2054.23 {type "squat_lie"}
+				{wall 0 0 865.322 2044.69 785.807 2060.13}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Entity "grenade_mk1" 0x8003
+		{Position 949.042 2035.5 -2.32185}
+		{Orientation
+			 -0.388367  -0.490518  -0.780105
+			 -0.372109  -0.690988   0.619733
+			 -0.843034   0.530968   0.085832
+		}
+		{Extender "stuff"
+			{Item "grenade type23"}
+		}
+		{DisableObstacles}
+	}
+	{Entity "type96_3" 0x9000
+		{Position 678.574 1877.1 -9.76934}
+		{Turn -53.407}
+		{Player 0}
+		{MID 3}
+	}
+	{Human "jap.elite1" 0x9001
+		{Position 658.915 1866.59 -8.55264}
+		{Turn -53.407}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "knife_jap" {cell 0 0}}
+			}
+			{armor "body"
+				{Removed}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 4}
+		{NameId 61 19}
+		{FsmState "board"}
+	}
+	{Human "jap.elite1" 0x8002
+		{Position 695.105 1893.34 -8.05264}
+		{Turn -53.407}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "knife_jap" {cell 0 0}}
+			}
+			{armor "body"
+				{Removed}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 5}
+		{NameId 73 78}
+		{FsmState "board"}
+	}
+	{Human "jap.elite1" 0x8004
+		{Position 650.709 1941.18 -7.3541}
+		{Turn -133.769}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade type23" {cell 6 0}}
+				{item "grenade type3at" {cell 4 1}}
+				{item "knife" {cell 6 1}}
+			}
+		}
+		{Player 0}
+		{MID 6}
+		{Weaponry
+			{State
+				{Mounted "type100"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 68 32}
+		{FsmState "squat"}
+	}
+	{Entity "chi-nu" 0x8005
+		{Position 460.437 219.767 -0.500332}
+		{Turn 100.656}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "chi-nu" 0x8006
+		{Position 476.688 142.854 -4.96447}
+		{Turn 104.746}
+		{Player 0}
+		{MID 8}
+	}
+	{Human "jap.tankman" 0x8007
+		{Position 476.688 142.854 -4.96447}
+		{Orientation
+			 -0.253424   0.962874   0.093007
+			  0.965876   0.257180  -0.030704
+			  0.053483  -0.082052   0.995192
+		}
+		{Player 0}
+		{MID 9}
+		{NameId 18 26}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8008
+		{Position 476.688 142.854 -4.96447}
+		{Orientation
+			 -0.253424   0.962874   0.093007
+			  0.965876   0.257180  -0.030704
+			  0.053483  -0.082052   0.995192
+		}
+		{Player 0}
+		{MID 10}
+		{NameId 2 11}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x8009
+		{Position 476.688 142.854 -4.96447}
+		{Orientation
+			 -0.253424   0.962874   0.093007
+			  0.965876   0.257180  -0.030704
+			  0.053483  -0.082052   0.995192
+		}
+		{Player 0}
+		{MID 11}
+		{NameId 61 20}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x800a
+		{Position 476.688 142.854 -4.96447}
+		{Orientation
+			 -0.253424   0.962874   0.093007
+			  0.965876   0.257180  -0.030704
+			  0.053483  -0.082052   0.995192
+		}
+		{Player 0}
+		{MID 12}
+		{NameId 73 79}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x800b
+		{Position 460.437 219.767 -0.500332}
+		{Orientation
+			 -0.184873   0.982535   0.021124
+			  0.982669   0.185109  -0.009823
+			  0.013562  -0.018941   0.999729
+		}
+		{Player 0}
+		{MID 13}
+		{NameId 68 33}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x800c
+		{Position 460.437 219.767 -0.500332}
+		{Orientation
+			 -0.184873   0.982535   0.021124
+			  0.982669   0.185109  -0.009823
+			  0.013562  -0.018941   0.999729
+		}
+		{Player 0}
+		{MID 14}
+		{NameId 31 51}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x800d
+		{Position 460.437 219.767 -0.500332}
+		{Orientation
+			 -0.184873   0.982535   0.021124
+			  0.982669   0.185109  -0.009823
+			  0.013562  -0.018941   0.999729
+		}
+		{Player 0}
+		{MID 15}
+		{NameId 1 45}
+		{FsmState "board"}
+	}
+	{Human "jap.tankman" 0x800e
+		{Position 460.437 219.767 -0.500332}
+		{Orientation
+			 -0.184873   0.982535   0.021124
+			  0.982669   0.185109  -0.009823
+			  0.013562  -0.018941   0.999729
+		}
+		{Player 0}
+		{MID 16}
+		{NameId 13 87}
+		{FsmState "board"}
+	}
+	{Human "jap.elite1" 0x800f
+		{Position 441.79 179.419 24.9555}
+		{Orientation
+			 -0.982669  -0.185109   0.009823
+			  0.184873  -0.982535  -0.021124
+			  0.013562  -0.018941   0.999729
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 17}
+		{NameId 0 87}
+		{FsmState "board"}
+	}
+	{Human "jap.elite1" 0x8010
+		{Position 461.959 99.6921 18.3541}
+		{Orientation
+			 -0.965876  -0.257180   0.030704
+			  0.253424  -0.962874  -0.093007
+			  0.053483  -0.082052   0.995192
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 18}
+		{NameId 88 57}
+		{FsmState "board"}
+	}
+	{Human "jap.elite1" 0x8011
+		{Position 498.903 83.5381 14.233}
+		{Orientation
+			  0.253424  -0.962874  -0.093007
+			  0.965876   0.257180  -0.030704
+			  0.053483  -0.082052   0.995192
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 19}
+		{NameId 66 99}
+		{FsmState "board"}
+	}
+	{Human "jap.elite1" 0x8012
+		{Position 484.115 79.6006 14.7031}
+		{Orientation
+			  0.253424  -0.962874  -0.093007
+			  0.965876   0.257180  -0.030704
+			  0.053483  -0.082052   0.995192
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 20}
+		{NameId 52 50}
+		{FsmState "board"}
+	}
+	{Human "jap.elite1" 0x8013
+		{Position 477.563 160.436 23.3104}
+		{Orientation
+			  0.184873  -0.982535  -0.021124
+			  0.982669   0.185109  -0.009823
+			  0.013562  -0.018941   0.999729
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 21}
+		{NameId 52 45}
+		{FsmState "board"}
+	}
+	{Human "jap.elite1" 0x8014
+		{Position 593.404 84.1642 -13.0557}
+		{Turn 95.5442}
+		{Player 0}
+		{MID 22}
+		{NameId 81 90}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite2" 0x8015
+		{Position 462.518 157.602 23.4607}
+		{Orientation
+			  0.184873  -0.982535  -0.021124
+			  0.982669   0.185109  -0.009823
+			  0.013562  -0.018941   0.999729
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 23}
+		{NameId 37 34}
+		{FsmState "board"}
+	}
+	{Human "jap.elite2" 0x8016
+		{Position 581.002 104.468 -12.0253}
+		{Turn 95.5442}
+		{Player 0}
+		{MID 24}
+		{NameId 3 52}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite1" 0x8017
+		{Position 561.42 79.7525 -13.4969}
+		{Turn 95.5442}
+		{Player 0}
+		{MID 25}
+		{NameId 29 71}
+		{FsmState "stand"}
+	}
+	{Human "jap.elite1" 0x8018
+		{Position 554.01 99.2243 -12}
+		{Turn 95.5442}
+		{Player 0}
+		{MID 26}
+		{NameId 90 7}
+		{FsmState "stand"}
+	}
+	{Link 0x9001 To 0x9000 "gunner"}
+	{Link 0x8002 To 0x9000 "commander"}
+	{Link 0x8007 To 0x8006 "gunner"}
+	{Link 0x8008 To 0x8006 "driver"}
+	{Link 0x8009 To 0x8006 "commander"}
+	{Link 0x800a To 0x8006 "charger"}
+	{Link 0x800b To 0x8005 "commander"}
+	{Link 0x800c To 0x8005 "driver"}
+	{Link 0x800d To 0x8005 "charger"}
+	{Link 0x800e To 0x8005 "gunner"}
+	{Link 0x800f To 0x8005 "seat1"}
+	{Link 0x8010 To 0x8006 "seat1"}
+	{Link 0x8011 To 0x8006 "seat3"}
+	{Link 0x8012 To 0x8006 "seat2"}
+	{Link 0x8013 To 0x8005 "seat3"}
+	{Link 0x8015 To 0x8005 "seat2"}
+	{Brain 0x9000
+		{LookAround 1}
+	}
+	{Tags 0x8005 "tk1"}
+	{Tags 0x8006 "tk2"}
+	{Tags 0x8014 "inf"}
+	{Tags 0x8016 "inf"}
+	{Tags 0x8017 "inf"}
+	{Tags 0x8018 "inf"}
+	{Helpers
+		{event "inf" id 0 state 0}
+		{event "tk1" id 1 state 0}
+		{event "tk2" id 2 state 0}
+		{trigger "inf_del"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "jap"}
+						{"actors/zone" "exit"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/>=" 4}
+				}
+			}
+			{autoreset}
+			{actions
+				{"delete"
+					{selector
+						{"entities/tag" "jap"}
+					}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 300}
+				}
+			}
+		}
+		{trigger "inf_on"
+			{condition
+				{term 1 "event"
+					{id 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "inf"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"waypoint/uid" 8}
+					{clone}
+				}
+				{"event"
+					{event 0}
+					{mode reset}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "ini"
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "inf"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "tk1"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "tk2"}
+					}
+					{inactive on}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 12}
+				}
+				{"event"
+					{event 1}
+					{mode set}
+					{delay 120}
+				}
+				{"event"
+					{event 2}
+					{mode set}
+					{delay 126}
+				}
+			}
+		}
+		{trigger "tk1_on"
+			{condition
+				{term 1 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "tk1"}
+					}
+					{"waypoint/uid" 9}
+					{clone}
+				}
+				{"event"
+					{event 1}
+					{mode reset}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "tk2_on"
+			{condition
+				{term 1 "event"
+					{id 2}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "tk2"}
+					}
+					{"waypoint/uid" 9}
+					{clone}
+				}
+				{"event"
+					{event 2}
+					{mode reset}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "tk_del"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "tk"}
+						{"actors/zone" "exit"}
+						{"actors/type" vehicle}
+					}
+				}
+			}
+			{autoreset}
+			{actions
+				{"delete"
+					{selector
+						{"entities/tag" "tk"}
+					}
+				}
+				{"event"
+					{event 1}
+					{mode set}
+					{delay 300}
+				}
+				{"event"
+					{event 2}
+					{mode set}
+					{delay 306}
+				}
+				{"actor_fire"
+					{selector
+						{"actors/mids" 3}
+					}
+					{"waypoint/uid" 10}
+					{deviate}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 438.786 484.635 0}
+				{radius 50}
+				{transition 1}
+			}
+			{1
+				{position 491.668 742.046 0}
+				{radius 50}
+				{transition 2}
+			}
+			{2
+				{position 590.445 1039.02 0}
+				{radius 50}
+				{transition 3}
+			}
+			{3
+				{position 609.622 1278.64 0}
+				{radius 50}
+				{transition 4}
+			}
+			{4
+				{position 573.305 1535.53 0}
+				{radius 50}
+				{transition 5}
+			}
+			{5
+				{position 512.284 1796.21 -3.11258}
+				{radius 50}
+				{transition 6}
+			}
+			{6
+				{position 523.082 2138.91 -2.64982}
+				{radius 50}
+				{transition 7}
+			}
+			{7
+				{position 259.288 2885.37 -7.61597}
+				{radius 50}
+			}
+			{8
+				{position 542.006 176.137 -3.13003}
+				{radius 50}
+				{transition 0}
+				{commands
+					{"actor_state"
+						{speed fast}
+					}
+					{"entity_state"
+						{tag_add "jap"}
+						{tag_remove "inf"}
+					}
+				}
+			}
+			{9
+				{position 445.539 305.196 0}
+				{radius 30}
+				{transition 0}
+				{commands
+					{"entity_state"
+						{tag_remove "tk1"}
+					}
+					{"entity_state"
+						{tag_remove "tk2"}
+					}
+					{"entity_state"
+						{tag_add "tk"}
+					}
+					{"actor_state"
+						{speed_kph 12}
+					}
+				}
+			}
+			{10
+				{position 329.342 829.625 0}
+				{offsetz 500}
+			}
+		}
+		{zone "circle"
+			{position 260.485 2881.24 -6.88007}
+			{Name "exit"}
+			{Radius 62.1897}
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

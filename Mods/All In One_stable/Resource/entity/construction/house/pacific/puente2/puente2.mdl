@@ -1,0 +1,129 @@
+;Exported by: dinsen
+;Date:        Tue Apr 19 00:11:27 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\puente2.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "suelo"
+			{parameters "Land;Ground;"}
+			{Position -0.2000	1.0790	4.1119}
+			{VolumeView "suelo.ply" {Ground}}
+		}
+	}
+}
+{Obstacle "Plane02"
+	{Obb2
+		{Center 0.21244 34.3762}
+		{Extent 84.1115 2.27945}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane01"
+	{Obb2
+		{Center 0.21244 -36.1505}
+		{Extent 84.1115 2.27945}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Box02"
+	{Box 4.1909 15.192 102.415}
+	{Bone "body"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.6615	0.0000	0.0000
+		0.4676	-32.6896	11.2494
+	}
+}
+{Volume "Box01"
+	{Box 4.1909 15.192 102.415}
+	{Bone "body"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.6615	0.0000	0.0000
+		0.4675	36.6707	11.2494
+	}
+}
+{Volume "body2"
+	{Box 56.5302 76.5893 7.29422}
+	{Bone "body"}
+	{Position 0.8425	1.5030	6.6599}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "body"}
+	{Position 57.3798	1.2228	6.2797}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position -55.6619	1.2228	6.2797}
+}
+{Volume "b12"
+	{Polyhedron "b12.vol"}
+	{Bone "body"}
+	{Position 73.4737	32.7071	-24.3947}
+}
+{Volume "b11"
+	{Polyhedron "b11.vol"}
+	{Bone "body"}
+	{Position 25.6755	32.7071	-24.3947}
+}
+{Volume "b10"
+	{Polyhedron "b10.vol"}
+	{Bone "body"}
+	{Position -26.5356	32.7071	-24.3947}
+}
+{Volume "b9"
+	{Polyhedron "b9.vol"}
+	{Bone "body"}
+	{Position -75.6275	32.7071	-24.3947}
+}
+{Volume "b8"
+	{Polyhedron "b8.vol"}
+	{Bone "body"}
+	{Position 73.6408	-31.8492	-24.3947}
+}
+{Volume "b7"
+	{Polyhedron "b7.vol"}
+	{Bone "body"}
+	{Position 25.5886	-31.8492	-24.3947}
+}
+{Volume "b6"
+	{Polyhedron "b6.vol"}
+	{Bone "body"}
+	{Position -26.6392	-31.8492	-24.3947}
+}
+{Volume "b5"
+	{Polyhedron "b5.vol"}
+	{Bone "body"}
+	{Position -75.6275	-31.8492	-24.3947}
+}
+{Volume "b4"
+	{Polyhedron "b4.vol"}
+	{Bone "body"}
+	{Position 73.4837	0.7585	-24.3947}
+}
+{Volume "b3"
+	{Polyhedron "b3.vol"}
+	{Bone "body"}
+	{Position 26.6786	0.7585	-24.3947}
+}
+{Volume "b2"
+	{Polyhedron "b2.vol"}
+	{Bone "body"}
+	{Position -26.5650	0.7585	-24.3947}
+}
+{Volume "b1"
+	{Polyhedron "b1.vol"}
+	{Bone "body"}
+	{Position -75.6275	0.7585	-24.3947}
+}

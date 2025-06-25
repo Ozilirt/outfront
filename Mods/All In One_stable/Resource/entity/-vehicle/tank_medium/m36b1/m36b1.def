@@ -1,0 +1,138 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "high"}
+	{Volume "Trackright"
+	}
+	{Volume "Trackleft"
+	}
+	{Volume "gun"
+	}
+	{Volume "Crew"
+	}
+	{Volume "Inventory"
+	}
+	{Volume "Engine"
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 38
+		   	{front  51 0.2}
+			{top	19}
+			{bottom	13}
+			{rear   19}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 38
+		   	{front  51 0.2}
+			{top	19}
+			{bottom	13}
+			{rear   19}
+		}   
+	}
+	{volume "turret"
+		{thickness 32 0.3
+			{front  76}
+			{top	10}
+			{rear   34}
+		}
+	}
+
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	("crew_human_visible"	place(gunner)		door1(emit1) door2(emit2) visor(main))
+	("crew_human_visible"	place(commander)	door1(emit1) door2(emit2) visor(main))
+	("crew_human"			place(driver)		door1(emit1) door2(emit2) visor(driver))
+	("crew_human"			place(charger)		door1(emit1) door2(emit2) visor(main))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "90mm_m3"}
+			{Mounted}
+			{weapon {ammo "ammo bullet90 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "browning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 800}
+			{item "ammo bullet90 ap" 30}
+			{item "ammo bullet90 fg" 17}
+		}
+	}
+	
+	{mass 28600}
+	{Chassis
+		{FuelBag
+			{volume 750 }	; liters
+			{rate	26.6 }   ; liters per kilometer
+			{remain 350 }
+			{fuel "fuel"}
+		}
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    24} ; максимальная скорость, kmph
+			{StartTime 		 7} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		0.6} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		6} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 3}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.05 0.1 0.2 0.5 1.0}
+			{RearGears 0.1 0.4}
+		}
+	}
+	{Extension "M36b1.mdl"}
+		{bone "turret"
+			{speed 0.010}
+		}
+	(mod "mp"
+            {sensor
+			   {Visor "main"
+				{vision "Visor_Tank_Long"}
+			   }
+		 }
+		{Chassis
+			{FuelBag
+			{volume 873 }	; liters
+			{rate	416}   ; liters per kilometer
+			{remain 873 }
+			{fuel "fuel"}
+			}
+			{Locomotion ("locomotion")
+				{maxspeed 24}
+			}
+			{speed
+				{Slow	18	}
+				{Normal	22	}
+				{Fast	24	}
+			}
+		}
+	)
+}
+

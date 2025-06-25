@@ -1,0 +1,118 @@
+;Created by Slash and Rancid
+;Date:      March 2005
+;Contact:	http://showw2.rancid.ca
+;(c) Slash and Rancid
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position 5.3809	-0.0740	23.1615}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=turret;"}
+				{Position 0.0000	-0.2213	0.0000}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						19.6376	-0.0396	14.0000
+					}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							-20.0000	-14.0000	0.0000
+						}
+						{VolumeView "Gun.ply"}
+					}
+				}
+			}
+			{bone revolute "WheelL2"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	-0.0000
+					-39.2873	18.7746	-14.1894
+				}
+				{VolumeView "WheelL2.ply"}
+			}
+			{bone revolute "WheelL1"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	-0.0000
+					31.1034	20.2797	-7.6049
+				}
+				{VolumeView "WheelL1.ply"}
+			}
+			{bone revolute "WheelR1"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					31.1034	-20.5259	-7.6049
+				}
+				{VolumeView "WheelR1.ply"}
+			}
+			{bone revolute "WheelR2"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					-39.2873	-19.0208	-14.1894
+				}
+				{VolumeView "WheelR2.ply"}
+			}
+		}
+		{bone "Wheels_R"
+			{parameters "CommonMesh;ID=trackright;"}
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				2.0724	-18.9645	10.7698
+			}
+			{VolumeView "Wheels_R.ply"}
+			{bone "TrackR"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					1.0000	-0.0000	-0.0000
+					0.0000	1.0000	-0.0000
+					-0.0000	-0.0000	-1.0000
+					0.7471	3.1026	-3.5416
+				}
+				{VolumeView "TrackR.ply"}
+			}
+		}
+		{bone "Wheels_L"
+			{parameters "CommonMesh;ID=trackleft;"}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				2.0724	18.5703	10.7698
+			}
+			{VolumeView "Wheels_L.ply"}
+			{bone "TrackL"
+				{parameters "ID=trackleft;"}
+				{Position 0.7471	3.1026	1.5784}
+				{VolumeView "TrackL.ply"}
+			}
+		}
+	}
+}
+;(c) Slash and Rancid

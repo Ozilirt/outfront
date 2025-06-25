@@ -1,0 +1,52 @@
+{game_entity
+	{Extension "temple_x.mdl"}
+
+	{DecalView
+		{ownershadow  64 64}
+		{name "shadow"}
+	}
+	{TexMods
+		{"1" "1"}
+	}
+	(define "declare_volume"
+		{Volume %name
+			{thickness %thickness}
+			{tags %tags}
+		}
+	)
+	("declare_volume" name("piece_big1")	tags("piece_big1")	thickness(7))
+	("declare_volume" name("piece_big2")	tags("piece_big2")	thickness(7))
+	("declare_volume" name("piece_big3")	tags("piece_big3")	thickness(7))	
+
+	("declare_volume" name("roof")		tags("roof")	thickness(7))
+	("declare_volume" name("roof_small")tags("roof")	thickness(7))
+	("declare_volume" name("wall_p11")	tags("piece")	thickness(7))
+	("declare_volume" name("wall_p8")	tags("piece")	thickness(7))
+	("declare_volume" name("wall_p6")	tags("piece")	thickness(7))
+	("declare_volume" name("wall_p5")	tags("piece")	thickness(7))
+	("declare_volume" name("wall_p3")	tags("piece")	thickness(7))
+	("declare_volume" name("wall_p2")	tags("piece")	thickness(7))
+
+	("declare_volume" name("wall7")		tags("wall")	thickness(7))
+	("declare_volume" name("wall6")		tags("wall")	thickness(7))
+	("declare_volume" name("wall4c")	tags("wall")	thickness(7))
+	("declare_volume" name("wall4b")	tags("wall")	thickness(7))
+	("declare_volume" name("wall4a")	tags("wall")	thickness(7))
+	("declare_volume" name("wall4")		tags("wall")	thickness(7))
+	("declare_volume" name("wall3b")	tags("wall")	thickness(7))
+	("declare_volume" name("wall3a")	tags("wall")	thickness(7))
+	("declare_volume" name("wall3")		tags("wall")	thickness(7))
+	("declare_volume" name("wall2c")	tags("wall")	thickness(7))
+	("declare_volume" name("wall2b")	tags("wall")	thickness(7))
+	("declare_volume" name("wall2a")	tags("wall")	thickness(7))
+	("declare_volume" name("wall2")		tags("wall")	thickness(7))
+	("declare_volume" name("wall1a")	tags("wall")	thickness(7))
+	("declare_volume" name("wall1")		tags("wall")	thickness(7))
+	("declare_volume" name("wall0")		tags("wall")	thickness(7))
+
+	("declare_volume" name("door1")		tags("piece" "door")	thickness(1))
+	("declare_volume" name("door2")		tags("piece" "door")	thickness(1))
+	("declare_volume" name("door3")		tags("piece" "door")	thickness(1))
+	("declare_volume" name("door4")		tags("piece" "door")	thickness(1))
+	("declare_volume" name("door5")		tags("piece" "door")	thickness(1))
+}

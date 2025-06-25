@@ -1,0 +1,20 @@
+{game_entity
+	{extension "box_metal.mdl"}
+	{mass 30}
+	{TexMods
+		{"Med" "1"}
+	}
+	{props "wood" "inventory_box"}
+	{ObstacleID "stuff"}
+	{colliderID "construction"}
+	{extender "inventory"
+		{box
+			{weight 5000}
+			{size 8 6}
+		}
+	}
+	{Volume "box"
+		{thickness 1}
+		{able {touch}}
+	}
+}

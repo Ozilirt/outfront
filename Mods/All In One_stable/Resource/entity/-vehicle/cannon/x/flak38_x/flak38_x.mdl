@@ -1,0 +1,85 @@
+;Exported by: Albus
+;Date:        Sat Nov 15 10:56:47 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\flak38\flak38_x.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position -0.0571	0.5039	0.1716}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0400}
+				{Position 0.1290	-0.5001	7.8567}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 45.0000}
+					{speed 0.0200}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-1.0757	0.0843	14.1052
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun1"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							17.6803	2.7168	7.0530
+						}
+						{VolumeView "gun1.ply"}
+					}
+					{bone "gun2"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							17.6804	-3.7803	7.0924
+						}
+						{VolumeView "gun2.ply"}
+					}
+					{bone "gun3"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							15.6002	2.4224	-6.4105
+						}
+						{VolumeView "gun3.ply"}
+					}
+					{bone "gun4"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							17.7595	-3.4589	-7.8789
+						}
+						{VolumeView "gun4.ply"}
+					}
+				}
+				{bone "shield_left"
+					{parameters "ID=shield_left;"}
+					{Position 6.6256	14.3102	12.7921}
+					{VolumeView "shield_left.ply"}
+				}
+				{bone "shield_right"
+					{parameters "ID=shield_right;"}
+					{Position 8.1017	-15.7918	12.5431}
+					{VolumeView "shield_right.ply"}
+				}
+			}
+		}
+	}
+}

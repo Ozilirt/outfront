@@ -1,0 +1,273 @@
+;Exported by: Dinsen
+;Date:        Sun Apr 15 17:13:12 2012
+;File:        C:\Archivos de programa\3dsMax8\scenes\radar_jap3.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "body1"
+			{Position 0.0402	-1.2263	8.1862}
+			{VolumeView "body1.ply"}
+			{bone "anclajes"
+				{Position 18.6472	0.9145	51.6476}
+				{VolumeView "anclajes.ply"}
+				{bone "antena"
+					{Position 17.4315	-0.2500	-3.2928}
+					{VolumeView "antena.ply"}
+				}
+			}
+			{bone "land"
+				{parameters "Land;Ground;"}
+				{VolumeView "land.ply" {Ground}}
+			}
+		}
+	}
+}
+{Obstacle "Box14"
+	{Obb2
+		{Center -8.38485 -48.2736}
+		{Extent 0.851065 6.80851}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box13"
+	{Obb2
+		{Center 11.1201 34.2083}
+		{Extent 7.22152 9.47824}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box12"
+	{Obb2
+		{Center 11.4277 -10.7178}
+		{Extent 7.52241 23.0186}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box09"
+	{Obb2
+		{Center -14.282 -41.0195}
+		{Extent 5.89893 1.2035}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box08"
+	{Obb2
+		{Center 12.3389 -41.0195}
+		{Extent 6.89893 1.2035}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box07"
+	{Obb2
+		{Center -0.403309 43.993}
+		{Extent 19.1489 1.2035}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box06"
+	{Obb2
+		{Center -19.4999 43.2032}
+		{Extent 1.2035 1.88284}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box05"
+	{Obb2
+		{Center -19.4999 2.51572}
+		{Extent 1.2035 16.8828}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box04"
+	{Obb2
+		{Center -19.4999 -38.897}
+		{Extent 1.2035 2.63284}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box03"
+	{Obb2
+		{Center -19.5518 1.85837}
+		{Extent 1.20359 43.3291}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box02"
+	{Obb2
+		{Center -19.5518 1.85837}
+		{Extent 1.20359 43.3291}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box01"
+	{Obb2
+		{Center 19.003 1.85837}
+		{Extent 1.20359 43.3291}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "anclajes"
+	{Obb2
+		{Center 22.3453 0.664715}
+		{Extent 3.17934 58.0988}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Cylinder 27.6408 5.51064}
+	{Bone "body"}
+	{Matrix34
+		0.9521	-0.3057	-0.0000
+		0.3057	0.9521	0.0000
+		0.0000	0.0000	1.0000
+		-0.0388	-1.2102	2.6587
+	}
+}
+{Volume "Box14"
+	{Box 13.617 35.9574 1.70213}
+	{Bone "body1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-8.4251	49.5000	19.4768
+	}
+}
+{Volume "Box13"
+	{Box 14.443 18.9565 20.6511}
+	{Bone "body1"}
+	{Position 11.0798	-32.9820	11.2876}
+}
+{Volume "Box12"
+	{Box 15.0448 46.0372 21.0628}
+	{Bone "body1"}
+	{Position 11.3875	11.9442	11.0679}
+}
+{Volume "Box11"
+	{Box 39.5745 86.383 2.407}
+	{Bone "body1"}
+	{Position -0.5532	-0.1326	44.3228}
+}
+{Volume "Box10"
+	{Box 13.9362 7.44681 2.407}
+	{Bone "body1"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	-0.0000
+		-1.5022	42.2024	41.7012
+	}
+}
+{Volume "Box09"
+	{Box 11.7979 44.4681 2.407}
+	{Bone "body1"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	-0.0000
+		-14.3223	42.2459	23.1906
+	}
+}
+{Volume "Box08"
+	{Box 13.7979 44.4681 2.407}
+	{Bone "body1"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	-0.0000
+		12.2986	42.2459	23.1906
+	}
+}
+{Volume "Box07"
+	{Box 38.2979 44.4681 2.407}
+	{Bone "body1"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	-0.0000
+		-0.4435	-42.7666	23.1906
+	}
+}
+{Volume "Box06"
+	{Box 3.76569 12.9385 2.407}
+	{Bone "body1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-19.5401	-41.9769	31.0463
+	}
+}
+{Volume "Box05"
+	{Box 33.7657 13.4385 2.407}
+	{Bone "body1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-19.5401	-1.2894	31.0463
+	}
+}
+{Volume "Box04"
+	{Box 5.26569 12.9385 2.407}
+	{Bone "body1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-19.5401	40.1233	31.0463
+	}
+}
+{Volume "Box03"
+	{Box 86.6582 7.7273 2.40717}
+	{Bone "body1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-19.5921	-0.6320	41.3783
+	}
+}
+{Volume "Box02"
+	{Box 86.6582 23.7273 2.40717}
+	{Bone "body1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-19.5921	-0.6320	12.7358
+	}
+}
+{Volume "Box01"
+	{Box 86.6582 42.7273 2.40717}
+	{Bone "body1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		18.9628	-0.6320	22.6523
+	}
+}
+{Volume "anclajes"
+	{Box 6.35867 116.198 97.5421}
+	{Bone "anclajes"}
+	{Position 3.6579	-0.3529	-4.0127}
+}

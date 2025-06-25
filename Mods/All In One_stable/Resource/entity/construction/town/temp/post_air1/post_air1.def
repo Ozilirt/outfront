@@ -1,0 +1,19 @@
+{construction
+	(include "/properties/post.inc")
+	 {DecalView
+		{ownershadow  64 64}
+		{name "shadow"}
+  	}
+	{props "concrete" "construction"}
+
+	{volume	"body"
+		{thickness hollow 10}
+	}
+	{volume	"lamp1"
+		{thickness 1}
+	}
+	{extender "light"
+		{lamp "1"}
+	}
+	{Extension "post_air1.mdl"}
+}

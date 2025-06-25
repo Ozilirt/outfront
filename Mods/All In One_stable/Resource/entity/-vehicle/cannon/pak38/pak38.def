@@ -1,0 +1,75 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret" "wheeled"}
+	(include "/properties/dummy_fsm.inc")
+
+	{TexMods
+ 		{"ambush" "1"}
+ 		{"winter" "2"}
+ 		{"ambush2" "3"}
+ 		{"desert" "4"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+
+
+	("crew_4_human")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "50mm_pak38"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet50 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet50 ap" 30}
+			{item "bullet50 fg" 10}
+			{item "plant" 5}
+		}
+	}
+	{mass 2000}
+	{Extension "Pak38.mdl"}
+	
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed	11}	; kmph
+			{StartTime	6}	; seconds
+			{BrakeTime	2}	; seconds
+			{StopTime	1}	; seconds
+			{TurnRadius	5}	; meter
+			{TurnTime	10}	; seconds
+			{TurnStart	2}	; seconds
+			{TurnStop	0.5}	; seconds
+		}
+	}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+}

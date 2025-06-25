@@ -1,0 +1,57 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(4.5) scaleY(4.0))
+	{mass 150000}
+	{props "vehicle" "marine"}
+	(include "crew.ext")
+	{Volume "ballast_l1"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 30}
+	}
+	{Volume "ballast_l2"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 30}
+	}
+	{Volume "ballast_r1"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 30}
+	}
+	{Volume "ballast_r2"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 30}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "body3"
+		{tags "body"}
+		{thickness 50}
+	}
+	{component "body1"
+		{able {break_by_pierce}}
+	}
+	{component "body2"
+		{able {break_by_pierce}}
+	}
+	{patherID "water"}
+	{Extension "platforma2.mdl"}
+	{chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed	10} 
+	            {TurnRadius	24	}
+	            {SplineRadius 16}
+	            {TurnTime		0.1}
+	            {TurnStart		 5}
+	            {TurnStop	   2}
+		}
+	}
+}

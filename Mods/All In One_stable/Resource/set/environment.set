@@ -1,0 +1,1051 @@
+{Environment
+	{Preset "day"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 155 155 155 255}
+		{"light/diffuse" 255 255 255 255}
+		{"light/lightsIntensity" 0.1}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+		{"sky/enable"}
+            {"sky/texture" "/texture/background/bluesky2.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "winter_day_snow2"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 187 207 200 255}
+		{"light/diffuse" 110 95 90 255}
+		{"light/lightsIntensity" 0.2}
+		{"light/mtlAmbient" 155 155 155 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.2}
+		{"shadow/color" 1 65 110 255}
+		{"wind/amplitude" 2}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky2.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"weather/enable"}
+		{"weather/density" 1}
+		{"weather/fx" "/fx/weather/snow.fx"}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "morning"
+		{"light/direction" -0.98 0 -0.42}
+		{"light/ambient" 64 80 64 255}
+		{"light/diffuse" 122 122 170 255}
+		{"light/lightsIntensity" 0.5}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 1000}
+		{"haze/end" 3000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky6.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"weather/density" 60}
+		{"weather/fx" "/fx/weather/rain.fx"}
+		{"weather/sound" "world.rain_noise"}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "night"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 30 30 30 255}
+		{"light/diffuse" 30 30 40 255}
+		{"light/night"}
+		{"light/night_vision" 0.4}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.3}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 4200}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/moon.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "moon_night"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 26 39 49 255}
+		{"light/diffuse" 123 125 164 255}
+		{"light/night"}
+		{"light/night_vision" 0.7}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 0 10 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 0 0 0 255}
+		{"haze/start" 2000}
+		{"haze/end" 4200}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky7.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "moon_night2"
+		{"light/direction" -0.5 -0.5 -1.7}
+		{"light/ambient" 17 25 32 255}
+		{"light/diffuse" 59 60 79 255}
+		{"light/night"}
+		{"light/night_vision" 0.7}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.75}
+		{"shadow/color" 0 0 5 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 4200}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky7.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "moon_night3"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 26 39 49 255}
+		{"light/diffuse" 123 125 164 255}
+		{"light/night"}
+		{"light/night_vision" 0.7}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 0 10 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 0 0 0 255}
+		{"haze/start" 2000}
+		{"haze/end" 4200}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/moon.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "bluemoon"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 26 39 49 255}
+		{"light/diffuse" 123 125 164 255}
+		{"light/night"}
+		{"light/night_vision" 0.7}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 0 10 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 0 0 0 255}
+		{"haze/start" 4100}
+		{"haze/end" 6000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/moon.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "bluemoon2"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 26 39 49 255}
+		{"light/diffuse" 123 125 164 255}
+		{"light/night"}
+		{"light/night_vision" 0.7}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 0 10 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 0 0 0 255}
+		{"haze/start" 4100}
+		{"haze/end" 6000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky7.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "winter_day"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 187 207 200 255}
+		{"light/diffuse" 110 95 90 255}
+		{"light/lightsIntensity" 0.1}
+		{"light/mtlAmbient" 155 155 155 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.3}
+		{"shadow/color" 1 65 110 255}
+		{"wind/amplitude" 2}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 4200}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "winter_day_snow"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 187 207 200 255}
+		{"light/diffuse" 110 95 90 255}
+		{"light/lightsIntensity" 0.2}
+		{"light/mtlAmbient" 155 155 155 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.2}
+		{"shadow/color" 1 65 110 255}
+		{"wind/amplitude" 2}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 4200}
+		{"sky/enable"}
+            {"sky/texture" "/texture/background/bluesky.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"weather/enable"}
+		{"weather/density" 50}
+		{"weather/fx" "/fx/weather/snow.fx"}
+		{"thunder/color" 104 108 115 255}
+	}
+		{Preset "day_rainy"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 128 128 128 255}
+		{"light/diffuse" 128 128 128 255}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 248 232 160 255}
+		{"shadow/alpha" 0.3}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 1}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky8.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"weather/enable"}
+		{"weather/density" 100}
+		{"weather/fx" "/fx/weather/rain.fx"}
+		{"weather/sound" "world.rain_noise"}
+		{"thunder/enable"}
+		{"thunder/interval" 120 70}
+		{"thunder/color" 104 108 115 255}
+		{"thunder/sound" "world.thunder"}
+	}
+	{Preset "day_rainy2"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 128 128 128 255}
+		{"light/diffuse" 128 128 128 255}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 248 232 160 255}
+		{"shadow/alpha" 0.3}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 2400}
+		{"haze/end" 8600}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/sky22.ebm"}
+		{"sky/size" 1 1}
+		{"weather/enable"}
+		{"weather/density" 75}
+		{"weather/fx" "/fx/weather/rain2.fx"}
+		{"weather/sound" "world.rain_noise"}
+		{"thunder/enable"}
+		{"thunder/interval" 150 80}
+		{"thunder/color" 104 108 115 255}
+		{"thunder/sound" "world.thunder"}
+	}
+	{Preset "day_norainy"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 128 128 128 255}
+		{"light/diffuse" 128 128 128 255}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 248 232 160 255}
+		{"shadow/alpha" 0.3}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 1}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky8.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/enable"}
+		{"thunder/interval" 120 70}
+		{"thunder/color" 104 108 115 255}
+		{"thunder/sound" "world.thunder"}
+	}
+	{Preset "day_cloudy"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 128 128 128 255}
+		{"light/diffuse" 128 128 128 255}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 248 232 160 255}
+		{"shadow/alpha" 0.3}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 1}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 1800}
+		{"haze/end" 6000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky8.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+	}
+	{Preset "moon_night_rain"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 26 39 49 255}
+		{"light/diffuse" 56 56 72 128}
+		{"light/night"}
+		{"light/night_vision" 0.4}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 0 10 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 24 38 62 255}
+		{"haze/start" 1000}
+		{"haze/end" 2400}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/space.ebm"}
+		{"sky/size" 1 1}
+		{"weather/enable"}
+		{"weather/density" 50}
+		{"weather/fx" "/fx/weather/rain_night.fx"}
+		{"weather/sound" "world.rain_noise"}
+		{"thunder/enable"}
+		{"thunder/interval" 40 15}
+		{"thunder/color" 104 108 115 255}
+		{"thunder/sound" "world.thunder"}
+	}
+	{Preset "day_mist"
+		{"light/direction" -0.58 -0.4 -0.62}
+		{"light/ambient" 128 128 128 255}
+		{"light/diffuse" 128 128 128 255}
+		{"light/lightsIntensity" 0.4}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 248 232 160 255}
+		{"shadow/alpha" 0.4}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 1}
+		{"haze/enable"}
+		{"haze/color" 136 144 160 128}
+		{"haze/start" 1000}
+		{"haze/end" 2600}
+		{"sky/enable"}
+            {"sky/texture" "/texture/background/bluesky8.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/black.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"weather/enable"}
+		{"weather/density" 50}
+		{"weather/fx" "/fx/weather/rain.fx"}
+		{"weather/sound" "world.rain_noise"}
+		{"thunder/enable"}
+		{"thunder/interval" 120 70}
+		{"thunder/color" 104 108 115 255}
+		{"thunder/sound" "world.thunder"}
+	}
+	{Preset "day_mist2"
+		{"light/direction" -0.58 -0.4 -0.62}
+		{"light/ambient" 128 128 128 255}
+		{"light/diffuse" 128 128 128 255}
+		{"light/lightsIntensity" 0.4}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 248 232 160 255}
+		{"shadow/alpha" 0.4}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 1}
+		{"haze/enable"}
+		{"haze/color" 136 144 160 128}
+		{"haze/start" 1200}
+		{"haze/end" 2800}
+		{"sky/enable"}
+            {"sky/texture" "/texture/background/bluesky8.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/black.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"weather/density" 50}
+		{"weather/fx" "/fx/weather/rain.fx"}
+		{"weather/sound" "world.rain_noise"}
+	}
+		{Preset "day1"
+		{"light/direction" -0.58 -0.4 -0.85}
+		{"light/ambient" 136 152 160 128}
+		{"light/diffuse" 241 236 203 255}
+		{"light/lightsIntensity" 0.2}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 1200}
+		{"haze/end" 3000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky4.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "day2"
+		{"light/direction" -0.58 0.3 -0.62}
+		{"light/ambient" 158 157 158 255}
+		{"light/diffuse" 255 255 217 255}
+		{"light/lightsIntensity" 0.1}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 1200}
+		{"haze/end" 3000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "day3"
+		{"light/direction" -0.58 0.3 -0.62}
+		{"light/ambient" 125 124 139 255}
+		{"light/diffuse" 231 231 227 255}
+		{"light/lightsIntensity" 0.2}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/color" 147 162 177 255}
+		{"haze/start" 1200}
+		{"haze/end" 3000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky2.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "day4"
+		{"light/direction" 0.58 0.3 -0.8}
+		{"light/ambient" 81 80 90 255}
+		{"light/diffuse" 255 255 255 255}
+		{"light/lightsIntensity" 0.2}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/color" 147 162 177 255}
+		{"haze/start" 1000}
+		{"haze/end" 3000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky2.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "day5"
+		{"light/direction" -0.58 -0.4 -0.85}
+		{"light/ambient" 136 152 160 128}
+		{"light/diffuse" 241 236 203 255}
+		{"light/lightsIntensity" 0.2}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2} 
+            {"sky/enable"}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 1200}
+		{"haze/end" 3000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky2.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "day6"
+		{"light/direction" -0.58 0.3 -0.62}
+		{"light/ambient" 158 157 158 255}
+		{"light/diffuse" 255 255 217 255}
+		{"light/lightsIntensity" 0.1}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 1200}
+		{"haze/end" 3000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky6.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "main-day"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 26 39 49 255}
+		{"light/diffuse" 123 125 164 255}
+		{"light/lightsIntensity" 0.3}
+		{"light/night"}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 0 10 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 200}
+		{"haze/end" 4000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/blue.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "main-training"
+		{"light/direction" -0.98 0 -0.4}
+		{"light/ambient" 64 80 64 255}
+		{"light/diffuse" 122 122 170 255}
+		{"light/night"}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.9}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 1000}
+		{"haze/end" 3000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky8.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"weather/enable"}
+		{"weather/density" 5000}
+		{"weather/fx" "/fx/weather/rain.fx"}
+		{"weather/sound" "world.rain_noise"}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "main-rus"
+		{"light/direction" -0.58 0.3 -0.62}
+		{"light/ambient" 158 157 158 255}
+		{"light/diffuse" 255 255 217 255}
+		{"light/lightsIntensity" 0.1}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 1100}
+		{"haze/end" 3500}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky6.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "main-rus2"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 155 155 155 255}
+		{"light/diffuse" 255 255 255 255}
+		{"light/lightsIntensity" 0.1}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 1500}
+		{"haze/end" 6000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky6.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "main-eng"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 26 39 49 255}
+		{"light/diffuse" 123 125 164 255}
+		{"light/night"}
+		{"light/night_vision" 0.7}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 0 10 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 0 0 0 255}
+		{"haze/start" 500}
+		{"haze/end" 3000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky7.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "main-usa2"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 26 39 49 255}
+		{"light/diffuse" 123 125 164 255}
+		{"light/lightsIntensity" 0.5}
+		{"light/night"}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 0 10 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 200}
+		{"haze/end" 4000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky8.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "main-germany"
+		{"light/direction" 0.58 0.4 -0.7}
+		{"light/ambient" 75 74 83 255}
+		{"light/diffuse" 255 221 217 255}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.8}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 47 53 57 255}
+		{"haze/start" 1200}
+		{"haze/end" 4000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky3.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "menu1"
+		{"light/direction" -0.38 0.3 -0.62}
+		{"light/ambient" 113 119 109 255}
+		{"light/diffuse" 255 255 255 255}
+		{"light/lightsIntensity" 0.1}
+		{"light/mtlAmbient" 132 132 132 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.7}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 147 162 177 255}
+		{"haze/start" 1100}
+		{"haze/end" 6000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/sky21.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "menu2"
+		{"light/direction" -0.5 0.3 -0.62}
+		{"light/ambient" 129 117 90 255}
+		{"light/diffuse" 255 255 255 255}
+		{"light/lightsIntensity" 0.1}
+		{"light/mtlAmbient" 132 132 132 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.7}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 147 162 177 255}
+		{"haze/start" 1200}
+		{"haze/end" 3000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky5.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "menu3"
+		{"light/direction" -0.5 0.3 -0.62}
+		{"light/ambient" 101 99 120 255}
+		{"light/diffuse" 253 203 155 255}
+		{"light/lightsIntensity" 0.2}
+		{"light/mtlAmbient" 132 132 132 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.7}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+		{"haze/color" 147 162 177 255}
+		{"haze/start" 1200}
+		{"haze/end" 3000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky5.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "dayend"
+		{"light/direction" -0.8 0 -0.2}
+		{"light/ambient" 150 150 150 255}
+		{"light/diffuse" 248 56 0 255}
+		{"light/lightsIntensity" 0.4}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 9000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky9.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "dayend1"
+		{"light/direction" -0.8 0 -0.2}
+		{"light/ambient" 208 208 208 128}
+		{"light/diffuse" 248 72 0 128}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 112 112 112 128}
+		{"light/mtlDiffuse" 0 8 144 128}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+            {"sky/enable"} 
+		{"sky/texture" "/texture/background/bluesky5.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "dayend2"
+		{"light/direction" -0.8 0 -0.2}
+		{"light/ambient" 200 200 200 128}
+		{"light/diffuse" 232 120 8 128}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 112 112 112 128}
+		{"light/mtlDiffuse" 0 8 144 128}
+		{"shadow/alpha" 1}
+		{"shadow/color" 0 0 0 128}
+		{"wind/amplitude" 2}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky3.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "dayend3"
+		{"light/direction" -0.6 -0.6 -0.55}
+		{"light/ambient" 160 160 160 128}
+		{"light/diffuse" 224 128 0 128}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 112 112 112 128}
+		{"light/mtlDiffuse" 0 8 144 128}
+		{"shadow/alpha" 0.9}
+		{"shadow/color" 0 24 32 128}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky3.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "dayend4"
+		{"light/direction" -0.6 -0.6 -0.55}
+		{"light/ambient" 160 160 160 128}
+		{"light/diffuse" 224 128 0 128}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 112 112 112 128}
+		{"light/mtlDiffuse" 0 8 144 128}
+		{"shadow/alpha" 0.9}
+		{"shadow/color" 0 24 32 128}
+		{"wind/amplitude" 2}
+		{"haze/enable"}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky5.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "dayend5"
+		{"light/direction" -0.8 0 -0.2}
+		{"light/ambient" 208 208 208 128}
+		{"light/diffuse" 248 72 0 128}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 112 112 112 128}
+		{"light/mtlDiffuse" 0 8 144 128}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 4}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+            {"sky/enable"} 
+		{"sky/texture" "/texture/background/sky24.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "day1_old"
+		{"light/direction" -0.58 -0.4 -0.62}
+		{"light/ambient" 164 174 192 255}
+		{"light/diffuse" 241 236 203 255}
+		{"light/lightsIntensity" 0.2}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.7}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 2}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 1200}
+		{"haze/end" 3000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/blue.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/enable"}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "day_tropic"
+		{"light/direction" -0.58 -0.4 -0.62}
+		{"light/ambient" 164 174 192 255}
+		{"light/diffuse" 241 236 203 255}
+		{"light/lightsIntensity" 0.2}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.65}
+		{"shadow/color" 0 24 56 128}
+		{"wind/amplitude" 2}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 1200}
+		{"haze/end" 3000}
+		{"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky2.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0003}
+		{"thunder/color" 104 108 115 255}
+	}
+      {Preset "desert"
+		{"light/direction" 0 -0.8 -0.2}
+		{"light/ambient" 209 166 92 255}
+		{"light/diffuse" 208 166 96 255}
+		{"light/lightsIntensity" 0.1}
+		{"light/night_vision" 0.3}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 127 127 127 255}
+		{"shadow/alpha" 0.5}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 3}
+		{"haze/enable"}
+		{"haze/color" 168 128 84 255}
+		{"haze/start" 400}
+		{"haze/end" 4000}
+            {"sky/enable"}
+            {"sky/texture" "/texture/background/bluesky10.ebm"}
+		{"sky/size" 1 1}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "desert2"
+		{"light/direction" 0.3 0.8 -0.3}
+		{"light/ambient" 255 218 174 128}
+		{"light/diffuse" 253 95 15 128}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 83 81 81 128}
+		{"light/mtlDiffuse" 115 103 0 128}
+		{"shadow/alpha" 0.6}
+		{"shadow/color" 0 10 20 255}
+		{"wind/amplitude" 5}
+		{"haze/enable"}
+		{"haze/color" 228 181 115 255}
+		{"haze/start" 500}
+		{"haze/end" 4500}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky9.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky10.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+		{"haze/color" 168 128 84 255}
+		{"haze/start" 1000}
+		{"haze/end" 5000}
+	}
+	{Preset "wind1"
+		{"light/direction" -0.8 0 -0.2}
+		{"light/ambient" 200 200 200 128}
+		{"light/diffuse" 232 120 8 128}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 112 112 112 128}
+		{"light/mtlDiffuse" 0 8 144 128}
+		{"shadow/alpha" 1}
+		{"shadow/color" 0 0 0 128}
+		{"wind/amplitude" 15}
+            {"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky2.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/color" 104 108 115 255}
+	}
+	{Preset "day_rainy_wind"
+		{"light/direction" -0.78 0 -0.62}
+		{"light/ambient" 128 128 128 255}
+		{"light/diffuse" 128 128 128 255}
+		{"light/lightsIntensity" 0.3}
+		{"light/mtlAmbient" 127 127 127 255}
+		{"light/mtlDiffuse" 248 232 160 255}
+		{"shadow/alpha" 0.3}
+		{"shadow/color" 0 10 20 255}
+		{"wind/speed" 5 5 5}
+		{"wind/amplitude" 15}
+		{"haze/enable"}
+		{"haze/color" 180 190 210 255}
+		{"haze/start" 2000}
+		{"haze/end" 8000}
+            {"sky/enable"}
+		{"sky/texture" "/texture/background/bluesky8.ebm"}
+		{"sky/size" 1 1}
+		{"cloudsonwater/texture" "/texture/background/sky_dx.ebm"}
+		{"cloudsonwater/size" 2 2}
+		{"cloudsonwater/scrollSpeed" 0.5 0.5}
+		{"cloudsonwater/windSpeed" 0.0001 0.0001}
+		{"thunder/enable"}
+		{"thunder/interval" 30 10}
+		{"thunder/sound" "world.viento"}
+	}
+}

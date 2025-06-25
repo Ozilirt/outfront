@@ -1,0 +1,77 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret" "wheeled"}
+	(include "/properties/dummy_fsm.inc")
+
+	{TexMods
+ 		{"early" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+
+
+	("crew_4_human")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mm_pak40"}
+			{RestoreIKAfterAim}
+			{Mounted}
+                  {weapon {ammo "ammo bullet75 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet75 ap" 25}
+			{item "bullet75 fg" 12}
+                  {item "plant" 5}
+		}
+	}
+	{mass 4000}
+	{Extension "pak40.mdl"}
+	
+	
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    9} ;  kmph
+			{StartTime 		 8} ;  seconds
+			{BrakeTime 		3} ; seconds
+			{StopTime		 2} ; seconds
+			{TurnRadius     6} ;meter
+			{TurnTime		14} ; seconds
+			{TurnStart		 2}	; seconds
+			{TurnStop	   1}	; seconds
+		}
+	}
+
+(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+
+}

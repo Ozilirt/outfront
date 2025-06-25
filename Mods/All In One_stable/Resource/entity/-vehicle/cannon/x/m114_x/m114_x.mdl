@@ -1,0 +1,64 @@
+;Exported by: dinsen
+;Date:        Sat Apr 23 23:17:09 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\hecho\m114.max
+{Skeleton
+	{bone revolute "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position -66.1250	-2.0105	-0.0621}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -10.0000 10.0000}
+				{Position 66.0701	1.5137	13.5969}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -15.0000 15.0000}
+					{Matrix34
+						0.8629	0.0000	-0.5053
+						0.5053	0.0000	0.8629
+						0.0000	-1.0000	0.0000
+						-12.8042	-0.2689	14.0451
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							0.9512	0.3087	0.0000
+							0.0000	0.0000	-1.0000
+							-0.3087	0.9512	0.0000
+							23.8861	10.0572	0.3814
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+			{bone revolute "wheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					66.3079	-17.9073	10.5529
+				}
+				{VolumeView "wheelR.ply"}
+			}
+			{bone revolute "wheelL"
+				{parameters "ID=wheelleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					66.0746	20.8957	10.6506
+				}
+				{VolumeView "wheelL.ply"}
+			}
+		}
+	}
+}

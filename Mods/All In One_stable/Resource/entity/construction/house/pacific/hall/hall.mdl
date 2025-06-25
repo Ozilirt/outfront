@@ -1,0 +1,305 @@
+;Exported by: dinsen
+;Date:        Sun Jul 17 14:11:48 2011
+;File:        C:\Documents and Settings\dinsen\Escritorio\Nueva carpeta\Chinese3\Chinese3\Chinese_test.max
+{Skeleton
+	{bone "body"
+		{parameters "Structure;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "piece13"
+			{Position 0.2772	0.1824	90.8175}
+			{VolumeView "piece13.ply"}
+		}
+		{bone "piece12"
+			{Position 30.1177	0.0000	14.0085}
+			{VolumeView "piece12.ply"}
+		}
+		{bone "piece11"
+			{Position -30.1177	0.0000	14.0085}
+			{VolumeView "piece11.ply"}
+		}
+		{bone "piece8"
+			{Position 0.0000	31.1686	65.1085}
+			{VolumeView "piece8.ply"}
+		}
+		{bone "piece6"
+			{Position 0.0000	-31.1686	65.1085}
+			{VolumeView "piece6.ply"}
+		}
+		{bone "piece7"
+			{Position -26.9928	15.5843	65.1085}
+			{VolumeView "piece7.ply"}
+		}
+		{bone "piece10"
+			{Position 26.9928	-15.5843	65.1085}
+			{VolumeView "piece10.ply"}
+		}
+		{bone "piece5"
+			{Position -26.9928	-15.5843	65.1085}
+			{VolumeView "piece5.ply"}
+		}
+		{bone "piece9"
+			{Position 26.9928	15.5843	65.1085}
+			{VolumeView "piece9.ply"}
+		}
+		{bone "piece3"
+			{Position -17.9952	-31.1686	3.1587}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece2"
+			{Position 0.2772	0.1825	129.6293}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece1"
+			{Position 35.9904	-0.0000	3.1587}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece4"
+			{Position 17.9952	31.1686	3.1587}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "columna1"
+			{Position -17.9952	31.1686	2.6033}
+			{VolumeView "columna1.ply"}
+		}
+		{bone "columna2"
+			{Position -35.9904	0.0000	1.4746}
+			{VolumeView "columna2.ply"}
+		}
+		{bone "piece15"
+			{Position -17.9952	31.1686	43.5011}
+			{VolumeView "piece15.ply"}
+			{bone "piece16"
+				{Position 0.0000	0.0000	22.7373}
+				{VolumeView "piece16.ply"}
+			}
+		}
+		{bone "columna3"
+			{Position 17.9952	-31.1686	2.4629}
+			{VolumeView "columna3.ply"}
+		}
+		{bone "piece14"
+			{Position 17.9952	-31.1686	41.5350}
+			{VolumeView "piece14.ply"}
+			{bone "piece17"
+				{Position 0.0000	0.0000	30.2557}
+				{VolumeView "piece17.ply"}
+			}
+		}
+	}
+}
+{Area "interior"
+	{Polygon2
+		{Radius 0}
+		{Vertex -26.1748 47.2069}
+		{Vertex -54.5885 -0.149115}
+		{Vertex -26.9325 -47.5052}
+		{Vertex 27.2428 -47.1263}
+		{Vertex 53.7622 0.987431}
+		{Vertex 25.7274 47.9646}
+	}
+	{Rotate}
+}
+{Obstacle "Circle06"
+	{Circle2
+		{Radius 5.98984}
+		{Center 17.8781 31.1613}
+	}
+}
+{Obstacle "Circle05"
+	{Circle2
+		{Radius 5.98984}
+		{Center -18.2374 31.1613}
+	}
+}
+{Obstacle "Circle04"
+	{Circle2
+		{Radius 5.98984}
+		{Center -36.1431 -0.000585198}
+	}
+}
+{Obstacle "Circle03"
+	{Circle2
+		{Radius 5.98984}
+		{Center -18.155 -31.0306}
+	}
+}
+{Obstacle "Circle02"
+	{Circle2
+		{Radius 5.98984}
+		{Center 18.2783 -31.0695}
+	}
+}
+{Obstacle "Circle01"
+	{Circle2
+		{Radius 5.98984}
+		{Center 35.9478 -0.06122}
+	}
+}
+{Volume "piece17"
+	{Box 5 5 30.6216}
+	{Bone "piece17"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "piece14"
+	{Box 5 5 30.0738}
+	{Bone "piece14"}
+}
+{Volume "columna3"
+	{Box 12 12 25}
+	{Bone "columna3"}
+	{Position 0.0000	0.0000	11.1386}
+}
+{Volume "piece16"
+	{Box 5 5 41.7264}
+	{Bone "piece16"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "piece15"
+	{Box 5 5 9.36468}
+	{Bone "piece15"}
+	{Position 0.0000	0.0000	-0.0000}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position 0.3652	-0.3281	-4.8635}
+}
+{Volume "columna2"
+	{Box 12.2 12.2 86}
+	{Bone "columna2"}
+	{Position -0.0000	-0.0000	42.6270}
+}
+{Volume "columna1"
+	{Box 12 12 37.5}
+	{Bone "columna1"}
+	{Position 0.0000	0.0000	17.2482}
+}
+{Volume "piece4"
+	{Box 139 139 2150}
+	{Bone "piece4"}
+	{Matrix34
+		0.0400	0.0000	0.0000
+		0.0000	0.0400	0.0000
+		0.0000	0.0000	0.0400
+		-0.0000	0.0000	40.9429
+	}
+}
+{Volume "piece1"
+	{Box 139 139 2150}
+	{Bone "piece1"}
+	{Matrix34
+		0.0400	0.0000	0.0000
+		0.0000	0.0400	0.0000
+		0.0000	0.0000	0.0400
+		0.0000	-0.0000	40.9429
+	}
+}
+{Volume "piece2"
+	{Box 333.047 333.047 577.955}
+	{Bone "piece2"}
+	{Matrix34
+		0.0400	0.0000	0.0000
+		0.0000	0.0400	0.0000
+		0.0000	0.0000	0.0400
+		0.0000	0.0000	-0.0000
+	}
+}
+{Volume "piece3"
+	{Box 139 139 2150}
+	{Bone "piece3"}
+	{Matrix34
+		0.0400	0.0000	0.0000
+		0.0000	0.0400	0.0000
+		0.0000	0.0000	0.0400
+		0.0000	-0.0000	40.9429
+	}
+}
+{Volume "piece9"
+	{Box 774.76 25 280}
+	{Bone "piece9"}
+	{Matrix34
+		0.0201	-0.0346	0.0000
+		0.0346	0.0201	0.0000
+		0.0000	0.0000	0.0400
+		0.1769	-0.1432	0.0000
+	}
+}
+{Volume "piece5"
+	{Box 774.76 25 280}
+	{Bone "piece5"}
+	{Matrix34
+		0.0201	-0.0346	0.0000
+		0.0346	0.0201	0.0000
+		0.0000	0.0000	0.0400
+		-0.0815	0.1209	-0.0000
+	}
+}
+{Volume "piece10"
+	{Box 774.76 25 280}
+	{Bone "piece10"}
+	{Matrix34
+		-0.0200	-0.0346	0.0000
+		0.0346	-0.0200	0.0000
+		0.0000	0.0000	0.0400
+		0.1046	0.1129	0.0000
+	}
+}
+{Volume "piece7"
+	{Box 774.76 25 280}
+	{Bone "piece7"}
+	{Matrix34
+		-0.0200	-0.0346	0.0000
+		0.0346	-0.0200	0.0000
+		0.0000	0.0000	0.0400
+		0.0521	-0.1269	-0.0000
+	}
+}
+{Volume "piece6"
+	{Box 774.76 25 280}
+	{Bone "piece6"}
+	{Matrix34
+		0.0400	0.0000	0.0000
+		0.0000	0.0400	0.0000
+		0.0000	0.0000	0.0400
+		0.0000	0.0000	0.0000
+	}
+}
+{Volume "piece8"
+	{Box 774.76 25 280}
+	{Bone "piece8"}
+	{Matrix34
+		0.0400	0.0000	0.0000
+		0.0000	0.0400	0.0000
+		0.0000	0.0000	0.0400
+		0.0000	0.0000	0.0000
+	}
+}
+{Volume "piece11"
+	{Box 709.807 1847.1 255}
+	{Bone "piece11"}
+	{Matrix34
+		0.0400	0.0000	0.0000
+		0.0000	0.0400	0.0000
+		0.0000	0.0000	0.0400
+		-0.0000	0.0000	-0.0000
+	}
+}
+{Volume "piece12"
+	{Box 709.808 1847.1 255}
+	{Bone "piece12"}
+	{Orientation
+		0.0400	0.0000	0.0000
+		0.0000	0.0400	0.0000
+		0.0000	0.0000	0.0400
+	}
+}
+{Volume "piece13"
+	{Polyhedron "piece13.vol"}
+	{Bone "piece13"}
+	{Position 0.0000	0.0000	10.2734}
+}

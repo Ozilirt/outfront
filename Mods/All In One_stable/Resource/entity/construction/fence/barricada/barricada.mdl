@@ -1,0 +1,255 @@
+;Exported by: dinsen
+;Date:        Sat Dec 18 14:40:35 2010
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\barricada.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pared"
+			{Matrix34
+				1.0000	0.0000	0.0014
+				0.0006	0.8798	-0.4754
+				-0.0011	0.4303	0.9027
+				10.4512	-161.4896	102.0595
+			}
+			{VolumeView "pared.ply"}
+		}
+		{bone "sacos"
+			{Matrix34
+				1.0000	0.0000	0.0014
+				0.0006	0.8798	-0.4754
+				-0.0011	0.4303	0.9027
+				10.4512	-161.4896	102.0595
+			}
+			{VolumeView "sacos.ply"}
+		}
+		{bone "sacos2"
+			{Matrix34
+				1.0000	0.0000	0.0014
+				0.0006	0.8798	-0.4754
+				-0.0011	0.4303	0.9027
+				10.4512	-161.4896	102.0595
+			}
+			{VolumeView "sacos2.ply"}
+		}
+	}
+}
+{Obstacle "Box08"
+	{Obb2
+		{Center 10.1076 22.6113}
+		{Extent 7.30898 14.5553}
+		{Axis 0.358938 0.933361}
+	}
+	{Rotate}
+}
+{Obstacle "Box07"
+	{Obb2
+		{Center -8.02688 22.9212}
+		{Extent 10.8211 8.15341}
+		{Axis 0.920584 0.390544}
+	}
+	{Rotate}
+}
+{Obstacle "Box06"
+	{Obb2
+		{Center -21.1075 13.3187}
+		{Extent 10.8212 8.15296}
+		{Axis 0.602189 0.798353}
+	}
+	{Rotate}
+}
+{Obstacle "Box05"
+	{Obb2
+		{Center -26.5354 -1.16946}
+		{Extent 10.822 8.13727}
+		{Axis 0.0182398 0.999834}
+	}
+	{Rotate}
+}
+{Obstacle "Box04"
+	{Obb2
+		{Center -23.5622 -15.2782}
+		{Extent 7.02813 9.49324}
+		{Axis 0.788218 0.615396}
+	}
+	{Rotate}
+}
+{Obstacle "Box03"
+	{Obb2
+		{Center -12.0386 -24.4961}
+		{Extent 7.03948 9.49321}
+		{Axis 0.375164 0.926958}
+	}
+	{Rotate}
+}
+{Obstacle "Box02"
+	{Obb2
+		{Center 8.13046 -25.9442}
+		{Extent 14.7778 6.57826}
+		{Axis 0.981646 0.190713}
+	}
+	{Rotate}
+}
+{Obstacle "Box01"
+	{Obb2
+		{Center 22.8996 -17.7259}
+		{Extent 9.849 6.84613}
+		{Axis 0.50046 0.86576}
+	}
+	{Rotate}
+}
+{Obstacle "Object09"
+	{Obb2
+		{Center 12.0975 15.706}
+		{Extent 0.936589 3.81884}
+		{Axis 0.602189 0.798353}
+	}
+	{Rotate}
+}
+{Obstacle "Object08"
+	{Obb2
+		{Center 2.56423 18.2707}
+		{Extent 0.881268 7.04257}
+		{Axis 0.0531047 0.998589}
+	}
+	{Rotate}
+}
+{Obstacle "Object07"
+	{Obb2
+		{Center -9.8081 14.818}
+		{Extent 7.08509 1.07642}
+		{Axis 0.83883 0.544394}
+	}
+	{Rotate}
+}
+{Obstacle "Object06"
+	{Obb2
+		{Center -18.0251 4.18592}
+		{Extent 7.80855 0.960632}
+		{Axis 0.326162 0.945314}
+	}
+	{Rotate}
+}
+{Obstacle "Object05"
+	{Obb2
+		{Center -17.9678 -9.10686}
+		{Extent 1.00985 7.11689}
+		{Axis 0.933647 0.358194}
+	}
+	{Rotate}
+}
+{Obstacle "Object04"
+	{Obb2
+		{Center -9.67589 -18.6197}
+		{Extent 0.874936 7.04819}
+		{Axis 0.469956 0.88269}
+	}
+	{Rotate}
+}
+{Obstacle "Object03"
+	{Obb2
+		{Center 2.70246 -20.8917}
+		{Extent 6.76343 0.999084}
+		{Axis 0.992554 0.121808}
+	}
+	{Rotate}
+}
+{Obstacle "Object02"
+	{Obb2
+		{Center 13.4085 -17.002}
+		{Extent 5.57099 0.980083}
+		{Axis 0.809204 0.587528}
+	}
+	{Rotate}
+}
+{Obstacle "Object01"
+	{Obb2
+		{Center 18.6389 -11.0796}
+		{Extent 3.25399 1.04374}
+		{Axis 0.342602 0.939481}
+	}
+	{Rotate}
+}
+{Volume "Box08"
+	{Polyhedron "Box08.vol"}
+	{Bone "sacos"}
+	{Matrix34
+		-0.1031	-0.8829	-0.5051
+		0.9947	-0.0915	-0.0524
+		0.0001	-0.4596	0.8651
+		-4.7416	165.4488	-25.0903
+	}
+}
+{Volume "Box07"
+	{Polyhedron "Box07.vol"}
+	{Bone "sacos"}
+	{Matrix34
+		-0.6168	-0.6954	-0.4056
+		0.7869	-0.5562	-0.2969
+		-0.0169	-0.4546	0.8678
+		-22.1104	168.0963	-23.6695
+	}
+}
+{Volume "Box06"
+	{Polyhedron "Box06.vol"}
+	{Bone "sacos"}
+	{Matrix34
+		-0.9271	-0.3221	-0.2085
+		0.3734	-0.8372	-0.4442
+		-0.0277	-0.4433	0.8738
+		-35.1594	178.4576	-18.1926
+	}
+}
+{Volume "Box05"
+	{Polyhedron "Box05.vol"}
+	{Bone "sacos"}
+	{Matrix34
+		-0.9717	0.2261	0.0803
+		-0.2336	-0.8779	-0.4648
+		-0.0305	-0.4258	0.8830
+		-39.4527	193.2731	-10.3832
+	}
+}
+{Volume "Box04"
+	{Polyhedron "Box04.vol"}
+	{Bone "sacos"}
+	{Matrix34
+		-0.6791	0.6779	0.3178
+		-0.7336	-0.6136	-0.3248
+		-0.0222	-0.4107	0.8909
+		-33.1476	208.1655	-2.5494
+	}
+}
+{Volume "Box03"
+	{Polyhedron "Box03.vol"}
+	{Bone "sacos"}
+	{Matrix34
+		-0.2233	0.8960	0.4320
+		-0.9747	-0.2015	-0.1074
+		-0.0081	-0.4028	0.8951
+		-19.1181	215.4273	1.2539
+	}
+}
+{Volume "Box02"
+	{Polyhedron "Box02.vol"}
+	{Bone "sacos"}
+	{Matrix34
+		0.4880	0.7964	0.3998
+		-0.8728	0.4439	0.2263
+		0.0024	-0.4158	0.8886
+		5.7425	213.0114	-0.0564
+	}
+}
+{Volume "Box01"
+	{Polyhedron "Box01.vol"}
+	{Bone "sacos"}
+	{Matrix34
+		0.9317	0.3289	0.1718
+		-0.3633	0.8419	0.4440
+		0.0012	-0.4308	0.8809
+		18.7797	198.5685	-7.6830
+	}
+}

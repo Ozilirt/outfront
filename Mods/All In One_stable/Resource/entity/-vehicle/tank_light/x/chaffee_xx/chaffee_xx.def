@@ -1,0 +1,20 @@
+{game_entity
+	(include "/properties/shadow/tank.inc" scale(1.1))
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 20
+		    {front  30}
+			{top	15}
+			{bottom	 5}
+			{rear   15}
+		}   
+	}
+	{volume "turret"
+		{thickness 30 0.3
+			{front  30}
+		}
+	}
+	{obstacleId "tank"}
+	{Extension "chaffee_xx.mdl"}
+}

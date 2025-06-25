@@ -1,0 +1,22 @@
+;SDL
+{placer
+	{place "turret1"
+		{Linkbone "attach1"}
+		{entity "type93_turret"}
+		{handlebone "basis"}
+	}
+	{place "turret2"
+		{Linkbone "attach2"}
+		{entity "type93_turret"}
+		{handlebone "basis"}
+	}
+}
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+
+	{link "emit1"	"turret1" {forward putoff}}
+	{link "emit1"	"turret2" {forward putoff}}
+	{link "emit2"	"turret1" {forward putoff}}
+	{link "emit2"	"turret2" {forward putoff}}
+}

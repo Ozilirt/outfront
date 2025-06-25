@@ -1,0 +1,77 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "-turret" "self_propelled" "low"}
+
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 45
+		    {left	45}
+		    {right	45}
+			{top	30}
+			{bottom	30}
+		}   
+	}
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_SdKfz-232_left"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_SdKfz-232_right"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	("tracks_forced")
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "bigflamethrower"}
+			{Mounted}
+			{weapon {ammo "ammo fire" 50}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun" {fixed}}
+		{box
+			{item "ammo fire" 250}
+			{item "can" filling "fuel" 25}
+			{item "barrel" filling "fuel" 75}
+		}
+	}
+  
+	{mass 20500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{maxspeed 16}
+			{StartTime 		 6} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		0.6} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+		{FuelBag
+			{volume 550 }	; liters
+			{rate   125 }	; liters per kilometer
+			{remain 550 }
+			{fuel "fuel"}
+		}
+	}
+	{sensor
+		{visor "main"
+			{vision "Visor_BTR"}
+			{bone "visor"}
+		}
+	}
+	{Extension "ssd-flame.mdl"}
+}

@@ -1,0 +1,63 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "wheeled"}
+	(include "/properties/dummy_fsm.inc")
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("crew_2_human")
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "25mm_SA35"}
+			{RestoreIKAfterAim}
+			{Mounted}
+                  {weapon {ammo "ammo bullet25 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet25 ap" 45}
+		      {item "plant" 3}
+		}
+	}
+	{mass 7000}
+      {Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    10} ;  kmph
+			{StartTime 		 5} ;  seconds
+			{BrakeTime 		1} ; seconds
+			{StopTime		 1} ; seconds
+			{TurnRadius     4} ;meter
+			{TurnTime		8} ; seconds
+			{TurnStart		 1}	; seconds
+			{TurnStop	   0.5}	; seconds
+		}
+	}
+
+	{Extension "25mmfr.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Cannon"}
+			}
+		}
+	)
+
+}

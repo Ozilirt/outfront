@@ -1,0 +1,131 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "turret_rotator" "average"}
+
+	{TexMods
+		{"winter" "1"}
+		{"n366" "2"}
+		{"n309" "3"}
+		{"n304" "4"}
+		{"n303" "5"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 35 0.2
+			{left	15}
+			{right	15}
+			{rear	15}
+			{bottom	10}
+		}
+	}
+	{volume "turret"
+		{thickness 35 0.3
+			{front	50}
+			{rear	35}
+			{top	10}
+		}
+	}
+	{Volume "lamp1"
+		{thickness 2}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit3)  animation(armor))
+
+	{Weaponry
+		{place "gun"
+			{defaultWeapon "45mm_m38"}
+			{mounted}
+			{weapon {ammo "ammo bullet45 ap" 1}}
+		}
+		{place "mgun"
+			{defaultWeapon "weapon dt"}
+			{mounted}
+			{weapon {ammo "ammo mgun" 63}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 600}
+			{item "ammo bullet45 ap" 58}
+			{item "ammo bullet45 fg" 37}
+		}
+	}
+	{extender "light"
+		{lightfx "light_boat"}
+		{breakfx "glass_hit"}
+		{lamp "1" off}
+	}
+      {Sensor
+		{Visor "main"
+			{vision "Visor_Tank"}
+			{bone	"visor1"}
+		}
+	}
+
+	{mass 10000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    26} ; максимальная скорость, kmph
+			{StartTime 		10} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		2} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+       
+	}
+	("tracks")
+	{Extension "T-70.mdl"}
+     (mod "mp"
+         {Chassis
+		{Locomotion ("locomotion")
+			{maxspeed 26}
+	      }
+		{speed
+		      {Slow	14}
+			{Normal 21}
+			{Fast	26}
+		}
+         	{FuelBag
+          	 {volume 380 }	; liters
+	    	 {rate   180 }   	; liters per kilometer
+	    	 {remain 380 }
+          	 {fuel "fuel"}
+       	}
+	   }
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+           	       	{bone "visor1"}
+			}
+		}
+	)
+}
+

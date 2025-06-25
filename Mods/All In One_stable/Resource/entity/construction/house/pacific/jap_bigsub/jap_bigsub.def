@@ -1,0 +1,15 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{props  "metall" "construction" "wall"}
+	{constrain water}
+	{Extension "jap_bigsub.mdl"}
+	{Extender "land"
+		{Heightmap "sub_jap1.net"}
+		{Boundary
+			{Box2
+				{Origin -1221 -93}
+				{Destination 1327 120}
+			}
+		}
+	}
+}

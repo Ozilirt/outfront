@@ -1,0 +1,167 @@
+;Exported by: dinsen
+;Date:        Fri Sep 03 20:54:22 2010
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\buda4.max
+{Skeleton
+	{bone "buda"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "piece1"
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				0.0000	0.0000	1.0000
+				2.7839	1.3020	210.9209
+			}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				0.0000	0.0000	1.0000
+				2.7839	0.1840	182.9813
+			}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				0.0000	0.0000	1.0000
+				2.7839	-24.1442	233.9674
+			}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "body"
+			{Position 5.3214	-34.8782	83.5255}
+			{VolumeView "body.ply"}
+		}
+		{bone "piece4"
+			{Position -28.0803	-30.5198	51.4024}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "piece5"
+			{Position -42.2072	2.7556	64.3473}
+			{VolumeView "piece5.ply"}
+		}
+		{bone "piece6"
+			{Position -43.2009	6.9464	110.9017}
+			{VolumeView "piece6.ply"}
+		}
+		{bone "piece7"
+			{Position -29.9207	4.0204	31.5594}
+			{VolumeView "piece7.ply"}
+		}
+		{bone "piece8"
+			{Position 16.3346	4.8902	29.0956}
+			{VolumeView "piece8.ply"}
+		}
+		{bone "piece9"
+			{Position -45.6044	-3.3805	29.6113}
+			{VolumeView "piece9.ply"}
+		}
+		{bone "piece10"
+			{Position -8.1960	28.4398	116.2765}
+			{VolumeView "piece10.ply"}
+		}
+		{bone "piece12"
+			{Position 12.4785	19.2482	43.0638}
+			{VolumeView "piece12.ply"}
+		}
+		{bone "piece11"
+			{Position 6.3891	22.5504	93.8965}
+			{VolumeView "piece11.ply"}
+		}
+	}
+}
+{Obstacle "obb2"
+	{Obb2
+		{Center 6.83042 31.2742}
+		{Extent 88.4192 74.3304}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "piece11"
+	{Polyhedron "piece11.vol"}
+	{Bone "piece11"}
+	{Position 0.0000	0.0000	-33.2313}
+}
+{Volume "piece12"
+	{Polyhedron "piece12.vol"}
+	{Bone "piece12"}
+	{Position -0.0000	0.0000	-35.2640}
+}
+{Volume "piece10"
+	{Polyhedron "piece10.vol"}
+	{Bone "piece10"}
+	{Position 0.0000	0.0000	-40.6983}
+}
+{Volume "piece9"
+	{Polyhedron "piece9.vol"}
+	{Bone "piece9"}
+	{Position 0.0000	0.0000	-29.1446}
+}
+{Volume "piece8"
+	{Polyhedron "piece8.vol"}
+	{Bone "piece8"}
+	{Position 0.0000	0.0000	-28.6440}
+}
+{Volume "piece7"
+	{Polyhedron "piece7.vol"}
+	{Bone "piece7"}
+	{Position 0.0000	0.0000	-31.1077}
+}
+{Volume "piece6"
+	{Polyhedron "piece6.vol"}
+	{Bone "piece6"}
+	{Position 0.0000	0.0000	-45.6883}
+}
+{Volume "piece5"
+	{Polyhedron "piece5.vol"}
+	{Bone "piece5"}
+	{Position 0.0000	0.0000	-55.7769}
+}
+{Volume "piece4"
+	{Polyhedron "piece4.vol"}
+	{Bone "piece4"}
+	{Position 0.0000	0.0000	-51.4092}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position 0.0000	0.0000	-82.6927}
+}
+{Volume "jewel1"
+	{Polyhedron "jewel1.vol"}
+	{Bone "piece3"}
+	{Matrix34
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0034	0.0000	-4.1642
+	}
+}
+{Volume "head1"
+	{Polyhedron "head1.vol"}
+	{Bone "piece2"}
+	{Matrix34
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	0.0000	-32.7008
+	}
+}
+{Volume "hat1"
+	{Polyhedron "hat1.vol"}
+	{Bone "piece1"}
+	{Matrix34
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	0.0000	-40.2520
+	}
+}

@@ -1,0 +1,214 @@
+{mission
+	{Camera
+		{Position 2932.47 2940.84}
+		{Distance 1096.68}
+		{ViewAngle 0.710931}
+		{YawAngle 1.66493}
+	}
+	{Environment "day1_old"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "start_point" 0x8800
+		{Position 4065 495 37}
+		{Turn 180}
+		{Extender "start_point"
+			{mapPoint "zteam"}
+		}
+		{Player 1}
+		{MID 3}
+	}
+	{Entity "start_point" 0x8802
+		{Position -967 1835 0}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "xteam"}
+		}
+		{Player 1}
+		{MID 5}
+	}
+	{Entity "start_point" 0x8803
+		{Position 3967 -207 28}
+		{Turn 180}
+		{Extender "start_point"
+			{mapPoint "zteam"}
+		}
+		{Player 1}
+		{MID 6}
+	}
+	{Entity "start_point" 0x8804
+		{Position -676 2177 0}
+		{Turn -90}
+		{Extender "start_point"
+			{mapPoint "xteam"}
+		}
+		{Player 1}
+		{MID 7}
+	}
+	{Entity "map_point" 0x8805
+		{Position 487 1981 0}
+		{Turn -90}
+		{Extender "map_point"
+			{name "xteam"}
+			{caption "xteam"}
+			{visor "SpawnPoints"}
+			{teams "x"}
+			{unitset "reg"}
+		}
+		{Player 1}
+		{MID 8}
+	}
+	{Entity "map_point" 0x8806
+		{Position 3967 -207 28}
+		{Turn 180}
+		{Extender "map_point"
+			{name "zteam"}
+			{caption "zteam"}
+			{visor "SpawnPoints"}
+			{teams "z"}
+			{unitset "reg"}
+		}
+		{Player 1}
+		{MID 9}
+	}
+	{Entity "start_point" 0x8001
+		{Position 4068 1034 0}
+		{Turn 180}
+		{Extender "start_point"
+			{mapPoint "zteam"}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Helpers
+		{event "s" id 0 state 0}
+		{trigger "1"
+			{actions
+				{"task"
+					{name "primary1"}
+				}
+			}
+		}
+		{trigger "addpoints1"
+			{condition
+				{type 2}
+				{expression "1 & 2 & !3"}
+				{term 1 "event"
+					{id 0}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 3 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "x"}
+				}
+				{"event"
+					{event 0}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "addpoints2"
+			{condition
+				{type 2}
+				{expression "1 & 2 & !3"}
+				{term 1 "event"
+					{id 0}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 3 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "z"}
+				}
+				{"event"
+					{event 0}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "st"
+			{actions
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 0}
+				}
+			}
+		}
+		{waypoints
+		}
+		{zone "poly"
+			{position 328.027344 468.601257 86.012238}
+			{Name "zone"}
+			{Point -135.776 -1385.458}
+			{Point -130.451 -133.0427}
+			{Point 1211.575 -125.1543}
+			{Point 1198.874 -1395.878}
+		}
+		{task
+			{name "primary1"}
+			{desc "mission/mp/sawmill/kh"}
+			{primary}
+			{state hidden}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

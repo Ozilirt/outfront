@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Thu Apr 15 17:40:18 2004
+;File:        D:\-Projects-\-3DWork-\Soldiers\Alies\eng-smg-gunner.max
+{Skeleton
+	{bone "eng-beret"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "eng-beret.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				0.2249	-1.7369	3.4827
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 9.84252 9.84252 3.68412}
+	{Bone "eng-beret"}
+	{Position 0.1739	-0.2377	5.2258}
+}
+{Volume "body"
+	{Box 3.85597 3.60074 1.38571}
+	{Bone "eng-beret"}
+	{Position 0.1739	-0.2377	4.0764}
+}

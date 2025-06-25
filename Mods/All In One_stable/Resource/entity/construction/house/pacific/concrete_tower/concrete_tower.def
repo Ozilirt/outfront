@@ -1,0 +1,124 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{DecalView
+		{ownershadow  128 128}
+		{name "shadow"}
+	}
+	{props "concrete" "construction"}
+	{obstacleID "unbreakable"}
+	{mass 50000}
+	{Extension "concrete_tower.mdl"}
+	{Volume "place3"
+		{Tags  "Attach" "3"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place1"
+		{Tags  "Attach" "1"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place4"
+		{Tags  "Attach" "4"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place2"
+		{Tags  "Attach" "2"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place5"
+		{Tags  "Attach" "5"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place8"
+		{Tags  "Attach" "8"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place7"
+		{Tags  "Attach" "7"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place6"
+		{Tags  "Attach" "6"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 100   }
+		{able {visible 0}}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 100   }
+		{able {visible 0}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 100   }
+		{able {visible 0}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 100   }
+		{able {visible 0}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 100   }
+		{able {visible 0}}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 100   }
+		{able {visible 0}}
+	}
+
+	{placer
+		{place "1" {attach  snipe_cover} 		{linkbone "attach1"}}
+		{place "2" {attach  snipe_cover} 		{linkbone "attach2"}}
+		{place "3" {attach  snipe_cover} 		{linkbone "attach3"}}
+		{place "4" {attach  snipe_cover} 		{linkbone "attach4"}}
+		{place "5" {attach  snipe_cover} 		{linkbone "attach5"}}
+		{place "6" {attach  snipe_cover} 		{linkbone "attach6"}}
+		{place "7" {attach  snipe_cover} 		{linkbone "attach7"}}
+		{place "8" {attach  snipe_cover} 		{linkbone "attach8"}}
+	}
+
+	{Boarder
+		{door "emit" {queue 0}}
+		{door "emit1" {queue 0}}
+		{node "node_ladder_bottom"}
+		{node "node_ladder_top"}
+		{anm "ladder_bind"
+			{forward	{begin	"stand_climb_stairs"}}
+			{reverse	{end	"stand_climb_stairs" -1}}
+		}
+		{anm "ladder"
+			{forward	{speed 1.2} {loop "stand_upstairs"}}
+			{reverse	{speed 1.2} {loop "stand_upstairs" -1}}
+		}
+		{link "emit" "node_ladder_bottom" {anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_ladder_bottom" "node_ladder_top" {anm "ladder"}}
+
+		{link "node_ladder_top" "1" {forward puton} {reverse putoff}}
+		{link "node_ladder_top" "2" {forward puton} {reverse putoff}}
+		{link "node_ladder_top" "3" {forward puton} {reverse putoff}}
+		{link "node_ladder_top" "4" {forward puton} {reverse putoff}}
+		{link "emit1" "5" {forward puton} {reverse putoff}}
+		{link "emit1" "6" {forward puton} {reverse putoff}}
+		{link "emit1" "7" {forward puton} {reverse putoff}}
+		{link "emit1" "8" {forward puton} {reverse putoff}}
+	
+		{link "1" "2"}
+    		{link "1" "3"}
+		{link "1" "4"}
+		{link "2" "3"}
+    		{link "2" "4"}
+		{link "3" "4"}
+
+		{link "5" "6"}
+		{link "5" "7"}
+		{link "5" "8"}
+		{link "6" "7"}
+		{link "6" "8"}
+		{link "7" "8"}	
+	}
+}

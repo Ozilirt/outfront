@@ -1,0 +1,28 @@
+{Skeleton
+	{bone "fra-tank"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fra-tank.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				0.0429	-1.4870	2.6994
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 9.84252 9.84252 3.68412}
+	{Bone "fra-tank"}
+	{Position -0.0081	0.0123	2.7072}
+}
+{Volume "body"
+	{Box 3.85597 3.60074 4.05586}
+	{Bone "fra-tank"}
+	{Position -0.0081	0.0123	2.9619}
+}

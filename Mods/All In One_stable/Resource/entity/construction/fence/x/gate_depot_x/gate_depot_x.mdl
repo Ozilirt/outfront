@@ -1,0 +1,73 @@
+;Exported by: ubrashaev
+;Date:        Mon Mar 01 11:53:20 2004
+;File:        D:\-Projects-\-work-\3d\sk\gate_x.max
+{Skeleton
+	{animation
+		{sequence "crush1" {speed 0.4}}
+	}
+	{bone "gate"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate.ply"}
+		{bone "left"
+			{parameters "CommonMesh;"}
+			{Position 13.2521	40.1718	46.4254}
+			{VolumeView "left.ply"}
+		}
+		{bone "right"
+			{parameters "CommonMesh;"}
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				-0.0000	-1.0000	-0.0000
+				-0.0000	-0.0000	1.0000
+				13.2521	-38.4691	42.2443
+			}
+			{VolumeView "right.ply"}
+		}
+		{bone "fx_dust1"
+			{Position 9.3775	-86.5244	42.5592}
+		}
+		{bone "fx_dust1a"
+			{Position 9.3775	86.0704	27.2703}
+		}
+		{bone "fx_wood1"
+			{Position 9.3775	4.0330	42.5592}
+		}
+	}
+}
+{Obstacle "Rectangle04"
+	{Obb2
+		{Center 14.4542 153.902}
+		{Extent 3.86969 3.94935}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle03"
+	{Obb2
+		{Center 5.51373 84.1999}
+		{Extent 9.29269 9.2927}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center 6.0636 -85.0647}
+		{Extent 9.84253 9.84251}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center 14.4542 -153.902}
+		{Extent 3.86969 3.94934}
+		{Axis -1 0}
+	}
+	{Rotate}
+}

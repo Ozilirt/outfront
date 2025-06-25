@@ -1,0 +1,56 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "small" "turret" "barrel1"}
+	(include "/properties/dummy_fsm2.inc")
+	{sensor
+		{Visor "aa"
+			{vision "type96"}
+			{bone "visor"}
+		}
+	}
+
+	("crew_stan_gunner")
+
+	{Boarder
+		{place "gunner"}
+		{door "emit1"}
+		{link "emit1" "gunner"	{forward putoff} {reverse puton} {anm "gunner"}}
+	}
+
+	{Volume "body"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume "turret"
+		{thickness 10
+			{front  15}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{foresight "foresight1"}
+			{DefaultWeapon "25mm_type96_1"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet25 zenite" 15}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet25 zenite" 180}
+		}
+	}
+	{mass 2000}
+	{Extension "type96_1.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+}

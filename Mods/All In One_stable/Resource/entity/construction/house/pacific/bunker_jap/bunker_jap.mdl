@@ -1,0 +1,207 @@
+;Exported by: dinsen
+;Date:        Sat Oct 01 11:29:50 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\bunker_jap.max
+{Skeleton
+	{bone "bunker_jap"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "bunker_jap.ply"}
+		{bone "arbusto2"
+			{Position -0.2526	-2.4150	41.9295}
+			{VolumeView "arbusto2.ply"}
+		}
+		{bone "arbusto1"
+			{Position 2.3008	-16.3509	45.4818}
+			{VolumeView "arbusto1.ply"}
+		}
+		{bone "exterior"
+			{Position 2.1728	-2.0227	43.6107}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "body9"
+	{Obb2
+		{Center 46.8301 0.707437}
+		{Extent 2.34055 28.2979}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body8"
+	{Obb2
+		{Center -80.7755 45.895}
+		{Extent 33.6868 13.1488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body7"
+	{Obb2
+		{Center -81.9727 -40.8386}
+		{Extent 34.4122 13.1488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 70.3086 -64.2194}
+		{Extent 42.0151 23.1632}
+		{Axis 0.485282 0.874358}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 68.5348 62.7722}
+		{Extent 23.1716 42.0157}
+		{Axis 0.874744 0.484585}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 89.4163 -0.679106}
+		{Extent 18.9743 38.1556}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 6.80413 -73.1578}
+		{Extent 31.1613 64.0384}
+		{Axis 0.0705155 0.997511}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 3.45903 77.6121}
+		{Extent 62.5 35.2727}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center 2.66954 -0.279275}
+		{Extent 45.3426 44.6113}
+		{Axis -1 4.29132e-006}
+	}
+	{Rotate}
+}
+{Volume "body9"
+	{Box 4.68085 56.5957 18.9117}
+	{Bone "bunker_jap"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	1.0000	-0.0000
+		-0.0000	-0.0000	1.8808
+		46.8301	-0.7074	7.2900
+	}
+}
+{Volume "body8"
+	{Polyhedron "body8.vol"}
+	{Bone "bunker_jap"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	-0.0000
+		-0.0000	0.0000	-1.0000
+		-80.7755	-45.8950	13.8766
+	}
+}
+{Volume "body7"
+	{Polyhedron "body7.vol"}
+	{Bone "bunker_jap"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		-0.0000	1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-81.9727	40.8385	13.8766
+	}
+}
+{Volume "body6"
+	{Polyhedron "body6.vol"}
+	{Bone "bunker_jap"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	-0.0000
+		0.0000	0.0000	-1.0000
+		-64.2500	-64.3118	4.4514
+	}
+}
+{Volume "body5"
+	{Polyhedron "body5.vol"}
+	{Bone "bunker_jap"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		-0.0000	1.0000	0.0000
+		-0.0000	-0.0000	1.0000
+		-65.0106	58.3905	5.3828
+	}
+}
+{Volume "body4"
+	{Polyhedron "body4.vol"}
+	{Bone "bunker_jap"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	-0.0000
+		-0.0000	0.0000	-1.0000
+		71.4438	73.8016	10.7239
+	}
+}
+{Volume "body3"
+	{Polyhedron "body3.vol"}
+	{Bone "bunker_jap"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		-0.0000	1.0000	0.0000
+		0.0000	-0.0000	1.0000
+		69.6569	-72.3272	10.7239
+	}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "bunker_jap"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		-0.0000	1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		91.3826	0.6790	5.6350
+	}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "bunker_jap"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	-0.0000
+		-0.0000	0.0000	-1.0000
+		4.7224	74.7083	16.3895
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "bunker_jap"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		-0.0000	1.0000	0.0000
+		-0.0000	-0.0000	1.0000
+		3.4589	-77.5940	18.7023
+	}
+}
+{Volume "exterior"
+	{Polyhedron "exterior.vol"}
+	{Bone "exterior"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		-0.0000	1.0000	0.0000
+		-0.0000	-0.0000	1.0000
+		1.0128	1.0886	5.1357
+	}
+}

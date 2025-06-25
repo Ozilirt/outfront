@@ -1,0 +1,193 @@
+;Exported by: dinsen
+;Date:        Sun Nov 06 13:15:43 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\bunquersac.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "maderas"
+			{Position 0.2434	-0.3436	21.5157}
+			{VolumeView "maderas.ply"}
+		}
+		{bone "exterior"
+			{Position -0.0811	0.4621	17.6914}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 0.471893 1.01373}
+		{Extent 50.3406 31.4851}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body8"
+	{Obb2
+		{Center 48.1435 0.143745}
+		{Extent 7.05895 35.3979}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body7"
+	{Obb2
+		{Center -47.6552 0.129654}
+		{Extent 7.05895 35.3979}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -23.5978 -29.2333}
+		{Extent 30.9813 6.04926}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 40.1842 -29.6016}
+		{Extent 14 6.10461}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 0.215746 24.9169}
+		{Extent 29.25 3.42352}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 0.343014 31.5039}
+		{Extent 29 5.07869}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 40.1842 28.8445}
+		{Extent 14 7.33937}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -40.5791 28.8445}
+		{Extent 14 7.33936}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body8"
+	{Polyhedron "body8.vol"}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-0.9999	0.0140
+		-0.2077	0.0137	0.9781
+		0.9782	0.0029	0.2077
+		45.6980	0.1375	21.4547
+	}
+}
+{Volume "body7"
+	{Polyhedron "body7.vol"}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-0.9999	0.0140
+		0.2077	0.0137	0.9781
+		-0.9782	0.0029	0.2077
+		-45.2098	0.1516	22.4628
+	}
+}
+{Volume "body6"
+	{Box 21.2571 9.83708 5}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.1539	0.9881
+		0.0000	-0.9881	-0.1539
+		16.5863	26.3242	38.0531
+	}
+}
+{Volume "body5"
+	{Polyhedron "body5.vol"}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.1628	0.9867
+		0.0000	-0.9867	-0.1628
+		-40.5791	31.6999	21.5984
+	}
+}
+{Volume "body4"
+	{Polyhedron "body4.vol"}
+	{Bone "body"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	-0.1654	0.9862
+		0.0000	-0.9862	-0.1654
+		40.1842	32.0672	21.5198
+	}
+}
+{Volume "body3"
+	{Box 58.5 9 5}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.2187	0.9758
+		0.0000	-0.9758	0.2187
+		0.2157	-24.9169	39.9520
+	}
+}
+{Volume "body2"
+	{Box 58 23 5}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.2301	0.9732
+		0.0000	-0.9732	0.2301
+		0.3430	-31.5039	12.5444
+	}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "body"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.2228	0.9749
+		0.0000	-0.9749	0.2228
+		40.1842	-26.4074	22.3373
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.2228	0.9749
+		0.0000	-0.9749	0.2228
+		-40.5791	-26.4074	22.3373
+	}
+}
+{Volume "Exterior"
+	{Box 88.7925 51.8239 5}
+	{Bone "exterior"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9999	-0.0140
+		0.0000	0.0140	0.9999
+		0.2273	-0.4536	24.7120
+	}
+}

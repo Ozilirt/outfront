@@ -1,0 +1,32 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{Extension "eg.mdl"}
+	{obstacleID "unbreakable"}
+	{props "antitank_hedgehog"}
+	{Volume "body2"
+		{thickness 30}
+	}
+	{Volume "body1"
+		{thickness 30}
+	}
+	{Volume "body"
+		{thickness 30}
+	}
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 1.7}
+;			{PreScaleY 1.7}
+;  			{PreshiftX	0}
+;  			{PreshiftY	0}
+;			{Visibility	0.55}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;   }
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

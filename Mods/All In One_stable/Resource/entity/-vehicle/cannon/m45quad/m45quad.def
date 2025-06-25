@@ -1,0 +1,99 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.45))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "50cal_tank" "turret" }
+	(include "/properties/dummy_fsm2.inc")
+	{sensor
+		{Visor "aa"
+			{vision "type96"}
+			{bone "visor"}
+		}
+	}
+	("crew_2_human")
+	{Boarder
+		{anm "gunner"
+			{forward	{end "seat_driver_car"}}
+		}
+		{place "gunner"}
+		{door "emit1"}
+		{link "emit1" "gunner"	{forward putoff} {reverse puton} {anm "gunner"}}
+	}
+	
+	{volume "turret"
+		{thickness 20}
+		{tags "turret"}
+		{component "turret"}
+	}
+	{volume "turret1"
+		{thickness 20}
+		{tags "turret"}
+		{component "turret"}
+	}
+	{volume "turret2"
+		{thickness 20}
+		{tags "turret"}
+		{component "turret"}
+	}
+	{volume "body"
+		{thickness 25}
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "body1"
+		{thickness 25}
+		{tags "body"}
+		{component "body"}
+	}
+	{Volume "gun1"
+		{tags "gun"}
+		{thickness 10}
+		{component "gun"}
+	}
+	{Volume "gun2"
+		{tags "gun"}
+		{thickness 10}
+		{component "gun"}
+	}
+	{Volume "gun3"
+		{tags "gun"}
+		{thickness 10}
+		{component "gun"}
+	}
+	{Volume "gun4"
+		{tags "gun"}
+		{thickness 10}
+		{component "gun"}
+	}
+	{component "body"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "gun"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "Quad_50cal"}
+			{Barrels 4}
+			{Mounted}
+			{weapon {ammo "bullet12.7 zenite" 440}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun"
+			{fixed}
+		}
+		{box
+			{item "bullet12.7 zenite" 2200}
+		}
+	}
+	{mass 4800}
+	{Extension "m45quad.mdl"}
+}

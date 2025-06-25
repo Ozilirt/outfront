@@ -1,0 +1,73 @@
+;Made by: Albus
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -0.0982	-0.1784	0.3000}
+			{VolumeView "Body.ply"}
+			{bone "part1"
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "part1.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{speed 0.0130}
+				{Position 0.0000	0.0000	11.1466}
+				{VolumeView "turret.ply"}
+				{bone "part2"
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-7.0990	0.1163	15.9265
+					}
+					{VolumeView "part2.ply"}
+					{bone "part3"
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							-10.0347	1.4825	-0.0194
+						}
+						{VolumeView "part3.ply"}
+					}
+				}
+			}
+		}
+	}
+}
+{Volume "body1"
+	{Box 22.482 22.52468 12.6605}
+	{Bone "Body"}
+	{Position -0.2335	0.2101	6.1834}
+}
+{Volume "turret"
+	{Box 19.2684 15.9982 26.7271}
+	{Bone "turret"}
+	{Position 0.3579	0.1222	6.8475}
+}
+{Volume "part1"
+	{Box 9.482 5.02468 8.6605}
+	{Bone "part1"}
+	{Position -6.0000	6.7900	8.2600}
+}
+{Volume "part2"
+	{Box 48.482 12.52468 7.6605}
+	{Bone "part2"}
+	{Position 10.8000	1.9100	-0.0300}
+}
+{Volume "part3"
+	{Cylinder 1.59074 57.607}
+	{Bone "part3"}
+	{Matrix34
+		0.0024	-0.9987	-0.0510
+		-0.0004	-0.0511	0.9987
+		-1.0000	-0.0024	-0.0006
+		46.7092	0.0078	0.6087
+	}
+}

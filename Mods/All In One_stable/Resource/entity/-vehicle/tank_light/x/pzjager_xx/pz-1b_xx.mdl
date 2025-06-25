@@ -1,0 +1,165 @@
+;Exported by: MrQuazar
+;Date:        Wen jul 23 23:28:45 2005
+;File:        C:\Documents and Settings\Quazar.MRQUAZAR\Рабочий стол\pzjager
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{Position 0.6102	0.0000	16.3780}
+			{VolumeView "Body.ply"}
+			
+			{bone "part2"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	-0.0000
+					12.9759	-15.5181	-10.5434
+				}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part4"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	-0.0000
+					-23.4091	18.3647	-10.5434
+				}
+				{VolumeView "part4.ply"}
+			}
+			{bone "part3"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	-0.0000
+					35.7143	18.3647	-5.8702
+				}
+				{VolumeView "part3.ply"}
+			}
+			{bone revolute "Turret"
+				{parameters "ID=turret;"}
+				{speed 0.0400}
+				{Matrix34
+					1.0000 0.0000 0.0000 
+					0.0000 1.0000 0.0000
+					0.0000 0.0000 1.0000
+					3.5	0	15
+				}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=turret;"}
+					{limits -15.0000 0.0000}
+					{speed 0.0500}
+					{Matrix34
+						-0.9994 0.0107 0.0222
+						-0.0387	-0.2036 -0.9786
+						-0.0025 -0.9790 0.2046
+						6.025 1.2000 4.0000
+					}
+					{VolumeView "Gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=turret;"}
+						{Matrix34
+							-0.9973	0.0732	-0.0021
+							-0.0732	-0.9973	0.0299
+							0.0000	0.0300	1.0000
+							-15.0000 0.5000 0.7000
+						}
+						{VolumeView "Gun.ply"}
+					}
+				}
+			}
+			{bone "engine"
+				{Matrix34
+					-0.0018	0.0000	1.0000
+					-0.0000	1.0000	-0.0000
+					-1.0000	-0.0000	-0.0018
+					-25.8186	0.0000	-1.9299
+				}
+			}
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{Matrix34
+				-1.0000	0.0000	-0.0000
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-0.0000	18.3974	7.6232
+			}
+			{VolumeView "WheelsL.ply"}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{Matrix34
+				-1.0000	0.0000	-0.0000
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-0.0000	-15.9095	7.6232
+			}
+			{VolumeView "WheelsR.ply"}
+		}
+	}
+}
+{Volume "trackright"
+	{Box 82.9065 5.51181 17.0146}
+	{Bone "WheelsR"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	1.0000	-0.0000
+		-1.0302	0.8841	-1.3076
+	}
+}
+{Volume "trackleft"
+	{Box 58.8636 5.51181 17.0146}
+	{Bone "WheelsL"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	1.0000	-0.0000
+		9.9645	0.8841	-1.1273
+	}
+}
+{Volume "Turret"
+	{Polyhedron "Turret.vol"}
+	{Bone "Turret"}
+	{Position 0.5118	-0.0407	-4.0250}
+}
+{Volume "part3"
+	{Cylinder 5.64632 2.1998}
+	{Bone "part3"}
+	{Position -0.0318	-0.1425	-1.1030}
+}
+{Volume "part4"
+	{Cylinder 5.64632 2.1998}
+	{Bone "part4"}
+	{Position 0.2057	-0.1808	-1.1030}
+}
+{Volume "part2"
+	{Cylinder 5.64632 2.1998}
+	{Bone "part2"}
+	{Position 0.2223	-0.1808	-1.1214}
+}
+{Volume "part1"
+	{Box 29.3395 29.4857 9.44489}
+	{Bone "part1"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	-0.0000
+		0.0000	-0.0000	1.0000
+		-1.0831	-0.2005	-0.6629
+	}
+}
+{Volume "Body"
+	{Polyhedron "Body.vol"}
+	{Bone "Body"}
+	{Matrix34
+		1.0000	0.0000	0.0018
+		-0.0000	1.0000	-0.0000
+		-0.0018	0.0000	1.0000
+		-1.6224	0.0000	-10.2421
+	}
+}

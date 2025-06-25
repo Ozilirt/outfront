@@ -1,0 +1,62 @@
+{entity
+	(include "/properties/transmg.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "wheeled"}
+	(include "/properties/dummy_fsm.inc")
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("crew_1_human")
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "maxim"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 400}
+		}
+	}
+	{mass 1800}
+      {Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    4} ;  kmph
+			{StartTime 		 5} ;  seconds
+			{BrakeTime 		2} ; seconds
+			{StopTime		 1} ; seconds
+			{TurnRadius     4} ;meter
+			{TurnTime		8} ; seconds
+			{TurnStart		 1}	; seconds
+			{TurnStop	   1}	; seconds
+		}
+	}
+
+	{Extension "maxim_2.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Cannon"}
+			}
+		}
+	)
+}

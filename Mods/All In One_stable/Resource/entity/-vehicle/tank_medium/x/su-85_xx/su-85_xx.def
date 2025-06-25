@@ -1,0 +1,33 @@
+{game_entity
+	{Extension "Su-85_xx.mdl"}
+	{TexMods
+		{"n319" "1"}
+		{"n344" "2"}
+		{"no" "3"}
+	}
+
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	{obstacleId "tank"}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+			{bottom	40}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+			{top	40}
+			{rear	47}
+		}
+	}
+	{volume "body3"
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+			{top	20}
+		}
+	}
+}

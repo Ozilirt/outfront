@@ -1,0 +1,132 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_m4.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "high" "turret_rotator"}
+	{TexMods
+		{"n689" "1"}
+		{"n869" "2"}
+		{"n399" "3"}
+		{"n663" "4"}
+	}
+	{volume "body"
+		{component "body"}
+		{tags "body"}
+		{thickness 38
+			{front	48 0.2}
+			{rear	32}
+			{top	22}
+			{bottom	18}
+		}   
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 38
+			{front	48 0.2}
+			{rear	32}
+			{top	22}
+			{bottom	18}
+		}
+	}
+	{volume "turret"
+		{thickness 64
+			{front	70}
+			{left	64 0.3}
+			{right	64 0.3}
+			{rear	50}
+			{top	25}
+		}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+  
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mm_m3"}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "browning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+ 		{place "mgun2"
+			{DefaultWeapon "browning_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 800}
+			{item "ammo bullet75 ap" 37}
+			{item "ammo bullet75 fg" 20}
+		}
+	}
+	
+	{mass 30300}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed		22}
+			{StartTime		6}
+			{BrakeTime		0.6}
+			{StopTime		1}
+			{TurnRadius		5}
+			{TurnTime		5}
+			{TurnStart		2}
+			{TurnStop		0.5}
+			{Gears 			0.2 0.3 0.5 0.7 1.0}
+			{RearGears		0.2 0.5}
+		}
+	}
+	{Extension "m4a1.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank_Long"}
+			}
+		}
+		{Chassis
+			{speed
+				{Slow	8}
+				{Normal	14}
+				{Fast	22}
+			}
+			{FuelBag
+				{volume 636 }	; liters
+				{rate   314 }	; liters per kilometer
+				{remain 636 }
+				{fuel "fuel"}
+			}
+		}
+	)
+}

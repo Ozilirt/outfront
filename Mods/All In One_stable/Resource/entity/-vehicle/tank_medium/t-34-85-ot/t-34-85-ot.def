@@ -1,0 +1,142 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_t34.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "turret_rotator" "high"}
+	
+	{TexMods
+		{"n169" "1"}
+		{"n126" "2"}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 45 0.3
+			{front  45 0.3}
+			{rear   45 0.3}
+			{top	20}
+			{bottom	20}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 45 0.4
+			{front  45 0.3}
+			{rear   45 0.3}
+			{top	20}
+			{bottom	20}
+		}
+	}
+	{volume "turret"
+		{thickness 75 0.3
+			{front  90 0.3}
+			{rear   52 0.3}
+			{top    30 0.3}
+			{bottom	30 0.3}
+		}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Is-2"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_Is-2"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+		{anm "armor2"
+			{forward	{begin	"board_MiddleArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor1))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor2))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "85mm_d5"}
+			{Mounted}
+			{weapon {ammo "ammo bullet85 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "bigflamethrower"}
+			{Mounted}
+			{weapon {ammo "ammo fire" 50}}
+		}
+           	{place "mgun2"
+			{Rotate}
+			{DefaultWeapon "dt_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 63}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{weapon "mgun2" {fixed}}
+		{box
+			{item "ammo mgun" 500}
+			{item "ammo fire" 150}
+			{item "ammo bullet85 ap" 29}
+			{item "ammo bullet85 fg" 16}
+		}
+	}
+	
+	{mass 26500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    24} ; максимальная скорость, kmph
+			{StartTime 		 6} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		0.6} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{Extension "t-34-85-ot.mdl"}
+ 	(mod "mp"
+	{sensor
+			{Visor "main"
+				{vision "Visor_Tank_Long"}
+			}
+	}
+	{Chassis
+			{Locomotion ("locomotion")
+				{maxspeed 24}
+			}
+			{speed
+				{Slow	13	}
+				{Normal	19}
+				{Fast	24	}
+			}
+  		{FuelBag
+          		{volume 740 }	; liters
+	    		{rate   260 }   	; liters per kilometer
+	    		{remain 660 }
+          		{fuel "fuel"}
+       		}
+
+	}
+ 	)
+}

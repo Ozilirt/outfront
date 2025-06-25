@@ -1,0 +1,208 @@
+;Model created by: Dinsen & Albus
+;date : Feb 2010
+{Skeleton
+	{bone "Basis"
+		{parameters "WheelRadius=0.5;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position 0.0277	-0.0000	21.9656}
+			{VolumeView "Body.ply"}
+			{bone "Engine"
+				{parameters "ID=engine;"}
+				{Position 10.7651	-0.0609	3.0517}
+				{bone "FXsmoke1"
+					{Matrix34
+						-0.0504	0.0000	0.9987
+						0.9987	0.0000	0.0504
+						0.0000	1.0000	0.0000
+						-12.9188	5.5984	29.0417
+					}
+				}
+				{bone "FXshot"
+					{Matrix34
+						-0.0504	0.0000	0.9987
+						0.9987	0.0000	0.0504
+						0.0000	1.0000	0.0000
+						-2.9249	1.5563	1.6549
+					}
+				}
+			}
+			{bone "driver"
+				{Matrix34
+					0.9998	0.0000	0.0175
+					0.0000	1.0000	0.0000
+					-0.0175	0.0000	0.9998
+					-23.5683	-0.0312	0.0447
+				}
+			}
+			{bone "Visor2"
+				{Position 8.8026	0.0000	18.0632}
+			}
+			{bone "pala"
+				{parameters "ID=body;"}
+				{Position 39.7335	-0.6000	-11.6018}
+				{VolumeView "pala.ply"}
+			}
+			{bone revolute "WheelR1"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					15.5332	-14.0859	-12.5575
+				}
+				{VolumeView "WheelR1.ply"}
+			}
+			{bone revolute "WheelL1"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					15.5332	14.9859	-12.5575
+				}
+				{VolumeView "WheelL1.ply"}
+			}
+			{bone revolute "WheelR2"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-32.0160	-14.5560	-12.8415
+				}
+				{VolumeView "WheelR2.ply"}
+			}
+			{bone revolute "WheelL2"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-32.0160	14.3560	-12.8415
+				}
+				{VolumeView "WheelL2.ply"}
+			}
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{Position 1.6563	23.1045	7.7090}
+			{bone "FXtraceL1"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					16.6837	-8.5902	-3.1838
+				}
+			}
+			{bone "FXtraceL2"
+				{Matrix34
+					-0.9397	0.0000	0.3420
+					0.0000	-1.0000	0.0000
+					0.3420	0.0000	0.9397
+					-48.9747	-8.5902	-5.3918
+				}
+			}
+			{bone "TrackL"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					-9.6744	-8.0228	1.5064
+				}
+				{VolumeView "TrackL.ply"}
+			}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{Position 1.6563	-23.1780	7.7090}
+			{bone "TrackR"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					-9.6744	7.5228	1.5064
+				}
+				{VolumeView "TrackR.ply"}
+			}
+			{bone "FXtraceR1"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					16.6837	8.6420	-3.1838
+				}
+			}
+			{bone "FXtraceR2"
+				{Matrix34
+					-0.9397	0.0000	0.3420
+					0.0000	-1.0000	0.0000
+					0.3420	0.0000	0.9397
+					-48.9747	8.6420	-5.3918
+				}
+			}
+		}
+		{bone "emit1"
+			{parameters "Group=crew;"}
+			{Matrix34
+				-0.7071	-0.7071	0.0000
+				0.7071	-0.7071	0.0000
+				0.0000	0.0000	1.0000
+				-8.7507	25.7820	-0.0001
+			}
+			{visibility 0}
+		}
+	}
+}
+{Volume "inventory"
+	{Box 46.6849 23.4403 10.3191}
+	{Bone "Body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-2.5087	0.0000	-6.1516
+	}
+}
+{Volume "fuel"
+	{Box 10.8195 11.0929 9.82412}
+	{Bone "Body"}
+	{Position -10.2702	-0.0010	-2.3321}
+}
+{Volume "engine"
+	{Box 38.7225 13.4169 21.477}
+	{Bone "Engine"}
+	{Position -0.0943	0.0609	-0.8157}
+}
+{Volume "body"
+	{Box 61.1336 19.8087 3.34646}
+	{Bone "Body"}
+	{Position -3.0277	0.0000	-7.4731}
+}
+{Volume "body1"
+	{Box 7.8195 48.0929 18.82412}
+	{Bone "Body"}
+	{Position 42.2702	-0.5000	-10.8321}
+}
+{Volume "body2"
+	{Box 28.1336 28.8087 32.34646}
+	{Bone "Body"}
+	{Position -22.6000	-0.3000	12.4731}
+}
+{Volume "trackright"
+	{Box 64.3376 9.20405 16.393}
+	{Bone "WheelsR"}
+	{Position -9.9812	7.1354	1.0015}
+}
+{Volume "trackleft"
+	{Box 64.3376 9.09826 16.393}
+	{Bone "WheelsL"}
+	{Position -9.9812	-7.5033	1.0015}
+}

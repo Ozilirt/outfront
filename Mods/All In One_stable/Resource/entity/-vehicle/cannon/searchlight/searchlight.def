@@ -1,0 +1,34 @@
+{game_entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/construction.inc" sx(0.3) sy(0.5) ofsx(0) ofsy(0))
+	(include "/properties/selection/vehicle.inc"  scale(0.6))
+	{Extension "searchlight.mdl"}
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+	{sensor
+		{Visor "main"
+			{vision "searchlight"}
+			{bone "visor"}
+		}
+	}
+	{props "vehicle" "searchlight"}
+	{Volume "gun_vol"
+		{tags "body"}
+		{thickness hollow 1}
+	}
+	{Volume "lamp"
+		{thickness 0.1}
+	}
+	("crew_gunner")
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "searchlight"}
+			{Mounted}
+		}
+	}
+	{extender "inventory"		
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon searchlight"}
+		}
+	}
+}

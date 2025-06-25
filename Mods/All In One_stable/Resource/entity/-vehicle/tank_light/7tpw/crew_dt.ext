@@ -1,0 +1,41 @@
+;SDL
+
+{boarder
+	
+	{anm "gunner"
+		{forward	{begin	"board_LowTank_stand_1"} {end "seat_armor"}}
+		{reverse 	{end	"emit_tank_1"}}
+	}	
+	{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+	}	
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "%group"} {visor "%visor"}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+(define "crew_human_visible"
+	{placer
+		{place "%place" {group "%group"} {linkbone "%place"} {visor "%visor"}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+;("crew_human" place(driver)	door(emit2) group(crew) animation(driver) visor(driver))
+;("crew_human" place(commander)	door(emit2) group(crew) animation(driver) visor(driver))
+("crew_human" place(gunner)	door(emit) group(crew) animation(gunner) visor(main))
+;("crew_human_visible" place(commander)	door(emit2) group(crew)	 animation(charger)	    visor(main))
+;("crew_human_visible" place(gunner)		door(emit2) group(crew)	 animation(gunner)	    visor(main))
+
+{placer
+	{place "gunner" {worker charger}}
+}

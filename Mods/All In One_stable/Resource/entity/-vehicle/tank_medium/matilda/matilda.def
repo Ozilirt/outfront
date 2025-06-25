@@ -1,0 +1,104 @@
+{
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium"}
+	
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 50
+		    {front  70}
+		    {top    15}
+			{bottom	15}
+			{rear   15}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 50
+		    {front  70}
+		    {top    15}
+			{bottom	15}
+			{rear   15}
+		}   
+	}
+	{volume "turret"
+		{thickness 35 0.3
+			{front  75}
+			{top	20}
+			{bottom 20}
+			{rear   20}
+		}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "57mm_OQF"}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "bren"}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 650}
+			{item "ammo bullet57 ap" 50}
+			{item "ammo bullet57 fg" 27}
+		}
+	}
+	
+	{mass 20500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    15} ; максимальная скорость, kmph
+			{StartTime 		 10} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		1} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		8} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{Extension "Matilda.mdl"}
+}

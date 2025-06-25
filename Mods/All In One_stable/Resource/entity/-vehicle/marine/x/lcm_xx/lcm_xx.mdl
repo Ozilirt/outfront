@@ -1,0 +1,49 @@
+;Exported by: Albus
+;Date:        Sun Dec 28 20:19:20 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\lcm\lcm_xx.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 0.6245	-2.2247	19.0240}
+			{VolumeView "body.ply"}
+			{bone "rampa"
+				{parameters "ID=body;"}
+				{Position 132.5240	2.1334	-17.7789}
+				{VolumeView "rampa.ply"}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Position -121.6498	2.5552	16.6556}
+				{VolumeView "engine.ply"}
+			}
+			{bone revolute "mgun_rot"
+				{parameters "ID=body;"}
+				{limits -100.0000 100.0000}
+				{speed 0.0100}
+				{Position -85.7048	-18.8353	9.6991}
+				{VolumeView "mgun_rot.ply"}
+				{bone revolute "mgun"
+					{limits -8.0000 20.0000}
+					{speed 0.0100}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						12.0803	-0.4140	21.4894
+					}
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position 1.5370	1.5158	-0.5809}
+}

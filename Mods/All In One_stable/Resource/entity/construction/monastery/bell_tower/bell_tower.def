@@ -1,0 +1,82 @@
+{building
+	(include "/properties/building.inc")
+	{DecalView
+		{ownershadow  128 128}
+		{name "shadow"}
+	}
+	{Extension "bell_tower.mdl"}
+	{props "cornered" "concrete" "construction" "parts" "wall"}
+
+	{placer
+		{place "1" {attach  squat_lie} 		{linkbone "attach1"}}
+		{place "2" {attach  squat_lie} 		{linkbone "attach2"}}
+		{place "3" {attach  squat_lie} 		{linkbone "attach3"}}
+		{place "4" {attach  squat_lie} 		{linkbone "attach4"}}
+	}	
+	{boarder
+		{door "door"}
+
+    		{link "door"	"1"	{forward putoff} {reverse puton}}
+    		{link "door"	"2"	{forward putoff} {reverse puton}}
+    		{link "door"	"3"	{forward putoff} {reverse puton}}
+    		{link "door"	"4"	{forward putoff} {reverse puton}}
+	}
+	{Volume "place1"
+		{Tags  "attach" "1"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place2"
+		{Tags  "attach" "2"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place3"
+		{Tags  "attach" "3"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place4"
+		{Tags  "attach" "4"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "Body10"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "Body9_voll"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "Body8_voll"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "Body7_voll"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "Body6_voll"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "Body5_voll"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "Body3_voll"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "Body2_voll"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+}

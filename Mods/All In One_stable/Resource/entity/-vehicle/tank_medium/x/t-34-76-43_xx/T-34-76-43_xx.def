@@ -1,0 +1,36 @@
+{game_entity
+	{Extension "T-34-43_xx.mdl"}
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	{TexMods
+		{"ambush" "1"}
+		{"winter" "2"}
+	}
+	{obstacleId "tank"}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 47
+		    {left	60}
+		    {right	60}
+			{top	20}
+			{bottom	20}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 47
+		    {left	60}
+		    {right	60}
+			{top	20}
+			{bottom	20}
+		}
+	}
+	{volume "turret"
+		{thickness 55 0.3
+			{front  75}
+			{rear   20}
+			{top    20}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret_rotator"}
+	(include "/properties/dummy_fsm2.inc")
+
+	("crew_2_human")
+	{sensor
+		{Visor "main"
+			{vision "flak41"}
+			{bone "visor"}
+		}
+	}
+
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mm_L36"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 ap" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet75 fg" 28}
+			{item "bullet75 ap" 27}
+		}
+	}
+	{mass 10000}
+	{Extension "gun75.mdl"}
+
+	{Volume "turret1"
+		{thickness 20}
+	}
+	{Volume "gun_rot"
+		{thickness 20}
+	}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+}

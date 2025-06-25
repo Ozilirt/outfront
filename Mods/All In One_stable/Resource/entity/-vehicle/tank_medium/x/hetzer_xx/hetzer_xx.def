@@ -1,0 +1,28 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	{TexMods
+		{"1" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  80}
+			{top	22}
+			{bottom	25}
+			{rear   30}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		   {front  80}
+			{top	30}
+			{bottom	25}
+			{rear   30}
+		}
+	}
+	{obstacleId "tank"}
+	{Extension "hetzer_xx.mdl"}
+}

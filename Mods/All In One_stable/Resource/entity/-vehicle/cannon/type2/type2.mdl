@@ -1,0 +1,132 @@
+;Made by: Albus
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -6.6957	-0.6105	-1.7403}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=Turret;"}
+				{speed 0.0150}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	1.0000
+					 -0.5486	0.0000	14.0000
+				}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{limits -20.0000 65.0000}
+					{speed 0.0200}
+					{Matrix34
+						0.9622	0.0000	0.2720
+						-0.2720	0.0000	0.9622
+						0.0000	-1.0000	0.0000
+						4.8083	0.0000	12.9121
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	0.0000
+						}
+						{VolumeView "gun.ply"}
+						{bone "shooter00"
+							{Matrix34
+								0.0000	0.0000	1.0000
+								0.0000	1.0000	0.0000
+								1.0000	0.0000	0.0000
+								0.0000	0.6000	47.3894
+							}
+						}
+						{bone "Foresight1"
+							{Matrix34
+								0.0000	0.0000	1.0000
+								0.0000	1.0000	0.0000
+								1.0000	0.0000	0.0000
+								0.0000	0.6000	47.3894
+							}
+						}
+					}
+				}
+				{bone "Visor"
+					{parameters "Vis;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	1.0000	0.0000
+						0.0000	0.0000	1.0000
+						9.1125	-0.8900	23.1861
+					}
+				}
+				{bone "gunner"
+					{Matrix34
+						0.9337	0.0005	0.3580
+						-0.0006	1.0000	0.0001
+						-0.3580	-0.0003	0.9337
+						-4.1842	0.0488	-5.7802
+					}
+				}
+				{bone "FXshell1"
+					{Matrix34
+						-0.6790	0.3023	0.6689
+						0.2080	0.9531	-0.2196
+						-0.7040	-0.0099	-0.7101
+						-1.6632	3.1360	9.9478
+					}
+				}
+			}
+		}
+		{bone "emit2"
+			{parameters "Group=crew;"}
+			{Position -16.0547	25.1045	0.2285}
+			{visibility 0}
+		}
+		{bone "emit1"
+			{parameters "Group=crew;"}
+			{Position -16.7736	-25.0189	0.2285}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "Obstacle"
+	{Obb2
+		{Center -9.6439 1.0542}
+		{Extent 12.8733 18.9610}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "Body"}
+	{Matrix34
+		1.8571	0.0000	0.2751
+		0.0000	1.5406	0.0000
+		-0.3154	0.0000	0.9699
+		-22.4342	-0.2000	5.4372
+	}
+}
+{Volume "Turret"
+	{Box 14.2645 16.0979 16.3304}
+	{Bone "Turret"}
+	{Position 2.4971	0.0000	6.2327}
+}
+{Volume "gun"
+	{Cylinder 0.5318 34.87454}
+	{Bone "gun"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.1100	0.6000	17.1900
+	}
+}

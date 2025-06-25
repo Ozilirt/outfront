@@ -1,0 +1,112 @@
+;Model created by: <Igetfer>
+;Model modified by: <Albus>
+;PLY Geometry by: <A.G.(Shasha), Igetfer>
+;VOL Geometry by: <Igetfer>
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "emit1"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-28.7803	9.0000	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "emit2"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-12.2722	-11.3998	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "gunner"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-28.7803	9.0000	0.0000
+			}
+		}
+		{bone "commander"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-34.2722	-12.0000	0.0000
+			}
+		}
+		{bone "Visor"
+			{Position 0.0000	0.0000	36.0000}
+		}
+		{bone revolute "stabilizator"
+			{limits -10.0000 10.0000}
+			{speed 0.0009}
+			{Orientation
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+			}
+			{bone "nogi"
+				{parameters "ID=body;"}
+				{Matrix34
+					0.9077	0.0000	0.4194
+					0.4194	0.0000	-0.9077
+					0.0000	1.0000	0.0000
+					19.0245	0.0000	-0.5582
+				}
+				{VolumeView "nogi.ply"}
+			}
+			{bone "gun"
+				{parameters "ID=gun;"}
+				{Matrix34
+					0.8251	0.0000	-0.5649
+					-0.5649	0.0000	-0.8251
+					0.0000	1.0000	0.0000
+					0.5182	0.0000	12.6295
+				}
+				{VolumeView "gun.ply"}
+				{bone revolute "gun_rot"
+ 					{limits -27.0000 10.0000}
+					{speed 0.004}
+					{Position 38.0000	0.0000	0.0000}
+					{bone "foresight1"
+						{Position 0.0000	0.0000	0.0000}
+					}
+				}
+				{bone "Upor"
+					{Matrix34
+						0.8251	-0.5649	0.0000
+						0.5649	0.8251	0.0000
+						0.0000	0.0000	1.0000
+						-0.6122	0.0000	0.0000
+					}
+					{VolumeView "upor.ply"}
+				}
+			}
+		}
+	}
+}
+{Volume "gun"
+	{Box 30.0000 3.4 3.4}
+	{Bone "gun"}
+	{Position 15.0000 0.0000 0.0000}
+}
+{Volume "body"
+	{Box 20.0000 3.4000 10.0000}
+	{Bone "nogi"}
+	{Position -10.0000 0.0000 0.0000}
+}
+{Volume "upor"
+	{Box 1.0000 9.0000 9.0000}
+	{Bone "upor"}
+	{Position 1.0000 0.0000 0.0000}
+}
+

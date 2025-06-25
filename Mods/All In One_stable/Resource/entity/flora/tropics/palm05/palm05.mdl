@@ -1,0 +1,33 @@
+;Exported by: dinsen
+;Date:        Sat Mar 19 23:42:22 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\palmera05.max
+{Skeleton
+	{bone "palm05"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "palm05.ply"}
+	}
+}
+{Volume "bole"
+	{Polyhedron "bole.vol"}
+	{Bone "palm05"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	0.0000	0.0000
+	}
+}
+{Volume "crown"
+	{Box 102.391 102.669 100.192}
+	{Bone "palm05"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	0.0000	180.0000
+	}
+}

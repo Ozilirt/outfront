@@ -1,0 +1,35 @@
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Position 16.1204	-0.0236	10.3724}
+			{VolumeView "body.ply"}
+				{bone "cabin"
+					{parameters "CommonMesh;ID=cabin;"}
+					{Position 29.0008	0.0211	21.2304}
+					{VolumeView "cabin.ply"}
+				}
+				{bone "body_rear"
+					{parameters "ID=body_rear;"}
+					{Position -158.4923	0.0211	2.4557}
+					{VolumeView "body_rear.ply"}
+				}
+				{bone "body_front"
+					{parameters "ID=body_front;"}
+					{Position 141.7149	0.0000	2.6763}
+					{VolumeView "body_front.ply"}
+					{bone revolute "FX_exp4"
+						{limits -2.0000 2.0000}
+						{Position -48.8354	0.0211	5.1806}
+					}
+				}
+		}
+		{bone "volume_holder"
+		}
+	}
+}

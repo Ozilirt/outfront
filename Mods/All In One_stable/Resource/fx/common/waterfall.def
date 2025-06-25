@@ -1,0 +1,227 @@
+{fx
+	{ParticleView
+		{generator
+			{TotalParticles 1000}
+			{EmissionArea
+				{radius 30 30}
+				{alpha0 0}
+				{alpha1 180 15}
+				{speed 0}
+			}
+			{ParticleInit
+				{Speed 0.5 0}
+				{Lifetime 5 2}
+			}
+			{StartParticles 1000}
+		}
+		{mover
+			{damping 0.91}
+			{gravity
+				{value 0.07}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.5}
+			}
+			{nodependonwind}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Flash/Drops.ebm"
+					{Scale
+						{Linear
+							{min 0.12 0.05}
+							{max 0.2 0.1}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 90}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1.8}
+					}
+				}
+			}
+			{stage collided dying
+				{sprite "/fx/_bmp/flash/ripples_w2.ebm"
+					{Scale
+						{Linear
+							{min 0.2 0.1}
+							{max 0.8 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 0.8}
+					}
+					{Visibility
+						{Linear
+							{min 0.3}
+							{max 0}
+						}
+					}
+				}
+				{flags KillParticle Ground}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 500}
+			{EmissionArea
+				{radius 30 30}
+				{alpha0 0}
+				{alpha1 180 30}
+			}
+			{ParticleInit
+				{Speed 0.1 0}
+				{Lifetime 1.2 0.5}
+			}
+			{Color 0xe6e6e6}
+			{Color 0xb6d9de}
+			{Color 0xc6d1df}
+		}
+		{mover
+			{damping 0.91}
+			{gravity
+				{value 0.07}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+			{nodependonwind}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 1000}
+			{EmissionArea
+				{radius 30 30}
+				{alpha0 0}
+				{alpha1 180 30}
+			}
+			{ParticleInit
+				{Speed 0.2 0.05}
+				{Lifetime 3 1}
+			}
+		}
+		{mover
+			{damping 0.91}
+			{gravity
+				{value 0.08}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+			{nodependonwind}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Flash/Drops3.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 90}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.15 0.05}
+				}
+				{sprite "/FX/_BMP/Flash/Drops.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 90}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.15 0.05}
+				}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 1000}
+			{EmissionArea
+				{radius 30 30}
+				{alpha0 0}
+				{alpha1 180 15}
+				{speed 0}
+			}
+			{ParticleInit
+				{Speed 0.1 0}
+				{Lifetime 5 2}
+			}
+			{StartParticles 1000}
+		}
+		{mover
+			{damping 0.9}
+			{gravity
+				{value 0.08}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.5}
+			}
+			{nodependonwind}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Flash/Drops.ebm"
+					{Scale
+						{Linear
+							{min 0.12 0.05}
+							{max 0.2 0.1}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 90}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1.8}
+					}
+				}
+			}
+			{stage collided dying
+				{sprite "/fx/_bmp/flash/ripples_w2.ebm"
+					{Scale
+						{Linear
+							{min 0.2 0.1}
+							{max 0.8 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 0.8}
+					}
+					{Visibility
+						{Linear
+							{min 0.6 0.2}
+							{max 0}
+						}
+					}
+				}
+				{flags KillParticle Ground}
+			}
+		}
+		{NotifyOwner}
+	}
+}

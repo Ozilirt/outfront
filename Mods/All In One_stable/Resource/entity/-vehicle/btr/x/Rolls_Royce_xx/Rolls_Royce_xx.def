@@ -1,0 +1,35 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+		{"ambush3" "3"}
+		{"ambush4" "4"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{thickness 15}
+	}
+        {volume "part1"
+		{thickness 5}
+	}
+        {volume "part2"
+		{thickness 5}
+	}
+	{Extension "Rolls_Royce_xx.mdl"}
+}

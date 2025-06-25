@@ -1,0 +1,13 @@
+{entity
+	(include "/properties/stuff_small.ext")
+	{Extension "forser.mdl"}
+	{extender "stuff"
+		{item "pala"}
+	}
+	{volume "body"
+		{able {contact}}
+   	}
+   	{props "physics_damping"}
+	{colliderId "particle"}
+	{collideWith "human"}
+}

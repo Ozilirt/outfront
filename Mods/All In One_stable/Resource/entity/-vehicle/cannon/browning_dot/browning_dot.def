@@ -1,0 +1,13 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "browning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}  	
+	{Extension "browning_dot.mdl"}
+}

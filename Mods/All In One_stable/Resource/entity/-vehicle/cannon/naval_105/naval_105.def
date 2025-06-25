@@ -1,0 +1,39 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	(include "/properties/structure/cannon_100.ext")
+	{props "vehicle" "cannon" "medium" "turret_rotator"}
+	(include "/properties/dummy_fsm2.inc")
+	{simulation {able 0}}
+
+	("crew_2_human")
+	
+
+	{volume "turret"
+		{thickness 20
+			{front  40}
+		}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "105mm_naval"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet105 fg" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet105 fg" 24}
+			{item "ammo bullet105 ap" 10}
+		}
+	}
+	{mass 10000}
+	{Extension "naval_105.mdl"}
+}

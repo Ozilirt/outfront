@@ -1,0 +1,44 @@
+;SDL
+
+{Placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "commander"
+		{Group "crew"}	
+		{LinkBone "commander"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "mg"
+		{entity "degtyarev_stan"}
+		{Linkbone "attach_mg"}
+		{handlebone "basis"}
+	}
+}
+
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit4"}
+
+	{anm "driver"
+		{forward	{begin	"board_big-midcar_driver"} {end "seat_driver_car"} {base "doorleft"}}
+		{reverse 	{end	"board_big-midcar_driver" -1} {base "doorleft" -1}}
+	}
+	{anm "commander"
+		{forward	{begin	"board_big-midcar"} {end "seat_passenger"} {base "doorright"}}
+		{reverse 	{end	"board_big-midcar" -1} {base "doorright" -1}}
+	}
+	{anm "gunner"
+		{forward	{begin	"board_body"} {end ""}}
+		{reverse 	{end	"emit_body" 1}}
+	}
+
+	{link "emit1"	"driver"		{forward putoff} {reverse puton} {anm "driver"}}
+	{link "emit2"	"commander"		{forward putoff} {reverse puton} {anm "commander"}}
+	{link "emit3"	"mg"		{forward putoff} {reverse puton}	{anm "gunner"}}
+	{link "emit4"	"mg"		{forward putoff} {reverse puton}	{anm "gunner"}}
+}

@@ -1,0 +1,52 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "turret"}
+	{props "emit_on_attack"}
+	(include "/properties/dummy_fsm2.inc")
+	{TexMods
+		{"ambush1" "green"}
+	}
+	{simulation {able 0}}
+
+	("crew_2_human")
+	
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_A7"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet37 ap" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet37 ap" 40}
+		}
+	}
+	{mass 10000}
+	{Extension "flak37.mdl"}
+
+	{Volume "turret1"
+		{thickness 20}
+	}
+	{Volume "gun_rot"
+		{thickness 20}
+	}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+
+}

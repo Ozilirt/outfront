@@ -1,0 +1,22 @@
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "depo1"
+			{Position 0.2649	2.1463	113.2659}
+			{VolumeView "depo1.ply"}
+			{bone "depo2"
+				{Position 1.1941	-0.8639	46.5195}
+				{VolumeView "depo2.ply"}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 40.9398 53.5743}
+	{Bone "depo2"}
+	{Position -0.9806	-1.5207	3.3699}
+}

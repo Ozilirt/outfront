@@ -1,0 +1,74 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "wheeled"}
+	(include "/properties/dummy_fsm.inc")
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("crew_2_human")
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_type94"}
+			{RestoreIKAfterAim}
+			{Mounted}
+ 			{weapon {ammo "ammo bullet37 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet37 ap" 38}
+			{item "bullet37 fg" 12}
+			{item "plant" 5}
+		}
+	}
+	{mass 7000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed	12} ;  kmph
+			{StartTime 	5} ;  seconds
+			{BrakeTime 	1} ; seconds
+			{StopTime	1} ; seconds
+			{TurnRadius	4} ;meter
+			{TurnTime	8} ; seconds
+			{TurnStart	1}	; seconds
+			{TurnStop	0.5}	; seconds
+		}
+	}
+
+	{Extension "type1_37.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Cannon"}
+			}
+		}
+	)
+
+}

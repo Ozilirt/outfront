@@ -1,0 +1,17 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "Vickers_Mk_I"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+	{extender "inventory"
+		{box
+			{item "ammo mgun" 240}
+		}
+	}
+	{Extension "vickers_ship.mdl"}
+}

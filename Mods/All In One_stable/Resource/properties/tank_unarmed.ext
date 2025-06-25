@@ -1,0 +1,147 @@
+;SDL
+actor
+
+{Chassis "track"
+	; left track must be first
+	{FuelBag
+		{volume 200 }	; liters
+		{rate	90 }   	; liters per kilometer
+		{remain 200 }
+		{fuel "fuel"}
+	}
+	{speed
+		{Slow	5	}	; km/h
+		{Normal	15	}
+		{Fast	25	}
+	}
+    {Track "left"
+	    {Tracer
+    		{View "tracks"}
+    		{Bone "FXtraceL1"}
+	    	{Step 0.7}			; in meters
+    	}
+		{TextureScroller
+	    	{Bone "TrackL"}
+    		{Length 0.6}		; meters per animation
+    	}
+    }
+    {Track "right"
+    	{Tracer 
+	    	{View "tracks"}
+    		{Bone "FXtraceR1"}
+    		{Step 0.7}			; in meters
+	    }
+		{TextureScroller
+	    	{Bone "TrackR"}
+    		{Length 0.6}		; meters per animation
+    	}
+    }
+}
+
+(include "vehicle.ext")
+(include "tank_crew.ext")
+
+{colliderid "tank"}
+{nocontactwith "vehicle"}
+
+{hearingBias 5} ; in meters
+{sensor
+	{visor "main"
+		{vision "tank-main"}
+		{bone "visor1"}
+	}
+	{Visor "driver"
+		{vision "tank-driver"}
+		{bone "visor2"}
+	}
+}
+
+{props "tank" "turret" "emit_on_sink"}
+{PatherID  "tank"}
+
+{extender "inventory"
+	{box
+		{size 5 6}
+		{Weight 15000}
+		(mod "mp"
+            {item "can" filling "fuel" 20}
+            {item "dynamite"}
+
+		)
+	}
+}
+
+("tracks")
+
+{volume "gun"
+	{thickness 100}
+	{able {Visible 0} {Obstacle 0} {Contact 0}}
+}
+{volume "inventory"
+	{thickness 60.0
+      }
+}
+{volume "engine"
+	{thickness 35.0
+   }
+}
+{volume "crew"
+	{thickness 20}
+}
+{volume "turret"
+	{component "turret"}
+	{tags "turret" "body"}
+}
+
+{component "body"
+	{RepairTime 25}
+	{Able {Repair}}
+	{tags "mover" "noDestroyedView"}
+	(mod "mp"
+		{Able {Repair 0}}
+	)
+}
+{component "engine"
+	{RepairTime 20}
+	{Able {Repair}}
+}
+{component "turret"
+	{RepairTime 25}
+	{Able {Repair}}
+}
+{component "gun"
+	{RepairTime 20}
+	{Able {Repair}}
+}
+{component "trackleft"
+      {RepairTime 20}
+	{Able {Repair}}
+}
+{component "trackright"
+      {RepairTime 20}
+	{Able {Repair}}
+}
+
+(define "locomotion"
+	{MaxSpeed 	 	30 } ; максимальная скорость, kmph
+	{StartTime 		6  } ; время разгона до макс. скорости с 0, seconds
+	{BrakeTime 		0.6} ; время торможения с макс. скорости до 0, seconds
+	{StopTime		1  } ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+	{TurnRadius     5  } ; мин. радиус разворота, meter
+	{TurnTime		5  } ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+	{TurnStart		0.8} ; время разгона до макс. угловой скорости с 0, seconds
+	{TurnStop		0.5} ; время остановки с макс. угловой скорости до 0, seconds
+	{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+	{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+)
+(define "volume_kust"
+	{volume "crown%0"
+		{component "crown%0"}
+		{Able {contact 0} {bullet 0} {obstacle 0} {touch 0} {overlap 1}}
+		{tags "crown%0"}
+	}
+	{component "crown%0"
+		{Able {Repair}}
+		{RepairTime 5}
+	}
+)

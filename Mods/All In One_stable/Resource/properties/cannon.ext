@@ -1,0 +1,67 @@
+;SDL
+actor
+
+(include "vehicle.ext")
+
+{props "cannon_ai" "with_gun"}
+
+{obstacleID "car" "operatable"}
+{obstacleID "car_empty" "empty"}
+{obstacleID "car_broken" "broken"}
+
+{extender "inventory"
+	{box
+		{size 8 6}
+		{weight 10000}
+	}
+}
+
+{sensor {visor "main" {bone "visor"}}}
+
+{placer	{place "gunner" {visor "main"} {useVision} {worker charger}}}	
+
+(include "cannon_crew.ext")
+
+{volume "body"
+	{thickness 4}
+}
+{volume "turret"
+	{thickness 3}
+}
+{volume "gun"
+	{thickness 3}
+}
+	
+{component "body"
+	{RepairTime 25}
+	{Able {repair} {break_by_pierce}}
+}
+{component "turret"
+	{RepairTime 15}
+	{Able {Repair} {break_by_pierce}}
+}
+{component "gun"
+	{RepairTime 10}
+	{Able {Repair} {break_by_pierce}}
+}
+
+{Chassis "track" 
+	("chassis_defaults") 
+}
+{weaponry
+     {place "gun"
+     {rotate} 
+     }
+}
+(define "locomotion"
+	{MaxSpeed	7	}		; максимальная скорость, kmph
+			{StartTime	10	}		; время разгона до макс. скорости с 0, seconds
+			{BrakeTime	2	}		; время торможения с макс. скорости до 0, seconds
+			{StopTime	4	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius	2	}		; мин. радиус разворота, meter
+			{Gears		0.35 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears	0.33 0.5}	; передаточные коэф-ты коробки передач
+			{SteerOn	40}			; скорость поворота колес, градусов в секунду
+			{SteerOff	40}         ; скорость возврата колес в исх. состояние, градусов в секунду
+			{SplineRadius 2}		; ограничение радиуса поворота на сплайнах, метров
+)

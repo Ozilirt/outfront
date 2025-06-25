@@ -1,0 +1,43 @@
+;Exported by: dinsen
+;Date:        Mon Nov 07 21:30:58 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\sturmovik_jap.max
+{Skeleton
+	{animation
+		{sequence "start" {speed 0.3} {autostart}}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body1"
+			{Position 1.4956	1.4140	69.5229}
+			{VolumeView "body1.ply"}
+			{bone "skin"
+				{Matrix34
+					0.7872	0.6167	-0.0000
+					-0.5894	0.7523	-0.2944
+					-0.1816	0.2318	0.9557
+					-0.5992	0.5418	-38.9033
+				}
+				{VolumeView "skin.ply"}
+			}
+		}
+	}
+}
+{Volume "body1"
+	{Box 0.5 0.546843 24.9995}
+	{Bone "body1"}
+	{Position -0.0034	0.0100	-12.3217}
+}
+{Volume "body"
+	{Box 11.5256 8.45913 34.8899}
+	{Bone "skin"}
+	{Matrix34
+		0.7872	-0.5894	-0.1816
+		0.6167	0.7523	0.2318
+		0.0000	-0.2944	0.9557
+		-0.0267	-0.7348	-1.0488
+	}
+}

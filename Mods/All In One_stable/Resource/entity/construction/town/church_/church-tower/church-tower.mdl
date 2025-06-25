@@ -1,0 +1,167 @@
+;Exported by: shevchenko
+;Date:        Sat Jan 17 11:51:07 2004
+;File:        D:\-Projects-\-3DWork-\sheva\ch1c.max
+{Skeleton
+	{bone "church-tower"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "church-tower.ply"}
+	}
+}
+{Obstacle "body9"
+	{Obb2
+		{Center -34.8239 -29.5801}
+		{Extent 3.93701 9.84252}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body8"
+	{Obb2
+		{Center -34.8239 27.6297}
+		{Extent 3.93701 11.811}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center 37.9673 0}
+		{Extent 5.90551 51.1811}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -7.25849 45.3223}
+		{Extent 39.3701 5.90551}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -32.1416 -44.2807}
+		{Extent 32.8248 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 37.9492 -44.336}
+		{Extent 15.748 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body11"
+	{Obb2
+		{Center -51.5826 42.3394}
+		{Extent 4.92126 8.85827}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body10"
+	{Obb2
+		{Center -51.5731 -37.4298}
+		{Extent 4.92126 4.15748}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof3"
+	{Polyhedron "roof3.vol"}
+	{Bone "church-tower"}
+	{Position -7.2098	0.9842	203.0092}
+}
+{Volume "roof2"
+	{Box 43.3071 43.3071 110.236}
+	{Bone "church-tower"}
+	{Matrix34
+		-0.0000	0.7071	-0.7071
+		0.0000	0.7071	0.7071
+		1.0000	0.0000	-0.0000
+		-6.9448	-0.1521	180.0429
+	}
+}
+{Volume "roof1"
+	{Box 35.4331 37.4016 98.4252}
+	{Bone "church-tower"}
+	{Matrix34
+		-0.7071	0.0000	-0.7071
+		-0.7071	0.0000	0.7071
+		0.0000	1.0000	-0.0000
+		-6.5730	-0.0110	177.1015
+	}
+}
+{Volume "body9"
+	{Box 7.87402 19.685 39.3701}
+	{Bone "church-tower"}
+	{Position -34.8239	29.5801	19.6850}
+}
+{Volume "body8"
+	{Box 7.87402 23.622 39.3701}
+	{Bone "church-tower"}
+	{Position -34.8239	-27.6297	19.6850}
+}
+{Volume "body7"
+	{Box 9.84252 78.7402 131.89}
+	{Bone "church-tower"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-7.2585	44.3333	111.2251
+	}
+}
+{Volume "body6"
+	{Box 7.87402 78.7402 19.685}
+	{Bone "church-tower"}
+	{Position -34.8239	0.0000	49.2126}
+}
+{Volume "body5"
+	{Box 11.811 102.362 177.165}
+	{Bone "church-tower"}
+	{Position 37.9673	0.0000	88.5827}
+}
+{Volume "body4"
+	{Box 11.811 78.7402 177.165}
+	{Bone "church-tower"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-7.2585	-45.3223	88.5827
+	}
+}
+{Volume "body3"
+	{Box 13.7795 102.362 131.89}
+	{Bone "church-tower"}
+	{Position -53.5250	0.0000	111.2205}
+}
+{Volume "body2"
+	{Box 65.6496 9.84252 51.1811}
+	{Bone "church-tower"}
+	{Position -32.1416	44.2807	25.5906}
+}
+{Volume "body1"
+	{Box 31.4961 9.84252 51.1811}
+	{Bone "church-tower"}
+	{Position 37.9492	44.3360	25.5906}
+}
+{Volume "body11"
+	{Box 9.84252 17.7165 45.2756}
+	{Bone "church-tower"}
+	{Position -51.5826	-42.3394	22.6378}
+}
+{Volume "body10"
+	{Box 9.84252 8.31496 45.2756}
+	{Bone "church-tower"}
+	{Position -51.5731	37.4298	22.6378}
+}

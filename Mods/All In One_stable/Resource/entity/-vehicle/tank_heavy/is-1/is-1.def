@@ -1,0 +1,131 @@
+;Model created by: <Eger>
+;BTRH Mod (c) Copyright 2005 by BTRH clan developers team
+;http://rus-hammers.com
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+
+	{props "heavy" "turret_rotator" "huge"}
+	
+	{TexMods
+ 		{"ambush" "1"}
+		{"ambush1" "2"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 90
+		    {front  100}
+			{bottom	30}
+			{top    30}
+			{rear 60}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 90
+		    {front  100}
+			{bottom	26}
+			{top    26}
+			{rear 60}
+		}   
+	}
+	{volume "turret"
+		{thickness 100
+			{rear 100 0.3}
+                        {left 100}
+                        {right 100}
+			{front 100 1.0}
+                        {top 40}
+		}
+	}
+   	{component "turret"
+		{Able {repair}}
+		{RepairTime 75}
+	}
+
+		("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv-85"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_Is-2"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "85mm_d5"}
+			{Mounted}
+			{weapon {ammo "ammo bullet85 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "weapon dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 63}}
+		}
+		{place "mgun2"
+			{Rotate}
+			{DefaultWeapon "dt_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 63}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 800}
+			{item "ammo bullet85 ap" 38}
+			{item "ammo bullet85 fg" 20}
+		}
+	}
+	
+	{mass 52500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{maxspeed 16}
+		}
+		{speed
+			{Slow	8	}	; km/h
+			{Normal	10	}
+			{Fast	15	}
+		}
+		{FuelBag
+			{volume 580 }	; liters
+			{rate	300 }	; liters per kilometer
+			{remain 520 }
+			{fuel "fuel"}
+ 		}
+	}
+	{Extension "IS-2.mdl"}
+
+	(mod "mp"
+		{sensor
+			{visor "main"
+				{vision "Visor_Tank_Long"}
+			}
+		}
+	)
+}

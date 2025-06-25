@@ -1,0 +1,149 @@
+;Exported by: Albus
+;Date:        Fri Mar 02 21:15:45 2012
+;File:        C:\Documents and Settings\Albus\Mis documentos\Downloads\SKYPE\37mmgunm1_xx.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 6.2830	-1.2515	8.0013}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0180}
+				{Position -6.2830	1.2515	-2.9125}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -30.0000 30.0000}
+					{Matrix34
+						0.8910	-0.0000	0.4540
+						-0.4540	-0.0000	0.8910
+						0.0000	-1.0000	-0.0000
+						-4.0297	-0.0000	16.2109
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	-0.0000	0.0000
+							-0.0000	-0.0000	-1.0000
+							-0.0000	1.0000	-0.0000
+							29.9823	-0.1341	0.0533
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+			{bone "part1"
+				{parameters "ID=body;"}
+				{Position -33.7785	17.3130	0.6485}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part3"
+				{parameters "ID=body;"}
+				{Position -34.3543	-14.5214	0.4491}
+				{VolumeView "part3.ply"}
+			}
+			{bone "part2"
+				{parameters "ID=body;"}
+				{Position -6.5265	-22.7442	-5.8448}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part4"
+				{parameters "ID=gun;"}
+				{Position 0.7645	1.0368	21.4807}
+				{VolumeView "part4.ply"}
+			}
+		}
+	}
+}
+{Volume "part4"
+	{Cylinder 0.594729 28.1155}
+	{Bone "part4"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-0.0033	0.1886	0.0206
+	}
+}
+{Volume "part2"
+	{Box 3.54746 21.9198 5.41269}
+	{Bone "part2"}
+	{Position 0.1583	-0.1308	0.5498}
+}
+{Volume "part3"
+	{Cylinder 7.49299 4.22943}
+	{Bone "part3"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	0.0000
+		0.1068	-0.0217	0.2003
+	}
+}
+{Volume "part1"
+	{Cylinder 7.49299 4.22943}
+	{Bone "part1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	0.0000
+		-0.1709	-0.0439	0.0009
+	}
+}
+{Volume "body4"
+	{Cylinder 7.49299 4.22943}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	0.0000
+		20.0791	-14.5920	0.6494
+	}
+}
+{Volume "body3"
+	{Cylinder 7.49299 4.22943}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	0.0000
+		19.5750	17.2692	0.6494
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position -0.0000	1.3970	-7.6006}
+}
+{Volume "turret"
+	{Box 13.0069 11.7762 17.4655}
+	{Bone "turret"}
+	{Position 1.5356	1.0869	8.6846}
+}
+{Volume "gun_rot"
+	{Box 20.4838 5.26778 6.88582}
+	{Bone "gun_rot"}
+	{Matrix34
+		1.0000	-0.0041	-0.0000
+		-0.0000	-0.0000	-1.0000
+		0.0041	1.0000	-0.0000
+		2.7489	-0.3955	-0.0971
+	}
+}
+{Volume "gun"
+	{Cylinder 0.851335 34.8933}
+	{Bone "gun"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		-0.0489	0.1418	0.1267
+	}
+}

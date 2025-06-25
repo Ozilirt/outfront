@@ -1,0 +1,94 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(1.8) scaley(1.0))
+	{Extension "destroyer.mdl"}
+	{mass 15000}
+	{props "vehicle" "marine" "flag" "emit_on_sink"}
+	{extension "crew.ext"}
+	{patherID "water"}
+	{TexMods
+		{"M301" "1"}
+	}
+	{Weaponry
+		{place "gun"
+			{RestoreIKAfterAim}
+			{DefaultWeapon ""}
+		}
+	}
+	{extender "inventory"
+		{box
+		}
+	}
+
+	{Volume "ballast1"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 60}
+	}
+	{Volume "ballast2"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 60}
+	}
+	{Volume "ballast3"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 60}
+	}
+	{Volume "ballast4"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 60}
+	}
+	{Volume "ballast5"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 60}
+	}
+	{Volume "ballast6"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 60}
+	}
+	{volume "body1"
+		{tags "body"}
+		{thickness 80}
+	}
+	{volume "body2"
+		{tags "body"}
+		{thickness 80}
+	}
+	{volume "body3"
+		{tags "body"}
+		{thickness 80}
+	}
+	{volume "body4"
+		{tags "body"}
+		{thickness 80}
+	}
+	{component "body1"
+		{able {break_by_pierce}}
+	}
+	{component "body2"
+		{able {break_by_pierce}}
+	}
+	{component "body3"
+		{able {break_by_pierce}}
+	}
+	{component "body4"
+		{able {break_by_pierce}}
+	}
+	{chassis
+		{waterline 0.8}
+		{Locomotion ("locomotion")
+                  {MaxSpeed	15	}
+	            {TurnRadius	20	}
+	            {SplineRadius 15}
+	            {TurnTime		0.1}
+	            {TurnStart		 5}
+	            {TurnStop	   3}
+
+		}
+	}
+}

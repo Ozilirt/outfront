@@ -1,0 +1,82 @@
+{ArmoredCar 
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew"}
+	{PatherId "vehicle.small"}
+
+	{TexMods
+		{"winter" "1"}
+		{"ambush" "2"}
+	}
+	{extension "crew.ext"}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 14
+			{front	20}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 14
+			{front	20}
+		}
+	}
+	{volume "turret"
+		{thickness 14
+			{front	20}
+		}
+	}
+
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}  	
+	{sensor
+		{Visor "main"
+		      {vision "Visor_BTR"}
+		}  
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 600}
+                }
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+
+	{mass 5000}
+	{Chassis
+		{speed
+			{Slow	13}	; km/h
+			{Normal	23}
+			{Fast	29}
+		}
+		{FuelBag
+			{volume 100}	; liters
+			{rate    25}	; liters per kilometer
+			{remain 100}
+			{fuel "fuel"}
+		}
+		{Locomotion ("locomotion")
+			{MaxSpeed 29}
+		}
+	}
+	{Extension "SdKfz-221.mdl"}
+}

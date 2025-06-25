@@ -1,0 +1,19 @@
+{game_entity
+	(include "/properties/stuff.ext")
+	{extension "napalm.mdl"}
+	{simulation {able 1} {state 1}}
+	{constrain none}
+	{colliderID "particle"}
+	{collideWith  "construction"}
+	{explosive}
+	{mass 500}
+	{props "air_bomb"}
+	{body {proper body sensible}}
+	{volume "body" 
+		{able {obstacle 0}}
+		{thickness 1}
+	}
+	{extender "stuff"
+		{item "napalm"}
+	}
+}

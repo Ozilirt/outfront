@@ -1,0 +1,48 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.4))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "flak" "turret_ai_rotate" "barrel1"}
+	(include "/properties/dummy_fsm2.inc")
+	{simulation {able 1}}
+	
+	("crew_stan_gunner")
+	{sensor
+		{Visor "main"
+			{vision "flak38"}
+			{bone "visor"}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{foresight "foresight1"}
+			{DefaultWeapon "15mm_BESA"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo ptr" 40}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo ptr" 440}
+		}
+	}
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+	{volume "shield"
+		{thickness 5
+			{front  15}
+		}
+	}
+	{volume "gun"
+		{thickness 6}
+	}
+
+	{mass 10000}
+	{Extension "besa15mm.mdl"}
+}

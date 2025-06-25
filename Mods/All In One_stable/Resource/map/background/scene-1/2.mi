@@ -1,0 +1,253 @@
+{mission
+	{Camera
+		{Position 358.913 5008.65}
+		{Distance 1410}
+		{ViewAngle 0.231774}
+		{YawAngle 0.323449}
+	}
+	{Environment "dayend"}
+	{User 1}
+	{GameProgress 0 0}
+	{Human "jap.soldier" 0x8000
+		{Position 489.275 5322.44 35.7067}
+		{Turn -75.8885}
+		{Player 0}
+		{MID 1}
+		{NameId 18 25}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8001
+		{Position 239.999 5609.89 49.0211}
+		{Turn 145.339}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "arisaka_kn" filling "ammo rifle" 5 {cell 0 0}}
+				{item "ammo rifle" 20 {cell 4 0}}
+			}
+			{hand_right
+				{Item 0x8006 "bino"}
+			}
+		}
+		{Player 0}
+		{MID 2}
+		{NameId 2 10}
+		{FsmState "stand"}
+	}
+	{Human "jap.soldier" 0x8002
+		{Position 299.143 5607.05 61.1483}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 20 {cell 7 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "helmet3_jap"}
+			}
+		}
+		{Player 0}
+		{MID 3}
+		{NameId 61 19}
+		{FsmState "stand"}
+	}
+	{Entity "boat2" 0x8003
+		{Position 1314.11 2541.05 21}
+		{Turn -51.4836}
+		{Player 0}
+		{MID 4}
+	}
+	{Human "jap.infantry_smg" 0x8004
+		{Position 1313.5 2541.87 23.6199}
+		{Orientation
+			  0.533737  -0.728815   0.428983
+			  0.780079   0.620165   0.082905
+			 -0.326420   0.290349   0.899459
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 5}
+		{NameId 73 78}
+		{FsmState "board"}
+	}
+	{Human "jap.infantry_smg" 0x8005
+		{Position 1293.65 2568.55 21.2331}
+		{Orientation
+			  0.059904  -0.938583   0.339928
+			  0.998151   0.061280  -0.006676
+			 -0.014564   0.339744   0.940428
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 6}
+		{NameId 68 32}
+		{FsmState "board"}
+	}
+	{Entity "bino" 0x8006
+		{Position 234.67 5607.41 65.2869}
+		{Orientation
+			  0.868640  -0.438069  -0.231632
+			 -0.217720   0.082538  -0.972563
+			  0.445125   0.895155  -0.023679
+		}
+		{DisableObstacles}
+	}
+	{Link 0x8004 To 0x8003 "seat1"}
+	{Link 0x8005 To 0x8003 "driver"}
+	{Brain 0x8003
+		{HoldFire}
+	}
+	{Helpers
+		{trigger "ini"
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 3}
+					}
+					{"waypoint/uid" 0}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 4}
+					}
+					{"waypoint/uid" 6}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 2}
+					}
+					{"waypoint/uid" 13}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 306.747 5614.99 59.8397}
+				{radius 50}
+				{transition 1}
+				{commands
+					{"wait"
+						{time 30}
+					}
+				}
+			}
+			{1
+				{position 377.101 5436.72 76.9623}
+				{radius 50}
+				{transition 2}
+			}
+			{2
+				{position 450.181 5305.46 43.5847}
+				{radius 50}
+				{transition 3}
+				{commands
+					{"wait"
+						{time 10}
+					}
+				}
+			}
+			{3
+				{position 374.963 5436.32 77.1361}
+				{radius 50}
+				{transition 0}
+			}
+			{4
+				{position 717.965 4321.75 -7.03567}
+				{radius 50}
+				{transition 5}
+			}
+			{5
+				{position 927.685 3092.11 -6.18299}
+				{transition 6}
+			}
+			{6
+				{position 1933.55 1559.29 -8}
+				{radius 50}
+				{commands
+					{"wait"
+						{time 35}
+					}
+					{"actor_to_waypoint"
+						{"waypoint/uid" 7}
+						{approach "teleport & rotate"}
+					}
+				}
+			}
+			{7
+				{position 1549.24 1634.53 -35.0764}
+				{radius 50}
+				{transition 14}
+			}
+			{8
+				{position 181.045 5677.4 34.1311}
+				{radius 50}
+				{transition 9}
+			}
+			{9
+				{position 310.672 5796.5 26.6334}
+				{radius 50}
+				{transition 10}
+			}
+			{10
+				{position 461.533 5743.27 23.4702}
+				{radius 50}
+				{transition 11}
+				{commands
+					{"animation"
+						{selector {source "local"}
+							{"actors/mids" 2}
+						}
+						{collage "stand_see_bino"}
+						{totalTime 24}
+						{flags "loop"}
+					}
+				}
+			}
+			{11
+				{position 308.934 5792.77 27.4757}
+				{radius 50}
+				{transition 12}
+			}
+			{12
+				{position 180.02 5676.48 34.0021}
+				{radius 50}
+				{transition 13}
+			}
+			{13
+				{position 176.537 5472.1 42.9599}
+				{radius 50}
+				{transition 8}
+				{commands
+					{"wait"
+						{time 60}
+					}
+				}
+			}
+			{14
+				{position 825.274 2544.13 -51.8047}
+				{transition 15}
+			}
+			{15
+				{position 494.215 5002.97 -19.703}
+				{radius 50}
+				{commands
+					{"wait"
+						{time 30}
+					}
+					{"actor_to_waypoint"
+						{"waypoint/uid" 16}
+						{approach "teleport & rotate"}
+					}
+				}
+			}
+			{16
+				{position 513.247 4963.7 -25.8344}
+				{radius 50}
+				{transition 4}
+			}
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

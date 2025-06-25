@@ -1,0 +1,47 @@
+;SDL
+
+{Placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "gunner"
+		{Group "crew"}	
+		{LinkBone "gunner"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "charger"
+		{Group "crew"}	
+		{LinkBone "charger"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}	
+	{place "commander"
+		{Group "crew"}	
+		{LinkBone "commander"}	
+		{turnoff {sensor} {shadow}}
+	}	
+}
+
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+
+	{anm "seat"
+		{forward	{begin	"board_rubber_boat"} {end "seat_driver_car"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+	{anm "commander"
+		{forward	{begin	"board_rubber_boat"} {end "stand_mgun"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+
+	{link "emit1"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit2"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit1"	"gunner"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit2"	"gunner"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit1"	"charger"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit2"	"charger"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit1"	"commander"		{forward putoff} {reverse puton} {anm "commander"}}
+	{link "emit2"	"commander"		{forward putoff} {reverse puton} {anm "commander"}}
+}

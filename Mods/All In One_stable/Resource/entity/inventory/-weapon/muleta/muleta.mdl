@@ -1,0 +1,42 @@
+;Exported by: garry
+;Date:        Thu Feb 12 20:05:19 2004
+;File:        \\TERM\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon1.max
+{Skeleton
+	{bone "muleta"
+        	{Matrix34
+            	-0.0212 0.0012 -0.9998
+            	-0.0279 -0.9996 -0.0006
+            	0.9994 -0.0279 -0.0212
+            	-0.3551 14.4142 2.0246
+        	}
+		{VolumeView "muleta.ply"}
+		{bone "handle"
+            	{Matrix34
+               	 	0.0000 -1.0000 0.0000
+                		-1.0000 0.0000 0.0000
+                		0.0000 0.0000 -1.0000
+                		0.7286 18.1721 0.1220
+            	}
+		}
+	}
+}
+{Volume "select"
+	{Cylinder 5.2540 15.5051}
+	{Bone "muleta"}
+    	{Matrix34
+       	 -0.1693 0.0007 0.0114
+       	 0.0156 0.0045 0.2234
+        	0.0055 1.6218 -0.0339
+        	0.6094 14.6439 0.5705
+    	}
+}
+{Volume "body"
+	{Cylinder 0.695903 11.2786}
+	{Bone "muleta"}
+	{Matrix34
+		0.9999	-0.0007	0.0000
+		0.0000	0.0000	1.5774
+		-0.0015	-2.2165	0.0000
+		0.5577	14.8413	0.8001
+	}
+}

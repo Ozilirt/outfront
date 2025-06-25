@@ -1,0 +1,208 @@
+;Exported by: dinsen
+;Date:        Sat Oct 22 21:18:11 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\OHKA I-13.max
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=45;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_front"
+			{Matrix34
+				1.0000	0.0043	0.0000
+				-0.0043	1.0000	0.0000
+				0.0000	-0.0000	1.0000
+				27.1230	1.4286	5.9671
+			}
+		}
+		{bone "pivot_back"
+			{Matrix34
+				1.0000	0.0043	0.0000
+				-0.0043	1.0000	0.0000
+				0.0000	-0.0000	1.0000
+				-55.1017	1.1896	6.5112
+			}
+		}
+		{bone "emit1"
+			{Matrix34
+				-0.0119	0.9999	0.0000
+				-0.9999	-0.0119	0.0000
+				0.0000	0.0000	1.0000
+				-16.5643	-33.3524	1.5108
+			}
+		}
+		{bone "emit2"
+			{Matrix34
+				0.0162	-0.9999	0.0000
+				0.9999	0.0162	0.0000
+				0.0000	0.0000	1.0000
+				-16.8654	33.0091	1.5108
+			}
+		}
+		{bone "body"
+			{Position 8.8992	-14.1151	21.5078}
+			{VolumeView "body.ply"}
+			{bone "wingl1"
+				{Position 8.0294	54.8368	-3.0369}
+				{VolumeView "wingl1.ply"}
+				{bone "support2"
+					{Matrix34
+						1.0000	0.0043	-0.0000
+						-0.0043	1.0000	-0.0000
+						0.0000	0.0000	1.0000
+						21.1382	-13.9886	-36.8484
+					}
+				}
+			}
+			{bone "wingr1"
+				{Position 10.9981	-24.4326	-2.7315}
+				{VolumeView "wingr1.ply"}
+				{bone "support1"
+					{Matrix34
+						1.0000	0.0043	-0.0010
+						-0.0043	1.0000	0.0001
+						-0.0011	-0.0001	1.0000
+						18.4072	10.3056	-37.1620
+					}
+				}
+			}
+			{bone "body_back"
+				{Position -60.7120	14.0460	0.4597}
+				{VolumeView "body_back.ply"}
+				{bone "elevator"
+					{Position -20.6646	0.0216	10.2529}
+					{VolumeView "elevator.ply"}
+				}
+				{bone "support3"
+					{Matrix34
+						1.0000	-0.0018	-0.0000
+						-0.0013	1.0000	0.0000
+						0.0000	-0.0000	1.0000
+						-28.8773	0.1223	-14.1453
+					}
+				}
+			}
+			{bone "engine"
+				{Position 48.9992	15.7743	1.1251}
+				{VolumeView "engine.ply"}
+				{bone "propeller"
+					{Position 22.3877	-0.7998	-2.8461}
+					{VolumeView "propeller.ply"}
+				}
+				{bone "FX_fire6"
+					{Matrix34
+						-1.0000	-0.0000	-0.0000
+						0.0000	0.0000	1.0000
+						-0.0000	1.0000	-0.0000
+						-134.6561	-4.1728	-0.6329
+					}
+				}
+				{bone "FX_fire7"
+					{Matrix34
+						-1.0000	-0.0000	-0.0000
+						0.0000	0.0000	1.0000
+						-0.0000	1.0000	-0.0000
+						-134.6561	1.7604	-0.6329
+					}
+				}
+				{bone "FX_fire8"
+					{Matrix34
+						-1.0000	-0.0000	-0.0000
+						0.0000	0.0000	1.0000
+						-0.0000	1.0000	-0.0000
+						-137.1006	-1.3105	5.3051
+					}
+				}
+			}
+			{bone "cabine"
+				{Position -21.6834	14.8059	12.9278}
+				{VolumeView "cabine.ply"}
+				{bone "driver"
+					{Matrix34
+						0.9955	-0.0085	0.0941
+						0.0085	1.0000	-0.0000
+						-0.0941	0.0008	0.9956
+						2.4345	0.4779	-21.2628
+					}
+					{bone "skin"
+						{Matrix34
+							0.8759	0.0035	0.4824
+							-0.0042	1.0000	0.0004
+							-0.4824	-0.0024	0.8759
+							4.0368	0.0392	11.8162
+						}
+					}
+				}
+				{bone "visor"
+					{Matrix34
+						1.0000	0.0043	-0.0000
+						-0.0043	1.0000	0.0000
+						0.0000	-0.0000	1.0000
+						79.9557	0.9081	-3.2770
+					}
+				}
+			}
+		}
+	}
+}
+{Obstacle "obst3"
+	{Obb2
+		{Center -10.3428 -0.375237}
+		{Extent 76.7303 8.75}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "obst2"
+	{Obb2
+		{Center 20.6907 1.01819}
+		{Extent 15.2919 62.3891}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "obst1"
+	{Obb2
+		{Center -72.5815 -0.204437}
+		{Extent 9.89474 35.9809}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 75.7221 24.4286 24.6082}
+	{Bone "body"}
+	{Position -2.6966	14.7319	-0.9216}
+}
+{Volume "cabine"
+	{Polyhedron "cabine.vol"}
+	{Bone "cabine"}
+	{Position 0.3926	0.0000	2.3796}
+}
+{Volume "engine"
+	{Polyhedron "engine.vol"}
+	{Bone "engine"}
+	{Position 2.6327	-0.9632	-1.7481}
+}
+{Volume "body_back"
+	{Box 52.1196 23.8223 22.5201}
+	{Bone "body_back"}
+	{Position -3.5231	0.6241	0.1944}
+}
+{Volume "elevator"
+	{Box 18.8645 70.9194 19.8174}
+	{Bone "elevator"}
+	{Position 0.0004	0.0000	-0.2792}
+}
+{Volume "wingr1"
+	{Polyhedron "wingr1.vol"}
+	{Bone "wingr1"}
+	{Position -0.0000	2.1462	0.4437}
+}
+{Volume "wingl1"
+	{Polyhedron "wingl1.vol"}
+	{Bone "wingl1"}
+	{Position 1.3761	-3.0163	0.7504}
+}

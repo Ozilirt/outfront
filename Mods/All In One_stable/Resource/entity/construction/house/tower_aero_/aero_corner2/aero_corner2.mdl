@@ -1,0 +1,199 @@
+{Skeleton
+	{bone "Tower"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Tower.ply"}
+		{bone "window2"
+			{Position 0.0000	89.3258	165.5289}
+			{VolumeView "window2.ply"}
+			{bone "fx_glass2"
+				{Matrix34
+					-0.0000	1.0000	0.0000
+					-1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					1.5818	0.0000	2.1944
+				}
+			}
+		}
+		{bone "window3"
+			{Position 59.0285	55.3086	165.5289}
+			{VolumeView "window3.ply"}
+			{bone "fx_glass3"
+				{Matrix34
+					0.8118	0.5839	0.0000
+					-0.5839	0.8118	0.0000
+					0.0000	0.0000	1.0000
+					2.4134	0.1325	2.1944
+				}
+			}
+		}
+		{bone "window4"
+			{Position 58.9387	-13.0364	165.5289}
+			{VolumeView "window4.ply"}
+			{bone "fx_glass4"
+				{Matrix34
+					0.8333	-0.5528	0.0000
+					0.5528	0.8333	0.0000
+					0.0000	0.0000	1.0000
+					1.3998	-1.3743	2.1944
+				}
+			}
+		}
+		{bone "window2_x"
+			{Position 0.0000	87.5246	165.5289}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+		{bone "window3_x"
+			{Position 57.5456	54.9245	165.5289}
+			{visibility 0}
+			{VolumeView "window3_x.ply"}
+		}
+		{bone "window4_x"
+			{Position 58.5436	-12.6752	165.5289}
+			{visibility 0}
+			{VolumeView "window4_x.ply"}
+		}
+		{bone "tow"
+			{Position -34.1926	4.9795	0.0000}
+			{VolumeView "tow.ply"}
+		}
+		{bone "roof"
+			{Position -38.7948	1.4641	185.9167}
+			{VolumeView "roof.ply"}
+		}
+		{bone "ladder"
+			{Position 0.6640	10.2515	73.9735}
+			{VolumeView "ladder.ply"}
+		}
+		{bone "attach1"
+			{Matrix34
+				-0.6820	-0.7314	0.0000
+				0.7314	-0.6820	0.0000
+				0.0000	0.0000	1.0000
+				-30.5000	-87.4000	130.8000
+			}
+		}
+		{bone "attach2"
+			{Matrix34
+				0.7489	-0.6626	0.0000
+				0.6626	0.7489	0.0000
+				0.0000	0.0000	1.0000
+				30.5000	-87.4000	130.8000
+			}
+		}
+		{bone "attach3"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	66.6000	130.8000
+			}
+		}
+	}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center 0.568054 -15.5875}
+		{Extent 14.9323 15.7319}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 18.882 27.8417}
+		{Extent 31.2089 3.4187}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 46.7527 -20.2599}
+		{Extent 3.17384 51.6176}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 15.9393 -67.8224}
+		{Extent 34.1635 3.41869}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "place1"
+	{Box 19.685 19.685 5.905}
+	{Bone "Tower"}
+	{Position -30.5592	-86.3495	132.6190}
+}
+{Volume "place2"
+	{Box 19.685 19.685 5.905}
+	{Bone "Tower"}
+	{Position 30.6408	-85.4495	132.6190}
+}
+{Volume "place3"
+	{Box 19.685 19.685 5.905}
+	{Bone "Tower"}
+	{Position 0.0408	65.9505	123.6190}
+}
+{Volume "body6"
+	{Box 24.7875 2.20299 59.5571}
+	{Bone "Tower"}
+	{Position 27.5743	-45.7670	157.7469}
+}
+{Volume "body5"
+	{Box 29.946 2.20299 19.6538}
+	{Bone "Tower"}
+	{Position 0.0730	-45.7670	177.2605}
+}
+{Volume "body4"
+	{Box 24.7875 2.20299 59.5571}
+	{Bone "Tower"}
+	{Position -27.2617	-45.7670	157.7469}
+}
+{Volume "body3"
+	{Box 62.4179 6.83739 123.031}
+	{Bone "Tower"}
+	{Position 18.8820	-27.8417	61.6172}
+}
+{Volume "body2"
+	{Box 6.34768 103.235 131.934}
+	{Bone "Tower"}
+	{Position 46.7527	20.2599	65.9553}
+}
+{Volume "body1"
+	{Box 68.327 6.83739 131.042}
+	{Bone "Tower"}
+	{Position 15.9393	67.8224	65.6234}
+}
+{Volume "window4"
+	{Box 77.2306 3.44075 42.6516}
+	{Bone "window4"}
+	{Matrix34
+		-0.5157	-0.8568	0.0000
+		0.8568	-0.5157	0.0000
+		0.0000	0.0000	1.0000
+		0.6332	0.1065	-0.0657
+	}
+}
+{Volume "window3"
+	{Box 77.2306 4.0875 42.6516}
+	{Bone "window3"}
+	{Matrix34
+		0.5022	-0.8647	0.0000
+		0.8647	0.5022	0.0000
+		0.0000	0.0000	1.0000
+		-0.6254	-0.1188	-0.0657
+	}
+}
+{Volume "window2"
+	{Box 77.2306 3.44075 42.6516}
+	{Bone "window2"}
+	{Position -0.7548	-1.0536	-0.0657}
+}

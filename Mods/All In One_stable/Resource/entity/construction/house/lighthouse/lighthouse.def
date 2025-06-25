@@ -1,0 +1,41 @@
+{actor
+	{colliderID "construction"}
+	{obstacleID "building"}
+	{Extension "lighthouse.mdl"}
+	{props "concrete" "parts" "construction" "windowed"}
+
+	{DecalView
+		{ownershadow  256 256}
+		{name "shadow"}
+	}
+	{mass 50000}
+	{brain "actor"}
+
+	{volume "body"
+		{thickness hollow 30}
+		{tags "body"}
+	}
+	{volume "body1"
+		{thickness hollow 30}
+		{tags "body"}
+	}
+	{Volume "window4"
+		{able  {visible 0} {window}} 
+		{thickness 1}
+	}
+	{Volume "window2"
+		{able  {visible 0} {window}} 
+		{thickness 1}
+	}
+	{Volume "window5"
+		{able  {visible 0} {window}} 
+		{thickness 1}
+	}
+	{Volume "window3"
+		{able  {visible 0} {window}} 
+		{thickness 1}
+	}
+	{extender "bone_rotator"
+		{bone "light_rot"}
+	}
+}

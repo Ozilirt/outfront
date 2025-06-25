@@ -1,0 +1,43 @@
+{building
+	(include "/properties/construction.inc")
+	{DecalView
+		{ownershadow  128 128}
+		{name "shadow"}
+	}
+	{props "stack" "animated_crush" "tent"}
+
+
+	{Extension "tent_jap.mdl"}
+	{Volume "Box07"
+		{Tags  "body"}
+		{thickness	hollow	2}
+	}
+	{Volume "Box06"
+		{Tags  "body"}
+		{thickness	hollow	2}
+	}
+	{Volume "Box05"
+		{Tags  "body"}
+		{thickness	hollow	2}
+	}
+	{Volume "Box04"
+		{Tags  "body"}
+		{thickness	hollow	2}
+	}
+	{Volume "Box03"
+		{Tags  "body"}
+		{thickness	hollow	2}
+	}
+	{Volume "Box02"
+		{Tags  "body"}
+		{thickness	hollow	2}
+	}
+	{Volume "Box01"
+		{Tags  "body"}
+		{thickness	hollow	2}
+	}
+	{Volume "exterior"
+		{able {visible 0}}
+	}
+ 	("declare_fire_volumes")
+}

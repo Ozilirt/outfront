@@ -1,0 +1,41 @@
+;Exported by: garry
+;Date:        Fri Apr 30 10:27:52 2004
+;File:        \\sharepoint\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\ATguns.max
+{Skeleton
+	{bone "PIAT"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	0.0000	1.0000
+			0.0000	1.0000	0.0000
+		}
+		{VolumeView "piat.ply"}
+		{bone "Foresight3"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				18.9116	-0.0371	1.2829
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 38.4974 7.54298 7.27585}
+	{Bone "PIAT"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		4.2129	0.0162	1.5382
+	}
+}
+{Volume "body"
+	{Box 29.8429 3.12987 3.56659}
+	{Bone "PIAT"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		4.2129	0.0000	1.3150
+	}
+}

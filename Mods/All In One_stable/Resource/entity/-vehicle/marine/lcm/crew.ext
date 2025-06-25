@@ -1,0 +1,40 @@
+;SDL
+
+{Placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "gunner"
+		{Group "crew"}	
+		{LinkBone "gunner"}	
+		{turnoff {sensor} {shadow}}
+		{worker charger}
+	}
+	{place "vehicle"
+		{entity "m4a1"}
+		{Linkbone "attach"}
+		{handlebone "no"}
+	}
+}
+
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+
+	{anm "seat" {forward {end "squat_from_stand_empty"}}}
+	{anm "driver"
+		{forward	{begin	"board_rubber_boat"} {end "seat_gunner_stand"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+	{anm "gunner"
+		{forward	{begin	"board_rubber_boat"} {end "stand_mgun"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+
+	{link "emit1"	"driver"		{forward putoff} {reverse puton} {anm "driver"}}
+	{link "emit2"	"driver"		{forward putoff} {reverse puton} {anm "driver"}}
+	{link "emit2"	"gunner"		{forward putoff} {reverse puton} {anm "gunner"}}
+	{link "emit1"	"gunner"		{forward putoff} {reverse puton} {anm "gunner"}}
+}

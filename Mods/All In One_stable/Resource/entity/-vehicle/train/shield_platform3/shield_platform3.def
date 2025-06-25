@@ -1,0 +1,50 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.1) scaleY(1.0))
+    	{mass 12000}
+    	{props "platform2" "steel" "train_part"}
+
+	{Placer
+		{place "1"
+			{Linkbone "attach_vehicle1"}
+			{handlebone "basis"}
+		}
+	}
+	{Placer
+		{place "2"
+			{Linkbone "attach_vehicle2"}
+			{handlebone "basis"}
+		}
+	}
+	{Extension "shield_platform3.mdl"}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "body1"
+		{tags "body"}
+		{thickness 20}
+		{component "body"}
+	}
+	{Volume "wheelright3"
+		{thickness 20}
+		{component "wheelright1"}
+	}
+	{Volume "wheelright4"
+		{thickness 20}
+		{component "wheelright2"}
+	}
+	{Volume "wheelleft3"
+		{thickness 20}
+		{component "wheelleft1"}
+	}
+	{Volume "wheelleft4"
+		{thickness 20}
+		{component "wheelleft2"}
+	}
+	{component "body"
+		{Able {repair} {break_by_pierce}}
+	}
+}

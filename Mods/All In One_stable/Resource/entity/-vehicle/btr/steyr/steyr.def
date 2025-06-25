@@ -1,0 +1,104 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "self_propelled" "explosion_throw_crew" "emit_on_attack" }
+	{PatherId "vehicle.small"}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front  10}
+		}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front  10}
+		}
+	}
+	{volume "engine"	
+		{thickness 4}
+	}
+	{volume "shield_left"	
+		{thickness 0.1}
+	}
+	{Volume "bodyback"
+		{tags "body"}
+		{component "body"}
+		{thickness 10}
+	}
+	{component "shield_left"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 6}
+	}
+	{component "engine"	
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+	{extender "shield"
+		{on}
+		(mod "mp"
+			{on}
+		)
+	}
+	{extender "inventory"
+		{Box
+			{size 8 4}
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"} {base "doorleft"}}
+			{reverse 	{end	"emit_tank_1"} {base "doorleft" -1}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_passenger"} {base "doorright"}}
+			{reverse 	{end	"emit_tank_1"} {base "doorright" -1}}
+		}
+		{anm "rear"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	("crew_human_visible"	place(driver) bone(driver) door1(emit1) visor(driver))
+	("crew_human_visible"	place(commander) bone(commander) door2(emit2) visor(main))
+
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "commander"	{group "crew"}}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit4)  animation(rear))
+	("seat_human" place(seat2) bone(seat02) door(emit3)  animation(rear))
+	("seat_human" place(seat3) bone(seat03) door(emit4)  animation(rear))
+	("seat_human" place(seat4) bone(seat04) door(emit3)  animation(rear))
+
+
+	("tracks")
+
+	{mass 3500}
+	{Chassis
+		{speed
+			{Slow	16}
+			{Normal	21}
+			{Fast	25}
+		}
+	        {FuelBag
+			{volume 110 }
+			{rate    45 }
+			{remain 110 }
+        		{fuel "fuel"}
+		}
+
+		{Locomotion ("locomotion")
+			{Maxspeed 25}
+			{StartTime	2.5}
+		}
+	}
+	{Extension "steyr.mdl"}
+}

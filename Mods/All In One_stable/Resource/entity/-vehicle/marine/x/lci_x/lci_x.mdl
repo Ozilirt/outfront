@@ -1,0 +1,115 @@
+;Exported by: Albus
+;Date:        Tue Nov 01 16:19:11 2011
+;File:        C:\Juegos\SHOWW2\mods\Pacific90\resource\entity\-vehicle\marine\lci\lci_x.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.9995	-0.0311
+				0.0000	0.0311	0.9995
+				-0.0142	5.5053	26.6889
+			}
+			{VolumeView "body.ply"}
+			{bone "cabin"
+				{parameters "ID=cabin;"}
+				{Position 29.0981	-6.8487	109.9470}
+				{VolumeView "cabin.ply"}
+				{bone "bote1"
+					{parameters "ID=cabin;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.9999	0.0148
+						0.0000	-0.0148	0.9999
+						-72.9324	39.8161	-53.8584
+					}
+					{VolumeView "bote1.ply"}
+				}
+				{bone "number"
+					{Position -5.1371	1.9006	-50.3547}
+					{VolumeView "number.ply"}
+				}
+				{bone revolute "projector"
+					{limits -45.0000 45.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.9998	-0.0214
+						0.0000	0.0214	0.9998
+						19.9826	3.0966	-22.5803
+					}
+					{VolumeView "projector.ply"}
+				}
+				{bone "bote2"
+					{parameters "ID=cabin;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.9999	0.0148
+						0.0000	-0.0148	0.9999
+						-72.9324	-33.8203	-54.9508
+					}
+					{VolumeView "bote2.ply"}
+				}
+				{bone "cables"
+					{Position 0.0000	0.0000	0.0000}
+					{VolumeView "cables.ply"}
+				}
+				{bone "palo"
+					{parameters "ID=cabin;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.9999	0.0148
+						0.0000	-0.0148	0.9999
+						-34.7627	1.5133	-54.2831
+					}
+					{VolumeView "palo.ply"}
+				}
+			}
+			{bone "body_front"
+				{parameters "ID=body_front;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.9999	0.0148
+					0.0000	-0.0148	0.9999
+					263.5224	0.5315	10.6300
+				}
+				{VolumeView "body_front.ply"}
+				{bone "ancla2"
+					{parameters "ID=body_front;"}
+					{Position 101.2275	-4.3313	-28.5186}
+					{VolumeView "ancla2.ply"}
+				}
+				{bone "number_front"
+					{Position 68.2405	-2.7018	2.4886}
+					{VolumeView "number_front.ply"}
+				}
+			}
+			{bone "body_rear"
+				{parameters "ID=body_rear;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.9999	0.0148
+					0.0000	-0.0148	0.9999
+					-275.0857	0.5289	-3.3232
+				}
+				{VolumeView "body_rear.ply"}
+				{bone "ancla1"
+					{parameters "ID=body_rear;"}
+					{Position -69.3291	-1.9759	6.5572}
+					{VolumeView "ancla1.ply"}
+				}
+				{bone "number_rear"
+					{Position -71.7527	-4.5921	1.4684}
+					{VolumeView "number_rear.ply"}
+				}
+			}
+		}
+		{bone "volume_holder"
+		}
+	}
+}

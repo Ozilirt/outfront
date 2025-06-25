@@ -1,0 +1,248 @@
+{construction
+	(include "/properties/construction.inc")
+	{DecalView
+		{ownershadow  128 128}
+		{name "shadow"}
+	}
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+	}
+	{props "cornered" "parts" "construction" "concrete" "wall" "disable_area"}
+	{Extension "concrete_radar.mdl"}
+
+	{extender "bone_rotator"
+		{bone "piece27"}
+		{speed -10}
+	}
+	{Volume "place5"
+		{Tags  "attach" "5"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place7"
+		{Tags  "attach" "7"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place6"
+		{Tags  "attach" "6"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place1"
+		{Tags  "attach" "1"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place2"
+		{Tags  "attach" "2"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place4"
+		{Tags  "attach" "4"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place3"
+		{Tags  "attach" "3"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "body27"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "piece22"
+		{able {visible 0}}
+	}
+	{Volume "piece23"
+		{able {visible 0}}
+	}
+	{Volume "piece24"
+		{able {visible 0}}
+	}
+	{Volume "piece25"
+		{able {visible 0}}
+	}
+	{Volume "piece21"
+		{able {visible 0}}
+	}
+	{Volume "piece26"
+		{able {visible 0}}
+	}
+	{Volume "piece18"
+	}
+	{Volume "body26"
+		{Tags  "body"}
+	}
+	{Volume "body25"
+		{Tags  "body"}
+	}
+	{Volume "body24"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body23"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body22"
+		{Tags  "body"}
+	}
+	{Volume "body21"
+		{Tags  "body"}
+	}
+	{Volume "body20"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body19"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body18"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body17"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body16"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body15"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body14"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body13"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body12"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body11"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body10"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "piece10"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "piece14"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "piece3"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "piece13"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "piece17"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "piece9"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "piece16"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "piece19"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body9"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body8"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body7"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body6"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+	}
+	{Volume "body"
+		{Tags  "body"}
+	}
+	{Placer
+		{place "1" {attach  snipe_cover} 			{linkbone "attach1"}}
+		{place "2" {attach  snipe_cover} 			{linkbone "attach2"}}
+		{place "3" {attach  snipe_cover} 			{linkbone "attach3"}}
+		{place "4" {attach  snipe_cover} 			{linkbone "attach4"}}
+		{place "5" {attach  snipe_cover} 			{linkbone "attach5"}}
+		{place "6" {attach  snipe_cover} 			{linkbone "attach6"}}
+		{place "7" {attach  snipe_cover} 			{linkbone "attach7"}}
+	}
+
+	{Boarder
+		{door "emit" {queue 0}}
+
+
+		{link "emit" "1" {forward puton} {reverse putoff}}
+		{link "emit" "2" {forward puton} {reverse putoff}}
+		{link "emit" "3" {forward puton} {reverse putoff}}
+		{link "emit" "4" {forward puton} {reverse putoff}}
+		{link "emit" "5" {forward puton} {reverse putoff}}
+		{link "emit" "6" {forward puton} {reverse putoff}}
+		{link "emit" "7" {forward puton} {reverse putoff}}
+
+	
+		{link "1" "2"}
+    		{link "1" "3"}
+    		{link "1" "4"}
+    		{link "1" "5"}
+    		{link "1" "6"}
+    		{link "1" "7"}
+		{link "2" "3"}
+    		{link "2" "4"}
+    		{link "2" "5"}
+    		{link "2" "6"}
+		{link "2" "7"}
+		{link "3" "4"}
+    		{link "3" "5"}
+    		{link "3" "6"}
+    		{link "3" "7"}
+		{link "4" "5"}
+		{link "4" "6"}
+		{link "4" "7"}
+		{link "5" "6"}
+		{link "5" "7"}
+		{link "6" "7"}
+	}
+}

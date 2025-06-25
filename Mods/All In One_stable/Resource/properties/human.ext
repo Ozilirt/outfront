@@ -1,0 +1,119 @@
+;SDL
+human
+
+{extender "vitality"
+	{Energy
+		{Load 				20 		40     100} ; equipment weight, kg
+		{Update
+			{stay	+9	    +5		+3		 0}	; fatigue per second
+			{slow	+5	    +3		+0		-6} ; max.fatigue = 100
+			{normal	-1	    -2		-3	   -10}
+			{fast	-2		-4		-9	   -20}
+		}
+		{Fast  	50 75}
+		{Normal 10 50}
+		{Slow	 1  5}	
+		; если сделать {Slow xx yy}, то будет останавливаться после того, 
+		; как energy станет меньше xx, и сможет ходить только когда 
+		; energy станет больше yy
+	}
+}
+
+{extender "inventory"
+	{box
+		{Size 8 4}
+		{Weight 100}
+	}
+	{hand_left}
+	{hand_right}
+	{armor "head"
+		{mask "head"}
+		{bone "head"}
+		{volume "head"}
+		{pierceProtection 10}
+	}
+	{armor "body"
+		{mask "body"}
+		{volume "body"}
+		{bone "IK_UpDown"}
+		{pierceProtection 10}
+	}
+}
+
+{Sensor
+	{Visor "eyes"
+		{vision "human"}
+		{bone "visor"}
+	}
+	{AttackZone 2.5}
+}
+
+{Chassis "foot"
+	{Crawl
+		{Slow	3	50} ; km/h degree/s
+		{Normal  4  100}
+		{Fast	5	100}
+	}
+	{Walk
+		{Slow	5   300} 
+		{Normal	8  300}
+		{Fast	14  400}
+	}
+	{Swim
+		{Slow	2	200}
+		{Normal	3	200}
+		{Fast	4	200}
+	}
+}
+
+{TexMods
+	{"Burned"	 "1"	 }
+    {"2"         "2"	 }
+}
+
+{volume "body"
+	{thickness 2}
+}
+{volume "head"
+	{thickness 2}
+}
+{volume "foots"
+	{thickness 2.5}
+}
+{volume "foot1r"
+	{thickness 2.5}
+}
+{volume "foot2r"
+	{thickness 2.5}
+}
+{volume "foot1l"
+	{thickness 2.5}
+}
+{volume "foot2l"
+	{thickness 2.5}
+}
+
+{extension "human_fsm.ext"}
+
+{mass 90}
+{obstacleID "human"		}
+{PatherID	"human"		}
+
+{colliderId "human"}
+{collideWith  "bush" "mine_ap"}
+{noContactsAtAll}
+{simulation {able 1} {state 0}}
+
+{able {crew}}
+
+{props "flesh" "human" "nocover"}
+
+(include "shadow/human.inc")
+
+{brain "human"
+	{const "crush/min_danger_zone_time" 	4}
+	{const "crush/min_danger_zone_length"	1}
+
+	{const "bomb/detect_boom" 		2}
+	{const "bomb/danger_zone" 		7}
+}

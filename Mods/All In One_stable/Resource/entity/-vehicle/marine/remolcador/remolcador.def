@@ -1,0 +1,70 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(0.9) scaley(0.6))
+	{mass 2500}
+	{patherid "water"}
+	{props "vehicle" "marine" "flag" "emit_on_sink"}
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 80}
+	}
+	{volume "body1"
+		{tags "body"}
+		{thickness 65}
+	}
+	{volume "body2"
+		{tags "body"}
+		{thickness 70}
+	}
+	{volume "panel1"
+		{thickness 15}
+	}
+	{volume "panel2"
+		{thickness 15}
+	}
+	{component "body1"
+		{able {break_by_pierce}}
+	}
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{DefaultWeapon "mg34s"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{Box
+			{size 4 4}
+			{item "ammo mgun" 800}
+		}
+	}
+	{extension "crew.ext"}
+	{Extension "remolcador.mdl"}
+	{chassis
+		{waterline 2.0}
+		{Locomotion ("locomotion")
+	            {TurnRadius	20	}
+	            {SplineRadius 15}
+	            {TurnTime		0.1}
+	            {TurnStart		 5}
+	            {TurnStop	   2}
+		}
+	}
+	{sensor
+		{Visor "main"
+			{vision "airbag3-main"}
+			{bone "visor1"}
+		}
+		{Visor "gunner"
+			{vision "airbag3-gunner"}
+			{bone "visor2"}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+;Exported by: Albus
+;Date:        Sun Nov 16 11:48:21 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\flak-38-1\flak38_1_x.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 1.1853	-2.4678	-0.2131}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0100}
+				{Position 0.5557	1.2796	14.8760}
+				{VolumeView "turret.ply"}
+				{bone "shield_left"
+					{parameters "ID=shield_left;"}
+					{Position 13.5361	9.4216	0.9872}
+					{VolumeView "shield_left.ply"}
+				}
+				{bone "shield_right"
+					{parameters "ID=shield_right;"}
+					{Position 15.1327	-8.1028	0.2086}
+					{VolumeView "shield_right.ply"}
+				}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 45.0000}
+					{speed 0.0200}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						0.8769	1.3626	-0.1476
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							35.2762	-0.2210	-0.0216
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}

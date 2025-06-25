@@ -1,0 +1,73 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{PatherId "vehicle.small"}
+	{TexMods
+		{"camo2" "1"}
+	}
+	{sensor
+		{Visor "main"
+			{vision "dodgewc56"}
+			{bone "visor"}
+		}
+	}
+
+	{Volume "Body"
+		{tags "body"}
+		{component "body"}
+		{thickness 7}   
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	("crew_2_human")
+
+	("board_animation"
+		place(driver)
+		board_begin(board_willis_driver)
+		board_end(seat_Willis_driver)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_willis)
+		board_end(seat_Willis_passenger)
+		base(doorright)
+	)
+ 	("crew_human" place(seat1)	bone(passenger1)	door(emit4)	animation(passenger))
+	("crew_human" place(seat2)	bone(passenger2)	door(emit3)	animation(passenger))
+ 	("crew_human" place(seat3)	bone(passenger3)	door(emit4)	animation(passenger))
+	("crew_human" place(seat4)	bone(passenger4)	door(emit3)	animation(passenger))
+	("crew_human" place(seat5)	bone(passenger5)	door(emit2)	animation(passenger))
+
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "commander"	{group "crew"}}
+	}
+	{extender "inventory"
+		{box
+			{size 8 4}
+			{weight 6000}
+			{item "bren" filling "ammo mgun" 30 {cell 0 0}}
+			{item "grenade smoke" {cell 7 0}}
+			{item "can" filling "fuel" 20 {cell 6 2}}
+			{item "can" filling "fuel" 20 {cell 4 2}}
+			{item "ammo mgun" 90 {cell 5 0}}
+			{item "small_box" {cell 0 2}}
+		}
+	}
+	{mass 4000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{Maxspeed 28}
+			{StartTime	3}
+		}
+	}
+	{Extension "aec.mdl"}
+}
+

@@ -1,0 +1,13 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "lewis"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 47}}
+		}
+	}  	
+	{Extension "lewis_dot.mdl"}
+}

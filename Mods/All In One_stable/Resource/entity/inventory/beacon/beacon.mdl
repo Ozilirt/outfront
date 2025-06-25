@@ -1,0 +1,28 @@
+{Skeleton
+	{bone "beacon"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "beacon.ply"}
+		{bone "handle"
+			{Matrix34
+				0.0103	-0.9999	0.0000
+				-0.9999	-0.0103	0.0000
+				0.0000	0.0000	-1.0000
+				0.2440	2.3114	0.8192
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 5.898 4.96113 3.70755}
+	{Bone "beacon"}
+	{Position -0.0417	0.0291	10.0858}
+}
+{Volume "body"
+	{Box 5.72472 4.21671 9.21392}
+	{Bone "beacon"}
+	{Position 0.2076	0.0291	2.0024}
+}

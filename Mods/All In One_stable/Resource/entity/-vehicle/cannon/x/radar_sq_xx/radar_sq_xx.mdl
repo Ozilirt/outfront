@@ -1,0 +1,59 @@
+;Made by: Albus
+{Skeleton
+	{bone "body"
+		{parameters "ID=body;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "part1"
+			{Position 36.0000	0.0000	80.0000}
+			{VolumeView "part1.ply"}
+		}
+		{bone "part2"
+			{Position 36.0000	0.0000	30.0000}
+			{VolumeView "part2.ply"}
+		}
+		{bone "part3"
+			{Position 5.3100	48.6300	28.0000}
+			{VolumeView "part3.ply"}
+		}
+		{bone revolute "turret"
+			{parameters "ID=turret;"}
+			{Position 0.0402	-1.2263	5.5542}
+			{VolumeView "turret.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 27.6408 5.51064}
+	{Bone "body"}
+	{Matrix34
+		0.9521	-0.3057	0.0000
+		0.3057	0.9521	0.0000
+		0.0000	0.0000	1.0000
+		-0.0388	-1.2102	2.6587
+	}
+}
+{Volume "part1"
+	{Box 26.1514 96.000 35.0000}
+	{Bone "part1"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "part2"
+	{Box 22.6488 96.000 35.0000}
+	{Bone "part2"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "part3"
+	{Box 13.617 35.9574 1.1500}
+	{Bone "part3"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	0.0000
+	}
+}

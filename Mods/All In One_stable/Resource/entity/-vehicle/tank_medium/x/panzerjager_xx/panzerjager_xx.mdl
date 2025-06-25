@@ -1,0 +1,198 @@
+;Created by Slash and Rancid
+;Date:      March 2005
+;Contact:	http://showw2.rancid.ca
+;(c) Slash and Rancid
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -3.2370	-1.7970	14.5860}
+			{VolumeView "Body.ply"}
+			{bone "Cover"
+				{parameters "ID=body;"}
+				{Matrix34
+					0.9063	0.4226	-0.0000
+					-0.4226	0.9063	0.0000
+					0.0000	0.0000	1.0000
+					22.0000	-2.0000	7.6000
+				}
+				{VolumeView "Cover.ply"}
+			}
+			{bone "shield_right"
+				{parameters "ID=shield_right;"};SnRWtrMrk
+				{Matrix34
+					0.9962	0.0511	0.0699
+					-0.0269	0.9498	-0.3116
+					-0.0823	0.3085	0.9476
+					-41.8882	-35.0687	-12.6286
+				}
+				{VolumeView "shieldR.ply"}
+			}
+			{bone "shield_left"
+				{parameters "ID=shield_left;"}
+				{Matrix34
+					1.0000	-0.0000	0.0000
+					0.0000	0.9323	0.3616
+					0.0000	-0.3616	0.9323
+					-47.0000	34.9089	-11.2065
+				}
+				{VolumeView "shieldL.ply"}
+			}
+			{bone revolute "mgun_rot"
+				{Matrix34
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					35.0000	-15.0000	13.0000
+				}	
+				{bone revolute "mgun"
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						0.0000	0.0000	1.0000
+						-0.0000	1.0000	0.0000
+						12.0000	0.0000	1.0000
+					}	
+					{VolumeView "mgun.ply"}
+				}
+			}
+			{bone revolute "gun_vert"
+				{parameters "ID=turret;"}
+				{Position 35.0000	-2.0000	13.0000}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"};SnRWtrMrk
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						0.0000	0.0000	1.0000
+						-0.0000	-1.0000	0.0000
+						0.0000	0.0000	0.8772
+					}
+					{bone "gun_mount"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	-0.0000	0.0000
+							0.0000	1.0000	0.0000
+							-0.0000	0.0000	1.0000
+							7.5000	0.0000	2.0000
+						}						
+						{VolumeView "Gun_rot.ply"}
+						{bone "Gun"
+							{parameters "ID=gun;"}
+							{Matrix34
+								0.9275	-0.2730	-0.2554
+								-0.2451	0.07212	-0.9668
+								0.2823	0.9593	0.0000
+								-6.8189	0.2410	-0.0333
+							}
+							{VolumeView "Gun.ply"}
+						}
+					}
+				}
+			}
+			{bone revolute "WheelL1"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0051
+					-0.0051	-0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					47.0512	23.9098	-0.2693
+				}
+				{VolumeView "WheelL1.ply"}
+			}
+			{bone revolute "WheelR1"
+				{parameters "ID=body;"};SnRWtrMrk
+				{Matrix34
+					-1.0000	-0.0000	-0.0051
+					-0.0051	-0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					47.0512	-20.7996	-0.2693
+				}
+				{VolumeView "WheelR1.ply"}
+			}
+			{bone revolute "WheelL2"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0051
+					-0.0051	-0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					-45.1760	25.0912	-3.8144
+				}
+				{VolumeView "WheelL2.ply"}
+			}
+			{bone revolute "WheelR2"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0051
+					-0.0051	-0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					-45.1760	-19.3645	-3.8144
+				}
+				{VolumeView "WheelR2.ply"}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"};SnRWtrMrk
+				{Matrix34
+					0.0025	0.1736	0.9848
+					-0.0004	0.9848	-0.1736
+					-1.0000	-0.0000	0.0025
+					-33.4304	2.4557	5.8051
+				}
+			}
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				-0.0000	1.0000	0.0000
+				-1.8230	22.5787	10.9635
+			}
+			{VolumeView "WheelsL.ply"}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"};SnRWtrMrk
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				-0.0000	1.0000	0.0000
+				-1.8230	-21.6223	10.9635
+			}
+			{VolumeView "WheelsR.ply"}
+		}
+	}
+}
+{Volume "shield_left"
+	{Box 99.1272 18.782 1.11801}
+	{Bone "shield_left"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000 	1.0000
+		0.0000	1.0000	0.0000
+		49.5000	-0.5000	7.5000
+	}
+}
+{Volume "shield_right"
+	{Box 99.1272 18.782 1.11801}
+	{Bone "shield_right"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000 	1.0000
+		0.0000	1.0000	0.0000
+		49.5000	0.5000	7.5000
+	}
+}
+{Volume "Body2"
+	{Box 80.5091 46.1986 8.91692}
+	{Bone "Body"}
+	{Position -3.1475	1.9592	13.9866}
+}
+{Volume "Body1"
+	{Box 99.394 39.3494 16.6578}
+	{Bone "Body"}
+	{Position 4.3642	1.1078	1.5031}
+}
+;(c) Slash and Rancid

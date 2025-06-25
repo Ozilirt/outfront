@@ -1,0 +1,97 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "turret_rotator" "low"}
+	{TexMods
+		{"n23" "1"}
+		{"n27" "2"}
+	}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{front  13 0.2}
+			{rear 9}
+			{bottom 6}
+			{top 6}
+		}
+	}
+	{volume "turret"
+		{thickness 13
+			{front 13 0.2}
+			{top	8}
+		}
+	}
+	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(driver))
+	("crew_human" 			place(gunner)		door1(emit1) door2(emit2) visor(main))
+
+	{placer
+		{place "driver" {visor "driver"}}
+		{place "gunner" {worker charger} {visor "main"}}
+	}
+
+	{placer
+		{place "driver" 	{group "crew"}}
+		{place "gunner" 	{group "crew"}}
+	}
+
+	("seat_2_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_LowTank_left"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "weapon dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 63}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 800}
+		}
+	}
+	
+	{mass 4500}
+	{sensor
+		{Visor "main"
+			{vision "Visor_BTR"}
+		}
+	}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 23}
+		}
+		{speed
+			{Slow	9	}	; km/h
+			{Normal	16	}
+			{Fast	23	}
+		}
+		{FuelBag
+			{volume 150 }	; liters
+			{rate    75 }   	; liters per kilometer
+			{remain 150 }
+			{fuel "fuel"}
+		}
+	}
+	{Extension "t-38.mdl"}
+}

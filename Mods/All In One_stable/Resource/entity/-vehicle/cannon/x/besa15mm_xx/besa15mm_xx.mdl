@@ -1,0 +1,59 @@
+; made by Albus & Dinsen Oct 2009
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{speed 0.0100}
+			{Position 0.0000	0.0000	-0.0374}
+			{VolumeView "turret.ply"}
+			{bone revolute "gun_rot"
+				{limits -10.0000 10.0000}
+				{speed 0.0500}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					-1.1870	0.1500	20.3771
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "part1"
+					{parameters "ID=gun;"}
+					{Position 0.0000	3.0000	0.0000}
+					{VolumeView "part1.ply"}
+				}
+			}
+		}
+	}
+}
+{Obstacle "obstacle"
+	{Obb2
+		{Center -0.0991 -0.0144}
+		{Extent 6.7823 6.4984}
+		{Axis 0 0}
+	}
+	{Rotate}
+}
+{Volume "part1"
+	{Box 11.87728 9.21995 40.4273}
+	{Bone "part1"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		0.0000	1.0000	0.0000
+		1.0000	0.0000	0.0000
+		7.0982	0.4850	0.0000
+	}
+}
+{Volume "turret"
+	{Box 12.743 12.743 19.5093}
+	{Bone "turret"}
+	{Position 0.2000	0.0000	9.4000}
+}
+{Volume "shield"
+	{Box 12.743 12.743 19.5093}
+	{Bone "turret"}
+	{Position 0.2000	0.0000	9.4000}
+}

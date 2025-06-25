@@ -1,0 +1,34 @@
+{game_entity
+	{Extension "bergepz_xx.mdl"}
+	(include "/properties/shadow/tank.inc"  scale(1.4))
+	{obstacleId "tank"}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 80
+			{bottom	20}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 80
+			{top	20}
+			{rear	47}
+		}
+	}
+	{volume "body3"
+		{component "body"}
+		{tags "body"}
+		{thickness 80
+			{top	20}
+		}
+	}
+	{volume "Tturret"
+		{component "turret"}
+		{tags "cut"}
+		{thickness 8
+			{top	5}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.45))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "flak" "turret" "barrel1"}
+	(include "/properties/dummy_fsm2.inc")
+	{sensor
+		{Visor "aa"
+			{vision "type96"}
+			{bone "visor"}
+		}
+	}
+	("crew_2_human")
+	{Boarder
+		{anm "gunner"
+			{forward	{end "seat_driver_car"}}
+		}
+		{place "gunner"}
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "gunner"	{forward putoff} {reverse puton} {anm "gunner"}}
+		{link "emit2" "gunner"	{forward putoff} {reverse puton} {anm "gunner"}}
+	}
+	
+	{volume "turret"
+		{thickness 20}
+	}
+	{volume "body"
+		{thickness 25}
+		{tags "body"}
+	}
+	{Volume "gun"
+		{thickness 10}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "gun"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "body"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_type2"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet20 zenite" 20}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun"
+			{fixed}
+		}
+		{box
+			{item "bullet20 zenite" 420}
+		}
+	}
+	{mass 9000}
+	{Extension "type2_ship.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+				{bone "visor"}
+			}
+		}
+	)
+}

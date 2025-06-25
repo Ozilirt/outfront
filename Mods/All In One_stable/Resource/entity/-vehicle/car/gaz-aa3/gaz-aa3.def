@@ -1,0 +1,34 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{extension "/properties/structure/truck4x4.ext"}
+	{TexMods
+		{"other" "1"}
+	}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "bodyback"
+		{thickness 5}
+	}
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "gaz-aa3.mdl"}
+
+}

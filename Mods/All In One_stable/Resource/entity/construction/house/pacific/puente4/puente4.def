@@ -1,0 +1,29 @@
+{game_entity
+	{props "cornered" "parts" "construction" "bridge" "wood"}
+	{obstacleid "unbreakable"}
+	{Extension "puente4.mdl"}
+	{Volume "body"
+		{tags "body"}
+		{able clear {blast}}
+		{thickness 20}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{able clear {blast}}
+		{thickness 20}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{able clear {blast}}
+		{thickness 20}
+	}
+	{Extender "land"
+		{Heightmap "pasarela1.net"}
+		{Boundary
+			{Box2
+				{Origin -389 -30}
+				{Destination -23 29}
+			}
+		}
+	}
+}

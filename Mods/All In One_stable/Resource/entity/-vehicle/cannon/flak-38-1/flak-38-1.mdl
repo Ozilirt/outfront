@@ -1,0 +1,127 @@
+;Exported by: Albus
+;Date:        Sun Nov 16 11:42:35 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\flak-38-1\flak38_1.max
+{Skeleton
+	{animation
+		{sequence "fire00"}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 1.1853	-2.4678	-0.2131}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0100}
+				{Position 0.5557	1.2796	14.8760}
+				{VolumeView "turret.ply"}
+				{bone "shield_left"
+					{parameters "ID=shield_left;"}
+					{Position 13.5361	9.9600	0.9872}
+					{VolumeView "shield_left.ply"}
+				}
+				{bone "shield_right"
+					{parameters "ID=shield_right;"}
+					{Position 15.1327	-7.2982	0.2086}
+					{VolumeView "shield_right.ply"}
+				}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 45.0000}
+					{speed 0.0200}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						0.8769	1.3626	-0.1476
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							35.2762	-0.2210	-0.0216
+						}
+						{VolumeView "gun.ply"}
+						{bone "shooter00"
+							{Position 16.4342	-0.1960	0.3775}
+						}
+						{bone "foresight1"
+							{Position 25.5125	-0.1960	0.3775}
+						}
+					}
+				}
+				{bone "gunner"
+					{Matrix34
+						0.9075	0.0000	0.4200
+						0.0000	1.0000	0.0000
+						-0.4200	0.0000	0.9075
+						-7.9463	-8.0228	-15.6085
+					}
+				}
+				{bone "commander"
+					{Matrix34
+						0.9075	0.0000	0.4200
+						0.0000	1.0000	0.0000
+						-0.4200	0.0000	0.9075
+						-7.9463	8.3422	-15.6085
+					}
+				}
+				{bone "visor"
+					{Position 10.8050	-8.7742	12.2982}
+				}
+				{bone "FXshell1"
+					{Matrix34
+						-0.9816	0.0000	-0.1911
+						0.0000	-1.0000	0.0000
+						-0.1911	0.0000	0.9816
+						-8.3609	1.1883	-3.8698
+					}
+				}
+				{bone "emit1"
+					{Position -31.9097	-8.7046	-14.6629}
+				}
+				{bone "emit2"
+					{Position -31.7301	8.3422	-14.6629}
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 20.8045 28.1987 3.30228}
+	{Bone "body"}
+	{Position -2.5402	1.5362	1.8642}
+}
+{Volume "turret"
+	{Box 18.6805 15.627 19.3092}
+	{Bone "turret"}
+	{Position 0.6552	1.2333	-1.5270}
+}
+{Volume "gun"
+	{Cylinder 0.903003 41.5542}
+	{Bone "gun"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		-6.5672	0.0672	0.4286
+	}
+}
+{Volume "shield_right"
+	{Box 2.27641 14.2798 19.7055}
+	{Bone "shield_right"}
+	{Position 0.3158	-1.1061	0.5987}
+}
+{Volume "shield_left"
+	{Box 2.27641 14.2798 19.7055}
+	{Bone "shield_left"}
+	{Position 1.9124	0.6772	-0.1799}
+}

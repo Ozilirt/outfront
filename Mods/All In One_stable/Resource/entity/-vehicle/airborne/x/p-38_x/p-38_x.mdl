@@ -1,0 +1,182 @@
+;Made by: Albus
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=45;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_front"
+			{Matrix34
+				1.0000	0.0049	0.0000
+				-0.0049	1.0000	0.0000
+				0.0000	-0.0000	1.0000
+				29.1332	0.2236	-6.6124
+			}
+			{bone "wingR1"
+                		{parameters "ID=wingright;"}
+				{Matrix34
+					-0.0098	1.0000	-0.0000
+					-0.0033	-0.0000	1.0000
+					0.9999	0.0098	0.0033
+					24.0853	0.3064	-7.8241
+				}
+				{VolumeView "wingR1.ply"}
+				{bone "retract_wheelR"
+					{Position -44.0386	28.4906	-30.2585}
+					{VolumeView "retract_wheelR.ply"}
+					{bone "support2"
+						{Matrix34
+							-0.0098	-0.0033	0.9999
+							1.0000	-0.0000	0.0098
+							-0.0000	1.0000	0.0033
+							1.5957	-28.3384	4.5201
+						}
+					}
+				}
+				{bone "puertaR1"
+					{Matrix34
+						0.9907	0.1360	0.0004
+						-0.1360	0.9907	-0.0000
+						-0.0004	-0.0000	1.0000
+						-50.0173	25.6126	-50.5987
+					}
+					{VolumeView "puertaR1.ply"}
+				}
+				{bone "puertaR2"
+					{Matrix34
+						0.9817	-0.1904	-0.0006
+						0.1904	0.9817	-0.0001
+						0.0006	-0.0001	1.0000
+						-38.9261	25.9636	-50.5980
+					}
+					{VolumeView "puertaR2.ply"}
+				}
+			}
+			{bone "wingL1"
+                		{parameters "ID=wingleft;"}
+				{Matrix34
+					-0.0098	1.0000	-0.0000
+					-0.0033	-0.0000	1.0000
+					0.9999	0.0098	0.0033
+					24.0853	0.3064	-7.8241
+				}
+				{VolumeView "wingL1.ply"}
+				{bone "retract_wheelL"
+					{Position 46.8655	28.2339	-29.9639}
+					{VolumeView "retract_wheelL.ply"}
+					{bone "support1"
+						{Matrix34
+							-0.0098	-0.0001	1.0000
+							0.9999	0.0027	0.0098
+							-0.0027	1.0000	0.0000
+							-3.8243	-28.1029	4.8239
+						}
+					}
+				}
+				{bone "puertasL2"
+					{Matrix34
+						0.9458	0.3241	-0.0188
+						-0.3246	0.9450	-0.0397
+						0.0048	0.0437	0.9990
+						38.8305	25.1697	-50.3794
+					}
+					{VolumeView "puertasL2.ply"}
+				}
+				{bone "puertaL1"
+					{Matrix34
+						-0.9998	-0.0164	-0.0070
+						-0.0165	0.9998	0.0064
+						0.0069	0.0065	-1.0000
+						48.7904	24.9980	-50.1833
+					}
+					{VolumeView "puertaL1.ply"}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Matrix34
+				1.0000	0.0049	0.0000
+				-0.0049	1.0000	0.0000
+				0.0000	-0.0000	1.0000
+				-80.6380	-0.3212	1.9768
+			}
+		}
+		{bone "body"
+            	{parameters "ID=body;"}
+			{Matrix34
+				-0.0147	0.9999	-0.0000
+				-0.0033	-0.0000	1.0000
+				0.9999	0.0147	0.0033
+				53.2167	0.6490	-14.6908
+			}
+			{VolumeView "body.ply"}
+			{bone "cabine"
+                		{parameters "CommonMesh;ID=cabine;"}
+				{Position 8.7174	39.7310	-22.5356}
+				{VolumeView "cabine.ply"}
+			}
+			{bone "body_back"
+                		{parameters "ID=body_back;"}
+				{Position -0.0000	0.2544	0.0008}
+				{VolumeView "body_back.ply"}
+				{bone "rudder"
+                    		{parameters "ID=body_back;"}
+					{Position -0.0000	-0.0000	-0.0000}
+					{VolumeView "rudder.ply"}
+				}
+				{bone "elevator1"
+					{Position -0.0000	-0.0000	-0.0000}
+					{VolumeView "elevator1.ply"}
+				}
+				{bone "support3"
+					{Matrix34
+						-0.0098	-0.0033	0.9999
+						1.0000	-0.0000	0.0098
+						-0.0000	1.0000	0.0033
+						0.9779	0.4658	-149.0219
+					}
+				}
+			}
+			{bone "engine1"
+                		{parameters "ID=engine1;"}
+				{Position -0.0000	0.2544	0.0008}
+				{VolumeView "engine1.ply"}
+				{bone revolute "propeller"
+					{parameters "CommonMesh;ID=propeller;"}
+					{Matrix34
+						-0.9998	0.0021	-0.0183
+						-0.0021	-1.0000	0.0000
+						-0.0183	0.0000	0.9998
+						44.2621	39.2920	17.9853
+					}
+					{VolumeView "propeller.ply"}
+				}
+			}
+			{bone "engine2"
+                		{parameters "ID=engine2;"}
+				{Position -0.0000	0.2544	0.0008}
+				{VolumeView "engine2.ply"}
+				{bone revolute "propeller1"
+					{parameters "CommonMesh;ID=propeller1;"}
+					{Position -44.4162	39.6746	20.4942}
+					{VolumeView "propeller1.ply"}
+				}
+			}
+			{bone "rueda"
+				{Position 0.1821	33.4747	14.5833}
+				{VolumeView "rueda.ply"}
+			}
+			{bone "puerta1"
+				{Matrix34
+					0.9947	0.0465	-0.0922
+					-0.0443	0.9987	0.0259
+					0.0933	-0.0217	0.9954
+					-2.8421	24.3671	3.2617
+				}
+				{VolumeView "puerta1.ply"}
+			}
+		}
+	}
+}

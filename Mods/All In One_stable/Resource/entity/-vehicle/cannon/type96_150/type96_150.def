@@ -1,0 +1,70 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "heavy" "turret" "wheeled" "explosion_throw_crew"}
+	(include "/properties/dummy_fsm.inc")
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("crew_4_human")
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "150mm_type38"}
+			{RestoreIKAfterAim}
+			{Mounted}
+                 	{weapon {ammo "ammo bullet150 fg" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet150 fg" 27}
+			{item "plant" 2}
+                }
+	}
+	{mass 10000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed	3} ;  kmph
+			{StartTime	6} ;  seconds
+			{BrakeTime	2} ; seconds
+			{StopTime	2} ; seconds
+			{TurnRadius	6} ;meter
+			{TurnTime	12} ; seconds
+			{TurnStart	2}	; seconds
+			{TurnStop	0.5}	; seconds
+		}
+	}
+	{Extension "type96_150.mdl"}
+	
+	(mod "mp"
+		{sensor
+			{visor "main"
+				{vision "Visor_Cannon"}
+			}
+		}
+	)
+}
+  
+

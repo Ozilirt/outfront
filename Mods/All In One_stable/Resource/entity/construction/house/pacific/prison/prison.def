@@ -1,0 +1,35 @@
+{construction
+	(include "/properties/construction.inc")
+  	{DecalView
+		{ownershadow  128 128}
+		{name "shadow"}
+  	}
+	{Extension "prison.mdl"}
+	{props "two" "wood" "construction" "parts" "hw" "gate"}
+	{Volume "fire0"
+	}
+	{Volume "fire4"
+	}
+	{Volume "fire3"
+	}
+	{Volume "fire2"
+	}
+	{Volume "fire1"
+	}
+	{Volume "body"
+	}
+	{Volume "exterior"
+		{able {visible 0}}
+	}
+	{Volume "switch2"
+		{Tags  "door_open"}
+		{able clear {contact}{touch 1}}
+	}
+	{Volume "switch"
+		{Tags  "door_lock"}
+		{able clear {contact}{touch 1}}
+	}
+	{Volume "door"
+	}
+	("declare_fire_volumes")
+}

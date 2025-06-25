@@ -1,0 +1,43 @@
+;Made by: Albus
+;Date:        Sat Oct 15 16:27:03 2011
+{Skeleton
+	{bone "tower01"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Wall0"
+			{VolumeView "Wall0.ply"}
+			{bone "Piece0"
+				{Position -0.7631	-65.5796	59.3654}
+				{VolumeView "Piece0.ply"}
+				{bone "FX_water1a"
+					{Position 0.4593	5.1512	8.8799}
+				}
+			}
+			{bone "Piece1"
+				{Position -1.9631	-1.7027	43.3844}
+				{VolumeView "Piece1.ply"}
+				{bone "FX_water1"
+					{Position 0.4593	-1.0928	-35.8723}
+				}
+			}
+		}
+	}
+}
+{Volume "Wall0"
+	{Cylinder 58.7782 27.0935}
+	{Bone "Wall0"}
+	{Position -1.0237	-1.3326	13.5468}
+}
+{Volume "Piece1"
+	{Cylinder 59.8221 94.6646}
+	{Bone "Piece1"}
+	{Position 0.9537	0.9577	47.0898}
+}
+{Volume "Piece0"
+	{Box 13.685 1.485 65.905}
+	{Bone "Piece0"}
+	{Position 0.0000	-3.2000	2.0000}
+}

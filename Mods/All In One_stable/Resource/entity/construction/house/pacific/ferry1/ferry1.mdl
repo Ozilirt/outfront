@@ -1,0 +1,108 @@
+;Exported by: dinsen
+;Date:        Fri Oct 28 13:13:45 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\ferry.max
+{Skeleton
+	{animation
+		{sequence "swim" {autostart}{speed 0.4}}
+	}
+	{bone "casco"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "casco.ply"}
+		{bone "paredes"
+			{Position 0.1912	-4.0726	23.2642}
+			{VolumeView "paredes.ply"}
+		}
+		{bone "suelo"
+			{Position -0.2940	-4.1959	12.8091}
+			{VolumeView "suelo.ply"}
+		}
+		{bone "techo"
+			{Position -48.6898	-5.9041	72.8992}
+			{VolumeView "techo.ply"}
+		}
+		{bone "cables"
+			{Position -0.1490	-17.4175	30.1292}
+			{VolumeView "cables.ply"}
+		}
+		{bone "puerta1"
+			{Position 0.0344	135.0683	30.1016}
+			{VolumeView "puerta1.ply"}
+		}
+		{bone "tornillos"
+			{Position -0.0524	-4.4606	10.1922}
+			{VolumeView "tornillos.ply"}
+		}
+		{bone "puerta2"
+			{Position 0.0344	-157.5430	10.3066}
+			{VolumeView "puerta2.ply"}
+		}
+		{bone "postes"
+			{Position 0.1276	-3.4626	28.4933}
+			{VolumeView "postes.ply"}
+		}
+		{bone "caseta"
+			{Position -49.5015	-3.6020	44.2025}
+			{VolumeView "caseta.ply"}
+		}
+		{bone "oxido"
+			{Position -11.9592	-3.5128	28.4109}
+			{VolumeView "oxido.ply"}
+		}
+		{bone "borde"
+			{Position -11.6574	-4.1899	10.4464}
+			{VolumeView "borde.ply"}
+		}
+		{bone "enganches"
+			{Position -0.1335	-5.9440	12.3253}
+			{VolumeView "enganches.ply"}
+		}
+	}
+}
+{Volume "caseta"
+	{Box 8.3941 13.134 13.0404}
+	{Bone "caseta"}
+	{Orientation
+		5.0000	0.0000	0.0000
+		0.0000	5.0000	0.0000
+		0.0000	0.0000	5.0000
+	}
+}
+{Volume "puerta1"
+	{Polyhedron "puerta1.vol"}
+	{Bone "puerta1"}
+	{Position 0.0000	0.0000	-21.5503}
+}
+{Volume "paredes1"
+	{Box 1.46185 50.1029 4.53271}
+	{Bone "paredes"}
+	{Matrix34
+		5.0000	0.0000	0.0000
+		0.0000	5.0000	0.0000
+		0.0000	0.0000	5.0000
+		42.3264	0.0000	0.0000
+	}
+}
+{Volume "paredes"
+	{Box 1.46185 50.1029 4.53271}
+	{Bone "paredes"}
+	{Matrix34
+		5.0000	0.0000	0.0000
+		0.0000	5.0000	0.0000
+		0.0000	0.0000	5.0000
+		-44.9400	0.0000	0.0000
+	}
+}
+{Volume "casco"
+	{Box 14.5051 48.431 5.26007}
+	{Bone "casco"}
+	{Matrix34
+		5.0000	0.0000	0.0000
+		0.0000	5.0000	0.0000
+		0.0000	0.0000	5.0000
+		-1.3730	-2.5868	-0.9393
+	}
+}

@@ -1,0 +1,107 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "turret_rotator" "zenite"}
+
+	{TexMods
+		{"ambush" "1"}
+		{"winter" "2"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+			{front  50 0.2}
+			{rear   20 0.2}
+			{top 15}
+			{bottom	10}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+			{front  50 0.2}
+			{rear   20 0.2}
+			{top 15}
+			{bottom	10}
+		}
+	}
+	{volume "turret"
+		{thickness 17
+			{top    0}
+			{bottom	12}
+			{front  17 0.25}
+        		{left 17 0.4}
+			{right 17 0.4}
+			{rear 17 0.17}
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}	{end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+
+	("crew_human_visible"	place(gunner)		animation(right) door1(emit2)	visor(main))
+	("crew_human"		place(driver)		animation(left) door1(emit1)	visor(driver))
+	("crew_human_visible"	place(charger)		animation(left) door1(emit1)	visor(driver))
+	("crew_human"		place(commander)	animation(right) door1(emit2)	visor(driver))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_flak43"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet37 zenite" 8}}
+		}
+       		{place "mgun"
+			{Rotate}
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun" {fixed}}
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 1250}
+			{item "ammo bullet37 zenite" 990}
+		}
+	}
+	{mass 28500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    22}
+			{StartTime 		 7}
+			{BrakeTime 		1}
+			{StopTime		 1}
+			{TurnRadius     5}
+			{TurnTime		5}
+			{TurnStart		 2}
+			{TurnStop	   0.5}
+			{Gears 0.2 0.3 0.5 0.7 1.0}
+			{RearGears 0.2 0.5}
+		}
+	}
+	{sensor
+		{visor "main"
+			{vision "churchill"}
+			{bone "visor1"}
+		}
+		{Visor "driver"
+			{vision "tank-driver"}
+			{bone "visor2"}
+		}
+	}
+	{Extension "ostwind.mdl"}
+}

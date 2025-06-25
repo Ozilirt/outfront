@@ -1,0 +1,27 @@
+;Made by: Albus
+{Skeleton
+	{bone "body"
+		{parameters "ID=body;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone revolute "turret"
+			{parameters "ID=turret;"}
+			{Position 0.0402	-1.2263	5.5542}
+			{VolumeView "turret.ply"}
+			{bone revolute "Gun"
+				{parameters "ID=gun;"}
+				{limits -5.0000 20.0000}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					34.4850	1.2747	44.0569
+				}
+			}
+		}
+	}
+}

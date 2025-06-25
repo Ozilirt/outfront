@@ -1,0 +1,62 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	(include "/properties/structure/cannon_100.ext")
+	{props "vehicle" "cannon" "medium" "turret_rotator"}
+	(include "/properties/dummy_fsm2.inc")
+
+	("crew_2_human")
+	{Extension "type10.mdl"}
+	{volume "body"
+		{thickness 80}
+		{component "body"}
+	}
+	{volume "turret1"
+		{thickness 65}
+		{component "turret"}
+	}
+	{volume "turret2"
+		{thickness 65}
+		{component "turret"}
+	}
+	{volume "turret3"
+		{thickness 65}
+		{component "turret"}
+	}
+	{volume "turret4"
+		{thickness 65}
+		{component "turret"}
+	}
+	{Volume "gun"
+		{thickness 50}
+	}
+	{component "body"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 40}
+	}
+	{component "gun"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 30}
+	}
+	{component "turret"
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 35}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "120mm_type10"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet120 fg" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet120 fg" 29 {cell 0 0}}
+			{item "ammo bullet120 ap" 8 {cell 0 1}}
+		}
+	}
+	{mass 9000}
+}

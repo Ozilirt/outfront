@@ -1,0 +1,608 @@
+{mission
+	{Camera
+		{Position 3145.87 1833.55}
+		{Distance 726.99}
+		{ViewAngle 0.129139}
+		{YawAngle 2.68894}
+	}
+	{Environment "day_norainy2"}
+	{User 1}
+	{GameProgress 0 0}
+	{Entity "m4a3" 0x8000
+		{Position 3262.99 1654.94 -14.9848}
+		{Turn -81.1053}
+		{Player 0}
+		{MID 1}
+	}
+	{Human "usa.marine.oficer" 0x8001
+		{Position 3391.75 1501.08 1.08667}
+		{Turn -83.7024}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "colt" filling "ammo pistol" 7 {cell 4 0}}
+				{item "ammo pistol" 90 {cell 6 0}}
+				{item "thompson" filling "ammo pistol" 30 {cell 0 0}}
+				{item 0x8006 "bino" {cell 6 1}}
+			}
+		}
+		{Player 0}
+		{MID 2}
+		{NameId 69 61}
+		{FsmState "squat"}
+	}
+	{Human "usa.marine2.smg" 0x8002
+		{Position 3360.89 1501.03 -1.83024}
+		{Player 0}
+		{MID 3}
+		{NameId 125 12}
+		{FsmState "squat"}
+	}
+	{Human "usa.marine.smg" 0x8003
+		{Position 3237.43 1574.52 -21.3972}
+		{Turn -78.9944}
+		{Player 0}
+		{MID 4}
+		{NameId 102 99}
+		{FsmState "squat"}
+	}
+	{Human "usa.marine.rifle" 0x8004
+		{Position 3293.95 1684.73 -8.92328}
+		{Turn 7.87266}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 40 {cell 4 0}}
+				{item "grenade m61" {cell 5 0}}
+			}
+		}
+		{Player 0}
+		{MID 5}
+		{Weaponry
+			{State
+				{Mounted "m1"}
+				{Weapon
+					{Ammo "ammo rifle" 8}
+				}
+			}
+		}
+		{NameId 87 22}
+		{Cover
+			{sector 3293.95 1684.73 {type "hide_stand"}
+				{wall 0 0 3298.3 1602.15 3282.18 1718.73}
+			}
+		}
+		{FsmState "stand"}
+	}
+	{Human "usa.marine.mgun" 0x8005
+		{Position 3309.63 1570.74 -10.9655}
+		{Turn -116.733}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 80 {cell 5 0}}
+				{item "grenade m61" {cell 7 0}}
+			}
+		}
+		{Player 0}
+		{MID 6}
+		{Weaponry
+			{State
+				{Mounted "weapon bar"}
+				{Weapon
+					{Ammo "ammo mgun" 20}
+				}
+			}
+		}
+		{NameId 99 40}
+		{FsmState "squat"}
+	}
+	{Entity "bino" 0x8006
+		{Position 3389.56 1501.61 15.3645}
+		{Orientation
+			 -0.060736   0.125527  -0.990277
+			 -0.998196  -0.004428   0.060661
+			  0.003228   0.992081   0.125558
+		}
+	}
+	{Entity "willysmb" 0x8007
+		{Position 2929.67 4045.87 16.1255}
+		{Turn -115.739}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "jeep" 0x8008
+		{Position 2935.95 4055.13 16.1472}
+		{Turn -117.609}
+		{Player 0}
+		{MID 8}
+	}
+	{Human "usa.marine.smg" 0x8009
+		{Position 2924.56 4057.44 27.2516}
+		{Orientation
+			  0.900259  -0.434253   0.031820
+			  0.434255   0.900764   0.006821
+			 -0.031624   0.007677   0.999497
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 9}
+		{NameId 69 62}
+		{FsmState "board"}
+	}
+	{Human "usa.marine.rifle" 0x800a
+		{Position 2940.47 4049.77 27.8139}
+		{Orientation
+			 -0.943637  -0.329870  -0.027246
+			  0.329510  -0.943990   0.017700
+			 -0.031581   0.007767   0.999498
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 10}
+		{NameId 125 13}
+		{FsmState "board"}
+	}
+	{Human "usa.marine.smg" 0x800b
+		{Position 2938.2 4067.22 31.4958}
+		{Orientation
+			 -0.434294  -0.900844  -0.006822
+			  0.900254  -0.434263   0.031819
+			 -0.031626   0.007677   0.999486
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 11}
+		{NameId 102 0}
+		{FsmState "board"}
+	}
+	{Human "usa.marine.smg" 0x800c
+		{Position 2928.97 4062.28 23.4031}
+		{Orientation
+			 -0.444154  -0.831404   0.334020
+			  0.885952  -0.463113   0.025343
+			  0.133615   0.307174   0.942277
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 12}
+		{NameId 87 23}
+		{FsmState "board"}
+	}
+	{Human "usa.marine2.smg" 0x800d
+		{Position 2946.97 4058.82 27.7028}
+		{Orientation
+			 -0.954073  -0.299164  -0.015885
+			  0.298703  -0.953961   0.027252
+			 -0.023327   0.021300   0.999528
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 13}
+		{NameId 99 41}
+		{FsmState "board"}
+	}
+	{Human "usa.marine.rifle" 0x800e
+		{Position 2958.16 4074.49 28.7681}
+		{Orientation
+			 -0.885885   0.463045  -0.028941
+			 -0.463489  -0.886033   0.011666
+			 -0.020241   0.023749   0.999540
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 14}
+		{NameId 74 27}
+		{FsmState "board"}
+	}
+	{Human "usa.marine.rifle" 0x800f
+		{Position 2937.73 4085.17 28.0638}
+		{Orientation
+			  0.886020  -0.463181   0.021744
+			  0.463350   0.886173  -0.004269
+			 -0.017291   0.013857   0.999781
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 15}
+		{NameId 144 91}
+		{FsmState "board"}
+	}
+	{Entity "dodgewc56" 0x8010
+		{Position 2943.87 4072.84 16.3523}
+		{Turn -117.617}
+		{Volume "shield_left"
+			{Able {visible 0}{bullet 0}{contact 0}{contact_ground 0}{blast 0}}
+		}
+		{Player 0}
+		{MID 16}
+	}
+	{Human "usa.tankman" 0x8011
+		{Position 2936.77 4077.49 30.4558}
+		{Orientation
+			 -0.463547  -0.886028   0.008893
+			  0.885577  -0.462929   0.038073
+			 -0.029617   0.025524   0.999235
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 17}
+		{NameId 69 63}
+		{FsmState "board"}
+	}
+	{Human "usa.marine_medic" 0x8012
+		{Position 2949.42 4069.49 29.5041}
+		{Orientation
+			 -0.463547  -0.886028   0.008893
+			  0.885577  -0.462929   0.038073
+			 -0.029617   0.025524   0.999235
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 18}
+		{NameId 125 14}
+		{FsmState "board"}
+	}
+	{Human "usa.marine2.all" 0x8013
+		{Position 2968.02 4092.7 31.1898}
+		{Orientation
+			 -0.885577   0.462929  -0.038073
+			 -0.463547  -0.886028   0.008893
+			 -0.029617   0.025524   0.999235
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 19}
+		{NameId 102 1}
+		{FsmState "board"}
+	}
+	{Human "usa.marine2.all" 0x8014
+		{Position 2950.81 4114.32 30.1402}
+		{Orientation
+			  0.885577  -0.462929   0.038073
+			  0.463547   0.886028  -0.008893
+			 -0.029617   0.025524   0.999235
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "m3a" filling "ammo pistol" 30 {cell 0 0}}
+				{item "ammo pistol" 60 {cell 6 0}}
+			}
+			{armor "head"
+				{Item "helmet1_usa"}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 20}
+		{NameId 87 24}
+		{FsmState "board"}
+	}
+	{Human "usa.marine.all" 0x8015
+		{Position 2962.93 4083 31.2865}
+		{Orientation
+			 -0.885577   0.462929  -0.038073
+			 -0.463547  -0.886028   0.008893
+			 -0.029617   0.025524   0.999235
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 21}
+		{NameId 99 42}
+		{FsmState "board"}
+	}
+	{Human "usa.marine.all" 0x8016
+		{Position 2940.53 4094.68 30.3374}
+		{Orientation
+			  0.885577  -0.462929   0.038073
+			  0.463547   0.886028  -0.008893
+			 -0.029617   0.025524   0.999235
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 22}
+		{NameId 74 28}
+		{FsmState "board"}
+	}
+	{Human "usa.marine.all" 0x8017
+		{Position 2945.65 4104.46 30.2393}
+		{Orientation
+			  0.885577  -0.462929   0.038073
+			  0.463547   0.886028  -0.008893
+			 -0.029617   0.025524   0.999235
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 23}
+		{NameId 144 92}
+		{FsmState "board"}
+	}
+	{Human "usa.marine.all" 0x8018
+		{Position 2973.16 4102.57 31.09}
+		{Orientation
+			 -0.885577   0.462929  -0.038073
+			 -0.463547  -0.886028   0.008893
+			 -0.029617   0.025524   0.999235
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "m2_carbine" filling "ammo rifle" 15 {cell 0 0}}
+				{item "ammo rifle" 45 {cell 7 0}}
+			}
+			{armor "head"
+				{Item "usmc-cap1"}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 24}
+		{NameId 135 23}
+		{FsmState "board"}
+	}
+	{Link 0x8009 To 0x8007 "driver"}
+	{Link 0x800a To 0x8007 "commander"}
+	{Link 0x800b To 0x8007 "gunner"}
+	{Link 0x800c To 0x8008 "driver"}
+	{Link 0x800d To 0x8008 "seat1"}
+	{Link 0x800e To 0x8008 "seat2"}
+	{Link 0x800f To 0x8008 "seat3"}
+	{Link 0x8011 To 0x8010 "driver"}
+	{Link 0x8012 To 0x8010 "commander"}
+	{Link 0x8013 To 0x8010 "seat2"}
+	{Link 0x8014 To 0x8010 "seat3"}
+	{Link 0x8015 To 0x8010 "seat6"}
+	{Link 0x8016 To 0x8010 "seat5"}
+	{Link 0x8017 To 0x8010 "seat4"}
+	{Link 0x8018 To 0x8010 "seat1"}
+	{Brain 0x8007
+		{LookAround 1}
+	}
+	{Brain 0x8008
+		{HoldFire}
+	}
+	{Brain 0x8010
+		{HoldFire}
+	}
+	{Tags 0x8007 "j1"}
+	{Tags 0x8008 "j2"}
+	{Tags 0x8010 "tr1"}
+	{Helpers
+		{event "start" id 0 state 0}
+		{event "j1" id 1 state 0}
+		{event "j2" id 2 state 0}
+		{event "tr1" id 3 state 0}
+		{trigger "inicio"
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "j1"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "j2"}
+					}
+					{inactive on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "tr1"}
+					}
+					{inactive on}
+				}
+				{"event"
+					{event 1}
+					{mode set}
+					{delay 10}
+				}
+			}
+		}
+		{trigger "j1_on"
+			{condition
+				{term 1 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "j1"}
+					}
+					{"waypoint/uid" 0}
+					{clone}
+				}
+				{"event"
+					{event 1}
+					{mode reset}
+					{delay 1}
+				}
+				{"event"
+					{event 2}
+					{mode set}
+					{delay "5.5"}
+				}
+			}
+		}
+		{trigger "j2_exit"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "j2"}
+						{"actors/zone" "zone_exit"}
+						{"actors/type" vehicle}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"event"
+					{event 3}
+					{mode set}
+					{delay 12}
+				}
+			}
+		}
+		{trigger "j2_on"
+			{condition
+				{term 1 "event"
+					{id 2}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "j2"}
+					}
+					{"waypoint/uid" 0}
+					{clone}
+				}
+				{"event"
+					{event 2}
+					{mode reset}
+					{delay 1}
+				}
+				{"trigger"
+					{name "tr1_exit"}
+				}
+			}
+		}
+		{trigger "start"
+			{condition
+				{term 1 "event"
+					{id 0}
+				}
+			}
+			{actions
+				{"event"
+					{mode set}
+				}
+			}
+		}
+		{trigger "tr1_exit"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "tr1"}
+						{"actors/zone" "zone_exit"}
+						{"actors/type" vehicle}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"event"
+					{event 1}
+					{mode set}
+					{delay 25}
+				}
+			}
+		}
+		{trigger "tr1_on"
+			{condition
+				{term 1 "event"
+					{id 3}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "tr1"}
+					}
+					{"waypoint/uid" 10}
+					{clone}
+				}
+				{"event"
+					{event 3}
+					{mode reset}
+					{delay 1}
+				}
+				{"trigger"
+					{name "j2_exit"}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 2860.28 3905.95 16}
+				{radius 50}
+				{transition 1}
+				{commands
+					{"actor_state"
+						{speed_kph 8}
+					}
+				}
+			}
+			{1
+				{position 2759.57 3578.73 8.95749}
+				{radius 50}
+				{transition 2}
+			}
+			{2
+				{position 2733.04 3320.24 -11.3673}
+				{radius 50}
+				{transition 3}
+			}
+			{3
+				{position 2744.82 3036.52 -43.9008}
+				{radius 50}
+				{transition 4}
+			}
+			{4
+				{position 2707.46 2712.43 -82.2643}
+				{radius 50}
+				{transition 5}
+			}
+			{5
+				{position 2645.78 2510.98 -97.4215}
+				{radius 50}
+				{transition 6}
+			}
+			{6
+				{position 2656.01 2169.97 -101.395}
+				{radius 50}
+				{transition 7}
+			}
+			{7
+				{position 2730.98 1731.83 -81.9015}
+				{radius 50}
+				{transition 8}
+			}
+			{8
+				{position 2741.95 1493.61 -70.1652}
+				{radius 50}
+				{transition 9}
+			}
+			{9
+				{position 2685.19 1257.6 -56.2402}
+				{radius 50}
+				{commands
+					{"delete"}
+				}
+			}
+			{10
+				{position 2863.08 3904.38 16}
+				{radius 50}
+				{transition 1}
+				{commands
+					{"actor_state"
+						{speed_kph 15}
+					}
+				}
+			}
+		}
+		{zone "circle"
+			{position 2685.28 1258.48 -56.3192}
+			{Name "zone_exit"}
+			{Radius 100}
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

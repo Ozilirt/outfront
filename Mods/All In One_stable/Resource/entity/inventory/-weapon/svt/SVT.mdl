@@ -1,0 +1,42 @@
+;Exported by: sergienko
+;Date:        Tue Jul 12 14:20:01 2005
+;File:        D:\tmp\g41\G41.max
+{Skeleton
+	{bone "SVT"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "SVT.ply"}
+		{bone "foresight3"
+			{Position 18.6115	1.62359	-0.212373}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				6.40987	1.57439	-0.264447
+			}
+		}
+		{bone "run_holder"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				1.93331	0.977613	-0.264447
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 29.9047 11.1349 3.05727}
+	{Bone "SVT"}
+	{Position 6.24056	1.138	-0.237407}
+}
+{Volume "body"
+	{Box 23.1538 4.30972 1.17113}
+	{Bone "SVT"}
+	{Position 5.66393	0.41708	-0.265553}
+}

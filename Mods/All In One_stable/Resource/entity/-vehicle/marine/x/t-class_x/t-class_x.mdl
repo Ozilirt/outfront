@@ -1,0 +1,71 @@
+;Model created by: Dinsen & Albus
+;date : Jan 2011
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 16.1204	-0.0236	10.3724}
+			{VolumeView "body.ply"}
+			{bone "tube2"
+				{Position 0.0000	-36.2000	31.2000}
+				{VolumeView "tube2.ply"}
+			}
+			{bone "cabin"
+				{parameters "ID=cabin;"}
+				{Position -11.2000	-0.5000	23.8000}
+				{VolumeView "cabin.ply"}
+				{bone "mastil"
+					{Position 22.6800	14.2100	30.3200}
+					{VolumeView "mastil.ply"}
+				}
+				{bone "cables"
+					{Position 0.0000	0.0000	0.0000}
+					{VolumeView "cables.ply"}
+				}
+				{bone "door"
+					{Position 52.7200	-20.0500	9.4000}
+					{VolumeView "door.ply"}
+				}
+				{bone "projector1"
+					{Position 56.9193	-15.2000	31.2260}
+				}
+				{bone "projector"
+					{Position 56.9807	15.2000	31.2260}
+				}
+			}
+			{bone "body_rear"
+				{parameters "ID=body_rear;"}
+				{Position -190.0000	0.0000	0.0000}
+				{VolumeView "body_rear.ply"}
+				{bone revolute "FX_exp2"
+					{limits -2.0000 2.0000}
+					{Position 11.5645	0.0000	5.4012}
+				}
+				{bone revolute "FX_exp1"
+					{limits -2.0000 2.0000}
+					{Position 79.5197	0.0000	5.4012}
+				}
+			}
+			{bone "body_front"
+				{parameters "ID=body_front;"}
+				{Position 140.0000	0.0000	0.0000}
+				{VolumeView "body_front.ply"}
+				{bone revolute "FX_exp4"
+					{limits -2.0000 2.0000}
+					{Position -48.8354	0.0211	5.1806}
+				}
+			}
+			{bone revolute "FX_exp3"
+				{limits -2.0000 2.0000}
+				{Position -1.0951	0.0211	7.8568}
+			}
+		}
+		{bone "volume_holder"
+		}
+	}
+}

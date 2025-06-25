@@ -1,0 +1,51 @@
+;Exported by: Albus
+;Date:        Fri Feb 17 00:06:23 2012
+;File:        
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 3.4034	0.5739	0.8546}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -100.0000 100.0000}
+				{speed 0.0030}
+				{Matrix34
+					0.9999	-0.0173	0.0000
+					0.0173	0.9999	0.0000
+					-0.0000	-0.0000	1.0000
+					1.9039	0.6572	2.4314
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 45.0000}
+					{speed 0.0030}
+					{Matrix34
+						0.9998	0.0173	-0.0004
+						0.0007	0.0000	1.0000
+						0.0173	-0.9999	-0.0000
+						-0.2078	0.8672	28.3579
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							0.9998	0.0007	0.0173
+							0.0173	-0.0000	-0.9999
+							-0.0012	1.0000	-0.0001
+							19.8027	0.7912	3.5231
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}

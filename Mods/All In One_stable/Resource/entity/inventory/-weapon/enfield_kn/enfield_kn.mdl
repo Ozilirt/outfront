@@ -1,0 +1,31 @@
+{Skeleton
+	{bone "enfield_kn"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "enfield_kn.ply"}
+		{bone "foresight3"
+			{Position 16.5274	1.2582	0.0542}
+		}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				5.0868	1.1482	0.0022
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 29.9047 11.1349 3.05727}
+	{Bone "enfield_kn"}
+	{Position 6.72098	0.7118	0.0052}
+}
+{Volume "body"
+	{Box 22.4592 4.30972 1.17113}
+	{Bone "enfield_kn"}
+	{Position 4.4663	0.4213	0.0011}
+}

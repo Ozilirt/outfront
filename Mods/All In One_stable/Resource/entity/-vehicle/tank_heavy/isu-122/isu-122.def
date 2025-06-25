@@ -1,0 +1,129 @@
+;Model created by: <Eger>
+;BTRH Mod (c) Copyright 2005 by BTRH clan developers team
+;http://rus-hammers.com
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "-turret" "self_propelled" "high" "turretmg"}
+
+
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 90
+                        {front 90 0.2}
+			{bottom	30}
+			{top    20}
+			{rear	60 0.4}
+		}   
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 90
+                        {front 90 0.2}
+			{bottom	30}
+			{top    20}
+			{rear	60}
+		}    
+	}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 90
+                        {front 90 0.2}
+			{bottom	30}
+			{top    20}
+			{rear	60}
+		}    
+	}
+	{volume "turret"
+		{thickness 75
+                        {left 90 0.3}
+                        {right 90 0.3}
+                        {front 90 0.3}
+                }
+	}
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+	
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "122mm_d25"}
+			{Mounted}
+			{weapon {ammo "ammo bullet122 fg" 1}}
+		}
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "DSHK"}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 50}}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{item "ammo mgun2" 200}
+			{item "ammo bullet122 fg" 17}
+			{item "ammo bullet122 ap" 12}
+		}
+	}
+
+	{mass 47000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{maxspeed 15}
+		}
+		{speed
+			{Slow	8	}	; km/h
+			{Normal	10	}
+			{Fast	14	}
+		}
+		{FuelBag
+			{volume 590 }	; liters
+			{rate   330 }	; liters per kilometer
+			{remain 590 }
+			{fuel "fuel"}
+		}
+	}
+	{extension "ISU-122.mdl"}
+
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_CAY"}
+			}
+		}
+	)
+}

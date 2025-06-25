@@ -1,0 +1,40 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	{obstacleId "tank"}
+	{TexMods
+		{"ambush" "1"}
+		{"winter" "2"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+			{bottom	10}
+			{rear   50}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+			{bottom	10}
+			{rear   50}
+		}
+	}
+	{volume "turret"
+		{thickness 16 0.3}
+	}
+	{volume "part1"
+	}
+	{volume "part2"
+	}
+	{volume "part3"
+	}
+	{volume "part4"
+	}
+	{volume "part5"
+	}
+	{Extension "ostwind_xx.mdl"}
+}

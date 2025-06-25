@@ -1,0 +1,78 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "-turret" "self_propelled"}
+	{extension "crew.ext"}
+	{TexMods
+		{"ambush" "1"}
+		{"winter" "2"}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 15
+		    {front  35 0.3}
+			{top	10}
+			{bottom	8}
+			{rear   10}
+		}
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 15
+		    {front  35 0.3}
+			{top	10}
+			{bottom	8}
+			{rear   10}
+		}
+	}
+	{volume "gun"
+		{thickness 9}
+	}
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{DefaultWeapon "76mm_zis3"}
+			{Mounted}
+			{weapon {ammo "ammo bullet76 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+ 	 		{item "ammo bullet76 fg" 30}
+			{item "ammo bullet76 ap" 30}
+			{item "weapon dt" filling "ammo mgun" 63}
+			{item "ammo mgun" 63}
+			{item "plant" 2}
+		}
+	}
+	
+	{mass 10900}
+	{sensor
+		{visor "main"
+			{vision "stug4g-main"}
+			{bone "visor1"}
+		}
+	}
+	{Chassis
+		{track_size 0.4 0.6}
+		{speed
+			{Slow	17}	; km/h
+			{Normal	20}
+			{Fast	24}
+		}
+		{Locomotion ("locomotion")
+			{MaxSpeed 24}
+		}
+		{FuelBag
+			{volume 310}	; liters
+			{rate   155}   ; liters per kilometer
+			{remain 310}
+			{fuel "fuel"}
+          	}
+	}
+	{Extension "su-76m.mdl"}
+}

@@ -1,0 +1,36 @@
+;Exported by: dinsen
+;Date:        Sun Dec 12 03:05:33 2010
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\cascojapo.max
+{Skeleton
+	{bone "astronauta"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "astronauta.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	-1.0000	0.0000
+				-0.0098	-0.0732	2.8144
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 2.81685 2.92519 2.38349}
+	{Bone "astronauta"}
+	{Matrix34
+		2.0000	0.0000	0.0000
+		0.0000	0.0000	1.6134
+		0.0000	-2.0000	0.0000
+		-0.1182	-0.1461	2.8144
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "astronauta"}
+	{Position 0.0000	0.0000	2.6185}
+}

@@ -1,0 +1,1 @@
+git push "https://github.com/Ozilirt/outfront.git" master

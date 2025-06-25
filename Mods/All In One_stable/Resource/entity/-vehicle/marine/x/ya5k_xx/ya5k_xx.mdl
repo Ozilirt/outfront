@@ -1,0 +1,37 @@
+;Model created by: Dinsen & Albus
+;date : Feb 2010
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 16.1204	-0.0236	10.3724}
+			{VolumeView "body.ply"}
+			{bone "cabin"
+				{parameters "ID=cabin;"}
+				{Position -19.0000	-0.5000	15.3000}
+				{VolumeView "cabin.ply"}
+			}
+			{bone "body_rear"
+				{parameters "ID=body_rear;"}
+				{Position -160.0000	0.0000	0.0000}
+				{VolumeView "body_rear.ply"}
+			}
+			{bone "body_front"
+				{parameters "ID=body_front;"}
+				{Position 109.7150	0.0000	0.0000}
+				{VolumeView "body_front.ply"}
+				{bone revolute "FX_exp4"
+					{limits -2.0000 2.0000}
+					{Position -48.8354	0.0211	5.1806}
+				}
+			}
+		}
+		{bone "volume_holder"
+		}
+	}
+}

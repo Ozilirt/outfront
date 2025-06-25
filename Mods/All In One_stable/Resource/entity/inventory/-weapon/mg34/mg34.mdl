@@ -1,0 +1,32 @@
+{Skeleton
+	{bone "mg34"
+		{parameters "CommonMesh;ID=mgun;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "mg34.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				3.9569	1.4447	-0.0037
+			}
+		}
+		{bone "Foresight3"
+			{Position 16.4376	0.6866	0.0483}
+		}
+	}
+}
+{Volume "select"
+	{Box 27.7845 9.72703 4.3449}
+	{Bone "mg34"}
+	{Position 4.9984	-0.6806	0.3055}
+}
+{Volume "body"
+	{Box 23.1538 4.30972 1.17113}
+	{Bone "mg34"}
+	{Position 4.9984	-0.6806	-0.0483}
+}

@@ -1,0 +1,56 @@
+; made by Albus Dec 2010
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{speed 0.0200}
+			{Position 0.0000	0.0000	24.0000}
+			{VolumeView "turret.ply"}
+			{bone revolute "gun_rot"
+				{limits -10.0000 10.0000}
+				{speed 0.0500}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					7.8130	0.1000	-0.6729
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "part1"
+					{Position -4.0000	3.0000	0.0000}
+					{VolumeView "part1.ply"}
+				}
+			}
+		}
+	}
+}
+{Volume "part1"
+	{Box 7.87728 4.21995 34.4273}
+	{Bone "part1"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		0.0000	1.0000	0.0000
+		1.0000	0.0000	0.0000
+		8.2982	1.4850	0.2000
+	}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		-26.0077	-0.1751	-8.0864
+	}
+}
+{Volume "body"
+	{Cylinder 29.84871 3.80311}
+	{Bone "turret"}
+	{Position 0.0000	0.0000	-19.2000}
+}
+

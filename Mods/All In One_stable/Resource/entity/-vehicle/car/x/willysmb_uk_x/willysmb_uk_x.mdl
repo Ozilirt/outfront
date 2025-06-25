@@ -1,0 +1,160 @@
+;Exported by: Albus
+;Date:        Tue Jun 07 20:19:35 2011
+;File:        C:\Archivos de programa\3dsMax8\scenes\willysmb3_x.max
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=30;WheelRadius=0.5;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_front"
+			{parameters "ID=body;"}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	1.0000	0.0052
+				0.0000	-0.0052	1.0000
+				14.4625	-0.1143	7.3531
+			}
+			{VolumeView "pivot_front.ply"}
+			{bone revolute "steer_L1"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0096
+					0.0000	-0.0096	-1.0000
+					8.5894	12.5268	0.4224
+				}
+				{bone revolute "wheelL1"
+					{parameters "ID=wheelleft1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	-0.0045	-1.0000
+						0.0000	-1.0000	0.0045
+						-0.0027	-1.3407	0.2534
+					}
+					{VolumeView "wheelL1.ply"}
+				}
+			}
+			{bone revolute "steer_R1"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0096
+					0.0000	-0.0096	-1.0000
+					9.0515	-11.6333	0.5632
+				}
+				{bone revolute "wheelR1"
+					{parameters "ID=wheelright1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	-0.0045	-1.0000
+						0.0000	-1.0000	0.0045
+						-0.4518	1.3424	0.1633
+					}
+					{VolumeView "wheelR1.ply"}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{parameters "ID=body;"}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	1.0000	0.0052
+				0.0000	-0.0052	1.0000
+				-9.4714	0.7503	8.4576
+			}
+			{VolumeView "pivot_back.ply"}
+			{bone "spring_L2"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	1.0000	-0.0052
+					0.0000	0.0052	1.0000
+					-12.3349	12.6604	-0.4997
+				}
+				{bone revolute "wheelL2"
+					{parameters "ID=wheelleft2;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						-0.1195	0.2871	-0.4544
+					}
+					{VolumeView "wheelL2.ply"}
+				}
+			}
+			{bone "spring_R2"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	1.0000	-0.0052
+					0.0000	0.0052	1.0000
+					-12.3642	-14.1181	-0.3030
+				}
+				{bone revolute "wheelR2"
+					{parameters "ID=wheelright2;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						-0.0771	0.2230	-0.3946
+					}
+					{VolumeView "wheelR2.ply"}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	1.0000	0.0052
+				0.0000	-0.0052	1.0000
+				-0.6814	0.9370	21.7578
+			}
+			{VolumeView "body.ply"}
+			{bone "capot"
+				{parameters "ID=engine;"}
+				{Position 22.6271	-0.0861	-1.2649}
+				{VolumeView "capot.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -45.0000 45.0000}
+				{Matrix34
+					0.9999	0.0001	0.0170
+					-0.0001	1.0000	0.0000
+					-0.0170	0.0000	0.9999
+					-10.9269	-0.1221	-6.2173
+				}
+				{VolumeView "turret.ply"}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Position 21.9384	-1.0398	-5.3010}
+				{VolumeView "engine.ply"}
+			}
+			{bone "glass"
+				{parameters "ID=body;"}
+				{Position 11.3488	2.1570	2.0544}
+				{VolumeView "glass.ply"}
+			}
+			{bone "wheel5"
+				{parameters "ID=body;"}
+				{Matrix34
+					1.0000	0.0000	0.0052
+					0.0000	1.0000	0.0000
+					-0.0052	0.0000	1.0000
+					-38.2876	-8.9578	0.3657
+				}
+				{VolumeView "wheel5.ply"}
+			}
+			{bone "canister"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	1.0000	-0.0052
+					0.0000	0.0052	1.0000
+					-35.9514	7.6181	-2.5064
+				}
+				{VolumeView "canister.ply"}
+			}
+		}
+	}
+}

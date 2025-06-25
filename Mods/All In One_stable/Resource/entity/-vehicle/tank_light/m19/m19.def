@@ -1,0 +1,159 @@
+{Entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "light" "turret_rotator" "flak4_tank" "average"}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+			{front  20 0.6}
+			{rear   6}
+			{top	11}
+			{bottom	11}
+		}   
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+			{front  20 0.6}
+			{rear   6}
+			{top	11}
+			{bottom	11}
+		}   
+	}
+	{volume "turret"
+		{component "turret"}
+		{thickness 15
+			{front  20 0.6}	
+			{left	15}
+                	{right	15}
+              		{top	11}          
+		}
+	}
+	{volume "turret1"
+		{component "turret"}
+		{thickness 15
+			{front  20 0.6}	
+			{left	15}
+			{right	15}
+			{top	11}          
+		}
+	}
+	{volume "turret2"
+		{component "turret"}
+		{thickness 15
+			{front  20 0.6}	
+			{left	15}
+			{right	15}
+			{top	11}          
+		}
+	}
+	{volume "turret3"
+		{component "turret"}
+		{thickness 15
+			{front  20 0.6}	
+			{left	15}
+			{right	15}
+			{top	11}          
+		}
+	}
+	{volume "turret4"
+		{component "turret"}
+		{thickness 15
+			{front  20 0.6}	
+			{left	15}
+			{right	15}
+			{top	11}          
+		}
+	}
+	{volume "gun"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 3}
+	}
+	{volume "gun1"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 3}
+	}	 
+	
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+	("crew_human"			place(driver)		door1(emit1) door2(emit2) visor(driver))	
+	("crew_human_visible"		place(gunner)		door1(emit1) door2(emit2) visor(main))
+	("crew_human"			place(charger)		door1(emit1) door2(emit2) visor(main))
+	("crew_human_visible"		place(commander)	door1(emit1) door2(emit2) visor(main))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "40mm_mk1"}
+			{RestoreIKAfterAim}
+			{Barrels 2}
+			{Mounted}
+			{weapon {ammo "bullet40 zenite" 20}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet40 zenite" 350}
+		}
+	}
+	{mass 18500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed	24}	; kmph
+			{StartTime	10}	; seconds
+			{BrakeTime	2}	; seconds
+			{StopTime	1}	; seconds
+			{TurnRadius	5}	; meter
+			{TurnTime	5}	; seconds
+			{TurnStart	2}	; seconds
+			{TurnStop	0.5}	; seconds
+			{Gears		0.2 0.3 0.5 0.7 1.0} 
+			{RearGears	0.2 0.5}
+		}
+	}
+	{Sensor
+		{Visor "aa"
+			{vision "type96"}
+			{bone	"visor1"}
+		}
+		{Visor "driver"
+			{vision "Visor_BTR"}
+			{bone "visor2"}
+		}
+	}
+	{Extension "m19.mdl"}
+
+	(mod "mp"
+ 		{Chassis
+			{speed
+				{Slow	10}	; km/h
+				{Normal	15}
+				{Fast	24}
+			}
+			{FuelBag
+				{volume 500}	; liters
+				{rate   311}   	; liters per kilometer
+				{remain 500}
+				{fuel "fuel"}
+			}
+			{Locomotion ("locomotion")
+				{MaxSpeed 24}
+			}
+		}
+	)
+}

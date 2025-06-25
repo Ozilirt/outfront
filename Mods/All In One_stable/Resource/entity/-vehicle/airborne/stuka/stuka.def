@@ -1,0 +1,61 @@
+{actor
+	(include "/properties/airborne.ext")
+	{PatherID  "airborne"}
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/airborne.inc" scale(2.0))
+	(include "/properties/car_crew.ext")
+	{TexMods
+		{"1" "1"}
+	}
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_plane_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"board_plane_left" -1}}
+		}
+		{anm "commander"
+			{forward	{begin	""} {end "seat_driver_car"}}
+			{reverse 	{end	"board_plane_right" -1}}
+		}
+
+	}
+	("crew_human"	place(driver)	bone(driver)	door(emit2)	animation(driver))
+	("crew_human"	place(commander)	bone(commander)	door(emit1)	animation(commander))
+
+	{Placer
+		{place "driver" {worker charger}}	
+		{place "commander"}	
+	}
+
+	{Chassis ("chassis_defaults")
+		{Locomotion ("locomotion") 
+			{Maxspeed 40}
+		}
+    	{maxSideSlope 70}	;degree
+    	{onAirTurnRadius 20}
+       	{speed
+       		{Slow	10  }	; km/h
+       		{Normal	20	}
+       		{Fast	40	}
+       	}
+	}
+	{mass 3000}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"{fixed}}
+		{box
+			{item  "ammo mgun" 1000}
+		}
+	}
+	{Sensor
+		{Visor "main"
+			{bone	 "pivot_back"}
+		}
+	}
+	{Extension "stuka.mdl"}
+}

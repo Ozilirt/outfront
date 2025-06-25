@@ -1,0 +1,50 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	
+	("crew_inside")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-highcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(seat3)
+		board_begin(board_big-highcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+	("board_animation"
+		place(passenger1)
+		board_begin(board_tank)
+		board_end(seat_passenger)
+	)
+	("board_animation"
+		place(passenger2)
+		board_begin(board_tank)
+		board_end(seat_passenger)
+	)
+	("crew_human" place(driver)	door(emit1)		bone(driver) animation(driver))
+	("crew_human" place(seat3) door(emit2)	bone(seat03) animation(seat3))
+	("crew_human" place(seat1)	bone(seat01)	door(emit3)	animation(passenger1))
+	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger2))
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "bodyback"
+		{thickness 2}
+	}
+
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "citroen45.mdl"}
+}

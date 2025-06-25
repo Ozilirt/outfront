@@ -1,0 +1,13 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "ds"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 250}}
+		}
+	}  	
+	{Extension "degtyarev_dot.mdl"}
+}

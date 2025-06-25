@@ -1,0 +1,68 @@
+;Exported by: dinsen
+;Date:        Sun Aug 07 14:29:32 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\hecho\pasarela.max
+{Skeleton
+	{bone "body"
+		{parameters "Land;Ground;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply" {Ground}}
+		{bone "rail2"
+			{Position -333.2157	29.9960	5.1031}
+			{VolumeView "rail2.ply"}
+		}
+		{bone "rail1"
+			{Position -329.8064	-30.0430	4.9061}
+			{VolumeView "rail1.ply"}
+		}
+	}
+}
+{Obstacle "Plane02"
+	{Obb2
+		{Center -330.397 29.7259}
+		{Extent 329.877 2.25}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Plane01"
+	{Obb2
+		{Center -330.397 -29.7542}
+		{Extent 329.877 2.25}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 211.5 60 2.5}
+	{Bone "body"}
+	{Matrix34
+		0.9779	0.0000	0.2093
+		0.0000	1.0000	0.0000
+		-0.2093	0.0000	0.9779
+		-117.9244	-0.0050	-25.5049
+	}
+}
+{Volume "body1"
+	{Box 158.5 60 2.5}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0032
+		0.0000	1.0000	0.0000
+		-0.0032	0.0000	1.0000
+		-296.4213	-0.0050	-49.6151
+	}
+}
+{Volume "body"
+	{Box 211.5 60 2.5}
+	{Bone "body"}
+	{Matrix34
+		0.9798	0.0000	-0.2001
+		0.0000	1.0000	0.0000
+		0.2001	0.0000	0.9798
+		-476.8441	-0.0050	-29.9226
+	}
+}

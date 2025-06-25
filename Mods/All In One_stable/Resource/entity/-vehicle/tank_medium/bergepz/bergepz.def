@@ -1,0 +1,158 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.4))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "-turret" "zenite" "self_propelled" "high"}
+
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 50 0.3
+		    {front  83 0.55}
+                    {rear   40 0.3}
+                    {left 40 0.4}
+                    {right 40 0.4}
+			{bottom	22}
+                        {top 16}
+		}   
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 50
+		    {front  83 0.55}
+                    {rear 40 0.3}
+                    {left 40}
+                    {right 40}
+			{bottom	22}
+                        {top 16}
+		}   
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 40
+		    {front  83}
+		}   
+	}
+	{volume "cowsh"
+		{thickness 120
+		}   
+		{HitEnergy 40 100
+		}
+	}
+	{volume "Turret"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 6}
+	}
+	{component "turret"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_kv"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("crew_human"         place(driver)		door1(emit1) door2(emit2) visor(main))
+	("crew_human_visible" place(charger)		door1(emit1) door2(emit2) visor(main))
+	("crew_human_visible" place(gunner)		animation(gunner) door1(emit1) door2(emit2) visor(main))
+	("crew_human_visible" place(commander)		door1(emit1) door2(emit2) visor(main))
+
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit5)  animation(armor1))
+
+
+
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "20mm_kwk32"}
+			{Mounted}
+                  	{weapon {ammo "ammo bullet20 ap" 10}}
+		}
+		{place "mgun"
+			{Rotate}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mg42"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 75}}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{size 6 6}
+			{item "bullet20 ap" 300 {cell 0 0}}
+			{item "can" filling "fuel" 20 {cell 0 2}}
+			{item "repair_kit" 2 {cell 0 4}}
+			{item "dynamite" 3 {cell 2 4}}
+			{item "ammo mgun" 675 {cell 2 0}}
+			{item "barrel" filling "fuel" 75 {cell 4 3}}
+			{item "mine antitank" 2 {cell 2 2}}
+			{item "mine antipersonnel" 6 {cell 4 2}}
+		}
+	}
+	{mass 28000}
+	("tracks")
+	{Extension "bergepz.mdl"}
+
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    21} ; максимальная скорость, kmph
+			{StartTime 		 7} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		1} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		10} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{sensor
+		{Visor "main"
+			{vision "Visor_Tank"}
+		}
+       }
+       {Chassis
+        	{speed
+		  {Slow	9}
+		  {Normal	14}
+		  {Fast	21}
+		}
+   		{FuelBag
+          		{volume 730 }	; liters
+	    		{rate   365 }   	; liters per kilometer
+	    		{remain 730 }
+          		{fuel "fuel"}
+        	}
+
+       }
+}

@@ -1,0 +1,17 @@
+{game_entity
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1) sy(0.18) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "concrete" "stone"}
+
+	{Extension "dot_element11.mdl"}
+
+	{Volume "body"
+		{tags "body"}
+		{Thickness 100}
+	}
+	
+}

@@ -1,0 +1,42 @@
+;Exported by: sergienko
+;Date:        Wed Mar 29 15:51:40 2006
+;File:        D:\tmp\mauzer\mauzer.max
+{Skeleton
+	{bone "mauzer"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "mauzer.ply"}
+		{bone "foresight3"
+			{Position 17.4969	1.50588	0.0542763}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				5.29525	1.45669	0.00220191
+			}
+		}
+		{bone "run_holder"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				0.745185	0.932445	0.00220129
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 23.1538 4.30972 1.17113}
+	{Bone "mauzer"}
+	{Position 4.54931	0.299372	0.001095}
+}
+{Volume "select"
+	{Box 29.9047 11.1349 3.05727}
+	{Bone "mauzer"}
+	{Position 5.12594	1.02029	0.0292403}
+}

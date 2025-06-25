@@ -1,0 +1,64 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.1) scaleY(1.0))
+	{mass 10000}
+	{props "platform" "train_part"}
+	{TexMods
+ 		{"ambush1" "1"}
+		{"ambush2" "2"}
+		{"ambush3" "3"}
+ 		{"ambush4" "4"}
+		{"ambush5" "5"}
+		{"ambush6" "6"}
+		{"ambush7" "7"}
+	}
+	{Placer
+		{place "1"
+			{Linkbone "attach_vehicle1"}
+			{handlebone "basis"}
+		}
+	}
+	{Placer
+		{place "2"
+			{Linkbone "attach_vehicle2"}
+			{handlebone "basis"}
+		}
+	}
+	{Placer
+		{place "3"
+			{Linkbone "attach_vehicle3"}
+			{handlebone "basis"}
+		}
+	}
+	{Placer
+		{place "4"
+			{Linkbone "attach_vehicle4"}
+			{handlebone "basis"}
+		}
+	}
+	{Extension "platform_can.mdl"}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "body2"
+		{tags "body"}
+		{thickness 10}
+		{component "body"}
+	}
+	{Volume "body3"
+		{tags "body"}
+		{thickness 10}
+		{component "body"}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{thickness 10}
+		{component "body"}
+	}
+	{component "body"
+		{Able {repair} {break_by_pierce}}
+	}
+}

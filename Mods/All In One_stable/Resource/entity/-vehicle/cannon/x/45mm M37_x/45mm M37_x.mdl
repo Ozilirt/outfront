@@ -1,0 +1,77 @@
+;Exported by: Albus
+;Date:        Tue Jul 29 20:31:41 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\45mm m37\m37_x.max
+{Skeleton
+	{bone revolute "basis"
+		{limits -0.0000 0.0000}
+		{speed 0.020}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 0.0000	0.0000	9.4190}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -8.0000 8.0000}
+				{speed 0.0100}
+				{Position 0.6948	0.0425	2.1323}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 15.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-0.8015	-0.0123	2.1167
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							15.4382	2.2077	1.0589
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+			{bone revolute "wheelL"
+				{parameters "ID=wheelleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					0.1188	15.7931	0.2254
+				}
+				{VolumeView "wheelL.ply"}
+				{bone revolute "whlL"
+					{parameters "ID=wheelleft;"}
+					{Position -0.0002	0.0001	-0.0001}
+					{VolumeView "whlL.ply"}
+				}
+			}
+			{bone revolute "wheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					0.1620	-15.7114	0.2025
+				}
+				{VolumeView "wheelR.ply"}
+				{bone revolute "whlR"
+					{parameters "ID=wheelright;"}
+					{Position 0.0000	-0.0001	-0.0001}
+					{VolumeView "whlR.ply"}
+				}
+			}
+		}
+	}
+}

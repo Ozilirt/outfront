@@ -1,0 +1,59 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.5) scaleY(2.0))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(1.8) scaley(1.0))
+	{mass 19000}
+	{props "vehicle" "marine" "emit_on_sink"}
+	{patherID "shallow water"}
+	{rejectColliderByVolume}
+	{extension "crew.ext"}
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 5}
+	}
+	{Volume "body"
+		{tags "body"}
+		{Thickness 10}
+	}
+	{Volume "rampa"
+		{Thickness 10}
+	}
+	{component "body"
+		{able {break_by_pierce}}
+	}
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{DefaultWeapon "browning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{Box
+			{size 8 6}
+			{item  "ammo mgun" 600}
+		}
+	}
+	{sensor
+		{Visor "main"
+			{vision "airbag3-main"}
+			{bone "visor1"}
+		}
+		{Visor "gunner"
+			{vision "airbag3-gunner"}
+			{bone "visor2"}
+		}
+	}
+	{extension "lcm.mdl"}
+	{chassis
+		{Locomotion ("locomotion")
+			{TurnRadius	10}
+		}
+	}
+}

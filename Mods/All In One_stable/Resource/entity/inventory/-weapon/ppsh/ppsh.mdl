@@ -1,0 +1,34 @@
+;Exported by: GARRY
+;Date:        Wed Jun 25 18:10:08 2003
+
+{Skeleton
+	{bone "ppsh"
+		{Orientation
+			1.0000	-0.0000	-0.0000
+			0.0000	-1.0000	-0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "ppsh.ply"}
+		{bone "Foresight3"
+			{Position 14.6203	1.6957	0.0000}
+		}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				-0.0000	1.0000	-0.0000
+				4.9192	1.5091	0.0202
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 23.9321 8.44178 2.74463}
+	{Bone "ppsh"}
+		{Position 4.8445	0.3944	-0.4249}
+}
+{Volume "body"
+	{Box 17.8824 4.80781 1.23277}
+	{Bone "ppsh"}
+		{Position 4.8445	0.3944	-0.0730}
+}

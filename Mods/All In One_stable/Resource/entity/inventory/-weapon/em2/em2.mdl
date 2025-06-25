@@ -1,0 +1,43 @@
+;Exported by: sergienko
+;Date:        Fri Jul 22 15:46:41 2005
+;File:        D:\tmp\em2\em2.max
+{Skeleton
+	{bone "em2"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "em2.ply"}
+		{bone "foresight3"
+			{Position 16.2902	1.61272	-0.252533}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				5.2077	1.50278	-0.304605
+			}
+		}
+		{bone "run_holder"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				1.21606	1.12898	-0.304605
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 29.9047 11.1349 3.05727}
+	{Bone "em2"}
+	{Position 6.84188	1.06638	-0.301552}
+}
+{Volume "body"
+	{Box 23.1538 4.30972 1.17113}
+	{Bone "em2"}
+	{Position 4.46176	-0.039392	-0.305711}
+}
+

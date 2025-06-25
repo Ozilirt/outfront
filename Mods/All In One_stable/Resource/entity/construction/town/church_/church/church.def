@@ -1,0 +1,178 @@
+{game_entity
+    (include "/properties/building.inc")
+	{DecalView
+		{ownershadow  256 256}
+		{name "shadow"}
+	}
+	{Extension "church.mdl"}
+	{props "concrete" "construction" "windowed"}	
+	{obstacleID "unbreakable"}
+	{placer
+		{place "1" {attach  squat_lie} 		{linkbone "attach1"}}
+	}
+	{boarder
+		{door "emit" {queue 0}}
+		{link "emit" "1" {forward putoff} {reverse puton}}
+	}
+	{mass 50000}
+
+	{Volume "roof5"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof4"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof3"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof2"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof1"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof0"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+
+	{Volume "floor"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "pedestal"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 1}}
+	}
+
+	{Volume "body25"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body24"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body23"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {holed}}
+	}
+	{Volume "body22"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body21"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body20"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body19"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body18"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body17"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body16"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body15"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body14"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body13"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body12"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body11"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body10"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body9"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body8"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body7"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body6"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}{holed}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+
+	{Volume "hole2"
+		{Tags  "attach" "1"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole1"
+		{able clear {hole}}
+	}
+
+	{Volume "window2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+}

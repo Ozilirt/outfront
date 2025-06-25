@@ -1,0 +1,40 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{extension "/properties/structure/truck4x4.ext"}
+
+	{extension "crew.ext"}
+
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "bodyback"
+		{thickness 5}
+	}
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "gaz-aa+mg.mdl"}
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "grenade rpg40" 2}
+				{item "molotov_coctail" 2}
+				{item "ammo mgun" 1500}
+				{item "ammo pistol" 350}
+				{item "can" filling "fuel" 20}
+				{item "ammo bullet45 ap" 80}
+				{item "ammo bullet45 fg" 50}
+				{item "ammo bullet20 ap" 100}
+			}
+		}
+	)
+}

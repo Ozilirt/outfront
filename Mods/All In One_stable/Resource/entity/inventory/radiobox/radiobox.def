@@ -1,0 +1,24 @@
+{game_entity
+	{extension "radiobox.mdl"}
+	{volume "body"
+		{able clear {visible} {bullet} {select} {contact_ground} {touch} {contact} {blast} {obstacle}}
+		{thickness 1}
+	}
+	{volume "select"
+		{able clear {select}}
+		{density 0}
+	}
+	{props "explosive_barrel" "steel" "capacity" "collectable"}
+
+	{obstacleID "construction"}
+	{colliderID "construction"}
+	{collideWith "human" "construction" "tree"}
+	{nocontactwith "vehicle" "armored" "tank"}
+
+	{simulation {able 1}}
+	{constrain ground}
+
+	{extender "stuff"
+		{item "radiobox"}
+	}
+}

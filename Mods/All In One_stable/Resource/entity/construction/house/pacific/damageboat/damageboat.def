@@ -1,0 +1,36 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{DecalView
+		{ownershadow  64 64}
+		{name "shadow"}
+	}
+	{mass 3000}
+	{props "cornered" "steel" "parts" "construction" "disable_area"}
+	{placer
+		{place "1" {attach  squat_lie}		{linkbone "attach1"}}
+		{place "2" {attach  squat_lie}		{linkbone "attach2"}}
+	}	
+	{boarder}
+
+	{Volume "place1"
+		{Tags  "attach" "1"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "place2"
+		{Tags  "attach" "2"}
+		{able clear {bullet 0}{touch 1}}
+	}
+	{Volume "body"
+		{thickness 30}
+		{tags "body"}
+	}
+	{Volume "body1"
+		{thickness 30}
+		{tags "body"}
+	}
+	{Volume "body2"
+		{thickness 30}
+		{tags "body"}
+	}
+	{Extension "damageboat.mdl"}
+}

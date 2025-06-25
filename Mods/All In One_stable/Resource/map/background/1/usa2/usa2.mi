@@ -1,0 +1,2408 @@
+{mission
+	{Camera
+		{Position 834.527 1942.87}
+		{Distance 281.47}
+		{ViewAngle 0.0430506}
+		{YawAngle -5.73236}
+	}
+	{Environment "main-usa2"}
+	{User 1}
+	{Registry
+		{ShadowMaps "multi"}
+	}
+	{GameProgress 0 0}
+	{Entity "sky" 0x8003
+		{Position 1054.64 1803 -100}
+		{Turn 46.6371}
+		{Constrain zero}
+		{OffsetZ -100}
+		{Scale 10}
+		{Opacity 0.8}
+	}
+	{Entity "motohlam" 0x8007
+		{Position 890.677 1713.85 -2}
+		{Turn 66.4296}
+		{Constrain surface}
+		{OffsetZ -2}
+	}
+	{Entity "flak38" 0x8005
+		{Position 413.599 1307.4 0}
+		{Turn 128.201}
+		{Player 0}
+		{MID 37}
+		{Weaponry
+			{State
+				{Weapon
+					{Ammo "bullet20 zenite" 20}
+				}
+			}
+		}
+	}
+	{Human "ger.infantry_smg" 0x802a
+		{Position 235.967 1628.71 0}
+		{Turn -82.2734}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{Player 0}
+		{MID 38}
+		{NameId 100 50}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_smg" 0x802b
+		{Position 235.929 1613.63 0}
+		{Turn 104.802}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{Player 0}
+		{MID 39}
+		{NameId 132 114}
+		{FsmState "stand"}
+	}
+	{Entity "sdkfz251_1" 0x8004
+		{Position 101.203 1194.85 0}
+		{Turn 106.877}
+		{Player 0}
+		{MID 36}
+	}
+	{Entity "dead_trooper" 0x8001
+		{Position -52.1038 751.204 2.44251}
+		{Turn 24.3732}
+	}
+	{Entity "blitz-3.6" 0x8002
+		{Position 904.851 -219.153 -25.8706}
+		{Orientation
+			 -0.671116   0.731761  -0.118865
+			 -0.712789  -0.680988  -0.167892
+			 -0.203802  -0.027950   0.978613
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "barrel" 3 {cell 0 0}}
+				{item "bullet20 ap" {cell 5 0}}
+				{item "bullet20 ap" {cell 5 1}}
+				{item "bullet20 ap" {cell 2 1}}
+				{item "bullet20 zenite" 10 {cell 2 2}}
+				{item "bullet20 ap" {cell 2 0}}
+			}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Human "ger.infantry_smg" 0x8009
+		{Position 881.048 -210.366 -10.539}
+		{Orientation
+			 -0.675048   0.730999  -0.099677
+			 -0.712722  -0.681061  -0.167880
+			 -0.190607  -0.042287   0.980747
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 2}
+		{NameId 9 53}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_smg" 0x800a
+		{Position 891.966 -199.934 -7.96726}
+		{Orientation
+			 -0.675048   0.730999  -0.099677
+			 -0.712722  -0.681061  -0.167880
+			 -0.190607  -0.042287   0.980747
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "mp40" {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 3}
+		{NameId 123 101}
+		{FsmState "board"}
+	}
+	{Entity "c-47" 0x800e
+		{Position -1147.39 4477.93 6.69555}
+		{Turn -39.318}
+		{Player 0}
+		{MID 4}
+	}
+	{Human "usa.infantry_smg" 0x8010
+		{Position -1029.82 4387.45 65.4845}
+		{Orientation
+			  0.735104  -0.602062   0.311627
+			  0.633624   0.773641   0.000001
+			 -0.241088   0.197454   0.950188
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "thompson" {cell 0 0}}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "ammo pistol" 23 {cell 6 0}}
+				{item "grenade f1" {cell 4 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 6}
+		{NameId 74 27}
+		{FsmState "board"}
+	}
+	{Entity "fw-190g8-2" 0x800f
+		{Position -442.177 3995.59 49.3439}
+		{Turn -67.0355}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bullet20 fg" 200 {cell 3 0}}
+			}
+		}
+		{Player 0}
+		{MID 5}
+		{Weaponry
+			{State "mgun"
+				{Weapon
+					{Ammo "bullet20 fg" 184}
+				}
+			}
+		}
+	}
+	{Human "ger.infantry_smg" 0x8011
+		{Position -1191.68 4458.76 53.4347}
+		{Orientation
+			  0.854116  -0.332452   0.400048
+			  0.362726   0.931896   0.000001
+			 -0.372803   0.145107   0.916536
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 7}
+		{NameId 25 112}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_smg" 0x8012
+		{Position -442.547 3996.83 53.4347}
+		{Orientation
+			  0.357596  -0.843897   0.400048
+			  0.920747   0.390161  -0.000000
+			 -0.156082   0.368343   0.916536
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 8}
+		{NameId 39 117}
+		{FsmState "board"}
+	}
+	{Entity "crater_norm" 0x8015
+		{Position 53.6475 3736.45 25}
+		{Orientation
+			  0.020384  -0.999804   0.000000
+			  0.999804   0.020384   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x801e
+		{Position 69.1243 3735.72 18.5089}
+		{Orientation
+			 -0.919512  -0.393058   0.000000
+			  0.393058  -0.919512   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8016
+		{Position 88.286 3734.41 9.53598}
+		{Orientation
+			 -0.805737   0.592273   0.000000
+			 -0.592273  -0.805737   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x801d
+		{Position 198.429 3728.01 -38}
+		{Orientation
+			 -0.422945   0.906150   0.000000
+			 -0.906150  -0.422945   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8025
+		{Position 163.24 3730 -22.9}
+		{Orientation
+			 -0.994428   0.105429   0.000000
+			 -0.105429  -0.994428   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8017
+		{Position 207.597 3731.01 -28.8579}
+		{Orientation
+			 -0.701495   0.712685   0.000000
+			 -0.712685  -0.701495   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8030
+		{Position 203.949 3729.42 -33.2299}
+		{Orientation
+			 -0.687386   0.726296   0.000000
+			 -0.726296  -0.687386   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8022
+		{Position 164.087 3731.39 -18.796}
+		{Orientation
+			 -0.983046   0.183360   0.000000
+			 -0.183360  -0.983046   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8027
+		{Position 127.086 3732.49 -6.23709}
+		{Orientation
+			 -0.961076  -0.276260   0.000000
+			  0.276260  -0.961076   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x803b
+		{Position 211.915 3732.54 -23.5351}
+		{Orientation
+			  0.541728   0.840549   0.000000
+			 -0.840549   0.541728   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8042
+		{Position 163.72 3732.89 -10.6166}
+		{Orientation
+			 -0.818354  -0.574714   0.000000
+			  0.574714  -0.818354   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8049
+		{Position 197.356 3734.03 -14.6576}
+		{Orientation
+			 -0.478699   0.877985   0.000000
+			 -0.877985  -0.478699   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8050
+		{Position 217.254 3734.08 -18.797}
+		{Orientation
+			  0.819987  -0.572380   0.000000
+			  0.572380   0.819987   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8055
+		{Position 222.423 3734 -20.3749}
+		{Orientation
+			  0.729655   0.683817   0.000000
+			 -0.683817   0.729655   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8021
+		{Position 166.835 3733.96 -8.82402}
+		{Orientation
+			 -0.463992   0.885841   0.000000
+			 -0.885841  -0.463992   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "crater_norm" 0x8023
+		{Position 175.921 3733.1 -14.2195}
+		{Orientation
+			  0.900237   0.435399   0.000000
+			 -0.435399   0.900237   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{AreaDisable "cut"}
+	}
+	{Entity "fw-190g8-2" 0x8013
+		{Position -1190.53 4458.16 49.3439}
+		{Turn -21.2677}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bullet20 fg" 200 {cell 0 0}}
+			}
+		}
+		{Player 0}
+		{MID 9}
+		{Weaponry
+			{State "mgun"
+				{Weapon
+					{Ammo "bullet20 fg" 200}
+				}
+			}
+		}
+	}
+	{Entity "box1" 0x801b
+		{Position 234.182 1284 0}
+		{Turn -9.53208}
+	}
+	{Entity "sdkfz251_1" 0x8033
+		{Position 789.356 -223.703 -50.1395}
+		{Turn 100.179}
+		{Player 0}
+		{MID 11}
+	}
+	{Human "ger.bazoker" 0x8032
+		{Position 789.282 -268.509 -34.1667}
+		{Orientation
+			  0.935138   0.169021   0.311314
+			 -0.176725   0.984254  -0.003525
+			 -0.307008  -0.051720   0.950284
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+				{item "ammo pistol" 30 {cell 6 2}}
+				{item "valter" {cell 0 3}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 10}
+		{NameId 11 126}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_rifle" 0x8034
+		{Position 786.932 -227.912 -33.7159}
+		{Orientation
+			 -0.192100   0.981384  -0.005763
+			 -0.971362  -0.190970  -0.141547
+			 -0.140005  -0.021593   0.989915
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 12}
+		{NameId 66 129}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_smg" 0x8035
+		{Position 787.324 -257.603 -34.2058}
+		{Orientation
+			  0.935138   0.169021   0.311314
+			 -0.176725   0.984254  -0.003525
+			 -0.307008  -0.051720   0.950284
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 13}
+		{NameId 43 11}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_ss" 0x8036
+		{Position 799.318 -264.614 -34.5136}
+		{Orientation
+			 -0.983536  -0.177699   0.032389
+			  0.177894  -0.984043   0.003695
+			  0.031217   0.009388   0.999453
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 60 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 14}
+		{NameId 21 98}
+		{FsmState "board"}
+	}
+	{Human "ger.oficer" 0x8037
+		{Position 785.383 -246.797 -34.2445}
+		{Orientation
+			  0.935138   0.169021   0.311314
+			 -0.176725   0.984254  -0.003525
+			 -0.307008  -0.051720   0.950284
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 42 {cell 2 0}}
+				{item "knife" {cell 4 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 15}
+		{NameId 57 120}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_ss" 0x8038
+		{Position 783.537 -236.515 -34.2813}
+		{Orientation
+			  0.935138   0.169021   0.311314
+			 -0.176725   0.984254  -0.003525
+			 -0.307008  -0.051720   0.950284
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 60 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 16}
+		{NameId 58 42}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_rifle" 0x803a
+		{Position 790.114 -211.323 -39.1063}
+		{Orientation
+			 -0.214676   0.913867   0.344754
+			 -0.974252  -0.175436  -0.141617
+			 -0.068937  -0.366279   0.927998
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 18}
+		{NameId 62 116}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_mgun" 0x803c
+		{Position 793.439 -232.107 -34.6359}
+		{Orientation
+			 -0.983536  -0.177699   0.032389
+			  0.177894  -0.984043   0.003695
+			  0.031217   0.009388   0.999453
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mg34" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 19}
+		{NameId 140 20}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_smg" 0x803d
+		{Position 795.444 -243.192 -34.5942}
+		{Orientation
+			 -0.983536  -0.177699   0.032389
+			  0.177894  -0.984043   0.003695
+			  0.031217   0.009388   0.999453
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 20}
+		{NameId 60 99}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_smg" 0x803e
+		{Position 797.507 -254.6 -34.5513}
+		{Orientation
+			 -0.983536  -0.177699   0.032389
+			  0.177894  -0.984043   0.003695
+			  0.031217   0.009388   0.999453
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 21}
+		{NameId 122 37}
+		{FsmState "board"}
+	}
+	{Entity "sdkfz232" 0x8039
+		{Position 765.837 -88.6573 -37.9883}
+		{Orientation
+			 -0.670328   0.738148   0.076145
+			 -0.740544  -0.658855  -0.132305
+			 -0.047492  -0.145076   0.988280
+		}
+		{Player 0}
+		{MID 17}
+	}
+	{Human "ger.tankman" 0x803f
+		{Position 765.837 -88.6573 -37.9883}
+		{Orientation
+			 -0.670328   0.738148   0.076145
+			  0.740544   0.658855   0.132305
+			 -0.047492  -0.145076   0.988280
+		}
+		{Player 0}
+		{MID 22}
+		{NameId 138 0}
+		{FsmState "board"}
+	}
+	{Human "ger.tankman" 0x8040
+		{Position 765.837 -88.6573 -37.9883}
+		{Orientation
+			 -0.670328   0.738148   0.076145
+			  0.740544   0.658855   0.132305
+			 -0.047492  -0.145076   0.988280
+		}
+		{Player 0}
+		{MID 23}
+		{NameId 2 122}
+		{FsmState "board"}
+	}
+	{Human "ger.tankman" 0x8041
+		{Position 765.837 -88.6573 -37.9883}
+		{Orientation
+			 -0.670328   0.738148   0.076145
+			  0.740544   0.658855   0.132305
+			 -0.047492  -0.145076   0.988280
+		}
+		{Player 0}
+		{MID 24}
+		{NameId 104 56}
+		{FsmState "board"}
+	}
+	{Human "ger.tankman" 0x8043
+		{Position 765.837 -88.6573 -37.9883}
+		{Orientation
+			 -0.670328   0.738148   0.076145
+			  0.740544   0.658855   0.132305
+			 -0.047492  -0.145076   0.988280
+		}
+		{Player 0}
+		{MID 25}
+		{NameId 58 88}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_smg" 0x8014
+		{Position 911.698 -221.613 1.5514}
+		{Orientation
+			 -0.671904  -0.740309   0.021840
+			  0.737072  -0.665608   0.116710
+			 -0.071779   0.094503   0.992949
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 26}
+		{NameId 126 137}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_smg" 0x8018
+		{Position 136.983 1442.32 0}
+		{Turn -123.101}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{Player 0}
+		{MID 27}
+		{NameId 46 133}
+		{FsmState "stand"}
+	}
+	{Entity "flak38" 0x8079
+		{Position 18.2447 1451.64 2.69188}
+		{Turn -142.734}
+		{Player 0}
+		{MID 28}
+		{Weaponry
+			{State
+				{Weapon
+					{Ammo "bullet20 zenite" 48}
+				}
+			}
+		}
+	}
+	{Human "ger.infantry_smg" 0x807a
+		{Position 17.8231 1467.64 2.58708}
+		{Orientation
+			 -0.277498  -0.953001   0.121900
+			  0.960136  -0.279609   0.000000
+			  0.034092   0.117038   0.992500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 29}
+		{NameId 13 101}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_smg" 0x807b
+		{Position 35.0586 1451.31 2.58708}
+		{Orientation
+			 -0.794321  -0.604366   0.061000
+			  0.605516  -0.795833   0.000000
+			  0.048546   0.036936   0.998100
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 30}
+		{NameId 123 29}
+		{FsmState "board"}
+	}
+	{Entity "flak38" 0x8000
+		{Position -257.363 94.0046 -20.0717}
+		{Player 0}
+		{MID 31}
+		{Weaponry
+			{State
+				{Weapon
+					{Ammo "bullet20 zenite" 48}
+				}
+			}
+		}
+	}
+	{Human "ger.infantry_smg" 0x8006
+		{Position -266.716 81.0157 -20.1765}
+		{Orientation
+			  0.797900   0.590400   0.121900
+			 -0.594800   0.803900   0.000000
+			 -0.098000  -0.072500   0.992500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 32}
+		{NameId 106 104}
+		{FsmState "board"}
+	}
+	{Human "ger.infantry_smg" 0x8008
+		{Position -270.543 104.45 -20.1765}
+		{Orientation
+			  0.998100   0.000000   0.061000
+			  0.000000   1.000000   0.000000
+			 -0.061000   0.000000   0.998100
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 40 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 33}
+		{NameId 48 135}
+		{FsmState "board"}
+	}
+	{Entity "box1" 0x802f
+		{Position 234.14 1284.02 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x807c
+		{Position 234.045 1283.96 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x807d
+		{Position 234.003 1283.98 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x807e
+		{Position 234.072 1283.98 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x807f
+		{Position 234.03 1284 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8080
+		{Position 233.935 1283.94 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8081
+		{Position 233.893 1283.96 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8082
+		{Position 234.157 1283.99 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8083
+		{Position 234.115 1284.01 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8084
+		{Position 234.02 1283.95 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8085
+		{Position 233.978 1283.97 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8086
+		{Position 234.047 1283.97 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8087
+		{Position 234.005 1283.99 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8088
+		{Position 233.91 1283.93 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8089
+		{Position 233.868 1283.95 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x808a
+		{Position 234.155 1283.83 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x808b
+		{Position 234.113 1283.85 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x808c
+		{Position 234.018 1283.79 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x808d
+		{Position 233.976 1283.81 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x808e
+		{Position 234.045 1283.81 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x808f
+		{Position 234.003 1283.83 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8090
+		{Position 233.908 1283.77 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8091
+		{Position 233.866 1283.79 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8092
+		{Position 234.13 1283.82 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8093
+		{Position 234.088 1283.84 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8094
+		{Position 233.993 1283.78 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8095
+		{Position 233.951 1283.8 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8096
+		{Position 234.02 1283.8 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8097
+		{Position 233.978 1283.82 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8098
+		{Position 233.883 1283.76 0}
+		{Turn -9.53208}
+	}
+	{Entity "box1" 0x8099
+		{Position 233.84 1283.78 0}
+		{Turn -9.53208}
+	}
+	{Entity "birds" 0x800b
+		{Position 1070.5 2054.62 0}
+		{Extender "speaker"
+			{SoundName "battle.land06"}
+		}
+	}
+	{Human "ger.infantry_rifle" 0x9000
+		{Position 952.132 2037.16 -10.0155}
+		{Turn -157.492}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 25 {cell 4 0}}
+				{item "grenade m24" {cell 5 0}}
+			}
+			{armor "body"
+				{Item "rifle-ammo-holder"}
+			}
+		}
+		{Player 0}
+		{MID 100}
+		{Weaponry
+			{State
+				{Mounted "mauzer"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 106 53}
+		{LastThrowItem "grenade m24"}
+		{FsmState "stand"}
+	}
+	{Human "ger.infantry_rifle" 0x9001
+		{Position 926.768 2044.92 -9.97966}
+		{Turn -107.526}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 25 {cell 4 0}}
+				{item "grenade m24" {cell 5 0}}
+			}
+			{armor "body"
+				{Item "rifle-ammo-holder"}
+			}
+		}
+		{Player 0}
+		{MID 101}
+		{Weaponry
+			{State
+				{Mounted "mauzer"}
+				{Weapon
+					{Ammo "ammo rifle" 5}
+				}
+			}
+		}
+		{NameId 122 14}
+		{Cover
+			{sector 926.768 2044.92 {type "squat_lie"}
+				{wall 0 0 972.498 2023.14 895.258 2047.53}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "x.g.mortarman" 0x9002
+		{Position 852.913 2054.23 -6.03986}
+		{Turn -100.988}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade 50mm_mine" {cell 0 3}}
+				{item "grenade 50mm_mine" {cell 2 3}}
+				{item "ammo pistol" 24 {cell 6 3}}
+				{item "luger" filling "ammo pistol" 8 {cell 4 3}}
+			}
+		}
+		{Player 0}
+		{MID 102}
+		{Weaponry
+			{State
+				{Mounted "weapon mortar_50mm"}
+				{Weapon
+					{Ammo "grenade 50mm_mine" 1}
+				}
+			}
+		}
+		{NameId 6 106}
+		{Cover
+			{sector 852.913 2054.23 {type "squat_lie"}
+				{wall 0 0 865.322 2044.69 785.807 2060.13}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "x.g.smg" 0x9003
+		{Position 820.055 2060.61 -4.46672}
+		{Turn -100.988}
+		{Player 0}
+		{MID 103}
+		{Weaponry
+			{State
+				{Mounted "mp40"}
+				{Weapon
+					{Ammo "ammo pistol" 32}
+				}
+			}
+		}
+		{NameId 33 37}
+		{Cover
+			{sector 820.055 2060.61 {type "squat_lie"}
+				{wall 0 0 865.322 2044.69 785.807 2060.13}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Link 0x8009 To 0x8002 "commander"}
+	{Link 0x800a To 0x8002 "driver"}
+	{Link 0x8010 To 0x800e "driver"}
+	{Link 0x8011 To 0x8013 "driver"}
+	{Link 0x8012 To 0x800f "driver"}
+	{Link 0x8032 To 0x8033 "seat5"}
+	{Link 0x8034 To 0x8033 "gunner"}
+	{Link 0x8035 To 0x8033 "seat6"}
+	{Link 0x8036 To 0x8033 "seat4"}
+	{Link 0x8037 To 0x8033 "seat7"}
+	{Link 0x8038 To 0x8033 "seat8"}
+	{Link 0x803a To 0x8033 "driver"}
+	{Link 0x803c To 0x8033 "seat1"}
+	{Link 0x803d To 0x8033 "seat2"}
+	{Link 0x803e To 0x8033 "seat3"}
+	{Link 0x803f To 0x8039 "gunner"}
+	{Link 0x8040 To 0x8039 "commander"}
+	{Link 0x8041 To 0x8039 "driver"}
+	{Link 0x8043 To 0x8039 "charger"}
+	{Link 0x8014 To 0x8002 "seat1"}
+	{Link 0x807a To 0x8079 "commander"}
+	{Link 0x807b To 0x8079 "gunner"}
+	{Link 0x8006 To 0x8000 "commander"}
+	{Link 0x8008 To 0x8000 "gunner"}
+	{Brain 0x8002
+		{HoldFire}
+	}
+	{Brain 0x8032
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x8033
+		{LookAround 0}
+	}
+	{Brain 0x8034
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x8035
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x8036
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x8037
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x8038
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x803a
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x803c
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x803d
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x803e
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Brain 0x8000
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Tags 0x800e "hidden"}
+	{Tags 0x800f "hidden"}
+	{Tags 0x8013 "hidden"}
+	{Tags 0x801b "box"}
+	{Tags 0x8033 "hidden btr"}
+	{Tags 0x8018 "hidden"}
+	{Tags 0x8002 "hidden car"}
+	{Tags 0x802f "box"}
+	{Tags 0x807c "box"}
+	{Tags 0x807d "box"}
+	{Tags 0x807e "box"}
+	{Tags 0x807f "box"}
+	{Tags 0x8080 "box"}
+	{Tags 0x8081 "box"}
+	{Tags 0x8082 "box"}
+	{Tags 0x8083 "box"}
+	{Tags 0x8084 "box"}
+	{Tags 0x8085 "box"}
+	{Tags 0x8086 "box"}
+	{Tags 0x8087 "box"}
+	{Tags 0x8088 "box"}
+	{Tags 0x8089 "box"}
+	{Tags 0x808a "box"}
+	{Tags 0x808b "box"}
+	{Tags 0x808c "box"}
+	{Tags 0x808d "box"}
+	{Tags 0x808e "box"}
+	{Tags 0x808f "box"}
+	{Tags 0x8090 "box"}
+	{Tags 0x8091 "box"}
+	{Tags 0x8092 "box"}
+	{Tags 0x8093 "box"}
+	{Tags 0x8094 "box"}
+	{Tags 0x8095 "box"}
+	{Tags 0x8096 "box"}
+	{Tags 0x8097 "box"}
+	{Tags 0x8098 "box"}
+	{Tags 0x8099 "box"}
+	{Tags 0x8039 "hidden"}
+	{Helpers
+		{event "vic_cancel" id 11 state 0}
+		{event "fire6" id 12 state 0}
+		{event "fire0" id 0 state 0}
+		{event "air2" id 2 state 0}
+		{event "air3" id 3 state 0}
+		{event "flak_stop1" id 4 state 0}
+		{event "air_fire" id 5 state 0}
+		{event "btr" id 6 state 0}
+		{event "car_pause" id 7 state 0}
+		{event "car_start" id 8 state 0}
+		{event "fire1" id 1 state 0}
+		{event "fire2" id 9 state 0}
+		{event "flak_stop2" id 10 state 0}
+		{event "alarm" id 13 state 0}
+		{event "alarm_sound" id 14 state 0}
+		{event "sound_nature" id 15 state 0}
+		{event "btr_start" id 16 state 0}
+		{event "air1" id 17 state 0}
+		{event "31-fire" id 19 state 0}
+		{event "paratroopers1" id 18 state 0}
+		{event "para2" id 20 state 0}
+		{event "para3" id 21 state 0}
+		{trigger "air/1"
+			{condition
+				{term 1 "event"
+					{id 17}
+				}
+			}
+			{actions
+				{"actor_to_waypoint" off
+					{selector
+						{"actors/mids" 5 9}
+					}
+					{"waypoint/uid" 16}
+					{clone}
+				}
+				{"event"
+					{event 2}
+					{mode set}
+					{delay 5}
+				}
+				{"event"
+					{event 3}
+					{mode set}
+					{delay 15}
+				}
+				{"event"
+					{event 13}
+					{mode set}
+					{delay 10}
+				}
+				{"event"
+					{event 18}
+					{mode set}
+					{delay 15}
+				}
+			}
+		}
+		{trigger "air/2"
+			{condition
+				{term 1 "event"
+					{id 2}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 4}
+					}
+					{"waypoint/uid" 29}
+				}
+			}
+		}
+		{trigger "air/3"
+			{condition
+				{term 1 "event"
+					{id 3}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 5 9}
+					}
+					{"waypoint/uid" 16}
+				}
+			}
+		}
+		{trigger "air/5_fire1"
+			{disabled}
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 5}
+						{"actors/zone" "air_fire1"}
+					}
+				}
+				{term 2 "event"
+					{id 5}
+				}
+			}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 5}
+					}
+					{"waypoint/uid" 50}
+					{deviate}
+				}
+				{"event"
+					{event 5}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "air/5_fire2"
+			{disabled}
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 5}
+						{"actors/zone" "air_fire2"}
+					}
+				}
+				{term 2 "event"
+					{id 5}
+				}
+			}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 5}
+					}
+					{"waypoint/uid" 48}
+					{deviate}
+				}
+				{"event"
+					{event 5}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "air/5_fire3"
+			{disabled}
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 5}
+						{"actors/zone" "air_fire3"}
+					}
+				}
+				{term 2 "event"
+					{id 5}
+				}
+			}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 5}
+					}
+					{"waypoint/uid" 49}
+					{deviate}
+				}
+				{"event"
+					{event 5}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "air/9_fire1"
+			{disabled}
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 9}
+						{"actors/zone" "air_fire1"}
+					}
+				}
+				{term 2 "event"
+					{id 5}
+				}
+			}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 9}
+					}
+					{"waypoint/uid" 50}
+					{deviate}
+				}
+				{"event"
+					{event 5}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "air/9_fire2"
+			{disabled}
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 9}
+						{"actors/zone" "air_fire2"}
+					}
+				}
+				{term 2 "event"
+					{id 5}
+				}
+			}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 9}
+					}
+					{"waypoint/uid" 48}
+					{deviate}
+				}
+				{"event"
+					{event 5}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "air/9_fire3"
+			{disabled}
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 9}
+						{"actors/zone" "air_fire3"}
+					}
+				}
+				{term 2 "event"
+					{id 5}
+				}
+			}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 9}
+					}
+					{"waypoint/uid" 49}
+					{deviate}
+				}
+				{"event"
+					{event 5}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "alarm"
+			{condition
+				{term 1 "event"
+					{id 13}
+				}
+			}
+			{actions
+				{"actor_state"
+					{selector
+						{"actors/mids" 38 39}
+					}
+					{speed fast}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 38 39}
+					}
+					{"waypoint/uid" 32}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 1}
+				}
+				{"event"
+					{event 12}
+					{mode set}
+				}
+				{"event"
+					{event 1}
+					{mode set}
+					{delay 1}
+				}
+				{"event"
+					{event 9}
+					{mode set}
+					{delay 0}
+				}
+				{"event"
+					{event 4}
+					{mode set}
+					{delay 80}
+				}
+				{"event"
+					{event 10}
+					{mode set}
+					{delay 90}
+				}
+				{"event"
+					{event 5}
+					{mode set}
+				}
+				{"event"
+					{event 14}
+					{mode set}
+				}
+				{"event"
+					{event 19}
+					{mode set}
+				}
+			}
+		}
+		{trigger "alarm_sound"
+			{disabled}
+			{condition
+				{term 1 "event"
+					{id 14}
+				}
+			}
+			{autoreset}
+			{actions
+				{"event"
+					{event 14}
+					{mode toggle}
+					{delay 16}
+				}
+				{"message"
+					{sound "world.alarm"}
+				}
+			}
+		}
+		{trigger "btr"
+			{condition
+				{term 1 "event"
+					{id 6}
+				}
+			}
+			{autoreset}
+			{actions
+				{"event" off
+					{event 6}
+					{mode toggle}
+					{delay 190}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 11}
+					}
+					{"waypoint/uid" 31}
+					{clone}
+				}
+				{"actor_state"
+					{selector
+						{"actors/tag" "btr"}
+					}
+					{speed fast}
+				}
+			}
+		}
+		{trigger "car/start"
+			{condition
+				{term 1 "event"
+					{id 8}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 1}
+					}
+					{"waypoint/uid" 3}
+					{clone}
+				}
+				{"actor_state"
+					{selector
+						{"actors/tag" "car"}
+					}
+					{speed fast}
+				}
+			}
+		}
+		{trigger "car/start_btr"
+			{condition
+				{term 1 "event"
+					{id 16}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 17}
+					}
+					{"waypoint/uid" 33}
+				}
+				{"actor_state"
+					{selector
+						{"actors/mids" 17}
+					}
+					{speed normal}
+				}
+			}
+		}
+		{trigger "flak/1-fire-0"
+			{condition
+				{term 1 "event"
+					{id 0}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/mids" 38 39}
+						{"actors/zone" "flak1"}
+					}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 37}
+					}
+					{"waypoint/uid" 0}
+					{deviate}
+				}
+				{"event"
+					{event 0}
+					{mode toggle}
+					{delay 2}
+				}
+			}
+		}
+		{trigger "flak/1-fire-6"
+			{condition
+				{term 1 "event"
+					{id 12}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/mids" 38 39}
+						{"actors/zone" "flak1"}
+					}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 37}
+					}
+					{"waypoint/uid" 6}
+					{deviate}
+				}
+				{"event"
+					{event 12}
+					{mode toggle}
+					{delay 2}
+				}
+			}
+		}
+		{trigger "flak/1-pause"
+			{condition
+				{term 1 "event"
+					{id 4}
+				}
+			}
+			{autoreset}
+			{actions
+				{"event"
+					{event 4}
+					{mode toggle}
+					{delay 95}
+				}
+				{"actor_state"
+					{selector
+						{"actors/mids" 37}
+					}
+					{fire_mode hold}
+					{weapon_prepare off}
+				}
+				{"emit"
+					{selector
+						{"actors/mids" 37}
+					}
+					{"waypoint/uid" 52}
+					{mids 38}
+					{"emit/count" 1}
+				}
+			}
+		}
+		{trigger "flak/2-fire-1"
+			{condition
+				{term 1 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 28}
+					}
+					{"waypoint/uid" 1}
+					{deviate}
+				}
+				{"event"
+					{event 1}
+					{mode toggle}
+					{delay 2}
+				}
+			}
+		}
+		{trigger "flak/2-fire-2"
+			{condition
+				{term 1 "event"
+					{id 9}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 28}
+					}
+					{"waypoint/uid" 2}
+					{deviate}
+				}
+				{"event"
+					{event 9}
+					{mode toggle}
+					{delay 2}
+				}
+			}
+		}
+		{trigger "flak/3-fire-56"
+			{condition
+				{term 2 "event"
+					{id 19}
+				}
+			}
+			{autoreset}
+			{actions
+				{"event"
+					{event 19}
+					{mode toggle}
+					{delay 1}
+				}
+				{"actor_fire"
+					{selector
+						{"actors/mids" 31}
+					}
+					{"waypoint/uid" 56}
+					{deviate}
+				}
+			}
+		}
+		{trigger "paratroopers/048"
+			{condition
+				{term 1 "event"
+					{id 18}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 48}
+				}
+			}
+		}
+		{trigger "paratroopers/060"
+			{condition
+				{term 1 "event"
+					{id 18}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 60}
+				}
+			}
+		}
+		{trigger "paratroopers/062"
+			{condition
+				{term 1 "event"
+					{id 18}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 62}
+				}
+			}
+		}
+		{trigger "paratroopers/111"
+			{condition
+				{term 1 "event"
+					{id 18}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 111}
+				}
+				{"event"
+					{event 20}
+					{mode set}
+					{delay 2}
+				}
+				{"event"
+					{event 21}
+					{mode set}
+					{delay 5}
+				}
+			}
+		}
+		{trigger "paratroopers/112"
+			{condition
+				{term 1 "event"
+					{id 20}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 112}
+				}
+			}
+		}
+		{trigger "paratroopers/58"
+			{condition
+				{term 1 "event"
+					{id 21}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 58}
+				}
+			}
+		}
+		{trigger "paratroopers/59"
+			{condition
+				{term 1 "event"
+					{id 20}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 59}
+				}
+			}
+		}
+		{trigger "paratroopers/61"
+			{condition
+				{term 1 "event"
+					{id 21}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 61}
+				}
+			}
+		}
+		{trigger "paratroopers/63"
+			{condition
+				{term 1 "event"
+					{id 20}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 63}
+				}
+			}
+		}
+		{trigger "paratroopers/64"
+			{condition
+				{term 1 "event"
+					{id 21}
+				}
+			}
+			{actions
+				{"spawn"
+					{entity "parachute_menu"}
+					{"waypoint/uid" 64}
+				}
+			}
+		}
+		{trigger "sound_nature"
+			{disabled}
+			{condition
+				{type 2}
+				{expression "1 & !2"}
+				{term 1 "event"
+					{id 15}
+				}
+				{term 2 "event"
+					{id 13}
+				}
+			}
+			{autoreset}
+			{actions
+				{"event"
+					{event 15}
+					{mode toggle}
+					{delay 7}
+				}
+				{"message" off
+					{sound "world.birds02"}
+				}
+			}
+		}
+		{trigger "start"
+			{actions
+				{"camera"
+					{camera "vic"}
+					{action activate}
+				}
+				{"event"
+					{event 16}
+					{mode set}
+					{delay 15}
+				}
+				{"event"
+					{event 6}
+					{mode set}
+					{delay 30}
+				}
+				{"event"
+					{event 15}
+					{mode set}
+				}
+				{"event"
+					{event 17}
+					{mode set}
+				}
+				{"event"
+					{event 8}
+					{mode set}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 526.147 1528.88 0}
+				{radius 50}
+				{offsetz 250}
+			}
+			{1
+				{position -185.786 1292.93 3.05991}
+				{radius 50}
+				{offsetz 150}
+			}
+			{2
+				{position -81.0886 1210.5 0}
+				{radius 50}
+				{offsetz 150}
+			}
+			{3
+				{position 638.324 -8.91898 -22.7242}
+				{transition 4}
+			}
+			{4
+				{position 465.225 164.77 -2.99512}
+				{transition 35}
+			}
+			{5
+				{position 439.876 522.551 0}
+				{transition 7}
+			}
+			{6
+				{position 449.643 1447.59 0}
+				{radius 50}
+				{offsetz 250}
+			}
+			{7
+				{position 141.184 737 0}
+				{transition 44}
+			}
+			{8
+				{position 154.388 1197.73 0}
+				{radius 10}
+				{transition 22}
+			}
+			{9
+				{position 595.179 1323.05 0}
+				{transition 10}
+			}
+			{10
+				{position 590.418 1502.21 0}
+				{transition 11}
+			}
+			{11
+				{position 523.057 1737.29 -2.21411}
+				{transition 12}
+			}
+			{12
+				{position 480.169 2123.22 -6.06835}
+				{transition 13}
+			}
+			{13
+				{position 384.068 2350.27 -7}
+				{transition 14}
+			}
+			{14
+				{position 313.205 2592.68 0}
+				{transition 15}
+			}
+			{15
+				{position 277.096 2832.12 0}
+				{commands
+					{"delete"}
+				}
+			}
+			{16
+				{position -402.684 3881.26 25}
+				{transition 17}
+				{commands
+					{"air_state"
+						{altitude 35}
+					}
+					{"actor_state"
+						{speed fast}
+						{waypoint_only on}
+					}
+				}
+			}
+			{17
+				{position -179.53 3446.2 25}
+				{radius 2000}
+				{transition 18}
+			}
+			{18
+				{position -2464.54 3651.28 -38}
+				{radius 1000}
+				{transition 66}
+			}
+			{19
+				{position 84.0569 1064.81 0}
+				{transition 20}
+			}
+			{20
+				{position 205.763 1087.06 0}
+				{transition 21}
+			}
+			{21
+				{position 303.127 1073.85 0}
+				{transition 42}
+				{commands
+					{"emit" off
+						{"waypoint/uid" 24}
+						{"emit/mode" crew}
+						{"emit/count" 1}
+					}
+					{"actor_to_waypoint"
+						{selector {source "local"}
+							{"actors/mids" 27}
+						}
+						{"waypoint/uid" 24}
+						{clone}
+					}
+					{"wait"
+						{time 45}
+					}
+				}
+			}
+			{22
+				{position 264.539 1073.47 0}
+				{radius 10}
+				{transition 23}
+				{commands
+					{"inventory"
+						{action pickup}
+						{item "box"}
+					}
+				}
+			}
+			{23
+				{position 251.065 1265.72 0}
+				{radius 100}
+				{transition 25}
+				{commands
+					{"inventory"
+						{action drop}
+						{item "box1"}
+					}
+				}
+			}
+			{24
+				{position 115.432 1430.61 0}
+				{radius 10}
+				{transition 8}
+				{commands
+					{"entity_state"
+						{selector {source "local"}
+							{"entities/tag" "box"}
+							{"entities/zone" "car"}
+						}
+						{inactive off}
+					}
+				}
+			}
+			{25
+				{position 260.781 1079.47 0}
+				{radius 10}
+				{transition 26}
+				{commands
+					{"inventory"
+						{action pickup}
+						{item "box"}
+					}
+				}
+			}
+			{26
+				{position 234.914 1238.75 0}
+				{radius 100}
+				{transition 28}
+				{commands
+					{"inventory"
+						{action drop}
+						{item "box"}
+					}
+				}
+			}
+			{27
+				{position 123.347 1505.77 0}
+				{commands
+					{"delete"}
+				}
+			}
+			{28
+				{position 170.426 1209.26 0}
+				{transition 27}
+				{commands
+					{"entity_state"
+						{selector {source "local"}
+							{"entities/tag" "box"}
+							{"entities/zone" "car"}
+						}
+						{inactive on}
+					}
+				}
+			}
+			{29
+				{position -1021.58 4355.12 25}
+				{transition 30}
+				{commands
+					{"air_state"
+						{altitude 25}
+					}
+					{"actor_state"
+						{speed fast}
+					}
+				}
+			}
+			{30
+				{position -265.265 3443.03 25}
+				{transition 39}
+			}
+			{31
+				{position 657.579 -78.977 -33.0253}
+				{transition 33}
+			}
+			{32
+				{position 361.96 1523.88 0}
+				{transition 51}
+			}
+			{33
+				{position 447.215 163.931 -2.07902}
+				{transition 35}
+			}
+			{34
+				{position -1873.77 1913.95 -38}
+				{radius 1000}
+				{transition 36}
+			}
+			{35
+				{position 430.718 524.534 0}
+				{transition 40}
+			}
+			{36
+				{position -1617.01 949.584 -38}
+				{radius 1000}
+				{transition 37}
+			}
+			{37
+				{position -1047.64 120.938 -38}
+				{radius 1000}
+				{transition 45}
+			}
+			{39
+				{position -595.171 3067.16 3.76683}
+				{transition 34}
+			}
+			{40
+				{position 600.316 1031.04 0}
+				{transition 10}
+			}
+			{41
+				{position 3026.55 -33.3908 -38}
+				{radius 1000}
+				{transition 43}
+			}
+			{42
+				{position 490.136 1188.56 0}
+				{transition 9}
+				{commands
+					{"actor_state"
+						{speed normal}
+					}
+				}
+			}
+			{43
+				{position 3661.88 753.835 0}
+				{radius 1000}
+				{transition 47}
+			}
+			{44
+				{position 23.4876 947.042 0}
+				{transition 19}
+				{commands
+					{"actor_state"
+						{speed slow}
+					}
+				}
+			}
+			{45
+				{position -236.253 -465.822 -38}
+				{radius 1000}
+				{transition 46}
+			}
+			{46
+				{position 739.017 -755.904 -38}
+				{radius 1000}
+				{transition 65}
+			}
+			{47
+				{position 2914.72 1396.28 39.0002}
+				{commands
+					{"delete"}
+				}
+			}
+			{48
+				{position 225.364 -891.511 -38}
+			}
+			{49
+				{position 1037.17 -155.318 3.73439}
+				{radius 300}
+				{offsetz 220}
+			}
+			{50
+				{position -612.3 606.815 2.36016}
+				{radius 300}
+				{offsetz 300}
+			}
+			{51
+				{position 456.756 1270.67 0}
+				{commands
+					{"board"
+						{mids 37}
+					}
+				}
+			}
+			{52
+				{position 375.097 1222.01 0}
+				{transition 53}
+			}
+			{53
+				{position 254.6 1243.66 0}
+				{radius 100}
+				{commands
+					{"wait"
+						{time 1}
+					}
+					{"inventory"
+						{action pickup}
+						{item "box"}
+					}
+					{"wait"
+						{time 1}
+					}
+					{"actor_to_waypoint"
+						{"waypoint/uid" 54}
+					}
+				}
+			}
+			{54
+				{position 407.441 1239.24 0}
+				{transition 55}
+			}
+			{55
+				{position 397.73 1270.74 0}
+				{commands
+					{"inventory"
+						{action drop}
+						{item "box"}
+					}
+					{"wait"
+						{time 1}
+					}
+					{"entity_state"
+						{selector {source "local"}
+							{"entities/tag" "box"}
+							{"entities/zone" "flak"}
+						}
+						{inactive on}
+					}
+					{"board"
+						{mids 37}
+					}
+					{"actor_state"
+						{selector {source "local"}
+							{"actors/mids" 37}
+						}
+						{weapon_prepare on}
+					}
+				}
+			}
+			{56
+				{position -109.349 22.7242 -7.53941}
+				{radius 50}
+				{offsetz 150}
+			}
+			{57
+				{position -304.338 630.539 39.5818}
+				{radius 50}
+				{offsetz 200}
+			}
+			{58
+				{position 57.101 -145.191 22.2554}
+			}
+			{59
+				{position -139.683 118.048 -1.10783}
+			}
+			{60
+				{position -669.174 517.343 0}
+			}
+			{61
+				{position -554.273 462.474 0}
+			}
+			{62
+				{position -303.956 201.509 -4.7356}
+			}
+			{63
+				{position -416.751 307.989 -10.5259}
+			}
+			{64
+				{position -182.678 62.54 -8.97603}
+			}
+			{65
+				{position 1740.96 -692.971 -38}
+				{radius 1000}
+				{transition 72}
+			}
+			{66
+				{position -2288.36 1376.04 -38}
+				{radius 1000}
+				{transition 68}
+			}
+			{68
+				{position 925.355 -1860.44 -38}
+				{radius 1000}
+				{transition 71}
+			}
+			{71
+				{position 1909.53 -2065.98 -38}
+				{radius 1000}
+				{transition 41}
+			}
+			{72
+				{position 2658.79 -310.483 -38}
+				{radius 1000}
+				{transition 73}
+			}
+			{73
+				{position 3407.44 363.259 0}
+				{radius 1000}
+				{transition 47}
+			}
+			{111
+				{position -808.13 850.36 0}
+			}
+			{112
+				{position -1253.4 557.961 -38}
+			}
+		}
+		{zone "circle"
+			{position 1072.31 2197.66 0}
+			{Name "1"}
+			{Radius 2963.58}
+		}
+		{zone "circle"
+			{position -515.199 2910.32 24.0079}
+			{Name "air_fire1"}
+			{Radius 300}
+		}
+		{zone "circle"
+			{position -895.415 1871.27 -5.66857}
+			{Name "air_fire2"}
+			{Radius 300}
+		}
+		{zone "circle"
+			{position -671.272 780.479 7.63125}
+			{Name "air_fire3"}
+			{Radius 300}
+		}
+		{zone "poly"
+			{position 328.503 1040.05 0}
+			{Name "car"}
+			{Point -63.0735 -63.4305}
+			{Point -143.129 101.039}
+			{Point -5.43207 134.189}
+			{Point 50.716 -40.8864}
+		}
+		{zone "circle"
+			{position 412.656 1306.06 0}
+			{Name "flak"}
+			{Radius 76.9256}
+		}
+		{zone "circle"
+			{position 416.652 1306.3 0}
+			{Name "flak1"}
+			{Radius 29.88}
+		}
+		{camerapath "vic" {EvCancel 11}
+			{Key 0 1060.05 2158.13 24.9796 709.358 1694.99 0 0.959931 0 0 1}
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

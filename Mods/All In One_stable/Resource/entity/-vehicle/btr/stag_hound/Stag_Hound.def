@@ -1,0 +1,139 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "tank" "armored_car" "armored_car4x4" "ring" "wheeled" "with_gun vehicle"}
+	{PatherId "vehicle.small"}
+	{extension "crew.ext"}	
+
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 19 0.25
+			{front  19 0.2}
+			{rear	10 0.1}
+                   	{left 19 0.25}
+                    	{right 19 0.25}
+                        {top 13}
+                        {bottom 9}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 19 0.25
+			{front  19 0.25}
+			{rear	10 0.1}
+                   	{left 19 0.25}
+                    	{right 19 0.25}
+                        {top 13}
+                        {bottom 9}
+		}   
+	}
+	{volume "body3"
+		{component "body"}
+		{tags "body"}
+		{thickness 19 0.25
+			{front  19 0.25}
+			{rear	10 0.1}
+                   	{left 19 0.25}
+                    	{right 19 0.25}
+                        {top 13}
+                        {bottom 9}
+		}   
+	}
+	{volume "ring"
+		{thickness 23 0.5
+			{front  51}
+                        {rear 29 0.3}
+                        {top 13}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{component "ring"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{volume "engine"
+		{thickness 10
+			{rear	15}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mm_m3"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "BESA"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 225}}
+		}
+            {place "mgun2"
+			{Rotate}
+			{DefaultWeapon "BESA_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 225}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{weapon "mgun2" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 1000}
+			{item "ammo bullet75 ap" 21}
+			{item "ammo bullet75 fg" 18}
+		}
+	}
+	{sensor
+		{Visor "main"
+		      {vision "Visor_Tank"}
+		}  
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{mass 25000}
+	{Chassis
+          {speed
+		{Slow	18}
+		{Normal	24}
+		{Fast	40	}
+		}
+		{Locomotion
+			{MaxSpeed	40	}		; максимальная скорость, kmph
+			{StartTime	6	}		; время разгона до макс. скорости с 0, seconds
+			{BrakeTime	2	}		; время торможения с макс. скорости до 0, seconds
+			{StopTime	4	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius	14	}		; мин. радиус разворота, meter
+			{Gears		0.35 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears	0.33 0.5}	; передаточные коэф-ты коробки передач
+			{SteerOn	10}			; скорость поворота колес, градусов в секунду
+			{SteerOff	10}         ; скорость возврата колес в исх. состояние, градусов в секунду
+			{SplineRadius 1}		; ограничение радиуса поворота на сплайнах, метров
+		}
+	}
+	{Extension "Stag_Hound.mdl"}
+}

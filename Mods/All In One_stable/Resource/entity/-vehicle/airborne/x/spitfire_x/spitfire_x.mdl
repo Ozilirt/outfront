@@ -1,0 +1,185 @@
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=45;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				-0.0000	-1.0000	0.0000
+				-0.0000	36.1591	21.6251
+			}
+			{VolumeView "Body.ply"}
+			{bone "propeller"
+				{parameters "CommonMesh;ID=propeller;"}
+				{Matrix34
+					0.0000	0.0000	-1.0000
+					0.0000	1.0000	0.0000
+					1.0000	0.0000	-0.0000
+					90.1971	-6.3973	36.3682
+				}
+				{VolumeView "propeller.ply"}
+			}
+			{bone "propeller_work"
+				{parameters "ID=propeller;"}
+				{Matrix34
+					0.0000	-1.0000	0.0000
+					-0.0000	-0.0000	-1.0000
+					1.0000	0.0000	-0.0000
+					93.5353	-6.3973	36.3682
+				}
+				{visibility 0}
+				{VolumeView "propeller_work.ply"}
+			}
+			{bone revolute "Visor"
+				{limits -5.0000 5.0000}
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					0.0000	-1.0000	0.0000
+					-0.0000	-0.0000	-1.0000
+					49.1069	-27.3476	35.7780
+				}
+                        {bone revolute "Foresight3"
+					{Matrix34
+					1.0000	0.0000	0.0000
+					-0.0000	0.0872	-0.9962
+					0.0000	0.9962	0.0872
+					7.6421	-0.0000	-0.0000
+					}
+				}
+			}
+			{bone "support3"
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					-0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					-53.6457	-24.5565	36.2733
+				}
+			}
+			{bone revolute "Rudder"
+				{parameters "ID=body_back;"}
+				{limits -30.0000 30.0000}
+				{speed 0.1000}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					-0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					-76.9447	8.8000	36.4592
+				}
+				{VolumeView "Rudder.ply"}
+			}
+			{bone revolute "Elevator2"
+				{parameters "ID=body_back;"}
+				{limits -30.0000 30.0000}
+				{speed 0.0100}
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					0.0000	0.9987	0.0519
+					0.0000	-0.0519	0.9987
+					-67.6847	-0.0312	66.1986
+				}
+				{VolumeView "Elevator2.ply"}
+			}
+			{bone revolute "Elevator1"
+				{parameters "ID=body_back;"}
+				{limits -30.0000 30.0000}
+				{speed 0.0100}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.9987	-0.0519
+					-0.0000	-0.0519	-0.9987
+					-67.6847	-0.0312	6.7283
+				}
+				{VolumeView "Elevator1.ply"}
+			}
+			{bone "cabin"
+				{parameters "CommonMesh;ID=cabin;"}
+				{Position 0.0000	0.0000	0.0000}
+				{VolumeView "cabin.ply"}
+			}
+			{bone revolute "turret"
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					-0.0000	-0.0000	-1.0000
+					-0.0000	1.0000	-0.0000
+					52.3579	-27.2018	36.7813
+				}
+			}
+		}
+		{bone "pivot_front"
+			{Position 31.4362	-0.2851	-9.6785}
+			{bone "WingR1"
+				{parameters "ID=wingR1;"}
+				{Matrix34
+					1.0000	-0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					-3.2211	-14.6657	13.9667
+				}
+				{VolumeView "WingR1.ply"}
+				{bone "WingR2"
+					{parameters "ID=wingR2;"}
+					{Position -2.5533	3.3901	54.9203}
+					{VolumeView "WingR2.ply"}
+					{bone "retract_wheelR"
+						{parameters "ID=retract_wheelR;"}
+						{Matrix34
+							1.0000	0.0000	-0.0000
+							0.0000	-1.0000	-0.0000
+							-0.0000	-0.0000	1.0000
+							14.6466	-4.6893	-36.1133
+						}
+						{bone "support1"
+							{Matrix34
+								0.1285	0.1985	0.9716
+								-0.9882	-0.0562	0.1421
+								-0.0828	0.9785	-0.1889
+								-3.2916	37.4335	-1.7047
+							}
+						}
+					}
+				}
+			}
+			{bone "WindL1"
+				{parameters "ID=wingL1;"}
+				{Matrix34
+					1.0000	-0.0000	-0.0000
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					-4.3635	14.6470	13.9667
+				}
+				{VolumeView "WindL1.ply"}
+				{bone "retract_wheelL"
+					{parameters "ID=retract_wheelL;"}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						0.0000	-1.0000	-0.0000
+						-0.0000	0.0000	-1.0000
+						13.2357	-1.2992	-19.1620
+					}
+					{bone "support2"
+						{Matrix34
+							0.1285	0.1985	0.9716
+							-0.9882	-0.0562	0.1421
+							0.0828	-0.9785	0.1889
+							-3.3133	37.6904	-1.7403
+						}
+					}
+				}
+				{bone "WingL2"
+					{parameters "ID=wingL2;"}
+					{Position -1.4109	3.3900	-55.0537}
+					{VolumeView "WingL2.ply"}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -53.4272	-0.4164	1.9440}
+		}
+	}
+}

@@ -1,0 +1,134 @@
+{
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_pz-4g.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium"}
+	
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+		    {top	20}
+			{bottom	20}
+			{rear   50}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+		    {top	20}
+			{bottom	20}
+			{rear   50}
+		}   
+	}
+	{volume "turret"
+		{thickness 30 0.3
+			{front  50}
+		}
+	}
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_cromwell"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_cromwell"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "50mm_kwk38"}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 650}
+			{item "ammo bullet50 ap" 50}
+			{item "ammo bullet50 fg" 27}
+		}
+	}
+	
+	{mass 20500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    23} ; максимальная скорость, kmph
+			{StartTime 		 7} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		1} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{Extension "PZ-3G.mdl"}
+
+	(mod "mp"
+		{sensor
+			{visor "main"
+				{vision
+				{uncover 2}
+				    {human 40
+				    	{crawl 30}
+				    }
+				    {actor "vehicle" 60}
+				    {actor 45}
+					{h_fov 30}
+					{wide 2}
+					{v_fov 120}
+					{fog_range 50}
+					{fog_fov 60}
+				}
+				{bone "visor1"}
+			}
+			{Visor "driver"
+				{vision
+					{h_fov 160}
+					{v_fov 90}
+					{uncover 1}
+				    {human 20
+				    	{crawl 15}
+				    }
+				    {actor "vehicle" 30}
+				    {actor 25}
+					{fog_range 25}
+					{fog_fov 160}
+				}
+				{bone "visor2"}
+			}
+		}
+	)
+}

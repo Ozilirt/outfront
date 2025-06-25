@@ -1,0 +1,72 @@
+;Exported by: dan
+;Date:        Wed Oct 15 10:58:16 2003
+;File:        D:\-Projects-\-3DWork-\Model\platform_flek\platform_xx.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body1"
+			{parameters "ID=body1;"}
+			{Position 0.0000	-0.0000	19.6850}
+			{VolumeView "body1.ply"}
+			{bone "body2"
+				{parameters "ID=body2;"}
+				{Position -90.5512	0.0000	0.0000}
+				{VolumeView "body2.ply"}
+				{bone "ballast_l2"
+					{parameters "ID=ballast_l2;"}
+					{animation
+						{sequence "break" {file "L2.anm"}}
+					}
+					{Position -47.2441	98.4252	0.0000}
+					{VolumeView "ballast_l2.ply"}
+				}
+				{bone "ballast_r2"
+					{parameters "ID=ballast_r2;"}
+					{animation
+						{sequence "break" {file "R2.anm"}}
+					}
+					{Position -47.2441	-98.4252	0.0000}
+					{VolumeView "ballast_r2.ply"}
+				}
+			}
+			{bone "ballast_l1"
+				{parameters "ID=ballast_l1;"}
+				{animation
+					{sequence "break" {file "L1.anm"}}
+				}
+				{Position 137.7953	98.4252	0.0000}
+				{VolumeView "ballast_l1.ply"}
+			}
+			{bone "ballast_r1"
+				{parameters "ID=ballast_r1;"}
+				{animation
+					{sequence "break" {file "R1.anm"}}
+				}
+				{Position 137.7953	-98.4252	0.0000}
+				{VolumeView "ballast_r1.ply"}
+			}
+		}
+	}
+}
+{Volume "ballast2"
+	{Box 592.484 87.3128 24.3039}
+	{Component "body"}
+	{Bone "body1"}
+		{Position -10.0052	-108.5679	-10.8227}
+}
+{Volume "ballast1"
+	{Box 592.484 87.3128 24.3039}
+	{Component "body"}
+	{Bone "body1"}
+		{Position -10.0052	104.2779	-10.8227}
+}
+{Volume "Body"
+	{Box 592.484 301.079 18.1373}
+	{Component "body"}
+	{Bone "body1"}
+		{Position -10.0052	-3.4995	-10.2956}
+}

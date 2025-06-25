@@ -1,0 +1,128 @@
+;Exported by: shevchenko
+;Date:        Fri May 14 19:46:03 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\Hangar_big\Hangar_big_new.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.2} {resume}}
+	}
+	{bone "door_big"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "door1"
+			{Position -2.9635	50.1604	59.0551}
+			{VolumeView "door1.ply"}
+		}
+		{bone "door2"
+			{Position -1.5885	150.4485	59.0551}
+			{VolumeView "door2.ply"}
+		}
+		{bone "door3"
+			{Position 0.5561	250.8978	59.0551}
+			{VolumeView "door3.ply"}
+		}
+		{bone "door4"
+			{Position 1.7004	351.4036	59.0551}
+			{VolumeView "door4.ply"}
+		}
+		{bone "door5"
+			{Position -4.6917	-50.0483	59.0551}
+			{VolumeView "door5.ply"}
+		}
+		{bone "door6"
+			{Position -3.1488	-150.4136	59.0551}
+			{VolumeView "door6.ply"}
+		}
+		{bone "door7"
+			{Position -1.6074	-250.7903	59.0551}
+			{VolumeView "door7.ply"}
+		}
+		{bone "door8"
+			{Position -0.0000	-350.7971	59.0551}
+			{VolumeView "door8.ply"}
+		}
+		{bone "open_point"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				25.6013	392.1884	0.0000
+			}
+		}
+	}
+}
+{Obstacle "open1"
+	{Obb2
+		{Center -2.36578 450.192}
+		{Extent 3.27067 50.6444}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "open"
+	{Obb2
+		{Center -2.36578 -451.733}
+		{Extent 3.27067 50.6444}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "close"
+	{Obb2
+		{Center -2.36578 -0.226791}
+		{Extent 3.27067 408.114}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "switch"
+	{Box 11.717 8.5146 39.6912}
+	{Bone "door_big"}
+	{Position 20.3950	409.8870	19.9640}
+}
+{Volume "switch2"
+	{Box 11.717 8.5146 39.6912}
+	{Bone "door_big"}
+	{Position 32.3950	409.8870	19.9640}
+}
+{Volume "door8"
+	{Box 1.48712 100.3 118.11}
+	{Bone "door8"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "door7"
+	{Box 1.48714 100.3 118.11}
+	{Bone "door7"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "door6"
+	{Box 1.48712 100.3 118.11}
+	{Bone "door6"}
+	{Position 0.0000	-0.0000	-0.0000}
+}
+{Volume "door5"
+	{Box 1.48712 100.3 118.11}
+	{Bone "door5"}
+}
+{Volume "door4"
+	{Box 1.48712 100.3 118.11}
+	{Bone "door4"}
+	{Position -1.7003	-0.0000	0.0000}
+}
+{Volume "door3"
+	{Box 1.48714 100.3 118.11}
+	{Bone "door3"}
+	{Position -2.1635	-0.0000	0.0000}
+}
+{Volume "door2"
+	{Box 1.48712 100.3 118.11}
+	{Bone "door2"}
+	{Position -1.5604	-0.0000	-0.0000}
+}
+{Volume "door1"
+	{Box 1.48712 100.3 118.11}
+	{Bone "door1"}
+	{Position -1.7283	-0.0000	0.0000}
+}

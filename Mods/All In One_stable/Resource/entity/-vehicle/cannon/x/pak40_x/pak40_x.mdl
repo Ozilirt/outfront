@@ -1,0 +1,66 @@
+;Exported by: Albus
+;Date:        Tue Mar 04 18:39:54 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\pak40\pak40_x.max
+{Skeleton
+	{bone revolute "basis"
+		{limits -0.0000 0.0000}
+		{speed 0.0100}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Position -35.2700	2.1727	8.3383}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -15.0000 15.0000}
+				{speed 0.0100}
+				{Position 35.3446	-2.3730	5.6213}
+				{VolumeView "turret.ply"}
+				{bone "gun_rot"
+					{parameters "ID=gun;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-5.5679	0.0304	2.9545
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							23.7021	7.0112	-0.8533
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+			{bone revolute "wheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					0.0000	0.0000	-1.0000
+					-1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					35.4615	-21.4763	2.7284
+				}
+				{VolumeView "wheelR.ply"}
+			}
+			{bone revolute "wheelL"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					0.0000	0.0000	-1.0000
+					-1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					35.3417	16.1550	2.7299
+				}
+				{VolumeView "wheelL.ply"}
+			}
+		}
+	}
+}

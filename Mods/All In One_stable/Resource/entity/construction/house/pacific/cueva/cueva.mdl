@@ -1,0 +1,68 @@
+;Exported by: dinsen
+;Date:        Fri Mar 25 23:22:19 2011
+;File:        (null)
+{Skeleton
+	{bone "cueva"
+		{parameters "Structure;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "cueva.ply"}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -3.19484 1.76405}
+		{Extent 31.8363 22.5105}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box1"
+	{Obb2
+		{Center -4.14271 -40.0787}
+		{Extent 31.4512 18.318}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "box"
+	{Obb2
+		{Center -4.14271 42.1507}
+		{Extent 31.4512 18.318}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Box2"
+	{Polyhedron "Box2.vol"}
+	{Bone "cueva"}
+	{Matrix34
+		-0.0000	-0.9999	0.0143
+		-0.0000	0.0143	0.9999
+		-1.0000	0.0000	-0.0000
+		-35.3092	-1.0710	70.9981
+	}
+}
+{Volume "Box1"
+	{Box 31.7689 24.6371 18.1536}
+	{Bone "cueva"}
+	{Matrix34
+		1.9800	0.0000	0.0000
+		-0.0000	0.0282	1.9798
+		0.0000	-1.9798	0.0282
+		-4.1427	40.0786	24.5649
+	}
+}
+{Volume "box"
+	{Box 31.7689 24.6371 18.1536}
+	{Bone "cueva"}
+	{Matrix34
+		1.9800	0.0000	0.0000
+		-0.0000	0.0282	1.9798
+		0.0000	-1.9798	0.0282
+		-4.1427	-42.1507	25.7375
+	}
+}

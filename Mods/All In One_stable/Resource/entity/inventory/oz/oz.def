@@ -1,0 +1,14 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{volume "body" {able {blast}}}
+	{props "us-c4" "timed"}
+	{body {proper body sensible} {permit body}}
+	{extender "stuff"
+		{item "oz"}
+	}
+	(include "/properties/shadow/round.inc")
+	{Extension "us-c4.mdl"}
+	{volume "body"
+		{thickness 1}
+	}
+}

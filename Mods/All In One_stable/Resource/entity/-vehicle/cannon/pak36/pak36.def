@@ -1,0 +1,71 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret" "wheeled"}
+	(include "/properties/dummy_fsm.inc")
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+
+
+	("crew_4_human")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "76mm_f22"}
+			{RestoreIKAfterAim}
+			{Mounted}
+                  {weapon {ammo "ammo bullet76 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet76 ap" 25}
+			{item "bullet76 fg" 12}
+                  {item "plant" 7}
+		}
+	}
+	{mass 4000}
+	{Extension "Pak36.mdl"}
+	
+	
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    9} ;  kmph
+			{StartTime 		 8} ;  seconds
+			{BrakeTime 		2} ; seconds
+			{StopTime		 2} ; seconds
+			{TurnRadius     6} ;meter
+			{TurnTime		14} ; seconds
+			{TurnStart		 2}	; seconds
+			{TurnStop	   1}	; seconds
+		}
+	}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+
+}

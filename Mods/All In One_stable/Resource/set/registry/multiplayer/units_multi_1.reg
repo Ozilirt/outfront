@@ -1,0 +1,377 @@
+(define "tankman"
+	{tags	"%side reg light common"}
+	{cost	200}
+	{CP		1}
+	{order  10}
+)
+{"x.a.tankman"	"breed"	("tankman" side(usa))}
+{"x.e.tankman"	"breed"	("tankman" side(gbr))}
+{"x.r.tankman"	"breed" ("tankman" side(rus))}
+{"x.g.tankman"	"breed"	("tankman" side(ger))}
+
+
+(define "smg"
+	{tags	"%side reg man light common"}
+	{cost	350}
+	{CP		2}
+	{order  20}
+)
+{"x.r.smg"	"breed"	("smg" side(rus))}
+{"x.a.smg"	"breed" ("smg" side(usa))}
+{"x.e.smg"	"breed" ("smg" side(gbr))}
+{"x.g.smg"	"breed" ("smg" side(ger))}
+
+(define "rifle"
+	{tags	"%side reg man common"}
+	{cost	430}
+	{CP		2}
+	{order  30}
+)
+{"x.r.rifle"	"breed" ("rifle" side(rus))}
+{"x.a.rifle"	"breed" ("rifle" side(usa))}
+{"x.e.rifle"	"breed" ("rifle" side(gbr))}
+{"x.g.rifle"	"breed" ("rifle" side(ger))}
+
+(define "mgun"
+	{tags	"%side reg man light common"}
+	{cost	500}
+	{CP		2}
+	{order  40}
+)
+{"x.r.mgun"	"breed" ("mgun" side(rus))}
+{"x.a.mgun"	"breed" ("mgun" side(usa))}
+{"x.e.mgun"	"breed" ("mgun" side(gbr))}
+{"x.g.mgun"	"breed" ("mgun" side(ger))}
+
+(define "saper"
+	{tags	"%side mine reg common"}
+	{cost	800}
+	{CP		3}
+	{order  50}
+)
+{"x.r.saper"	"breed" ("saper" side(rus))}
+{"x.a.saper"	"breed" ("saper" side(usa))}
+{"x.e.saper"	"breed" ("saper" side(gbr))}
+{"x.g.saper"	"breed" ("saper" side(ger))}
+
+(define "antipersonel_miner"
+	{tags	"%side mine reg common"}
+	{cost	800}
+	{CP		3}
+	{order  60}
+)
+{"x.r.antipersonel_miner"	"breed" ("antipersonel_miner" side(rus))}
+{"x.a.antipersonel_miner"	"breed" ("antipersonel_miner" side(usa))}
+{"x.e.antipersonel_miner"	"breed" ("antipersonel_miner" side(gbr))}
+{"x.g.antipersonel_miner"	"breed" ("antipersonel_miner" side(ger))}
+
+
+(define "antitank_miner"
+	{tags	"%side mine reg common"}
+	{cost	800}
+	{CP		4}
+	{order  70}
+)
+{"x.r.antitank_miner"	"breed" ("antitank_miner" side(rus))}
+{"x.a.antitank_miner"	"breed" ("antitank_miner" side(usa))}
+{"x.e.antitank_miner"	"breed" ("antitank_miner" side(gbr))}
+{"x.g.antitank_miner"	"breed" ("antitank_miner" side(ger))}
+
+
+(define "grenadier"
+	{tags	"%side reg man common"}
+	{cost	700}
+	{CP		3}
+	{order  80}
+)
+{"x.r.grenadier"	"breed" ("grenadier" side(rus))}
+{"x.a.grenadier"	"breed" ("grenadier" side(usa))}
+{"x.e.grenadier"	"breed" ("grenadier" side(gbr))}
+{"x.g.grenadier"	"breed" ("grenadier" side(ger))}
+
+
+(define "heavy_grenadier"
+	{tags	"%side reg man common"}
+	{cost	800}
+	{CP		5}
+	{order  90}
+)
+{"x.r.heavy_grenadier"	"breed" ("heavy_grenadier" side(rus))}
+{"x.a.heavy_grenadier"	"breed" ("heavy_grenadier" side(usa))}
+{"x.e.heavy_grenadier"	"breed" ("heavy_grenadier" side(gbr))}
+{"x.g.heavy_grenadier"	"breed" ("heavy_grenadier" side(ger))}
+
+(define "oficer"
+	{tags	"%side reg man light common"}
+	{cost	700}
+	{CP		4}
+	{order  100}
+)
+{"x.r.oficer"	"breed" ("oficer" side(rus))}
+{"x.a.oficer"	"breed" ("oficer" side(usa))}
+{"x.e.oficer"	"breed" ("oficer" side(gbr))}
+{"x.g.oficer"	"breed" ("oficer" side(ger))}
+
+
+(define "sturmovik"
+	{tags	"%side reg man light common"}
+	{cost	850}
+	{CP		5}
+	{order  110}
+)
+{"x.r.sturmovik"	"breed" ("sturmovik" side(rus))}
+{"x.a.sturmovik"	"breed" ("sturmovik" side(usa))}
+{"x.e.sturmovik"	"breed" ("sturmovik" side(gbr))}
+{"x.g.sturmovik"	"breed" ("sturmovik" side(ger))}
+
+(define "sniper"
+	{tags	"%side reg man common"}
+	{cost	1300}
+	{CP		4}
+	{order  120}
+)
+{"x.r.sniper"	"breed" ("sniper" side(rus))}
+{"x.a.sniper"	"breed" ("sniper" side(usa))}
+{"x.e.sniper"	"breed" ("sniper" side(gbr))}
+{"x.g.sniper"	"breed" ("sniper" side(ger))}
+
+
+(define "scout"
+	{tags	"%side reg man light common"}
+	{cost	1500}
+	{CP		6}
+	{order  130}
+)
+{"x.r.scout"	"breed" ("scout" side(rus))}
+{"x.a.scout"	"breed" ("scout" side(usa))}
+{"x.e.scout"	"breed" ("scout" side(gbr))}
+{"x.g.scout"	"breed" ("scout" side(ger))}
+
+{"zis-5"
+	{tags	"rus reg"}
+	{cost	2000}
+}
+{"gmc"
+	{tags	"usa gbr reg"}
+	{cost	2000}
+}
+{"Blitz-3.6"
+	{tags	"ger reg"}
+	{cost	2000}
+}
+{"SdKfz7"
+	{tags	"ger reg"}
+	{cost	2000}
+}
+{"isu-152"
+	{tags	"rus reg"}
+	{cost	3900}
+}
+{"m26pershing"
+	{tags	"usa gbr reg"}
+	{cost	3100}
+}
+{"mkivchurchill"
+	{tags	"usa gbr reg"}
+	{cost	2100}
+}
+{"T-26"	
+	{tags	"rus reg"}
+	{cost	1300}
+}
+{"ba-20m"
+	{tags	"rus reg"}
+	{cost	600}
+}
+{"m3a1"
+	{tags	"usa gbr reg"}
+	{cost	500}
+}
+{"bt-7A"	
+	{tags	"rus reg"}
+	{cost	1000}
+}
+{"m8-scott"		
+	{tags	"usa gbr reg"}
+	{cost	1000}
+}
+{"PZ-2F"	
+	{tags	"ger reg"}
+	{cost	1000}
+}
+{"t-34-76-41"	
+	{tags	"rus reg"}
+	{cost	2000}
+}
+{"m4a2"		
+	{tags	"usa gbr reg"}
+	{cost	1900}
+}
+{"mk4crusader"		
+	{tags	"usa gbr reg"}
+	{cost	1300}
+}
+{"PZ-4d"	
+	{tags	"ger reg"}
+	{cost	2000}
+}
+{"is-2"		
+	{tags	"rus reg"}
+	{cost	3600}
+}
+{"StuG-3B"		
+	{tags	"ger reg"}
+	{cost	1800}
+}
+{"chaffee"		
+	{tags	"usa gbr reg"}
+	{cost	1500}
+}
+{"matilda"		
+	{tags	"usa gbr reg"}
+	{cost	1500}
+}
+{"t-34-85"		
+	{tags	"rus reg"}
+	{cost	2600}
+}
+{"sdkfz10-5"		
+	{tags	"ger reg"}
+	{cost	750}
+}
+{"m7priest"		
+	{tags	"usa gbr reg"}
+	{cost	3000}
+}
+{"m4a3"		
+	{tags	"usa gbr reg"}
+	{cost	2200}
+}
+{"cromwell"		
+	{tags	"usa gbr  reg"}
+	{cost	1600}
+}
+{"Kubel"		
+	{tags	"ger reg auto"}
+	{cost	450}
+}
+{"willysmb"		
+	{tags	"usa gbr reg auto"}
+	{cost	450}
+}
+{"dodgewc56"		
+	{tags	"usa gbr auto reg"}
+	{cost	500}
+}
+{"hummel"		
+	{tags	"ger reg"}
+	{cost	3850}
+}
+{"jugdpanther"		
+	{tags	"ger reg"}
+	{cost	2600}
+}
+{"sdkfz-223" 
+	{tags	"ger reg"}
+	{cost	920}
+}
+{"SdKfz232"		
+	{tags	"ger reg"}
+	{cost	1200}
+}
+{"kv-85"		
+	{tags	"rus reg"}
+	{cost	2900}
+}
+{"ferdinand"		
+	{tags	"ger reg"}
+	{cost	2800}
+}
+{"kv-2"		
+	{tags	"rus reg"}
+	{cost	3200}
+}
+{"Panzerflak" 
+	{tags	"ger reg"}
+	{cost	1450}
+}
+{"PZ-3g"	
+	{tags	"ger reg"}
+	{cost	1900}
+}
+{"stug-4g"	
+	{tags	"ger reg"}
+	{cost	2300}
+}
+{"PZ-4g"	
+	{tags	"ger reg"}
+	{cost	2300}
+}
+{"m10achilles"		
+	{tags	"usa gbr reg"}
+	{cost	2700}
+}
+{"bmw-r12"	
+	{tags	"ger reg moto auto common"}
+	{cost	500}
+}
+{"bmw-r12r"	
+	{tags	"rus reg moto auto common"}
+	{cost	500}
+}
+{"PZ-5"		
+	{tags	"ger reg"}
+	{cost	2500}
+}
+{"PZ-6b"		
+	{tags	"ger reg"}
+	{cost	3800}
+}
+{"PZ-6"		
+	{tags	"ger reg"}
+	{cost	3200}
+}
+{"t-34_mineexpl"		
+	{tags	"rus reg"}
+	{cost	2500}
+}
+{"m4a3_mineexpl"		
+	{tags	"usa gbr reg"}
+	{cost	2500}
+}
+{"minenraumpanzer"		
+	{tags	"ger reg"}
+	{cost	2500}
+}
+{"fw-190g8-2"		
+	{tags	"ger rus airborne"}
+	{cost	1000}
+}
+{"air-bag"		
+	{tags	"usa gbr ger rus marine"}
+	{cost	200}
+}
+{"air-bag3"		
+	{tags	"usa gbr ger rus marine"}
+	{cost	500}
+}
+{"bm-13"		
+	{tags	"rus reg roc"}
+	{cost	5000}
+}
+{"panzerwerfer42"		
+	{tags	"ger reg roc"}
+	{cost	5000}
+}
+{"mk2daimler"		
+	{tags	"usa gbr reg"}
+	{cost	1500}
+}
+{"m4calliope"		
+	{tags	"usa gbr reg roc"}
+	{cost	5000}
+}
+{"m8grayhound"		
+	{tags	"usa gbr reg"}
+	{cost	1200}
+}

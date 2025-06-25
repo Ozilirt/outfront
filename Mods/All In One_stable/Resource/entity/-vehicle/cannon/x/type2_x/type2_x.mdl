@@ -1,0 +1,48 @@
+;Modified by: Albus
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -6.6957	-0.6105	-1.7403}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=Turret;"}
+				{speed 0.0150}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	1.0000
+					 -0.5486	0.0000	14.0000
+				}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{limits -20.0000 65.0000}
+					{speed 0.0200}
+					{Matrix34
+						0.9622	0.0000	0.2720
+						-0.2720	0.0000	0.9622
+						0.0000	-1.0000	0.0000
+						4.8083	0.0000	12.9121
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	0.0000
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+;Exported by: garry
+;Date:        Fri May 14 19:55:47 2004
+;File:        \\sharepoint\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon3.max
+{Skeleton
+	{bone "DS"
+		{parameters "ID=mgun;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "DS.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				-0.0000	1.0000	-0.0000
+				4.6189	1.3203	-0.0037
+			}
+		}
+		{bone "Foresight3"
+			{Position 16.4376	0.8561	0.0483}
+		}
+	}
+}
+{Volume "select"
+	{Box 27.7845 9.72703 4.3449}
+	{Bone "DS"}
+	{Position 4.9984	-0.6806	0.3055}
+}
+{Volume "body"
+	{Box 23.1538 4.30972 1.17113}
+	{Bone "DS"}
+	{Position 4.9984	-0.6806	-0.0483}
+}

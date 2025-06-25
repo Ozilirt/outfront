@@ -1,0 +1,63 @@
+{actor
+	(include "/properties/airborne.ext")
+	{PatherID  "airborne"}
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/airborne.inc" scale(2.0))
+	(include "/properties/car_crew.ext")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_plane_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"board_plane_left" -1}}
+		}
+	}
+	("crew_human"
+		place(driver)
+		bone(driver)
+		door(emit2)
+		animation(driver)
+	)
+	{Placer
+		{place "driver" {worker charger}}	
+	}
+
+	{Chassis ("chassis_defaults")
+		{Locomotion ("locomotion") 
+			{Maxspeed 40}
+		}
+    	{maxSideSlope 70}	;degree
+    	{onAirTurnRadius 20}
+       	{speed
+       		{Slow	10  }	; km/h
+       		{Normal	20	}
+       		{Fast	40	}
+       	}
+	}
+	{mass 3000}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mg34s"}
+			{Mounted}
+                  {weapon {ammo "ammo mgun" 200}}
+		}
+		{place "gun"
+			{defaultweapon "bomb-dropper"}
+			{Mounted}
+                  {weapon {ammo "ammo air bomb" 8}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"{fixed}}
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 400}
+		}
+	}
+	{Sensor
+		{Visor "main"
+			{bone	 "pivot_back"}
+                  {vision "fw190"}
+		}
+	}
+	{Extension "FW-190G8.mdl"}
+}

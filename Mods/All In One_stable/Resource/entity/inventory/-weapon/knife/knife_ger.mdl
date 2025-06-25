@@ -1,0 +1,29 @@
+;By Albus
+{Skeleton
+	{bone "knife_ger"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "knife_ger.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	-1.0000
+				0.1783	0.0325	0.0043
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 15.2539 6.77402 3.22395}
+	{Bone "knife_ger"}
+	{Position 3.5869	0.0291	0.1791}
+}
+{Volume "body"
+	{Box 6.07812 1.13658 0.870867}
+	{Bone "knife_ger"}
+	{Position 2.0869	0.0291	0.0590}
+}

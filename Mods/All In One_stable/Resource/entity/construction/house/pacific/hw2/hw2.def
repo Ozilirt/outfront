@@ -1,0 +1,44 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{props "two" "wood" "construction" "parts" "hw"} 
+	{Constrain surface}  
+	{Extension "hw2.mdl"}
+	{Volume "fire3"
+		{able {visible 0}}
+	}
+	{Volume "fire2"
+		{able {visible 0}}
+	}
+	{Volume "fire1"
+		{able {visible 0}}
+	}
+	{Volume "fire0"
+		{able {visible 0}}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "piece4"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "piece3"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "piece2"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "piece1"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	("declare_fire_volumes")
+}

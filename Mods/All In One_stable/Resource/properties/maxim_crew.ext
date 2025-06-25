@@ -1,0 +1,67 @@
+;SDL
+
+;//////////////////////////////////////////////////////////////////////////////
+(define "crew_inside"
+	{boarder
+		{anm "gunner"
+			{forward	{end "lie_from_squat_empty"}}
+		}
+		{anm "commander"
+			{forward	{end "lie_from_squat_empty"}}
+		}
+		{anm "passenger"
+			{forward	{end "lie_from_squat_empty"}}
+		}
+	}
+)
+(define "crew_human"
+	{placer
+		{place "%place" {group "%place"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+(define "crew_1_human"
+	("crew_inside")
+	("crew_human" place(gunner)		bone(gunner)	door(emit1) animation(gunner))
+)
+(define "crew_2_human"
+	("crew_inside")
+	("crew_human" place(gunner)		bone(gunner)	door(emit1) animation(gunner))
+	("crew_human" place(commander)	bone(commander)	door(emit2) animation(commander))
+)
+(define "crew_4_human"
+	("crew_inside")
+	("crew_human" place(gunner)		bone(gunner) door(emit1) visor(main) animation(gunner))
+	("crew_human" place(charger)		bone(charger) door(emit2) visor(driver) animation(commander))
+	("crew_human" place(driver)	bone(driver) door(emit3) animation(passenger)) 
+	("crew_human" place(commander)	bone(commander)	door(emit4) animation(passenger))
+)
+(define "crew_gunner"
+	("crew_inside")
+	("crew_human" place(gunner)		bone(gunner)	door(emit) animation(gunner))
+)
+
+(define "stand_human"
+	{placer
+		{place "%place" {group "%place"} {linkbone "%bone"} {turnoff {sensor}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff}}
+	}
+)
+
+(define "crew_stan_gunner"
+	{boarder
+		{anm "gunner"
+			{forward	{end "seat_gunner_stand"}}
+		}
+	}
+	("stand_human" place(gunner)	bone(gunner)	door(emit) animation(gunner))
+)
+{placer
+	{place "gunner" {worker charger}}
+}

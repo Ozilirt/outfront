@@ -1,0 +1,26 @@
+;Exported by: serh
+;Date:        btrh
+;File:        serh
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0 0.19014}
+		{Extent 78.7402 15.6279}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 157.48 31.2557 140.0000}
+	{Bone "body"}
+	{Position -0.7000 -0.1901 70.1378}
+}

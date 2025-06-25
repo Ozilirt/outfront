@@ -1,0 +1,35 @@
+;Exported by: garry
+;Date:        Mon Apr 26 18:57:58 2004
+;File:        \\sharepoint\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon1.max
+{Skeleton
+	{bone "besa"
+		{parameters "CommonMesh;ID=mgun;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "besa.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				-0.0000	1.0000	-0.0000
+				3.9569	1.4447	-0.0037
+			}
+		}
+		{bone "Foresight3"
+            	{Position 	20.0376  0.6866  0.0483}
+		}
+	}
+}
+{Volume "select"
+	{Box 27.7845 9.72703 4.3449}
+	{Bone "besa"}
+	{Position 4.9984	-0.6806	0.3055}
+}
+{Volume "body"
+	{Box 23.362 6.15849 5.42988}
+	{Bone "besa"}
+	{Position  6.8521  0.8994  -0.0313}
+}

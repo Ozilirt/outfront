@@ -1,0 +1,105 @@
+{game_entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "ketten.mdl"}
+	{Props "explosion_throw_crew" "vehicle" "car" "wheeled"}
+	{props "emit_on_attack"}
+	{PatherId "vehicle.small"}
+	{TexMods
+		{"camo1" "1"}
+		{"camo2" "2"}
+		{"camo3" "3"}
+		{"camo4" "4"}
+		{"camo5" "5"}
+	}
+
+
+	("wheel" args "wheel0")
+	("tracks")
+
+	{volume "fuel"
+		{tags "explosive"}
+		{thickness 1}
+	}
+
+	{component "body"
+		{RepairTime 25}
+	}
+	{component "engine"
+		{RepairTime 15}
+	}
+	{component "wheel0"
+		{RepairTime 15}
+	}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "engine"
+		{thickness 0.3}
+	}
+	{sensor
+		{Visor "main"
+			{bone "visor1"}
+		}
+		{Visor "crew"
+			{vision "moto-crew"}
+			{bone "visor2"}
+		}  
+	}
+	{extender "inventory"
+		{Box
+			{size 8 6}
+		}
+	}
+
+	{Placer
+	{place "driver" {Group "driver"} {LinkBone "driver"} {visor "main"} {turnoff {sensor}{shadow}}}
+	{place "passenger" {Group "driver"} {LinkBone "passenger"} {turnoff {sensor}{shadow}}}
+	}
+
+	{boarder
+	{door "emit1"}
+	{door "emit2"}
+	
+	{anm "driver" {forward  {end "seat_driver_moto"}}}
+	{anm "passenger" {forward  {end "seat_passenger"}}}
+
+	{link "emit1" "driver"    {anm "driver"} {forward putoff} {reverse puton}}
+	{link "emit2" "passenger" {anm "passenger"} {forward putoff} {reverse puton}}
+	}
+
+
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Chassis
+	; left track must be first
+   		{Track "left"
+			{Tracer
+				{View "tracks"}
+				{Bone "FXtraceL1"}
+				{Step 0.7}			; in meters
+   		 	}
+			{TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 0.6}		; meters per animation
+   		 	}
+   		}
+   		{Track "right"
+			{Tracer 
+			   	{View "tracks"}
+   		 		{Bone "FXtraceR1"}
+   		 		{Step 0.7}			; in meters
+			}
+			{TextureScroller
+		    	{Bone "TrackR"}	
+		 		{Length 0.6}		; meters per animation
+	 		}
+ 		}
+	}
+	{mass 500}
+
+}

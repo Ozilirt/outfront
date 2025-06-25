@@ -1,0 +1,155 @@
+;Exported by: Albus
+;Date:        Fri Nov 14 11:18:42 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\nebelwerfer41\nebelwerfer41_xx.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 1.4493	1.0710	3.9591}
+			{VolumeView "body.ply"}
+			{bone "part1"
+				{Position -28.5491	14.9644	2.1004}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{Position -26.5798	-16.9094	1.1669}
+				{VolumeView "part2.ply"}
+			}
+			{bone revolute "wheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-1.6611	-14.8916	3.6730
+				}
+				{VolumeView "wheelR.ply"}
+			}
+			{bone revolute "wheelL"
+				{parameters "ID=wheelleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-1.6285	12.5164	3.6215
+				}
+				{VolumeView "wheelL.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -15.0000 15.0000}
+				{Position -2.0108	-1.0723	5.3552}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun"
+					{parameters "ID=gun;"}
+					{limits -5.0000 70.0000}
+					{Position -1.0454	-0.0114	8.4064}
+					{VolumeView "gun.ply"}
+					{bone "part3"
+						{Matrix34
+							0.9105	0.0000	-0.4136
+							0.0000	1.0000	0.0000
+							0.4136	-0.0000	0.9105
+							-0.9601	-2.3563	6.1154
+						}
+						{VolumeView "part3.ply"}
+					}
+					{bone "part4"
+						{Matrix34
+							0.9105	0.0000	-0.4136
+							0.0000	1.0000	0.0000
+							0.4136	0.0000	0.9105
+							-3.9339	2.0913	-1.0517
+						}
+						{VolumeView "part4.ply"}
+					}
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 4.12785 21.4251 2.53651}
+	{Bone "body"}
+	{Position -3.1992	-1.2228	3.9486}
+}
+{Volume "turret"
+	{Box 6.66807 14.6697 7.23961}
+	{Bone "turret"}
+	{Position -0.3627	-0.1855	3.4535}
+}
+{Volume "gun"
+	{Cylinder 6.95166 24.7162}
+	{Bone "gun"}
+	{Matrix34
+		0.4040	-0.1029	0.9090
+		0.0552	0.9946	0.0881
+		-0.9131	0.0146	0.4075
+		4.8212	-0.1355	-0.4358
+	}
+}
+{Volume "part4"
+	{Cylinder 1.67779 20.5247}
+	{Bone "part4"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		-0.0234	0.0000	0.9997
+		-0.9997	0.0000	-0.0234
+		0.4862	-0.0756	0.0583
+	}
+}
+{Volume "part3"
+	{Cylinder 1.67779 20.5247}
+	{Bone "part3"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		-0.0234	0.0000	0.9997
+		-0.9997	0.0000	-0.0234
+		0.4167	0.0457	-0.0418
+	}
+}
+{Volume "wheelleft"
+	{Cylinder 7.02017 3.56049}
+	{Bone "wheelL"}
+	{Matrix34
+		-0.9909	-0.0060	-0.1347
+		0.0000	0.9990	-0.0445
+		0.1349	-0.0441	-0.9899
+		0.0328	0.0956	-0.0197
+	}
+}
+{Volume "wheelright"
+	{Cylinder 7.16271 3.56049}
+	{Bone "wheelR"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.0001	0.0441	0.0634
+	}
+}
+{Volume "part2"
+	{Box 41.6719 2.87393 2.51468}
+	{Bone "part2"}
+	{Matrix34
+		0.9234	0.3595	0.1348
+		-0.3557	0.9332	-0.0519
+		-0.1445	0.0000	0.9895
+		1.9086	-0.5350	0.1335
+	}
+}
+{Volume "part1"
+	{Box 41.6719 2.87393 2.51468}
+	{Bone "part1"}
+	{Matrix34
+		0.9331	-0.3334	0.1348
+		0.3427	0.9380	-0.0519
+		-0.1091	0.0946	0.9895
+		3.5289	-0.1409	-0.7940
+	}
+}

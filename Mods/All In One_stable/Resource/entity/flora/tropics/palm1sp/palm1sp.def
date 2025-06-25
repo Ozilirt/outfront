@@ -1,0 +1,26 @@
+{
+	(include "/properties/tree.inc")
+	(include "/properties/shadow/tree.inc" scale(1.6))
+	(include "/properties/shadow/tree_fall.inc" sx(3) sy(1.6) x(60))
+	{props "invisible_crown"}
+	{Extension "palm1sp.mdl"}
+	{volume "bole"
+		{able {visible 0}}
+	}
+	{Volume "place1"
+		{Tags  "attach" "1"}
+		{able clear {bullet 0}{touch 1}}
+	}
+
+	{Placer
+		{place "1" {attach  squat_lie}	{linkbone "attach1"}}
+	}
+	{Boarder
+		{door "emit" {queue 0}}
+		{anm "ladder"
+			{forward	{speed 1} {loop "stand_upstairs"}}
+			{reverse	{speed 1} {loop "stand_upstairs" -1}}
+		}
+   		{link "emit"	"1"	{anm "ladder"} {forward putoff} {reverse puton}}
+	}
+}

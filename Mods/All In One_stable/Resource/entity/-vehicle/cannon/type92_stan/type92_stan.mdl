@@ -1,0 +1,91 @@
+;Exported by: dinsen
+;Date:        Sun Feb 27 17:37:39 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\tipo92.max
+{Skeleton
+	{animation
+		{sequence "fire"}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "stan"
+			{Matrix34
+				1.0000	0.0000	0.0001
+				-0.0000	-0.9994	0.0353
+				0.0001	-0.0630	0.9980
+				-1.2286	-2.0505	3.3731
+			}
+			{VolumeView "stan.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -35.0000 35.0000}
+				{speed 0.0100}
+				{Matrix34
+					1.0000	0.0000	-0.0001
+					-0.0000	-1.0029	0.0355
+					-0.0001	-0.0633	1.0042
+					2.2541	-1.5762	6.8511
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "mgun_rot"
+					{limits -10.0000 15.0000}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0006	1.0000
+						-0.0000	-1.0000	0.0006
+						-0.1338	0.1068	0.5390
+					}
+					{VolumeView "mgun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=mgun;"}
+						{Matrix34
+							-1.0000	-0.0000	0.0000
+							0.0000	0.0006	-1.0000
+							-0.0000	1.0000	0.0006
+							-2.7824	-0.3503	0.5015
+						}
+						{VolumeView "gun.ply"}
+						{bone "cargador"
+							{Position -5.3609	5.5463	1.1331}
+							{VolumeView "cargador.ply"}
+						}
+						{bone "foresight3"
+							{Position 12.4212	0.6033	0.8887}
+						}
+						{bone "FXshell1"
+							{Matrix34
+								-0.0000	-0.7717	0.6360
+								1.0000	-0.0000	0.0000
+								-0.0000	0.6360	0.7717
+								-5.0607	-0.3830	1.8789
+							}
+						}
+					}
+				}
+				{bone "gunner"
+					{Position -18.9595	0.9070	-9.8979}
+				}
+				{bone "visor1"
+					{Position 2.1187	0.9070	5.1936}
+				}
+				{bone "emit"
+					{parameters "Group=crew;"}
+					{Position -18.9658	0.9070	-10.1644}
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "stan"}
+	{Matrix34
+		1.0000	0.0000	-0.0001
+		-0.0000	-1.0029	0.0355
+		-0.0001	-0.0633	1.0042
+		1.9505	-1.6839	1.3911
+	}
+}

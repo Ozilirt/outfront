@@ -1,0 +1,209 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(3.0) scaleY(1.0))
+	{extension "crew.ext"}
+	{props "vehicle" "steel" "carriage" "train_part" "platform" "windowed"}
+ 
+	{autooperatable 1}
+	{sensor
+		{Visor "visor1"
+			{vision
+				{uncover 1}
+			    {human 80
+			    	{crawl 50}
+			    }
+			    {actor "marine" 80
+			    }
+			    {actor "vehicle" 80}
+			    {actor 80}
+				{h_fov 30}
+				{wide 2.5}
+				{v_fov 30}
+				{fog_range 30}
+				{fog_fov 60}
+			}
+			{bone "visor1"}
+		}
+		{Visor "visor2"
+			{vision
+				{uncover 1}
+			    {human 80
+			    	{crawl 50}
+			    }
+			    {actor "marine" 80
+			    }
+			    {actor "vehicle" 80}
+			    {actor 80}
+				{h_fov 30}
+				{wide 2.5}
+				{v_fov 30}
+				{fog_range 30}
+				{fog_fov 60}
+			}
+			{bone "visor2"}
+		}
+	}
+
+	{Volume "window16"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window15"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window14"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window13"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+
+	{Volume "window12"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window11"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window10"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+
+	{Volume "window9"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window8"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window7"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+
+	{Volume "window6"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window5"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window4"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window3"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "Hole16"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole15"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole14"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole13"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole12"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole11"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole10"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole9"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole8"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole7"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "Hole6"
+		{able clear {hole}{touch 1}}
+	}	
+	{Volume "Hole5"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "Hole4"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "Hole3"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "Hole2"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "Hole1"
+		{able clear {hole}{touch 1}}
+	}
+	
+	
+	{Volume "Body"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}		
+	}
+	{Volume "Body1"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}		
+	}
+	{Volume "Body2"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}		
+	}
+	{Volume "Body3"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}		
+	}
+	{Volume "Body4"
+		{thickness 10}
+		{tags "body"}		
+	}
+	{Volume "roof"
+		{thickness 10}
+		{able {visible 0}}
+	}
+	
+	
+	{Volume "wheelright1"
+		{thickness 30}
+	}
+	{Volume "wheelleft1"
+		{thickness 30}
+	}
+	{Volume "wheelright2"
+		{thickness 30}
+	}
+	{Volume "wheelleft2"
+		{thickness 30}
+	}
+
+    {mass 10000}
+	{Extension "passengervan.mdl"}
+}

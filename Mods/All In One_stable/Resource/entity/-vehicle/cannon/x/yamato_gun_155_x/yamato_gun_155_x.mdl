@@ -1,0 +1,40 @@
+;Exported by: Albus
+;Date:        Tue Aug 23 00:07:51 2011
+;File:        C:\ARCHIV~1\3dsMax8\scenes\YAMATO~2.MAX
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{parameters "ID=turret;"}
+			{limits -100.0000 100.0000}
+			{speed 0.0010}
+			{Position -0.1808	-0.0362	0.0612}
+			{VolumeView "turret.ply"}
+			{bone revolute "gun_rot"
+				{parameters "ID=gun;"}
+				{limits -10.0000 10.0000}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					68.3199	-0.6191	34.2216
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "gun"
+					{parameters "ID=gun;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	1.0000	0.0000
+						75.8330	-0.9546	-39.6656
+					}
+					{VolumeView "gun.ply"}
+				}
+			}
+		}
+	}
+}

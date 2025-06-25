@@ -1,0 +1,28 @@
+{Skeleton
+	{bone "forser"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "forser.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	-1.0000
+				0.1783	0.0325	0.0043
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 15.2539 6.77402 3.22395}
+	{Bone "forser"}
+	{Position 3.5869	0.0291	0.1791}
+}
+{Volume "body"
+	{Box 9.77812 1.13658 0.870867}
+	{Bone "forser"}
+	{Position 3.5869	0.0291	0.0590}
+}

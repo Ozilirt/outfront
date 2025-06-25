@@ -1,0 +1,18 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "type97"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 20}}
+		}
+
+	}
+	{extender "inventory"
+		{box
+			{item "ammo mgun" 350}
+		}
+	}
+	{Extension "type97mg_stan.mdl"}
+}

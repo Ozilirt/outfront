@@ -1,0 +1,147 @@
+;Exported by: shevchenko
+;Date:        Sat May 08 19:31:44 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Train\tradevan\new\tradevan2.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position -11.4497	1.4310	43.0816}
+			{VolumeView "body.ply"}
+			{bone "link1"
+				{Position 101.0841	-0.8815	-17.6054}
+			}
+			{bone "link2"
+				{Position -101.6832	-0.8815	-17.6054}
+			}
+			{bone "DoorL"
+				{parameters "ID=body;"}
+				{Position 52.1473	-30.0679	8.6958}
+				{VolumeView "DoorL.ply"}
+			}
+			{bone "DoorR"
+				{parameters "ID=body;"}
+				{Position -26.7513	30.1421	8.6958}
+				{VolumeView "DoorR.ply"}
+			}
+			{bone "weapons"
+				{Position 14.6313	0.7980	4.4735}
+				{VolumeView "weapons.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{parameters "ID=body;"}
+			{Position -52.1428	0.5407	9.5827}
+			{VolumeView "pivot_back.ply"}
+			{bone revolute "wheel_R2"
+				{parameters "ID=wheelright2;"}
+				{Matrix34
+					-0.9998	0.0001	0.0175
+					0.0175	0.0000	0.9998
+					0.0001	1.0000	0.0000
+					-0.0955	-17.2502	-0.0517
+				}
+				{VolumeView "wheel_R2.ply"}
+			}
+			{bone revolute "wheel_L2"
+				{parameters "ID=wheelleft2;"}
+				{Matrix34
+					-0.9998	-0.0001	0.0175
+					0.0175	0.0000	0.9998
+					0.0001	-1.0000	0.0000
+					-0.0955	17.4258	-0.0517
+				}
+				{VolumeView "wheel_L2.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{parameters "ID=body;"}
+			{Position 42.3094	0.5495	9.5827}
+			{VolumeView "pivot_front.ply"}
+			{bone revolute "wheel_L1"
+				{parameters "ID=wheelleft1;"}
+				{Matrix34
+					-0.9998	-0.0001	0.0175
+					0.0175	0.0000	0.9998
+					0.0001	-1.0000	0.0000
+					-0.0955	17.4258	-0.0517
+				}
+				{VolumeView "wheel_L1.ply"}
+			}
+			{bone revolute "wheel_R1"
+				{parameters "ID=wheelright1;"}
+				{Matrix34
+					-0.9998	0.0001	0.0175
+					0.0175	0.0000	0.9998
+					0.0001	1.0000	0.0000
+					-0.0955	-17.2502	-0.0517
+				}
+				{VolumeView "wheel_R1.ply"}
+			}
+		}
+	}
+}
+{Volume "wheelright1"
+	{Cylinder 9.5318 3.6991}
+	{Bone "wheel_R1"}
+	{Matrix34
+		-0.9998	0.0175	0.0000
+		0.0175	0.9998	0.0000
+		0.0000	0.0000	-1.0000
+		-0.3616	0.0192	0.8517
+	}
+}
+{Volume "wheelleft1"
+	{Cylinder 9.5318 3.6991}
+	{Bone "wheel_L1"}
+	{Matrix34
+		-0.9998	0.0175	0.0000
+		0.0175	0.9998	0.0000
+		0.0000	0.0000	-1.0000
+		-0.3616	0.0192	0.8517
+	}
+}
+{Volume "wheelleft2"
+	{Cylinder 9.5318 3.6991}
+	{Bone "wheel_L2"}
+	{Matrix34
+		-0.9998	0.0175	0.0000
+		0.0175	0.9998	0.0000
+		0.0000	0.0000	-1.0000
+		-0.3616	0.0192	0.8517
+	}
+}
+{Volume "wheelright2"
+	{Cylinder 9.5318 3.6991}
+	{Bone "wheel_R2"}
+	{Matrix34
+		-0.9998	0.0175	0.0000
+		0.0175	0.9998	0.0000
+		0.0000	0.0000	-1.0000
+		-0.3616	0.0192	0.8517
+	}
+}
+{Volume "body"
+	{Box 178.701 60.2091 62.3767}
+	{Bone "body"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.2991	-0.0561	10.1088
+	}
+}
+{Volume "inventory"
+	{Box 147.911 52.382 52.1469}
+	{Bone "body"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		11.0227	-0.0561	9.0113
+	}
+}

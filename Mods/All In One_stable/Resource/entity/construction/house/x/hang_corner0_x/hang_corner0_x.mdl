@@ -1,0 +1,183 @@
+;Exported by: shevchenko
+;Date:        Fri Apr 16 12:50:51 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\hangar2_x.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "hang_corner0"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hang_corner0.ply"}
+		{bone "piece0"
+			{Position -56.0417	59.0985	49.6252}
+			{VolumeView "piece0.ply"}
+			{bone "sub_piece0"
+				{Position 0.0000	0.1955	-32.9047}
+				{VolumeView "sub_piece0.ply"}
+			}
+		}
+		{bone "piece1"
+			{Position -54.2314	-58.6248	57.7193}
+			{VolumeView "piece1.ply"}
+			{bone "sub_piece1"
+				{Position 0.0000	0.0000	-19.9119}
+				{VolumeView "sub_piece1.ply"}
+			}
+		}
+		{bone "piece2"
+			{Position -54.2314	-58.6248	11.5513}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Position -30.9055	-59.0164	47.7362}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece4"
+			{Position -0.9986	-59.0164	58.3913}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "piece5"
+			{Position -19.5412	-59.0164	15.2492}
+			{VolumeView "piece5.ply"}
+		}
+		{bone "piece6"
+			{Position 8.3072	-59.0164	33.7409}
+			{VolumeView "piece6.ply"}
+		}
+		{bone "piece7"
+			{Position 48.5886	-59.1614	50.4969}
+			{VolumeView "piece7.ply"}
+		}
+		{bone "piece8"
+			{Position 33.5922	-58.6248	56.8285}
+			{VolumeView "piece8.ply"}
+			{bone "sub_piece8"
+				{Position 0.0000	0.0000	-22.8464}
+				{VolumeView "sub_piece8.ply"}
+			}
+		}
+		{bone "piece9"
+			{Position 33.5922	-58.6248	13.6479}
+			{VolumeView "piece9.ply"}
+		}
+		{bone "FX_stone1"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-1.2343	-59.6095	9.5797
+			}
+		}
+		{bone "FX_dust1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-16.3457	-12.1764	13.0634
+			}
+		}
+		{bone "FX_wood1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-55.0827	4.3291	37.3419
+			}
+		}
+	}
+}
+{Volume "piece9"
+	{Box 13.7599 13.7008 19.5889}
+	{Bone "piece9"}
+	{Position 0.0800	-0.0470	-3.8534}
+}
+{Volume "sub_piece8"
+	{Box 13.7599 13.7008 28.4039}
+	{Bone "sub_piece8"}
+	{Position 0.0800	-0.0470	1.3470}
+}
+{Volume "piece8"
+	{Box 13.7599 13.7008 18.4626}
+	{Bone "piece8"}
+	{Position 0.0800	-0.0470	2.9150}
+}
+{Volume "piece7"
+	{Box 5.90552 12.515 34.9602}
+	{Bone "piece7"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.6721	0.1419	0.2303
+	}
+}
+{Volume "piece6"
+	{Box 5.90552 26.6276 17.2218}
+	{Bone "piece6"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.1261	-0.0030	1.4539
+	}
+}
+{Volume "piece5"
+	{Box 5.90552 20.7695 14.1218}
+	{Bone "piece5"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		-0.9397	-0.0000	-0.3420
+		-0.3420	-0.0000	0.9397
+		0.6746	-0.0030	2.3317
+	}
+}
+{Volume "piece4"
+	{Box 5.90552 12.926 13.4545}
+	{Bone "piece4"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0491	-0.0030	-0.3312
+	}
+}
+{Volume "piece3"
+	{Box 5.90552 17.9528 29.8989}
+	{Bone "piece3"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.8544	-0.0030	-0.4234
+	}
+}
+{Volume "piece2"
+	{Box 13.7599 13.7008 19.5889}
+	{Bone "piece2"}
+	{Position 0.0585	-0.0470	-1.7568}
+}
+{Volume "sub_piece1"
+	{Box 13.7599 13.7008 28.4039}
+	{Bone "sub_piece1"}
+	{Position 0.0585	-0.0470	-2.4784}
+}
+{Volume "piece1"
+	{Box 13.7599 13.7008 18.4626}
+	{Bone "piece1"}
+	{Position 0.0585	-0.0470	2.0242}
+}
+{Volume "sub_piece0"
+	{Box 5.90552 11.811 32.4213}
+	{Bone "sub_piece0"}
+	{Position 0.0378	-0.2835	-0.5098}
+}
+{Volume "piece0"
+	{Box 5.90552 11.811 34.3665}
+	{Bone "piece0"}
+	{Position 0.0378	-1.2324	0.9992}
+}

@@ -1,0 +1,149 @@
+;Exported by: Dinsen
+;Date:        Sun Jan 22 19:52:45 2012
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\bunker call\Nueva carpeta\puerta.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.2} {resume}}
+	}
+	{bone "door_metal"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "door3"
+			{Position -86.5736	0.2859	37.2640}
+			{VolumeView "door3.ply"}
+		}
+		{bone "door7"
+			{Position -186.4131	1.4690	37.2073}
+			{VolumeView "door7.ply"}
+			{bone "Box"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					2.4453	-0.4098	-23.0388
+				}
+				{VolumeView "Box.ply"}
+			}
+		}
+		{bone "door2"
+			{Position 12.2485	-0.1875	37.5830}
+			{VolumeView "door2.ply"}
+		}
+		{bone "door4"
+			{Position 61.7042	0.3140	37.9188}
+			{VolumeView "door4.ply"}
+		}
+		{bone "door6"
+			{Position 111.1854	0.8064	38.3154}
+			{VolumeView "door6.ply"}
+		}
+		{bone "door8"
+			{Position 161.3106	1.2859	38.5316}
+			{VolumeView "door8.ply"}
+		}
+		{bone "door1"
+			{Position -37.1393	-0.1895	37.2849}
+			{VolumeView "door1.ply"}
+		}
+		{bone "door5"
+			{Position -136.0903	0.7612	37.2485}
+			{VolumeView "door5.ply"}
+		}
+		{bone "open_point"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-185.6000	-10.2000	0.0000
+			}
+		}
+	}
+}
+{Obstacle "open1"
+	{Obb2
+		{Center -168.493 -1.51755}
+		{Extent 43.8037 2.92025}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "open"
+	{Obb2
+		{Center 143.055 -1.32752}
+		{Extent 44.0227 3.11249}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "close"
+	{Obb2
+		{Center -12.5052 -1.46666}
+		{Extent 200.037 2.92025}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "door5"
+	{Box 49.8209 10 75.6165}
+	{Bone "door5"}
+	{Position 0.0000	-0.0000	0.0000}
+}
+{Volume "door1"
+	{Box 49.8192 10 75.6162}
+	{Bone "door1"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "door8"
+	{Polyhedron "door8.vol"}
+	{Bone "door8"}
+	{Position 0.0000	0.0001	-0.0000}
+}
+{Volume "door6"
+	{Box 49.7889 10 76.4878}
+	{Bone "door6"}
+	{Position 0.0000	0.0000	-0.0000}
+}
+{Volume "door4"
+	{Box 49.8245 10 76.062}
+	{Bone "door4"}
+	{Position -0.0000	0.0000	0.0000}
+}
+{Volume "door2"
+	{Box 49.8191 10 75.6162}
+	{Bone "door2"}
+	{Position 0.0000	-0.0000	0.0000}
+}
+{Volume "switch"
+	{Box 6.2336 5.96891 24.3348}
+	{Bone "door_metal"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-188.0000	-2.0000	13.9845
+	}
+}
+{Volume "switch2"
+	{Box 6.2336 5.96891 24.3348}
+	{Bone "door_metal"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-180.2000	-2.0000	13.9845
+	}
+}
+
+{Volume "door7"
+	{Polyhedron "door7.vol"}
+	{Bone "door7"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "door3"
+	{Box 49.8172 10 75.61}
+	{Bone "door3"}
+	{Position 0.0000	0.0000	0.0000}
+}

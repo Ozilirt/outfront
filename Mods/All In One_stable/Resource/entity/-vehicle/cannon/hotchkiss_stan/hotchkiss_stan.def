@@ -1,0 +1,18 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mle1914"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 250}}
+		}
+
+	}
+	{extender "inventory"
+		{box
+			{item "ammo mgun" 350}
+		}
+	}
+	{Extension "hotchkiss_stan.mdl"}
+}

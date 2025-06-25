@@ -1,0 +1,326 @@
+{mission
+	{Camera
+		{Position 862.963 1976.55}
+		{Distance 331.466}
+		{ViewAngle 0.191985}
+		{YawAngle 0.921534}
+	}
+	{Environment "morning"}
+	{User 1}
+	{GameProgress 0 0}
+	{Human "eng.soldier_mg" 0x8000
+		{Position 932.296 2106.69 0}
+		{Turn -126.932}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 90 {cell 5 0}}
+				{item "grenade mk1" {cell 7 0}}
+			}
+		}
+		{Player 0}
+		{MID 1}
+		{Weaponry
+			{State
+				{Mounted "bren"}
+				{Weapon
+					{Ammo "ammo mgun" 30}
+				}
+			}
+		}
+		{NameId 64 61}
+		{FsmState "squat"}
+	}
+	{Human "eng.soldier_rifle" 0x8001
+		{Position 994.031 2053.9 0}
+		{Turn -130.676}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade mk1" {cell 4 0}}
+				{item "ammo rifle" 30 {cell 5 0}}
+				{item "bayonet" {cell 6 0}}
+			}
+		}
+		{Player 0}
+		{MID 2}
+		{Weaponry
+			{State
+				{Mounted "enfieldmk3"}
+				{Weapon
+					{Ammo "ammo rifle" 10}
+				}
+			}
+		}
+		{NameId 10 12}
+		{FsmState "lie"}
+	}
+	{Human "eng.soldier_smg" 0x8002
+		{Position 965.531 2068.28 0}
+		{Turn -81.6049}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 90 {cell 4 0}}
+				{item "grenade mk1" {cell 6 0}}
+				{item "grenade mk1" {cell 7 0}}
+				{item "grenade n73at" {cell 4 1}}
+			}
+		}
+		{Player 0}
+		{MID 3}
+		{Weaponry
+			{State
+				{Mounted "thompson"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{NameId 57 99}
+		{FsmState "squat"}
+	}
+	{Human "eng.suboficer" 0x8003
+		{Position 1014.05 2034.56 0}
+		{Turn -63.8446}
+		{Player 0}
+		{MID 4}
+		{NameId 47 22}
+		{FsmState "squat"}
+	}
+	{Entity "austin_tilly" 0x8004
+		{Position 524.8 2314.03 0}
+		{Turn -95.447}
+		{Player 0}
+		{MID 5}
+	}
+	{Human "eng.soldier_rifle" 0x8005
+		{Position 515.391 2309.06 8.4236}
+		{Orientation
+			 -0.089325  -0.936751   0.338300
+			  0.995484  -0.094925   0.000000
+			  0.032113   0.336772   0.941000
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 6}
+		{NameId 79 91}
+		{FsmState "board"}
+	}
+	{Human "eng.soldier_smg" 0x8006
+		{Position 530.067 2307.66 8.4236}
+		{Orientation
+			 -0.089325  -0.936751   0.338300
+			  0.995484  -0.094925   0.000000
+			  0.032113   0.336772   0.941000
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 7}
+		{NameId 55 23}
+		{FsmState "board"}
+	}
+	{Human "eng.soldier_elite1" 0x8007
+		{Position 519.212 2333.44 11.0743}
+		{Orientation
+			 -0.092343  -0.968407   0.231700
+			  0.995484  -0.094925   0.000000
+			  0.021994   0.230654   0.972800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bren" filling "ammo mgun" 30 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 8}
+		{NameId 70 49}
+		{LastItem "bren"}
+		{FsmState "board"}
+	}
+	{Human "eng.soldier_elite2" 0x8008
+		{Position 531.321 2332.29 11.0743}
+		{Orientation
+			 -0.092343  -0.968407   0.231700
+			  0.995484  -0.094925   0.000000
+			  0.021994   0.230654   0.972800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "thompson" filling "ammo pistol" 30 {cell 0 0}}
+			}
+			{armor "head"
+				{Item "cap3_uk"}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 9}
+		{NameId 50 41}
+		{LastItem "thompson"}
+		{FsmState "board"}
+	}
+	{Human "eng.soldier_smg" 0x8009
+		{Position 517.821 2355.14 15.5743}
+		{Orientation
+			  0.984834  -0.161314   0.064300
+			  0.163158   0.986266  -0.025700
+			 -0.059270   0.035788   0.997600
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 10}
+		{NameId 50 13}
+		{FsmState "board"}
+	}
+	{Human "eng.soldier_rifle" 0x800a
+		{Position 536.516 2354.29 15.5743}
+		{Orientation
+			 -0.956401  -0.285302   0.062100
+			  0.286344  -0.958108   0.009300
+			  0.056784   0.026630   0.998000
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 11}
+		{NameId 50 52}
+		{FsmState "board"}
+	}
+	{Link 0x8005 To 0x8004 "seat0"}
+	{Link 0x8006 To 0x8004 "driver"}
+	{Link 0x8007 To 0x8004 "seat1"}
+	{Link 0x8008 To 0x8004 "seat2"}
+	{Link 0x8009 To 0x8004 "seat3"}
+	{Link 0x800a To 0x8004 "seat4"}
+	{Brain 0x8003
+		{Control 1}
+	}
+	{Brain 0x8004
+		{HoldFire}
+	}
+	{Tags 0x8004 "tilly"}
+	{Helpers
+		{event "tilly" id 0 state 0}
+		{trigger "ini"
+			{actions
+				{"entity_state"
+					{selector
+						{"entities/tag" "tilly"}
+					}
+					{inactive on}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 25}
+				}
+			}
+		}
+		{trigger "tilly_del"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "vh"}
+						{"actors/zone" "exit"}
+						{"actors/type" vehicle}
+					}
+				}
+			}
+			{autoreset}
+			{actions
+				{"delete"
+					{selector
+						{"entities/tag" "vh"}
+					}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 180}
+				}
+			}
+		}
+		{trigger "tilly_on"
+			{condition
+				{term 1 "event"
+					{id 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "tilly"}
+					}
+					{"waypoint/uid" 0}
+					{clone}
+				}
+				{"event"
+					{event 0}
+					{mode reset}
+					{delay 1}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 511.051 2110.65 -4.3671}
+				{radius 50}
+				{transition 1}
+				{commands
+					{"entity_state"
+						{tag_remove "tilly"}
+					}
+					{"entity_state"
+						{tag_add "vh"}
+					}
+				}
+			}
+			{1
+				{position 525.384 1749.09 -3}
+				{radius 50}
+				{transition 2}
+			}
+			{2
+				{position 566.065 1595.91 -1.88166}
+				{radius 50}
+				{transition 3}
+			}
+			{3
+				{position 607.973 1336.04 0}
+				{radius 50}
+				{transition 4}
+			}
+			{4
+				{position 597.174 1055.72 0}
+				{radius 50}
+				{transition 5}
+			}
+			{5
+				{position 626.015 832.187 0}
+				{radius 50}
+				{transition 6}
+			}
+			{6
+				{position 736.319 540.926 0}
+				{radius 50}
+				{transition 7}
+			}
+			{7
+				{position 824.675 391.871 13.2897}
+				{radius 50}
+			}
+		}
+		{zone "circle"
+			{position 825.057 390.015 13.4371}
+			{Name "exit"}
+			{Radius 100.03}
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

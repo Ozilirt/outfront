@@ -1,0 +1,593 @@
+{visions
+	(define "stealth" 
+	    {human 20 stealth still	{crawl  5}}
+	    {human 30 stealth    	{crawl 10}}
+	)
+	(define "more_stealth" 
+	    {human 10 stealth still	{crawl  3}}
+	    {human 15 stealth    	{crawl  7}}
+	)
+
+     	{"human"
+		{uncover 2}
+		{h_fov 60}
+		{wide 2.5}
+		{v_fov 120}
+		{human 35
+			{crawl 20}
+		}
+		{actor "vehicle" 50}
+		{actor 35}
+		{fog_fov 270}
+	}	
+	{"farseer"
+		{uncover 2}
+		{h_fov 80}
+		{wide 2.5}
+		{v_fov 120}
+		{human 80
+			{crawl 75}
+		}
+		{actor "vehicle" 80}
+		{actor 60}
+	}	
+	{"far2"
+		{uncover 50}
+		{h_fov 80}
+		{wide 2.5}
+		{v_fov 120}
+		("stealth")
+		{human 70 {crawl 55}}
+		{actor "vehicle" 80}
+		{actor 60}
+	}	
+	{"animal"
+		{actor 15}
+		{h_fov 360}
+		{v_fov 120}
+	}
+;==========================================
+	{"tank-main"
+		{uncover 2}
+	    {human 50 {crawl 25}}
+	    {actor "vehicle" 70}
+	    {actor 55}
+		{h_fov 70}
+		{wide 2}
+		{v_fov 120}
+		{fog_range 50}
+		{fog_fov 30}
+	}
+	{"moto-crew"
+	    {uncover 5}
+	    ("more_stealth")
+	    {human 40 {crawl 20}}
+	    {actor "vehicle" 40}
+	    {actor 40}
+		{h_fov 170}
+		{v_fov 30}
+		{fog_range 40}
+		{fog_fov 170}
+	}
+	{"t34-me-main"
+		{uncover 2}
+	    {human 35 {crawl 30}}
+	    {actor "vehicle" 30}
+	    {actor 30}
+		{h_fov 360}
+		{fog_range 35}
+		{fog_fov 25}
+	}	
+	{"sdkfz251-crew"
+		{uncover 2}
+		("more_stealth")
+	    {human 30 {crawl 10}}
+	    {actor "vehicle" 31}
+	    {actor 32}
+		{h_fov 360}
+		{v_fov 30}
+		{fog_range 30}
+		{fog_fov 360}
+	}
+	{"flak41"
+		{uncover 1}
+		("stealth")
+	    {human 65 {crawl 50}}
+	    {actor "marine" 65}
+	    {actor "vehicle" 90}
+	    {actor 90}
+		{h_fov 30}
+		{wide 2.5}
+		{v_fov 30}
+		{fog_range 30}
+		{fog_fov 60}
+	}
+	{"flak38"
+		{uncover 1}
+		("stealth")
+	    {human 40 {crawl 30}}
+	    {actor "marine" 60}
+	    {actor "vehicle" 60}
+	    {actor 40}
+		{h_fov 30}
+		{wide 2.5}
+		{v_fov 90}
+		{fog_range 30}
+		{fog_fov 60}
+	}
+	{"mtbd3"
+		{uncover 2}
+		{h_fov 120}
+		{v_fov 60}
+		{human 30 {squat 20} {crawl 10}}
+		{human 20 still {squat 15} {crawl 8}}
+		{human 10 stealth {squat 5} {crawl 3}}
+		{human 5 stealth still {squat 2} {crawl 1}}
+		{actor "armored_car" 40}		
+		{actor "low" 40}
+		{actor "average" 45}
+		{actor "high" 40}
+		{actor "huge" 50}
+		{actor "cannon" 30}
+		{actor "marine" 120}
+            {actor "airborne" 50}
+            {actor "train" 50}
+		{fog_range 90}
+		{fog_fov 90}
+	}
+	{"mortar"
+		{uncover 1}
+		("stealth")
+		{human 30 {crawl 10}}
+		{actor "marine" 70}
+		{actor "vehicle" 31}
+		{actor 32}
+		{h_fov 30}
+		{wide 2.5}
+		{v_fov 30}
+		{fog_range 30}
+		{fog_fov 60}
+	}
+	{"isu152"
+		{uncover 2}
+	    {human 40 {crawl 30}}
+	    {actor "vehicle" 60}
+	    {actor 45}
+		{h_fov 150}
+		{wide 2}
+		{v_fov 120}
+		{fog_range 50}
+		{fog_fov 30}
+	}
+	{"fishboat"
+		{uncover 2}
+		{h_fov 100}
+		{v_fov 60}
+		{human 30 {squat 20} {crawl 10}}
+		{human 20 still {squat 15} {crawl 8}}
+		{human 10 stealth {squat 5} {crawl 3}}
+		{human 5 stealth still {squat 2} {crawl 1}}
+		{actor "armored_car" 40}		
+		{actor "low" 40}
+		{actor "average" 45}
+		{actor "high" 40}
+		{actor "huge" 50}
+		{actor "cannon" 30}
+		{actor "marine" 80}
+            {actor "airborne" 50}
+            {actor "train" 50}
+		{fog_range 50}
+		{fog_fov 45}
+	}
+	{"fw190"
+		{h_fov	 360}
+		{v_fov 	 360}
+		{human 80 {squat 70} {crawl 55}}
+		{human 70 still {squat 60} {crawl 42}}
+		{human 60 stealth {squat 40} {crawl 20}}
+		{human 50 stealth still {squat 35} {crawl 10}}
+            {actor "airborne" 100}
+	      {actor	 100}
+	}
+	{"searchlight"
+		{fog_range 30}
+		{fog_fov 60}
+		{h_fov 65}
+		{v_fov 90}
+		{wide 1.1}
+
+		{uncover 1}
+	    {human 50 {crawl 50}}
+	    {actor "marine" 50}
+	    {actor "vehicle" 30}
+	    {actor 30}
+	}
+	{"watchtower"
+		{h_fov 90}
+		{v_fov 90}
+		{wide 2.5}
+	    {human 80 {crawl 60}}
+	    {actor 80}
+	}
+;=============================================
+	(define "visor-main"
+		{uncover 5}
+		{h_fov 50}
+		{v_fov 100}
+		{human 35 {squat 30} {crawl 15}}
+		{human 30 still {squat 25} {crawl 12}}
+		{human 20 stealth {squat 20} {crawl 10}}
+		{human 16 stealth still {squat 13} {crawl 5}}
+		{actor 50}
+		{actor "tank" 50}
+		{actor "marine" 100}
+            {actor "train" 50}
+		{fog_range 50}
+		{fog_fov 50}
+	)
+
+	(define "visor-driver"
+		{uncover 5}
+		{h_fov 50}
+		{v_fov 100}
+		{human 32 {squat 25} {crawl 13}}
+		{human 25 still {squat 22} {crawl 10}}
+		{human 16 stealth {squat 12} {crawl 8}}
+		{human 12 stealth still {squat 8} {crawl 5}}
+	      {actor "moto" 30}	
+            {actor "car" 30}	
+		{actor "armored_car" 40}		
+		{actor "low" 45}
+		{actor "average" 55}
+		{actor "high" 70}
+		{actor "huge" 85}
+		{actor "cannon" 20}
+		{actor "marine" 30}
+            {actor "airborne" 50}
+            {actor "train" 50}
+
+	)
+(define "visor-aa"
+		{uncover 4}
+		{h_fov 130}
+		{v_fov 130}
+		{human 65 {squat 55} {crawl 50}}
+		{human 63 still {squat 58} {crawl 55}}
+		{human 60 stealth {squat 50} {crawl 45}}
+		{human 55 stealth still {squat 45} {crawl 40}}
+		{actor "armored_car" 65}		
+		{actor "cannon" 65}
+		{actor "marine" 65}
+            {actor "train" 65}
+		{actor "tank" 65}
+	      {actor "moto" 65}
+            {actor "car" 65}	
+            {actor "airborne" 125}
+	)
+
+	{"apc-main"			("visor-main")	}
+	{"apc-driver" 		("visor-driver") 	}
+	{"tank-driver"		("visor-driver") 	}
+	{"pz3g-main-mp"		("visor-main")	}
+	{"pz3g-driver-mp"		("visor-driver") 	}
+	{"wmb-main"			("visor-main")	}
+	{"wmb-driver"		("visor-driver") 	}
+	{"type96"			("visor-aa")	}
+
+	(define "stug-main"
+		{uncover 5}
+		{h_fov 50}
+		{v_fov 100}
+		{human 35 {squat 30} {crawl 15}}
+		{human 30 still {squat 25} {crawl 12}}
+		{human 20 stealth {squat 20} {crawl 10}}
+		{human 16 stealth still {squat 13} {crawl 5}}
+		{actor 50}
+		{actor "tank" 50}
+		{actor "marine" 100}
+		{fog_range 50}
+		{fog_fov 50}
+	)
+
+	{"stug4g-main"		("stug-main")		}
+	{"stug3b-main"		("stug-main")		}
+
+	(define "visor-scout"
+		{uncover 1}
+	    {human 70 {crawl 70}}
+	    {actor "vehicle" 70}
+	    {actor 70}
+		{h_fov 150}
+		{wide 2.5}
+		{v_fov 150}
+		{fog_range 70}
+		{fog_fov 120}
+	)
+
+	{"dodgewc56"		("visor-scout")		}
+	{"sdkfz-223"		("visor-scout")		}
+      {"gaz67b"			("visor-scout")		}
+
+	(define "visor-vehicle"
+		{uncover 5}
+		{h_fov 50}
+		{v_fov 100}
+		{human 35 {squat 30} {crawl 15}}
+		{human 20 still {squat 25} {crawl 12}}
+		{human 15 stealth {squat 20} {crawl 10}}
+		{human 10 stealth still {squat 13} {crawl 5}}
+		{actor 50}
+		{actor "tank" 50}
+		{actor "marine" 60}
+            {actor "train" 50}
+		{fog_range 50}
+		{fog_fov 50}
+	)
+
+	{"vehicle-main"		("visor-vehicle")	}	
+	{"airbag3-main" 	("visor-vehicle")	}
+	{"airbag3-gunner"	("visor-vehicle")	}
+
+	(define "visor-high-tank"
+		{uncover 1}
+	    {human 80 {crawl 50}}
+	    {actor "marine" 80}
+	    {actor "vehicle" 80}
+	    {actor 80}
+		{h_fov 30}
+		{wide 2.5}
+		{v_fov 30}
+		{fog_range 30}
+		{fog_fov 60}
+	)
+
+	{"t34-76-main"		("visor-high-tank")	}
+	{"churchill"		("visor-high-tank")	}
+	{"passengervan"		("visor-high-tank")	}
+
+	(define "visor-high-cannon"
+		{uncover 1}
+	    {human 90 {crawl 50}}
+	    {actor "marine" 80}
+	    {actor "vehicle" 90}
+	    {actor 90}
+		{h_fov 30}
+		{wide 2.5}
+		{v_fov 30}
+		{fog_range 50}
+		{fog_fov 120}
+	)
+
+	{"6funt"			("visor-high-cannon")	}
+	{"pak40"			("visor-high-cannon")	}
+
+;=============================================
+	(define "mp-heavytank-main"
+	    {human 50 {crawl 40}}
+	    {actor "vehicle" 70}
+	    {actor 55}
+		{uncover 2}
+
+		{h_fov 30}
+		{wide 2}
+		{v_fov 120}
+		{fog_range 30}
+		{fog_fov 60}
+	)
+
+	(define "mp-heavytank-driver"
+		("more_stealth")
+	    {human 30 {crawl 25}}
+	    {actor "vehicle" 40}
+	    {actor 25}
+		{uncover 1}
+
+		{h_fov 160}
+		{v_fov 90}
+		{fog_range 30}
+		{fog_fov 30}
+	)
+
+	{"pz6e-main-mp"				("mp-heavytank-main")	}	
+	{"pz6e-driver-mp" 			("mp-heavytank-driver")	}
+	{"pz6b-main-mp"				("mp-heavytank-main")	}	
+	{"pz6b-driver-mp"			("mp-heavytank-driver")	}
+	{"m26pershing-main-mp"		("mp-heavytank-main")	}
+	{"m26pershing-driver-mp"    ("mp-heavytank-driver")	}
+	{"kv85-main-mp"				("mp-heavytank-main")	}
+	{"kv85-driver-mp"			("mp-heavytank-driver")	}
+	{"kv2-main-mp"				("mp-heavytank-main")	}
+	{"kv2-driver-mp"            ("mp-heavytank-driver")	}
+	{"ferdiand-main-mp"         ("mp-heavytank-main")	}
+	{"ferdiand-driver-mp"       ("mp-heavytank-driver")	}
+
+	{"Visor_Artil"
+		{uncover 2}
+		{h_fov 55}
+		{v_fov 100}
+		{human 20 {squat 10} {crawl 5}}
+		{human 13 still {squat 8} {crawl 4}}
+		{human 8 stealth {squat 5} {crawl 3}}
+		{human 5 stealth still {squat 3} {crawl 1}}
+		{actor "vehicle" 60}
+		{actor "cannon" 30}
+		{actor "marine" 40}
+            {actor "airborne" 50}
+            {actor "train" 50}
+            {actor "platform" 80}
+		{fog_range 60}
+		{fog_fov 45}
+	}
+
+	{"Visor_BTR"
+		{uncover 5}
+		{h_fov 40}
+		{v_fov 60}
+		{human 35 {squat 30} {crawl 15}}
+		{human 25 still {squat 20} {crawl 12}}
+		{human 18 stealth {squat 10} {crawl 8}}
+		{human 15 stealth still {squat 5} {crawl 5}}
+            {actor "moto" 40}	
+            {actor "car" 50}
+		{actor "armored_car" 50}		
+		{actor "low" 50}
+		{actor "average" 60}
+		{actor "high" 70}
+		{actor "huge" 85}
+		{actor "cannon" 30}
+		{actor "marine" 40}
+            {actor "airborne" 50}
+            {actor "train" 50}
+            {actor "platform" 80}
+		{fog_range 70}
+		{fog_fov 35}
+	}
+
+
+	{"Visor_CAY"
+		{uncover 4}
+		{h_fov 30}
+		{v_fov 100}
+		{human 15 {squat 12} {crawl 5}}
+		{human 12 still {squat 10} {crawl 3}}
+		{human 7 stealth {squat 6} {crawl 2}}
+		{human 5 stealth still {squat 4} {crawl 1}}
+            {actor "moto" 30}	
+            {actor "car" 40}	
+		{actor "armored_car" 55}	
+		{actor "low" 60}
+		{actor "average" 75}
+		{actor "high" 100}
+		{actor "huge" 130}
+		{actor "marine" 50}
+		{actor "cannon" 35}
+            {actor "airborne" 50}  
+            {actor "train" 50}      
+            {actor "platform" 80}
+		{fog_range 120}
+		{fog_fov 30}
+	}
+
+
+	{"Visor_Tank"
+		{uncover 3}
+		{h_fov 35}
+		{v_fov 100}
+		{human 30 {squat 25} {crawl 10}}
+		{human 25 still {squat 20} {crawl 7}}
+		{human 15 stealth {squat 10} {crawl 5}}
+		{human 10 stealth still {squat 5} {crawl 3}}
+            {actor "moto" 35}	
+            {actor "car" 45}	
+		{actor "armored_car" 45}		
+		{actor "low" 50}
+		{actor "average" 60}
+		{actor "high" 80}
+		{actor "huge" 100}
+		{actor "cannon" 30}
+		{actor "marine" 40}
+            {actor "airborne" 50}
+            {actor "train" 50}
+            {actor "platform" 80}
+		{fog_range 90}
+		{fog_fov 25}
+	}
+
+	{"Visor_Tank_Long"
+		{uncover 3}
+		{h_fov 30}
+		{v_fov 120}
+	  	{human 30 {squat 25} {crawl 10}}
+		{human 25 still {squat 20} {crawl 7}}
+		{human 15 stealth {squat 10} {crawl 5}}
+		{human 10 stealth still {squat 5} {crawl 4}}
+            {actor "moto" 40}	
+            {actor "car" 50}	
+		{actor "armored_car" 55}		
+		{actor "low" 60}
+		{actor "average" 75}
+		{actor "high" 100}
+		{actor "huge" 130}
+		{actor "cannon" 30}
+		{actor "marine" 40}
+            {actor "airborne" 50}
+            {actor "train" 50}
+            {actor "platform" 80}
+		{fog_range 110}
+		{fog_fov 30}
+	}
+
+	{"Visor_cannon"
+		{uncover 5}
+    		("more_stealth")
+		{h_fov 45}
+		{v_fov 100}
+		{human 30 {squat 25} {crawl 10}}
+		{human 25 still {squat 20} {crawl 7}}
+		{human 10 stealth {squat 9} {crawl 5}}
+		{human 8 stealth still {squat 7} {crawl 3}}
+            {actor "moto" 50}	
+            {actor "car" 60}	
+		{actor "armored_car" 50}
+		{actor "low" 50}
+		{actor "average" 60}
+		{actor "high" 70}
+		{actor "huge" 80}
+		{actor "cannon" 40}
+		{actor "marine" 40}
+            {actor "airborne" 50}
+            {actor "train" 50}
+            {actor "platform" 80}
+		{fog_range 60}
+		{fog_fov 40}
+	}
+
+	{"tank_light"
+		{uncover 2}
+		{human 35 {crawl 15}}
+		{actor "vehicle" 60}
+		{actor 55}
+		{h_fov 70}
+		{wide 2}
+		{v_fov 120}
+		{fog_range 60}
+		{fog_fov 50}
+	}
+	{"tank_medium"
+		{uncover 3.5}
+		{human 45 {crawl 20}}
+		{actor "vehicle" 80}
+		{actor 60}
+		{h_fov 70}
+		{wide 2}
+		{v_fov 120}
+		{fog_range 40}
+		{fog_fov 60}
+	}
+	{"tank_heavy"
+		{uncover 5}
+		{human 50 {crawl 30}}
+		{actor "vehicle" 110}
+		{actor 80}
+		{h_fov 70}
+		{wide 2}
+		{v_fov 120}
+		{fog_range 30}
+		{fog_fov 30}
+	}
+
+;=================================================
+	(define "ultra_vision"
+		{fog_range %range}
+		{fog_fov 360}
+		{h_fov 360}
+    	{v_fov 180}
+		{uncover %range}
+        {actor %range}
+	)
+    {"start_point"  ("ultra_vision" range(20)) }
+    {"map_point"    ("ultra_vision" range(20)) }
+    {"flag_point"   ("ultra_vision" range(20)) }
+}
+
+

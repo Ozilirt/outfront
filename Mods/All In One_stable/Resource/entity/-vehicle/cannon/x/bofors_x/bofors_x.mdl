@@ -1,0 +1,64 @@
+;Modified by: Albus
+;Date:        Tue May 27 23:36:52 2008
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -6.6957	-0.6105	2.3403}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{Position 1.2514	-0.0146	4.5189}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{Matrix34
+						0.7924	0.0000	0.6101
+						-0.6101	-0.0000	0.7924
+						0.0000	-1.0000	0.0000
+						7.2625	-9.6351	9.3802
+					}
+					{VolumeView "Gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							1.0000	0.0000	0.0000
+							-6.4957	-0.4000	0.9000
+						}
+						{VolumeView "Gun.ply"}
+					}
+				}
+				{bone "shield_right"
+					{parameters "ID=shield_right;"}
+					{Matrix34
+						0.9999	0.0003	-0.0110
+						-0.0004	1.0000	-0.0097
+						0.0110	0.0097	0.9999
+						8.8817	-2.2215	-1.9785
+					}
+					{VolumeView "shield_right.ply"}
+				}
+				{bone "shield_left"
+					{parameters "ID=shield_left;"}
+					{animation
+						{sequence "break" {file "shield_left_b.anm"} {speed 0.8}}
+					}
+					{Matrix34
+						1.0000	0.0018	-0.0055
+						-0.0020	0.9999	-0.0261
+						0.0055	0.0261	0.9996
+						11.7391	2.8095	1.4979
+					}
+					{VolumeView "shield_left.ply"}
+				}
+			}
+		}
+	}
+}

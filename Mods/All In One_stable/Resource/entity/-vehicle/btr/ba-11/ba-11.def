@@ -1,0 +1,108 @@
+{entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{Extension "ba-11.mdl"}
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled"}
+	{PatherId "vehicle.small"}
+	{extension "crew.ext"}
+	{TexMods
+		{"ambush" "1"}
+		{"winter" "2"}
+	}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{front	16}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{front	16}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 13}
+	}
+	{Volume "fuel"
+		{thickness 5}
+	}
+	{volume "gun"
+		{thickness 5}
+	}
+
+	{component "turret"
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "gun"
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{defaultWeapon "45mm_20k"}
+			{mounted}
+			{weapon {ammo "ammo bullet45 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "weapon dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 63}}
+		}
+           	{place "mgun2"
+			{Rotate}
+			{DefaultWeapon "dt_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 63}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{Box
+			{item "ammo bullet45 ap" 34}
+			{item "ammo bullet45 fg" 16}
+			{item "ammo mgun" 1260}
+
+		}
+	}
+ 	{sensor
+		{Visor "crew"
+		      {vision "Visor_BTR"}
+		}  
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+	{mass 5890}
+	{Chassis
+		{speed
+				{Slow	16}
+				{Normal	23}
+				{Fast	28}
+		}
+		{FuelBag
+          		{volume 120 }	; liters
+	   		{rate    28 }   ; liters per kilometer
+	    		{remain 120 }
+          		{fuel "fuel"}
+      		}
+		{Locomotion ("locomotion")
+			{Maxspeed 28}
+			{StartTime	6}
+		}
+	}
+}

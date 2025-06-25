@@ -1,0 +1,12 @@
+{actor
+	;(include "/properties/stuff_grenade.ext")
+	(include "/properties/shadow/round.inc")
+	{Extension "fire_ammo.mdl"}
+	{props "grenade" "contact"}
+	{extender "stuff"
+		{item "ammo fire"}
+	}	
+	{volume "body"
+		{able {contact}}
+	}
+}

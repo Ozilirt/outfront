@@ -1,0 +1,155 @@
+;Model created by: <Eger>
+;BTRH Mod (c) Copyright 2005 by BTRH clan developers team
+;http://rus-hammers.com
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "turret_rotator" "huge"}
+	
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+	}
+
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 76
+			{top	19}
+			{bottom	19}
+			{front 102}
+			{rear 	64}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 76
+			{front 102}
+                  {top	19}
+			{bottom	19}
+			{rear 	64}
+		} 
+	}
+	{volume "turret"
+		{thickness 95 0.3
+			{front  152}
+			{top    35}
+		}
+	}
+	{component "turret"
+		{Able {repair}}
+		{RepairTime 50}
+      }
+
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor1))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+
+	{volume "shield_left"		{thickness 10}}
+	{volume "shield_right"		{thickness 10}}
+	{component "shield_left"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 20}
+	}
+	{component "shield_right"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 20}
+	}
+	
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "OQF 2-pdr"}
+			{Mounted}
+			{weapon {ammo "ammo bullet40 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "bigflamethrower"}
+			{Mounted}
+			{weapon {ammo "ammo fire" 50}}
+		}
+            {place "mgun2"
+			{Rotate}
+			{DefaultWeapon "BESA_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 225}}
+		}
+
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+            {weapon "mgun" {fixed}}
+		{box
+			{item  "ammo fire" 300}
+                  {item  "ammo mgun" 975}
+                  {item "ammo bullet40 ap" 47}
+		}
+	}
+	
+	{mass 26500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    13} ; максимальная скорость, kmph
+			{StartTime 		 6} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		0.6} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{Extension "MkIVChurchill.mdl"}
+
+(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+        {Chassis
+        {speed
+		  {Slow	6}
+		  {Normal	9}
+		  {Fast	13}
+		}
+   {FuelBag
+          {volume 682 }	; liters
+	    {rate   490 }   	; liters per kilometer
+	    {remain 682 }
+          {fuel "fuel"}
+        }
+
+
+         }
+
+	)
+
+}

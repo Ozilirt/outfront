@@ -1,0 +1,128 @@
+{actor
+	(include "/properties/airborne.ext")
+	{PatherID  "airborne"}
+	(include "/properties/shadow/tank.inc" scale(1.5))
+	(include "/properties/selection/vehicle.inc" scale(2.0))
+	{extension "crew.ext"}
+	{Chassis ("chassis_defaults")
+		{Locomotion ("locomotion") 
+			{Maxspeed 80}
+			{SplineRadius 7}
+			{TurnRadius 7}
+		}
+		{sideSlopeSpeed 15}	;degree/s
+		{ignitiontime 5}
+    		{maxSideSlope 30}	;degree
+    		{onAirTurnRadius 40}
+		{maxElevationSpeed 4}		;m/s
+		{elevationAcceleration 1}	;m/s^2
+       	{speed
+       		{Slow	9	}	; km/h
+       		{Normal	40	}
+       		{Fast	90	}
+       	}
+	}
+	{mass 3000}
+	{TexMods
+		{"ambush" "1"}
+		{"ambush2" "2"}
+	}
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{defaultweapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{Box
+			{item  "ammo mgun" 500}
+		}
+	}
+	{Sensor
+		{Visor "main"
+			{bone	 "pivot_back"}
+		}
+	}
+	{Extension "Ju52.mdl"}
+
+	{volume "propeller"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{volume "propeller2"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{volume "propeller3"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{volume "wingr1" {component ""}}
+	{volume "wingl1" {component ""}}
+	{volume "wingr4" {component "wingleft"}}
+	{volume "wingl4" {component "wingright"}}
+
+	(define "part"
+		{volume %0
+			{tags "part"}
+			{thickness 0.5}
+			{able {visible 0}}
+		}
+		{component %0}
+	)
+	(define "wing"
+		("part" args %0)
+		{volume %0
+			{tags "wing"}
+		}
+	)
+	("part" args "rudder")
+	("wing" args "WingL1")
+	("wing" args "WingL2")
+	("wing" args "WingL3")
+	("wing" args "WingL4")
+	("wing" args "WingR1")
+	("wing" args "WingR2")
+	("wing" args "WingR3")
+	("wing" args "WingR4")
+	("wing" args "WingR5")
+
+	{Volume "engine1"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "engine2"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "engine3"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "glass"
+		{thickness 0.5}
+	}
+	{Volume "pilot_glass"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "bodyback"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "bodyback1"
+		{tags "part"}
+		{thickness 0.5}
+	}
+	{Volume "cabin"
+		{tags "part"}
+		{thickness 0.5}
+	}
+}

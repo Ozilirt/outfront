@@ -1,0 +1,167 @@
+;Exported by: dinsen
+;Date:        Sat Apr 23 12:56:26 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\17pdr.max
+{Skeleton
+	{animation
+		{sequence "recoil"}
+	}
+	{bone revolute "basis"
+		{limits -0.0000 0.0000}
+		{speed 0.020}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Position -65.3037	-2.1651	-0.0923}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -10.0000 10.0000}
+				{Position 70.1166	2.1424	13.7848}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 10.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						1.7195	-0.5751	7.1729
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Position -0.1966	-0.3038	-0.2677}
+						{VolumeView "gun.ply"}
+						{bone "foresight1"
+							{Position 72.4101	3.9948	0.2616}
+						}
+					}
+				}
+				{bone "visor"
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						9.3975	4.7811	16.1936
+					}
+				}
+				{bone "gunner"
+					{Position -15.2192	9.0441	-13.6925}
+				}
+				{bone "charger"
+					{Position -15.0679	-8.2925	-13.6925}
+				}
+			}
+			{bone revolute "wheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					70.1295	-13.3181	9.4534
+				}
+				{VolumeView "wheelR.ply"}
+			}
+			{bone revolute "wheelL"
+				{parameters "ID=wheelleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					70.4017	18.0842	9.6618
+				}
+				{VolumeView "wheelL.ply"}
+			}
+			{bone "driver"
+				{Position 21.0098	21.3056	0.0923}
+			}
+			{bone "commander"
+				{Position 21.1532	-15.8680	0.0923}
+			}
+			{bone "emit1"
+				{Position 37.5493	11.2311	0.0923}
+			}
+			{bone "emit2"
+				{Position 36.7762	-6.1638	0.0923}
+			}
+			{bone "emit3"
+				{Position -0.6489	21.6681	0.0923}
+			}
+			{bone "emit4"
+				{Position 0.8973	-15.8277	0.0923}
+			}
+		}
+	}
+}
+{Obstacle "obstacle3"
+	{Obb2
+		{Center 5.11724 -0.314857}
+		{Extent 9.37394 17.8781}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 70.7008 8.49955 5.40881}
+	{Bone "body"}
+	{Matrix34
+		0.9132	-0.3899	0.1190
+		-0.0898	0.0923	0.9917
+		-0.3976	-0.9162	0.0492
+		37.4089	24.1796	6.5701
+	}
+}
+{Volume "body1"
+	{Box 70.7008 8.49955 5.40881}
+	{Bone "body"}
+	{Matrix34
+		0.9163	0.3824	0.1190
+		-0.1287	0.0000	0.9917
+		0.3792	-0.9240	0.0492
+		34.6975	-20.7648	6.5701
+	}
+}
+{Volume "wheelLeft"
+	{Cylinder 8.33665 4.05661}
+	{Bone "wheelL"}
+	{Matrix34
+		-1.1180	0.0000	0.0000
+		-0.0000	1.1180	0.0000
+		0.0000	0.0000	-1.1180
+		0.0548	-0.2148	0.2154
+	}
+}
+{Volume "wheelRight"
+	{Cylinder 8.33665 4.05661}
+	{Bone "wheelR"}
+	{Matrix34
+		-1.1180	0.0000	0.0000
+		0.0000	1.1180	0.0000
+		0.0000	0.0000	-1.1180
+		-0.2174	-0.0064	0.0529
+	}
+}
+{Volume "turret"
+	{Box 2.18549 27.5918 38.246}
+	{Bone "turret"}
+	{Matrix34
+		0.7977	0.0000	0.6031
+		-0.6680	0.0000	0.8835
+		0.0000	-1.0000	0.0000
+		8.7054	-0.5967	7.7259
+	}
+}
+{Volume "gun"
+	{Box 88.2391 3.55142 5.73691}
+	{Bone "gun"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	0.7178
+		27.0911	3.7119	-0.0487
+	}
+}

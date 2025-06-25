@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Thu Jan 15 11:34:01 2004
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\HANGAR~1\HANGAR~1.MAX
+{Skeleton
+	{bone "hangar_wall2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hangar_wall2.ply"}
+	}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center -0.0296497 -1.31208}
+		{Extent 3.43266 75.5602}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 8.58165 188.9 146.028}
+	{Bone "hangar_wall2"}
+	{Matrix34
+		0.8000	-0.0000	0.0000
+		0.0000	0.8000	0.0000
+		0.0000	0.0000	0.8000
+		-0.0297	1.3121	58.4588
+	}
+}

@@ -1,0 +1,271 @@
+{fight
+
+	;knife kick
+	{blow "knife_force_front"
+		{distance far}
+		{self
+			{animation "fight_front_knife"}
+			{item "knife"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+	{blow "knife_throat_back"
+		{distance medium}
+		{self
+			{animation "fight_front_knife"}
+			{item "knife"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+
+	{blow "bayonet_front"
+		{distance far}
+		{self
+			{animation "bayonet_fight"}
+			{item "mosin_kn"}
+			{item "mauzer_kn"}
+			{item "garand_kn"}
+			{item "arisaka_kn"}
+			{item "enfield_kn"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+	{blow "bayonet_back"
+		{distance medium}
+		{self
+			{animation "bayonet_fight"}
+			{item "mosin_kn"}
+			{item "mauzer_kn"}
+			{item "garand_kn"}
+			{item "arisaka_kn"}
+			{item "enfield_kn"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+	{blow "bayonet_front_lie"
+		{distance far}
+		{self
+			{animation "bayonet_fight_lie"}
+			{item "mosin_kn"}
+			{item "mauzer_kn"}
+			{item "garand_kn"}
+			{item "arisaka_kn"}
+			{item "enfield_kn"}
+		}
+		{opponent
+			{orientation front}
+			{movement lie}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+	{blow "bayonet_back_lie"
+		{distance medium}
+		{self
+			{animation "bayonet_fight_lie"}
+			{item "mosin_kn"}
+			{item "mauzer_kn"}
+			{item "garand_kn"}
+			{item "arisaka_kn"}
+			{item "enfield_kn"}
+		}
+		{opponent
+			{orientation back}
+			{movement lie}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+
+	;punch
+	{blow "facer_front"
+		{distance medium}
+		{self
+			{hands_empty}
+			{item "pistol"}
+			{item "smallitemin1hand"}
+			{animation "fight_front_punch"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -40}
+			{knock_down_time 4}
+			{animation "stand_die_back_2"}
+		}
+	}
+	{blow "head_back"
+		{distance medium}
+		{self
+			{hands_empty}
+			{item "pistol"}
+			{item "smallitemin1hand"}
+			{animation "fight_front_punch"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -80}
+			{knock_down_time 5}
+			{animation "stand_die_front_2"}
+		}
+	}
+
+	;weapon kick
+	{blow "kick_butt_front"
+		{distance far}
+		{self
+			{animation "fight_front_club"}
+			{item "smg"}
+			{item "mgun"}
+			{item "rifle"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -70}
+			{knock_down_time 8}
+			{animation "stand_die_back_1"}
+		}
+	}
+	{blow "kick_butt_back"
+		{distance far}
+		{self
+			{animation "fight_front_club"}
+			{item "smg"}
+			{item "mgun"}
+			{item "rifle"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -80}
+			{knock_down_time 8}
+			{animation "stand_die_front_2"}
+		}
+	}
+
+	; low kick
+	{blow "lying_front"
+		{distance near}
+		{self
+			{animation "fight_kick_lying"}
+			{hands_empty}
+			{item "pistol"}
+			{item "smallitemin1hand"}
+		}
+		{opponent
+			{orientation front}
+			{movement lie}
+		}
+		{damage
+			{delay 0.62}
+			{health -40}
+			{knock_down_time 1.0}
+			{animation "lie_die"}
+		}
+	}
+	{blow "lying_back"
+		{distance near}
+		{self
+			{animation "fight_kick_lying"}
+			{hands_empty}
+			{item "pistol"}
+			{item "smallitemin1hand"}
+		}
+		{opponent
+			{orientation back}
+			{movement lie}
+		}
+		{damage
+			{delay 0.62}
+			{health -60}
+			{knock_down_time 1.0}
+			{animation "lie_die"}
+		}
+	}
+
+	; blow lying human with weapon butt
+	{blow "kick_butt_lying_front"
+		{distance medium}
+		{self
+			{animation "fight_club_finish"}
+			{item "smg"}
+			{item "mgun"}
+			{item "rifle"}
+		}
+		{opponent
+			{orientation front}
+			{movement lie}
+		}
+		{damage
+			{delay 0.75}
+			{health -70}
+			{knock_down_time 8}
+			{animation "lie_die"}
+		}
+	}
+	{blow "kick_butt_lying_back"
+		{distance medium}
+		{self
+			{animation "fight_club_finish"}
+			{item "smg"}
+			{item "mgun"}
+			{item "rifle"}
+		}
+		{opponent
+			{orientation back}
+			{movement lie}
+		}
+		{damage
+			{delay 0.75}
+			{health -80}
+			{knock_down_time 8}
+			{animation "lie_die"}
+		}
+	}
+}

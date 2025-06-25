@@ -1,0 +1,39 @@
+;Exported by: dinsen
+;Date:        Sun Oct 30 17:29:15 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\win.max
+{Skeleton
+	{bone "Winchester1912"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Winchester1912.ply"}
+		{bone "foresight3"
+			{Position 14.5978	1.4644	0.0287}
+		}
+		{bone "handle"
+			{Position -0.3141	-0.2847	0.0287}
+		}
+	}
+}
+{Volume "body"
+	{Box 15.3859 1.15522 2.59631}
+	{Bone "Winchester1912"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		4.6094	0.9965	-0.0006
+	}
+}
+{Volume "select"
+	{Box 19.5829 1.15522 4.5626}
+	{Bone "Winchester1912"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		4.6094	-0.0000	0.0000
+	}
+}

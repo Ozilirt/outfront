@@ -1,0 +1,73 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors" "tent"}
+	{Props "emit_on_attack"}
+	{extension "/properties/structure/truck6x6.ext"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-highcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-highcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	("seat_inside")
+	{boarder
+		{anm "passenger"
+			{forward	{begin	"board_body"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+	("crew_human" place(seat1)	bone(seat01)	door(emit3) animation(passenger))
+	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger))
+	("crew_human" place(seat3)	bone(seat03)	door(emit3)	animation(passenger))
+	("crew_human" place(seat4)	bone(seat04)	door(emit4)	animation(passenger))
+	("crew_human" place(seat5)	bone(seat05)	door(emit3)	animation(passenger))
+	("crew_human" place(seat6)	bone(seat06)	door(emit4)	animation(passenger))
+	("crew_human" place(seat7)	bone(seat07)	door(emit3)	animation(passenger))
+	("crew_human" place(seat8)	bone(seat08)	door(emit4)	animation(passenger))
+	("crew_human" place(seat9)	bone(seat09)	door(emit3)	animation(passenger))
+	("crew_human" place(seat10) bone(seat10)	door(emit4)	animation(passenger))
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{Volume "bodyback"
+		{thickness 2}
+	}
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{Maxspeed 25}
+			{StartTime	3}		; время разгона до макс. скорости с 0, seconds
+		}
+	}
+	{Extension "GMC.mdl"}
+
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+		       	{item "dynamite" 5 {cell 2 2}}
+				{item "repair_kit" {cell 0 0}}
+				{item "mine antitank" 30 {cell 4 0}}
+				{item "mine antipersonnel" 60 {cell 0 2}}
+                        {item "mine_detector" 5}
+                        {item "molotov_coctail" 10 {cell 4 2}}
+			}
+		}
+	)
+}

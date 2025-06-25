@@ -1,0 +1,66 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret_rotator"}
+	(include "/properties/dummy_fsm.inc")
+
+	("crew_2_human")
+	{sensor
+		{Visor "main"
+			{vision "flak41"}
+			{bone "visor"}
+		}
+	}
+
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+	{Volume "gun_rot"
+		{thickness 10}
+	}
+	{Volume "gun"
+		{thickness 10}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "45mm_20k"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet45 ap" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet45 fg" 25}
+			{item "bullet45 ap" 24}
+		}
+	}
+	{mass 5000}
+	{Extension "gun45_21k.mdl"}
+
+ 	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	       0} ;  kmph
+			{StartTime 		 100} ;  seconds
+			{BrakeTime 		 1} ; seconds
+			{StopTime		 100} ; seconds
+			{TurnRadius        0} ;meter
+			{TurnTime		 1000} ; seconds
+			{TurnStart		 1000}	; seconds
+			{TurnStop	       1000}	; seconds
+		}
+	}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+}

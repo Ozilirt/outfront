@@ -1,0 +1,131 @@
+;Exported by: Albus
+;Date:        Sat Nov 15 12:07:05 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\flak38\flak38_xx.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position -0.0571	0.5039	0.1716}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0400}
+				{Position 0.1290	-0.5001	7.8567}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 45.0000}
+					{speed 0.0200}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-1.0757	0.0843	14.1052
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun1"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							17.6803	2.7168	7.0530
+						}
+						{VolumeView "gun1.ply"}
+					}
+				}
+				{bone "shield_left"
+					{parameters "ID=shield_left;"}
+					{Position 6.6256	14.3102	12.7921}
+					{VolumeView "shield_left.ply"}
+				}
+				{bone "shield_right"
+					{parameters "ID=shield_right;"}
+					{Position 8.1017	-15.7918	12.5431}
+					{VolumeView "shield_right.ply"}
+				}
+			}
+			{bone "part4"
+				{Position -8.8870	19.4704	12.5732}
+				{VolumeView "part4.ply"}
+			}
+			{bone "part1"
+				{Position 16.7945	-7.5064	19.2056}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{Position 16.7566	5.9946	24.3844}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part3"
+				{Position 16.8130	5.9571	19.1993}
+				{VolumeView "part3.ply"}
+			}
+		}
+	}
+}
+{Volume "part3"
+	{Box 28.3575 1.75 1.75}
+	{Bone "part3"}
+	{Position 0.6942	-0.0349	-0.0452}
+}
+{Volume "part2"
+	{Box 28.3575 1.75 1.75}
+	{Bone "part2"}
+	{Position 0.7507	-0.0724	0.0418}
+}
+{Volume "part1"
+	{Box 28.3575 1.75 1.75}
+	{Bone "part1"}
+	{Position 0.7127	0.0152	-0.0514}
+}
+{Volume "part4"
+	{Box 4.76687 3.85017 12.4464}
+	{Bone "part4"}
+	{Matrix34
+		0.8290	0.5593	0.0000
+		-0.5593	0.8290	0.0000
+		0.0000	0.0000	1.0000
+		0.6986	-0.9885	-0.7839
+	}
+}
+{Volume "body"
+	{Box 32.4514 30.4347 4.21685}
+	{Bone "body"}
+	{Position -0.6282	-0.6089	1.9368}
+}
+{Volume "turret"
+	{Box 18.1508 16.3174 24.3401}
+	{Bone "turret"}
+	{Position -0.8309	-0.1659	7.6318}
+}
+{Volume "shield_right"
+	{Box 15.6529 26.8223 1.93086}
+	{Bone "shield_right"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		-1.7241	-1.3042	0.1447
+	}
+}
+{Volume "shield_left"
+	{Box 15.6529 26.8223 1.93086}
+	{Bone "shield_left"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		-1.3218	2.6717	-0.1043
+	}
+}
+{Volume "gun1"
+	{Box 28.3575 1.75 1.75}
+	{Bone "gun1"}
+	{Position 0.7737	-0.0224	-0.2354}
+}

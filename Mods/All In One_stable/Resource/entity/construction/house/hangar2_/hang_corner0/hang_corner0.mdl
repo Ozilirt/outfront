@@ -1,0 +1,38 @@
+;Made by: Albus
+;Date:        Thu Apr 15 20:19:40 2004
+{Skeleton
+	{bone "hang_corner0"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hang_corner0.ply"}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 1.4493 59.8985}
+		{Extent 54.3307 4.73154}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -57.0159 51.6475}
+		{Extent 4.04526 13.8332}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 108.661 9.46307 68.8976}
+	{Bone "hang_corner0"}
+	{Position 1.4493	-59.8985	34.4488}
+}
+{Volume "body1"
+	{Box 8.09052 27.6663 68.1913}
+	{Bone "hang_corner0"}
+	{Position -57.0159	-51.6475	34.0956}
+}

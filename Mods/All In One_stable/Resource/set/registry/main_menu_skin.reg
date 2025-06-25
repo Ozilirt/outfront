@@ -1,0 +1,106 @@
+;SDL
+{main_menu_skin
+	{dialog
+		{frame_size 1}
+		{face_color  "0 0 0"}
+		{text_style "f(main_hq)s(11)c(150 150 150)"}
+		{frame_color "153 153 153"}
+	}
+	{static_text
+		{disabled_text_color "120 120 120"}
+	}
+	{inputline
+		{selection
+			{text_color	"250 250 250"}
+			{ro_text_color "150 150 150"}
+		}
+		{text_style	"f(main_hq)s(11)c(150 150 150)"}
+		{ro_text_color "150 150 150"}
+		{disabled_text_color "120 120 120"}
+		{modal_frame_color "255 255 255"}
+		{cursor_char "_"}
+		{blink_period "0.5"}
+	}
+	{slider
+		{up_button		"/interface/skin/game/slider/up.ebm"}
+		{down_button	"/interface/skin/game/slider/down.ebm"}
+		{left_button	"/interface/skin/game/slider/left.ebm"}
+		{right_button	"/interface/skin/game/slider/right.ebm"}
+		{hbackground	"/interface/skin/game/slider/h_background.ebm"}
+		{vbackground	"/interface/skin/game/slider/v_background.ebm"}
+		{hpoint_button	"/interface/skin/game/slider/h_point.ebm"}
+		{vpoint_button	"/interface/skin/game/slider/v_point.ebm"}
+	}
+	{listbox
+		{face_color "64 64 64"}
+		{separator_color "77 77 77"}
+		{item
+			{normal
+				{text_style "f(main_hq)s(11)c(150 150 150)"}
+				{face_color "64 64 64"}
+			}
+			{selected
+				{text_style "f(main_hq)s(11)c(250 250 250)"}
+				{face_color "140 140 255"}
+			}
+			{focused
+				{text_style "f(main_hq)s(11)c(250 250 250)"}
+				{face_color "255 204 51"}
+			}
+		}
+	}
+	{combobox
+		{button "/interface/skin/game/combobox/down.ebm"}
+		{drop_offset "8"}
+	}
+	{checkbox
+		{normal
+			{text_style "f(main_hq)s(11)c(150 150 150)"}
+			{face_color "64 64 64"}
+		}
+		{focused
+			{text_style "f(main_hq)s(11)c(180 180 180)"}
+			{face_color "84 84 84"}
+		}
+		{pressed
+			{text_style "f(main_hq)s(11)c(160 160 160)"}
+			{face_color "50 50 50"}
+		}
+		{disabled
+			{text_style "f(main_hq)s(11)c(0 0 0)"}
+			{face_color "40 40 40"}
+		}
+		{check "/interface/skin/game/checkbox/checkbox.ebm"}
+	}
+	{dialogbox
+		{text_style "f(main_hq)s(11)c(150 150 150)"}
+	}
+	{button
+		{text_style "f(bookman_hq)s(12)b+c(245 245 245)e(shadow_ex)"}
+		{focused
+			{text_style "f(bookman_hq)s(12)b+c(75 156 75)e(highlight)"}
+			{face_color "102 102 102"}
+		}
+		{pressed
+			{text_style "f(bookman_hq)s(12)b+c(28 247 28)e(highlight)"}
+			{face_color "178 178 178"}
+		}
+		{disabled
+			{text_style "f(bookman_hq)s(12)b+c(10 10 10)e(shadow_ex)"}
+			{face_color "77 77 77"}
+		}
+	}
+	{frame
+		("declare_frame" args control)
+		("declare_frame" args window)
+		("declare_frame" args control_popup)
+		("declare_frame" args window_popup)
+	}
+	{objectives
+		{text_style "s(10)c(250 250 250)"}
+	}
+	{scenario
+		{text_style "s(10)c(200 200 200)"}
+		{text_style_small "f(arial_hq)s(8)c(200 200 200)"}
+	}
+}

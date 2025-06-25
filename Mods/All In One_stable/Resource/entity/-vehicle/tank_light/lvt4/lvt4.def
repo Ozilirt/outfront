@@ -1,0 +1,60 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "average"}
+	
+	{Volume "Turret"
+		{thickness 25
+                        {front 38 0.4}
+                        {rear 25}
+                }
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{Volume "Body"
+		{thickness  25
+                        {front 29 0.2}
+                        {rear 20 0.2}
+			{top	13}
+			{bottom	 13}
+		}
+	}
+	("crew_4_human")
+	{extension "crew.ext"}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mmM3"}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 fg" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "50cal"}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 110}}
+		}
+		{place "mgun2"
+			{DefaultWeapon "browning_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{item "ammo mgun" 400}
+			{item "ammo mgun2" 220}
+			{item "ammo bullet75 fg" 25}
+		}
+	}
+	
+	{mass 18200}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{Extension "lvt4.mdl"}
+}

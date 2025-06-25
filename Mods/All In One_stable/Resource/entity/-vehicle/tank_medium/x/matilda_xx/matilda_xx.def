@@ -1,0 +1,31 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	{Extension "Matilda_xx.mdl"}
+	{obstacleId "tank"}
+	{TexMods
+		{"ambush" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+			{bottom	10}
+			{rear   50}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+			{bottom	10}
+			{rear   50}
+		}
+	}
+	{volume "turret"
+		{thickness 30 0.3
+			{front  50}
+		}
+	}
+}

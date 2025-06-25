@@ -1,0 +1,95 @@
+;Exported by: garry
+;Date:        Fri Apr 30 18:36:23 2004
+;File:        D:\-Projects-\-3DWork-\Model\Пушки\cannon\6-funt cannon_x.max
+{Skeleton
+	{bone revolute "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{animation
+				{sequence "break" {file "body_b.anm"} {speed 0.7}}
+			}
+			{Position -21.3858	-0.0899	6.3716}
+			{VolumeView "body.ply"}
+			{bone "WheelL"
+				{parameters "ID=wheelleft;"}
+				{Matrix34
+					0.9962	-0.0425	0.0761
+					0.0872	0.4856	-0.8698
+					0.0000	0.8732	0.4874
+					25.1171	14.4544	-3.4166
+				}
+				{VolumeView "WheelL.ply"}
+			}
+			{bone "WheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					-0.0000	-0.3377	-0.9413
+					-0.0000	0.9413	-0.3377
+					25.1171	-14.8234	0.0868
+				}
+				{VolumeView "WheelR.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{animation
+					{sequence "break" {file "turret_b.anm"} {speed 0.5}}
+				}
+				{Matrix34
+					-0.0000	1.0000	0.0000
+					-1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					25.1597	0.0376	2.8001
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 25.0000}
+					{speed 0.0100}
+					{Matrix34
+						-0.0000	-1.0000	-0.0000
+						-0.0000	-0.0000	1.0000
+						-1.0000	0.0000	-0.0000
+						2.4297	3.9400	5.1309
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							-0.0000	-0.0000	-1.0000
+							-1.0000	-0.0000	0.0000
+							-0.0000	1.0000	-0.0000
+							-12.7154	2.4146	2.4129
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}
+{Volume "wheelright"
+	{Cylinder 5.342 3.60311}
+	{Bone "WheelR"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	-1.0000	-0.0000
+		-0.0000	0.0000	-1.0000
+		0.0000	0.0000	0.0461
+	}
+}
+{Volume "wheelleft"
+	{Cylinder 5.342 3.60311}
+	{Bone "WheelL"}
+	{Matrix34
+		0.9962	0.0872	-0.0000
+		0.0872	-0.9962	0.0000
+		-0.0000	-0.0000	-1.0000
+		0.0000	0.0000	-0.0280
+	}
+}

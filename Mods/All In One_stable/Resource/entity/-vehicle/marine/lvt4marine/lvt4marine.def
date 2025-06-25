@@ -1,0 +1,85 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(0.9) scaley(0.6))
+	{props "vehicle" "marine" "emit_on_sink"}
+
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "body1"
+		{thickness 25
+                        {front 38 0.4}
+                        {rear 25}
+                }
+	}
+	{Volume "body"
+		{thickness  25
+                        {front 29 0.2}
+                        {rear 20 0.2}
+			{top	13}
+			{bottom	 13}
+		}
+	}
+
+	{component "body" 
+		{able {repair}}
+	}
+	{component "body1"
+		{Able {repair}}
+	}
+
+	{extension "crew.ext"}
+	{rejectColliderByVolume}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mmM3"}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 fg" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "50cal"}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 110}}
+		}
+		{place "mgun2"
+			{DefaultWeapon "browning_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{item "ammo mgun" 400}
+			{item "ammo mgun2" 220}
+			{item "ammo bullet75 fg" 25}
+		}
+	}
+	{mass 18200}
+
+	{patherID "shallow water"}
+	{Sensor
+		{Visor "main"
+			{vision "fishboat"}
+			{bone	 "foresight1"}
+		}
+	}
+	{chassis
+		{waterline 0.9}
+	}
+	{chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed		10} 
+			{TurnRadius		10}
+			{SplineRadius		16}
+			{TurnTime		0.1}
+			{TurnStart		5}
+			{TurnStop		2}
+		}
+	}
+	{Extension "lvt4.mdl"}
+}

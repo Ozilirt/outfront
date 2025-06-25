@@ -1,0 +1,127 @@
+;SDL
+
+{Placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "passenger1"
+		{Group "crew"}	
+		{LinkBone "man1"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "passenger2"
+		{Group "crew"}	
+		{LinkBone "man2"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "passenger3"
+		{Group "crew"}	
+		{LinkBone "man3"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "passenger4"
+		{Group "crew"}	
+		{LinkBone "man4"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "passenger5"
+		{Group "crew"}	
+		{LinkBone "man5"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "passenger6"
+		{Group "crew"}	
+		{LinkBone "man6"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "front"
+		{entity "degtyarev_stan"}
+		{Linkbone "attach_gun1"}
+		{handlebone "no"}
+	}
+	{place "rear"
+		{entity "degtyarev_stan"}
+		{Linkbone "attach_gun2"}
+		{handlebone "no"}
+	}
+}
+
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit4"}
+	{door "emitx"}
+
+	{node "node_l1"}
+	{node "node_l2"}
+	{node "node_l3"}
+	{node "node_l4"}
+	{node "node_l5"}
+
+	{node "node_r1"}
+	{node "node_r2"}
+	{node "node_r3"}
+	{node "node_r4"}
+	{node "node_r5"}
+
+	(define "climb"
+		{anm "climb%0"
+			{forward	{begin	"board_torpedo_boat"} {base "rope%0"}}
+			{reverse 	{end	"emit_torpedo_boat"}}
+		}
+	)
+	("climb" args 1)
+	("climb" args 2)
+	("climb" args 3)
+	("climb" args 4)
+	{anm "seat" {forward {end "seat_passenger"}}}
+
+
+	{link "emit1"	"node_r1"	{anm "climb1"} {forward putoff} {reverse puton}}
+	{link "emit2"	"node_l1"	{anm "climb2"} {forward putoff} {reverse puton}}
+	{link "emit3"	"node_l5"	{anm "climb3"} {forward putoff} {reverse puton}}
+	{link "emit4"	"node_r5"	{anm "climb4"} {forward putoff} {reverse puton}}
+
+	{link "node_r1"	"node_r2"}
+	{link "node_r2"	"node_r3"}
+	{link "node_r3"	"node_r4"}
+	{link "node_r4"	"node_r5"}
+
+	{link "node_l1"	"node_l2"}
+	{link "node_l2"	"node_l3"}
+	{link "node_l3"	"node_l4"}
+	{link "node_l4"	"node_l5"}
+
+	{link "node_r3" "driver" {anm "seat"}}
+	{link "node_l3" "driver" {anm "seat"}}
+	{link "node_r3" "passenger1" {anm "seat"}}
+	{link "node_l3" "passenger1" {anm "seat"}}
+	{link "node_r3" "passenger2" {anm "seat"}}
+	{link "node_l3" "passenger2" {anm "seat"}}
+	{link "node_r3" "passenger3" {anm "seat"}}
+	{link "node_l3" "passenger3" {anm "seat"}}
+	{link "node_r3" "passenger4" {anm "seat"}}
+	{link "node_l3" "passenger4" {anm "seat"}}
+	{link "node_r3" "passenger5" {anm "seat"}}
+	{link "node_l3" "passenger5" {anm "seat"}}
+	{link "node_r3" "passenger6" {anm "seat"}}
+	{link "node_l3" "passenger6" {anm "seat"}}
+
+	{link "node_r2"	"front"}
+	{link "node_l2"	"front"}
+	{link "node_r4"	"rear"}
+	{link "node_l4"	"rear"}
+
+	{link "emitx"	"driver"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger1"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger2"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger3"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger4"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger5"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"passenger6"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"front"		{forward putoff} {reverse puton}}
+	{link "emitx"	"rear"	    {forward putoff} {reverse puton}}
+}

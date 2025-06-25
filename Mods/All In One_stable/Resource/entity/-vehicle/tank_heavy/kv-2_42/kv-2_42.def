@@ -1,0 +1,135 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc" scale(1.3))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "heavy" "turret_rotator" "huge"}
+
+	{Volume "Body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 75
+			{top	30}
+			{bottom	40}
+			{rear   60}
+		}
+	}
+	{Volume "Body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 75
+			{top	30}
+			{bottom	40}
+			{rear   60}
+		}
+	}	
+	{volume "turret"
+		{thickness 75 0.3}
+	}
+	{component "turret"
+		{Able {repair}}
+		{RepairTime 90}
+      }
+	
+	("crew_4_human")
+
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor2"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor2))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor2))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor2))
+	("seat_human" place(seat5) bone(seat05) door(emit7)  animation(armor))
+	("seat_human" place(seat6) bone(seat06) door(emit8)  animation(armor2))
+	("seat_human" place(seat7) bone(seat07) door(emit9)  animation(armor1))
+	("seat_human" place(seat8) bone(seat08) door(emit10) animation(armor1))
+	("seat_human" place(seat9) bone(seat09) door(emit11) animation(armor1))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "152mm_ML20"}
+			{Mounted}
+			{weapon {ammo "ammo bullet152 fg" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "weapon dt"}
+			{Mounted}
+                  {weapon {ammo "ammo mgun" 63}}
+		}
+            {place "mgun2"
+			{DefaultWeapon "dt_2"}
+			{Mounted}
+                  {weapon {ammo "ammo mgun" 63}}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 700}
+		      {item "ammo bullet152 ap" 8}
+			{item "ammo bullet152 fg" 29}
+		}
+	}
+	
+	{mass 52000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{maxspeed 19}
+		}
+		{speed
+			{Slow	5	}	; km/h
+			{Normal	9	}
+			{Fast	14	}
+		}
+	}
+	{extension "KV-2.mdl"}
+
+	(mod "mp"
+		{Chassis
+			{FuelBag
+                   {volume 840 }	; liters
+	             {rate    415 }   	; liters per kilometer
+	             {remain 840 }
+                   {fuel "fuel"}
+                  }
+
+			{Locomotion ("locomotion")
+				{maxspeed 14}
+			}
+			{speed
+				{Slow	6	}
+				{Normal	9	}
+				{Fast	14	}
+			}
+		}
+            {sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+
+	)
+}

@@ -1,0 +1,120 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "average"}
+	{TexMods
+		{"ambush" "1"}
+	}
+	{Volume "Turret"
+		{thickness  18
+			{top	6}
+			{front	18}
+			{rear	9 0.3}
+			{left	15 0.3}
+			{right	15 0.3}
+		}
+	}
+	{Volume "Gun"
+		{thickness 9}
+	}
+	{Volume "Body"
+		{thickness  18
+			{top	8 1.0}
+			{bottom	8 1.0}
+			{front	18}
+			{rear	9 0.6}
+			{left	15 0.6}
+			{right	15 0.6}
+		}
+	}
+
+	("crew_3_human")
+	("seat_human" place(seat1) bone(seat01) door(emit3)   animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit3)   animation(armor))
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_type94"}
+			{Mounted}
+			{weapon {ammo "ammo bullet37 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "type1hmg"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 150}}
+		}
+		{place "mgun2"
+			{foresight "foresight2"}
+			{Rotate}
+			{DefaultWeapon "type97_2"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 20}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{item "ammo mgun" 900}
+			{item "ammo bullet37 ap" 39}
+		}
+	}
+	
+	{mass 7400}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed	40}
+			{StartTime	10}
+			{BrakeTime	2}
+			{StopTime	1}
+			{TurnRadius	5}
+			{TurnTime	5}
+			{TurnStart	2}
+			{TurnStop	0.5}
+			{Gears		0.2 0.3 0.5 0.7 1.0}
+			{RearGears	0.2 0.5}
+		}
+	}
+	{Extension "ha-go.mdl"}
+
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+		{Chassis
+			{speed
+				{Slow	16	}	; km/h
+				{Normal	30	}
+				{Fast	40	}
+			}
+			{FuelBag
+				{volume 250 }	; liters
+				{rate   100 }	; liters per kilometer
+				{remain 250 }
+				{fuel "fuel"}
+			}
+			{Locomotion ("locomotion")
+				{MaxSpeed 40}
+			}
+		}
+	)
+}

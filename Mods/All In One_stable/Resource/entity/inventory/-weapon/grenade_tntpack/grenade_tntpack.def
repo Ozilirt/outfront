@@ -1,0 +1,12 @@
+{actor
+	(include "/properties/stuff_grenade.ext")
+	(include "/properties/shadow/round.inc")
+	{extension "grenade_tntpack.mdl"}
+	{extender "stuff"
+		{item "grenade tntpack"}
+	}
+	{props "grenade"}
+	{volume "body"
+		{able {contact}}
+	}
+}

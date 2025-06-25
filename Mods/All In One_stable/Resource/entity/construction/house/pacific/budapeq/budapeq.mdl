@@ -1,0 +1,50 @@
+;Exported by: dinsen
+;Date:        Thu Sep 16 14:07:43 2010
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\budapeq.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "buda"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	-1.0000	0.0000
+				-1.0971	-0.0000	-0.3019
+			}
+			{VolumeView "buda.ply"}
+		}
+		{bone "body"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-1.0971	-0.0000	-0.3019
+			}
+			{VolumeView "body.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		0.5932	0.2513	-0.2090
+	}
+}
+{Volume "buda"
+	{Polyhedron "buda.vol"}
+	{Bone "buda"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		0.2218	10.5454	-1.1648
+	}
+}

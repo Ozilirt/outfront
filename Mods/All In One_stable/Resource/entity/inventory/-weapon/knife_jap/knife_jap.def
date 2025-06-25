@@ -1,0 +1,12 @@
+{actor
+	(include "/properties/stuff_grenade.ext")
+	{extension "knife_jap.mdl"}
+	(include "/properties/shadow/round.inc")
+	{volume "body"
+		{able {contact}}
+   	}
+   	{props "physics_damping" "knife"}
+	{extender "stuff"
+		{item "knife_jap"}
+	}
+}

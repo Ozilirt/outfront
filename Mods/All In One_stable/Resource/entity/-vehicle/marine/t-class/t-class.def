@@ -1,0 +1,106 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(4.0) scaleY(2.0))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(3.6) scaley(1.6))
+	{Extension "t-class.mdl"}
+	{mass 8500}
+	{props "vehicle" "marine" "light_boat" "flag" "emit_on_sink"}
+
+	{extension "crew.ext"}
+	{rejectColliderByVolume}
+
+	{Volume "ballast1"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "ballast2"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "ballast3"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "ballast4"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{volume "body_front"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 38}
+	}
+	{volume "body"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 38}
+	}
+	{volume "body_rear"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 38}
+	}
+	{Volume "cabin"
+		{tags "cabin"}
+		{thickness hollow 7}
+	}
+	{Volume "tube2"
+		{tags "cabin"}
+		{thickness 7}
+	}
+	{Volume "lamp1"
+		{thickness 4}
+	}
+	{Volume "lamp2"
+		{thickness 4}
+	}
+	{component "body_front" 
+		{able {repair}}
+	} ;to _x view
+	{component "body" 
+		{able {repair}}
+	}
+	{component "body_rear" 
+		{able {repair}}
+	}
+	{component "cabin"
+		{RepairTime 15}
+		{Able {repair}}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "torp_launcher"}
+			{Mounted}
+			{weapon {ammo "ammo torp" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{Box
+			{size 8 6}
+			{item  "ammo torp" 3}
+		}
+	}
+	{extender "light"
+		{lightfx "light_boat"}
+		{breakfx "glass_hit"}
+		{lamp "1"}
+		{lamp "2"}
+	}
+	{patherID "water"}
+	{Sensor
+		{Visor "main"
+			{vision "mtbd3"}
+			{bone	"visor"}
+		}
+	}
+	{chassis
+		{Locomotion ("locomotion")
+			{TurnRadius	16}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+;Exported by: sk
+;Date:        Tue Jul 22 16:55:47 2003
+
+{Skeleton
+	{animation
+		{sequence {name "flattern"} {file "flattern.anm"} {duration percent 100}}
+	}
+	{bone "flag_ger"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "flag_ger.ply"}
+	}
+}
+{Volume "body"
+	{Cylinder 1.48163 196.85}
+	{Bone "flag_ger"}
+		{Position -0.2956	0.2940	98.4252}
+}

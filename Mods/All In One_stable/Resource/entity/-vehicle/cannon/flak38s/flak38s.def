@@ -1,0 +1,64 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "flak" "turret"}
+	(include "/properties/dummy_fsm2.inc")
+	{Volume "Body"
+		{thickness 20}
+	}
+
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{volume "shield_right"	
+		{thickness 15}
+	}
+	{component "shield_right"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 10}
+	}
+	{volume "shield_left"	
+		{thickness 15}
+	}
+	{component "shield_left"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 10}
+	}
+	("crew_2_human")
+
+	{Boarder
+		{place "gunner"}
+		{place "commander"}
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "gunner"}
+		{link "emit2" "commander"}
+	}
+	
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_flak38"}
+			{Barrels 4}
+			{Mounted}
+			{weapon {ammo "bullet20 zenite" 48}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{size 5 6}
+			{item "bullet20 zenite" 1000}
+		}
+	}
+	{mass 10000}
+	{Extension "flak38s.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_cannon"}
+			}
+		}
+	)
+}

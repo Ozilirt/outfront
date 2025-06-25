@@ -1,0 +1,115 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "light" "turret_rotator" "average"}
+
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 24
+			{front  40}
+			{rear	24}
+                        {top 10}
+                        {bottom 9}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 24
+			{front  40}
+			{rear	24}
+                        {top 10}
+                        {bottom 9}
+		}   
+	}
+	{volume "turret"
+		{thickness 40 0.4
+			{front  40}
+                        {rear 29 0.2}
+                        {top 12}
+		}
+	}
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "OQF 2-pdr"}
+			{Mounted}
+			{weapon {ammo "ammo bullet40 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "vickers_mk_i"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}}
+		{box
+			{item "ammo mgun" 600}
+			{item "ammo bullet40 ap" 41}
+		}
+	}
+	
+	{mass 19500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed	25} ;kmph
+			{StartTime	6} ;seconds
+			{BrakeTime	0.6} ;seconds
+			{StopTime	1} ;seconds
+			{TurnRadius	5} ;meter
+			{TurnTime	5} ;seconds
+			{TurnStart	2} ;seconds
+			{TurnStop	0.5} ;seconds
+			{Gears		0.2 0.3 0.5 0.7 1.0}
+			{RearGears	0.2 0.5}
+		}
+	}
+	{Extension "mk2crusader.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+		{Chassis
+			{speed
+				{Slow	11}
+				{Normal	19}
+				{Fast	25}
+			}
+			{FuelBag
+				{volume 500 }	; liters
+				{rate   200 }   ; liters per kilometer
+				{remain 500 }
+				{fuel "fuel"}
+			}
+		}
+	)
+}

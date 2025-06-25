@@ -1,0 +1,151 @@
+;Exported by: garry
+;Date:        Fri Apr 30 13:31:30 2004
+;File:        D:\-Projects-\-3DWork-\Model\Танки\PZ-5\jagdpanther\jagdpanther_x.max
+{Skeleton
+	{bone revolute "Basis"
+		{limits 0.0000 0.0000}
+		{speed 0.0010}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{animation
+				{sequence "break" {file "trackR_b.anm"}}
+			}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-4.5130	-25.3137	10.0383
+			}
+			{VolumeView "WheelsR.ply"}
+			{bone "TrackR"
+				{parameters "CommonMesh;ID=trackright;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	1.0000	-0.0000
+					0.0000	-0.0000	1.0000
+					-4.0492	2.3065	0.7026
+				}
+				{VolumeView "TrackR.ply"}
+			}
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{animation
+				{sequence "break" {file "trackL_b.anm"}}
+			}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-4.5130	25.7247	10.0383
+			}
+			{VolumeView "WheelsL.ply"}
+			{bone "TrackL"
+				{parameters "CommonMesh;ID=trackleft;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0000
+					-0.0000	1.0000	-0.0000
+					-0.0000	0.0000	1.0000
+					-4.0492	2.3065	-0.1684
+				}
+				{VolumeView "TrackL.ply"}
+			}
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{animation
+				{sequence "break" {file "body_b.anm"} {speed 0.8}}
+			}
+			{Matrix34
+				-1.0000	0.0000	-0.0000
+				-0.0000	-1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-8.8667	-0.6053	9.0035
+			}
+			{VolumeView "Body.ply"}
+			{bone "cover"
+				{parameters "CommonMesh;"}
+				{Position -2.2999	8.5525	40.9932}
+				{VolumeView "cover.ply"}
+			}
+			{bone revolute "wheelL1"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0082
+					0.0082	0.0000	-1.0000
+					-0.0000	1.0000	0.0000
+					-53.9247	-29.6089	6.6674
+				}
+				{VolumeView "wheelL1.ply"}
+			}
+			{bone revolute "WheelL2"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0082
+					0.0082	0.0000	-1.0000
+					-0.0000	1.0000	0.0000
+					54.0120	-29.6089	6.1929
+				}
+				{VolumeView "WheelL2.ply"}
+			}
+			{bone revolute "wheelR1"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0082
+					0.0082	-0.0000	-1.0000
+					0.0000	-1.0000	0.0000
+					-53.9247	28.8232	6.6674
+				}
+				{VolumeView "wheelR1.ply"}
+			}
+			{bone revolute "WheelR2"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0082
+					0.0082	-0.0000	-1.0000
+					0.0000	-1.0000	0.0000
+					54.0120	28.8232	6.1929
+				}
+				{VolumeView "WheelR2.ply"}
+			}
+			{bone revolute "gun_rot"
+				{parameters "ID=gun;"}
+				{Matrix34
+					-0.9992	-0.0000	0.0398
+					0.0398	0.0436	0.9983
+					-0.0017	0.9990	-0.0436
+					-32.3908	0.2310	30.4219
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "gun"
+					{parameters "ID=gun;"}
+					{Matrix34
+						0.9972	0.0749	-0.0033
+						0.0000	-0.0436	-0.9990
+						-0.0750	0.9962	-0.0435
+						10.5331	-1.2072	-0.4444
+					}
+					{VolumeView "gun.ply"}
+				}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{animation
+					{sequence "break" {file "engine_b.anm"} {speed 0.8}}
+				}
+				{Matrix34
+					1.0000	-0.0001	0.0043
+					0.0000	1.0000	0.0016
+					-0.0043	-0.0016	1.0000
+					65.9769	-0.0990	19.0125
+				}
+				{VolumeView "engine.ply"}
+			}
+		}
+	}
+}

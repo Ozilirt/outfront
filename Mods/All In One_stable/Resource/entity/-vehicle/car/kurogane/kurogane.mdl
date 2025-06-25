@@ -1,0 +1,271 @@
+;Exported by: Albus
+;Date:        Sat Jun 25 18:17:11 2011
+;File:        C:\Archivos de programa\3dsMax8\scenes\kurogane2.max
+{Skeleton
+	{animation
+		{sequence "start"}
+		{sequence "stop"}
+		{sequence "doorright" {speed 0.3}}
+		{sequence "doorleft" {speed 0.3}}
+	}
+	{bone "basis"
+		{parameters "SteerMax=30;WheelRadius=0.5;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "emit2"
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.0466	27.6021	0.0000
+			}
+		}
+		{bone "emit1"
+			{Matrix34
+				0.0017	1.0000	0.0000
+				-1.0000	0.0017	0.0000
+				0.0000	0.0000	1.0000
+				3.8252	-24.8989	0.0000
+			}
+		}
+		{bone "pivot_front"
+			{Position 21.0436	0.5334	8.4247}
+			{bone revolute "Steer_R1"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					-0.0153	-15.3549	-0.0253
+				}
+				{bone revolute "wheelR1"
+					{parameters "ID=wheelright1;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	1.0000	0.0000
+						-0.1213	0.0512	0.2104
+					}
+					{VolumeView "wheelR1.ply"}
+				}
+				{bone "FXtraceR1"
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-1.0000	0.0000
+						0.0000	0.0000	-1.0000
+						4.4540	-0.2494	8.2294
+					}
+				}
+			}
+			{bone revolute "Steer_L1"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					-0.0153	13.6979	-0.0253
+				}
+				{bone revolute "wheelL1"
+					{parameters "ID=wheelleft1;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	1.0000	0.0000
+						-0.0351	0.1164	0.1531
+					}
+					{VolumeView "wheelL1.ply"}
+				}
+				{bone "FXtraceL1"
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-1.0000	0.0000
+						0.0000	0.0000	-1.0000
+						4.3979	-0.0696	8.2294
+					}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -18.0840	0.5334	8.4247}
+			{bone revolute "wheelL2"
+				{parameters "ID=wheelleft2;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-0.1477	13.6691	0.0137
+				}
+				{VolumeView "wheelL2.ply"}
+			}
+			{bone revolute "wheelR2"
+				{parameters "ID=wheelright2;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-0.0615	-15.4494	-0.0435
+				}
+				{VolumeView "wheelR2.ply"}
+			}
+			{bone "FXtraceR2"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					-4.1348	-15.6043	-8.2547
+				}
+			}
+			{bone "FXtraceL2"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					-4.1348	13.6283	-8.2547
+				}
+			}
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position -0.5880	-0.1035	18.1777}
+			{VolumeView "body.ply"}
+			{bone "doorR"
+				{parameters "ID=body;"}
+				{Position 7.8861	-13.3943	-3.1345}
+				{VolumeView "doorR.ply"}
+			}
+			{bone "doorL"
+				{parameters "ID=body;"}
+				{Position 7.8595	13.2636	-3.1023}
+				{VolumeView "doorL.ply"}
+			}
+			{bone "radio"
+				{Position -16.3483	-7.0883	10.4788}
+				{VolumeView "radio.ply"}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Position 20.8437	0.0523	-1.1082}
+				{VolumeView "engine.ply"}
+				{bone "FXfire1"
+					{Matrix34
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						-1.0000	0.0000	0.0000
+						-0.6679	0.1207	0.4598
+					}
+				}
+				{bone "HeadlightL"
+					{Position 7.4726	8.2419	2.2244}
+				}
+				{bone "HeadlightR"
+					{Position 7.4726	-8.1282	2.2244}
+				}
+				{bone "FXlight"
+					{Position 10.6228	0.1919	2.2244}
+				}
+			}
+			{bone "wheel3"
+				{parameters "ID=body;"}
+				{Position -30.2961	-0.1986	-3.5575}
+				{VolumeView "wheel3.ply"}
+			}
+			{bone "Visor"
+				{Position 14.5905	0.1035	8.4745}
+			}
+			{bone "FXsmoke1"
+				{Matrix34
+					-0.8841	-0.4143	-0.2161
+					0.4243	-0.9055	0.0000
+					-0.1957	-0.0917	0.9764
+					-29.1610	-12.1586	-9.3737
+				}
+			}
+			{bone "FXstop1"
+				{Position -26.9763	13.3007	-0.2951}
+			}
+			{bone "FXstop2"
+				{Position -26.9763	-13.2983	-0.2951}
+			}
+			{bone "driver"
+				{Matrix34
+					0.9725	0.0000	0.2331
+					0.0000	1.0000	0.0000
+					-0.2331	0.0000	0.9725
+					2.2262	-7.5608	-12.6396
+				}
+			}
+			{bone "seat01"
+				{Matrix34
+					0.9119	0.0000	0.4105
+					0.0000	1.0000	0.0000
+					-0.4105	0.0000	0.9119
+					4.1996	7.2049	-12.6871
+				}
+			}
+			{bone "seat02"
+				{Matrix34
+					0.9524	0.0000	0.3048
+					0.0000	1.0000	0.0000
+					-0.3048	0.0000	0.9524
+					-14.1741	0.6955	-10.0170
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position -11.1977	-0.2666	-11.3730}
+}
+{Volume "fuel"
+	{Box 3.87995 18.3827 4.83889}
+	{Bone "body"}
+	{Position -26.1807	-0.1478	-6.3217}
+}
+{Volume "engine"
+	{Polyhedron "engine.vol"}
+	{Bone "engine"}
+	{Position 0.2665	0.0709	-0.1069}
+}
+{Volume "wheelright2"
+	{Cylinder 7.59339 3.50225}
+	{Bone "wheelR2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.1165	0.0812	-0.0302
+	}
+}
+{Volume "wheelleft2"
+	{Cylinder 7.59339 3.50225}
+	{Bone "wheelL2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.0815	0.0240	-0.0980
+	}
+}
+{Volume "wheelleft1"
+	{Cylinder 7.59339 3.50225}
+	{Bone "wheelL1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.1220	0.2162	-0.0369
+	}
+}
+{Volume "wheelright1"
+	{Cylinder 7.59339 3.50225}
+	{Bone "wheelR1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.0641	0.2734	0.0237
+	}
+}

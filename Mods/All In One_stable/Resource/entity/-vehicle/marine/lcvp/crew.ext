@@ -1,0 +1,131 @@
+;SDL
+
+{Placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "gunner"
+		{Group "crew"}	
+		{LinkBone "gunner"}	
+		{turnoff {sensor} {shadow}}
+		{worker charger}
+	}
+	{place "passenger1"
+		{Group "crew"}	
+		{LinkBone "passenger1"}	
+		{turnoff {sensor} {shadow}}
+	}	
+	{place "passenger2"
+		{Group "crew"}	
+		{LinkBone "passenger2"}	
+		{turnoff {sensor} {shadow}}
+	}	
+	{place "passenger3"
+		{Group "crew"}	
+		{LinkBone "passenger3"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "passenger4"
+		{Group "crew"}	
+		{LinkBone "passenger4"}	
+		{turnoff {sensor} {shadow}}
+	}	
+	{place "passenger5"
+		{Group "crew"}	
+		{LinkBone "passenger5"}	
+		{turnoff {sensor} {shadow}}
+	}	
+	{place "passenger6"
+		{Group "crew"}	
+		{LinkBone "passenger6"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "passenger7"
+		{Group "crew"}	
+		{LinkBone "passenger7"}	
+		{turnoff {sensor} {shadow}}
+	}	
+	{place "passenger8"
+		{Group "crew"}	
+		{LinkBone "passenger8"}	
+		{turnoff {sensor} {shadow}}
+	}	
+	{place "passenger9"
+		{Group "crew"}	
+		{LinkBone "passenger9"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "passenger10"
+		{Group "crew"}	
+		{LinkBone "passenger10"}	
+		{turnoff {sensor} {shadow}}
+	}	
+	{place "passenger11"
+		{Group "crew"}	
+		{LinkBone "passenger11"}	
+		{turnoff {sensor} {shadow}}
+	}	
+	{place "passenger12"
+		{Group "crew"}	
+		{LinkBone "passenger12"}	
+		{turnoff {sensor} {shadow}}
+	}
+	{place "passenger13"
+		{Group "crew"}	
+		{LinkBone "passenger13"}	
+		{turnoff {sensor} {shadow}}
+	}	
+	{place "passenger14"
+		{Group "crew"}	
+		{LinkBone "passenger14"}	
+		{turnoff {sensor} {shadow}}
+	}
+}
+
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit4"}
+	{door "emit5"}
+	{door "emit6"}
+	{door "emit7"}
+	{door "emit8"}
+	{door "emit9"}
+	{door "emit10"}
+	{door "emit11"}
+	{door "emit12"}
+	{door "emit13"}
+	{door "emit14"}
+	{door "emit15"}
+	{door "emit16"}
+
+	{anm "seat" {forward {end "squat_from_stand_empty"}}}
+	{anm "driver"
+		{forward	{begin	"board_rubber_boat"} {end "seat_driver_car"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+	{anm "gunner"
+		{forward	{begin	"board_rubber_boat"} {end "seat_gunner_stand"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+
+	{link "emit1"	"driver"		{forward putoff} {reverse puton} {anm "driver"}}
+	{link "emit2"	"gunner"		{forward putoff} {reverse puton} {anm "gunner"}}
+	{link "emit3"	"passenger1"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit4"	"passenger2"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit5"	"passenger3"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit6"	"passenger4"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit7"	"passenger5"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit8"	"passenger6"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit9"	"passenger7"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit10"	"passenger8"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit11"	"passenger9"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit12"	"passenger10"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit13"	"passenger11"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit14"	"passenger12"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit15"	"passenger13"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit16"	"passenger14"		{forward putoff} {reverse puton} {anm "seat"}}
+}

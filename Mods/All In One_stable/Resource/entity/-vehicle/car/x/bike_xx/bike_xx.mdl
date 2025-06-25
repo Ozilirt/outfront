@@ -1,0 +1,138 @@
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-1.0000	0.0000	0.0000
+				-0.6249	-4.9394	10.7505
+			}
+			{VolumeView "body.ply"}
+			{bone revolute "wheel2"
+				{parameters "ID=wheel2;"}
+				{Position 10.5118	-4.2915	3.8406}
+				{VolumeView "wheel2.ply"}
+			}
+			{bone "part2"
+				{VolumeView "part2.ply"}
+			}
+			{bone "part3"
+				{Matrix34
+					0.8353	-0.5498	0.0000
+					0.0000	0.0000	1.0000
+					-0.5498	-0.8353	0.0000
+					-17.8155	0.0000	-0.6092
+				}
+				{VolumeView "part3.ply"}
+			}
+			{bone "part4"
+				{Matrix34
+					0.8353	-0.5498	0.0000
+					0.0000	0.0000	1.0000
+					-0.5498	-0.8353	0.0000
+					-17.8155	0.0000	-0.6092
+				}
+				{VolumeView "part4.ply"}
+			}
+			{bone "part5"
+				{VolumeView "part5.ply"}
+			}
+		}
+		{bone revolute "steer"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.0000	-0.8353	-0.5498
+				-1.0000	0.0000	0.0000
+				0.0000	0.5498	-0.8353
+				5.1930	12.8761	10.7505
+			}
+			{VolumeView "steer.ply"}
+			{bone revolute "wheel1"
+				{parameters "ID=wheel1;"}
+				{Matrix34
+					0.8353	0.0000	-0.5498
+					-0.5498	0.0000	-0.8353
+					0.0000	1.0000	0.0000
+					0.1116	5.3011	4.4799
+				}
+				{VolumeView "wheel1.ply"}
+			}
+		}
+	}
+}
+{Volume "wheel1"
+	{Cylinder 5.6838 2.64797}
+	{Bone "wheel1"}
+	{Position 0.2104	0.1313	-0.0114}
+}
+{Volume "Fuel"
+	{Box 8.68078 5.47182 4.05447}
+	{Bone "body"}
+	{Matrix34
+		-0.9933	0.1153	0.0000
+		0.0000	0.0000	1.0000
+		0.1153	0.9933	0.0000
+		-6.3114	3.8907	5.8556
+	}
+}
+{Volume "part5"
+	{Cylinder 1.09325 24.692}
+	{Bone "part5"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		0.0000	1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		1.2287	-7.5314	2.5626
+	}
+}
+{Volume "part4"
+	{Polyhedron "part4.vol"}
+	{Bone "part4"}
+	{Matrix34
+		-0.8353	0.0000	0.5498
+		0.0000	1.0000	0.0000
+		-0.5498	0.0000	-0.8353
+		2.1694	0.3013	-10.3021
+	}
+}
+{Volume "part3"
+	{Polyhedron "part3.vol"}
+	{Bone "part3"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.7316	0.0000	0.6818
+		-0.6818	0.0000	0.7316
+		-0.8287	0.1432	-9.2197
+	}
+}
+{Volume "part2"
+	{Polyhedron "part2.vol"}
+	{Bone "part2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	0.0000
+		-5.0907	1.4433	-0.5579
+	}
+}
+{Volume "wheel2"
+	{Cylinder 5.56162 2.64797}
+	{Bone "wheel2"}
+	{Position -0.2226	0.1170	-4.3687}
+}
+{Volume "engine"
+	{Box 10.7681 6.61592 7.75314}
+	{Bone "body"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	0.0000
+		-5.1813	-5.2222	-0.5594
+	}
+}

@@ -1,0 +1,55 @@
+;Exported by: Albus
+;Date:        Fri Jul 29 12:54:04 2011
+;File:        C:\Archivos de programa\3dsMax8\scenes\cannon_127_x.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{parameters "ID=turret;"}
+			{limits -90.0000 90.0000}
+			{speed 0.0050}
+			{Matrix34
+				1.0000	0.0000	0.0052
+				0.0000	1.0000	0.0000
+				-0.0052	0.0000	1.0000
+				0.0000	0.0000	0.0000
+			}
+			{VolumeView "turret.ply"}
+			{bone revolute "gun_rot"
+				{parameters "ID=gun;"}
+				{limits -20.0000 20.0000}
+				{Matrix34
+					0.9973	0.0000	-0.0731
+					0.0731	0.0000	0.9973
+					0.0000	-1.0000	0.0000
+					-3.6189	-0.3708	43.8060
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "gun1"
+					{parameters "ID=gun;"}
+					{Matrix34
+						0.9235	0.3837	0.0000
+						0.0000	0.0000	-1.0000
+						-0.3837	0.9235	0.0000
+						36.2667	12.7414	6.4328
+					}
+					{VolumeView "gun1.ply"}
+				}
+				{bone "gun2"
+					{parameters "ID=gun;"}
+					{Matrix34
+						0.9235	0.3837	0.0000
+						0.0000	0.0000	-1.0000
+						-0.3837	0.9235	0.0000
+						36.5124	13.2513	-10.5569
+					}
+					{VolumeView "gun2.ply"}
+				}
+			}
+		}
+	}
+}

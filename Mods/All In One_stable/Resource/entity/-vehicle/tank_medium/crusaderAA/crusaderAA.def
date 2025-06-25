@@ -1,0 +1,110 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "turret_rotator" "flak4_tank" "light_turret" "average"}
+	{TexMods
+		{"ambush" "1"}
+	}
+	
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 27
+			{front  40}
+			{rear	30}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 27
+			{front  40}
+			{rear	30}
+		}   
+	}
+	{volume "turret"
+		{thickness 40 0.3
+			{front  51}
+		}
+	}
+	
+	("crew_3_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+
+	{volume "shield_left"		{thickness 10}}
+	{volume "shield_right"		{thickness 10}}
+	{component "shield_left"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 20}
+	}
+	{component "shield_right"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 20}
+	}
+	{extender "shield"
+		(mod "mp"
+			{on}
+		)
+	}
+  
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_oerlikon"}
+			{Mounted}
+			{Barrels 2}
+			{weapon {ammo "bullet20 zenite" 60}}
+		}
+		{place "mgun"
+			{DefaultWeapon "vickers_mk_i"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 300}
+			{item "bullet20 zenite" 360}
+		}
+	}
+	
+	{mass 30500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    20}
+			{StartTime 		 6}
+			{BrakeTime 		0.6}
+			{StopTime		 1}
+			{TurnRadius     5}
+			{TurnTime		5}
+			{TurnStart		 2}
+			{TurnStop	   0.5}
+			{Gears 0.2 0.3 0.5 0.7 1.0}
+			{RearGears 0.2 0.5}
+		}
+	}
+	{Extension "crusaderaa.mdl"}
+}

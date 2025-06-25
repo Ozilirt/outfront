@@ -1,0 +1,30 @@
+;SDL
+{placer
+	{place "1"
+		{entity "mg_cab"}
+		{Linkbone "1"}
+		{handlebone "no"}
+	}
+	{place "2"
+		{entity "vickers_stan"}
+		{Linkbone "2"}
+		{handlebone "no"}
+	}
+	{place "driver"
+		{linkbone "driver"}
+	}
+}
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+
+	{anm "driver"
+		{forward	{begin	"board_rubber_boat"} {end "seat_gunner_stand"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+
+	{link "emit1"	"2"	{forward putoff} {reverse puton}}
+	{link "emit2"	"2"	{forward putoff} {reverse puton}}
+	{link "emit3"	"driver"	{anm "driver"}	{forward putoff} {reverse puton}}
+}

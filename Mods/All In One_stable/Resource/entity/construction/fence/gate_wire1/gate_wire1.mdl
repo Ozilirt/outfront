@@ -1,0 +1,134 @@
+;Exported by: Dinsen
+;Date:        Wed Mar 21 20:24:45 2012
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\hecho\otros\gate_wire1\gate_wire1.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.4} {resume}}
+	}
+	{bone "gate"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate.ply"}
+		{bone "right"
+			{Position 1.1045	-124.5479	10.6181}
+			{VolumeView "right.ply"}
+			{bone "wire_right"
+				{Position 0.9525	61.6191	43.0887}
+				{VolumeView "wire_right.ply"}
+			}
+			{bone "wire1_right"
+				{Matrix34
+					-0.1504	-0.9802	-0.1289
+					0.9433	-0.3321	0.0000
+					-0.0422	-0.2749	0.9606
+					-1.4693	61.0938	75.7388
+				}
+				{VolumeView "wire1_right.ply"}
+			}
+		}
+		{bone "left"
+			{Position -0.2256	124.9434	11.9909}
+			{VolumeView "left.ply"}
+			{bone "wire_left"
+				{Position 0.1300	-61.8516	41.7160}
+				{VolumeView "wire_left.ply"}
+			}
+			{bone "lock"
+				{Position -1.2333	-124.7313	32.2478}
+				{VolumeView "lock.ply"}
+			}
+			{bone "wire1_left"
+				{Matrix34
+					-0.1504	-0.9802	-0.1289
+					0.9433	-0.3321	0.0000
+					-0.0422	-0.2749	0.9606
+					-0.1392	-61.8868	74.3660
+				}
+				{VolumeView "wire1_left.ply"}
+			}
+		}
+	}
+}
+{Obstacle "left"
+	{Obb2
+		{Center -35.9019 -174.997}
+		{Extent 65.3207 3.15024}
+		{Axis 0.588172 0.808736}
+	}
+	{Rotate}
+}
+{Obstacle "right"
+	{Obb2
+		{Center -39.0514 176.886}
+		{Extent 3.2242 63.2846}
+		{Axis 0.777363 0.629052}
+	}
+	{Rotate}
+}
+{Obstacle "close"
+	{Obb2
+		{Center -0.119164 -0.647476}
+		{Extent 2.8032 131.398}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 1.04516 128.689}
+		{Extent 2.33093 1.79722}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -0.0910589 -128.894}
+		{Extent 2.33093 1.79722}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 3.59443 96.0223 4.66186}
+	{Bone "gate"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		1.0452	-128.6892	47.8280
+	}
+}
+{Volume "body"
+	{Box 3.59443 96.0223 4.66186}
+	{Bone "gate"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-0.0911	128.8942	47.8280
+	}
+}
+{Volume "left"
+	{Box 4.76942 124.432 69.0826}
+	{Bone "left"}
+	{Matrix34
+		0.9998	0.0192	0.0000
+		-0.0192	0.9998	-0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-61.3989	32.8409
+	}
+}
+{Volume "lock"
+	{Box 5.20734 14.0902 17.3085}
+	{Bone "lock"}
+	{Position -0.0000	0.0000	0.1031}
+}
+{Volume "right"
+	{Box 3.70274 124.871 69.5}
+	{Bone "right"}
+	{Position 0.0000	61.4761	34.0198}
+}

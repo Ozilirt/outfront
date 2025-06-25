@@ -1,0 +1,473 @@
+{mission
+	{Camera
+		{Position 4298.13 3987.26}
+		{Distance 200.001}
+		{ViewAngle 0.179186}
+		{YawAngle 0.0560256}
+	}
+	{Environment "bunker"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "searchlight" 0x8000
+		{Position 4238.92 3963.63 0}
+		{Turn -170.295}
+		{Player 0}
+		{MID 1}
+	}
+	{Human "ger.tankman" 0x9800
+		{Position 4315.05 3995.37 0}
+		{Turn -88.7981}
+		{DisableObstacles}
+		{Player 0}
+		{MID 4}
+		{NameId 1 133}
+		{FsmState "board"}
+	}
+	{Human "ger.tank_crew" 0x9000
+		{Position 4223.63 3975.6 0}
+		{Turn -60.2962}
+		{DisableObstacles}
+		{Player 0}
+		{MID 5}
+		{NameId 39 117}
+		{FsmState "board"}
+	}
+	{Entity "mg34_stan" 0x9006
+		{Position 4358.44 3224.65 0}
+		{Turn -177.664}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "mg34_stan" 0x8003
+		{Position 4315.12 3981.12 0}
+		{Turn -88.7981}
+		{Extender "inventory"
+			{box
+				{clear}
+			}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "searchlight" 0x8004
+		{Position 4172.7 1790.08 0}
+		{Turn -66.2592}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "searchlight" 0x8005
+		{Position 4412.2 3139.34 10}
+		{Turn 87.6243}
+		{OffsetZ 10}
+		{Player 0}
+		{MID 13}
+	}
+	{Human "ger.elite_ss" 0x8007
+		{Position 4164.8 1772.34 0}
+		{Turn 43.7396}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 100 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 2 0}}
+				{item "bandage" 3 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 0 1}}
+				{item "sg44" {cell 2 1}}
+				{item "grenade molotov_coctail" {cell 6 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 15}
+		{NameId 100 51}
+		{FsmState "board"}
+	}
+	{Human "ger.tank_crew" 0x8009
+		{Position 4370.44 3022.29 0.568399}
+		{Turn -179.865}
+		{DisableObstacles}
+		{Player 0}
+		{MID 17}
+		{NameId 123 101}
+		{FsmState "board"}
+	}
+	{Human "ger.tank_crew" 0x800a
+		{Position 4372.68 3225.01 0}
+		{Turn -177.664}
+		{DisableObstacles}
+		{Player 0}
+		{MID 18}
+		{NameId 9 53}
+		{FsmState "board"}
+	}
+	{Human "ger.tank_crew" 0x800b
+		{Position 4427.1 3151.79 10}
+		{Turn -162.377}
+		{DisableObstacles}
+		{Player 0}
+		{MID 19}
+		{NameId 126 137}
+		{FsmState "board"}
+	}
+	{Entity "mg34_tower" 0x800c
+		{Position 4356.19 3022.48 0}
+		{Turn -179.865}
+		{Player 0}
+		{MID 20}
+	}
+	{Entity "searchlight" 0x8001
+		{Position 4420.79 3094.8 10}
+		{Turn 87.2166}
+		{OffsetZ 10}
+		{Player 0}
+		{MID 2}
+	}
+	{Human "ger.elite_ss" 0x8002
+		{Position 4435.78 3107.14 10}
+		{Turn -162.785}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 100 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 2 0}}
+				{item "bandage" 3 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 0 1}}
+				{item "sg44" {cell 2 1}}
+				{item "grenade molotov_coctail" {cell 6 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 3}
+		{NameId 100 50}
+		{FsmState "board"}
+	}
+	{Link 0x9800 To 0x8003 "gunner"}
+	{Link 0x9000 To 0x8000 "gunner"}
+	{Link 0x8007 To 0x8004 "gunner"}
+	{Link 0x8009 To 0x800c "gunner"}
+	{Link 0x800a To 0x9006 "gunner"}
+	{Link 0x800b To 0x8005 "gunner"}
+	{Link 0x8002 To 0x8001 "gunner"}
+	{Brain 0x8003
+		{Control 1}
+	}
+	{Helpers
+		{event "fire1" id 1 state 0}
+		{event "fire2" id 0 state 0}
+		{event "watch" id 4 state 0}
+		{event "alarm" id 3 state 0}
+		{event "start_cancel" id 2 state 0}
+		{event "fire3" id 5 state 0}
+		{trigger "alarm_sound"
+			{condition
+				{term 1 "event"
+					{id 3}
+				}
+			}
+			{autoreset}
+			{actions
+				{"message"
+					{sound "world.sirene00"}
+				}
+				{"event"
+					{event 3}
+					{mode toggle}
+					{delay 3}
+				}
+			}
+		}
+		{trigger "gun1"
+			{condition
+				{term 1 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 11}
+					}
+					{"waypoint/uid" 7}
+					{deviate}
+				}
+				{"actor_fire"
+					{selector
+						{"actors/mids" 11}
+					}
+					{"waypoint/uid" 7}
+				}
+				{"actor_fire"
+					{selector
+						{"actors/mids" 11}
+					}
+					{"waypoint/uid" 8}
+				}
+				{"actor_fire"
+					{selector
+						{"actors/mids" 11}
+					}
+					{"waypoint/uid" 8}
+				}
+				{"event"
+					{event 1}
+					{mode toggle}
+					{delay 2}
+				}
+			}
+		}
+		{trigger "gun2"
+			{condition
+				{term 1 "event"
+					{id 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 20}
+					}
+					{"waypoint/uid" 8}
+					{deviate}
+				}
+				{"actor_fire"
+					{selector
+						{"actors/mids" 20}
+					}
+					{"waypoint/uid" 7}
+				}
+				{"actor_fire"
+					{selector
+						{"actors/mids" 20}
+					}
+					{"waypoint/uid" 8}
+				}
+				{"actor_fire"
+					{selector
+						{"actors/mids" 20}
+					}
+					{"waypoint/uid" 7}
+				}
+				{"event"
+					{event 0}
+					{mode toggle}
+					{delay 2}
+				}
+			}
+		}
+		{trigger "gun3"
+			{condition
+				{term 1 "event"
+					{id 5}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_fire"
+					{selector
+						{"actors/mids" 10}
+					}
+					{"waypoint/uid" 9}
+				}
+				{"actor_fire"
+					{selector
+						{"actors/mids" 10}
+					}
+					{"waypoint/uid" 10}
+				}
+				{"actor_fire" off
+					{selector
+						{"actors/mids" 20}
+					}
+					{"waypoint/uid" 8}
+				}
+				{"actor_fire" off
+					{selector
+						{"actors/mids" 20}
+					}
+					{"waypoint/uid" 7}
+				}
+				{"event"
+					{event 5}
+					{mode toggle}
+					{delay 10}
+				}
+			}
+		}
+		{trigger "patrols/light1"
+			{actions
+				{"actor_watch"
+					{selector
+						{"actors/mids" 1}
+					}
+					{"waypoint/uid" 0}
+					{radius 0}
+					{watcher_bone "foresight3"}
+				}
+			}
+		}
+		{trigger "patrols/light2"
+			{actions
+				{"actor_watch"
+					{selector
+						{"actors/mids" 12}
+					}
+					{"waypoint/uid" 3}
+					{radius 0}
+					{watcher_bone "foresight3"}
+				}
+			}
+		}
+		{trigger "patrols/light3"
+			{actions
+				{"actor_watch"
+					{selector
+						{"actors/mids" 13}
+					}
+					{"waypoint/uid" 5}
+					{radius 0}
+					{watcher_bone "foresight3"}
+				}
+			}
+		}
+		{trigger "start"
+			{actions
+				{"event"
+					{event 1}
+					{mode set}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+				}
+				{"camera"
+					{camera "cam"}
+					{action activate}
+				}
+				{"event"
+					{event 4}
+					{mode set}
+				}
+				{"event"
+					{event 3}
+					{mode set}
+				}
+				{"event"
+					{event 5}
+					{mode set}
+				}
+			}
+		}
+		{trigger "watch"
+			{actions
+				{"actor_watch"
+					{selector
+						{"actors/mids" 10}
+					}
+					{"waypoint/uid" 0}
+					{radius 0}
+				}
+				{"actor_watch"
+					{selector
+						{"actors/mids" 4}
+					}
+					{"waypoint/uid" 2}
+					{radius 0}
+				}
+				{"event"
+					{event 4}
+					{mode toggle}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 4248.47 3751.74 1}
+				{transition 1}
+			}
+			{1
+				{position 4368.77 3787.08 0}
+				{transition 2}
+				{commands
+					{"wait"
+						{selector {source "local"}
+							{"actors/mids" 1}
+						}
+						{time 5}
+					}
+				}
+			}
+			{2
+				{position 4315.03 3769.79 1}
+				{transition 0}
+				{commands
+					{"wait"
+						{selector {source "local"}
+							{"actors/mids" 1}
+						}
+						{time 6}
+					}
+				}
+			}
+			{3
+				{position 4312.67 1884.17 0}
+				{transition 4}
+			}
+			{4
+				{position 4327.37 1650.08 0}
+				{transition 3}
+				{commands
+					{"wait"
+						{selector {source "local"}
+							{"actors/mids" 12}
+						}
+						{time 5}
+					}
+				}
+			}
+			{5
+				{position 4240.87 2980.65 0}
+				{transition 6}
+			}
+			{6
+				{position 4251.84 3230.43 0}
+				{transition 5}
+			}
+			{7
+				{position 3996.51 3223.41 0}
+			}
+			{8
+				{position 3986.9 3025.61 0}
+			}
+			{9
+				{position 4216.69 3326.27 0}
+				{transition 10}
+				{commands
+					{"wait"
+						{time 5}
+					}
+				}
+			}
+			{10
+				{position 4278.91 3308.45 0}
+				{transition 9}
+				{commands
+					{"wait"
+						{time 5}
+					}
+				}
+			}
+		}
+		{camerapath "start" {EvCancel 2}
+			{Key 0 4309.15 4183.75 35.6459 4298.13 3987.26 0 0.785398 0 0 1}
+			{Key 110 4303.64 4085.5 17.8228 4298.13 3987.26 0 0.785398 0 0 1}
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

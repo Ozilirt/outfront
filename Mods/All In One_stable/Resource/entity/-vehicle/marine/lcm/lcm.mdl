@@ -1,0 +1,154 @@
+;Exported by: Albus
+;Date:        Sun Dec 28 19:40:12 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\lcm\lcm.max
+{Skeleton
+	{animation
+		{sequence "drift" {speed 0.2}}
+		{sequence "stop1"}
+		{sequence "start1"}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 0.6245	-2.2247	19.0240}
+			{VolumeView "body.ply"}
+			{bone "rampa"
+				{parameters "ID=body;"}
+				{Position 132.5240	2.1334	-17.7789}
+				{VolumeView "rampa.ply"}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Position -121.6498	2.5552	16.6556}
+				{VolumeView "engine.ply"}
+			}
+			{bone revolute "mgun_rot"
+				{parameters "ID=body;"}
+				{limits -100.0000 100.0000}
+				{speed 0.0100}
+				{Position -85.7048	-18.8353	9.6991}
+				{VolumeView "mgun_rot.ply"}
+				{bone "gunner"
+					{Position 0.1211	-0.2362	-9.0135}
+				}
+				{bone "visor2"
+					{Position 20.1384	-0.3457	27.8095}
+				}
+				{bone revolute "mgun"
+					{limits -8.0000 20.0000}
+					{speed 0.0100}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						12.0803	-0.4140	21.4894
+					}
+				}
+			}
+			{bone "driver"
+				{Position -43.2627	24.5948	-6.0240}
+			}
+			{bone "visor1"
+				{Position -13.5988	24.7093	37.5086}
+			}
+			{bone "FX_bulb_norm_front1"
+				{Position 147.8853	2.2247	-19.0240}
+			}
+			{bone "FX_bulb_small_center1"
+				{Matrix34
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-66.1450	56.8865	-19.0240
+				}
+			}
+			{bone "FX_bulb_small_center2"
+				{Matrix34
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					56.0127	56.8865	-19.0240
+				}
+			}
+			{bone "FX_bulb_small_center3"
+				{Matrix34
+					0.0000	-1.0000	0.0000
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-66.1450	-54.3478	-19.0240
+				}
+			}
+			{bone "FX_bulb_small_center4"
+				{Matrix34
+					0.0000	-1.0000	0.0000
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					56.0127	-54.8228	-19.0240
+				}
+			}
+			{bone "FX_bulb_small_back1"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					-151.2543	2.2247	-19.0240
+				}
+			}
+			{bone "FX_bulb_norm_engine1"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					-143.2709	2.2247	-19.0240
+				}
+			}
+			{bone "FX_smoke1"
+				{Matrix34
+					-0.9549	0.0017	0.2970
+					-0.0017	-1.0000	0.0000
+					0.2970	-0.0005	0.9549
+					-150.4072	2.2247	-0.5213
+				}
+			}
+			{bone "attach"
+				{Position 56.8755	0.4747	-19.0240}
+			}
+		}
+		{bone "emit2"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-85.1550	-56.8514	0.0000
+			}
+		}
+		{bone "emit1"
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-49.9650	56.1035	0.0000
+			}
+		}
+	}
+}
+{Volume "ballast"
+	{Box 275 77.5082 25}
+	{Bone "body"}
+	{Position -4.8126	1.3107	-12.4883}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position 1.5370	1.5158	-0.5809}
+}
+{Volume "engine"
+	{Box 32.3198 57.942 27.4055}
+	{Bone "engine"}
+	{Position 0.1019	-0.1671	-12.9438}
+}

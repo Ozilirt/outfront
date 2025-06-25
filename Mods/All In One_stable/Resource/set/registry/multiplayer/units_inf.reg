@@ -1,0 +1,311 @@
+(define "tankman"
+	{tags	"%side reg man light common crew oi"}
+	{cost	50}
+	{CP		1}
+	{order  10}
+)
+{"x.a.tankman"	"breed"	("tankman" side(usa))}
+{"x.e.tankman"	"breed"	("tankman" side(gbr))}
+{"x.r.tankman"	"breed"     ("tankman" side(rus))}
+{"x.g.tankman"	"breed"	("tankman" side(ger))}
+{"x.j.tankman"	"breed"     ("tankman" side(rus))}
+(define "mecanik"
+	{tags	"%side reg man light common crew oi"}
+	{cost	100}
+	{CP		1}
+	{order  15}
+)
+{"x.a.mecanik"	"breed"	("mecanik" side(usa))}
+{"x.e.mecanik"	"breed"	("mecanik" side(gbr))}
+{"x.r.mecanik"	"breed"     ("mecanik" side(rus))}
+{"x.g.mecanik"	"breed"	("mecanik" side(ger))}
+{"x.j.mecanik"	"breed"     ("mecanik" side(rus))}
+(define "prof_rifle"
+	{tags	"%side reg man light common oi"}
+	{cost	120}
+	{CP		1}
+	{order  20}
+)
+{"x.r.prof_rifle"	"breed" ("prof_rifle" side(rus))}
+{"x.a.prof_rifle"	"breed" ("prof_rifle" side(usa))}
+{"x.e.prof_rifle"	"breed" ("prof_rifle" side(gbr))}
+{"x.g.prof_rifle"	"breed" ("prof_rifle" side(ger))}
+{"x.j.prof_rifle"	"breed" ("prof_rifle" side(rus))}
+(define "smg"
+	{tags	"%side reg man light common oi"}
+	{cost	150}
+	{CP		1}
+	{order  30}
+)
+{"x.r.smg"	"breed" ("smg" side(rus))}
+{"x.a.smg"	"breed" ("smg" side(usa))}
+{"x.e.smg"	"breed" ("smg" side(gbr))}
+{"x.g.smg"	"breed" ("smg" side(ger))}
+{"x.j.smg"	"breed" ("smg" side(rus))}
+(define "mgun"
+	{tags	"%side reg man light common oi"}
+	{cost	320}
+	{CP		3}
+	{order  35}
+)
+{"x.r.mgun"	"breed" ("mgun" side(rus))}
+{"x.a.mgun"	"breed" ("mgun" side(usa))}
+{"x.e.mgun"	"breed" ("mgun" side(gbr))}
+{"x.g.mgun"	"breed" ("mgun" side(ger))}
+{"x.j.mgun"	"breed" ("mgun" side(rus))}
+(define "prof_smg"
+	{tags	"%side reg man light common oi"}
+	{cost	250}
+	{CP		2}
+	{order  40}
+)
+{"x.r.prof_smg"	"breed" ("prof_smg" side(rus))}
+{"x.a.prof_smg"	"breed" ("prof_smg" side(usa))}
+{"x.e.prof_smg"	"breed" ("prof_smg" side(gbr))}
+{"x.j.prof_smg"	"breed" ("prof_smg" side(rus))}
+(define "mp41_42"
+	{tags	"%side light common"}
+	{cost	280}
+	{CP		2}
+	{order  41}
+)
+{"x.g.mp41_42"	"breed" ("mp41_42" side(ger))}
+(define "smg44"
+	{tags	"%side man reg common oi"}
+	{cost	320}
+	{CP		2}
+	{order  42}
+)
+{"x.g.smg44"	"breed"	("smg44" side(ger))}
+(define "Automatic_rifle"
+	{tags	"%side reg man common oi"}
+	{cost	280}
+	{CP		2}
+	{order  45}
+)
+{"x.r.Automatic_rifle"	"breed" ("Automatic_rifle" side(rus))}
+{"x.a.Automatic_rifle"	"breed" ("Automatic_rifle" side(usa))}
+{"x.e.Automatic_rifle"	"breed" ("Automatic_rifle" side(gbr))}
+{"x.g.Automatic_rifle"	"breed" ("Automatic_rifle" side(ger))}
+{"x.j.Automatic_rifle"	"breed" ("Automatic_rifle" side(rus))}
+(define "Automatic_rifle_42"
+	{tags	"%side light common"}
+	{cost	300}
+	{CP		2}
+	{order  46}
+)
+{"x.g.Automatic_rifle_42"	"breed" ("Automatic_rifle_42" side(ger))}
+{"x.r.Automatic_rifle_42"	"breed" ("Automatic_rifle_42" side(rus))}
+{"x.a.Automatic_rifle_42"	"breed" ("Automatic_rifle_42" side(usa))}
+{"x.e.Automatic_rifle_42"	"breed" ("Automatic_rifle_42" side(gbr))}
+(define "prof_mgun"
+	{tags	"%side man reg common oi"}
+	{cost	400}
+	{CP		5}
+	{order  50}
+)
+{"x.r.prof_mgun"	"breed" ("prof_mgun" side(rus))}
+{"x.a.prof_mgun"	"breed" ("prof_mgun" side(usa))}
+{"x.e.prof_mgun"	"breed" ("prof_mgun" side(gbr))}
+{"x.j.prof_mgun"	"breed" ("prof_mgun" side(rus))}
+(define "prof_mg42"
+	{tags	"%side reg man light common oi"}
+	{cost	400}
+	{CP		5}
+	{order  51}
+)
+{"x.g.prof_mg42"	"breed" ("prof_mg42" side(ger))}
+(define "prof_mgun_42"
+	{tags	"%side man light common"}
+	{cost	420}
+	{CP		5}
+	{order  52}
+)
+{"x.r.prof_mgun_42"	"breed" ("prof_mgun_42" side(rus))}
+(define "sailor"
+	{tags	"%side reg man light common oi"}
+	{cost	600}
+	{CP		6}
+	{order  53}
+)
+{"x.r.sailor"	"breed" ("sailor" side(rus))}
+(define "sturmovik"
+	{tags	"%side man reg common oi"}
+	{cost	400}
+	{CP		4}
+	{order  80}
+)
+{"x.r.sturmovik"	"breed" ("sturmovik" side(rus))}
+{"x.j.sturmovik"	"breed" ("sturmovik" side(rus))}
+(define "sturmovik_42"
+	{tags	"%side man light common"}
+	{cost	450}
+	{CP		4}
+	{order  81}
+)
+{"x.r.sturmovik_42"	"breed" ("sturmovik_42" side(rus))}
+(define "ranger"
+	{tags	"%side reg man light common oi"}
+	{cost	400}
+	{CP		4}
+	{order  82}
+)
+{"x.a.ranger"	"breed" ("ranger" side(usa))}
+(define "Panzerknacker"
+	{tags	"%side man reg common oi"}
+	{cost	400}
+	{CP		4}
+	{order  83}
+)
+{"x.g.Panzerknacker"	"breed" ("Panzerknacker" side(ger))}
+(define "red_beret"
+	{tags	"%side reg man light common oi"}
+	{cost	400}
+	{CP		4}
+	{order  84}
+)
+{"x.e.red_beret"	"breed" ("red_beret" side(gbr))}
+(define "grenadier"
+	{tags	"%side reg man light common oi"}
+	{cost	300}
+	{CP		4}
+	{order  85}
+)
+{"x.r.grenadier"	"breed" ("grenadier" side(rus))}
+{"x.a.grenadier"	"breed" ("grenadier" side(usa))}
+{"x.e.grenadier"	"breed" ("grenadier" side(gbr))}
+{"x.g.grenadier"	"breed" ("grenadier" side(ger))}
+{"x.j.grenadier"	"breed" ("grenadier" side(rus))}
+(define "heavy_grenadier"
+	{tags	"%side reg man light common oi"}
+	{cost	400}
+	{CP		4}
+	{order  90}
+)
+{"x.a.heavy_grenadier"	"breed" ("heavy_grenadier" side(usa))}
+(define "Panzershreck"
+	{tags	"%side reg man common oi"}
+	{cost	400}
+	{CP		4}
+	{order  91}
+)
+{"x.g.Panzershreck"	"breed" ("Panzershreck" side(ger))}
+(define "PIAT"
+	{tags	"%side reg man light common oi"}
+	{cost	400}
+	{CP		4}
+	{order  92}
+)
+{"x.e.PIAT"	"breed" ("PIAT" side(gbr))}
+(define "heavy_grenadier2"
+	{tags	"%side reg man common oi"}
+	{cost	450}
+	{CP		6}
+	{order  95}
+)
+{"x.r.heavy_grenadier2"	"breed" ("heavy_grenadier2" side(rus))}
+{"x.j.heavy_grenadier2"	"breed" ("heavy_grenadier2" side(rus))}
+(define "comando_grenader"
+	{tags	"%side reg man light common"}
+	{cost	600}
+	{CP		6}
+	{order  99}
+)
+{"x.e.comando_grenader"	"breed" ("comando_grenader" side(gbr))}
+(define "scout"
+	{tags	"%side reg man common oi"}
+	{cost	600}
+	{CP		6}
+	{order  100}
+)
+{"x.a.scout"	"breed" ("scout" side(usa))}
+{"x.e.scout"	"breed" ("scout" side(gbr))}
+{"x.g.scout"	"breed" ("scout" side(ger))}
+{"x.j.scout"	"breed" ("scout" side(rus))}
+(define "scout_42"
+	{tags	"%side light man common"}
+	{cost	600}
+	{CP		6}
+	{order  101}
+)
+{"x.a.scout_42"	"breed" ("scout_42" side(usa))}
+{"x.e.scout_42"	"breed" ("scout_42" side(gbr))}
+{"x.g.scout_42"	"breed" ("scout_42" side(ger))}
+
+(define "oficer"
+	{tags	"%side reg man light common oi"}
+	{cost	1500}
+	{CP		10}
+	{order  115}
+)
+{"x.r.oficer"	"breed" ("oficer" side(rus))}
+{"x.a.oficer"	"breed" ("oficer" side(usa))}
+{"x.e.oficer"	"breed" ("oficer" side(gbr))}
+{"x.g.oficer"	"breed" ("oficer" side(ger))}
+{"x.j.oficer"	"breed" ("oficer" side(rus))}
+(define "sniper"
+	{tags	"%side reg man light common oi"}
+	{cost	1000}
+	{CP		8}
+	{order  120}
+)
+{"x.r.sniper"	"breed" ("sniper" side(rus))}
+{"x.a.sniper"	"breed" ("sniper" side(usa))}
+{"x.e.sniper"	"breed" ("sniper" side(gbr))}
+{"x.g.sniper"	"breed" ("sniper" side(ger))}
+{"x.j.sniper"	"breed" ("sniper" side(rus))}
+(define "saper"
+	{tags	"%side reg man light common oi"}
+	{cost	280}
+	{CP		3}
+	{order  130}
+)
+{"x.r.saper"	"breed" ("saper" side(rus))}
+{"x.a.saper"	"breed" ("saper" side(usa))}
+{"x.e.saper"	"breed" ("saper" side(gbr))}
+{"x.g.saper"	"breed" ("saper" side(ger))}
+{"x.j.saper"	"breed" ("saper" side(rus))}
+(define "antipersonel_miner"
+	{tags	"%side reg man light common oi"}
+	{cost	250}
+	{CP		2}
+	{order  140}
+)
+{"x.r.antipersonel_miner"	"breed" ("antipersonel_miner" side(rus))}
+{"x.a.antipersonel_miner"	"breed" ("antipersonel_miner" side(usa))}
+{"x.e.antipersonel_miner"	"breed" ("antipersonel_miner" side(gbr))}
+{"x.g.antipersonel_miner"	"breed" ("antipersonel_miner" side(ger))}
+{"x.j.antipersonel_miner"	"breed" ("antipersonel_miner" side(rus))}
+(define "antitank_miner"
+	{tags	"%side reg light common"}
+	{cost	250}
+	{CP		2}
+	{order  150}
+)
+{"x.r.antitank_miner"	"breed" ("antitank_miner" side(rus))}
+{"x.a.antitank_miner"	"breed" ("antitank_miner" side(usa))}
+{"x.e.antitank_miner"	"breed" ("antitank_miner" side(gbr))}
+{"x.g.antitank_miner"	"breed" ("antitank_miner" side(ger))}
+{"x.j.antitank_miner"	"breed" ("antitank_miner" side(rus))}
+(define "Flammenwerfer"
+	{tags	"%side reg man light common oi"}
+	{cost	500}
+	{CP		5}
+	{order  160}
+)
+{"x.r.Flammenwerfer"	"breed" ("Flammenwerfer" side(rus))}
+{"x.a.Flammenwerfer"	"breed" ("Flammenwerfer" side(usa))}
+{"x.e.Flammenwerfer"	"breed" ("Flammenwerfer" side(gbr))}
+{"x.g.Flammenwerfer"	"breed" ("Flammenwerfer" side(ger))}
+{"x.j.Flammenwerfer"	"breed" ("Flammenwerfer" side(rus))}
+(define "mortarman"
+	{tags	"%side reg man light common oi"}
+	{cost	800}
+	{CP		5}
+	{order  180}
+)
+{"x.r.mortarman"	"breed" ("mortarman" side(rus))}
+{"x.a.mortarman"	"breed" ("mortarman" side(usa))}
+{"x.e.mortarman"	"breed" ("mortarman" side(gbr))}
+{"x.g.mortarman"	"breed" ("mortarman" side(ger))}
+{"x.j.mortarman"	"breed" ("mortarman" side(rus))}

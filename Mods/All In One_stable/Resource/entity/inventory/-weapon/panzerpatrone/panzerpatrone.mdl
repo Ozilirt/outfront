@@ -1,0 +1,50 @@
+;Exported by: garry
+;Date:        Fri Jan 30 18:07:11 2004
+;File:        \\TERM\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\ATguns.max
+{Skeleton
+	{bone "panzerpatrone"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "panzerpatrone1.ply"}
+		{bone "Foresight3"
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-1.0000	0.0000
+				-0.0000	-0.0000	-1.0000
+				11.4186	0.4007	0.6048
+			}
+		}
+		{bone "faustrocket"
+			{Matrix34
+				-0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				14.2423	0.0000	0.6550
+			}
+			{VolumeView "faustrocket.ply"}
+		}
+	}
+}
+{Volume "select"
+	{Box 31.8745 6.81599 3.93158}
+	{Bone "panzerpatrone"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		3.3187	0.0000	0.6201
+	}
+}
+{Volume "body"
+	{Box 23.3853 2.16132 1.65481}
+	{Bone "panzerpatrone"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		1.7423	0.0079	0.7111
+	}
+}

@@ -1,0 +1,107 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "t48.mdl"}
+	{extension "crew.ext"}
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew" "self_propelled" "with_gun"}
+
+	{TexMods
+		{"ambush" "1"}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "minomet_81mm"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo 81mm_mine" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{Box
+			{item "ammo 81mm_mine" 30}
+			{item "plant" 5}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "engine"
+		{thickness 15}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+	
+	{Chassis
+		{speed
+				{Slow	15	}
+				{Normal	20	}
+				{Fast	27	}
+			}
+{FuelBag
+          {volume 180 }	; liters
+	    {rate    60 }   	; liters per kilometer
+	    {remain 180 }
+          {fuel "fuel"}
+        }
+
+		{Locomotion ("locomotion")
+			{Maxspeed 27}
+			{StartTime	3}		; время разгона до макс. скорости с 0, seconds
+		}
+	}
+	{Chassis
+	; left track must be first
+   		{Track "left"
+			{Tracer
+				{View "tracks"}
+				{Bone "FXtraceL1"}
+				{Step 0.7}			; in meters
+   		 	}
+			{TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 0.6}		; meters per animation
+   		 	}
+   		}
+   		{Track "right"
+			{Tracer 
+			   	{View "tracks"}
+   		 		{Bone "FXtraceR1"}
+   		 		{Step 0.7}			; in meters
+			}
+			{TextureScroller
+		    	{Bone "TrackR"}	
+		 		{Length 0.6}		; meters per animation
+	 		}
+ 		}
+	}
+	{mass 7000}
+	{Sensor
+		{Visor "crew"
+		      {vision "Visor_cannon"}
+                      {bone "visor1"}
+		}
+		{Visor "driver"
+		      {vision "Visor_BTR"}
+		      {bone "visor2"}
+		}
+	}
+
+}

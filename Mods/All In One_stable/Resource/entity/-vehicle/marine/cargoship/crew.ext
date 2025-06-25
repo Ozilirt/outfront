@@ -1,0 +1,46 @@
+;SDL
+{placer
+	{place "vehicle1"
+		{entity "m4a2"}
+		{Linkbone "vehicle1"}
+		{handlebone "no"}
+	}
+	{place "vehicle2"
+		{entity "m4a2"}
+		{Linkbone "vehicle2"}
+		{handlebone "no"}
+	}
+	{place "vehicle3"
+		{entity "m4a2"}
+		{Linkbone "vehicle3"}
+		{handlebone "no"}
+	}
+	{place "vehicle4"
+		{entity "m4a2"}
+		{Linkbone "vehicle4"}
+		{handlebone "no"}
+	}
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+}
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit4"}
+	{door "emit5"}
+	{door "emit6"}
+
+	{anm "seat" {forward {end "seat_passenger"}}}
+
+	{link "emit1"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emit2"	"driver"		{forward putoff} {reverse puton} {anm "seat"}}
+
+	{link "emit3"	"vehicle2"		{forward putoff} {reverse puton}}
+	{link "emit4"	"vehicle4"		{forward putoff} {reverse puton}}
+	{link "emit5"	"vehicle1"		{forward putoff} {reverse puton}}
+	{link "emit6"	"vehicle3"		{forward putoff} {reverse puton}}
+}

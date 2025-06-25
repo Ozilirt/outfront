@@ -1,0 +1,60 @@
+;Exported by: Albus
+;Date:        Thu Jul 14 16:06:25 2011
+;File:        C:\Documents and Settings\Albus\Mis documentos\Downloads\SKYPE\jap_typeB2.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{Position 0.0000	-0.0000	0.6130}
+			{VolumeView "body.ply"}
+			{bone "barandilla"
+				{Position 28.8587	1.2125	41.2722}
+				{VolumeView "barandilla.ply"}
+			}
+			{bone "cannon"
+				{Matrix34
+					0.0872	0.9962	0.0000
+					-0.9962	0.0872	0.0000
+					0.0000	0.0000	1.0000
+					-184.6312	-2.3027	33.2857
+				}
+				{VolumeView "cannon.ply"}
+			}
+			{bone "number1"
+				{Position 0.0000	-0.0288	0.0000}
+				{VolumeView "number1.ply"}
+			}
+			{bone "number2"
+				{Position 0.0000	2.1268	0.0000}
+				{VolumeView "number2.ply"}
+			}
+			{bone "flag1"
+				{Position 45.8478	17.5508	67.9681}
+				{VolumeView "flag1.ply"}
+			}
+			{bone "flag2"
+				{Position 47.1214	-20.7960	67.2265}
+				{VolumeView "flag2.ply"}
+			}
+		}
+	}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		60.4191	34.4169	61.8583
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position 13.4215	3.6815	-5.8178}
+}

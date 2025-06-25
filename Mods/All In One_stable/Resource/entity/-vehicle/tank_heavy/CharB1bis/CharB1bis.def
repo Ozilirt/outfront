@@ -1,0 +1,128 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "turret_rotator" "huge"}
+	{TexMods
+		{"ambush" "1"}
+		{"ambush1" "2"}
+		{"ambush3" "3"}
+	}
+	
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+			{front  60 0.2}
+                        {rear 55 0.43}
+                             {top 14}
+                             {bottom 20}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+			{front  60 0.45}
+                        {rear 55}
+                             {top 14}
+                             {bottom 20}
+		}
+	}
+	{volume "turret"
+		{thickness 46 0.23
+			{front  56}
+			{top	30}
+		}  
+	}
+
+	("crew_4_human")
+	("seat_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+
+	{boarder
+		{anm "armor"
+			{forward	{begin	""}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+	{Weaponry
+		
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "47mm_sa35"}
+			{Mounted}
+			{weapon {ammo "ammo bullet47 ap" 1}}
+            	}
+	     	{place "mgun"
+			{DefaultWeapon "reibel"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 150}}
+		}
+		{place "gun2"
+			{Rotate}
+			{DefaultWeapon "75mm_sa35"}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 fg2" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun2" {fixed}}
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}{mask "weapon mgun"}}
+		{box
+			{item "ammo mgun" 600}
+			{item "ammo bullet47 ap" 42}
+			{item "ammo bullet47 fg" 78}
+			{item "ammo bullet75 fg2" 30}
+		}
+	}
+        {Chassis
+           	{speed
+		  	{Slow	5}
+		  	{Normal	8}
+		  	{Fast	13}
+	     	}
+        	{FuelBag
+          		{volume 336 }	; liters
+	    		{rate   426 }   	; liters per kilometer
+	    		{remain 336 }
+          		{fuel "fuel"}
+        	}
+
+        }
+        (mod "mp"
+          {sensor
+		  {Visor "main"
+		 	  {vision "Visor_Tank"}
+		  }
+	  }
+        )
+	{mass 28000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    13} ; максимальная скорость, kmph
+			{StartTime 		 7} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		1} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		10} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{Extension "CharB1bis.mdl"}
+}

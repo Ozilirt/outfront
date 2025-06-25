@@ -1,0 +1,16 @@
+{game_entity
+	(include "/properties/railway_part.inc")
+	{Extension "point2.mdl"}
+	{props "steel" "railway_switch"}
+	{obstacleID "stuff"}
+	{volume	"body"
+		{thickness  5}
+	}
+	{volume "body1"
+		{able clear {touch}}
+	}
+	{DecalView
+		{ownershadow  32 32}
+		{name "shadow"}
+	}
+}

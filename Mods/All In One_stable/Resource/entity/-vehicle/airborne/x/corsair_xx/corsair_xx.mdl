@@ -1,0 +1,114 @@
+;Exported by: Alberto
+;Date:        Fri Nov 26 19:35:29 2010
+;File:        C:\Documents and Settings\Alberto\Escritorio\corsair\ani1.max
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=45;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_back"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-22.3629	0.0198	25.7425
+			}
+		}
+		{bone "pivot_front"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				31.2434	2.8595	10.7825
+			}
+			{bone "wingR1"
+				{parameters "ID=wingright;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					12.5959	22.5766	-64.9672
+				}
+				{VolumeView "wingR1.ply"}
+				{bone "retract_wheelR"
+					{Position -7.8494	45.5736	-20.1211}
+					{bone "support1"
+						{Position 27.9847	-19.5531	-12.9309}
+					}
+				}
+			}
+			{bone "wingL1"
+				{parameters "ID=wingleft;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					12.6980	23.0256	59.2936
+				}
+				{VolumeView "wingL1.ply"}
+				{bone "retract_wheelL"
+					{Position -7.9514	-40.2809	-20.5701}
+					{bone "support2"
+						{Position 27.9847	14.7525	-12.9309}
+					}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 0.0664	-0.0014	51.2737}
+			{VolumeView "body.ply"}
+			{bone "ruedas_out"
+				{parameters "ID=body;"}
+				{Position 0.0831	0.0710	-20.7296}
+				{VolumeView "ruedas_out.ply"}
+			}
+			{bone "ruedas_in"
+				{parameters "ID=body;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0098	-1.0000
+					0.0000	1.0000	-0.0098
+					43.0544	-24.3521	-23.5362
+				}
+				{VolumeView "ruedas_in.ply"}
+			}
+			{bone "body_back"
+				{parameters "ID=body_back;"}
+				{Position -50.7403	0.6533	17.1888}
+				{VolumeView "body_back.ply"}
+				{bone "elevator"
+					{parameters "ID=body_back;"}
+					{Position -12.8433	-0.6052	-16.0702}
+					{VolumeView "elevator.ply"}
+				}
+				{bone "support3"
+					{Position -0.4999	-0.4570	-42.5801}
+				}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Position 86.5068	-0.0399	-8.1699}
+				{VolumeView "engine.ply"}
+				{bone "propeller"
+					{parameters "CommonMesh;ID=propeller;"}
+					{Matrix34
+						0.0073	-1.0000	0.0000
+						-0.0083	-0.0001	1.0000
+						-0.9999	-0.0073	-0.0083
+						14.3034	-0.4963	0.5863
+					}
+					{VolumeView "propeller.ply"}
+				}
+			}
+			{bone "cabine"
+				{parameters "CommonMesh;ID=cabine;"}
+				{Position 21.4984	-0.0524	9.4173}
+				{VolumeView "cabine.ply"}
+			}
+		}
+	}
+}

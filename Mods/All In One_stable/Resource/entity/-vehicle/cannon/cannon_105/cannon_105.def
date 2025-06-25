@@ -1,0 +1,38 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret_rotator"}
+	{props "emit_on_attack"}
+	(include "/properties/dummy_fsm2.inc")
+	{TexMods
+		{"ambush1" "green"}
+	}
+	{simulation {able 0}}
+
+	("crew_2_human")
+	
+
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "105mm"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet105 fg" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet105 fg" 30}
+		}
+	}
+	{mass 10000}
+	{Extension "cannon_105.mdl"}
+}

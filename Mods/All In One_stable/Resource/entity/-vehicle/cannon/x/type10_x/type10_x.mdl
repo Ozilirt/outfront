@@ -1,0 +1,49 @@
+;Exported by: Albus
+;Date:        Sat Nov 03 00:51:52 2012
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\type10_x.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position -0.9761	0.1188	2.6478}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -30.0000 30.0000}
+				{speed 0.0050}
+				{Position 0.6995	0.2325	4.5616}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 10.0000}
+					{speed 0.0010}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-3.4768	0.4633	24.3725
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							35.2297	1.3014	0.9353
+						}
+						{VolumeView "gun.ply"}
+						{bone "foresight1"
+							{Position 80.6559	0.1333	-0.6306}
+						}
+					}
+				}
+			}
+		}
+	}
+}

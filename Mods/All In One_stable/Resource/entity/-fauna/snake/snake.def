@@ -1,0 +1,19 @@
+{entity
+	(include "/properties/animal.ext")
+	(include "/properties/shadow/animal.inc")
+	{mass 3.5}
+	{simulation {able 1}}
+	{props "physics_damping" "snk"}
+	{colliderID "mine_ap"}
+	{Chassis "foot"
+		{Walk
+			{Slow	1	50}
+			{Normal	5	100}
+			{Fast	20	200}
+		}
+	}
+
+	("declare_health" args 30)
+
+	{Extension "snake.mdl"}
+}

@@ -1,0 +1,171 @@
+;Exported by: Albus
+;Date:        Tue Jul 29 13:29:11 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\45mm m42\m42.max
+{Skeleton
+	{animation
+		{sequence "recoil"}
+	}
+	{bone revolute "basis"
+		{limits -0.0000 0.0000}
+		{speed 0.020}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 0.0000	0.0000	9.4190}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -8.0000 8.0000}
+				{speed 0.0100}
+				{Position 0.6948	0.0425	2.1323}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 15.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-0.8015	-0.0123	2.1167
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							15.4380	2.2077	1.0589
+						}
+						{VolumeView "gun.ply"}
+						{bone "foresight1"
+							{Position 40.3069	1.1117	0.7419}
+						}
+					}
+				}
+				{bone "Visor"
+					{Position 1.4957	4.9625	10.3602}
+				}
+				{bone "gunner"
+					{Position -15.3236	7.0120	-11.5514}
+				}
+				{bone "commander"
+					{Position -15.3236	-7.3940	-11.5514}
+				}
+			}
+			{bone revolute "wheelL"
+				{parameters "ID=wheelleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					0.1188	15.7931	0.2254
+				}
+				{VolumeView "wheelL.ply"}
+				{bone revolute "whlL"
+					{parameters "ID=wheelleft;"}
+					{Position -0.0002	0.0001	-0.0001}
+					{VolumeView "whlL.ply"}
+				}
+			}
+			{bone revolute "wheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					0.1620	-15.7114	0.2025
+				}
+				{VolumeView "wheelR.ply"}
+				{bone revolute "whlR"
+					{parameters "ID=wheelright;"}
+					{Position 0.0000	-0.0001	-0.0001}
+					{VolumeView "whlR.ply"}
+				}
+			}
+			{bone "emit1"
+				{Position -36.0546	7.0701	-9.4191}
+			}
+			{bone "emit2"
+				{Position -36.0546	-7.2280	-9.4191}
+			}
+		}
+	}
+}
+{Obstacle "obstacle2"
+	{Obb2
+		{Center 0.1600 -0.2427}
+		{Extent 9.2954 17.4567}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 54.2478 2.66661 2.71221}
+	{Bone "body"}
+	{Matrix34
+		0.8981	0.4167	0.1406
+		-0.4281	0.9016	0.0621
+		-0.1009	-0.1160	0.9881
+		-25.2502	-20.0172	-3.6141
+	}
+}
+{Volume "body1"
+	{Box 54.2478 2.66661 2.71221}
+	{Bone "body"}
+	{Matrix34
+		0.9039	-0.4039	0.1406
+		0.3991	0.9148	0.0621
+		-0.1537	0.0000	0.9881
+		-25.1742	19.8383	-3.6141
+	}
+}
+{Volume "body"
+	{Box 5.77096 25.9139 6.95743}
+	{Bone "body"}
+	{Position 0.2414	0.0676	-1.1853}
+}
+{Volume "wheelright"
+	{Cylinder 9.62397 3.72286}
+	{Bone "wheelR"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		-0.0538	-0.0555	0.0192
+	}
+}
+{Volume "wheelleft"
+	{Cylinder 9.62397 3.72286}
+	{Bone "wheelL"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		-0.0970	-0.0783	0.0006
+	}
+}
+{Volume "turret"
+	{Box 3.30115 23.3169 24.5579}
+	{Bone "turret"}
+	{Matrix34
+		0.7763	0.0000	0.6303
+		0.0000	1.0000	0.0000
+		-0.6303	0.0000	0.7763
+		-1.1844	-0.1766	5.3185
+	}
+}
+{Volume "gun"
+	{Cylinder 1.2306 62.706}
+	{Bone "gun"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		4.9159	1.0352	0.7331
+	}
+}

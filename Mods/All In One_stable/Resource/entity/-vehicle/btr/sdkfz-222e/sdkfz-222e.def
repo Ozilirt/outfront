@@ -1,0 +1,130 @@
+{ArmoredCar 
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "with_gun"}
+	{PatherId "vehicle.small"}
+
+	{extension "crew.ext"}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+		   	{front  8}
+			{top	5}
+			{bottom	5}
+			{rear   8}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+		   	{front  8}
+			{top	5}
+			{bottom	5}
+			{rear   8}
+		}   
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 8
+			{front  8}
+			{rear   8}
+		}
+	}
+	{volume "driver"
+		{able {contact_ground 0}}
+	}
+	{volume "gunner"
+		{able {contact_ground 0}}
+	}
+	{volume "commander"
+		{able {contact_ground 0}}
+	}
+	{volume "gun"
+		{thickness 10}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_kwk30"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet20 ap" 1}}
+		}
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mg13"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 25}}
+		}
+	} 
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 225}
+			{item  "bullet20 ap" 50}
+		}
+	}
+ 	{Sensor
+		{Visor "crew"
+		      {vision "Visor_BTR"}
+                 	{bone "visor1"}
+		}
+		{Visor "driver"
+			{vision "apc-driver"}
+			{bone "visor2"}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{mass 4800}
+	{Chassis
+	{FuelBag
+		{volume 110 }	; liters
+		{rate	5.3 }   	; liters per kilometer
+		{remain 100 }
+		{fuel "fuel"}
+	}
+		{Locomotion ("locomotion")
+			{Gears 0.05 0.1 0.2 0.5 1.0}
+			{RearGears 0.1 0.4} 
+		}
+	}
+	{Extension "sdkfz-222e.mdl"}
+		{bone "turret"
+			{speed 0.025}
+		}
+
+	(mod "mp"
+		{Chassis
+			{FuelBag
+			{volume 110 }	; liters
+			{rate	66}   ; liters per kilometer
+			{remain 110 }
+			{fuel "fuel"}
+			}
+			{Locomotion ("locomotion")
+				{maxspeed 28}
+			}
+			{speed
+				{Slow	20	}
+				{Normal	25	}
+				{Fast	28	}
+			}
+		}
+	)
+}

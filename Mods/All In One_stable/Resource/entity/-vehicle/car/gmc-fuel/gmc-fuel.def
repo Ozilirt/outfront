@@ -1,0 +1,57 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "truck" "wheeled" "with_doors" "fuel_tank"}
+	{Props "emit_on_attack"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-highcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-highcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{Volume "bodyback"
+		{thickness 2}
+	}
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{Maxspeed 26}
+			{StartTime	3}		; время разгона до макс. скорости с 0, seconds
+		}
+                 {FuelBag
+                   {volume 5200}	; liters
+	             {rate    20 }   	; liters per kilometer
+	             {remain 5200 }
+                   {fuel "fuel"}
+                  }
+	}
+	{Extension "gmc-fuel.mdl"}
+	
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "ammo fire" 600}
+                        {item "barrel" 5 filling "fuel" 75}
+			}
+		}
+	)
+	
+}

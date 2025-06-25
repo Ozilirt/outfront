@@ -1,0 +1,170 @@
+;Exported by: garry
+;Date:        Sat May 01 17:14:06 2004
+;File:        D:\-Projects-\-3DWork-\Model\Танки\PZ-2\Pz2F_xx.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -2.9289	-2.0424	17.6603}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=turret;"}
+				{Position 7.3197	3.4463	10.8939}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 15.0000}
+					{speed 0.0200}
+					{Matrix34
+						1.0000	0.0027	0.0027
+						-0.0026	-0.0262	0.9997
+						0.0027	-0.9997	-0.0262
+						12.2601	0.0085	4.4765
+					}
+					{VolumeView "Gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0087	-0.0003
+							-0.0087	0.9990	-0.0436
+							-0.0001	0.0436	0.9990
+							7.6778	-0.1971	-3.9492
+						}
+						{VolumeView "Gun.ply"}
+					}
+				}
+			}
+			{bone "part1"
+				{Position -27.8919	-7.2017	7.8684}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{Position -22.3446	-18.4404	7.9918}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part3"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					-37.4699	-20.1498	-7.5042
+				}
+				{VolumeView "part3.ply"}
+			}
+			{bone "part4"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					-37.4699	17.9240	-7.5042
+				}
+				{VolumeView "part4.ply"}
+			}
+			{bone revolute "WheelL1"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	-0.0000
+					39.3567	14.8237	-6.3393
+				}
+				{VolumeView "WheelL1.ply"}
+			}
+			{bone revolute "WheelR1"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					0.5000	-0.0000	0.8660
+					0.8660	-0.0000	-0.5000
+					-0.0000	-1.0000	0.0000
+					39.3567	-15.0174	-6.3393
+				}
+				{VolumeView "WheelR1.ply"}
+			}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				-2.1512	-20.0840	11.4479
+			}
+			{VolumeView "WheelsR.ply"}
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{Matrix34
+				-1.0000	-0.0000	-0.0000
+				-0.0000	-0.0000	1.0000
+				-0.0000	1.0000	0.0000
+				-2.1512	18.3733	11.4479
+			}
+			{VolumeView "WheelsL.ply"}
+		}
+	}
+}
+{Volume "trackright"
+	{Polyhedron "trackright.vol"}
+	{Bone "WheelsR"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		-0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		0.3793	11.4479	0.6682
+	}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "Body"}
+	{Position 2.7384	1.7650	5.3768}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "Body"}
+	{Position 2.7384	0.1292	-10.8045}
+}
+{Volume "part4"
+	{Cylinder 6.8654 2.89227}
+	{Bone "part4"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	-0.0000
+		0.0000	-0.0000	-1.0000
+		-0.1720	-0.1458	-1.1888
+	}
+}
+{Volume "part3"
+	{Cylinder 6.8654 2.89227}
+	{Bone "part3"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	-0.0000
+		0.0000	-0.0000	-1.0000
+		-0.1720	-0.1458	-1.2442
+	}
+}
+{Volume "part2"
+	{Box 23.9981 7.0525 5.29795}
+	{Bone "part2"}
+	{Position -0.0366	0.0606	-0.0387}
+}
+{Volume "part1"
+	{Box 28.6893 16.6018 4.26866}
+	{Bone "part1"}
+	{Matrix34
+		0.9978	0.0000	0.0661
+		0.0000	1.0000	0.0000
+		-0.0661	0.0000	0.9978
+		0.1600	-0.0570	-0.8796
+	}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "Turret"}
+	{Position -0.2511	-0.0485	-0.4073}
+}

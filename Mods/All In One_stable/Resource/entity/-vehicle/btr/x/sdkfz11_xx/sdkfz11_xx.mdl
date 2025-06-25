@@ -1,0 +1,268 @@
+;Exported by: Albus
+;Date:        Wed Sep 03 11:21:56 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\sdkfz7\sdkfz11_xx.max
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=25;WheelRadius=0.5;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_front"
+			{parameters "ID=body;"}
+			{Position 51.4803	0.0023	11.5420}
+			{VolumeView "pivot_front.ply"}
+			{bone revolute "steer_R"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					-0.5682	-18.6026	-0.2003
+				}
+				{bone revolute "wheelR1"
+					{parameters "ID=wheelright1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	-1.0000	0.0000
+						-0.0624	2.7799	0.0018
+					}
+					{VolumeView "wheelR1.ply"}
+				}
+			}
+			{bone revolute "steer_L"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					-0.5682	18.6666	-0.2003
+				}
+				{bone revolute "wheelL1"
+					{parameters "ID=wheelleft1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	-1.0000	0.0000
+						0.0115	-2.7733	-0.0071
+					}
+					{VolumeView "wheelL1.ply"}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -38.7011	-0.0000	9.4259}
+			{bone "spring_L"
+				{Position 16.9021	17.4026	0.5741}
+				{bone revolute "wheelL3"
+					{parameters "ID=body;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						17.5931	-17.2622	-0.6308
+					}
+					{VolumeView "wheelL3.ply"}
+				}
+				{bone revolute "wheelL4"
+					{parameters "ID=body;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						-0.3561	-17.2351	-0.6367
+					}
+					{VolumeView "wheelL4.ply"}
+				}
+				{bone revolute "wheelL5"
+					{parameters "ID=body;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						-18.3931	-17.2017	-0.6426
+					}
+					{VolumeView "wheelL5.ply"}
+				}
+				{bone "trackL"
+					{parameters "ID=trackleft;"}
+					{Position 5.0445	2.7269	-0.0510}
+				}
+			}
+			{bone "spring_R"
+				{Position 16.9021	-16.7523	0.5741}
+				{bone revolute "wheelR3"
+					{parameters "ID=body;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						26.5329	16.8616	0.0565
+					}
+					{VolumeView "wheelR3.ply"}
+				}
+				{bone revolute "wheelR4"
+					{parameters "ID=body;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						8.5671	16.8896	0.0447
+					}
+					{VolumeView "wheelR4.ply"}
+				}
+				{bone revolute "wheelR5"
+					{parameters "ID=body;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	0.0000
+						-9.1265	16.9174	0.0330
+					}
+					{VolumeView "wheelR5.ply"}
+				}
+				{bone "trackR"
+					{parameters "ID=trackright;"}
+					{Position 5.0445	-4.4112	-0.0510}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position -5.3003	-2.5558	28.0363}
+			{VolumeView "body.ply"}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Position 45.3033	1.8272	1.8272}
+				{VolumeView "engine.ply"}
+			}
+			{bone revolute "wheelL2"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					25.4357	2.6314	-16.0949
+				}
+				{VolumeView "wheelL2.ply"}
+			}
+			{bone revolute "wheelR9"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-45.9136	2.7527	-18.0167
+				}
+				{VolumeView "wheelR9.ply"}
+			}
+			{bone "FXfire1"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					43.6025	2.5558	2.5770
+				}
+			}
+			{bone "FXfire2"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					-26.0710	2.5558	-4.0494
+				}
+			}
+			{bone "part1"
+				{parameters "ID=body;"}
+				{Position 36.5197	-15.0189	1.4971}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{parameters "ID=body;"}
+				{Position -67.7212	18.1126	5.1542}
+				{VolumeView "part2.ply"}
+			}
+			{bone "glass"
+				{parameters "ID=glass;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					25.3104	2.5558	18.7631
+				}
+			}
+			{bone "bodyback"
+				{parameters "ID=bodyback;"}
+				{Position 0.2538	2.0868	19.4432}
+			}
+			{bone "part3"
+				{Position 25.4715	23.2097	-16.0905}
+				{VolumeView "part3.ply"}
+			}
+			{bone "part4"
+				{Position -45.9483	-17.0872	-18.0208}
+				{VolumeView "part4.ply"}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 98.0744 45.2896 26.7964}
+	{Bone "body"}
+	{Position -15.3213	2.6889	-0.0363}
+}
+{Volume "part4"
+	{Cylinder 7.41688 4.1748}
+	{Bone "part4"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-0.0199	-0.2722	-0.0028
+	}
+}
+{Volume "part3"
+	{Cylinder 7.35032 5.20328}
+	{Bone "part3"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-0.0218	0.0165	0.0042
+	}
+}
+{Volume "part2"
+	{Box 6.06868 9.12983 13.2864}
+	{Bone "part2"}
+	{Position 0.1218	0.1419	0.0910}
+}
+{Volume "part1"
+	{Box 14.1438 6.55705 9.51668}
+	{Bone "part1"}
+	{Matrix34
+		0.9543	0.2851	0.0898
+		-0.2839	0.9585	-0.0267
+		-0.0936	0.0000	0.9956
+		0.1148	0.1469	0.3373
+	}
+}
+{Volume "wheelleft1"
+	{Cylinder 9.63087 4.65916}
+	{Bone "wheelL1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.0792	-0.0097	0.0236
+	}
+}
+{Volume "wheelright1"
+	{Cylinder 10.0259 4.65916}
+	{Bone "wheelR1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		0.0054	-0.0010	0.0202
+	}
+}

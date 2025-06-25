@@ -1,0 +1,28 @@
+{game_entity
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	{obstacleId "tank"}
+	{Volume "Body2"	
+		{tags "body"}
+		{component "body"}
+		{thickness 60
+		    {front  75}
+			{top	40}
+			{bottom	35}
+		}
+	}
+	{Volume "Body1"	
+		{tags "body"}
+		{component "body"}
+		{thickness 60
+		    {front  75}
+			{top	40}
+			{bottom	35}
+		}
+	}			
+	{volume "turret"
+		{thickness 47 0.3
+			{front  75}
+		}
+	}
+	{Extension "KV-1_xx.mdl"}
+}

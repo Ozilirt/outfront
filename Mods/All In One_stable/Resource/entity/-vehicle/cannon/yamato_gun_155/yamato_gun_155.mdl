@@ -1,0 +1,128 @@
+;Exported by: dinsen
+;Date:        Tue Jun 07 19:53:24 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\Max yamato\yamato gun small.max
+{Skeleton
+	{animation
+		{sequence "recoil"}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "emit1"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.2696	-132.2971	-0.0800
+			}
+		}
+		{bone "emit2"
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-1.9443	135.2223	-0.0800
+			}
+		}
+		{bone revolute "turret"
+			{parameters "ID=turret;"}
+			{limits -100.0000 100.0000}
+			{speed 0.0010}
+			{Position -0.1808	-0.0362	0.0612}
+			{VolumeView "turret.ply"}
+			{bone revolute "gun_rot"
+				{parameters "ID=gun;"}
+				{limits -10.0000 10.0000}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					68.3199	-0.6191	34.2216
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "gun"
+					{parameters "ID=gun;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	1.0000	0.0000
+						75.8330	-0.9546	-39.6656
+					}
+					{VolumeView "gun.ply"}
+					{bone "foresight1"
+						{Position 122.0764	-40.8768	-1.0491}
+					}
+					{bone "shooter02"
+						{Position 108.7626	0.3047	-1.0510}
+					}
+					{bone "shooter01"
+						{Position 108.7317	-40.8768	-1.0491}
+					}
+					{bone "shooter00"
+						{Position 108.7317	-82.4436	-1.0510}
+					}
+				}
+			}
+			{bone "gunner"
+				{Position 0.6267	-31.7205	-0.1413}
+			}
+			{bone "commander"
+				{Position -0.4936	30.4940	-0.1413}
+			}
+			{bone "visor"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					80.4843	0.0362	85.2051
+				}
+			}
+		}
+	}
+}
+{Obstacle "obstacle3"
+	{Obb2
+		{Center -12.1762 0.161068}
+		{Extent 107.986 93.9158}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Position -9.0698	-1.6150	2.5034}
+}
+{Volume "gun1"
+	{Box 486.201 40.633 253.866}
+	{Bone "gun"}
+	{Matrix34
+		0.4465	0.0000	0.0000
+		0.0000	0.4465	0.0000
+		0.0000	0.0000	0.0635
+		5.6001	-82.2372	-0.5262
+	}
+}
+{Volume "gun2"
+	{Box 486.201 40.633 253.866}
+	{Bone "gun"}
+	{Matrix34
+		0.4465	0.0000	0.0000
+		0.0000	0.4465	0.0000
+		0.0000	0.0000	0.0635
+		5.6001	-39.8300	-0.5262
+	}
+}
+{Volume "gun3"
+	{Box 486.201 40.633 253.866}
+	{Bone "gun"}
+	{Matrix34
+		0.4465	0.0000	0.0000
+		0.0000	0.4465	0.0000
+		0.0000	0.0000	0.0635
+		5.6001	0.7463	-0.5262
+	}
+}

@@ -1,0 +1,482 @@
+{tags "russian"
+	{"createuser"
+		{"title" "ВЫБОР ПОЛЬЗОВАТЕЛЯ"}
+		{"enter_login" "Введите имя"}
+		{"user_not_found" "Пользователь '%1%' не найден. Создать?"}
+		{"cant_logon" "Не могу загрузить пользователя с этим именем."}
+		{"default_user_name" "Игрок"}
+	}
+	{"options"
+		{"timeout"
+			{"question" "Хотите применить данные настройки?"}
+			{"text" "Старые настройки вернутся через %1% сек."}
+			{"texture_warning" "Текстуры изменятся после перезагрузки игры."}
+		}
+		{"video"
+			{"texture"
+				{"auto" "Авто"}
+				{"depth" "Цветность текстур: "}
+				{"detail" "Детализация текстур: "}
+				{"detail_low" "Низкая"}
+				{"detail_medium" "Средняя"}
+				{"detail_high" "Высокая"}
+				{"compress" "Компрессия текстур:  "}
+				{"mip" "Фильтрация: "}
+				{"mip_none" "Нет"}
+				{"mip_point" "Точечная"}
+				{"mip_linear" "Линейная"}
+				{"mip_anisotropic" "Анизотропная"}
+			}
+			{"shadow"
+				{"type" "Тип теней: "}
+				{"none" "Тени выключены"}
+				{"sprite" "Плоские тени"}
+				{"multiple_shadowmap" "Статичные тени"}
+				{"single_shadowmap" "Динамические тени"}
+			}
+			{"title" "НАСТРОЙКИ ГРАФИКИ"}
+			{"adapter" "Адаптер: "}
+			{"current_mode" "Текущий режим: "}
+			{"resolution" "Разрешение: "}
+			{"display_hz" "Гц"}
+			{"display_0hz" "По умолчанию"}
+			{"use_desktop" "Настройки рабочего стола Windows"}
+			{"color_depth" "Глубина цвета: "}
+			{"16_bit" "16 бит"}
+			{"32_bit" "32 бита"}
+			{"gamma" "Гамма:  "}
+			{"max_fps" "Ограничение на FPS: "}
+		}
+		{"audio"
+			{"volume"
+				{"effects" "Эффекты: "}
+				{"speech" "Голоса: "}
+				{"environment" "Окружение: "}
+				{"interface_music" "Музыка в меню: "}
+				{"game_music" "Музыка в игре: "}
+				{"narrator" "Рассказчик: "}
+			}
+			{"title" "НАСТРОЙКИ ЗВУКА"}
+			{"adapter" "Адаптер: "}
+			{"current_options" "Текущие настройки: "}
+			{"mixing_rate" "Частота: "}
+			{"11_khz" "11 КГц"}
+			{"22_khz" "22 КГц"}
+			{"44_khz" "44 КГц"}
+			{"bit_per_channel" "Бит на канал: "}
+			{"8_bit" "8 бит"}
+			{"16_bit" "16 бит"}
+			{"buffers" "Каналы: "}
+			{"txt_buffers" "каналов"}
+		}
+		{"game"
+			{"title" "НАСТРОЙКИ ИГРЫ"}
+			{"menu_scenes" "Анимированные заставки меню"}
+			{"show_intro" "Показывать ролики"}
+			{"invert_mouse_wheel" "Инвертировать колесо мыши"}
+			{"auto_aiming" "Автоматическое донаведение на цель"}
+			{"auto_load_last_profile" "Автозагрузка последнего пользователя"}
+			{"camera_scroll_speed" "Скорость движения камеры"}
+			{"slowdown_while_inventory_exchange" "Замедление во время работы с рюкзаком"}
+			{"pause_while_inventory_exchange" "Пауза во время работы с рюкзаком"}
+			{"fog_of_war" "Туман войны"}
+		}
+		{"define_keys"
+			{"common"
+				{"title" "Стандартные клавиши"}
+				{"weapon_reload" "Зарядить оружие"}
+				{"weapon_unload" "Разрядить оружие"}
+				{"weapon_prepare" "Достать оружие"}
+				{"center_active" "Навестись на активного юнита"}
+				{"prev_unit" "Выделить предыдущего юнита"}
+				{"next_unit" "Выделить следующего юнита"}
+				{"toggle_attack" "Переключение команд стрельбы"}
+				{"toggle_position" "Переключение команд перемещения"}
+				{"toggle_minimap" "Вкл./Выкл. карту"}
+				{"toggle_equipment" "Вкл./Выкл. окно снаряжения"}
+				{"toggle_objectives" "Вкл./Выкл. окно заданий"}
+				{"toggle_autotargetting" "Вкл./Выкл. автоприцеливание"}
+				{"slowdown" "Вкл./Выкл. режим замедления"}
+				{"stuff_highlight" "Подсветить снаряжение"}
+				{"corpses_highlight" "Подсветить тела"}
+				{"pause" "Пауза"}
+				{"screenshot" "Снять скриншот"}
+			}
+			{"control"
+				{"title" "Тактическое управление"}
+				{"single_select" "Выделить одного"}
+				{"group_select" "Выделить группу"}
+				{"reset_select" "Сбросить выделение"}
+				{"order" "Отдать приказ"}
+			}
+			{"control_manual"
+				{"title" "Прямое управление"}
+				{"toggle" "Переключиться"}
+				{"modify" "Изменить"}
+				{"forward" "Вперед"}
+				{"backward" "Назад"}
+				{"left" "Влево"}
+				{"right" "Вправо"}
+				{"fire" "Стрелять"}
+				{"next_weapon" "Следующее оружие"}
+				{"next_ammo" "Следующий боеприпас"}
+			}
+			{"control_human"
+				{"title" "Управление пехотой"}
+				{"stay_lie" "Встать / лечь"}
+				{"pose_up" "Изменить положение вверх"}
+				{"pose_down" "Изменить положение вниз"}
+				{"select_primary" "Выбрать первичное оружие"}
+				{"select_secondary" "Выбрать вторичное оружие"}
+				{"drop_from_hands" "Бросить"}
+				{"use_bandage" "Использовать бинт"}
+			}
+			{"control_camera"
+				{"title" "Управление камерой"}
+				{"scroll_forward" "Переместить вперед"}
+				{"scroll_backward" "Переместить назад"}
+				{"scroll_left" "Переместить влево"}
+				{"scroll_right" "Переместить вправо"}
+				{"zoom_in" "Приблизить к поверхности"}
+				{"zoom_out" "Удалить от поверхности"}
+				{"rotate_left" "Вращать влево"}
+				{"rotate_right" "Вращать вправо"}
+				{"increase_view" "Увеличить угол обзора"}
+				{"decrease_view" "Уменьшить угол обзора"}
+			}
+			{"actions"
+				{"title" "Действия"}
+				{"use" "Использовать"}
+				{"cancel" "Отменить"}
+				{"follow" "Следовать"}
+				{"emit" "Высадить"}
+				{"examine" "Посмотреть"}
+				{"drop" "Бросить"}
+				{"attack" "Атаковать"}
+				{"kick" "Ударить"}
+				{"rotate" "Вращать"}
+			}
+			{"items"
+				{"title" "Оружие"}
+				{"item_1" "Пистолет"}
+				{"item_2" "Пистолет-пулемет"}
+				{"item_3" "Винтовка"}
+				{"item_4" "Пулемет"}
+				{"item_5" "Гранатомет"}
+				{"item_6" "Нож"}
+				{"item_7" "Коктейль Молотова"}
+				{"item_8" "Дымовая граната"}
+				{"item_9" "Осколочная граната"}
+				{"item_10" "Противотанковая граната"}
+			}
+			{"multiplayer"
+				{"title" "Сетевая игра"}
+				{"chat_team" "Сказать команде"}
+				{"chat_all" "Сказать всем"}
+				{"unit_buy" "Купить войска"}
+				{"unit_transfer" "Передать войска"}
+				{"unit_assignment" "Выделить назначенные войска"}
+				{"show_statistics" "Показать статистику"}
+			}
+			{"groups"
+				{"title" "Группы"}
+				{"assign_1" "Назначить группу 1"}
+				{"assign_2" "Назначить группу 2"}
+				{"assign_3" "Назначить группу 3"}
+				{"assign_4" "Назначить группу 4"}
+				{"assign_5" "Назначить группу 5"}
+				{"assign_6" "Назначить группу 6"}
+				{"assign_7" "Назначить группу 7"}
+				{"assign_8" "Назначить группу 8"}
+				{"assign_9" "Назначить группу 9"}
+				{"select_1" "Выделить группу 1"}
+				{"select_2" "Выделить группу 2"}
+				{"select_3" "Выделить группу 3"}
+				{"select_4" "Выделить группу 4"}
+				{"select_5" "Выделить группу 5"}
+				{"select_6" "Выделить группу 6"}
+				{"select_7" "Выделить группу 7"}
+				{"select_8" "Выделить группу 8"}
+				{"select_9" "Выделить группу 9"}
+			}
+			{"keymap"
+				{"key_escape" "ESC"}
+				{"key_1" "1"}
+				{"key_2" "2"}
+				{"key_3" "3"}
+				{"key_4" "4"}
+				{"key_5" "5"}
+				{"key_6" "6"}
+				{"key_7" "7"}
+				{"key_8" "8"}
+				{"key_9" "9"}
+				{"key_0" "0"}
+				{"key_minus" "-"}
+				{"key_equals" "="}
+				{"key_back" "BACKSPACE"}
+				{"key_tab" "TAB"}
+				{"key_q" "Q"}
+				{"key_w" "W"}
+				{"key_e" "E"}
+				{"key_r" "R"}
+				{"key_t" "T"}
+				{"key_y" "Y"}
+				{"key_u" "U"}
+				{"key_i" "I"}
+				{"key_o" "O"}
+				{"key_p" "P"}
+				{"key_lbracket" "{"}
+				{"key_rbracket" "}"}
+				{"key_return" "ENTER"}
+				{"key_lcontrol" "Лев.CTRL"}
+				{"key_a" "A"}
+				{"key_s" "S"}
+				{"key_d" "D"}
+				{"key_f" "F"}
+				{"key_g" "G"}
+				{"key_h" "H"}
+				{"key_j" "J"}
+				{"key_k" "K"}
+				{"key_l" "L"}
+				{"key_semicolon" ";"}
+				{"key_apostrophe" "'"}
+				{"key_grave" "`"}
+				{"key_lshift" "Лев.SHIFT"}
+				{"key_backslash" "\"}
+				{"key_z" "Z"}
+				{"key_x" "X"}
+				{"key_c" "C"}
+				{"key_v" "V"}
+				{"key_b" "B"}
+				{"key_n" "N"}
+				{"key_m" "M"}
+				{"key_comma" ","}
+				{"key_period" "."}
+				{"key_slash" "/"}
+				{"key_rshift" "Прав.SHIFT"}
+				{"key_multiply" "Прав.'*'"}
+				{"key_lalt" "Лев.ALT"}
+				{"key_space" "Пробел"}
+				{"key_capslock" "CAPS"}
+				{"key_f1" "F1"}
+				{"key_f2" "F2"}
+				{"key_f3" "F3"}
+				{"key_f4" "F4"}
+				{"key_f5" "F5"}
+				{"key_f6" "F6"}
+				{"key_f7" "F7"}
+				{"key_f8" "F8"}
+				{"key_f9" "F9"}
+				{"key_f10" "F10"}
+				{"key_numlock" "NUMLOCK"}
+				{"key_scroll" "SCROLL"}
+				{"key_numpad7" "Прав.7"}
+				{"key_numpad8" "Прав.8"}
+				{"key_numpad9" "Прав.9"}
+				{"key_subtract" "-"}
+				{"key_numpad4" "Прав.4"}
+				{"key_numpad5" "Прав.5"}
+				{"key_numpad6" "Прав.6"}
+				{"key_add" "Прав.'+'"}
+				{"key_numpad1" "Прав.1"}
+				{"key_numpad2" "Прав.2"}
+				{"key_numpad3" "Прав.3"}
+				{"key_numpad0" "Прав.0"}
+				{"key_decimal" "Прав.Del"}
+				{"key_f11" "F11"}
+				{"key_f12" "F12"}
+				{"key_f13" "F13"}
+				{"key_f14" "F14"}
+				{"key_f15" "F15"}
+				{"key_kana" "KANA"}
+				{"key_convert" "CONVERT"}
+				{"key_noconvert" "NOCONVERT"}
+				{"key_yen" "YEN"}
+				{"key_numpadequals" "NOCONVERT"}
+				{"key_circumflex" "CIRCUMFLEX"}
+				{"key_at" "AT"}
+				{"key_colon" "COLON"}
+				{"key_underline" "UNDERLINE"}
+				{"key_kanji" "KANJI"}
+				{"key_stop" "STOP"}
+				{"key_ax" "AX"}
+				{"key_unlabeled" "UNLABELED"}
+				{"key_numpadenter" "Прав.ENTER"}
+				{"key_rcontrol" "Прав.CTRL"}
+				{"key_numpadcomma" "NUMPADCOMMA"}
+				{"key_divide" "Прав.'/'"}
+				{"key_sysrq" "SYS RQ"}
+				{"key_ralt" "Прав.ALT"}
+				{"key_pause" "PAUSE"}
+				{"key_home" "HOME"}
+				{"key_up" "Стрелка вверх"}
+				{"key_prior" "PRIOR"}
+				{"key_left" "Стрелка влево"}
+				{"key_right" "Стрелка вправо"}
+				{"key_end" "END"}
+				{"key_down" "Стрелка вниз"}
+				{"key_next" "Page Down"}
+				{"key_insert" "INSERT"}
+				{"key_delete" "DELETE"}
+				{"key_lwin" "Лев.WIN"}
+				{"key_rwin" "Прав.WIN"}
+				{"key_apps" "APPS"}
+				{"key_esc" "ESC"}
+				{"key_enter" "ENTER"}
+				{"key_backspace" "BACKSPACE"}
+				{"key_numpadstar" "Прав.'*'"}
+				{"key_numpadminus" "Прав.'-'"}
+				{"key_numpadplus" "Прав.'+'"}
+				{"key_numpadperiod" "Прав.'.'"}
+				{"key_numpadslash" "Прав.'/'"}
+				{"key_uparrow" "Стрелка вверх"}
+				{"key_pgup" "Page Up"}
+				{"key_leftarrow" "Стрелка влево"}
+				{"key_rightarrow" "Стрелка вправо"}
+				{"key_downarrow" "Стрелка вниз"}
+				{"key_pgdn" "PG_DN"}
+				{"mouse0" "ЛКМ"}
+				{"mouse1" "ПКМ"}
+				{"mouse2" "СКМ"}
+				{"mouse3" "Мышь3"}
+				{"mouse4" "Мышь4"}
+				{"mouse5" "Мышь5"}
+				{"mouse6" "Мышь6"}
+				{"mouse7" "Мышь7"}
+				{"mouse_left" "ЛКМ"}
+				{"mouse_right" "ПКМ"}
+				{"mouse_midle" "СКМ"}
+				{"key_control" "CTRL"}
+				{"key_alt" "ALT"}
+				{"key_shift" "SHIFT"}
+				{"alt" "ALT"}
+				{"ctrl" "CTRL"}
+				{"shift" "SHIFT"}
+				{"double" "ДВОЙНОЕ"}
+				{"~alt" "~ALT"}
+				{"~ctrl" "~CTRL"}
+				{"~shift" "~SHIFT"}
+				{"~double" "~ДВОЙНОЕ"}
+			}
+			{"title" "НАСТРОЙКА КЛАВИШ"}
+			{"wait_for_key" "Нажмите клавишу для '%1%'"}
+			{"cant_assign" "Не могу назначить неизменяемую клавишу '%1%'"}
+			{"action_header" "<c(230 230 230)b+>Действие"}
+			{"key_header" "<c(230 230 230)b+>Клавиша"}
+			{"key_legend" "<c(160 70 200)>*</c> - неизменяемо    '~' - игнорировать нажатие"}
+			{"list_title_format" "<b+c(200 180 0)>"}
+			{"read_only_format" "<c(160 70 200)>"}
+		}
+	}
+	{"main_menu"
+		{"quit_confirm" "Вы уверены, что хотите выйти из игры %1%?"}
+		{"exit_confirm" "Вы уверены, что хотите выйти из миссии?"}
+		{"restart_confirm" "Вы уверены, что хотите перезапустить миссию?"}
+	}
+	{"save_load_game"
+		{"title_save" "ЗАПИСЬ ИГРЫ"}
+		{"title_load" "ЗАГРУЗКА ИГРЫ"}
+		{"lbl_load_list" "Выберите игру для загрузки:"}
+		{"lbl_save_list" "Выберите игру для записи:"}
+		{"lbl_game_info" "Информация об игре:"}
+		{"txt_time" "Время"}
+		{"txt_campaign" "Кампания"}
+		{"txt_mission" "Миссия"}
+		{"txt_difficulty" "Сложность"}
+		{"txt_version" "Версия"}
+		{"show_all_saves" "Показать все записи"}
+		{"load_invalid_version" "Данная запись сделана в другой версии игры. Хотите продолжить загрузку ?"}
+		{"load_failed" "При загрузке игры произошла ошибка"}
+		{"game_progress_lost" "Текущая игра будет потеряна. Хотите продолжить?"}
+		{"completion_save_suffix" " выполнено"}
+	}
+	{"replay_game"
+		{"title" "РОЛИКИ ХОДА ИГРЫ"}
+		{"lbl_replay_list" "Выберите ролик для показа:"}
+		{"lbl_replay_info" "Информация о ролике:"}
+		{"txt_time" "Время"}
+		{"txt_map" "Карта"}
+		{"txt_mission" "Миссия"}
+		{"txt_difficulty" "Сложность"}
+		{"txt_version" "Версия"}
+		{"replay_invalid_version" "Не могу проиграть ролик другой версии игры."}
+	}
+	{"button"
+		{"ok" "ДА"}
+		{"cancel" "ОТМЕНА"}
+		{"next" "СЛЕДУЮЩАЯ"}
+		{"apply" "ПРИНЯТЬ"}
+		{"back" "НАЗАД"}
+		{"exit" "ВЫХОД"}
+		{"close" "ЗАКРЫТЬ"}
+		{"create" "СОЗДАТЬ"}
+		{"refresh" "ОБНОВИТЬ"}
+		{"join" "ВСТУПИТЬ"}
+		{"ready" "ГОТОВ"}
+		{"completed" "ПОБЕДА"}
+		{"failed" "ПРОИГРЫШ"}
+		{"restart" "ПЕРЕЗАГРУЗИТЬ"}
+		{"start" "НАЧАТЬ"}
+		{"save" "ЗАПИСАТЬ"}
+		{"load" "ЗАГРУЗИТЬ"}
+		{"record" "ЗАПИСАТЬ ИГРОВОЙ РОЛИК"}
+		{"stop" "ОСТАНОВИТЬ"}
+		{"delete" "УДАЛИТЬ"}
+		{"kick_off" "ИСКЛЮЧИТЬ"}
+		{"play" "ПРОИГРАТЬ"}
+		{"continue" "ПРОДОЛЖИТЬ"}
+		{"find_game" "НАЙТИ ИГРУ"}
+		{"create_game" "СОЗДАТЬ ИГРУ"}
+		{"view_replay" "ПРОСМОТРЕТЬ ИГРОВОЙ РОЛИК"}
+		{"single_player" "ОДИНОЧНАЯ ИГРА"}
+		{"multi_player" "СЕТЕВАЯ ИГРА"}
+		{"training" "ОБУЧЕНИЕ"}
+		{"options" "НАСТРОЙКИ"}
+		{"credits" "АВТОРЫ"}
+		{"easy" "ЛЕГКО"}
+		{"normal" "НОРМАЛЬНО"}
+		{"hard" "НЕРЕАЛЬНО"}
+		{"play_again" "ИГРАТЬ СНОВА"}
+		{"video" "ГРАФИКА"}
+		{"audio" "ЗВУК"}
+		{"game" "ИГРА"}
+		{"campaigns" "Оригинальные кампании игры"}
+		{"bonus_missions" "Дополнительная кампания за СССР"}
+		{"replay" "ПОКАЗ ИГРОВЫХ РОЛИКОВ"}
+		{"introduction" "Вступление"}
+		{"buy" "КУПИТЬ"}
+		{"show" "ПОКАЗАТЬ"}
+		{"login" "ПРИНЯТЬ"}
+		{"complete" "ГОТОВО"}
+		{"info" "ИНФОРМАЦИЯ"}
+		{"profile" "СМЕНА ПОЛЬЗОВАТЕЛЯ"}
+		{"keys" "КЛАВИШИ"}
+		{"change_key" "ИЗМЕНИТЬ КЛАВИШУ"}
+		{"restore_defaults" "ВЕРНУТЬ НАСТРОЙКИ"}
+		{"mods" "МОДИФИКАЦИИ"}
+	}
+	{"open_dialogs"
+		{"msg_delete" "'%1%' будет удален!"}
+		{"msg_apply" "'%1%' будет перезаписан!"}
+		{"msg_invalid_name" "Недопустимое имя."}
+	}
+	{"time"
+		{"format" "%d, %s %d, %d:%02d:%02d"}
+		{"month" "Янв Фев Мар Апр Май Июн Июл Авг Сен Окт Ноя Дек"}
+	}
+	{"mod_change"
+		{"title" "НАСТРОЙКА МОДИФИКАЦИЙ"}
+		{"installed" "installed:"}
+		{"selected" "Выделенные:"}
+		{"info" "Информация:"}
+		{"lbl_name" "Имя:"}
+		{"lbl_version" "Версия:"}
+		{"lbl_desc" "Описание:"}
+	}
+	{"credits_cm" ""}
+	{"credits_1c" "Пpодюсеp\n                Сеpгей Геpасев\n \nПомощник продюсера\n                Юрий Мирошников\n \nМаpкетинг и PR\n                Hиколай Баpышников\n                Александр Гурин\n                Анатолий Субботин\n                Алексей Аpтеменко\n                Андрей Маштанов\n \nДизайн и веpстка рекламных материалов\n                Илья Фофанов\n                Сеpгей Коновалов\n                Тимур Муцаев\n                Наталья Артеменко\n \nТестиpование\n                Александp Шишов\n                Павел Крутов\n                Александр Латышев\n                Марина Саватеева\n                Александр Трифонов\n                Андрей Сергеев\n\nОтдельное спасибо\n                Дмитрию Фенцику\n"}
+	{"credits_bw" "Руководитель проекта\n	Дмитрий Морозов\n\nДиректор\n	Сергей Бучакчийский\n\nВедущий гейм-дизайнер\n	Дмитрий Морозов\n\nВедущий художник\n	Владимир Цветной\n\nВедущий программист\n	Владислав Доценко\n\nИгровое ядро\n	Владислав Доценко\n	Максим Каменский\n	Владимир Сухоруков\n\nИИ движок\n	Максим Каменский\n	Владислав Доценко\n\nИИ поведение\n	Владислав Доценко\n	Максим Каменский\n\nМатематика и физика\n	Максим Каменский\n	Андрей Роська\n\nГрафика и звук\n	Владимир Сухоруков\n\nМногопользовательская игра\n	Максим Каменский\n	Виталий Андреев\n	Владимир Сухоруков\n	Владислав Доценко\n\nИнтерфейс пользователя\n	Владислав Доценко\n	Андрей Роська\n	Виталий Андреев\n\nИгровые редакторы\n	Владислав Доценко\n	Владимир Сухоруков\n\nСкрипты\n	Андрей Роська\n\nИнструменты\n	Владислав Доценко\n	Александр Голуб\n	Владимир Сухоруков\n\n3Д моделирование\n	Виктор Патерило\n	Дмитрий Данько\n	Сергей Куценко\n	Светлана Агеева\n	Игорь Диулин\n	Андрей Убрашаев\n	Александр Шевченко\n\n2Д дизайн\n	Владимир Цветной\n	Дмитрий Данько\n	Виктор Патерило\n	Андрей Убрашаев\n	Игорь Диулин\n	Евгений Дядечко\n	Елена Шевченко\n\nДизайн ландшафтов\n	Владимир Цветной\n	Дмитрий Данько\n	Андрей Убрашаев\n	Сергей Куценко\n	Светлана Агеева\n\nДизайн уровней\n	Дмитрий Морозов\n	Андрей Холохолов\n	Александр Тыщик\n	Сергей Куценко\n\n3Д анимация\n	Евгений Юров\n	Дмитрий Данько\n\nСпецэффекты\n	Виктор Патерило\n	Дмитрий Морозов\n\nМузыка и звук\n	Игорь Диулин\n	Андрей Кацимон\n	Алексей Золотухин\n\nСценарий\n	Дмитрий Морозов\n	Александр Зорич\n\nСюжеты миссий\n	Дмитрий Морозов\n	Владимир Цветной\n	Владислав Доценко\n	Дмитрий Данько\n\nИсторический консультант\n	Александр Зорич\n\nОтдельное спасибо\n	Андрей 'КранК' Кузьмин\n	Андрей Кияновский\n	Александр Шурша\n\n\nZlib data compression library\n(C) 1995-2003 Jean-loup Gailly and\nMark Adler\n\nA Two-Dimensional\nQuality Mesh Generator \nand Delaunay Triangulator.\n(C) 1993-2002 Jonathan Richard Shewchuk\n\nSOLID - Software Library for\nInterference Detection\n(C) 1997-1998  Gino van den Bergen\n\nThis software uses\nsimple multi-body package by\nEugene Laptev, Oxford Dynamics\neugene_laptev@oxforddynamics.co.uk\nhttp://www.oxforddynamics.co.uk"}
+	{"copyright_string" "<s(8)c(120 120 120)f(arial_hq)>(С) 2004 ЗАО '1С'. Все права защищены.  (С) 2004 Компания Best Way. Все права защищены."}
+	{"product_name" "'В тылу врага'"}
+	{"demo_name" "Демо-версия"}
+}

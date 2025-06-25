@@ -1,0 +1,164 @@
+{Car
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	(include "/properties/car_crew.ext")
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "zenite" "light_turret" "with_gun"}
+
+	{PatherId "vehicle.small"}
+	{obstacleID "car" "operatable"}
+	{obstacleID "car_empty" "empty"}
+	{obstacleID "car_broken" "broken"}
+
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+	("crew_2_human")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_LowArmor"}  {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1" 1}}
+		}
+		{anm "commander"
+			{forward	{begin	"board_LowArmor"}  {end "seat_passenger"}}
+			{reverse 	{end	"emit_tank_1" 1}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_LowTank_stand"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("crew_human" place(gunner)		bone(gunner)	door(emit3) animation(gunner))
+
+	{placer
+		{place "driver" {visor "driver"}}
+		{place "gunner" {worker charger} {visor "main"}}
+	}
+
+	{placer
+		{place "driver" 	{group "crew"}}
+		{place "gunner" 	{group "crew"}}
+		{place "commander"	{group "crew"}}
+	}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 6}   
+	}
+	{volume "turret"
+		{thickness 6}
+	}
+	{volume "gun"
+		{thickness 5}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{volume "shield_right"	
+		{thickness 15}
+	}
+	{component "shield_right"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 10}
+	}
+	{volume "shield_left"	
+		{thickness 15}
+	}
+	{component "shield_left"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 10}
+	}
+	{Volume "gun"
+		{thickness 10}
+	}
+	{Volume "gun"
+		{thickness 10}
+	}
+	{component "gun"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_flak38"}
+			{RestoreIKAfterAim}
+			{Mounted}
+                  {weapon {ammo "bullet20 zenite" 48}}
+
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "bullet20 zenite" 1080}
+		}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+
+	{mass 4990}
+	{Chassis
+		{Locomotion ("locomotion")
+			{Gears 0.05 0.1 0.2 0.5 1.0}
+			{RearGears 0.1 0.4}
+		}
+	}
+	{Chassis
+	; left track must be first
+   		{Track "left"
+			{Tracer
+				{View "tracks"}
+				{Bone "FXtraceL1"}
+				{Step 0.7}			; in meters
+   		 	}
+			{TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 0.6}		; meters per animation
+   		 	}
+   		}
+   		{Track "right"
+			{Tracer 
+			   	{View "tracks"}
+   		 		{Bone "FXtraceR1"}
+   		 		{Step 0.7}			; in meters
+			}
+			{TextureScroller
+		    	{Bone "TrackR"}	
+		 		{Length 0.6}		; meters per animation
+	 		}
+ 		}
+	}
+	{Extension "SdKfz10-5.mdl"}
+
+	(mod "mp"
+		{Chassis
+			{FuelBag
+			{volume 114.5 }	; liters
+			{rate	50}   ; liters per kilometer
+			{remain 114.5 }
+			{fuel "fuel"}
+			}
+			{Locomotion ("locomotion")
+				{maxspeed 30}
+			}
+			{speed
+				{Slow	20	}
+				{Normal	24	}
+				{Fast	28	}
+			}
+		}
+	)
+}

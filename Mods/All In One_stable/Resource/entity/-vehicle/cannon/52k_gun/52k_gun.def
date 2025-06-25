@@ -1,0 +1,98 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.45))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "heavy"}
+	(include "/properties/dummy_fsm2.inc")
+	{TexMods
+ 		{"winter" "1"}
+	}
+	{sensor
+		{Visor "aa"
+			{vision "type96"}
+			{bone "visor"}
+		}
+	}
+
+	("crew_2_human")
+
+	{Boarder
+		{anm "gunner"
+			{forward	{end "seat_driver_car"}}
+		}
+		{anm "commander"
+			{forward	{end "seat_driver_car"}}
+		}
+		{place "gunner"}
+		{place "commander"}
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "gunner"}
+		{link "emit2" "commander"}
+	}
+	
+	{volume "body"
+		{tags "body"}
+		{thickness 25}
+		{component "body"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{thickness 25}
+		{component "body"}
+	}
+	{volume "body2"
+		{tags "body"}
+		{thickness 25}
+		{component "body"}
+	}
+	{volume "body3"
+		{tags "body"}
+		{thickness 25}
+		{component "body"}
+	}
+	{volume "body4"
+		{tags "body"}
+		{thickness 25}
+		{component "body"}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{thickness 20}
+		{component "turret"}
+	}
+	{volume "shield_front"
+		{tags "turret"}
+		{thickness 20}
+		{component "turret"}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Volume "gun"
+		{thickness 10}
+	}
+	{component "gun"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "85mm_zis53"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet85 fg" 1}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet85 fg" 30}
+			{item "bullet85 ap" 10}
+		}
+	}
+	{mass 9900}
+	{Extension "52k_gun.mdl"}
+}

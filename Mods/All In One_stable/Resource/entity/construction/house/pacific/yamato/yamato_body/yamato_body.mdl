@@ -1,0 +1,66 @@
+;Exported by: dinsen
+;Date:        Fri Jul 15 11:27:01 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\Max yamato\yamato body.max
+{Skeleton
+	{animation
+		{sequence "flag" {speed 0.2} {autostart}}
+	}
+	{bone "Yamato"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "Land;Ground;"}
+			{Position 980.9399	-19.3724	97.2279}
+			{VolumeView "body.ply" {Ground}}
+			{bone "zero"
+				{Matrix34
+					0.0160	0.9999	0.0000
+					-0.9689	0.0155	-0.2471
+					-0.2471	0.0040	0.9690
+					11406.3613	-168.4877	3138.5620
+				}
+				{VolumeView "zero.ply"}
+			}
+			{bone "bandera"
+				{Matrix34
+					0.0160	0.9999	0.0000
+					-0.9689	0.0155	-0.2471
+					-0.2471	0.0040	0.9690
+					11406.3613	-168.4877	3138.5613
+				}
+				{VolumeView "bandera.ply"}
+			}
+			{bone "cables"
+				{Position -46.7502	10.7099	430.6092}
+				{VolumeView "cables.ply"}
+			}
+			{bone "Bone01"
+				{Matrix34
+					-0.9940	0.0000	-0.1089
+					0.1089	0.0000	-0.9940
+					0.0000	-1.0000	0.0000
+					-1050.0618	24.9399	670.9110
+				}
+				{bone "Bone02"
+					{Matrix34
+						0.9978	0.0580	0.0324
+						-0.0578	0.9983	-0.0055
+						-0.0327	0.0036	0.9995
+						88.3878	0.0000	0.0000
+					}
+					{bone "Bone03"
+						{Matrix34
+							0.9505	-0.0151	-0.3105
+							0.0305	0.9985	0.0449
+							0.3093	-0.0522	0.9495
+							101.3088	0.0000	0.0000
+						}
+					}
+				}
+			}
+		}
+	}
+}

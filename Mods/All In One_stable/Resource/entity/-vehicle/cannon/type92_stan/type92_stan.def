@@ -1,0 +1,29 @@
+{Actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "type99"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 30}}
+		}
+
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 350}
+		}
+	}
+
+	{Extension "type92_stan.mdl"}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+}

@@ -1,0 +1,162 @@
+;SDL
+
+(include "tank.ext")
+{sensor
+	{visor "main"
+		{vision "tank-main"}
+		{bone "visor1"}
+	}
+	{visor "turret2"
+		{vision "tank-main"}
+		{bone "visor3"}
+	}
+	{visor "turret3"
+		{vision "tank-main"}
+		{bone "visor4"}
+	}
+	{visor "radist"
+		{vision "tank-main"}
+		{bone "visor5"}
+	}	
+	{Visor "driver"
+		{vision "tank-driver"}
+		{bone "visor2"}
+	}
+}
+{Weaponry
+	{place "gun"
+		{Rotate}
+		{RestoreIKAfterAim}
+	}	
+	{place "mgun"
+	}
+	{place "mgun2"
+	}
+	{place "mgun3"
+	}
+	{place "mgun4"
+	}
+}
+{extender "inventory"
+	{weapon "mgun"
+		{mask "weapon mgun"}
+	}
+	{weapon "mgun2"
+		{mask "weapon mgun"}
+	}
+	{weapon "mgun3"
+		{mask "weapon mgun"}
+	}
+	{weapon "mgun4"
+		{mask "weapon mgun"}
+	}	
+}
+
+{extender "inventory"
+	{box
+		{size 5 6}
+		{Weight 15000}
+		(mod "mp"
+			{item "repair_kit"}
+			{item "dynamite"}
+		)
+	}
+}
+(define "fxlight"
+	{volume %0
+		{thickness 6}		
+		{component %0}		
+	}
+	{component %0
+		{RepairTime 10}
+		{Able {repair}{break_by_pierce}}
+		{tags "noDestroyedView"}
+	}
+)
+(define "HeadlightR"
+	{volume %0
+		{thickness 6}		
+		{component %0}		
+	}
+	{component %0
+		{RepairTime 10}
+		{Able {repair}{break_by_pierce}}
+		{tags "noDestroyedView"}		
+	}
+)
+(define "turret2"
+	{volume %0
+		{thickness 6}
+		{tags "turret2" "body"}
+		{component %0}
+	}
+	{component %0
+		{RepairTime 10}
+		{Able {repair}{break_by_pierce}}
+		{tags "turret2"}
+	}
+)
+(define "turret3"
+	{volume %0
+		{thickness 6}
+		{tags "turret3" "body"}
+		{component %0}
+	}
+	{component %0
+		{RepairTime 10}
+		{Able {repair}{break_by_pierce}}
+		{tags "turret3"}
+	}
+)
+{volume "fxlight"
+	{component "fxlight"}	
+}
+{component "fxlight"
+	{RepairTime 10}
+	{Able {repair} {break_by_pierce}}
+}
+{volume "HeadlightR"
+	{component "HeadlightR"}	
+}
+{component "HeadlightR"
+	{RepairTime 10}
+	{Able {repair} {break_by_pierce}}
+}
+;(define "gun2"
+;	{volume %0
+;		{thickness 6}
+;		{tags "gun2"}
+;		{component %0}
+;	}
+;	{component %0
+;		{RepairTime 20}
+;		{Able {repair}{break_by_pierce}}
+;		{tags "gun2"}
+;	}
+;)
+;{volume "gun2"
+;	{component "gun2"}
+;	{tags "gun2" "turret2" "body"}
+;	{thickness 6}
+;	{able {Visible 0} {Obstacle 0} {Contact 0}}
+;}
+;{component "gun2"
+;	{RepairTime 20}
+;	{Able {repair} {break_by_pierce}}
+;}
+{component "turret2"
+	{RepairTime 10}
+	{Able {repair} {break_by_pierce}}
+}
+{volume "turret2"
+	{component "turret2"}
+	{tags "turret2"}
+}
+{component "turret3"
+	{RepairTime 10}
+	{Able {repair} {break_by_pierce}}
+}
+{volume "turret3"
+	{component "turret3"}
+	{tags "turret3"}
+}

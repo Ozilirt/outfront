@@ -1,0 +1,24 @@
+{Skeleton
+	{bone "nw_bridge1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "nw_bridge1.ply"}
+		{bone "nw_bridge_lend1"
+			{parameters "Land;Ground;"}
+			{VolumeView "nw_bridge_lend1.ply" {Ground}}
+		}
+	}
+}
+{Volume "Body"
+	{Polyhedron "Body.vol"}
+	{Bone "nw_bridge1"}
+	{Position -14.3097	-0.2419	-40.3374}
+}
+{Volume "Body1"
+	{Polyhedron "Body1.vol"}
+	{Bone "nw_bridge1"}
+	{Position 54.4153	-0.2419	-40.3374}
+}

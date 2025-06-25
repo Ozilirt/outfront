@@ -1,0 +1,82 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.45))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "flak" "turret" "barrel1"}
+	(include "/properties/dummy_fsm2.inc")
+	{sensor
+		{Visor "aa"
+			{vision "type96"}
+			{bone "visor"}
+		}
+	}
+
+	("crew_2_human")
+
+	{Boarder
+		{anm "gunner"
+			{forward	{end "seat_driver_car"}}
+		}
+		{anm "commander"
+			{forward	{end "seat_driver_car"}}
+		}
+		{place "gunner"}
+		{place "commander"}
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "gunner"}
+		{link "emit2" "commander"}
+	}
+	
+	{volume "turret"
+		{thickness 20}
+	}
+	{volume "body"
+		{thickness 25}
+		{tags "body"}
+	}
+	{volume "body1"
+		{thickness 25}
+		{tags "body"}
+	}
+	{volume "body2"
+		{thickness 25}
+		{tags "body"}
+	}
+	{volume "body3"
+		{thickness 25}
+		{tags "body"}
+	}
+	{volume "body4"
+		{thickness 25}
+		{tags "body"}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Volume "gun"
+		{thickness 10}
+	}
+	{component "gun"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_gun_m1"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "bullet37 zenite" 10}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet37 zenite" 180}
+		}
+	}
+	{mass 9000}
+	{Extension "37mmgunm1.mdl"}
+}

@@ -1,0 +1,29 @@
+;By Albus
+{Skeleton
+	{bone "knife_jap"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "knife_jap.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	-1.0000
+				0.1783	0.0325	0.0043
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 15.2539 6.77402 3.22395}
+	{Bone "knife_jap"}
+	{Position 3.5869	0.0291	0.1791}
+}
+{Volume "body"
+	{Box 7.57812 1.13658 0.870867}
+	{Bone "knife_jap"}
+	{Position 2.8869	0.0291	0.0590}
+}

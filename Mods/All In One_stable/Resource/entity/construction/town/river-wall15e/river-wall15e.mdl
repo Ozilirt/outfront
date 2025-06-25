@@ -1,0 +1,23 @@
+{Skeleton
+	{bone "wall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -44.3860 -1.2405}
+		{Extent 6.2681 10.4783}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 101.495 22.0477 56.6967}
+	{Bone "wall"}
+	{Position 0.0140	1.2405	-12.2501}
+}

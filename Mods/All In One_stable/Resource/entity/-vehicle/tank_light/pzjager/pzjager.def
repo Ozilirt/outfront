@@ -1,0 +1,96 @@
+;Model created by: <MrQuazar>
+;BTRH Mod (c) Copyright 2005 by BTRH clan developers team
+;http://rus-hammers.com
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "-turret" "self_propelled" "low"}
+	{extension "crew.ext"}
+
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{front	13}
+			{rear	 10}
+			{top	6}
+			{bottom	8}
+		}
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 13
+			{front  13}
+		    	{rear	10}
+			{top	6}
+			{bottom     8}
+		}   
+	}
+	
+
+	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(driver))
+	("crew_human" 			place(gunner)		door1(emit1) door2(emit2) visor(main))
+	("crew_human" 			place(charger)		door1(emit1) door2(emit2) visor(main))
+
+	("seat_3_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_LowTank_left"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{boarder
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "47mm_pak"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet47 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet47 ap" 30}
+			{item "ammo bullet47 fg" 10}
+			{item "plant" 4}
+		}
+	}
+	
+	{mass 12000}
+	{Chassis
+		{track_size 0.6 0.7}
+			{Locomotion ("locomotion")
+			{MaxSpeed 23}
+		}
+		{FuelBag
+			{volume 145 }	; liters
+			{rate   103 }	; liters per kilometer
+			{remain 145 }
+			{fuel "fuel"}
+		}
+	}
+	{Extension "PZ-1B.mdl"}
+	{Sensor
+		{Visor "main"
+				{vision "Visor_Tank"}
+		}
+	}
+}

@@ -1,0 +1,122 @@
+;Exported by: albus
+;Date:        Fri Feb 28 13:01:22 2011
+;File:        C:\Documents and Settings\albus\lvt4\lvt4marine_xx.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 9.9685	-0.7876	22.8727}
+			{VolumeView "body.ply"}
+			{bone "turret"
+				{parameters "ID=turret;"}
+				{Position -9.5921	-1.0399	20.9103}
+				{VolumeView "turret.ply"}
+				{bone "part5"
+					{Matrix34
+						0.9975	0.0706	0.0008
+						-0.0624	0.8869	-0.4577
+						-0.0330	0.4566	0.8891
+						23.6491	-1.9075	-1.5065
+					}
+					{VolumeView "part5.ply"}
+				}
+			}
+			{bone "part1"
+				{Position 66.9910	-1.3446	7.8182}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{Position -54.0223	-25.6352	3.5419}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part3"
+				{Position -55.8820	-2.4953	16.7887}
+				{VolumeView "part3.ply"}
+			}
+			{bone "part4"
+				{Position 51.9361	-25.6450	-1.2248}
+				{VolumeView "part4.ply"}
+			}
+		}
+		{bone "wheelsR"
+			{parameters "ID=trackright;"}
+			{Matrix34
+				0.9975	0.0706	0.0008
+				-0.0624	0.8869	-0.4577
+				-0.0330	0.4566	0.8891
+				3.1585	-25.8028	6.0359
+			}
+			{VolumeView "wheelsR.ply"}
+		}
+		{bone "wheelsL"
+			{parameters "ID=trackleft;"}
+			{Matrix34
+				0.9975	0.0706	0.0008
+				-0.0624	0.8869	-0.4577
+				-0.0330	0.4566	0.8891
+				-20.2610	21.8782	6.2546
+			}
+			{VolumeView "wheelsL.ply"}
+		}
+	}
+}
+{Volume "part4"
+	{Polyhedron "part4.vol"}
+	{Bone "part4"}
+	{Position -0.0000	-0.0000	-6.9779}
+}
+{Volume "part3"
+	{Polyhedron "part3.vol"}
+	{Bone "part3"}
+	{Matrix34
+		-0.0087	-1.0000	0.0000
+		0.9334	-0.0081	-0.3589
+		0.3588	-0.0031	0.9334
+		0.0000	0.0000	-5.3597
+	}
+}
+{Volume "part2"
+	{Polyhedron "part2.vol"}
+	{Bone "part2"}
+	{Position 0.0000	0.0000	-6.9778}
+}
+{Volume "part1"
+	{Polyhedron "part1.vol"}
+	{Bone "part1"}
+	{Position -0.0000	-0.0000	-23.2760}
+}
+{Volume "part5"
+	{Polyhedron "part5.vol"}
+	{Bone "part5"}
+	{Matrix34
+		0.9975	-0.0624	-0.0330
+		0.0706	0.8869	0.4566
+		0.0008	-0.4577	0.8891
+		0.0338	1.6151	-2.9924
+	}
+}
+{Volume "body1"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		-3.8656	-0.9731	1.3401
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		1.1847	-1.0800	0.9282
+	}
+}

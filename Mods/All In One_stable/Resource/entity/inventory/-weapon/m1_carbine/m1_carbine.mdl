@@ -1,0 +1,34 @@
+;Exported by: dinsen
+;Date:        Sun Feb 21 02:29:50 2010
+;File:        (null)
+{Skeleton
+	{bone "M1_carbine"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "M1_carbine.ply"}
+		{bone "Foresight3"
+			{Position 18.9448	1.9094	0.0543}
+		}
+		{bone "handle"
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				0.0000	1.0000	-0.0000
+				7.8623	1.7995	0.0022
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 29.9047 11.1349 3.05727}
+	{Bone "m1_carbine"}
+	{Position 9.4965	1.3631	-1.3499}
+}
+{Volume "body"
+	{Box 23.1538 4.30972 1.17113}
+	{Bone "m1_carbine"}
+	{Position 7.1164	0.2573	0.0011}
+}

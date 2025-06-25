@@ -1,0 +1,20 @@
+{actor
+	(include "/properties/cannon_mgun50.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{simulation {able 1}}
+	{sensor 
+		{visor "main" 
+			{bone "visor"}
+			{vision "watchtower"}
+		}
+	}
+	{placer	{place "gunner" {visor "main"} {worker charger}}}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "type93mg_tower"}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 30}}
+		}
+	}  	
+	{Extension "type93_tower.mdl"}
+}

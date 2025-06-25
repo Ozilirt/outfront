@@ -1,0 +1,66 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "turret_rotator"}
+	{TexMods
+		{"poland" "1"}
+	}
+	{extension "crew.ext"}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{thickness 8
+			{front	17}
+                  {left 12}
+                  {right 12}
+		}
+	}	
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "reibel"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 150}}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 900}
+		}
+	}
+	{Sensor
+		{Visor "main"
+		      {vision "tank_light"}
+		}  
+	}
+
+	{mass 6250}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    10} ; максимальная скорость, kmph
+			{StartTime 		10} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		2} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{extension "ft17.mdl"}
+}

@@ -1,0 +1,78 @@
+;Exported by: dinsen
+;Date:        Wed Feb 02 02:18:34 2011
+;File:        C:\Documents and Settings\dinsen\Escritorio\9\cocodrilo2.max
+{Skeleton
+	{animation
+		{sequence "walk"}
+		{sequence "run"}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{Matrix34
+				0.9997	0.0222	0.0043
+				-0.0223	0.9995	0.0218
+				-0.0038	-0.0219	0.9998
+				-1.0145	0.6591	8.5286
+			}
+			{VolumeView "body.ply"}
+			{bone "pata2D"
+				{Position -14.4721	-6.3771	-2.6014}
+				{VolumeView "pata2D.ply"}
+			}
+			{bone "pata2Z"
+				{Position -14.6197	5.6511	-2.6523}
+				{VolumeView "pata2Z.ply"}
+			}
+			{bone "pata1D"
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					-0.0000	1.0000	-0.0087
+					-0.0000	0.0087	1.0000
+					16.7974	-5.5065	-2.7894
+				}
+				{VolumeView "pata1D.ply"}
+			}
+			{bone "pata1Z"
+				{Position 16.4574	5.6435	-3.0568}
+				{VolumeView "pata1Z.ply"}
+			}
+			{bone prizmatic "cola"
+				{Matrix34
+					1.0000	0.0000	-0.0014
+					0.0000	1.0000	0.0064
+					0.0014	-0.0064	1.0000
+					-19.1876	-0.4825	-0.4231
+				}
+				{VolumeView "cola.ply"}
+			}
+			{bone "cabeza"
+				{Matrix34
+					0.9969	-0.0781	0.0025
+					0.0781	0.9969	-0.0136
+					-0.0015	0.0137	0.9999
+					26.0616	0.5822	-1.0415
+				}
+				{VolumeView "cabeza.ply"}
+				{bone "ojos"
+					{Position 0.0000	0.0000	0.0000}
+					{VolumeView "ojos.ply"}
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.9998	-0.0180	0.0017
+		0.0179	0.9997	0.0155
+		-0.0020	-0.0154	0.9999
+		4.3570	-0.2719	-6.1759
+	}
+}

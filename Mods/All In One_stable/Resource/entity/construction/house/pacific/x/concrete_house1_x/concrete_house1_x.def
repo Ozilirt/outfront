@@ -1,0 +1,164 @@
+{game_entity
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+	}
+	{Extension "concrete_house1_x.mdl"}
+	{Volume "body9"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body8"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body7"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body6"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece15"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece14"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece13"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece12"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece11"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece10"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece9"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece8"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece7"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece6"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece5"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece4"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "piece0"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "place3"
+		{Tags  "attach" "3"}
+		{able clear {bullet 0}{touch 1}}
+	}
+
+	{placer
+		{place "3" {attach  squat_lie} 		{linkbone "attach3"}}
+	}
+
+	{Boarder
+		{door "emit" {queue 0}}
+		{node "node_ladder_bottom"}
+		{node "node_ladder_top"}
+		{anm "ladder_bind"
+			{forward	{begin	"stand_climb_stairs"}}
+			{reverse	{end	"stand_climb_stairs" -1}}
+		}
+		{anm "ladder"
+			{forward	{speed 1.2} {loop "stand_upstairs"}}
+			{reverse	{speed 1.2} {loop "stand_upstairs" -1}}
+		}
+		{link "emit" "node_ladder_bottom" {anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_ladder_bottom" "node_ladder_top" {anm "ladder"}}
+
+		{link "node_ladder_top" "3" {forward puton} {reverse putoff}}
+
+	}
+}

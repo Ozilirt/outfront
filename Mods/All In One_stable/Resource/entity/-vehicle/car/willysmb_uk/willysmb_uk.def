@@ -1,0 +1,85 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/structure/car4x4_gun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{PatherId "vehicle.small"}
+	
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	("crew_2_human")
+
+	("board_animation"
+		place(driver)
+		board_begin(board_willis_driver)
+		board_end(seat_Willis_driver)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_willis)
+		board_end(seat_Willis_passenger)
+		base(doorright)
+	)
+	{boarder
+		{anm "gunner"
+			{forward	{begin	"board_LowTank_stand"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold" 1}}
+		}
+	}
+	
+	("crew_human"		place(gunner)	bone(gunner)	door(emit3)		animation(gunner))
+
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "commander"	{group "crew"}}
+		{place "gunner"		{group "crew"} {worker charger}}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "Vickers_Mk_I"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{Box
+			{size 5 6}
+			{item  "ammo mgun" 300}
+		}
+	}
+	{mass 1000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{Maxspeed 38}
+			{StartTime	3}		; время разгона до макс. скорости с 0, seconds
+		}
+	}
+	{Extension "WillysMB.mdl"}
+	{Volume "turret"
+		{thickness 6}
+		{component "turret"}
+	}
+	{component "turret"
+		{RepairTime 6}
+		{Able {Repair}}
+	}
+	{Volume "Body"
+		{tags "body"}
+		{component "body"}
+		{thickness 7}   
+	}
+}
+

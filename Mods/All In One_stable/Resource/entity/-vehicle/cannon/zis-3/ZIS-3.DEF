@@ -1,0 +1,79 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "wheeled" "medium" }
+;	{props "emit_on_attack"}
+	(include "/properties/dummy_fsm.inc")
+;	{simulation {able 0}}
+
+	{TexMods
+ 		{"ambush" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("crew_4_human")
+	
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "76mm_zis3"}
+			{RestoreIKAfterAim}
+			{Mounted}
+                  {weapon {ammo "ammo bullet76 ap" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet76 ap" 20}
+			{item "bullet76 fg" 20}
+		      {item "plant" 5}
+                }
+	}
+	{mass 10000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    10} ;  kmph
+			{StartTime 		 7} ;  seconds
+			{BrakeTime 		1} ; seconds
+			{StopTime		 1} ; seconds
+			{TurnRadius     5} ;meter
+			{TurnTime		15} ; seconds
+			{TurnStart		 2}	; seconds
+			{TurnStop	   0.5}	; seconds
+		}
+	}
+
+
+
+        {Extension "zis-3.mdl"}
+
+(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Cannon"}
+			}
+		}
+	)
+
+}

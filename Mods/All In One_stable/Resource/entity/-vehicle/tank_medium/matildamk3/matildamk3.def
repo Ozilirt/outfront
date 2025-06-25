@@ -1,0 +1,119 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "high"}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 80
+		    {front  88}
+		    {rear   58 0.2}
+                        {top    20}
+			{bottom	15}
+	
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 80
+		    {front  88}
+		    {rear   58 0.2}
+                        {top    20}
+			{bottom	15}
+		}   
+	}
+	{volume "turret"
+		{thickness 80
+			{front  80 0.3}
+			{top	30}
+			{rear   80}
+		}
+	}
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "57mm_OQF"}
+			{Mounted}
+			{weapon {ammo "ammo bullet57 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "besa"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 225}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 675}
+			{item "ammo bullet57 ap" 24}
+			{item "ammo bullet57 fg" 18}
+		}
+	}
+	
+	{mass 20500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    14}
+			{StartTime 		 10}
+			{BrakeTime 		1}
+			{StopTime		 1}
+			{TurnRadius     5}
+			{TurnTime		8}
+			{TurnStart		 2}
+			{TurnStop	   0.5}
+			{Gears 0.2 0.3 0.5 0.7 1.0}
+			{RearGears 0.2 0.5}
+		}
+	}
+	{Extension "matildamk3.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+        	{Chassis
+			{speed
+				{Slow	6}
+				{Normal	9}
+				{Fast	14}
+			}
+			{FuelBag
+				{volume 200}
+				{rate	130}
+				{remain 200 }
+				{fuel "fuel"}
+			}
+ 		}
+	)
+}

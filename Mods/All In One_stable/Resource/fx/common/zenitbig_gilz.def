@@ -1,0 +1,59 @@
+{fx
+	{Sound "explosion.water"}
+	{ParticleView
+		{generator
+			{TotalParticles 50}
+			{EmissionArea
+				{radius 0.3 0.3}
+				{alpha0 0}
+				{alpha1 -5 2}
+				{speed 0.15}
+			}
+			{ParticleInit
+				{Speed 1.2 1.2}
+				{Lifetime 1 0.2}
+			}
+			{StartParticles 1}
+		}
+		{mover
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.2}
+			}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/fx/_bmp/particle/gilzal.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 -180}
+						}
+					}
+					{ScaleY 0.50}
+					{ScaleX 0.20}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+			{stage collided dying
+				{sprite "/fx/_bmp/particle/gilzal.ebm"
+					{preTurn 180 180}
+					{preScaleX 0.20}
+					{preScaleY 0.50}
+					{timer
+						{mode play}
+						{duration 1 0.5}
+					}
+				}
+				{flags Ground}
+			}
+		}
+		{NotifyOwner}
+	}
+}

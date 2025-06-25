@@ -1,0 +1,192 @@
+;Exported by: Dinsen
+;Date:        Sun Mar 11 14:21:20 2012
+;File:        C:\Documents and Settings\Javi\Escritorio\bridge_crane2.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "puentegrua"
+			{Position 0.0000	0.0000	0.0000}
+			{VolumeView "puentegrua.ply"}
+			{bone "cabina"
+				{Position -241.4410	-1.9551	699.4746}
+				{VolumeView "cabina.ply"}
+			}
+		}
+	}
+}
+{Obstacle "Box04"
+	{Obb2
+		{Center 415.561 -183.929}
+		{Extent 18.5676 98.149}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box03"
+	{Obb2
+		{Center 415.561 179.271}
+		{Extent 18.5676 98.149}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box02"
+	{Obb2
+		{Center -423.859 179.271}
+		{Extent 18.5676 98.149}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Box01"
+	{Obb2
+		{Center -423.859 -186.056}
+		{Extent 18.5676 98.149}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Box13"
+	{Polyhedron "Box13.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		2.9698	-113.0377	772.2310
+	}
+}
+{Volume "Box12"
+	{Polyhedron "Box12.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-420.2584	205.0967	367.9052
+	}
+}
+{Volume "Box11"
+	{Polyhedron "Box11.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-420.2584	-155.9491	367.9052
+	}
+}
+{Volume "Box10"
+	{Polyhedron "Box10.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		420.2811	-155.9491	367.9052
+	}
+}
+{Volume "Box09"
+	{Polyhedron "Box09.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		418.3030	205.0967	367.9052
+	}
+}
+{Volume "Box08"
+	{Polyhedron "Box08.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		418.3030	205.0967	367.9052
+	}
+}
+{Volume "Box07"
+	{Polyhedron "Box07.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		420.2811	-155.9491	367.9052
+	}
+}
+{Volume "Box06"
+	{Polyhedron "Box06.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-420.2584	-155.9491	367.9052
+	}
+}
+{Volume "Box05"
+	{Polyhedron "Box05.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-420.2584	205.0967	367.9052
+	}
+}
+{Volume "Box04"
+	{Polyhedron "Box04.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		434.1287	184.3873	34.2069
+	}
+}
+{Volume "Box03"
+	{Polyhedron "Box03.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		434.1287	-178.8131	34.2069
+	}
+}
+{Volume "Box02"
+	{Polyhedron "Box02.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		-405.2918	-178.8131	34.2069
+	}
+}
+{Volume "Box01"
+	{Polyhedron "Box01.vol"}
+	{Bone "puentegrua"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		-405.2918	186.5135	34.2069
+	}
+}
+{Volume "Box14"
+	{Box 39.4503 71.5036 48.538}
+	{Bone "cabina"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-10.1419	-43.1448	-50.6101
+	}
+}

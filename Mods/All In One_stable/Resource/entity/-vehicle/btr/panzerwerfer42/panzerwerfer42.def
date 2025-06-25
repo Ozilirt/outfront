@@ -1,0 +1,104 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "Panzerwerfer42.mdl"}
+	{props "armored_car" "tank" "turret" "wheeled" "nebelwerfer"}
+	{extension "crew.ext"}	
+	{PatherId "vehicle.small"}
+
+	{TexMods
+		{"winter" "1"}
+		{"ambush" "2"}
+		{"desert" "3"}
+	}
+	{volume "gun"
+		{thickness 6}
+	}
+	{volume "turret"
+		{thickness 6
+			{front  15}
+		}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "gun"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "weapon nebel10"}
+			{Barrels 10}
+			{Mounted}
+			{weapon {ammo "ammo nebel" 10}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo nebel" 30}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")     
+	{mass 15000}
+	{Chassis
+		{speed
+			{Slow	8	}	; km/h
+			{Normal	15	}
+			{Fast	25	}
+		}
+		{Locomotion ("locomotion")
+			{MaxSpeed 25}
+		}
+		; left track must be first
+   		{Track "left"
+			{Tracer
+				{View "tracks"}
+				{Bone "FXtraceL1"}
+				{Step 0.7}			; in meters
+   		 	}
+			{TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 0.6}		; meters per animation
+   		 	}
+   		}
+   		{Track "right"
+			{Tracer 
+			   	{View "tracks"}
+   		 		{Bone "FXtraceR1"}
+   		 		{Step 0.7}			; in meters
+			}
+			{TextureScroller
+		    	{Bone "TrackR"}	
+		 		{Length 0.6}		; meters per animation
+	 		}
+ 		}
+	}
+	(mod "mp"
+		{Sensor
+			{Visor "main"
+				{vision "tank_light"}
+			}
+		}
+	)
+}

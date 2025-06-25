@@ -1,0 +1,60 @@
+;Exported by: Albus
+;Date:        Mon Mar 10 12:21:22 2014
+;File:        C:\DOCUME~1\Albus\ESCRIT~1\shw\trailers\TRAILE~1.MAX
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{Position -6.1644	-2.3410	11.7323}
+			{VolumeView "body.ply"}
+			{bone "part1"
+				{Position -24.0680	-27.4184	-9.2146}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{Position 33.2297	26.2229	-8.9897}
+				{VolumeView "part2.ply"}
+			}
+			{bone "Fx_fire2"
+				{Position 7.5339	2.3410	-11.3293}
+			}
+			{bone "Fx_smoke2"
+				{Position 23.6965	2.3410	-9.3953}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 75.7273 28.5764 9.79761}
+	{Bone "body"}
+	{Matrix34
+		0.9934	0.0000	-0.1143
+		-0.0000	1.0000	-0.0000
+		0.1143	0.0000	0.9934
+		8.1716	1.6548	-2.9551
+	}
+}
+{Volume "part2"
+	{Cylinder 9.98012 4.86061}
+	{Bone "part2"}
+	{Matrix34
+		-0.9934	-0.1143	0.0007
+		0.1143	-0.9934	0.0065
+		0.0000	0.0065	1.0000
+		0.0106	0.0990	0.0961
+	}
+}
+{Volume "part1"
+	{Cylinder 9.29189 4.86061}
+	{Bone "part1"}
+	{Matrix34
+		-0.9934	-0.1143	0.0005
+		0.1143	-0.9934	0.0047
+		0.0000	0.0048	1.0000
+		0.1239	-0.2148	0.0248
+	}
+}

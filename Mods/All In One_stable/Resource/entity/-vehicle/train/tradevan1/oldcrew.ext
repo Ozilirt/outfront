@@ -1,0 +1,29 @@
+;SDL
+(define "board_animation"
+	{boarder
+		{anm "%name"
+			{forward	{begin	"board_bigcar"} {end "stand_idle_empty_1"} };{base "%name"}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+)
+
+(define "link"
+	{link "%door"	"%place"	{anm "%animation"} {forward putoff} {reverse puton}}
+)
+
+("board_animation"	name(doorright))
+
+{placer
+	{place "seat03" {group "passanger"} {linkbone "seat03"} {turnoff {sensor} {shadow}}}
+	{place "seat08" {group "passanger"} {linkbone "seat08"} {turnoff {sensor} {shadow}}}
+}
+{boarder
+	{door "emit2"}
+	{door "emit3"}
+	("link" door(emit2) place(seat03) animation(doorright))
+	("link" door(emit2) place(seat08) animation(doorright))
+
+	("link" door(emit3) place(seat03) animation(doorright))
+	("link" door(emit3) place(seat08) animation(doorright))
+}

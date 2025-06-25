@@ -1,0 +1,110 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "turret" "light_turret" "low"}
+	{TexMods
+		{"winter" "1"}
+	}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 20
+			{front	22 0.2}
+			{rear	18 0.25}
+			{bottom	10}
+			{top	 10}
+		}
+	}
+	{volume "turret"
+		{thickness 15 0.2
+			{front  16} 
+			{top	10}
+			{bottom	10}
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(driver))
+	("crew_human" 			place(gunner)		door1(emit1) door2(emit2) visor(main))
+
+	{placer
+		{place "driver" {visor "driver"}}
+		{place "gunner" {worker charger} {visor "main"}}
+	}
+
+	{placer
+		{place "driver" 	{group "crew"}}
+		{place "gunner" 	{group "crew"}}
+	}
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+
+	{Weaponry		
+		{place "mgun"
+			{DefaultWeapon "DSHK"}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 50}}
+		}
+		{place "mgun2"
+			{foresight "foresight2"}			
+			{DefaultWeapon "weapon dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 63}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun" {fixed}}
+		{weapon "mgun2" {fixed}}
+		{box
+                  {item "ammo mgun2" 450}
+			{item "ammo mgun" 630}
+		}
+	}
+
+	{mass 6500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion
+			{MaxSpeed 	    29}
+			{StartTime 		10}
+			{BrakeTime 		2}
+			{StopTime		 1}
+			{TurnRadius     5}
+			{TurnTime		5}
+			{TurnStart		 2}
+			{TurnStop	   0.5}
+			{Gears 0.2 0.3 0.5 0.7 1.0}
+			{RearGears 0.2 0.5}
+		}
+		{FuelBag
+			{volume 350 }	; liters
+			{rate   110 }   	; liters per kilometer
+			{remain 350 }
+			{fuel "fuel"}
+		}
+	}
+	{Extension "t-40.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank"}
+			}
+		}
+	)
+}
+

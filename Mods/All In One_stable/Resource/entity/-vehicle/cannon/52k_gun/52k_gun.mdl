@@ -1,0 +1,177 @@
+;Exported by: Albus
+;Date:        Tue Nov 18 11:45:34 2014
+;File:        C:\Documents and Settings\Albus\Escritorio\shw\52k_gun\52kgun.max
+{Skeleton
+	{animation
+		{sequence "recoil"}
+	}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position -0.1018	-0.1759	8.3086}
+			{VolumeView "body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{Position -0.0820	0.1503	16.7126}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -5.0000 45.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						-13.3514	-0.2196	11.3597
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							36.7939	-0.1221	-0.4713
+						}
+						{VolumeView "gun.ply"}
+						{bone "foresight1"
+							{Position 53.5849	-0.2261	0.1993}
+						}
+					}
+				}
+				{bone "shield_front"
+					{parameters "ID=turret;"}
+					{Position 9.9823	-0.4498	2.6704}
+					{VolumeView "shield_front.ply"}
+				}
+				{bone "Visor"
+					{Position 22.4978	0.0255	15.2562}
+				}
+				{bone "gunner"
+					{Position -15.3385	9.5714	-16.8574}
+				}
+				{bone "commander"
+					{Position -4.4177	-14.5178	-16.8574}
+				}
+				{bone "emit2"
+					{Matrix34
+						0.0000	1.0000	0.0000
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						-8.4597	-30.4020	-25.0212
+					}
+				}
+				{bone "emit1"
+					{Matrix34
+						0.0000	-1.0000	0.0000
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						-18.9230	25.3971	-25.0212
+					}
+				}
+			}
+			{bone "body4"
+				{parameters "ID=body;"}
+				{Position -46.2814	20.6896	1.4263}
+				{VolumeView "body4.ply"}
+			}
+			{bone "body3"
+				{parameters "ID=body;"}
+				{Position 37.5308	20.7081	1.3760}
+				{VolumeView "body3.ply"}
+			}
+			{bone "body1"
+				{parameters "ID=body;"}
+				{Position 37.4999	-20.6973	1.3920}
+				{VolumeView "body1.ply"}
+			}
+			{bone "body2"
+				{parameters "ID=body;"}
+				{Position -46.3022	-20.7527	1.4364}
+				{VolumeView "body2.ply"}
+			}
+		}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.376694 0.504179}
+		{Extent 49.3433 17.4072}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 98.6866 34.8145 8.77215}
+	{Bone "body"}
+	{Position 0.4785	-0.3283	0.8296}
+}
+{Volume "body2"
+	{Cylinder 9.90203 4.82711}
+	{Bone "body2"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-0.0015	-0.0033	0.0024
+	}
+}
+{Volume "body1"
+	{Cylinder 9.90203 4.82711}
+	{Bone "body1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		0.0313	-0.0587	0.0468
+	}
+}
+{Volume "body3"
+	{Cylinder 9.90203 4.82711}
+	{Bone "body3"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		0.0004	-0.0158	0.0628
+	}
+}
+{Volume "body4"
+	{Cylinder 9.90203 4.82711}
+	{Bone "body4"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		-0.0223	0.0101	0.0125
+	}
+}
+{Volume "turret"
+	{Box 27.1361 19.6629 22.7528}
+	{Bone "turret"}
+	{Position -6.0337	0.4942	-0.1939}
+}
+{Volume "shield_front"
+	{Box 0.645757 29.4724 43.023}
+	{Bone "shield_front"}
+	{Matrix34
+		0.9727	0.0000	0.2321
+		-0.2321	0.0000	0.9727
+		0.0000	-1.0000	0.0000
+		-0.6167	0.3771	1.0284
+	}
+}
+{Volume "gun"
+	{Cylinder 1.75023 92.2098}
+	{Bone "gun"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		2.0649	-0.2702	-0.1229
+	}
+}

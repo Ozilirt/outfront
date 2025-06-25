@@ -1,0 +1,109 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "-turret" "self_propelled" "low"}
+		
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 60 0.2
+                  {front 65 0.3}
+			{top	12}
+			{bottom	8}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 60 0.2
+                  {front 65 0.3}
+			{top	12}
+			{bottom	8}
+		}
+	}
+	{volume "body3"
+            {component "body"}
+		{tags "body"}
+		{thickness 20 0.8 
+			{front  20 0.8}
+			{rear   20 0.8}
+			{top    2}
+		}
+	}
+      {volume "Mask"
+		{thickness 20
+		}   
+	}
+
+	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(main))
+	("crew_human" 			place(gunner)		door1(emit1) door2(emit2) visor(main))
+	("crew_human" 			place(charger)		door1(emit1) door2(emit2) visor(main))
+      ("crew_human" 			place(commander)	door1(emit1) door2(emit2) visor(main))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_body"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_body"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	
+	{Weaponry
+            {place "gun"
+			{DefaultWeapon "76mm_OQF"}
+			{Mounted}
+			{weapon {ammo "ammo bullet77 ap" 1}}
+		}
+		
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet77 ap" 30}
+			{item "ammo bullet77 fg" 16}
+		      {item "plant" 5}
+		}
+	}
+	
+	{mass 21300}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{MaxSpeed 	    16} ; максимальная скорость, kmph
+			{StartTime 		 6} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		0.6} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{extension "Archer.mdl"}
+	(mod "mp"
+		{sensor
+			{Visor "main"
+				{vision "Visor_Tank_Long"}
+			}
+		}
+            {Chassis
+			{Locomotion ("locomotion")
+				{maxspeed 16}
+			}
+			{speed
+				{Slow	7	}
+				{Normal	11}
+				{Fast	16	}
+			}
+		}
+
+	)
+}
+

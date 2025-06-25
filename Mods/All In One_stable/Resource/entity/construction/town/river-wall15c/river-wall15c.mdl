@@ -1,0 +1,36 @@
+{Skeleton
+	{bone "wall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall.ply"}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 35.7308 -1.24054}
+		{Extent 14.1281 11.0238}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -33.19 -1.24054}
+		{Extent 16.2392 11.0238}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 28.2563 22.0477 56.6967}
+	{Bone "wall"}
+	{Position 35.7308	1.2405	-12.2501}
+}
+{Volume "body1"
+	{Box 32.4785 22.0477 56.6967}
+	{Bone "wall"}
+	{Position -33.1900	1.2405	-12.2501}
+}

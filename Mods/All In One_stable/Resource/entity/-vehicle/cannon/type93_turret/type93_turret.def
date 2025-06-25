@@ -1,0 +1,44 @@
+{entity
+	(include "/properties/cannon2.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.4))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "flak" "turret_ai_rotate" "barrel1"}
+	(include "/properties/dummy_fsm2.inc")
+	{simulation {able 1}}
+	
+	("crew_stan_gunner")
+	{sensor
+		{Visor "main"
+			{bone "visor"}
+			{vision "watchtower"}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{foresight "foresight1"}
+			{DefaultWeapon "type93mg_tower"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo mgun2" 30}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun2" 330}
+		}
+	}
+	{volume "body"
+		{thickness 15}
+	}
+	{volume "turret"
+		{thickness 15}
+	}
+	{volume "gun"
+		{thickness 8}
+	}
+
+	{mass 2000}
+	{Extension "type93_turret.mdl"}
+}

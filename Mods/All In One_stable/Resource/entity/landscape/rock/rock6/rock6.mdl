@@ -1,0 +1,45 @@
+;Exported by: dinsen
+;Date:        Sun Jul 03 20:25:36 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\rock_big.max
+{Skeleton
+	{bone "rock6"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.9999	0.0129
+				0.0000	-0.0129	0.9999
+				0.0000	-0.0000	0.0000
+			}
+			{VolumeView "body.ply"}
+		}
+	}
+}
+{Obstacle "obstacle1"
+	{Polygon2
+		{Radius 0}
+		{Vertex -38.2777 -132.405}
+		{Vertex 104.731 -110.516}
+		{Vertex 138.294 -2.53003}
+		{Vertex 103.272 92.3226}
+		{Vertex 2.58189 106.915}
+		{Vertex -93.73 83.5669}
+		{Vertex -136.049 4.76632}
+		{Vertex -115.619 -87.1677}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9999	-0.0129
+		0.0000	0.0129	0.9999
+		0.0000	0.0332	2.5646
+	}
+}

@@ -1,0 +1,106 @@
+;Exported by: dinsen
+;Date:        Mon Dec 06 18:27:03 2010
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\Oscar.max
+{Skeleton
+	{bone "basis"
+		{parameters "SteerMax=45;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_back"
+			{Matrix34
+				1.0000	0.0007	-0.0007
+				0.0007	0.0019	1.0000
+				-0.0007	1.0000	-0.0019
+				-56.0000	-0.0000	20.5000
+			}
+		}
+		{bone "pivot_front"
+			{Matrix34
+				1.0000	0.0007	-0.0007
+				0.0007	0.0019	1.0000
+				-0.0007	1.0000	-0.0019
+				0.0000	-0.0000	10.5000
+			}
+			{bone "wingR1"
+				{parameters "ID=wingright;"}
+				{Matrix34
+					1.0000	0.0007	-0.0007
+					0.0007	0.0019	1.0000
+					-0.0007	1.0000	-0.0019
+					6.4726	40.5043	-0.0814
+				}
+				{VolumeView "wingR1.ply"}
+				{bone "retract_wheelR"
+					{Matrix34
+						1.0000	0.0010	0.0000
+						-0.0010	1.0000	0.0000
+						0.0000	0.0000	1.0000
+						33.9722	-37.0000	-12.0785
+					}
+					{VolumeView "retract_wheelR.ply"}
+				}
+			}
+			{bone "wingL1"
+				{parameters "ID=wingleft;"}
+				{Matrix34
+					1.0000	0.0007	-0.0007
+					0.0007	0.0019	1.0000
+					-0.0007	1.0000	-0.0019
+					6.4726	40.5043	-0.0814
+				}
+				{VolumeView "wingL1.ply"}
+				{bone "retract_wheelL"
+					{Matrix34
+						1.0000	0.0010	0.0000
+						-0.0010	1.0000	0.0000
+						0.0000	0.0000	1.0000
+						34.0000	37.0000	-11.9999
+					}
+					{VolumeView "retract_wheelL.ply"}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 6.5000	-0.0000	51.0000}
+			{VolumeView "body.ply"}
+			{bone "body_back"
+				{parameters "ID=body_back;"}
+				{Position 0.0000	0.0000	-0.0002}
+				{VolumeView "body_back.ply"}
+				{bone "rudder"
+					{parameters "ID=body_back;"}
+					{Position 0.0000	0.0000	0.0002}
+					{VolumeView "rudder.ply"}
+				}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					49.4776	0.0000	-3.0571
+				}
+				{bone "propeller"
+					{parameters "CommonMesh;ID=propeller;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-0.1045	0.9945
+						0.0000	-0.9945	-0.1045
+						15.0225	0.5571	0.0000
+					}
+					{VolumeView "propeller.ply"}
+				}
+			}
+			{bone "cabine"
+				{parameters "CommonMesh;ID=cabin;"}
+				{Position 0.0000	0.0000	-0.0002}
+				{VolumeView "cabine.ply"}
+			}
+		}
+	}
+}

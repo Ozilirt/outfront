@@ -1,0 +1,40 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors" "emit_on_attack"}
+	{extension "/properties/structure/truck6x6.ext"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-highcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-highcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{Volume "bodyback"
+		{thickness 2}
+	}
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{Maxspeed 28}
+			{StartTime	3}	; seconds
+		}
+	}
+	{Extension "gmc-cargo3.mdl"}
+}

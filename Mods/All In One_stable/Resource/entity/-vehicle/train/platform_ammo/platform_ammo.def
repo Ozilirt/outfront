@@ -1,0 +1,30 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.1) scaleY(1.0))
+    	{mass 10000}
+    	{props "platform" "train_part"}
+	{TexMods
+ 		{"ambush1" "1"}
+		{"ambush2" "2"}
+		{"ambush3" "3"}
+ 		{"ambush4" "4"}
+		{"ambush5" "5"}
+		{"ambush6" "6"}
+		{"ambush7" "7"}
+	}
+	{Extension "platform_ammo.mdl"}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "body1"
+		{tags "body"}
+		{thickness 10}
+		{component "body"}
+	}
+	{component "body"
+		{Able {repair} {break_by_pierce}}
+	}
+}

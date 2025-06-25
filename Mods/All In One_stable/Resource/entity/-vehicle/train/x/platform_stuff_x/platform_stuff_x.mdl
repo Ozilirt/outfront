@@ -1,0 +1,109 @@
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "pivot_back"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.9998	0.0175	0.0000
+				-0.0175	0.9998	0.0000
+				0.0000	0.0000	1.0000
+				-47.5525	-1.6388	9.5585
+			}
+			{VolumeView "pivot_back.ply"}
+			{bone revolute "wheel_L2"
+				{parameters "ID=wheelleft2;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					-0.1940	14.7845	-0.1610
+				}
+				{VolumeView "wheel_L2.ply"}
+			}
+			{bone revolute "wheel_R2"
+				{parameters "ID=wheelright2;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					-0.7355	-16.1214	-0.1610
+				}
+				{VolumeView "wheel_R2.ply"}
+			}
+		}
+		{bone revolute "pivot_front"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.9998	0.0175	0.0000
+				-0.0175	0.9998	0.0000
+				0.0000	0.0000	1.0000
+				46.3939	-1.6450	9.5585
+			}
+			{VolumeView "pivot_front.ply"}
+			{bone revolute "wheel_L1"
+				{parameters "ID=wheelleft1;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					-0.0220	14.7815	-0.1610
+				}
+				{VolumeView "wheel_L1.ply"}
+			}
+			{bone revolute "wheel_R1"
+				{parameters "ID=wheelright1;"}
+				{Matrix34
+					-0.9997	0.0175	0.0175
+					0.0175	-0.0003	0.9998
+					0.0175	0.9998	0.0000
+					-0.5634	-16.1244	-0.1610
+				}
+				{VolumeView "wheel_R1.ply"}
+			}
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Matrix34
+				0.9998	0.0000	-0.0175
+				-0.0000	1.0000	0.0000
+				0.0175	-0.0000	0.9998
+				5.8607	-2.0641	32.7917
+			}
+			{VolumeView "body.ply"}
+			{bone "stuff1"
+				{parameters "ID=body;"}
+				{Matrix34
+					-0.9997	-0.0262	-0.0024
+					0.0262	-0.9997	0.0001
+					-0.0024	0.0000	1.0000
+					-53.0853	-4.8586	-7.8145
+				}
+				{VolumeView "stuff1.ply"}
+			}
+			{bone "stuff2"
+				{parameters "ID=body;"}
+				{Matrix34
+					1.0000	0.0000	0.0024
+					0.0000	1.0000	0.0000
+					-0.0024	0.0000	1.0000
+					47.7318	12.8221	-7.2725
+				}
+				{VolumeView "stuff2.ply"}
+			}
+			{bone "stuff3"
+				{parameters "ID=body;"}
+				{Matrix34
+					0.0000	-1.0000	0.0000
+					1.0000	0.0000	0.0024
+					-0.0024	0.0000	1.0000
+					-1.3682	-11.1779	-7.3904
+				}
+				{VolumeView "stuff3.ply"}
+			}
+		}
+	}
+}

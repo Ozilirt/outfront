@@ -1,0 +1,37 @@
+{sound
+	{percent "effects" 50}
+	{percent "speak" 20 2}
+	{percent "environment" 20}
+	{percent "main_environment" 10}
+
+	; minDistance -- for each minDistance meter loundness decreases doubly
+	;			nearer than minDistance loudness does not increase
+	; maxDistance -- on maxDistance sound is turned off
+	{loudness "default" 40 80}	; minDistance maxDistance (meters)
+	{loudness "local environment" 15 30}
+	{loudness "shoot muted" 15 30 10}
+	{loudness "shoot normal" 60 100 20}
+	{loudness "shoot loud" 70 150 30}
+	{loudness "reload" 30 50 10}
+	{loudness "hit" 30 50 15}
+	{loudness "blast small" 50 150 25}
+	{loudness "blast big" 70 150 40}
+	{loudness "talk" 25 100}
+   	{loudness "canonade" 400 1000}
+
+	(include "sound/animal.inc")
+	(include "sound/crush.inc")
+	(include "sound/environment.inc")
+	(include "sound/explosion.inc")
+	(include "sound/hit.inc")
+	(include "sound/human.inc")
+	(include "sound/human_talk.inc" language(russian))
+	(include "sound/human_talk.inc" language(german))
+	(include "sound/human_talk.inc" language(english))
+	(include "sound/human_talk.inc" language(american))
+	(include "sound/human_talk.inc" language(japan))
+	(include "sound/interface.inc")
+	(include "sound/movement.inc")
+	(include "sound/weapon.inc")
+	(include "sound/flamethrower.inc")		;Rancid - Flamethrower addon
+}

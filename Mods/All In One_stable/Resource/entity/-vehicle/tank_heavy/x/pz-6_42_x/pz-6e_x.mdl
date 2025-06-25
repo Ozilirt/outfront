@@ -1,0 +1,181 @@
+;Exported by: garry
+;Date:        Sat May 29 17:34:22 2004
+;File:        D:\-Projects-\-3DWork-\Танки\PZ-6 Tiger\Tiger_H1E_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "CommonMesh;ID=body;"}
+			{animation
+				{sequence "break" {file "body.anm"} {speed 0.5}}
+			}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0011
+				0.0000	0.0011	1.0000
+				-2.8741	0.3608	22.3624
+			}
+			{VolumeView "Body.ply"}
+			{bone "track_deform_L"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-1.0000	-0.0000
+					0.0000	0.0000	1.0000
+					-2.1373	-27.8863	-12.5533
+				}
+				{bone revolute "WheelL2"
+					{parameters "ID=trackleft;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-0.0000	1.0000
+						-0.0000	-1.0000	-0.0000
+						-48.8214	-0.7806	0.0349
+					}
+					{VolumeView "WheelL2.ply"}
+				}
+				{bone revolute "WheelL1"
+					{parameters "ID=trackright;"}
+					{Matrix34
+						1.0000	-0.0000	-0.0000
+						0.0000	-0.0000	1.0000
+						-0.0000	-1.0000	-0.0000
+						50.4846	-0.7988	2.2201
+					}
+					{VolumeView "WheelL1.ply"}
+				}
+			}
+			{bone "track_deform_R"
+				{parameters "ID=trackright;"}
+				{animation
+					{sequence "break" {file "trackL.anm"} {speed 0.5}}
+				}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-1.0000	-0.0000
+					0.0000	0.0000	1.0000
+					-2.1373	28.1991	-12.5533
+				}
+				{bone revolute "WheelR2"
+					{parameters "ID=trackright;"}
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						-48.8214	0.7161	0.0349
+					}
+					{VolumeView "WheelR2.ply"}
+				}
+				{bone revolute "WheelR1"
+					{parameters "ID=trackright;"}
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						50.4846	0.7161	2.2201
+					}
+					{VolumeView "WheelR1.ply"}
+				}
+			}
+			{bone revolute "Turret"
+				{parameters "ID=turret;"}
+				{animation
+					{sequence "break" {file "turret.anm"} {speed 0.6}}
+				}
+				{Position -0.8886	-0.2015	11.6102}
+				{VolumeView "Turret.ply"}
+				{bone "cover"
+					{parameters "ID=turret;"}
+					{Matrix34
+						0.9999	-0.0168	-0.0000
+						0.0168	0.9999	0.0000
+						-0.0000	0.0000	1.0000
+						9.3981	-3.9097	20.7446
+					}
+					{VolumeView "cover.ply"}
+				}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 10.0000}
+					{speed 0.0010}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						-0.0000	-0.0872	-0.9962
+						0.0000	0.9962	-0.0872
+						-24.0279	0.5160	7.5516
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	-0.0000	0.0000
+							0.0000	-0.0872	0.9962
+							0.0000	-0.9962	-0.0872
+							-21.4462	-0.1183	0.7180
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Matrix34
+					-0.0000	0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					1.0000	0.0000	0.0000
+					42.3582	-1.7494	5.8707
+				}
+			}
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{animation
+				{sequence "break" {file "trackL.anm"}}
+			}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-0.0000	1.0000	-0.0000
+				4.3969	32.3426	8.1231
+			}
+			{VolumeView "WheelsL.ply"}
+			{bone "TrackL"
+				{parameters "CommonMesh;ID=trackleft;"}
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-4.4329	2.6783	-3.9553
+				}
+				{VolumeView "TrackL.ply"}
+			}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{animation
+				{sequence "break" {file "trackR.anm"} {speed 0.5}}
+			}
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				4.3969	-31.5466	8.1231
+			}
+			{VolumeView "WheelsR.ply"}
+			{bone "TrackR"
+				{parameters "CommonMesh;ID=trackright;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	-1.0000
+					-0.0000	1.0000	0.0000
+					-4.4329	2.6783	-3.8955
+				}
+				{VolumeView "TrackR.ply"}
+			}
+		}
+	}
+}

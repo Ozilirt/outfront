@@ -1,0 +1,34 @@
+;SDL
+
+{boarder
+	{anm "crew"
+		{forward	{begin	"board_ju-52"} {end "seat_driver_car"} {base "Door_open"}}
+		{reverse 	{end	"board_ju-52" -1} {base "Door_close" -1}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "%group"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "crew"} {forward putoff} {reverse puton}}
+	}
+)
+
+("crew_human" place(driver)		door(emit1) bone(driver)	group(crew))
+("crew_human" place(commander)	door(emit1) bone(commander)	group(crew))
+("crew_human" place(gunner)		door(emit1) bone(gunner)	group(crew))
+("crew_human" place(seat1)		door(emit1)	bone(seat01))
+("crew_human" place(seat2)		door(emit1)	bone(seat02))
+("crew_human" place(seat3)		door(emit1)	bone(seat03))
+("crew_human" place(seat4)		door(emit1)	bone(seat04))
+("crew_human" place(seat5)		door(emit1)	bone(seat05))
+("crew_human" place(seat6)		door(emit1)	bone(seat06))
+("crew_human" place(seat7)		door(emit1)	bone(seat07))
+("crew_human" place(seat8)		door(emit1)	bone(seat08))
+
+{Placer
+	{place "gunner" {worker charger}}
+}

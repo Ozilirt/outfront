@@ -1,0 +1,137 @@
+;Exported by: dinsen
+;Date:        Wed May 18 16:30:18 2011
+;File:        C:\Archivos de programa\Autodesk\3dsMax8\scenes\pendientes\hecho\dingo_x.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_back"
+			{parameters "ID=body;"}
+			{Position -24.1568	0.5463	9.6660}
+			{VolumeView "pivot_back.ply"}
+			{bone revolute "wheelR2"
+				{parameters "ID=wheelright2;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					0.1619	-18.4333	0.9909
+				}
+				{VolumeView "wheelR2.ply"}
+			}
+			{bone revolute "wheelL2"
+				{parameters "ID=wheelleft2;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					0.1322	18.6023	1.3101
+				}
+				{VolumeView "wheelL2.ply"}
+			}
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Position 0.8671	1.1247	19.1019}
+			{VolumeView "body.ply"}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Position -28.1257	-0.6339	6.4239}
+				{VolumeView "engine.ply"}
+			}
+			{bone "cover2"
+				{Position -4.6728	-17.9266	0.1781}
+				{VolumeView "cover2.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0100}
+				{Position -0.7439	-1.2261	13.3885}
+				{VolumeView "turret.ply"}
+				{bone "cover1"
+					{Matrix34
+						1.0000	0.0000	-0.0078
+						0.0000	1.0000	0.0000
+						0.0078	0.0000	1.0000
+						-8.2442	0.3754	9.1819
+					}
+					{VolumeView "cover1.ply"}
+				}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{limits -10.0000 10.0000}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	-1.0000	0.0000
+						9.6737	0.1439	6.2871
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "mgun"
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							5.0648	-0.1709	4.7902
+						}
+						{VolumeView "mgun.ply"}
+					}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							15.7009	-0.9193	-0.2835
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+		{bone "pivot_front"
+			{parameters "ID=body;"}
+			{Position 25.7540	0.6025	9.8316}
+			{VolumeView "pivot_front.ply"}
+			{bone revolute "steer_L1"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					0.0215	14.9358	0.7770
+				}
+				{bone revolute "wheelL1"
+					{parameters "ID=wheelleft1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	-1.0000	0.0000
+						-0.1380	-3.6338	-0.3590
+					}
+					{VolumeView "wheelL1.ply"}
+				}
+			}
+			{bone revolute "steer_R1"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					0.0215	-15.2416	0.7770
+				}
+				{bone revolute "wheelR1"
+					{parameters "ID=wheelright1;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	-1.0000
+						0.0000	-1.0000	0.0000
+						-0.1065	3.2942	-0.0597
+					}
+					{VolumeView "wheelR1.ply"}
+				}
+			}
+		}
+	}
+}

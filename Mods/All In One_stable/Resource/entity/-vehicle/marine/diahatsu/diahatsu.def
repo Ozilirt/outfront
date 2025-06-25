@@ -1,0 +1,78 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.5) scaleY(2.0))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(1.8) scaley(1.0))
+	{mass 15000}
+	{props "vehicle" "marine" "emit_on_sink" "lcvp"}
+	{patherID "shallow water"}
+	{rejectColliderByVolume}
+	{extension "crew.ext"}
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 5}
+	}
+	{Volume "body03"
+		{component "body"}
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body02"
+		{component "body"}
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body01"
+		{component "body"}
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "engine"
+		{Thickness 10}
+	}
+	{Volume "body1-2"
+		{component "body"}
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body1-1"
+		{component "body"}
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body1"
+		{component "body"}
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "rampa"
+		{component "body"}
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{component "body"
+		{able {break_by_pierce}}
+	}
+
+	{extender "inventory"
+		{Box
+			{size 8 6}
+		}
+	}
+	{sensor
+		{Visor "main"
+			{vision "airbag3-main"}
+			{bone "visor1"}
+		}
+	}
+	{extension "diahatsu.mdl"}
+	{chassis
+		{Locomotion ("locomotion")
+			{TurnRadius	10}
+		}
+	}
+}

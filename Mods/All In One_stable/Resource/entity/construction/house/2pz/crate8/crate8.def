@@ -1,0 +1,25 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{DecalView
+		{ownershadow  64 64}
+		{name "shadow"}
+	}
+	{Extension "crate8.mdl"}
+	{TexMods
+		{"1" "1"}
+	}
+	{props "small" "one" "staged" "wood" "inventory_box" "construction" "no_destroyed_stamp" "disable_area"}
+
+	{extender "inventory"
+		{box
+			{weight 5000}
+			{size 8 6}
+		}
+	}
+	{Volume "body"
+		{thickness 3}
+		{able {touch}}
+		{tags "body"}
+	}
+	("declare_fire_volumes")
+}

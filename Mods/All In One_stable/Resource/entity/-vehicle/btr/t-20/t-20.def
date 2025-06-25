@@ -1,0 +1,103 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "armored_car" "self_propelled" "explosion_throw_crew"}
+	{PatherId "vehicle.small"}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+			{front  10}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+			{front  10}
+		}
+	}
+	{volume "engine"	
+		{thickness 9}
+	}
+	{component "engine"	
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mgdt"}
+			{Mounted}
+                        {weapon {ammo "ammo mgun" 60}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+            {Box
+			{size 6 6}
+			{item "ammo mgun" 660 {cell 0 0}}
+			{item "repair_kit" {cell 0 4}}
+			{item "can" filling "fuel" 20 {cell 2 4}}
+
+            }
+	}
+        
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_SdKfz251-1"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	("crew_human_visible"	place(driver) bone(driver) door1(emit2)  visor(driver))
+	("crew_human_visible"	place(gunner) bone(gunner) door1(emit1)  visor(main))
+
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "gunner"		{group "crew"} {worker charger}}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit4)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit3)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit5)  animation(armor))
+	("seat_human" place(seat5) bone(seat05) door(emit6)  animation(armor))
+	("seat_human" place(seat6) bone(seat06) door(emit5)  animation(armor))
+	
+
+	("tracks")
+
+	{mass 4400}
+	{Chassis
+		{speed
+			{Slow	13	}
+			{Normal	16	}
+			{Fast	25	}
+		}
+		{FuelBag
+			{volume 140 }	; liters
+			{rate    45 }   	; liters per kilometer
+			{remain 140 }
+          		{fuel "fuel"}
+		}
+		{Locomotion ("locomotion")
+			{Maxspeed 25}
+			{StartTime	2.5}
+		}
+	}
+	{Extension "t-20.mdl"}
+}

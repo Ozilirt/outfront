@@ -1,0 +1,34 @@
+;Exported by: sergienko
+;Date:        Fri Jul 22 15:50:50 2005
+;File:        D:\tmp\em3\em3.max
+{Skeleton
+	{bone "em3"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "em3.ply"}
+		{bone "foresight3"
+			{Position 16.5274	1.25821	0.0542758}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				5.0868	1.14828	0.00220194
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 29.9047 11.1349 3.05727}
+	{Bone "em3"}
+	{Position 6.72098	0.711878	0.00525391}
+}
+{Volume "body"
+	{Box 22.4592 4.30972 1.17113}
+	{Bone "em3"}
+	{Position 4.46634	0.421359	0.00109464}
+}

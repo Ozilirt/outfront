@@ -1,0 +1,31 @@
+;Exported by: ubrashaev
+;Date:        Thu Dec 04 22:21:47 2003
+;File:        D:\-Projects-\-work-\3d\sk\House_suburb1(small).max
+{Skeleton
+	{bone "fence3_snackbar"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence3_snackbar.ply"}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center 0.00809002 -2.6226e-006}
+		{Extent 27.5591 2.75592}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 7.87402 78.7402 15.9415}
+	{Bone "fence3_snackbar"}
+	{Matrix34
+		-0.0000	0.7000	0.0000
+		-0.7000	-0.0000	0.0000
+		0.0000	0.0000	0.7000
+		0.0081	-0.0000	5.5795
+	}
+}

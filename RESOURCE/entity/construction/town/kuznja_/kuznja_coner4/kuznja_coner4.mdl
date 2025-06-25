@@ -1,0 +1,136 @@
+;Exported by: shevchenko
+;Date:        Mon Mar 01 19:10:16 2004
+;File:        D:\-Projects-\-3DWork-\sheva\kuznja_1.max
+{Skeleton
+	{bone "kuznja_coner4"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "kuznja_coner4.ply"}
+	}
+}
+{Obstacle "support"
+	{Obb2
+		{Center -65.1876 45.6227}
+		{Extent 14.3137 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 7.962 14.0998}
+		{Extent 65.8888 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -60.8184 39.142}
+		{Extent 2.95276 41.0385}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "beam3"
+	{Obb2
+		{Center 33.9881 -67.5584}
+		{Extent 2.46063 2.46063}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -36.5922 77.1286}
+		{Extent 21.3583 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "beam1"
+	{Obb2
+		{Center -23.0131 45.5758}
+		{Extent 1.47638 1.47638}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "support"
+	{Box 13.7126 51.1811 5.90551}
+	{Bone "kuznja_coner4"}
+	{Matrix34
+		-0.9526	-0.0000	0.3041
+		0.3041	0.0000	0.9526
+		-0.0000	1.0000	-0.0000
+		-65.1876	-45.6227	22.1539
+	}
+}
+{Volume "roof"
+	{Box 109.972 153.376 1.9685}
+	{Bone "kuznja_coner4"}
+	{Matrix34
+		-0.9564	0.0000	-0.2919
+		-0.0000	-1.0000	-0.0000
+		-0.2919	0.0000	0.9564
+		-17.9944	-9.4820	112.3366
+	}
+}
+{Volume "body2"
+	{Box 131.778 120.162 5.90551}
+	{Bone "kuznja_coner4"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		7.9620	-14.0998	59.9614
+	}
+}
+{Volume "body1"
+	{Box 82.0771 98.4252 5.90551}
+	{Bone "kuznja_coner4"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		-60.8184	-39.1420	49.2126
+	}
+}
+{Volume "body4"
+	{Polyhedron "body4.vol"}
+	{Bone "kuznja_coner4"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		-10.7950	-74.1688	79.2323
+	}
+}
+{Volume "beam3"
+	{Box 4.92126 4.92126 127.165}
+	{Bone "kuznja_coner4"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		33.9881	67.5584	63.4364
+	}
+}
+{Volume "body3"
+	{Box 42.7165 5.90551 49.2126}
+	{Bone "kuznja_coner4"}
+	{Position -36.5922	-77.1286	24.6063}
+}
+{Volume "beam2"
+	{Box 41.3386 57.0866 0.984252}
+	{Bone "kuznja_coner4"}
+	{Position -37.1807	-45.6299	48.7198}
+}
+{Volume "beam1"
+	{Box 2.95276 2.95276 48.2283}
+	{Bone "kuznja_coner4"}
+	{Position -23.0131	-45.5758	24.1142}
+}

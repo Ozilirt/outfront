@@ -1,0 +1,42 @@
+{game_entity
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "church_addition2.mdl"}
+	{props "cornered" "concrete" "parts" "construction" "windowed" "wall"}
+
+	{constrain zero}			
+	{mass 50000}
+
+	{Volume "roof"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {holed}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+
+	{Volume "hole2"
+		{able clear {hole}}
+	}
+	{Volume "hole1"
+		{able clear {hole}}
+	}
+	{Volume "window1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+}

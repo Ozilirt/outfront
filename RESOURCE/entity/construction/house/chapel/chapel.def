@@ -1,0 +1,18 @@
+{Building
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.85) sy(1.5) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{Extension "chapel.mdl"}
+;	{props "two" "staged" "wood" "construction"}
+	{volume	"body"
+		{thickness hollow 10}
+		{tags "body"}
+	}
+	{volume	"body1"
+		{thickness hollow 10}
+		{tags "body"}
+	}
+}

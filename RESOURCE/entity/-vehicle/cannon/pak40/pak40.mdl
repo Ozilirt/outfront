@@ -1,0 +1,192 @@
+;Exported by: garry
+;Date:        Sun May 30 12:02:54 2004
+;File:        D:\-Projects-\-3DWork-\Пушки\PAK40\Pak-40.max
+{Skeleton
+	{animation
+		{sequence "recoil" {speed 0.7}}
+	}
+	{bone revolute "Basis"
+		{speed 0.0100}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "emit1"
+			{Position -35.0043	-10.0613	0.2413}
+			{visibility 0}
+		}
+		{bone "emit2"
+			{Position -17.5781	28.1644	0.2967}
+			{visibility 0}
+		}
+		{bone "Body"
+			{parameters "CommonMesh;ID=body;"}
+			{animation
+				{sequence "repair" {file "body_r.anm"} {speed 0.6}}
+			}
+			{Position 1.0094	0.0496	10.9386}
+			{VolumeView "Body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{animation
+					{sequence "repair" {file "turret_r.anm"} {speed 0.6}}
+				}
+				{limits -20.0000 20.0000}
+				{speed 0.0100}
+				{Position -6.7315	0.0399	1.1170}
+				{VolumeView "turret.ply"}
+					{bone revolute "gun_rot"
+						{parameters "ID=gun;"}
+						{animation
+							{sequence "repair" {file "gunrot_r.anm"} {speed 0.6}}
+						}
+						{limits -10.0000 10.0000}
+						{speed 0.1000}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	-0.0000	1.0000
+							-0.0000	1.0000	0.0000
+							0.3731	-0.1383	8.7170
+						}
+						{VolumeView "gun_rot.ply"}
+						{bone "gun"
+							{parameters "ID=gun;"}
+							{Matrix34
+								0.0000	0.0000	-1.0000
+								-0.0000	1.0000	-0.0000
+								1.0000	0.0000	-0.0000
+								20.6969	2.8069	0.0488
+							}
+							{VolumeView "gun.ply"}
+							{bone "Foresight1"
+								{parameters "Vis;"}
+								{Matrix34
+									0.0000	-0.0000	1.0000
+									1.0000	-0.0000	-0.0000
+									0.0000	1.0000	0.0000
+									0.0825	-0.8747	40.8967
+								}
+							}
+							{bone "FX_invers"
+								{Matrix34
+									-0.0000	0.0000	-1.0000
+									-0.0000	-1.0000	-0.0000
+									-1.0000	0.0000	0.0000
+									0.1962	0.0682	-41.0242
+								}
+							}
+							{bone "Visor"
+								{parameters "Vis;"}
+								{Matrix34
+									0.0000	-0.0000	1.0000
+									1.0000	-0.0000	-0.0000
+									0.0000	1.0000	0.0000
+									7.9241	3.7067	-16.4918
+								}
+							}
+						}
+					}
+			}
+			{bone "commander"
+				{Matrix34
+					0.9063	-0.4226	-0.0012
+					0.4226	0.9063	-0.0005
+					0.0013	-0.0001	1.0000
+					-18.0778	10.9173	-11.6203
+				}
+			}
+			{bone "gunner"
+				{Position -15.6807	-10.9069	-8.9324}
+			}
+			{bone "WheelL"
+				{parameters "ID=wheelleft;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					-0.0000	-0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					0.7323	16.7862	0.6409
+				}
+				{VolumeView "WheelL.ply"}
+			}
+			{bone "WheelR"
+				{parameters "ID=wheelright;"}
+				{Matrix34
+					-1.0000	0.0000	-0.0000
+					-0.0000	-0.0000	1.0000
+					0.0000	1.0000	0.0000
+					0.7323	-20.6006	0.6409
+				}
+				{VolumeView "WheelR.ply"}
+			}
+		}
+	}
+}
+{Obstacle "obstacle"
+	{Obb2
+		{Center 1.1256 -0.470772}
+		{Extent 12.4623 21.8091}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Cylinder 1.77239 79.6209}
+	{Bone "Body"}
+	{Matrix34
+		0.4264	0.9029	-0.0544
+		-0.0731	0.0943	0.9929
+		0.9016	-0.4194	0.1062
+		-42.1877	24.9230	-5.6678
+	}
+}
+{Volume "body1"
+	{Cylinder 1.77239 79.6209}
+	{Bone "Body"}
+	{Matrix34
+		-0.4196	0.9063	-0.0503
+		-0.1191	0.0000	0.9929
+		0.8999	0.4226	0.1079
+		-42.1189	-25.6724	-5.7356
+	}
+}
+{Volume "wheelleft"
+	{Cylinder 11.4252 4.84035}
+	{Bone "WheelR"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		-0.0000	1.0000	-0.0000
+		-0.0000	-0.0000	-1.0000
+		0.0828	0.3633	1.4154
+	}
+}
+{Volume "wheelright"
+	{Cylinder 11.4252 4.84035}
+	{Bone "WheelL"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	-0.0000	1.0000
+		-0.0828	0.3633	2.2410
+	}
+}
+{Volume "turret"
+	{Box 6.68096 33.1259 29.2051}
+	{Bone "turret"}
+	{Matrix34
+		0.9063	0.0000	0.4226
+		0.0000	1.0000	0.0000
+		-0.4226	0.0000	0.9063
+		6.3479	-0.2947	3.4146
+	}
+}
+{Volume "gun"
+	{Cylinder 1.53193 99.1734}
+	{Bone "gun"}
+	{Matrix34
+		-1.0000	-0.0000	0.0032
+		0.0000	-1.0000	0.0000
+		0.0032	0.0000	1.0000
+		0.2241	-0.4832	-8.8495
+	}
+}

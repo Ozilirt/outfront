@@ -1,0 +1,107 @@
+{Building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.4) sy(1.9) ofsx(0) ofsy(15))	
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "hous-wood2.mdl"}
+	{props "two" "staged" "wood" "construction" "windowed"}
+	{Volume "Body7"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {holed}}
+	}
+	{Volume "Body6"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {holed}}
+	}
+	{Volume "Body5"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {holed}}
+	}
+	{Volume "Body4"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {holed}}
+	}
+	{Volume "Body3"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {holed}}
+	}
+	{Volume "Body2"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {holed}}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {holed}}
+	}
+	{Volume "window4"
+		{Thickness 0.1}
+		{able {visible 0}{window}}
+	}
+	{Volume "window3"
+		{Thickness 0.1}
+		{able {visible 0}{window}}
+	}
+	{Volume "window2"
+		{Thickness 0.1}
+		{able {visible 0}{window}}
+	}
+	{Volume "window1"
+		{Thickness 0.1}
+		{able {visible 0}{window}}
+	}
+	{Volume "exterior1"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {visible 0}}
+	}
+	{Volume "exterior"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {visible 0}}
+	}
+	{Volume "Hole3"
+		{able clear {hole}}
+	}
+	{Volume "Hole2"
+		{able clear {hole}}
+	}
+	{Volume "Hole1"
+		{able clear {hole}}
+	}
+	{Volume "Hole0"
+		{able clear {hole}}
+	}
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 7}
+		{able {holed}}
+	}
+	{Volume "fire8"
+	}
+	{Volume "fire7"
+	}
+	{Volume "fire6"
+	}
+	{Volume "fire5"
+	}
+	{Volume "fire4"
+	}
+	{Volume "fire3"
+	}
+	{Volume "fire2"
+	}
+	{Volume "fire1"
+	}
+	{Volume "fire0"
+	}
+	("declare_fire_volumes")
+}

@@ -1,0 +1,82 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "turret_rotator"}
+	{PatherId "vehicle.small"}
+	{extension "crew.ext"}	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	15}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	15}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 16
+		    {rear 10}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{volume "engine"
+		{thickness 10
+			{rear	15}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "OQF 2-pdr"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "bren"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 30}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 500}
+			{item "ammo bullet45 ap" 30}
+			{item "ammo bullet45 fg" 27}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "mk2daimler.mdl"}
+}

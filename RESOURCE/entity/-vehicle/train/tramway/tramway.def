@@ -1,0 +1,102 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(2.0) scaleY(1.0))
+	(include "/properties/car_crew.ext")
+    {mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed	20	}		; максимальная скорость, kmph
+			{StartTime	3	}		; время разгона до макс. скорости с 0, seconds
+			{BrakeTime	3	}		; время торможения с макс. скорости до 0, seconds
+		}
+	}
+	{Extension "tramway.mdl"}
+
+	{props "vehicle" "steel" "windowed" "car"}
+
+	{TexMods
+		{"yellow" "1"}
+	}
+
+	{obstacleID "tank" "operatable"}
+	{obstacleID "tank" "empty"}
+	{obstacleID "tank" "broken"}
+	
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_steam_locomotive"} {end "seat_driver_car"} {base "doorright"}}
+			{reverse 	{end	"board_steam_locomotive" -1} {base "doorright" -1}}
+		}
+	}
+
+	("crew_human" place(driver)		bone(driver)	door(emit) animation(driver))
+	("crew_human" place(driver)		bone(driver)	door(emit1) animation(driver))
+	
+	{Volume "wheels_left"
+		{thickness 10}
+	}
+	{Volume "wheels_right"
+		{thickness 10}
+	}
+	{Volume "engine"
+		{thickness 20}
+	}
+	{Volume "cabin"
+		{thickness 5}
+	}
+	{Volume "body"
+		{thickness 10}
+		{component "body"}
+	}
+	{Volume "window1"
+		{able {visible 0}{window}}
+		{thickness 2}
+	}
+	{Volume "window2"
+		{able {visible 0}{window}}
+		{thickness 2}
+	}
+	{Volume "window8"
+		{able {visible 0}{window}}
+		{thickness 2}
+	}
+	{Volume "window6"
+		{able {visible 0}{window}}
+		{thickness 2}
+	}
+	{Volume "window7"
+		{able {visible 0}{window}}
+		{thickness 2}
+	}
+	{Volume "window5"
+		{able {visible 0}{window}}
+		{thickness 2}
+	}
+	{Volume "window4"
+		{able {visible 0}{window}}
+		{thickness 2}
+	}	
+	{Volume "window3"
+		{able {visible 0}{window}}
+		{thickness 2}
+	}
+	{component "body"
+		{Able {break_by_pierce}}
+		{tags "mover"}
+	}
+	{component "engine"
+		{Able {break_by_pierce}}
+		{tags "mover"}
+	}
+	{component "cabin"
+		{Able {break_by_pierce}}
+	}
+	{component "wheels_left"
+		{Able {break_by_pierce}}
+		{tags "mover"}
+	}
+	{component "wheels_right"
+		{Able {break_by_pierce}}
+		{tags "mover"}
+	}
+}

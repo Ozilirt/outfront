@@ -1,0 +1,12 @@
+{actor
+	{Extension "torpedo.mdl"}
+	{chassis "torpedo"
+		{maxspeed		25}
+		{acceleration	10}
+		{depth			0.3}
+	}
+	{colliderId "vehicle"}
+	{collideWith  "construction" "vehicle" "armored" "tank" "tree" "bush" "human" "particle"}
+	{rejectColliderByVolume}
+	{extension "/properties/dummy_fsm.inc"}
+}

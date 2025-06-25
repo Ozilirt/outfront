@@ -1,0 +1,211 @@
+;Exported by: shevchenko
+;Date:        Sat Apr 24 11:44:17 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\dot_new_x.max
+{Skeleton
+	{bone "dot3a_5"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "dot3a_5.ply"}
+		{bone "exterior"
+			{Position -0.0459	0.0000	51.1811}
+			{VolumeView "exterior.ply"}
+		}
+		{bone "piece0"
+			{Position 0.4023	-53.1410	29.6567}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "piece1"
+			{Position 6.7639	-37.0654	51.1811}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Position 45.1148	-1.7075	21.5978}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Position 31.7759	35.6423	44.2434}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece4"
+			{Position 17.3076	47.3957	16.3245}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "piece5"
+			{Position 2.2904	53.1496	40.2356}
+			{VolumeView "piece5.ply"}
+		}
+		{bone "piece6"
+			{Position 17.7610	37.8229	51.1811}
+			{VolumeView "piece6.ply"}
+		}
+		{bone "FX_dust1"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-5.1434	-31.2749	0.0000
+			}
+		}
+		{bone "FX_smoke2"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				19.5177	33.7220	0.0000
+			}
+		}
+		{bone "FX_stone1"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				15.1234	49.8997	15.1199
+			}
+		}
+		{bone "FX_stone1a"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				45.0291	-2.6474	16.7357
+			}
+		}
+	}
+}
+{Area "interior"
+	{Polygon2
+		{Radius 0}
+		{Vertex -54.8711 -62.9079}
+		{Vertex 42.6509 -62.9079}
+		{Vertex 42.6509 19.5528}
+		{Vertex 19.6824 42.1447}
+		{Vertex -54.4946 42.1447}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -14.2828 -53.1476}
+		{Extent 35.8793 6.39433}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 31.1624 -40.9415}
+		{Extent 19.1376 6.40195}
+		{Axis 0.707388 0.706825}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 43.2661 8.30899}
+		{Extent 6.39432 40.1422}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -0.0731812 53.4245}
+		{Extent 49.3784 6.03909}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "piece6"
+	{Box 22.446 70.0686 3.98706}
+	{Bone "piece6"}
+	{Matrix34
+		0.5736	0.8192	0.0000
+		-0.8192	0.5736	0.0000
+		0.0000	0.0000	1.0000
+		2.8678	3.0004	0.0849
+	}
+}
+{Volume "piece5"
+	{Box 34.9789 11.9332 10.0192}
+	{Bone "piece5"}
+	{Position 0.5116	-0.0703	4.0332}
+}
+{Volume "piece4"
+	{Box 34.9789 11.9332 14.4277}
+	{Bone "piece4"}
+	{Matrix34
+		0.9063	-0.4226	0.0000
+		0.4226	0.9063	0.0000
+		0.0000	0.0000	1.0000
+		-0.0720	2.3734	1.9780
+	}
+}
+{Volume "piece3"
+	{Box 42.6743 12.5299 10.0192}
+	{Bone "piece3"}
+	{Matrix34
+		0.6428	-0.7660	0.0000
+		0.7660	0.6428	0.0000
+		0.0000	0.0000	1.0000
+		0.8304	1.8385	0.0254
+	}
+}
+{Volume "piece2"
+	{Box 6.60402 21.5991 21.3409}
+	{Bone "piece2"}
+	{Position 0.9727	-0.0919	1.2087}
+}
+{Volume "piece1"
+	{Box 32.5304 37.8749 3.98706}
+	{Bone "piece1"}
+	{Position -0.3408	-1.7750	0.0849}
+}
+{Volume "piece0"
+	{Box 19.938 12.4177 37.7724}
+	{Bone "piece0"}
+	{Matrix34
+		0.9659	0.0000	-0.2588
+		0.0000	1.0000	0.0000
+		0.2588	0.0000	0.9659
+		-4.3528	0.6666	3.7367
+	}
+}
+{Volume "roof"
+	{Box 101.921 119.087 5.36428}
+	{Bone "exterior"}
+	{Position 0.3043	0.2291	0.3855}
+}
+{Volume "hole"
+	{Box 65.1309 66.5624 13.7795}
+	{Bone "dot3a_5"}
+	{Position 23.4180	32.4552	32.2554}
+}
+{Volume "body4"
+	{Box 71.7586 12.7887 49.2126}
+	{Bone "dot3a_5"}
+	{Position -14.2828	53.1476	24.6063}
+}
+{Volume "body3"
+	{Box 38.2701 12.7887 49.2126}
+	{Bone "dot3a_5"}
+	{Matrix34
+		0.7071	-0.7071	0.0000
+		0.7071	0.7071	0.0000
+		0.0000	0.0000	1.0000
+		31.1624	40.9415	24.6063
+	}
+}
+{Volume "body2"
+	{Box 12.7886 80.2844 49.2126}
+	{Bone "dot3a_5"}
+	{Position 43.2661	-8.3090	24.6063}
+}
+{Volume "body1"
+	{Box 98.7569 12.0782 49.2126}
+	{Bone "dot3a_5"}
+	{Position -0.0732	-53.4245	24.6063}
+}

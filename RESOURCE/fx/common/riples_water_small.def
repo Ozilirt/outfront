@@ -1,0 +1,92 @@
+{fx
+	{Sound "explosion.water"}
+	{ParticleView
+		{generator
+			{TotalParticles 10}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 1 0}
+				{speed 0.14}
+			}
+			{ParticleInit
+				{Speed 0 0}
+				{Lifetime 0.5 0.2}
+			}
+			{StartParticles 1}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.5}
+			}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Flash/Drops.ebm"
+					{Scale
+						{Linear
+							{min 0.15 0.05}
+							{max 0.2 0.1}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 -180}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1.8}
+					}
+					{Visibility 0}
+				}
+			}
+			{stage collided dying
+				{sprite "/FX/_BMP/Flash/ripples_w.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{Scale
+						{Linear
+							{min 0.2 0.1}
+							{max 1.3 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1.5}
+					}
+				}
+				{flags KillParticle Ground}
+				{sprite "/fx/_bmp/flash/ripples_w2.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{Scale
+						{Linear
+							{min 0.2 0.1}
+							{max 1.5 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1.5}
+					}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+}

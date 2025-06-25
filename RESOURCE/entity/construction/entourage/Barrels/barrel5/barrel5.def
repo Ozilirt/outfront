@@ -1,0 +1,25 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 	1.45}
+;			{PreScaleY 	1.45}
+;  			{PreshiftX	0	}
+;  			{PreshiftY	0	}
+;			{Visibility	0.6	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}
+;	}
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "barrel5.mdl"}
+	{props "steel" "shed"}	
+	{Volume "body"
+		{thickness 3}
+		{tags "body"}
+	}
+}

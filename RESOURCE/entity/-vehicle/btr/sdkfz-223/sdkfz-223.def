@@ -1,0 +1,67 @@
+{ArmoredCar 
+	(include "/properties/armoredcar.ext")
+	(include "/properties/structure/arm_car4x4.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew"}
+	{PatherId "vehicle.small"}
+
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+		{"ambush3" "3"}
+		{"ambush4" "4"}
+	}
+	{extension "crew.ext"}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 14
+			{front	20}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 14
+			{front	20}
+		}
+	}
+	{volume "turret"
+		{thickness 14
+			{front	20}
+		}
+	}
+
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 500}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "SdKfz-223.mdl"}
+}

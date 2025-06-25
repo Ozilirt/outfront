@@ -1,0 +1,44 @@
+;Exported by: sat
+;Date:        Mon Mar 22 17:19:46 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\pine_tree2.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "pine"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "pine.ply"}
+	}
+}
+{Obstacle "obstacle"
+	{Circle2
+		{Radius 6.67735}
+		{Center -1.21424 0.114387}
+	}
+	{Rotate}
+}
+{Volume "crown"
+	{Box 60.4438 62.6987 110.282}
+	{Bone "pine"}
+	{Matrix34
+		0.7193	0.6947	0.0000
+		-0.6947	0.7193	0.0000
+		0.0000	-0.0000	1.0000
+		-4.2525	2.7039	169.9891
+	}
+}
+{Volume "bole"
+	{Cylinder 4.8224 218.957}
+	{Bone "pine"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9998	0.0209
+		0.0000	-0.0209	0.9998
+		-1.2251	-1.0159	110.6988
+	}
+}

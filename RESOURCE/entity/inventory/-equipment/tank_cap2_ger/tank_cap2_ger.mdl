@@ -1,0 +1,41 @@
+;Exported by: dan
+;Date:        Fri Dec 19 17:33:06 2003
+;File:        D:\-Projects-\-3DWork-\Soldiers\Soldiers for EXP\tank_com_ger.max
+{Skeleton
+	{bone "cap_crew"
+		{Orientation
+			1.0000	0.0000	-0.0000
+			0.0000	-1.0000	-0.0000
+			0.0000	-0.0000	1.0000
+		}
+		{VolumeView "cap_crew.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				0.6284	-0.9370	3.2772
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 9.84252 9.84252 3.68412}
+	{Bone "cap_crew"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	1.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.3962	0.5493	3.7330
+	}
+}
+{Volume "body"
+	{Box 3.85597 2.9526 2.08212}
+	{Bone "cap_crew"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	1.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.4962	0.2885	4.2390
+	}
+}

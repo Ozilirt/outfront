@@ -1,0 +1,26 @@
+;Exported by: sk
+;Date:        Fri Oct 31 18:17:25 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\fence.max
+{Skeleton
+	{bone "ironfence2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "ironfence2.ply"}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center 0.0237637 0.0247803}
+		{Extent 2.30155 2.34851}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 4.60309 4.69702 22.872}
+	{Bone "ironfence2"}
+	{Position 0.0238	-0.0248	11.4360}
+}

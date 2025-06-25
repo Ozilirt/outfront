@@ -1,0 +1,129 @@
+{building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(2.0) ofsx(0) ofsy(-5))		
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "hous-haulm6.mdl"}
+	{props "two" "staged" "wood" "construction" "windowed" "flue"}
+
+	{Volume "Body7"				;roof
+		{Thickness 5}
+		{able {visible 0}}
+	}
+	{Volume "Body2"				;roof
+		{Thickness 5}
+		{able {visible 0}}
+	}
+
+
+	{Volume "Body8"
+		{Tags  "body"}
+		{Thickness 5}
+	}
+	{Volume "Body6"
+		{Tags  "body"}
+		{Thickness 5}
+		{able {holed}}
+	}
+	{Volume "Body5"
+		{Tags  "body"}
+		{Thickness 5}
+	}
+	{Volume "Body4"
+		{Tags  "body"}
+		{Thickness 5}
+		{able {holed}}
+	}
+	{Volume "Body3"
+		{Tags  "body"}
+		{Thickness 5}
+		{able {holed}}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 5}
+	}
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 5}
+		{able {holed}}
+	}
+
+	{Volume "Hole0"
+		{able clear {hole}}
+	}
+	{Volume "Hole4"
+		{able clear {hole}}
+	}
+	{Volume "Hole3"
+		{able clear {hole}}
+	}
+	{Volume "Hole2"
+		{able clear {hole}}
+	}
+	{Volume "Hole1"
+		{able clear {hole}}
+	}
+
+	{Volume "Window5"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+	{Volume "Window4"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+	{Volume "Window3"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+	{Volume "Window2"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+	{Volume "Window1"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+
+	{Volume "fire1"
+		{thickness 0.1}
+		{able {visible 0}}
+	}
+	{Volume "fire3"
+		{thickness 0.1}
+		{able {visible 0}}
+	}
+	{Volume "fire2"
+		{thickness 0.1}
+		{able {visible 0}}
+	}
+	{Volume "fire8"
+		{thickness 0.1}
+		{able {visible 0}}
+	}
+	{Volume "fire7"
+		{thickness 0.1}
+		{able {visible 0}}
+	}
+	{Volume "fire6"
+		{thickness 0.1}
+		{able {visible 0}}
+	}
+	{Volume "fire5"
+		{thickness 0.1}
+		{able {visible 0}}
+	}
+	{Volume "fire4"
+		{thickness 0.1}
+		{able {visible 0}}
+	}
+	{Volume "fire0"
+		{thickness 0.1}
+		{able {visible 0}}
+	}
+
+	("declare_fire_volumes")
+}

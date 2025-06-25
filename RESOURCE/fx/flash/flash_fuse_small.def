@@ -1,0 +1,148 @@
+{fx
+	{ParticleView
+		{generator
+			{TotalParticles 30}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 360 10}
+			}
+			{ParticleInit
+				{Speed 0.7 0.3}
+				{Lifetime 0.08 0.04}
+			}
+			{Color 0xfdb802}
+			{Color 0xffff55}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 360 100}
+				{speed 0}
+			}
+			{ParticleInit
+				{Speed 0.7 0.2}
+				{Lifetime 0.15 0.05}
+			}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_bmp/particle/Oskolki.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 -180}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.15 0.05}
+					{Light 1}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 5 5}
+				{speed 0}
+			}
+			{ParticleInit
+				{Speed 0.1 0.05}
+				{Lifetime 2.5 2}
+			}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value -0.01}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_bmp/smoke/smokesmal4b_30.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 -180}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale
+						{Linear
+							{min 0.08 0.03}
+							{max 0.4 0.2}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.5}
+							{max 0}
+						}
+					}
+				}
+				{sprite "/fx/_bmp/smoke/smokesmal4b_70.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 -180}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale
+						{Linear
+							{min 0.08 0.03}
+							{max 0.4 0.2}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.5}
+							{max 0}
+						}
+					}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+}

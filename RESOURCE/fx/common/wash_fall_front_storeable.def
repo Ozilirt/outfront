@@ -1,0 +1,85 @@
+{fx
+	{storeable 1}
+	{ParticleView
+		{generator
+			{TotalParticles 50}
+			{EmissionArea
+				{radius 0.1}
+				{alpha0 0}
+			}
+			{ParticleInit
+				{Speed 0.8 -1}
+				{Lifetime 1.3 0.5}
+			}
+			{StartParticles 1}
+			{AutoTurn}
+		}
+		{mover
+			{damping 0.97}
+			{gravity
+				{value 0}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+		}
+		{visualizer
+			{stage
+				{flags Ground}
+				{sprite "/fx/_bmp/flash/wave5a.ebm"
+					{preTurn 270}
+					{ScaleY
+						{Linear
+							{min 0.5 0.2}
+							{max 0.8 0.4}
+						}
+					}
+					{ScaleX
+						{Linear
+							{min 0.5 0.2}
+							{max 0.7 0.3}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.8 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/fx/_bmp/flash/wave5.ebm"
+					{preTurn 270}
+					{ScaleY
+						{Linear
+							{min 0.5 0.2}
+							{max 0.8 0.3}
+						}
+					}
+					{ScaleX
+						{Linear
+							{min 0.5 0.2}
+							{max 0.7 0.3}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.8 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+		}
+		{NotifyOwner}
+		{offset 0 0 -10}
+	}
+}

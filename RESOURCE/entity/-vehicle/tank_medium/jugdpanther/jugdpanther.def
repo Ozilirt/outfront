@@ -1,0 +1,99 @@
+{
+	(include "/properties/tank.ext")
+	(include "/properties/structure/spg_ferdinand.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "-turret" "self_propelled"}
+	
+	{TexMods
+		{"ambush1" "1"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 50
+		    {front  80}
+			{top	25}
+			{bottom	20}
+			{rear   40}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 50
+		    {front  80}
+			{top	25}
+			{bottom	20}
+			{rear   40}
+		}   
+	}
+
+	{volume "mgun_shield1"
+		{thickness 15
+		}   
+	}
+	{volume "mgun_shield2"
+		{thickness 25
+		}   
+	}
+
+	{volume "shield_left"		{thickness 10}}
+	{volume "shield_right"		{thickness 10}}
+	{component "shield_left"	{Able {repair} {break_by_pierce}}}
+	{component "shield_right"	{Able {repair} {break_by_pierce}}}
+	{extender "shield"}
+
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "88mm_kwk43"}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	""}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "right"
+			{forward	{begin	""}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+	}
+
+
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 600}
+			{item "ammo bullet88 ap" 30}
+			{item "ammo bullet88 fg" 27}
+		}
+	}
+	
+	{mass 46200}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{maxspeed 15}
+		}
+		{speed
+			{Slow	5	}	; km/h
+			{Normal	8	}
+			{Fast	10	}
+		}
+	}
+	("tracks_forced")
+	{Extension "Jugdpanther.mdl"}
+}

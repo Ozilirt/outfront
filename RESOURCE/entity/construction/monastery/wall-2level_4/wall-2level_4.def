@@ -1,0 +1,42 @@
+{building
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1) sy(0.18) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "wall-2level_4.mdl"}
+	{props "concrete" "construction"}
+	{Volume "Body7"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "Body5"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "Body6"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "Body4"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "Body3"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "Body2"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+}

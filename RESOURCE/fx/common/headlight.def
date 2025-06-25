@@ -1,0 +1,35 @@
+{fx
+	{SpriteView
+		{Sprite "/fx/_bmp/flash/FlashBSGL.ebm"
+			{Light
+				{Peak
+					{min 1}
+					{max 1.5}
+				}
+			}
+			{timer
+				{mode play loop}
+				{duration 2}
+			}
+			{Scale 0.35}
+			{Highlight 0x00FEE992}
+		}
+	}
+	{SpriteView
+		{Sprite "/fx/_bmp/flash/light.ebm"
+			{Light
+				{Peak
+					{min 0.2}
+					{max 0.3}
+				}
+			}
+			{timer
+				{mode play loop}
+				{duration 2}
+			}
+			{ScaleX 3}
+			{ScaleY 2}
+		}
+		{orientation trace}
+	}
+}

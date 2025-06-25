@@ -1,0 +1,26 @@
+{fx
+	{SpriteView "shockwave"
+		{Sprite "/FX/_BMP/Flash/supershock.ebm"
+			{Visibility
+				{Linear
+					{min 1}
+					{max 0}
+				}
+			}
+;			{Highlight 0x00ECECE6}
+			{scale
+				{Linear
+					{min 0}
+					{max 3 1}
+				}
+			}
+			{Timer
+				{Mode play}
+				{Duration 1 0.3}
+			}
+		}
+		{ground}
+		{layer grounddynamic}
+		{notifyowner}
+	}
+}

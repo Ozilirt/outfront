@@ -1,0 +1,16 @@
+{construction	
+    (include "/properties/building.inc")
+;	(include "/properties/shadow/entourage.inc" sx(0.6) sy(1.05) pturn(0) ofsx(0) ofsy(-1))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "transformer.mdl"}
+;	{props "cornered" "parts" "construction" "steel" "wall"}
+	{props "small" "steel" "parts" "construction" "cornered"}
+ 	
+	{volume	"body"
+		{tags "body"}
+		{thickness 50}
+	}
+}

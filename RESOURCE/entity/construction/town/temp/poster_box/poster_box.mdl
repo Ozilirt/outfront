@@ -1,0 +1,26 @@
+;Exported by: sk
+;Date:        Thu Oct 30 18:52:21 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Cafe.max
+{Skeleton
+	{bone "poster_box"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "poster_box.ply"}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center -3.76701e-007 5.59325e-007}
+		{Extent 13.293 13.293}
+		{Axis 0.191495 0.981494}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Cylinder 13.5436 60.1018}
+	{Bone "poster_box"}
+	{Position 0.0000	0.0000	30.0509}
+}

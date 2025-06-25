@@ -1,0 +1,312 @@
+{mission
+	{Camera
+		{Position 5765.41 4289.36}
+		{Distance 1200}
+		{ViewAngle 0.523599}
+		{YawAngle 1.16808}
+	}
+	{Environment "day1"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "flag_point" 0x8000
+		{Position 6447.99 4525.15 230}
+		{OffsetZ 170}
+		{Extender "map_point"
+			{caption "z x"}
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "x z"}
+			{"allow/release" "x z"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "flag_point" 0x8001
+		{Position 6030.94 3639.7 229}
+		{OffsetZ 170}
+		{Extender "map_point"
+			{caption "z x"}
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "x z"}
+			{"allow/release" "x z"}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "flag_point" 0x8002
+		{Position 4932.72 4174.48 220.225}
+		{OffsetZ 170}
+		{Extender "map_point"
+			{caption "z x"}
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "x z"}
+			{"allow/release" "x z"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "flag_point" 0x8003
+		{Position 5273.19 5045.76 229}
+		{OffsetZ 170}
+		{Extender "map_point"
+			{caption "z x"}
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "x z"}
+			{"allow/release" "x z"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "start_point" 0x8004
+		{Position 6909.72 3032.35 32.2635}
+		{Turn 111.27}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "start_point" 0x8005
+		{Position 4082.11 4270.74 -37}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "flag_point" 0x8006
+		{Position 5730.58 4492.41 59}
+		{Extender "map_point"
+			{caption "z x"}
+			{show "All"}
+			{visor "MapPoint"}
+			{zone "10"}
+			{"allow/capture" "x z"}
+			{"allow/release" "x z"}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "map_point" 0x8007
+		{Position 6064.46 4265.47 59}
+		{Turn 138.854}
+		{Extender "map_point"
+			{name "x"}
+			{caption "XTeam"}
+			{teams "x"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "map_point" 0x8008
+		{Position 5428.82 4688.49 59}
+		{Turn -33.4039}
+		{Extender "map_point"
+			{name "z"}
+			{caption "ZTeam"}
+			{teams "z"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "watch-tower_armed" 0x8009
+		{Position 6034.28 3643.06 59}
+		{Turn 109.935}
+		{Impregnability}
+	}
+	{Entity "mg34_tower" 0x800a
+		{Position 6029.04 3653.68 180.349}
+		{Orientation
+			 -0.340954   0.940080   0.000000
+			 -0.940080  -0.340954   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 1000 {cell 0 0}}
+				{item "ammo mgun" 50 {cell 2 0}}
+				{item "ammo mgun" 1000 {cell 4 0}}
+				{item "ammo mgun" 1000 {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "watch-tower_armed" 0x800b
+		{Position 6448.99 4526.63 60}
+		{Turn 157.796}
+		{Impregnability}
+	}
+	{Entity "mg34_tower" 0x800c
+		{Position 6437.6 4529.87 181.349}
+		{Orientation
+			 -0.925844   0.377905   0.000000
+			 -0.377905  -0.925844   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 150 {cell 0 0}}
+				{item "ammo mgun" 1000 {cell 2 0}}
+				{item "ammo mgun" 1000 {cell 4 0}}
+				{item "ammo mgun" 1000 {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "watch-tower_armed" 0x800d
+		{Position 5273.92 5047.69 59}
+		{Turn -27.1501}
+		{Impregnability}
+	}
+	{Entity "mg34_tower" 0x800e
+		{Position 5284.99 5043.48 180.349}
+		{Orientation
+			  0.889814  -0.456323   0.000000
+			  0.456323   0.889814   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 150 {cell 0 0}}
+				{item "ammo mgun" 1000 {cell 2 0}}
+				{item "ammo mgun" 1000 {cell 4 0}}
+				{item "ammo mgun" 1000 {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "watch-tower_armed" 0x800f
+		{Position 4933.03 4172.08 50.6467}
+		{Turn 24.0044}
+		{Impregnability}
+	}
+	{Entity "mg34_tower" 0x8010
+		{Position 4943.25 4178.06 171.996}
+		{Orientation
+			  0.913514   0.406807   0.000000
+			 -0.406807   0.913514   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 150 {cell 0 0}}
+				{item "ammo mgun" 1000 {cell 2 0}}
+				{item "ammo mgun" 1000 {cell 4 0}}
+				{item "ammo mgun" 1000 {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 13}
+	}
+	{Entity "side_star" 0x8011
+		{Position 6447.88 4525.13 361.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8012
+		{Position 6030.83 3639.68 360.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8013
+		{Position 4932.61 4174.46 351.723}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8014
+		{Position 5273.08 5045.74 360.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8015
+		{Position 5730.47 4492.39 190.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Link 0x800a To 0x8009 "mgun"}
+	{Link 0x800c To 0x800b "mgun"}
+	{Link 0x800e To 0x800d "mgun"}
+	{Link 0x8010 To 0x800f "mgun"}
+	{Link 0x8011 To 0x8000 "side_pointer"}
+	{Link 0x8012 To 0x8001 "side_pointer"}
+	{Link 0x8013 To 0x8002 "side_pointer"}
+	{Link 0x8014 To 0x8003 "side_pointer"}
+	{Link 0x8015 To 0x8006 "side_pointer"}
+	{Helpers
+		{waypoints
+		}
+		{task
+			{name "task00"}
+			{desc "mission/mp/monastery/vp"}
+			{primary}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

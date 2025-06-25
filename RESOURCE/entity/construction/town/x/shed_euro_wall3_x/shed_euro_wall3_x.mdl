@@ -1,0 +1,94 @@
+;Exported by: ubrashaev
+;Date:        Tue May 18 18:56:06 2004
+;File:        D:\-Projects-\-work-\3d\shed_euro1_x.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.8}}
+	}
+	{bone "shed_euro3"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_euro3.ply"}
+		{bone "floor"
+			{Position -21.4814	7.8004	52.0283}
+			{VolumeView "floor.ply"}
+		}
+		{bone "piece9"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-18.2375	26.5532	33.4646
+			}
+			{VolumeView "piece9.ply"}
+		}
+		{bone "piece10"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				21.0946	21.4001	18.4122
+			}
+			{VolumeView "piece10.ply"}
+		}
+		{bone "piece14"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				9.3216	21.4001	35.3388
+			}
+			{VolumeView "piece14.ply"}
+		}
+		{bone "piece8"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				-4.6266	-17.1070	56.9407
+			}
+			{VolumeView "piece8.ply"}
+		}
+		{bone "piece7"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				-4.0143	-23.8018	79.0544
+			}
+			{VolumeView "piece7.ply"}
+		}
+		{bone "exterior"
+			{Position -0.0091	3.5452	75.5709}
+		}
+	}
+}
+{Volume "piece7"
+	{Box 13.8803 17.2342 7.0721}
+	{Bone "piece7"}
+	{Position -0.3119	-2.3840	-0.4342}
+}
+{Volume "piece8"
+	{Box 13.8803 20.2756 7.3622}
+	{Bone "piece8"}
+	{Position -0.7431	-1.1651	0.1127}
+}
+{Volume "piece14"
+	{Box 13.8803 20.2756 7.3622}
+	{Bone "piece14"}
+	{Position -0.7431	-1.1651	0.1127}
+}
+{Volume "piece10"
+	{Box 11.1098 9.09968 7.87756}
+	{Bone "piece10"}
+	{Position -0.4911	-0.5090	-0.0185}
+}
+{Volume "piece9"
+	{Box 13.8803 20.2756 7.3622}
+	{Bone "piece9"}
+	{Position -0.3119	-1.0310	-0.2891}
+}

@@ -1,0 +1,89 @@
+;Exported by: vic
+;Date:        Fri Jan 02 13:13:36 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\trench\trench13_a.max
+{Skeleton
+	{bone "trench_wood_exit"
+		{parameters "Ground;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "trench_wood_exit.ply" {Ground}}
+	}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 23.6194 -42.8138}
+		{Extent 5.00458 23.8246}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -23.9559 -42.8138}
+		{Extent 5.00458 23.8246}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -47.2578 -23.7083}
+		{Extent 26.5394 5.00458}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 47.1598 -23.7083}
+		{Extent 26.5394 5.00458}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -7.62939e-006 23.7428}
+		{Extent 73.8189 5.07004}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body4"
+	{Polyhedron "body4.vol"}
+	{Bone "trench_wood_exit"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		21.5675	42.8138	-13.7795
+	}
+}
+{Volume "body3"
+	{Polyhedron "body3.vol"}
+	{Bone "trench_wood_exit"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-21.9041	42.8138	-13.7795
+	}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "trench_wood_exit"}
+	{Position -47.2578	21.6565	-13.7795}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "trench_wood_exit"}
+	{Position 47.1598	21.6565	-13.7795}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "trench_wood_exit"}
+	{Position -0.0000	-21.6255	-13.7795}
+}

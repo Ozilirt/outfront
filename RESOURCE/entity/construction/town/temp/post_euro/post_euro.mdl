@@ -1,0 +1,126 @@
+;Exported by: ubrashaev
+;Date:        Mon Dec 08 11:53:14 2003
+;File:        D:\-Projects-\-work-\3d\Cafe.max
+{Skeleton
+	{bone "post_euro"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_euro.ply"}
+		{bone "light_point"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	0.0000
+				-0.6552	0.4512	94.9279
+			}
+		}
+		{bone "lamp_glass1"
+			{Matrix34
+				-0.0000	0.0000	-1.0000
+				-0.9986	-0.0533	0.0000
+				-0.0533	0.9986	0.0000
+				-0.9890	-17.2201	77.0249
+			}
+			{VolumeView "lamp_glass1.ply"}
+		}
+		{bone "lamp_glass2"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.8618	-0.5073	-0.0000
+				-0.5073	0.8618	-0.0000
+				-17.5390	0.2842	77.0260
+			}
+			{VolumeView "lamp_glass2.ply"}
+		}
+		{bone "lamp_glass3"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.9214	-0.3885	-0.0000
+				-0.3885	0.9214	-0.0000
+				-0.5570	17.7151	77.4616
+			}
+			{VolumeView "lamp_glass3.ply"}
+		}
+		{bone "lamp_glass4"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				-0.5406	0.8413	-0.0000
+				0.8413	0.5406	0.0000
+				17.5928	0.5194	77.6608
+			}
+			{VolumeView "lamp_glass4.ply"}
+		}
+		{bone "lamp_light_point1"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-1.0000	0.0046	-0.0000
+				0.0046	1.0000	0.0000
+				-0.8114	-17.1794	77.4904
+			}
+			{VolumeView "lamp_light_point1.ply"}
+		}
+		{bone "lamp_light_point2"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				-0.8236	-0.5672	-0.0000
+				-0.5665	0.8241	-0.0000
+				-17.3748	0.3955	77.4329
+			}
+			{VolumeView "lamp_light_point2.ply"}
+		}
+		{bone "lamp_light_point3"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.9214	-0.3885	-0.0000
+				-0.3885	0.9214	-0.0000
+				-0.5646	17.4571	77.3914
+			}
+			{VolumeView "lamp_light_point3.ply"}
+		}
+		{bone "lamp_light_point4"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				-0.8381	-0.5455	-0.0000
+				-0.5448	0.8386	-0.0000
+				17.4418	0.4412	77.4329
+			}
+			{VolumeView "lamp_light_point4.ply"}
+		}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center -0.907852 -0.242729}
+		{Extent 1.9685 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Lamp4"
+	{Box 6.83407 7.48218 6.06709}
+	{Bone "post_euro"}
+	{Position 18.1082	0.7640	77.8560}
+}
+{Volume "Lamp3"
+	{Box 7.43205 6.53507 6.46821}
+	{Bone "post_euro"}
+	{Position -0.4659	17.9601	78.1309}
+}
+{Volume "Lamp2"
+	{Box 8.20088 7.6716 6.06709}
+	{Bone "post_euro"}
+	{Position -17.4597	0.5079	77.7799}
+}
+{Volume "Lamp1"
+	{Box 7.24753 6.62978 5.86652}
+	{Bone "post_euro"}
+	{Position -1.3535	-16.3093	77.9742}
+}
+{Volume "body"
+	{Box 3.93701 3.93701 97.3166}
+	{Bone "post_euro"}
+	{Position -0.9079	0.2427	48.6583}
+}

@@ -1,0 +1,61 @@
+;Exported by: ubrashaev
+;Date:        Tue May 18 19:05:09 2004
+;File:        D:\-Projects-\-work-\3d\indahous\shed_euro1.max
+{Skeleton
+	{bone "shed_euro4"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_euro4.ply"}
+		{bone "exterior"
+			{Position 0.0000	-0.6726	70.7686}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -1.10158 1.11039}
+		{Extent 19.685 23.622}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body9"
+	{Obb2
+		{Center 21.2791 -4.28852}
+		{Extent 2.95395 19.1784}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body8"
+	{Obb2
+		{Center 2.25301 -20.4224}
+		{Extent 21.9777 2.95009}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof5"
+	{Box 48.8517 74.1591 2.1964}
+	{Bone "exterior"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		-0.0000	-0.7474	0.6644
+		0.0000	0.6644	0.7474
+		-1.2006	-0.1481	-0.6980
+	}
+}
+{Volume "body9"
+	{Polyhedron "body9.vol"}
+	{Bone "shed_euro4"}
+	{Position 21.2791	4.2885	-0.2020}
+}
+{Volume "body8"
+	{Box 43.9553 5.90018 50}
+	{Bone "shed_euro4"}
+	{Position 2.2530	20.4224	24.8408}
+}

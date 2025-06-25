@@ -1,0 +1,22 @@
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush.anm"} {duration percent 40}}
+	}
+	{bone "gate_wood1"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate_wood1.ply"}
+	}
+}
+
+
+{Volume "body"
+	{Box 3.50805 85.6005 28.855}
+	{Bone "gate_wood1"}
+	{Position 0.9505	0.1210	14.4275}
+}
+

@@ -1,0 +1,27 @@
+;Exported by: sat
+;Date:        Fri Aug 20 13:00:35 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\tropics\palm_bamboo1.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "palm1"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "palm1.ply"}
+	}
+}
+{Volume "bole"
+	{Box 7.72766 7.7292 71.4009}
+	{Bone "palm1"}
+	{Position 0.2980	-0.7962	36.2887}
+}
+{Volume "crown"
+	{Box 39.8121 36.2077 73.4076}
+	{Bone "palm1"}
+	{Position 1.2399	2.3268	57.0045}
+}

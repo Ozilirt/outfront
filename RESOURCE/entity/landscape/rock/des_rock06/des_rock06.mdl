@@ -1,0 +1,37 @@
+;Exported by: shevchenko
+;Date:        Fri May 14 11:11:00 2004
+;File:        D:\-Projects-\-3DWork-\sheva\rocks\desert rocks.max
+{Skeleton
+	{bone "rock06"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "rock06.ply"}
+	}
+}
+{Obstacle "Obstacle"
+	{Polygon2
+		{Radius 0}
+		{Vertex 5.96099 -7.61203}
+		{Vertex 13.2815 -4.90904}
+		{Vertex 16.8685 3.71652}
+		{Vertex 14.4594 9.09422}
+		{Vertex 5.22727 11.3856}
+		{Vertex -1.24987 8.47577}
+		{Vertex -1.98471 3.29128}
+		{Vertex -1.08267 -2.73479}
+	}
+	{Rotate}
+}
+{Volume "rock"
+	{Polyhedron "rock.vol"}
+	{Bone "rock06"}
+	{Matrix34
+		0.9402	-0.3406	0.0000
+		0.3406	0.9402	0.0000
+		0.0000	0.0000	1.0000
+		7.0778	-2.7510	0.0000
+	}
+}

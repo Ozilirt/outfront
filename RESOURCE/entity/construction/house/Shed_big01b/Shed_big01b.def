@@ -1,0 +1,48 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.1) sy(1.9) ofsx(-5) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "Shed_big01b.mdl"}
+	{props "two" "staged" "concrete" "construction" "windowed"}
+
+	{volume	"roof"
+		{thickness 15}
+		{able {visible 0}}
+	}
+
+	{volume	"body1"
+		{thickness 15}
+		{able {holed}}
+		{tags "body"}	
+	}
+	{volume	"body2"
+		{thickness 15}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body3"
+		{thickness 15}
+		{tags "body"}
+	}
+
+	{Volume "hole1"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+
+	{Volume "window1"
+		{able {visible 0} {window}}
+		{Thickness 1}
+	}
+	{Volume "window2"
+		{able {visible 0} {window}}
+		{Thickness 1}
+	}
+}

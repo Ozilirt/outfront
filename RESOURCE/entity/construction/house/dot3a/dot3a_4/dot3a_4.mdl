@@ -1,0 +1,69 @@
+;Exported by: shevchenko
+;Date:        Fri Apr 23 13:42:13 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\dot_new.max
+{Skeleton
+	{bone "dot3a_4"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "dot3a_4.ply"}
+		{bone "exterior"
+			{Position -4.8324	-0.0368	58.0709}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -5.51567 -1.74088}
+		{Extent 43.3071 38.3858}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 44.4326 -33.646}
+		{Extent 6.57195 10.4489}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 44.4326 20.8785}
+		{Extent 6.57195 14.942}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 8.80754 42.5093}
+		{Extent 42.192 6.74957}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Box 103.002 94.4336 9.63451}
+	{Bone "exterior"}
+	{Position 4.1508	-1.3501	0.0652}
+}
+{Volume "body3"
+	{Box 13.1439 20.8979 53.1496}
+	{Bone "dot3a_4"}
+	{Position 44.4326	33.6460	26.5748}
+}
+{Volume "body2"
+	{Box 13.1439 29.884 53.1496}
+	{Bone "dot3a_4"}
+	{Position 44.4326	-20.8785	26.5748}
+}
+{Volume "body1"
+	{Box 84.384 13.4991 53.1496}
+	{Bone "dot3a_4"}
+	{Position 8.8075	-42.5093	26.5748}
+}

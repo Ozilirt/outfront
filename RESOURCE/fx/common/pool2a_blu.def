@@ -1,0 +1,21 @@
+{fx
+	{SpriteView
+		{Sprite "/fx/_bmp/explosion/pool2a_blu.ebm"
+			{timer
+				{mode play}
+				{duration 32}
+			}
+			{Scale 2}
+			{Visibility
+				{Linear
+					{min 0.9}
+					{max 0}
+				}
+			}
+		}
+		{ground}
+		{layer groundshadow}
+		{UseDirection}
+		{NotifyOwner}
+	}
+}

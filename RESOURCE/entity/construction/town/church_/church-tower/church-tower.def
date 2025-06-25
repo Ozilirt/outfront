@@ -1,0 +1,76 @@
+{game_entity
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{Extension "church-tower.mdl"}
+;	{props "cornered" "concrete" "parts" "construction" "windowed"}
+	{props "concrete" "construction" "windowed"}
+	{obstacleID "unbreakable"}
+
+	{constrain zero}		
+	{mass 50000}
+
+	{Volume "roof3"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof2"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof1"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+
+	{Volume "body11"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body10"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body9"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body8"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body7"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body6"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+}

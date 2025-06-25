@@ -1,0 +1,17 @@
+;SDL
+game_entity
+
+{volume "body"
+	{able clear {select} {contact} {contact_ground} {touch}}
+}
+{volume "select"
+	{able clear {select}}
+	{density 0}
+}
+
+{obstacleID "nothing"}
+{colliderID "nothing"}
+;{simulation {able 1}}
+{constrain ground}
+{props "stuff" "mine" "collectable" "nocover"}
+{extender "mine"}

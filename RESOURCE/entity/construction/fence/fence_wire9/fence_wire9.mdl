@@ -1,0 +1,37 @@
+;Exported by: sk
+;Date:        Thu Aug 14 12:21:55 2003
+
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush.anm"} {duration percent 40}}
+	}
+	{bone "fence_wire9"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	-0.0000
+			0.0000	-0.0000	1.0000
+		}
+		{VolumeView "fence_wire9.ply"}
+		{bone "Plane172"
+			{parameters "CommonMesh;"}
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-0.8908	-0.4543
+				0.0000	-0.5163	0.8564
+				0.0281	0.1120	20.1179
+			}
+			{VolumeView "Plane172.ply"}
+		}
+	}
+}
+{Volume "Body"
+	{Box 2.38352 85.1092 34.005}
+	{Bone "fence_wire9"}
+		{Matrix34
+			-0.0000	1.0000	0.0000
+			-1.0000	-0.0000	0.0000
+			0.0000	0.0000	1.0000
+			0.1248	0.0023	20.2931
+		}
+}

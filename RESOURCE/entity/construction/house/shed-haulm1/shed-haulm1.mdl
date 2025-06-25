@@ -1,0 +1,188 @@
+;Exported by: ubrashaev
+;Date:        Wed Apr 07 12:16:41 2004
+;File:        D:\-Projects-\-work-\3d\shed_haulm1.max
+{Skeleton
+	{bone "shed-haulm1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed-haulm1.ply"}
+		{bone "exterior"
+			{Position 4.8135	2.3686	53.7719}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 26.8236 26.6362}
+		{Extent 39.9085 3.55621}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 3.62637 -29.6001}
+		{Extent 59.6208 3.5562}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -43.878 26.6362}
+		{Extent 11.2857 3.55621}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -52.7953 -1.32001}
+		{Extent 3.55621 30.3585}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center 62.6438 -1.32001}
+		{Extent 3.55621 30.3585}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "door"
+	{Obb2
+		{Center -6.53601 37.2393}
+		{Extent 11.6293 1.55717}
+		{Axis 0.50046 0.86576}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center 4.69613 -0.648005}
+		{Extent 53.3859 25.3776}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 79.817 7.11241 45.076}
+	{Bone "shed-haulm1"}
+	{Position 26.8236	-26.6362	22.5380}
+}
+{Volume "body2"
+	{Box 119.242 7.11241 45.076}
+	{Bone "shed-haulm1"}
+	{Position 3.6264	29.6001	22.5380}
+}
+{Volume "body3"
+	{Box 22.5714 7.11241 45.076}
+	{Bone "shed-haulm1"}
+	{Position -43.8780	-26.6362	22.5380}
+}
+{Volume "body4"
+	{Box 60.7169 7.11241 45.076}
+	{Bone "shed-haulm1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-52.7953	1.3200	22.5380
+	}
+}
+{Volume "body5"
+	{Box 60.7169 7.11241 45.076}
+	{Bone "shed-haulm1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		62.6438	1.3200	22.5380
+	}
+}
+{Volume "door"
+	{Box 23.257 3.102 35.5536}
+	{Bone "shed-haulm1"}
+	{Matrix34
+		-0.5000	0.8660	0.0000
+		-0.8660	-0.5000	0.0000
+		0.0000	0.0000	1.0000
+		-6.5360	-37.2393	17.7768
+	}
+}
+{Volume "fire1"
+	{Box 99.54 1.98528 19.5545}
+	{Bone "shed-haulm1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9659	-0.2588
+		0.0000	0.2588	0.9659
+		2.9489	-35.4348	48.7701
+	}
+}
+{Volume "fire2"
+	{Box 99.54 1.98528 19.5545}
+	{Bone "shed-haulm1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9659	0.2588
+		0.0000	-0.2588	0.9659
+		2.9489	41.8955	48.7701
+	}
+}
+{Volume "fire3"
+	{Box 92.3187 2.29548 13.4392}
+	{Bone "shed-haulm1"}
+	{Position 7.8040	34.7879	10.9139}
+}
+{Volume "fire4"
+	{Box 54.468 2.29548 29.3442}
+	{Bone "shed-haulm1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		68.0909	1.3736	19.5292
+	}
+}
+{Volume "fire5"
+	{Box 54.468 2.29548 17.0954}
+	{Bone "shed-haulm1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-58.4492	1.3736	14.0676
+	}
+}
+{Volume "fire6"
+	{Box 48.4766 2.29548 17.4977}
+	{Bone "shed-haulm1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		0.9397	-0.0000	-0.3420
+		0.3420	-0.0000	0.9397
+		-63.0195	3.0853	50.5623
+	}
+}
+{Volume "hole1"
+	{Box 27.763 13.2376 15.5597}
+	{Bone "shed-haulm1"}
+	{Position 14.7664	30.3694	27.1440}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "shed-haulm1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		4.4968	1.3200	44.7722
+	}
+}

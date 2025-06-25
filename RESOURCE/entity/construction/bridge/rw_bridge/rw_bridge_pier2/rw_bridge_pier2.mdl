@@ -1,0 +1,72 @@
+;Exported by: vic
+;Date:        Mon Sep 06 14:40:20 2004
+;File:        C:\-Projects-\-3DWork-\Constructions\bridge_metal\bridge_vic2.max
+{Skeleton
+	{bone "RW_bridge_pier2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "RW_bridge_pier2.ply"}
+	}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 28.5253 -127.164}
+		{Extent 23.1901 5.22685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -27.8098 -127.164}
+		{Extent 23.1916 5.22685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 0.106201 -127.164}
+		{Extent 5.71082 5.22685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body4"
+	{Box 11.4216 10.4537 99.6911}
+	{Bone "RW_bridge_pier2"}
+	{Matrix34
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		-40.9391	127.5980	135.8045
+	}
+}
+{Volume "body3"
+	{Box 6.51033 10.4537 138.46}
+	{Bone "RW_bridge_pier2"}
+	{Matrix34
+		0.9570	0.0000	0.2900
+		0.0000	1.0000	0.0000
+		-0.2900	0.0000	0.9570
+		28.5253	127.1636	64.4011
+	}
+}
+{Volume "body2"
+	{Box 6.51033 10.4537 138.46}
+	{Bone "RW_bridge_pier2"}
+	{Matrix34
+		0.9570	0.0000	-0.2900
+		0.0000	1.0000	0.0000
+		0.2900	0.0000	0.9570
+		-27.8098	127.1636	64.4007
+	}
+}
+{Volume "body1"
+	{Box 11.4216 10.4537 152.154}
+	{Bone "RW_bridge_pier2"}
+	{Position 0.1062	127.1636	74.2225}
+}

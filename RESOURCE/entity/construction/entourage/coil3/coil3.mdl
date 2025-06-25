@@ -1,0 +1,33 @@
+;Exported by: sk
+;Date:        Sat Mar 13 11:07:06 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Aerodrome\barrels.max
+{Skeleton
+	{bone "coil3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "coil3.ply"}
+	}
+}
+{Volume "fire0"
+	{Cylinder 13.9206 15.9405}
+	{Bone "coil3"}
+	{Matrix34
+		-0.0000	-0.1330	0.9911
+		0.0000	0.9911	0.1330
+		-1.0000	0.0000	0.0000
+		-1.0758	-0.1065	12.3673
+	}
+}
+{Volume "body"
+	{Cylinder 12.4291 14.4913}
+	{Bone "coil3"}
+	{Matrix34
+		-0.0000	-0.1330	0.9911
+		0.0000	0.9911	0.1330
+		-1.0000	0.0000	0.0000
+		-0.3811	-0.1065	12.3673
+	}
+}

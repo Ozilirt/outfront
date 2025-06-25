@@ -1,0 +1,60 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+	{DecalView
+		{ownershadow  256 256}
+		{name "shadow"}
+	}
+	{Extension "mill_water.mdl"}
+	{props "wood" "parts" "construction" "no_destroyed_stamp"}
+
+	{extender "bone_rotator"
+		{bone "wheel"}
+		{speed -10}
+	}
+
+	{constrain zero}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+		{"4" "4"}
+		{"5" "5"}
+		{"6" "6"}
+		{"7" "7"}
+		{"8" "8"}
+		{"9" "9"}
+		{"10" "10"}
+	}
+	{mass 50000}
+
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "Body2"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+
+	{Volume "fx4"
+		{able clear}
+	}
+	{Volume "fx3"
+		{able clear}
+	}
+	{Volume "fx2"
+		{able clear}
+	}
+	{Volume "fx1"
+		{able clear}
+	}
+}

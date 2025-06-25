@@ -1,0 +1,18 @@
+{Building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.5) sy(0.7) ofsx(-5) ofsy(3))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "mts-boiler2.mdl"}
+	{props "two" "staged" "concrete" "construction"}
+	{volume	"chimney_stalk"
+		{thickness hollow 5}
+		{tags "body"}
+	}
+	{volume	"support"
+		{thickness hollow 5}
+		{tags "body"}
+	}
+}

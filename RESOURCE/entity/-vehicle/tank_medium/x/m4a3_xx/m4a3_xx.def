@@ -1,0 +1,34 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	{obstacleId "tank"}
+	{TexMods
+		{"ambush" "1"}
+		{"ambush2" "2"}
+		{"ambush3" "3"}
+		{"ambush4" "4"}
+		{"ambush5" "5"}
+		{"ambush6" "6"}
+		{"ambush7" "7"}
+		{"ambush8" "8"}
+	}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 50
+			{front  75}
+		}   
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 50
+			{front  75}
+		}
+	}
+	{volume "turret"
+		{thickness 50 0.3
+			{front  75}
+		}
+	}
+	{Extension "M4A3_xx.mdl"}
+}

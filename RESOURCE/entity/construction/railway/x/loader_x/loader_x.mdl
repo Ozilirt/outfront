@@ -1,0 +1,39 @@
+;Exported by: garry
+;Date:        Wed Sep 29 20:23:56 2004
+;File:        D:\-work-\3D\construction\Loader1_x_reactor2.max
+{Skeleton
+	{animation
+		{sequence "crush1" {speed 0.8}}
+		{sequence "crush2" {speed 0.9}}
+	}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "loader"
+			{parameters "CommonMesh;"}
+			{Position 42.1124	56.0802	102.1267}
+			{VolumeView "loader.ply"}
+			{bone "FX_dust2"
+				{Matrix34
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					1.0000	0.0000	0.0000
+					-43.4449	-1.1188	-30.6694
+				}
+			}
+		}
+	}
+}
+{Obstacle "obstacle"
+	{Polygon2
+		{Radius 0}
+		{Vertex -76.4259 -193.579}
+		{Vertex 78.7539 -193.579}
+		{Vertex 78.7539 72.1729}
+		{Vertex -76.4259 72.1729}
+	}
+	{Rotate}
+}

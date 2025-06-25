@@ -1,0 +1,113 @@
+;Exported by: ubrashaev
+;Date:        Mon Dec 08 11:52:29 2003
+;File:        D:\-Projects-\-work-\3d\Cafe.max
+{Skeleton
+	{bone "post_euro4"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_euro4.ply"}
+		{bone "lamp_glass1"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.5165	0.8563	-0.0000
+				0.8563	0.5165	0.0000
+				-17.4193	0.5224	77.6748
+			}
+			{VolumeView "lamp_glass1.ply"}
+		}
+		{bone "lamp_glass2"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.5233	0.8522	-0.0000
+				0.8522	0.5233	0.0000
+				17.3699	0.5487	78.0371
+			}
+			{VolumeView "lamp_glass2.ply"}
+		}
+		{bone "lamp_glass3"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				0.9997	0.0261	0.0000
+				0.0261	-0.9997	0.0000
+				-0.9730	-17.6267	77.6669
+			}
+			{VolumeView "lamp_glass3.ply"}
+		}
+		{bone "lamp_light_point1"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				-0.4661	0.8848	-0.0000
+				0.8848	0.4661	0.0000
+				-17.1519	0.4698	77.4575
+			}
+			{VolumeView "lamp_light_point1.ply"}
+		}
+		{bone "lamp_light_point2"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.5233	0.8522	-0.0000
+				0.8522	0.5233	0.0000
+				17.4593	0.4131	77.5055
+			}
+			{VolumeView "lamp_light_point2.ply"}
+		}
+		{bone "lamp_light_point3"
+			{Matrix34
+				-0.0000	0.0000	-1.0000
+				-0.0339	0.9994	0.0000
+				0.9996	0.0294	-0.0000
+				-0.8870	-17.0276	77.4369
+			}
+			{VolumeView "lamp_light_point3.ply"}
+		}
+		{bone "light_point"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	0.0000
+				-0.9612	0.3218	87.4424
+			}
+		}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center -0.907867 -0.242729}
+		{Extent 1.9685 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Lamp3"
+	{Box 7.24753 6.62978 5.86652}
+	{Bone "post_euro4"}
+	{Position -0.8886	-16.8115	79.0704}
+}
+{Volume "Lamp2"
+	{Box 6.83407 7.48218 6.06709}
+	{Bone "post_euro4"}
+	{Matrix34
+		0.8522	0.5233	0.0000
+		-0.5233	0.8522	0.0000
+		0.0000	0.0000	1.0000
+		17.4189	0.9414	78.1507
+	}
+}
+{Volume "Lamp1"
+	{Box 8.20088 7.6716 6.06709}
+	{Bone "post_euro4"}
+	{Matrix34
+		0.9854	0.1705	0.0000
+		-0.1705	0.9854	0.0000
+		0.0000	0.0000	1.0000
+		-17.7457	0.6193	78.3058
+	}
+}
+{Volume "body"
+	{Box 3.93701 3.93701 97.3166}
+	{Bone "post_euro4"}
+	{Position -0.9079	0.2427	48.6583}
+}

@@ -1,0 +1,36 @@
+;Exported by: shevchenko
+;Date:        Thu Mar 04 11:28:42 2004
+;File:        D:\-Projects-\-3DWork-\sheva\st\king22.max
+{Skeleton
+	{bone "king"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "king.ply"}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 1.87528 -3.8147e-006}
+		{Extent 15.9449 15.9449}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body3"
+	{Box 42.8799 42.874 3.0315}
+	{Bone "king"}
+	{Position 1.8753	0.0000	1.4295}
+}
+{Volume "body2"
+	{Box 31.8898 31.8898 37.0669}
+	{Bone "king"}
+	{Position 1.8753	0.0000	21.4730}
+}
+{Volume "body1"
+	{Box 13.7785 21.626 83.2479}
+	{Bone "king"}
+	{Position -0.4345	0.0000	81.6836}
+}

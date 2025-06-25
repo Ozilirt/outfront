@@ -1,0 +1,36 @@
+;Exported by: SK
+;Date:        Thu Jun 12 13:03:31 2003
+
+{Skeleton
+	{animation
+		{sequence {name "crush1"} {file "crush1.anm"} {duration percent 40}}
+		{sequence {name "crush2"} {file "crush2.anm"} {duration percent 40}}
+	}
+	{bone "hous-beam1"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hous-beam1.ply"}
+		{bone "FX_wood2"
+			{Position 0.3800	1.8947	38.9775}
+		}
+		{bone "FX_dust2"
+			{Position 0.3800	1.8947	26.1009}
+		}
+		{bone "FX_fire2"
+			{Position 39.8661	24.9409	18.1036}
+		}
+		{bone "FX_fire1"
+			{Position -46.1025	25.7963	13.9341}
+		}
+		{bone "FX_smoke2"
+			{Position -46.1025	6.4100	13.9341}
+		}
+		{bone "FX_smoke1"
+			{Position 41.0891	-31.7344	13.9341}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+{Car
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/structure/tank_panzerflak.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "light" "turret" "zenite" "light_turret"}
+	{extension "crew.ext"}
+	{TexMods
+		{"ambush1" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+		    {front  15}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+		    {front  15}
+		}   
+	}
+	{volume "turret"
+		{thickness 6
+			{front  8}
+		}
+	}
+	{volume "gun"
+		{thickness 5
+		}
+	}
+	{Volume "Fuel"
+		{thickness 1}
+	}
+	{volume "shield_left"	
+		{thickness 6}
+	}
+	{volume "shield_right"	
+		{thickness 6}
+	}
+	{volume "engine"	
+		{thickness 10}
+	}
+	{component "engine"	
+		{RepairTime 10}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "shield_left"	
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "shield_right"	
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "gun"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_flak38"}
+			{Rotate}
+;			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet20 zenite" 180}
+		}
+	}
+
+	("tracks")
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")
+				{MaxSpeed 	    20}
+		}
+	}
+	{Extension "Panzerflak.mdl"}
+}

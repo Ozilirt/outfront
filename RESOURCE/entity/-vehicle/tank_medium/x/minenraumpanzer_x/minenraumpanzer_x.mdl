@@ -1,0 +1,153 @@
+;Exported by: sk
+;Date:        Mon Jul 05 16:49:11 2004
+;File:        D:\-Projects-\-3DWork-\Model\-Tank\Minenraumpanzer III\MinenraumpanzerIII_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{animation
+				{sequence "break" {file "track_L.anm"}}
+			}
+			{Position 1.6563	23.1045	12.7090}
+			{VolumeView "WheelsL.ply"}
+			{bone "TrackL"
+				{parameters "CommonMesh;ID=trackleft;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					-0.0000	-0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-2.6761	-0.0228	1.9064
+				}
+				{VolumeView "TrackL.ply"}
+			}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{animation
+				{sequence "break" {file "track_R.anm"}}
+			}
+			{Position 1.6563	-25.1780	12.7090}
+			{VolumeView "WheelsR.ply"}
+			{bone "TrackR"
+				{parameters "CommonMesh;ID=trackright;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					-0.0000	-0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-2.6761	-0.0228	1.9064
+				}
+				{VolumeView "TrackR.ply"}
+			}
+		}
+		{bone "FXWheel_Work1"
+			{Matrix34
+				-0.8660	0.0000	0.5000
+				0.0000	1.0000	-0.0000
+				-0.5000	-0.0000	-0.8660
+				74.5278	-19.4382	0.1903
+			}
+		}
+		{bone "FXWheel_Work2"
+			{Matrix34
+				-0.8660	0.0000	0.5000
+				0.0000	1.0000	-0.0000
+				-0.5000	-0.0000	-0.8660
+				74.5278	18.5436	0.1903
+			}
+		}
+		{bone "Body"
+			{parameters "CommonMesh;ID=body;"}
+			{animation
+				{sequence "break" {file "body.anm"}}
+			}
+			{Position -0.6496	-1.0039	28.8386}
+			{VolumeView "Body.ply"}
+				{bone "FXfire1"
+					{Matrix34
+						0.0000	-0.0000	1.0000
+						-0.0000	-1.0000	0.0000
+						1.0000	-0.0000	-0.0000
+						-28.1005	1.1107	11.4741
+					}
+				}
+				{bone revolute "WheelR1"
+					{parameters "ID=trackright;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						42.7382	-25.2780	-6.0512
+					}
+					{VolumeView "WheelR1.ply"}
+				}
+				{bone revolute "WheelL1"
+					{parameters "ID=trackleft;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						42.7382	25.1769	-6.0512
+					}
+					{VolumeView "WheelL1.ply"}
+				}
+				{bone revolute "WheelR2"
+					{parameters "ID=trackright;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						-42.1610	-25.2779	-4.4352
+					}
+					{VolumeView "WheelR2.ply"}
+				}
+				{bone revolute "WheelL2"
+					{parameters "ID=trackleft;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						-42.1610	25.1769	-4.4352
+					}
+					{VolumeView "WheelL2.ply"}
+				}
+				{bone revolute "WheelL3"
+					{parameters "ID=wheelL;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						75.5112	21.5863	-15.3606
+					}
+					{VolumeView "WheelL3.ply"}
+				}
+				{bone revolute "WheelR3"
+					{parameters "ID=wheelR;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						75.5112	-21.4414	-15.3606
+					}
+					{VolumeView "WheelR3.ply"}
+				}
+				{bone "Cower"
+					{parameters "ID=body;"}
+					{Position 10.5045	0.0466	11.7803}
+					{VolumeView "Cower.ply"}
+				}
+				{bone "FXfire2"
+					{Matrix34
+						0.0000	0.0000	1.0000
+						-0.0000	-1.0000	0.0000
+						1.0000	-0.0000	-0.0000
+						-5.2715	1.1107	1.1736
+					}
+				}
+		}
+	}
+}

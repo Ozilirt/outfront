@@ -1,0 +1,56 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/structure/cannon_nebelwerfer41.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "turret"}
+	{props "emit_on_attack"}
+	(include "/properties/dummy_fsm.inc")
+
+;	{simulation {able 0}}
+
+	{TexMods
+ 		{"ambush" "1"}
+		{"ambush1" "2"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+
+	("crew_2_human")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "weapon nebel"}
+			{Barrels 6}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo nebel" 100}
+		}
+	}
+
+	{mass 10000}
+	{Extension "Nebelwerfer41.mdl"}
+}

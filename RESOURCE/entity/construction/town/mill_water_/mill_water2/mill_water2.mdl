@@ -1,0 +1,133 @@
+;Exported by: sk
+;Date:        Thu Dec 18 15:43:49 2003
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\mill_water.max
+{Skeleton
+	{bone "mill_water2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "mill_water2.ply"}
+		{bone "window2"
+			{Position -19.8398	-41.1340	60.2112}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass2"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.1440	-0.5643	-0.5456
+				}
+			}
+		}
+		{bone "window2_x"
+			{Position -19.8398	-40.4969	60.2112}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+		{bone "attach1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-19.2514	-31.1166	30.3667
+			}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "Body4_vol"
+	{Obb2
+		{Center 43.3584 -32.526}
+		{Extent 3.93701 19.2583}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center 4.88061 41.1774}
+		{Extent 42.5224 3.93702}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1_vol"
+	{Obb2
+		{Center 43.3584 15.2689}
+		{Extent 3.93702 29.6411}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "window2"
+	{Box 19.3778 1.73228 23.4092}
+	{Bone "window2"}
+	{Position 0.0540	-0.0075	-3.1983}
+}
+{Volume "Body5"
+	{Box 38.5165 7.87402 23.2795}
+	{Bone "mill_water2"}
+	{Matrix34
+		0.0000	-0.8192	0.5736
+		1.0000	0.0000	0.0000
+		0.0000	-0.5736	-0.8192
+		43.3584	25.7958	25.0518
+	}
+}
+{Volume "Body4"
+	{Box 38.5165 7.87402 23.2795}
+	{Bone "mill_water2"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		1.0000	0.0000	-0.0000
+		0.0000	0.0000	1.0000
+		43.3584	32.5260	11.6398
+	}
+}
+{Volume "Hole0"
+	{Box 19.44 15.748 23.5266}
+	{Bone "mill_water2"}
+	{Position -19.7866	-41.3260	57.1155}
+}
+{Volume "Body"
+	{Box 85.0448 7.87402 78.7402}
+	{Bone "mill_water2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	1.0000	-0.0000
+		0.0000	0.0000	1.0000
+		4.8806	-41.1774	39.3701
+	}
+}
+{Volume "Body3"
+	{Polyhedron "Body3.vol"}
+	{Bone "mill_water2"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		-0.9151	0.0000	-0.4032
+		-0.4032	0.0000	0.9151
+		53.1819	-9.5145	79.0501
+	}
+}
+{Volume "Body2"
+	{Polyhedron "Body2.vol"}
+	{Bone "mill_water2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.6533	-0.7571
+		0.0000	0.7571	0.6533
+		8.6126	-49.5321	79.0501
+	}
+}
+{Volume "Body1"
+	{Box 59.2823 7.87402 78.7402}
+	{Bone "mill_water2"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		1.0000	0.0000	-0.0000
+		0.0000	0.0000	1.0000
+		43.3584	-15.2689	39.3701
+	}
+}

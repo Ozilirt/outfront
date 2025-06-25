@@ -1,0 +1,20 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "fence5_snackbar_small.mdl"}
+	{props "concrete" "fence"}
+
+	{volume	"body1"
+		{thickness 5}
+		{tags "body"}
+	}
+	{volume	"body" 
+		{thickness 5}
+		{tags "body"}
+	}
+
+}

@@ -1,0 +1,71 @@
+;Exported by: ubrashaev
+;Date:        Mon Mar 22 17:25:55 2004
+;File:        D:\-Projects-\-work-\3d\Cafe.max
+{Skeleton
+	{bone "poster_box"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "poster_box.ply"}
+		{bone "piece1"
+			{Position 0.0000	0.0000	51.0859}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "fx_smoke1a"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				2.7643	-2.4193	0.0000
+			}
+		}
+		{bone "piece2"
+			{Position 0.0000	4.6692	28.0857}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Matrix34
+				0.9962	-0.0872	0.0000
+				0.0872	0.9962	0.0000
+				0.0000	0.0000	1.0000
+				-5.5842	-15.7812	45.3451
+			}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "fx_dust1a"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				2.7643	-2.5569	40.9782
+			}
+		}
+	}
+}
+{Volume "piece3"
+	{Box 9.74359 2.66373 25}
+	{Bone "piece3"}
+	{Matrix34
+		0.9063	-0.4226	0.0000
+		0.4226	0.9063	0.0000
+		0.0000	0.0000	1.0000
+		0.8010	2.4245	2.1340
+	}
+}
+{Volume "piece2"
+	{Box 9.74359 2.66373 25}
+	{Bone "piece2"}
+	{Matrix34
+		0.9063	-0.4226	0.0000
+		0.4226	0.9063	0.0000
+		0.0000	0.0000	1.0000
+		4.8718	7.0924	19.3935
+	}
+}
+{Volume "piece1"
+	{Box 24.7598 29.1687 4.185}
+	{Bone "piece1"}
+	{Position -0.5645	-1.0176	10.1549}
+}

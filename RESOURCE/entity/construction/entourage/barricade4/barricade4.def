@@ -1,0 +1,19 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/entourage.inc" sx(0.3) sy(1.4) pturn(0) ofsx(-3) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "barricade4.mdl"}
+	{props "one" "staged" "concrete" "construction" "disable_area" "no_destroyed_stamp"}
+ 
+	{Volume "body1"
+		{thickness	4}
+		{tags "body"}
+	}
+	{Volume "body"
+		{thickness	4}
+		{tags "body"}
+	}	
+}

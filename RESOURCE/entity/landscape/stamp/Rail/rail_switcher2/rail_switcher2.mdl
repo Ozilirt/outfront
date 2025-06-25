@@ -1,0 +1,43 @@
+;Exported by: Yurov
+;Date:        Wed Apr 14 16:00:18 2004
+;File:        D:\-Projects-\-3DWork-\Model\railswitch\rail_switch.max
+{Skeleton
+	{animation
+		{sequence "switch"}
+	}
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "switch"
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				0.0000	0.0872	-0.9962
+				0.0000	0.9962	0.0872
+				-58.2899	48.0383	3.3435
+			}
+			{VolumeView "switch.ply"}
+		}
+		{bone "emit2"
+			{Position -70.5904	30.2099	4.6522}
+			{visibility 0}
+		}
+		{bone "emit1"
+			{Position -71.3869	65.6039	4.6522}
+			{visibility 0}
+		}
+	}
+}
+{Volume "body1"
+	{Box 10.1865 10.3065 13.5683}
+	{Bone "body"}
+	{Position -58.0398	48.0535	6.7841}
+}
+{Volume "body"
+	{Box 10.1865 10.3065 13.5683}
+	{Bone "body"}
+	{Position -58.0398	48.0535	6.7841}
+}

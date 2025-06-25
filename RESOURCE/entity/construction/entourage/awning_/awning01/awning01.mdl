@@ -1,0 +1,93 @@
+;Exported by: shevchenko
+;Date:        Fri Jan 30 15:46:50 2004
+;File:        D:\-Projects-\-3DWork-\sheva\awning2.max
+{Skeleton
+	{bone "awning01"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "awning01.ply"}
+	}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center 3.91906 22.3999}
+		{Extent 30.5118 0.492126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -28.5347 22.1358}
+		{Extent 1.9685 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -28.5347 -1.47141}
+		{Extent 1.9685 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 13.804 -25.1181}
+		{Extent 1.9685 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -28.5347 -25.1181}
+		{Extent 1.9685 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "fire0"
+	{Box 61.0236 1.9685 55.1181}
+	{Bone "awning01"}
+	{Position 3.9191	-22.0843	27.5591}
+}
+{Volume "roof"
+	{Box 68.8976 59.0551 0.984252}
+	{Bone "awning01"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9845	0.1755
+		0.0000	-0.1755	0.9845
+		0.0086	1.1506	59.5404
+	}
+}
+{Volume "body5"
+	{Box 61.0236 0.984252 55.1181}
+	{Bone "awning01"}
+	{Position 3.9191	-22.3999	27.5591}
+}
+{Volume "body4"
+	{Box 3.93701 3.93701 55.1181}
+	{Bone "awning01"}
+	{Position -28.5347	-22.1358	27.5591}
+}
+{Volume "body3"
+	{Box 3.93701 3.93701 59.4488}
+	{Bone "awning01"}
+	{Position -28.5347	1.4714	29.7244}
+}
+{Volume "body2"
+	{Box 3.93701 3.93701 63.5827}
+	{Bone "awning01"}
+	{Position 13.8040	25.1181	31.7913}
+}
+{Volume "body1"
+	{Box 3.93701 3.93701 63.5827}
+	{Bone "awning01"}
+	{Position -28.5347	25.1181	31.7913}
+}

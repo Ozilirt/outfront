@@ -1,0 +1,29 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	{volume "gun"
+		{thickness 5
+		}
+	}
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+	}
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  15}
+			{bottom	 6}
+			{rear   10}
+		}   
+	}
+	{volume "engine"
+		{thickness 15}
+	}
+	{Extension "SdKfz250_3_xx.mdl"}
+}

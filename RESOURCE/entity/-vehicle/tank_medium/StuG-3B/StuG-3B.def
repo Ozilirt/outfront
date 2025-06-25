@@ -1,0 +1,128 @@
+{
+	(include "/properties/tank.ext")
+	(include "/properties/structure/spg.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "-turret" "self_propelled"}
+	
+	{TexMods
+		{"ambush1" "1"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+			{top	15}
+			{bottom	20}
+			{rear   20}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+			{top	15}
+			{bottom	20}
+			{rear   20}
+		}   
+	}
+
+	{volume "mgun_shield1"
+		{thickness 15
+		}   
+	}
+	{volume "mgun_shield2"
+		{thickness 25
+		}   
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_kv"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("crew_human"         place(driver)		door1(emit1) door2(emit2) visor(main))
+	("crew_human"         place(commander)	door1(emit1) door2(emit2) visor(main))
+	("crew_human_visible" place(gunner)		door1(emit1) door2(emit2) visor(main))
+	("crew_human"         place(charger)	door1(emit1) door2(emit2) visor(main))
+
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+
+
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "75mm_stuk37"}
+			{Mounted}
+		}
+		{place "mgun"
+			{Rotate}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}
+	
+	{sensor
+		{visor "main"
+			{vision
+				{uncover 2}
+			    {human 40
+			    	{crawl 30}
+			    }
+			    {actor "vehicle" 60}
+			    {actor 45}
+				{h_fov 150}
+				{wide 2}
+				{v_fov 120}
+				{fog_range 50}
+				{fog_fov 150}
+			}
+			{bone "visor1"}
+		}
+	}
+	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 650}
+			{item "ammo bullet75 ap" 50}
+			{item "ammo bullet75 fg" 27}
+		}
+	}
+	
+	{mass 28500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{TurnTime 12}
+		}
+	}
+	("tracks_forced")
+	{Extension "StuG-3B.mdl"}
+}
+

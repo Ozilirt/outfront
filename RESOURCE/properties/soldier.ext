@@ -1,0 +1,18 @@
+;SDL
+(include "human.ext")
+
+{Able {fight}}
+
+{Weaponry
+	{place "hand_right"
+		{Rotate}
+		{SequentialAim 0}
+		{LinkBone "right_hand"}
+		{LinkAnimation "on"}
+	}
+}
+
+{extender "talk"
+	{talker "soldier"}
+	{update_period 1.5}
+}

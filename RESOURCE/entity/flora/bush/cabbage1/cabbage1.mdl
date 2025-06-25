@@ -1,0 +1,22 @@
+;Exported by: sat
+;Date:        Mon Dec 22 13:21:42 2003
+;File:        D:\-Project-\-3DWork-\Poligontrees\cabbage2.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "pla01"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "pla01.ply"{nocastshadows}}
+	}
+}
+{Volume "crown"
+	{Sphere 5.78386}
+	{Bone "pla01"}
+	{Position -0.6501	0.3943	4.5552}
+}

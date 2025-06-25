@@ -1,0 +1,106 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(4.0) scaleY(2.0))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(3.6) scaley(1.6))
+	{Extension "mtb_d3.mdl"}
+	{mass 15000}
+	{props "vehicle" "marine" "torpedo_boat" "flag"}
+
+	{extension "crew.ext"}
+	{rejectColliderByVolume}
+
+	{Volume "ballast1"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "ballast2"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "ballast3"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{Volume "ballast4"
+		{tags "float"}
+		{Able clear {float}}
+	}
+	{volume "body_front"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 20}
+	}
+	{volume "body"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 20}
+	}
+	{volume "body_rear"
+		{tags "body"}
+		{able {touch 0}}
+		{thickness 20}
+	}
+	{Volume "cabin"
+		{thickness hollow 7}
+	}
+	{Volume "torpedo1"
+		{thickness 3}
+	}
+	{Volume "torpedo_det1"
+		{thickness 0.2}
+	}
+	{Volume "torpedo2"
+		{thickness 3}
+	}
+	{Volume "torpedo_det2"
+		{thickness 0.2}
+	}
+	{Volume "lamp1"
+		{thickness 4}
+	}
+	{Volume "lamp2"
+		{thickness 4}
+	}
+
+	{component "body_front" {able {repair}}} ;to _x view
+	{component "body" {able {repair}}}
+	{component "body_rear" {able {repair}}}
+
+	{Weaponry
+		{place "gun"
+;			{Rotate}
+			{RestoreIKAfterAim}
+			{DefaultWeapon "weapon torpedo"}
+			{Mounted}
+			{weapon {ammo "ammo torpedo" 2}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+;			{item "ammo torpedo" 2}
+		}
+	}
+	{extender "light"
+		{lightfx "light_boat"}
+		{breakfx "glass_hit"}
+		{lamp "1"}
+		{lamp "2"}
+	}
+	{patherID "water"}
+	{Sensor
+		{Visor "main"
+			{vision
+			    {actor	 50	}
+				{h_fov	 270}
+				{v_fov 	 90	}
+			}
+			{bone	 "foresight1"}
+		}
+	}
+	{chassis
+		{Locomotion ("locomotion")
+			{TurnRadius	16}
+		}
+	}
+}

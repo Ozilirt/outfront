@@ -1,0 +1,25 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{simulation {able 1}}
+	{sensor 
+		{visor "main" 
+			{bone "visor"}
+			{vision
+			    {human 80 {crawl 60}}
+			    {actor 80}
+				{h_fov 90}
+				{wide 2.5}
+				{v_fov 90}
+			}
+		}
+	}
+	{placer	{place "gunner" {visor "main"} {worker charger}}}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mg34_tower"}
+			{Mounted}
+		}
+	}  	
+	{Extension "mg34_tower.mdl"}
+}

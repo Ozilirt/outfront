@@ -1,0 +1,31 @@
+{Skeleton
+	{animation
+		{sequence {name "stir"} {file "stir.anm"}}
+	}
+	{bone "pine"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "pine.ply"}
+	}
+}
+
+{Volume "crown"
+	{Box 76.7096 72.9408 203.575}
+	{Bone "pine"}
+	{Matrix34
+		0.7194	0.6946	-0.0000
+		-0.6947	0.7193	0.0000
+		0.0000	-0.0000	1.0000
+		9.1838	-8.5667	122.3401
+	}
+}
+{Volume "bole"
+	{Cylinder 7.95866 213.734}
+	{Bone "pine"}
+	{Position 1.2401	-0.6299	109.5517}
+}
+

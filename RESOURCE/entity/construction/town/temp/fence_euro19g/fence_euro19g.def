@@ -1,0 +1,23 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "fence_euro19g.mdl"}
+	{props "concrete" "parts" "construction" "small" "no_destroyed_stamp"}
+
+	{volume	"body2"
+		{thickness 40}
+		{tags "body"}
+	}
+	{volume	"body1"
+		{thickness 40}
+		{tags "body"}
+	}
+	{volume	"body"
+		{thickness 40}
+		{tags "body"}
+	}
+}

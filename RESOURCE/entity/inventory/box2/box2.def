@@ -1,0 +1,19 @@
+{game_entity
+	(include "/properties/stuff.ext")
+	{colliderID "construction"}
+	{extender "inventory"
+		{box
+			{weight 600}
+			{size 8 6}
+		}
+	}
+	{Volume "box"
+		{thickness 1}
+		{able {touch}}
+	}
+	{extender "stuff"
+		{item "small_box"}
+	}
+;	(include "/properties/shadow/construction.inc" sx(0.15) sy(0.18) ofsx(0) ofsy(0))
+	{Extension "box1.mdl"}
+}

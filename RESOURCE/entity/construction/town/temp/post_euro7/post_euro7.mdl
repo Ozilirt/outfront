@@ -1,0 +1,55 @@
+;Exported by: sk
+;Date:        Fri Jan 16 15:49:46 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Вокзал\Post.max
+{Skeleton
+	{bone "post_euro7"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_euro7.ply"}
+		{bone "light_point"
+			{Matrix34
+				-0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				-0.8403	-30.7689	84.2173
+			}
+		}
+		{bone "lamp_glass1"
+			{Matrix34
+				-0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				-0.8403	-30.7689	83.9444
+			}
+		}
+		{bone "lamp_light_point1"
+			{Matrix34
+				-0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				-0.8403	-30.7689	83.6725
+			}
+		}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -0.907852 -0.242729}
+		{Extent 1.85331 1.85331}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Lamp1"
+	{Box 6.33831 6.33831 1.22634}
+	{Bone "post_euro7"}
+	{Position -0.9079	-30.7399	84.1698}
+}
+{Volume "body"
+	{Box 3.70661 3.70661 72.0143}
+	{Bone "post_euro7"}
+	{Position -0.9079	0.2427	36.0072}
+}

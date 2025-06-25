@@ -1,0 +1,51 @@
+;Exported by: ubrashaev
+;Date:        Wed Jan 14 17:09:33 2004
+;File:        D:\-Projects-\-work-\3d\stog\stack_vic.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "stack_fence"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "stack_fence.ply"}
+		{bone "Locomotive"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				-0.2261	1.6619	31.6982
+			}
+		}
+		{bone "FX_haulm2"
+			{Matrix34
+				-0.0109	-0.0000	0.9999
+				0.9999	0.0000	0.0109
+				-0.0000	1.0000	-0.0000
+				-2.2348	-11.4373	11.2704
+			}
+		}
+		{bone "FX_fire2"
+			{Matrix34
+				-0.0109	-0.0000	0.9999
+				0.9999	0.0000	0.0109
+				-0.0000	1.0000	-0.0000
+				0.6421	-0.4382	11.3017
+			}
+		}
+	}
+}
+{Volume "fire1"
+	{Box 54.7402 9.15354 46.7447}
+	{Bone "Locomotive"}
+	{Position -0.5443	-0.4944	0.2194}
+}
+{Volume "Body"
+	{Box 59.0551 59.0551 35.8268}
+	{Bone "stack_fence"}
+	{Position 0.4975	0.0605	17.9134}
+}

@@ -1,0 +1,16 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/fence.inc" sx(1.4) sy(0.9) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "gate_garage.mdl"}
+	{props "wood" "fence" "animated_crush_gate"}
+
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 2}
+		{able {visible 1}}
+	}
+}

@@ -1,0 +1,40 @@
+;SDL
+actor
+
+(include "cannon_crew.ext")
+;(include "shadow/tank.inc"  scale(0.7))
+(include "selection/vehicle.inc"  scale(0.7))
+(include "dummy_fsm.inc")
+
+{props "mg_stan" "vehicle" "steel" "cannon_ai"}
+
+{obstacleID "stuff"}
+
+{brain "vehicle" {state "vehicle"}}
+
+("crew_stan_gunner")
+{sensor {visor "main" {bone "visor"}}}
+
+{placer	{place "gunner" {visor "main"} {useVision} {worker charger}}}
+
+{Weaponry
+	{place "mgun"
+		{LinkBone "mgun"}
+		{LinkAnimation "off"}
+	}
+}  	
+
+{extender "inventory"
+	{weapon "mgun" {fixed}}
+	{Box
+		{size 8 6}
+		{weight 1000}
+		{item  "ammo mgun" 150}
+	}
+}
+
+{mass 500}
+
+{volume "body"
+	{thickness 5}
+}

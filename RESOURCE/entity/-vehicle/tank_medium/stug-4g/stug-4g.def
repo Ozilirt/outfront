@@ -1,0 +1,121 @@
+{
+	(include "/properties/tank.ext")
+	(include "/properties/structure/spg.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "-turret" "self_propelled"}
+	
+	{TexMods
+		{"ambush1" "1"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  80}
+			{top	15}
+			{bottom	20}
+			{rear   20}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  80}
+			{top	15}
+			{bottom	20}
+			{rear   20}
+		}   
+	}
+
+	{volume "mgun_shield1"
+		{thickness 15
+		}   
+	}
+	{volume "mgun_shield2"
+		{thickness 25
+		}   
+	}
+
+	{volume "shield_left"		{thickness 10}}
+	{volume "shield_right"		{thickness 10}}
+	{component "shield_left"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 20}
+	}
+	{component "shield_right"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 20}
+	}
+	{extender "shield"}
+
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "75mm_stuk40"}
+			{Mounted}
+		}
+		{place "mgun"
+			{Rotate}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}
+	
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+     
+	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(main))
+	("crew_human" 			place(commander)	door1(emit1) door2(emit2) visor(main))
+	("crew_human_visible" 	place(gunner)	    door1(emit1) door2(emit2) visor(main))
+	("crew_human" 			place(charger)		door1(emit1) door2(emit2) visor(main))
+
+	{sensor
+		{visor "main"
+			{vision
+				{uncover 2}
+			    {human 40
+			    	{crawl 30}
+			    }
+			    {actor "vehicle" 60}
+			    {actor 45}
+				{h_fov 150}
+				{wide 2}
+				{v_fov 120}
+				{fog_range 50}
+				{fog_fov 150}
+			}
+			{bone "visor1"}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 650}
+			{item "ammo bullet75 ap" 50}
+			{item "ammo bullet75 fg" 27}
+		}
+	}
+	
+	{mass 28500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	("tracks_forced")
+	{Extension "StuG-4G.mdl"}
+}

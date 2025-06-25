@@ -1,0 +1,33 @@
+;SDL
+actor
+
+(include "vehicle.ext")
+{colliderid "tank"}
+{nocontactwith "vehicle" "armored"}
+{PatherID  "railway"}
+{Chassis "railway"
+	{speed
+		{Slow	10	}	; km/h
+		{Normal	17	}
+		{Fast	30	}
+	}
+}
+
+{props "railway"}
+
+{volume "body"
+	{thickness 10}
+}
+	
+{component "body"
+	{RepairTime 25}
+	{Able {repair}}
+}
+(define "locomotion"
+	{MaxSpeed	25	}		; максимальная скорость, kmph
+	{StartTime	10	}		; время разгона до макс. скорости с 0, seconds
+	{BrakeTime	5	}		; время торможения с макс. скорости до 0, seconds
+	{StopTime	10	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
+)
+
+{autooperatable 0}

@@ -1,0 +1,87 @@
+{fx 
+	{ParticleView 
+		{Generator 
+			{TotalParticles 15 }
+			{EmissionArea 
+				{radius 0.2 0.2 }
+				{alpha0 0 }
+				{alpha1 10 10 }
+			}
+			{ParticleInit 
+				{Speed 0.8 0.2 }
+				{Lifetime 0.35 0.05 }
+			}
+			{AxisZ }
+			{Color 0x00FFFFFF }
+			{Color 0x00D0D5D9 }
+			{Color 0x00D9E1EA }
+		}
+		{Mover 
+			{Damping 0.95 }
+			{Gravity 
+				{Value 0.2 }
+			}
+			{Collisions 
+				{Terrain }
+				{Restitution 0.05 }
+			}
+		}
+	}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 10 }
+			{EmissionArea 
+				{radius 0.2 0.2 }
+				{alpha0 0 }
+				{alpha1 5 5 }
+				{speed 0 }
+			}
+			{ParticleInit 
+				{Speed 0.9 0.2 }
+				{Lifetime 0.35 0.05 }
+			}
+			{AxisZ }
+		}
+		{Mover 
+			{Damping 0.95 }
+			{Gravity 
+				{Value 0.2 }
+			}
+			{Collisions 
+				{Terrain }
+				{Restitution 0.05 }
+			}
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "/FX/_BMP/Flash/Drops3.ebm" 
+   					{Turn 
+   						{Linear 
+   							{min 10 10 }
+   							{max 360 -180 }
+   						}
+   					}
+   					{Timer
+   						{Mode play }
+   						{Duration -1 }
+   					}
+   					{Scale 0.15 0.05 }
+				}
+				{Sprite "/FX/_BMP/Flash/Drops.ebm" 
+   					{Turn 
+   						{Linear 
+   							{min 10 10 }
+   							{max 360 -180 }
+   						}
+   					}
+   					{Timer
+   						{Mode play }
+   						{Duration -1 }
+   					}
+   					{Scale 0.15 0.05 }
+				}
+			}
+		}
+		{NotifyOwner }
+	}
+}

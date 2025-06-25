@@ -1,0 +1,40 @@
+;Exported by: sk
+;Date:        Wed Sep 15 11:08:53 2004
+;File:        D:\-Projects-\-3DWork-\Model\-Plane\Douglas_C-47_Skytrain\Douglas_entourage.max
+{Skeleton
+	{bone "WingR5"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "WingR5.ply"}
+		{bone revolute "propeller"
+			{Matrix34
+				0.0000	-0.1736	0.9848
+				-0.0000	-0.9848	-0.1736
+				1.0000	-0.0000	-0.0000
+				66.5063	11.5933	10.0940
+			}
+			{VolumeView "propeller.ply"}
+		}
+	}
+}
+{Obstacle "WingR5"
+	{Obb2
+		{Center -4.42572 -3.36027}
+		{Extent 35.3125 34.3377}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "WingR5"
+	{Box 70.6249 13.9385 67.277}
+	{Bone "WingR5"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	0.1736	-0.9848
+		-0.0000	0.9848	0.1736
+		-4.4257	3.3603	9.5637
+	}
+}

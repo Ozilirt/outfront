@@ -1,0 +1,39 @@
+;Exported by: sat
+;Date:        Fri Mar 19 13:16:36 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\birch3.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "tree01"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "tree01.ply"}
+	}
+}
+{Obstacle "obstacle"
+	{Circle2
+		{Radius 2.68232}
+		{Center -1.78132 0.285233}
+	}
+	{Rotate}
+}
+{Volume "bole"
+	{Cylinder 2.92895 140.002}
+	{Bone "tree01"}
+	{Matrix34
+		1.0000	0.0000	0.0088
+		-0.0000	1.0000	0.0000
+		-0.0088	-0.0000	1.0000
+		-2.1955	-0.2495	71.2537
+	}
+}
+{Volume "crown"
+	{Box 40.8493 36.6142 85.5833}
+	{Bone "tree01"}
+	{Position -3.0177	2.5808	104.4796}
+}

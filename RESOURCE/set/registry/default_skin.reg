@@ -1,0 +1,139 @@
+{default_skin
+	{dialog
+		{frame_size 1}
+		{face_color  "77 77 77"}
+		{text_style "c(255 255 255)s(8)"}
+		{frame_color "153 153 153"}
+	}	
+	{inputline
+		{selection
+			{face_color "255 204 51"}
+			{text_color	"0 0 0"}
+			{ro_face_color "155 104 0"}
+			{ro_text_color "0 0 0"}
+		}
+		{text_style	"c(255 255 255)s(8)"}
+		{ro_text_color "228 228 228"}
+		{disable_text_color "228 228 228"}
+		{modal_frame_color "255 255 255"}
+		{cursor_char "_"}
+		{blink_period "0.5"}
+	}
+	{slider
+		{up_button "/interface/skin/editor/up.ebm"}
+		{down_button "/interface/skin/editor/down.ebm"}
+		{left_button "/interface/skin/editor/left.ebm"}
+		{right_button "/interface/skin/editor/right.ebm"}
+		{hbackground "/interface/skin/editor/slider_hbackground.ebm"}
+		{vbackground "/interface/skin/editor/slider_vbackground.ebm"}
+		{hpoint_button "/interface/skin/editor/slider_hpoint.ebm"}
+		{vpoint_button "/interface/skin/editor/slider_vpoint.ebm"}
+	}
+	{listbox
+		{face_color "64 64 64"}
+		{separator_color "77 77 77"}
+		{item
+			{normal
+				{text_style "c(255 255 255)s(8)"}
+				{face_color "64 64 64"}
+			}
+			{selected
+				{text_style "c(0 0 0)"}
+				{face_color "140 140 255"}
+			}
+			{focused
+				{text_style "c(0 0 0)"}
+				{face_color "255 204 51"}
+			}
+		}
+	}
+	{button
+		{text_style "s(8)"}
+		{focused
+			{text_style "s(8)e(shadow)c(255 255 255)"}
+			{face_color "102 102 102"}
+		}
+		{pressed
+			{text_style "s(8)c(0 0 0)"}
+			{face_color "178 178 178"}
+		}
+		{disabled
+			{text_style "s(8)e(disabled)c(55 55 55)"}
+			{face_color "77 77 77"}
+		}
+	}
+	{checkbox
+		{normal
+			{text_style "s(8)c(225 225 225)"}
+			{face_color "64 64 64"}
+		}
+		{focused
+			{text_style "s(8)e(shadow)c(255 255 255)"}
+			{face_color "84 84 84"}
+		}
+		{pressed
+			{text_style "s(8)e(shadow)c(200 200 200)"}
+			{face_color "50 50 50"}
+		}
+		{disabled
+			{text_style "s(8)c(0 0 0)"}
+			{face_color "40 40 40"}
+		}
+		{check "/interface/skin/editor/checkbox.ebm"}
+	}
+	{combobox
+		{button "/interface/skin/editor/down.ebm"}
+		{drop_offset "2"}
+	}
+	{dialogbox
+		{title
+			{offset 3}
+			{close_button "/interface/skin/editor/close.ebm"}
+			{face_color "178 178 178"}
+			{text_style "e(none)s(10)b+c(0 0 0)"}
+			{active
+				{face_color "102 0 0"}
+				{text_style "e(shadow)s(10)b+c(255 255 255)"}
+			}
+		}
+	}
+	{console
+		{face_color "48 48 48"}
+;		{text_style "e(shadow)s(10)c(255 255 0)"}
+		{text_style "s(10)c(255 255 0)"}
+	}
+	{group
+		{text_style "e(shadow)b+c(224 224 224)"}
+	}
+	{browser
+		{face_color "64 64 64"}
+		{item
+			{text_style "s(9)c(255 255 255)"}
+			{selected
+				{text_style "s(9)c(0 0 0)"}
+				{face_color "140 140 255"}
+			}
+			{focused
+				{text_style "s(9)c(0 0 0)"}
+				{face_color "255 204 51"}
+			}
+		}
+		{folder
+			{text_style "e(shadow)s(9)b+c(255 255 255)"}
+			{selected
+				{text_style "s(9)b+c(0 0 0)"}
+				{face_color "140 140 255"}
+			}
+			{focused
+				{text_style "s(9)b+c(0 0 0)"}
+				{face_color "255 204 51"}
+			}
+		}
+	}
+	{hint
+		{offset 5}
+		{face_color "0 0 0"}
+		{frame_color "128 128 128"}
+		{text_style "x.y.s(9)c(255 255 255)"}
+	}
+}

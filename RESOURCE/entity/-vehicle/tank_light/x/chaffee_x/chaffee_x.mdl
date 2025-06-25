@@ -1,0 +1,120 @@
+;Exported by: garry
+;Date:        Sat May 29 18:06:22 2004
+;File:        D:\-Projects-\-3DWork-\Танки\chaffee\M24Chaffee_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{animation
+				{sequence "break" {file "trackR.anm"}}
+			}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				2.4117	-24.1404	10.3295
+			}
+			{VolumeView "WheelsR.ply"}
+			{bone "TrackR"
+				{parameters "CommonMesh;ID=trackright;"}
+				{Position -0.3410	0.3107	0.3984}
+				{VolumeView "TrackR.ply"}
+			}
+			{bone revolute "WheelR1"
+				{parameters "ID=trackright;"}
+				{Position -42.1124	4.2647	0.2095}
+				{VolumeView "WheelR1.ply"}
+			}
+			{bone revolute "WheelR2"
+				{parameters "ID=trackright;"}
+				{Position 41.3667	3.7864	0.3198}
+				{VolumeView "WheelR2.ply"}
+			}
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{animation
+				{sequence "break" {file "body.anm"}}
+			}
+			{Position 4.4935	0.2916	11.0662}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=turret;"}
+				{animation
+					{sequence "break" {file "turret.anm"}}
+				}
+				{Matrix34
+					0.9989	0.0014	0.0473
+					-0.0036	0.9989	0.0468
+					-0.0472	-0.0469	0.9978
+					-0.3714	0.1205	19.2441
+				}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{animation
+						{sequence "break" {file "gun_b.anm"} {speed 0.8}}
+					}
+					{Matrix34
+						0.9999	0.0008	-0.0122
+						0.0122	0.0020	0.9999
+						0.0008	-1.0000	0.0020
+						17.9411	0.6680	6.8657
+					}
+					{VolumeView "Gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							0.0000	1.0000	-0.0000
+							-0.0000	0.0000	1.0000
+							1.0000	-0.0000	0.0000
+							7.4497	-0.0929	0.3321
+						}
+						{VolumeView "Gun.ply"}
+					}
+				}
+			}
+			{bone "engine"
+				{Matrix34
+					0.0000	-0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					-1.0000	-0.0000	0.0000
+					-30.4113	-0.7579	5.6095
+				}
+			}
+		}
+		{bone "WheelL"
+			{parameters "ID=trackleft;"}
+			{animation
+				{sequence "break" {file "trackL.anm"}}
+			}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-0.0000	1.0000
+				0.0000	1.0000	0.0000
+				2.4117	24.7805	10.3295
+			}
+			{VolumeView "WheelL.ply"}
+			{bone "TrackL"
+				{parameters "CommonMesh;ID=trackleft;"}
+				{Position -0.3410	0.3107	-0.7428}
+				{VolumeView "TrackL.ply"}
+			}
+			{bone revolute "WheelL1"
+				{parameters "ID=trackleft;"}
+				{Position -42.1124	4.2647	-0.6386}
+				{VolumeView "WheelL1.ply"}
+			}
+			{bone revolute "WheelL2"
+				{parameters "ID=trackleft;"}
+				{Position 41.3667	3.7864	-0.3862}
+				{VolumeView "WheelL2.ply"}
+			}
+		}
+	}
+}

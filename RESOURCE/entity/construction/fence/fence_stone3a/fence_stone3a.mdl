@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Mon Feb 09 11:58:21 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\ÆÄ\fence_stone.max
+{Skeleton
+	{bone "fence_stone3a"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence_stone3a.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -1.43051e-005 0.0748434}
+		{Extent 5.80709 5.80709}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 11.6142 11.6142 68.8908}
+	{Bone "fence_stone3a"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0000	-0.0748	34.4454
+	}
+}

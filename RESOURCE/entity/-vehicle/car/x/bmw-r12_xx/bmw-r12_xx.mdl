@@ -1,0 +1,97 @@
+;Exported by: garry
+;Date:        Thu Dec 04 17:25:55 2003
+;File:        D:\-Projects-\-3DWork-\Model\mashines\BMW R12\BMW-R12_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			-0.0000	1.0000	0.0000
+			1.0000	0.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.0000	-1.0000	-0.0000
+				-0.0000	-0.0000	1.0000
+				-1.0000	-0.0000	-0.0000
+				-0.6249	-4.9394	10.7505
+			}
+			{VolumeView "body.ply"}
+			{bone revolute "wheel2"
+				{parameters "ID=wheel2;"}
+				{Position 10.5118	-4.2915	-0.4978}
+				{VolumeView "wheel2.ply"}
+			}
+			{bone revolute "wheel3"
+				{parameters "ID=wheel3;"}
+				{Position 8.1334	-4.2915	-24.4740}
+				{VolumeView "wheel3.ply"}
+			}
+		}
+		{bone revolute "steer"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.0000	-0.8353	-0.5498
+				-1.0000	-0.0000	0.0000
+				-0.0000	0.5498	-0.8353
+				-0.0157	12.8761	10.7505
+			}
+			{VolumeView "steer.ply"}
+			{bone revolute "wheel1"
+				{parameters "ID=wheel1;"}
+				{Matrix34
+					0.8353	-0.0000	-0.5498
+					-0.5498	0.0000	-0.8353
+					0.0000	1.0000	0.0000
+					0.2657	0.1114	4.5095
+				}
+				{VolumeView "wheel1.ply"}
+			}
+		}
+	}
+}
+{Volume "wheel1"
+	{Cylinder 5.6838 2.64797}
+	{Bone "wheel1"}
+	{Position 0.0980	0.2407	-0.0304}
+}
+{Volume "wheel3"
+	{Cylinder 5.48955 3.1246}
+	{Bone "wheel3"}
+	{Position -0.1179	0.1170	0.2719}
+}
+{Volume "wheel2"
+	{Cylinder 5.56162 2.64797}
+	{Bone "wheel2"}
+	{Position -0.2226	0.1170	-0.0304}
+}
+{Volume "Fuel"
+	{Box 8.68078 5.47182 4.05447}
+	{Bone "body"}
+	{Matrix34
+		-1.2750	0.1479	0.0000
+		0.0000	-0.0000	1.2835
+		0.1479	1.2750	-0.0000
+		-6.2452	4.4616	-0.4400
+	}
+}
+{Volume "engine"
+	{Box 10.7681 6.61592 7.75314}
+	{Bone "body"}
+	{Matrix34
+		-1.2835	-0.0000	0.0000
+		0.0000	0.0000	1.2835
+		-0.0000	1.2835	-0.0000
+		-5.1813	-4.1232	-0.5594
+	}
+}
+{Volume "body"
+	{Box 28.3974 9.37507 7.55558}
+	{Bone "body"}
+	{Matrix34
+		-1.2835	-0.0000	0.0000
+		0.0000	0.2548	1.2580
+		-0.0000	1.2580	-0.2548
+		1.2862	-2.3019	-15.6220
+	}
+}

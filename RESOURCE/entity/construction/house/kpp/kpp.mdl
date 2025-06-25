@@ -1,0 +1,313 @@
+;Exported by: sk
+;Date:        Mon Feb 09 18:39:40 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Aerodrome\KPP.max
+{Skeleton
+	{bone "kpp"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "kpp.ply"}
+		{bone "window2"
+			{Position -45.2265	-32.9367	36.1679}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass2"
+				{Matrix34
+					0.0000	-0.9848	-0.1736
+					1.0000	0.0000	0.0000
+					0.0000	-0.1736	0.9848
+					0.4563	0.0253	3.8650
+				}
+			}
+		}
+		{bone "window1"
+			{Position 0.4090	-32.9367	23.8246}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					0.0000	-0.9848	-0.1736
+					1.0000	0.0000	0.0000
+					0.0000	-0.1736	0.9848
+					-0.6345	0.1788	16.2084
+				}
+			}
+		}
+		{bone "window3"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				17.5316	57.7659	24.0437
+			}
+			{VolumeView "window3.ply"}
+			{bone "FX_glass3"
+				{Matrix34
+					0.0000	-0.9848	-0.1736
+					1.0000	0.0000	0.0000
+					0.0000	-0.1736	0.9848
+					-1.8568	-0.1094	14.4834
+				}
+			}
+		}
+		{bone "window4"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-22.5331	57.7659	24.0437
+			}
+			{VolumeView "window4.ply"}
+			{bone "FX_glass4"
+				{Matrix34
+					0.0000	-0.9848	-0.1736
+					1.0000	0.0000	0.0000
+					0.0000	-0.1736	0.9848
+					-1.1613	-0.1094	14.4834
+				}
+			}
+		}
+		{bone "window5"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-53.7623	-8.8747	23.8246
+			}
+			{VolumeView "window5.ply"}
+			{bone "FX_glass5"
+				{Matrix34
+					0.0000	-0.9848	-0.1736
+					1.0000	0.0000	0.0000
+					0.0000	-0.1736	0.9848
+					-2.5089	0.0674	16.2084
+				}
+			}
+		}
+		{bone "Exterior_roof"
+			{Position 0.0000	8.4120	87.6200}
+			{VolumeView "Exterior_roof.ply"}
+		}
+		{bone "window1_x"
+			{Position 0.4090	-32.1194	23.8246}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2_x"
+			{Position -45.2265	-32.4340	36.1679}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+		{bone "window5_x"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-53.3621	-8.8747	23.8246
+			}
+			{visibility 0}
+			{VolumeView "window5_x.ply"}
+		}
+		{bone "window4_x"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-22.5331	57.2632	24.0437
+			}
+			{visibility 0}
+			{VolumeView "window4_x.ply"}
+		}
+		{bone "window3_x"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				17.5316	57.3621	24.0437
+			}
+			{visibility 0}
+			{VolumeView "window3_x.ply"}
+		}
+	}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center 51.5884 32.8472}
+		{Extent 4.99465 2.3973}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 38.5938 -29.4731}
+		{Extent 13.1372 24.9301}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 54.1814 -12.6167}
+		{Extent 2.39731 47.9425}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -52.8733 -12.6167}
+		{Extent 2.39731 47.9425}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 0.86879 -58.4547}
+		{Extent 55.4545 2.3973}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "Interior"
+	{Obb2
+		{Center 0.543495 -11.3884}
+		{Extent 54.1247 46.2743}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -13.7233 32.8472}
+		{Extent 41.6221 2.3973}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body6"
+	{Box 19.8787 4.79461 15.1022}
+	{Bone "kpp"}
+	{Position 37.3217	-32.8472	56.9148}
+}
+{Volume "body5"
+	{Box 9.9893 4.79461 64.2036}
+	{Bone "kpp"}
+	{Position 51.5884	-32.8472	32.1018}
+}
+{Volume "body4"
+	{Box 49.8602 26.2744 19.9031}
+	{Bone "kpp"}
+	{Matrix34
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		38.5938	29.4731	9.9516
+	}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "Exterior_roof"}
+	{Position 0.6052	4.2682	-22.7297}
+}
+{Volume "body3"
+	{Box 95.8849 4.79461 64.2036}
+	{Bone "kpp"}
+	{Matrix34
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		54.1814	12.6167	32.1018
+	}
+}
+{Volume "body2"
+	{Box 95.8849 4.79461 64.2036}
+	{Bone "kpp"}
+	{Matrix34
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-52.8733	12.6167	32.1018
+	}
+}
+{Volume "body1"
+	{Box 110.909 4.79461 64.2036}
+	{Bone "kpp"}
+	{Position 0.8688	58.4547	32.1018}
+}
+{Volume "window5"
+	{Box 1.47143 54.6315 23.9759}
+	{Bone "window5"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-2.4472	-0.0532	12.5501
+	}
+}
+{Volume "window4"
+	{Box 1.47143 30.0173 24.2181}
+	{Bone "window4"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-2.1211	0.0323	12.4521
+	}
+}
+{Volume "window3"
+	{Box 1.47143 30.0173 24.2181}
+	{Bone "window3"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-2.0733	0.0323	12.4521
+	}
+}
+{Volume "window1"
+	{Box 1.47143 45.6274 23.7432}
+	{Bone "window1"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0552	-0.0561	12.2790
+	}
+}
+{Volume "window2"
+	{Box 1.47143 17.177 23.7432}
+	{Bone "window2"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0066	0.0106	-0.0643
+	}
+}
+{Volume "Hole_window4"
+	{Box 30.2701 7.87402 24.4398}
+	{Bone "kpp"}
+	{Position -20.4529	58.1921	36.3329}
+}
+{Volume "Hole_window3"
+	{Box 30.2701 7.87402 24.4398}
+	{Bone "kpp"}
+	{Position 19.6150	58.0229	36.3329}
+}
+{Volume "Hole_window1"
+	{Box 45.8638 7.11369 24.6866}
+	{Bone "kpp"}
+	{Position 0.4090	-32.9798	36.1679}
+}
+{Volume "Hole_window"
+	{Box 22.943 58.9676 24.6866}
+	{Bone "kpp"}
+	{Position -48.1452	-8.4432	36.1679}
+}
+{Volume "body"
+	{Box 83.2442 4.79461 64.2036}
+	{Bone "kpp"}
+	{Position -13.7233	-32.8472	32.1018}
+}

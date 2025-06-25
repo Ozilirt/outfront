@@ -1,0 +1,23 @@
+;Exported by: ubrashaev
+;Date:        Wed Jan 21 16:38:06 2004
+;File:        D:\-Projects-\-work-\3d\water_tower.max
+{Skeleton
+	{bone "crosstie1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "crosstie1.ply"}
+	}
+}
+{Volume "fire1"
+	{Box 75.6394 78.9107 14.9669}
+	{Bone "crosstie1"}
+	{Position 3.1800	4.6548	21.3669}
+}
+{Volume "Body"
+	{Box 75.6394 78.9107 22.6772}
+	{Bone "crosstie1"}
+	{Position 3.1800	4.6548	11.3386}
+}

@@ -1,0 +1,51 @@
+;Exported by: ubrashaev
+;Date:        Sat May 22 15:08:50 2004
+;File:        D:\-Projects-\-work-\3d\sk\Parkovyi_komplex_small.max
+{Skeleton
+	{bone "fence_euro19g"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence_euro19g.ply"}
+	}
+}
+{Obstacle "Rectangle06"
+	{Obb2
+		{Center -0.46756 0.120911}
+		{Extent 17.2296 3.22882}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 12.5276 5.31496 7.87402}
+	{Bone "fence_euro19g"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		3.8141	0.0370	3.7676
+	}
+}
+{Volume "Body2"
+	{Box 15.1496 6.14173 2.97638}
+	{Bone "fence_euro19g"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-10.1223	0.0370	1.3188
+	}
+}
+{Volume "Body1"
+	{Box 6.19452 6.80053 34.622}
+	{Bone "fence_euro19g"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		13.6647	0.0505	17.1416
+	}
+}

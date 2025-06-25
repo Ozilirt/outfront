@@ -1,0 +1,83 @@
+;Exported by: sk
+;Date:        Thu Dec 11 19:58:34 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Town_dima\build-04_a.max
+{Skeleton
+	{bone "build-04_corner3_a"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "build-04_corner3_a.ply"}
+		{bone "attach1"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				32.0837	23.4301	0.1032
+			}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "Body1_vol"
+	{Obb2
+		{Center 0.518074 -34.274}
+		{Extent 53.3454 4.92127}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center -51.09 -7.05776}
+		{Extent 4.92126 31.9433}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Hole"
+	{Box 15.748 19.685 29.5276}
+	{Bone "build-04_corner3_a"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		32.4762	34.4045	30.4540
+	}
+}
+{Volume "Body4"
+	{Box 9.84252 80.4972 43.6989}
+	{Bone "build-04_corner3_a"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.7660	0.6428
+		0.0000	-0.6428	-0.7660
+		-51.0900	-3.6629	115.5451
+	}
+}
+{Volume "Body2"
+	{Box 9.84252 69.9038 45.7755}
+	{Bone "build-04_corner3_a"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-19.2611	34.2740	83.9968
+	}
+}
+{Volume "Body1"
+	{Box 9.84252 106.691 61.1998}
+	{Bone "build-04_corner3_a"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.5181	34.2740	30.5999
+	}
+}
+{Volume "Body"
+	{Box 9.84252 63.8867 106.583}
+	{Bone "build-04_corner3_a"}
+	{Position -51.0900	7.0578	53.2913}
+}

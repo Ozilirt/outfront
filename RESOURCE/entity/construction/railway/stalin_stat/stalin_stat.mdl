@@ -1,0 +1,22 @@
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush.anm"}}
+	}
+	{bone "statue_stalin"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "statue_stalin.ply"}
+	}
+}
+
+
+{Volume "body"
+	{Box 23.0347 25.1726 72.3078}
+	{Bone "statue_stalin"}
+	{Position -4.4236	0.1699	36.1307}
+}
+

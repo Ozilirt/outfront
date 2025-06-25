@@ -1,0 +1,164 @@
+;Exported by: ubrashaev
+;Date:        Tue Oct 14 18:46:31 2003
+;File:        D:\-Projects-\-work-\3d\MTS(obstacle).max
+{Skeleton
+	{bone "mts-box"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "mts-box.ply"}
+		{bone "exterior"
+			{Position 0.6921	-2.6059	65.0753}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior2"
+	{Obb2
+		{Center 41.4282 -14.9475}
+		{Extent 7.55312 40.1196}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center 1.19476 3.28873}
+		{Extent 32.6428 72.2154}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center 37.4875 53.5653}
+		{Extent 3.90909 29.1845}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle07"
+	{Obb2
+		{Center 46.7823 4.25217}
+		{Extent 1.54869 20.0835}
+		{Axis -0.939693 -0.34202}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle06"
+	{Obb2
+		{Center 52.4283 -71.1469}
+		{Extent 1.54869 20.0835}
+		{Axis -0.819153 -0.573575}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle03"
+	{Obb2
+		{Center -35.9476 7.62314}
+		{Extent 4.18831 75.8085}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle04"
+	{Obb2
+		{Center 1.32928 79.1037}
+		{Extent 32.7733 4.32793}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center 0.630375 -72.5132}
+		{Extent 41.0082 4.04869}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle05"
+	{Obb2
+		{Center 37.4875 -61.5158}
+		{Extent 3.90909 7.5928}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body3"
+	{Polyhedron "body3.vol"}
+	{Bone "exterior"}
+		{Position -0.3619	1.2637	-15.5297}
+}
+{Volume "body"
+	{Box 9.21429 158.598 76.7858}
+	{Bone "mts-box"}
+		{Matrix34
+			0.6748	0.0000	0.0000
+			0.0000	0.0965	0.0000
+			0.0000	0.0000	0.6431
+			36.9440	62.2880	24.6908
+		}
+}
+{Volume "body5"
+	{Box 9.21429 158.598 76.7858}
+	{Bone "mts-box"}
+		{Matrix34
+			-0.0000	0.6748	0.0000
+			-0.4582	-0.0000	0.0000
+			0.0000	0.0000	0.6431
+			3.5140	-79.6238	24.6908
+		}
+}
+{Volume "body7"
+	{Box 9.21429 158.598 76.7858}
+	{Bone "mts-box"}
+		{Matrix34
+			0.6748	0.0000	0.0000
+			0.0000	0.9814	0.0000
+			0.0000	0.0000	0.6431
+			-35.7219	-2.8912	24.6908
+		}
+}
+{Volume "body6"
+	{Box 9.21429 158.598 76.7858}
+	{Bone "mts-box"}
+		{Matrix34
+			-0.0000	0.6748	0.0000
+			-0.4582	-0.0000	0.0000
+			0.0000	0.0000	0.6431
+			3.5140	73.0689	24.6908
+		}
+}
+{Volume "body1"
+	{Box 9.21429 158.598 76.7858}
+	{Bone "mts-box"}
+		{Matrix34
+			0.3494	-0.2446	0.0000
+			0.1541	0.2200	0.0000
+			0.0000	0.0000	0.5296
+			52.5787	70.8613	20.3330
+		}
+}
+{Volume "body4"
+	{Box 9.21429 158.598 76.7858}
+	{Bone "mts-box"}
+		{Matrix34
+			0.6748	0.0000	0.0000
+			0.0000	0.3618	0.0000
+			0.0000	0.0000	0.6431
+			36.9440	-53.3593	24.6908
+		}
+}
+{Volume "body2"
+	{Box 9.21429 158.598 76.7858}
+	{Bone "mts-box"}
+		{Matrix34
+			0.4008	-0.1459	0.0000
+			0.0919	0.2524	0.0000
+			0.0000	0.0000	0.5232
+			46.6981	-4.2647	20.0863
+		}
+}

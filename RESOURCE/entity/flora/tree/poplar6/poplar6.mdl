@@ -1,0 +1,26 @@
+{Skeleton
+	{animation
+		{sequence {name "stir"} {file "stir.anm"}}
+	}
+	{bone "poplar"
+		{parameters "CommonMesh;"}
+		{Orientation
+			0.3746	-0.9272	-0.0013
+			-0.9272	-0.3746	0.0033
+			0.0036	0.0000	1.0000
+		}
+		{VolumeView "poplar.ply"}
+	}
+}
+
+{Volume "bole"
+	{Cylinder 3.00683 206.443}
+	{Bone "poplar"}
+	{Position -0.0356	0.5495	103.1835}
+}
+{Volume "crown"
+	{Box 39.3701 39.3701 174.109}
+	{Bone "poplar"}
+	{Position 0.0692	0.4598	109.1687}
+}
+

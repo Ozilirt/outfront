@@ -1,0 +1,32 @@
+;Exported by: sat
+;Date:        Sat Mar 20 14:14:02 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\poplar_white3.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "poplar_white"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "poplar_white.ply"}
+	}
+}
+{Volume "bole"
+	{Cylinder 4.15435 145.896}
+	{Bone "poplar_white"}
+	{Position 1.6046	0.4552	73.7479}
+}
+{Volume "crown"
+	{Box 44.8068 69.42 123.213}
+	{Bone "poplar_white"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9982	-0.0592
+		0.0000	0.0592	0.9982
+		1.9431	0.9518	113.4819
+	}
+}

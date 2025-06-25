@@ -1,0 +1,158 @@
+;Exported by: ubrashaev
+;Date:        Tue Jun 01 18:05:03 2004
+;File:        D:\-Projects-\-work-\3d\model\-Train\passengervan\car_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_front"
+			{parameters "ID=body;"}
+			{Position 83.5720	1.8224	9.4940}
+			{VolumeView "pivot_front.ply"}
+			{bone revolute "wheelL1"
+				{parameters "ID=wheelleft1;"}
+				{Matrix34
+					0.9998	0.0001	-0.0175
+					-0.0175	-0.0000	-0.9998
+					-0.0001	1.0000	0.0000
+					-0.0955	17.4258	0.7745
+				}
+				{VolumeView "wheelL1.ply"}
+			}
+			{bone revolute "wheelR1"
+				{parameters "ID=wheelright1;"}
+				{Matrix34
+					-0.9998	-0.0001	-0.0175
+					0.0175	0.0000	-0.9998
+					0.0001	-1.0000	0.0000
+					0.3089	-20.2995	0.7745
+				}
+				{VolumeView "wheelR1.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{parameters "ID=body;"}
+			{Position -83.9556	1.8224	9.4940}
+			{VolumeView "pivot_back.ply"}
+			{bone revolute "wheelL2"
+				{parameters "ID=wheelleft2;"}
+				{Matrix34
+					0.9998	0.0001	-0.0175
+					-0.0175	-0.0000	-0.9998
+					-0.0001	1.0000	0.0000
+					-0.0955	17.4258	0.7745
+				}
+				{VolumeView "wheelL2.ply"}
+			}
+			{bone revolute "wheelR2"
+				{parameters "ID=wheelright2;"}
+				{Matrix34
+					-0.9998	-0.0001	-0.0175
+					0.0175	0.0000	-0.9998
+					0.0001	-1.0000	0.0000
+					0.3089	-20.2995	0.7745
+				}
+				{VolumeView "wheelR2.ply"}
+			}
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=Body;"}
+			{animation
+				{sequence "break" {speed 0.4}}
+			}
+			{Position -0.6299	-0.5725	51.8739}
+			{VolumeView "body.ply"}
+			{bone "FX_dust2a"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					-0.0673	0.9977	-0.0000
+					-0.9977	-0.0673	0.0000
+					119.1937	-8.3430	-22.5646
+				}
+			}
+			{bone "FX_fire2a"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					-0.0673	0.9977	-0.0000
+					-0.9977	-0.0673	0.0000
+					100.3104	4.7962	-26.9442
+				}
+			}
+			{bone "FX_wood2"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					-0.0673	0.9977	-0.0000
+					-0.9977	-0.0673	0.0000
+					7.2370	3.8031	-12.6501
+				}
+			}
+			{bone "FX_haulm1"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					-0.0673	0.9977	-0.0000
+					-0.9977	-0.0673	0.0000
+					-83.7146	-5.5381	-29.6993
+				}
+			}
+			{bone "FX_dust2"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					-0.0673	0.9977	-0.0000
+					-0.9977	-0.0673	0.0000
+					-130.2990	-19.4749	8.5452
+				}
+			}
+			{bone "FX_fire2"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					-0.0673	0.9977	-0.0000
+					-0.9977	-0.0673	0.0000
+					-39.0780	18.9562	-14.2058
+				}
+			}
+		}
+	}
+}
+{Volume "wheelright2"
+	{Cylinder 9.5318 3.6991}
+	{Bone "wheelR2"}
+	{Matrix34
+		-0.9998	0.0175	-0.0000
+		0.0175	0.9998	-0.0000
+		-0.0000	-0.0000	-1.0000
+		-0.3616	0.0192	0.8517
+	}
+}
+{Volume "wheelleft2"
+	{Cylinder 9.5318 3.6991}
+	{Bone "wheelL2"}
+	{Matrix34
+		-0.9998	0.0175	0.0000
+		0.0175	0.9998	-0.0000
+		-0.0000	-0.0000	-1.0000
+		-0.3616	0.0192	0.8517
+	}
+}
+{Volume "wheelright1"
+	{Cylinder 9.5318 3.6991}
+	{Bone "wheelR1"}
+	{Matrix34
+		-0.9998	0.0175	-0.0000
+		0.0175	0.9998	-0.0000
+		-0.0000	-0.0000	-1.0000
+		-0.3616	0.0192	0.8517
+	}
+}
+{Volume "wheelleft1"
+	{Cylinder 9.5318 3.6991}
+	{Bone "wheelL1"}
+	{Matrix34
+		-0.9998	0.0175	0.0000
+		0.0175	0.9998	-0.0000
+		-0.0000	-0.0000	-1.0000
+		-0.3616	0.0192	0.8517
+	}
+}

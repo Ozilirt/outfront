@@ -1,0 +1,138 @@
+;Exported by: ubrashaev
+;Date:        Fri Nov 21 17:21:29 2003
+;File:        D:\-Projects-\-work-\3d\bigShed1(my).max
+{Skeleton
+	{bone "Shed_big01b"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Shed_big01b.ply"}
+		{bone "window1"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				-0.0000	0.0000	-1.0000
+				0.0000	-1.0000	-0.0000
+				-5.2308	-54.2419	33.2682
+			}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass01"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					-1.0000	-0.0000	0.0000
+					0.0000	-1.0000	-0.0000
+					-1.8121	-1.0638	-0.2097
+				}
+			}
+		}
+		{bone "window2"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				-0.0000	0.0000	-1.0000
+				0.0000	-1.0000	-0.0000
+				-25.2810	62.7469	33.4889
+			}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass02"
+				{Matrix34
+					0.0000	0.0000	-1.0000
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0456	-2.2706	0.2244
+				}
+			}
+		}
+		{bone "exterior"
+			{Position 0.3323	4.2633	81.0869}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "body2_vol"
+	{Obb2
+		{Center -5.6794 50.086}
+		{Extent 60.7667 8.54099}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -5.69571 -4.87399}
+		{Extent 52.752 49.9046}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3_vol"
+	{Obb2
+		{Center -63.3525 -4.68363}
+		{Extent 4.17659 60.9969}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1_vol"
+	{Obb2
+		{Center 5.65184 -60.3947}
+		{Extent 69.0531 5.25162}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 121.533 17.082 61.937}
+	{Bone "Shed_big01b"}
+	{Position -5.6794	-50.0860	29.5335}
+}
+{Volume "window2"
+	{Box 31.3592 6.09922 19.4659}
+	{Bone "window2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	-1.0000
+		-0.0000	-1.0000	-0.0000
+		3.2222	-1.8562	1.0106
+	}
+}
+{Volume "window1"
+	{Box 40.1528 6.09922 19.4659}
+	{Bone "window1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	-1.0000
+		-0.0000	-1.0000	-0.0000
+		-0.2239	-0.3799	-0.3306
+	}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "Shed_big01b"}
+	{Position -4.9679	5.2916	59.3213}
+}
+{Volume "hole"
+	{Box 38.3408 31.4899 19.6625}
+	{Bone "Shed_big01b"}
+	{Position -4.6380	-51.0285	33.6281}
+}
+{Volume "hole1"
+	{Box 31.3592 28.1889 19.6625}
+	{Bone "Shed_big01b"}
+	{Position -28.0218	60.3947	35.6057}
+}
+{Volume "body3"
+	{Box 121.994 8.35317 61.937}
+	{Bone "Shed_big01b"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-63.3525	4.6836	29.5335
+	}
+}
+{Volume "body1"
+	{Box 138.106 10.5032 61.937}
+	{Bone "Shed_big01b"}
+	{Position 5.6518	60.3947	29.5335}
+}

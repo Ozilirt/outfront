@@ -1,0 +1,41 @@
+;Exported by: garry
+;Date:        Sat Apr 24 10:23:34 2004
+;File:        \\sharepoint\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\ATguns.max
+{Skeleton
+	{bone "panzershreck"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "panzershreck.ply"}
+		{bone "Foresight3"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				-0.0000	-0.0000	-1.0000
+				0.0000	1.0000	-0.0000
+				17.8744	0.0282	1.1111
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 38.4974 7.54298 7.27585}
+	{Bone "panzershreck"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		5.9402	0.1037	1.1638
+	}
+}
+{Volume "body"
+	{Box 23.8743 3.12987 3.56659}
+	{Bone "panzershreck"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		0.0000	-1.0000	0.0000
+		5.9402	0.0875	1.1638
+	}
+}

@@ -1,0 +1,4564 @@
+{mission
+	{Camera
+		{Position 719.614 1914.31}
+		{Distance 1072}
+		{ViewAngle 0.598108}
+		{YawAngle -0.130033}
+	}
+	{Environment "menu1"}
+	{User 2}
+	{GameProgress 0 0}
+	{Entity "pz-6e" 0x83d5
+		{Position 733.295 2169.98 88.9946}
+		{Turn -22.3245}
+		{TexMod "222"}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 2000 {cell 0 0}}
+				{item "repair_kit" 2 {cell 2 0}}
+				{item "bullet88 ap" 50 {cell 0 2}}
+				{item "bullet88 fg" 27 {cell 0 3}}
+			}
+		}
+		{Player 2}
+		{MID 1}
+	}
+	{Entity "pz-4g" 0x83d6
+		{Position 127.723 2343.86 70.6126}
+		{Turn -66.8464}
+		{TexMod "ambush"}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 1950 {cell 0 0}}
+				{item "bullet75 ap" 50 {cell 0 1}}
+				{item "bullet75 fg" 27 {cell 0 2}}
+			}
+		}
+		{Player 2}
+		{MID 3}
+		{Weaponry
+			{Number 1}
+			{State "gun"
+				{Weapon
+					{Ammo "bullet75 ap" 1}
+				}
+			}
+			{State "mgun"
+				{Weapon
+					{Ammo "ammo mgun" 100}
+				}
+			}
+		}
+		{Chassis
+			{FuelBag
+				{Remain 3}
+			}
+		}
+	}
+	{Entity "pz-6e" 0x83d7
+		{Position 514.95 2025.11 95.7913}
+		{Turn -77.9656}
+		{TexMod "205"}
+		{Extender "inventory"
+			{box
+				{clear}
+			}
+		}
+		{Player 2}
+		{MID 4}
+		{Able {select 0}}
+		{Chassis
+			{Broken}
+			{FuelBag
+				{Remain 2}
+			}
+		}
+		{Component "engine"
+			{Able {work 0}{repair 0}}
+		}
+	}
+	{Entity "_infantry2_rus" 0x83d8
+		{Position 514.95 2025.11 95.7913}
+		{Orientation
+			  0.208497  -0.978012   0.004600
+			 -0.976716  -0.207972   0.052670
+			  0.050556   0.015474   0.998601
+		}
+		{Extender "vitality"
+			{Health
+				{Max 300}
+				{Current 300}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
+			}
+		}
+		{Player 2}
+		{MID 5}
+		{Breed "ger.tank_crew"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x83d9
+		{Position 514.95 2025.11 95.7913}
+		{Orientation
+			  0.208497  -0.978012   0.004600
+			 -0.976716  -0.207972   0.052670
+			  0.050556   0.015474   0.998601
+		}
+		{Extender "vitality"
+			{Health
+				{Max 300}
+				{Current 300}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
+			}
+		}
+		{Player 2}
+		{MID 6}
+		{Breed "ger.tank_crew"}
+		{FsmState "board"}
+	}
+	{Entity "m7priest" 0x8002
+		{Position -875.359 -5840 0}
+		{Turn 169.2}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 2000 {cell 0 0}}
+				{item "bullet76 ap" 43 {cell 0 1}}
+				{item "bullet76 fg" 25 {cell 0 2}}
+			}
+		}
+		{Player 1}
+		{MID 13}
+		{Weaponry
+			{Number 1}
+			{State "gun"
+				{Weapon
+					{Ammo "bullet76 ap" 1}
+				}
+			}
+			{State "mgun"
+				{Weapon
+					{Ammo "ammo mgun" 200}
+				}
+			}
+		}
+	}
+	{Entity "m3a1" 0x8005
+		{Position -1208.32 -5821.83 0}
+		{Turn 77.9601}
+		{Player 1}
+		{MID 16}
+		{Weaponry
+			{State
+				{Weapon
+					{Ammo "ammo mgun" 30}
+				}
+			}
+		}
+	}
+	{Entity "m4a2" 0x8014
+		{Position -1079.8 -5312.22 0}
+		{Turn 81.1023}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 2000 {cell 0 0}}
+				{item "bullet75 ap" 44 {cell 0 1}}
+				{item "bullet75 fg" 24 {cell 0 2}}
+			}
+		}
+		{Player 1}
+		{MID 31}
+		{Weaponry
+			{State "gun"
+				{Weapon
+					{Ammo "bullet75 ap" 1}
+				}
+			}
+			{State "mgun"
+				{Weapon
+					{Ammo "ammo mgun" 30}
+				}
+			}
+		}
+	}
+	{Entity "_infantry2_rus" 0x8015
+		{Position -1079.8 -5312.22 0}
+		{Orientation
+			  0.154671   0.987966   0.000000
+			  0.987966  -0.154671   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+				{item "grenade mk1" {cell 6 0}}
+			}
+		}
+		{Player 1}
+		{MID 32}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8016
+		{Position -1079.8 -5312.22 0}
+		{Orientation
+			  0.154671   0.987966   0.000000
+			  0.987966  -0.154671   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 33}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8017
+		{Position -1079.8 -5312.22 0}
+		{Orientation
+			  0.154671   0.987966   0.000000
+			  0.987966  -0.154671   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 34}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8018
+		{Position -1079.8 -5312.22 0}
+		{Orientation
+			  0.154671   0.987966   0.000000
+			  0.987966  -0.154671   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 35}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8019
+		{Position -1213.61 -5819.49 25.637}
+		{Turn 87.9575}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+				{item "grenade mk1" {cell 4 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 36}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x801a
+		{Position -1195.68 -5814.48 15.5801}
+		{Orientation
+			  0.196015   0.919029   0.342000
+			 -0.978003   0.208593   0.000000
+			 -0.071339  -0.334477   0.939700
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 37}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x801b
+		{Position -1209.67 -5868.9 16.8348}
+		{Orientation
+			 -0.919029   0.196015   0.342000
+			 -0.208593  -0.978003   0.000000
+			  0.334477  -0.071339   0.939700
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 0 0}}
+				{item "grenade mk1" {cell 2 0}}
+				{item "sten" {cell 3 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 38}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x801c
+		{Position -1221.44 -5851.98 16.2048}
+		{Orientation
+			  0.886364  -0.189048   0.422600
+			  0.208593   0.978003   0.000000
+			 -0.413304   0.088151   0.906300
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bren" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 4 0}}
+				{item "ammo mgun" 100 {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 39}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x801d
+		{Position -1224.38 -5865.8 16.2048}
+		{Orientation
+			  0.886364  -0.189048   0.422600
+			  0.208593   0.978003   0.000000
+			 -0.413304   0.088151   0.906300
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 0 0}}
+				{item "thompson" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 40}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x801e
+		{Position -1204.22 -5843.35 16.8348}
+		{Orientation
+			 -0.919029   0.196015   0.342000
+			 -0.208593  -0.978003   0.000000
+			  0.334477  -0.071339   0.939700
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 49 {cell 0 0}}
+				{item "sten" {cell 2 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 41}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x801f
+		{Position -1201.5 -5830.58 16.8348}
+		{Orientation
+			 -0.919029   0.196015   0.342000
+			 -0.208593  -0.978003   0.000000
+			  0.334477  -0.071339   0.939700
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 42}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8020
+		{Position -1206.87 -5855.75 16.8348}
+		{Orientation
+			 -0.919029   0.196015   0.342000
+			 -0.208593  -0.978003   0.000000
+			  0.334477  -0.071339   0.939700
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 50 {cell 0 0}}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "m3a" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 43}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8021
+		{Position -871.251 -5857.83 25.7312}
+		{Turn 119.202}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+				{item "grenade n73at" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 44}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8022
+		{Position -897.992 -5823.96 13.0283}
+		{Turn 169.2}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "grenade n73at" {cell 2 0}}
+				{item "m3a" {cell 4 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 45}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8024
+		{Position -1110.62 -5356.97 25.6685}
+		{Turn 166.1}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 50 {cell 0 0}}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "m3a" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 47}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8027
+		{Position -1107.82 -5340.91 26.8334}
+		{Turn 146.103}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade m61" {cell 6 0}}
+				{item "bar" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 50}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8028
+		{Position -1060.42 -5348.33 27.9952}
+		{Orientation
+			  0.977458   0.037467   0.207600
+			 -0.068438   0.987165   0.144600
+			 -0.199554  -0.155506   0.967500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 51}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8029
+		{Position -1062.94 -5365.13 26.7135}
+		{Turn -8.89769}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 50 {cell 0 0}}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "m3a" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 52}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x802b
+		{Position 127.723 2343.86 70.6126}
+		{Orientation
+			  0.388675  -0.908880   0.151228
+			 -0.919550  -0.392971   0.001607
+			 -0.057968   0.139686   0.988498
+		}
+		{Extender "vitality"
+			{Health
+				{Max 200}
+				{Current 200}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp41" {cell 0 0}}
+				{item "ammo pistol" 60 {cell 4 0}}
+			}
+		}
+		{Player 2}
+		{MID 54}
+		{Breed "ger.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x802c
+		{Position 127.723 2343.86 70.6126}
+		{Orientation
+			  0.388675  -0.908880   0.151228
+			 -0.919550  -0.392971   0.001607
+			 -0.057968   0.139686   0.988498
+		}
+		{Extender "vitality"
+			{Health
+				{Max 200}
+				{Current 200}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp41" {cell 0 0}}
+				{item "ammo pistol" 60 {cell 4 0}}
+			}
+		}
+		{Player 2}
+		{MID 55}
+		{Breed "ger.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x802d
+		{Position 127.723 2343.86 70.6126}
+		{Orientation
+			  0.388675  -0.908880   0.151228
+			 -0.919550  -0.392971   0.001607
+			 -0.057968   0.139686   0.988498
+		}
+		{Extender "vitality"
+			{Health
+				{Max 200}
+				{Current 200}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp41" {cell 0 0}}
+				{item "ammo pistol" 60 {cell 4 0}}
+			}
+		}
+		{Player 2}
+		{MID 56}
+		{Breed "ger.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x802e
+		{Position 127.723 2343.86 70.6126}
+		{Orientation
+			  0.388675  -0.908880   0.151228
+			 -0.919550  -0.392971   0.001607
+			 -0.057968   0.139686   0.988498
+		}
+		{Extender "vitality"
+			{Health
+				{Max 200}
+				{Current 200}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mp41" {cell 0 0}}
+				{item "ammo pistol" 60 {cell 4 0}}
+			}
+		}
+		{Player 2}
+		{MID 57}
+		{Breed "ger.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8033
+		{Position -1202.74 -4979.29 12.9399}
+		{Orientation
+			 -0.926948   0.329719   0.179000
+			 -0.338113  -0.940908  -0.017400
+			  0.162711  -0.076744   0.983700
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 0 0}}
+				{item "thompson" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 62}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8038
+		{Position -1212.27 -5000.73 12.5371}
+		{Orientation
+			 -0.873816   0.482044   0.064300
+			 -0.484262  -0.874546  -0.025700
+			  0.043849  -0.053582   0.997600
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bren" {cell 2 0}}
+				{item "ammo mgun" 100 {cell 0 0}}
+				{item "ammo mgun" 100 {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 67}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8034
+		{Position -1198.8 -4957.25 10.9236}
+		{Orientation
+			  0.396295   0.749964   0.529600
+			 -0.884155   0.467227   0.000000
+			 -0.247408  -0.468194   0.848300
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 63}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8036
+		{Position -1210.76 -4951.66 10.9236}
+		{Orientation
+			  0.358885   0.768644   0.529600
+			 -0.906100   0.423064   0.000000
+			 -0.224055  -0.479870   0.848300
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+				{item "knife hand" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 65}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8039
+		{Position -1043.04 -4672.51 10.9236}
+		{Orientation
+			  0.308253   0.790237   0.529600
+			 -0.931638   0.363432   0.000000
+			 -0.192445  -0.493337   0.848300
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "colt" {cell 2 0}}
+				{item "grenade n73at" {cell 4 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 68}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x803a
+		{Position -1055.56 -4668.32 10.9236}
+		{Orientation
+			  0.268959   0.804533   0.529600
+			 -0.948407   0.317056   0.000000
+			 -0.167913  -0.502276   0.848300
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+				{item "grenade mk1" {cell 4 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 69}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x803b
+		{Position 514.95 2025.11 95.7913}
+		{Orientation
+			  0.208497  -0.978012   0.004600
+			 -0.976716  -0.207972   0.052670
+			  0.050556   0.015474   0.998601
+		}
+		{Extender "vitality"
+			{Health
+				{Max 300}
+				{Current 300}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
+			}
+		}
+		{Player 2}
+		{MID 70}
+		{Breed "ger.tank_crew"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x802f
+		{Position 514.95 2025.11 95.7913}
+		{Orientation
+			  0.208497  -0.978012   0.004600
+			 -0.976716  -0.207972   0.052670
+			  0.050556   0.015474   0.998601
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 42 {cell 4 0}}
+				{item "knife hand" {cell 6 0}}
+			}
+		}
+		{Player 2}
+		{MID 58}
+		{Breed "ger.oficer"}
+		{FsmState "board"}
+	}
+	{Entity "m4a2" 0x8006
+		{Position -1338.86 -5499.87 0}
+		{Turn 69.8222}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 2000 {cell 0 0}}
+				{item "bullet75 ap" 44 {cell 0 1}}
+				{item "bullet75 fg" 20 {cell 0 2}}
+			}
+		}
+		{Player 1}
+		{MID 17}
+	}
+	{Entity "m4a2" 0x8035
+		{Position -887.427 -5475.95 0}
+		{Turn 64.0772}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 2000 {cell 0 0}}
+				{item "bullet75 ap" 46 {cell 0 1}}
+				{item "bullet75 fg" 26 {cell 0 2}}
+			}
+		}
+		{Player 1}
+		{MID 64}
+	}
+	{Entity "m4a2" 0x8037
+		{Position -427.685 -5806.2 0}
+		{Turn 84.7907}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 2000 {cell 0 0}}
+				{item "bullet75 ap" 48 {cell 0 1}}
+				{item "bullet75 fg" 25 {cell 0 2}}
+			}
+		}
+		{Player 1}
+		{MID 66}
+	}
+	{Entity "m4a2" 0x803c
+		{Position 468.444 -5228.81 0}
+		{Turn 90.4844}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 2000 {cell 0 0}}
+				{item "bullet75 fg" 24 {cell 0 2}}
+				{item "bullet75 ap" 48 {cell 0 1}}
+			}
+		}
+		{Player 1}
+		{MID 71}
+	}
+	{Entity "_infantry2_rus" 0x803d
+		{Position -1338.86 -5499.87 0}
+		{Orientation
+			  0.344934   0.938627   0.000000
+			  0.938627  -0.344934   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 72}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x803e
+		{Position -1338.86 -5499.87 0}
+		{Orientation
+			  0.344934   0.938627   0.000000
+			  0.938627  -0.344934   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 73}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x803f
+		{Position -1338.86 -5499.87 0}
+		{Orientation
+			  0.344934   0.938627   0.000000
+			  0.938627  -0.344934   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "colt" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 74}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8040
+		{Position -1338.86 -5499.87 0}
+		{Orientation
+			  0.344934   0.938627   0.000000
+			  0.938627  -0.344934   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 75}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8041
+		{Position -887.427 -5475.95 0}
+		{Orientation
+			  0.437160   0.899384   0.000000
+			  0.899384  -0.437160   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "colt" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 76}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8042
+		{Position -887.427 -5475.95 0}
+		{Orientation
+			  0.437160   0.899384   0.000000
+			  0.899384  -0.437160   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "sten" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 77}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8043
+		{Position -887.427 -5475.95 0}
+		{Orientation
+			  0.437160   0.899384   0.000000
+			  0.899384  -0.437160   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 78}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8044
+		{Position -887.427 -5475.95 0}
+		{Orientation
+			  0.437160   0.899384   0.000000
+			  0.899384  -0.437160   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+				{item "grenade n73at" {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 79}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8045
+		{Position -427.685 -5806.2 0}
+		{Orientation
+			  0.090794   0.995870   0.000000
+			  0.995870  -0.090794   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "colt" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 80}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8046
+		{Position -427.685 -5806.2 0}
+		{Orientation
+			  0.090794   0.995870   0.000000
+			  0.995870  -0.090794   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 81}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8047
+		{Position -427.685 -5806.2 0}
+		{Orientation
+			  0.090794   0.995870   0.000000
+			  0.995870  -0.090794   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 82}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8048
+		{Position -427.685 -5806.2 0}
+		{Orientation
+			  0.090794   0.995870   0.000000
+			  0.995870  -0.090794   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+				{item "grenade n73at" {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 83}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8049
+		{Position 468.444 -5228.81 0}
+		{Orientation
+			 -0.008454   0.999964   0.000000
+			  0.999964   0.008454   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 84}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x804a
+		{Position 468.444 -5228.81 0}
+		{Orientation
+			 -0.008454   0.999964   0.000000
+			  0.999964   0.008454   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "sten" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 85}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x804b
+		{Position 468.444 -5228.81 0}
+		{Orientation
+			 -0.008454   0.999964   0.000000
+			  0.999964   0.008454   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "colt" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 86}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x804c
+		{Position 468.444 -5228.81 0}
+		{Orientation
+			 -0.008454   0.999964   0.000000
+			  0.999964   0.008454   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+				{item "grenade n73at" {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 87}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8050
+		{Position -886.796 -5531.48 26.7135}
+		{Turn -25.9228}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 91}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8051
+		{Position -1332.67 -5555.06 26.7135}
+		{Turn -20.1778}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 92}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8052
+		{Position -1326.92 -5539.07 27.9952}
+		{Orientation
+			  0.965905  -0.154453   0.207600
+			  0.125979   0.981482   0.144600
+			 -0.226117  -0.113468   0.967500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 0 0}}
+				{item "bar" {cell 2 0}}
+				{item "ammo mgun" 100 {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 93}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8053
+		{Position -879.468 -5516.15 27.9952}
+		{Orientation
+			  0.945592  -0.250365   0.207600
+			  0.223594   0.963942   0.144600
+			 -0.236339  -0.090264   0.967500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 49 {cell 0 0}}
+				{item "sten" {cell 2 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 94}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x804f
+		{Position 445.33 -5277.99 25.6685}
+		{Turn 175.482}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 50 {cell 0 0}}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "m3a" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 90}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8054
+		{Position 493.451 -5261.27 27.9952}
+		{Orientation
+			  0.958275   0.196309   0.207600
+			 -0.228448   0.962803   0.144600
+			 -0.171534  -0.185957   0.967500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 50 {cell 0 0}}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "m3a" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 95}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8000
+		{Position -1073.28 -4710.94 12.5751}
+		{Orientation
+			  0.996109   0.062186   0.062100
+			 -0.062817   0.998007   0.009300
+			 -0.061328  -0.013133   0.998000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "bar" {cell 0 1}}
+				{item "ammo mgun" 100 {cell 0 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 7}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8055
+		{Position -1051.47 -4717.25 12.5371}
+		{Orientation
+			 -0.923054   0.379331   0.064300
+			 -0.381451  -0.924033  -0.025700
+			  0.049669  -0.048237   0.997600
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 50 {cell 0 0}}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "m3a" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 8}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8056
+		{Position 1318.53 1495.95 -0.0593846}
+		{Turn -125.667}
+		{Extender "vitality"
+			{Health
+				{Max 150}
+				{Current 150}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "g41" {cell 0 0}}
+				{item "ammo rifle" 10 {cell 4 0}}
+				{item "ammo rifle" 10 {cell 5 0}}
+				{item "ammo rifle" 10 {cell 6 0}}
+				{item "bandage" 5 {cell 4 1}}
+			}
+		}
+		{Player 2}
+		{MID 9}
+		{Breed "mp44_ger_soldier"}
+		{LastItem "mp40"}
+		{FsmState "stand"}
+	}
+	{Entity "_infantry2_rus" 0x8058
+		{Position 1021.4 1775.51 66.7968}
+		{Turn -52.1377}
+		{Extender "vitality"
+			{Health
+				{Max 200}
+				{Current 200}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade m24" {cell 4 0}}
+			}
+		}
+		{Player 2}
+		{MID 11}
+		{Weaponry
+			{State
+				{Mounted "mp40"}
+				{Weapon
+					{Ammo "ammo pistol" 20}
+				}
+			}
+		}
+		{Breed "ger.infantry_smg"}
+		{FsmState "stand"}
+	}
+	{Entity "m4a2" 0x8023
+		{Position -1146.31 -5534.33 0}
+		{Turn 81.1023}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 2000 {cell 0 0}}
+				{item "bullet75 ap" 43 {cell 0 1}}
+				{item "bullet75 fg" 24 {cell 0 2}}
+			}
+		}
+		{Player 1}
+		{MID 103}
+		{Weaponry
+			{State "gun"
+				{Weapon
+					{Ammo "bullet75 ap" 1}
+				}
+			}
+			{State "mgun"
+				{Weapon
+					{Ammo "ammo mgun" 30}
+				}
+			}
+		}
+	}
+	{Entity "_infantry2_rus" 0x8025
+		{Position -1146.31 -5534.33 0}
+		{Orientation
+			  0.154671   0.987966   0.000000
+			  0.987966  -0.154671   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "colt" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 104}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8026
+		{Position -1146.31 -5534.33 0}
+		{Orientation
+			  0.154671   0.987966   0.000000
+			  0.987966  -0.154671   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 105}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8057
+		{Position -1146.31 -5534.33 0}
+		{Orientation
+			  0.154671   0.987966   0.000000
+			  0.987966  -0.154671   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 106}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8059
+		{Position -1146.31 -5534.33 0}
+		{Orientation
+			  0.154671   0.987966   0.000000
+			  0.987966  -0.154671   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 107}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x805e
+		{Position -1177.13 -5579.08 25.6685}
+		{Turn 166.1}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 50 {cell 0 0}}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "m3a" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 108}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x805f
+		{Position -1174.33 -5563.02 26.8334}
+		{Turn 146.103}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bren" {cell 2 0}}
+				{item "ammo mgun" 100 {cell 0 0}}
+				{item "ammo mgun" 100 {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 109}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8060
+		{Position -1129.45 -5587.24 26.7135}
+		{Turn -8.89769}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 50 {cell 0 0}}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "m3a" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 110}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8061
+		{Position -1126.93 -5570.44 27.9952}
+		{Orientation
+			  0.977458   0.037467   0.207600
+			 -0.068438   0.987165   0.144600
+			 -0.199554  -0.155506   0.967500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 111}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8062
+		{Position -867.007 -4519.1 19.5755}
+		{Orientation
+			  0.965241   0.224993   0.133000
+			 -0.210963   0.971051  -0.111600
+			 -0.154247   0.079654   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 0 0}}
+				{item "sten" {cell 2 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 22}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8063
+		{Position -920.689 -4498.94 19.0052}
+		{Orientation
+			 -0.375358   0.917288   0.133000
+			 -0.913903  -0.390161   0.111600
+			  0.154247  -0.079654   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bar" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 23}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8066
+		{Position -1017.6 -5062.59 19.5755}
+		{Orientation
+			  0.884639   0.446907   0.133000
+			 -0.434649   0.893602  -0.111600
+			 -0.168710   0.040912   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 49 {cell 0 0}}
+				{item "grenade mk1" {cell 2 0}}
+				{item "sten" {cell 3 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 46}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "cromwell" 0x8068
+		{Position -878.679 -4479.31 0}
+		{Turn 62.6878}
+		{Player 1}
+		{MID 49}
+	}
+	{Entity "_infantry2_rus" 0x8003
+		{Position -878.679 -4479.31 0}
+		{Orientation
+			  0.458839   0.888520   0.000000
+			  0.888520  -0.458839   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "sten" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 14}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8007
+		{Position -878.679 -4479.31 0}
+		{Orientation
+			  0.458839   0.888520   0.000000
+			  0.888520  -0.458839   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 112}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8008
+		{Position -878.679 -4479.31 0}
+		{Orientation
+			  0.458839   0.888520   0.000000
+			  0.888520  -0.458839   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+				{item "grenade mk1" {cell 4 0}}
+			}
+		}
+		{Player 1}
+		{MID 113}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8009
+		{Position -878.679 -4479.31 0}
+		{Orientation
+			  0.458839   0.888520   0.000000
+			  0.888520  -0.458839   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 114}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "cromwell" 0x800a
+		{Position -982.804 -4743.16 0}
+		{Turn 70.6981}
+		{Player 1}
+		{MID 26}
+	}
+	{Entity "_infantry2_rus" 0x8069
+		{Position -982.804 -4743.16 0}
+		{Orientation
+			  0.330546   0.943790   0.000000
+			  0.943790  -0.330546   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "bandage" {cell 6 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 116}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x806a
+		{Position -982.804 -4743.16 0}
+		{Orientation
+			  0.330546   0.943790   0.000000
+			  0.943790  -0.330546   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 117}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x806b
+		{Position -982.804 -4743.16 0}
+		{Orientation
+			  0.330546   0.943790   0.000000
+			  0.943790  -0.330546   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 118}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x806c
+		{Position -982.804 -4743.16 0}
+		{Orientation
+			  0.330546   0.943790   0.000000
+			  0.943790  -0.330546   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 119}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "cromwell" 0x8004
+		{Position -1038.35 -5026.69 0}
+		{Turn 76.369}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 2000 {cell 0 0}}
+				{item "bullet75 ap" 43 {cell 0 1}}
+				{item "bullet75 fg" 23 {cell 0 2}}
+			}
+		}
+		{Player 1}
+		{MID 10}
+	}
+	{Entity "_infantry2_rus" 0x800b
+		{Position -1038.35 -5026.69 0}
+		{Orientation
+			  0.235668   0.971834   0.000000
+			  0.971834  -0.235668   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "sten" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 115}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x800c
+		{Position -1038.35 -5026.69 0}
+		{Orientation
+			  0.235668   0.971834   0.000000
+			  0.971834  -0.235668   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 120}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x800d
+		{Position -1038.35 -5026.69 0}
+		{Orientation
+			  0.235668   0.971834   0.000000
+			  0.971834  -0.235668   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "webley" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 121}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x800e
+		{Position -1038.35 -5026.69 0}
+		{Orientation
+			  0.235668   0.971834   0.000000
+			  0.971834  -0.235668   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 30 {cell 0 0}}
+				{item "m3a" {cell 2 0}}
+			}
+		}
+		{Player 1}
+		{MID 122}
+		{Breed "eng.tankman"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x800f
+		{Position -406.022 -5840.99 27.9952}
+		{Orientation
+			  0.973023   0.100270   0.207600
+			 -0.131801   0.980717   0.144600
+			 -0.189137  -0.168022   0.967500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 15}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "dodgewc56" 0x8012
+		{Position -1206.88 -4958.82 0}
+		{Turn 64.9718}
+		{Player 1}
+		{MID 53}
+	}
+	{Entity "dodgewc56" 0x8013
+		{Position -1050.89 -4674.99 0}
+		{Turn 71.515}
+		{Player 1}
+		{MID 12}
+	}
+	{Entity "_infantry2_rus" 0x8001
+		{Position -1233.22 -4991.98 12.5751}
+		{Orientation
+			  0.996707  -0.051728   0.062100
+			  0.051318   0.998664   0.009300
+			 -0.062425  -0.006059   0.998000
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 50 {cell 0 0}}
+				{item "grenade m61" {cell 2 0}}
+				{item "grenade m61" {cell 3 0}}
+				{item "bandage" 4 {cell 4 0}}
+				{item "m3a" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 18}
+		{Breed "eng.smg_commando"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8010
+		{Position -1207.79 -4990.08 13.7495}
+		{Orientation
+			 -0.900577   0.395654   0.180200
+			 -0.405087  -0.914162  -0.017500
+			  0.157846  -0.088819   0.983500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 19}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8011
+		{Position -1044.45 -4694.85 12.9399}
+		{Orientation
+			 -0.958483   0.221944   0.179000
+			 -0.228692  -0.973308  -0.017400
+			  0.170396  -0.057702   0.983700
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 20}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x802a
+		{Position -1048.23 -4706.15 13.7495}
+		{Orientation
+			 -0.939797   0.290454   0.180200
+			 -0.298278  -0.954368  -0.017500
+			  0.166939  -0.070254   0.983500
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 0 0}}
+				{item "thompson" {cell 0 1}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 21}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x804d
+		{Position 493.706 -5278.27 26.7135}
+		{Turn 0.484406}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+				{item "ammo bazooka" {cell 2 2}}
+				{item "ammo bazooka" {cell 4 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 24}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x804e
+		{Position -1074.52 -5055.7 19.0052}
+		{Orientation
+			 -0.581664   0.802482   0.133000
+			 -0.795692  -0.595247   0.111600
+			  0.168710  -0.040912   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 0 0}}
+				{item "sten" {cell 2 0}}
+				{item "grenade mk1" {cell 6 0}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 25}
+		{Breed "eng.infantry.smg"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x805b
+		{Position -965.701 -4780.94 19.5755}
+		{Orientation
+			  0.924470   0.357305   0.133000
+			 -0.344221   0.932178  -0.111600
+			 -0.163842   0.057383   0.984800
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "weapon bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 5 0}}
+				{item "ammo bazooka" {cell 5 1}}
+				{item "ammo bazooka" {cell 0 2}}
+			}
+		}
+		{DisableObstacles}
+		{Player 1}
+		{MID 27}
+		{Breed "eng.bazuker"}
+		{FsmState "board"}
+	}
+	{Entity "_infantry2_rus" 0x8030
+		{Position 682.431 2023.66 96.0891}
+		{Turn -62.9816}
+		{Extender "vitality"
+			{Health
+				{Max 250}
+				{Current 250}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 50 {cell 2 0}}
+				{item "knife_ger hand" {cell 6 0}}
+			}
+		}
+		{Player 2}
+		{MID 2}
+		{Breed "hero.dittman"}
+		{FsmState "stand"}
+	}
+	{Entity "_infantry2_rus" 0x8031
+		{Position 678.833 2077.06 97}
+		{Turn -4.75293}
+		{Extender "vitality"
+			{Health
+				{Max 250}
+				{Current 250}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
+			}
+		}
+		{Player 2}
+		{MID 28}
+		{Breed "ger.tank_crew"}
+		{FsmState "stand"}
+	}
+	{Entity "_infantry2_rus" 0x8032
+		{Position 653.991 2076.92 96.1229}
+		{Turn -51.7097}
+		{Extender "vitality"
+			{Health
+				{Max 250}
+				{Current 250}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
+			}
+		}
+		{Player 2}
+		{MID 29}
+		{Breed "ger.tank_crew"}
+		{FsmState "stand"}
+	}
+	{Entity "_infantry2_rus" 0x805c
+		{Position 629.012 2063.32 95.2995}
+		{Turn -57.4319}
+		{Extender "vitality"
+			{Health
+				{Max 250}
+				{Current 250}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
+			}
+		}
+		{Player 2}
+		{MID 30}
+		{Breed "ger.tank_crew"}
+		{FsmState "stand"}
+	}
+	{Entity "chicken" 0x8064
+		{Position 1435.89 -1230.58 47}
+		{Turn 46.1187}
+		{Player 0}
+		{MID 48}
+	}
+	{Entity "chicken" 0x8065
+		{Position 1547.18 -1000.44 30.0123}
+		{Turn 135}
+		{Player 0}
+		{MID 59}
+	}
+	{Entity "chicken" 0x8067
+		{Position 1635.57 -1183.54 32.6462}
+		{Turn 129.847}
+		{Player 0}
+		{MID 60}
+	}
+	{Entity "chicken" 0x806d
+		{Position 1307.46 -737.94 23.1474}
+		{Turn -108.53}
+		{Player 0}
+		{MID 61}
+	}
+	{Entity "chicken" 0x806e
+		{Position 1407.67 -820.982 16.3307}
+		{Turn -34.1554}
+		{Player 0}
+		{MID 88}
+	}
+	{Entity "_infantry2_rus" 0x806f
+		{Position 1001.73 1734.64 68.2106}
+		{Turn 0.483572}
+		{Extender "vitality"
+			{Health
+				{Max 200}
+				{Current 200}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 24 {cell 2 0}}
+				{item "knife hand" {cell 4 0}}
+				{item "valter" filling "ammo pistol" 8 {cell 0 0}}
+			}
+		}
+		{Player 2}
+		{MID 89}
+		{Breed "ger.oficer"}
+		{FsmState "stand"}
+	}
+	{Entity "_infantry2_rus" 0x8070
+		{Position 1084.2 1107.13 0.585999}
+		{Turn -125.667}
+		{Extender "vitality"
+			{Health
+				{Max 150}
+				{Current 150}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 10 {cell 6 0}}
+				{item "grenade m39" {cell 4 0}}
+			}
+		}
+		{Player 2}
+		{MID 96}
+		{Breed "mp44_ger_soldier"}
+		{LastItem "mp40"}
+		{FsmState "stand"}
+	}
+	{Entity "_infantry2_rus" 0x8071
+		{Position 1671.34 1006.05 2.053}
+		{Turn -125.667}
+		{Extender "vitality"
+			{Health
+				{Max 150}
+				{Current 150}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "ammo pistol" 20 {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "grenade m24" {cell 6 1}}
+			}
+		}
+		{Player 2}
+		{MID 98}
+		{Weaponry
+			{State
+				{Mounted "sg44"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{Breed "mp44_ger_soldier"}
+		{FsmState "stand"}
+	}
+	{Entity "_infantry2_rus" 0x8072
+		{Position 932.444 1134.71 17.2266}
+		{Turn -125.667}
+		{Extender "vitality"
+			{Health
+				{Max 150}
+				{Current 150}
+			}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "ammo pistol" 20 {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "grenade m24" {cell 6 1}}
+			}
+		}
+		{Player 2}
+		{MID 99}
+		{Weaponry
+			{State
+				{Mounted "sg44"}
+				{Weapon
+					{Ammo "ammo pistol" 30}
+				}
+			}
+		}
+		{Breed "mp44_ger_soldier"}
+		{FsmState "stand"}
+	}
+	{Entity "birds" 0x805a
+		{Position 887.205 1074.51 17.4513}
+		{Extender "speaker"
+			{SoundName "world.birds03"}
+		}
+	}
+	{Entity "birds" 0x805d
+		{Position 1701.39 -588.462 -20.0215}
+		{Extender "speaker"
+			{SoundName "world.fountain"}
+		}
+	}
+	{Entity "birds" 0x8073
+		{Position -764.992 -3679.46 0}
+		{Extender "speaker"
+			{SoundName "world.birds01"}
+		}
+	}
+	{Entity "birds" 0x8074
+		{Position 625.702 -2833.9 0}
+		{Extender "speaker"
+			{SoundName "world.birds03"}
+		}
+	}
+	{Entity "barrel1" 0x8075
+		{Position 900.244 2150.94 84.8588}
+		{Extender "stuff"
+			{Item "barrel" filling "fuel" 50}
+		}
+	}
+	{Entity "barrel1" 0x8076
+		{Position 870.6 2182.7 85.6695}
+		{Extender "stuff"
+			{Item "barrel" filling "fuel" 50}
+		}
+	}
+	{Link 0x83d8 To 0x83d7 "commander"}
+	{Link 0x83d9 To 0x83d7 "driver"}
+	{Link 0x8015 To 0x8014 "gunner"}
+	{Link 0x8016 To 0x8014 "charger"}
+	{Link 0x8017 To 0x8014 "driver"}
+	{Link 0x8018 To 0x8014 "commander"}
+	{Link 0x8019 To 0x8005 "gunner"}
+	{Link 0x801a To 0x8005 "driver"}
+	{Link 0x801b To 0x8005 "seat4"}
+	{Link 0x801c To 0x8005 "seat6"}
+	{Link 0x801d To 0x8005 "seat5"}
+	{Link 0x801e To 0x8005 "seat2"}
+	{Link 0x801f To 0x8005 "seat1"}
+	{Link 0x8020 To 0x8005 "seat3"}
+	{Link 0x8021 To 0x8002 "charger"}
+	{Link 0x8022 To 0x8002 "driver"}
+	{Link 0x8024 To 0x8014 "seat3"}
+	{Link 0x8027 To 0x8014 "seat4"}
+	{Link 0x8028 To 0x8014 "seat1"}
+	{Link 0x8029 To 0x8014 "seat2"}
+	{Link 0x802b To 0x83d6 "charger"}
+	{Link 0x802c To 0x83d6 "gunner"}
+	{Link 0x802d To 0x83d6 "commander"}
+	{Link 0x802e To 0x83d6 "driver"}
+	{Link 0x8033 To 0x8012 "seat1"}
+	{Link 0x8038 To 0x8012 "seat3"}
+	{Link 0x8034 To 0x8012 "driver"}
+	{Link 0x8036 To 0x8012 "commander"}
+	{Link 0x8039 To 0x8013 "driver"}
+	{Link 0x803a To 0x8013 "commander"}
+	{Link 0x803b To 0x83d7 "gunner"}
+	{Link 0x802f To 0x83d7 "charger"}
+	{Link 0x803d To 0x8006 "gunner"}
+	{Link 0x803e To 0x8006 "driver"}
+	{Link 0x803f To 0x8006 "charger"}
+	{Link 0x8040 To 0x8006 "commander"}
+	{Link 0x8041 To 0x8035 "commander"}
+	{Link 0x8042 To 0x8035 "charger"}
+	{Link 0x8043 To 0x8035 "gunner"}
+	{Link 0x8044 To 0x8035 "driver"}
+	{Link 0x8045 To 0x8037 "charger"}
+	{Link 0x8046 To 0x8037 "commander"}
+	{Link 0x8047 To 0x8037 "driver"}
+	{Link 0x8048 To 0x8037 "gunner"}
+	{Link 0x8049 To 0x803c "charger"}
+	{Link 0x804a To 0x803c "gunner"}
+	{Link 0x804b To 0x803c "commander"}
+	{Link 0x804c To 0x803c "driver"}
+	{Link 0x8050 To 0x8035 "seat2"}
+	{Link 0x8051 To 0x8006 "seat2"}
+	{Link 0x8052 To 0x8006 "seat1"}
+	{Link 0x8053 To 0x8035 "seat1"}
+	{Link 0x804f To 0x803c "seat3"}
+	{Link 0x8054 To 0x803c "seat1"}
+	{Link 0x8000 To 0x8013 "seat4"}
+	{Link 0x8055 To 0x8013 "seat3"}
+	{Link 0x8025 To 0x8023 "gunner"}
+	{Link 0x8026 To 0x8023 "commander"}
+	{Link 0x8057 To 0x8023 "driver"}
+	{Link 0x8059 To 0x8023 "charger"}
+	{Link 0x805e To 0x8023 "seat3"}
+	{Link 0x805f To 0x8023 "seat4"}
+	{Link 0x8060 To 0x8023 "seat2"}
+	{Link 0x8061 To 0x8023 "seat1"}
+	{Link 0x8062 To 0x8068 "seat1"}
+	{Link 0x8063 To 0x8068 "seat2"}
+	{Link 0x8066 To 0x8004 "seat1"}
+	{Link 0x8003 To 0x8068 "driver"}
+	{Link 0x8007 To 0x8068 "gunner"}
+	{Link 0x8008 To 0x8068 "charger"}
+	{Link 0x8009 To 0x8068 "commander"}
+	{Link 0x8069 To 0x800a "driver"}
+	{Link 0x806a To 0x800a "gunner"}
+	{Link 0x806b To 0x800a "commander"}
+	{Link 0x806c To 0x800a "charger"}
+	{Link 0x800b To 0x8004 "gunner"}
+	{Link 0x800c To 0x8004 "driver"}
+	{Link 0x800d To 0x8004 "charger"}
+	{Link 0x800e To 0x8004 "commander"}
+	{Link 0x800f To 0x8037 "seat1"}
+	{Link 0x8001 To 0x8012 "seat4"}
+	{Link 0x8010 To 0x8012 "seat2"}
+	{Link 0x8011 To 0x8013 "seat1"}
+	{Link 0x802a To 0x8013 "seat2"}
+	{Link 0x804d To 0x803c "seat2"}
+	{Link 0x804e To 0x8004 "seat2"}
+	{Link 0x805b To 0x800a "seat1"}
+	{Brain 0x83d5
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8030
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Brain 0x83d6
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x83d7
+		{Control 1}
+	}
+	{Brain 0x83d8
+		{Control 1}
+	}
+	{Brain 0x83d9
+		{Control 1}
+	}
+	{Brain 0x8056
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Brain 0x8058
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Brain 0x8013
+		{HoldFire}
+	}
+	{Brain 0x8031
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Brain 0x8032
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Brain 0x805c
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Brain 0x8064
+		{HoldFire}
+		{OwnZone "chiken"}
+	}
+	{Brain 0x8012
+		{HoldFire}
+	}
+	{Brain 0x802b
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x802c
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x802d
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x802e
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8065
+		{HoldFire}
+		{OwnZone "chiken"}
+	}
+	{Brain 0x8067
+		{HoldFire}
+		{OwnZone "chiken"}
+	}
+	{Brain 0x806d
+		{HoldFire}
+		{OwnZone "chiken"}
+	}
+	{Brain 0x803b
+		{Control 1}
+	}
+	{Brain 0x806e
+		{HoldFire}
+		{OwnZone "chiken"}
+	}
+	{Brain 0x806f
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Brain 0x8070
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Brain 0x8071
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Brain 0x8072
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+		{FixInventory}
+	}
+	{Tags 0x8021 "kol"}
+	{Tags 0x8022 "kol"}
+	{Tags 0x801a "kol"}
+	{Tags 0x8019 "kol"}
+	{Tags 0x801b "kol"}
+	{Tags 0x8020 "kol"}
+	{Tags 0x801d "kol"}
+	{Tags 0x801c "kol"}
+	{Tags 0x801f "kol"}
+	{Tags 0x801e "kol"}
+	{Tags 0x8017 "kol"}
+	{Tags 0x8015 "kol"}
+	{Tags 0x8016 "kol"}
+	{Tags 0x8018 "kol"}
+	{Tags 0x8028 "kol"}
+	{Tags 0x8029 "kol"}
+	{Tags 0x8024 "kol"}
+	{Tags 0x8027 "kol"}
+	{Tags 0x803e "sher"}
+	{Tags 0x803f "sher"}
+	{Tags 0x803d "sher"}
+	{Tags 0x8040 "sher"}
+	{Tags 0x8052 "sher"}
+	{Tags 0x8051 "sher"}
+	{Tags 0x8043 "sher"}
+	{Tags 0x8042 "sher"}
+	{Tags 0x8044 "sher"}
+	{Tags 0x8041 "sher"}
+	{Tags 0x8053 "sher"}
+	{Tags 0x8050 "sher"}
+	{Tags 0x8046 "sher"}
+	{Tags 0x8047 "sher"}
+	{Tags 0x8045 "sher"}
+	{Tags 0x8048 "sher"}
+	{Tags 0x800f "sher"}
+	{Tags 0x804c "sher"}
+	{Tags 0x804b "sher"}
+	{Tags 0x804a "sher"}
+	{Tags 0x8049 "sher"}
+	{Tags 0x8054 "sher"}
+	{Tags 0x804d "sher"}
+	{Tags 0x804f "sher"}
+	{Tags 0x8026 "kol"}
+	{Tags 0x8025 "kol"}
+	{Tags 0x8059 "kol"}
+	{Tags 0x8057 "kol"}
+	{Tags 0x8061 "kol"}
+	{Tags 0x8060 "kol"}
+	{Tags 0x805e "kol"}
+	{Tags 0x805f "kol"}
+	{Tags 0x8062 "kol"}
+	{Tags 0x8063 "kol"}
+	{Tags 0x8066 "kol"}
+	{Tags 0x8007 "kol"}
+	{Tags 0x8003 "kol"}
+	{Tags 0x8009 "kol"}
+	{Tags 0x8008 "kol"}
+	{Tags 0x8069 "kol"}
+	{Tags 0x806a "kol"}
+	{Tags 0x806c "kol"}
+	{Tags 0x806b "kol"}
+	{Tags 0x800d "kol"}
+	{Tags 0x800b "kol"}
+	{Tags 0x800c "kol"}
+	{Tags 0x800e "kol"}
+	{Tags 0x804e "kol"}
+	{Tags 0x83d5 "tank pl"}
+	{Tags 0x805b "kol"}
+	{Tags 0x8030 "pl dit pl_hero pl_carryover pl_replace"}
+	{Tags 0x8031 "pl pl_hero pl_carryover pl_replace"}
+	{Tags 0x8032 "pl pl_carryover pl_replace"}
+	{Tags 0x805c "pl pl_carryover pl_replace"}
+	{Tags 0x8039 "patr"}
+	{Tags 0x803a "patr"}
+	{Tags 0x8000 "patr"}
+	{Tags 0x8055 "patr"}
+	{Tags 0x8011 "patr"}
+	{Tags 0x802a "patr"}
+	{Tags 0x8033 "patr"}
+	{Tags 0x8038 "patr"}
+	{Tags 0x8034 "patr"}
+	{Tags 0x8036 "patr"}
+	{Tags 0x8001 "patr"}
+	{Tags 0x8010 "patr"}
+	{Tags 0x8012 "hidden"}
+	{Tags 0x8013 "hidden"}
+	{Tags 0x8006 "hidden"}
+	{Tags 0x8035 "hidden"}
+	{Tags 0x8037 "hidden"}
+	{Tags 0x803c "hidden"}
+	{Tags 0x8056 "pl extra pl_hero pl_carryover pl_assign pl_replace"}
+	{Tags 0x8058 "pl extra pl_hero pl_carryover pl_assign pl_replace"}
+	{Tags 0x806f "pl extra pl_hero pl_carryover pl_assign pl_replace"}
+	{Tags 0x8070 "pl extra pl_carryover pl_assign"}
+	{Tags 0x8071 "pl extra pl_carryover pl_assign"}
+	{Tags 0x8072 "pl extra pl_carryover pl_assign"}
+	{Tags 0x802c "pl"}
+	{Tags 0x802d "pl"}
+	{Tags 0x802b "pl"}
+	{Tags 0x802e "pl"}
+	{Tags 0x83d6 "tank pl"}
+	{Tags 0x83d7 "pl"}
+	{Helpers
+		{event "tanks_kolonna" id 0 state 0}
+		{event "patrol_kol" id 1 state 0}
+		{event "nachalo" id 2 state 0}
+		{event "renforce" id 3 state 0}
+		{event "unboard" id 4 state 0}
+		{event "c1_cancel" id 5 state 0}
+		{event "c2_cancel" id 6 state 0}
+		{event "kol_fake" id 7 state 0}
+		{event "broken_tiger" id 8 state 0}
+		{event "fake_after_battle" id 9 state 0}
+		{event "c3_cancel" id 10 state 0}
+		{event "c4_cancel" id 11 state 0}
+		{event "move" id 12 state 0}
+		{event "angl" id 13 state 0}
+		{event "first_kolonna" id 14 state 0}
+		{event "kolonna_after" id 15 state 0}
+		{event "c_move" id 16 state 0}
+		{event "c2_cam" id 17 state 0}
+		{event "first_end" id 18 state 0}
+		{event "primary2" id 19 state 0}
+		{event "prim1_complete" id 20 state 0}
+		{event "sec1" id 21 state 0}
+		{event "primary3" id 22 state 0}
+		{event "game_over" id 23 state 0}
+		{event "sec1_failed" id 24 state 0}
+		{event "fail" id 25 state 0}
+		{event "musik_start" id 26 state 0}
+		{event "musik_danger" id 27 state 0}
+		{event "loop_musik" id 28 state 0}
+		{event "can_select_tank" id 29 state 0}
+		{event "start_true" id 30 state 0}
+		{event "sec_compl" id 31 state 0}
+		{event "last_wave" id 32 state 0}
+		{trigger "camers/c_move"
+			{condition
+				{term 1 "event"
+					{"id" 16}
+				}
+			}
+			{actions
+				{"camera_move"
+					{"selector"
+						{"actors/tag" "tank"}
+					}
+				}
+			}
+		}
+		{trigger "camers/camerac2"
+			{condition
+				{term 1 "event"
+					{"id" 17}
+				}
+			}
+			{actions
+				{"camera"
+					{"camera" "c2"}
+					{"action" "activate"}
+				}
+			}
+		}
+		{trigger "camers/move"
+			{condition
+				{term 1 "event"
+					{"id" 12}
+				}
+			}
+			{actions
+				{"camera_move"
+					{"selector"
+						{"actors/tag" "tank"}
+					}
+				}
+			}
+		}
+		{trigger "complete"
+			{condition
+				{term 1 "task"
+					{"name" "primary2"}
+				}
+				{term 2 "task"
+					{"name" "primary3"}
+				}
+				{term 3 "task"
+					{"name" "witman_survive"}
+				}
+			}
+			{actions
+				{"event"
+					{"event" 23}
+					{"mode" "set"}
+					{"delay" "10"}
+				}
+				{"gamestatus"
+					{"status" "1"}
+				}
+				{"mission_music"
+					{"action" "WON"}
+				}
+			}
+		}
+		{trigger "complete2"
+			{condition
+				{type 2}
+				{expression "1 & 2 & !3"}
+				{term 1 "task"
+					{"name" "primary2"}
+				}
+				{term 2 "task"
+					{"name" "primary3"}
+				}
+				{term 3 "actors"
+					{"selector"
+						{"actors/tag" "dit"}
+						{"actors/state" "dead"}
+					}
+				}
+			}
+			{actions
+				{"event"
+					{"event" 23}
+					{"mode" "set"}
+					{"delay" "10"}
+				}
+				{"gamestatus"
+					{"status" "5"}
+				}
+				{"mission_music"
+					{"action" "WON"}
+				}
+			}
+		}
+		{trigger "events/broken_car2"
+			{condition
+				{term 1 "actors"
+					{"selector"
+						{"actors/mids" "12"}
+						{"actors/state" "not moveable"}
+					}
+				}
+			}
+			{actions
+				{"emit"
+					{"selector"
+						{"actors/mids" "12"}
+					}
+					{"waypoint/uid" "39"}
+				}
+				{"actor_state"
+					{"selector"
+						{"actors/mids" "8 7 68 69 21"}
+					}
+					{"speed" "fast"}
+					{"weapon_prepare" "on"}
+					{"waypoint_only" "on"}
+				}
+			}
+		}
+		{trigger "events/broken_cars"
+			{condition
+				{term 1 "actors"
+					{"selector"
+						{"actors/mids" "53"}
+						{"actors/state" "not moveable"}
+					}
+				}
+			}
+			{actions
+				{"emit"
+					{"selector"
+						{"actors/mids" "53"}
+					}
+					{"waypoint/uid" "116"}
+				}
+				{"actor_state"
+					{"selector"
+						{"actors/mids" "65 63 62 67 18"}
+					}
+					{"speed" "fast"}
+					{"weapon_prepare" "on"}
+					{"waypoint_only" "on"}
+				}
+			}
+		}
+		{trigger "events/broken_tiger"
+			{condition
+				{term 1 "event"
+					{"id" 8}
+				}
+			}
+			{actions
+				{"camera"
+					{"camera" "c4"}
+					{"action" "activate"}
+				}
+				{"message"
+					{"text" "mission/4_2/engine_broken"}
+				}
+				{"event" off
+					{"event" 4}
+					{"mode" "set"}
+					{"delay" "0"}
+				}
+				{"actor_component"
+					{"selector"
+						{"actors/mids" "4"}
+					}
+					{"component" "engine"}
+					{"operation" "break"}
+				}
+				{"music"
+					{"start" "g_2u0n"}
+				}
+				{"event"
+					{"event" 17}
+					{"mode" "set"}
+					{"delay" "9"}
+				}
+			}
+		}
+		{trigger "events/game-over-event"
+			{condition
+				{term 1 "event"
+					{"id" 23}
+				}
+			}
+			{actions
+				{"gameover"
+					{"result" "win"}
+				}
+			}
+		}
+		{trigger "events/kolonna_shuher"
+			{condition
+				{type 1}
+				{term 1 "actors"
+					{"selector"
+						{"actors/tag" "shuh"}
+						{"actors/zone" "failed"}
+					}
+				}
+			}
+			{actions
+				{"event"
+					{"event" 3}
+					{"mode" "set"}
+					{"delay" "40"}
+				}
+				{"event"
+					{"event" 24}
+					{"mode" "set"}
+					{"delay" "2"}
+				}
+			}
+		}
+		{trigger "events/see_soldiers"
+			{condition
+				{term 1 "see_actors"
+					{"selector"
+						{"actors/mids" "63 65 62 67 18 19 53 68 69 8 7 20 21 12"}
+					}
+					{"enemy"
+						{"actors/tag" "pl"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{actions
+				{"actor_state"
+					{"selector"
+						{"actors/mids" "63 65 62 67 18 19 53 68 69 8 7 20 21 12"}
+					}
+					{"waypoint_only" "off"}
+				}
+			}
+		}
+		{trigger "events/shuher"
+			{condition
+				{type 1}
+				{term 1 "see_actors"
+					{"selector"
+						{"actors/mids" "63 65 62 67 18 19 53 68 69 8 7 20 21 12"}
+					}
+					{"enemy"
+						{"actors/tag" "tank"}
+					}
+				}
+				{term 2 "actors"
+					{"selector"
+						{"actors/mids" "12 53"}
+						{"actors/zone" "zone"}
+					}
+				}
+			}
+			{actions
+				{"actor_state"
+					{"selector"
+						{"actors/mids" "53 12 62"}
+					}
+					{"speed" "fast"}
+					{"waypoint_only" "on"}
+				}
+				{"emit" off
+					{"selector"
+						{"actors/mids" "12"}
+					}
+					{"waypoint/uid" "39"}
+					{"emit/mode" "passengers"}
+				}
+				{"emit" off
+					{"selector"
+						{"actors/mids" "53"}
+					}
+					{"waypoint/uid" "39"}
+					{"emit/mode" "passengers"}
+				}
+				{"entity_state"
+					{"selector"
+						{"actors/mids" "63 65 62 67 18 19 53 68 69 8 7 20 21 12"}
+					}
+					{"tag_add" "shuh"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "12 63 65 62 67 53 68"}
+					}
+					{"waypoint/uid" "39"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "53 69 8 7 12"}
+					}
+					{"waypoint/uid" "111"}
+				}
+				{"actor_to_waypoint" off
+					{"selector"
+						{"actors/mids" "63 65 62 67 53 68 69 8 7 12"}
+					}
+				}
+			}
+		}
+		{trigger "events/unboard"
+			{condition
+				{term 1 "event"
+					{"id" 4}
+				}
+			}
+			{actions
+				{"emit"
+					{"selector"
+						{"actors/mids" "1"}
+					}
+					{"waypoint/uid" "107"}
+				}
+				{"emit"
+					{"selector"
+						{"actors/mids" "4"}
+					}
+					{"waypoint/uid" "108"}
+				}
+				{"actor_state"
+					{"selector"
+						{"actors/mids" "58"}
+					}
+					{"speed" "normal"}
+				}
+			}
+		}
+		{trigger "failed"
+			{condition
+				{type 2}
+				{expression "!1"}
+				{term 1 "actors"
+					{"selector"
+						{"actors/tag" "pl"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{actions
+				{"gameover"
+					{"result" "loose"}
+				}
+				{"mission_music"
+					{"action" "LOST"}
+				}
+			}
+		}
+		{trigger "failed2"
+			{condition
+				{type 2}
+				{expression "!1"}
+				{term 1 "actors"
+					{"selector"
+						{"actors/tag" "dit"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{actions
+				{"gameover"
+					{"result" "loose"}
+				}
+				{"mission_music"
+					{"action" "LOST"}
+				}
+			}
+		}
+		{trigger "kolona_tanks/can_selekt_tank"
+			{condition
+				{term 1 "event"
+					{"id" 29}
+				}
+			}
+			{actions
+				{"ables"
+					{"selector"
+						{"actors/mids" "3"}
+					}
+					{"add" "select"}
+				}
+			}
+		}
+		{trigger "kolona_tanks/k1"
+			{condition
+				{type 2}
+				{expression "1 & !2 & !3"}
+				{term 1 "event"
+					{"id" 0}
+				}
+				{term 2 "event"
+					{"id" 3}
+				}
+				{term 3 "actors"
+					{"selector"
+						{"actors/mids" "63 65 62 67 18 19 68 69 8 7 20 21"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{actions
+				{"actor_state"
+					{"selector"
+						{source "defined"}
+						{name "kolonna"}
+					}
+					{"speed_kph" 10}
+				}
+				{"entity_state"
+					{"selector"
+						{source "defined"}
+						{name "kolonna"}
+					}
+					{"inactive" "off"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "16"}
+					}
+					{"waypoint/uid" "0"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "103"}
+					}
+					{"waypoint/uid" "1"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "31"}
+					}
+					{"waypoint/uid" "2"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "10"}
+					}
+					{"waypoint/uid" "3"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "26"}
+					}
+					{"waypoint/uid" "4"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "49"}
+					}
+					{"waypoint/uid" "5"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "13"}
+					}
+					{"waypoint/uid" "105"}
+				}
+				{"event"
+					{"event" 32}
+					{"mode" "set"}
+					{"delay" "60"}
+				}
+			}
+		}
+		{trigger "kolona_tanks/kolonna_after"
+			{condition
+				{term 1 "event"
+					{"id" 15}
+				}
+			}
+			{actions
+				{"actor_state"
+					{"selector"
+						{source "defined"}
+						{name "kolonna"}
+					}
+					{"speed_kph" 10}
+				}
+				{"entity_state"
+					{"selector"
+						{source "defined"}
+						{name "kolonna"}
+					}
+					{"inactive" "off"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "49"}
+					}
+					{"waypoint/uid" "5"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "26"}
+					}
+					{"waypoint/uid" "4"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "10"}
+					}
+					{"waypoint/uid" "3"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "31"}
+					}
+					{"waypoint/uid" "2"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "103"}
+					}
+					{"waypoint/uid" "1"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "16"}
+					}
+					{"waypoint/uid" "0"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "13"}
+					}
+					{"waypoint/uid" "105"}
+				}
+			}
+		}
+		{trigger "kolona_tanks/kolonna_after_battle"
+			{condition
+				{type 2}
+				{expression "!1 & 2"}
+				{term 1 "actors"
+					{"selector"
+						{"actors/tag" "sher"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 2 "event"
+					{"id" 3}
+				}
+			}
+			{actions
+				{"event"
+					{"event" 15}
+					{"mode" "set"}
+					{"delay" "10"}
+				}
+			}
+		}
+		{trigger "kolona_tanks/patrol_kolonu"
+			{condition
+				{term 1 "event"
+					{"id" 1}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "53"}
+					}
+					{"waypoint/uid" "20"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "12"}
+					}
+					{"waypoint/uid" "21"}
+				}
+				{"actor_state"
+					{"selector"
+						{"actors/mids" "12 53"}
+					}
+					{"speed_kph" 15}
+					{"waypoint_only" "on"}
+				}
+			}
+		}
+		{trigger "kolona_tanks/reinforce_arrive"
+			{condition
+				{type 2}
+				{expression "!1"}
+				{term 1 "actors"
+					{"selector"
+						{"actors/tag" "kol"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{actions
+				{"event"
+					{"event" 3}
+					{"mode" "set"}
+					{"delay" "10"}
+				}
+			}
+		}
+		{trigger "mesage/angl"
+			{condition
+				{term 1 "event"
+					{"id" 13}
+				}
+			}
+			{actions
+				{"camera"
+					{"camera" "c3"}
+					{"action" "activate"}
+				}
+			}
+		}
+		{trigger "musik/battle"
+			{condition
+				{term 1 "see_enemy"
+					{"selector"
+						{"actors/tag" "kol"}
+					}
+				}
+			}
+			{actions
+				{"mission_music"
+					{"action" "BATTLE"}
+				}
+				{"event"
+					{"event" 28}
+					{"mode" "set"}
+					{"delay" "70"}
+				}
+			}
+		}
+		{trigger "musik/danger"
+			{condition
+				{term 1 "event"
+					{"id" 27}
+				}
+			}
+			{actions
+				{"mission_music"
+					{"action" "DANGER"}
+				}
+				{"event"
+					{"event" 28}
+					{"mode" "set"}
+					{"delay" "30"}
+				}
+			}
+		}
+		{trigger "musik/loop"
+			{condition
+				{term 1 "event"
+					{"id" 28}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mission_music"
+					{"action" "MAIN_LOOP"}
+				}
+				{"event"
+					{"event" 28}
+					{"mode" "reset"}
+					{"delay" "2"}
+				}
+			}
+		}
+		{trigger "musik/start"
+			{condition
+				{term 1 "event"
+					{"id" 26}
+				}
+			}
+			{actions
+				{"mission_music"
+					{"action" "START"}
+				}
+			}
+		}
+		{trigger "nachalo/nachalo"
+			{condition
+				{term 1 "event"
+					{"id" 2}
+				}
+			}
+			{actions
+				{"actor_to_waypoint" off
+					{"selector"
+						{"actors/mids" "4"}
+					}
+					{"waypoint/uid" "26"}
+				}
+				{"actor_to_waypoint" off
+					{"selector"
+						{"actors/mids" "1"}
+					}
+					{"waypoint/uid" "24"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "3"}
+					}
+					{"waypoint/uid" "28"}
+				}
+				{"actor_state"
+					{"selector"
+						{"actors/mids" "26"}
+					}
+					{"speed_kph" 25}
+				}
+			}
+		}
+		{trigger "reinforce"
+			{condition
+				{type 2}
+				{expression "1 & !2"}
+				{term 1 "event"
+					{"id" 3}
+				}
+				{term 2 "task"
+					{"name" "sec1"}
+				}
+			}
+			{actions
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "17"}
+					}
+					{"waypoint/uid" "55"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "64"}
+					}
+					{"waypoint/uid" "66"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "66"}
+					}
+					{"waypoint/uid" "81"}
+				}
+				{"actor_to_waypoint"
+					{"selector"
+						{"actors/mids" "71"}
+					}
+					{"waypoint/uid" "93"}
+				}
+				{"mission_music"
+					{"action" "REINF_ENEMY"}
+				}
+			}
+		}
+		{trigger "st"
+			{actions
+				{"event"
+					{"event" 30}
+					{"mode" "set"}
+					{"delay" "0.1"}
+				}
+			}
+		}
+		{trigger "st_true"
+			{condition
+				{term 1 "event"
+					{"id" 30}
+				}
+			}
+			{actions
+				{"event"
+					{"event" 0}
+					{"mode" "set"}
+					{"delay" "120"}
+				}
+				{"event"
+					{"event" 1}
+					{"mode" "set"}
+					{"delay" "12"}
+				}
+				{"event"
+					{"event" 2}
+					{"mode" "set"}
+					{"delay" "0"}
+				}
+				{"event"
+					{"event" 7}
+					{"mode" "set"}
+					{"delay" "300"}
+				}
+				{"event"
+					{"event" 9}
+					{"mode" "set"}
+					{"delay" "400"}
+				}
+				{"event"
+					{"event" 14}
+					{"mode" "set"}
+					{"delay" "10"}
+				}
+				{"event"
+					{"event" 15}
+					{"mode" "set"}
+					{"delay" "400"}
+				}
+				{"ables"
+					{"selector"
+						{"actors/mids" "5 6 58 70"}
+					}
+					{"remove" "select"}
+				}
+				{"event"
+					{"event" 8}
+					{"mode" "set"}
+					{"delay" "2"}
+				}
+				{"entity_state"
+					{"selector"
+						{source "defined"}
+						{name "kolonna"}
+					}
+					{"inactive" "on"}
+				}
+				{"event"
+					{"event" 19}
+					{"mode" "set"}
+					{"delay" "10"}
+				}
+				{"event"
+					{"event" 21}
+					{"mode" "set"}
+					{"delay" "5"}
+				}
+				{"event"
+					{"event" 26}
+					{"mode" "set"}
+					{"delay" "25"}
+				}
+				{"event"
+					{"event" 29}
+					{"mode" "set"}
+					{"delay" "200"}
+				}
+			}
+		}
+		{trigger "tasks/fail_if_squad_desroyed"
+			{condition
+				{term 1 "event"
+					{"id" 25}
+				}
+			}
+			{actions
+				{"gameover"
+					{"result" "loose"}
+				}
+			}
+		}
+		{trigger "tasks/primary1_complete"
+			{condition
+				{term 1 "event"
+					{"id" 20}
+				}
+			}
+			{actions
+				{"task"
+					{"name" "primary1"}
+					{"state" "complete"}
+				}
+				{"mission_music"
+					{"action" "CLUE"}
+				}
+			}
+		}
+		{trigger "tasks/primary2"
+			{condition
+				{term 1 "event"
+					{"id" 19}
+				}
+			}
+			{actions
+				{"task"
+					{"name" "primary2"}
+				}
+			}
+		}
+		{trigger "tasks/primary2_complete"
+			{condition
+				{type 2}
+				{expression "!1 & !2"}
+				{term 1 "actors"
+					{"selector"
+						{"actors/tag" "sher"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 2 "actors"
+					{"selector"
+						{"actors/tag" "kol"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{actions
+				{"task"
+					{"name" "primary2"}
+					{"state" "complete"}
+				}
+			}
+		}
+		{trigger "tasks/primary2_fail"
+			{condition
+				{type 1}
+				{term 1 "actors"
+					{"selector"
+						{"actors/mids" "3"}
+						{"actors/tag" "destroyed"}
+					}
+				}
+				{term 2 "actors"
+					{"selector"
+						{"actors/mids" "1"}
+						{"actors/tag" "destroyed"}
+					}
+				}
+				{term 3 "actors"
+					{"selector"
+						{"actors/mids" "3"}
+						{"actors/tag" "destroyed"}
+					}
+				}
+			}
+			{actions
+				{"task"
+					{"name" "primary2"}
+					{"state" "fail"}
+				}
+				{"event"
+					{"event" 25}
+					{"mode" "set"}
+					{"delay" "4"}
+				}
+				{"mission_music"
+					{"action" "CLUE"}
+				}
+			}
+		}
+		{trigger "tasks/primary3"
+			{condition
+				{term 1 "event"
+					{"id" 22}
+				}
+			}
+			{actions
+				{"task"
+					{"name" "primary3"}
+				}
+			}
+		}
+		{trigger "tasks/primary3_complete"
+			{condition
+				{type 2}
+				{expression "!1 & 2"}
+				{term 1 "actors"
+					{"selector"
+						{"actors/tag" "kol"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 2 "event"
+					{"id" 32}
+				}
+			}
+			{actions
+				{"task"
+					{"name" "primary3"}
+					{"state" "complete"}
+				}
+				{"task"
+					{"name" "witman_survive"}
+					{"state" "complete"}
+				}
+				{"task"
+					{"name" "primary2"}
+					{"state" "complete"}
+				}
+				{"mission_music"
+					{"action" "CLUE"}
+				}
+			}
+		}
+		{trigger "tasks/sec1"
+			{condition
+				{term 1 "event"
+					{"id" 21}
+				}
+			}
+			{actions
+				{"task"
+					{"name" "sec1"}
+				}
+			}
+		}
+		{trigger "tasks/sec1_complete"
+			{condition
+				{type 2}
+				{expression "!1 & 2 & !3"}
+				{term 1 "actors"
+					{"selector"
+						{"actors/tag" "patr"}
+						{"actors/type" "human"}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 2 "trigger"
+					{"name" "tasks/sec1"}
+				}
+				{term 3 "task"
+					{"name" "sec1"}
+					{"state" "failed"}
+				}
+			}
+			{actions
+				{"task"
+					{"name" "sec1"}
+					{"state" "complete"}
+				}
+				{"mission_music"
+					{"action" "CLUE"}
+				}
+			}
+		}
+		{trigger "tasks/sec1_failed"
+			{condition
+				{term 1 "event"
+					{"id" 24}
+				}
+			}
+			{actions
+				{"task"
+					{"name" "sec1"}
+					{"state" "fail"}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position -1196.5 -5732.29 0}
+				{radius 250}
+				{transition 1}
+				{commands
+					{"event" off
+						{"event" 20}
+						{"mode" "set"}
+						{"delay" "3"}
+					}
+					{"event"
+						{"event" 22}
+						{"mode" "set"}
+						{"delay" "15"}
+					}
+				}
+			}
+			{1
+				{position -1140 -5451.26 0}
+				{transition 2}
+			}
+			{2
+				{position -1084.07 -5124.17 0}
+				{transition 3}
+			}
+			{3
+				{position -1033.48 -4870.84 0}
+				{transition 4}
+			}
+			{4
+				{position -938.426 -4598.8 0}
+				{transition 5}
+			}
+			{5
+				{position -823.705 -4353.44 0}
+				{transition 6}
+			}
+			{6
+				{position -653.08 -4065.16 0}
+				{transition 7}
+			}
+			{7
+				{position -494.312 -3831.11 0}
+				{transition 8}
+			}
+			{8
+				{position -295.913 -3524.89 0}
+				{transition 9}
+				{commands
+					{"event"
+						{"event" 16}
+						{"mode" "set"}
+						{"delay" "7"}
+					}
+					{"event" off
+						{"event" 20}
+						{"mode" "set"}
+						{"delay" "2"}
+					}
+					{"event" off
+						{"event" 22}
+						{"mode" "set"}
+						{"delay" "10"}
+					}
+				}
+			}
+			{9
+				{position 214.971 -2898.72 0}
+				{transition 10}
+			}
+			{10
+				{position 387.523 -2698.47 0}
+				{transition 11}
+			}
+			{11
+				{position 394.024 -2321.33 0}
+				{transition 12}
+			}
+			{12
+				{position 339.193 -1877.18 0}
+				{transition 13}
+			}
+			{13
+				{position 213.799 -1401.77 0}
+				{transition 14}
+			}
+			{14
+				{position 245.834 -922.364 0}
+				{transition 15}
+			}
+			{15
+				{position 411.566 -524.501 0}
+				{transition 16}
+			}
+			{16
+				{position 684.981 -171.268 0}
+				{transition 17}
+			}
+			{17
+				{position 944.681 191.295 0}
+				{transition 18}
+			}
+			{18
+				{position 1199.14 571.741 0}
+			}
+			{19
+				{position -1245.84 -4467.28 17.856}
+				{transition 20}
+			}
+			{20
+				{position -865.833 -4100.35 0}
+				{transition 21}
+				{commands
+					{"event"
+						{"event" 17}
+						{"mode" "set"}
+						{"delay" "0"}
+					}
+				}
+			}
+			{21
+				{position -573.474 -3838.81 0}
+				{transition 22}
+			}
+			{22
+				{position -526.512 -3776.47 0}
+				{transition 23}
+				{commands
+					{"event" off
+						{"event" 17}
+						{"mode" "set"}
+						{"delay" "0"}
+					}
+					{"event" off
+						{"event" 21}
+						{"mode" "set"}
+						{"delay" "10"}
+					}
+				}
+			}
+			{23
+				{position -412.678 -3641.81 0}
+				{transition 31}
+				{commands
+					{"camera_move" off
+						{"selector"
+							{source "local"}
+							{"actors/mids" "1"}
+						}
+					}
+					{"event"
+						{"event" 12}
+						{"mode" "set"}
+						{"delay" "0"}
+					}
+				}
+			}
+			{24
+				{position 763.177 2042.95 96.9061}
+				{transition 25}
+			}
+			{25
+				{position 770.256 2029.08 96.9742}
+				{commands
+					{"emit" off
+						{"selector"
+							{source "local"}
+							{"actors/mids" "1"}
+						}
+						{"waypoint/uid" "38"}
+						{"emit/mode" "passengers"}
+					}
+					{"actor_state" off
+						{"selector"
+							{source "local"}
+							{"actors/mids" "11 9"}
+						}
+						{"speed" "normal"}
+						{"waypoint_only" "on"}
+					}
+					{"ables"
+						{"selector"
+							{source "local"}
+							{"actors/mids" "1"}
+						}
+						{"add" "select"}
+					}
+				}
+			}
+			{26
+				{position 533.813 2127.93 94}
+				{transition 27}
+			}
+			{27
+				{position 519.324 1928.4 97}
+				{commands
+					{"message" off
+						{"text" "mission/4_2/engine_broken"}
+					}
+					{"event" off
+						{"event" 4}
+						{"mode" "set"}
+						{"delay" "5"}
+					}
+					{"actor_component" off
+						{"component" "engine"}
+						{"operation" "break"}
+					}
+					{"event"
+						{"event" 8}
+						{"mode" "set"}
+						{"delay" "8"}
+					}
+				}
+			}
+			{28
+				{position 130.599 2264.04 79.6802}
+				{transition 29}
+			}
+			{29
+				{position 189.784 2164.68 92.5204}
+				{transition 30}
+			}
+			{30
+				{position 235.482 2060.16 99.5485}
+			}
+			{31
+				{position 295.62 -2807.11 0}
+				{transition 32}
+			}
+			{32
+				{position 410.912 -2486.4 0}
+				{transition 33}
+			}
+			{33
+				{position 403.003 -1959.93 0}
+				{transition 34}
+			}
+			{34
+				{position 288.143 -1511.5 0}
+				{transition 35}
+			}
+			{35
+				{position 224.22 -948.272 0}
+				{transition 36}
+			}
+			{36
+				{position 572.371 -288.518 0}
+				{transition 37}
+			}
+			{37
+				{position 1053.46 330.136 0}
+				{transition 112}
+			}
+			{38
+				{position 894.33 1875.64 87.8865}
+				{commands
+					{"message"
+						{"sound" "talk_ger.ok"}
+					}
+					{"actor_state"
+						{"weapon_prepare" "on"}
+						{"waypoint_only" "off"}
+					}
+					{"actor_to_cover"
+						{"selector"
+							{source "local"}
+							{"actors/mids" "11"}
+						}
+						{"covers" "c1"}
+					}
+					{"actor_to_cover"
+						{"selector"
+							{source "local"}
+							{"actors/mids" "9"}
+						}
+						{"covers" "c2"}
+					}
+				}
+			}
+			{39
+				{position 395.821 -2593.72 0}
+				{transition 104}
+			}
+			{40
+				{position -212.004 -2030.3 36.8355}
+				{transition 41}
+			}
+			{41
+				{position -266.323 -1795.13 1.18868}
+				{transition 42}
+			}
+			{42
+				{position -182.86 -1412.2 11.2088}
+				{transition 43}
+			}
+			{43
+				{position 7.7294 -781.715 0}
+				{transition 44}
+			}
+			{44
+				{position 25.8863 73.2009 0}
+				{transition 45}
+			}
+			{45
+				{position 122.254 853.71 -7.59686}
+				{transition 46}
+			}
+			{46
+				{position 387.624 1801.25 94.2374}
+			}
+			{47
+				{position 31.2238 -1889.04 6.79293}
+				{transition 48}
+			}
+			{48
+				{position 36.6703 -1763.55 9.11802}
+				{transition 49}
+			}
+			{49
+				{position 145.829 -1448.39 0}
+				{transition 50}
+			}
+			{50
+				{position 295.802 -675.822 0}
+				{transition 51}
+			}
+			{51
+				{position 588.966 -199.237 0}
+				{transition 52}
+			}
+			{52
+				{position 471.471 232.055 0.353119}
+				{transition 53}
+			}
+			{53
+				{position 514.74 1422.16 83.742}
+				{transition 54}
+			}
+			{54
+				{position 618.017 2074.9 95}
+			}
+			{55
+				{position -1301.77 -5354.46 0}
+				{transition 56}
+				{commands
+					{"actor_state"
+						{"speed" "fast"}
+					}
+				}
+			}
+			{56
+				{position -958.974 -4831.97 0}
+				{transition 57}
+			}
+			{57
+				{position -822.6 -4052.02 0}
+				{transition 58}
+			}
+			{58
+				{position -420.151 -3884.95 0}
+				{transition 59}
+			}
+			{59
+				{position -108.185 -3018.03 0}
+				{transition 60}
+				{commands
+					{"actor_state"
+						{"speed" "normal"}
+					}
+				}
+			}
+			{60
+				{position -136.447 -2383.31 61.7868}
+				{transition 61}
+			}
+			{61
+				{position 116.456 -1704.07 0.354156}
+				{transition 62}
+			}
+			{62
+				{position 461.719 -648.47 0}
+				{transition 63}
+			}
+			{63
+				{position 550.502 502.102 16.3008}
+				{transition 64}
+			}
+			{64
+				{position 456.342 1309.95 82.9952}
+				{transition 65}
+			}
+			{65
+				{position 705.931 2019.13 96.9647}
+			}
+			{66
+				{position -825.154 -5328.4 0}
+				{transition 67}
+				{commands
+					{"actor_state"
+						{"speed" "fast"}
+					}
+				}
+			}
+			{67
+				{position -722.276 -4809.81 0}
+				{transition 68}
+			}
+			{68
+				{position -557.627 -4385.91 0}
+				{transition 69}
+			}
+			{69
+				{position -238.791 -3836.98 0}
+				{transition 70}
+			}
+			{70
+				{position 209.911 -3368.54 0}
+				{transition 71}
+			}
+			{71
+				{position 146.319 -2919.81 0}
+				{transition 72}
+				{commands
+					{"actor_state"
+						{"speed" "normal"}
+					}
+				}
+			}
+			{72
+				{position 792.796 -2369.6 0}
+				{transition 73}
+			}
+			{73
+				{position 1142.08 -2170.69 0}
+				{transition 74}
+			}
+			{74
+				{position 1047.8 -1598.09 0}
+				{transition 75}
+			}
+			{75
+				{position 1043.37 -904.793 53.4791}
+				{transition 76}
+			}
+			{76
+				{position 1010.35 -656.165 29.3029}
+				{transition 77}
+			}
+			{77
+				{position 1161.65 -160.83 0.0827026}
+				{transition 78}
+			}
+			{78
+				{position 1141.43 433.822 0}
+				{transition 79}
+			}
+			{79
+				{position 1448.44 1544.14 0}
+				{transition 80}
+			}
+			{80
+				{position 1425.86 2113 3.41376}
+			}
+			{81
+				{position -410.207 -5624.2 0}
+				{transition 82}
+				{commands
+					{"actor_state"
+						{"speed" "fast"}
+					}
+				}
+			}
+			{82
+				{position -317.205 -5238.8 -1.91463}
+				{transition 83}
+			}
+			{83
+				{position -61.6965 -4083.01 0}
+				{transition 84}
+				{commands
+					{"event" off
+						{"event" 19}
+						{"mode" "set"}
+						{"delay" "0"}
+					}
+				}
+			}
+			{84
+				{position -173.518 -3447.75 0}
+				{transition 85}
+			}
+			{85
+				{position -159.804 -2741.4 -1}
+				{transition 86}
+				{commands
+					{"actor_state"
+						{"speed" "normal"}
+					}
+				}
+			}
+			{86
+				{position -313.479 -2158.15 36.4671}
+				{transition 87}
+			}
+			{87
+				{position -357.274 -1404.6 -22.7271}
+				{transition 88}
+			}
+			{88
+				{position -321.624 -1003.66 -18.5693}
+				{transition 89}
+			}
+			{89
+				{position -171.45 -451.6 49.2895}
+				{transition 90}
+			}
+			{90
+				{position -14.1829 -74.5422 -0.453979}
+				{transition 91}
+			}
+			{91
+				{position 51.5065 593.495 2.55342}
+				{transition 92}
+			}
+			{92
+				{position 463.878 2312.18 78.3452}
+			}
+			{93
+				{position 436.361 -5073.49 0}
+				{transition 94}
+				{commands
+					{"actor_state"
+						{"speed" "fast"}
+					}
+				}
+			}
+			{94
+				{position 410.673 -4361.87 0}
+				{transition 95}
+			}
+			{95
+				{position 527.42 -3681.78 6.83997}
+				{transition 96}
+			}
+			{96
+				{position 861.828 -3377.93 0}
+				{transition 97}
+			}
+			{97
+				{position 1163.3 -3091.26 0}
+				{transition 98}
+				{commands
+					{"actor_state"
+						{"speed" "normal"}
+					}
+				}
+			}
+			{98
+				{position 607.464 -1452.01 2.79926}
+				{transition 99}
+			}
+			{99
+				{position 904.613 -672.43 17.3308}
+				{transition 100}
+			}
+			{100
+				{position 1129.5 -131.175 0}
+				{transition 101}
+			}
+			{101
+				{position 1325.39 452.421 0}
+				{transition 102}
+			}
+			{102
+				{position 1707.75 1676.07 0}
+				{transition 103}
+			}
+			{103
+				{position 945.427 2085.79 79.9141}
+			}
+			{104
+				{position 793.593 -2835.45 0}
+				{transition 109}
+			}
+			{105
+				{position -950.452 -5816.44 0}
+				{transition 0}
+			}
+			{106
+				{position 506.122 -1796.64 0}
+			}
+			{107
+				{position 459.316 1878.97 93.9584}
+				{commands
+					{"board"
+						{"mids" "4"}
+					}
+				}
+			}
+			{108
+				{position 673.524 2040.29 96.3716}
+				{commands
+					{"message"
+						{"sound" "talk_ger.ok"}
+					}
+					{"ables"
+						{"selector"
+							{source "local"}
+							{"actors/tag" "tank"}
+						}
+						{"add" "select"}
+					}
+					{"ables"
+						{"selector"
+							{source "local"}
+							{"actors/tag" "pl"}
+						}
+						{"add" "select"}
+					}
+					{"entity_state"
+						{"selector"
+							{source "local"}
+							{"actors/mids" "1"}
+							{"actors/tag" "tank"}
+						}
+						{"tag_add" "pl"}
+					}
+					{"board"
+						{"mids" "1"}
+					}
+				}
+			}
+			{109
+				{position 1119.56 -3190.95 0}
+				{transition 110}
+			}
+			{110
+				{position 1826.27 -4996.96 0}
+				{commands
+					{"delete"}
+				}
+			}
+			{111
+				{position 1896.8 -5050.73 0}
+				{commands
+					{"delete"}
+				}
+			}
+			{112
+				{position 1333.86 424.301 0}
+				{transition 113}
+			}
+			{113
+				{position 1824.29 135.53 -2.10657}
+				{transition 114}
+			}
+			{114
+				{position 2261.66 -18.8287 -11.7164}
+				{transition 115}
+			}
+			{115
+				{position 2792.64 88.2319 -11.7357}
+				{commands
+					{"delete"}
+				}
+			}
+			{116
+				{position -773.657 -3627.88 0}
+			}
+		}
+		{zone "circle"
+			{position 1445.65 -990.272 35.0269}
+			{Name "chiken"}
+			{Radius 150}
+		}
+		{zone "circle"
+			{position 1138.97 -2839.14 0}
+			{Name "cow"}
+			{Radius 20}
+		}
+		{zone "circle"
+			{position 1468.47 -4112.87 0}
+			{Name "failed"}
+			{Radius 475.765}
+		}
+		{zone "poly"
+			{position 696.322 963.337 15.6325}
+			{Name "kill_all_zone"}
+			{Point -2019.24 -5264.41}
+			{Point -1515.92 1533.72}
+			{Point 2556.16 1161.57}
+			{Point 2518.46 -5434.7}
+		}
+		{zone "circle"
+			{position 666.746 2059.11 96.6749}
+			{Name "pl"}
+			{GlobalWP ""
+				{Orientation 5.06145}
+				{Condition}}
+			{Radius 150}
+		}
+		{zone "circle"
+			{position 1246.11 614.99 0}
+			{Name "shuher-zone"}
+			{Radius 1853.89}
+		}
+		{zone "circle"
+			{position 1106.94 499.387 0}
+			{Name "zone"}
+			{Radius 512.594}
+		}
+		{selection "kolonna"
+			{"actors/mids" "49 26 10 31 103 16 13"}
+		}
+		{selection "pehota"
+			{"actors/mids" "63 65 62 67 18 19 53 68 69 8 7 20 21 12"}
+		}
+		{camerapath "c1" {EvCancel 5}
+		}
+		{camerapath "c2" {EvCancel 6}
+			{Key 0 120.628 -2778.83 600.04 -241.476 -3525.43 0 0.785398 0 0 1}
+			{Key 29 120.628 -2778.83 600.04 -241.476 -3525.43 0 0.785398 0 0 1}
+			{Key 53 120.628 -2778.83 600.04 -241.476 -3525.43 0 0.785398 0 0 1}
+		}
+		{camerapath "c3" {EvCancel 10}
+			{Key 0 797.211 -2500.63 661.009 172.581 -3068.16 0 0.785398 0 0 1}
+			{Key 28 797.211 -2500.63 661.009 172.581 -3068.16 0 0.785398 0 0 1}
+			{Key 70 797.211 -2500.63 661.009 172.581 -3068.16 0 0.785398 0 0 1}
+			{Key 99 797.211 -2500.63 661.009 172.581 -3068.16 0 0.785398 0 0 1}
+		}
+		{camerapath "c4" {Event 18 1}
+			{EvCancel 11}
+			{Key 0 855.324 2550.91 661.006 502.892 1784.07 0 0.785398 0 0 1}
+			{Key 162 744.86 2310.56 453.825 502.892 1784.07 0 0.785398 0 0 1}
+			{Key 286 792.202 2413.57 542.617 502.892 1784.07 0 0.785398 0 0 1}
+			{Key 520 847.434 2533.74 646.207 502.892 1784.07 0 0.785398 0 0 1}
+		}
+		{task
+			{"name" "sec1"}
+			{"desc" "mission/4_2/sec1"}
+			{"state" "hidden"}
+		}
+		{task
+			{"name" "primary2"}
+			{"desc" "mission/4_2/primary2"}
+			{"primary"}
+			{"state" "hidden"}
+		}
+		{task
+			{"name" "primary1"}
+			{"desc" "mission/4_2/primary1"}
+			{"primary"}
+			{"state" "hidden"}
+		}
+		{task
+			{"name" "primary3"}
+			{"desc" "mission/4_2/primary3"}
+			{"primary"}
+			{"state" "hidden"}
+		}
+		{task
+			{"name" "witman_survive"}
+			{"desc" "mission/4_2/wit_survive"}
+			{"primary"}
+		}
+	}
+	{Covers
+		{Sector
+			{Automatic 0xd0 -24.6183 12.7394}
+			{Name "c1"}
+		}
+		{Sector
+			{Automatic 0xd1 -0.81385 -22.9984}
+			{Name "c2"}
+		}
+	}
+	{Players
+		{diplomacy
+			1 0 0 1 1 1 1 1
+			0 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

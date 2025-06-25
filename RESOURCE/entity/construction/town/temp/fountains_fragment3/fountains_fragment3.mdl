@@ -1,0 +1,67 @@
+;Exported by: sk
+;Date:        Fri Nov 14 13:34:30 2003
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\fountain.max
+{Skeleton
+	{bone "fountains_fragment3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fountains_fragment3.ply"}
+	}
+}
+{Obstacle "body2_vol"
+	{Obb2
+		{Center -7.7041 -10.6182}
+		{Extent 9.41936 5.34338}
+		{Axis 0.0182398 0.999834}
+	}
+	{Rotate}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center -7.7917 -21.3186}
+		{Extent 20.4156 5.3664}
+		{Axis 0.0182398 0.999834}
+	}
+	{Rotate}
+}
+{Obstacle "body1_vol"
+	{Obb2
+		{Center 1.34244 17.3162}
+		{Extent 22.815 5.43301}
+		{Axis 0.40727 0.913308}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 18.8165 10.6474 10.0913}
+	{Bone "fountains_fragment3"}
+	{Matrix34
+		-0.0203	0.9998	0.0000
+		-0.9998	-0.0203	0.0000
+		0.0000	0.0000	1.0000
+		-7.7041	10.6182	10.6494
+	}
+}
+{Volume "body"
+	{Box 40.809 10.6474 5.66929}
+	{Bone "fountains_fragment3"}
+	{Matrix34
+		-0.0203	0.9998	0.0000
+		-0.9998	-0.0203	0.0000
+		0.0000	0.0000	1.0000
+		-7.7917	21.3186	2.8346
+	}
+}
+{Volume "body1"
+	{Box 45.5795 10.6474 15.748}
+	{Bone "fountains_fragment3"}
+	{Matrix34
+		-0.4029	0.9153	0.0000
+		-0.9153	-0.4029	0.0000
+		0.0000	0.0000	1.0000
+		1.3424	-17.3162	7.8740
+	}
+}

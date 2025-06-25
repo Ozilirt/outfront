@@ -1,0 +1,38 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(1.8) scaleY(1.0))
+    {mass 10000}
+	{props "vehicle" "steel" "train_part" "examinable"}
+	{TexMods
+ 		{"ambush1" "1"}
+		{"ambush2" "2"}
+		{"ambush3" "3"}
+ 		{"ambush4" "4"}
+		{"ambush5" "5"}
+		{"ambush6" "6"}
+		{"ambush7" "7"}
+	}
+	{Extension "tradevan_explosive.mdl"}
+	{volume "body"
+		{tags "body"}
+		{thickness 10}
+		{component "body"}		
+	}
+	{component "body"
+		{RepairTime 25}
+		{Able {repair} {break_by_pierce}}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	{Volume "inventory"
+		{thickness hollow 2}
+	}
+	{extender "inventory"
+		{box
+			{size 8 6}
+			{Weight 25000}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+;Exported by: shevchenko
+;Date:        Mon Aug 30 09:55:09 2004
+;File:        D:\-Projects-\-3DWork-\sheva\3Dsmax 6\bambuk_01.max
+{Skeleton
+	{bone "Plane"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Plane.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0 0}
+		{Extent 1.1022 29.5276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "fire0"
+	{Box 3.92385 60.2421 20.0807}
+	{Bone "Plane"}
+	{Position 0.0000	0.0000	10.0404}
+}
+{Volume "body"
+	{Box 2.20441 59.0551 19.685}
+	{Bone "Plane"}
+	{Position 0.0000	0.0000	9.8425}
+}

@@ -1,0 +1,27 @@
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush.anm"} {duration percent 40}}
+	}
+	{bone "fence-wood3d"
+		{parameters "CommonMesh;"}
+		{Orientation
+			0.0000	1.0000	0.0000
+			1.0000	0.0000	-0.0000
+			0.0000	-0.0000	1.0000
+		}
+		{VolumeView "fence-wood3d.ply"}
+	}
+}
+
+
+{Volume "body"
+	{Box 3.93094 4.06279 32.7069}
+	{Bone "fence-wood3d"}
+	{Matrix34
+		0.0527	0.9963	0.0683
+		-0.9958	0.0575	-0.0706
+		-0.0743	-0.0643	0.9952
+		-0.3191	-1.4849	16.2835
+	}
+}
+

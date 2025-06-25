@@ -1,0 +1,36 @@
+;Exported by: sk
+;Date:        Tue Aug 12 12:30:28 2003
+
+{Skeleton
+	{bone "bracket_post"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "bracket_post.ply"}
+		{bone "Piece1"
+			{Position -2.2889	-1.7515	0.0000}
+			{VolumeView "Piece1.ply"}
+		}
+		{bone "Piece0"
+			{Position -2.0714	-1.7041	120.4236}
+			{VolumeView "Piece0.ply"}
+		}
+	}
+}
+{Volume "Piece0"
+	{Box 14.101 11.4008 88.7861}
+	{Bone "Piece0"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	-0.0000	1.0000
+			0.0000	-1.0000	-0.0000
+			0.0150	-0.2495	-3.1459
+		}
+}
+{Volume "Piece1"
+	{Box 14.8525 14.5059 112.58}
+	{Bone "Piece1"}
+		{Position 0.2325	0.0753	61.9503}
+}

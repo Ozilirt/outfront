@@ -1,0 +1,27 @@
+{game_entity
+	(include "/properties/railway_part.inc")
+	{DecalView "working"
+		{Sprite "railroad3.ebm"}
+		{orientation normal}
+		{layer grounddecal }
+		{UseDirection }
+	}
+	{DecalView "broken"
+		{Sprite "railroad3_destr.ebm"}
+		{orientation normal}
+		{layer grounddecal }
+		{UseDirection }
+	}
+	{volume "body"
+		{Box 358 60 2}
+		{bone "root"}
+		{position 0 0 5}
+		{able clear {blast}}
+	}
+	{extender "railway"
+		{LinkPoint 1 32}
+		{LinkPoint 356 32}
+		{path 0 1}
+	}
+
+}

@@ -1,0 +1,23 @@
+;Exported by: sk
+;Date:        Sun May 16 13:33:00 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Monastery\brok_wall_all.max
+{Skeleton
+	{bone "wall3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall3.ply"}
+	}
+}
+{Volume "wall1"
+	{Polyhedron "wall1.vol"}
+	{Bone "wall3"}
+	{Position -14.8446	0.0014	-0.1969}
+}
+{Volume "wall2"
+	{Polyhedron "wall2.vol"}
+	{Bone "wall3"}
+	{Position 25.0835	0.0014	-0.1969}
+}

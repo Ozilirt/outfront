@@ -1,0 +1,23 @@
+{Skeleton
+	{bone "Group01"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Group01.ply"}
+	}
+}
+
+{Volume "bole"
+	{Cylinder 3.75793 126.733}
+	{Bone "Group01"}
+	{Position -0.2107	-0.3103	63.3665}
+}
+{Volume "crown"
+	{Box 32.9397 32.9397 118.18}
+	{Bone "Group01"}
+	{Position -0.6789	-0.2600	67.0041}
+}
+

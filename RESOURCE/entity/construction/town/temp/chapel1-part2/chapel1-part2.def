@@ -1,0 +1,23 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "chapel1-part2.mdl"}
+	{props "concrete" "fence"}
+
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+	}
+	{volume "body1"
+		{thickness 30}
+		{tags "body"}
+	}
+	{volume "body2"
+		{thickness 30}
+		{tags "body"}
+	}
+}

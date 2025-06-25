@@ -1,0 +1,102 @@
+;Exported by: ubrashaev
+;Date:        Mon Oct 20 20:26:23 2003
+;File:        D:\-Projects-\-work-\3d\shed\rw_shed_big1b_i.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "shed_big1b"
+			{Position 3.7494	6.4592	25.2072}
+			{VolumeView "shed_big1b.ply"}
+		}
+		{bone "exterior"
+			{Position -1.0719	-0.0000	65.7044}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 10.7793 0.149267}
+		{Extent 37.6709 61.0901}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle04"
+	{Obb2
+		{Center 1.36038 51.6021}
+		{Extent 40.9949 15.5104}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center 34.2392 -51.2815}
+		{Extent 10.0184 13.6683}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center -15.0041 -56.498}
+		{Extent 8.2549 14.9278}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body3"
+	{Box 53.1496 2.95276 70.917}
+	{Bone "exterior"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	0.5920	-0.8059
+			0.0000	0.8059	0.5920
+			3.5113	-27.4878	4.3231
+		}
+}
+{Volume "body2"
+	{Box 53.1496 2.95276 70.917}
+	{Bone "exterior"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	0.5935	0.8048
+			0.0000	-0.8048	0.5935
+			3.5103	27.5637	4.2119
+		}
+}
+{Volume "door"
+	{Box 32.0721 15.4955 37.8378}
+	{Bone "basis"}
+		{Matrix34
+			0.9934	0.0000	0.0000
+			0.0000	1.5281	0.0000
+			0.0000	0.0000	1.0000
+			8.1133	52.3513	18.9189
+		}
+}
+{Volume "body"
+	{Box 56.1024 5.59488 48.9082}
+	{Bone "basis"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	1.7557	0.0000
+			0.0000	0.0000	1.0000
+			4.7610	56.1018	24.4541
+		}
+}
+{Volume "body1"
+	{Box 59.0551 5.59488 48.9082}
+	{Bone "basis"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	1.4844	0.0000
+			0.0000	0.0000	1.0000
+			4.1243	-56.0639	24.4541
+		}
+}

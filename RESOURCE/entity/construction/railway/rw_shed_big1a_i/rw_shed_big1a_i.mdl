@@ -1,0 +1,135 @@
+;Exported by: ubrashaev
+;Date:        Mon Oct 20 20:21:19 2003
+;File:        D:\-Projects-\-work-\3d\shed\rw_shed_big1a_i.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "shed_big1a_i"
+			{Position -6.7732	0.0152	46.1856}
+			{VolumeView "shed_big1a_i.ply"}
+		}
+		{bone "exterior"
+			{Position -10.3517	-0.0000	65.7044}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -9.13753 0.149267}
+		{Extent 58.1785 69.3755}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle04"
+	{Obb2
+		{Center -4.86486 52.1771}
+		{Extent 45.9459 17.7134}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle03"
+	{Obb2
+		{Center 36.0857 2.34234}
+		{Extent 15.5201 54.7748}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center 29.7297 -53.9825}
+		{Extent 16.7568 16.3777}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center -35.1352 -54.9019}
+		{Extent 15.6757 16.3898}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "window"
+	{Box 5.40541 16.9369 15.4955}
+	{Bone "basis"}
+		{Matrix34
+			-0.0000	-5.2767	0.0000
+			-0.0000	0.0000	1.0000
+			-2.0790	0.0000	-0.0000
+			11.9086	-47.8034	30.2703
+		}
+}
+{Volume "door"
+	{Box 32.0721 15.4955 37.8378}
+	{Bone "basis"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	1.5639	0.0000
+			0.0000	0.0000	1.0000
+			-3.0631	51.3537	18.9189
+		}
+}
+{Volume "body5"
+	{Polyhedron "body5.vol"}
+	{Bone "exterior"}
+		{Position 54.4799	0.1140	-17.3136}
+}
+{Volume "body4"
+	{Box 98.5111 2.95276 70.917}
+	{Bone "exterior"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	0.5920	-0.8059
+			0.0000	0.8059	0.5920
+			7.7216	-27.4878	4.1017
+		}
+}
+{Volume "body2"
+	{Box 95.6044 2.95276 70.917}
+	{Bone "exterior"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	0.5935	0.8048
+			0.0000	-0.8048	0.5935
+			7.8437	27.5637	3.9904
+		}
+}
+{Volume "body6"
+	{Box 5.81868 114.807 48.6755}
+	{Bone "basis"}
+		{Matrix34
+			1.4342	0.0000	0.0000
+			0.0000	1.0000	0.0000
+			0.0000	0.0000	1.0000
+			44.1282	0.1140	24.3377
+		}
+}
+{Volume "body3"
+	{Box 98.5111 5.59488 48.9082}
+	{Bone "basis"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	1.4749	0.0000
+			0.0000	0.0000	1.0000
+			-2.6300	-56.0639	24.4541
+		}
+}
+{Volume "body1"
+	{Box 95.6044 5.59488 48.9082}
+	{Bone "basis"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	1.5701	0.0000
+			0.0000	0.0000	1.0000
+			-2.5079	56.1018	24.4541
+		}
+}

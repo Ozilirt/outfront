@@ -1,0 +1,31 @@
+;Exported by: vic
+;Date:        Mon Nov 03 16:59:42 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\kolonka3.max
+{Skeleton
+	{bone "Bench"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Bench.ply"}
+	}
+}
+{Obstacle "Obstacle"
+	{Obb2
+		{Center -0.524811 0.281062}
+		{Extent 6.71325 25.7341}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 3.93701 52.8347 19.685}
+	{Bone "Bench"}
+	{Matrix34
+		0.9620	0.0000	-0.2730
+		-0.0000	1.0000	0.0000
+		0.2730	0.0000	0.9620
+		5.1861	-0.0150	15.1460
+	}
+}

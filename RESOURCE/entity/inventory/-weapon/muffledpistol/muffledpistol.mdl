@@ -1,0 +1,26 @@
+;Exported by: garry
+;Date:        Fri Mar 19 17:51:53 2004
+;File:        \\TERM\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon.max
+{Skeleton
+	{bone "silentpistol"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "silentpistol.ply"}
+		{bone "Foresight3"
+			{Position 7.7973	1.1925	-0.0295}
+		}
+	}
+}
+{Volume "select"
+	{Box 19.2787 9.3031 3.55531}
+	{Bone "silentpistol"}
+	{Position 2.5411	-0.2411	0.0899}
+}
+{Volume "body"
+	{Box 9.05105 3.72124 1.26975}
+	{Bone "silentpistol"}
+	{Position 2.5411	-0.2411	-0.0545}
+}

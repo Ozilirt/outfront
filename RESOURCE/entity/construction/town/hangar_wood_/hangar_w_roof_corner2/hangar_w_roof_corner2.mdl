@@ -1,0 +1,84 @@
+;Exported by: shevchenko
+;Date:        Sat May 29 17:00:33 2004
+;File:        D:\-Projects-\-3DWork-\sheva\hangar_wood1.max
+{Skeleton
+	{bone "hangar_roof_corner2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hangar_roof_corner2.ply"}
+		{bone "exterior"
+			{Matrix34
+				-0.9568	0.0000	-0.2906
+				-0.0000	-1.0000	0.0000
+				-0.2906	0.0000	0.9568
+				-5.0929	-4.7109	113.0879
+			}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 0.795876 6.25984}
+		{Extent 46.2598 99.4095}
+		{Axis -1 -4.74159e-007}
+	}
+	{Rotate}
+}
+{Obstacle "support"
+	{Obb2
+		{Center -53.4908 -12.4081}
+		{Extent 13.355 2.92248}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -41.6059 -12.4656}
+		{Extent 9.84252 9.84252}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "beam"
+	{Obb2
+		{Center -9.59549 -12.3853}
+		{Extent 2.46063 2.46063}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Box 111.336 182.65 1.9685}
+	{Bone "exterior"}
+	{Matrix34
+		1.0000	-0.0000	0.0028
+		0.0000	1.0000	0.0000
+		-0.0028	-0.0000	1.0000
+		0.8075	-4.3470	-0.2915
+	}
+}
+{Volume "support"
+	{Box 11.8178 5.84492 51.5955}
+	{Bone "hangar_roof_corner2"}
+	{Matrix34
+		-0.9542	0.0000	0.2991
+		-0.0000	-1.0000	0.0000
+		0.2991	-0.0000	0.9542
+		-53.4908	12.4081	22.8287
+	}
+}
+{Volume "body"
+	{Box 19.685 19.685 98.4252}
+	{Bone "hangar_roof_corner2"}
+	{Position -41.6059	12.4656	49.2126}
+}
+{Volume "beam"
+	{Box 4.92126 4.92126 98.4252}
+	{Bone "hangar_roof_corner2"}
+	{Position -9.5955	12.3853	49.2126}
+}

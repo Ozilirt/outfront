@@ -1,0 +1,27 @@
+;Exported by: sat
+;Date:        Fri Aug 20 11:20:04 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\tropics\fern1a.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "fern3"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fern3.ply"}
+	}
+}
+{Volume "crown"
+	{Box 24.9845 21.4271 11.9045}
+	{Bone "fern3"}
+	{Matrix34
+		0.4283	0.9036	0.0000
+		-0.9036	0.4283	0.0000
+		0.0000	0.0000	1.0000
+		-0.5420	2.0789	6.3199
+	}
+}

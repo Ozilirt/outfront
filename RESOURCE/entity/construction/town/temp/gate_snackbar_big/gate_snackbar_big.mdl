@@ -1,0 +1,44 @@
+;Exported by: ubrashaev
+;Date:        Tue Mar 16 21:00:11 2004
+;File:        D:\-Projects-\-work-\3d\sk\House_suburb1.max
+{Skeleton
+	{bone "gate_snackbar_big"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate_snackbar_big.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 3.8147e-006 39.7437}
+		{Extent 11.2795 14.1853}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0 -40.4138}
+		{Extent 11.1614 15.3816}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 22.5591 28.3705 89.3113}
+	{Bone "gate_snackbar_big"}
+	{Position 0.0000	-39.7437	44.6557}
+}
+{Volume "body"
+	{Box 22.3228 30.7632 86.9388}
+	{Bone "gate_snackbar_big"}
+	{Position 0.0000	40.4138	43.4694}
+}
+{Volume "body2"
+	{Box 28.4423 51.4122 17.0508}
+	{Bone "gate_snackbar_big"}
+	{Position 0.0000	-0.0523	80.8964}
+}

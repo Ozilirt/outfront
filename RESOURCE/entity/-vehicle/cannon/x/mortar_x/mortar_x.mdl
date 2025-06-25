@@ -1,0 +1,69 @@
+;Exported by: garry
+;Date:        Fri Feb 20 13:35:04 2004
+;File:        D:\-Projects-\-3DWork-\Model\cannons\coastmortar\mortar_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				0.7046	0.9145	4.2288
+			}
+			{VolumeView "Body.ply"}
+			{bone revolute "turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{animation
+					{sequence "break" {file "turret_b.anm"} {speed 0.6}}
+				}
+				{Matrix34
+					-1.0000	-0.0000	-0.0000
+					-0.0000	0.0000	1.0000
+					-0.0000	1.0000	-0.0000
+					0.0000	5.5463	-0.0000
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{animation
+						{sequence "break" {file "gun_b.anm"} {speed 0.8}}
+					}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						0.0000	-0.0000	1.0000
+						0.0000	-1.0000	-0.0000
+						8.3115	1.0328	51.1033
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							-1.0000	-0.0000	0.0000
+							-0.0000	1.0000	-0.0000
+							0.0000	-0.0000	-1.0000
+							21.5830	0.5040	0.6567
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+				{bone "commander"
+					{Position -0.6216	16.6272	34.1544}
+				}
+				{bone "gunner"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						-1.0000	-0.0000	0.0000
+						-0.0000	-0.0000	1.0000
+						-1.0107	-17.7694	32.7061
+					}
+				}
+			}
+		}
+	}
+}

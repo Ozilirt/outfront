@@ -1,0 +1,14 @@
+{game_entity
+	(include "/properties/construction.inc")	
+;	(include "/properties/shadow/construction.inc" sx(0.17) sy(0.17) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "bags3.mdl"}
+	{props "sand_bag_small"}
+	{Volume "body"
+		{Tags  "body"}
+		{thickness 10}
+	}
+}

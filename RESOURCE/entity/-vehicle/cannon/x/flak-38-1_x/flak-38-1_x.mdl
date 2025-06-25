@@ -1,0 +1,71 @@
+;Exported by: garry
+;Date:        Thu Feb 26 10:46:54 2004
+;File:        D:\-Projects-\-3DWork-\Model\cannons\zenit\flak-38\flak-38_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{animation
+				{sequence "break" {file "body_b.anm"}}
+			}
+			{Position -6.6957	-0.6105	2.3403}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{animation
+					{sequence "break" {file "turret_b.anm"}}
+				}
+				{Position 0.9616	-0.1736	2.5801}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{Matrix34
+						0.7986	0.0063	0.6018
+						-0.6018	0.0082	0.7986
+						0.0001	-0.9999	0.0103
+						9.7561	-7.8366	9.4866
+					}
+					{VolumeView "Gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							-0.0000	-0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							1.0000	-0.0000	-0.0000
+							-5.6957	-0.0000	-0.0000
+						}
+						{VolumeView "Gun.ply"}
+					}
+				}
+				{bone "shield_right"
+					{parameters "ID=shield_right;"}
+					{Matrix34
+						0.9999	0.0003	-0.0110
+						-0.0004	1.0000	-0.0097
+						0.0110	0.0097	0.9999
+						8.8817	-2.2215	-1.9785
+					}
+					{VolumeView "shield_right.ply"}
+				}
+				{bone "shield_left"
+					{parameters "ID=shield_left;"}
+					{animation
+						{sequence "break" {file "shield_left_b.anm"} {speed 0.8}}
+					}
+					{Matrix34
+						1.0000	0.0002	-0.0082
+						-0.0003	0.9999	-0.0121
+						0.0082	0.0121	0.9999
+						9.5375	3.3027	-1.4641
+					}
+					{VolumeView "shield_left.ply"}
+				}
+			}
+		}
+	}
+}

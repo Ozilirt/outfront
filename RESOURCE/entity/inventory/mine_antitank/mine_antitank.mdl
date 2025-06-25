@@ -1,0 +1,23 @@
+;Exported by: GARRY
+;Date:        Wed Jun 25 17:40:17 2003
+
+{Skeleton
+	{bone "mine"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "mine.ply"}
+	}
+}
+{Volume "body"
+	{Cylinder 7.4777 9.88486}
+	{Bone "mine"}
+		{Matrix34
+			0.6450	0.7641	0.0000
+			-0.7641	0.6450	0.0000
+			0.0000	0.0000	1.0000
+			0.0000	0.0000	4.6044
+		}
+}

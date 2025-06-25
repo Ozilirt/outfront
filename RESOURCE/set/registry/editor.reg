@@ -1,0 +1,46 @@
+{editor
+	(include "entitybrowser.reg")
+	{seasons
+		{default						}
+		{autumn		{autumn} {autumnl}	}
+		{winter		{winter} {winter2}	}
+		{winter2	{winter2} {winter}	}
+		{spring							}
+		{broken		{broken}			}
+	}
+	{human_model 	"_infantry2_rus"}
+	{view
+		{waypoint	"rw"	}
+		{anchor		"yb"	}
+		{cover		"yb"	}
+		{player		"flag"	}
+		{zone		"flag"	}
+	}
+	{cursor
+		{cancel		"/interface/cursor/no.ebm"}
+		{edit_path	"/interface/cursor/move.ebm"}
+	}
+	{colors
+		{color_0	0xff000000}
+		{color_1	0xff93704d}
+		{color_2	0xffFFFFFF};out
+		{color_3	0xffff0000}
+		{color_4	0xff909090}
+		{color_5	0xfff0f002}
+		{color_6	0xff73726c}
+		{color_7	0xffbbbbbb}
+		{color_8	0xff9df49d}
+		{color_9	0xffFFFFFF};out
+		{color_10	0xff008000}
+		{color_11	0xff800000}
+		{color_12	0xff008080}
+		{color_13	0xff808000}
+		{color_14	0xff800080}
+		{color_15	0xff808080}
+
+		;water
+		{color_128	0xff75bcf0};shallow
+		{color_129	0xff2631f0};river
+		{color_130	0xff030980};sea
+	}
+}

@@ -1,0 +1,27 @@
+;Exported by: sat
+;Date:        Mon Mar 22 11:32:31 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\fir2.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "fir2"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fir2.ply"}
+	}
+}
+{Volume "bole"
+	{Cylinder 4.16024 179.814}
+	{Bone "fir2"}
+	{Position 0.2376	-0.0665	90.2569}
+}
+{Volume "crown"
+	{Box 35.4834 36.5677 91.7935}
+	{Bone "fir2"}
+	{Position -0.5042	0.0109	131.9787}
+}

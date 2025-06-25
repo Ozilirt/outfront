@@ -1,0 +1,101 @@
+;Exported by: sk
+;Date:        Thu Dec 11 19:57:43 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Town_dima\build-04_a.max
+{Skeleton
+	{bone "build-04_corner2_a"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "build-04_corner2_a.ply"}
+		{bone "attach1"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				27.5318	19.4931	65.1613
+			}
+			{visibility 0}
+		}
+		{bone "attach2"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-31.8819	19.4931	65.1613
+			}
+			{visibility 0}
+		}
+		{bone "attach3"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				27.5318	19.4931	0.1032
+			}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "Body1_vol"
+	{Obb2
+		{Center 52.0764 1.56578}
+		{Extent 4.92126 37.2593}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center 23.2957 -30.5074}
+		{Extent 33.567 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Hole2"
+	{Box 19.685 15.748 29.5276}
+	{Bone "build-04_corner2_a"}
+	{Position -31.5274	30.8689	83.6155}
+}
+{Volume "Hole1"
+	{Box 19.685 15.748 29.5276}
+	{Bone "build-04_corner2_a"}
+	{Position 27.6308	30.8689	83.6155}
+}
+{Volume "Hole0"
+	{Box 19.685 15.748 29.5276}
+	{Bone "build-04_corner2_a"}
+	{Position 27.6308	30.8689	30.3471}
+}
+{Volume "Body5"
+	{Box 76.0165 9.84252 49.1631}
+	{Bone "build-04_corner2_a"}
+	{Matrix34
+		0.0000	0.7660	-0.6428
+		1.0000	-0.0000	-0.0000
+		-0.0000	-0.6428	-0.7660
+		52.0764	-9.7433	112.8472
+	}
+}
+{Volume "Body2"
+	{Box 44.9798 9.84252 50.2319}
+	{Bone "build-04_corner2_a"}
+	{Position -32.3864	30.5074	81.6782}
+}
+{Volume "Body1"
+	{Box 74.5187 9.84252 106.876}
+	{Bone "build-04_corner2_a"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		52.0764	-1.5658	53.4382
+	}
+}
+{Volume "Body"
+	{Box 67.134 9.84252 106.876}
+	{Bone "build-04_corner2_a"}
+	{Position 23.2957	30.5074	53.4382}
+}

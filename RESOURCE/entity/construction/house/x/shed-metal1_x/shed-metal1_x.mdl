@@ -1,0 +1,38 @@
+;Exported by: ubrashaev
+;Date:        Fri Oct 31 22:59:48 2003
+;File:        D:\-Projects-\-work-\3d\shed_metal12_x.max
+{Skeleton
+	{animation
+		{sequence "crush1" {speed 0.4}}
+		{sequence "crush2" {speed 0.4}}
+	}
+	{bone "Box01"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "FX_dust2"
+			{Matrix34
+				0.9995	-0.0026	0.0299
+				-0.0000	0.9962	0.0872
+				-0.0300	-0.0871	0.9957
+				12.1322	-6.3769	11.6347
+			}
+		}
+		{bone "FX_fire2"
+			{Position 8.3067	-46.7687	0.1287}
+		}
+		{bone "FX_smoke2"
+			{Position 45.2732	-18.2747	-0.6890}
+		}
+		{bone "metal"
+			{parameters "CommonMesh;"}
+			{Position -10.0787	-16.2795	16.1830}
+			{VolumeView "metal.ply"}
+		}
+		{bone "FX_fire1"
+			{Position -33.7199	27.6510	-3.9340}
+		}
+	}
+}

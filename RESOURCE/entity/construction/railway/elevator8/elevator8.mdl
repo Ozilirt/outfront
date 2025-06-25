@@ -1,0 +1,34 @@
+;Exported by: sk
+;Date:        Fri Sep 10 19:06:40 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\ÆÄ\elevator.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "elevator8"
+			{Matrix34
+				0.1736	0.0000	-0.9848
+				0.0000	1.0000	0.0000
+				0.9848	0.0000	0.1736
+				-74.3307	75.9799	8.2667
+			}
+			{VolumeView "elevator8.ply"}
+		}
+	}
+}
+{Obstacle "Support"
+	{Obb2
+		{Center -1.68313 7.92349}
+		{Extent 8.65865 45.9697}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Support"
+	{Box 43.7863 91.9394 9.86373}
+	{Bone "elevator8"}
+	{Position 0.1407	-83.9034	73.7434}
+}

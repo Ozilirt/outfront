@@ -1,0 +1,61 @@
+;Exported by: shevchenko
+;Date:        Sat May 29 16:58:24 2004
+;File:        D:\-Projects-\-3DWork-\sheva\hangar_wood1.max
+{Skeleton
+	{bone "hangar_corner2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hangar_corner2.ply"}
+		{bone "exterior"
+			{Matrix34
+				-0.9568	0.0000	-0.2906
+				-0.0000	-1.0000	0.0000
+				-0.2906	0.0000	0.9568
+				-5.9938	-12.1168	104.6268
+			}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 5.11756 1.02467}
+		{Extent 23.622 18.7008}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "support"
+	{Obb2
+		{Center -26.5314 19.8172}
+		{Extent 13.355 2.92248}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -14.6464 19.7264}
+		{Extent 9.84252 9.84252}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "support"
+	{Box 11.8178 5.84492 51.5955}
+	{Bone "hangar_corner2"}
+	{Matrix34
+		-0.9542	0.0000	0.2991
+		-0.0000	-1.0000	-0.0000
+		0.2991	-0.0000	0.9542
+		-26.5313	-19.8172	22.8287
+	}
+}
+{Volume "body"
+	{Box 19.685 19.685 98.4252}
+	{Bone "hangar_corner2"}
+	{Position -14.6464	-19.7264	49.2126}
+}

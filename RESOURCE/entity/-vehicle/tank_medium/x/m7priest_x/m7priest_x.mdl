@@ -1,0 +1,139 @@
+;Exported by: garry
+;Date:        Sat May 08 18:20:55 2004
+;File:        D:\-Projects-\-3DWork-\Model\Танки\M7Priest\M7-Priest_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{animation
+				{sequence "break" {file "trackL_b.anm"}}
+			}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				-5.6604	20.5032	11.3966
+			}
+			{VolumeView "WheelsL.ply"}
+			{bone "TrackL"
+				{parameters "CommonMesh;ID=trackleft;"}
+				{Position -6.9483	2.4758	2.0300}
+				{VolumeView "TrackL.ply"}
+			}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{animation
+				{sequence "break" {file "trackR_b.anm"}}
+			}
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-5.6604	-20.1576	11.3966
+			}
+			{VolumeView "WheelsR.ply"}
+			{bone "TrackR"
+				{parameters "CommonMesh;ID=trackright;"}
+				{Position -6.9483	2.4758	2.0471}
+				{VolumeView "TrackR.ply"}
+			}
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{animation
+				{sequence "break" {file "body_b.anm"} {speed 0.7}}
+			}
+			{Position -1.4430	-0.0347	22.0793}
+			{VolumeView "Body.ply"}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{limits -10.0000 10.0000}
+				{speed 0.0010}
+				{Position 23.4434	-3.6117	9.6045}
+				{VolumeView "turret.ply"}
+				{bone "gun_rot"
+					{parameters "ID=gun;"}
+					{Matrix34
+						0.9968	0.0000	-0.0802
+						-0.0802	-0.0000	-0.9968
+						-0.0000	1.0000	-0.0000
+						-4.1101	1.5352	6.1716
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	-0.0000	1.0000
+							0.0000	-1.0000	-0.0000
+							-5.5993	1.3431	-0.0415
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+			{bone revolute "mgun_rot"
+				{parameters "ID=body;"}
+				{speed 0.1000}
+				{Position 15.4704	-17.2834	27.8296}
+				{VolumeView "mgun_rot.ply"}
+				{bone revolute "MGun"
+					{limits -30.0000 25.0000}
+					{speed 0.1000}
+					{Matrix34
+						0.9659	0.0000	0.2588
+						-0.2588	-0.0000	0.9659
+						0.0000	-1.0000	-0.0000
+						6.4748	-0.4312	1.5385
+					}
+				}
+			}
+			{bone revolute "WheelL2"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-0.9970	0.0000	-0.0768
+					-0.0768	0.0000	0.9970
+					0.0000	1.0000	-0.0000
+					-45.5539	26.7657	-7.4152
+				}
+				{VolumeView "WheelL2.ply"}
+			}
+			{bone revolute "WheelL1"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-0.9970	0.0000	-0.0768
+					-0.0768	0.0000	0.9970
+					0.0000	1.0000	-0.0000
+					50.9408	26.7657	-7.4152
+				}
+				{VolumeView "WheelL1.ply"}
+			}
+			{bone revolute "WheelR1"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-0.9970	-0.0000	-0.0768
+					-0.0768	0.0000	0.9970
+					0.0000	-1.0000	0.0000
+					50.9408	-27.2923	-7.4152
+				}
+				{VolumeView "WheelR1.ply"}
+			}
+			{bone revolute "WheelR2"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-0.9970	-0.0000	-0.0768
+					-0.0768	-0.0000	0.9970
+					0.0000	-1.0000	-0.0000
+					-45.5539	-27.2923	-7.4152
+				}
+				{VolumeView "WheelR2.ply"}
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+;Exported by: ubrashaev
+;Date:        Tue Jun 01 17:09:32 2004
+;File:        D:\-Projects-\-work-\3d\fence-grate_bridge.max
+{Skeleton
+	{bone "fence-bridge1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence-bridge1.ply"}
+	}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center 0.227112 -0.109627}
+		{Extent 23.6068 1.59346}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -22.019 -0.137894}
+		{Extent 1.56992 1.67002}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 22.4176 -0.137894}
+		{Extent 1.56992 1.67002}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 3.13985 3.34004 16.5949}
+	{Bone "fence-bridge1"}
+	{Position -22.0190	0.1379	8.2974}
+}
+{Volume "body"
+	{Box 3.13985 3.34004 16.2646}
+	{Bone "fence-bridge1"}
+	{Position 22.4176	0.1379	8.1323}
+}

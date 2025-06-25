@@ -1,0 +1,126 @@
+;Exported by: sk
+;Date:        Wed Jun 02 18:58:08 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\shed_brick01.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "hous"
+			{Position -0.1559	-0.3902	-0.0000}
+			{VolumeView "hous.ply"}
+		}
+	}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -75.0507 -42.7517}
+		{Extent 2.95276 15.896}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -75.0507 42.3721}
+		{Extent 2.95276 16.3777}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 74.9881 0.56448}
+		{Extent 2.95276 59.0551}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -0.907974 56.5366}
+		{Extent 78.2775 3.2382}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -0.90799 -56.2009}
+		{Extent 78.2775 2.89371}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Hole3"
+	{Box 16.4878 17.6917 18.8591}
+	{Bone "hous"}
+	{Position 38.4583	56.6775	28.2013}
+}
+{Volume "Hole2"
+	{Box 16.4878 17.6917 18.8591}
+	{Bone "hous"}
+	{Position -38.9736	56.6775	28.2013}
+}
+{Volume "Hole1"
+	{Box 16.4878 17.6917 18.8591}
+	{Bone "hous"}
+	{Position 38.4583	-55.9414	28.2013}
+}
+{Volume "Hole0"
+	{Box 16.4878 17.6917 18.8591}
+	{Bone "hous"}
+	{Position -38.9736	-55.9414	28.2013}
+}
+{Volume "body6"
+	{Polyhedron "body6.vol"}
+	{Bone "hous"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-74.8722	-0.1743	0.0000
+	}
+}
+{Volume "body5"
+	{Box 31.792 5.90551 49.7047}
+	{Bone "hous"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-74.8947	43.1418	24.8524
+	}
+}
+{Volume "body4"
+	{Box 32.7553 5.90551 49.7047}
+	{Bone "hous"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-74.8947	-41.9819	24.8524
+	}
+}
+{Volume "body3"
+	{Polyhedron "body3.vol"}
+	{Bone "hous"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		75.1440	-0.1743	0.0000
+	}
+}
+{Volume "body2"
+	{Box 156.555 6.47638 49.5757}
+	{Bone "hous"}
+	{Position -0.7520	-56.1464	24.7879}
+}
+{Volume "body1"
+	{Box 156.555 5.7874 49.5757}
+	{Bone "hous"}
+	{Position -0.7520	56.5911	24.7879}
+}

@@ -1,0 +1,87 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/structure/arm_car2xt.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{Extension "m3a1.mdl"}
+	{extension "crew.ext"}
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew"}
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "bren"}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{Box
+			{item  "ammo mgun" 500}
+		}
+	}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 8}
+	}
+	{volume "engine"
+		{thickness 15}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+	{volume "turret"
+		{thickness 8}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks")
+	
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Chassis
+	; left track must be first
+   		{Track "left"
+			{Tracer
+				{View "tracks"}
+				{Bone "FXtraceL1"}
+				{Step 0.7}			; in meters
+   		 	}
+			{TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 0.6}		; meters per animation
+   		 	}
+   		}
+   		{Track "right"
+			{Tracer 
+			   	{View "tracks"}
+   		 		{Bone "FXtraceR1"}
+   		 		{Step 0.7}			; in meters
+			}
+			{TextureScroller
+		    	{Bone "TrackR"}	
+		 		{Length 0.6}		; meters per animation
+	 		}
+ 		}
+	}
+	{mass 15000}
+}

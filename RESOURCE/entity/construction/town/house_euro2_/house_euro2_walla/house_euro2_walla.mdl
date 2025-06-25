@@ -1,0 +1,52 @@
+;Exported by: vic
+;Date:        Thu Mar 11 19:44:05 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall4a_x.max
+{Skeleton
+	{bone "house_euro2_walla"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro2_walla.ply"}
+	}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center 27.0586 0.257398}
+		{Extent 12.6709 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body2"
+	{Obb2
+		{Center -19.1192 0.257398}
+		{Extent 5.90551 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center -8.05353 -1.74515}
+		{Extent 30.0057 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body1"
+	{Box 25.3417 9.84252 47.4644}
+	{Bone "house_euro2_walla"}
+	{Position 27.0586	-0.2574	23.7322}
+}
+{Volume "Body2"
+	{Box 11.811 9.84252 43.2453}
+	{Bone "house_euro2_walla"}
+	{Position -19.1192	-0.2574	21.6227}
+}
+{Volume "Body"
+	{Box 60.0114 5.90551 25.5906}
+	{Bone "house_euro2_walla"}
+	{Position -8.0535	1.7451	12.7953}
+}

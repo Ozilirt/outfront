@@ -1,0 +1,156 @@
+;Exported by: shevchenko
+;Date:        Sat Mar 27 11:42:06 2004
+;File:        D:\-Projects-\-3DWork-\sheva\shed_evro2.max
+{Skeleton
+	{bone "shed_evro2_coner4"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_evro2_coner4.ply"}
+		{bone "attach1"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-4.5702	-13.3847	0.0000
+			}
+		}
+		{bone "window1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				-17.5370	-13.4536	25.5905
+			}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					0.0000	0.0000	-1.0000
+					-1.0000	-0.0000	-0.0000
+					-0.0000	1.0000	0.0000
+					-0.0689	-0.0448	3.1507
+				}
+			}
+		}
+		{bone "window1_x"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				-17.2939	-13.4536	25.5905
+			}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "door"
+			{Matrix34
+				1.0000	-0.0023	0.0000
+				-0.0000	-0.0000	1.0000
+				-0.0023	-1.0000	-0.0000
+				-20.4480	7.1697	19.6627
+			}
+			{VolumeView "door.ply"}
+		}
+		{bone "exterior"
+			{Position 0.0000	0.0043	60.9926}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 0.16321 0.669291}
+		{Extent 17.7165 25.5906}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "door"
+	{Obb2
+		{Center -29.3172 -7.11966}
+		{Extent 8.86055 1.00497}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "beam"
+	{Obb2
+		{Center 19.7601 -2.38907}
+		{Extent 1.47638 1.47638}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -20.5188 9.57508}
+		{Extent 2.95275 16.7323}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -1.85578 29.242}
+		{Extent 21.6725 2.94572}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Box 59.6457 58.0709 0.984252}
+	{Bone "exterior"}
+	{Matrix34
+		0.8283	0.0000	0.5603
+		-0.0000	1.0000	0.0000
+		-0.5603	-0.0000	0.8283
+		-4.5486	-5.9566	1.6230
+	}
+}
+{Volume "door"
+	{Box 1.9685 17.7165 39.3701}
+	{Bone "door"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		-1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	0.0000
+		-8.8691	-0.0210	0.0708
+	}
+}
+{Volume "window1"
+	{Box 1.9685 13.7795 19.685}
+	{Bone "window1"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		-1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	0.0000
+		0.0188	-0.0118	2.9996
+	}
+}
+{Volume "hole2"
+	{Box 13.7795 13.7795 19.685}
+	{Bone "shed_evro2_coner4"}
+	{Position -20.4884	-13.4724	25.5787}
+}
+{Volume "beam"
+	{Box 2.95276 2.95276 49.2126}
+	{Bone "shed_evro2_coner4"}
+	{Position 19.7601	2.3891	24.6063}
+}
+{Volume "body2"
+	{Box 5.90551 33.4646 49.2126}
+	{Bone "shed_evro2_coner4"}
+	{Position -20.5188	-9.5751	24.6063}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "shed_evro2_coner4"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		3.2677	-26.2963	41.3386
+	}
+}

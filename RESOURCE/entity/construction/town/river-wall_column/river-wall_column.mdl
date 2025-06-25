@@ -1,0 +1,31 @@
+;Exported by: shevchenko
+;Date:        Mon Feb 02 13:40:39 2004
+;File:        D:\-Projects-\-3DWork-\sheva\river-wall2.max
+{Skeleton
+	{bone "river-wall_column"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "river-wall_column.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -28.2573 0.235548}
+		{Extent 13.5785 5.91896}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 11.7662 27.126 56.6967}
+	{Bone "river-wall_column"}
+	{Matrix34
+		-0.0026	-1.0000	-0.0000
+		-1.0000	0.0026	-0.0000
+		-0.0000	0.0000	1.0000
+		-28.2572	-0.2356	-12.2501
+	}
+}

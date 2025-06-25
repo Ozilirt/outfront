@@ -1,0 +1,15 @@
+{actor
+	(include "/properties/stuff_mine.ext")
+	{Extension "mine_antipersonnel.mdl"}
+	{extender "stuff"
+		{item "mine antipersonnel"}
+	}
+	{colliderId "mine_ap"}
+	{props "training" "mine_antipersonnel"}
+	(include "/properties/shadow/round.inc")
+	{Obstacle "body"
+		{Circle2
+			{Radius 10}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+;Exported by: ubrashaev
+;Date:        Wed Jan 21 16:29:20 2004
+;File:        D:\-Projects-\-work-\3d\water_tower.max
+{Skeleton
+	{bone "rail"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "rail.ply"}
+	}
+}
+{Volume "fire1"
+	{Box 174.173 56.8358 15.4331}
+	{Bone "rail"}
+	{Matrix34
+		0.9994	0.0349	0.0000
+		-0.0349	0.9994	0.0000
+		0.0000	0.0000	1.0000
+		0.3510	-0.8332	27.2959
+	}
+}
+{Volume "Body"
+	{Box 174.173 56.8358 27.5591}
+	{Bone "rail"}
+	{Matrix34
+		0.9994	0.0349	0.0000
+		-0.0349	0.9994	0.0000
+		0.0000	0.0000	1.0000
+		0.3510	-0.8332	13.8471
+	}
+}

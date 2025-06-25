@@ -1,0 +1,31 @@
+;Exported by: shevchenko
+;Date:        Fri Aug 06 11:40:24 2004
+;File:        D:\-Projects-\-3DWork-\sheva\bridge_multiplayer.max
+{Skeleton
+	{bone "automobile_bridge_fence2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "automobile_bridge_fence2.ply"}
+	}
+}
+{Obstacle "railing"
+	{Obb2
+		{Center 0.330044 17.7837}
+		{Extent 4.9437 63.9781}
+		{Axis 0.0182398 0.999834}
+	}
+	{Rotate}
+}
+{Volume "railing"
+	{Box 127.953 9.84252 21.6535}
+	{Bone "automobile_bridge_fence2"}
+	{Matrix34
+		-0.9998	-0.0186	0.0000
+		0.0186	-0.9998	0.0000
+		0.0000	0.0000	1.0000
+		0.3301	-17.7837	10.8268
+	}
+}

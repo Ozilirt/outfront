@@ -1,0 +1,116 @@
+;Exported by: ubrashaev
+;Date:        Tue May 18 19:04:30 2004
+;File:        D:\-Projects-\-work-\3d\indahous\shed_euro1.max
+{Skeleton
+	{bone "shed_euro2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_euro2.ply"}
+		{bone "attach2"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				16.7140	8.3458	0.0000
+			}
+		}
+		{bone "window1"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				1.0000	-0.0000	-0.0000
+				0.0000	-0.0000	1.0000
+				15.9990	24.7628	33.0081
+			}
+			{VolumeView "window1.ply"}
+			{bone "fx_glass1"
+				{Matrix34
+					1.0000	-0.0000	-0.0000
+					-0.0000	-1.0000	-0.0000
+					-0.0000	-0.0000	1.0000
+					-0.7380	-0.6666	-0.5521
+				}
+			}
+		}
+		{bone "window1_x"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				1.0000	-0.0000	-0.0000
+				0.0000	-0.0000	1.0000
+				15.9990	24.3403	33.0081
+			}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "exterior"
+			{Position 0.2135	0.8094	77.1205}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 2.88774 -1.09786}
+		{Extent 23.622 18.7008}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body6"
+	{Obb2
+		{Center -23.5493 0.466341}
+		{Extent 2.95277 30.1706}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body7"
+	{Obb2
+		{Center 2.59702 -22.5645}
+		{Extent 23.028 3.90236}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof2"
+	{Box 37.8695 74.1591 2.1964}
+	{Bone "exterior"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		0.0000	0.7474	-0.6644
+		-0.0000	-0.6644	-0.7474
+		-1.6553	-2.2082	0.6020
+	}
+}
+{Volume "window1"
+	{Box 13.8815 1.84128 14.0979}
+	{Bone "window1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-1.0000	0.0000	0.0000
+		-0.0000	0.0000	-1.0000
+		-0.3997	-0.5541	-0.2283
+	}
+}
+{Volume "hole1"
+	{Box 13.6125 17.3713 13.4725}
+	{Bone "shed_euro2"}
+	{Position 15.7260	22.2690	33.0727}
+}
+{Volume "body6"
+	{Polyhedron "body6.vol"}
+	{Bone "shed_euro2"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-23.5493	-0.4663	2.0202
+	}
+}
+{Volume "body7"
+	{Box 46.056 7.80472 55}
+	{Bone "shed_euro2"}
+	{Position 2.5970	22.5645	27.5000}
+}

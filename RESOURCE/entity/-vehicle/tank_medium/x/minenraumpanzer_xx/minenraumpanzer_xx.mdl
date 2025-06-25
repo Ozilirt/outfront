@@ -1,0 +1,87 @@
+;Exported by: sk
+;Date:        Mon Jul 05 16:48:16 2004
+;File:        D:\-Projects-\-3DWork-\Model\-Tank\Minenraumpanzer III\MinenraumpanzerIII_xx.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{Position 1.6563	23.1045	12.7090}
+			{VolumeView "WheelsL.ply"}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{Position 1.6563	-25.1780	12.7090}
+			{VolumeView "WheelsR.ply"}
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -0.6496	-1.0039	28.8386}
+			{VolumeView "Body.ply"}
+				{bone revolute "WheelR1"
+					{parameters "ID=trackright;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						42.7382	-25.2780	-6.0512
+					}
+					{VolumeView "WheelR1.ply"}
+				}
+				{bone revolute "WheelL1"
+					{parameters "ID=trackleft;"}
+					{Matrix34
+						-0.9659	-0.2588	0.0000
+						-0.0000	0.0000	1.0000
+						-0.2588	0.9659	-0.0000
+						42.7382	25.1769	-6.0512
+					}
+					{VolumeView "WheelL1.ply"}
+				}
+				{bone revolute "WheelR2"
+					{parameters "ID=trackright;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						-42.1610	-25.2779	-4.4352
+					}
+					{VolumeView "WheelR2.ply"}
+				}
+				{bone revolute "WheelL2"
+					{parameters "ID=trackleft;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						-42.1610	25.1769	-4.4352
+					}
+					{VolumeView "WheelL2.ply"}
+				}
+				{bone revolute "WheelL3"
+					{parameters "ID=wheelL;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						75.5112	21.5863	-15.3606
+					}
+					{VolumeView "WheelL3.ply"}
+				}
+				{bone revolute "WheelR3"
+					{parameters "ID=wheelR;"}
+					{Matrix34
+						-1.0000	0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						75.5112	-21.4414	-15.3606
+					}
+					{VolumeView "WheelR3.ply"}
+				}
+		}
+	}
+}

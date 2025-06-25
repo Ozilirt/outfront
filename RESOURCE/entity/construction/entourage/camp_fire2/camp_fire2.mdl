@@ -1,0 +1,31 @@
+;Exported by: vic
+;Date:        Thu Oct 16 17:19:41 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\camp_fire2.max
+{Skeleton
+	{bone "camp_fire2"
+		{Orientation
+			-0.4035	-0.9149	0.0087
+			0.9149	-0.4033	0.0172
+			-0.0122	0.0149	0.9998
+		}
+		{VolumeView "camp_fire2.ply"}
+		{bone "FX_light"
+			{Matrix34
+				0.0072	0.0198	0.9998
+				-0.1538	-0.9880	0.0108
+				-0.9881	0.1540	-0.0001
+				0.3864	0.5603	21.6467
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 9.33815 27.0675}
+	{Bone "camp_fire2"}
+		{Matrix34
+			-0.0227	0.8996	-0.0176
+			0.8997	0.0225	-0.0057
+			0.0078	0.0154	0.8998
+			0.1895	0.2285	11.1842
+		}
+}

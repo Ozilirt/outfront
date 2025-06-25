@@ -1,0 +1,61 @@
+;Exported by: ubrashaev
+;Date:        Sat May 15 16:22:53 2004
+;File:        D:\-Projects-\-work-\3d\mill_entourage.max
+{Skeleton
+	{bone "cart"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "cart.ply"}
+	}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center -0.0897522 4.20335}
+		{Extent 11.6691 19.6105}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "fire2"
+	{Box 2.81707 19.2592 18.934}
+	{Bone "cart"}
+	{Position 11.0645	-12.7241	9.9395}
+}
+{Volume "fire1"
+	{Box 2.71143 19.2592 18.9702}
+	{Bone "cart"}
+	{Position -10.8109	-12.7241	9.9576}
+}
+{Volume "fire0"
+	{Box 22.0131 28.023 3.706}
+	{Bone "cart"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9659	-0.2588
+		0.0000	0.2588	0.9659
+		0.0818	-11.6438	11.4983
+	}
+}
+{Volume "body"
+	{Box 20.3825 24.3678 1.75723}
+	{Bone "cart"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9659	-0.2588
+		0.0000	0.2588	0.9659
+		0.0818	-11.8960	10.5571
+	}
+}
+{Volume "body2"
+	{Box 1.76067 16.6027 17.2128}
+	{Bone "cart"}
+	{Position -10.8109	-12.7241	9.0788}
+}
+{Volume "body1"
+	{Box 1.76067 16.6027 17.2128}
+	{Bone "cart"}
+	{Position 11.0645	-12.7241	9.0788}
+}

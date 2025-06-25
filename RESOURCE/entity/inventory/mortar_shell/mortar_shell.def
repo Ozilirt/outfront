@@ -1,0 +1,14 @@
+{game_entity
+
+	(include "/properties/stuff_small.ext")
+	{colliderID "construction"}
+	{Volume "body"
+		{thickness 4}
+		{able {touch} {bullet} {blast}}
+	}
+	{extender "stuff"
+		{item "bullet203"}
+	}
+	{props "steel"}
+	{Extension "mortar_shell.mdl"}
+}

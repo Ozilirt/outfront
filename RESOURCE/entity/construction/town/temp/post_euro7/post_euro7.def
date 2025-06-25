@@ -1,0 +1,23 @@
+{construction
+    (include "/properties/post.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{props "concrete" "construction"}
+	{volume	"body"
+		{thickness 10}
+	}
+	{extender "light"
+		{lamp "1"}
+	}
+	{Volume "Lamp1"
+		{Thickness 2}
+		{able {visible 0}{obstacle 0}}
+	}
+	{Volume "body"
+		{Thickness 10}
+	}
+	{Extension "post_euro7.mdl"}
+}

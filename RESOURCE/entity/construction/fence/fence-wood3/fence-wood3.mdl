@@ -1,0 +1,40 @@
+;Exported by: shevchenko
+;Date:        Fri Mar 19 10:50:24 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\woodfence.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "fence-wood3"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence-wood3.ply"}
+		{bone "climb2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.9913	21.3586	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb1"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.9913	-20.2988	0.0000
+			}
+			{visibility 0}
+		}
+	}
+}
+{Volume "body"
+	{Box 225.25 8.16314 30.5387}
+	{Bone "fence-wood3"}
+	{Position -0.5890	-0.6205	15.2693}
+}

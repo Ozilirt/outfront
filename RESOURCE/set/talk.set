@@ -1,0 +1,59 @@
+;SDL
+{talks
+	{talker "soldier"
+		{talk "human injuring"
+			{immediate}
+			{priority 5}
+			{timeout 70 7}
+			{condition
+				{health_level 0.7}
+			}
+		}
+		{talk "human need help"
+			{immediate}
+			{priority 5}
+			{timeout 30 5}
+			{condition
+				{health_level 0.45
+					{enemy_ratio 2}
+				}
+			}
+		}
+		{talk "superior forces"
+			{priority 3}
+			{timeout 20 5}
+			{condition
+				{seen enemy any 5
+					{enemy_ratio 2}
+				}
+			}
+		}
+		{talk "enemy tank"
+			{immediate}
+			{priority 2}
+			{timeout 40 10}
+			{condition
+				{seen enemy tank 1}
+			}
+		}
+		{talk "enemy car"
+			{immediate}
+			{priority 2}
+			{timeout 40 10}
+			{condition
+				{seen enemy car 1}
+			}
+		}
+	}
+
+;	{talker "vehicle"
+;		{talk "vehicle need help"
+;			{immediate}
+;			{priority 5}
+;			{timeout 100 20}
+;			{condition
+;				{broken "body"}
+;			}
+;		}
+;	}
+}

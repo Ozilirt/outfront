@@ -1,0 +1,34 @@
+;Exported by: garry
+;Date:        Wed Feb 11 11:46:55 2004
+;File:        \\TERM\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon2.max
+{Skeleton
+	{bone "sg44"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "sg44.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				-0.0000	1.0000	-0.0000
+				5.8092	1.8058	0.0219
+			}
+		}
+		{bone "Foresight3"
+			{Position 13.9733	0.6691	-0.0005}
+		}
+	}
+}
+{Volume "body"
+	{Box 20.5482 6.48784 1.11484}
+	{Bone "sg44"}
+	{Position 3.9836	-0.5414	0.0336}
+}
+{Volume "select"
+	{Box 25.0588 10.1372 3.9035}
+	{Bone "sg44"}
+	{Position 3.2978	-0.5414	-0.0277}
+}

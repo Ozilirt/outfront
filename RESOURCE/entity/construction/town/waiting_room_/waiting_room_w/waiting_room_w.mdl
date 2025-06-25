@@ -1,0 +1,95 @@
+;Exported by: sk
+;Date:        Tue Jan 13 19:22:23 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Вокзал\rw_station2.max
+{Skeleton
+	{bone "waiting_room_w"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "waiting_room_w.ply"}
+		{bone "window1"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-18.4705	-9.4448	32.5452
+			}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-1.2692	2.0660	9.1503
+				}
+			}
+		}
+		{bone "window1_x"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-18.4705	-8.2628	32.5452
+			}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "attach1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-18.3391	1.7035	0.0000
+			}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "Body5"
+	{Obb2
+		{Center 6.10738 -23.9399}
+		{Extent 1.9685 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center 2.34465 9.38101}
+		{Extent 48.0625 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body5"
+	{Box 3.93701 3.93701 114.934}
+	{Bone "waiting_room_w"}
+	{Position 6.1074	23.9399	57.4672}
+}
+{Volume "Body3"
+	{Box 91.6806 2.04724 97.8843}
+	{Bone "waiting_room_w"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.5286	-0.8488
+		0.0000	0.8488	0.5286
+		5.1400	14.5406	111.8845
+	}
+}
+{Volume "Body"
+	{Box 96.125 7.87402 88.411}
+	{Bone "waiting_room_w"}
+	{Position 2.3447	-9.3810	44.2055}
+}
+{Volume "Hole0"
+	{Box 23.622 15.6496 37.3354}
+	{Bone "waiting_room_w"}
+	{Position -18.4586	-10.7120	34.4157}
+}
+{Volume "window1"
+	{Box 23.5964 1.13 37.2856}
+	{Bone "window1"}
+	{Position -0.0000	0.0000	1.9347}
+}

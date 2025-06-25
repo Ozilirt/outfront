@@ -1,0 +1,186 @@
+;Exported by: shevchenko
+;Date:        Fri Apr 02 11:15:08 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\build-02-01b.max
+{Skeleton
+	{bone "garage"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "garage.ply"}
+		{bone "exterior"
+			{Position -0.0399	-0.0145	95.8468}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "body10"
+	{Obb2
+		{Center -65.9747 35.4261}
+		{Extent 2.95276 21.6535}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -65.9747 -35.3354}
+		{Extent 2.95276 21.6535}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body7"
+	{Obb2
+		{Center 65.8922 -35.3354}
+		{Extent 2.95276 21.6535}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center 0 0.000274658}
+		{Extent 62.9921 57.0866}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body6"
+	{Obb2
+		{Center 65.8922 35.4261}
+		{Extent 2.95276 21.6535}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -0.0154419 60.4299}
+		{Extent 68.8503 3.44488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -55.1478 -60.6399}
+		{Extent 13.6811 3.44488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 55.1599 -60.6399}
+		{Extent 13.6811 3.44488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body10"
+	{Box 43.3071 5.90551 45.2756}
+	{Bone "garage"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-65.9747	-35.4261	22.6378
+	}
+}
+{Volume "body5"
+	{Box 43.3071 5.90551 45.2756}
+	{Bone "garage"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-65.9747	35.3354	22.6378
+	}
+}
+{Volume "body9"
+	{Box 114.173 5.90551 49.2126}
+	{Bone "garage"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-65.9747	0.0104	69.8819
+	}
+}
+{Volume "body8"
+	{Box 114.173 5.90551 49.2126}
+	{Bone "garage"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		65.8921	0.0104	69.8819
+	}
+}
+{Volume "body7"
+	{Box 43.3071 5.90551 45.2756}
+	{Bone "garage"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		65.8921	35.3354	22.6378
+	}
+}
+{Volume "roof3"
+	{Box 13.7795 23.622 23.8189}
+	{Bone "exterior"}
+	{Position 49.7632	31.3238	5.3287}
+}
+{Volume "roof2"
+	{Box 149.855 2.95571 78.2209}
+	{Bone "exterior"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		0.0000	-0.3488	0.9372
+		-0.0000	0.9372	0.3488
+		0.0640	-36.5081	-5.9608
+	}
+}
+{Volume "roof1"
+	{Box 149.855 2.95571 78.2209}
+	{Bone "exterior"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.3488	0.9372
+		0.0000	-0.9372	0.3488
+		0.0640	36.6308	-5.9609
+	}
+}
+{Volume "body6"
+	{Box 43.3071 5.90551 45.2756}
+	{Bone "garage"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		65.8921	-35.4261	22.6378
+	}
+}
+{Volume "body4"
+	{Box 137.701 6.88976 78.6614}
+	{Bone "garage"}
+	{Position -0.0154	-60.4299	39.3307}
+}
+{Volume "body3"
+	{Box 82.6772 6.88976 19.685}
+	{Bone "garage"}
+	{Position -0.0782	60.6399	68.8543}
+}
+{Volume "body2"
+	{Box 27.3622 6.88976 78.6614}
+	{Bone "garage"}
+	{Position -55.1478	60.6399	39.3307}
+}
+{Volume "body1"
+	{Box 27.3622 6.88976 78.6614}
+	{Bone "garage"}
+	{Position 55.1599	60.6399	39.3307}
+}

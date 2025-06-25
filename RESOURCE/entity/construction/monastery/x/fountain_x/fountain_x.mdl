@@ -1,0 +1,195 @@
+;Exported by: sk
+;Date:        Thu Feb 05 11:15:12 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Monastery\fountain.max
+{Skeleton
+	{bone "wall-foun_x"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall-foun_x.ply"}
+		{bone "Piece0"
+			{Position 3.3003	-51.4780	80.1742}
+			{VolumeView "Piece0.ply"}
+		}
+		{bone "Piece1"
+			{Position -15.4297	54.9748	85.3563}
+			{VolumeView "Piece1.ply"}
+		}
+		{bone "Piece2"
+			{Position 50.1321	-20.7764	81.4445}
+			{VolumeView "Piece2.ply"}
+		}
+		{bone "Piece3"
+			{Position -43.1475	30.7287	83.0456}
+			{VolumeView "Piece3.ply"}
+		}
+		{bone "Sub_piece0"
+			{Position -51.3841	-38.2239	85.0340}
+			{VolumeView "Sub_piece0.ply"}
+		}
+		{bone "Piece4"
+			{Position -54.8674	17.0531	81.8931}
+			{VolumeView "Piece4.ply"}
+		}
+		{bone "Piece5"
+			{Position 35.9482	52.1699	85.3792}
+			{VolumeView "Piece5.ply"}
+		}
+		{bone "Piece6"
+			{Position 54.8674	17.0531	84.0131}
+			{VolumeView "Piece6.ply"}
+		}
+		{bone "Piece7"
+			{Position -31.6221	-57.0733	84.4403}
+			{VolumeView "Piece7.ply"}
+		}
+		{bone "Sub_piece1"
+			{Matrix34
+				-0.2072	0.9077	0.3650
+				-0.8891	-0.3304	0.3169
+				0.4082	-0.2588	0.8754
+				17.1845	-7.3251	69.7730
+			}
+			{VolumeView "Sub_piece1.ply"}
+		}
+		{bone "Sub_piece2"
+			{Matrix34
+				-0.2072	0.9077	0.3650
+				-0.8891	-0.3304	0.3169
+				0.4082	-0.2588	0.8754
+				-16.0589	-26.9907	69.7730
+			}
+			{VolumeView "Sub_piece2.ply"}
+		}
+	}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center -0.188293 -0.199631}
+		{Extent 64.1493 62.5409}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Sub_piece2"
+	{Box 20.2703 21.9836 11.3625}
+	{Bone "Sub_piece2"}
+	{Matrix34
+		0.6190	0.6305	-0.4683
+		-0.7009	0.7125	0.0327
+		0.3543	0.3080	0.8830
+		0.4640	0.2413	4.6820
+	}
+}
+{Volume "Sub_piece1"
+	{Box 20.2703 21.9836 11.3625}
+	{Bone "Sub_piece1"}
+	{Matrix34
+		0.6190	0.6305	-0.4683
+		-0.7009	0.7125	0.0327
+		0.3543	0.3080	0.8830
+		0.4639	0.2413	4.6820
+	}
+}
+{Volume "Piece7"
+	{Box 22.8034 20.2671 10.8485}
+	{Bone "Piece7"}
+	{Matrix34
+		0.9063	-0.4226	0.0000
+		0.3971	0.8517	-0.3420
+		0.1445	0.3100	0.9397
+		3.6788	0.7852	3.5254
+	}
+}
+{Volume "Piece6"
+	{Box 26.256 22.5102 12.1025}
+	{Bone "Piece6"}
+	{Matrix34
+		0.8365	0.2241	0.5000
+		-0.2588	0.9659	0.0000
+		-0.4830	-0.1294	0.8660
+		0.2192	-3.9852	3.2123
+	}
+}
+{Volume "Piece5"
+	{Box 26.7621 29.7925 9.32708}
+	{Bone "Piece5"}
+	{Matrix34
+		0.3660	0.7849	0.5000
+		-0.9063	0.4226	-0.0000
+		-0.2113	-0.4532	0.8660
+		-3.5410	-2.6614	6.9834
+	}
+}
+{Volume "Piece4"
+	{Box 28.0414 20.8048 10.3356}
+	{Bone "Piece4"}
+	{Matrix34
+		0.8559	-0.1391	-0.4981
+		0.1849	0.9818	0.0436
+		0.4830	-0.1294	0.8660
+		-1.0999	-3.4826	4.2809
+	}
+}
+{Volume "Sub_piece0"
+	{Box 20.2703 21.9836 11.3625}
+	{Bone "Sub_piece0"}
+	{Matrix34
+		0.6190	0.6305	-0.4683
+		-0.7009	0.7125	0.0327
+		0.3543	0.3080	0.8830
+		0.4640	0.2413	4.6820
+	}
+}
+{Volume "Piece3"
+	{Box 33.5434 25.0086 12.2731}
+	{Bone "Piece3"}
+	{Matrix34
+		0.7094	-0.4967	-0.5000
+		0.5736	0.8192	-0.0000
+		0.4096	-0.2868	0.8660
+		-0.4581	5.1817	3.7084
+	}
+}
+{Volume "Piece2"
+	{Box 27.405 19.5844 10.444}
+	{Bone "Piece2"}
+	{Matrix34
+		0.8529	-0.1736	0.4924
+		0.2349	0.9698	-0.0649
+		-0.4663	0.1710	0.8679
+		1.0504	4.3290	0.8933
+	}
+}
+{Volume "Piece1"
+	{Box 34.8687 27.3167 9.55457}
+	{Bone "Piece1"}
+	{Matrix34
+		0.9418	0.3201	0.1023
+		-0.3279	0.8090	0.4878
+		0.0734	-0.4930	0.8669
+		1.1573	0.5784	4.3618
+	}
+}
+{Volume "Piece0"
+	{Box 24.7972 34.2742 12.7394}
+	{Bone "Piece0"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.8192	-0.5736
+		0.0000	0.5736	0.8192
+		2.0425	-9.7230	2.4250
+	}
+}
+{Volume "Body1"
+	{Cylinder 64.1493 20.9011}
+	{Bone "wall-foun_x"}
+	{Position -0.1883	0.1996	10.5636}
+}
+{Volume "Body"
+	{Cylinder 37.1026 55.3266}
+	{Bone "wall-foun_x"}
+	{Position -0.1883	0.1996	27.6633}
+}

@@ -1,0 +1,187 @@
+{fx 
+    {sound "hit_tree"}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 50 }
+			{EmissionArea 
+				{radius 3 3 }
+				{alpha0 0 }
+				{alpha1 90 10 }
+			}
+			{ParticleInit 
+				{Speed 1.5 1.5 }
+				{Lifetime 1.2 0.8 }
+			}
+			{StartParticles 50 }
+			{TimeToLive 1 }
+			{AxisZ }
+			{ParticlesInBlock 50 }
+			{Color 0x00AFCA84 }
+			{Color 0x00CECE9D }
+			{Color 0x00303F01 }
+		}
+		{Mover 
+			{Damping 0.91 }
+			{Gravity 
+				{Value 0.07 }
+			}
+			{Collisions 
+				{Terrain }
+				{Restitution 0.05 }
+			}
+		}
+		{NotifyOwner }
+	}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 4 }
+			{EmissionArea 
+				{radius 3 3 }
+				{alpha0 0 }
+				{alpha1 90 30 }
+			}
+			{ParticleInit 
+				{Speed 2 2 }
+				{Lifetime 1.5 0.5 }
+			}
+			{StartParticles 4 }
+			{TimeToLive 1 }
+			{AxisZ }
+		}
+		{Mover 
+			{Damping 0.94 }
+			{Gravity 
+				{Value 0.08 }
+			}
+			{Collisions 
+				{Terrain }
+				{Restitution 0.05 }
+			}
+		}
+		{Visualizer 
+			{Stage initial 
+				{Sprite "/FX/_BMP/Particle/twig2.ebm" 
+						{Turn 
+							{Linear 
+								{min 10 10 }
+								{max 360 -180 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Scale 0.3 0.2 }
+						{preTurn 90 90 }
+				}
+				{Sprite "/FX/_BMP/Particle/twig3.ebm" 
+						{Turn 
+							{Linear 
+								{min 360 10 }
+								{max 0 10 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Scale 0.3 0.2 }
+						{preTurn 90 90 }
+				}
+			}
+			{Stage collided dying 
+				{Sprite "/FX/_BMP/Particle/twig3.ebm" 
+					{Scale 0.6 0.2 }
+					{preTurn 90 60 }
+				}
+				{flags KillParticle Ground }
+			}
+		}
+		{NotifyOwner }
+	}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 5 }
+			{EmissionArea 
+				{radius 2 2 }
+				{alpha0 0 }
+				{alpha1 90 20 }
+			}
+			{ParticleInit 
+				{Speed 1 0.2 }
+				{Lifetime 1.5 0.5 }
+			}
+			{StartParticles 5 }
+			{TimeToLive 1 }
+			{AxisZ }
+			{ParticlesInBlock 5 }
+		}
+		{Mover 
+			{Damping 0.95 }
+			{Gravity 
+				{Value 0.01 }
+			}
+			{Collisions 
+				{Terrain }
+				{Restitution 0.05 }
+			}
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "/FX/_BMP/Smoke/smokesmal4b.ebm" 
+						{Turn 
+							{Linear 
+								{min 10 10 }
+								{max 120 20 }
+							}
+						}
+						{Visibility 
+							{Linear 
+								{min 0.7 }
+								{max 0 }
+							}
+						}
+						{Scale
+							{Linear 
+								{min 1.1 0.3 }
+								{max 1.7 0.5 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{preTurn 90 90 }
+						{Highlight 0x00555629 }
+				}
+				{Sprite "/FX/_BMP/Smoke/smokesmal4b.ebm" 
+						{Turn 
+							{Linear 
+								{min 120 10 }
+								{max 10 20 }
+							}
+						}
+						{Visibility 
+							{Linear 
+								{min 0.7 }
+								{max 0 }
+							}
+						}
+						{Scale
+							{Linear 
+								{min 1.1 0.3 }
+								{max 1.7 0.5 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{preTurn 90 90 }
+						{Highlight 0x00A8B34D }
+				}
+			}
+		}
+		{NotifyOwner }
+	}
+}

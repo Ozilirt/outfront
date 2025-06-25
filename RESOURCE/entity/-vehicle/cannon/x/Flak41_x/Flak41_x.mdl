@@ -1,0 +1,71 @@
+;Exported by: garry
+;Date:        Wed Nov 26 11:26:57 2003
+;File:        D:\-Projects-\-3DWork-\Model\cannons\zenit\flak41\Flak41_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -0.0982	-0.1784	4.3469}
+			{VolumeView "Body.ply"}
+			{bone revolute "turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{animation
+					{sequence "break" {file "turret.anm"} {speed 0.5}}
+				}
+				{Position 0.0000	-0.0000	4.1466}
+				{VolumeView "turret.ply"}
+				{bone revolute "shield_front"
+					{parameters "ID=shield_front;"}
+					{animation
+						{sequence "break" {file "shield_front.anm"} {speed 0.6}}
+					}
+					{Position 0.0013	0.0585	0.5699}
+					{VolumeView "shield_front.ply"}
+				}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{limits -45.0000 10.0000}
+					{speed 0.0200}
+					{Matrix34
+						0.7157	0.0000	0.6984
+						-0.6983	0.0175	0.7156
+						-0.0122	-0.9998	0.0125
+						-16.7791	-0.1816	24.2348
+					}
+					{VolumeView "Gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0001	0.0000
+							-0.0000	0.0175	-0.9998
+							-0.0001	0.9998	0.0175
+							-6.6100	1.0411	-0.1591
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+		}
+	}
+}
+{Obstacle "obstacle1"
+	{Obb2
+		{Center -0.549115 0.885611}
+		{Extent 22.8781 5.77615}
+		{Axis 4.42904e-008 1}
+	}
+	{Rotate}
+}
+{Obstacle "obstacle"
+	{Obb2
+		{Center -0.549114 0.0726511}
+		{Extent 22.8781 5.77615}
+		{Axis -1 0}
+	}
+	{Rotate}
+}

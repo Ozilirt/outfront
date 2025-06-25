@@ -1,0 +1,67 @@
+{entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/structure/arm_car4x4.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{Extension "BA-20M.mdl"}
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "with_doors"}
+	{PatherId "vehicle.small"}
+	{extension "crew.ext"}
+	{TexMods
+		{"ambush1" "1"}
+	}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "engine"
+		{thickness 20}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 6}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{DefaultWeapon "dt"}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{Box
+			{item  "ammo mgun" 500}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+}

@@ -1,0 +1,28 @@
+ {game_entity
+	(include  "/properties/construction.inc")
+	{Extension "post-road1.mdl"}
+	{obstacleID "stuff"}
+	{props	"sand_bag_small"}
+	{volume	"body"
+		{thickness	3}
+	}
+;	{DecalView "shadow"
+;	 {OwnerShadow 64 64}
+;	 {Sprite "/properties/shadow/round.ebm"
+;		{PreScaleX 	0.5}
+;		{PreScaleY 	0.5}
+;  		{PreshiftX	0	}
+;  		{PreshiftY	0	}
+;		{Preturn	-45	}
+;		{Visibility	0.5	}
+;	 }
+;	 {layer groundshadow}
+;	 {UseDirection}    
+;   }
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+
+
+}

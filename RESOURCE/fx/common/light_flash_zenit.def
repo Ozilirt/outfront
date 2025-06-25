@@ -1,0 +1,27 @@
+{fx
+	{LightView
+		{Type point}
+		{Animator
+			{Scale
+				{Linear
+					{min 1}
+					{max 0.5}
+				}
+			}
+			{Visibility
+				{Linear
+					{min 1}
+					{max 0.1}
+				}
+			}
+			{Highlight 0xffedb0}
+			{timer
+				{duration 0.33 0.1}
+			}
+		}
+		{Attenuation0 0.15}
+		{Attenuation1 0.9}
+		{Radius 200}
+		{EffectOnGround}
+	}
+}

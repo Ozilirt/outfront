@@ -1,0 +1,87 @@
+;Exported by: ubrashaev
+;Date:        Fri Jan 16 15:57:55 2004
+;File:        D:\-Projects-\-work-\3d\telephon1.max
+{Skeleton
+	{bone "telephon"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "telephon.ply"}
+		{bone "window3"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-9.2200	0.0065	22.5119
+			}
+			{VolumeView "window3.ply"}
+			{bone "fx_glass3"
+				{Position 0.2332	-0.2849	0.1059}
+			}
+		}
+		{bone "window2"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-0.0000	0.0000	1.0000
+				-0.0395	9.2492	22.5119
+			}
+			{VolumeView "window2.ply"}
+			{bone "fx_glass2"
+				{Position 0.0625	0.0277	0.1059}
+			}
+		}
+		{bone "window1"
+			{Position 9.2410	0.0065	22.5119}
+			{VolumeView "window1.ply"}
+			{bone "fx_glass1"
+				{Position 0.1009	0.2849	0.1059}
+			}
+		}
+	}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center 0.154537 0.0455675}
+		{Extent 9.40438 9.62603}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "window1"
+	{Box 1.20325 17.2255 41.1285}
+	{Bone "window1"}
+	{Position 0.0963	0.0113	-0.9662}
+}
+{Volume "window2"
+	{Box 1.20325 17.2255 41.1285}
+	{Bone "window2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	-0.0000
+		-0.0000	0.0000	1.0000
+		-0.0202	0.1410	-0.9662
+	}
+}
+{Volume "window3"
+	{Box 1.20325 17.2255 41.1285}
+	{Bone "window3"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.2698	-0.0112	-0.9662
+	}
+}
+{Volume "Body"
+	{Box 16.0546 10.977 42.5613}
+	{Bone "telephon"}
+	{Matrix34
+		1.0871	0.0000	0.0000
+		0.0000	1.0871	0.0000
+		0.0000	0.0000	1.0871
+		0.0000	-3.9000	23.1337
+	}
+}

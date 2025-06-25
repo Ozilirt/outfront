@@ -1,0 +1,65 @@
+;Exported by: sk
+;Date:        Thu Oct 30 15:23:30 2003
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\Parkovyi_kompleks.max
+{Skeleton
+	{bone "gate_euro20"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate_euro20.ply"}
+	}
+}
+{Obstacle "Body3_vol"
+	{Obb2
+		{Center 38.1537 0.134563}
+		{Extent 5.30965 5.11811}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1_vol"
+	{Obb2
+		{Center 28.1953 0.134563}
+		{Extent 6.19894 6.08609}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body2_vol"
+	{Obb2
+		{Center -38.2066 0.134563}
+		{Extent 5.30965 5.11811}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center -27.9783 0.134563}
+		{Extent 6.39764 6.39764}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body3"
+	{Box 10.6193 10.2362 13.6291}
+	{Bone "gate_euro20"}
+	{Position 38.1537	-0.1346	6.8145}
+}
+{Volume "Body1"
+	{Box 12.3979 12.1722 50.3863}
+	{Bone "gate_euro20"}
+	{Position 28.1953	-0.1346	25.1931}
+}
+{Volume "Body2"
+	{Box 10.6193 10.2362 13.6291}
+	{Bone "gate_euro20"}
+	{Position -38.2066	-0.1346	6.8145}
+}
+{Volume "Body"
+	{Box 12.7953 12.7953 50.3863}
+	{Bone "gate_euro20"}
+	{Position -27.9783	-0.1346	25.1931}
+}

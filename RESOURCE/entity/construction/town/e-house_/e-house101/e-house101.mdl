@@ -1,0 +1,67 @@
+;Exported by: vic
+;Date:        Wed Nov 26 13:57:13 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\elements town10.max
+{Skeleton
+	{bone "e-house101"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "e-house101.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 32.3705 10.8072}
+		{Extent 4.92126 39.3894}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 18.3685 45.255}
+		{Extent 11.4445 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -15.0009 45.255}
+		{Extent 22.126 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body4"
+	{Polyhedron "body4.vol"}
+	{Bone "e-house101"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		-0.0000	0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		37.2982	5.5233	69.6694
+	}
+}
+{Volume "body5"
+	{Box 9.84252 16.4215 13.8576}
+	{Bone "e-house101"}
+	{Position 32.3705	42.4867	65.9294}
+}
+{Volume "body1"
+	{Box 9.84252 78.7788 48.7258}
+	{Bone "e-house101"}
+	{Position 32.3705	-10.8072	24.3629}
+}
+{Volume "body2"
+	{Box 22.889 9.84252 44.5881}
+	{Bone "e-house101"}
+	{Position 18.3685	-45.2550	22.2941}
+}
+{Volume "body3"
+	{Box 44.252 9.84252 25.5906}
+	{Bone "e-house101"}
+	{Position -15.0009	-45.2550	12.7953}
+}

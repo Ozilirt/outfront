@@ -1,0 +1,22 @@
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush.anm"}}
+	}
+	{bone "fence_big"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence_big.ply"}
+	}
+}
+
+
+{Volume "body"
+	{Box 91.5691 3.56552 10.0483}
+	{Bone "fence_big"}
+	{Position 0.0080	-0.2051	5.0958}
+}
+

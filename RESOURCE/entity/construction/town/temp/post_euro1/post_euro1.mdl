@@ -1,0 +1,90 @@
+;Exported by: ubrashaev
+;Date:        Mon Dec 08 11:59:04 2003
+;File:        D:\-Projects-\-work-\3d\Cafe.max
+{Skeleton
+	{bone "post_euro1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_euro1.ply"}
+		{bone "lamp_glass1"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.3566	0.9343	-0.0000
+				0.9343	0.3566	0.0000
+				-0.9599	17.6061	77.2180
+			}
+			{VolumeView "lamp_glass1.ply"}
+		}
+		{bone "lamp_glass2"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				0.0383	0.9993	0.0000
+				0.9993	-0.0383	0.0000
+				-0.9451	-17.2893	77.4883
+			}
+			{VolumeView "lamp_glass2.ply"}
+		}
+		{bone "lamp_light_point1"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.3566	0.9343	-0.0000
+				0.9343	0.3566	0.0000
+				-0.9572	17.8164	77.1895
+			}
+			{VolumeView "lamp_light_point1.ply"}
+		}
+		{bone "lamp_light_point2"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.0111	0.9999	-0.0000
+				0.9999	0.0111	0.0000
+				-1.0198	-17.2831	77.2772
+			}
+			{VolumeView "lamp_light_point2.ply"}
+		}
+		{bone "light_point"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				0.0000	-1.0000	0.0000
+				-1.0000	-0.0000	-0.0000
+				-0.6994	0.2363	93.4217
+			}
+		}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center -0.907852 -0.242729}
+		{Extent 1.9685 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "lamp2"
+	{Box 6.9195 7.10334 6.61864}
+	{Bone "post_euro1"}
+	{Matrix34
+		0.9988	0.0489	0.0000
+		-0.0489	0.9988	0.0000
+		0.0000	0.0000	1.0000
+		-1.0361	-17.4949	77.4732
+	}
+}
+{Volume "lamp1"
+	{Box 5.80896 7.10334 7.12005}
+	{Bone "post_euro1"}
+	{Matrix34
+		0.9997	-0.0238	0.0000
+		0.0238	0.9997	0.0000
+		0.0000	0.0000	1.0000
+		-1.0359	17.8347	78.0498
+	}
+}
+{Volume "body"
+	{Box 3.93701 3.93701 97.3166}
+	{Bone "post_euro1"}
+	{Position -0.9079	0.2427	48.6583}
+}

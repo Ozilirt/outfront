@@ -1,0 +1,39 @@
+;Exported by: vic
+;Date:        Wed Oct 29 11:00:40 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\spusk2.max
+{Skeleton
+	{bone "descent_water2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "descent_water2.ply"}
+	}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center 40.5506 -73.3658}
+		{Extent 3.20888 78.2439}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1_vol"
+	{Obb2
+		{Center -2.83871 -147.612}
+		{Extent 46.5639 4.03783}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Polyhedron "Body.vol"}
+	{Bone "descent_water2"}
+	{Position 42.4445	73.3658	-98.4252}
+}
+{Volume "Body1"
+	{Box 93.1277 8.07565 115.32}
+	{Bone "descent_water2"}
+	{Position -2.8387	147.6121	-40.7650}
+}

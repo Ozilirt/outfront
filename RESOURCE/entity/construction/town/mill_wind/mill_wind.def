@@ -1,0 +1,259 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{Extension "mill_wind.mdl"}
+	{props "two" "staged" "wood" "construction" "windowed" "mill"}
+
+	{extender "bone_rotator"
+		{bone "sweep"}
+	}
+	{constrain zero}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+		{"4" "4"}
+		{"5" "5"}
+		{"6" "6"}
+		{"7" "7"}
+		{"8" "8"}
+		{"9" "9"}
+		{"10" "10"}
+	}
+		
+	{placer
+		{place "1" {attach  squat_lie} 		{linkbone "attach1"}}
+		{place "2" {attach  squat_lie} 		{linkbone "attach2"}}
+	    {place "3" {attach  squat_lie} 		{linkbone "attach3"}}
+	    {place "4" {attach  squat_lie} 		{linkbone "attach4"}}
+	    {place "5" {attach  snipe_cover}	{linkbone "attach5"}}
+	    {place "6" {attach  snipe_cover}	{linkbone "attach6"}}
+	}
+	{Boarder
+		{door "emit" {queue 0}}
+		{node "node_ladder_bottom"}
+		{node "node_ladder_top"}
+
+		{anm "ladder_bind"
+			{forward	{begin	"stand_climb_stairs"}}
+			{reverse	{end	"stand_climb_stairs" -1}}
+		}
+		{anm "ladder"
+			{forward	{speed 1.2} {loop "stand_upstairs"}}
+			{reverse	{speed 1.2} {loop "stand_upstairs" -1}}
+		}
+
+		{link "emit" 				"node_ladder_bottom"{anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_ladder_bottom" 	"node_ladder_top" 	{anm "ladder"}}
+		{link "node_ladder_top" 	"4" 				{forward puton} 	{reverse putoff}}
+		{link "node_ladder_top" 	"5" 				{forward puton} 	{reverse putoff}}
+		{link "5" 					"6"}
+	}
+	{mass 50000}
+
+
+	{Volume "sub_piece0"
+		{thickness 4}
+		{able {visible 0}}
+	}
+	{Volume "piece0"
+		{thickness 4}
+		{able {visible 0}}
+	}
+	{Volume "sub_piece3"
+		{thickness 4}
+		{able {visible 0}}
+	}
+	{Volume "piece3"
+		{thickness 4}
+		{able {visible 0}}
+	}
+	{Volume "sub_piece2"
+		{thickness 4}
+		{able {visible 0}}
+	}
+	{Volume "piece2"
+		{thickness 4}
+		{able {visible 0}}
+	}
+	{Volume "sub_piece1"
+		{thickness 4}
+		{able {visible 0}}
+	}
+	{Volume "piece1"
+		{thickness 4}
+		{able {visible 0}}
+	}
+	{Volume "sweep"
+		{thickness 4}
+		{able {visible 0}}
+	}
+
+
+	{Volume "roof4"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof3"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof2"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof1"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+
+
+	{Volume "floor1"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "floor2"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "floor3"
+		{Tags  "attach" "4"}
+		{able clear {touch 1}}
+	}
+
+	{Volume "ladder1"
+		{Tags  "ladder"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "beam3"
+;		{Tags  "body"}
+		{Thickness 20}
+	}
+	{Volume "beam2"
+;		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "beam1"
+;		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+
+	{Volume "door2"
+		{thickness 10}
+	}
+
+	{Volume "body30"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}{holed}}
+	}
+	{Volume "body29"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}{holed}}
+	}
+	{Volume "body28"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "body15"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "body14"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "body13"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body12"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body7"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {holed}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {holed}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {holed}}
+	}
+
+	{Volume "window6"
+		{Thickness 0.2}
+		{able {visible 0} {window}}
+	}
+	{Volume "window5"
+		{Thickness 0.2}
+		{able {visible 0} {window}}
+	}
+	{Volume "window3"
+		{Thickness 0.2}
+		{able {visible 0} {window}}
+	}
+	{Volume "window2"
+		{Thickness 0.2}
+		{able {visible 0} {window}}
+	}
+	{Volume "window1"
+		{Thickness 0.2}
+		{able {visible 0} {window}}
+	}
+
+	{Volume "hole6"
+		{Tags  "attach" "6"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole5"
+		{Tags  "attach" "5"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole3"
+		{Tags  "attach" "3"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole2"
+		{Tags  "attach" "2"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole1"
+		{Tags  "attach" "1"}
+		{able clear {hole}{touch 1}}
+	}
+	("declare_fire_volumes")
+}

@@ -1,0 +1,178 @@
+{fx
+	{ParticleView
+		{generator
+			{TotalParticles 40}
+			{EmissionArea
+				{radius 0.1 0.1}
+				{alpha0 0}
+				{alpha1 180}
+			}
+			{ParticleInit
+				{Speed 1.5 1.5}
+				{Lifetime 3.6 1.2}
+			}
+			{StartParticles 40}
+			{TimeToLive 1}
+			{AxisZ}
+		}
+		{mover
+			{damping 0.9}
+			{gravity
+				{value 0.01}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Particle/pero1.ebm"
+					{Turn
+						{Linear
+							{min 600}
+							{max 0}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.27 0.15}
+					{preTurn 90 90}
+				}
+				{sprite "/FX/_BMP/Particle/pero3.ebm"
+					{Turn
+						{Linear
+							{min 0}
+							{max 360 60}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.27 0.15}
+					{preTurn 90 90}
+				}
+				{sprite "/FX/_BMP/Particle/pero1.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 720 60}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.27 0.15}
+					{preTurn 90 90}
+				}
+			}
+			{stage collided dying
+				{sprite "/FX/_BMP/Particle/pero1.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 2.4 0.6}
+					}
+					{Scale 0.35 0.15}
+					{preTurn 90 60}
+				}
+				{sprite "/FX/_BMP/Particle/pero3.ebm"
+					{Visibility
+						{Power
+							{min 1}
+							{max 0}
+							{pow 1}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 2.4 0.6}
+					}
+					{Scale 0.35 0.15}
+					{preTurn 90 60}
+				}
+				{flags KillParticle Ground}
+				{sprite "/FX/_BMP/Particle/pero1.ebm"
+					{Visibility
+						{Power
+							{min 1}
+							{max 0}
+							{pow 1}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 2.4 0.6}
+					}
+					{Scale 0.35 0.15}
+					{preTurn 90 60}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 3}
+			{EmissionArea
+				{radius 0.1 0.1}
+				{alpha0 0}
+				{alpha1 180}
+			}
+			{ParticleInit
+				{Speed 0.7 0.7}
+				{Lifetime 1.4 0.2}
+			}
+			{TimeToLive 0.1}
+			{StartParticles 3}
+			{AxisZ}
+		}
+		{mover
+			{damping 0.82}
+			{gravity
+				{value 0.03}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.1}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/FX/_BMP/Particle/Biood3_10.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{Scale
+						{Linear
+							{min 1.2 0.3}
+							{max 2.3 1}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 30}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+		}
+	}
+}

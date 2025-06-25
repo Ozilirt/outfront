@@ -1,0 +1,43 @@
+;Exported by: sat
+;Date:        Sat Mar 20 11:41:38 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\willow5a.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "willow5a"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "willow5a.ply"}
+	}
+}
+{Obstacle "Obstacle"
+	{Circle2
+		{Radius 4.462}
+		{Center 0.885995 -3.34889}
+	}
+}
+{Volume "bole"
+	{Cylinder 5.19034 111.47}
+	{Bone "willow5a"}
+	{Matrix34
+		0.9946	-0.1007	0.0231
+		0.0994	0.9936	0.0534
+		-0.0284	-0.0508	0.9983
+		-1.1548	0.7586	56.3954
+	}
+}
+{Volume "crown"
+	{Box 67.5576 93.1104 115.775}
+	{Bone "willow5a"}
+	{Matrix34
+		0.6841	0.7279	0.0467
+		-0.7213	0.6846	-0.1049
+		-0.1083	0.0381	0.9934
+		-15.2254	-0.3898	87.3847
+	}
+}

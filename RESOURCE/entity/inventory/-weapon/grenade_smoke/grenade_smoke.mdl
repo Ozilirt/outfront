@@ -1,0 +1,56 @@
+;Exported by: garry
+;Date:        Fri Mar 19 17:49:53 2004
+;File:        \\TERM\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon.max
+{Skeleton
+	{bone "smoke"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "smoke.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-1.0000	-0.0000
+				-0.0000	0.0000	-1.0000
+				-5.0418	0.1049	0.1908
+			}
+		}
+	}
+}
+{Volume "select"
+	{Cylinder 1.83718 7.26477}
+	{Bone "smoke"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		-2.3356	0.1219	0.1747
+	}
+}
+{Volume "smoke1"
+	{Sphere 39.3701}
+	{Bone "smoke"}
+	{Position -4.1418	0.0002	0.7827}
+}
+{Volume "smoke3"
+	{Sphere 118.11}
+	{Bone "smoke"}
+	{Position -4.1418	0.0002	0.7827}
+}
+{Volume "smoke2"
+	{Sphere 78.7402}
+	{Bone "smoke"}
+	{Position -4.1418	0.0002	0.7827}
+}
+{Volume "body"
+	{Cylinder 0.695903 4.97587}
+	{Bone "smoke"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		-2.4935	0.1219	0.1747
+	}
+}

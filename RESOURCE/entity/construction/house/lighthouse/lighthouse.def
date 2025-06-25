@@ -1,0 +1,53 @@
+{actor
+	{colliderID "construction"}
+	{obstacleID "building"}
+	{Extension "lighthouse.mdl"}
+	{props "concrete" "parts" "construction" "windowed"}
+
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round2.ebm"
+;			{ScaleX 	1.6}
+;			{ScaleY 	1.6}
+;  			{shiftX	-22	}
+;  			{shiftY	-27	}
+;			{Preturn 0	}
+;			{Visibility	0.75}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;	}
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+
+	{mass 50000}
+	{brain "actor"}
+
+	{volume "body"
+		{thickness hollow 30}
+		{tags "body"}
+	}
+	{volume "body1"
+		{thickness hollow 30}
+		{tags "body"}
+	}
+
+	{Volume "window4"
+		{able  {visible 0} {window}} 
+		{thickness 1}
+	}
+	{Volume "window2"
+		{able  {visible 0} {window}} 
+		{thickness 1}
+	}
+	{Volume "window5"
+		{able  {visible 0} {window}} 
+		{thickness 1}
+	}
+	{Volume "window3"
+		{able  {visible 0} {window}} 
+		{thickness 1}
+	}
+}

@@ -1,0 +1,31 @@
+{building
+	(include "/properties/building.inc")
+	{TexMods
+		{"v1" "1"}
+	}
+	{Extension "rw_tower1.mdl"}
+	{props "concrete" "construction"}
+	{volume	"body"
+		{thickness	hollow	50}
+	}
+
+;	{DecalView
+;	{OwnerShadow stencil 64 64}
+;	{Sprite "/properties/shadow/round2.ebm"
+;  		{PrescaleX 2.6 }
+;  		{PrescaleY 2.6 }
+;		{Visibility 0.7}
+;		{shiftX -43}
+;		{shiftY -52}
+;	}
+;	{name "shadow"}
+;	{UseDirection}    
+;	{layer groundshadow}
+;	}
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+
+	
+}

@@ -1,0 +1,94 @@
+;Exported by: shevchenko
+;Date:        Fri Mar 12 13:26:54 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\Smithy_house.max
+{Skeleton
+	{bone "hous_smithy"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hous_smithy.ply"}
+	}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center -50.328 -1.58583}
+		{Extent 6.66932 16.2566}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center 6.12617 -0.767456}
+		{Extent 51.3024 43.4493}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "fire6"
+	{Box 2.58067 67.9901 26.439}
+	{Bone "hous_smithy"}
+	{Matrix34
+		0.2229	-0.0000	-0.9748
+		-0.0000	1.0000	-0.0000
+		0.9748	0.0000	0.2229
+		-57.3916	4.5442	38.8726
+	}
+}
+{Volume "fire5"
+	{Box 3.92001 74.6767 56.4527}
+	{Bone "hous_smithy"}
+	{Position -45.5175	0.4523	28.6246}
+}
+{Volume "fire4"
+	{Box 3.92001 74.6767 56.4527}
+	{Bone "hous_smithy"}
+	{Position 57.7896	0.4523	28.6246}
+}
+{Volume "fire3"
+	{Box 3.26667 99.7882 40.4641}
+	{Bone "hous_smithy"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		6.6064	39.4821	20.3305
+	}
+}
+{Volume "fire2"
+	{Box 3.26667 99.7882 40.4641}
+	{Bone "hous_smithy"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		6.6064	-38.7014	20.3305
+	}
+}
+{Volume "fire1"
+	{Box 2.58067 106.235 53.9571}
+	{Bone "hous_smithy"}
+	{Matrix34
+		-0.0000	0.4822	-0.8760
+		-1.0000	-0.0000	0.0000
+		-0.0000	0.8760	0.4822
+		6.0022	-24.9791	54.1075
+	}
+}
+{Volume "fire0"
+	{Box 2.58067 106.235 53.9571}
+	{Bone "hous_smithy"}
+	{Matrix34
+		-0.0000	-0.4822	-0.8760
+		1.0000	-0.0000	0.0000
+		-0.0000	-0.8760	0.4822
+		6.0022	22.4767	54.1076
+	}
+}
+{Volume "house"
+	{Polyhedron "house.vol"}
+	{Bone "hous_smithy"}
+	{Position 6.2693	0.8880	-0.0963}
+}

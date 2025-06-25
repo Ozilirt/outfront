@@ -1,0 +1,71 @@
+;Exported by: shevchenko
+;Date:        Tue May 18 11:10:25 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\shed-france.max
+{Skeleton
+	{bone "w6"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "w6.ply"}
+		{bone "exterior"
+			{Position 0.0017	0.0071	86.1417}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 6.79303 8.16215}
+		{Extent 72.8346 25.5906}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -17.7441 3.28349}
+		{Extent 18.8911 9.44028}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 12.1214 -21.1805}
+		{Extent 63.6064 4.69669}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 115.706 4.79704 89.0663}
+	{Bone "exterior"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		0.0000	-0.7071	-0.7071
+		0.0000	-0.7071	0.7071
+		1.7063	-3.4935	2.1932
+	}
+}
+{Volume "body3"
+	{Box 37.7822 18.8805 74.0641}
+	{Bone "w6"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-17.7441	-3.2835	37.0321
+	}
+}
+{Volume "body1"
+	{Box 127.213 9.3933 55.2717}
+	{Bone "w6"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		12.1214	21.1805	27.6359
+	}
+}

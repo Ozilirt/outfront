@@ -1,0 +1,78 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_bt7.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "light""turret_rotator"}
+	
+	{TexMods
+		{"ambush1" "1"}
+	}
+
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 13
+			{front  20}
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{thickness 15}
+	}
+	
+	{Weaponry
+		{place "gun"
+			{defaultWeapon "45mm_20k"}
+			{mounted}
+		}
+		{place "mgun"
+			{defaultWeapon "dt"}
+			{mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+	
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 700}
+			{item "ammo bullet45 ap" 50}
+			{item "ammo bullet45 fg" 27}
+		}
+	}
+	
+	{mass 20500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{extension "BT-7.mdl"}
+}

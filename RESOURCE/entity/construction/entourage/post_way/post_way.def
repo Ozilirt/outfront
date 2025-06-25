@@ -1,0 +1,28 @@
+{actor
+   	(include "/properties/post.inc") 
+	{Extension "post_way.mdl"}
+	{props "wood" "disable_area"}
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 	0.6}
+;			{PreScaleY 	0.6}
+;  			{PreshiftX	0	}
+;  			{PreshiftY	4	}
+;			{Visibility	0.6	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}
+;	}
+
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{volume "body"
+		{thickness 5}
+	}
+
+}
+
+

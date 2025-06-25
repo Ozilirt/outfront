@@ -1,0 +1,44 @@
+;Exported by: sk
+;Date:        Sun May 16 15:08:10 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Monastery\brok_wall10.max
+{Skeleton
+	{bone "wall10"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall10.ply"}
+	}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center -0.135803 41.9445}
+		{Extent 6.15244 6.03858}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center -0.135803 -44.0193}
+		{Extent 6.15244 5.74619}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body2"
+	{Box 12.3049 74.3296 13.6384}
+	{Bone "wall10"}
+	{Position -0.1358	0.8070	63.1491}
+}
+{Volume "Body1"
+	{Box 12.3049 12.0772 57.9446}
+	{Bone "wall10"}
+	{Position -0.1358	-41.9445	28.9723}
+}
+{Volume "Body"
+	{Box 12.3049 11.4924 69.5336}
+	{Bone "wall10"}
+	{Position -0.1358	44.0193	34.7668}
+}

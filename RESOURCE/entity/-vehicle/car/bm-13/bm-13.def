@@ -1,0 +1,54 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/structure/truck6x6_katusha.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors" "katusha"}
+	{props "emit_on_attack"}
+	
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "weapon katusha"}
+			{Barrels 16}
+			{Mounted}
+		}
+	}  	
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-midcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	{placer
+		{place "driver" {worker charger}}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+	}
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "BM-13.mdl"}
+	{volume "gun"
+		{able {bullet 0} {visible 0}}
+		{thickness 6}
+	}
+}

@@ -1,0 +1,223 @@
+{mission
+	{Camera
+		{Position 5577.49 4540.52}
+		{Distance 1082.92}
+		{ViewAngle 0.639954}
+		{YawAngle 2.58179}
+	}
+	{Environment "day1"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "start_point" 0x8000
+		{Position 4686.48 5506.53 -26.7698}
+		{Turn -76.822}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "start_point" 0x8002
+		{Position 4400.49 5330.33 -29.0347}
+		{Turn -38.1295}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "start_point" 0x8003
+		{Position 6424.22 3145.92 72.2496}
+		{Turn 125.562}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "start_point" 0x8004
+		{Position 6695.1 3325.3 56.9604}
+		{Turn 129.186}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "start_point" 0x8005
+		{Position 6910.31 3555.01 71.5011}
+		{Turn 141.383}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "map_point" 0x8006
+		{Position 6433.02 3592.19 37.7809}
+		{Turn 121.191}
+		{Extender "map_point"
+			{name "z"}
+			{caption "ZTeam"}
+			{teams "z"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "map_point" 0x8007
+		{Position 4537.61 5107.39 -12}
+		{Turn -45.8759}
+		{Extender "map_point"
+			{name "x"}
+			{caption "XTeam"}
+			{teams "x"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "start_point" 0x8009
+		{Position 4277.95 4918.32 -5.82903}
+		{Turn -44.922}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Helpers
+		{event "x" id 0 state 0}
+		{trigger "1"
+			{actions
+				{"task"
+					{name "primary1"}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 0}
+				}
+			}
+		}
+		{trigger "addpoint1"
+			{condition
+				{type 2}
+				{expression "1 & 2 & !3"}
+				{term 1 "event"
+					{id 0}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 3 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "x"}
+				}
+				{"event"
+					{event 0}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "addpoint2"
+			{condition
+				{type 2}
+				{expression "1 & 2 & !3"}
+				{term 1 "event"
+					{id 0}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 3 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "z"}
+				}
+				{"event"
+					{event 0}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "zone"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "zone"}
+					}
+				}
+			}
+		}
+		{waypoints
+		}
+		{zone "circle"
+			{position 5698.7 4449.96 59}
+			{Name "zone"}
+			{Radius 200}
+		}
+		{task
+			{name "primary1"}
+			{desc "mission/mp/monastery/kh"}
+			{primary}
+			{state hidden}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

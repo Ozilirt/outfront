@@ -1,0 +1,39 @@
+;Exported by: sk
+;Date:        Fri Feb 06 15:50:51 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\hous_vic.max
+{Skeleton
+	{animation
+		{sequence "crush1" {speed 0.4}}
+		{sequence "crush2" {speed 0.4}}
+	}
+	{bone "hous-beam2"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hous-beam2.ply"}
+		{bone "FX_dust2"
+			{Position -0.3700	-1.0966	29.0602}
+		}
+		{bone "FX_fire2"
+			{Position -40.6141	21.7773	20.7011}
+		}
+		{bone "FX_fire1"
+			{Position 34.0418	-26.3965	20.7011}
+		}
+		{bone "FX_fire03"
+			{Position 34.0418	-26.3965	20.7011}
+		}
+		{bone "FX_fire1a"
+			{Position 34.0418	26.0605	20.7011}
+		}
+		{bone "FX_smoke2"
+			{Position 6.3565	-29.2901	20.7011}
+		}
+		{bone "FX_smoke2a"
+			{Position -10.3762	30.0005	20.7011}
+		}
+	}
+}

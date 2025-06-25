@@ -1,0 +1,118 @@
+;Exported by: ubrashaev
+;Date:        Wed Sep 29 10:39:44 2004
+;File:        D:\-Projects-\-work-\3d\construction\oldfarm\oldfarm.max
+{Skeleton
+	{bone "oldfarm_corner4"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "oldfarm_corner4.ply"}
+		{bone "exterior"
+			{Position -10.4473	-2.4104	84.4791}
+			{VolumeView "exterior.ply"}
+			{bone "roof1"
+				{Matrix34
+					0.9397	0.0000	-0.3420
+					-0.0000	1.0000	0.0000
+					0.3420	-0.0000	0.9397
+					59.2604	-6.2751	-38.3355
+				}
+				{visibility 0}
+			}
+			{bone "roof2"
+				{Matrix34
+					0.8489	0.0000	-0.5286
+					-0.0000	1.0000	0.0000
+					0.5286	-0.0000	0.8489
+					-23.4848	-2.9480	4.6405
+				}
+				{visibility 0}
+			}
+		}
+	}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center -2.22992 -65.5563}
+		{Extent 1.96851 1.96851}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -3.48077 13.4372}
+		{Extent 71.1887 54.0749}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 70.1811 54.5617}
+		{Extent 2.47318 10.3}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 70.1811 1.70669}
+		{Extent 4.99581 42.1784}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 14.3301 -44.2372}
+		{Extent 58.3242 3.59954}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -59.4011 -44.2422}
+		{Extent 15.2684 3.60451}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body5"
+	{Polyhedron "body5.vol"}
+	{Bone "oldfarm_corner4"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-40.8050	66.7677	58.3818
+	}
+}
+{Volume "hole1"
+	{Box 33.4661 39.9455 20.0516}
+	{Bone "oldfarm_corner4"}
+	{Position 71.2980	-21.9484	26.3020}
+}
+{Volume "body4"
+	{Box 4.94635 20.5999 21.0299}
+	{Bone "oldfarm_corner4"}
+	{Position 70.1811	-54.5617	10.5566}
+}
+{Volume "body3"
+	{Box 9.99163 84.3568 39.6791}
+	{Bone "oldfarm_corner4"}
+	{Position 70.1811	-1.7067	19.8812}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "oldfarm_corner4"}
+	{Position 14.3301	44.2372	0.0416}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "oldfarm_corner4"}
+	{Position -59.4011	44.2422	-0.0001}
+}

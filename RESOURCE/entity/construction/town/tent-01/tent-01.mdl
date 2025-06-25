@@ -1,0 +1,99 @@
+;Exported by: shevchenko
+;Date:        Mon May 17 17:56:27 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\build-03.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "tent"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "tent.ply"}
+	}
+}
+{Obstacle "Body4"
+	{Obb2
+		{Center 26.6399 -16.7066}
+		{Extent 0.984253 0.993951}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body3"
+	{Obb2
+		{Center 26.6399 16.6315}
+		{Extent 0.984253 0.99395}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body2"
+	{Obb2
+		{Center -26.6305 -16.7066}
+		{Extent 0.984253 0.993951}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center -26.6305 16.6315}
+		{Extent 0.984253 0.99395}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 59.02 43.3441 13.4531}
+	{Bone "tent"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9281	0.3724
+		0.0000	-0.3724	0.9281
+		-0.0126	2.0549	52.8251
+	}
+}
+{Volume "Body4"
+	{Box 1.9685 1.9685 45.6059}
+	{Bone "tent"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	-0.0004
+		0.0000	0.0004	1.0000
+		26.6399	16.7066	22.7825
+	}
+}
+{Volume "Body3"
+	{Box 1.9685 1.9685 45.6059}
+	{Bone "tent"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	-0.0004
+		0.0000	0.0004	1.0000
+		26.6399	-16.6315	22.7967
+	}
+}
+{Volume "Body2"
+	{Box 1.9685 1.9685 45.6059}
+	{Bone "tent"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	-0.0004
+		0.0000	0.0004	1.0000
+		-26.6305	16.7066	22.7825
+	}
+}
+{Volume "Body1"
+	{Box 1.9685 1.9685 45.6059}
+	{Bone "tent"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	-0.0004
+		0.0000	0.0004	1.0000
+		-26.6305	-16.6315	22.7967
+	}
+}

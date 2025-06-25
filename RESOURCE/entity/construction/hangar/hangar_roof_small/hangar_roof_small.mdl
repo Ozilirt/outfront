@@ -1,0 +1,41 @@
+;Exported by: ubrashaev
+;Date:        Tue Apr 06 18:33:09 2004
+;File:        D:\-Projects-\-work-\3d\construction\hangar\Hangar_big(wall2).max
+{Skeleton
+	{bone "Exterior"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Exterior.ply"}
+	}
+}
+{Area "Interior"
+	{Obb2
+		{Center -0.445526 2.77374}
+		{Extent 115.178 79.4382}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 253.235 4.9353 99.4062}
+	{Bone "Exterior"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		-0.0000	-0.3420	-0.9397
+		-0.0000	-0.9397	0.3420
+		0.1212	38.3909	137.2509
+	}
+}
+{Volume "body1"
+	{Box 244.96 4.9353 89.9911}
+	{Bone "Exterior"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.3420	-0.9397
+		0.0000	0.9397	0.3420
+		0.1212	-50.2513	137.1083
+	}
+}

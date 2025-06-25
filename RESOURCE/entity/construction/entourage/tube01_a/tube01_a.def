@@ -1,0 +1,28 @@
+{game_entity
+	(include "/properties/construction.inc")	
+	{Extension "tube01_a.mdl"}
+	{props "steel"}
+	{obstacleID "unbreakable"}
+	{Volume "body"
+		{thickness hollow 50}
+	}
+
+;	{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/house.ebm"
+;  			{PrescaleX 0.4 }
+;  			{PrescaleY 1.1 }
+;			{Visibility 0.5}
+;			{PreshiftX 0}
+;			{PreshiftY -45}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

@@ -1,0 +1,54 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(0.9) scaley(0.6))
+	{mass 100}
+	{chassis
+		{waterline -0.1}
+	}
+	{patherid "shallow water"}
+	{props "vehicle" "marine" "flag" "emit_on_sink" "air-bag"}
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float}}
+		{thickness 0.001}
+	}
+	{volume "body"
+		{tags "body"}
+		{thickness 0.1}
+	}
+	{component "body"
+		{able {break_by_pierce}}
+	}
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 100}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{Box
+			{size 5 6}
+			{item  "ammo mgun" 600}
+		}
+	}
+	{extension "crew.ext"}
+	{Extension "air-bag3.mdl"}
+	{sensor
+		{Visor "main"
+			{vision "airbag3-main"}
+			{bone "visor1"}
+		}
+		{Visor "gunner"
+			{vision "airbag3-gunner"}
+			{bone "visor2"}
+		}
+	}
+}

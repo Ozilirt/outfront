@@ -1,0 +1,83 @@
+{ArmoredCar
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "with_gun"}
+	{extension "/properties/structure/arm_car8x8_gun.ext"}
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+	{extension "crew.ext"}
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+		{"ambush3" "3"}
+		{"ambush4" "4"}
+	}
+	
+	{volume "body"
+		{thickness 15}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 10
+		    {front 15}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "20mm_kwk30"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 500}
+			{item "bullet20 zenite" 180}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+	("wheel" args "wheelright4")
+	("wheel" args "wheelleft4")
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "SdKfz232.mdl"}
+}
+ 

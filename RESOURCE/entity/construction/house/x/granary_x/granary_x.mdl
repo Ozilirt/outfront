@@ -1,0 +1,33 @@
+;Exported by: SK
+;Date:        Tue Jun 24 14:20:15 2003
+
+{Skeleton
+	{animation
+		{sequence {name "crush1"} {file "crush1.anm"} {duration percent 40}}
+		{sequence {name "crush2"} {file "crush2.anm"} {duration percent 40}}
+	}
+	{bone "granary"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "granary.ply"}
+		{bone "FX_dust2"
+			{Position -5.2759	-20.3935	23.8525}
+		}
+		{bone "FX_fire2"
+			{Position 52.6490	-7.6967	8.8550}
+		}
+		{bone "FX_fire2a"
+			{Position 9.5452	26.6228	29.0228}
+		}
+		{bone "FX_smoke2"
+			{Position -59.4845	-3.2672	28.2482}
+		}
+		{bone "FX_smoke2a"
+			{Position 70.2554	31.1440	14.0372}
+		}
+	}
+}

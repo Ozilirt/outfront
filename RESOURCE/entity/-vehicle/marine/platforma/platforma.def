@@ -1,0 +1,44 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/marine.inc"  scaleX(4.5) scaleY(4.0))
+	{mass 150000}
+	{props "vehicle" "marine"}
+	(include "crew.ext")
+	{Volume "ballast_l1"
+		{tags "float"}
+		{Able clear {float} {bullet} {blast} {contact}}
+		{thickness 6}
+	}
+	{Volume "ballast_l2"
+		{tags "float"}
+		{Able clear {float} {bullet} {blast} {contact}}
+		{thickness 6}
+	}
+	{Volume "ballast_r1"
+		{tags "float"}
+		{Able clear {float} {bullet} {blast} {contact}}
+		{thickness 6}
+	}
+	{Volume "ballast_r2"
+		{tags "float"}
+		{Able clear {float} {bullet} {blast} {contact}}
+		{thickness 6}
+	}
+	{Volume "body1"
+		{thickness 6}
+	}
+	{Volume "body2"
+		{thickness 6}
+	}
+	{Volume "body3"
+		{thickness 6}
+	}
+	{component "ballast_l1"}
+	{component "ballast_l2"}
+	{component "ballast_r1"}
+	{component "ballast_r2"}
+	{component "body1"}
+	{component "body2"}
+	{patherID "water"}
+	{Extension "platforma.mdl"}
+}

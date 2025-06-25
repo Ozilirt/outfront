@@ -1,0 +1,27 @@
+;Exported by: sat
+;Date:        Fri Mar 19 15:48:58 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\birch4a.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "tree"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "tree.ply"}
+	}
+}
+{Volume "crown"
+	{Box 37.4868 35.6032 84.786}
+	{Bone "tree"}
+	{Position -2.3813	1.7423	79.9132}
+}
+{Volume "bole"
+	{Cylinder 2.84928 112.342}
+	{Bone "tree"}
+	{Position 0.0172	0.4570	54.6379}
+}

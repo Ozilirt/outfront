@@ -1,0 +1,33 @@
+{
+	(include "/properties/bush.inc")
+	{Extension "stack_bush.mdl"}
+	{props "no_wind" "delete_after_burn" "stamp" "delete_after_blast"}
+
+;	{TexMods
+ ;   	{"Autumn" "aut"	  }
+;		{"burned" "burned"}
+;	}
+;	("declare_fire_volumes")	
+;	{DecalView
+;	{OwnerShadow stencil 64 64}
+;	{Sprite "/properties/shadow/round2.ebm"
+;  		{PrescaleX 2.1 }
+;  		{PrescaleY 2.1 }
+;		{Visibility 0.7}
+;		{PreshiftX -30}
+;		{PreshiftY -40}
+;	}
+;	{name "shadow"}
+;	{UseDirection}    
+;	{layer groundshadow}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+	{Volume "crown"
+		{tags "body"}
+		{thickness 1}
+	}
+}

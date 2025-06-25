@@ -1,0 +1,94 @@
+;Exported by: ubrashaev
+;Date:        Sat Dec 06 20:44:18 2003
+;File:        D:\-Projects-\-work-\3d\newhouses.max
+{Skeleton
+	{bone "shed_wood1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_wood1.ply"}
+		{bone "exterior"
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "Rectangle12"
+	{Obb2
+		{Center -43.3547 -2.39229}
+		{Extent 3.79699 39.5232}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle11"
+	{Obb2
+		{Center -25.5779 32.6436}
+		{Extent 21.919 4.48735}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle10"
+	{Obb2
+		{Center 32.24 32.1258}
+		{Extent 17.2591 4.31477}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle09"
+	{Obb2
+		{Center 45.0117 -3.08264}
+		{Extent 4.48736 38.4877}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle05"
+	{Obb2
+		{Center 1.34627 -35.1845}
+		{Extent 47.8076 6.38585}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -0.034462 0.0239868}
+		{Extent 40.2136 29.513}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "shed_wood1"}
+	{Position -0.0327	0.7881	0.0000}
+}
+{Volume "mainhole"
+	{Box 82.2418 59.0617 39.0823}
+	{Bone "shed_wood1"}
+	{Matrix34
+		0.9721	0.0000	0.0000
+		0.0000	0.9705	0.0000
+		0.0000	0.0000	1.0000
+		0.1689	1.3623	19.5412
+	}
+}
+{Volume "hole1"
+	{Box 21.2459 29.8952 32.3907}
+	{Bone "shed_wood1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	0.8834
+		6.1252	-23.2549	14.3062
+	}
+}
+{Volume "body"
+	{Box 91.8182 70.7621 41.7669}
+	{Bone "shed_wood1"}
+	{Position 0.1381	0.3212	20.8835}
+}

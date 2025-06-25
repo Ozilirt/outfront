@@ -1,0 +1,28 @@
+{building
+	(include "/properties/construction.inc")
+	{Extension "cellar1.mdl"}
+
+	{props "concrete" "shed"}
+	{volume	"body"
+		{thickness hollow 10}
+	}
+;	{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/house.ebm"
+;  			{PrescaleX 0.7 }
+;  			{PrescaleY 0.8 }
+;			{Visibility 0.5}
+;			{PreshiftX -60}
+;			{PreshiftY 1}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+;	}
+
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

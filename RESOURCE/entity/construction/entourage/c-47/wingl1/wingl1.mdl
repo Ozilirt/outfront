@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Wed Sep 15 11:08:54 2004
+;File:        D:\-Projects-\-3DWork-\Model\-Plane\Douglas_C-47_Skytrain\Douglas_entourage.max
+{Skeleton
+	{bone "WingL1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "WingL1.ply"}
+	}
+}
+{Obstacle "WingL1"
+	{Obb2
+		{Center -0.458756 -2.69378}
+		{Extent 13.6986 26.4561}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "WingL1"
+	{Box 27.3971 4.55547 52.865}
+	{Bone "WingL1"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		-0.0000	0.0111	0.9999
+		0.0000	0.9999	-0.0111
+		-0.4588	2.6938	1.9869
+	}
+}

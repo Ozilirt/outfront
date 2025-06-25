@@ -1,0 +1,47 @@
+;Exported by: shevchenko
+;Date:        Tue Mar 16 13:35:27 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\newhouses.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.4}}
+	}
+	{bone "wc"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wc.ply"}
+		{bone "emit"
+			{Position -57.4398	1.5937	0.0000}
+			{visibility 0}
+		}
+		{bone "seat"
+			{Position -5.6303	0.2538	0.0000}
+		}
+		{bone "door"
+			{Position -24.9209	-11.3889	18.5884}
+			{VolumeView "door.ply"}
+		}
+	}
+}
+{Volume "seat"
+	{Box 33.473 30.8447 9.84252}
+	{Bone "wc"}
+	{Position -7.0384	-0.0957	4.9213}
+}
+{Volume "door"
+	{Box 23.6221 39.3701 1.9685}
+	{Bone "door"}
+	{Matrix34
+		-0.0040	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-1.0000	0.0040	-0.0000
+		0.0191	10.9675	1.0966
+	}
+}
+{Volume "body"
+	{Box 36.3 33.0788 51.1537}
+	{Bone "wc"}
+	{Position -6.6397	0.0158	25.5769}
+}

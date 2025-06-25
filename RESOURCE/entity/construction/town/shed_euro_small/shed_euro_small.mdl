@@ -1,0 +1,66 @@
+;Exported by: ubrashaev
+;Date:        Sat May 15 17:47:24 2004
+;File:        D:\-Projects-\-work-\3d\indahous\saray3_main.max
+{Skeleton
+	{bone "shed_euro_small"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_euro_small.ply"}
+		{bone "Plane01"
+			{Matrix34
+				0.7071	0.0000	0.7071
+				0.0000	1.0000	0.0000
+				-0.7071	0.0000	0.7071
+				-26.9493	-1.5697	3.0087
+			}
+			{VolumeView "Plane01.ply"}
+		}
+	}
+}
+{Obstacle "Rectangle05"
+	{Obb2
+		{Center -29.5146 0.397964}
+		{Extent 1.92708 40.5373}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 0.29808 -42.3295}
+		{Extent 27.8837 3.57559}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 0.29808 40.7317}
+		{Extent 27.8837 3.57559}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof1"
+	{Box 96.5048 84.682 2.1964}
+	{Bone "shed_euro_small"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.6963	0.0000	-0.7177
+		0.7177	0.0000	-0.6963
+		-1.3244	-1.4589	30.9913
+	}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "shed_euro_small"}
+	{Position 0.2981	42.3295	0.0000}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "shed_euro_small"}
+	{Position 0.2981	-40.7317	0.0000}
+}

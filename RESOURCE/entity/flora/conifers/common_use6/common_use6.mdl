@@ -1,0 +1,44 @@
+;Exported by: sat
+;Date:        Mon Mar 22 17:38:35 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\common_use6b.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "fir5"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fir5.ply"}
+	}
+}
+{Obstacle "obstacle"
+	{Circle2
+		{Radius 4.55567}
+		{Center 0.0344666 -8.07483}
+	}
+	{Rotate}
+}
+{Volume "bole"
+	{Cylinder 4.27254 172.578}
+	{Bone "fir5"}
+	{Matrix34
+		0.9976	0.0000	-0.0687
+		-0.0032	0.9989	-0.0469
+		0.0687	0.0470	0.9965
+		5.7751	12.2715	88.2302
+	}
+}
+{Volume "crown"
+	{Box 41.765 42.613 107.232}
+	{Bone "fir5"}
+	{Matrix34
+		0.9984	-0.0000	-0.0558
+		-0.0022	0.9992	-0.0396
+		0.0557	0.0397	0.9977
+		8.0709	14.2953	107.6779
+	}
+}

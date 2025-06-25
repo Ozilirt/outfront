@@ -1,0 +1,44 @@
+;Exported by: vic
+;Date:        Thu Dec 25 20:39:09 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\Tower_metal.max
+{Skeleton
+	{bone "tower01"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Wall0"
+			{VolumeView "Wall0.ply"}
+			{bone "Piece0"
+				{Position 0.0369	-9.5796	68.2654}
+				{VolumeView "Piece0.ply"}
+				{bone "FX_water1a"
+					{Position 0.4593	5.1512	-38.8799}
+				}
+			}
+			{bone "Piece1"
+				{Position 0.0369	-3.7027	165.3844}
+				{VolumeView "Piece1.ply"}
+				{bone "FX_water1"
+					{Position 0.4593	-1.0928	-35.8723}
+				}
+			}
+		}
+	}
+}
+{Volume "Wall0"
+	{Cylinder 26.7782 27.0935}
+	{Bone "Wall0"}
+	{Position 0.2763	-1.4326	13.5468}
+}
+{Volume "Piece1"
+	{Cylinder 37.8221 77.6646}
+	{Bone "Piece1"}
+	{Position 0.1537	2.5577	-2.0898}
+}
+{Volume "Piece0"
+	{Cylinder 26.7483 103.128}
+	{Bone "Piece0"}
+	{Position 0.1537	8.4346	5.9871}
+}

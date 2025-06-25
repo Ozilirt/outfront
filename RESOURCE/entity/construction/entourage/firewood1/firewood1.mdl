@@ -1,0 +1,39 @@
+;Exported by: sk
+;Date:        Sat Mar 13 12:19:41 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\wood.max
+{Skeleton
+	{bone "firewood1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "firewood1.ply"}
+		{bone "FX_wood2"
+			{Position -18.4330	4.5259	10.7307}
+		}
+		{bone "FX_wood1"
+			{Position 7.1485	4.5259	10.7307}
+		}
+	}
+}
+{Volume "fire2"
+	{Box 18.6642 26.0599 17.1091}
+	{Bone "firewood1"}
+	{Position 19.4704	4.4815	8.5545}
+}
+{Volume "fire1"
+	{Box 18.6642 30.3022 17.7256}
+	{Bone "firewood1"}
+	{Position -4.5633	4.4815	8.8628}
+}
+{Volume "fire0"
+	{Box 15.8305 23.1399 33.7974}
+	{Bone "firewood1"}
+	{Position -23.9830	5.4526	16.8987}
+}
+{Volume "firewood1"
+	{Polyhedron "firewood1.vol"}
+	{Bone "firewood1"}
+	{Position -0.6988	4.6014	0.0000}
+}

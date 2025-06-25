@@ -1,0 +1,106 @@
+;Exported by: shevchenko
+;Date:        Sun Apr 25 18:48:31 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\dot_new_2a_x.max
+{Skeleton
+	{bone "dot2a_4"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "dot2a_4.ply"}
+		{bone "exterior"
+			{Position -12.7283	9.5669	61.3502}
+			{VolumeView "exterior.ply"}
+		}
+		{bone "piece0"
+			{Position 30.0898	14.2544	32.6396}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "piece1"
+			{Position -12.7283	19.4926	61.3502}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "FX_smoke2"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				7.5686	18.8716	0.6787
+			}
+		}
+		{bone "FX_stone1"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				32.6843	18.8716	20.8383
+			}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -3.75304 -6.5978}
+		{Extent 31.8217 30.4967}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 33.7505 10.9485}
+		{Extent 5.68385 13.1611}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 6.1272 29.7135}
+		{Extent 33.2199 5.68385}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "piece1"
+	{Box 29.0325 63.2978 7.87688}
+	{Bone "piece1"}
+	{Matrix34
+		-0.3420	-0.9397	0.0000
+		0.9397	-0.3420	0.0000
+		0.0000	0.0000	1.0000
+		1.9831	0.4822	0.0051
+	}
+}
+{Volume "piece0"
+	{Box 60.1638 28.0171 12.2529}
+	{Bone "piece0"}
+	{Matrix34
+		0.0858	0.1736	-0.9811
+		-0.0151	0.9848	0.1730
+		0.9962	0.0000	0.0872
+		2.2978	-0.0846	-0.1405
+	}
+}
+{Volume "body2"
+	{Box 26.3223 11.3677 55.1181}
+	{Bone "dot2a_4"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		33.7505	-10.9485	27.5591
+	}
+}
+{Volume "body1"
+	{Box 66.4398 11.3677 55.1181}
+	{Bone "dot2a_4"}
+	{Position 6.1272	-29.7135	27.5591}
+}
+{Volume "roof"
+	{Box 66.6995 60.3627 9.63451}
+	{Bone "exterior"}
+	{Position 6.0747	-2.9104	-0.8980}
+}

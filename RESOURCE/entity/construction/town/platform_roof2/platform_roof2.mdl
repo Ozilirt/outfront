@@ -1,0 +1,84 @@
+;Exported by: sk
+;Date:        Tue Jan 13 17:18:08 2004
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\6E85~1\навес.max
+{Skeleton
+	{bone "platform_roof2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "platform_roof2.ply"}
+		{bone "window1"
+			{Position -31.4022	17.1453	48.1337}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.6400	-0.8250	1.3942
+				}
+			}
+		}
+		{bone "window3"
+			{Position 35.1233	17.1453	48.1337}
+			{VolumeView "window3.ply"}
+			{bone "FX_glass3"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.1738	-0.8250	1.3942
+				}
+			}
+		}
+		{bone "window4"
+			{Position -1.8537	17.1453	48.1337}
+			{VolumeView "window4.ply"}
+			{bone "FX_glass4"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.4975	-0.8250	1.3942
+				}
+			}
+		}
+	}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center 0.773804 -17.2506}
+		{Extent 64.2249 1.39741}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 128.45 2.79482 32.7393}
+	{Bone "platform_roof2"}
+	{Position 0.7738	17.2506	22.4241}
+}
+{Volume "Body1"
+	{Box 128.972 1.84458 49.4364}
+	{Bone "platform_roof2"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.3420	0.9397
+		0.0000	-0.9397	0.3420
+		0.5506	0.4132	73.9309
+	}
+}
+{Volume "window4"
+	{Box 17.7015 0.255 18.3474}
+	{Bone "window4"}
+}
+{Volume "window3"
+	{Box 17.7015 0.245 18.3474}
+	{Bone "window3"}
+}
+{Volume "window1"
+	{Box 35.8509 0.405008 18.3474}
+	{Bone "window1"}
+}

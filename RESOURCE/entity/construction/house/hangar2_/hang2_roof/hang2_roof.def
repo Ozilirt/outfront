@@ -1,0 +1,24 @@
+{game_entity
+	(include "/properties/construction.inc")
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{props "cornered" "concrete" "parts" "construction" "wall"}
+	{Extension "hang2_roof.mdl"}
+	{Volume "roof3"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}{obstacle 0}}
+	}
+	{Volume "roof2"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}{obstacle 0}}
+	}
+	{Volume "roof1"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}{obstacle 0}}
+	}
+}

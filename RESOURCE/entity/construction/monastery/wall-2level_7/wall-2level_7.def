@@ -1,0 +1,23 @@
+{game_entity
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1) sy(0.18) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "concrete" "construction"}
+	{Extension "wall-2level_7.mdl"}
+	{Volume "Body3"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 0}}
+	}
+	{Volume "Body2"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+}

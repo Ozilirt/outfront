@@ -1,0 +1,37 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{Extension "c-47a.mdl"}
+	{props "steel" "construction"}
+	{DecalView
+		{ownershadow  32 32}
+		{name "shadow"}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}{touch 1}{obstacle 0}}
+	}
+	{Volume "elevator2"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "elevator1"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "body_back"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{extender "inventory"
+		{box
+			{weight 5000}
+			{size 8 6}
+		}
+	}
+}

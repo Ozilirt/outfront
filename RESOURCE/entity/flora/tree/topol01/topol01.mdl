@@ -1,0 +1,26 @@
+{Skeleton
+	{animation
+		{sequence {name "stir"} {file "stir.anm"}}
+	}
+	{bone "topol01"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "topol01.ply"}
+	}
+}
+
+{Volume "bole"
+	{Cylinder 4.05701 189.711}
+	{Bone "topol01"}
+	{Position 0.1400	-0.3438	90.9544}
+}
+{Volume "crown"
+	{Box 31.4961 31.4961 152.906}
+	{Bone "topol01"}
+	{Position 1.4259	-0.2156	121.5304}
+}
+

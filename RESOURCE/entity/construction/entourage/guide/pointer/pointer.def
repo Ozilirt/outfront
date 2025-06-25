@@ -1,0 +1,72 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{Extension "pointer.mdl"}
+	{props "pointer"}
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+		{"3" "3"}
+	}
+	{SpriteView
+		{Sprite "pointer.ebm"
+			{Turn 
+				{Linear 
+					{min 0 }
+					{max 45}
+				}
+			}
+			{Visibility
+				{Peak
+					{min 0}
+					{max 1}
+				}
+			}
+;			{Highlight 0x00FF0000}
+			{scale
+				{Linear
+					{min 1.6}
+					{max 0.4}
+				}
+			}
+			{Timer
+				{Mode play loop}
+				{Duration 1}
+			}
+		}
+		{ground }
+;		{layer debug}
+		{layer alphasort}
+;		{Offset 0 0 100}
+	}
+	{SpriteView
+		{Sprite "pointer_light.ebm"
+			{Turn 
+				{Linear 
+					{min 0 }
+					{max 45}
+				}
+			}
+			{Light
+				{Peak
+					{min 0}
+					{max 1}
+				}
+			}
+			{Highlight 0x00FF0000}
+			{scale
+				{Linear
+					{min 1.6}
+					{max 0.4}
+				}
+			}
+			{Timer
+				{Mode play loop}
+				{Duration 1}
+			}
+		}
+		{ground }
+;		{layer debug}
+		{layer alphasort}
+;		{Offset 0 0 100}
+	}
+}

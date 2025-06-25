@@ -1,0 +1,36 @@
+;Exported by: sk
+;Date:        Wed Nov 26 17:53:23 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\Aerodrome\Entourage.max
+{Skeleton
+	{bone "rockwall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "rockwall.ply"}
+		{bone "climb1"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-2.5311	-24.1949	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-2.8895	21.1768	0.0000
+			}
+			{visibility 0}
+		}
+	}
+}
+{Volume "body"
+	{Box 78.7402 7.41323 20.0374}
+	{Bone "rockwall"}
+	{Position 0.0000	-1.3134	10.0187}
+}

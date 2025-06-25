@@ -1,0 +1,212 @@
+;Exported by: vic
+;Date:        Wed Nov 19 17:37:06 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall4a_xx.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "house_euro2_corner1_x"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro2_corner1_x.ply"}
+		{bone "piece0"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				-0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-34.4842	-36.2883	95.5154
+			}
+			{VolumeView "piece0.ply"}
+			{bone "sub_piece1"
+				{Position 43.0287	0.0000	11.8777}
+				{VolumeView "sub_piece1.ply"}
+			}
+			{bone "sub_piece0"
+				{Position 33.4004	0.0000	-18.9350}
+				{VolumeView "sub_piece0.ply"}
+			}
+			{bone "sub_piece2"
+				{Position -1.9716	0.0000	-54.0723}
+				{VolumeView "sub_piece2.ply"}
+			}
+		}
+		{bone "piece1"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				-0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-44.3164	-21.3448	75.3362
+			}
+			{VolumeView "piece1.ply"}
+			{bone "sub_piece4"
+				{Position 0.0000	8.5013	-32.9946}
+				{VolumeView "sub_piece4.ply"}
+			}
+			{bone "sub_piece3"
+				{Position 0.0000	1.9222	32.4612}
+				{VolumeView "sub_piece3.ply"}
+			}
+		}
+		{bone "piece2"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				-0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-44.3164	15.9727	109.5151
+			}
+			{VolumeView "piece2.ply"}
+			{bone "sub_piece6"
+				{Position -1.5119	4.5818	47.9882}
+				{VolumeView "sub_piece6.ply"}
+			}
+			{bone "sub_piece7"
+				{Position 0.0000	8.9100	84.3826}
+				{VolumeView "sub_piece7.ply"}
+			}
+			{bone "sub_piece5"
+				{Position -0.0000	-6.1791	-25.4840}
+				{VolumeView "sub_piece5.ply"}
+			}
+		}
+	}
+}
+{Obstacle "Body1_vol"
+	{Obb2
+		{Center -43.1816 11.6283}
+		{Extent 3.93701 24.3705}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center -36.3959 36.4783}
+		{Extent 12.7039 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body1"
+	{Box 7.87402 48.7409 23.9341}
+	{Bone "house_euro2_corner1_x"}
+	{Position -43.1816	-11.6283	11.9670}
+}
+{Volume "Body"
+	{Box 25.4078 9.84252 23.622}
+	{Bone "house_euro2_corner1_x"}
+	{Position -36.3959	-36.4783	11.8110}
+}
+{Volume "piece2"
+	{Box 9.84252 30.0279 26.3012}
+	{Bone "piece2"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0324	-0.2949	8.9654
+	}
+}
+{Volume "sub_piece5"
+	{Box 9.84252 25.9599 35.5889}
+	{Bone "sub_piece5"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		0.0000	0.8660	-0.5000
+		0.0000	0.5000	0.8660
+		-0.1251	-0.5802	-2.2665
+	}
+}
+{Volume "sub_piece7"
+	{Box 9.84252 24.8057 23.6711}
+	{Bone "sub_piece7"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		0.0000	0.7660	-0.6428
+		0.0000	0.6428	0.7660
+		0.0324	2.7616	-3.3398
+	}
+}
+{Volume "sub_piece6"
+	{Box 9.84252 13.4908 44.975}
+	{Bone "sub_piece6"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.5442	-9.5130	-2.7394
+	}
+}
+{Volume "piece1"
+	{Box 9.84252 25.2408 26.3012}
+	{Bone "piece1"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.1251	-1.0845	-0.5290
+	}
+}
+{Volume "sub_piece3"
+	{Box 9.84252 32.6324 41.6752}
+	{Bone "sub_piece3"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.1251	2.0475	3.0500
+	}
+}
+{Volume "sub_piece4"
+	{Box 5.90551 47.1264 34.1915}
+	{Bone "sub_piece4"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.2923	2.3365	0.9858
+	}
+}
+{Volume "piece0"
+	{Box 21.1732 9.84252 63.567}
+	{Bone "piece0"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		2.9429	-0.1900	-4.6299
+	}
+}
+{Volume "sub_piece2"
+	{Box 17.9125 9.84252 35.0806}
+	{Bone "sub_piece2"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		3.7918	-0.0325	0.2178
+	}
+}
+{Volume "sub_piece0"
+	{Box 30.9763 9.84252 18.1047}
+	{Bone "sub_piece0"}
+	{Matrix34
+		0.9848	-0.0000	0.1736
+		0.0000	1.0000	0.0000
+		-0.1736	0.0000	0.9848
+		-3.1497	-0.0325	2.9849
+	}
+}
+{Volume "sub_piece1"
+	{Box 18.6324 9.84252 30.069}
+	{Bone "sub_piece1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.3980	-0.1901	-1.7085
+	}
+}

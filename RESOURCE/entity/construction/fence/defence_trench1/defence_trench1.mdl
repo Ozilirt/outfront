@@ -1,0 +1,44 @@
+;Exported by: shevchenko
+;Date:        Mon May 17 11:44:41 2004
+;File:        D:\-Projects-\-3DWork-\sheva\zenit_ukrip2(my).max
+{Skeleton
+	{bone "defence23"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "defence23.ply"}
+		{bone "climb1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				4.4783	2.1549	-2.7227
+			}
+			{visibility 0}
+		}
+		{bone "climb2"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				4.4856	-37.1167	-2.7227
+			}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "Rectangle03"
+	{Obb2
+		{Center 6.97737 19.1411}
+		{Extent 40.1855 8.29573}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 73.5941 20.4496 16.8985}
+	{Bone "defence23"}
+	{Position 3.3308	-16.6909	5.7265}
+}

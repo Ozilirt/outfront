@@ -1,0 +1,90 @@
+;Exported by: vic
+;Date:        Tue Feb 10 12:33:04 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\rail parts\plat_wood.max
+{Skeleton
+	{bone "rail_place_wood_exit"
+		{parameters "Land;Ground;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "rail_place_wood_exit.ply" {Ground}}
+		{bone "rail_place_wood_railing"
+			{Position 1.0354	-3.1052	-0.0000}
+			{VolumeView "rail_place_wood_railing.ply"}
+		}
+	}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 21.6668 -12.3886}
+		{Extent 0.985002 7.18022}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 21.6669 12.9801}
+		{Extent 0.985003 18.7404}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -21.5766 -12.3886}
+		{Extent 0.985002 7.18022}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -21.5766 12.9802}
+		{Extent 0.985003 18.7404}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body3"
+	{Box 1.97 0.984252 14.3604}
+	{Bone "rail_place_wood_railing"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	-0.0000	-1.0000
+		-0.0000	1.0000	-0.0000
+		20.6314	15.4938	35.4758
+	}
+}
+{Volume "body2"
+	{Box 1.97 0.984252 42.9549}
+	{Bone "rail_place_wood_railing"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	0.5088	-0.8609
+		-0.0000	0.8609	0.5088
+		20.6314	-9.8749	24.5997
+	}
+}
+{Volume "body1"
+	{Box 1.97 0.984252 14.3604}
+	{Bone "rail_place_wood_railing"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	-0.0000	-1.0000
+		-0.0000	1.0000	-0.0000
+		-22.6121	15.4938	35.4758
+	}
+}
+{Volume "body"
+	{Box 1.97 0.984252 42.9549}
+	{Bone "rail_place_wood_railing"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	0.5088	-0.8609
+		-0.0000	0.8609	0.5088
+		-22.6120	-9.8749	24.5997
+	}
+}

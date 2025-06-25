@@ -1,0 +1,106 @@
+{construction
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "store2.mdl"}
+	{props "cornered" "concrete" "windowed" "parts" "construction" "wall"}
+
+	{Volume "roof3"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "roof2"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "roof1"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "roof"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+
+	{Volume "post1"
+		{Thickness 20}
+	}
+	{Volume "post"
+		{Thickness 20}
+	}
+
+	{Volume "door4"
+		{Thickness 5}
+	}
+	{Volume "door3"
+		{Thickness 5}
+	}
+	{Volume "door2"
+		{Thickness 5}
+	}
+	{Volume "door1"
+		{Thickness 5}
+	}
+	{Volume "door"
+		{Thickness 5}
+	}
+
+	{Volume "body7"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "body6"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}{obstacle 0}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}}
+	}
+
+	{Volume "Hole2"
+		{able clear {hole}}
+	}
+	{Volume "Hole1"
+		{able clear {hole}}
+	}
+	{Volume "Hole3"
+		{able clear {hole}}
+	}
+
+	{Volume "window2"
+		{able {visible 0} {window}}
+		{thickness 0.1}
+	}
+	{Volume "window1"
+		{able {visible 0} {window}}
+		{thickness 0.1}
+	}
+}

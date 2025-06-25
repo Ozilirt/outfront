@@ -1,0 +1,118 @@
+;SDL
+
+{multiplayer 
+	{scenesLocation "/map/multi/"}
+	{cooperativeSceneTemplate
+		{maxPlayers "4"}
+		{game "cooperative"}
+		{teams}
+	}
+	{scenes}
+	{games
+	; 	Cooperative
+		{cooperative
+			{respawn			0}	
+			{fogOfWar			0}
+			{gameoverTimeout	0}
+			{autoTransfer		1}
+			{difficulty			2}
+			{options "fogOfWar difficulty"}
+			{gameover 		{win "1"}}
+		}
+	; 	Combat
+		{combat
+			{respawn			1}
+			{refund				1}
+			{fogOfWar			1}
+			{buyTime			60}
+			{gameDuration 		30} ; min
+			{impregnable		15}	; sec
+			{gameoverTimeout	10}	; sec
+			{startFunds			5000}
+			{finishFunds		10000}
+			{commandPoints		20}
+			{options "deathmatch fogOfWar respawn refund buyTime gameDuration impregnable gameoverTimeout startFunds finishFunds commandPoints"}
+			{events
+				{conquer 		{victory "1"}}
+			}
+		}
+	;	Assault
+		{assault
+			{respawn			0}
+			{refund				0}
+			{fogOfWar			1}
+			{buyTime			60}
+			{gameDuration 		30} ; min
+			{impregnable		10}	; sec
+			{gameoverTimeout	10}	; sec
+			{startFunds			5000}
+			{finishFunds		5000}
+			{commandPoints		20}
+			{assaultTimeout		15}
+			{options "fogOfWar respawn refund buyTime gameDuration impregnable assaultTimeout gameoverTimeout startFunds finishFunds commandPoints"}
+		}
+	;	Hill
+		{hill
+			{respawn			1}
+			{refund				1}
+			{fogOfWar			1}
+			{gameDuration 		30} ; min
+			{impregnable		20}	; sec
+			{gameoverTimeout	5}	; sec
+			{startFunds			900}
+			{finishFunds		5000}
+			{commandPoints		10}
+			{points				100}
+			{options "fogOfWar refund gameDuration impregnable gameoverTimeout points startFunds finishFunds commandPoints"}
+			{events
+				{oncapture	{point "0.1"}}
+				{onpoint	{point  1}}
+			}
+		}
+	;	Victory Points
+		{victory_points
+			{respawn			1}
+			{refund				1}
+			{fogOfWar			1}
+			{gameDuration 		30} ; min
+			{impregnable		15}	; sec
+			{gameoverTimeout	10}	; sec
+			{startFunds			2000}
+			{finishFunds		6000}
+			{commandPoints		10}
+			{mappointDuration	10}	; sec
+			{mappointCapture	1}	; sec
+			{points				300}
+			{options "fogOfWar gameDuration impregnable gameoverTimeout points startFunds finishFunds commandPoints"}
+			{events
+				{oncapture		{point  "0.1"}}
+				{onpoint		{point  1}}
+			}
+		}
+	;	Escort
+	;--------------------------------------------------------------------------
+	;	Set destination zone: (zone name: 'zone')
+	;	Set start pointer:    (tags: 'pointer','start')
+	;	Set finish pointer:   (tags: 'pointer','finish')
+	;	Set pattern vehicles for each side (tags: 'pattern',['ger'|'rus'|'usa'|'gbr'])
+	;--------------------------------------------------------------------------
+		{escort
+			{respawn			1}
+			{refund				1}
+			{fogOfWar			1}
+			{gameDuration 		30} ; min
+			{impregnable		20}	; sec
+			{gameoverTimeout	5}	; sec
+			{startFunds			900}
+			{finishFunds		5000}
+			{commandPoints		10}
+			{points				5}
+			{options "fogOfWar gameDuration impregnable gameoverTimeout points startFunds finishFunds commandPoints"}
+			{events}
+		}
+	}
+	{units
+		(include "multiplayer/units_single.reg")
+		(include "multiplayer/units_multi.reg")
+	}
+}

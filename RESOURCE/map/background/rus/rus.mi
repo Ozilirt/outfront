@@ -1,0 +1,71 @@
+{mission
+	{Camera
+		{Position 3042.83 1714.49}
+		{Distance 530.709}
+		{ViewAngle 0.143974}
+		{YawAngle -4.14002}
+	}
+	{Environment "main-rus2"}
+	{User 0}
+	{Registry
+		{ShadowMaps "multi"}
+	}
+	{Entity "birds" 0x8000
+		{Position 3435.97 1571.23 6.19602}
+		{Extender "speaker"
+			{SoundName "world.chepel"}
+		}
+	}
+	{Helpers
+		{event "1_cancel" id 1 state 0}
+		{event "2_cancel" id 2 state 0}
+		{trigger "start"
+			{actions
+				{"actor_to_waypoint" off
+					{"waypoint/uid" "2"}
+				}
+				{"actor_to_waypoint" off
+					{"waypoint/uid" "1"}
+				}
+				{"actor_to_waypoint" off
+					{"waypoint/uid" "0"}
+				}
+				{"camera"
+					{"camera" "2"}
+					{"action" "activate"}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 2898.43 3649.75 17}
+				{transition 1}
+			}
+			{1
+				{position 2836.91 3394.72 17}
+				{transition 2}
+			}
+			{2
+				{position 2811.93 3125.21 -20.8988}
+				{transition 3}
+			}
+			{3
+				{position 2651.16 2208.23 -102}
+				{transition 4}
+			}
+			{4
+				{position 2753.12 1571.06 -102}
+				{transition 5}
+			}
+			{5
+				{position 2460.32 339.115 -54.9675}
+			}
+		}
+		{camerapath "2" {EvCancel 2}
+			{Key 0 3484.34 1430.02 76.1444 3042.83 1714.49 0 0.785398 0 0 1}
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

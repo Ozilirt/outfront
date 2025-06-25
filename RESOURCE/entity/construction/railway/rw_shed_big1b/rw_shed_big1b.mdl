@@ -1,0 +1,66 @@
+;Exported by: vic
+;Date:        Thu Jun 03 13:16:33 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\rw_shed_big1b.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "shed_big1b"
+			{Position 3.7494	6.4592	25.2072}
+			{VolumeView "shed_big1b.ply"}
+		}
+		{bone "roof"
+			{Position 12.9814	0.0000	88.5827}
+			{VolumeView "roof.ply"}
+		}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 4.76098 -56.1018}
+		{Extent 28.0512 3.44488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 4.12427 56.0639}
+		{Extent 29.5276 3.44488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 56.1024 6.88976 48.9082}
+	{Bone "basis"}
+	{Position 4.7610	56.1018	24.4541}
+}
+{Volume "body1"
+	{Box 59.0551 6.88976 48.9082}
+	{Bone "basis"}
+	{Position 4.1243	-56.0639	24.4541}
+}
+{Volume "body3"
+	{Box 53.1496 2.95276 70.917}
+	{Bone "roof"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.5920	-0.8059
+		0.0000	0.8059	0.5920
+		-10.5420	-27.4878	-18.5552
+	}
+}
+{Volume "body2"
+	{Box 53.1496 2.95276 70.917}
+	{Bone "roof"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.5935	0.8048
+		0.0000	-0.8048	0.5935
+		-10.5430	27.5637	-18.6665
+	}
+}

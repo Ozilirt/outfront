@@ -1,0 +1,132 @@
+{building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/entourage.inc" sx(1.25) sy(2.0) pturn(0) ofsx(0) ofsy(-5))	
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "hous-haulm5.mdl"}
+	{props "two" "staged" "wood" "construction" "windowed" "flue"}
+
+	{DecalView
+		{Sprite "/properties/shadow/house2.ebm"
+  			{PrescaleX 1.1 }
+	   		{PrescaleY 0.7 }
+			{Visibility 0.9}
+			{shiftX -5}
+			{shiftY 20}
+		}
+		{layer grounddecal}
+		{UseDirection}    
+	}
+	{DecalView
+		{Sprite "/properties/shadow/house2.ebm"
+   			{PrescaleX 0.6 }
+	   		{PrescaleY 0.4 }
+			{Visibility 0.9}
+			{shiftX -36}
+			{shiftY -40}
+		}
+		{layer grounddecal}
+		{UseDirection}    
+	}
+
+	{volume "roof"
+		{able {visible 0} }
+		{thickness hollow 5}
+	}
+
+    {volume	"body1"
+		{thickness 5}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body2"
+		{thickness 5}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume "body3"
+		{thickness 5}
+		{able  {holed}}
+		{tags "body"}
+	}
+	{volume "body4"
+		{thickness 5}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume "body5"
+		{thickness 5}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume "body6"
+		{thickness 5}
+	}
+
+	{volume "hole1"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{volume "hole2"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{volume "hole3"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{volume "hole4"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+ 	{volume "hole5"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{volume "hole6"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+
+ 	{volume "window1"
+		{Thickness 1.2}
+		{able  {visible 0}{window}}
+	}
+ 	{volume "window2"
+		{Thickness 1.2}
+		{able  {visible 0}{window}}
+	}
+ 	{volume "window3"
+		{Thickness 1.2}
+		{able  {visible 0}{window}}
+	}
+ 	{volume "window4"
+		{Thickness 1.2}
+		{able  {visible 0}{window}}
+	}
+ 	{volume "window5"
+		{Thickness 1.2}
+		{able  {visible 0}{window}}
+	}
+ 	{volume "window6"
+		{Thickness 1.2}
+		{able  {visible 0}{window}}
+	}
+
+	{volume "fire0"
+		{able  {visible 0}}
+	}
+	{volume "fire1"
+		{able  {visible 0}}
+	}
+	{volume "fire2"
+		{able  {visible 0}}
+	}
+	{volume "fire5"
+		{able  {visible 0}}
+	}
+
+	("declare_fire_volumes")
+}

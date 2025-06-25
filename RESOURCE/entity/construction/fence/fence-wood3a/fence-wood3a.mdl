@@ -1,0 +1,58 @@
+;Exported by: sk
+;Date:        Wed Nov 26 13:43:41 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\woodfence.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "fence-wood3a"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence-wood3a.ply"}
+		{bone "climb1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-36.6129	20.4724	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				35.6831	23.1978	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb4"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				35.6831	-18.4596	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb3"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-36.6129	-21.1851	0.0000
+			}
+			{visibility 0}
+		}
+	}
+}
+{Volume "body"
+	{Box 150.917 8.16314 30.5387}
+	{Bone "fence-wood3a"}
+	{Position -0.0801	1.8670	15.2693}
+}

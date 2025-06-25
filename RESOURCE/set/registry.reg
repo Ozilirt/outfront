@@ -1,0 +1,44 @@
+;SDL
+{registry
+;	{language "eng"}
+	{languageswitcher
+		{"00000409"		"interface.langswitcheng"}
+		{"00000419"		"interface.langswitchrus"}
+	}
+	(include "registry/resource_syncer.reg")
+	(include "registry/multiplayer.reg")
+	(include "registry/games.reg")
+	(include "registry/unit.reg")
+	(include "registry/camera.reg")
+	(include "registry/editor.reg")
+	(include "registry/obstacles.reg")
+	(include "registry/command.reg")
+	(include "registry/lod.reg")
+	(include "registry/equipment.reg")
+	(include "registry/humanbar.reg")
+
+	{interfaceskin
+		(include "registry/default_skin.reg")
+		(include "registry/main_menu_skin.reg")
+	}
+
+	{inventory
+		{cell
+			{size {x 31} {y 35}}
+			{default "/interface/scene/inventory/cell.ebm"}
+			{accept "/interface/scene/inventory/cell-accept.ebm"}
+			{cancel "/interface/scene/inventory/cell-cancel.ebm"}
+			{busy "/interface/scene/inventory/cell-busy.ebm"}
+		}
+		{aim_sight "/fx/_bmp/flash/star.ebm"}
+		{aim_sight_ground "/fx/_bmp/flash/flashSS5.ebm"}
+		{aim_weapon_busy "/fx/_bmp/flash/flashSS.ebm"}
+	}
+	{structure_colors
+		{unoperatable	0xffffffff}
+		{work			0xff00ff00}
+		{broken			0xffff0000}
+		{unrepairable	0xff0000ff}
+	}
+}
+

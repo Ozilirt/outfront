@@ -1,0 +1,57 @@
+;Exported by: vic
+;Date:        Thu Jan 22 10:43:26 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\barricade2.max
+{Skeleton
+	{bone "barricade2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "barricade2.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -10.5237 -26.7452}
+		{Extent 9.2392 20.0807}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -10.9098 11.4721}
+		{Extent 11.811 18.2589}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -17.0988 35.2002}
+		{Extent 8.48154 14.5304}
+		{Axis 0.848198 0.529679}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 18.4784 40.1614 15.748}
+	{Bone "barricade2"}
+	{Position -10.5237	26.7452	7.8740}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "barricade2"}
+	{Position -10.9098	-1.5932	0.0000}
+}
+{Volume "body2"
+	{Box 16.7115 28.9162 23.622}
+	{Bone "barricade2"}
+	{Matrix34
+		0.8528	-0.5223	0.0000
+		0.5223	0.8528	0.0000
+		0.0000	0.0000	1.0000
+		-17.0988	-35.2002	11.8110
+	}
+}

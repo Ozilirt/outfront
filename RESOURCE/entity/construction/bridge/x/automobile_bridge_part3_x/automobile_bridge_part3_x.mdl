@@ -1,0 +1,72 @@
+;Exported by: shevchenko
+;Date:        Mon Aug 09 12:02:17 2004
+;File:        D:\-Projects-\-3DWork-\sheva\bridge_multiplayer_x.max
+{Skeleton
+	{bone "automobile_bridge_part3"
+		{parameters "Ground;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "automobile_bridge_part3.ply" {Ground}}
+		{bone "automobile_bridge_lend"
+			{parameters "Land;Ground;"}
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.4421	-0.0000	0.0000
+			}
+			{VolumeView "automobile_bridge_lend.ply" {Ground}}
+		}
+		{bone "piece0"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				42.4102	78.7208	46.5639
+			}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "piece1"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-34.8963	-78.7423	43.8286
+			}
+			{VolumeView "piece1.ply"}
+		}
+	}
+}
+{Volume "piece1"
+	{Box 47.7543 7.87402 24.3386}
+	{Bone "piece1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.1577	-3.9392	1.0603
+	}
+}
+{Volume "piece0"
+	{Box 34.3831 7.87402 19.4709}
+	{Bone "piece0"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.8284	3.8362	0.9576
+	}
+}
+{Volume "body2"
+	{Box 78.7402 157.48 49.2126}
+	{Bone "automobile_bridge_part3"}
+	{Position 24.0644	-0.0000	34.4488}
+}
+{Volume "body1"
+	{Box 49.2126 157.48 118.11}
+	{Bone "automobile_bridge_part3"}
+	{Position -39.8650	-0.0000	0.0000}
+}

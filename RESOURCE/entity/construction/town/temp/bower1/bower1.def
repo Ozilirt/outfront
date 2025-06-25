@@ -1,0 +1,41 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "concrete" "construction" "one" "staged" "no_destroyed_stamp"}
+	{volume	"body6_vol_"
+		{thickness 100}
+	}
+	{volume	"body6"
+		{thickness 100}
+		{tags "body"}	
+	}
+	{volume	"body5"
+		{thickness 100}
+		{tags "body"}	
+	}
+	{volume	"body4"
+		{thickness 100}
+		{tags "body"}	
+	}
+	{volume	"body3"
+		{thickness  100}
+		{tags "body"}	
+	}
+	{volume	"body2"
+		{thickness  100}
+		{tags "body"}	
+	}
+	{volume	"body1"
+		{thickness  100}
+		{tags "body"}	
+	}
+	{volume	"body"
+		{thickness  100}
+		{tags "body"}	
+	}
+	{Extension "bower1.mdl"}
+}

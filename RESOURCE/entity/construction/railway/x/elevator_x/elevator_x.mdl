@@ -1,0 +1,64 @@
+;Exported by: ubrashaev
+;Date:        Sat Sep 25 09:59:30 2004
+;File:        D:\-Projects-\-work-\3d\construction\eskalator1_x(piece2).max
+{Skeleton
+	{animation
+		{sequence "crush"}
+	}
+	{bone "elevator"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "elevator.ply"}
+		{bone "fx_dust1"
+			{Position -3.3404	3.8066	8.8345}
+		}
+		{bone "fx_dust1a"
+			{Position -55.8883	3.8066	8.8345}
+		}
+		{bone "fx_metall1"
+			{Position -55.8883	3.8066	35.0312}
+		}
+		{bone "piece1"
+			{Matrix34
+				-0.9999	-0.0000	-0.0119
+				0.0000	-1.0000	0.0000
+				-0.0119	-0.0000	0.9999
+				-114.9142	2.2232	59.7405
+			}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Matrix34
+				-1.0000	-0.0000	-0.0000
+				0.0000	-1.0000	0.0000
+				-0.0000	-0.0000	1.0000
+				-78.5517	0.0491	34.0541
+			}
+			{VolumeView "piece2.ply"}
+		}
+	}
+}
+{Volume "piece2"
+	{Box 53.2999 32.8779 19.0671}
+	{Bone "piece2"}
+	{Matrix34
+		-0.7231	0.0000	-0.6907
+		-0.0000	-1.0000	0.0000
+		-0.6907	0.0000	0.7231
+		-2.0681	0.0044	3.6949
+	}
+}
+{Volume "piece1"
+	{Box 47.168 31.711 8.32115}
+	{Bone "piece1"}
+	{Matrix34
+		-0.9278	0.0000	-0.3730
+		-0.0000	-1.0000	0.0000
+		-0.3730	0.0000	0.9278
+		7.0689	2.1785	5.5308
+	}
+}

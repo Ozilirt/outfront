@@ -1,0 +1,104 @@
+{fx
+	{ParticleView "start"
+		{generator
+			{TotalParticles 4}
+			{EmissionArea
+				{radius 2 2}
+				{alpha0 45}
+				{alpha1 180}
+			}
+			{ParticleInit
+				{Speed 0.3 0.1}
+				{Lifetime 1.2}
+			}
+			{TimeToLive 0.6}
+			{StartParticles 1}
+		}
+		{mover
+			{damping 0.92}
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+			}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Particle/Biood3_10.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{Scale
+						{Linear
+							{min 1.3 0.5}
+							{max 1.8 0.5}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 30}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1 0.2}
+					}
+					{preTurn 30 30}
+				}
+				{sprite "/FX/_BMP/Particle/Biood3_10.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{Scale
+						{Linear
+							{min 1.3 0.5}
+							{max 1.8 0.5}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max -90 30}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1 0.2}
+					}
+					{preTurn 30 30}
+				}
+			}
+			{stage collided dying
+				{sprite "/fx/_bmp/particle/Biood3.ebm"
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.5 0.2}
+						}
+					}
+					{Scale
+						{Linear
+							{min 1.5}
+							{max 3 2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 6 2}
+					}
+					{preTurn 90 90}
+				}
+				{flags KillParticle Ground}
+			}
+		}
+		{NotifyOwner}
+	}
+}

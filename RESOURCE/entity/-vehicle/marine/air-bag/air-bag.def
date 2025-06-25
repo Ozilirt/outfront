@@ -1,0 +1,20 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle_elongate.inc" scalex(0.9) scaley(0.6))
+	{mass 100}
+	{chassis
+		{waterline -0.1}
+	}
+	{patherid "shallow water"}
+	{props "vehicle" "marine" "flag"}
+	{Volume "ballast"
+		{tags "float"}
+		{Able clear {float} {bullet} {blast}}
+	}
+	{extension "crew.ext"}
+	{Extension "air-bag.mdl"}
+	{volume "ballast"
+		{thickness 2}
+	}
+}

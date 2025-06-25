@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Mon May 17 11:55:50 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Monastery\wall-2level_5%8.max
+{Skeleton
+	{bone "wall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall.ply"}
+	}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center -0.5572 -0.140976}
+		{Extent 45.7633 4.00688}
+		{Axis 0.999848 0.0174436}
+	}
+	{Rotate}
+}
+{Volume "Body1"
+	{Box 91.4676 7.22476 49.7038}
+	{Bone "wall"}
+	{Matrix34
+		1.0000	-0.0088	0.0000
+		0.0088	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.5572	0.1410	25.5105
+	}
+}

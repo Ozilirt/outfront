@@ -1,0 +1,23 @@
+;Exported by: ubrashaev
+;Date:        Sat Sep 20 12:57:20 2003
+
+{Skeleton
+	{bone "boat1"
+		{Orientation
+			-0.3413	-0.9400	0.0000
+			-0.9400	0.3413	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "boat1.ply"}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "boat1"}
+		{Matrix34
+			-0.3413	-0.9400	0.0000
+			0.9400	-0.3413	0.0000
+			0.0000	0.0000	1.0000
+			-1.0491	-0.4484	0.4741
+		}
+}

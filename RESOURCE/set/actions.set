@@ -1,0 +1,316 @@
+{actions
+	{none
+		{cursor "/interface/cursor/no.ebm"}
+	}
+	{select
+		{cursor "/interface/cursor/default.ebm"}
+	}
+	{use ; configure only button for 'showusebutton' actions
+		{button "/interface/scene/actionbar/use.ebm"
+			{hint "actionbar/use"}
+			{key "KEY_U"}
+		}
+	}
+	{disable
+		{cursor "/interface/cursor/no.ebm"}
+	}
+	{cancel
+		{button "/interface/scene/actionbar/cancel.ebm"
+			{hint "actionbar/cancel"}
+			{key "KEY_S"}
+		}
+	}
+	{move
+		{cursor "/interface/cursor/move.ebm"}
+		{fx "flashblue"}
+	}
+	{board
+		{cursor "/interface/cursor/board.ebm" "/interface/cursor/entry.ebm"}
+		{fx "flashblue"}
+;		{button "/interface/scene/actionbar/board.ebm"
+;			{hint "actionbar/board"}
+;			{key "KEY_B"}
+;		}
+	}
+	{follow
+		{cursor "/interface/cursor/follow.ebm"}
+		{button "/interface/scene/actionbar/follow.ebm"
+			{hint "actionbar/follow"}
+			{key "KEY_J"}
+		}
+	}
+	{emit
+		{cursor "/interface/cursor/emit.ebm"}
+		{fx "flashblue"}
+		{button "/interface/scene/actionbar/emit.ebm"
+			{hint "actionbar/emit"}
+			{key "KEY_E"}
+		}
+	}
+	{enter
+		{cursor "/interface/cursor/board.ebm"}
+		{fx "flashgreen"}
+	}
+	{entity_cover
+		{cursor "/interface/cursor/medkit.ebm"}
+		{fx "flashgreen"}
+	}
+	{hideout
+		{cursor "/interface/cursor/cover.ebm"}
+		{fx "flashblue"}
+		{button "/interface/scene/actionbar/hide.ebm"
+			{hint "actionbar/cover"}
+			{key "KEY_H"}
+		}
+	}
+	{examine
+		{cursor "/interface/cursor/exchange.ebm"}
+		{fx "flashgreen"}
+		{button "/interface/scene/actionbar/exchange.ebm"
+			{hint "actionbar/examine"}
+			{key "KEY_X"}
+		}
+	}
+	{drop
+		{cursor "/interface/cursor/drop_to.ebm" "/interface/cursor/drop.ebm"}
+		{fx "flashgreen"}
+		{button "/interface/scene/actionbar/drop.ebm"
+			{hint "actionbar/drop"}
+			{key "KEY_D"}
+		}
+		{instructions
+			{bind}
+		}
+	}
+	{attack
+		{cursor "/interface/cursor/attack.ebm"}
+		{fx "flashred"}
+		{button "/interface/scene/actionbar/attack.ebm"
+			{hint "actionbar/attack"}
+			{key "KEY_A"}
+		}
+	}
+	{kick
+		{cursor "/interface/cursor/kick.ebm"}
+		{fx "flashred"}
+		{button "/interface/scene/actionbar/kick.ebm"
+			{hint "actionbar/kick"}
+			{key "KEY_F"}
+		}
+	}
+	{rotate
+		{cursor "/interface/cursor/rotate.ebm"}
+		{fx "flashblue"}
+		{button "/interface/scene/actionbar/rotate.ebm"
+			{hint "actionbar/rotate"}
+			{key "KEY_R"}
+		}
+	}
+
+;;;;; Item specific actions ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+	{repair
+		{cursor "/interface/cursor/repair.ebm"}
+		{fx "flashgreen"}
+		{button "/interface/scene/actionbar/repair.ebm"
+			{hint "actionbar/repair"}
+		}
+		{item "repair_kit"}
+	}
+	{pour_in
+		{cursor "/interface/cursor/pour_out.ebm"}
+		{fx "flashblue"}
+		{item "capacity"}
+		{showusebutton}
+		{instructions
+			{bind range 0.6}
+			{pour_animation "stand_pourout_" 2.0}
+		}
+	}
+	{pour_out
+		{cursor "/interface/cursor/pour.ebm" "/interface/cursor/pour_ground.ebm"}
+		{fx "flashblue"}
+		{item "capacity"}
+		{showusebutton}
+		{instructions
+			{bind range 0.6}
+			{pour_animation "stand_pourin_" 2.0}
+		}
+	}
+	{collect
+		{cursor "/interface/cursor/hand.ebm"}
+		{fx "flashgreen"}
+	}
+	{"burn"
+		{target ground entity}	
+		{cursor "/interface/cursor/burn.ebm"}
+		{fx "flashred"}
+		{item "matchbox"}
+		{showusebutton}
+		{instructions
+			{bind}
+			{animation "stand_pick_small_begin"}
+			{matchbox_fire}
+			{animation "stand_pick_small_end"}
+		}
+	}
+	{"plant"
+		{target ground}
+		{cursor "/interface/cursor/mine.ebm"}
+		{fx "flashred"}
+		{item "plant"}
+		{showusebutton}
+		{instructions
+			{bind}
+			{animation "stand_pick_small_begin"}
+			{plant}
+			{animation "stand_pick_small_end"}
+		}
+	}
+	{mine
+		{target ground}
+		{cursor "/interface/cursor/mine.ebm"}
+		{fx "flashred"}
+		{item "mine"}
+		{showusebutton}
+		{instructions
+			{bind}
+		}
+	}
+	{defuse
+		{cursor "/interface/cursor/defuse.ebm"}
+		{fx "flashblue"}
+		{instructions
+			{bind}
+			{free_hands}
+			{reserve_hands}
+			{animation "stand_pick_small_begin"}
+			{animations "squat_repair_1 squat_repair_2" loop random totalTime 3}
+			{unreserve_hands}
+		}
+	}
+	{mine_detection
+		{target ground}
+		{cursor "/interface/cursor/mine_detection.ebm"}
+		{fx "flashred"}
+		{item "mine_detector"}
+		{showusebutton}
+		{instructions
+			{bind}
+		}
+	}
+	{"turn_railway_switch_left"
+		{target entity "railway_switch" volume "body"}
+		{cursor "/interface/cursor/railway_switch.ebm"}
+		{fx "flashred"}
+		{instructions
+			{bind bone "emit2"}
+			{place_on_bone "emit2"}
+			{rail_check_free}
+			{effect_object "switch"}
+			{animation "stand_turn_railswitch" -1}
+		}	
+	}
+	{"turn_railway_switch_right"
+		{target entity "railway_switch" volume "body1"}
+		{cursor "/interface/cursor/railway_switch.ebm"}
+		{fx "flashred"}
+		{instructions
+			{bind bone "emit1"}
+			{place_on_bone "emit1"}
+			{rail_check_free}
+			{effect_object "switch"}
+			{animation "stand_turn_railswitch"}
+		}	
+	}
+	{care
+		{cursor "/interface/cursor/medkit.ebm"}
+		{fx "flashgreen"}
+		{item "medkit"}
+		{showusebutton}
+		{instructions
+			{bind}
+		}
+	}
+	{"injection"
+		{cursor "/interface/cursor/medkit.ebm"}
+		{fx "flashgreen"}
+		{item "morphine"}
+		{showusebutton}
+		{instructions
+			{bind}
+			{animation "stand_pick_small_begin"}
+			{injection}
+			{animation "stand_pick_small_end"}
+		}
+	}
+	{"climb"
+		{target volume "climb" able contact}
+		{cursor "/interface/cursor/getover.ebm"}
+		{fx "flashred"}
+		{instructions
+			{bind bone "climb"}
+			{animation "getover_middle"}
+		}
+	}
+	{"undermine"
+		{target ground}
+		{cursor "/interface/cursor/undermine.ebm"}
+		{fx "flashred"}
+		{item "dynamite"}
+		{showusebutton}
+		{instructions
+			{bind}
+			{animation "stand_pick_small_begin"}
+			{undermine}
+			{animation "stand_pick_small_end"}
+		}
+	}
+	{"open_gate"
+		{target volume "gate_lock" able contact}
+		{cursor "/interface/cursor/open.ebm"}
+		{fx "flashred"}
+		{instructions
+			{bind bone "open_point"}
+			{effect_object "open"}
+;			{animation "getover_middle"}
+		}
+	}
+	{"open_door"
+		{target volume "door_lock" able contact}
+		{cursor "/interface/cursor/open.ebm"}
+		{fx "flashred"}
+		{instructions
+			{bind volume "switch"}
+			{effect_object "open"}
+;			{animation "getover_middle"}
+		}
+	}
+	{"hidden_door"
+		{target volume "hidden_door" able contact}
+		{cursor "/interface/cursor/hidden_door.ebm"}
+		{instructions
+			{bind}
+			{say "hidden door"}
+		}
+	}
+	{"ring_post"
+		{item "crow_bar"}
+		{target volume "ring_post" able contact}
+		{cursor "/interface/cursor/ring.ebm"}
+		{instructions
+			{bind bone "emit"}
+			{effect_object "ring"}
+			{animation "stand_ring_gong_up"}
+		}
+	}
+	{"pour_over"
+		{item "capacity"}
+		{target volume "pour_over" able contact}
+		{cursor "/interface/cursor/pour_ground.ebm"}
+		{instructions
+			{bind}
+			{pour_over}
+		}
+	}
+}

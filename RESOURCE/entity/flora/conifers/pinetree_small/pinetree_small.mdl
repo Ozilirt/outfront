@@ -1,0 +1,39 @@
+;Exported by: sat
+;Date:        Mon Mar 22 16:54:49 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\pinetree_small.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "pinetree1"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "pinetree1.ply"}
+	}
+}
+{Obstacle "obstacle"
+	{Circle2
+		{Radius 1.49881}
+		{Center -0.0557051 -0.169235}
+	}
+	{Rotate}
+}
+{Volume "bole"
+	{Cylinder 1.53416 81.004}
+	{Bone "pinetree1"}
+	{Matrix34
+		0.9999	0.0000	0.0115
+		-0.0000	1.0000	0.0000
+		-0.0115	-0.0000	0.9999
+		-0.3602	0.3441	40.4662
+	}
+}
+{Volume "crown"
+	{Box 30.7823 29.8501 69.7616}
+	{Bone "pinetree1"}
+	{Position -1.4463	0.0506	44.4873}
+}

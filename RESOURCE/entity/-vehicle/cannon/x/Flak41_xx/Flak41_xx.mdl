@@ -1,0 +1,150 @@
+;Exported by: garry
+;Date:        Wed May 05 20:15:48 2004
+;File:        D:\-Projects-\-3DWork-\Model\Пушки\zenit\flak41\Flak41_xx.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -0.0982	-0.1784	4.3469}
+			{VolumeView "Body.ply"}
+			{bone revolute "turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{Position 0.0000	-0.0000	4.1466}
+				{VolumeView "turret.ply"}
+				{bone revolute "shield_front"
+					{parameters "ID=shield_front;"}
+					{Position 0.0013	0.0585	0.5699}
+					{VolumeView "shield_front.ply"}
+				}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{limits -45.0000 10.0000}
+					{speed 0.0200}
+					{Matrix34
+						0.8171	-0.0680	0.5725
+						-0.5678	-0.2668	0.7788
+						0.0998	-0.9614	-0.2566
+						-17.3410	-0.1816	23.5009
+					}
+					{VolumeView "Gun_rot.ply"}
+					{bone "gun"
+						{Matrix34
+							1.0000	0.0001	0.0000
+							-0.0000	0.0175	-0.9998
+							-0.0001	0.9998	0.0175
+							24.0036	2.2203	-0.1385
+						}
+						{VolumeView "gun.ply"}
+					}
+				}
+			}
+			{bone "part4"
+				{Position 0.0876	-49.0737	-3.2494}
+				{VolumeView "part4.ply"}
+			}
+			{bone "part1"
+				{Matrix34
+					0.8170	-0.0680	0.5725
+					-0.1097	0.9566	0.2701
+					-0.5660	-0.2835	0.7741
+					0.9982	-2.2725	43.1530
+				}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{Matrix34
+					0.8171	-0.0680	0.5725
+					-0.5678	-0.2668	0.7788
+					0.0998	-0.9614	-0.2566
+					-7.5299	-1.2720	36.8198
+				}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part3"
+				{Position -3.0140	-7.1001	20.9564}
+				{VolumeView "part3.ply"}
+			}
+		}
+	}
+}
+{Obstacle "obstacle1"
+	{Obb2
+		{Center -0.549115 0.885611}
+		{Extent 22.8781 5.77615}
+		{Axis 4.42904e-008 1}
+	}
+	{Rotate}
+}
+{Obstacle "obstacle"
+	{Obb2
+		{Center -0.549114 0.0726511}
+		{Extent 22.8781 5.77615}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 99.2601 4.52468 8.66051}
+	{Bone "Body"}
+	{Position 0.4665	-0.2899	-0.0166}
+}
+{Volume "body2"
+	{Box 99.2601 4.52468 8.66051}
+	{Bone "Body"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.4665	-0.2899	-0.0166
+	}
+}
+{Volume "part3"
+	{Box 19.7965 3.19943 4.29923}
+	{Bone "part3"}
+	{Matrix34
+		0.9860	0.0000	0.1667
+		0.0000	1.0000	0.0000
+		-0.1667	0.0000	0.9860
+		-0.0983	0.0559	0.0016
+	}
+}
+{Volume "part2"
+	{Cylinder 3.71503 30.7847}
+	{Bone "part2"}
+	{Matrix34
+		0.0203	-0.3263	-0.9451
+		0.0564	0.9441	-0.3247
+		0.9982	-0.0468	0.0376
+		3.9677	2.2707	0.0516
+	}
+}
+{Volume "part1"
+	{Cylinder 2.46086 97.2335}
+	{Bone "part1"}
+	{Matrix34
+		0.0002	0.9433	-0.3319
+		-0.0105	0.3319	0.9433
+		0.9999	0.0033	0.0099
+		0.6837	0.0992	-1.8870
+	}
+}
+{Volume "part4"
+	{Box 11.9979 12.0978 2.2196}
+	{Bone "part4"}
+	{Position 0.0094	-0.0131	0.0123}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Position -1.5370	0.0856	0.0792}
+}
+{Volume "shield_front"
+	{Polyhedron "shield_front.vol"}
+	{Bone "shield_front"}
+	{Position 5.6248	0.0271	0.2223}
+}

@@ -1,0 +1,88 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "with_gun"}
+	{extension "/properties/structure/arm_car8x8_gun.ext"}
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+	{extension "crew.ext"}	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	15}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 10
+			{front	15}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret" "body"}
+		{thickness 10
+		    {front 15}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{volume "engine"
+		{thickness 10
+			{rear	15}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "50mm_kwk38"}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo mgun" 600}
+			{item "ammo bullet50 ap" 50}
+			{item "ammo bullet50 fg" 27}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+	("wheel" args "wheelright4")
+	("wheel" args "wheelleft4")
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "SdKfz234.mdl"}
+}

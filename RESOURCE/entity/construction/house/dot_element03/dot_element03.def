@@ -1,0 +1,17 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "wood"}
+	{Extension "dot_element03.mdl"}
+
+	{volume	"body"
+		{thickness hollow 10}
+		{able clear {blast}}
+	}
+	{constrain zero}
+
+}

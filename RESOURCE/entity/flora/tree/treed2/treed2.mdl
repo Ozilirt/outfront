@@ -1,0 +1,27 @@
+;Exported by: sat
+;Date:        Mon Mar 01 17:06:05 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\treed2.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "tree01"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "tree01.ply"}
+	}
+}
+{Volume "bole"
+	{Box 2.75131 2.75988 102.281}
+	{Bone "tree01"}
+	{Position 0.5668	0.1829	50.8672}
+}
+{Volume "crown"
+	{Box 54.581 53.4412 70.0932}
+	{Bone "tree01"}
+	{Position 0.0934	0.0421	76.0605}
+}

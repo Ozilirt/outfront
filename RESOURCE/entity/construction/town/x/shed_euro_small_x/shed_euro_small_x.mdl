@@ -1,0 +1,55 @@
+;Exported by: ubrashaev
+;Date:        Tue May 18 18:58:05 2004
+;File:        D:\-Projects-\-work-\3d\shed_euro1_x.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.5}}
+	}
+	{bone "shed_euro_small"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_euro_small.ply"}
+		{bone "piece1"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				9.2198	-44.3786	25.3432
+			}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				8.0458	39.8725	22.1457
+			}
+			{VolumeView "piece2.ply"}
+		}
+	}
+}
+{Volume "piece2"
+	{Box 15.9852 5.08624 17.4392}
+	{Bone "piece2"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		-0.6144	-0.3212	-2.4196
+	}
+}
+{Volume "piece1"
+	{Box 16.809 5.29488 19.0902}
+	{Bone "piece1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		11.2843	18.6290	-2.3485
+	}
+}

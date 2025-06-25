@@ -1,0 +1,65 @@
+{says
+
+(define "version"
+	{version
+		{sound "talk_%0_%1"}
+		{text "talk_%0_%1"}
+		{language "%0"}
+	}
+)
+
+(define "versions"
+	("version" args russian %0)
+	("version" args german %0)
+	("version" args english %0)
+	("version" args american %0)
+)
+
+{say "move"
+	{freq 0.6}
+	("versions" args cry_of_enthusiasm)
+}
+
+{say "human injuring"
+	("versions" args cry_of_pain)
+}
+
+{say "superior forces"
+	("versions" args assessment_enemy_forces)
+}
+
+{say "human need help"
+	("versions" args cry_for_help)
+}
+
+{say "throw grenade"
+	{freq 0.3}
+	("versions" args throw_grenade)
+}
+
+{say "kill enemy"
+	("versions" args cry_of_content)
+}
+
+{say "enemy tank"
+	("versions" args serious_things)
+}
+
+{say "enemy car"
+	("versions" args serious_things)
+}
+
+;unused talks
+{say "move far"}
+{say "too heavy inventory"}
+{say "examine failed"}
+{say "cannot do this"}
+{say "cannot attack"}
+{say "break enemy"}
+{say "cover"}
+{say "board to vehicle"}
+{say "repair begin"}
+{say "repair end"}
+{say "hidden door"}
+
+}

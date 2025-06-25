@@ -1,0 +1,105 @@
+;Exported by: vic
+;Date:        Wed Dec 03 12:19:16 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall4a_x.max
+{Skeleton
+	{bone "house_euro2_corner2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro2_corner2.ply"}
+		{bone "attach1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				21.8905	-20.4604	75.0907
+			}
+		}
+		{bone "attach2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-17.5341	-20.4604	75.0907
+			}
+		}
+	}
+}
+{Obstacle "Obstacle"
+	{Obb2
+		{Center 38.6767 27.3005}
+		{Extent 3.93701 14.7638}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Obstacle1"
+	{Obb2
+		{Center 38.6767 -19.9551}
+		{Extent 3.93701 12.7953}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "floor"
+	{Polyhedron "floor.vol"}
+	{Bone "house_euro2_corner2"}
+	{Position 1.9637	-2.7168	72.3425}
+}
+{Volume "Body4"
+	{Box 78.7402 9.84252 58.8553}
+	{Bone "house_euro2_corner2"}
+	{Position 3.9376	-36.9844	102.4931}
+}
+{Volume "Body3"
+	{Polyhedron "Body3.vol"}
+	{Bone "house_euro2_corner2"}
+	{Position 16.3316	-36.9844	59.0557}
+}
+{Volume "Body2"
+	{Box 9.84252 9.84252 59.0551}
+	{Bone "house_euro2_corner2"}
+	{Position 38.3240	-37.0671	29.5276}
+}
+{Volume "Body"
+	{Box 5.90551 75.5771 132.039}
+	{Bone "house_euro2_corner2"}
+	{Position 38.5257	-4.3509	66.0197}
+}
+{Volume "Body1"
+	{Polyhedron "Body1.vol"}
+	{Bone "house_euro2_corner2"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		35.5678	40.0710	75.3591
+	}
+}
+{Volume "Body5"
+	{Box 40.6162 3.93701 100.606}
+	{Bone "house_euro2_corner2"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.7660	-0.6428
+		0.0000	0.6428	0.7660
+		-8.0282	-4.5471	170.3796
+	}
+}
+{Volume "Hole_1"
+	{Box 19.685 19.685 29.5276}
+	{Bone "house_euro2_corner2"}
+	{Position 21.7352	-37.4022	105.3396}
+}
+{Volume "Hole_2"
+	{Box 29.5276 19.685 29.5276}
+	{Bone "house_euro2_corner2"}
+	{Position -22.6371	-37.4022	105.3396}
+}
+{Volume "Hole_3"
+	{Box 19.685 19.685 39.3701}
+	{Bone "house_euro2_corner2"}
+	{Position 37.7501	-2.6407	19.6850}
+}

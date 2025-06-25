@@ -1,0 +1,38 @@
+;Exported by: sk
+;Date:        Fri Mar 12 18:24:30 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Aerodrome\budka.max
+{Skeleton
+	{bone "box_sentry2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "box_sentry2.ply"}
+	}
+}
+{Volume "fire2"
+	{Box 8.63943 22.2791 56.5971}
+	{Bone "box_sentry2"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.8324	17.7002	28.2985
+	}
+}
+{Volume "fire1"
+	{Box 8.63943 32.2885 56.5971}
+	{Bone "box_sentry2"}
+	{Position 15.4877	3.0225	28.2985}
+}
+{Volume "fire0"
+	{Box 9.84551 35.3932 56.5971}
+	{Bone "box_sentry2"}
+	{Position -13.9168	3.0225	28.2985}
+}
+{Volume "body"
+	{Box 30.7672 31.0467 56.5971}
+	{Bone "box_sentry2"}
+	{Position -0.0020	3.0225	28.2985}
+}

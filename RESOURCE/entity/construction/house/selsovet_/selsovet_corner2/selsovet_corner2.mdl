@@ -1,0 +1,87 @@
+;Exported by: vic
+;Date:        Tue Jan 27 18:44:00 2004
+;File:        D:\-Projects-\Celpo\Selsovet_new.max
+{Skeleton
+	{bone "selsovet_corner2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "selsovet_corner2.ply"}
+		{bone "exterior"
+			{Position -3.0465	-16.5312	77.5400}
+			{VolumeView "exterior.ply"}
+		}
+		{bone "window1"
+			{Position 24.6788	3.8925	35.4480}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Position 0.2584	-0.0437	0.1942}
+			}
+		}
+		{bone "window1_x"
+			{Position 23.9827	3.8925	35.4480}
+			{VolumeView "window1_x.ply"}
+		}
+	}
+}
+{Area "interior02"
+	{Obb2
+		{Center -8.94427 15.3438}
+		{Extent 28.2264 41.052}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -2.77071 -29.4447}
+		{Extent 29.5276 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 22.7529 0.961876}
+		{Extent 3.93701 26.4387}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Hole1"
+	{Box 19.685 15.748 28.3465}
+	{Bone "selsovet_corner2"}
+	{Position 23.1555	3.8585	35.0188}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "selsovet_corner2"}
+	{Position -2.7707	29.4447	-0.0000}
+}
+{Volume "body"
+	{Box 7.87402 52.8775 59.0551}
+	{Bone "selsovet_corner2"}
+	{Position 22.7529	-0.9619	29.5276}
+}
+{Volume "window1"
+	{Box 1.9685 15.748 28.3071}
+	{Bone "window1"}
+	{Position -0.9471	-0.0185	-0.4439}
+}
+{Volume "roof"
+	{Box 1.9685 83.2641 74.4757}
+	{Bone "exterior"}
+	{Matrix34
+		0.5455	0.0000	0.8381
+		0.0000	1.0000	0.0000
+		-0.8381	0.0000	0.5455
+		0.9123	1.0843	-0.6885
+	}
+}
+{Volume "floor"
+	{Box 51.8222 88.9695 1.9685}
+	{Bone "exterior"}
+	{Position -1.3131	-2.1875	-16.8396}
+}

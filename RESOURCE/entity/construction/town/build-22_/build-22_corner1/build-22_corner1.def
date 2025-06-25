@@ -1,0 +1,76 @@
+{construction	
+    (include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{Extension "build-22_corner1.mdl"}
+	{props "cornered" "concrete" "parts" "construction" "wall" "windowed"}
+
+	{constrain zero}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+	}
+	{placer
+		{place "1" {attach  squat_lie} 			{linkbone "attach1"}}
+		{place "2" {attach  snipe_cover} 		{linkbone "attach2"}}
+	}
+	{boarder}
+
+	{mass 45000}
+
+	{Volume "window3"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "roof"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "hole3"
+		{able clear {hole}}
+	}
+	{Volume "hole2"
+		{Tags  "attach" "2"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole1"
+		{Tags  "attach" "1"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 0}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}{holed}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}{holed}}
+	}
+}

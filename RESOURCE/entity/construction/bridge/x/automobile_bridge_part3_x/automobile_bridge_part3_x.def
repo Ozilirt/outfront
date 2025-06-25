@@ -1,0 +1,30 @@
+{game_entity
+	{Extension "automobile_bridge_part3_x.mdl"}
+	{Volume "piece1"
+		{Thickness 17}
+	}
+	{Volume "piece0"
+		{Thickness 17}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+		{able {obstacle 0}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+		{able {obstacle 0}}
+	}
+	{Extender "land"
+		{Heightmap "automobile_bridge_part3_x.net"}
+		{Boundary
+			{Box2
+				{Origin -64 -78}
+				{Destination 63 78}
+			}
+		}
+	}
+}

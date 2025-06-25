@@ -1,0 +1,70 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light"}
+	
+	{TexMods
+		{"ambush1" "1"}
+	}
+	
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{thickness 15}
+	}
+	
+
+	("crew_4_human")
+	("seat_3_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_LowTank_left"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{boarder
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+			{Barrels 2}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{fixed}
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 2000}
+		}
+	}
+	
+	{mass 6000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{Extension "PZ-1B.mdl"}
+}

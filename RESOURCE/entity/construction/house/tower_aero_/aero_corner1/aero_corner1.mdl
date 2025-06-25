@@ -1,0 +1,106 @@
+;Exported by: ubrashaev
+;Date:        Wed Mar 24 18:39:06 2004
+;File:        D:\-Projects-\-work-\3d\construction\Aerodrome\Tower_aero.max
+{Skeleton
+	{bone "corner1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "corner1.ply"}
+		{bone "window2"
+			{Position -24.7347	-17.8760	165.5289}
+			{VolumeView "window2.ply"}
+			{bone "fx_glass2"
+				{Matrix34
+					-0.7984	-0.6021	0.0000
+					0.6021	-0.7984	0.0000
+					0.0000	0.0000	1.0000
+					-0.5558	0.0797	0.1476
+				}
+			}
+		}
+		{bone "window1"
+			{Position -24.8197	50.2359	165.5289}
+			{VolumeView "window1.ply"}
+			{bone "fx_glass1"
+				{Matrix34
+					-0.8694	0.4941	0.0000
+					-0.4941	-0.8694	0.0000
+					0.0000	0.0000	1.0000
+					0.8824	1.0148	0.1476
+				}
+			}
+		}
+		{bone "window1_x"
+			{Position -23.7712	49.5254	165.5289}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2_x"
+			{Position -24.4234	-17.7625	165.5289}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+	}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 4.01062 31.9863}
+		{Extent 23.0717 4.88276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -13.4189 -15.2122}
+		{Extent 5.62216 52.0812}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 3.99496 -64.0141}
+		{Extent 23.1165 5.41609}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body3"
+	{Box 46.1435 9.76552 122.995}
+	{Bone "corner1"}
+	{Position 4.0106	-31.9863	61.4977}
+}
+{Volume "body2"
+	{Box 11.2443 104.162 122.995}
+	{Bone "corner1"}
+	{Position -13.4189	15.2121	61.4977}
+}
+{Volume "body1"
+	{Box 46.2329 10.8322 122.995}
+	{Bone "corner1"}
+	{Position 3.9950	64.0141	61.4977}
+}
+{Volume "window1"
+	{Box 2.3622 79.7834 42.783}
+	{Bone "window1"}
+	{Matrix34
+		0.8688	-0.4952	0.0000
+		0.4952	0.8688	0.0000
+		0.0000	0.0000	1.0000
+		1.0485	-0.7105	-0.0000
+	}
+}
+{Volume "window2"
+	{Box 3.12484 76.9664 43.2598}
+	{Bone "window2"}
+	{Matrix34
+		0.8561	0.5168	0.0000
+		-0.5168	0.8561	0.0000
+		0.0000	0.0000	1.0000
+		-0.0425	-0.0396	0.1899
+	}
+}

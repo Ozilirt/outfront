@@ -1,0 +1,27 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{Extension "fence-wood3c.mdl"}
+	{props "fence" "wood" "animated_crush"}
+	{volume	"body"
+		{thickness 1}		
+	}
+;	{DecalView "shadow"
+;	{OwnerShadow 64 64}
+;	{Sprite "/properties/shadow/round.ebm"
+;		{ScaleX 	0.5}
+;		{ScaleY 	0.5}
+;  		{shiftX	0	}
+;  		{shiftY	0	}
+;		{Preturn	-45	}
+;		{Visibility	0.5	}
+;	}
+;	{layer groundshadow}
+;	{UseDirection}    
+;   }
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+
+}

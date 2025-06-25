@@ -1,0 +1,27 @@
+;Exported by: sat
+;Date:        Tue Jul 06 18:30:26 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\tropics\acacia.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "acacia1"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "acacia1.ply"}
+	}
+}
+{Volume "bole"
+	{Box 7.88929 7.6611 85.0098}
+	{Bone "acacia1"}
+	{Position 0.3002	0.7719	42.4964}
+}
+{Volume "crown"
+	{Box 89.8596 62.9311 73.4076}
+	{Bone "acacia1"}
+	{Position 2.1190	3.5111	107.1581}
+}

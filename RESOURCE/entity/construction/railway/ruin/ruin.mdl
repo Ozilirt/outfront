@@ -1,0 +1,111 @@
+;Exported by: vic
+;Date:        Wed Jun 02 19:32:56 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\SK\shed_big.max
+{Skeleton
+	{bone "ruin"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "ruin.ply"}
+	}
+}
+{Obstacle "Body5"
+	{Obb2
+		{Center 32.4169 -4.90952}
+		{Extent 3.44488 10.9798}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center 1.10559 40.7645}
+		{Extent 34.2194 3.44489}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center 32.4169 24.2932}
+		{Extent 3.44488 18.497}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body3"
+	{Obb2
+		{Center 32.4831 -30.4528}
+		{Extent 3.44488 7.73786}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body2"
+	{Obb2
+		{Center 25.6621 -40.8164}
+		{Extent 9.69778 3.44489}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body4"
+	{Obb2
+		{Center -19.9839 -40.777}
+		{Extent 5.57126 3.44488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body5"
+	{Box 6.88976 21.9596 10.6797}
+	{Bone "ruin"}
+	{Position 32.4169	4.9095	5.3399}
+}
+{Volume "Body1"
+	{Box 6.88976 68.4388 48.2809}
+	{Bone "ruin"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.1056	-40.7645	24.1404
+	}
+}
+{Volume "Body"
+	{Box 6.88976 36.9939 48.2809}
+	{Bone "ruin"}
+	{Position 32.4169	-24.2932	24.1404}
+}
+{Volume "Body3"
+	{Box 6.88976 15.4757 48.2809}
+	{Bone "ruin"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		32.4831	30.4528	24.1404
+	}
+}
+{Volume "Body2"
+	{Box 6.88976 19.3956 48.2809}
+	{Bone "ruin"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		25.6621	40.8164	24.1404
+	}
+}
+{Volume "Body4"
+	{Box 6.88976 11.1425 48.2809}
+	{Bone "ruin"}
+	{Matrix34
+		0.0000	-1.0000	0.0000
+		1.0000	0.0000	0.0000
+		-0.0000	-0.0000	1.0000
+		-19.9839	40.7770	24.1404
+	}
+}

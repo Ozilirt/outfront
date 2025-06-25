@@ -1,0 +1,68 @@
+{construction
+	(include "/properties/building.inc")
+	(include "/properties/texmod.inc")	
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "shed_euro_wall3.mdl"}
+	{props "cornered" "concrete" "parts" "construction" "wall"}
+
+	{constrain zero}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+		{"4" "4"}
+		{"5" "5"}
+		{"6" "6"}
+		{"7" "7"}
+		{"8" "8"}
+		{"9" "9"}
+		{"10" "10"}
+		{"11" "11"}
+	}	
+	{boarder}
+	{mass 5000}
+
+	{Volume "roof4"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "roof3"
+		{Thickness 10}
+		{able {visible 0}}
+	}
+
+	{Volume "floor3"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "floor2"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+}

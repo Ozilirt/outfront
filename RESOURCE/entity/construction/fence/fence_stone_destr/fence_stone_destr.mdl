@@ -1,0 +1,39 @@
+;Exported by: ubrashaev
+;Date:        Tue Sep 21 19:12:46 2004
+;File:        D:\-Projects-\-work-\3d\construction\fence_stone.max
+{Skeleton
+	{bone "fence_stone_destr"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence_stone_destr.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 17.2188 0}
+		{Extent 40.9036 3.54779}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -43.8345 0}
+		{Extent 20.7633 3.54779}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 81.8073 7.09558 26.4761}
+	{Bone "fence_stone_destr"}
+	{Position 17.2188	0.0000	13.2381}
+}
+{Volume "body"
+	{Box 41.5265 7.09558 58.8358}
+	{Bone "fence_stone_destr"}
+	{Position -43.8345	0.0000	29.4179}
+}

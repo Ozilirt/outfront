@@ -1,0 +1,37 @@
+{construction
+	(include "/properties/post.inc")
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 	0.6}
+;			{PreScaleY 	0.6}
+;  			{PreshiftX	0	}
+;  			{PreshiftY	0	}
+;			{Visibility	0.6	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "mine_tablet.mdl"}
+	{props "wood"}
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+		{"3" "3"}
+	}
+
+	{Volume "body1"
+		{Tags  "body"}
+		{able {visible 0}}
+		{thickness 5}
+	}
+	{Volume "body"
+		{tags "body"}
+		{able {visible 0}}
+		{thickness 5}
+	}
+}

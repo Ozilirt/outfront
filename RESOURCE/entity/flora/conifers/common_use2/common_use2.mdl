@@ -1,0 +1,26 @@
+{Skeleton
+	{animation
+		{sequence {name "stir"} {file "stir.anm"}}
+	}
+	{bone "Group01"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Group01.ply"}
+	}
+}
+
+{Volume "bole"
+	{Cylinder 1.93962 141.702}
+	{Bone "Group01"}
+	{Position -1.2204	-2.9836	71.1187}
+}
+{Volume "crown"
+	{Box 40.9625 35.2301 128.771}
+	{Bone "Group01"}
+	{Position -1.1535	-0.7799	64.5048}
+}
+

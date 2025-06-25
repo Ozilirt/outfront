@@ -1,0 +1,75 @@
+{
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_bt7a.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light""turret_rotator"}
+	
+	{Volume "Turret"
+		{thickness 15}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{Volume "Body1"
+		{tags "body"}
+		{component "body"}
+		{thickness  13
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "76mm_kt26"}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+        
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 700}
+			{item "ammo bullet76 fg" 50}
+		}
+	}
+	
+	{mass 13200}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{extension "BT-7A.mdl"}
+}

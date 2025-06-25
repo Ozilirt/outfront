@@ -1,0 +1,83 @@
+;Exported by: vic
+;Date:        Tue Jan 27 18:06:39 2004
+;File:        D:\-Projects-\Celpo\Selsovet_new.max
+{Skeleton
+	{bone "selsovet_doorway"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "selsovet_doorway.ply"}
+	}
+}
+{Obstacle "Obstacle1"
+	{Obb2
+		{Center -3.04901 -21.7094}
+		{Extent 4.05988 4.97777}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Obstacle"
+	{Obb2
+		{Center -2.89951 17.7597}
+		{Extent 4.13049 4.90716}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 8.47182 -15.0322}
+		{Extent 7.69142 0.608222}
+		{Axis 0.990278 0.139103}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -10.7545 -23.3296}
+		{Extent 3.93701 6.62672}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -10.7545 19.3291}
+		{Extent 3.93701 6.49615}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Hole1"
+	{Box 19.685 29.4488 49.0394}
+	{Bone "selsovet_doorway"}
+	{Position -3.3177	1.8493	24.5197}
+}
+{Volume "body3"
+	{Box 1.08263 15.374 49.0157}
+	{Bone "selsovet_doorway"}
+	{Matrix34
+		0.1477	0.9890	0.0000
+		-0.9890	0.1477	0.0000
+		0.0000	0.0000	1.0000
+		8.4718	15.0322	24.5079
+	}
+}
+{Volume "body2"
+	{Box 7.87402 13.2534 59.0551}
+	{Bone "selsovet_doorway"}
+	{Position -10.7545	23.3296	29.5276}
+}
+{Volume "body1"
+	{Box 7.87402 12.9923 59.0551}
+	{Bone "selsovet_doorway"}
+	{Position -10.7545	-19.3291	29.5276}
+}
+{Volume "body"
+	{Box 7.87402 49.2852 77.945}
+	{Bone "selsovet_doorway"}
+	{Position -2.9200	2.1259	38.9725}
+}

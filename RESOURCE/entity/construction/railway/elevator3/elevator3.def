@@ -1,0 +1,46 @@
+{construction
+	(include "/properties/construction.inc")
+	{Extension "elevator3.mdl"}
+;	{props "one" "staged" "small" "concrete" "construction"}
+	{props "big" "steel" "parts" "construction" "no_destroyed_stamp"}
+	{DecalView
+		{ownershadow  32 32}
+		{name "shadow"}
+	}
+	{Volume "Body2"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 0}{touch 0}{obstacle 0}}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 0}{touch 0}{obstacle 0}}
+	}
+	{Volume "Support3"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 1}{touch 1}{obstacle 0}}
+	}
+	{Volume "Support2"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 1}{touch 1}}
+	}
+	{Volume "Support"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 1}{touch 1}}
+	}
+	{Volume "Support1"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 1}{touch 1}{obstacle 0}}
+	}
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 0}{touch 0}{obstacle 0}}
+	}
+
+}

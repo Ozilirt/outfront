@@ -1,0 +1,31 @@
+;Exported by: dan
+;Date:        Sat Mar 27 11:39:22 2004
+;File:        D:\-Projects-\-3DWork-\Soldiers\Soldiers for EXP\Alies\us-airborne1.max
+{Skeleton
+	{bone "us-helm"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "us-helm.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				0.1548	-1.4486	2.6737
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 9.84252 9.84252 3.68412}
+	{Bone "us-helm"}
+	{Position 0.1038	0.0507	3.7330}
+}
+{Volume "body"
+	{Box 3.85597 3.60074 2.97107}
+	{Bone "us-helm"}
+	{Position 0.1038	0.0507	3.3765}
+}

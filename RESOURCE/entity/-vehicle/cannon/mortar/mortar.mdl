@@ -1,0 +1,190 @@
+;Exported by: garry
+;Date:        Sun May 30 11:41:29 2004
+;File:        D:\-Projects-\-3DWork-\Пушки\coastmortar\mortar.max
+{Skeleton
+	{animation
+		{sequence "recoil" {speed 0.5}}
+	}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				0.7046	0.9145	4.2288
+			}
+			{VolumeView "Body.ply"}
+			{bone revolute "turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{animation
+					{sequence "repair" {file "turret_r.anm"} {speed 0.8}}
+				}
+				{speed 0.0020}
+				{Matrix34
+					-1.0000	-0.0000	-0.0000
+					-0.0000	0.0000	1.0000
+					-0.0000	1.0000	-0.0000
+					0.0000	5.5463	-0.0000
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{animation
+						{sequence "repair" {file "gun_r.anm"} {speed 0.7}}
+					}
+					{limits -10.0000 45.0000}
+					{speed 0.0020}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-0.0000	1.0000
+						0.0000	-1.0000	-0.0000
+						8.3115	1.0328	51.1033
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							-1.0000	-0.0000	-0.0000
+							-0.0000	1.0000	-0.0000
+							-0.0000	-0.0000	-1.0000
+							21.5830	0.5040	0.6567
+						}
+						{VolumeView "gun.ply"}
+						{bone "Foresight1"
+							{Matrix34
+								-1.0000	0.0000	0.0000
+								0.0000	1.0000	-0.0000
+								-0.0000	-0.0000	-1.0000
+								-73.8058	-0.6642	-0.0149
+							}
+						}
+					}
+					{bone "Visor"
+						{Matrix34
+							0.9999	0.0108	-0.0000
+							0.0108	-0.9998	-0.0175
+							-0.0002	0.0175	-0.9998
+							10.5246	13.0244	-4.0267
+						}
+					}
+				}
+				{bone "commander"
+					{Matrix34
+						-0.6428	0.7660	-0.0000
+						-0.7660	-0.6428	-0.0000
+						-0.0000	0.0000	1.0000
+						-40.2310	-18.8244	29.7196
+					}
+				}
+				{bone "gunner"
+					{Matrix34
+						-0.6428	0.7660	-0.0000
+						-0.7660	-0.6428	0.0000
+						-0.0000	0.0000	1.0000
+						19.9422	-21.9074	29.7607
+					}
+				}
+				{bone "passenger"
+					{Matrix34
+						-0.0000	1.0000	0.0000
+						-1.0000	-0.0000	-0.0000
+						0.0000	-0.0000	1.0000
+						-19.5028	-21.9074	33.6433
+					}
+				}
+				{bone "passenger1"
+					{Matrix34
+						0.0872	-0.9962	-0.0000
+						0.9962	0.0872	0.0000
+						-0.0000	-0.0000	1.0000
+						-12.1893	21.7146	27.6582
+					}
+				}
+				{bone "passenger3"
+					{Matrix34
+						0.7071	0.7071	0.0000
+						-0.7071	0.7071	0.0000
+						-0.0000	-0.0000	1.0000
+						-79.7921	-20.7148	27.5620
+					}
+				}
+				{bone "passenger2"
+					{Matrix34
+						0.2588	-0.9659	0.0000
+						0.9659	0.2588	0.0000
+						-0.0000	-0.0000	1.0000
+						-74.3076	21.7146	27.4890
+					}
+				}
+			}
+		}
+		{bone "Emit1"
+			{parameters "Group=commander;"}
+			{Position 47.2058	18.1121	0.0213}
+			{visibility 0}
+		}
+		{bone "Emit2"
+			{parameters "Group=gunner;"}
+			{Position 45.5579	-17.6698	0.0213}
+			{visibility 0}
+		}
+		{bone "Emit3"
+			{parameters "Group=passenger;"}
+			{Position 42.8039	1.3931	0.0213}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "obstacle"
+	{Circle2
+		{Radius 31.3914}
+		{Center 0 -1.99676e-006}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Cylinder 22.2224 10.4955}
+	{Bone "Body"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	-0.0000
+		-0.0940	1.0190	-0.1186
+	}
+}
+{Volume "inventory"
+	{Box 18.0038 15.6555 16.9601}
+	{Bone "turret"}
+	{Position 0.7569	-1.0310	19.1107}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Position -1.6180	0.0117	-1.5273}
+}
+{Volume "gun"
+	{Cylinder 5.86861 144.318}
+	{Bone "gun_rot"}
+	{Matrix34
+		0.0000	-0.0000	1.0000
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		21.9145	-0.2894	0.7103
+	}
+}
+{Volume "gun_rot"
+	{Cylinder 10.4558 59.0884}
+	{Bone "gun_rot"}
+	{Matrix34
+		0.0000	-0.0000	1.0000
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	-0.0000
+		-20.1050	0.1527	0.6018
+	}
+}

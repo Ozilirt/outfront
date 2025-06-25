@@ -1,0 +1,13 @@
+{building
+	(include "/properties/construction.inc")
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "tent.mdl"}
+	{props "fence" "animated_crush" "tent construction"}
+	("declare_fire_volumes")
+	{volume	"body"
+		{thickness	hollow	2}
+	}
+}

@@ -1,0 +1,302 @@
+{mission
+	{Camera
+		{Position 2890.93 -374.047}
+		{Distance 1200}
+		{ViewAngle 0.733038}
+		{YawAngle 8.70792}
+	}
+	{Environment "day"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "start_point" 0x8000
+		{Position 5197.11 -2167.27 -183.438}
+		{Turn 130.184}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "start_point" 0x8002
+		{Position 5470.17 -1823.42 -184}
+		{Turn 156.16}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "start_point" 0x8003
+		{Position 2988.7 -74.5335 30.3235}
+		{Turn -6.69475}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "start_point" 0x8004
+		{Position 2821.63 -202.037 27.4565}
+		{Turn 7.3024}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "start_point" 0x8005
+		{Position 2993.41 -321.641 55.164}
+		{Turn 3.25883}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "map_point" 0x8006
+		{Position 3383.84 -191.722 88.0131}
+		{Turn -7.7304}
+		{Extender "map_point"
+			{name "d"}
+			{caption "DTeam"}
+			{teams "d"}
+			{unitset "man|auto"}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "map_point" 0x8007
+		{Position 3950.99 -586.336 147.267}
+		{Turn 125.033}
+		{Extender "map_point"
+			{name "a"}
+			{caption "ATeam"}
+			{teams "a"}
+			{unitset "auto|man"}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "start_point" 0x8009
+		{Position 5647.67 -1502.18 -184}
+		{Turn 169.16}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "mg34_dot" 0x800a
+		{Position 3994.86 -492.077 148.407}
+		{Turn 60.6161}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 350 {cell 0 0}}
+			}
+		}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "mg34_dot" 0x800b
+		{Position 3548.21 -406.99 157}
+		{Turn -38.1695}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 350 {cell 0 0}}
+			}
+		}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "nebelwerfer41" 0x9000
+		{Position 2630.19 2688.31 -227.997}
+		{Turn -52.5602}
+		{Impregnability}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo nebel" 100 {cell 0 0}}
+				{item "ammo nebel" 100 {cell 0 1}}
+				{item "ammo nebel" 100 {cell 0 2}}
+				{item "ammo nebel" 100 {cell 0 3}}
+				{item "ammo nebel" 100 {cell 0 4}}
+				{item "ammo nebel" 100 {cell 0 5}}
+			}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "mg34_dot" 0x8008
+		{Position 4152.23 -25.217 107.67}
+		{Turn -123.379}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo mgun" 350 {cell 0 0}}
+			}
+		}
+		{Player 0}
+		{MID 13}
+	}
+	{Entity "birds" 0x8801
+		{Position 1208.79 -2000.11 -153.229}
+		{Extender "speaker"
+			{SoundName "world.birds01"}
+		}
+	}
+	{Entity "birds" 0x9800
+		{Position 4203.09 -1029.63 61.6421}
+		{Extender "speaker"
+			{SoundName "world.birds01"}
+		}
+	}
+	{Helpers
+		{event "x" id 0 state 0}
+		{event "z" id 1 state 0}
+		{trigger "1"
+			{actions
+				{"task"
+					{name "p1"}
+				}
+				{"task"
+					{name "p2"}
+				}
+			}
+		}
+		{trigger "addpoints"
+			{condition
+				{type 2}
+				{expression "1 & !2 & 3"}
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+					}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+					}
+				}
+				{term 3 "event"
+					{id 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "x"}
+				}
+				{"event"
+					{event 0}
+					{mode "toggle"}
+					{delay "1"}
+				}
+			}
+		}
+		{trigger "addpoints2"
+			{condition
+				{type 2}
+				{expression "1 & !2 & 3"}
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+					}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+					}
+				}
+				{term 3 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "z"}
+				}
+				{"event"
+					{event 1}
+					{mode "toggle"}
+					{delay "1"}
+				}
+			}
+		}
+		{trigger "st"
+			{actions
+				{"event"
+					{event 0}
+					{mode "set"}
+					{delay "0"}
+				}
+				{"event"
+					{event 1}
+					{mode "set"}
+					{delay "0"}
+				}
+			}
+		}
+		{waypoints
+		}
+		{zone "poly"
+			{position 3827.37 -328.082 157}
+			{Name "zone"}
+			{Point -223.437 -352.249}
+			{Point -326.79 -199.068}
+			{Point -341.373 18.0435}
+			{Point -152.609 252.822}
+			{Point 77.3958 415.292}
+			{Point 219.285 396.312}
+			{Point 324.267 313.125}
+			{Point 361.231 174.897}
+			{Point 345.482 23.3035}
+			{Point 172.703 -341.726}
+		}
+		{task
+			{name "p1"}
+			{desc "mission/mp/radar/as_def"}
+			{primary}
+			{state "hidden"}
+			{team "d"}
+		}
+		{task
+			{name "p2"}
+			{desc "mission/mp/radar/as_ass"}
+			{primary}
+			{state "hidden"}
+			{team "a"}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

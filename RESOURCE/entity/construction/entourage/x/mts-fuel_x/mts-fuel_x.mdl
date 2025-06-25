@@ -1,0 +1,35 @@
+{Skeleton
+	{animation
+		{sequence {name "crush2"} {file "crush2.anm"} {duration percent 40}}
+		{sequence {name "effector"} {file "effector.anm"} {duration percent 40}}
+	}
+	{bone "Fuelbox"
+		{parameters "CommonMesh;"}
+		{Orientation
+			0.0000	-1.0000	0.0000
+			-1.0000	0.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Fuelbox.ply"}
+		{bone "FX_fire2"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				1.0000	0.0000	0.0000
+				-0.0000	1.0000	0.0000
+				-7.9447	-0.9060	6.5466
+			}
+		}
+		{bone "FX_exp1"
+			{Position 0.8213	-0.9340	20.8025}
+		}
+		{bone "FX_fire1"
+			{Position 54.9622	-16.6989	4.8768}
+		}
+		{bone "FX_smoke1"
+			{Position 32.2396	26.5511	4.8768}
+		}
+		{bone "FX_fire2a"
+			{Position 39.5139	-0.6304	4.8768}
+		}
+	}
+}

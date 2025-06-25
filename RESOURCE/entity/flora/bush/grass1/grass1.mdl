@@ -1,0 +1,22 @@
+;Exported by: sat
+;Date:        Tue Jan 20 15:43:49 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\grass1.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "grass"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "grass.ply"{nocastshadows}}
+	}
+}
+{Volume "crown"
+	{Box 72.9895 35.2664 20.5611}
+	{Bone "grass"}
+	{Position 3.5616	-0.9647	5.4751}
+}

@@ -1,0 +1,70 @@
+;Exported by: shevchenko
+;Date:        Thu Apr 15 20:20:03 2004
+;File:        D:\-PROJE~1\-3DWork-\sheva\SK\hangar2.max
+{Skeleton
+	{bone "hang_corner3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hang_corner3.ply"}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 50.6831 -11.5064}
+		{Extent 56.965 4.73156}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 101.094 2.22061}
+		{Extent 4.73154 8.91433}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -103.376 -6.28846}
+		{Extent 2.95274 10.7193}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -53.0162 -11.442}
+		{Extent 47.4708 4.73155}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 113.93 9.46307 68.8976}
+	{Bone "hang_corner3"}
+	{Position 50.6831	11.5064	34.4488}
+}
+{Volume "body1"
+	{Box 17.8287 9.46307 68.8976}
+	{Bone "hang_corner3"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		101.0945	-2.2206	34.4488
+	}
+}
+{Volume "body4"
+	{Box 5.90549 21.4386 68.1913}
+	{Bone "hang_corner3"}
+	{Position -103.3759	6.2885	34.0956}
+}
+{Volume "body3"
+	{Box 94.9417 9.46307 68.8976}
+	{Bone "hang_corner3"}
+	{Position -53.0162	11.4420	34.4488}
+}

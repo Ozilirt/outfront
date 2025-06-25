@@ -1,0 +1,44 @@
+;Exported by: sat
+;Date:        Fri Mar 19 17:28:23 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\aspen.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "tree01"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "tree01.ply"}
+	}
+}
+{Obstacle "obstacle"
+	{Circle2
+		{Radius 4.82302}
+		{Center -0.77365 4.77237e-010}
+	}
+	{Rotate}
+}
+{Volume "bole"
+	{Cylinder 6.0374 48.1462}
+	{Bone "tree01"}
+	{Matrix34
+		0.9974	-0.0000	-0.0720
+		0.0000	1.0000	0.0000
+		0.0720	-0.0000	0.9974
+		1.5402	0.3538	23.9344
+	}
+}
+{Volume "crown"
+	{Box 49.8356 49.8938 71.2635}
+	{Bone "tree01"}
+	{Matrix34
+		-0.9957	-0.0893	-0.0249
+		0.0896	-0.9959	-0.0090
+		-0.0240	-0.0112	0.9997
+		5.0314	1.5410	81.0293
+	}
+}

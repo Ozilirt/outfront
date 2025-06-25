@@ -1,0 +1,47 @@
+;Exported by: ubrashaev
+;Date:        Tue May 04 18:09:32 2004
+;File:        D:\-Projects-\-work-\3d\stolb2_all.max
+{Skeleton
+	{bone "post_small"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_small.ply"}
+		{bone "light_spot"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	0.0000
+				-0.1192	-5.4324	47.8428
+			}
+		}
+		{bone "lamp_glass1"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	0.0000
+				-0.1192	-5.4324	48.6778
+			}
+		}
+		{bone "lamp_light_spot1"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	0.0000
+				-0.1192	-5.4324	46.3582
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 2.72802 2.73603 54.8764}
+	{Bone "post_small"}
+	{Position 0.1338	5.7618	27.0132}
+}
+{Volume "lamp1"
+	{Box 6.06227 7.39469 3.83471}
+	{Bone "post_small"}
+	{Position -0.2451	-5.6092	48.3320}
+}

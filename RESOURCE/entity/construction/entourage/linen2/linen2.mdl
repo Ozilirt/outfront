@@ -1,0 +1,68 @@
+;Exported by: shevchenko
+;Date:        Fri Mar 26 16:31:37 2004
+;File:        D:\-Projects-\-3DWork-\sheva\linen.max
+{Skeleton
+	{animation
+		{sequence "flattern" {speed 0.5}}
+	}
+	{bone "Group02"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Group02.ply"}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 30.0201 0.203662}
+		{Extent 0.984253 0.984252}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -30.2142 0.203662}
+		{Extent 0.984253 0.984252}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "fire4"
+	{Box 11.6235 3.93701 20.2461}
+	{Bone "Group02"}
+	{Position -0.7581	-1.1277	29.8673}
+}
+{Volume "fire3"
+	{Box 11.6235 3.93701 20.2461}
+	{Bone "Group02"}
+	{Position 18.5291	-1.1277	30.7782}
+}
+{Volume "fire2"
+	{Box 2.3622 2.3622 43.3071}
+	{Bone "Group02"}
+	{Position 29.9444	-0.2037	21.6535}
+}
+{Volume "fire1"
+	{Box 2.3622 2.3622 43.3071}
+	{Bone "Group02"}
+	{Position -30.2142	-0.2037	21.6535}
+}
+{Volume "fire0"
+	{Box 9.73183 3.93701 28.1245}
+	{Bone "Group02"}
+	{Position -18.0171	-0.8967	25.9389}
+}
+{Volume "body2"
+	{Box 1.9685 1.9685 43.3071}
+	{Bone "Group02"}
+	{Position 30.0201	-0.2037	21.6535}
+}
+{Volume "body1"
+	{Box 1.9685 1.9685 43.3071}
+	{Bone "Group02"}
+	{Position -30.2142	-0.2037	21.6535}
+}

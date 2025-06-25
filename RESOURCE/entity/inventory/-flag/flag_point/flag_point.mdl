@@ -1,0 +1,34 @@
+;Exported by: ubrashaev
+;Date:        Wed Mar 31 19:41:25 2004
+;File:        D:\-Projects-\-work-\3d\construction\capturetheflag\Flag(mp2).max
+{Skeleton
+	{animation
+		{sequence "flattern" {speed 1}}
+		{sequence "flattern2" {speed 1}}
+		{sequence "flattern3" {speed 1}}
+	}
+	{bone "flag_point"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "flag_point.ply"}
+		{bone prizmatic "flag"
+			{parameters "CommonMesh;ID=flag;"}
+			{limits 30.0000 120.0000}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	-1.0000	0.0000
+				3.4005	0.3384	20.9180
+			}
+			{VolumeView "flag.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 0.685277 81.2835}
+	{Bone "flag_point"}
+	{Position -0.1378	0.0388	41.6081}
+}

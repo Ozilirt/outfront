@@ -1,0 +1,20 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "hangar_w_gate.mdl"}
+	{props "one" "staged" "concrete" "construction" "disable_area" "no_destroyed_stamp"}
+	
+	{Volume "fire0"
+		{able {visible 0}}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 20}
+		{able {visible 1}}
+	}
+	("declare_fire_volumes")
+}

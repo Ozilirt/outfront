@@ -1,0 +1,22 @@
+;Exported by: vic
+;Date:        Fri Aug 06 16:17:59 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\bridge_metal\bridge_vic.max
+{Skeleton
+	{bone "RW_bridge2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "RW_bridge2.ply"}
+		{bone "RW_bridge_lend2"
+			{parameters "Land;Ground;"}
+			{VolumeView "RW_bridge_lend2.ply" {Ground}}
+		}
+	}
+}
+{Volume "Body"
+	{Polyhedron "Body.vol"}
+	{Bone "RW_bridge2"}
+	{Position -2.1267	-0.2420	-40.3374}
+}

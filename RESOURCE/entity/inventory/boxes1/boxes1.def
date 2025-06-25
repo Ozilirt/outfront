@@ -1,0 +1,18 @@
+{game_entity
+	{extension "Boxes1.mdl"}
+	{mass 30}
+	{props "wood" "inventory_box"}
+	{ObstacleID "stuff"}
+	{colliderID "construction"}
+	{extender "inventory"
+		{box
+			{weight 5000}
+			{size 8 6}
+		}
+	}
+	{Volume "box"
+		{thickness 1}
+		{able {touch}}
+	}
+;	(include "/properties/shadow/construction.inc" sx(0.25) sy(0.25) ofsx(0) ofsy(0))
+}

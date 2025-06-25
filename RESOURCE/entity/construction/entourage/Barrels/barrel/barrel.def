@@ -1,0 +1,29 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{obstacleID "construction"}
+	{colliderID "construction"}
+	{simulation {able 1}}
+
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 1.4}
+;			{PreScaleY 1.4}
+;  			{PreshiftX	0}
+;  			{PreshiftY	0}
+;			{Visibility	0.55}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;   }
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "barrel.mdl"}
+	{props "steel" "explosive_barrel"}
+	{Volume "body"
+		{thickness 5}
+		{tags "body"}
+	}
+}

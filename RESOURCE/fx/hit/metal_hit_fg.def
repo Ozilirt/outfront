@@ -1,0 +1,290 @@
+{fx 
+    {sound "hit_metall.0"}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 30 }
+			{EmissionArea 
+				{radius 0.5 0.5 }
+				{alpha0 0 }
+				{alpha1 90 }
+			}
+			{ParticleInit 
+				{Speed 4 4 }
+				{Lifetime 1.2 0.6 }
+			}
+			{AxisZ }
+			{StartParticles 30 }
+			{TimeToLive 0.1 }
+		}
+		{Mover 
+			{Gravity 
+				{Value 0.2 }
+			}
+			{Damping 0.98 }
+			{Collisions 
+				{Terrain }
+				{Restitution 0.5 }
+			}
+		}
+		{Visualizer 
+ 			{Stage 
+ 				{Sprite "/FX/_BMP/Particle/Oskolki.ebm" 
+ 						{Scale
+ 							{Linear 
+ 								{min 0.6 0.1 }
+ 								{max 0.2 0.05 }
+ 							}
+ 						}
+ 						{Timer
+ 							{Mode play }
+ 							{Duration 1 0.4 }
+ 						}
+ 				}
+ 				{Sprite "/FX/_BMP/Particle/OskolkiM.ebm" 
+ 						{Scale
+ 							{Linear 
+ 								{min 0.6 0.1 }
+ 								{max 0.2 0.05 }
+ 							}
+ 						}
+ 						{Timer
+ 							{Mode play }
+ 							{Duration 1 0.4 }
+ 						}
+ 				}
+ 			}
+		}
+		{NotifyOwner }
+	}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 20 }
+			{EmissionArea 
+				{radius 1 1 }
+				{alpha0 0 }
+				{alpha1 180 }
+			}
+			{ParticleInit 
+				{Speed 2.5 2.5 }
+				{Lifetime 1 0.4 }
+			}
+			{StartParticles 20 }
+			{TimeToLive 0.1 }
+		}
+		{Mover 
+			{Damping 0.87 }
+			{Gravity 
+				{Value -0.1 }
+			}
+			{Collisions 
+				{Terrain }
+				{Restitution 0.3 }
+			}
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "/FX/_BMP/Smoke/SmokeSmal9.ebm" 
+						{Scale
+							{Linear 
+								{min 1 0.3 }
+								{max 2.4 0.7 }
+							}
+						}
+						{Turn 
+							{Linear 
+								{min 10 10 }
+								{max 100 30 }
+							}
+						}
+						{Visibility 
+							{Linear 
+								{min 1 }
+								{max 0 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+				}
+				{Sprite "/FX/_BMP/Smoke/SmokeSmal9.ebm" 
+						{Scale
+							{Linear 
+								{min 1 0.3 }
+								{max 2.3 0.7 }
+							}
+						}
+						{Turn 
+							{Linear 
+								{min 100 20 }
+								{max 0 30 }
+							}
+						}
+						{Visibility 
+							{Linear 
+								{min 1 }
+								{max 0 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+				}
+				{Sprite "/FX/_BMP/Smoke/smokesmal4b.ebm" 
+						{Scale
+							{Linear 
+								{min 1 0.3 }
+								{max 2.4 0.7 }
+							}
+						}
+						{Turn 
+							{Linear 
+								{min 10 10 }
+								{max 100 30 }
+							}
+						}
+						{Visibility 
+							{Linear 
+								{min 1 }
+								{max 0 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Highlight 0x00A59F87 }
+				}
+				{Sprite "/FX/_BMP/Smoke/smokesmal4b.ebm" 
+						{Scale
+							{Linear 
+								{min 1 0.3 }
+								{max 2.3 0.7 }
+							}
+						}
+						{Turn 
+							{Linear 
+								{min 100 30 }
+								{max 0 30 }
+							}
+						}
+						{Visibility 
+							{Linear 
+								{min 1 }
+								{max 0 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Highlight 0x00A59F87 }
+				}
+			}
+		}
+	}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 20 }
+			{EmissionArea 
+				{radius 0.5 0.5 }
+				{alpha0 0 }
+				{alpha1 180 }
+			}
+			{ParticleInit 
+				{Speed 1.5 1.5 }
+				{Lifetime 0.8 }
+			}
+			{StartParticles 20 }
+			{TimeToLive 0.1 }
+		}
+		{Mover 
+			{Damping 0.9 }
+			{Gravity 
+				{Value -0.05 }
+			}
+			{Collisions 
+				{Terrain }
+				{Restitution 0.3 }
+			}
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "/FX/_BMP/Smoke/SmTankO.ebm" 
+						{Scale
+							{Linear 
+								{min 0.7 0.3 }
+								{max 1.7 0.3 }
+							}
+						}
+						{Turn 
+							{Linear 
+								{min 0 10 }
+								{max 80 30 }
+							}
+						}
+						{Light 
+							{Power 
+								{min 1 }
+								{max 0 }
+								{pow 1 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration 0.6 0.2 }
+						}
+				}
+				{Sprite "/FX/_BMP/Smoke/SmTankO.ebm" 
+						{Scale
+							{Linear 
+								{min 0.7 0.3 }
+								{max 1.7 0.5 }
+							}
+						}
+						{Turn 
+							{Linear 
+								{min 90 20 }
+								{max 0 30 }
+							}
+						}
+						{Light 
+							{Power 
+								{min 1 }
+								{max 0 }
+								{pow 1 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration 0.6 0.2 }
+						}
+				}
+			}
+		}
+	}
+	{SpriteView "FPatik" 
+		{Sprite "/FX/_BMP/Flash/FPatik.ebm" 
+				{Light 
+					{Power 
+						{min 1 }
+						{max 0 }
+						{pow 1 }
+					}
+				}
+				{Scale
+					{Power
+						{min 0.7 }
+						{max 1.1 }
+						{pow 4 }
+					}
+				}
+				{Timer 
+					{Mode play }
+					{Duration 0.3 }
+				}
+		}
+		{Offset 0 20 15 }
+	}
+}

@@ -1,0 +1,27 @@
+{construction
+	(include "/properties/post.inc")
+	{Extension "post_semaphore_1.mdl"}
+	{props "concrete"}
+	{volume	"body"
+		{thickness	3}
+	}
+
+; {DecalView "shadow"
+;	{OwnerShadow 64 64}
+;	{Sprite "/properties/shadow/round.ebm"
+;		{ScaleX 	0.5}
+;		{ScaleY 	0.5}
+;  		{shiftX	0	}
+;  		{shiftY	0	}
+;		{Preturn	-45	}
+;		{Visibility	0.5}
+;	}
+;	{layer groundshadow}
+;	{UseDirection}    
+; }
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

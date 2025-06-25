@@ -1,0 +1,36 @@
+;Exported by: garry
+;Date:        Sat May 22 19:47:00 2004
+;File:        D:\-Projects-\-3DWork-\Model\Корабли\barkas\barkas_x.max
+{Skeleton
+				{animation
+					{sequence "breakC" {file "cabin_b.anm"} {speed 0.8}}
+					{sequence "breakB" {file "body_b.anm"}}
+				}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "CommonMesh;ID=body;"}
+			{animation
+				{sequence "break" {file "body_b.anm"}}
+			}
+			{Position 12.6616	0.1249	-7.0285}
+			{VolumeView "Body.ply"}
+			{bone "Cabin"
+				{parameters "CommonMesh;ID=cabin;"}
+				{animation
+					{sequence "break" {file "cabin_b.anm"} {speed 0.8}}
+				}
+				{Position -55.1621	3.8988	20.0027}
+				{VolumeView "Cabin.ply"}
+			}
+			{bone revolute "steer_rudder"
+				{Position -92.3882	0.2063	9.5376}
+				{VolumeView "steer_rudder.ply"}
+			}
+		}
+	}
+}

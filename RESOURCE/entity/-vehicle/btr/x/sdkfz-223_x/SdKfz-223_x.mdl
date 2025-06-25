@@ -1,0 +1,152 @@
+;Exported by: garry
+;Date:        Wed May 05 19:11:45 2004
+;File:        D:\-Projects-\-3DWork-\Model\Авто-мото\SDKFZ\SdKfz223\SdKfz223_x.max
+{Skeleton
+	{bone "Basis"
+		{parameters "WheelRadius=0.47;SteerMax=45;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "pivot_back"
+			{Position -26.4767	-0.4269	6.6687}
+			{bone revolute "WheelL2"
+				{parameters "ID=wheelleft2;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					-0.0055	16.8874	2.1445
+				}
+				{VolumeView "WheelL2.ply"}
+			}
+			{bone revolute "WheelR2"
+				{parameters "ID=wheelright2;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					-0.0000	1.0000	0.0000
+					-0.0055	-16.1722	2.1445
+				}
+				{VolumeView "WheelR2.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 29.2714	-0.4269	6.6687}
+			{bone revolute "steer_R1"
+				{Matrix34
+					-1.0000	0.0000	-0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					0.5307	-11.0557	2.1445
+				}
+				{bone revolute "WheelR1"
+					{parameters "ID=wheelright1;"}
+					{Matrix34
+						1.0000	-0.0000	-0.0000
+						-0.0000	-0.0000	-1.0000
+						0.0000	1.0000	-0.0000
+						0.0000	-5.1165	-0.0000
+					}
+					{VolumeView "WheelR1.ply"}
+				}
+			}
+			{bone revolute "steer_L1"
+				{Matrix34
+					-1.0000	0.0000	-0.0000
+					0.0000	1.0000	0.0000
+					0.0000	0.0000	-1.0000
+					0.5307	12.3674	2.1445
+				}
+				{bone revolute "WheelL1"
+					{parameters "ID=wheelleft1;"}
+					{Matrix34
+						1.0000	-0.0000	-0.0000
+						-0.0000	-0.0000	-1.0000
+						0.0000	1.0000	-0.0000
+						0.0000	4.5200	0.0000
+					}
+					{VolumeView "WheelL1.ply"}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{animation
+				{sequence "break" {file "body.anm"}}
+			}
+			{Position -2.7125	-0.0591	0.0000}
+			{VolumeView "body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=turret;"}
+				{animation
+					{sequence "break" {file "turret.anm"}}
+				}
+				{speed 0.0100}
+				{Position -3.5538	0.0081	33.9678}
+				{VolumeView "Turret.ply"}
+				{bone revolute "MGun"
+					{parameters "ID=turret;"}
+					{limits -5.0000 15.0000}
+					{speed 0.0100}
+					{Matrix34
+						1.0000	-0.0000	-0.0000
+						0.0000	0.0000	1.0000
+						-0.0000	-1.0000	0.0000
+						8.1164	-0.0231	1.5098
+					}
+				}
+			}
+			{bone "engine"
+				{Matrix34
+					0.9996	0.0000	-0.0289
+					-0.0000	1.0000	-0.0006
+					0.0289	0.0006	0.9996
+					-25.4417	0.0916	18.5909
+				}
+				{VolumeView "engine.ply"}
+			}
+		}
+	}
+}
+{Volume "wheelleft1"
+	{Cylinder 6.37095 4.23851}
+	{Bone "WheelL1"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		-0.1644	0.0198	0.2805
+	}
+}
+{Volume "wheelright1"
+	{Cylinder 6.37095 4.23851}
+	{Bone "WheelR1"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		0.0000	1.0000	-0.0000
+		0.0000	-0.0000	-1.0000
+		-0.1644	0.0198	-0.4370
+	}
+}
+{Volume "wheelright2"
+	{Cylinder 6.37095 4.23851}
+	{Bone "WheelR2"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		-0.1316	0.0198	-0.4370
+	}
+}
+{Volume "wheelleft2"
+	{Cylinder 6.28368 4.23851}
+	{Bone "WheelL2"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	-1.0000
+		-0.1316	0.0198	0.2805
+	}
+}

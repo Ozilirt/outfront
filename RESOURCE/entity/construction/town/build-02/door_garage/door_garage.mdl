@@ -1,0 +1,35 @@
+;Exported by: shevchenko
+;Date:        Wed Mar 31 10:25:50 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\build-02-01b.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "door_garage"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "door_garage.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -0.0969238 -1.06698}
+		{Extent 1.47638 13.7008}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 27.4016 2.95276 45.2756}
+	{Bone "door_garage"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0969	1.0670	22.6378
+	}
+}

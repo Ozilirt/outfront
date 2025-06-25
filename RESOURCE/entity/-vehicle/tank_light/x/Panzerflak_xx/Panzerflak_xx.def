@@ -1,0 +1,22 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	{obstacleId "tank"}
+	{TexMods
+		{"ambush1" "1"}
+	}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  10}
+			{bottom	8}
+			{rear   4}
+		}   
+	}
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+	{Extension "Panzerflak_xx.mdl"}
+}

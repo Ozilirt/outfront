@@ -1,0 +1,15 @@
+{game_entity
+	{extension "/properties/piece.ext"}
+	{simulation {able 1} {state 1}}
+	{constrain none}
+	{props "dummy" "concrete" "big" "part"}
+	{colliderId "particle"}
+	{obstacleid "construction"}
+	{mass 1000}
+	{DecalView
+		{ownershadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"}
+		{name "shadow"}
+;		{layer groundshadow}
+	}
+}

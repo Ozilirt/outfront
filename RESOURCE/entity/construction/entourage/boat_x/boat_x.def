@@ -1,0 +1,24 @@
+{game_entity
+    (include "/properties/construction.inc")
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{ScaleX 3.2}
+;			{ScaleY 1.3}
+;  			{shiftX	5}
+;  			{shiftY	0}
+;			{Visibility	0.55}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;   }
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "boat_x.mdl"}
+	{props "wood" "shed"}	
+	{volume "body"
+		{thickness 2}
+	}
+}

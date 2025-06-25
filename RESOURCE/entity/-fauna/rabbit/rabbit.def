@@ -1,0 +1,21 @@
+{entity
+	(include "/properties/animal.ext")
+	(include "/properties/shadow/animal.inc")	
+	{mass 3}
+	{simulation {able 1}}
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+	}
+	{Chassis "foot"
+		{Walk
+			{Slow	1   50}
+			{Normal	20  50}
+			{Fast	30  500}
+		}
+	}
+
+	("declare_health" args 30)
+
+	{Extension "rabbit.mdl"}
+}

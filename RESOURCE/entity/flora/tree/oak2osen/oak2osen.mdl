@@ -1,0 +1,26 @@
+{Skeleton
+	{animation
+		{sequence {name "stir"} {file "stir.anm"}}
+	}
+	{bone "oak2a"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "oak2a.ply"}
+	}
+}
+
+{Volume "bole"
+	{Cylinder 6.46213 182.471}
+	{Bone "oak2a"}
+	{Position 3.7509	-1.9687	90.8921}
+}
+{Volume "crown"
+	{Box 102.857 111.357 155.608}
+	{Bone "oak2a"}
+	{Position 3.7078	-13.9790	107.3199}
+}
+

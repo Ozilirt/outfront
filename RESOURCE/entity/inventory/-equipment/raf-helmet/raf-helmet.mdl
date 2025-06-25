@@ -1,0 +1,31 @@
+;Exported by: dan
+;Date:        Wed Mar 17 17:32:07 2004
+;File:        D:\-Projects-\-3DWork-\Soldiers\Soldiers for EXP\Alies\raf-pilot.max
+{Skeleton
+	{bone "helm"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "helm.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				0.0429	-1.4870	2.6994
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 9.84252 9.84252 3.68412}
+	{Bone "helm"}
+	{Position -0.0081	0.0123	2.7072}
+}
+{Volume "body"
+	{Box 3.85597 3.60074 4.05586}
+	{Bone "helm"}
+	{Position -0.0081	0.0123	2.9619}
+}

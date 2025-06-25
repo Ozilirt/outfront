@@ -1,0 +1,181 @@
+{fx 
+	{fire}
+	{ParticleView "SmokeLoop" 
+		{Generator 
+			{TotalParticles 50 }
+			{EmissionArea 
+				{radius 2 2 }
+				{alpha0 0 10 }
+				{alpha1 5 2 }
+			}
+			{ParticleInit 
+				{Speed 0.5 0.2 }
+				{Lifetime 3.6 0.4 }
+			}
+			{AxisZ }
+		}
+		{Mover 
+			{Damping 0.996 }
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "/FX/_BMP/Smoke/SmokeSmal10ANM.ebm" 
+					{Turn
+						{Peak 
+							{min 0 }
+							{max 90 }
+						}
+					}
+					{Scale
+						{Linear 
+							{min 1 }
+							{max 1.8 }
+						}
+					}
+					{Visibility 
+						{Linear 
+							{min 0.6 }
+							{max 0 }
+						}
+					}
+					{Timer
+						{Mode play }
+						{Duration -1 }
+					}
+				}
+			}
+		}
+		{NotifyOwner }
+	}
+	{ParticleView "FireLoop" 
+		{Generator 
+			{TotalParticles 80 }
+			{EmissionArea 
+				{radius 1 1 }
+				{alpha0 0 }
+				{alpha1 10 5 }
+			}
+			{ParticleInit 
+				{Speed 0.5 0.2 }
+				{Lifetime 1.6 0.6 }
+			}
+			{AxisZ }
+		}
+		{Mover 
+			{Gravity }
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "/FX/_BMP/Explosion/FaerOG2b.ebm" 
+					{preTurn 90 90 }
+					{Scale
+						{Linear 
+							{min 0.5 0.2 }
+							{max 1 0.5 }
+						}
+					}
+					{Visibility 
+						{Linear 
+							{min 1 }
+							{max 0 }
+						}
+					}
+					{Turn 
+						{Linear 
+							{min 10 10 }
+							{max 90 20 }
+						}
+					}
+					{Timer
+						{Mode play }
+						{Duration -1 }
+					}
+				}
+				{Sprite "/FX/_BMP/Smoke/SmTankO.ebm" 
+					{preTurn 90 90 }
+					{Scale
+						{Linear 
+							{min 0.5 0.2 }
+							{max 1 0.5 }
+						}
+					}
+					{Light 
+						{Linear 
+							{min 1 }
+							{max 0 }
+						}
+					}
+					{Turn 
+						{Linear 
+							{min 90 10 }
+							{max 10 20 }
+						}
+					}
+					{Timer
+						{Mode play }
+						{Duration -1 }
+					}
+				}
+				{Sprite "/FX/_BMP/Smoke/SmTankO.ebm" 
+					{preTurn 90 90 }
+					{Scale
+						{Linear 
+							{min 0.5 0.2 }
+							{max 1 0.5 }
+						}
+					}
+					{Light
+						{Linear 
+							{min 1 }
+							{max 0 }
+						}
+					}
+					{Turn 
+						{Linear 
+							{min 10 10 }
+							{max 90 20 }
+						}
+					}
+					{Timer
+						{Mode play }
+						{Duration -1 }
+					}
+				}
+			}
+		}
+	}
+	{ParticleView "FlashLoop" 
+		{Generator 
+			{TotalParticles 50 }
+			{EmissionArea 
+				{radius 2 2 }
+				{alpha0 0 5 }
+				{alpha1 10 5 }
+			}
+			{ParticleInit 
+				{Speed 0.5 0.2 }
+				{Lifetime 1.2 0.6 }
+			}
+			{AxisZ }
+		}
+		{Mover 
+			{Damping 0.999 }
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "/fx/_BMP/Particle/Oskolki.ebm" 
+					{Scale
+						{Linear
+							{min 1.8 }
+							{max 0.4 }
+						}
+					}
+					{Timer
+						{Mode play }
+						{Duration -1 }
+					}
+				}
+			}
+		}
+	}
+}

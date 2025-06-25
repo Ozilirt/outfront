@@ -1,0 +1,26 @@
+;Exported by: sk
+;Date:        Wed Jan 28 11:24:46 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Aerodrome\stuff.max
+{Skeleton
+	{bone "suff3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "suff3.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.142456 -0.11972}
+		{Extent 14.5008 27.3894}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 29.0017 54.7789 6.25611}
+	{Bone "suff3"}
+	{Position 0.1425	0.1197	3.0727}
+}

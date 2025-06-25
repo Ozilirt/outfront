@@ -1,0 +1,26 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 	1.9}
+;			{PreScaleY 	1.9}
+;  			{PreshiftX	-3	}
+;  			{PreshiftY	 0	}
+;			{Visibility	0.6	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}
+;	}
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "bags1.mdl"}
+	{props "sand_bag_small"} 
+	{obstacleid "unbreakable"}	
+	{Volume "body"
+		{thickness 10}
+		{Tags  "body"}
+	}
+}

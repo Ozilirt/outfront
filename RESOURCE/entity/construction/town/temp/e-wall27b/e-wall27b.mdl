@@ -1,0 +1,26 @@
+;Exported by: sk
+;Date:        Tue May 18 10:38:40 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\e-wall2a.max
+{Skeleton
+	{bone "e-wall27b"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "e-wall27b.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.0738525 0.280029}
+		{Extent 10.23 29.8498}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 20.46 59.6997 60.2362}
+	{Bone "e-wall27b"}
+	{Position 0.0739	-0.2800	30.1181}
+}

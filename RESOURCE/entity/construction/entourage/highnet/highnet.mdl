@@ -1,0 +1,30 @@
+;Exported by: sk
+;Date:        Mon Feb 09 11:17:48 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Сачек\Sacshek.max
+{Skeleton
+	{animation
+		{sequence "flattern" {speed 0.7}}
+	}
+	{bone "highnet"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "highnet.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.204288 -0.101673}
+		{Extent 1.09873 1.09873}
+		{Axis 0.375164 0.926958}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Cylinder 1.18531 196.85}
+	{Bone "highnet"}
+	{Position 0.2043	0.1017	98.4252}
+}

@@ -1,0 +1,39 @@
+;Exported by: shevchenko
+;Date:        Thu May 20 11:30:24 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\e-wall2a.max
+{Skeleton
+	{bone "e-wall2b"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "e-wall2b.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -23.7079 6.4729}
+		{Extent 33.3777 7.08661}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 32.2697 6.4729}
+		{Extent 23.3644 7.08661}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 66.7555 14.1732 59.0551}
+	{Bone "e-wall2b"}
+	{Position -23.7079	-6.4729	29.5276}
+}
+{Volume "body2"
+	{Box 46.7288 14.1732 25.5906}
+	{Bone "e-wall2b"}
+	{Position 32.2697	-6.4729	12.7953}
+}

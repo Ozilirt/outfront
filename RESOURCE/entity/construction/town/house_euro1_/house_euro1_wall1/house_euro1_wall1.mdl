@@ -1,0 +1,31 @@
+;Exported by: vic
+;Date:        Wed Jun 02 10:47:32 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall3a_x1_next.max
+{Skeleton
+	{bone "house_euro1_wall1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro1_wall1.ply"}
+	}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center -0.215087 -0.100005}
+		{Extent 30.0331 4.92127}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 60.0662 9.84252 15.748}
+	{Bone "house_euro1_wall1"}
+	{Position -0.2151	0.1000	7.8740}
+}
+{Volume "Body1"
+	{Box 9.61059 6.88976 45.1968}
+	{Bone "house_euro1_wall1"}
+	{Position 15.0226	1.4510	38.3883}
+}

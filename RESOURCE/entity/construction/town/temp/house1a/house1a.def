@@ -1,0 +1,175 @@
+	{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "two" "staged" "wood" "construction" "windowed" "flue"}
+	{Extension "house1a.mdl"}
+
+;	{constrain zero}
+	{TexMods
+		{"1" "1"}
+	}
+
+	{placer
+		{place "1" {attach  snipe_cover} {linkbone "node1"}}
+		{place "2" {attach  snipe_cover} {linkbone "node2"}}
+		{place "3" {attach  snipe_cover} {linkbone "node3"}}
+		{place "4" {attach  snipe_cover} {linkbone "node4"}}
+		{place "5" {attach  snipe_cover} {linkbone "node5"}}
+		{place "6" {attach  snipe_cover} {linkbone "node6"}}
+		{place "7" {attach  snipe_cover} {linkbone "node7"}}
+		{place "8" {attach  snipe_cover} {linkbone "node8"}}
+	}
+	
+	{boarder
+		{node "node1"}
+		{node "node2"}
+		{node "node3"}
+		{node "node4"}
+		{node "node5"}
+		{node "node6"}
+		{node "node7"}
+		{node "node8"}
+
+	}
+
+	
+	{volume	"exterior1"
+		{thickness hollow 2}
+		{able {visible 0} }
+	}
+	{volume	"exterior"
+		{thickness hollow 2}
+		{able {visible 0} }
+	}
+
+	{volume	"window8"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window7"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window6"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window5"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window4"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window3"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+
+	{volume	"body11"
+		{thickness  20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body10"
+		{thickness  20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body9"
+		{thickness  20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body8"
+		{thickness  20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body7"
+		{thickness  20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body6"
+		{thickness 20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body5"
+		{thickness 20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body4"
+		{thickness 20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body3"
+		{thickness 20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body2"
+		{thickness 20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body1"
+		{thickness 20}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body"
+		{thickness 20}
+		{able {holed}}      
+		{tags "body"}
+	}
+
+	{volume "Hole1"
+		{able clear {hole} {touch}}
+		{tags "attach" "1"}
+	}
+	{volume "Hole2"
+		{able clear {hole} {touch}}
+		{tags "attach" "2"}
+	}
+	{volume "Hole3"
+		{able clear {hole} {touch}}
+		{tags "attach" "3"}
+	}
+	{volume "Hole4"
+		{able clear {hole}}
+	}
+	{volume "Hole5"
+		{able clear {hole} {touch}}
+		{tags "attach" "7"}
+	}
+	{volume "Hole6"
+		{able clear {hole} {touch}}
+		{tags "attach" "8"}
+	}
+	{volume "Hole7"
+		{able clear {hole} {touch}}
+		{tags "attach" "5"}
+	}
+	{volume "Hole9"
+		{able clear {hole} {touch}}
+		{tags "attach" "4"}
+	}
+
+}

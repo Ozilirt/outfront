@@ -1,0 +1,25 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	{Extension "Panzerwerfer42_xx.mdl"}
+	{volume "gun"
+		{thickness 6}
+	}
+	{volume "turret"
+		{thickness 6
+			{front  15}
+		}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}
+	{volume "engine"
+		{thickness 15}
+	}
+}

@@ -1,0 +1,73 @@
+{fx
+	{SpriteView
+		{Sprite "/fx/_bmp/flash/FlashBSGL.ebm"
+			{Light
+				{Peak
+					{min 1}
+					{max 1.2}
+				}
+			}
+			{timer
+				{mode play loop}
+				{duration 2}
+			}
+			{Scale 0.35}
+			{Highlight 0xfee992}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 3 7}
+				{alpha0 0}
+				{alpha1 360}
+			}
+			{ParticleInit
+				{Speed 7}
+				{Lifetime 0.3 0.2}
+			}
+			{AxisZ}
+			{StartParticles 1}
+		}
+		{mover
+			{gravity
+				{value 0}
+			}
+			{damping 0.01}
+			{collisions
+				{terrain}
+				{restitution 0.4}
+			}
+		}
+		{NotifyOwner}
+		{visualizer
+			{stage
+				{sprite "/fx/_bmp/particle/OskolkiM.ebm"
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.1 0.05}
+					{Light 0.6 0.2}
+				}
+			}
+		}
+	}
+	{SpriteView
+		{Sprite "/fx/_bmp/flash/FlashSS1.ebm"
+			{Light
+				{Peak
+					{min 0.13}
+					{max 0.11}
+				}
+			}
+			{timer
+				{mode play loop}
+				{duration 2}
+			}
+			{Scale 3}
+		}
+		{orientation trace}
+	}
+}

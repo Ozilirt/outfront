@@ -1,0 +1,24 @@
+{Skeleton
+	{animation
+		{sequence {name "crush2"} {file "crush2.anm"}}
+	}
+	{bone "post_lighter"
+		{parameters "CommonMesh;"}
+		{Orientation
+			0.7071	-0.7071	0.0000
+			-0.7071	-0.7071	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_lighter.ply"}
+	}
+}
+{Volume "body"
+	{Box 4.85387 4.60846 144.944}
+	{Bone "post_lighter"}
+		{Matrix34
+			-0.0000	1.0000	0.0000
+			-1.0000	-0.0000	0.0000
+			0.0000	0.0000	1.0000
+			-0.0877	2.0920	70.9388
+		}
+}

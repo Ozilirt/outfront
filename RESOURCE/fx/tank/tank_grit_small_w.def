@@ -1,0 +1,109 @@
+{fx
+	{ParticleView
+		{generator
+			{TotalParticles 30}
+			{EmissionArea
+				{radius 3}
+				{alpha0 0}
+				{alpha1 30 5}
+				{speed 0.2}
+			}
+			{ParticleInit
+				{Speed 0}
+				{Lifetime 0.8 0.3}
+			}
+			{StartParticles 1}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0.7}
+			}
+			{collisions
+				{terrain}
+				{restitution 0}
+			}
+		}
+		{visualizer
+			{stage
+				{flags Ground}
+				{sprite "/fx/_bmp/flash/ripples_w2.ebm"
+					{Scale
+						{Linear
+							{min 0.3 0.1}
+							{max 2 0.5}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Visibility
+						{Power
+							{min 1}
+							{max 0}
+							{pow 2}
+						}
+					}
+					{preTurn 90 90}
+				}
+			}
+		}
+		{NotifyOwner}
+		{offset 0 0 -10}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 30}
+			{EmissionArea
+				{radius 0.8 0.8}
+				{alpha0 0}
+				{alpha1 15 5}
+			}
+			{ParticleInit
+				{Speed 1 1}
+				{Lifetime 0.3 0.1}
+			}
+		}
+		{mover
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.3}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_BMP/Particle/Grunt2.ebm"
+					{Scale 0.2 0.15}
+				}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 10}
+			{EmissionArea
+				{radius 0.8 0.8}
+				{alpha0 0}
+				{alpha1 15 5}
+			}
+			{ParticleInit
+				{Speed 1 1}
+				{Lifetime 0.3 0.1}
+			}
+			{Color 0xa4b0b9}
+		}
+		{mover
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.3}
+			}
+		}
+	}
+}

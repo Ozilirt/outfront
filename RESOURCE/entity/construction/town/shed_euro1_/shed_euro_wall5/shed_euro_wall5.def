@@ -1,0 +1,94 @@
+{construction
+	(include "/properties/building.inc")
+	(include "/properties/texmod.inc")	
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "shed_euro_wall5.mdl"}
+	{props "cornered" "concrete" "windowed" "parts" "construction" "wall"}
+
+	{constrain zero}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+		{"4" "4"}
+		{"5" "5"}
+		{"6" "6"}
+		{"7" "7"}
+		{"8" "8"}
+		{"9" "9"}
+		{"10" "10"}
+		{"11" "11"}
+	}	
+	{placer
+		{place "3" {attach  snipe_cover} 		{linkbone "attach3"}}
+	}
+	{boarder}
+	{mass 50000}
+
+	{Volume "roof8"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "roof7"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "roof6"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+
+	{Volume "floor5"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "floor4"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+
+	{Volume "window4"
+		{Thickness 0.2}
+		{able {visible 0} {window}}
+	}
+	{Volume "hole2"
+		{Tags  "attach" "3"}
+		{able clear {hole}{touch 1}}
+	}
+
+	{Volume "body15"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {holed}}
+	}
+	{Volume "body14"
+		{Thickness 1}
+	}
+	{Volume "body1"
+		{Thickness 1}
+	}
+	{Volume "body13"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 0}}
+	}
+	{Volume "body12"
+		{Thickness 10}
+	}
+	{Volume "body11"
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body10"
+		{Tags  "body"}
+		{Thickness 10}
+	}
+}

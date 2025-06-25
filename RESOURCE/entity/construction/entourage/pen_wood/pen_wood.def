@@ -1,0 +1,91 @@
+{Building
+	(include "/properties/construction.inc")
+	{Extension "pen_wood.mdl"}
+	{props "fence" "wood" "animated_crush"}	
+	{Volume "pen3"
+		{thickness	2}
+		{able {bullet 0} {visible 0}}	
+		{tags "body"}
+	}
+	{Volume "pen2"
+		{thickness	2}
+		{able {bullet 0} {visible 0}}		
+		{tags "body"}
+	}
+	{Volume "pen1"
+		{thickness	2}
+		{able {bullet 0} {visible 0}}	
+		{tags "body"}
+	}
+	{Volume "pen"
+		{thickness	2}
+		{tags "body"}
+	}
+	;1 doska
+;	{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/house.ebm"
+; 			{PrescaleX 0.1}
+;  			{PrescaleY 0.7 }
+;			{Visibility 0.4}
+;			{PreshiftX -25}
+;			{PreshiftY 15}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+;
+;	}
+	;2doska
+;	{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/fence.ebm"
+;  			{PrescaleX 1}
+;  			{PrescaleY 0.4 }
+;			{Visibility 0.4}
+;			{PreshiftX 27}
+;			{PreshiftY 0}
+;			{Preturn 90	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+
+;	}
+	;3doska
+;	{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/fence.ebm"
+;  			{PrescaleX 0.6 }
+;  			{PrescaleY 0.4}
+;			{Visibility 0.4}
+;			{PreshiftX 0}
+;			{PreshiftY -40}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+
+;	}
+
+	;4doska
+;	{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/fence.ebm"
+;  			{PrescaleX 0.6 }
+;  			{PrescaleY 0.4 }
+;			{Visibility 0.4}
+;			{PreshiftX 0}
+;			{PreshiftY 37}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

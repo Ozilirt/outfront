@@ -1,0 +1,20 @@
+;SDL
+game_entity
+
+{extender "stuff"}
+
+{volume "body"
+	{able clear {visible} {bullet} {select} {contact_ground} {touch} {contact}}
+}
+
+{volume "select"
+	{able clear {select}}
+	{density 0}
+}
+
+{obstacleID "stuff"}
+{colliderID "stuff"}
+{collideWith "vehicle" "armored" "tank" "construction" "tree"}
+{props "stuff" "collectable"}
+{simulation {able 1}}
+{constrain ground}

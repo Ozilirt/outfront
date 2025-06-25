@@ -1,0 +1,24 @@
+{construct
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.1) sy(1.4) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "defence1_08-x1.mdl"}
+;	{obstacleID "unbreakable"}
+;	{constrain zero}
+	{props "wood" "sand_bag" "construction" "no_destroyed_stamp"}
+	{volume	"body1"
+		{thickness 50}
+		{tags "body"}
+		{tags "climb"}
+		{able {visible 0} {touch}}
+	}
+	{volume	"body2"
+		{thickness 50}
+		{tags "body"}
+		{tags "climb"}
+		{able {visible 0} {touch}}
+    }
+}

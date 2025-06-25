@@ -1,0 +1,19 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.05) sy(0.5) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "wheels.mdl"}
+
+	{simulation {able 1} {state 0}}
+	{obstacleID "construction"}
+	{colliderId "particle"}
+	{collideWith  "bush" "human" "vehicle" "construction"}
+	{mass 50}
+	{props "steel" "big" "part"}
+	{volume	"body"
+		{thickness	10}
+	}
+}

@@ -1,0 +1,168 @@
+;Exported by: shevchenko
+;Date:        Fri May 14 19:52:20 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\Hangar_big\Hangar_big_new.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.4} {resume}}
+	}
+	{bone "hangar_wall3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hangar_wall3.ply"}
+		{bone "window1"
+			{Position -50.6900	-0.1071	92.6349}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.9542	-1.1195	7.6493
+				}
+			}
+		}
+		{bone "window1_x"
+			{Position -50.6900	0.2866	92.6349}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2"
+			{Position -0.1495	-0.1071	92.6349}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass2"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					1.4096	-1.1195	7.6493
+				}
+			}
+		}
+		{bone "window2_x"
+			{Position -0.1495	0.2245	92.6349}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+		{bone "window3"
+			{Position 50.3448	-0.1071	92.6349}
+			{VolumeView "window3.ply"}
+			{bone "FX_glass3"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.2645	-1.1195	7.6493
+				}
+			}
+		}
+		{bone "window3_x"
+			{Position 50.3448	0.2587	92.6349}
+			{visibility 0}
+			{VolumeView "window3_x.ply"}
+		}
+		{bone "door"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-67.8582	-0.0405	-0.0000
+			}
+			{VolumeView "door.ply"}
+		}
+		{bone "open_point"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-50.0988	-12.9357	0.0000
+			}
+		}
+	}
+}
+{Obstacle "Close"
+	{Obb2
+		{Center -56.1181 0.123108}
+		{Extent 12.072 1.44174}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center -71.591 -0.0172729}
+		{Extent 3.64401 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center 15.3705 -0.0172729}
+		{Extent 59.4098 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "door"
+	{Box 1.14173 23.6627 39.3701}
+	{Bone "door"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-11.8731	0.0008	19.7328
+	}
+}
+{Volume "switch"
+	{Box 12.3328 16.5183 39.6912}
+	{Bone "hangar_wall3"}
+	{Position -51.0851	-0.1765	19.9640}
+}
+{Volume "Body2"
+	{Box 5.90551 25.4033 28.3969}
+	{Bone "hangar_wall3"}
+	{Matrix34
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-55.9716	0.0173	53.6489
+	}
+}
+{Volume "Body1"
+	{Box 5.90551 7.28803 67.9177}
+	{Bone "hangar_wall3"}
+	{Matrix34
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-71.5910	0.0173	34.0066
+	}
+}
+{Volume "Body"
+	{Box 5.90551 118.82 68.2547}
+	{Bone "hangar_wall3"}
+	{Matrix34
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		15.3705	0.0173	34.1751
+	}
+}
+{Volume "window3"
+	{Box 48.7082 0 48.9215}
+	{Bone "window3"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "window2"
+	{Box 48.7082 0 48.9215}
+	{Bone "window2"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "window1"
+	{Box 48.7082 0 48.9215}
+	{Bone "window1"}
+	{Position 0.0000	0.0000	0.0000}
+}

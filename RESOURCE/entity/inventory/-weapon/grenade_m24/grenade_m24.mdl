@@ -1,0 +1,41 @@
+;Exported by: garry
+;Date:        Tue May 04 17:28:26 2004
+;File:        \\sharepoint\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon1.max
+{Skeleton
+	{bone "M24"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "M24.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-1.0000	-0.0000
+				-0.0000	0.0000	-1.0000
+				-4.0317	0.0224	0.0452
+			}
+		}
+	}
+}
+{Volume "select"
+	{Cylinder 2.86712 13.8495}
+	{Bone "M24"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		-0.5022	0.0393	0.0292
+	}
+}
+{Volume "body"
+	{Cylinder 0.695903 8.29311}
+	{Bone "M24"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		0.1148	0.0393	0.0292
+	}
+}

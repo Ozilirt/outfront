@@ -1,0 +1,36 @@
+;Exported by: vic
+;Date:        Wed Feb 04 19:42:55 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\monastery\Monastery2_x.max
+{Skeleton
+	{bone "wall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall.ply"}
+	}
+}
+{Obstacle "wall"
+	{Obb2
+		{Center -0.160049 0.522003}
+		{Extent 6.21459 12.8179}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "wall1"
+	{Box 12.4292 102.655 11.5453}
+	{Bone "wall"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		0.0000	0.9998	-0.0182
+		0.0000	0.0182	0.9998
+		-0.0790	-0.1605	62.3252
+	}
+}
+{Volume "wall"
+	{Box 12.4292 25.6358 69.8128}
+	{Bone "wall"}
+	{Position -0.1600	-0.5220	34.9064}
+}

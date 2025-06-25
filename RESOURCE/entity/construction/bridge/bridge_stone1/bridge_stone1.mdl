@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Thu Jan 29 10:32:32 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Bridge\bridge.max
+{Skeleton
+	{bone "bridge_stone1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "bridge_stone1.ply"}
+	}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center 1.29911 -0.886703}
+		{Extent 7.399 138.189}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 11.811 276.378 68.0055}
+	{Bone "bridge_stone1"}
+	{Matrix34
+		-0.9990	0.0000	-0.0441
+		-0.0000	-1.0000	0.0000
+		-0.0441	0.0000	0.9990
+		1.2991	0.8867	34.3573
+	}
+}

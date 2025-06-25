@@ -1,0 +1,58 @@
+{fx 
+	{ParticleView "start" 
+		{Generator 
+			{TotalParticles 10 }
+			{EmissionArea 
+				{radius 1 1 }
+				{alpha0 0 }
+				{alpha1 180 }
+			}
+			{ParticleInit 
+				{Speed 1.5 1 }
+				{Lifetime 1.8 }
+			}
+			{TimeToLive 0.02 }
+			{StartParticles 10 }
+			{AxisZ }
+		}
+		{Mover 
+			{Damping 0.83 }
+			{Gravity 
+				{Value 0.1 }
+			}
+			{Collisions 
+				{Terrain }
+				{Restitution 0.1 }
+			}
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "\FX\_BMP\Particle\Biood3_10.ebm" 
+					{Visibility 
+						{Linear 
+							{min 0.7 }
+							{max 0 }
+						}
+					}
+					{Scale
+						{Linear 
+							{min 1.5 0.5 }
+							{max 4 1 }
+						}
+					}
+					{Turn 
+						{Linear 
+							{min 10 20 }
+							{max 90 30 }
+						}
+					}
+					{Timer
+						{Mode play }
+						{Duration 1.4 0.4 }
+					}
+				}
+			}
+		}
+		{NotifyOwner }
+	}
+}

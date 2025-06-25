@@ -1,0 +1,60 @@
+;Exported by: vic
+;Date:        Sat May 22 15:22:02 2004
+;File:        D:\-Projects-\-3DWork-\Model\-Корабли\MTB_D3\D3_xx1.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{animation
+				{sequence "break" {file "body_b.anm"} {speed 0.6}}
+			}
+			{Position 16.1204	-0.0236	10.3724}
+			{VolumeView "body.ply"}
+				{bone "cabin"
+					{parameters "CommonMesh;ID=cabin;"}
+					{animation
+						{sequence "break" {file "cabine_b.anm"} {speed 0.6}}
+					}
+					{Position 29.0008	0.0211	21.2304}
+					{VolumeView "cabin.ply"}
+				}
+				{bone "body_rear"
+					{parameters "ID=body_rear;"}
+					{Position -158.4923	0.0211	2.4557}
+					{VolumeView "body_rear.ply"}
+					{bone "torpedo1"
+						{Position 85.1264	-25.5869	33.2749}
+						{VolumeView "torpedo1.ply"}
+					}
+					{bone "torpedo2"
+						{Position 85.1599	24.6983	33.4695}
+						{VolumeView "torpedo2.ply"}
+					}
+					{bone revolute "steer_rudder"
+						{limits -30.0000 30.0000}
+						{Position -84.7343	-0.0590	-9.3030}
+						{bone revolute "ruder"
+							{Position 1.1582	-0.0000	3.6727}
+							{VolumeView "ruder.ply"}
+						}
+					}
+				}
+				{bone "body_front"
+					{parameters "ID=body_front;"}
+					{Position 141.7149	0.0000	2.6763}
+					{VolumeView "body_front.ply"}
+					{bone revolute "FX_exp4"
+						{limits -2.0000 2.0000}
+						{Position -48.8354	0.0211	5.1806}
+					}
+				}
+		}
+		{bone "volume_holder"
+		}
+	}
+}

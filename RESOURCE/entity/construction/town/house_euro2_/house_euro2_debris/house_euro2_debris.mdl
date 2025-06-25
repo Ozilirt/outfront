@@ -1,0 +1,26 @@
+;Exported by: vic
+;Date:        Wed Nov 26 13:18:05 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall4a_x.max
+{Skeleton
+	{bone "house_euro2_debris"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro2_debris.ply"}
+	}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center -0.0366831 0.0284615}
+		{Extent 4.92126 20.6557}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 9.84252 41.3115 15.748}
+	{Bone "house_euro2_debris"}
+	{Position -0.0367	-0.0285	7.8740}
+}

@@ -1,0 +1,30 @@
+{fx 
+    {sound "hit_glass.1"}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 30 }
+			{EmissionArea 
+				{radius 1 1 }
+				{alpha0 0 }
+				{alpha1 180 }
+			}
+			{ParticleInit 
+				{Speed 2 2 }
+				{Lifetime 0.6 0.4 }
+			}
+			{StartParticles 20 }
+			{TimeToLive 0.1 }
+			{color 0xffffffff}
+			{color 0xff0000ff}
+			{color 0xff00ddff}
+			{color 0xff00ffff}
+		}
+		{Mover 
+			{Damping 0.95 }
+			{Gravity 
+				{Value 0.1 }
+			}
+		}
+		{NotifyOwner }
+	}
+}

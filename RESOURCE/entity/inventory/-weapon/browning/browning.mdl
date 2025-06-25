@@ -1,0 +1,35 @@
+;Exported by: garry
+;Date:        Fri Mar 19 17:46:36 2004
+;File:        \\TERM\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon.max
+{Skeleton
+	{bone "Browning"
+		{parameters "ID=mgun;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Browning.ply"}
+		{bone "Foresight3"
+			{Position 23.0302	1.2875	0.0483}
+		}
+		{bone "handle"
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				-0.0000	1.0000	-0.0000
+				3.2860	1.1609	-0.0037
+			}
+		}
+	}
+}
+{Volume "Body"
+	{Box 30.1834 2.42246 1.63838}
+	{Bone "Browning"}
+	{Position 7.6246	0.8159	0.0573}
+}
+{Volume "select"
+	{Box 39.2384 10.4498 8.03126}
+	{Bone "Browning"}
+	{Position 7.6682	0.3019	-0.0478}
+}

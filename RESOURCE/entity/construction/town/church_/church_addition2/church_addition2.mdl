@@ -1,0 +1,128 @@
+;Exported by: shevchenko
+;Date:        Sat Jan 17 12:07:15 2004
+;File:        D:\-Projects-\-3DWork-\sheva\ch1c.max
+{Skeleton
+	{bone "church_addition2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "church_addition2.ply"}
+		{bone "window1"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				36.5296	28.4732	33.4646
+			}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					-0.0000	0.0000	-1.0000
+					-1.0000	-0.0000	-0.0000
+					-0.0000	1.0000	0.0000
+					-0.0295	1.9322	0.4221
+				}
+			}
+		}
+		{bone "window1_x"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				36.5296	28.2730	33.4646
+			}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-22.5255	28.4732	33.4646
+			}
+			{VolumeView "window2.ply"}
+		}
+	}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -59.6964 -29.7638}
+		{Extent 9.67344 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 6.99765 -29.7638}
+		{Extent 57.1172 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 68.0257 0.748032}
+		{Extent 3.93701 34.4488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "window1"
+	{Box 19.685 1.96851 35.4331}
+	{Bone "window1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		0.0000	-0.0281	0.2942
+	}
+}
+{Volume "roof"
+	{Box 78.7402 3.93701 62.5984}
+	{Bone "church_addition2"}
+	{Matrix34
+		-0.0000	-0.9374	0.3484
+		0.0000	0.3484	0.9374
+		-1.0000	0.0000	-0.0000
+		42.8237	0.6580	73.3110
+	}
+}
+{Volume "hole2"
+	{Box 19.685 31.4961 19.685}
+	{Bone "church_addition2"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	-0.0000
+		-22.5464	29.7327	31.4961
+	}
+}
+{Volume "hole1"
+	{Box 19.685 31.4961 19.685}
+	{Bone "church_addition2"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	-0.0000
+		36.5296	29.7604	31.4961
+	}
+}
+{Volume "body3"
+	{Box 19.3469 7.87402 11.3622}
+	{Bone "church_addition2"}
+	{Position -59.6964	29.7638	5.6811}
+}
+{Volume "body2"
+	{Box 114.234 7.87402 59.0551}
+	{Bone "church_addition2"}
+	{Position 6.9977	29.7638	29.5276}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "church_addition2"}
+	{Position 68.0257	-0.7480	0.0000}
+}

@@ -1,0 +1,225 @@
+;Exported by: sk
+;Date:        Tue Apr 06 10:47:33 2004
+;File:        D:\-PROJE~1\-3DWork-\Model\-Plane\CG-4A\CG-4A_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Position -49.0816	-0.5387	50.6349}
+			{VolumeView "Body.ply"}
+				{bone "Cabine"
+					{parameters "ID=body;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-0.0000	1.0000
+						0.0000	-1.0000	-0.0000
+						127.1464	-0.0731	-3.8676
+					}
+					{VolumeView "Cabine.ply"}
+					{bone "Driver"
+						{Matrix34
+							0.9848	0.1736	-0.0000
+							-0.0000	-0.0000	-1.0000
+							-0.1736	0.9848	-0.0000
+							17.5648	-37.7775	-8.4634
+						}
+					}
+					{bone "Driver1"
+						{Matrix34
+							0.9848	0.1736	-0.0000
+							-0.0000	-0.0000	-1.0000
+							-0.1736	0.9848	-0.0000
+							17.5648	-37.7775	7.8203
+						}
+					}
+				}
+			{bone "Wheel_back"
+				{Matrix34
+					-1.0000	-0.0000	-0.0000
+					-0.0000	0.0000	1.0000
+					-0.0000	1.0000	-0.0000
+					-136.8101	-2.3344	-22.8648
+				}
+				{VolumeView "Wheel_back.ply"}
+			}
+			{bone "Body_back"
+				{parameters "ID=body_back;"}
+				{Matrix34
+					1.0000	-0.0000	0.0000
+					-0.0000	-1.0000	-0.0000
+					-0.0000	-0.0000	1.0000
+					-103.2824	-0.0731	10.6841
+				}
+				{VolumeView "Body_back.ply"}
+				{bone revolute "Elevator1"
+					{parameters "ID=body_back;"}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						-0.0000	0.0000	1.0000
+						-0.0000	1.0000	-0.0000
+						-7.5977	-34.7386	-19.3509
+					}
+					{VolumeView "Elevator1.ply"}
+				}
+				{bone revolute "Elevator2"
+					{parameters "ID=body_back;"}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						0.0000	-0.0000	1.0000
+						-0.0000	-1.0000	-0.0000
+						-7.5977	34.5280	-19.3509
+					}
+					{VolumeView "Elevator2.ply"}
+				}
+				{bone revolute "Rudder"
+					{parameters "ID=body_back;"}
+					{limits -30.0000 30.0000}
+					{speed 0.1000}
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						-0.0000	-1.0000	-0.0000
+						-0.0000	-0.0000	1.0000
+						-16.2494	0.0315	10.4223
+					}
+					{VolumeView "Rudder.ply"}
+				}
+				{bone "Part1"
+					{parameters "ID=body_back;"}
+					{Position -0.0000	-48.6345	-19.3559}
+					{VolumeView "Part1.ply"}
+				}
+				{bone "Part2"
+					{parameters "ID=body_back;"}
+					{Position 0.0000	42.5740	-19.3514}
+					{VolumeView "Part2.ply"}
+				}
+			}
+			{bone "WheelL"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0000
+					-0.0000	0.0000	1.0000
+					-0.0000	1.0000	-0.0000
+					80.0034	31.9114	-43.6553
+				}
+				{VolumeView "WheelL.ply"}
+			}
+			{bone "WheelR"
+				{parameters "ID=body;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.0000	-1.0000	0.0000
+					80.0034	-31.9114	-43.6553
+				}
+				{VolumeView "WheelR.ply"}
+			}
+		}
+		{bone "Pivot_back"
+			{Position -182.7952	-0.1346	2.0143}
+			{bone "support3"
+				{parameters "ID=body_back;"}
+				{Position -5.9687	-0.4505	22.3679}
+				{VolumeView "support3.ply"}
+			}
+		}
+		{bone "Pivot_front"
+			{Position 34.1944	-0.1346	2.0143}
+			{bone "WingL1"
+				{parameters "ID=wingL1;"}
+				{Position -16.4611	77.4303	44.5140}
+				{VolumeView "WingL1.ply"}
+				{bone "support1"
+					{parameters "ID=body;"}
+					{Position 12.2544	-52.7229	-47.4157}
+					{VolumeView "support1.ply"}
+				}
+				{bone revolute "Flap1"
+					{parameters "ID=wingL1;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-0.0000	1.0000
+						0.0000	-1.0000	-0.0000
+						-22.3025	0.1483	0.8365
+					}
+					{VolumeView "Flap1.ply"}
+				}
+				{bone "WingL2"
+					{parameters "ID=wingL2;"}
+					{Position 0.0516	95.1900	4.7653}
+					{VolumeView "WingL2.ply"}
+					{bone revolute "Aileron1"
+						{parameters "ID=wingL2;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	-0.0000	1.0000
+							0.0000	-1.0000	-0.0000
+							-19.6205	3.1448	0.4446
+						}
+						{VolumeView "Aileron1.ply"}
+					}
+					{bone "WingL3"
+						{parameters "ID=wingL2;"}
+						{Position 0.0000	42.1656	2.0763}
+						{VolumeView "WingL3.ply"}
+					}
+				}
+			}
+			{bone "WingR1"
+				{parameters "ID=wingR1;"}
+				{Matrix34
+					1.0000	-0.0000	0.0000
+					-0.0000	-1.0000	-0.0000
+					-0.0000	-0.0000	1.0000
+					-10.7189	-90.2242	45.0204
+				}
+				{VolumeView "WingR1.ply"}
+				{bone "support2"
+					{parameters "ID=body;"}
+					{Matrix34
+						0.9848	0.1736	0.0000
+						-0.1736	0.9848	0.0000
+						-0.0000	-0.0000	1.0000
+						6.5122	-64.7086	-47.8990
+					}
+					{VolumeView "support2.ply"}
+				}
+				{bone revolute "Flap2"
+					{parameters "ID=wingR1;"}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						0.0000	-0.0000	1.0000
+						0.0000	-1.0000	-0.0000
+						-28.0447	-11.6721	0.3301
+					}
+					{VolumeView "Flap2.ply"}
+				}
+				{bone "WingR2"
+					{parameters "ID=wingR2;"}
+					{Position 1.3699	70.0243	3.6484}
+					{VolumeView "WingR2.ply"}
+					{bone revolute "Aileron2"
+						{parameters "ID=wingR2;"}
+						{Matrix34
+							1.0000	0.0000	-0.0000
+							0.0000	-0.0000	1.0000
+							0.0000	-1.0000	-0.0000
+							-26.6811	16.4902	1.0552
+						}
+						{VolumeView "Aileron2.ply"}
+					}
+					{bone "WingR3"
+						{parameters "ID=wingR2;"}
+						{Position -7.0607	56.9968	2.6808}
+						{VolumeView "WingR3.ply"}
+					}
+				}
+			}
+		}
+	}
+}

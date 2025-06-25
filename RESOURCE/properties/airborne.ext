@@ -1,0 +1,144 @@
+;SDL
+actor
+
+{Chassis "airborne"
+	{sideSlopeSpeed 25}			;degree/s
+	{maxSideSlope 45}			;degree
+	{maxElevationSpeed 6}		;m/s
+	{elevationAcceleration 2}	;m/s^2
+	{ignitionTime 2} 			; seconds
+	{onAirTurnRadius 20}
+}
+
+(include "vehicle.ext")
+{noContactsAtAll}
+
+{props "airborne"}
+
+{extender "inventory"
+	{box
+		{size 8 6}
+		{weight 10000}
+	}
+}
+
+{volume "propeller"
+	{tags "part"}
+	{thickness 2}
+	{able {visible 0}}
+}
+{volume "engine"
+	{tags "body" "inflammable"}
+	{thickness 3}
+	{able {visible 1}}
+}
+{volume "body"
+	{tags "body"}
+	{thickness hollow 2}
+	{able {visible 0}}
+}
+{volume "body_back"
+	{thickness hollow 2}
+	{able {visible 0}}
+	{density 0.01}
+}
+{volume "cabine"
+	{thickness hollow 0.1}
+	{able {visible 0}}
+}
+{volume "wingr1"
+	{tags "inflammable" "part"}
+	{component "wingright"}
+	{thickness hollow 2}
+	{able {visible 0}}
+}
+{volume "wingl1"
+	{tags "inflammable" "part"}
+	{component "wingleft"}
+	{thickness hollow 2}
+	{able {visible 0}}
+}
+{volume "wingr2"
+	{tags "inflammable" "part"}
+	{thickness hollow 2}
+	{able {visible 0}}
+}
+{volume "wingl2"
+	{tags "inflammable" "part"}
+	{thickness hollow 2}
+	{able {visible 0}}
+}
+{volume "wheel_back"
+	{thickness 1}
+	{able {visible 0}}
+}
+{volume "retract_wheelR"
+	{tags "part"}
+	{thickness 1}
+	{able {visible 0}}
+}
+{volume "retract_wheelL"
+	{tags "part"}
+	{thickness 1}
+	{able {visible 0}}
+}
+	
+{component "propeller"
+	{RepairTime 10}
+	{Able {repair}}
+}
+{component "engine"
+	{RepairTime 25}
+	{Able {repair}}
+}
+{component "body"
+	{RepairTime 25}
+	{Able {repair}}
+}
+{component "cabine"
+	{RepairTime 15}
+	{Able {repair}}
+}
+{component "body_back"
+	{RepairTime 25}
+	{Able {repair}}
+}
+{component "wingright"
+	{RepairTime 25}
+	{Able {repair}}
+}
+{component "wingleft"
+	{RepairTime 25}
+	{Able {repair}}
+}
+{component "wingr2"
+	{RepairTime 25}
+	{Able {repair}}
+}
+{component "wingl2"
+	{RepairTime 25}
+	{Able {repair}}
+}
+{component "wheel_back"
+	{RepairTime 10}
+	{Able {repair}}
+	{tags "mover"}
+}
+{component "retract_wheelR"
+	{RepairTime 10}
+	{Able {repair}}
+	{tags "mover"}
+}
+{component "retract_wheelL"
+	{RepairTime 15}
+	{Able {Repair}}
+	{tags "mover"}
+}
+
+(define "locomotion"
+	{StartTime	5	}		; время разгона до макс. скорости с 0, seconds
+	{BrakeTime	2	}		; время торможения с макс. скорости до 0, seconds
+	{StopTime	4	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
+	{SteerOn	15}			; скорость поворота колес, градусов в секунду
+	{SteerOff	15}         ; скорость возврата колес в исх. состояние, градусов в секунду
+)

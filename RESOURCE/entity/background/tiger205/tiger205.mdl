@@ -1,0 +1,48 @@
+;Exported by: dan
+;Date:        Tue Mar 02 12:01:42 2004
+;File:        D:\-Projects-\-3DWork-\main-objects\tiger\Pz6-E-Tiger (export).max
+{Skeleton
+	{animation
+		{sequence "animation1" {speed 0.5}}
+		{sequence "animation2" {speed 0.5}}
+		{sequence "animation3" {speed 0.5}}
+	}
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{Position 1.0098	-0.0000	18.5581}
+			{VolumeView "body.ply"}
+			{bone revolute "Turret"
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					-0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.4624	0.0792	15.4146
+				}
+				{VolumeView "Turret.ply"}
+				{bone "gun"
+					{Matrix34
+						-1.0000	-0.0000	0.0000
+						0.0000	-1.0000	0.0000
+						0.0000	0.0000	1.0000
+						-22.4843	0.5751	7.4441
+					}
+					{VolumeView "gun.ply"}
+				}
+				{bone "Skin"
+					{Matrix34
+						-0.9012	0.3069	-0.3060
+						0.3595	0.9238	-0.1320
+						-0.2421	0.2290	0.9428
+						4.9014	13.5521	7.1806
+					}
+					{VolumeView "Skin.ply"}
+				}
+			}
+		}
+	}
+}

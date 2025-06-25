@@ -1,0 +1,22 @@
+;Exported by: sk
+;Date:        Tue Oct 28 10:26:09 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\Aerodrome\palatka_annten.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "tent"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "tent.ply"}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "tent"}
+	{Position -0.3667	-1.7145	0.0000}
+}

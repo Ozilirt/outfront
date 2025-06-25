@@ -1,0 +1,28 @@
+;Exported by: SK
+;Date:        Fri Jun 06 11:22:23 2003
+
+{Skeleton
+	{bone "chapel"
+		{Orientation
+			1.0000	-0.0000	0.0000
+			-0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "chapel.ply"}
+	}
+}
+{Volume "Body1"
+	{Cylinder 16.6722 72.0349}
+	{Bone "chapel"}
+		{Position 0.0699	0.0652	103.9380}
+}
+{Volume "Body"
+	{Box 82.6437 81.1052 68.2629}
+	{Bone "chapel"}
+		{Matrix34
+			0.0000	-1.0000	0.0000
+			1.0000	0.0000	0.0000
+			0.0000	0.0000	1.0000
+			-0.7567	0.2481	34.1200
+		}
+}

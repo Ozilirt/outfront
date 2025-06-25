@@ -1,0 +1,29 @@
+;Exported by: shevchenko
+;Date:        Mon Feb 02 12:32:45 2004
+;File:        D:\-Projects-\-3DWork-\sheva\woodbarrel1.max
+{Skeleton
+	{bone "woodbarrel2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "woodbarrel2.ply"}
+		{bone "FX_wood1"
+			{Position -0.0206	0.0026	4.9620}
+		}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.0159678 -0.00525427}
+		{Extent 7.87402 7.87402}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 15.748 15.748 20.9397}
+	{Bone "woodbarrel2"}
+	{Position 0.0160	0.0053	10.4699}
+}

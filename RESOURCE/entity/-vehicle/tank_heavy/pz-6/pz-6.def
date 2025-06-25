@@ -1,0 +1,135 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_pz6.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "turret_rotator"}
+	
+	{TexMods
+ 		{"ambush" "1"}
+		{"ambush1" "2"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 82
+		    {front  100}
+			{bottom	26}
+			{top    26}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 82
+		    {front  100}
+			{bottom	26}
+			{top    26}
+		}   
+	}
+	{volume "turret"
+		{thickness 65 0.3
+			{front  100}
+			{rear 26}
+		}
+	}
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_pz-6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_pz-6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor1))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+	("seat_human" place(seat5) bone(seat05) door(emit7)  animation(armor))
+	("seat_human" place(seat6) bone(seat06) door(emit8)  animation(armor1))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "88mm_kwk36"}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 650}
+			{item "ammo bullet88 ap" 50}
+			{item "ammo bullet88 fg" 27}
+		}
+	}
+	
+	{mass 52500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{maxspeed 10}
+		}
+		{speed
+			{Slow	5	}	; km/h
+			{Normal	8	}
+			{Fast	10	}
+		}
+	}
+	{Extension "Pz-6.mdl"}
+
+	(mod "mp"
+		{sensor
+			{visor "main"
+				{vision
+					{uncover 2}
+				    {human 50
+				    	{crawl 40}
+				    }
+				    {actor "vehicle" 70}
+				    {actor 55}
+					{h_fov 30}
+					{wide 2}
+					{v_fov 120}
+					{fog_range 70}
+					{fog_fov 60}
+				}	
+				{bone "visor1"}
+			}
+			{Visor "driver"
+				{vision
+					{h_fov 160}
+					{v_fov 90}
+					{uncover 1}
+				    {human 30
+				    	{crawl 25}
+				    }
+				    {actor "vehicle" 40}
+				    {actor 25}
+					{fog_range 50}
+					{fog_fov 160}
+				}
+				{bone "visor2"}
+			}
+		}
+	)
+}

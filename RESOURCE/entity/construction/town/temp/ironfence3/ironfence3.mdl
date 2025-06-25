@@ -1,0 +1,49 @@
+;Exported by: ubrashaev
+;Date:        Sat May 22 16:04:51 2004
+;File:        D:\-Projects-\-work-\3d\sk\fence.max
+{Skeleton
+	{bone "ironfence3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "ironfence3.ply"}
+		{bone "climb2"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-5.7894	-18.5069	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-5.5377	18.7543	0.0000
+			}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center -0.362209 -0.443432}
+		{Extent 36.1357 1.25999}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 4.60309 4.69702 29.7039}
+	{Bone "ironfence3"}
+	{Position 32.6084	0.0121	14.8519}
+}
+{Volume "metall"
+	{Box 65.5521 1.05924 25.3169}
+	{Bone "ironfence3"}
+	{Position -2.4580	-0.0248	14.3124}
+}

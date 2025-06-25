@@ -1,0 +1,25 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.1))
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  15}
+			{bottom	 6}
+			{rear   10}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  15}
+			{bottom	 5}
+			{rear   10}
+		}
+	}
+	{volume "engine"
+		{thickness 15}
+	}
+	{Extension "SdKfz251_1_xx.mdl"}
+}

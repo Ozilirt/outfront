@@ -1,0 +1,41 @@
+;Exported by: shevchenko
+;Date:        Mon Aug 09 12:20:18 2004
+;File:        D:\-Projects-\-3DWork-\sheva\bridge_multiplayer_x.max
+{Skeleton
+	{bone "automobile_bridge_part1"
+		{parameters "Ground;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "automobile_bridge_part1.ply" {Ground}}
+		{bone "automobile_bridge_lend"
+			{parameters "Land;Ground;"}
+			{VolumeView "automobile_bridge_lend.ply" {Ground}}
+		}
+		{bone "piece0"
+			{Position -0.0000	89.5134	18.4009}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "piece1"
+			{Position -6.7250	-88.5984	38.4595}
+			{VolumeView "piece1.ply"}
+		}
+	}
+}
+{Volume "piece1"
+	{Box 40.688 9.84581 25.8538}
+	{Bone "piece1"}
+	{Position -2.5321	-4.8608	1.1428}
+}
+{Volume "piece0"
+	{Box 58.9681 12.0071 36.3681}
+	{Bone "piece0"}
+	{Position 0.0713	2.9498	1.1122}
+}
+{Volume "body"
+	{Box 59.0551 196.85 118.11}
+	{Bone "automobile_bridge_part1"}
+	{Position 0.0000	-0.0000	0.0000}
+}

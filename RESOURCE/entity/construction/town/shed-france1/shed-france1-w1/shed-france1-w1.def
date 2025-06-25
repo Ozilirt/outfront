@@ -1,0 +1,45 @@
+{construct
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "shed-france1-w1.mdl"}
+	{props "cornered" "concrete" "parts" "construction" "wall"}
+	{mass 50000}
+
+	{Volume "body8"
+		{Tags  "body"}
+		{Thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "body7"
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "body6"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+}

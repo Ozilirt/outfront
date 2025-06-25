@@ -1,0 +1,31 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{Extension "decor_fence_small.mdl"}
+	{props "fence" "concrete" "animated_crush"}
+	{volume	"body"
+		{thickness hollow 3}
+	}
+;	{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/fence.ebm"
+;  			{PrescaleX 0.35}
+;  			{PrescaleY 0.75}
+;			{Visibility 0.8}
+;			{PreshiftX 0}
+;			{PreshiftY 0}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+;	}
+
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+
+}
+
+
+
+

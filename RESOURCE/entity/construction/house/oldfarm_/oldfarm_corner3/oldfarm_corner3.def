@@ -1,0 +1,36 @@
+{game_entity
+	(include "/properties/building.inc")
+	  {DecalView
+		{ownershadow  128 128}
+		{name "shadow"}
+	  }
+	{Extension "oldfarm_corner3.mdl"}
+	{props "cornered" "concrete" "windowed" "parts" "construction" "wall"}
+
+	{Volume "roof"
+		{thickness hollow 20}
+		{able {visible 0}}
+	}
+	{Volume "body3"
+		{thickness 50}
+		{Tags  "body"}
+	}
+	{Volume "body2"
+		{thickness 50}
+		{Tags  "body"}
+		{able {visible 0}}
+	}
+	{Volume "body1"
+		{thickness 50}
+		{Tags  "body"}
+	}
+	{Volume "body"
+		{thickness 50}
+		{Tags  "body"}
+	}
+
+}
+
+
+
+

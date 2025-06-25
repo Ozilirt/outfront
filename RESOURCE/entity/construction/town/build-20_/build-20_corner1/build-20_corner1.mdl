@@ -1,0 +1,217 @@
+;Exported by: ubrashaev
+;Date:        Sun May 16 11:59:44 2004
+;File:        D:\-Projects-\-work-\3d\sk\build-20.max
+{Skeleton
+	{bone "build-20_corner1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "build-20_corner1.ply"}
+		{bone "attach1"
+			{Position 18.0442	-37.7158	53.1432}
+			{visibility 0}
+		}
+		{bone "attach2"
+			{Position 18.0442	1.8486	53.1432}
+			{visibility 0}
+		}
+		{bone "attach3"
+			{Position 18.0442	41.3443	53.1432}
+			{visibility 0}
+		}
+		{bone "attach4"
+			{Position 18.0442	-37.6575	0.0025}
+			{visibility 0}
+		}
+		{bone "attach5"
+			{Position 18.0442	1.8370	0.0025}
+			{visibility 0}
+		}
+		{bone "window1"
+			{Position 28.1054	-37.7948	74.6386}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Position -0.0327	-0.6833	3.9112}
+			}
+		}
+		{bone "window1_x"
+			{Position 27.7864	-37.7948	74.6386}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2"
+			{Position 28.1054	1.6770	74.6386}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass2"
+				{Position -0.0327	-0.5907	3.9112}
+			}
+		}
+		{bone "window2_x"
+			{Position 27.7641	1.6770	74.6386}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+		{bone "window3"
+			{Position 28.1054	41.2270	74.6386}
+			{VolumeView "window3.ply"}
+			{bone "FX_glass3"
+				{Position -0.0327	-0.6450	3.9112}
+			}
+		}
+		{bone "window3_x"
+			{Position 27.5978	41.2270	74.6386}
+			{visibility 0}
+			{VolumeView "window3_x.ply"}
+		}
+		{bone "window4"
+			{Position 28.1283	-37.8084	27.7024}
+			{VolumeView "window4.ply"}
+			{bone "FX_glass4"
+				{Position -0.0555	0.0155	3.8396}
+			}
+		}
+		{bone "window4_x"
+			{Position 27.7178	-37.8084	27.7024}
+			{visibility 0}
+			{VolumeView "window4_x.ply"}
+		}
+		{bone "window5"
+			{Position 28.1283	1.6804	27.7024}
+			{VolumeView "window5.ply"}
+			{bone "FX_glass5"
+				{Position -0.0555	-0.6057	3.8396}
+			}
+		}
+		{bone "window5_x"
+			{Position 27.6581	1.6804	27.7024}
+			{visibility 0}
+			{VolumeView "window5_x.ply"}
+		}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 28.0329 9.69891}
+		{Extent 3.93701 60.7485}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -17.2138 -25.1779}
+		{Extent 12.3927 1.96851}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 0.897892 66.1664}
+		{Extent 30.9818 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "window5"
+	{Box 1.39764 15.748 23.622}
+	{Bone "window5"}
+	{Position 0.0796	0.0231	-0.0134}
+}
+{Volume "window4"
+	{Box 1.39764 15.748 23.622}
+	{Bone "window4"}
+	{Position 0.0796	0.0174	-0.0134}
+}
+{Volume "window3"
+	{Box 1.39764 15.748 23.622}
+	{Bone "window3"}
+	{Position 0.1024	-0.0162	0.0582}
+}
+{Volume "window2"
+	{Box 1.39764 15.748 23.622}
+	{Bone "window2"}
+	{Position 0.1024	0.0381	0.0582}
+}
+{Volume "window1"
+	{Box 1.39764 15.748 23.622}
+	{Bone "window1"}
+	{Position 0.1024	-0.0545	0.0582}
+}
+{Volume "Hole4"
+	{Box 19.685 15.748 23.622}
+	{Bone "build-20_corner1"}
+	{Position 27.8532	1.6959	27.6186}
+}
+{Volume "Hole3"
+	{Box 19.685 15.748 23.622}
+	{Bone "build-20_corner1"}
+	{Position 27.8532	-37.7987	27.6186}
+}
+{Volume "Hole2"
+	{Box 19.685 15.748 23.622}
+	{Bone "build-20_corner1"}
+	{Position 27.8532	41.2032	74.6264}
+}
+{Volume "Hole1"
+	{Box 19.685 15.748 23.622}
+	{Bone "build-20_corner1"}
+	{Position 27.8532	1.7075	74.6264}
+}
+{Volume "Hole0"
+	{Box 19.685 15.748 23.622}
+	{Bone "build-20_corner1"}
+	{Position 27.8532	-37.8569	74.6264}
+}
+{Volume "body"
+	{Box 7.87402 121.497 62.84}
+	{Bone "build-20_corner1"}
+	{Position 28.0329	-9.6989	31.4200}
+}
+{Volume "body5"
+	{Box 3.93701 24.7854 33.8708}
+	{Bone "build-20_corner1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-17.2138	25.1779	16.9354
+	}
+}
+{Volume "body4"
+	{Box 7.87402 73.1169 37.7417}
+	{Bone "build-20_corner1"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-0.7880	0.0000	0.6157
+		-0.6157	0.0000	-0.7880
+		-10.0410	-66.1664	104.6375
+	}
+}
+{Volume "body3"
+	{Box 7.87402 61.9635 96.7737}
+	{Bone "build-20_corner1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.8979	-66.1664	48.3868
+	}
+}
+{Volume "body2"
+	{Box 2.3622 126.43 76.9931}
+	{Bone "build-20_corner1"}
+	{Matrix34
+		0.6199	0.0000	0.7847
+		0.0000	1.0000	0.0000
+		-0.7847	0.0000	0.6199
+		3.2043	-7.0559	119.4504
+	}
+}
+{Volume "body1"
+	{Box 7.87402 126.43 32.3501}
+	{Bone "build-20_corner1"}
+	{Position 28.0329	-7.0559	78.9679}
+}

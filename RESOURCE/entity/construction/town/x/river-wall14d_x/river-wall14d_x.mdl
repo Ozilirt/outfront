@@ -1,0 +1,60 @@
+;Exported by: shevchenko
+;Date:        Fri Feb 13 19:22:15 2004
+;File:        D:\-Projects-\-3DWork-\sheva\river-wall1_new.max
+{Skeleton
+	{bone "wall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall.ply"}
+		{bone "piece0"
+			{Position -44.4271	-0.9745	11.6583}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "piece1"
+			{Position -19.1890	-2.4557	7.8809}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "FX_dust"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				44.9214	-0.8322	5.1111
+			}
+		}
+		{bone "FX_dust1"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-37.5383	-0.8322	7.8371
+			}
+		}
+		{bone "FX_stone1"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-31.4543	-0.8322	5.1111
+			}
+		}
+	}
+}
+{Volume "piece1"
+	{Box 30.479 11.7391 15.9034}
+	{Bone "piece1"}
+	{Position -4.0486	0.0100	-0.0949}
+}
+{Volume "piece0"
+	{Box 11.582 17.8434 13.8264}
+	{Bone "piece0"}
+	{Position -0.0310	-0.4489	1.2661}
+}
+{Volume "body"
+	{Box 101.495 20.2398 48.1922}
+	{Bone "wall"}
+	{Position -0.5782	-0.2308	-16.5024}
+}

@@ -1,0 +1,40 @@
+;Exported by: ubrashaev
+;Date:        Thu Jan 15 12:00:38 2004
+;File:        D:\-Projects-\-work-\3d\stog\stack2(reel).max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "stack_big1"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "stack_big1.ply"}
+		{bone "locomotive"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				1.2388	0.2447	39.3397
+			}
+		}
+	}
+}
+{Volume "fire1"
+	{Box 136.664 50.7969 13.7032}
+	{Bone "locomotive"}
+	{Position 3.3168	2.3170	0.1955}
+}
+{Volume "body"
+	{Box 136.664 50.7969 50.7527}
+	{Bone "stack_big1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-2.0780	-2.0723	23.2988
+	}
+}

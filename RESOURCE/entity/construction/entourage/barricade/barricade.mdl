@@ -1,0 +1,70 @@
+;Exported by: vic
+;Date:        Wed Jan 21 12:42:41 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\barricade2.max
+{Skeleton
+	{bone "barricade"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "barricade.ply"}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -2.85044 -51.5958}
+		{Extent 8.68188 13.0991}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -23.8524 55.9198}
+		{Extent 4.87324 13.1346}
+		{Axis 0.866158 0.49977}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -10.4737 27.2876}
+		{Extent 11.811 25.2747}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -9.07993 -19.9724}
+		{Extent 11.811 21.8326}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 17.3638 26.1982 13.7795}
+	{Bone "barricade"}
+	{Position -2.8504	51.5958	6.8898}
+}
+{Volume "body3"
+	{Box 9.55007 26.1982 15.748}
+	{Bone "barricade"}
+	{Matrix34
+		0.8624	-0.5063	0.0000
+		0.5063	0.8624	0.0000
+		0.0000	0.0000	1.0000
+		-23.8524	-55.9198	7.8740
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "barricade"}
+	{Position -10.4737	-24.4245	0.0000}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "barricade"}
+	{Position -9.0799	20.7029	0.0000}
+}

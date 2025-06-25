@@ -1,0 +1,38 @@
+{construction
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "selsovet_corner2.mdl"}
+	{props "cornered" "concrete" "windowed" "parts" "construction" "wall"}
+
+	{Volume "roof"
+		{able {visible 0}}
+		{thickness hollow 20}
+	}
+	{Volume "floor"
+		{able {visible 0}}
+		{thickness 5}
+	}
+
+	{Volume "body1"
+		{Tags  "body"}
+		{thickness 50}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{able {holed}}
+		{thickness 50}
+	}
+
+	{Volume "Hole1"
+		{able clear {hole}}
+	}
+	{Volume "window1"
+		{able {visible 0} {window}}
+		{thickness 1}
+	}
+
+}

@@ -1,0 +1,29 @@
+{construction	
+    (include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "gate_euro19.mdl"}
+	{props "cornered" "concrete" "parts" "construction" "wall"}
+
+
+	{volume	"body3"
+		{thickness 20}
+		{tags "body"}
+	}
+	{volume	"body2"
+		{thickness 20}
+		{tags "body"}
+	}
+	{volume	"body1"
+		{thickness 20}
+		{tags "body"}
+	}
+	{volume	"body"
+		{thickness  20}
+		{tags "body"}
+	}
+
+}

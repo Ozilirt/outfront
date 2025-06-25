@@ -1,0 +1,30 @@
+{Skeleton
+	{animation
+		{sequence {name "crush1"} {file "crush1.anm"} {duration percent 40}}
+		{sequence {name "crush2"} {file "crush2.anm"} {duration percent 40}}
+	}
+	{bone "hous-plank2"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hous-plank2.ply"}
+		{bone "FX_haulm2"
+			{Position -2.1623	1.0538	34.8860}
+		}
+		{bone "FX_fire2"
+			{Position -19.4620	-10.1491	21.1321}
+		}
+		{bone "FX_smoke2"
+			{Position -15.6464	21.1175	15.2865}
+		}
+		{bone "FX_smoke1"
+			{Position 45.9760	23.7979	15.2865}
+		}
+		{bone "FX_fire1"
+			{Position 40.5379	-33.4409	14.1119}
+		}
+	}
+}

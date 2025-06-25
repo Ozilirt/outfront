@@ -1,0 +1,59 @@
+{construction
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{Extension "mill_water1.mdl"}
+	{props "cornered" "concrete" "parts" "construction" "windowed"}
+
+	{constrain zero}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+		{"4" "4"}
+		{"5" "5"}
+		{"6" "6"}
+		{"7" "7"}
+		{"8" "8"}
+		{"9" "9"}
+		{"10" "10"}
+	}
+	{mass 50000}
+
+	{Volume "Body3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}	
+	}
+	{Volume "Body2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}	
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}}
+	}
+
+	{Volume "window1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}	
+	}
+
+	{Volume "Hole0"
+		{able clear {hole}}
+	}
+
+}

@@ -1,0 +1,46 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc" scaleX(1.5) scaleY(1.0))
+	{mass 5000}
+	{props "vehicle" "steam_locomotive" "steel"}
+
+	{extension "crew.ext"}
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun" {fixed}}
+	}
+	{component "body"
+		{RepairTime 25}
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "engine"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+	{Extension "autodraesine.mdl"}
+	{volume "turret"
+		{thickness 3}
+	}
+	{volume "engine"
+		{thickness 5}
+	}
+	{volume "wheelleft2"
+		{thickness 40}
+	}
+	{volume "wheelleft1"
+		{thickness 40}
+	}
+	{volume "wheelright1"
+		{thickness 40}
+	}
+	{volume "wheelright2"
+		{thickness 40}
+	}
+}

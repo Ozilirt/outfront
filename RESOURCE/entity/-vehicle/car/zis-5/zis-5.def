@@ -1,0 +1,65 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	{extension "/properties/structure/truck4x4.ext"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-midcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+	("passenger_10_human_invisible")
+
+	{boarder
+		{anm "passenger"
+			{forward	{begin	"board_body"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "bodyback"
+		{thickness 2}
+	}
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "ZIS-5.mdl"}
+
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "repair_kit" {cell 0 0}}
+				{item "can" {cell 6 0}}
+				{item "mine antitank" 10 {cell 2 0}}
+				{item "mine antitank" 10 {cell 4 0}}
+				{item "mine antipersonnel" 25 {cell 0 2}}
+				{item "grenade rpg40" 20 {cell 6 2}}
+				{item "grenade f1" 15 {cell 6 3}}
+				{item "bandage" 20 {cell 2 2}}
+				{item "bandage" 20 {cell 4 2}}
+				{item "ammo pistol" 1000 {cell 0 3}}
+				{item "ammo rifle" 1000 {cell 5 3}}
+				{item "ammo mgun" 1000 {cell 3 3}}
+			}
+		}
+	)
+}

@@ -1,0 +1,23 @@
+;Exported by: sk
+;Date:        Thu Aug 14 11:07:09 2003
+
+{Skeleton
+	{bone "Barrel3_a"
+		{Orientation
+			0.9229	0.0000	-0.3850
+			0.3850	-0.0000	0.9229
+			0.0000	1.0000	0.0000
+		}
+		{VolumeView "Barrel3_a.ply"}
+	}
+}
+{Volume "body"
+	{Cylinder 7.83887 24.3607}
+	{Bone "Barrel3_a"}
+		{Matrix34
+			0.9659	0.2588	-0.0000
+			-0.2588	0.9659	0.0000
+			-0.0000	-0.0000	1.0000
+			-2.9109	7.0841	-0.1265
+		}
+}

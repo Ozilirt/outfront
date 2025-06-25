@@ -1,0 +1,32 @@
+;Exported by: GARRY
+;Date:        Fri Jun 20 19:58:52 2003
+
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush.anm"} {duration percent 60}}
+	}
+	{bone "gate_woods"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate_woods.ply"}
+	}
+}
+{Volume "gates"
+	{Box 10.4891 93.6459 11.3719}
+	{Bone "gate_woods"}
+		{Position 1.2358	-0.0599	55.2067}
+}
+{Volume "gates1"
+	{Box 3.50805 83.5462 36.5458}
+	{Bone "gate_woods"}
+		{Matrix34
+			0.9998	-0.0035	0.0171
+			0.0035	1.0000	0.0038
+			-0.0171	-0.0038	0.9998
+			0.9239	-0.3420	22.4129
+		}
+}

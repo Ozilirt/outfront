@@ -1,0 +1,128 @@
+{fx
+	{ParticleView
+		{generator
+			{TotalParticles 50}
+			{EmissionArea
+				{radius 1}
+				{alpha0 0}
+				{alpha1 90}
+			}
+			{ParticleInit
+				{Speed 4 3.5}
+				{Lifetime 4 2}
+			}
+			{AxisZ}
+			{StartParticles 50}
+			{TimeToLive 1}
+		}
+		{mover
+			{gravity
+				{value -0.01}
+			}
+			{damping 0.87}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_bmp/smoke/smokesmal4b_30.ebm"
+					{Scale
+						{Linear
+							{min 1.8 0.5}
+							{max 2 0.5}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.3}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 15}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{preTurn 0 90}
+				}
+				{sprite "/FX/_BMP/Smoke/smokesmal4a.ebm"
+					{Scale
+						{Linear
+							{min 1.8 0.5}
+							{max 2 0.5}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.3}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 100 20}
+							{max 10 15}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/fx/_bmp/smoke/smokesmal4b_50.ebm"
+					{Scale
+						{Linear
+							{min 1.8 0.5}
+							{max 2 0.5}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.3}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 100 20}
+							{max 10 15}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/fx/_bmp/smoke/smokesmal4b_100.ebm"
+					{Scale
+						{Linear
+							{min 1.8 0.5}
+							{max 2.5 0.5}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.3}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 100 20}
+							{max 10 15}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+		}
+		{NotifyOwner}
+		{offset 0 0 8}
+	}
+}

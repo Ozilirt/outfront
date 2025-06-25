@@ -1,0 +1,16 @@
+{building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1) sy(0.18) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "part_wall2.mdl"}
+;	{props "two" "staged" "concrete" "construction"}
+	{props "fence" "concrete"}
+
+	{volume	"wall"
+		{thickness 30}
+		{tags "body"}
+	}
+}

@@ -1,0 +1,28 @@
+;Exported by: ubrashaev
+;Date:        Thu Dec 04 22:06:59 2003
+;File:        D:\-Projects-\-work-\3d\sk\fence(small).max
+{Skeleton
+	{bone "fence_euro1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence_euro1.ply"}
+	}
+}
+{Volume "metall"
+	{Box 62.2441 1.14173 24.8437}
+	{Bone "fence_euro1"}
+	{Position 3.0685	-0.0214	24.1707}
+}
+{Volume "body1"
+	{Box 62.2441 7.79528 11.865}
+	{Bone "fence_euro1"}
+	{Position 2.7271	-0.0214	5.5857}
+}
+{Volume "body"
+	{Box 9.68504 9.68504 43.5742}
+	{Bone "fence_euro1"}
+	{Position 38.9842	-0.0214	21.6539}
+}

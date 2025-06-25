@@ -1,0 +1,36 @@
+;Exported by: garry
+;Date:        Tue May 04 13:06:06 2004
+;File:        \\sharepoint\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon1.max
+{Skeleton
+	{bone "axe"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "axe.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-1.0000	-0.0000
+				-0.0000	0.0000	-1.0000
+				2.8976	0.1820	-0.1013
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 21.541 9.74066 3.78463}
+	{Bone "axe"}
+	{Position 8.5309	0.4572	0.0606}
+}
+{Volume "body2"
+	{Box 3.92217 2.1907 1.28453}
+	{Bone "axe"}
+	{Position 12.0622	1.8265	0.0000}
+}
+{Volume "body1"
+	{Box 11.1965 1.13887 1.28453}
+	{Bone "axe"}
+	{Position 8.4518	0.1880	0.0000}
+}

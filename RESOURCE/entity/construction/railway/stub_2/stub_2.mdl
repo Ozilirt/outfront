@@ -1,0 +1,23 @@
+;Exported by: garry
+;Date:        Tue Sep 09 10:13:40 2003
+
+{Skeleton
+	{bone "stub_2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "stub_2.ply"}
+	}
+}
+{Volume "body2"
+	{Box 7.81002 32.8021 7.28935}
+	{Bone "stub_2"}
+		{Position -1.1421	0.0975	22.1666}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "stub_2"}
+		{Position -0.7037	-0.1502	1.9813}
+}

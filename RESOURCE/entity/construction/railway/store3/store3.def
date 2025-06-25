@@ -1,0 +1,112 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.3) sy(1.1) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "store3.mdl"}
+	{props "cornered" "concrete" "windowed" "parts" "construction" "wall"}
+	{Volume "body8"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {touch 0}}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}{touch 0}{obstacle 0}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}{holed}{touch 0}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}{touch 0}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {touch 0}}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}{touch 0}}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {touch 0}}
+	}
+	{Volume "body6"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}{touch 0}{obstacle 0}}
+	}
+	{Volume "body7"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}{touch 0}}
+	}
+	{Volume "door"
+		{Thickness 10}
+		{able {visible 1}{touch 0}}
+	}
+	{Volume "door1"
+		{Thickness 10}
+		{able {visible 1}{touch 0}}
+	}
+	{Volume "door2"
+		{Thickness 10}
+		{able {visible 1}{touch 0}}
+	}
+	{Volume "door3"
+		{Thickness 10}
+		{able {visible 1}{touch 0}}
+	}
+	{Volume "window3"
+		{Thickness 0.1}
+		{able {visible 0}{window}}
+	}
+	{Volume "window2"
+		{Thickness 0.1}
+		{able {visible 0}{window}}
+	}
+	{Volume "window1"
+		{Thickness 0.1}
+		{able {visible 0}{window}}
+	}
+	{Volume "roof2"
+		{Thickness 30}
+		{able {visible 0}{touch 0}}
+	}
+	{Volume "roof1"
+		{Thickness 30}
+		{able {visible 0}{touch 0}}
+	}
+	{Volume "Hole1"
+		{able clear {hole}}
+	}
+	{Volume "Hole2"
+		{able clear {hole}}
+	}
+	{Volume "Hole3"
+		{able clear {hole}}
+	}
+	{Volume "roof"
+		{Thickness 30}
+		{able {visible 0}{touch 0}}
+	}
+	{Volume "post"
+		{Thickness 30}
+		{able {visible 1}{touch 0}}
+	}
+	{Volume "post1"
+		{Thickness 30}
+		{able {visible 1}{touch 0}}
+	}
+}

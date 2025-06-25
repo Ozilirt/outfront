@@ -1,0 +1,19 @@
+{construction
+	(include "/properties/construction.inc")
+	{Extension "elevator9.mdl"}
+	{props "two" "staged" "concrete" "construction" "no_destroyed_stamp"}
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Volume "Support1"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 1}{touch 1}}
+	}
+	{Volume "Support"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 1}{touch 1}}
+	}
+}

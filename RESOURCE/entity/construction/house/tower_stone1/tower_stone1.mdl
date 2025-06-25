@@ -1,0 +1,34 @@
+;Exported by: sk
+;Date:        Fri Feb 06 16:55:29 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\ÆÄ\hous_arrow.max
+{Skeleton
+	{bone "tower_stone1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "tower_stone1.ply"}
+	}
+}
+{Obstacle "Circle01"
+	{Circle2
+		{Radius 42.5297}
+		{Center 0.789352 -7.62939e-006}
+	}
+}
+{Volume "body2"
+	{Cylinder 21.1809 31.8104}
+	{Bone "tower_stone1"}
+	{Position 0.0000	0.0000	181.3148}
+}
+{Volume "body1"
+	{Cylinder 49.2578 67.6816}
+	{Bone "tower_stone1"}
+	{Position 0.0000	0.0000	131.5798}
+}
+{Volume "body"
+	{Cylinder 38.1843 98.0893}
+	{Bone "tower_stone1"}
+	{Position 0.0000	0.0000	49.0447}
+}

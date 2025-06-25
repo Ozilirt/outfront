@@ -1,0 +1,31 @@
+;Exported by: vic
+;Date:        Wed Nov 26 10:31:27 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall4a_x.max
+{Skeleton
+	{bone "house_euro2_wall3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro2_wall3.ply"}
+	}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center -0.0410511 0.00758648}
+		{Extent 4.92413 29.9105}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Polyhedron "Body.vol"}
+	{Bone "house_euro2_wall3"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		-4.9594	0.1770	20.9454
+	}
+}

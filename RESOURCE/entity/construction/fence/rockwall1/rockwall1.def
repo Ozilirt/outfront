@@ -1,0 +1,20 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/fence.inc" sx(1.9) sy(0.9) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+    {Extension "rockwall1.mdl"}
+	{props "fence" "concrete" "medium"}
+	{volume "body"
+		{tags "climb"}
+		{thickness 20}
+		{able {touch}}
+	}
+	{volume "body1"
+		{tags "climb"}
+		{thickness 20}
+		{able {touch}}
+	}
+}

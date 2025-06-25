@@ -1,0 +1,124 @@
+{fx
+	{ParticleView
+		{generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 1 0}
+				{speed 0.3}
+			}
+			{ParticleInit
+				{Speed 0 0}
+				{Lifetime 0.8 0.2}
+			}
+			{StartParticles 1}
+			{AutoTurn}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.5}
+			}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Flash/Drops.ebm"
+					{Scale
+						{Linear
+							{min 0.15 0.05}
+							{max 0.2 0.1}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 -180}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1.8}
+					}
+					{Visibility 1}
+				}
+			}
+			{stage collided dying
+				{sprite "/fx/_bmp/flash/ripples_w2.ebm"
+					{Visibility
+						{Linear
+							{min 0.2 0.1}
+							{max 0}
+						}
+					}
+					{Scale
+						{Linear
+							{min 0.2 0.1}
+							{max 0.6 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 0.8}
+					}
+				}
+				{flags KillParticle Ground}
+				{sprite "/fx/_bmp/flash/wave5.ebm"
+					{ScaleX
+						{Linear
+							{min 0}
+							{max 0.7}
+						}
+					}
+					{ScaleY
+						{Linear
+							{min 0}
+							{max 0.1}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1}
+					}
+					{preTurn 90}
+					{Visibility
+						{Linear
+							{min 0.8 0.2}
+							{max 0}
+						}
+					}
+				}
+				{sprite "/fx/_bmp/flash/wave5a.ebm"
+					{ScaleX
+						{Linear
+							{min 0}
+							{max 0.7}
+						}
+					}
+					{ScaleY
+						{Linear
+							{min 0}
+							{max 0.1}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1}
+					}
+					{preTurn 90}
+					{Visibility
+						{Linear
+							{min 0.8 0.2}
+							{max 0}
+						}
+					}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+}

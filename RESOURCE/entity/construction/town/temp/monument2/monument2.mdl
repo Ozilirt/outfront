@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Fri Nov 14 15:36:20 2003
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\fountain.max
+{Skeleton
+	{bone "monument2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "monument2.ply"}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center 0.0303879 0.0166017}
+		{Extent 4.00227 4.00463}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 7.99213 7.99685 69.7291}
+	{Bone "monument2"}
+	{Matrix34
+		1.0000	0.0016	0.0000
+		-0.0016	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0304	-0.0166	34.8646
+	}
+}

@@ -1,0 +1,29 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 	4.3}
+;			{PreScaleY 	2.4}
+;  			{PreshiftX	3	}
+;  			{PreshiftY	-5	}
+;			{Visibility	0.6	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "barrels1.mdl"}
+	{props "steel" "parts" "construction" "small" "no_destroyed_stamp"}
+	{Volume "body"
+		{thickness 3}
+		{tags "body"}
+	}
+	{Volume "body1"
+		{thickness 3}
+		{tags "body"}
+	}
+}

@@ -1,0 +1,55 @@
+;Exported by: vic
+;Date:        Wed Feb 11 18:41:48 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\stolb\stolb_t_light.max
+{Skeleton
+	{bone "post_town"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_town.ply"}
+		{bone "lamp_glass1"
+			{Matrix34
+				-0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				12.3923	0.0161	87.2760
+			}
+		}
+		{bone "lamp_light_spot1"
+			{Matrix34
+				-0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				12.3923	0.0161	87.0778
+			}
+		}
+		{bone "light_spot"
+			{Matrix34
+				-0.0000	0.0000	-1.0000
+				0.0000	1.0000	0.0000
+				1.0000	0.0000	-0.0000
+				12.3923	0.0161	87.4247
+			}
+		}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -0.0235186 0.000556946}
+		{Extent 1.1811 1.1811}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "lamp1"
+	{Box 4.50236 2.19443 1.24855}
+	{Bone "post_town"}
+	{Position 12.0250	0.0273	87.5765}
+}
+{Volume "body"
+	{Box 2.3622 2.3622 78.7649}
+	{Bone "post_town"}
+	{Position -0.0235	-0.0006	39.3824}
+}

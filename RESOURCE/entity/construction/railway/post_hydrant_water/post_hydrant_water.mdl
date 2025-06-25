@@ -1,0 +1,31 @@
+;Exported by: ubrashaev
+;Date:        Wed Aug 25 16:10:43 2004
+;File:        D:\-Projects-\-work-\3d\жд\RR_gad.max
+{Skeleton
+	{bone "post_hydrant"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_hydrant.ply"}
+		{bone "FX_water"
+			{Matrix34
+				0.1717	-0.1282	-0.9768
+				0.4808	0.8763	-0.0304
+				0.8598	-0.4644	0.2121
+				37.8873	-27.7544	94.9053
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 8.89414 8.01353 116.379}
+	{Bone "post_hydrant"}
+	{Matrix34
+		0.8492	-0.5281	0.0000
+		0.5281	0.8492	-0.0000
+		0.0000	-0.0000	1.0000
+		0.0312	0.6859	57.2804
+	}
+}

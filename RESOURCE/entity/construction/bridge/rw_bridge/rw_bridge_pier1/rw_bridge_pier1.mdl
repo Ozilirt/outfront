@@ -1,0 +1,172 @@
+;Exported by: vic
+;Date:        Tue Sep 07 09:29:58 2004
+;File:        C:\-Projects-\-3DWork-\Constructions\bridge_metal\bridge_vic2.max
+{Skeleton
+	{bone "RW_bridge_pier1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "RW_bridge_pier1.ply"}
+	}
+}
+{Obstacle "body11"
+	{Obb2
+		{Center 78.8108 125.462}
+		{Extent 1.42061 62.4664}
+		{Axis 0.0182398 0.999834}
+	}
+	{Rotate}
+}
+{Obstacle "body10"
+	{Obb2
+		{Center 78.8894 -123.637}
+		{Extent 62.4646 1.23583}
+		{Axis 0.998631 0.0523094}
+	}
+	{Rotate}
+}
+{Obstacle "body6"
+	{Obb2
+		{Center 28.5403 127.389}
+		{Extent 23.1901 5.22685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -27.7948 127.389}
+		{Extent 23.1916 5.22685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 0.121246 127.389}
+		{Extent 5.71082 5.22685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 28.5403 -127.424}
+		{Extent 23.1901 5.22686}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -27.7948 -127.424}
+		{Extent 23.1916 5.22685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 0.121246 -127.424}
+		{Extent 5.71082 5.22686}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body11"
+	{Box 1.9531 1.96007 166.152}
+	{Bone "RW_bridge_pier1"}
+	{Matrix34
+		0.6680	0.0169	0.7440
+		-0.0253	0.9997	0.0000
+		-0.7438	-0.0188	0.6682
+		78.8108	-125.4615	54.7820
+	}
+}
+{Volume "body10"
+	{Box 1.9531 1.96007 166.152}
+	{Bone "RW_bridge_pier1"}
+	{Matrix34
+		0.6671	-0.0377	0.7440
+		0.0564	0.9984	-0.0000
+		-0.7428	0.0420	0.6682
+		78.8894	123.6372	54.7821
+	}
+}
+{Volume "body9"
+	{Box 11.4216 10.4537 109.551}
+	{Bone "RW_bridge_pier1"}
+	{Matrix34
+		-0.0000	0.0000	1.0000
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	-0.0000
+		-37.6924	127.8589	135.7492
+	}
+}
+{Volume "body8"
+	{Box 11.4216 10.4537 116.29}
+	{Bone "RW_bridge_pier1"}
+	{Matrix34
+		-0.0000	0.0000	1.0000
+		0.0000	1.0000	0.0000
+		-1.0000	0.0000	-0.0000
+		-41.0622	-0.7777	135.7492
+	}
+}
+{Volume "body6"
+	{Box 6.51033 10.4537 138.46}
+	{Bone "RW_bridge_pier1"}
+	{Matrix34
+		0.9570	0.0000	0.2900
+		0.0000	1.0000	0.0000
+		-0.2900	0.0000	0.9570
+		28.5403	-127.3894	64.3459
+	}
+}
+{Volume "body5"
+	{Box 6.51033 10.4537 138.46}
+	{Bone "RW_bridge_pier1"}
+	{Matrix34
+		0.9570	0.0000	-0.2900
+		0.0000	1.0000	0.0000
+		0.2900	0.0000	0.9570
+		-27.7948	-127.3894	64.3455
+	}
+}
+{Volume "body4"
+	{Box 11.4216 10.4537 152.154}
+	{Bone "RW_bridge_pier1"}
+	{Position 0.1212	-127.3894	74.1673}
+}
+{Volume "body3"
+	{Box 6.51033 10.4537 138.46}
+	{Bone "RW_bridge_pier1"}
+	{Matrix34
+		0.9570	0.0000	0.2900
+		0.0000	1.0000	0.0000
+		-0.2900	0.0000	0.9570
+		28.5403	127.4244	64.3459
+	}
+}
+{Volume "body2"
+	{Box 6.51033 10.4537 138.46}
+	{Bone "RW_bridge_pier1"}
+	{Matrix34
+		0.9570	0.0000	-0.2900
+		0.0000	1.0000	0.0000
+		0.2900	0.0000	0.9570
+		-27.7948	127.4245	64.3455
+	}
+}
+{Volume "body1"
+	{Box 11.4216 10.4537 152.154}
+	{Bone "RW_bridge_pier1"}
+	{Position 0.1212	127.4244	74.1673}
+}
+{Volume "body"
+	{Box 8.21323 263.918 23.9379}
+	{Bone "RW_bridge_pier1"}
+	{Position -0.0145	0.4850	138.1891}
+}

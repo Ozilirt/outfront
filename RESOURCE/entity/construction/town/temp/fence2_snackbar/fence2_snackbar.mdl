@@ -1,0 +1,59 @@
+;Exported by: sk
+;Date:        Wed Nov 12 15:53:20 2003
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\House_suburb1.max
+{Skeleton
+	{bone "fence2_snackbar"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence2_snackbar.ply"}
+	}
+}
+{Obstacle "body1_vol"
+	{Obb2
+		{Center 21.4181 -2.62592}
+		{Extent 17.7998 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center -17.5186 -2.62592}
+		{Extent 21.9751 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 7.87402 33.8196 16.8403}
+	{Bone "fence2_snackbar"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-0.8660	-0.0000	0.5000
+		0.5000	0.0000	0.8660
+		11.4176	2.6259	12.2243
+	}
+}
+{Volume "body1"
+	{Box 7.87402 35.5996 6.33092}
+	{Bone "fence2_snackbar"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		21.4181	2.6259	3.1655
+	}
+}
+{Volume "body"
+	{Box 7.87402 43.9502 42.2061}
+	{Bone "fence2_snackbar"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-17.5186	2.6259	21.1031
+	}
+}

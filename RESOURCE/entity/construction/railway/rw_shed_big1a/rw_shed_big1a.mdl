@@ -1,0 +1,85 @@
+;Exported by: vic
+;Date:        Thu Jun 03 13:10:32 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\rw_shed_big1a.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "shed_big1a"
+			{Position -6.7732	0.0152	46.1856}
+			{VolumeView "shed_big1a.ply"}
+		}
+		{bone "roof"
+			{parameters "CommonMesh;"}
+			{Position 0.0000	0.0000	88.5827}
+			{VolumeView "roof.ply"}
+		}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 44.1282 -0.114033}
+		{Extent 3.44488 57.4035}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -2.63002 56.0639}
+		{Extent 49.2556 3.44488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -2.50795 -56.1018}
+		{Extent 47.8022 3.44488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body4"
+	{Box 98.5111 2.95276 70.917}
+	{Bone "roof"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.5920	-0.8059
+		0.0000	0.8059	0.5920
+		-2.6300	-27.4878	-18.7767
+	}
+}
+{Volume "body2"
+	{Box 95.6044 2.95276 70.917}
+	{Bone "roof"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.5935	0.8048
+		0.0000	-0.8048	0.5935
+		-2.5079	27.5637	-18.8879
+	}
+}
+{Volume "body5"
+	{Polyhedron "body5.vol"}
+	{Bone "roof"}
+	{Position 44.1282	0.1140	-40.1919}
+}
+{Volume "body"
+	{Box 6.88976 114.807 48.6755}
+	{Bone "basis"}
+	{Position 44.1282	0.1140	24.3377}
+}
+{Volume "body3"
+	{Box 98.5111 6.88976 48.9082}
+	{Bone "basis"}
+	{Position -2.6300	-56.0639	24.4541}
+}
+{Volume "body1"
+	{Box 95.6044 6.88976 48.9082}
+	{Bone "basis"}
+	{Position -2.5079	56.1018	24.4541}
+}

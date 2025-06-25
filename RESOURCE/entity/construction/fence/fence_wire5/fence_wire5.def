@@ -1,0 +1,14 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.3) sy(1.1) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "fence_wire5.mdl"}
+	{props "one" "staged" "steel" "construction" "no_destroyed_stamp" "disable_area"}
+	{volume "body" 
+		{thickness 3}
+		{able {bullet 0} {visible 0}}
+	}
+}

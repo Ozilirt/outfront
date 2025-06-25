@@ -1,0 +1,49 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "small" "concrete" "parts" "construction" "windowed" "no_destroyed_stamp"}
+	{constrain zero}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+		{"4" "4"}
+		{"5" "5"}
+		{"6" "6"}
+		{"7" "7"}
+		{"8" "8"}
+		{"9" "9"}
+		{"10" "10"}
+	}
+	{mass 50000}
+	{Extension "platform_roof.mdl"}
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 40}
+		{able {visible 0}}
+	}
+	{Volume "window2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window3"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+}

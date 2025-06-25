@@ -1,0 +1,81 @@
+;Exported by: shevchenko
+;Date:        Mon Mar 01 17:08:29 2004
+;File:        D:\-Projects-\-3DWork-\sheva\hangar_wood1.max
+{Skeleton
+	{bone "hangar_wall_wood1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hangar_wall_wood1.ply"}
+		{bone "attach1"
+			{Position -21.4709	0.0164	-0.0000}
+		}
+		{bone "window1"
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				-0.0000	-0.0000	1.0000
+				1.0000	0.0000	0.0000
+				-1.1023	0.0407	29.5275
+			}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					-0.0000	0.0000	1.0000
+					-1.0000	0.0000	-0.0000
+					0.0000	1.0000	-0.0000
+					0.0403	-0.0415	-0.0143
+				}
+			}
+		}
+		{bone "window1_x"
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				1.0000	0.0000	-0.0000
+				-1.2558	0.0407	29.5275
+			}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -0.959122 -0.15612}
+		{Extent 2.95276 59.0551}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "fire0"
+	{Box 6.88976 118.11 98.4252}
+	{Bone "hangar_wall_wood1"}
+	{Position -0.9591	0.1561	49.2126}
+}
+{Volume "window1"
+	{Box 0.984252 19.685 27.5591}
+	{Bone "window1"}
+	{Matrix34
+		-0.0000	0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		0.0000	1.0000	-0.0000
+		-0.0064	-0.0109	-0.0976
+	}
+}
+{Volume "hole1"
+	{Box 19.685 27.5591 19.685}
+	{Bone "hangar_wall_wood1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		-0.0000	0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-0.7496	0.0914	29.5275
+	}
+}
+{Volume "body"
+	{Box 5.90551 118.11 98.4252}
+	{Bone "hangar_wall_wood1"}
+	{Position -0.9591	0.1561	49.2126}
+}

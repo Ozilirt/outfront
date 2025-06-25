@@ -1,0 +1,15 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.3) sy(1.1) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "coil_box1.mdl"}
+;	{props "two" "staged" "wood" "construction"}
+	{props "one" "staged" "steel" "construction"}
+	{Volume "body"
+		{thickness 10}
+		{tags "body"}
+	}
+}

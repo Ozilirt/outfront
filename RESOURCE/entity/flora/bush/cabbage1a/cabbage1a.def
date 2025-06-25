@@ -1,0 +1,12 @@
+{
+	(include "/properties/bush.inc")
+;	(include "/properties/shadow/bush.inc"  sx(0.3) sy(0.3))
+	{props "-bush" "cabbage" "no_wind"}
+
+	{volume "crown"
+		{able {bullet} {contact} {blast}}
+	}
+;	{nocontactwith "human"}
+	{simulation {able 1}}
+	{Extension "cabbage1a.mdl"}
+}

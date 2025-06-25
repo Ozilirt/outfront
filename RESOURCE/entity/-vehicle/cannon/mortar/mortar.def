@@ -1,0 +1,78 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "turret" "turret_rotator" "explosion_throw_crew"}
+;	{props "emit_on_attack"}
+;	{extension "/properties/structure/truck.ext"}
+	(include "/properties/dummy_fsm.inc")
+	{sensor
+		{Visor "main"
+			{vision
+				{uncover 1}
+			    {human 30
+			    	{crawl 10}
+			    }
+			    {actor "marine" 70
+			    }
+			    {actor "vehicle" 31}
+			    {actor 32}
+				{h_fov 30}
+				{wide 2.5}
+				{v_fov 30}
+				{fog_range 30}
+				{fog_fov 60}
+			}
+			{bone "visor"}
+		}
+	}
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+	{Volume "body"
+		{thickness 350}
+	}
+	{Volume "turret"
+		{thickness 350}
+	}
+	{Volume "gun_rot"	
+		{thickness 350}
+	}
+	{Volume "inventory"	
+		{thickness 350}
+	}
+	{Volume "gun"
+		{thickness 350}
+	}
+
+	{boarder
+		{anm "gunner" {forward {end "seat_gunner_stand"}}}
+		{anm "passenger" {forward {end "seat_passenger"}}}
+	}
+
+	("crew_human" place(gunner)		bone(gunner)		door(emit1) animation(gunner))
+	("crew_human" place(commander)	bone(commander)		door(emit2) animation(gunner))
+	("crew_human" place(passenger)	bone(passenger)		door(emit3) animation(passenger))
+	("crew_human" place(passenger1)	bone(passenger1)	door(emit1) animation(passenger))
+	("crew_human" place(passenger2)	bone(passenger2)	door(emit2) animation(passenger))
+	("crew_human" place(passenger3)	bone(passenger3)	door(emit3) animation(passenger))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "203mm_gun"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}  	
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{size 8 6}
+			{item "bullet203" 100}
+		}
+	}
+	{mass 100000}
+	{Extension "Mortar.mdl"}
+}

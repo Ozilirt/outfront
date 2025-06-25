@@ -1,0 +1,64 @@
+;Exported by: shevchenko
+;Date:        Sat Mar 27 12:36:28 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\Муницыпалитет\Административное здание.max
+{Skeleton
+	{bone "office_block_w1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "office_block_w1.ply"}
+	}
+}
+{Obstacle "Body3"
+	{Obb2
+		{Center 6.75206 21.7262}
+		{Extent 26.2627 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center -5.28913 -41.2361}
+		{Extent 41.6868 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body4"
+	{Box 30.091 9.84252 9.77512}
+	{Bone "office_block_w1"}
+	{Position 47.4010	41.2361	122.8675}
+}
+{Volume "Body3"
+	{Box 52.5254 5.90551 127.683}
+	{Bone "office_block_w1"}
+	{Position 6.7521	-21.7262	63.8413}
+}
+{Volume "Body2"
+	{Box 94.3281 4.51596 67.0091}
+	{Bone "office_block_w1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.8534	0.5213
+		0.0000	-0.5213	0.8534
+		1.4487	-19.4006	188.1314
+	}
+}
+{Volume "Body"
+	{Box 83.3737 9.84252 127.683}
+	{Bone "office_block_w1"}
+	{Position -5.2891	41.2361	63.8413}
+}
+{Volume "Body1"
+	{Box 94.3281 6.74024 67.0091}
+	{Bone "office_block_w1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.5093	0.8606
+		0.0000	-0.8606	0.5093
+		1.4487	24.9672	142.9907
+	}
+}

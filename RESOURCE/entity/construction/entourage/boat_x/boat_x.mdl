@@ -1,0 +1,23 @@
+;Exported by: ubrashaev
+;Date:        Sat Oct 04 13:42:23 2003
+;File:        D:\-Projects-\-work-\3d\Lodka_vic.max
+{Skeleton
+	{bone "boat_x"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-0.9760	-0.2176
+			0.0000	-0.2176	0.9760
+		}
+		{VolumeView "boat_x.ply"}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "boat_x"}
+		{Matrix34
+			1.0000	0.0000	0.0000
+			0.0000	0.9760	0.2176
+			0.0000	-0.2176	0.9760
+			3.6736	0.2162	-0.8585
+		}
+}

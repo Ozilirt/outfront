@@ -1,0 +1,112 @@
+{actor
+	(include "/properties/airborne.ext")
+	{PatherID  "airborne"}
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.7) ofsx(0) ofsy(-5))
+	(include "/properties/shadow/tank.inc" scale(1.5))
+	(include "/properties/selection/airborne.inc" scale(2.0))
+	(include "/properties/car_crew.ext")
+
+	{props "no_explosion"}
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_plane_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"board_plane_left" -1}}
+		}
+	}
+	("crew_human"
+		place(driver)
+		bone(driver)
+		door(emit1)
+		animation(driver)
+	)
+	{Placer
+		{place "driver"}
+	}
+
+
+	{volume "propeller"
+		{tags "-part"}
+	}
+	{Volume "support1"
+		{thickness 10}
+	}
+	{Volume "support2"
+		{thickness 10}
+	}
+	{Volume "Body1"
+		{thickness 10}
+	}
+	{Volume "WheelR"
+		{thickness 10}
+	}
+	{Volume "WheelL"
+		{thickness 10}
+	}
+
+	(define "part"
+		{volume %0
+			{tags "part"}
+			{thickness 0.5}
+			{able {visible 0}}
+		}
+		{component %0}
+	)
+	("part" args "flap1")
+	("part" args "flap2")
+	("part" args "aileron1")
+	("part" args "aileron2")
+	("part" args "elevator1")
+	("part" args "elevator2")
+	("part" args "rudder")
+	("part" args "part1")
+	("part" args "part2")
+	("part" args "part3")
+	("part" args "WingL1")
+	("part" args "WingL2")
+	("part" args "WingL3")
+	("part" args "WingL4")
+	("part" args "WingR1")
+	("part" args "WingR2")
+	("part" args "WingR3")
+	("part" args "WingR4")
+	("part" args "WingR5")
+
+	{Chassis ("chassis_defaults")
+		{Locomotion ("locomotion") 
+			{Maxspeed 95}
+		}
+       	{speed
+       		{Slow	15  }	; km/h
+       		{Normal	65	}
+       		{Fast	90	}
+       	}
+	}
+	{mass 3000}
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+		{"ambush3" "3"}
+	}
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun" {fixed}}
+		{Box
+			{item  "ammo mgun" 1000}
+		}
+	}
+	{Sensor
+		{Visor "main"
+;		    {range	 120	}
+;			{h_fov	 360 	}
+;			{v_fov 	 360	}
+			{bone	 "pivot_back"}
+		}
+	}
+	{Extension "cg-4a.mdl"}
+}

@@ -1,0 +1,332 @@
+;Exported by: shevchenko
+;Date:        Tue May 18 19:53:07 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\e-house3.max
+{Skeleton
+	{bone "e-house3a"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "e-house3a.ply"}
+		{bone "window1"
+			{Position -45.8136	-54.9268	30.2728}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.1008	-1.0881	1.4329
+				}
+			}
+		}
+		{bone "window2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-84.7211	0.0092	30.3516
+			}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass2"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.6665	-1.9615	1.3540
+				}
+			}
+		}
+		{bone "window3"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				36.5013	55.0834	30.3516
+			}
+			{VolumeView "window3.ply"}
+			{bone "FX_glass3"
+				{Matrix34
+					0.0000	-1.0000	0.0000
+					1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.3187	-1.6239	1.3540
+				}
+			}
+		}
+		{bone "window1_x"
+			{Position -45.8136	-54.1207	30.2728}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2_x"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-83.9433	0.0092	30.3516
+			}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+		{bone "window3_x"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				36.5013	54.2798	30.3516
+			}
+			{visibility 0}
+			{VolumeView "window3_x.ply"}
+		}
+		{bone "Attach1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-46.0582	-43.4966	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "Attach2"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-73.6453	1.9763	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "Attach3"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				36.2990	44.0991	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "exterior1"
+			{Position 0.0000	0.0000	88.8319}
+			{VolumeView "exterior1.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -0.553406 -0.289669}
+		{Extent 80.3399 51.1418}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle04"
+	{Obb2
+		{Center 44.428 41.3686}
+		{Extent 1.50144 9.84702}
+		{Axis -0.939692 0.342021}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center 68.3973 54.731}
+		{Extent 20.4534 4.14933}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center -30.2838 54.731}
+		{Extent 58.7806 4.14933}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body8"
+	{Obb2
+		{Center -13.6569 -33.8318}
+		{Extent 2.84753 18.1316}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body7"
+	{Obb2
+		{Center -13.6569 35.7134}
+		{Extent 2.84753 16.1889}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body6"
+	{Obb2
+		{Center 8.69944 72.794}
+		{Extent 5.2732 14.2008}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body5"
+	{Obb2
+		{Center 67.5244 72.794}
+		{Extent 5.27319 14.2008}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body4"
+	{Obb2
+		{Center 84.0775 0.112148}
+		{Extent 3.93701 58.7459}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body2"
+	{Obb2
+		{Center -84.9324 0.137779}
+		{Extent 3.93701 51.5708}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center -0.39959 -55.2001}
+		{Extent 88.5452 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Hole4"
+	{Box 18.9075 36.5942 39.5188}
+	{Bone "e-house3a"}
+	{Position 38.5567	-47.6021	19.8782}
+}
+{Volume "Body3"
+	{Polyhedron "Body3.vol"}
+	{Bone "exterior1"}
+	{Position -0.1069	0.1112	-25.6207}
+}
+{Volume "Hole3"
+	{Box 29.5276 28.1494 23.622}
+	{Bone "e-house3a"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		36.4238	54.4453	30.4221
+	}
+}
+{Volume "Hole2"
+	{Box 29.5276 28.1494 23.622}
+	{Bone "e-house3a"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-83.9055	-0.0563	30.4221
+	}
+}
+{Volume "Hole1"
+	{Box 16.7323 28.1494 23.622}
+	{Bone "e-house3a"}
+	{Position -45.7970	-53.0513	30.4221}
+}
+{Volume "Body"
+	{Box 177.915 7.87402 63.248}
+	{Bone "e-house3a"}
+	{Position -0.1069	-54.9433	31.6240}
+}
+{Volume "Body8"
+	{Box 36.2631 5.69505 63.248}
+	{Bone "e-house3a"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-13.6569	33.8318	31.6240
+	}
+}
+{Volume "Body7"
+	{Box 32.3778 5.69505 63.248}
+	{Bone "e-house3a"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-13.6569	-35.7134	31.6240
+	}
+}
+{Volume "Body6"
+	{Box 28.4016 10.5464 50.5984}
+	{Bone "e-house3a"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		8.6994	-72.7940	25.2992
+	}
+}
+{Volume "Body5"
+	{Box 28.4016 10.5464 50.5984}
+	{Bone "e-house3a"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		67.5244	-72.7940	25.2992
+	}
+}
+{Volume "Body4"
+	{Box 117.492 7.87402 63.248}
+	{Bone "e-house3a"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		84.0775	-0.1121	31.6240
+	}
+}
+{Volume "Body2"
+	{Box 103.142 7.87402 63.248}
+	{Bone "e-house3a"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-84.9324	-0.1378	31.6240
+	}
+}
+{Volume "Body1"
+	{Box 177.09 7.87402 63.248}
+	{Bone "e-house3a"}
+	{Position -0.3996	55.2001	31.6240}
+}
+{Volume "Body13"
+	{Box 80.3239 2.59843 35.766}
+	{Bone "e-house3a"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		-0.0000	0.1736	-0.9848
+		0.0000	-0.9848	-0.1736
+		37.4380	-75.6450	52.1731
+	}
+}
+{Volume "window3"
+	{Box 29.5524 0.590551 23.4249}
+	{Bone "window3"}
+	{Position -0.0000	-0.0000	0.0000}
+}
+{Volume "window2"
+	{Box 29.5524 0.590551 23.4249}
+	{Bone "window2"}
+}
+{Volume "window1"
+	{Box 16.4731 0.590551 23.4249}
+	{Bone "window1"}
+	{Position 0.0075	0.1684	0.0788}
+}

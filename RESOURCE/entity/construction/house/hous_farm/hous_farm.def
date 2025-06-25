@@ -1,0 +1,127 @@
+{game_entity
+   	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.45) sy(1.6) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "one" "staged" "wood" "construction"}
+	{Extension "hous_farm.mdl"}
+
+	{DecalView
+		{Sprite "/properties/shadow/house3.ebm"
+  			{PrescaleX 1.5 }
+	   		{PrescaleY 0.8 }
+			{Visibility 0.9}
+			{shiftX 0}
+			{shiftY 0}
+		}
+		{layer grounddecal}
+		{UseDirection}    
+	}
+
+	{placer
+		{place "1" {attach open_lie} {linkbone "node01"}}
+		{place "2" {attach open_lie} {linkbone "node02"}}
+	}
+
+	{boarder
+		{door "door1" {queue 0}}
+		{door "door2" {queue 0}}
+
+		{node "ladder_bottom01"}
+		{node "ladder_bottom02"}
+		{node "ladder_top01"}
+		{node "ladder_top02"}
+		{node "node01"}
+		{node "node02"}
+
+		{anm "ladder_bind"
+			{forward	{begin	"stand_climb_stairs"}}
+			{reverse	{end	"stand_climb_stairs" -1}}
+		}
+		{anm "ladder"
+			{forward	{speed 2} {loop "stand_upstairs"}}
+			{reverse	{speed 2} {loop "stand_upstairs" -1}}
+		}
+		{anm "walk"
+			{forward {speed 3}}
+			{reverse {speed 3}}
+		}
+
+		{link "emit" "node_ladder_bottom" {anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_ladder_bottom" "node_ladder_top" {anm "ladder"}}
+		{link "node_ladder_top" "1" {forward puton} {reverse putoff}}
+
+		{link "door1"	 		"ladder_bottom01" 	{anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "ladder_bottom01"	"ladder_top01" 		{anm "ladder"}}
+		{link "ladder_top01"	"node01"			{anm "walk"}}
+
+		{link "node01"			"node02"			{anm "walk"}}
+
+		{link "node02"			"ladder_top02"		{anm "walk"}}
+		{link "ladder_top02"	"ladder_bottom02"	{anm "ladder"}}
+		{link "door2"			"ladder_bottom02"	{anm "ladder_bind"} {forward putoff} {reverse puton}}
+
+    	{link "node01"	"1"		 	{anm "walk"}}
+    	{link "node02"	"2"		 	{anm "walk"}}
+	}
+
+	{volume "wall1"
+		{thickness  5}
+		{tags "body"}	
+	}
+    {volume	"wall2"
+		{thickness  5}
+		{tags "body"}
+	}
+    {volume	"wall3"
+		{thickness  5}
+		{tags "body"}
+	}
+	{volume "wall4"
+		{thickness  5}
+		{tags "body"}
+	}
+	{volume "wall5"
+		{thickness  5}
+		{tags "body"}
+	}
+	{volume "wall6"
+		{thickness  5}
+		{tags "body"}
+	}
+
+	{volume "door"
+		{thickness  5}
+		{tags "body"}
+	}
+	{volume "door1"
+		{thickness  5}
+		{tags "body"}
+	}
+	{volume "door2"
+		{thickness  5}
+		{tags "body"}
+	}
+	{volume "door3"
+		{thickness  5}
+		{tags "body"}
+	}
+
+	{Volume "hole3"
+		{able clear {hole} {touch} }
+		{tags "attach" "2"}
+	}
+	{volume "hole4"
+		{able clear {hole} {touch} }
+		{tags "attach" "1"}
+	}
+
+	{volume "roof"
+		{able  {holed} {visible 0}}
+		{thickness hollow 5}
+	}                                
+
+	("declare_fire_volumes")
+}

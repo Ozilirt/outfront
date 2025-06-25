@@ -1,0 +1,15 @@
+{game_entity
+	{extension "/properties/piece.ext"}
+	{simulation {able 0}}
+	{constrain none}
+	{props "massive_building_wall" "concrete" "construction"}
+	{colliderId "construction"}
+	{obstacleid "unbreakable"}
+	{mass 1000}
+	{DecalView
+		{ownershadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"}
+		{name "shadow"}
+;		{layer groundshadow}
+	}
+}

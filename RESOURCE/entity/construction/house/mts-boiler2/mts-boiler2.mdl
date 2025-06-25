@@ -1,0 +1,23 @@
+{Skeleton
+	{bone "mts-boiler2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "mts-boiler2.ply"}
+	}
+}
+
+
+{Volume "chimney_stalk"
+	{Cylinder 9.70973 157.222}
+	{Bone "mts-boiler2"}
+	{Position 0.6240	-0.1428	109.7397}
+}
+{Volume "support"
+	{Box 55.0982 39.682 31.4006}
+	{Bone "mts-boiler2"}
+	{Position -6.1393	-2.5905	15.7003}
+}
+

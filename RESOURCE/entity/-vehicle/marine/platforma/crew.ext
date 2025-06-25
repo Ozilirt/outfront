@@ -1,0 +1,43 @@
+;SDL
+{placer
+	{place "cab"
+		{entity "searchlight_cab"}
+		{linkbone "cab"}
+	}
+	{place "gun1"
+		{entity "flak41"}
+		{linkbone "gun1"}
+		{handlebone "basis"}
+	}
+	{place "gun2"
+		{entity "flak41"}
+		{linkbone "gun2"}
+		{handlebone "basis"}
+	}
+	{place "driver"}
+}
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+
+	{node "node_r1"}
+	{node "node_r2"}
+	{node "node_l1"}
+	{node "node_l2"}
+
+	{anm "ladder"
+		{forward	{speed 1} {loop "stand_upstairs"}}
+		{reverse	{speed 1} {loop "stand_upstairs" -1}}
+	}
+	{anm "walk"
+		{forward {speed 3} {loop "walk_2hand"}}
+		{reverse {speed 3} {loop "walk_2hand"}}
+	}
+
+	{link "emit1"	"node_r1"	{anm "ladder"} {forward putoff}}
+	{link "emit2"	"node_l1"	{anm "ladder"} {forward putoff}}
+	{link "node_r1"	"node_r2"	{anm "walk"}}
+	{link "node_l1"	"node_l2"	{anm "walk"}}
+	{link "node_r2"	"gun1"		{anm "walk"}}
+	{link "node_l2"	"gun2"		{anm "walk"}}
+}

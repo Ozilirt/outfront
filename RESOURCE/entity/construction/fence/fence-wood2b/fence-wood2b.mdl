@@ -1,0 +1,76 @@
+;Exported by: sk
+;Date:        Wed Nov 26 12:50:33 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\fence_temp.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "fence-wood2b"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence-wood2b.ply"}
+		{bone "climb1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-40.8363	20.2291	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-2.0439	20.2291	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb3"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				39.2090	20.2291	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb5"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-2.0439	-21.4283	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb6"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				39.2090	-21.4283	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb4"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-40.8363	-21.4283	0.0000
+			}
+			{visibility 0}
+		}
+	}
+}
+{Volume "body"
+	{Box 129.921 6.1257 23.622}
+	{Bone "fence-wood2b"}
+	{Position -1.3933	-0.3605	10.8007}
+}

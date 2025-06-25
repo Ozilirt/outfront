@@ -1,0 +1,99 @@
+{fx
+	{Sound "explosion.water"}
+	{ParticleView
+		{generator
+			{TotalParticles 10}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 1 0}
+				{speed 0.14}
+			}
+			{ParticleInit
+				{Speed 0 0}
+				{Lifetime 0.4 0.05}
+			}
+			{StartParticles 1}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.5}
+			}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Flash/Drops.ebm"
+					{Scale
+						{Linear
+							{min 0.15 0.05}
+							{max 0.2 0.1}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 -180}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1.8}
+					}
+					{Highlight 0x00614B32}
+					{Visibility 1}
+				}
+			}
+			{stage collided dying
+				{sprite "/fx/_bmp/particle/Grunt2.ebm"
+					{timer
+						{mode play}
+						{duration 1.5}
+					}
+					{Visibility
+						{Linear
+							{min 0.8}
+							{max 0}
+						}
+					}
+					{Scale 0.4}
+				}
+				{flags KillParticle Ground}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 5 0}
+				{speed 0.3}
+			}
+			{ParticleInit
+				{Speed 0 0}
+				{Lifetime 0.6 0.2}
+			}
+			{StartParticles 1}
+			{Color 0x004D4631}
+			{Color 0x00684835}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 1}
+			}
+		}
+		{NotifyOwner}
+	}
+}

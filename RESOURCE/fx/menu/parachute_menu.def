@@ -1,0 +1,39 @@
+{fx
+	{storeable 1}
+	{ParticleView
+		{generator
+			{TotalParticles 3}
+			{EmissionArea
+				{radius 150 0}
+				{alpha0 0}
+				{alpha1 360 10}
+			}
+			{ParticleInit
+				{Speed 0.1 0.1}
+				{Lifetime 30 0}
+			}
+			{StartParticles 1}
+			{AxisZ}
+		}
+		{mover
+			{damping 0.9975}
+			{gravity
+				{value 0.002}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_bmp/particle/parachute.ebm"
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.9 0.4}
+;					{Visibility 0.9 0.1}
+				}
+			}
+		}
+		{NotifyOwner}
+		{offset 0 0 800}
+	}
+}

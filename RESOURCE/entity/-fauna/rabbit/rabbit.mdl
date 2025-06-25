@@ -1,0 +1,39 @@
+{Skeleton
+	{animation
+		{sequence {name "walk"} {file "walk.anm"}}
+		{sequence {name "eat"} {file "eat.anm"}}
+	}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Visor"
+			{Position 6.3809	0.1995	4.2056}
+		}
+		{bone "Rabbit"
+			{parameters "CommonMesh;"}
+			{Matrix34
+				-1.0000	-0.0000	-0.0000
+				-0.0000	0.0000	1.0000
+				-0.0000	1.0000	-0.0000
+				0.3558	-2.3435	12.2852
+			}
+			{VolumeView "Rabbit.ply"}
+		}
+	}
+}
+
+
+{Volume "Body"
+	{Box 9.39284 4.98105 3.55}
+	{Bone "Basis"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		0.4568	0.1762	2.6343
+	}
+}
+

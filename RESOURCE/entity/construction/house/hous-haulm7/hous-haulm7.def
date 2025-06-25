@@ -1,0 +1,109 @@
+{building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.4) sy(2.0) ofsx(0) ofsy(-5))	
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "hous-haulm7.mdl"}
+	{props "cornered" "concrete" "parts" "construction" "wall" "windowed"}
+
+	{Volume "fire8"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "fire7"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "fire6"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "fire5"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "fire4"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "fire3"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "fire1"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "fire2"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "fire0"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "Body6"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "Body4"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}{touch 0}}
+	}
+	{Volume "Body5"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+	}
+	{Volume "window5"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+	{Volume "window4"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+	{Volume "window3"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+	{Volume "window2"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+	{Volume "window1"
+		{Thickness 1.2}
+		{able {visible 0}{window}}
+	}
+	{Volume "Hole0"
+		{able clear {hole}}
+	}
+	{Volume "Hole3"
+		{able clear {hole}}
+	}
+	{Volume "Hole4"
+		{able clear {hole}}
+	}
+	{Volume "Hole2"
+		{able clear {hole}}
+	}
+	{Volume "Hole1"
+		{able clear {hole}}
+	}
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}{touch 0}}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}{touch 0}}
+	}
+	{Volume "Body2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}{touch 0}}
+	}
+	{Volume "Body3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}{touch 0}}
+	}
+	("declare_fire_volumes")
+}

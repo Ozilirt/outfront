@@ -1,0 +1,61 @@
+;Exported by: GARRY
+;Date:        Fri Jun 27 13:33:41 2003
+
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush.anm"} {duration percent 40}}
+	}
+	{bone "stack_roof"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "stack_roof.ply"}
+		{bone "FX_haulm2"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				10.6079	-13.1731	11.9219
+			}
+		}
+		{bone "FX_fire2"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-9.6073	15.4684	3.5953
+			}
+		}
+		{bone "Locomotive"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				0.3046	-0.0060	52.4855
+			}
+		}
+	}
+}
+{Volume "fire1"
+	{Box 63.5579 45.0349 13.3668}
+	{Bone "Locomotive"}
+		{Matrix34
+			-0.9970	0.0773	0.0000
+			0.0000	0.0000	1.0000
+			0.0773	0.9970	-0.0000
+			0.0000	-0.0000	0.0000
+		}
+}
+{Volume "fire0"
+	{Box 43.833 52.9823 40.5055}
+	{Bone "stack_roof"}
+		{Position 0.1642	-0.0060	20.2528}
+}
+{Volume "Body"
+	{Box 64.1891 77.5872 59.3163}
+	{Bone "stack_roof"}
+		{Position 0.1642	-0.0060	29.6581}
+}

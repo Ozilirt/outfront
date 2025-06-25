@@ -1,0 +1,96 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/structure/cannon_flak41.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.7))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	(include "/properties/dummy_fsm.inc")
+	{Extension "Flak41.mdl"}
+	{props "vehicle" "cannon" "heavy" "turret"}
+;	{simulation {able 0}}
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+	{sensor
+		{Visor "main"
+			{vision
+				{uncover 1}
+			    {human 65
+			    	{crawl 50}
+			    }
+			    {actor "marine" 65
+			    }
+			    {actor "vehicle" 90}
+			    {actor 90}
+				{h_fov 30}
+				{wide 2.5}
+				{v_fov 30}
+				{fog_range 30}
+				{fog_fov 60}
+			}
+			{bone "visor"}
+		}
+	}
+	{TexMods
+		{"ambush1" "1"}
+	}
+
+	{Volume "body1"
+		{thickness 10}
+		{tags "body"}
+		{component "body"}
+	}
+	{Volume "body2"
+		{thickness 10}
+		{tags "body"}
+		{component "body"}
+	}
+	{Volume "turret"
+		{thickness 10}
+	}
+	{volume "shield_front"	
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 10}
+	}
+
+	{component "shield_front"	
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+	{extender "shield"}
+	("crew_2_human")
+	
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "88mm_flak41"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet88 ap" 50}
+			{item "bullet88 fg" 50}
+		}
+	}
+	{sensor
+		{Visor "main"
+			{vision
+				{uncover 1}
+			    {human 70
+			    	{crawl 30}
+			    }
+			    {actor "vehicle" 70}
+			    {actor 70}
+				{h_fov 60}
+				{wide 2.5}
+				{v_fov 90}
+				{fog_range 50}
+				{fog_fov 90}
+			}
+			{bone "visor"}
+		}
+	}
+	{mass 10000}
+}

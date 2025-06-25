@@ -1,0 +1,47 @@
+;Exported by: ubrashaev
+;Date:        Thu May 13 16:42:34 2004
+;File:        D:\-Projects-\-work-\3d\Vorota_anm.max
+{Skeleton
+	{animation
+		{sequence "crush1" {speed 0.4}}
+		{sequence "crush2" {speed 0.4}}
+	}
+	{bone "gate_wood2"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate_wood2.ply"}
+		{bone "left"
+			{Position -58.2615	9.9552	26.1614}
+			{VolumeView "left.ply"}
+		}
+		{bone "right"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	1.0000	-0.0000
+				0.0000	0.0000	1.0000
+				58.7421	9.9552	26.1614
+			}
+			{VolumeView "right.ply"}
+		}
+	}
+}
+{Obstacle "righte"
+	{Obb2
+		{Center -31.1841 -2.8838}
+		{Extent 30.4263 2.55905}
+		{Axis -0.983939 -0.178507}
+	}
+	{Rotate}
+}
+{Obstacle "lefte"
+	{Obb2
+		{Center 42.9441 19.6838}
+		{Extent 29.6552 2.87402}
+		{Axis 0.407131 -0.91337}
+	}
+	{Rotate}
+}

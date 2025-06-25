@@ -1,0 +1,34 @@
+{Building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.3) sy(1.8) ofsx(-2.0) ofsy(-15))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "granary1.mdl"}
+	{props "two" "staged" "wood" "construction"}
+
+	{Volume "body2"
+		{thickness  10}
+		{tags "body"}
+	}
+	{Volume "body1"
+		{thickness  10}
+		{tags "body"}
+		{able {visible 0}}
+	}
+	{Volume "body"
+		{thickness  10}
+		{tags "body"}
+	}
+	
+	{volume "fire1"
+		{able {visible 0}}
+	}
+	{volume "fire4"
+		{able {visible 0}}
+	}
+
+	("declare_fire_volumes")
+}
+

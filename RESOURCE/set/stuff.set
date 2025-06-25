@@ -1,0 +1,1432 @@
+{stuff
+	{item "fuel"
+		{tag "liquid"}
+		{desc "desc/stuff/petrol"}
+		{mass 0.8}
+	}
+	{item "water"
+		{tag "liquid"}
+		{desc "desc/stuff/water"}
+		{mass 1}
+	}
+
+	{item "pattern flag"
+		{tag "flag to_hand nokeep keepentity"}
+		{desc "desc/stuff/flag"}
+		{inventory
+			{size 4 4}
+			{weight 150}
+		}
+		{mass 3}
+		{StateForHold	"hold-item"}
+		{StateForMount	"inventory-pick-stand"}
+		{StateForUnmount"inventory-drop"}
+	}
+	{item "flag_red" from "pattern flag"
+		{entity "flag_red"}
+		{inventory
+			{view "/interface/scene/stuff/flag_red.ebm"}
+		}
+	}
+	{item "flag_yellow" from "pattern flag"
+		{entity "flag_yellow"}
+		{inventory
+			{view "/interface/scene/stuff/flag_yellow.ebm"}
+		}
+	}
+
+	{item "barrel"
+		{tag "itemin2hands capacity"}
+		{filling "liquid" 50}
+		{entity "barrel1"}
+		{desc "desc/stuff/barrel"}
+		{inventory
+			{view "/interface/scene/stuff/barrel.ebm"}
+			{size 2 3}
+			{weight 150}
+		}
+		{mass 10}
+		{StateForHold	"hold-item"}
+		{StateForMount	"inventory-pick-stand"}
+		{StateForUnmount"inventory-drop"}
+	}
+	{item "box"
+		{tag "itemin2hands keepEntity"}
+		{entity "box1"}
+		{desc "desc/container/box1"}
+		{inventory
+			{view "/interface/scene/stuff/box_big.ebm"}
+			{size 4 3}
+			{weight 1000}
+		}
+		{mass 2}
+		{StateForHold	"hold-item"}
+		{StateForMount	"inventory-pick-stand"}
+		{StateForUnmount"inventory-drop"}
+	}
+	{item "small_box"
+		{tag "itemin2hands keepEntity"}
+		{entity "box2"}
+		{desc "desc/container/box2"}
+		{inventory
+			{view "/interface/scene/stuff/box_small.ebm"}
+			{size 4 2}
+			{weight 500}
+		}
+		{mass 1}
+		{StateForHold	"hold-item"}
+		{StateForMount	"inventory-pick-stand"}
+		{StateForUnmount"inventory-drop"}
+	}
+	{item "can"
+		{tag "capacity itemin1hand"}
+		{filling "liquid" 20}
+		{entity "can"}
+		{desc "desc/stuff/can"}
+		{inventory
+			{view "/interface/scene/stuff/can.ebm"}
+			{weight 100}
+		}
+		{mass 7}
+		{StateForHold	"hold-item"}
+		{StateForMount	"item-pick"}
+		{StateForUnmount"item-drop"}
+		{StateForThrow	"throw"}
+	}
+	{item "mine antipersonnel"
+		{tag "smallitemin1hand dropboxed"}
+		{entity "mine_antipersonnel"}
+		{desc "desc/stuff/mine_antipersonnel"}
+		{inventory
+			{size 2 1}
+			{view "/interface/scene/stuff/mine_antipersonnel.ebm"}
+			{weight 100}
+		}
+		{mass 1.5}
+		{StateForHold	"hold-item"}
+		{StateForMount	"belt-pick"}
+		{StateForUnmount"belt-drop"}
+		{StateForThrow	"throw"}
+	}
+	{item "mine antitank"
+		{tag "itemin2hands dropboxed"}
+		{entity "mine_antitank"}
+		{desc "desc/stuff/mine_antitank"}
+		{inventory
+			{view "/interface/scene/stuff/mine_antitank.ebm"}
+			{weight 100}
+		}
+		{mass 5}
+		{StateForHold	"hold-item"}
+		{StateForMount	"item-pick"}
+		{StateForUnmount"item-drop"}
+		{StateForThrow	"throw"}
+	}
+	{item "dynamite"
+		{tag "smallitemin1hand"}
+		{entity "dynamite"}
+		{desc "desc/stuff/dynamite"}
+		{inventory
+			{view "/interface/scene/stuff/dynamite.ebm"}
+			{weight 100}
+		}
+		{mass 2}
+		{StateForHold	"hold-item"}
+		{StateForMount	"belt-pick"}
+		{StateForUnmount"belt-drop"}
+		{StateForThrow	"throw"}
+	}
+	{item "repair_kit"
+		{tag "itemin2hands"}
+		{entity "repair_kit"}
+		{desc "desc/stuff/repair_kit"}
+		{inventory
+			{view "/interface/scene/stuff/repair_kit.ebm"}
+			{weight 100}
+		}
+		{mass 5}
+		{StateForHold	"hold-item"}
+		{StateForMount	"item-pick"}
+		{StateForUnmount"item-drop"}
+		{StateForThrow	"throw"}
+	}
+	{item "drug"
+		{tag "drug"}
+		{desc "desc/stuff/drug"}
+		{mass 0.1}
+	}
+	{item "medkit"
+		{tag "itemin1hand"}
+		{filling "drug" 100}
+		{entity "medkit"}
+		{desc "desc/stuff/medkit"}
+		{inventory
+			{view "/interface/scene/stuff/medkit.ebm"}
+			{size 3 2 }
+			{weight 100}
+		}
+		{mass 2}
+		{StateForHold	"hold-item"}
+		{StateForMount	"item-pick"}
+		{StateForUnmount"item-drop"}
+		{StateForThrow	"throw"}
+	}
+	{item "mine_detector"
+		{tag "itemin1hand"}
+		{entity "mine_detector"}
+		{desc "desc/stuff/mine_detector"}
+		{inventory
+			{view "/interface/scene/stuff/mine_detector.ebm"}
+			{size 2 4 }
+			{weight 100}
+		}
+		{mass 15}
+		{StateForMount		"item-pick"}
+		{StateForUnmount	"item-drop"}
+		{StateForHold		"hold-item"}
+	}
+	{item "bandage"
+		{desc "desc/stuff/bandage"}
+		{inventory
+			{view "/interface/scene/stuff/bandage.ebm"}
+			{size 2 1 }
+			{weight 20}
+		}
+		{mass 0.3}
+	}
+	{item "morphine"
+		{tag "smallitemin1hand dropboxed"}
+		{entity "morphine"}
+		{desc "desc/stuff/morphine"}
+		{inventory
+			{view "/interface/scene/stuff/morphine.ebm"}
+			{size 2 2 }
+			{weight 10}
+		}
+		{mass 0.05}
+		{StateForHold	"hold-item"}
+		{StateForMount	"belt-pick"}
+		{StateForUnmount"belt-drop"}
+		{StateForThrow	"throw"}
+	}
+	{item "matchbox"
+		{tag "smallitemin1hand dropboxed"}
+		{entity "matchbox"}
+		{desc "desc/stuff/matchbox"}
+		{inventory
+			{view "/interface/scene/stuff/matchbox.ebm"}
+			{size 1 1 }
+			{weight 10}
+		}
+		{mass 0.1}
+		{StateForHold	"hold-item"}
+		{StateForMount	"belt-pick"}
+		{StateForUnmount"belt-drop"}
+		{StateForThrow	"throw"}
+	}
+	{item "plant"
+		{tag "smallitemin1hand dropboxed"}
+		{entity "matchbox"}
+		{desc "desc/stuff/plant"}
+		{inventory
+			{view "/interface/scene/stuff/sapling.ebm"}
+			{weight 100}
+		}
+		{mass 0.1}
+		{StateForHold	"hold-item"}
+		{StateForMount	"belt-pick"}
+		{StateForUnmount"belt-drop"}
+		{StateForThrow	"throw"}
+	}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;armor
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	{item "pattern headgear"
+		{desc "desc/stuff/helmet"}
+		{tag "smallitemin1hand head"}
+		{mass 0.3}
+		{StateForHold	"hold-item"}
+;		{StateForMount	"inventory-pick-stand"}
+;		{StateForUnmount"inventory-drop"}
+		{StateForMount	"belt-pick"}
+		{StateForUnmount"belt-drop"}
+		{StateForThrow	"throw"}
+	}
+
+;tank helmet (no protection)
+	{item "tankhelmet_rus" from "pattern headgear"
+		{desc "desc/stuff/tankhelmet_rus"}
+		{mass 0.8}
+		{inventory
+			{view "/interface/scene/stuff/armor/helmet_tankman_rus.ebm"}
+			{weight 100}
+		}
+		{entity "tankhelmet_rus"}
+	}
+	{item "raf-helmet" from "tankhelmet_rus"
+		{desc "desc/stuff/rafhelmet_rus"}
+		{inventory
+			{view "/interface/scene/stuff/armor/raf-helmet.ebm"}
+		}
+		{entity "raf-helmet"}
+	}
+
+;helmet
+	{item "helmet1_ger" from "tankhelmet_rus"
+		{desc "desc/stuff/tankhelmet_ger"}
+		{tag "armor"}
+		{inventory
+			{view "/interface/scene/stuff/armor/helmet_soldier_ger.ebm"}
+		}
+		{entity "helmet1_ger"}
+	}
+	{item "helmet2_ger" from "helmet1_ger"
+		{desc "desc/stuff/helmet2_ger"}
+		{inventory
+			{view "/interface/scene/stuff/armor/helmet_soldier_gerss.ebm"}
+		}
+		{entity "helmet2_ger"}
+	}
+	{item "helmet1_eng" from "helmet1_ger"
+		{desc "desc/stuff/helmet1_eng"}
+		{inventory
+			{view "/interface/scene/stuff/armor/helmet_soldier_eng.ebm"}
+		}
+		{entity "helmet1_eng"}
+	}
+	{item "helmet1_usa" from "helmet1_ger"
+		{desc "desc/stuff/helmet1_usa"}
+		{inventory
+			{view "/interface/scene/stuff/armor/helmet_soldier_us.ebm"}
+		}
+		{entity "helmet1_usa"}
+	}
+	{item "helmet1_rus" from "helmet1_ger"
+		{desc "desc/stuff/helmet1_rus"}
+		{inventory
+			{view "/interface/scene/stuff/armor/helmet_soldier_rus.ebm"}
+		}
+		{entity "helmet1_rus"}
+	}
+	{item "helmet2_usa" from "helmet1_usa"
+		{desc "desc/stuff/helmet2_usa"}
+		{entity "helmet2_usa"}
+	}
+	{item "helmet3_usa" from "helmet1_usa"
+		{desc "desc/stuff/helmet3_usa"}
+		{entity "helmet3_usa"}
+	}
+
+;cap
+	{item "fieldcap_rus" from "pattern headgear"
+		{desc "desc/stuff/fieldcap_rus"}
+		{inventory
+			{view "/interface/scene/stuff/armor/fieldcap_rus.ebm"}
+			{weight 100}
+		}
+		{entity "fieldcap_rus"}
+	}
+	{item "cap1_rus" from "fieldcap_rus"
+		{desc "desc/stuff/cap1_rus"}
+		{inventory
+			{view "/interface/scene/stuff/armor/cap1_rus.ebm"}
+		}
+		{entity "cap1_rus"}
+	}
+	{item "fieldcap_ger" from "fieldcap_rus"
+		{desc "desc/stuff/fieldcap_ger"}
+		{inventory
+			{view "/interface/scene/stuff/armor/fieldcap_ger43.ebm"}
+		}
+		{entity "fieldcap_ger"}
+	}
+	{item "cap1_ger" from "fieldcap_rus"
+		{desc "desc/stuff/cap1_ger"}
+		{inventory
+			{view "/interface/scene/stuff/armor/cap1_ger.ebm"}
+		}
+		{entity "cap1_ger"}
+	}
+	{item "tank_cap1_ger" from "fieldcap_rus"
+		{desc "desc/stuff/tank_cap1_ger"}
+		{inventory
+			{view "/interface/scene/stuff/armor/cap1_ger.ebm"}
+		}
+		{entity "tank_cap1_ger"}
+	}
+	{item "tank_cap2_ger" from "fieldcap_rus"
+		{desc "desc/stuff/tank_cap2_ger"}
+		{inventory
+			{view "/interface/scene/stuff/armor/fieldcap_ger.ebm"}
+		}
+		{entity "tank_cap2_ger"}
+	}
+	{item "tank_cap_eng" from "fieldcap_rus"
+		{desc "desc/stuff/tank_cap_eng"}
+		{inventory
+			{view "/interface/scene/stuff/armor/tank_cap_eng.ebm"}
+		}
+		{entity "tank_cap_eng"}
+	}
+	{item "rw_cap" from "fieldcap_rus"
+		{desc "desc/stuff/rw_cap"}
+		{inventory
+			{view "/interface/scene/stuff/armor/rw_cap.ebm"}
+		}
+		{entity "rw_cap"}
+	}
+	{item "usmc-cap1" from "fieldcap_rus"
+		{desc "desc/stuff/usmc-cap1"}
+		{inventory
+			{view "/interface/scene/stuff/armor/usmc-cap1.ebm"}
+		}
+		{entity "usmc-cap1"}
+	}
+	{item "commando-cap1" from "fieldcap_rus"
+		{desc "desc/stuff/commando-cap1"}
+		{inventory
+			{view "/interface/scene/stuff/armor/commando-cap1.ebm"}
+		}
+		{entity "commando-cap1"}
+	}
+	{item "beret_eng" from "fieldcap_rus"
+		{desc "desc/stuff/beret_eng"}
+		{inventory
+			{view "/interface/scene/stuff/armor/commando-cap1.ebm"}
+		}
+		{entity "beret_eng"}
+	}
+	{item "beret_eng1" from "fieldcap_rus"
+		{desc "desc/stuff/beret_eng1"}
+		{inventory
+			{view "/interface/scene/stuff/armor/commando-cap1.ebm"}
+		}
+		{entity "beret_eng1"}
+	}
+
+;overcoat
+	{item "pattern overcoat"
+		{tag "smallitemin1hand body"}
+		{mass 12.0}
+		{StateForHold	"hold-item"}
+		{StateForMount	"belt-pick"}
+		{StateForUnmount"belt-drop"}
+		{StateForThrow	"throw"}
+	}
+	{item "body_armor" from "pattern overcoat"
+		{tag "armor"}
+		{desc "desc/stuff/body_armor"}
+		{inventory
+			{view "/interface/scene/stuff/body_armor.ebm"}
+			{size 2 4}
+			{weight 100}
+		}
+;		{entity "body_armor"}
+	}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+	
+	{item "ammo pistol"
+		{tag "bullet small"}
+		{desc "desc/ammo/smg"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/pistol.ebm"}
+			{weight 1}
+			{block 25}
+			{size 2 1}
+		}
+		{mass 0.013}
+	}
+	
+	{item "pattern pistol"	
+		{tag "weapon pistol bullet to_hand"}
+		{inventory
+			{size 2 1}
+			{weight 100 }
+		}
+		{StateForMount		"pistol-pick"}
+		{StateForUnmount	"pistol-drop"}
+		{StateForHold		"hold-item"}
+		{mass 0.95}
+		{entity "pistol"}
+	}
+	{item "valter" from "pattern pistol"
+		{filling "ammo pistol" 8}
+		{desc "desc/weapon/valter"}
+		{inventory
+			{view "/interface/scene/stuff/pistol/valter.ebm"}
+		}
+	}
+	{item "colt" from "pattern pistol"
+		{filling "ammo pistol" 7}
+		{desc "desc/weapon/colt"}
+		{inventory
+			{view "/interface/scene/stuff/pistol/colt.ebm"}
+		}
+		{mass 1.075}
+		{entity "colt"}
+	}
+	{item "webley" from "pattern pistol"
+		{filling "ammo pistol" 6}
+		{desc "desc/weapon/webley"}
+		{inventory
+			{view "/interface/scene/stuff/pistol/webley.ebm"}
+		}
+		{mass 1.075}
+		{entity "pistol"}
+	}
+	{item "welrod" from "pattern pistol"
+		{filling "ammo rifle" 6}
+		{desc "desc/weapon/welrod"}
+		{inventory
+			{view "/interface/scene/stuff/pistol/welrod.ebm"}
+			{weight 100 }
+			{size 3 1}
+		}
+		{mass 2.65}
+		{entity "muffledpistol"}
+	}
+	{item "tt" from "pattern pistol"
+		{desc "desc/weapon/tt"}
+		{filling "ammo pistol" 8}
+		{inventory
+			{view "/interface/scene/stuff/pistol/tt.ebm"}
+		}
+	}
+	{item "nagan" from "pattern pistol"
+		{filling "ammo pistol" 7}
+		{desc "desc/weapon/nagan"}
+		{inventory
+			{view "/interface/scene/stuff/pistol/nagan.ebm"}
+		}
+	}
+
+	{item "ppsh"
+		{tag "smg weapon bullet to_hand"}
+		{filling "ammo pistol" 71}
+		{desc "desc/weapon/ppsh"}
+		{inventory
+			{view "/interface/scene/stuff/smg/ppsh.ebm"}
+			{size 4 2 }
+			{link_bone "gun_back"}
+			{weight 100 }
+		}
+		{mass 4}
+		{entity "ppsh"}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+	}
+	{item "mp40" from "ppsh"
+		{filling "ammo pistol" 32}
+		{desc "desc/weapon/mp40"}
+		{inventory
+			{view "/interface/scene/stuff/smg/mp40.ebm"}
+		}
+		{entity "mp40"}
+	}
+	{item "mp41" from "mp40"
+		{desc "desc/weapon/mp41"}
+		{inventory
+			{view "/interface/scene/stuff/smg/mp41.ebm"}
+		}
+	}
+	{item "m3a" from "mp40"
+		{desc "desc/weapon/m3a1"}
+		{inventory
+			{view "/interface/scene/stuff/smg/m3a1.ebm"}
+		}
+		{entity "mp40"}
+	}
+	{item "thompson" from "ppsh"
+		{desc "desc/weapon/thompson"}
+		{filling "ammo pistol" 30}
+		{inventory
+			{view "/interface/scene/stuff/smg/thompson.ebm"}
+		}
+		{entity "thompson"}
+	}
+	{item "sten" from "ppsh"
+		{desc "desc/weapon/sten"}
+		{filling "ammo pistol" 32}
+		{inventory
+			{view "/interface/scene/stuff/smg/sten.ebm"}
+		}
+		{entity "sten"}
+	}
+	{item "sg44"
+		{tag "smg weapon bullet to_hand"}
+		{filling "ammo pistol" 30}
+		{desc "desc/weapon/sg44"}
+		{inventory
+			{view "/interface/scene/stuff/smg/sg44.ebm"}
+			{size 4 2 }
+			{link_bone "gun_back"}
+			{weight 100 }
+		}
+		{mass 5}
+		{entity "sg44"}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+	}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+
+	{item "ammo mgun"
+		{tag "bullet"}
+		{desc "desc/ammo/mgun"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/mgun.ebm"}
+			{weight 1}
+			{block 100}
+			{size 2 1}
+		}
+		{mass 0.015}
+	}
+	
+	{item "mg34"
+		{tag "weapon mgun bullet to_hand"}
+		{filling "ammo mgun" 100}
+		{desc "desc/weapon/mg34"}
+		{inventory
+			{view "/interface/scene/stuff/mgun/mg34.ebm"}
+			{size 5 2 }
+			{link_bone "gun_back"}
+			{weight 100}
+		}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+		{entity "mg34"}
+		{mass 12}
+	}
+	{item "airborne_roket_launcher" from "mg34"
+		{desc "desc/weapon/mgun_airborne"}
+		{filling "ammo katusha" 2}
+		{inventory
+			{view "/interface/scene/stuff/mgun/mg34.ebm"}
+		}
+	}
+	{item "mg34_tower" from "mg34"
+		{desc "desc/weapon/mg34_tower"}
+	}
+	{item "doublecolt" from "mg34"
+		{desc "desc/weapon/mg34_double"}
+	}
+	{item "mg42" from "mg34"
+		{desc "desc/weapon/mg42"}
+		{filling "ammo mgun" 75}
+		{inventory
+			{view "/interface/scene/stuff/mgun/mg42.ebm"}
+		}
+	}
+	{item "browning" from "mg34"
+		{filling "ammo mgun" 200}
+		{desc "desc/weapon/browning"}
+		{inventory
+			{view "/interface/scene/stuff/mgun/browning.ebm"}
+		}
+		{entity "Browning"}
+	}
+	{item "dt" from "mg34"
+		{filling "ammo mgun" 60}
+		{desc "desc/weapon/dt"}
+		{inventory
+			{view "/interface/scene/stuff/mgun/dt.ebm"}
+		}
+		{entity "dt29"}
+	}
+	{item "dp" from "mg34"
+		{filling "ammo mgun" 47}
+		{desc "desc/weapon/dp"}
+		{inventory
+			{view "/interface/scene/stuff/mgun/dp.ebm"}
+		}
+		{entity "dt29"}
+	}
+	{item "ds" from "mg34"
+		{filling "ammo mgun" 250}
+		{desc "desc/weapon/ds"}
+		{inventory
+			{view "/interface/scene/stuff/mgun/dt.ebm"}
+		}
+		{entity "ds39"}
+	}
+	
+	{item "pattern ammo zenite"
+		{tag "ammo zenite"}
+		{desc "desc/ammo/ptr"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/flak.ebm"}
+			{weight 20}
+			{size 2 2 }
+			{block 5}
+		}
+		{mass 0.1}
+	}
+	{item "ammo ptr"
+		{tag "bullet zenite"}
+		{desc "desc/ammo/ptr"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/ptr.ebm"}
+			{size 2 1 }
+			{weight 20}
+			{block 5}
+		}
+		{mass 0.1}
+	}
+	
+	{item "ptrd" from "mg34"
+		{tag "weapon rifle bullet to_hand nokeep"}
+		{filling "ammo ptr" 1}
+		{desc "desc/weapon/ptrd"}
+		{inventory
+			{view "/interface/scene/stuff/ptrd.ebm"}
+			{size 8 2 }
+		}
+		{mass 18}
+		{entity "ptrs"}
+	}
+	{item "ptrs" from "ptrd"
+		{filling "ammo ptr" 5}
+		{desc "desc/weapon/ptrs"}
+		{inventory
+			{view "/interface/scene/stuff/ptrs.ebm"}
+		}
+	}
+	{item "bren"
+		{tag "weapon mgun bullet to_hand"}
+		{filling "ammo mgun" 30}
+		{desc "desc/weapon/BREN"}
+		{inventory
+			{view "/interface/scene/stuff/mgun/bren.ebm"}
+			{size 4 2 }
+			{link_bone "gun_back"}
+			{weight 100}
+		}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+		{entity "bren"}
+		{mass 9}
+	}
+	{item "bar"
+		{tag "weapon mgun bullet to_hand"}
+		{filling "ammo mgun" 20}
+		{desc "desc/weapon/bar"}
+		{inventory
+			{view "/interface/scene/stuff/mgun/bar.ebm"}
+			{size 5 2 }
+			{link_bone "gun_back"}
+			{weight 100}
+		}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+		{entity "bar"}
+		{mass 9}
+	}
+	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+	
+	{item "ammo rifle"
+		{tag "bullet"}
+		{desc "desc/ammo/rifle"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/rifle.ebm"}
+			{weight 10}
+			{block 10}
+			{size 1 1}
+		}	
+		{mass 0.015}
+	}
+	
+	{item "mosin"
+		{tag "weapon rifle bullet to_hand"}
+		{desc "desc/weapon/mosin"}
+		{filling "ammo rifle" 5}
+		{inventory
+			{view "/interface/scene/stuff/rifle/mosin.ebm"}
+			{size 4 2 }
+			{link_bone "gun_back"}
+			{weight 100 }
+		}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+		{entity "rifle"}
+		{mass 4.5} ; kg
+	}
+	{item "m1" from "mosin"
+		{desc "desc/weapon/m1_garand"}
+		{filling "ammo rifle" 7}
+		{inventory
+			{view "/interface/scene/stuff/rifle/garand.ebm"}
+		}
+	}
+	{item "mauzer" from "mosin"
+		{desc "desc/weapon/mauzer"}
+		{inventory
+			{view "/interface/scene/stuff/rifle/mauzer.ebm"}
+		}
+	}
+	{item "g41" from "mosin"
+		{desc "desc/weapon/g41"}
+		{inventory
+			{view "/interface/scene/stuff/rifle/g41.ebm"}
+		}
+	}
+	{item "svt" from "mosin"
+		{desc "desc/weapon/svt"}
+		{filling "ammo rifle" 10}
+		{inventory
+			{view "/interface/scene/stuff/rifle/svt.ebm"}
+		}
+	}
+	{item "enfield" from "mosin"
+		{desc "desc/weapon/enfield"}
+		{filling "ammo rifle" 8}
+		{inventory
+			{view "/interface/scene/stuff/rifle/enfield.ebm"}
+		}
+	}
+	{item "m1_carbine" from "mosin"
+		{desc "desc/weapon/m1_carbine"}
+		{filling "ammo rifle" 15}
+		{inventory
+			{view "/interface/scene/stuff/rifle/m1_carbine.ebm"}
+		}
+		{entity "m1_carbine"}
+	}
+	{item "super_gun" from "mosin"
+		{tag "watch nokeep keepentity"}
+		{desc "desc/weapon/super_gun"}
+		{filling "ammo rifle" 10}
+		{inventory
+			{view "/interface/scene/stuff/rifle/mosin.ebm"}
+			{size 20 4}
+		}
+		{entity "super_gun"}
+	}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+	{item "pattern rpg"
+		{tag "ammo ap shell"}
+		{inventory
+			{weight 100}
+			{size 2 1}
+		}	
+		{mass 2.75}
+	}
+	{item "ammo bazooka" from "pattern rpg"
+		{desc "desc/ammo/mine"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/bazooka.ebm"}
+		}
+		{mass 1.5}
+	}
+
+	{item "ammo panzerfaust" from "pattern rpg"
+		{desc "desc/ammo/mine"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/pzshreck.ebm"}
+		}
+		{mass 2.75}
+	}
+
+	{item "weapon bazooka"
+		{tag "rocketlauncher to_hand ap cannot_lie nokeep"}
+		{filling "ammo bazooka" 1}
+		{desc "desc/weapon/bazooka"}
+		{inventory
+			{view "/interface/scene/stuff/bazoka.ebm"}
+			{size 5 2}
+			{link_bone "gun_back"}
+			{weight 100}
+		}
+		{mass 6.1}
+		{entity "bazoka"}
+		{StateForMount		"bazooka-pick"}
+		{StateForUnmount	"bazooka-drop"}
+		{StateForHold		"hold-bazooka"}
+	}
+	{item "weapon panzershreck" from "weapon bazooka"
+		{desc "desc/weapon/panzershreck"}
+		{inventory
+			{size 5 2}
+			{view "/interface/scene/stuff/panzershreck.ebm"}
+		}
+		{entity "panzershreck"}
+	}
+	{item "weapon panzerfaust" from "weapon bazooka"
+		{desc "desc/weapon/panzerfaust"}
+		{filling "ammo panzerfaust" 1}
+		{fillingVisible "faustrocket"}
+		{preloaded}
+		{inventory
+			{size 5 1}
+			{view "/interface/scene/stuff/panzerfaust60.ebm"}
+		}
+		{mass 6}
+		{entity "panzerfaust60"}
+	}
+
+	{item "ammo katusha"
+		{tag "big shell fg bomb"}
+		{desc "desc/ammo/katusha"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/katusha.ebm"}
+			{size 8 1}
+			{weight 20}
+		}	
+		{mass 2.75}
+	}
+	{item "weapon katusha"
+		{filling "ammo katusha" 16}
+		{fillingVisible "rocket"}
+		{desc "desc/weapon/katusha"}
+	}
+
+	{item "ammo nebel"
+		{tag "big shell fg bomb"}
+		{desc "desc/ammo/nebel"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/nebel.ebm"}
+			{size 4 1}
+			{weight 15}
+		}	
+		{mass 2.75}
+	}
+	{item "weapon nebel"
+		{filling "ammo nebel" 6}
+		{fillingVisible "rocket"}
+		{desc "desc/weapon/nebel"}
+	}
+	{item "ammo torpedo"
+		{desc "desc/ammo/torpedo"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/torpedo.ebm"}
+			{size 8 3}
+			{weight 100}
+		}
+		{mass 3}
+	}
+	{item "weapon torpedo"
+		{filling "ammo torpedo" 2}
+		{desc "desc/weapon/torpedo"}
+	}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+
+	{item "pattern shell_fg"
+		{tag "ammo shell fg"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_fg.ebm"}
+			{size 4 1}
+			{weight 100}
+		}
+		{mass 3}
+	}
+	
+	{item "pattern shell_ap"
+		{tag "ammo shell ap"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap.ebm"}
+			{size 4 1}
+			{weight 100}
+		}
+		{mass 3}
+	}
+	{item "pattern shell_ap_small" from "pattern shell_ap"
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap_small.ebm"}
+			{size 3 1}
+		}
+	}
+	{item "pattern shell_fg_small" from "pattern shell_fg"
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_fg_small.ebm"}
+			{size 3 1}
+		}
+	}
+	{item "bullet20 zenite" from "pattern ammo zenite"	{desc "desc/ammo/ap20"}}
+	{item "bullet20 fg" from "pattern shell_fg_small"	{desc "desc/ammo/he20"}}
+	{item "bullet20 ap" from "pattern shell_ap_small"	{desc "desc/ammo/ap20"}}
+	{item "bullet37 ap" from "pattern shell_ap_small"	{desc "desc/ammo/ap37"}}
+	{item "bullet45 fg" from "pattern shell_fg_small"	
+		{desc "desc/ammo/he45"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he45.ebm"}
+			{size 3 1}
+		}
+	}
+	{item "bullet45 ap" from "pattern shell_ap_small"	{desc "desc/ammo/ap45"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap45.ebm"}
+			{size 3 1}
+		}
+	}
+	{item "bullet50 fg" from "pattern shell_fg_small"	
+		{desc "desc/ammo/he50"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he50.ebm"}
+			{size 3 1}
+		}
+	}
+	{item "bullet50 ap" from "pattern shell_ap_small"	
+		{desc "desc/ammo/ap50"}
+			{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap50.ebm"}
+			{size 3 1}
+		}
+	}
+	{item "bullet57 fg" from "pattern shell_fg_small"	{desc "desc/ammo/he57"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he57.ebm"}
+			{size 3 1}
+		}
+	}
+	{item "bullet57 ap" from "pattern shell_ap_small"	{desc "desc/ammo/ap57"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap57.ebm"}
+			{size 3 1}
+		}
+	}
+	{item "bullet75 fg" from "pattern shell_fg"		{desc "desc/ammo/he75"}}
+	{item "bullet75 ap" from "pattern shell_ap"		{desc "desc/ammo/ap75"}}
+	{item "bullet76 fg" from "pattern shell_fg"		
+		{desc "desc/ammo/he76"}
+		{tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he76.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet76 ap" from "pattern shell_ap"		
+		{desc "desc/ammo/ap76"}
+		{tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap76.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet85 fg" from "pattern shell_fg"		
+		{desc "desc/ammo/he85"} 
+		{tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he85.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet85 ap" from "pattern shell_ap"		
+		{desc "desc/ammo/ap85"} 
+		{tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap85.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet88 fg" from "pattern shell_fg"		
+		{desc "desc/ammo/he88"} 
+		{tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he88.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet88 ap" from "pattern shell_ap"		
+		{desc "desc/ammo/ap88"} 
+		{tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap88.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet90 fg" from "pattern shell_fg"		
+		{desc "desc/ammo/he90"} 
+		{tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he90.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet90 ap" from "pattern shell_ap"		
+		{desc "desc/ammo/ap90"} 
+		{tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap90.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet122 fg" from "pattern shell_fg"	{desc "desc/ammo/he122"} {tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he122.ebm"}
+			{size 4 1}
+		}
+	}
+	
+	{item "bullet122 ap" from "pattern shell_ap"	{desc "desc/ammo/ap122"} {tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap122.ebm"}
+			{size 4 1}
+		}	
+	}
+	{item "bullet128 fg" from "pattern shell_fg"	{desc "desc/ammo/he128"} {tag "big"}}
+	{item "bullet128 ap" from "pattern shell_ap"	{desc "desc/ammo/ap128"} {tag "big"}}
+	
+	{item "bullet150 fg" from "pattern shell_fg"	{desc "desc/ammo/he150"} {tag "big bomb"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he150.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet150 ap" from "pattern shell_ap"	{desc "desc/ammo/ap150"} {tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap150.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet152 fg" from "pattern shell_fg"	{desc "desc/ammo/he152"} {tag "big bomb"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_he152.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet152 ap" from "pattern shell_ap"	{desc "desc/ammo/ap152"} {tag "big"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/shell_ap152.ebm"}
+			{size 4 1}
+		}
+	}
+	{item "bullet152m10 fg" from "pattern shell_fg"	{desc "desc/ammo/he152m"} {tag "big bomb"}}
+	{item "bullet152m10 ap" from "pattern shell_ap"	{desc "desc/ammo/ap152m"} {tag "big"}}
+	{item "bullet203"		from "pattern shell_ap"	{desc "desc/ammo/ap203m"} {tag "big fg ap extra"}
+		{tag "itemin2hands"}
+		{desc "Mortar Shell"}
+		{inventory
+			{view "/interface/scene/stuff/mortar_shell.ebm"}
+			{size 4 2}
+			{weight 150}
+		}	
+		{mass 20}
+		{entity "mortar_shell"}
+		{StateForHold	"hold-item"}
+		{StateForMount	"item-pick"}
+		{StateForUnmount"item-drop"}
+		{StateForThrow	"throw"}
+	}
+
+	{item "pattern gun"
+		{tag "weapon"}
+		{inventory
+			{size 4 2}
+			{weight 1000}
+			{view "/interface/scene/stuff/tankgun.ebm"}
+		}
+		{mass 1000}
+	}
+	
+	{item "20mm_kwk30" from "pattern gun"		{filling "bullet20"}		{desc "desc/weapon/20mm_kwk30"}}
+	{item "20mm_flak38" from "pattern gun"		{filling "bullet20 zenite" 48}{desc "desc/weapon/20mm_flak38"}}
+	{item "37mm_pak35" from "pattern gun"		{filling "bullet37"}		{desc "desc/weapon/37mm_pak35"}}
+	{item "50mm_kwk38"	from "pattern gun"		{filling "bullet50"}		{desc "desc/weapon/50mm_kwk38"}}
+	{item "75mm_m3"		 from "pattern gun"		{filling "bullet75"}		{desc "desc/weapon/75mm_m3"}}
+	{item "75mmM3"		 from "pattern gun"		{filling "bullet75"}		{desc "desc/weapon/75mmM3"}}
+	{item "75mm_m6"		 from "pattern gun"		{filling "bullet75"}		{desc "desc/weapon/75mm_m6"}}
+	{item "75mm_kwk37" from "pattern gun"		{filling "bullet75"}		{desc "desc/weapon/75mm_kwk37"}}
+	{item "75mm_stuk37" from "75mm_kwk37"									{desc "desc/weapon/75mm_stuk37"}}
+	{item "75mm_kwk40" from "75mm_kwk37"									{desc "desc/weapon/75mm_kwk40"}}
+	{item "75mm_stuk40" from "75mm_kwk37"									{desc "desc/weapon/75mm_stuk40"}}
+	{item "75mm_kwk42" from "75mm_kwk37"									{desc "desc/weapon/75mm_kwk42"}}
+	{item "75mm_pak40" from "75mm_kwk37"									{desc "desc/weapon/75mm_pak40"}}	
+	{item "88mm_kwk36" from "pattern gun"		{filling "bullet88"}		{desc "desc/weapon/88mm_kwk36"}}
+	{item "88mm_kwk43" from "88mm_kwk36"									{desc "desc/weapon/88mm_kwk43"}}
+	{item "88mm_flak41" from "88mm_kwk36"									{desc "desc/weapon/88mm_flak41"}}
+	{item "88mm_pak43" from "88mm_kwk36"									{desc "desc/weapon/88mm_pak43"}}
+	{item "90mm_m3" 	from "pattern gun"		{filling "bullet90"}		{desc "desc/weapon/90mm_m3"}}
+	{item "128mm_pak44" from "pattern gun"		{filling "bullet128"}		{desc "desc/weapon/128mm_pak44"}}
+	{item "150mm_sfh18" from "pattern gun"		{filling "bullet150"}		{desc "desc/weapon/150mm_sfh18"}}
+	{item "203mm_gun" from "pattern gun"		{filling "bullet203"}		{desc "desc/weapon/203mm_gun"}}
+
+	{item "57mm_OQF" from "pattern gun"			{filling "bullet57"}		{desc "desc/weapon/57mm_OQF"}}
+	{item "45mm_20k" from "pattern gun"			{filling "bullet45"}		{desc "desc/weapon/45mm_20k"}}
+	{item "76mm_kt26" from "pattern gun"		{filling "bullet76"}		{desc "desc/weapon/76mm_kt26"}}
+	{item "76mm_mk4" from "pattern gun"			{filling "bullet76"}		{desc "desc/weapon/76mm_mk4"}}
+	{item "76mm_L11" from "76mm_kt26"										{desc "desc/weapon/76mm_L11"}}
+	{item "76mm_f34" from "76mm_kt26"										{desc "desc/weapon/76mm_f34"}}
+	{item "76mm_zis3" from "76mm_kt26"										{desc "desc/weapon/76mm_zis3"}}
+	{item "85mm_zis53" from "pattern gun"		{filling "bullet85"}		{desc "desc/weapon/85mm_zis53"}}
+	{item "85mm_d5" from "85mm_zis53"										{desc "desc/weapon/85mm_d5"}}
+	{item "122mm_d25" from "pattern gun"		{filling "bullet122"}		{desc "desc/weapon/122mm_d25"}}
+	{item "152mm_m30" from "pattern gun"		{filling "bullet152"}		{desc "desc/weapon/152mm_m30"}}
+	{item "152mm_ML20" from "152mm_m30"										{desc "desc/weapon/152mm_ML20"}}
+	{item "152mm_ML20_isu" from "152mm_m30"									{desc "desc/weapon/152mm_ML20"}}
+
+	{item "thrower hand"}
+	
+	{item "pattern grenade"
+		{inventory
+			{weight 100}
+		}	
+		{mass 1}
+		{StateForMount		"belt-pick"}
+		{StateForUnmount	"belt-drop"}
+		{StateForHold		"hold-item"}
+		{StateForThrow		"throw"}
+	}
+
+	{item "grenade m24" from "pattern grenade"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/grenade_m24"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_m24.ebm"}
+			{size 2 1}
+		}	
+		{entity "grenade_m24"}
+	}
+	{item "grenade m39" from "grenade m24"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/grenade m39"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_m39.ebm"}
+			{size 1 1}
+		}	
+		{entity "grenade_f1"}
+	}
+
+	{item "grenade f1" from "pattern grenade"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/grenade_f1"}
+		{inventory
+			{size 1 1}
+			{view "/interface/scene/stuff/grenade_f1.ebm"}
+		}	
+		{entity "grenade_f1"}
+	}
+
+	{item "grenade mk1" from "grenade f1"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/mk1"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_mills.ebm"}
+		}	
+	}
+
+	{item "grenade m61" from "grenade f1"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/m61"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_m61.ebm"}
+		}	
+	}
+
+	{item "grenade rpg40" from "pattern grenade"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed big"}
+		{desc "desc/stuff/grenade_rpg40"}                     
+		{tag "ap"}
+		{inventory
+			{size 2 1}
+			{view "/interface/scene/stuff/grenade_rpg40.ebm"}
+		}	
+		{entity "grenade_rpg40"}
+	}
+	{item "grenade rpg43" from "grenade rpg40"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed big"}
+		{desc "desc/stuff/grenade_rpg43"}
+		{tag "ap"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_rpg43.ebm"}
+		}	
+	}
+	{item "grenade n73at" from "grenade rpg40"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed big"}
+		{desc "desc/stuff/grenade_n73at"}
+		{tag "ap"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_n73at.ebm"}
+		}	
+	}
+	{item "grenade m24x5" from "grenade rpg40"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed big"}
+		{desc "desc/stuff/grenade m24x5"}
+		{tag "ap"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_m24x5.ebm"}
+		}	
+		{entity "grenade_m24x5"}
+	}
+	{item "grenade pwm1" from "grenade rpg40"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed big"}
+		{desc "desc/stuff/grenade pwm1"}
+		{tag "ap"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_pwm1.ebm"}
+		}	
+	}
+
+	{item "grenade molotov_coctail" from "pattern grenade"
+		{tag "hurtful smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/molotov"}
+		{inventory
+			{view "/interface/scene/stuff/battle.ebm"}
+			{size 2 1}
+		}	
+		{entity "molotov_coctail"}
+		{mass 0.6}
+
+	}
+	{item "grenade smoke" from "pattern grenade"
+		{tag "smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/smoke"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_smoke.ebm"}
+			{size 1 1}
+		}	
+		{entity "grenade_smoke"}
+		{mass 0.3}
+	}
+	{item "grenade m18" from "grenade smoke"
+		{tag "smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/m18"}
+		{inventory
+			{view "/interface/scene/stuff/grenade_m18.ebm"}
+		}	
+		{entity "grenade_smoke"}
+	}
+
+	{item "knife hand"
+		{tag "hurtful smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/knife"}
+		{inventory
+			{view "/interface/scene/stuff/knife.ebm"}
+			{size 2 1}
+			{weight 20}
+		}	
+		{mass 0.3}
+		{entity "knife"}
+		{StateForMount		"belt-pick"}
+		{StateForUnmount	"belt-drop"}
+		{StateForHold		"hold-item"}
+		{StateForThrow		"throw"}
+	}
+	
+	{item "knife_ger hand" from "knife hand"
+		{tag "knife"}
+		{desc "desc/stuff/knife_ger"}
+		{inventory
+			{view "/interface/scene/stuff/knife_ger.ebm"}
+		}	
+		{entity "knife_ger"}
+	}
+
+	{item "fau_detail"
+		{tag "smallitemin1hand keepentity dropboxed"}
+		{desc "desc/stuff/xbox"}
+		{inventory
+			{view "/interface/scene/stuff/xbox.ebm"}
+			{weight 100}
+		}	
+		{mass 0.3}
+		{StateForMount		"belt-pick"}
+		{StateForUnmount	"belt-drop"}
+		{StateForHold		"hold-item"}
+		{StateForThrow		"throw"}
+		{entity "xbox"}
+	}
+	{item "axe hand"
+		{tag "hurtful smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/axe"}
+		{inventory
+			{view "/interface/scene/stuff/axe.ebm"}
+			{size 3 2}
+			{weight 100}
+		}	
+		{mass 1.5}
+		{entity "axe"}
+		{StateForMount		"belt-pick"}
+		{StateForUnmount	"belt-drop"}
+		{StateForHold		"hold-item"}
+		{StateForThrow		"throw"}
+	}
+	{item "searchlight" from "pattern gun" {desc "desc/weapon/searchlight"}}
+
+	{item "bomb-dropper"
+		{tag "weapon"}
+		{filling "ammo air bomb" 8}
+		{desc "desc/weapon/bomb-dropper"}
+	}
+	{item "air bomb"
+		{tag "ammo"}
+		{tag "itemin2hands"}
+		{desc "desc/ammo/airbomb"}
+		{inventory
+			{view "/interface/scene/stuff/ammo/bomb.ebm"}
+			{size 4 3}
+			{weight 1000}
+		}	
+		{mass 50}
+		{StateForHold	"hold-item"}
+		{StateForMount	"item-pick"}
+		{StateForUnmount"item-drop"}
+		{entity "air_bomb_small"}
+	}
+
+	{item "chicken"
+		{tag "smallitemin1hand throwable"}
+		{desc "desc/stuff/chicken"}
+		{inventory
+			{view "/interface/scene/stuff/chicken.ebm"}
+			{weight 100}
+			{size 2 2}
+		}	
+		{mass 2.5}
+		{entity "chicken"}
+		{StateForMount		"belt-pick"}
+		{StateForUnmount	"belt-drop"}
+		{StateForHold		"hold-item"}
+		{StateForThrow		"throw"}
+	}
+
+	{item "crow_bar"
+		{tag "hurtful smallitemin1hand throwable dropboxed"}
+		{desc "desc/stuff/crow_bar"}
+		{inventory
+			{view "/interface/scene/stuff/crow_bar.ebm"}
+			{weight 100}
+			{size 3 1}
+		}	
+		{mass 1.0}
+		{entity "crow_bar"}
+		{StateForMount		"belt-pick"}
+		{StateForUnmount	"belt-drop"}
+		{StateForHold		"hold-item"}
+		{StateForThrow		"throw"}
+	}
+	{item "cord_wood"
+		{tag "itemin2hands"}
+		{desc "desc/stuff/cord_wood"}
+		{inventory
+			{view "/interface/scene/stuff/firewood.ebm"}
+			{weight 100}
+			{size 4 4}
+		}	
+		{mass 6.0}
+		{entity "cord_wood"}
+		{StateForHold	"hold-item"}
+		{StateForMount	"item-pick"}
+		{StateForUnmount"item-drop"}
+	}
+}

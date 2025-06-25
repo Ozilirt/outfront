@@ -1,0 +1,22 @@
+{Building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.55) sy(0.65) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "mts-shed.mdl"}
+	{props "two" "staged" "wood" "construction"}
+	{volume	"body"
+		{thickness hollow 5}
+	}
+	{Volume "fire3"
+	}
+	{Volume "fire2"
+	}
+	{Volume "fire1"
+	}
+	{Volume "fire0"
+	}
+	("declare_fire_volumes")
+}

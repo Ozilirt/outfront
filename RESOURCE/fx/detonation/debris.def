@@ -1,0 +1,42 @@
+{fx
+	{ParticleView
+		{EntityGenerator
+			{TotalParticles 8}
+			{EmissionArea
+				{radius 36}
+				{alpha0 0 5}
+				{alpha1 60 35}
+			}
+			{ParticleInit
+				{Speed 12 7}
+				{Lifetime 1.8 1}
+			}
+			{AxisZ}
+			{Entity "#grunt1"	{fx "dust_small"}}
+			{Entity "#grunt2"	{fx "dust_small"}}
+;			{Entity "#metall3"	{fx "smoke_barrel_small"}}
+;			{Entity "#metall2"	{fx "smoke_barrel_small"}}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{EntityGenerator
+			{TotalParticles 8}
+			{EmissionArea
+				{radius 36}
+				{alpha0 0 5}
+				{alpha1 60 30}
+			}
+			{ParticleInit
+				{Speed 20 5}
+				{Lifetime 0.3}
+			}
+			{AxisZ}
+;			{Entity "#grunt1"	{fx "dust_small"}}
+;			{Entity "#grunt2"	{fx "dust_small"}}
+			{Entity "fx_piece"	{fx "dust_small"}}
+;			{Entity "#metall3"	{fx "smoke_barrel_small"}}
+;			{Entity "#metall2"	{fx "smoke_barrel_small"}}
+		}
+	}
+}

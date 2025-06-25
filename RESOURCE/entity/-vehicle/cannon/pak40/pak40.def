@@ -1,0 +1,73 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/structure/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret" "wheeled"}
+;	{props "emit_on_attack"}
+	(include "/properties/dummy_fsm.inc")
+;	{simulation {able 0}}
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+	{sensor
+		{Visor "main"
+			{vision
+				{uncover 1}
+			    {human 90
+			    	{crawl 50}
+			    }
+			    {actor "marine" 80
+			    }
+			    {actor "vehicle" 90}
+			    {actor 90}
+				{h_fov 30}
+				{wide 2.5}
+				{v_fov 30}
+				{fog_range 30}
+				{fog_fov 60}
+			}
+			{bone "visor"}
+		}
+	}
+	{TexMods
+ 		{"ambush" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+
+
+	("crew_2_human")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mm_pak40"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet75 ap" 100}
+		}
+	}
+	{mass 10000}
+	{Extension "Pak40.mdl"}
+}

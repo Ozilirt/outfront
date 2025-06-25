@@ -1,0 +1,60 @@
+;Exported by: vic
+;Date:        Mon Feb 02 16:11:57 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\trench\trench12_b.max
+{Skeleton
+	{bone "trench_wood_test"
+		{parameters "ground;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "trench_wood_test.ply"}
+		{bone "trench_ground"
+			{parameters "CommonMesh;Ground;"}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.0000	-0.0000	0.0000
+			}
+			{VolumeView "trench_ground.ply" {Ground}}
+		}
+	}
+}
+{Area "cut"
+	{Polygon2
+		{Radius 0}
+		{Vertex 76.725 24.6063}
+		{Vertex -76.6925 24.6063}
+		{Vertex -76.6925 -24.6063}
+		{Vertex 76.725 -24.6063}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -7.62939e-006 -23.7083}
+		{Extent 73.8189 5.00458}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -7.62939e-006 23.7428}
+		{Extent 73.8189 5.07004}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "trench_wood_test"}
+	{Position -0.0000	21.6565	-13.7795}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "trench_wood_test"}
+	{Position -0.0000	-21.6255	-13.7795}
+}

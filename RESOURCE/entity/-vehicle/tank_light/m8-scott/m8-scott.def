@@ -1,0 +1,63 @@
+{
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light"}
+	
+	{Volume "Turret"
+		{thickness 15}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{Volume "Body"
+		{thickness  13
+			{top	10}
+			{bottom	 6}
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+	("crew_human"			place(driver)		door1(emit1) door2(emit2) visor(driver))	
+	("crew_human_visible"	place(commander)	door1(emit1) door2(emit2) visor(main))
+	("crew_human_visible"	place(gunner)		door1(emit1) door2(emit2) visor(main))
+	("crew_human"			place(charger)		door1(emit1) door2(emit2) visor(main))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "75mmM3"}
+			{Mounted}
+		}
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+;			{weapon "weapon mgun"}
+			{DefaultWeapon "browning"}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo mgun" 600}
+			{item "ammo bullet75 fg" 27}
+		}
+	}
+	
+	{mass 13200}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{Extension "M8-Scott.mdl"}
+}

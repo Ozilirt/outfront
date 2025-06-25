@@ -1,0 +1,97 @@
+;Exported by: ubrashaev
+;Date:        Wed Sep 29 10:37:26 2004
+;File:        D:\-Projects-\-work-\3d\construction\oldfarm\oldfarm.max
+{Skeleton
+	{bone "oldfarm_corner3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "oldfarm_corner3.ply"}
+		{bone "exterior"
+			{Position 24.5837	-37.5331	91.6758}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center -3.6284 -28.3469}
+		{Extent 13.6442 9.65425}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -11.5114 10.3899}
+		{Extent 53.199 19.8454}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -68.1172 7.03585}
+		{Extent 3.40677 23.1995}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -37.6325 -27.1438}
+		{Extent 20.3599 10.8573}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -2.08498 -12.7568}
+		{Extent 69.1084 3.40678}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Box 6.81353 85.838 114.286}
+	{Bone "oldfarm_corner3"}
+	{Matrix34
+		0.5736	0.0000	-0.8192
+		0.0000	1.0000	0.0000
+		0.8192	0.0000	0.5736
+		-21.3085	5.0634	92.8283
+	}
+}
+{Volume "body"
+	{Box 6.81353 46.3989 58.6081}
+	{Bone "oldfarm_corner3"}
+	{Position -68.1172	-7.0359	29.3040}
+}
+{Volume "body3"
+	{Box 40.7198 21.7147 17.5824}
+	{Bone "oldfarm_corner3"}
+	{Position -37.6325	27.1438	9.0454}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "oldfarm_corner3"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-2.0850	37.1655	58.3818
+	}
+}
+{Volume "body1"
+	{Box 6.81353 138.217 58.6081}
+	{Bone "oldfarm_corner3"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		-2.0850	12.7568	29.3040
+	}
+}

@@ -1,0 +1,15 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "fence_snackbar.mdl"}
+	{props "concrete" "construction" "one" "staged" "no_destroyed_stamp" "disable_area"}
+
+	{volume	"body"
+		{thickness 10}
+		{tags "body"}
+	}
+}

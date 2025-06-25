@@ -1,0 +1,33 @@
+;Exported by: ubrashaev
+;Date:        Fri Sep 10 17:44:38 2004
+;File:        D:\-Projects-\-work-\3d\industrial\tube.max
+{Skeleton
+	{bone "tube05_a"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "tube05_a.ply"}
+	}
+}
+{Volume "body"
+	{Box 35.8996 21.0877 21.235}
+	{Bone "tube05_a"}
+	{Matrix34
+		-0.0000	-0.0000	-1.0000
+		-0.0000	1.0000	-0.0000
+		1.0000	0.0000	-0.0000
+		-0.3523	4.9487	18.1865
+	}
+}
+{Volume "body1"
+	{Box 31.5091 17.2919 21.235}
+	{Bone "tube05_a"}
+	{Matrix34
+		0.0000	0.9397	-0.3420
+		-0.0000	0.3420	0.9397
+		1.0000	-0.0000	0.0000
+		-0.7103	-3.4836	41.4416
+	}
+}

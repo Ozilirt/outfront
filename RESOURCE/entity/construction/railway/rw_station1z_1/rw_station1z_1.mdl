@@ -1,0 +1,146 @@
+;Exported by: shevchenko
+;Date:        Tue May 11 13:25:16 2004
+;File:        D:\-Projects-\-3DWork-\sheva\REILWAY4.max
+{Skeleton
+	{bone "rw_station1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "rw_station1.ply"}
+		{bone "window2"
+			{Position 33.8400	71.0300	59.9837}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass02"
+				{Matrix34
+					-0.0000	-1.0000	-0.0000
+					-0.0000	0.0000	-1.0000
+					1.0000	-0.0000	-0.0000
+					0.1686	-0.0423	-0.9762
+				}
+			}
+		}
+		{bone "window1"
+			{Position -33.6505	71.0300	59.9837}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass01"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					-0.0000	-0.0000	-1.0000
+					1.0000	-0.0000	-0.0000
+					0.1154	-0.0423	-0.9762
+				}
+			}
+		}
+		{bone "exterior"
+			{Position 0.0000	0.0000	-0.0000}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "Rectangle04"
+	{Obb2
+		{Center 14.2263 -65.8558}
+		{Extent 1.44144 7.02702}
+		{Axis -0.984808 0.173649}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle03"
+	{Obb2
+		{Center 27.5521 -56.5031}
+		{Extent 12.6126 5.94595}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center -21.3329 -56.3901}
+		{Extent 18.4874 5.58559}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center -1.15465 50.742}
+		{Extent 44.0569 11.833}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -1.62162 0.720722}
+		{Extent 38.3784 51.3514}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "hole1"
+	{Box 28.9213 37.7533 54.6574}
+	{Bone "rw_station1"}
+	{Position 0.4609	48.6679	27.3287}
+}
+{Volume "door"
+	{Box 29.0551 53.1471 13.1805}
+	{Bone "rw_station1"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		-0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	-0.0000
+		0.8760	60.8470	26.7025
+	}
+}
+{Volume "window1"
+	{Box 5.90551 5.90551 9.84252}
+	{Bone "window1"}
+	{Position 0.1477	0.0217	-0.1196}
+}
+{Volume "window2"
+	{Box 5.90551 5.90551 9.84252}
+	{Bone "window2"}
+	{Position 0.1621	0.0217	-0.1196}
+}
+{Volume "wall4a"
+	{Polyhedron "wall4a.vol"}
+	{Bone "rw_station1"}
+	{Position 37.5863	-25.5160	59.6457}
+}
+{Volume "wall4"
+	{Box 39.5547 11.4117 98.4252}
+	{Bone "rw_station1"}
+	{Position 19.6899	-53.6933	49.2126}
+}
+{Volume "wall3a"
+	{Polyhedron "wall3a.vol"}
+	{Bone "rw_station1"}
+	{Position -37.5769	-25.5160	59.6457}
+}
+{Volume "wall3"
+	{Box 39.5547 11.4117 98.4252}
+	{Bone "rw_station1"}
+	{Position -19.5110	-53.6933	49.2126}
+}
+{Volume "wall2a"
+	{Polyhedron "wall2a.vol"}
+	{Bone "rw_station1"}
+	{Position 37.5863	27.2322	59.6457}
+}
+{Volume "wall2"
+	{Box 78.7138 11.4117 98.4252}
+	{Bone "rw_station1"}
+	{Position 0.0974	53.9261	49.2126}
+}
+{Volume "wall1a"
+	{Polyhedron "wall1a.vol"}
+	{Bone "rw_station1"}
+	{Position -37.5769	27.2322	59.6457}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "rw_station1"}
+	{Position -0.0078	0.9004	98.6215}
+}

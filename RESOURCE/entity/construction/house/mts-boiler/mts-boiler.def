@@ -1,0 +1,43 @@
+{Building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.1) sy(1.4) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "mts-boiler.mdl"}
+	{props "two" "staged" "concrete" "construction"}
+
+  	{DecalView
+		{Sprite "/properties/shadow/house3.ebm"
+  			{PrescaleX 1 }
+	   		{PrescaleY 0.8 }
+			{Visibility 0.9}
+			{shiftX 19}
+			{shiftY 5}
+
+		}
+		{layer grounddecal}
+		{UseDirection}    
+	}
+
+	{volume	"body"
+	    {able {holed} }
+		{thickness hollow 5}
+		{tags "body"}
+	}
+
+	{volume "roof"
+		{able  {visible 0}}
+		{thickness hollow 5}
+	}
+
+	{volume "mainhole"
+		{able clear {hole}}
+		{thickness hollow 5}
+	}
+	{volume "hole1"
+		{able clear {hole}}
+		{thickness hollow 5}
+	}
+}

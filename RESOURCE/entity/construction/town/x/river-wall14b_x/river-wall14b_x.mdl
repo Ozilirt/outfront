@@ -1,0 +1,127 @@
+;Exported by: shevchenko
+;Date:        Fri Feb 13 19:29:30 2004
+;File:        D:\-Projects-\-3DWork-\sheva\river-wall1_new.max
+{Skeleton
+	{bone "wall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall.ply"}
+		{bone "piece0"
+			{Position 15.5936	2.4492	-17.0329}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "piece1"
+			{Position -7.9061	2.4492	-17.0329}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Position -39.2744	6.8889	-5.0460}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Position -43.9410	-0.8992	10.8110}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece4"
+			{Position -43.9410	-1.7484	10.8395}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "piece5"
+			{Position -21.6048	-2.4547	7.8740}
+			{VolumeView "piece5.ply"}
+		}
+		{bone "piece6"
+			{Position 5.0551	-2.4547	7.8740}
+			{VolumeView "piece6.ply"}
+		}
+		{bone "piece7"
+			{Position 32.3528	-2.4547	7.8740}
+			{VolumeView "piece7.ply"}
+		}
+		{bone "FX_dust1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-39.2659	-0.8322	7.8371
+			}
+		}
+		{bone "FX_dust1a"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				7.0751	-0.8322	7.8371
+			}
+		}
+		{bone "FX_stone1"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				-33.1819	-0.8322	5.1111
+			}
+		}
+		{bone "FX_stone1a"
+			{Matrix34
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				4.6404	2.1796	-0.6815
+			}
+		}
+	}
+}
+{Volume "piece7"
+	{Box 29.8416 11.8105 15.7492}
+	{Bone "piece7"}
+	{Position 2.6668	0.0222	0.0436}
+}
+{Volume "piece6"
+	{Box 27.6132 11.8105 15.7492}
+	{Bone "piece6"}
+	{Position 1.2841	0.0222	0.0436}
+}
+{Volume "piece5"
+	{Box 29.5073 11.8105 15.7492}
+	{Bone "piece5"}
+	{Position -1.3771	0.0222	0.0436}
+}
+{Volume "piece4"
+	{Polyhedron "piece4.vol"}
+	{Bone "piece4"}
+	{Position -0.0416	0.1840	-5.8230}
+}
+{Volume "piece3"
+	{Polyhedron "piece3.vol"}
+	{Bone "piece3"}
+	{Position -0.0416	-0.6653	-8.8563}
+}
+{Volume "piece2"
+	{Box 10.4743 4.16701 12.3492}
+	{Bone "piece2"}
+	{Position -0.7935	0.5211	0.8503}
+}
+{Volume "piece1"
+	{Box 23.215 26.5634 8.96787}
+	{Bone "piece1"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	-0.0000
+		-1.0306	1.7681	4.3044
+	}
+}
+{Volume "piece0"
+	{Polyhedron "piece0.vol"}
+	{Bone "piece0"}
+	{Position 1.0842	0.0685	-17.8830}
+}
+{Volume "body"
+	{Box 101.495 19.8429 46.3212}
+	{Bone "wall"}
+	{Position 0.2897	0.3577	-17.4379}
+}

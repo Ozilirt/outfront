@@ -1,0 +1,113 @@
+;Exported by: vic
+;Date:        Tue Dec 09 19:36:25 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall3a_x1_next.max
+{Skeleton
+	{bone "house_euro1_corner1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro1_corner1.ply"}
+		{bone "attach1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-24.7155	-25.7466	68.8151
+			}
+		}
+		{bone "attach2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				14.8453	-25.7466	68.8151
+			}
+		}
+	}
+}
+{Obstacle "Obstacle1"
+	{Obb2
+		{Center 34.2231 42.2059}
+		{Extent 9.51886 4.92355}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Obstacle"
+	{Obb2
+		{Center -11.535 42.4246}
+		{Extent 16.225 4.92355}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1_vol"
+	{Obb2
+		{Center 39.1371 8.79101}
+		{Extent 4.92126 37.9824}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "floor"
+	{Polyhedron "floor.vol"}
+	{Bone "house_euro1_corner1"}
+	{Position -0.7387	-13.1609	66.4093}
+}
+{Volume "Hole_4"
+	{Box 19.685 44.2913 19.685}
+	{Bone "house_euro1_corner1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		14.5848	-43.1406	31.9622
+	}
+}
+{Volume "Hole_3"
+	{Box 19.685 45.2756 19.685}
+	{Bone "house_euro1_corner1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		-24.7766	-43.1406	38.4151
+	}
+}
+{Volume "Hole_2"
+	{Box 19.685 29.5276 19.685}
+	{Bone "house_euro1_corner1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		14.5848	-43.1406	99.4395
+	}
+}
+{Volume "Hole_1"
+	{Box 19.685 29.5276 19.685}
+	{Bone "house_euro1_corner1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		-24.9403	-43.1406	99.4395
+	}
+}
+{Volume "Body"
+	{Box 71.3985 9.84252 128.486}
+	{Bone "house_euro1_corner1"}
+	{Position 8.5180	-42.3193	64.2430}
+}
+{Volume "Body1"
+	{Polyhedron "Body1.vol"}
+	{Bone "house_euro1_corner1"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		34.2158	17.1091	76.7890
+	}
+}

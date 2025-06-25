@@ -1,0 +1,32 @@
+{construction
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+    {DecalView
+    	{ownershadow  128 128}
+	    {name "shadow"}
+    }
+	{props "cornered" "concrete" "parts" "construction" "dot"}
+	{Extension "dot3a_4.mdl"}
+
+	{constrain zero}
+	{Volume "roof"
+		{Tags  "body"}
+		{Thickness 200}
+		{able {visible 0}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 200}
+		{able {visible 1}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 200}
+		{able {visible 1}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 200}
+		{able {visible 1}}
+	}
+}

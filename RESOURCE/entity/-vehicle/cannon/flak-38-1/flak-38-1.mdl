@@ -1,0 +1,167 @@
+;Exported by: garry
+;Date:        Sun May 16 15:41:48 2004
+;File:        D:\-Projects-\-3DWork-\Model\Пушки\zenit\flak-38\flak-38.max
+{Skeleton
+	{animation
+		{sequence "recoil" {speed 0.8}}
+		{sequence "fire00"}
+	}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{animation
+				{sequence "repair" {file "body_r.anm"}}
+			}
+			{Position -6.6957	-0.6105	2.3403}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=Turret;"}
+				{animation
+					{sequence "repair" {file "turret_r.anm"} {speed 0.5}}
+				}
+				{speed 0.0100}
+				{Position 1.2514	-0.0146	2.7189}
+				{VolumeView "Turret.ply"}
+					{bone revolute "Gun_rot"
+						{parameters "ID=gun;"}
+						{limits -50.0000 10.0000}
+						{speed 0.0200}
+						{Matrix34
+							0.7924	0.0000	0.6101
+							-0.6101	-0.0000	0.7924
+							0.0000	-1.0000	-0.0000
+							9.3291	-8.1351	10.4665
+						}
+						{VolumeView "Gun_rot.ply"}
+						{bone "Gun"
+							{parameters "ID=gun;"}
+							{Matrix34
+								-0.0000	-0.0000	-1.0000
+								-0.0000	1.0000	-0.0000
+								1.0000	-0.0000	-0.0000
+								-5.6957	-0.0000	0.0000
+							}
+							{VolumeView "Gun.ply"}
+							{bone "shooter00"
+								{Matrix34
+									-0.0000	-0.0000	1.0000
+									1.0000	-0.0000	0.0000
+									0.0000	1.0000	-0.0000
+									8.1903	0.0245	37.8597
+								}
+							}
+							{bone "Foresight1"
+								{Matrix34
+									0.0000	-0.0000	1.0000
+									1.0000	-0.0000	0.0000
+									0.0000	1.0000	-0.0000
+									8.1903	0.0245	38.7894
+								}
+							}
+						}
+					}
+					{bone "gunner"
+						{Matrix34
+							0.9337	0.0005	0.3580
+							-0.0006	1.0000	0.0001
+							-0.3580	-0.0003	0.9337
+							-6.4742	-7.6504	-4.9255
+						}
+					}
+					{bone "FXshell1"
+						{Matrix34
+							-0.7124	0.0000	0.7018
+							0.0000	1.0000	0.0000
+							-0.7018	0.0000	-0.7124
+							-1.6632	0.1360	9.9478
+						}
+					}
+					{bone "commander"
+						{Matrix34
+							0.9337	0.0005	0.3580
+							-0.0006	1.0000	0.0001
+							-0.3580	-0.0003	0.9337
+							-6.4742	8.5982	-4.9255
+						}
+					}
+				{bone "shield_right"
+					{parameters "ID=shield_right;"}
+					{animation
+						{sequence "repair" {file "shield_right_r.anm"} {speed 0.8}}
+					}
+					{Position 11.3135	-2.4093	1.1688}
+					{VolumeView "shield_right.ply"}
+				}
+				{bone "Visor"
+					{Position 15.0207	-9.8725	16.1725}
+				}
+				{bone "shield_left"
+					{parameters "ID=shield_left;"}
+					{animation
+						{sequence "repair" {file "shield_left_r.anm"} {speed 0.8}}
+					}
+					{Matrix34
+						1.0000	0.0018	-0.0055
+						-0.0020	0.9997	-0.0261
+						0.0055	0.0261	0.9996
+						11.7391	2.8095	1.4979
+					}
+					{VolumeView "shield_left.ply"}
+				}
+			}
+		}
+		{bone "emit2"
+			{parameters "Group=crew;"}
+			{Position -10.0547	19.1045	0.2285}
+			{visibility 0}
+		}
+		{bone "emit1"
+			{parameters "Group=crew;"}
+			{Position -9.7736	-19.0189	0.2285}
+			{visibility 0}
+		}
+	}
+}
+{Obstacle "Obstacle"
+	{Obb2
+		{Center -9.64388 -0.14577}
+		{Extent 17.0775 7.97303}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "Body"}
+	{Position -6.7935	0.0501	-2.3403}
+}
+{Volume "shield_left"
+	{Box 3.45544 11.3402 14.3783}
+	{Bone "shield_left"}
+	{Matrix34
+		0.9971	-0.0000	0.0756
+		0.0000	1.0000	-0.0000
+		-0.0756	0.0000	0.9971
+		0.2705	5.3347	6.6151
+	}
+}
+{Volume "shield_right"
+	{Box 3.45544 11.3402 14.3783}
+	{Bone "shield_right"}
+	{Position 1.2268	-5.7361	6.7331}
+}
+{Volume "turret"
+	{Box 14.496 6.43672 10.8293}
+	{Bone "Turret"}
+	{Position 1.7933	0.0109	5.8123}
+}
+{Volume "gun"
+	{Cylinder 0.479516 28.3039}
+	{Bone "Gun"}
+	{Position 8.1824	-0.1137	21.1787}
+}

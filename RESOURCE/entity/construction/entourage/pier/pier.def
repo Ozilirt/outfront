@@ -1,0 +1,25 @@
+{Building
+	(include "/properties/building.inc")
+	{Extension "pier.mdl"}
+	{volume	"body"
+		{thickness	2}
+	}
+;	{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/house.ebm"
+;  			{PrescaleX 0.6 }
+;  			{PrescaleY 1.4 }
+;			{Visibility 0.5}
+;			{PreshiftX 5}
+;			{PreshiftY -65}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

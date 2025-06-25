@@ -1,0 +1,28 @@
+;Exported by: ubrashaev
+;Date:        Fri May 07 11:10:10 2004
+;File:        D:\-Projects-\-work-\3d\newhouses_dan.max
+{Skeleton
+	{bone "post2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post2.ply"}
+	}
+}
+{Volume "body"
+	{Box 6.52406 5.51313 95.8402}
+	{Bone "post2"}
+	{Matrix34
+		0.9659	0.0000	-0.2588
+		0.0000	1.0000	0.0000
+		0.2588	0.0000	0.9659
+		-15.0483	0.0107	66.1815
+	}
+}
+{Volume "post"
+	{Box 6.52406 5.51313 157.115}
+	{Bone "post2"}
+	{Position 0.0294	0.0107	78.5575}
+}

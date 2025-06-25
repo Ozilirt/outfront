@@ -1,0 +1,270 @@
+;Exported by: sk
+;Date:        Fri Jan 30 12:11:13 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Сельские дома\hous-wood2new.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "hous-wood2a"
+			{Position -0.4749	-25.5123	55.3429}
+			{VolumeView "hous-wood2a.ply"}
+			{bone "window1"
+				{Position 41.2084	-7.8306	-25.6847}
+				{VolumeView "window1.ply"}
+				{bone "FX_glass1"
+					{Matrix34
+						-0.0000	-1.0000	0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.2033	-0.4285	2.4762
+					}
+				}
+			}
+			{bone "window2"
+				{Matrix34
+					-0.0000	1.0000	0.0000
+					-1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					77.6572	32.8808	-25.9097
+				}
+				{VolumeView "window2.ply"}
+				{bone "FX_glass2"
+					{Matrix34
+						-0.0000	-1.0000	0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.1979	-0.3358	2.5954
+					}
+				}
+			}
+			{bone "window3"
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					41.2203	71.8160	-25.7206
+				}
+				{VolumeView "window3.ply"}
+				{bone "FX_glass3"
+					{Matrix34
+						-0.0000	-1.0000	0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.1993	-0.5634	2.4063
+					}
+				}
+			}
+			{bone "window4"
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					-13.4738	71.8160	-25.4889
+				}
+				{VolumeView "window4.ply"}
+				{bone "FX_glass4"
+					{Matrix34
+						-0.0000	-1.0000	0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	0.0000	1.0000
+						0.0978	-0.5634	2.1746
+					}
+				}
+			}
+			{bone "exterior"
+				{Position 15.5497	32.2469	23.2368}
+				{VolumeView "exterior.ply"}
+			}
+			{bone "window1_x"
+				{Position 41.2084	-8.0540	-25.6847}
+				{visibility 0}
+				{VolumeView "window1_x.ply"}
+			}
+			{bone "window2_x"
+				{Matrix34
+					-0.0000	1.0000	0.0000
+					-1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					77.7982	32.8808	-25.9097
+				}
+				{visibility 0}
+				{VolumeView "window2_x.ply"}
+			}
+			{bone "window3_x"
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					41.2203	71.9478	-25.7206
+				}
+				{visibility 0}
+				{VolumeView "window3_x.ply"}
+			}
+			{bone "window4_x"
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	0.0000	1.0000
+					-13.4738	71.9886	-25.4889
+				}
+				{visibility 0}
+				{VolumeView "window4_x.ply"}
+			}
+		}
+	}
+}
+{Obstacle "Body4"
+	{Obb2
+		{Center -36.6006 33.7138}
+		{Extent 9.72448 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body3"
+	{Obb2
+		{Center -46.7466 -6.642}
+		{Extent 1.96851 42.2118}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body2"
+	{Obb2
+		{Center 77.4885 -6.642}
+		{Extent 1.96851 42.2118}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center 34.6051 33.7138}
+		{Extent 43.5745 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center 15.4243 -6.57861}
+		{Extent 60.9015 38.9112}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center 15.5104 -46.8274}
+		{Extent 64.2884 1.96851}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body5"
+	{Box 59.2614 2.20472 40.703}
+	{Bone "Basis"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.1736	0.9848
+		0.0000	-0.9848	-0.1736
+		-18.2496	-55.2459	47.3121
+	}
+}
+{Volume "Body4"
+	{Box 19.449 3.93701 54.4792}
+	{Bone "Basis"}
+	{Position -36.6006	-33.7138	27.2396}
+}
+{Volume "Body3"
+	{Box 84.4237 3.93701 54.4792}
+	{Bone "Basis"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-46.7466	6.6420	27.2396
+	}
+}
+{Volume "Body2"
+	{Box 84.4237 3.93701 54.4792}
+	{Bone "Basis"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		77.4885	6.6420	27.2396
+	}
+}
+{Volume "Body1"
+	{Box 87.1491 3.93701 54.4792}
+	{Bone "Basis"}
+	{Position 34.6051	-33.7138	27.2396}
+}
+{Volume "exterior_roof"
+	{Polyhedron "exterior_roof.vol"}
+	{Bone "exterior"}
+	{Position 2.0483	0.8910	-24.6363}
+}
+{Volume "Hole3"
+	{Box 13.8628 7.87402 19.1327}
+	{Bone "hous-wood2a"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-13.5034	72.2254	-25.4797
+	}
+}
+{Volume "Hole2"
+	{Box 12.2549 7.87402 19.5212}
+	{Bone "hous-wood2a"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		41.2243	72.2254	-25.7935
+	}
+}
+{Volume "Hole1"
+	{Box 12.2549 7.87402 19.1384}
+	{Bone "hous-wood2a"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		77.8390	32.8755	-25.9848
+	}
+}
+{Volume "Hole0"
+	{Box 12.2549 7.87402 19.527}
+	{Bone "hous-wood2a"}
+	{Position 41.2084	-8.1051	-25.6847}
+}
+{Volume "window4"
+	{Box 13.9184 0.393701 19.0892}
+	{Bone "window4"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "window3"
+	{Box 12.2549 0.393701 19.4552}
+	{Bone "window3"}
+	{Position -0.0000	0.0000	-0.0000}
+}
+{Volume "window2"
+	{Box 12.2549 0.393701 19.0771}
+	{Bone "window2"}
+	{Position -0.0000	0.0000	0.0000}
+}
+{Volume "window1"
+	{Box 12.2549 0.393701 19.527}
+	{Bone "window1"}
+}
+{Volume "Body"
+	{Box 128.577 3.93701 54.4792}
+	{Bone "Basis"}
+	{Position 15.5104	46.8274	27.2396}
+}

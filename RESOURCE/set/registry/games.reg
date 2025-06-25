@@ -1,0 +1,670 @@
+;SDL
+{loginBackground
+	{screenshot "/interface/background/login.ebm"}
+	{media "credits"}
+}
+
+{background "background/scene-1:1"
+	{screenshot "/interface/background/main.ebm"}
+	{media "credits"}
+}
+
+{multiplayerBackground
+	{screenshot "/interface/background/mult.ebm"}
+	{media "credits"}
+}
+
+{creditsBackground
+	{screenshot "/interface/background/credits.ebm"}
+	{media "credits"}
+	{text "credits"}
+}
+
+{campaigns
+	{"1. Katyusha (USSR)"
+		{name "mission/1_/name"}
+		{multiplayer "1"}
+		{background "background/rus:rus"
+			{screenshot "/interface/background/katusha.ebm"}
+			{media "katusha bkg"}
+		}
+		{intro
+			{media "katusha intro"}
+			{text "mission/briefing/R_INT"}
+		}
+		{outro
+			{media "katusha outro++"}
+			{text "mission/briefing/R_5CON++"}
+			{media_1 "katusha outro+"}
+			{text_1 "mission/briefing/R_5CON+"}
+		}
+		{missions
+			{"Chepel"
+				{name "mission/1_2/name"}
+				{scene "1-katusha/1_2-chepel:0"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{video "loading_1_2"}
+					{background "/video/katusha/2-chepel.ebm"}
+					{text "mission/briefing/r_1"}
+					{voice "r_1"}
+				}
+				{outro
+					{text "mission/briefing/r_1f"}
+					{voice "R_1F"}
+				}
+			}
+			{"Monastery"
+				{name "mission/1_3/name"}
+				{scene "1-katusha/1_3-monastery:0"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{video "loading_1_3"}
+					{background "/video/katusha/3-mon.ebm"}
+					{text "mission/briefing/r_2"}
+					{voice "r_2"}
+				}
+				{outro
+					{text "mission/briefing/r_2f"}
+					{voice "R_2F"}
+				}
+			}
+			{"Last Ride"
+				{name "mission/1_4/name"}
+				{scene "1-katusha/1_4-vokzal:0"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{video "loading_1_4"}
+					{background "/video/katusha/4-vok.ebm"}
+					{text "mission/briefing/r_3++"}
+					{voice "r_3 ++"}
+					{text_1 "mission/briefing/r_3+"}
+					{voice_1 "r_3 +"}
+				}
+				{outro
+					{text "mission/briefing/r_3f"}
+					{voice "R_3F"}
+				}
+				{side_music
+					{"start" "RussianMissionStartStealth"}
+					{"main_loop" "RussianGeneralLoopCautious"}
+				}
+			}
+			{"Theft"
+				{name "mission/1_5/name"}
+				{scene "1-katusha/1_5-depo:0"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{video "loading_1_5"}
+					{background "/video/katusha/5-depo.ebm"}
+					{text "mission/briefing/r_4++"}
+					{voice "r_4 ++"}
+					{text_1 "mission/briefing/r_4+"}
+					{voice_1 "r_4 +"}
+				}
+				{outro
+					{text "mission/briefing/r_4f++"}
+					{voice "R_4F ++"}
+					{text_1 "mission/briefing/r_4f+"}
+					{voice_1 "R_4F +"}
+				}
+				{side_music
+					{"start" "RussianMissionStartStealth"}
+					{"main_loop" "RussianGeneralLoopCautious"}
+				}
+			}
+			{"Prishib Station"
+				{name "mission/1_6/name"}
+				{coopBreed "rus.infantry_smg"}
+				{scene "1-katusha/1_6-base:0"}
+				{intro
+					{video "loading_1_6"}
+					{background "/video/katusha/6-base.ebm"}
+					{text "mission/briefing/r_5++"}
+					{voice "r_5 ++"}
+					{text_1 "mission/briefing/r_5+"}
+					{voice_1 "r_5 +"}
+				}
+				{outro
+					{text "mission/briefing/r_5f++"}
+					{voice "R_5F ++"}
+					{text_1 "mission/briefing/r_5f+"}
+					{voice_1 "R_5F +"}
+				}
+			}
+		}
+	}
+	{"2. Project America (UK)"
+		{name "mission/2_/name"}
+		{multiplayer "1"}
+		{background "background/eng:eng"
+			{screenshot "/interface/background/fau.ebm"}
+			{media "fau bkg"}
+		}
+		{intro
+			{media "fau intro"}
+			{text "mission/briefing/A_INT"}
+		}
+		{outro
+			{media "fau outro++"}
+			{text "mission/briefing/A_6CON++"}
+			{media_1 "fau outro+"}
+			{text_1 "mission/briefing/A+_6CON+"}
+		}
+		{missions
+			{"Lighthouse"
+				{name "mission/2_1/name"}
+				{coopBreed "eng.infantry.smg"}
+				{scene "2-fau/2_1-sealanding:0"}
+				{intro
+					{video "loading_2_1"}
+					{background "/video/fau/1-lighthouse.ebm"}
+					{text "mission/briefing/a_1"}
+					{voice "a_1"}
+					}
+				{outro
+					{text "mission/briefing/a_1f"}
+					{voice "A_1F"}
+				}
+			}
+			{"Rendezvous"
+				{name "mission/2_2/name"}
+				{coopBreed "eng.infantry.smg"}
+				{scene "2-fau/2_2-resident:0"}
+				{intro
+					{video "loading_2_2"}
+					{background "/video/fau/2-resident.ebm"}
+					{text "mission/briefing/a_2++"}
+					{voice "a_2 ++"}
+					{text_1 "mission/briefing/a_2+"}
+					{voice_1 "a_2 +"}
+				}
+				{outro  
+					{text "mission/briefing/a_2f"}
+					{voice "A_2F"}
+				}				
+			}
+			{"Crash Site"
+				{scene "2-fau/2_3-swamp:0"}
+				{coopBreed "eng.infantry.smg"}
+				{name "mission/2_3/name"}
+				{intro
+					{video "loading_2_3"}
+					{background "/video/fau/3-swamp.ebm"}
+					{text "mission/briefing/a_3"}
+					{voice "a_3"}
+					}
+				{outro
+					{text "mission/briefing/a_3f"}
+					{voice "A_3F"}
+				}
+				
+			}
+			{"Ambush"
+				{name "mission/2_4/name"}
+				{scene "2-fau/2_4-ambush:0"}
+				{coopBreed "eng.infantry.smg"}
+				{intro
+					{video "loading_2_4"}
+					{background "/video/fau/4-ambush.ebm"}
+					{text "mission/briefing/a_4++"}
+					{voice "a_4 ++"}
+					{text_1 "mission/briefing/a_4+"}
+					{voice_1 "a_4 +"}
+					}
+				{outro
+					{text "mission/briefing/a_4f"}
+					{voice "A_4F"}
+				}
+				
+			}
+			{"Rescue"
+				{name "mission/2_5/name"}
+				{scene "2-fau/2_5-air_landing:0"}
+				{coopBreed "eng.infantry.smg"}
+				{intro
+					{video "loading_2_5"}
+					{background "/video/fau/5-airlanding.ebm"}
+					{text "mission/briefing/a_5++"}
+					{voice "a_5 ++"}
+					{text_1 "mission/briefing/a_5+"}
+					{voice_1 "a_5 +"}
+				}
+				{outro
+					{text "mission/briefing/a_5f"}
+					{voice "A_5F"}
+				}				
+			}
+			{"Freedom"
+				{name "mission/2_6/name"}
+				{scene "2-fau/2_6-aerodrome:0"}
+				{coopBreed "eng.infantry.smg"}
+				{intro
+					{video "loading_2_6"}
+					{background "/video/fau/6-aerodrom.ebm"}
+					{text "mission/briefing/a_6++"}
+					{voice "a_6 ++"}
+					{text_1 "mission/briefing/a_6+"}
+					{voice_1 "a_6 +"}
+				}
+				{outro
+					{text "mission/briefing/a_6f"}
+					{voice "A_6F"}
+				}				
+			}
+		}
+	}
+	{"3. The Way to Berlin (USA)"
+		{name "mission/3_/name"}
+		{multiplayer "1"}
+		{background "background/usa2:usa2"
+			{screenshot "/interface/background/waytoberlin.ebm"}
+			{media "waytoberlin bkg"}
+		}
+		{intro
+			{media "waytoberlin intro"}
+			{text "mission/briefing/B_INT"}
+		}
+		{outro
+			{media "waytoberlin outro"}
+			{text "mission/briefing/B5_CON"}
+		}
+		{missions
+			{"Drop Zone"
+				{name "mission/3_1/name"}
+				{scene "3-way_to_berlin/3_1-landing:0"}
+				{coopBreed "usa.infantry_smg"}
+				{intro
+					{video "loading_3_1"}
+					{background "/video/berlin/1-land.ebm"}
+					{text "mission/briefing/b_1"}
+					{voice "b_1"}
+				}	
+				{outro
+					{text "mission/briefing/b_1f"}
+					{voice "b_1F"}
+				}
+				
+			}
+			{"Nijmegen"
+				{name "mission/3_2/name"}
+				{coopBreed "usa.infantry_smg"}
+				{scene "3-way_to_berlin/3_2-edge:0"}
+				{intro
+					{video "loading_3_2"}
+					{background "/video/berlin/2-edge.ebm"}
+					{text "mission/briefing/b_2"}
+					{voice "b_2"}
+				}
+				{outro
+					{text "mission/briefing/b_2f"}
+					{voice "b_2F"}
+				}
+				
+			}
+			{"Minefields"
+				{name "mission/3_3/name"}
+				{coopBreed "usa.infantry_smg"}
+				{scene "3-way_to_berlin/3_3-minefields:0"}
+				{intro
+					{video "loading_3_3"}
+					{background "/video/berlin/3-minefields.ebm"}
+					{text "mission/briefing/b_3"}
+					{voice "b_3"}
+					}
+				{outro
+					{text "mission/briefing/b_3f"}
+					{voice "b_3F"}
+				}
+				
+			}
+			{"Artillery Assault"
+				{name "mission/3_4/name"}
+				{scene "3-way_to_berlin/3_4-kitchengardens:0"}
+				{coopBreed "usa.infantry_smg"}
+				{intro
+					{video "loading_3_4"}
+					{background "/video/berlin/4-gardens.ebm"}
+					{text "mission/briefing/b_4"}
+					{voice "b_4"}
+					}
+				{outro
+					{text "mission/briefing/b_4f"}
+					{voice "b_4F"}
+				}
+				
+			}
+			{"Last Stand"
+				{name "mission/3_5/name"}
+				{coopBreed "usa.infantry_smg"}
+				{scene "3-way_to_berlin/3_5-bridge_defence:0"}
+				{intro
+					{video "loading_3_5"}
+					{background "/video/berlin/5-bridge.ebm"}
+					{text "mission/briefing/b_5"}
+					{voice "b_5"}
+					}
+				{outro
+					{text "mission/briefing/b_5f"}
+					{voice "b_5F"}
+				}				
+			}
+		}		
+	}
+	{"4. Wrath of the Tiger (Ger)"
+		{name "mission/4_/name"}
+		{multiplayer "1"}
+		{background "background/germany:2"
+			{screenshot "/interface/background/hunter.ebm"}
+			{media "hunter bkg"}
+		}
+		{intro
+			{media "hunter intro"}
+			{text "mission/briefing/G_INT"}
+		}
+		{outro
+			{media "hunter outro"}
+			{text "mission/briefing/G_CON"}
+		}
+		{missions
+			{"En Route"
+				{name "mission/4_1/name"}
+				{coopBreed "ger.infantry_smg"}
+				{scene "4-hunter/4_1-water_mill:0"}
+				{intro
+					{video "loading_4_1"}
+					{background "/video/villers/1-water.ebm"}
+					{text "mission/briefing/g_1"}
+					{voice "g_1"}
+					}
+				{outro
+					{text "mission/briefing/g_1f"}
+					{voice "g_1F"}
+				}				
+			}
+			{"Reconnaissance"
+				{name "mission/4_2/name"}
+				{scene "4-hunter/4_2-hill-213:0"}
+				{coopBreed "ger.infantry_smg"}
+				{intro
+					{video "loading_4_2"}
+					{background "/video/villers/2-hill.ebm"}
+					{text "mission/briefing/g_2"}
+					{voice "g_2"}
+					}
+				{outro
+					{text "mission/briefing/g_2f"}
+					{voice "g_2F"}
+				}				
+			}
+			{"Villers-Bocage"
+				{name "mission/4_3/name"}
+				{coopBreed "ger.infantry_smg"}
+				{scene "4-hunter/4_3-villers-213:0"}
+				{intro
+					{video "loading_4_3"}
+					{background "/video/villers/3-villers.ebm"}
+					{text "mission/briefing/g_3"}
+					{voice "g_3"}
+				}
+			    {outro
+					{text "mission/briefing/g_3f"}
+					{voice "g_3F"}
+				}
+			}
+			{"Hunter"
+				{name "mission/4_4/name"}
+				{coopBreed "ger.infantry_smg"}
+				{scene "4-hunter/4_4-out_villers:0"}
+				{intro
+					{video "loading_4_4"}
+					{background "/video/villers/4-outvillers.ebm"}
+					{text "mission/briefing/g_4"}
+					{voice "g_4"}
+				}
+				{outro
+					{text "mission/briefing/g_4f"}
+					{voice "g_4F"}
+				}
+			}
+			{"Liberation"
+				{name "mission/4_5/name"}
+				{scene "4-hunter/4_5-destr_villers:0"}
+				{coopBreed "ger.infantry_smg"}
+				{intro
+					{video "loading_4_5"}
+					{background "/video/villers/5-d_villers.ebm"}
+					{text "mission/briefing/g_5"}
+					{voice "g_5"}
+				}
+				{outro
+					{text "mission/briefing/g_5f"}
+					{voice "g_5F"}
+				}
+			}
+		}
+	}
+	{"5. Bonus missions"
+		{name "Bonus missions"}
+		{background "background/scene-1:1"
+			{screenshot "/interface/background/main.ebm"}
+			{media "bonus bkg"}
+		}
+		{multiplayer "1"}
+		{bonus}
+		{missions
+			{"Tank_attack"
+				{name "mission/b_1/name"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/bonus/tank.ebm"}
+				}
+				{side_music
+					{"start" "bridge"}
+					{"main_loop" "bridge"}
+				}
+				{scene "single/tank_attack:0"}
+			}
+			{"Outfront"
+				{name "mission/b_2/name"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/bonus/outfront.ebm"}
+				}
+				{side_music
+					{"start" "depo"}
+					{"main_loop" "depo"}
+				}
+				{scene "single/outfront:0"}
+			}
+			{"Frontline"
+				{name "mission/b_3/name"}
+				{coopBreed "usa.infantry_smg"}
+				{intro
+					{background "/video/bonus/frontline.ebm"}
+				}
+				{side_music
+					{"start" "edge"}
+					{"main_loop" "edge"}
+				}
+				{scene "single/front_line:0"}
+				{multiplayer 0}
+			}
+			{"Hutor"
+				{name "mission/b_4/name"}
+				{scene "1-katusha/1_1-hutor_chepel:0"}
+				{coopBreed "rus.infantry_smg"}
+				{side_music
+					{"start" "visadka"}
+					{"main_loop" "visadka"}
+				}
+				{intro
+					{background "/video/bonus/hutor.ebm"}
+				}
+			}
+			{"Defend"
+				{name "mission/b_5/name"}
+				{coopBreed "rus.infantry_smg"}
+				{side_music
+					{"start" "hill213"}
+					{"main_loop" "theme_i"}
+				}
+				{intro
+					{background "/video/bonus/defend.ebm"}
+				}
+				{scene "single/defend:0"}
+			}
+			{"Mastogne"
+				{name "mission/b_6/name"}
+				{coopBreed "usa.infantry_smg"}
+				{intro
+					{background "/video/bonus/mastogne.ebm"}
+				}
+				{side_music
+					{"start" "phones2"}
+					{"main_loop" "phones2"}
+				}
+				{scene "single/mastogne:0"}
+			}
+			{"Officer"
+				{name "mission/b_7/name"}
+				{coopBreed "usa.infantry_smg"}
+				{intro
+					{background "/video/bonus/officer.ebm"}
+				}
+				{scene "single/town_officer:0"}
+			}
+		}
+	}
+	{"6. Training"
+		{name "mission/training_camp/name"} ;Training missions
+		{background "background/training:training"
+			{screenshot "/interface/background/training.ebm"}
+			{media "training bkg"}
+		}
+		{bonus}
+		{missions
+			{"Training1"
+				{name "mission/training_camp1/name"}
+				{intro
+					{background "/video/training/1-training.ebm"}
+				}
+				{scene "0-training/camp1:0"}
+			}
+			{"Training2"
+				{name "mission/training_camp2/name"}
+				{intro
+					{background "/video/training/2-training.ebm"}
+				}
+				{scene "0-training/camp2:0"}
+			}
+			{"Training3"
+				{name "mission/training_camp3/name"}
+				{intro
+					{background "/video/training/3-training.ebm"}
+				}
+				{scene "0-training/camp3:0"}
+			}
+			{"Training4"
+				{name "mission/training_camp4/name"}
+				{intro
+					{background "/video/training/4-training.ebm"}
+				}
+				{scene "0-training/camp4:0"}
+			}
+		}
+	}
+	{"demo"
+		{name "demo"}
+		{bonus}
+		{missions
+			{"demo"
+				{name "Demo"}
+				{intro
+					{background "/video/bonus/officer.ebm"}
+				}				
+				{scene "single/town_officer:0"}
+			}
+		}
+	}
+}
+
+; legend: 0 - USSR, 1 - USA, 2 - GER, 3 - GBR
+; path character '/' must be replaced with '\'
+{sides
+	{"1-katusha" 0}
+	{"2-fau" 3}
+	{"3-way_to_berlin" 1}
+	{"4-hunter" 2}
+	
+	{"single\outfront" 0}
+	{"single\mastogne" 3}
+	{"single\defend" 0}
+	{"single\town_officer" 1}
+	{"single\tank_attack" 0}
+	{"single\front_line" 1}
+	{"single\hutor_chepel" 0}
+}
+{side_music
+	{"0"
+		{"start" "RussianMissionStartAssault"}
+		{"main_loop" "RussianGeneralLoopUplifting"}
+		{"lost" "RussianLost"}
+		{"won" "RussianWon"}
+		{"danger" "RussianDanger"}
+		{"skirmish" "RussianSkirmish"}
+		{"battle" "RussianBattle"}
+		{"reinf_enemy" "RussianReinforcementsEnemy"}
+		{"reinf_player" "RussianReinforcementsPlayer"}
+		{"winning" "RussianWinning"}
+		{"losing" "RussianLosing"}
+		{"stealth" "RussianStealth"}
+		{"clue" "RussianClue"}
+	}
+	{"1"
+		{"start" "AlliedMissionStartAssault"}
+		{"main_loop" "AlliedGeneralLoopUplifting"}
+		{"lost" "AlliedLost"}
+		{"won" "AlliedWon"}
+		{"danger" "AlliedDanger"}
+		{"skirmish" "AlliedSkirmish"}
+		{"battle" "AlliedBattle"}
+		{"reinf_enemy" "AlliedReinforcementsEnemy"}
+		{"reinf_player" "AlliedReinforcementsPlayer"}
+		{"winning" "AlliedWinning"}
+		{"losing" "AlliedLosing"}
+		{"stealth" "AlliedStealth"}
+		{"clue" "AlliedClue"}
+	}
+	{"2"
+		{"start" "GermanMissionStartAssault"}
+		{"main_loop" "GermanGeneralLoopUplifting"}
+		{"lost" "GermanLost"}
+		{"won" "GermanWon"}
+		{"danger" "GermanDanger"}
+		{"skirmish" "GermanSkirmish"}
+		{"battle" "GermanBattle"}
+		{"reinf_enemy" "GermanReinforcementsEnemy"}
+		{"reinf_player" "GermanReinforcementsPlayer"}
+		{"winning" "GermanWinning"}
+		{"losing" "GermanLosing"}
+		{"stealth" "GermanStealth"}
+		{"clue" "GermanClue"}
+	}
+	{"3"
+		{"start" "AlliedMissionStartAssault"}
+		{"main_loop" "AlliedGeneralLoopUplifting"}
+		{"lost" "AlliedLost"}
+		{"won" "AlliedWon"}
+		{"danger" "AlliedDanger"}
+		{"skirmish" "AlliedSkirmish"}
+		{"battle" "AlliedBattle"}
+		{"reinf_enemy" "AlliedReinforcementsEnemy"}
+		{"reinf_player" "AlliedReinforcementsPlayer"}
+		{"winning" "AlliedWinning"}
+		{"losing" "AlliedLosing"}
+		{"stealth" "AlliedStealth"}
+		{"clue" "AlliedClue"}
+	}
+}
+

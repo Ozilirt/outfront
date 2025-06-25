@@ -1,0 +1,74 @@
+;Exported by: shevchenko
+;Date:        Fri Mar 12 16:02:00 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\hous-wood2.max
+{Skeleton
+	{bone "shed-wood4"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed-wood4.ply"}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -14.5271 43.5474}
+		{Extent 11.3016 9.06404}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -3.94302 -9.85126}
+		{Extent 31.3934 43.1621}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 22.6033 18.1281 46.1232}
+	{Bone "shed-wood4"}
+	{Position -14.5271	-43.5474	23.0616}
+}
+{Volume "fire3"
+	{Box 4.42913 63.0167 46.2742}
+	{Bone "shed-wood4"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-3.7981	-33.4490	23.1371
+	}
+}
+{Volume "fire2"
+	{Box 4.42913 63.0167 46.2742}
+	{Bone "shed-wood4"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-3.7982	53.4395	23.1371
+	}
+}
+{Volume "fire1"
+	{Box 4.42913 86.3242 44.0707}
+	{Bone "shed-wood4"}
+	{Matrix34
+		0.9962	0.0000	0.0872
+		0.0000	1.0000	0.0000
+		-0.0872	0.0000	0.9962
+		-37.7095	9.8513	21.9515
+	}
+}
+{Volume "fire0"
+	{Box 4.42913 86.3242 48.4293}
+	{Bone "shed-wood4"}
+	{Position 28.5740	9.8513	24.2147}
+}
+{Volume "body1"
+	{Box 62.7869 86.3242 46.1232}
+	{Bone "shed-wood4"}
+	{Position -3.9430	9.8513	23.0616}
+}

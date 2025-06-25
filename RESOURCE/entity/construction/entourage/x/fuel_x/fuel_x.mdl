@@ -1,0 +1,111 @@
+;Exported by: ubrashaev
+;Date:        Tue Jun 01 13:12:26 2004
+;File:        D:\-Projects-\-work-\3d\fuel_parts.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.6}}
+	}
+	{bone "fuel"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fuel.ply"}
+		{bone "FX_fire2"
+			{Position -53.7435	-8.0105	36.8794}
+		}
+		{bone "FX_smoke2"
+			{Position -16.1313	-6.0329	29.9136}
+		}
+		{bone "FX_exp1"
+			{Position -28.1519	-8.2649	53.8582}
+		}
+		{bone "FX_fire2a"
+			{Position -3.5006	0.9700	36.8794}
+		}
+		{bone "FX_fire2b"
+			{Position 47.9676	1.4794	36.8794}
+		}
+		{bone "FX_smoke2a"
+			{Position 31.2759	-0.6483	29.9136}
+		}
+		{bone "FX_exp2"
+			{Position 20.5468	13.7684	53.8582}
+		}
+		{bone "FX_fire2c"
+			{Position 19.2215	-5.0232	56.0742}
+		}
+		{bone "piece1"
+			{Matrix34
+				0.0894	-0.3591	0.9290
+				-0.9529	-0.3024	-0.0252
+				0.2900	-0.8830	-0.3692
+				-79.7883	-33.0416	56.8741
+			}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-54.1449	29.4390	41.3188
+			}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-13.5668	31.2511	38.9219
+			}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "FX_exp3"
+			{Position 20.5468	-33.2769	53.8582}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 24.6787 136.956}
+	{Bone "fuel"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		28.4675	-1.7205	34.9985
+	}
+}
+{Volume "piece3"
+	{Polyhedron "piece3.vol"}
+	{Bone "piece3"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		1.0000	-0.0000	0.0000
+		-0.0000	-0.0000	1.0000
+		-11.1757	-5.6908	-31.3296
+	}
+}
+{Volume "piece2"
+	{Polyhedron "piece2.vol"}
+	{Bone "piece2"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-1.0000	0.0000	0.0000
+		-0.0000	0.0000	-1.0000
+		10.8540	-6.5728	15.1423
+	}
+}
+{Volume "piece1"
+	{Box 51.4282 66.0277 10.0766}
+	{Bone "piece1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		-0.0000	0.2588	-0.9659
+		0.0000	0.9659	0.2588
+		1.2506	-0.2171	-2.0923
+	}
+}

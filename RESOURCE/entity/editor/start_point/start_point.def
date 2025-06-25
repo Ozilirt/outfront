@@ -1,0 +1,19 @@
+{actor
+	{Extension "arrow.mdl"}
+	{extender "start_point"}
+
+	{sensor
+		{visor "main"
+    		{vision
+				{uncover 20}
+    		    {actor 20}
+				{h_fov 360}
+    			{v_fov 180}
+				{fog_range 20}
+				{fog_fov 360}
+    		}
+			{bone "visor"}
+		}
+		{operatableRequired 0}
+    }
+}

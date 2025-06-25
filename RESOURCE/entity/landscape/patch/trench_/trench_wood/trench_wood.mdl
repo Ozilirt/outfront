@@ -1,0 +1,40 @@
+;Exported by: vic
+;Date:        Fri Jan 02 13:03:42 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\trench\trench12_a.max
+{Skeleton
+	{bone "trench_wood"
+		{parameters "ground;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "trench_wood.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -7.62939e-006 -23.7083}
+		{Extent 73.8189 5.00458}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -7.62939e-006 23.7428}
+		{Extent 73.8189 5.07004}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "trench_wood"}
+	{Position -0.0000	21.6565	-13.7795}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "trench_wood"}
+	{Position -0.0000	-21.6255	-13.7795}
+}

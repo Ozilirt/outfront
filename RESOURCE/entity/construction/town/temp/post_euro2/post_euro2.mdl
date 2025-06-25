@@ -1,0 +1,57 @@
+;Exported by: ubrashaev
+;Date:        Mon Dec 08 11:58:48 2003
+;File:        D:\-Projects-\-work-\3d\Cafe.max
+{Skeleton
+	{bone "post_euro2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_euro2.ply"}
+		{bone "lamp_glass1"
+			{Matrix34
+				-0.0000	-0.0000	-1.0000
+				-0.9541	-0.2995	0.0000
+				-0.2995	0.9541	0.0000
+				-0.9813	0.2877	77.4699
+			}
+			{VolumeView "lamp_glass1.ply"}
+		}
+		{bone "lamp_light_point1"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-0.9698	-0.2438	-0.0000
+				-0.2438	0.9698	-0.0000
+				-0.8610	0.3429	77.4904
+			}
+			{VolumeView "lamp_light_point1.ply"}
+		}
+		{bone "light_point"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				0.0000	-1.0000	0.0000
+				-1.0000	-0.0000	-0.0000
+				-0.3403	0.2363	77.4225
+			}
+		}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center -0.907867 -0.242729}
+		{Extent 1.9685 1.9685}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Lamp1"
+	{Box 8.20088 7.6716 6.06709}
+	{Bone "post_euro2"}
+	{Position -0.6639	0.2642	78.6579}
+}
+{Volume "body"
+	{Box 3.93701 3.93701 78.7402}
+	{Bone "post_euro2"}
+	{Position -0.9079	0.2427	39.3701}
+}

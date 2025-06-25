@@ -1,0 +1,217 @@
+;Exported by: ubrashaev
+;Date:        Tue May 18 15:47:01 2004
+;File:        D:\-Projects-\-work-\3d\construction\e-house24\corner2.max
+{Skeleton
+	{bone "e_house24_corner2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "e_house24_corner2.ply"}
+		{bone "attach1"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				15.1580	7.7929	0.5111
+			}
+		}
+		{bone "attach2"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-26.8621	7.7929	0.5111
+			}
+		}
+		{bone "attach3"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				15.7418	9.5838	53.9800
+			}
+		}
+		{bone "attach4"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-27.4785	10.9893	53.8334
+			}
+		}
+		{bone "window1"
+			{Position 14.9065	26.8071	29.5435}
+			{VolumeView "window1.ply"}
+			{bone "fx_glass1"
+				{Matrix34
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					1.4970	-1.3924	-0.8773
+				}
+			}
+		}
+		{bone "window1_x"
+			{Position 14.9065	27.2170	29.5435}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2"
+			{Position -29.0136	26.7891	29.5435}
+			{VolumeView "window2.ply"}
+			{bone "fx_glass2"
+				{Matrix34
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					1.6780	-1.3744	-0.8773
+				}
+			}
+		}
+		{bone "window2_x"
+			{Position -29.0136	27.1991	29.5435}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+		{bone "window3"
+			{Position 14.8981	27.5555	82.5650}
+			{VolumeView "window3.ply"}
+			{bone "fx_glass3"
+				{Matrix34
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					1.5055	-2.1408	-1.3063
+				}
+			}
+		}
+		{bone "window3_x"
+			{Position 14.8981	27.8532	82.5650}
+			{visibility 0}
+			{VolumeView "window3_x.ply"}
+		}
+		{bone "window4"
+			{Position -26.8581	27.5555	82.5650}
+			{VolumeView "window4.ply"}
+			{bone "fx_glass4"
+				{Matrix34
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.4774	-2.1408	-1.3063
+				}
+			}
+		}
+		{bone "window4_x"
+			{Position -26.8581	27.8532	82.5650}
+			{visibility 0}
+			{VolumeView "window4_x.ply"}
+		}
+		{bone "door1"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-26.8621	-59.8549	0.5111
+			}
+		}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -44.8574 -2.93291}
+		{Extent 5.45179 28.6052}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -4.1033 -28.4753}
+		{Extent 45.961 3.97825}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 10.9036 57.2103 105.166}
+	{Bone "e_house24_corner2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-44.8574	2.9329	52.5832
+	}
+}
+{Volume "body1"
+	{Box 91.9221 7.95648 105}
+	{Bone "e_house24_corner2"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-4.1033	28.4753	52.5000
+	}
+}
+{Volume "roof2"
+	{Box 75.2015 5.48997 72.5184}
+	{Bone "e_house24_corner2"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		-0.0000	-0.7071	-0.7071
+		-0.0000	-0.7071	0.7071
+		5.4781	11.2309	133.9588
+	}
+}
+{Volume "roof1"
+	{Polyhedron "roof1.vol"}
+	{Bone "e_house24_corner2"}
+	{Matrix34
+		0.8850	0.0058	-0.4655
+		0.0347	0.9963	0.0784
+		0.4642	-0.0855	0.8816
+		-53.7532	4.0984	107.9102
+	}
+}
+{Volume "window4"
+	{Box 19.685 1.25197 29.5276}
+	{Bone "window4"}
+	{Position 0.0313	-0.0733	0.0475}
+}
+{Volume "window3"
+	{Box 19.685 1.25197 29.5276}
+	{Bone "window3"}
+	{Position 0.0313	-0.0733	0.0475}
+}
+{Volume "window2"
+	{Box 19.685 1.74016 29.5276}
+	{Bone "window2"}
+	{Position -0.0225	0.6391	-0.0335}
+}
+{Volume "window1"
+	{Box 19.685 1.74016 29.5276}
+	{Bone "window1"}
+	{Position -0.0225	0.6286	-0.0335}
+}
+{Volume "Hole4"
+	{Box 19.685 29.5276 29.5276}
+	{Bone "e_house24_corner2"}
+	{Position -27.4406	26.8088	82.5812}
+}
+{Volume "Hole3"
+	{Box 19.685 22.4409 29.5276}
+	{Bone "e_house24_corner2"}
+	{Position 14.9698	25.0883	82.5812}
+}
+{Volume "Hole2"
+	{Box 19.685 30.5118 29.5276}
+	{Bone "e_house24_corner2"}
+	{Position -27.4294	24.6764	29.4959}
+}
+{Volume "Hole1"
+	{Box 19.685 30.5118 29.5276}
+	{Bone "e_house24_corner2"}
+	{Position 15.6313	24.6764	29.4959}
+}

@@ -1,0 +1,430 @@
+;Exported by: shevchenko
+;Date:        Fri Feb 27 10:26:02 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Train\steam_locomotiv2_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{animation
+				{sequence "break" {file "body.anm"} {speed 0.5}}
+			}
+			{Position -21.2640	0.0332	0.0000}
+			{VolumeView "body.ply"}
+			{bone revolute "pivot_back"
+				{parameters "ID=body;"}
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					-0.0000	1.0000	0.0007
+					0.0000	-0.0007	1.0000
+					-64.9633	0.8380	14.3225
+				}
+				{VolumeView "pivot_back.ply"}
+				{bone revolute "wheelleft5"
+					{parameters "ID=body;"}
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0007	-1.0000
+						-0.0000	1.0000	-0.0007
+						1.2452	16.1162	0.1709
+					}
+					{VolumeView "wheelleft5.ply"}
+				}
+				{bone revolute "wheelright5"
+					{parameters "ID=body;"}
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0007	-1.0000
+						-0.0000	1.0000	-0.0007
+						1.2452	-15.8187	0.1927
+					}
+					{VolumeView "wheelright5.ply"}
+				}
+			}
+			{bone "cabin"
+				{parameters "CommonMesh;ID=cabin;"}
+				{animation
+					{sequence "break" {file "cabin.anm"} {speed 0.5}}
+				}
+				{Matrix34
+					-0.0000	1.0000	0.0000
+					0.0000	0.0000	1.0000
+					1.0000	0.0000	-0.0000
+					-103.0166	0.0000	48.1235
+				}
+				{VolumeView "cabin.ply"}
+				{bone "doorleft"
+					{parameters "ID=cabin;"}
+					{Matrix34
+						-0.7825	0.0000	-0.6227
+						0.0000	1.0000	-0.0000
+						0.6227	-0.0000	-0.7825
+						29.6072	4.1676	-9.7580
+					}
+					{VolumeView "doorleft.ply"}
+				}
+				{bone "FX_smoke_cabin"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						-0.1869	-13.4065	-1.2915
+					}
+				}
+				{bone "doorright"
+					{parameters "ID=cabin;"}
+					{Matrix34
+						0.9659	-0.0000	0.2588
+						0.0000	1.0000	0.0000
+						-0.2588	0.0000	0.9659
+						-29.3051	4.1676	-9.7580
+					}
+					{VolumeView "doorright.ply"}
+				}
+			}
+			{bone "engine"
+				{parameters "ID=engine;"}
+				{Matrix34
+					-0.0000	1.0000	0.0000
+					0.0000	0.0000	1.0000
+					1.0000	0.0000	-0.0000
+					20.6498	0.2792	55.2992
+				}
+				{VolumeView "engine.ply"}
+				{bone "hatch"
+					{parameters "ID=engine;"}
+					{Matrix34
+						-0.0000	-0.0000	1.0000
+						-0.0000	1.0000	0.0000
+						-1.0000	0.0000	-0.0000
+						-0.3009	3.7559	92.1236
+					}
+					{VolumeView "hatch.ply"}
+				}
+				{bone "FX_fire_big_engine"
+					{Matrix34
+						-0.0000	0.0000	1.0000
+						1.0000	-0.0000	0.0000
+						0.0000	1.0000	-0.0000
+						-0.3657	-3.1530	78.1548
+					}
+				}
+				{bone "FX_fire_small_engine1"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						0.5800	-26.6322	89.9167
+					}
+				}
+				{bone "FX_fire_small_engine2"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						13.4867	-7.1599	-11.1961
+					}
+				}
+				{bone "FX_fire_small_engine3"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						17.1011	-8.0832	-63.2809
+					}
+				}
+				{bone "FX_fire_small_engine4"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						-14.2925	-8.3678	53.0843
+					}
+				}
+				{bone "FX_fire_small_engine5"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						-14.4099	-9.8397	-31.5870
+					}
+				}
+				{bone "FX_smoke_engine1"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						-0.4662	-6.6385	73.3171
+					}
+				}
+				{bone "FX_smoke_engine2"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						-0.4661	-6.6385	-12.3371
+					}
+				}
+				{bone "FX_steam_big_engine1"
+					{Matrix34
+						-0.0000	0.0000	1.0000
+						1.0000	-0.0000	0.0000
+						0.0000	1.0000	-0.0000
+						-0.4662	4.7441	78.1548
+					}
+				}
+				{bone "FX_steam_big_engine2"
+					{Matrix34
+						0.0000	-0.0000	-1.0000
+						-1.0000	-0.0000	-0.0000
+						-0.0000	1.0000	-0.0000
+						-0.4661	-36.6727	27.1330
+					}
+				}
+				{bone "FX_steam_small_engine1"
+					{Matrix34
+						-1.0000	0.0000	-0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						-16.1325	4.7441	38.6534
+					}
+				}
+				{bone "FX_steam_small_engine2"
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						-0.0000	1.0000	-0.0000
+						15.2653	4.7441	38.6534
+					}
+				}
+				{bone "FX_steam_small_engine3"
+					{Matrix34
+						0.0000	1.0000	-0.0000
+						-0.0000	0.0000	1.0000
+						1.0000	-0.0000	0.0000
+						-0.3113	22.0953	38.6534
+					}
+				}
+				{bone "FX_steam_small_engine4"
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						0.0000	-0.0000	-1.0000
+						-0.0000	1.0000	-0.0000
+						9.6388	25.6768	8.0104
+					}
+				}
+				{bone "FX_steam_small_engine5"
+					{Matrix34
+						-1.0000	0.0000	-0.0000
+						0.0000	0.0000	1.0000
+						0.0000	1.0000	-0.0000
+						-11.6112	25.6768	8.0104
+					}
+				}
+				{bone "FX_steam_small_engine6"
+					{Matrix34
+						0.7019	0.7123	0.0000
+						0.0000	-0.0000	-1.0000
+						-0.7123	0.7019	-0.0000
+						14.2889	15.6999	-43.0709
+					}
+				}
+				{bone "FX_steam_small_engine7"
+					{Matrix34
+						0.7019	0.7123	0.0000
+						0.0000	-0.0000	-1.0000
+						-0.7123	0.7019	-0.0000
+						14.2889	15.6999	-64.2822
+					}
+				}
+			}
+			{bone "fore-part"
+				{parameters "CommonMesh;ID=fore-part;"}
+				{animation
+					{sequence "break" {file "fore-part.anm"} {speed 0.5}}
+				}
+				{Position 115.5219	0.2671	25.2425}
+				{VolumeView "fore-part.ply"}
+				{bone revolute "pivot_front"
+					{parameters "ID=body;"}
+					{Position -2.6415	-0.1541	-16.9239}
+					{VolumeView "pivot_front.ply"}
+					{bone revolute "wheelleft"
+						{parameters "ID=fore-part;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	-0.0000	-1.0000
+							0.0000	1.0000	-0.0000
+							-0.0324	17.3108	-0.0154
+						}
+						{VolumeView "wheelleft.ply"}
+					}
+					{bone revolute "wheelright"
+						{parameters "ID=fore-part;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	-0.0000	-1.0000
+							0.0000	1.0000	-0.0000
+							-0.0324	-16.3482	-0.0154
+						}
+						{VolumeView "wheelright.ply"}
+					}
+				}
+			}
+			{bone "FX_smoke_body1"
+				{Matrix34
+					-0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	-0.0000
+					82.9361	-0.1869	17.5058
+				}
+			}
+			{bone "FX_smoke_body2"
+				{Matrix34
+					-0.0000	0.0000	1.0000
+					0.0000	1.0000	0.0000
+					-1.0000	0.0000	-0.0000
+					-6.1329	-0.1869	17.5058
+				}
+			}
+		}
+		{bone "suspender_right"
+			{parameters "ID=wheels_right;"}
+			{animation
+				{sequence "break" {file "wheels_right.anm"} {speed 0.5}}
+			}
+			{Position -1.3403	-14.7438	28.3668}
+			{bone revolute "wheelright1"
+				{parameters "ID=wheels_right;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					42.0037	-0.2058	-13.8624
+				}
+				{VolumeView "wheelright1.ply"}
+			}
+			{bone revolute "wheelright2"
+				{parameters "ID=wheels_right;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					10.6853	-0.2146	-13.8624
+				}
+				{VolumeView "wheelright2.ply"}
+			}
+			{bone revolute "wheelright3"
+				{parameters "ID=wheels_right;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					-20.4361	-0.2372	-13.8624
+				}
+				{VolumeView "wheelright3.ply"}
+			}
+			{bone revolute "wheelright4"
+				{parameters "ID=wheels_right;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					-52.6299	-0.2290	-13.8624
+				}
+				{VolumeView "wheelright4.ply"}
+			}
+			{bone prizmatic "guide_right"
+				{parameters "CommonMesh;ID=wheels_right;"}
+				{Matrix34
+					0.0000	1.0000	-0.0000
+					0.0000	0.0000	1.0000
+					1.0000	-0.0000	-0.0000
+					-0.2435	-3.7932	-15.3468
+				}
+				{VolumeView "guide_right.ply"}
+				{bone revolute "guide1_right"
+					{parameters "ID=wheels_right;"}
+					{Matrix34
+						0.0000	-0.0000	1.0000
+						0.0000	-1.0000	-0.0000
+						1.0000	0.0000	-0.0000
+						-0.6443	1.8052	55.7233
+					}
+					{VolumeView "guide1_right.ply"}
+				}
+			}
+		}
+		{bone "suspender_left"
+			{parameters "ID=wheels_left;"}
+			{animation
+				{sequence "break" {file "wheels_left.anm"} {speed 0.5}}
+			}
+			{Position -1.3403	14.7667	28.3668}
+			{bone revolute "wheelleft1"
+				{parameters "ID=wheels_left;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					42.0037	2.2206	-13.8624
+				}
+				{VolumeView "wheelleft1.ply"}
+			}
+			{bone revolute "wheelleft3"
+				{parameters "ID=wheels_left;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					-20.4361	2.2206	-13.8624
+				}
+				{VolumeView "wheelleft3.ply"}
+			}
+			{bone revolute "wheelleft4"
+				{parameters "ID=wheels_left;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					-52.6299	2.2206	-13.8624
+				}
+				{VolumeView "wheelleft4.ply"}
+			}
+			{bone revolute "wheelleft2"
+				{parameters "ID=wheels_left;"}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	1.0000	-0.0000
+					10.6853	2.2206	-13.8624
+				}
+				{VolumeView "wheelleft2.ply"}
+			}
+			{bone prizmatic "guide_left"
+				{parameters "CommonMesh;ID=wheels_left;"}
+				{Matrix34
+					0.0000	1.0000	-0.0000
+					0.0000	0.0000	1.0000
+					1.0000	-0.0000	-0.0000
+					-24.8938	-15.9860	-28.4028
+				}
+				{VolumeView "guide_left.ply"}
+				{bone revolute "guide1_left"
+					{parameters "ID=wheels_left;"}
+					{Matrix34
+						0.0000	-0.0000	1.0000
+						0.0000	-1.0000	-0.0000
+						1.0000	0.0000	-0.0000
+						19.6767	14.8612	80.3736
+					}
+					{VolumeView "guide1_left.ply"}
+				}
+			}
+		}
+	}
+}

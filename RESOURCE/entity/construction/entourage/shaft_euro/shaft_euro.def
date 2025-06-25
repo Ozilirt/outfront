@@ -1,0 +1,49 @@
+{Building
+	(include "/properties/construction.inc")
+	{props "wood" "construction" "two" "staged" "disable_area" "no_destroyed_stamp"}
+	{Extension "shaft_euro.mdl"}
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 	2.3}
+;			{PreScaleY 	2.3}
+;  			{PreshiftX	0	}
+;  			{PreshiftY	0	}
+;			{Visibility	0.6	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+	{Volume "Body5"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}{obstacle 0}}
+	}
+	{Volume "Body4"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}{obstacle 0}}
+	}
+	{Volume "Body3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}{obstacle 0}}
+	}
+	{Volume "Body2"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "Body1"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "Body"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+}

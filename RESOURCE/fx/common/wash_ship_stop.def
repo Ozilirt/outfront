@@ -1,0 +1,159 @@
+{fx
+	{ParticleView
+		{generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 0.1}
+				{alpha0 0}
+				{speed 0.02 0.005}
+			}
+			{ParticleInit
+				{Speed 0.4 0.1}
+				{Lifetime 2 0.5}
+			}
+			{StartParticles 1}
+			{ParticlesInBlock 1}
+			{AutoTurn}
+		}
+		{mover
+			{damping 0.97}
+			{gravity
+				{value 0}
+			}
+		}
+		{visualizer
+			{stage
+				{flags Ground}
+				{sprite "/fx/_bmp/flash/wave5a.ebm"
+					{preTurn 270}
+					{ScaleY
+						{Linear
+							{min 0.5 0.3}
+							{max 0.7 0.2}
+						}
+					}
+					{ScaleX
+						{Linear
+							{min 0.5 0.2}
+							{max 0.5 0.2}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.8 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/fx/_bmp/flash/wave5.ebm"
+					{preTurn 270}
+					{ScaleY
+						{Linear
+							{min 0.5 0.3}
+							{max 0.7 0.2}
+						}
+					}
+					{ScaleX
+						{Linear
+							{min 0.4 0.1}
+							{max 0.5 0.2}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.75 0.25}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 0.1}
+				{alpha0 0}
+				{speed 0.02 0.005}
+			}
+			{ParticleInit
+				{Speed 0.3 0.2}
+				{Lifetime 1.7 0.8}
+			}
+			{StartParticles 1}
+			{ParticlesInBlock 1}
+			{AutoTurn}
+		}
+		{mover
+			{damping 0.97}
+			{gravity
+				{value 0}
+			}
+		}
+		{visualizer
+			{stage
+				{flags Ground}
+				{sprite "/fx/_bmp/flash/wave5.ebm"
+					{preTurn 270}
+					{ScaleY
+						{Linear
+							{min 0.5 0.3}
+							{max 0.8 0.1}
+						}
+					}
+					{ScaleX
+						{Linear
+							{min 0.4 0.1}
+							{max 0.4 0.3}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.9 0.1}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/fx/_bmp/flash/wave5a.ebm"
+					{preTurn 270}
+					{ScaleY
+						{Linear
+							{min 0.5 0.3}
+							{max 0.7 0.2}
+						}
+					}
+					{ScaleX
+						{Linear
+							{min 0.5 0.2}
+							{max 0.5 0.2}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.8 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+		}
+	}
+}

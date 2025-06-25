@@ -1,0 +1,34 @@
+{sound
+	{percent "effects" 50}
+	{percent "speak" 20}
+	{percent "environment" 20}
+	{percent "main_environment" 10}
+
+	; minDistance -- на каждые minDistance метров громкость уменьшается вдвое
+	;				 ближе minDistance громкость не увеличивается
+	; maxDistance -- на maxDistance звук выключается
+	{loudness "default" 40 80}	; minDistance maxDistance (meters)
+	{loudness "shoot muted" 15 30 10}
+	{loudness "shoot normal" 60 100 20}
+	{loudness "shoot loud" 70 150 30}
+	{loudness "reload" 30 50 10}
+	{loudness "hit" 30 50 15}
+	{loudness "blast small" 50 150 25}
+	{loudness "blast big" 70 150 40}
+	{loudness "talk" 50 100}
+   	{loudness "canonade" 400 1000}
+
+	(include "sound/animal.inc")
+	(include "sound/crush.inc")
+	(include "sound/environment.inc")
+	(include "sound/explosion.inc")
+	(include "sound/hit.inc")
+	(include "sound/human.inc")
+	(include "sound/human_talk.inc" language(russian))
+	(include "sound/human_talk.inc" language(german))
+	(include "sound/human_talk.inc" language(english))
+	(include "sound/human_talk.inc" language(american))
+	(include "sound/interface.inc")
+	(include "sound/movement.inc")
+	(include "sound/weapon.inc")
+}

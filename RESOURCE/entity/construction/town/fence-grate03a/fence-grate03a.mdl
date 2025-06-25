@@ -1,0 +1,39 @@
+;Exported by: dan
+;Date:        Fri Jan 09 20:06:06 2004
+;File:        D:\-Projects-\-3DWork-\Land\town\fence-grate.max
+{Skeleton
+	{bone "wall04"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall04.ply"}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -1.26943 0.177429}
+		{Extent 42.1427 5.07286}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 47.6339 0.177429}
+		{Extent 8.29615 8.05217}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 84.2855 10.1457 21.5748}
+	{Bone "wall04"}
+	{Position -1.2694	-0.1774	10.7874}
+}
+{Volume "body1"
+	{Box 16.5923 16.1043 48.248}
+	{Bone "wall04"}
+	{Position 47.6339	-0.1774	24.1240}
+}

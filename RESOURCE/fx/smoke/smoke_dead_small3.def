@@ -1,0 +1,171 @@
+{fx
+	{fire}
+	{ParticleView
+		{generator
+			{TotalParticles 10}
+			{EmissionArea
+				{radius 2 2}
+				{alpha0 0}
+				{alpha1 -20 2}
+			}
+			{ParticleInit
+				{Speed 0.4 0.4}
+				{Lifetime 2 1}
+			}
+			{StartParticles 1}
+			{AxisZ}
+		}
+		{mover
+			{damping 0.96}
+			{gravity
+				{value -0.02}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_BMP/Smoke/smokesmal4b_100.ebm"
+					{Turn
+						{Linear
+							{min 0 20}
+							{max 60 10}
+						}
+					}
+					{Scale
+						{Linear
+							{min 0.4 0.2}
+							{max 1 0.3}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.5}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{preTurn 90 90}
+				}
+				{sprite "/fx/_BMP/Smoke/smokesmal4b_70.ebm"
+					{Turn
+						{Linear
+							{min 60 10}
+							{max 0 20}
+						}
+					}
+					{Scale
+						{Linear
+							{min 0.4 0.2}
+							{max 1 0.2}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.6}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{preTurn 90 90}
+				}
+			}
+		}
+		{offset 0 0 5}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 5}
+			{EmissionArea
+				{radius 1.5 1.5}
+				{alpha0 0}
+				{alpha1 10 5}
+			}
+			{ParticleInit
+				{Speed 2 2}
+				{Lifetime 0.8 0.2}
+			}
+			{StartParticles 1}
+			{AxisZ}
+		}
+		{mover
+			{damping 0.2}
+			{gravity
+				{value -1.5}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_BMP/Smoke/SmTankO.ebm"
+					{Turn
+						{Linear
+							{min 0 5}
+							{max 20 10}
+						}
+					}
+					{Scale
+						{Linear
+							{min 0.25 0.1}
+							{max 0.3 0.1}
+						}
+					}
+					{Light
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{preTurn 90 90}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 10}
+			{EmissionArea
+				{radius 2.5 2.5}
+				{alpha1 180 180}
+			}
+			{ParticleInit
+				{Speed 0 0}
+				{Lifetime 1 0.2}
+			}
+			{StartParticles 1}
+			{AxisZ}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_BMP/Explosion/FaerOG.ebm"
+					{Scale
+						{Linear
+							{min 0.25 0.1}
+							{max 0.3 0.1}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+}

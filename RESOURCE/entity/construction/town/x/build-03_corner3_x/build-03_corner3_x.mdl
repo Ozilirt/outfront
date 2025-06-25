@@ -1,0 +1,163 @@
+;Exported by: shevchenko
+;Date:        Mon May 17 17:36:24 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\build-03x.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "build-03_corner3"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "build-03_corner3.ply"}
+		{bone "Piece1"
+			{Position 59.3386	-18.6694	170.2756}
+			{VolumeView "Piece1.ply"}
+		}
+		{bone "Piece2"
+			{Position 59.2833	18.5837	128.1881}
+			{VolumeView "Piece2.ply"}
+		}
+		{bone "Piece3"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				59.3386	-23.5958	72.5157
+			}
+			{VolumeView "Piece3.ply"}
+		}
+		{bone "Piece4"
+			{Position 38.3012	40.4104	100.5365}
+			{VolumeView "Piece4.ply"}
+			{bone "Sub_piece0"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					10.6986	0.0000	-27.7368
+				}
+				{VolumeView "Sub_piece0.ply"}
+			}
+		}
+		{bone "Piece5"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				59.3386	25.0724	66.5590
+			}
+			{VolumeView "Piece5.ply"}
+		}
+		{bone "Piece6"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-1.7547	40.3543	45.6755
+			}
+			{VolumeView "Piece6.ply"}
+		}
+		{bone "Piece8"
+			{Position 34.2470	-26.5748	90.8967}
+			{VolumeView "Piece8.ply"}
+		}
+		{bone "Piece7"
+			{Position 42.1538	-26.5748	47.3304}
+			{VolumeView "Piece7.ply"}
+		}
+	}
+}
+{Volume "Piece7"
+	{Box 5.90551 15.8332 35.5995}
+	{Bone "Piece7"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		0.9962	-0.0000	-0.0872
+		0.0872	-0.0000	0.9962
+		-1.0082	-0.0874	1.1905
+	}
+}
+{Volume "Piece8"
+	{Box 5.90551 39.4213 25.8069}
+	{Bone "Piece8"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.0828	-0.0874	-0.1989
+	}
+}
+{Volume "Piece6"
+	{Box 9.84252 21.4263 29.5409}
+	{Bone "Piece6"}
+	{Matrix34
+		0.0000	0.0000	1.0000
+		1.0000	-0.0000	-0.0000
+		0.0000	1.0000	-0.0000
+		-1.3101	-4.1396	0.1040
+	}
+}
+{Volume "Piece5"
+	{Box 9.84252 20.6009 35.4491}
+	{Bone "Piece5"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		-0.0000	0.0000	1.0000
+		0.0000	1.0000	-0.0000
+		0.0472	1.2593	-0.4897
+	}
+}
+{Volume "Sub_piece0"
+	{Box 9.84252 21.373 32.9387}
+	{Bone "Sub_piece0"}
+	{Matrix34
+		-0.0000	-0.0000	1.0000
+		0.9848	0.1736	0.0000
+		-0.1736	0.9848	0.0000
+		3.2512	-1.4926	0.1601
+	}
+}
+{Volume "Piece4"
+	{Box 9.84252 47.4955 30.7225}
+	{Bone "Piece4"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		0.9962	-0.0000	0.0872
+		-0.0872	0.0000	0.9962
+		1.5342	-0.1601	2.1811
+	}
+}
+{Volume "Piece3"
+	{Polyhedron "Piece3.vol"}
+	{Bone "Piece3"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		-0.0000	0.0000	1.0000
+		0.0000	1.0000	-0.0000
+		0.0472	-24.3115	-6.8143
+	}
+}
+{Volume "Piece2"
+	{Polyhedron "Piece2.vol"}
+	{Bone "Piece2"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	-0.0000
+		0.1024	-9.4109	-3.8847
+	}
+}
+{Volume "Piece1"
+	{Polyhedron "Piece1.vol"}
+	{Bone "Piece1"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	-0.0000
+		0.0472	-9.5802	-9.4123
+	}
+}

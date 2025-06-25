@@ -1,0 +1,62 @@
+;Exported by: sk
+;Date:        Mon May 17 13:20:18 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Monastery\wall-2level.max
+{Skeleton
+	{bone "wall11"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall11.ply"}
+	}
+}
+{Obstacle "wall4"
+	{Obb2
+		{Center 77.7917 40.8138}
+		{Extent 3.72047 38.9337}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "wall3"
+	{Obb2
+		{Center -77.0076 -73.1337}
+		{Extent 3.72047 7.95551}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "wall1"
+	{Obb2
+		{Center -77.0076 6.36951}
+		{Extent 3.72047 72.3228}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "wall4"
+	{Box 7.44095 77.8674 60.4617}
+	{Bone "wall11"}
+	{Position 77.7917	-40.8138	30.2308}
+}
+{Volume "wall3"
+	{Box 7.44095 15.911 40.5783}
+	{Bone "wall11"}
+	{Position -77.0076	73.1337	20.2892}
+}
+{Volume "wall2"
+	{Box 3.87685 45.054 157.986}
+	{Bone "wall11"}
+	{Matrix34
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		1.0000	-0.0000	0.0000
+		4.4271	-55.6904	61.6528
+	}
+}
+{Volume "wall1"
+	{Box 7.44095 144.646 59.674}
+	{Bone "wall11"}
+	{Position -77.0076	-6.3695	29.8370}
+}

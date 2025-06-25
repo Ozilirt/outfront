@@ -1,0 +1,42 @@
+;Exported by: grechishkin
+;Date:        Thu Nov 06 12:28:46 2003
+;File:        D:\-Projects-\-3DWork-\Model\xlam-right\xlam-right.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			-1.0000	-0.0000	0.0000
+			-0.0000	1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.9990	0.0435	-0.0038
+				0.0034	-0.1657	-0.9862
+				-0.0435	0.9852	-0.1657
+				2.0936	-20.6326	19.4052
+			}
+			{VolumeView "Body.ply"}
+		}
+	}
+}
+{Volume "Body2"
+	{Box 38.6528 18.7373 27.0516}
+	{Bone "Body"}
+	{Matrix34
+		-0.9990	-0.0034	0.0435
+		-0.0435	0.1657	-0.9852
+		-0.0038	-0.9862	-0.1657
+		-26.2385	0.1567	16.0060
+	}
+}
+{Volume "Body1"
+	{Polyhedron "Body1.vol"}
+	{Bone "Body"}
+	{Matrix34
+		-0.9990	-0.0034	0.0435
+		-0.0435	0.1657	-0.9852
+		-0.0038	-0.9862	-0.1657
+		13.7986	16.0833	21.0671
+	}
+}

@@ -1,0 +1,85 @@
+;Exported by: shevchenko
+;Date:        Mon Aug 09 11:07:23 2004
+;File:        D:\-Projects-\-3DWork-\sheva\bridge_multiplayer_x.max
+{Skeleton
+	{bone "automobile_bridge_fence1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "automobile_bridge_fence1.ply"}
+		{bone "piece0"
+			{Position 22.9930	-19.2609	18.8108}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "piece1"
+			{Position -22.2611	-20.1023	21.6391}
+			{VolumeView "piece1.ply"}
+		}
+	}
+}
+{Obstacle "railing2"
+	{Obb2
+		{Center 23.0171 19.2605}
+		{Extent 4.92299 4.92299}
+		{Axis 0.0182398 0.999834}
+	}
+	{Rotate}
+}
+{Obstacle "railing1"
+	{Obb2
+		{Center -22.2719 20.1026}
+		{Extent 4.92299 4.92299}
+		{Axis 0.0182398 0.999834}
+	}
+	{Rotate}
+}
+{Obstacle "Obstacle"
+	{Obb2
+		{Center 0.377735 20.6107}
+		{Extent 17.7165 0.984253}
+		{Axis -0.999827 0.0185903}
+	}
+	{Rotate}
+}
+{Volume "piece1"
+	{Box 9.84252 9.84531 5.6063}
+	{Bone "piece1"}
+	{Matrix34
+		0.9998	0.0186	0.0000
+		-0.0186	0.9998	0.0000
+		0.0000	0.0000	1.0000
+		-0.0230	-0.0246	1.2201
+	}
+}
+{Volume "piece0"
+	{Box 9.84252 9.84531 5.6063}
+	{Bone "piece0"}
+	{Matrix34
+		0.9998	0.0186	0.0000
+		-0.0186	0.9998	0.0000
+		0.0000	0.0000	1.0000
+		0.0222	-0.0237	4.0484
+	}
+}
+{Volume "railing2"
+	{Box 9.84252 9.84252 19.685}
+	{Bone "automobile_bridge_fence1"}
+	{Matrix34
+		0.9998	0.0186	0.0000
+		-0.0186	0.9998	0.0000
+		0.0000	0.0000	1.0000
+		23.0171	-19.2605	9.8425
+	}
+}
+{Volume "railing1"
+	{Box 9.84252 9.84252 21.063}
+	{Bone "automobile_bridge_fence1"}
+	{Matrix34
+		0.9998	0.0186	0.0000
+		-0.0186	0.9998	0.0000
+		0.0000	0.0000	1.0000
+		-22.2719	-20.1026	10.5315
+	}
+}

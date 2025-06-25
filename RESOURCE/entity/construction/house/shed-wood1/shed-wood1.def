@@ -1,0 +1,41 @@
+{building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.8) sy(1.2) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "shed-wood1.mdl"}
+	{props "two" "staged" "wood" "construction"}
+
+   	{DecalView
+		{Sprite "/properties/shadow/house3.ebm"
+   			{PrescaleX 0.8 }
+	   		{PrescaleY 0.5 }
+			{Visibility 0.9}
+			{shiftX 0}
+			{shiftY 0}
+		}
+		{layer grounddecal}
+		{UseDirection}    
+	}
+
+	{volume "roof"
+		{able {visible 0}}
+		{thickness hollow 5}
+	}     
+    {volume	"body"
+		{thickness hollow 5}
+		{able {holed}}
+		{tags "body"}
+	}
+
+	{volume	"hole1"
+		{able clear {hole}}
+	}
+	{volume "mainhole"
+		{able  clear {hole}}
+	}
+
+;	("declare_fire_volumes")
+}

@@ -1,0 +1,150 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(2.5) ofsx(0) ofsy(0))	
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "hous-metal3.mdl"}
+	{props "two" "staged" "concrete" "construction" "windowed" "flue"} 
+
+	{DecalView
+		{Sprite "/properties/shadow/house3.ebm"
+  			{PrescaleX 0.8 }
+	   		{PrescaleY 0.5 }
+			{Visibility 0.8}
+			{shiftX -30}
+			{shiftY -60}
+		}
+		{layer grounddecal}
+		{UseDirection}    
+	}
+
+	{Volume "body2"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}
+	}
+	{Volume "body3"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}
+	}
+	{Volume "body4"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}
+	}
+	{Volume "body5"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}
+	}
+	{Volume "body6"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}
+	}
+	{Volume "body7"
+		{thickness 10}
+		{able {holed}}
+		{tags "body"}
+	}
+
+	{Volume "window10"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window9"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window8"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window7"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window6"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window5"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window4"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window3"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window2"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window1"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+
+	{Volume "roof"
+		{able {visible 0}}
+		{thickness 10}
+	}
+
+	{Volume "hole1"
+		{able clear {hole} }
+		{tags "cover"}
+	}
+	{Volume "hole2"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole3"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole4"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole5"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole6"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole7"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole8"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole9"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole10"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole11"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole12"
+		{able clear {hole} }
+	}
+	{Volume "hole13"
+		{able clear {hole} }
+	}
+}

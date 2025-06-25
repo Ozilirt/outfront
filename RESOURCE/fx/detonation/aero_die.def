@@ -1,0 +1,593 @@
+{fx
+	{Sound "explosion.tank"}
+	{ParticleView
+		{EntityGenerator
+			{TotalParticles 3}
+			{EmissionArea
+				{radius 16}
+				{alpha0 0}
+				{alpha1 180 180}
+			}
+			{ParticleInit
+				{Speed 16 5}
+				{Lifetime 1.8 1}
+			}
+;			{AxisZ}
+			{Entity "#metall1"	{fx "smoke_black_small"}}
+			{Entity "#metall3"	{fx "smoke_barrel_small"}}
+			{Entity "#metall2"	{fx "smoke_barrel_small"}}
+		}
+	}
+	{LightView
+		{Type point}
+		{Animator
+			{Scale
+				{Linear
+					{min 1}
+					{max 0.5}
+				}
+			}
+			{Visibility
+				{Linear
+					{min 1}
+					{max 0}
+				}
+			}
+			{Highlight 0xffedb0}
+			{timer
+				{duration 0.53 0.1}
+			}
+		}
+		{Attenuation0 0.15}
+		{Attenuation1 0.9}
+		{Radius 350}
+		{EffectOnGround}
+		{Offset 0 0 30}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 1}
+			{EmissionArea
+				{radius 1 1}
+				{alpha0 0 10}
+				{alpha1 180}
+			}
+			{ParticleInit
+				{Speed 1.1 1.1}
+				{Lifetime 1 0}
+			}
+			{AxisZ}
+			{StartParticles 1}
+			{Color 0x663300}
+			{TimeToLive 1}
+		}
+		{mover
+			{gravity
+				{value 0.05}
+			}
+			{damping 0.77}
+			{collisions
+				{terrain}
+				{restitution 0.2}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 60}
+			{EmissionArea
+				{radius 5 5}
+				{alpha1 180}
+				{alpha0 0}
+			}
+			{ParticleInit
+				{Speed 8 8}
+				{Lifetime 1.4 0.3}
+			}
+			{AxisZ}
+			{StartParticles 30}
+			{TimeToLive 0.5}
+		}
+		{mover
+			{gravity
+				{value -0.015}
+			}
+			{damping 0.88}
+			{collisions
+				{restitution 0.4}
+				{terrain}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_bmp/smoke/smokesmal4b_100.ebm"
+					{Scale
+						{Linear
+							{min 2 0.3}
+							{max 3 1}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.8}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 15}
+						}
+					}
+					{preTurn 0 90}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/fx/_bmp/smoke/smokesmal4b_70.ebm"
+					{Scale
+						{Linear
+							{min 2 0.3}
+							{max 3 1.5}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.7}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 15}
+						}
+					}
+					{preTurn 0 90}
+					{Highlight 0xc0c0c0}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/FX/_BMP/Smoke/SmTankO.ebm"
+					{Scale
+						{Linear
+							{min 1 0.3}
+							{max 2.5 1}
+						}
+					}
+					{Light
+						{Linear
+							{min 0.5}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 15}
+						}
+					}
+					{preTurn 0 90}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/fx/_bmp/smoke/smokesmal4b_100.ebm"
+					{Scale
+						{Linear
+							{min 2 0.3}
+							{max 3 1}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.3}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 15}
+						}
+					}
+					{preTurn 0 90}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 60}
+			{EmissionArea
+				{radius 15 15}
+				{alpha0 0}
+				{alpha1 180}
+			}
+			{ParticleInit
+				{Speed 4.5 4.5}
+				{Lifetime 2 0.8}
+			}
+			{AxisZ}
+			{StartParticles 30}
+			{TimeToLive 0.5}
+		}
+		{mover
+			{gravity
+				{value -0.03}
+			}
+			{damping 0.92}
+			{collisions
+				{restitution 0.4}
+				{terrain}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_bmp/smoke/smokesmal4b_100.ebm"
+					{Scale
+						{Linear
+							{min 1 0.3}
+							{max 4 1.5}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.8}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 15}
+						}
+					}
+					{preTurn 0 90}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/fx/_bmp/smoke/smokesmal4b_50.ebm"
+					{Scale
+						{Linear
+							{min 1 0.3}
+							{max 2.5 1}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.5}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max -90 15}
+						}
+					}
+					{preTurn 0 90}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/FX/_BMP/Smoke/SmTankO.ebm"
+					{Scale
+						{Linear
+							{min 1 0.3}
+							{max 2.5 1}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 15}
+						}
+					}
+					{Light
+						{Linear
+							{min 0.5}
+							{max 0}
+						}
+					}
+					{preTurn 0 90}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/fx/_bmp/smoke/smokesmal4b_100.ebm"
+					{Scale
+						{Linear
+							{min 1 0.3}
+							{max 4 1.5}
+						}
+					}
+					{Visibility
+						{Peak
+							{min 0}
+							{max 0.8}
+						}
+					}
+					{Turn
+						{Linear
+							{min 90 20}
+							{max 10 15}
+						}
+					}
+					{preTurn 0 90}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 15 15}
+				{alpha0 0}
+				{alpha1 180 180}
+			}
+			{ParticleInit
+				{Speed 7 2}
+				{Lifetime 1.5 0.4}
+			}
+			{AxisZ}
+			{StartParticles 20}
+			{TimeToLive 0.1}
+		}
+		{mover
+			{gravity
+				{value 0.2}
+			}
+			{damping 0.98}
+			{collisions
+				{terrain}
+				{restitution 0.5}
+			}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Particle/pieces2.ebm"
+					{Turn
+						{Power
+							{min 10 10}
+							{max 90 90}
+							{pow 1.7}
+						}
+					}
+					{Scale 0.12 0.08}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/FX/_BMP/Particle/pieces.ebm"
+					{Turn
+						{Power
+							{min 90 90}
+							{max 0 5}
+							{pow 1.5}
+						}
+					}
+					{Scale 0.15 0.05}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+			{stage collided dying
+				{flags KillParticle Ground}
+				{sprite "/FX/_BMP/Particle/pieces.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{Scale 0.15 0.05}
+					{Turn 90 45}
+					{timer
+						{mode play}
+						{duration 6 2}
+					}
+				}
+				{sprite "/FX/_BMP/Particle/pieces2.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{Scale 0.15 0.08}
+					{Turn 90 45}
+					{timer
+						{mode play}
+						{duration 6 2}
+					}
+				}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 40}
+			{EmissionArea
+				{radius 5 5}
+				{alpha0 0}
+				{alpha1 90 30}
+			}
+			{ParticleInit
+				{Speed 7 7}
+				{Lifetime 1.5 1.5}
+			}
+			{StartParticles 40}
+			{TimeToLive 0.1}
+			{AxisZ}
+		}
+		{mover
+			{damping 0.97}
+			{gravity
+				{value 0.2}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.5}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/FX/_BMP/Particle/Oskolki.ebm"
+					{Scale 0.3 0.1}
+				}
+				{sprite "/FX/_BMP/Particle/OskolkiM.ebm"
+					{Scale
+						{Linear
+							{min 0.3 0.2}
+							{max 0.2 0.05}
+						}
+					}
+				}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 60}
+			{EmissionArea
+				{radius 1 1}
+				{alpha0 0}
+				{alpha1 180}
+			}
+			{ParticleInit
+				{Speed 9 9}
+				{Lifetime 1.2 0.5}
+			}
+			{AxisZ}
+			{StartParticles 20}
+			{TimeToLive 0.5}
+		}
+		{mover
+			{gravity
+				{value -0.001}
+			}
+			{damping 0.83}
+			{collisions
+				{restitution 0.4}
+				{terrain}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/FX/_BMP/Smoke/SmTankO.ebm"
+					{Scale
+						{Linear
+							{min 1.5 0.3}
+							{max 2.8 1}
+						}
+					}
+					{Light
+						{Linear
+							{min 2}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 20}
+							{max 90 15}
+						}
+					}
+					{preTurn 0 90}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+				{sprite "/FX/_BMP/Smoke/SmTankO.ebm"
+					{Scale
+						{Linear
+							{min 1.5 0.3}
+							{max 2.8 1}
+						}
+					}
+					{Light
+						{Linear
+							{min 2}
+							{max 0}
+						}
+					}
+					{Turn
+						{Linear
+							{min 90 20}
+							{max 10 15}
+						}
+					}
+					{preTurn 0 90}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+				}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 1}
+			{EmissionArea
+				{radius 1 1}
+				{alpha0 0}
+				{alpha1 90 30}
+			}
+			{ParticleInit
+				{Speed 0 0}
+				{Lifetime 2}
+			}
+			{StartParticles 1}
+			{TimeToLive 0.1}
+			{AxisZ}
+		}
+		{mover
+			{damping 0.97}
+			{gravity
+				{value 0}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/fx/_bmp/explosion/Bum3D.ebm"
+					{Scale 2.5}
+					{preTurn 160}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Light
+						{Linear
+							{min 1.5}
+							{max 0}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{Skeleton
+	{animation
+		{sequence {name "stir"} {file "stir.anm"}}
+	}
+	{bone "publik_use"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "publik_use.ply"}
+	}
+}
+
+{Volume "bole"
+	{Cylinder 6.26589 109.096}
+	{Bone "publik_use"}
+	{Matrix34
+		0.9992	0.0009	0.0398
+		-0.0000	0.9997	-0.0237
+		-0.0398	0.0236	0.9989
+		-0.8498	-1.4994	48.2902
+	}
+}
+{Volume "crown"
+	{Box 69.9374 75.8004 99.3002}
+	{Bone "publik_use"}
+	{Matrix34
+		0.0056	0.9995	0.0301
+		-1.0000	0.0056	-0.0004
+		-0.0006	-0.0301	0.9995
+		1.1839	-3.4313	65.1765
+	}
+}
+

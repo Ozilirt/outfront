@@ -1,0 +1,19 @@
+{
+	(include "/properties/bush.inc")
+;	(include "/properties/shadow/bush.inc" sx(0.4) sy(0.9))
+	{Extension "cane2.mdl"}
+	{props "delete_after_burn" "stamp" }
+
+ {DecalView "shadow"
+	{OwnerShadow 64 64}
+ 	{Sprite "/properties/shadow/flora.ebm"
+		{ScaleX		1.5	}
+		{ScaleY		0.7	}
+		{ShiftX		-10	}
+		{Visibility	0.4	}
+	}
+	{layer groundshadow}
+	{UseDirection}    
+ }
+
+}

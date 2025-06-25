@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Tue Jan 27 16:53:01 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Town_dima\build-05.max
+{Skeleton
+	{bone "build-05_wall1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "build-05_wall1.ply"}
+	}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center -0.912659 -0.288528}
+		{Extent 53.4396 4.92127}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 9.84252 106.879 65.9038}
+	{Bone "build-05_wall1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.9127	0.2885	32.9519
+	}
+}

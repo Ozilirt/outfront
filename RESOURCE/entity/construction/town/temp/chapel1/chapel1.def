@@ -1,0 +1,96 @@
+{construction
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{props "concrete" "construction" "stone"}
+	{Extension "chapel1.mdl"}
+	{constrain zero}
+
+	{volume	"body1"
+		{thickness  50}
+		{able {holed}}
+	}
+	{volume "Hole"
+		{able clear {hole} {touch}}
+	}
+
+;	{Placer
+;		{place "win1" {group "door"} {entry "hole"} {linkbone "stand"} {cover 1}}
+;	}
+
+	{Volume "body18"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "body17"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "body16"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "body15"
+		{thickness  50}
+		{tags "body"}	
+	}
+	{Volume "body14"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "body13"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "body12"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "body11"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body9"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body8"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body7"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body6"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body5"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body4"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body3"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body2"
+		{thickness  50}
+		{tags "body"}
+	}
+	{Volume "Body10"
+		{thickness  50}
+		{tags "body"}
+	}
+}

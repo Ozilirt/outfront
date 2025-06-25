@@ -1,0 +1,41 @@
+;Exported by: vic
+;Date:        Wed Nov 26 16:12:07 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\elements town10.max
+{Skeleton
+	{bone "e-house1014"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "e-house1014.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.0535889 -0.00691915}
+		{Extent 54.1633 4.24067}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body2"
+	{Box 7.73189 8.26772 30.0802}
+	{Bone "e-house1014"}
+	{Position 50.3763	-0.0554	73.8266}
+}
+{Volume "Body1"
+	{Box 16.1081 8.26772 19.1593}
+	{Bone "e-house1014"}
+	{Position 14.5476	-0.0554	68.3662}
+}
+{Volume "Body3"
+	{Box 17.9713 8.26772 20.8837}
+	{Bone "e-house1014"}
+	{Position -25.4310	-0.0554	32.1770}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "e-house1014"}
+	{Position 0.6774	0.6125	0.0000}
+}

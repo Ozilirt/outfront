@@ -1,0 +1,122 @@
+;Exported by: VIC
+;Date:        Thu Jun 19 20:06:51 2003
+
+{Skeleton
+	{bone "rw_station1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "rw_station1.ply"}
+		{bone "door"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				0.0742	56.6809	26.6012
+			}
+			{VolumeView "door.ply"}
+			{bone "FX_wood1"
+				{Matrix34
+					-1.0000	0.0000	-0.0000
+					-0.0000	-0.9063	0.4226
+					0.0000	0.4226	0.9063
+					0.1439	-0.9425	-1.0362
+				}
+			}
+		}
+		{bone "FX_stone2"
+			{Position 0.0000	0.0000	19.6850}
+		}
+		{bone "window2"
+			{Position 33.8400	71.0300	59.9837}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass02"
+				{Matrix34
+					-0.0000	-1.0000	-0.0000
+					-0.0000	0.0000	-1.0000
+					1.0000	-0.0000	-0.0000
+					0.1686	-0.0423	-0.9762
+				}
+			}
+		}
+		{bone "window1"
+			{Position -33.6505	71.0300	59.9837}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass01"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					-0.0000	-0.0000	-1.0000
+					1.0000	-0.0000	-0.0000
+					0.1154	-0.0423	-0.9762
+				}
+			}
+		}
+	}
+}
+{Volume "window1"
+	{Box 5.90551 5.90551 9.84252}
+	{Bone "window1"}
+		{Position 0.1477	0.0217	-0.1196}
+}
+{Volume "window2"
+	{Box 5.90551 5.90551 9.84252}
+	{Bone "window2"}
+		{Position 0.1621	0.0217	-0.1196}
+}
+{Volume "wall4a"
+	{Polyhedron "wall4a.vol"}
+	{Bone "rw_station1"}
+		{Position 37.5863	-25.5160	59.6457}
+}
+{Volume "wall4"
+	{Box 39.5547 11.4117 98.4252}
+	{Bone "rw_station1"}
+		{Position 19.6899	-51.5299	49.2126}
+}
+{Volume "wall3a"
+	{Polyhedron "wall3a.vol"}
+	{Bone "rw_station1"}
+		{Position -37.5769	-25.5160	59.6457}
+}
+{Volume "wall3"
+	{Box 39.5547 11.4117 98.4252}
+	{Bone "rw_station1"}
+		{Position -19.5110	-51.5299	49.2126}
+}
+{Volume "wall2a"
+	{Polyhedron "wall2a.vol"}
+	{Bone "rw_station1"}
+		{Position 37.5863	27.2322	59.6457}
+}
+{Volume "wall2"
+	{Box 39.5547 11.4117 98.4252}
+	{Bone "rw_station1"}
+		{Position 19.6899	51.9162	49.2126}
+}
+{Volume "wall1a"
+	{Polyhedron "wall1a.vol"}
+	{Bone "rw_station1"}
+		{Position -37.5769	27.2322	59.6457}
+}
+{Volume "wall1"
+	{Box 39.5547 11.4117 98.4252}
+	{Bone "rw_station1"}
+		{Position -19.5110	51.9162	49.2126}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "rw_station1"}
+		{Position -0.0078	0.9004	98.6215}
+}
+{Volume "door"
+	{Box 29.0551 53.1471 13.1805}
+	{Bone "door"}
+		{Matrix34
+			-1.0000	0.0000	-0.0000
+			0.0000	1.0000	-0.0000
+			-0.0000	-0.0000	-1.0000
+			0.0329	0.1013	-17.9104
+		}
+}

@@ -1,0 +1,31 @@
+;Exported by: ubrashaev
+;Date:        Wed Jan 14 15:21:20 2004
+;File:        D:\-Projects-\-work-\3d\mill_entourage(bags).max
+{Skeleton
+	{bone "bags2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "bags2.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -0.490799 -0.268883}
+		{Extent 5.42955 11.4306}
+		{Axis 0.342602 0.939481}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 22.8546 10.8449 16.0898}
+	{Bone "bags2"}
+	{Matrix34
+		0.9397	0.3420	0.0000
+		-0.3420	0.9397	0.0000
+		0.0000	0.0000	1.0000
+		-0.4908	0.2689	7.3329
+	}
+}

@@ -1,0 +1,112 @@
+;Exported by: vic
+;Date:        Wed Nov 26 16:53:20 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\elements town10.max
+{Skeleton
+	{bone "e-house103"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "e-house103.ply"}
+	}
+}
+{Obstacle "Obstacle2"
+	{Obb2
+		{Center -6.3744 -58.7697}
+		{Extent 5.11811 6.88976}
+		{Axis -0.573577 0.819152}
+	}
+	{Rotate}
+}
+{Obstacle "Obstacle1"
+	{Obb2
+		{Center 30.5612 -22.0456}
+		{Extent 5.11811 7.87402}
+		{Axis -0.906308 0.422618}
+	}
+	{Rotate}
+}
+{Obstacle "Obstacle"
+	{Obb2
+		{Center 31.4058 33.3911}
+		{Extent 5.11811 9.84252}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "Hole_4"
+	{Box 15.748 27.287 39.1574}
+	{Bone "e-house103"}
+	{Matrix34
+		0.7071	0.7071	0.0000
+		-0.7071	0.7071	0.0000
+		0.0000	0.0000	1.0000
+		13.0341	41.4273	92.4983
+	}
+}
+{Volume "Hole_3"
+	{Box 15.748 27.287 39.1574}
+	{Bone "e-house103"}
+	{Position 31.8873	-3.5591	92.4983}
+}
+{Volume "Hole_2"
+	{Polyhedron "Hole_2.vol"}
+	{Bone "e-house103"}
+	{Matrix34
+		0.7071	0.7071	0.0000
+		-0.7071	0.7071	0.0000
+		0.0000	0.0000	1.0000
+		12.8261	41.4773	0.0000
+	}
+}
+{Volume "Hole_1"
+	{Polyhedron "Hole_1.vol"}
+	{Bone "e-house103"}
+	{Position 31.6873	-3.7285	-0.0000}
+}
+{Volume "Hole_5"
+	{Polyhedron "Hole_5.vol"}
+	{Bone "e-house103"}
+	{Position -16.7021	60.4353	0.0000}
+}
+{Volume "Body4"
+	{Box 10.2362 19.685 13.9018}
+	{Bone "e-house103"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-26.6345	60.3207	65.9940
+	}
+}
+{Volume "Body3"
+	{Polyhedron "Body3.vol"}
+	{Bone "e-house103"}
+	{Position -10.6475	60.2506	0.0000}
+}
+{Volume "Body2"
+	{Box 10.2362 19.685 13.9018}
+	{Bone "e-house103"}
+	{Position 31.4081	-55.3680	65.9940}
+}
+{Volume "Body1"
+	{Box 55.507 11.811 127.811}
+	{Bone "e-house103"}
+	{Matrix34
+		0.7071	-0.7071	0.0000
+		0.7071	0.7071	0.0000
+		0.0000	0.0000	1.0000
+		12.7925	41.5712	63.9057
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "e-house103"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		26.3812	-18.9112	70.4277
+	}
+}

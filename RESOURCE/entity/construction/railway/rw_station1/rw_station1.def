@@ -1,0 +1,65 @@
+{building
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.65) sy(1.9) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "rw_station1.mdl"}
+	{props "massive_building" "construction" "concrete" "small_massive_building"}
+	{mass 100000000}
+	{TexMods
+		{"v1" "1"}
+	}
+
+	{Volume "wall4a"
+		{thickness 10}
+		{tags "body"}
+		{able {visible 0}}
+	}
+	{Volume "wall3a"
+		{thickness 10}
+		{tags "body"}
+		{able {visible 0}}
+	}
+	{Volume "wall2a"
+		{thickness 10}
+		{tags "body"}
+		{able {visible 0}}
+	}
+	{Volume "wall1a"
+		{thickness 10}
+		{tags "body"}
+		{able {visible 0}}
+	}
+
+	{Volume "wall1"
+		{thickness 10}
+		{tags "body"}
+	}
+	{Volume "wall2"
+		{thickness 10}
+		{tags "body"}
+	}
+	{Volume "wall3"
+		{thickness 10}
+		{tags "body"}
+	}
+
+	{Volume "door"
+		{thickness 5}
+	}
+
+	{Volume "window0"
+		{thickness 0.01}
+		{able {visible 0} {window}}
+	}
+	{Volume "window1"
+		{thickness 0.01}
+		{able {visible 0} {window}}
+	}
+	{Volume "roof"
+		{thickness 10}
+		{able {visible 0}}
+	}
+}

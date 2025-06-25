@@ -1,0 +1,46 @@
+;Exported by: shevchenko
+;Date:        Wed May 05 19:15:28 2004
+;File:        D:\-Projects-\-3DWork-\sheva\mine_detector.max
+{Skeleton
+	{bone "mine_detector_"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "mine_detector_.ply"}
+		{bone "handle"
+			{Matrix34
+				0.0000	0.0000	-1.0000
+				-1.0000	0.0000	0.0000
+				0.0000	1.0000	0.0000
+				19.4211	0.0018	12.0986
+			}
+		}
+	}
+}
+{Volume "body2"
+	{Cylinder 4.20606 1.5748}
+	{Bone "mine_detector_"}
+	{Position -2.8127	-0.0744	0.7874}
+}
+{Volume "select"
+	{Box 41.8898 8.85827 8.85827}
+	{Bone "mine_detector_"}
+	{Matrix34
+		0.8523	0.0000	0.5231
+		0.0000	1.0000	0.0000
+		-0.5231	0.0000	0.8523
+		10.1823	0.0001	10.5150
+	}
+}
+{Volume "body1"
+	{Box 33.6024 1.78227 0.984252}
+	{Bone "mine_detector_"}
+	{Matrix34
+		0.8523	0.0000	0.5231
+		0.0000	1.0000	0.0000
+		-0.5231	0.0000	0.8523
+		14.6027	0.0001	9.1390
+	}
+}

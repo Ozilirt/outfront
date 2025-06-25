@@ -1,0 +1,60 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{props "two" "staged" "wood" "construction"}
+    {DecalView
+		{ownershadow  128 128}
+		{name "shadow"}
+ 	  }
+	{Extension "shed-wood2.mdl"}
+	{Volume "body6"
+		{Thickness 1}
+	}
+	{Volume "body7"
+		{Thickness 1}
+	}
+	{Volume "roof2"
+		{Tags  "fire"}
+		{Thickness 1}
+		{able {visible 0}}
+	}
+	{Volume "roof"
+		{Tags  "fire"}
+		{Thickness 1}
+		{able {visible 0}}
+	}
+	{Volume "door"
+		{Thickness 1}
+	}
+	{Volume "body"
+		{Thickness 5}
+	}
+	{Volume "body5"
+		{Tags  "body" "fire"}
+		{Thickness 5}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 5}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 5}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 5}
+	}
+	{Volume "body1"
+		{Tags  "body" "fire"}
+		{Thickness 5}
+	}
+	{Volume "fire1"
+		{able {visible 0}{bullet 0}}
+	}
+	{Volume "fire2"
+		{able {visible 0}{bullet 0}}
+	}
+
+	
+    ("declare_fire_volumes")	
+}

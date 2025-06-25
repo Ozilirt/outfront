@@ -1,0 +1,118 @@
+;Exported by: shevchenko
+;Date:        Mon Mar 01 18:37:02 2004
+;File:        D:\-Projects-\-3DWork-\sheva\kuznja_1.max
+{Skeleton
+	{bone "kuznja_coner1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "kuznja_coner1.ply"}
+	}
+}
+{Obstacle "support"
+	{Obb2
+		{Center 51.0524 45.6143}
+		{Extent 14.3138 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 13.1365 14.1343}
+		{Extent 30.5118 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 46.7718 38.7402}
+		{Extent 2.95276 41.3386}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "beam"
+	{Obb2
+		{Center -47.4813 -67.5584}
+		{Extent 2.46063 2.46063}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 25.7132 77.1286}
+		{Extent 23.9173 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "support"
+	{Box 13.7126 51.1811 5.90551}
+	{Bone "kuznja_coner1"}
+	{Matrix34
+		0.9526	-0.0000	0.3041
+		-0.3041	-0.0000	0.9526
+		0.0000	-1.0000	-0.0000
+		51.0523	-45.6143	22.1539
+	}
+}
+{Volume "roof"
+	{Box 109.972 131.89 1.9685}
+	{Bone "kuznja_coner1"}
+	{Matrix34
+		0.9564	0.0000	-0.2919
+		0.0000	1.0000	0.0000
+		0.2919	0.0000	0.9564
+		4.4771	-20.0394	112.3366
+	}
+}
+{Volume "body4"
+	{Box 61.0236 106.299 5.90551}
+	{Bone "kuznja_coner1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		13.1365	-14.1342	53.1496
+	}
+}
+{Volume "body3"
+	{Box 82.6772 98.4252 5.90551}
+	{Bone "kuznja_coner1"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		46.7718	-38.7402	49.2126
+	}
+}
+{Volume "beam"
+	{Box 4.92126 4.92126 127.165}
+	{Bone "kuznja_coner1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-47.4813	67.5584	63.4364
+	}
+}
+{Volume "body2"
+	{Box 47.8346 5.90551 49.2126}
+	{Bone "kuznja_coner1"}
+	{Position 25.7132	-77.1286	24.6063}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "kuznja_coner1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		-15.3287	-74.1798	91.2074
+	}
+}

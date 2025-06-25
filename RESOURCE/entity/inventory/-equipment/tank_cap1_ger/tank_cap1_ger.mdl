@@ -1,0 +1,31 @@
+;Exported by: dan
+;Date:        Tue Dec 16 18:12:13 2003
+;File:        D:\-Projects-\-3DWork-\Soldiers\Soldiers for EXP\tank_com_ger.max
+{Skeleton
+	{bone "helmet"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "helmet.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-0.0607	-1.2562	3.2772
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 9.84252 9.84252 3.68412}
+	{Bone "helmet"}
+	{Position -0.2929	0.2302	3.7330}
+}
+{Volume "body"
+	{Box 3.85597 3.60074 2.08212}
+	{Bone "helmet"}
+	{Position -0.1929	-0.0307	4.2390}
+}

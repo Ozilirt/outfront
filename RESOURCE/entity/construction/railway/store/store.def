@@ -1,0 +1,64 @@
+{construction
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "store.mdl"}
+	{props "cornered" "concrete" "windowed" "parts" "construction" "wall"}
+
+	{Volume "roof"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "roof3"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "roof2"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "roof1"
+		{Thickness 20}
+		{able {visible 0}}
+	}
+
+	{Volume "post1"
+		{Thickness 20}
+	}
+	{Volume "post"
+		{Thickness 20}
+	}
+	{Volume "door"
+		{Thickness 5}
+	}
+
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}{obstacle 0}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {holed}}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 50}
+	}
+
+	{Volume "window1"
+		{able {visible 0} {window}}
+		{thickness 0.1}
+	}
+	{Volume "Hole1"
+		{able clear {hole}}
+	}
+}

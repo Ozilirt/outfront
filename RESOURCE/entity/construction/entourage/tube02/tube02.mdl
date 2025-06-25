@@ -1,0 +1,23 @@
+;Exported by: ubrashaev
+;Date:        Fri Sep 10 14:28:31 2004
+;File:        D:\-Projects-\-work-\3d\industrial\tube.max
+{Skeleton
+	{bone "tube02"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "tube02.ply"}
+	}
+}
+{Volume "body"
+	{Cylinder 11.131 67.2}
+	{Bone "tube02"}
+	{Matrix34
+		-0.0000	0.0000	-1.0000
+		0.0000	1.0000	0.0000
+		1.0000	0.0000	-0.0000
+		0.2414	0.0988	15.2423
+	}
+}

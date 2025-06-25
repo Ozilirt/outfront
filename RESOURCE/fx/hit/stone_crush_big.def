@@ -1,0 +1,282 @@
+{fx 
+    {sound "death.crush"}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 80 }
+			{EmissionArea 
+				{radius 18 }
+				{alpha0 0 }
+				{alpha1 90 }
+			}
+			{ParticleInit 
+				{Speed 2 2 }
+				{Lifetime 2 0.5 }
+			}
+			{AxisZ }
+			{StartParticles 10 }
+			{TimeToLive 1.4 }
+		}
+		{Mover 
+			{Gravity 
+				{Value -0.02 }
+			}
+			{Damping 0.975 }
+			{Collisions 
+				{Terrain }
+				{Restitution 0.4 }
+			}
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "/FX/_BMP/Smoke/SmokeSmal10ANM.ebm" 
+						{Scale
+							{Linear 
+								{min 1.5 0.2 }
+								{max 4.5 1 }
+							}
+						}
+						{Visibility 
+							{Linear 
+								{min 0.4 }
+								{max 0 }
+							}
+						}
+						{Turn 
+							{Linear 
+								{min 10 20 }
+								{max 90 15 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{preTurn 0 90 }
+				}
+				{Sprite "/FX/_BMP/Smoke/smokesmal4a.ebm" 
+						{Scale
+							{Linear 
+								{min 1.6 0.2 }
+								{max 5 1 }
+							}
+						}
+						{Visibility 
+							{Linear 
+								{min 1 }
+								{max 0 }
+							}
+						}
+						{Turn 
+							{Linear 
+								{min 100 20 }
+								{max 10 15 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+				}
+				{Sprite "/FX/_BMP/Smoke/SmokeSmal10ANM.ebm" 
+						{Scale
+							{Linear 
+								{min 1.6 0.3 }
+								{max 5 1 }
+							}
+						}
+						{Visibility 
+							{Linear 
+								{min 0.4 }
+								{max 0 }
+							}
+						}
+						{Turn 
+							{Linear 
+								{min 100 20 }
+								{max 10 15 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+				}
+			}
+		}
+		{NotifyOwner }
+	}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 20 }
+			{EmissionArea 
+				{radius 15 15 }
+				{alpha0 30 }
+				{alpha1 70 }
+			}
+			{ParticleInit 
+				{Speed 3 3 }
+				{Lifetime 2 0.4 }
+			}
+			{AxisZ }
+			{StartParticles 20 }
+			{TimeToLive 0.1 }
+		}
+		{Mover 
+			{Gravity 
+				{Value 0.2 }
+			}
+			{Damping 0.985 }
+			{Collisions 
+				{Terrain }
+				{Restitution 0.5 }
+			}
+		}
+		{Visualizer 
+			{Stage initial 
+				{Sprite "/FX/_BMP/Particle/flinders2.ebm" 
+						{Turn 
+							{Power 
+								{min 90 30 }
+								{max 360 90 }
+								{pow 1.2 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Scale 0.3 0.2 }
+				}
+				{Sprite "/FX/_BMP/Particle/flinders.ebm" 
+						{Turn 
+							{Power 
+								{min 90 30 }
+								{max 90 360 }
+								{pow 1.3 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Scale 0.3 0.2 }
+				}
+				{Sprite "/FX/_BMP/Particle/flinders4.ebm" 
+						{Turn 
+							{Power 
+								{min 90 30 }
+								{max 90 360 }
+								{pow 1.3 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Scale 0.3 0.2 }
+				}
+				{Sprite "/FX/_BMP/Particle/flinders5.ebm" 
+						{Turn 
+							{Power 
+								{min 90 30 }
+								{max 90 360 }
+								{pow 1.3 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Scale 0.3 0.1 }
+				}
+			}
+			{Stage collided dying 
+				{Sprite "/FX/_BMP/Particle/flinders2.ebm" 
+					{Scale 0.4 0.2 }
+					{Turn 90 45 }
+				}
+				{flags KillParticle Ground }
+				{Sprite "/FX/_BMP/Particle/flinders4.ebm" 
+					{Scale 0.4 0.2 }
+					{preTurn 120 60 }
+				}
+				{Sprite "/FX/_BMP/Particle/flinders5.ebm" 
+					{Scale 0.4 0.2 }
+					{preTurn 120 60 }
+				}
+			}
+		}
+		{NotifyOwner }
+	}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 15 }
+			{EmissionArea 
+				{radius 20 20 }
+				{alpha0 40 }
+				{alpha1 80 }
+			}
+			{ParticleInit 
+				{Speed 3 3 }
+				{Lifetime 2 0.8 }
+			}
+			{AxisZ }
+			{StartParticles 20 }
+			{TimeToLive 0.1 }
+		}
+		{Mover 
+			{Gravity 
+				{Value 0.18 }
+			}
+			{Damping 0.96 }
+			{Collisions 
+				{Terrain }
+				{Restitution 0.5 }
+			}
+		}
+		{Visualizer 
+			{Stage initial 
+				{Sprite "/FX/_BMP/Particle/flinders5.ebm" 
+						{Turn 
+							{Power 
+								{min 90 30 }
+								{max 360 90 }
+								{pow 1.2 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Scale 0.3 0.1 }
+				}
+				{Sprite "/FX/_BMP/Particle/flinders3.ebm" 
+						{Turn 
+							{Power 
+								{min 90 30 }
+								{max 90 360 }
+								{pow 1.3 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration -1 }
+						}
+						{Scale 0.4 0.2 }
+				}
+			}
+			{Stage collided dying 
+				{Sprite "/FX/_BMP/Particle/flinders5.ebm" 
+					{Scale 0.4 0.2 }
+					{preTurn 120 60 }
+				}
+				{flags KillParticle Ground }
+				{Sprite "/FX/_BMP/Particle/flinders3.ebm" 
+					{Scale 0.4 0.2 }
+					{preTurn 120 60 }
+				}
+			}
+		}
+		{NotifyOwner }
+	}
+}

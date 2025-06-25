@@ -1,0 +1,24 @@
+{Skeleton
+	{animation
+		{sequence {name "crush2"} {file "crush2.anm"}}
+	}
+	{bone "post_railway"
+		{parameters "CommonMesh;"}
+		{Orientation
+			-0.7071	0.7071	0.0000
+			0.7071	0.7071	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "post_railway.ply"}
+	}
+}
+{Volume "body"
+	{Box 5.774 26.4026 144.944}
+	{Bone "post_railway"}
+		{Matrix34
+			0.0000	-1.0000	-0.0000
+			1.0000	0.0000	0.0000
+			-0.0000	0.0000	1.0000
+			-0.1783	0.5484	70.9137
+		}
+}

@@ -1,0 +1,30 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.3) sy(0.9) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "stuff3.mdl"}
+	{props "construction" "parts" "small" "wood" "no_destroyed_stamp" "disable_area"}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+		{"4" "4"}
+		{"5" "5"}
+		{"6" "6"}
+		{"7" "7"}
+		{"8" "8"}
+		{"9" "9"}
+		{"10" "10"}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 20}
+	}
+}

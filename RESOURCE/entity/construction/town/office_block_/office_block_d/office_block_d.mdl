@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Mon Dec 29 15:40:53 2003
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\D703~1\Административное здание.max
+{Skeleton
+	{bone "Door"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Door.ply"}
+	}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center 0 0}
+		{Extent 14.7638 0.82559}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 1.65118 29.5276 39.7638}
+	{Bone "Door"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0000	-0.0000	19.8819
+	}
+}

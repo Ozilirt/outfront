@@ -1,0 +1,5 @@
+$qtick 20
+
+thread	quant	period	$qtick	20	priority 6
+thread	clock	period	10		10	priority 1
+thread	render	period	20		1	priority 0

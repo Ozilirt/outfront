@@ -1,0 +1,29 @@
+{construction
+	(include "/properties/construction.inc")
+	{Extension "Crossing_gate.mdl"}
+	{props "wood" "fence"}
+	{volume	"body"
+		{thickness	5}
+	}
+
+;		{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/fence.ebm"
+;  			{PrescaleX 1.6 }
+;  			{PrescaleY 0.5}
+;			{Visibility 0.5}
+;			{PreshiftX 0}
+;			{PreshiftY -40}
+;			{Preturn 90}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+;
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

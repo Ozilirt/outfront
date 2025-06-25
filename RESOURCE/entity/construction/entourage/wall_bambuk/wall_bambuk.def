@@ -1,0 +1,21 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/entourage.inc" sx(1.2) sy(1.9) pturn(0) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+	{Extension "wall_bambuk.mdl"}
+	{props "one" "staged" "wood" "construction" "disable_area" "no_destroyed_stamp"}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 1}
+		{able {visible 1}}
+   	}
+	{Volume "fire0"
+		{Tags  "body"}
+	}
+
+    ("declare_fire_volumes")
+}

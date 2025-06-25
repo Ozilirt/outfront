@@ -1,0 +1,145 @@
+;Exported by: vic
+;Date:        Wed Nov 19 17:42:16 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall4a_xx.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "house_euro2_corner3_x"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro2_corner3_x.ply"}
+		{bone "piece0"
+			{Position 15.6712	28.3638	73.4899}
+			{VolumeView "piece0.ply"}
+			{bone "sub_piece2"
+				{Position 19.6839	0.0000	37.7137}
+				{VolumeView "sub_piece2.ply"}
+			}
+			{bone "sub_piece1"
+				{Position -10.2011	0.0000	52.5034}
+				{VolumeView "sub_piece1.ply"}
+			}
+			{bone "sub_piece0"
+				{Position -14.7482	0.0000	31.8516}
+				{VolumeView "sub_piece0.ply"}
+			}
+		}
+		{bone "piece1"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				1.0000	0.0000	-0.0000
+				37.4484	10.8168	37.4212
+			}
+			{VolumeView "piece1.ply"}
+			{bone "sub_piece5"
+				{Position 2.8234	25.3404	-0.0000}
+				{VolumeView "sub_piece5.ply"}
+			}
+			{bone "sub_piece4"
+				{Position -18.9981	22.3055	-0.0000}
+				{VolumeView "sub_piece4.ply"}
+			}
+			{bone "sub_piece3"
+				{Position -24.9032	-0.9738	-0.0000}
+				{VolumeView "sub_piece3.ply"}
+			}
+		}
+	}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center 36.4519 -28.2381}
+		{Extent 6.08584 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1_vol"
+	{Obb2
+		{Center 20.2536 -28.2381}
+		{Extent 11.198 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body2"
+	{Box 5.90551 53.6224 23.622}
+	{Bone "house_euro2_corner3_x"}
+	{Position 37.4663	-2.2799	11.8110}
+}
+{Volume "Body"
+	{Box 12.1717 9.84252 57.0617}
+	{Bone "house_euro2_corner3_x"}
+	{Position 36.4519	28.2381	28.5309}
+}
+{Volume "Body1"
+	{Box 22.3959 9.84252 25.5906}
+	{Bone "house_euro2_corner3_x"}
+	{Position 20.2536	28.2381	12.7953}
+}
+{Volume "piece1"
+	{Box 5.90551 23.9446 29.1573}
+	{Bone "piece1"}
+	{Matrix34
+		-0.0000	0.0000	1.0000
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	-0.0000
+		0.5316	-0.7005	0.0179
+	}
+}
+{Volume "sub_piece3"
+	{Box 5.90551 24.9563 25.0071}
+	{Bone "sub_piece3"}
+	{Matrix34
+		-0.0000	0.0000	1.0000
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	-0.0000
+		0.3518	-0.7827	0.0179
+	}
+}
+{Volume "sub_piece4"
+	{Box 5.90551 20.2349 24.6751}
+	{Bone "sub_piece4"}
+	{Matrix34
+		-0.0000	0.0000	1.0000
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	-0.0000
+		2.1159	2.6026	0.0169
+	}
+}
+{Volume "sub_piece5"
+	{Box 5.90551 13.8272 22.134}
+	{Bone "sub_piece5"}
+	{Matrix34
+		-0.0000	0.0000	1.0000
+		1.0000	-0.0000	0.0000
+		0.0000	1.0000	-0.0000
+		2.2744	0.4224	0.0179
+	}
+}
+{Volume "piece0"
+	{Box 33.7466 9.84252 35.1477}
+	{Bone "piece0"}
+	{Position 7.3450	0.0322	-0.3444}
+}
+{Volume "sub_piece0"
+	{Box 19.6527 9.84252 29.4558}
+	{Bone "sub_piece0"}
+	{Position 0.0038	0.0194	0.0026}
+}
+{Volume "sub_piece1"
+	{Box 58.8752 9.84252 11.8108}
+	{Bone "sub_piece1"}
+	{Position -3.4341	0.0194	0.0064}
+}
+{Volume "sub_piece2"
+	{Box 9.38591 9.84252 31.7326}
+	{Bone "sub_piece2"}
+	{Position 0.1052	-0.1257	-4.7139}
+}

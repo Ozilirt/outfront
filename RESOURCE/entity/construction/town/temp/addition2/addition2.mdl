@@ -1,0 +1,44 @@
+;Exported by: shevchenko
+;Date:        Mon May 17 11:42:03 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\addition.max
+{Skeleton
+	{bone "addition2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "addition2.ply"}
+	}
+}
+{Obstacle "Body2"
+	{Obb2
+		{Center -27.4483 -26.5648}
+		{Extent 3.88162 2.99563}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center -22.6045 19.309}
+		{Extent 8.75185 4.03533}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body2"
+	{Box 7.76325 5.99126 57.695}
+	{Bone "addition2"}
+	{Position -27.4483	26.5648	28.8475}
+}
+{Volume "Body"
+	{Box 61.4721 58.7298 7.50035}
+	{Bone "addition2"}
+	{Position -0.2943	-0.0011	61.3716}
+}
+{Volume "Body1"
+	{Box 17.5037 8.07067 57.695}
+	{Bone "addition2"}
+	{Position -22.6045	-19.3090	28.8475}
+}

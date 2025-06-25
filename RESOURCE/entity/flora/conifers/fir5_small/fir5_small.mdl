@@ -1,0 +1,27 @@
+;Exported by: sat
+;Date:        Fri Aug 27 18:31:57 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\fir5_small.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "fir5_small"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fir5_small.ply"}
+	}
+}
+{Volume "crown"
+	{Box 37.9468 37.9133 73.449}
+	{Bone "fir5_small"}
+	{Position -1.5900	-0.7237	36.7245}
+}
+{Volume "bole"
+	{Box 4.5372 4.53022 86.11}
+	{Bone "fir5_small"}
+	{Position -0.8157	-2.0663	43.0550}
+}

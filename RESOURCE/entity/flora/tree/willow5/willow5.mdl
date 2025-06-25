@@ -1,0 +1,31 @@
+{Skeleton
+	{animation
+		{sequence {name "stir"} {file "stir.anm"}}
+	}
+	{bone "willow"
+		{parameters "CommonMesh;"}
+		{Orientation
+			0.9976	0.0000	0.0698
+			0.0049	-0.9976	-0.0696
+			-0.0696	-0.0698	0.9951
+		}
+		{VolumeView "willow.ply"}
+	}
+}
+
+{Volume "bole"
+	{Cylinder 4.16964 112.771}
+	{Bone "willow"}
+	{Matrix34
+		0.9976	0.0049	-0.0696
+		-0.0000	0.9976	0.0698
+		0.0698	-0.0696	0.9951
+		3.7760	1.6534	58.7122
+	}
+}
+{Volume "crown"
+	{Box 75.8139 60.173 89.2003}
+	{Bone "willow"}
+	{Position -2.6950	-6.7074	73.4258}
+}
+

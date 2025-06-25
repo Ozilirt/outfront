@@ -1,0 +1,49 @@
+;SDL
+
+{boarder
+	{anm "crew"
+		{forward	{begin	""} {end "seat_driver_car"}}
+		{reverse 	{end	"emit_tank_2" 1}}
+	}
+	{anm "passengers"
+		{forward	{begin	""} {end "seat_driver_car"}}
+		{reverse 	{end	"emit_tank_1" 1}}
+	}
+	{anm "passengers1"
+		{forward	{begin	""} {end "seat_driver_car"}}
+		{reverse 	{end	"emit_body" 1}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "%group"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+
+("crew_human" place(driver)		door(emit1) bone(driver)	animation(crew)  group(crew))
+("crew_human" place(commander)	door(emit2) bone(commander)	animation(crew)  group(crew))
+
+("crew_human" place(seat1) 	door(emit3) bone(seat01)	animation(passengers) 	group(passengers))
+("crew_human" place(seat2) 	door(emit4) bone(seat02)	animation(passengers1)	group(passengers))
+("crew_human" place(seat3) 	door(emit3) bone(seat03)	animation(passengers)	group(passengers))
+("crew_human" place(seat4) 	door(emit4) bone(seat04)	animation(passengers1)	group(passengers))
+("crew_human" place(seat5) 	door(emit3) bone(seat05)	animation(passengers)	group(passengers))
+("crew_human" place(seat6) 	door(emit4) bone(seat06)	animation(passengers)	group(passengers))
+("crew_human" place(seat7) 	door(emit3) bone(seat07)	animation(passengers1)	group(passengers))
+("crew_human" place(seat8) 	door(emit4) bone(seat08)	animation(passengers1)	group(passengers))
+("crew_human" place(seat9) 	door(emit3) bone(seat09)	animation(passengers)	group(passengers))
+
+("crew_human" place(seat10) 	door(emit4) bone(seat10)	animation(passengers1)	group(passengers))
+("crew_human" place(seat11) 	door(emit3) bone(seat11)	animation(passengers) 	group(passengers))
+("crew_human" place(seat12) 	door(emit4) bone(seat12)	animation(passengers1)	group(passengers))
+("crew_human" place(seat13) 	door(emit3) bone(seat13)	animation(passengers1)	group(passengers))
+("crew_human" place(seat14) 	door(emit4) bone(seat14)	animation(passengers)	group(passengers))
+("crew_human" place(seat15) 	door(emit3) bone(seat15)	animation(passengers1)	group(passengers))
+("crew_human" place(seat16) 	door(emit4) bone(seat16)	animation(passengers)	group(passengers))
+("crew_human" place(seat17) 	door(emit3) bone(seat17)	animation(passengers)	group(passengers))
+("crew_human" place(seat18) 	door(emit4) bone(seat18)	animation(passengers1)	group(passengers))

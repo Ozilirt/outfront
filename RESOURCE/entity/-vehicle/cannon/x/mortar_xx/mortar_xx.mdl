@@ -1,0 +1,124 @@
+;Exported by: garry
+;Date:        Wed Feb 18 19:11:16 2004
+;File:        D:\-Projects-\-3DWork-\Model\cannons\coastmortar\mortar_xx_1.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				0.7046	0.9145	4.2288
+			}
+			{VolumeView "Body.ply"}
+			{bone revolute "turret"
+				{parameters "CommonMesh;ID=Turret;"}
+				{Matrix34
+					-1.0000	-0.0000	-0.0000
+					-0.0000	0.0000	1.0000
+					-0.0000	1.0000	-0.0000
+					0.0000	5.5463	-0.0000
+				}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=gun;"}
+					{Matrix34
+						0.9438	-0.0180	-0.3300
+						0.3044	-0.3415	0.8892
+						-0.1287	-0.9397	-0.3169
+						6.5505	-8.4504	38.5911
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "part3"
+						{Position -9.4801	-27.8437	8.2269}
+						{VolumeView "part3.ply"}
+					}
+					{bone "part4"
+						{parameters "ID=gun;"}
+						{Position -4.7632	-14.4421	-0.1731}
+						{VolumeView "part4.ply"}
+					}
+				}
+				{bone "part1"
+					{Position 9.0080	-0.9817	47.4625}
+					{VolumeView "part1.ply"}
+				}
+				{bone "part2"
+					{Position 30.0361	16.8218	21.2175}
+					{VolumeView "part2.ply"}
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 21.8602 8.364}
+	{Bone "Body"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	-0.0000
+		0.0000	-0.0128	0.0000
+	}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Position -1.6180	0.0117	-1.5273}
+}
+{Volume "part2"
+	{Box 3.62619 8.54744 20.8053}
+	{Bone "part2"}
+	{Matrix34
+		0.9489	0.0000	0.3156
+		-0.0000	1.0000	0.0000
+		-0.3156	-0.0000	0.9489
+		0.4595	0.0961	0.1468
+	}
+}
+{Volume "part1"
+	{Cylinder 3.80514 32.2491}
+	{Bone "part1"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		-0.0000	-0.2303	0.9731
+		-0.0000	0.9731	0.2303
+		-0.0000	0.0000	-0.0000
+	}
+}
+{Volume "gun"
+	{Cylinder 5.06025 145.475}
+	{Bone "part4"}
+	{Matrix34
+		-0.0000	-0.0000	1.0000
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		14.9691	-2.9672	1.7165
+	}
+}
+{Volume "part4"
+	{Cylinder 11.0005 77.7943}
+	{Bone "part4"}
+	{Matrix34
+		-0.0000	-0.0000	1.0000
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		-17.5772	-2.9672	1.7165
+	}
+}
+{Volume "part3"
+	{Cylinder 2.5471 56.1668}
+	{Bone "part3"}
+	{Matrix34
+		-0.0000	-0.0000	1.0000
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.1124	-0.0798	-0.1679
+	}
+}

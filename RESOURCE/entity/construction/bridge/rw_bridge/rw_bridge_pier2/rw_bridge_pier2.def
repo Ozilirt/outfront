@@ -1,0 +1,27 @@
+{game_entity
+	(include "/properties/building.inc")
+	{Extension "RW_bridge_pier2.mdl"}
+	{props "steel"}
+
+	{Volume "body4"
+		{thickness 2}
+		{tags "body"}
+		{able {visible 0}}
+	}
+	{Volume "body3"
+		{thickness 2}
+		{tags "body"}
+		{able {visible 0} {bullet 0}}
+	}
+	{Volume "body2"
+		{thickness 2}
+		{tags "body"}
+		{able {visible 0} {bullet 0}}
+	}
+	{Volume "body1"
+		{thickness 2}
+		{tags "body"}
+		{able {visible 0}}
+	}
+	{mass 50000}
+}

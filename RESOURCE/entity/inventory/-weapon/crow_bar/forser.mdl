@@ -1,0 +1,41 @@
+;Exported by: garry
+;Date:        Thu Feb 12 20:05:19 2004
+;File:        \\TERM\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon1.max
+{Skeleton
+	{bone "forser"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "forser.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-1.0000	-0.0000
+				-0.0000	0.0000	-1.0000
+				-8.4860	0.1049	0.1908
+			}
+		}
+	}
+}
+{Volume "select"
+	{Cylinder 5.25407 15.5051}
+	{Bone "forser"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		0.0000	0.0000	1.0000
+		1.0000	0.0000	-0.0000
+		-3.5096	0.1219	0.1747
+	}
+}
+{Volume "body"
+	{Cylinder 0.695903 11.2786}
+	{Bone "forser"}
+	{Matrix34
+		0.0461	0.9989	0.0000
+		0.0000	-0.0000	1.0000
+		0.9989	-0.0461	-0.0000
+		-3.2531	-0.1383	0.1747
+	}
+}

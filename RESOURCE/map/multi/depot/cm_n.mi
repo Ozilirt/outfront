@@ -1,0 +1,528 @@
+{mission
+	{Camera
+		{Position 938.055 897.751}
+		{Distance 1200}
+		{ViewAngle 0.610865}
+		{YawAngle 2.38184}
+	}
+	{Environment "moon_night"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "crane_m" 0x8001
+		{Position -989.867 1657.35 0}
+		{Turn -50.0014}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "crane_m" 0x8002
+		{Position -1114.63 878.817 0}
+		{Turn 3.36467}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "steam_locomotive" 0x8003
+		{Position 1214.7 591.312 0}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 4}
+		{Chassis
+			{MaxSpeed 3}
+			{Links 5}
+		}
+	}
+	{Entity "tendor" 0x8004
+		{Position 983.476 591.312 0}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 5}
+		{Chassis
+			{Links 4}
+		}
+	}
+	{Entity "platform_can" 0x8006
+		{Position -2220.37 724.862 0}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "tradevan" 0x8007
+		{Position -311.225 591.965 0}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 8}
+		{Chassis
+			{Links 9}
+		}
+	}
+	{Entity "cistern" 0x8008
+		{Position -518.989 591.424 0}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 9}
+		{Chassis
+			{Links 8}
+		}
+	}
+	{Entity "cistern" 0x8009
+		{Position 1315.15 678.215 0}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 10}
+		{Chassis
+			{Links 11}
+		}
+	}
+	{Entity "cistern" 0x800a
+		{Position 1128.98 678.215 0}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 11}
+		{Chassis
+			{Links 10}
+		}
+	}
+	{Entity "boxes1" 0x8000
+		{Position 792.008 1050.02 0}
+		{Turn 45}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "grenade molotov_coctail" 3 {cell 0 0}}
+				{item "grenade m24x5" 4 {cell 2 0}}
+				{item "mine antitank" 7 {cell 4 0}}
+				{item "mg34_tower" {cell 0 4}}
+				{item "ammo mgun" 500 {cell 6 0}}
+			}
+		}
+	}
+	{Entity "boxes1" 0x9000
+		{Position 866.223 1150.87 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bandage" 7 {cell 0 0}}
+				{item "bandage" 3 {cell 2 0}}
+				{item "body_armor" {cell 4 0}}
+				{item "helmet1_rus" {cell 6 0}}
+			}
+		}
+	}
+	{Entity "boxes1" 0x800b
+		{Position 908.562 -1226.57 0}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 25 {cell 4 0}}
+				{item "ammo rifle" 15 {cell 5 0}}
+				{item "ammo rifle" 10 {cell 6 0}}
+				{item "ammo rifle" 10 {cell 5 1}}
+				{item "ammo rifle" 10 {cell 4 1}}
+				{item "ammo rifle" 10 {cell 6 1}}
+				{item "ammo rifle" 10 {cell 6 2}}
+				{item "dynamite" 2 {cell 0 2}}
+				{item "bandage" 4 {cell 2 2}}
+			}
+		}
+	}
+	{Entity "boxes1" 0x800c
+		{Position -1774.03 393.816 0}
+		{Turn 45}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "dynamite" 2 {cell 0 2}}
+				{item "bandage" 4 {cell 2 2}}
+				{item "grenade rpg40" 6 {cell 4 2}}
+				{item "grenade f1" 4 {cell 0 0}}
+				{item "weapon panzershreck" {cell 1 0}}
+				{item "ammo bazooka" 9 {cell 6 0}}
+				{item "ammo bazooka" {cell 6 1}}
+				{item "ammo bazooka" {cell 6 2}}
+				{item "ammo bazooka" {cell 5 3}}
+			}
+		}
+	}
+	{Entity "boxes1" 0x800d
+		{Position -1102.03 327.93 0}
+		{Turn 45}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "dynamite" 2 {cell 0 2}}
+				{item "bandage" 4 {cell 2 2}}
+				{item "grenade rpg40" 6 {cell 4 2}}
+				{item "grenade f1" 4 {cell 0 0}}
+				{item "mine antipersonnel" 5 {cell 6 0}}
+				{item "mine antipersonnel" 10 {cell 4 0}}
+			}
+		}
+	}
+	{Entity "boxes1" 0x800e
+		{Position -1941.03 925.108 0}
+		{Turn 45}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "dynamite" 2 {cell 0 2}}
+				{item "grenade f1" 4 {cell 0 0}}
+				{item "mine antipersonnel" 5 {cell 6 0}}
+				{item "mine antipersonnel" 10 {cell 4 0}}
+				{item "mine_detector" {cell 6 1}}
+				{item "bandage" 4 {cell 2 0}}
+				{item "grenade rpg40" 6 {cell 0 1}}
+				{item "mosin" {cell 2 1}}
+				{item "ammo rifle" 10 {cell 4 3}}
+				{item "ammo rifle" 10 {cell 3 3}}
+				{item "ammo rifle" 10 {cell 2 3}}
+				{item "ammo rifle" 10 {cell 5 3}}
+				{item "ammo rifle" 10 {cell 5 4}}
+				{item "ammo rifle" 10 {cell 4 4}}
+			}
+		}
+	}
+	{Entity "map_point" 0x800f
+		{Position -1315.27 243.751 0}
+		{Turn 91.6719}
+		{Extender "map_point"
+			{"name" "x"}
+			{"caption" "XTeam"}
+			{"visor" "SpawnPoints"}
+			{"teams" "x"}
+			{"unitset" "reg"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "start_point" 0x8010
+		{Position 373.843 -1471.74 -8.27713}
+		{Turn 114.226}
+		{Extender "start_point"
+			{"mapPoint" "x"}
+		}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "start_point" 0x8011
+		{Position -1667.71 -1118.88 -1.88803}
+		{Turn 83.3723}
+		{Extender "start_point"
+			{"mapPoint" "x"}
+		}
+		{Player 0}
+		{MID 13}
+	}
+	{Entity "start_point" 0x8012
+		{Position -1908.3 3165.27 0}
+		{Turn -73.5493}
+		{Extender "start_point"
+			{"mapPoint" "z"}
+		}
+		{Player 0}
+		{MID 14}
+	}
+	{Entity "start_point" 0x8013
+		{Position 495.458 2452.01 0}
+		{Turn -130.787}
+		{Extender "start_point"
+			{"mapPoint" "z"}
+		}
+		{Player 0}
+		{MID 15}
+	}
+	{Entity "map_point" 0x8014
+		{Position -1521.69 1493.74 0}
+		{Turn -77.2718}
+		{Extender "map_point"
+			{"name" "z"}
+			{"caption" "ZTeam"}
+			{"visor" "SpawnPoints"}
+			{"teams" "z"}
+			{"unitset" "reg"}
+		}
+		{Player 0}
+		{MID 16}
+	}
+	{Entity "start_point" 0x8015
+		{Position -713.576 -1308.28 0}
+		{Turn 85.7254}
+		{Extender "start_point"
+			{"mapPoint" "x"}
+		}
+		{Player 0}
+		{MID 17}
+	}
+	{Entity "start_point" 0x8016
+		{Position -509.029 2771.95 0}
+		{Turn -137.513}
+		{Extender "start_point"
+			{"mapPoint" "z"}
+		}
+		{Player 0}
+		{MID 18}
+	}
+	{Entity "start_point" 0x8017
+		{Position -1491.77 -1140.97 -2.90298}
+		{Turn 81.12}
+		{Extender "start_point"
+			{"mapPoint" "dm"}
+		}
+		{Player 0}
+		{MID 20}
+	}
+	{Entity "start_point" 0x8018
+		{Position 470.319 -1442.22 -10}
+		{Turn 108.455}
+		{Extender "start_point"
+			{"mapPoint" "dm"}
+		}
+		{Player 0}
+		{MID 21}
+	}
+	{Entity "start_point" 0x8019
+		{Position 1427.15 -926.939 0}
+		{Turn 131.836}
+		{Extender "start_point"
+			{"mapPoint" "dm"}
+		}
+		{Player 0}
+		{MID 22}
+	}
+	{Entity "start_point" 0x801a
+		{Position -2341.14 -1210.17 26.2792}
+		{Turn 79.9428}
+		{Extender "start_point"
+			{"mapPoint" "dm"}
+		}
+		{Player 0}
+		{MID 23}
+	}
+	{Entity "start_point" 0x801b
+		{Position -2006.6 3191.81 0}
+		{Turn -73.2403}
+		{Extender "start_point"
+			{"mapPoint" "dm"}
+		}
+		{Player 0}
+		{MID 24}
+	}
+	{Entity "start_point" 0x801c
+		{Position -884.372 3254.38 0}
+		{Turn -116.007}
+		{Extender "start_point"
+			{"mapPoint" "dm"}
+		}
+		{Player 0}
+		{MID 25}
+	}
+	{Entity "start_point" 0x801d
+		{Position -377.028 2414.16 -1.98969}
+		{Turn -121.884}
+		{Extender "start_point"
+			{"mapPoint" "dm"}
+		}
+		{Player 0}
+		{MID 26}
+	}
+	{Entity "start_point" 0x801e
+		{Position 580.641 2318.05 0}
+		{Turn -125.57}
+		{Extender "start_point"
+			{"mapPoint" "dm"}
+		}
+		{Player 0}
+		{MID 27}
+	}
+	{Entity "birds" 0x9001
+		{Position -2924.92 -711.731 1}
+		{Extender "speaker"
+			{SoundName "world.birds01"}
+		}
+	}
+	{Entity "birds" 0x9002
+		{Position 860.845 -1453.9 2}
+		{Extender "speaker"
+			{SoundName "world.chepel"}
+		}
+	}
+	{Entity "birds" 0x9003
+		{Position 1294.79 1908.07 -7.328}
+		{Extender "speaker"
+			{SoundName "world.birds03"}
+		}
+	}
+	{Entity "birds" 0x8005
+		{Position -3110.88 2589.52 0}
+		{Extender "speaker"
+			{SoundName "world.birds02"}
+		}
+	}
+	{Entity "camp_fire2" 0x801f
+		{Position 1249.53 838.315 0}
+	}
+	{Entity "camp_fire2" 0x8020
+		{Position 1205.94 1238.53 0}
+	}
+	{Entity "camp_fire2" 0x8021
+		{Position -1597.59 1378.47 0}
+	}
+	{Entity "camp_fire2" 0x8022
+		{Position -2578.88 803.435 0}
+	}
+	{Entity "camp_fire2" 0x8023
+		{Position -2601.1 514.397 0}
+	}
+	{Entity "camp_fire2" 0x8024
+		{Position -1488.11 240.851 0}
+	}
+	{Entity "camp_fire2" 0x8025
+		{Position -1110.77 651.758 0}
+	}
+	{Entity "camp_fire2" 0x8026
+		{Position 828.179 -1273.35 0}
+	}
+	{Entity "camp_fire2" 0x8027
+		{Position 1137.7 -1148.55 0}
+	}
+	{Entity "camp_fire2" 0x8028
+		{Position 1425.6 -2068.45 0}
+	}
+	{Entity "camp_fire" 0x8029
+		{Position -1520.1 -1140.72 -3}
+	}
+	{Entity "camp_fire" 0x802a
+		{Position -1335.1 -1118.48 -0.51004}
+	}
+	{Entity "camp_fire" 0x802b
+		{Position -1436.24 -996.063 1.78729}
+	}
+	{Entity "camp_fire2" 0x802c
+		{Position -1153.08 3021.67 -7.57645}
+	}
+	{Entity "camp_fire" 0x802d
+		{Position -450.13 3134.31 0}
+	}
+	{Entity "camp_fire" 0x802e
+		{Position 572.272 3077.82 0}
+	}
+	{Entity "camp_fire2" 0x802f
+		{Position -548.183 108.961 0}
+	}
+	{Entity "camp_fire2" 0x8030
+		{Position -629.894 2059.81 0}
+	}
+	{Brain 0x8001
+		{HoldFire}
+	}
+	{Brain 0x8002
+		{HoldFire}
+	}
+	{Brain 0x8003
+		{HoldFire}
+	}
+	{Brain 0x8004
+		{HoldFire}
+	}
+	{Brain 0x8006
+		{HoldFire}
+	}
+	{Brain 0x8007
+		{HoldFire}
+	}
+	{Brain 0x8008
+		{HoldFire}
+	}
+	{Brain 0x8009
+		{HoldFire}
+	}
+	{Brain 0x800a
+		{HoldFire}
+	}
+	{Tags 0x553 "burned"}
+	{Helpers
+		{trigger "111"
+			{actions
+				{"task"
+					{"name" "1111"}
+				}
+			}
+		}
+		{waypoints
+		}
+		{task
+			{"name" "1111"}
+			{"desc" "mission/mp/dm16/pr1"}
+			{"primary"}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

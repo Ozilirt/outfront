@@ -1,0 +1,61 @@
+;Exported by: shevchenko
+;Date:        Sat Apr 24 14:23:37 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\dot_new.max
+{Skeleton
+	{bone "dot2a_3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "dot2a_3.ply"}
+		{bone "exterior"
+			{Position 7.0906	7.0238	61.3502}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 3.7077 -4.23853}
+		{Extent 35.6754 30.4967}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -37.8234 3.61096}
+		{Extent 5.68385 34.5586}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -10.3601 32.0728}
+		{Extent 33.2199 5.68385}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Box 86.4095 72.7262 9.63451}
+	{Bone "exterior"}
+	{Position -7.8122	-8.7536	-0.8980}
+}
+{Volume "body2"
+	{Box 69.1173 11.3677 55.1181}
+	{Bone "dot2a_3"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-37.8234	-3.6110	27.5591
+	}
+}
+{Volume "body1"
+	{Box 66.4398 11.3677 55.1181}
+	{Bone "dot2a_3"}
+	{Position -10.3601	-32.0728	27.5591}
+}

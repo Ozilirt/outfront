@@ -1,0 +1,33 @@
+;Exported by: vic
+;Date:        Mon Nov 17 18:33:46 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall4a_x.max
+{Skeleton
+	{bone "house_euro2_wall5"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro2_wall5.ply"}
+	}
+}
+{Volume "Hole_1"
+	{Box 21.6535 19.685 29.5276}
+	{Bone "house_euro2_wall5"}
+	{Position -28.7529	-1.3640	40.4359}
+}
+{Volume "Body"
+	{Polyhedron "Body.vol"}
+	{Bone "house_euro2_wall5"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		2.0215	3.3713	48.8215
+	}
+}
+{Volume "Hole_2"
+	{Box 19.685 19.685 29.5276}
+	{Bone "house_euro2_wall5"}
+	{Position 11.5438	-1.3640	40.4359}
+}

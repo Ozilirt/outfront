@@ -1,0 +1,61 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{colliderId "mine_ap"}
+	{Extension "wires2.mdl"}
+	{props "steel" "shed" "wire"}
+	{volume	"body"
+		{thickness 30}
+		{able {bullet 0} {visible 0} {obstacle 0}}
+	}
+	{Volume "Body7"
+		{Thickness 2}
+		{able {bullet 0} {visible 0} {obstacle 0}}
+	}
+	{Volume "Body6"
+		{Thickness 2}
+		{able {bullet 0} {visible 0} {obstacle 0}}
+	}
+	{Volume "Body5"
+		{Thickness 2}
+		{able {bullet 0} {visible 0} {obstacle 0}}
+	}
+	{Volume "Body4"
+		{Thickness 2}
+		{able {bullet 0} {visible 0} {obstacle 0}}
+	}
+	{Volume "Body3"
+		{Thickness 2}
+		{able {bullet 0} {visible 0} {obstacle 0}}
+	}
+	{Volume "Body2"
+		{Thickness 2}
+		{able {bullet 0} {visible 0} {obstacle 0}}
+	}
+	{Volume "Body1"
+		{Thickness 2}
+		{able {bullet 0} {visible 0} {obstacle 0}}
+	}
+	{Volume "Body"
+		{Thickness 2}
+		{able {bullet 0} {visible 0} {obstacle 0}}
+	}
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;	 	{Sprite "/properties/shadow/fence.ebm"
+;			{ScaleX		1.9	}
+;			{ScaleY		1.2	}
+;	   		{shiftX	0	}
+;	   		{shiftY	0	}
+;			{Preturn	0	}
+;			{Visibility	0.4	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;	}
+
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

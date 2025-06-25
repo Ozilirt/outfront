@@ -1,0 +1,22 @@
+{game_entity
+	{extension "/properties/piece.ext"}
+	{simulation {able 1} {state 1}}
+	{constrain none}
+	{props "building_part" "wood" "part"}
+;	{simulatorId "water"}
+	{colliderId "particle.big"}
+	{collideWith  "construction" "vehicle" "armored" "tank" "tree" "bush" "human"}
+	{noContactWith "particle" "human" "bush" "stuff"}
+	{obstacleid "construction"}
+	{mass 100}
+	{DecalView
+		{ownershadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"}
+		{name "shadow"}
+;		{layer groundshadow}
+	}
+	{body
+		{proper body}
+		{permit body}
+	}
+}

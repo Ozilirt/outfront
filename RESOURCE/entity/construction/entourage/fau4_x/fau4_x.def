@@ -1,0 +1,27 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{props "steel" "stone" "construction"}
+	{obstacleID "unbreakable"}
+	{Volume "body"
+		{thickness 1000}
+	}
+
+;	{DecalView
+;	{OwnerShadow stencil 64 64}
+;	{Sprite "/properties/shadow/round2.ebm"
+;  		{PrescaleX 1.4 }
+;  		{PrescaleY 2.5 }
+;		{Visibility 0.65}
+;		{PreshiftX -18}
+;		{PreshiftY -34}
+;	}
+;	{name "shadow"}
+;	{UseDirection}    
+;	{layer groundshadow}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "fau4_x.mdl"}
+}

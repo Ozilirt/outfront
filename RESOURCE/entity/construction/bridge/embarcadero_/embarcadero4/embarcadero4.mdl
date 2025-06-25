@@ -1,0 +1,57 @@
+;Exported by: shevchenko
+;Date:        Thu May 06 13:05:49 2004
+;File:        D:\-Projects-\-3DWork-\sheva\pier1.max
+{Skeleton
+	{bone "embarcadero4"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "embarcadero4.ply"}
+		{bone "pier_land"
+			{parameters "Land;Ground;"}
+			{VolumeView "pier_land.ply" {Ground}}
+		}
+	}
+}
+{Volume "railing2"
+	{Polyhedron "railing2.vol"}
+	{Bone "embarcadero4"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		-0.0000	0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		17.9963	-26.1002	34.4488
+	}
+}
+{Volume "railing1"
+	{Polyhedron "railing1.vol"}
+	{Bone "embarcadero4"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		-0.0000	0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		-15.4822	-26.1002	34.4488
+	}
+}
+{Volume "transition"
+	{Box 39.5156 29.6996 0.97441}
+	{Bone "embarcadero4"}
+	{Position 0.2537	-29.9444	29.0404}
+}
+{Volume "body"
+	{Box 51.3189 55.1181 8.85827}
+	{Bone "embarcadero4"}
+	{Position 0.3653	14.2913	25.0984}
+}
+{Volume "beam2"
+	{Box 3.93701 3.93701 59.0551}
+	{Bone "embarcadero4"}
+	{Position 0.2470	28.0589	-8.8731}
+}
+{Volume "beam1"
+	{Box 3.93701 3.93701 59.0551}
+	{Bone "embarcadero4"}
+	{Position 0.2470	-8.9341	-8.8731}
+}

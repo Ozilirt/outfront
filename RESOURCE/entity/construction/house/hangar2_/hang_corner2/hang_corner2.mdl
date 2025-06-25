@@ -1,0 +1,44 @@
+;Exported by: shevchenko
+;Date:        Thu Apr 15 20:19:52 2004
+;File:        D:\-PROJE~1\-3DWork-\sheva\SK\hangar2.max
+{Skeleton
+	{bone "hang_corner2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hang_corner2.ply"}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 2.31112 54.2791}
+		{Extent 49.3045 4.73154}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 44.8941 -4.0195}
+		{Extent 4.73154 53.7704}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 98.6091 9.46307 68.8976}
+	{Bone "hang_corner2"}
+	{Position 2.3111	-54.2791	34.4488}
+}
+{Volume "body1"
+	{Box 107.541 9.46307 68.8976}
+	{Bone "hang_corner2"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		44.8941	4.0195	34.4488
+	}
+}

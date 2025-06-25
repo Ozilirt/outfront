@@ -1,0 +1,14 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/entourage.inc" sx(0.2) sy(1.3) pturn(0) ofsx(-1.5) ofsy(1))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "bracket_post.mdl"}
+	{props "steel" "parts" "construction" "small" "no_destroyed_stamp"}
+	{Volume "body"
+		{thickness 5}
+		{tags "body"}
+	}
+}

@@ -1,0 +1,27 @@
+{Skeleton
+	{bone "Box04"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	0.0000	1.0000
+			0.0000	1.0000	-0.0000
+		}
+		{VolumeView "Box04.ply"}
+		{bone "barrier"
+			{Position 0.1098	22.4913	1.8602}
+			{VolumeView "barrier.ply"}
+		}
+	}
+}
+
+
+{Volume "body"
+	{Polyhedron "barrier.vol"}
+	{Bone "Box04"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	-1.0000
+		0.0000	1.0000	-0.0000
+		0.1226	24.0311	-40.3638
+	}
+}
+

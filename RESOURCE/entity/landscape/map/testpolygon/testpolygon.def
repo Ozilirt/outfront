@@ -1,0 +1,13 @@
+{game_entity
+	{Skeleton "testpolygon.mdl"}
+	{extension "testpolygon.ext"}
+	{extender "land"
+		{Heightmap "testpolygon.net"}
+		{Boundary
+			{Box2
+				{Origin -1968 -1968}
+				{Destination 1968 1968}
+			}
+		}
+	}
+}

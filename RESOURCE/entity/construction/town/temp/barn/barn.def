@@ -1,0 +1,84 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "concrete" "windowed" "construction" "two" "staged"}
+	{Extension "barn.mdl"}
+
+	{TexMods
+		{"1" "1"}
+	}
+	{volume	"window1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window3"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window4"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{volume	"window5"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+
+	{volume	"roof"
+		{thickness hollow 10}
+		{able {visible 0} {touch 0} {holed}}
+	}
+	{volume	"door"
+		{thickness 4}
+	}
+
+	{volume	"body5"
+		{thickness  10}
+		{able {holed} {touch 0}}
+		{tags "body"}
+	}
+	{volume	"body4"
+		{thickness  10}
+		{able {touch 0}}
+		{tags "body"}
+	}
+	{volume	"body3"
+		{thickness  10}
+		{tags "body"}
+		{able {touch 0}}
+	}
+	{volume	"body2"
+		{thickness  10}
+		{able {holed} {touch 0}}
+		{tags "body"}
+	}
+	{volume	"body1"
+		{thickness  10}
+		{tags "body"}
+		{able {touch 0}}
+	}
+
+	{volume "Hole1"
+		{able clear {hole}}
+	}
+	{volume "Hole2"
+		{able clear {hole}}
+	}
+	{volume "Hole3"
+		{able clear {hole}}
+	}
+	{volume "Hole4"
+		{able clear {hole}}
+	}
+	{volume "Hole5"
+		{able clear {hole}}
+	}
+}

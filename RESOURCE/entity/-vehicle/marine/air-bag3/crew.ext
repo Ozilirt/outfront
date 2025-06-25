@@ -1,0 +1,42 @@
+;SDL
+
+{boarder
+	{anm "passenger"
+		{forward	{begin	"board_rubber_boat"} {end "seat_passenger"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+	{anm "gunner"
+		{forward	{begin	"board_rubber_boat"} {end "seat_gunner_stand"}}
+		{reverse 	{end	"board_rubber_boat" -1}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "crew"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+
+("crew_human" place(seat1)	bone(passenger1) door(emit1)	animation(passenger))
+("crew_human" place(seat2)	bone(passenger2) door(emit2)	animation(passenger))
+("crew_human" place(gunner)	bone(gunner)	 door(emit3)	animation(gunner))
+("crew_human" place(driver)	bone(driver)	 door(emit3)	animation(passenger))
+
+{boarder
+	{door "emit2"}
+	{link "emit2" "seat1" {anm "passenger"} {forward putoff} {reverse puton}}
+	{door "emit1"}
+	{link "emit1" "seat2" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+
+
+{placer
+	{place "driver"		{group "crew"}}
+	{place "gunner"		{group "crew"} {worker charger}}
+	{place "seat1"		{group "crew"}}
+	{place "seat2"		{group "crew"}}
+}

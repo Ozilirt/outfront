@@ -1,0 +1,39 @@
+;Exported by: vic
+;Date:        Tue Jan 06 17:30:57 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\minen_tab.max
+{Skeleton
+	{bone "mine_tablet"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "mine_tablet.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -0.497884 -0.0112238}
+		{Extent 0.295276 6.88976}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.302331 0.165269}
+		{Extent 0.492126 0.492126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 0.590551 13.7795 7.35068}
+	{Bone "mine_tablet"}
+	{Position -0.4979	0.0112	15.6662}
+}
+{Volume "body"
+	{Box 0.984252 0.984252 19.685}
+	{Bone "mine_tablet"}
+	{Position 0.3023	-0.1653	9.8425}
+}

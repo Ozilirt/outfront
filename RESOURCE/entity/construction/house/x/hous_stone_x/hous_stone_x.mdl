@@ -1,0 +1,27 @@
+;Exported by: sk
+;Date:        Wed Aug 20 13:27:33 2003
+
+{Skeleton
+	{animation
+		{sequence {name "crush1"} {file "crush1.anm"} {duration percent 40}}
+		{sequence {name "crush2"} {file "crush2.anm"} {duration percent 40}}
+	}
+	{bone "hous_stone"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hous_stone.ply"}
+		{bone "FX_dust2"
+			{Position 3.0651	-11.7517	22.2216}
+		}
+		{bone "FX_fire2"
+			{Position -19.2974	-8.5297	12.2211}
+		}
+		{bone "FX_smoke2"
+			{Position -21.0553	10.3152	12.2211}
+		}
+	}
+}

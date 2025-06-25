@@ -1,0 +1,72 @@
+;Exported by: sk
+;Date:        Sun May 16 16:13:09 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Monastery\hidden_door.max
+{Skeleton
+	{bone "wall8"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall8.ply"}
+	}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -0.560638 0.750097}
+		{Extent 6.01693 6.65561}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 52.1701 -2.86102e-006}
+		{Extent 26.5701 5.90551}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -53.4848 0.00302219}
+		{Extent 25.5688 6.22583}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "hole3"
+	{Box 15.748 26.0622 33.4646}
+	{Bone "wall8"}
+	{Position 55.1181	-0.0794	81.6929}
+}
+{Volume "hole2"
+	{Box 19.0551 28.2709 35.8785}
+	{Bone "wall8"}
+	{Position 15.4676	1.2130	82.8999}
+}
+{Volume "hole1"
+	{Box 19.0551 28.4917 35.8785}
+	{Bone "wall8"}
+	{Position -15.8732	-0.1744	82.8999}
+}
+{Volume "body5"
+	{Box 12.0339 13.3112 38.1663}
+	{Bone "wall8"}
+	{Position -0.5606	-0.7501	19.0469}
+}
+{Volume "body3"
+	{Box 52.3211 13.3112 97.8622}
+	{Bone "wall8"}
+	{Position -0.5606	-0.7501	87.7905}
+}
+{Volume "body2"
+	{Box 53.1402 11.811 118.11}
+	{Bone "wall8"}
+	{Position 52.1701	0.0000	59.0551}
+}
+{Volume "body4"
+	{Polyhedron "body4.vol"}
+	{Bone "wall8"}
+	{Position -3.6950	-0.0030	0.0000}
+}

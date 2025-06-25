@@ -1,0 +1,31 @@
+;Exported by: garry
+;Date:        Tue May 04 17:56:04 2004
+;File:        \\sharepoint\gamedev\DESIGN\-Projects-\-3DWork-\Soldiers\weapons\armed_weapon\weapon1.max
+{Skeleton
+	{bone "knife"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "knife.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-1.0000	-0.0000
+				-0.0000	0.0000	-1.0000
+				0.1783	0.0325	0.0043
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 15.2539 6.77402 3.22395}
+	{Bone "knife"}
+	{Position 3.5869	0.0291	0.1791}
+}
+{Volume "body"
+	{Box 9.77812 1.13658 0.870867}
+	{Bone "knife"}
+	{Position 3.5869	0.0291	0.0590}
+}

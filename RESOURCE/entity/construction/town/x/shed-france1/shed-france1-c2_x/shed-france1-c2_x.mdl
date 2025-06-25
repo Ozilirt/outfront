@@ -1,0 +1,109 @@
+;Exported by: shevchenko
+;Date:        Tue May 18 12:32:44 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\shed-france-x.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.5}}
+	}
+	{bone "w3"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "w3.ply"}
+		{bone "Piece1"
+			{Position -50.8826	-10.0825	46.1938}
+			{VolumeView "Piece1.ply"}
+		}
+		{bone "Piece4"
+			{Position -11.3069	21.3585	40.4355}
+			{VolumeView "Piece4.ply"}
+		}
+		{bone "Piece2"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				1.0000	0.0000	-0.0000
+				-49.7053	-23.8764	82.4638
+			}
+			{VolumeView "Piece2.ply"}
+		}
+		{bone "Piece3"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				0.0000	0.0000	1.0000
+				1.0000	0.0000	-0.0000
+				-49.7052	16.8034	51.5650
+			}
+			{VolumeView "Piece3.ply"}
+		}
+		{bone "Piece5"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				27.2108	21.3991	50.0952
+			}
+			{VolumeView "Piece5.ply"}
+		}
+		{bone "Piece6"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				46.9133	21.3652	29.0122
+			}
+			{VolumeView "Piece6.ply"}
+		}
+		{bone "exterior"
+			{Position 10.8853	0.0071	86.1417}
+		}
+	}
+}
+{Volume "Piece6"
+	{Box 18.8039 31.4548 7.87487}
+	{Bone "Piece6"}
+	{Matrix34
+		0.9397	-0.3420	-0.0000
+		0.3420	0.9397	-0.0000
+		-0.0000	-0.0000	1.0000
+		-0.0000	-1.0762	-0.0000
+	}
+}
+{Volume "Piece5"
+	{Box 28.8039 10.7177 7.87402}
+	{Bone "Piece5"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "Piece3"
+	{Box 13.7684 29.0955 9.84253}
+	{Bone "Piece3"}
+	{Position 1.3751	-0.0000	0.0000}
+}
+{Volume "Piece2"
+	{Box 13.3508 19.4682 9.84251}
+	{Bone "Piece2"}
+	{Matrix34
+		0.8192	-0.5736	0.0000
+		0.5736	0.8192	0.0000
+		0.0000	-0.0000	1.0000
+		-2.0926	-0.4787	0.0000
+	}
+}
+{Volume "Piece4"
+	{Box 44.723 8.5255 33.1429}
+	{Bone "Piece4"}
+	{Position 0.0000	0.0000	1.0556}
+}
+{Volume "Piece1"
+	{Box 12.1972 24.1586 29.9995}
+	{Bone "Piece1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.7660	0.6428
+		0.0000	-0.6428	0.7660
+		0.0000	0.4525	4.3178
+	}
+}

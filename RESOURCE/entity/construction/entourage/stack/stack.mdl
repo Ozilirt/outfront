@@ -1,0 +1,34 @@
+;Exported by: ubrashaev
+;Date:        Wed Jan 14 19:46:26 2004
+;File:        D:\-Projects-\-work-\3d\stog\stog.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.5}}
+	}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Basis.ply"}
+		{bone "locomotive"
+			{Position -0.2447	-0.1936	48.0084}
+		}
+		{bone "stack"
+			{parameters "CommonMesh;"}
+			{Position 2.7373	0.6286	38.4113}
+			{VolumeView "stack.ply"}
+		}
+	}
+}
+{Volume "fire0"
+	{Box 51.7009 47.4308 10.288}
+	{Bone "locomotive"}
+	{Position -1.2173	0.4293	0.0248}
+}
+{Volume "body"
+	{Box 55.8554 42.3489 56.0689}
+	{Bone "Basis"}
+	{Position -1.4620	0.2357	28.2392}
+}

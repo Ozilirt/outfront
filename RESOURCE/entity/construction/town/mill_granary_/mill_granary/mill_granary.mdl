@@ -1,0 +1,50 @@
+;Exported by: sk
+;Date:        Thu Dec 18 18:53:39 2003
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\MILL_W~1.MAX
+{Skeleton
+	{bone "mill_granary"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "mill_granary.ply"}
+		{bone "window4"
+			{Matrix34
+				0.0000	-1.0000	0.0000
+				1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				19.2535	3.9232	60.6298
+			}
+			{VolumeView "window4.ply"}
+		}
+	}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center 19.4424 -3.10458}
+		{Extent 3.93706 29.6211}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body1"
+	{Box 47.3938 3.54331 38.6957}
+	{Bone "mill_granary"}
+	{Matrix34
+		0.0000	1.0000	-0.0000
+		0.0000	-0.0000	1.0000
+		-1.0000	0.0000	0.0000
+		-3.8688	5.1813	46.8501
+	}
+}
+{Volume "Body"
+	{Box 59.2422 7.87402 53.0079}
+	{Bone "mill_granary"}
+	{Matrix34
+		0.0000	1.0000	-0.0000
+		1.0000	-0.0000	-0.0000
+		0.0000	-0.0000	1.0000
+		19.4424	3.1046	26.5039
+	}
+}

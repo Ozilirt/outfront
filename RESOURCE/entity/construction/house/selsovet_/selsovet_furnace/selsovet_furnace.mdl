@@ -1,0 +1,36 @@
+;Exported by: vic
+;Date:        Tue Jan 27 18:48:06 2004
+;File:        D:\-Projects-\Celpo\Selsovet_new.max
+{Skeleton
+	{bone "selsovet_furnace"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "selsovet_furnace.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -0.144409 0.0413322}
+		{Extent 8.62205 17.6868}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 10.8661 10.8661 34.5651}
+	{Bone "selsovet_furnace"}
+	{Position -3.3120	-0.0413	94.8854}
+}
+{Volume "body1"
+	{Box 17.2441 35.3735 27.6521}
+	{Bone "selsovet_furnace"}
+	{Position -0.1444	-0.0413	13.8260}
+}
+{Volume "body"
+	{Box 10.8661 35.3735 49.9274}
+	{Bone "selsovet_furnace"}
+	{Position -3.3120	-0.0413	52.6391}
+}

@@ -1,0 +1,41 @@
+;Exported by: dan
+;Date:        Sat Dec 20 14:03:31 2003
+;File:        D:\-Projects-\-3DWork-\Soldiers\Soldiers for EXP\infantry1_eng.max
+{Skeleton
+	{bone "eng_helm"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	-0.0000
+			-0.0000	-0.0000	1.0000
+		}
+		{VolumeView "eng_helm.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-0.0000	1.0000
+				-0.0000	-1.0000	-0.0000
+				0.2953	-1.1762	3.2772
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 9.84252 9.84252 3.68412}
+	{Bone "eng_helm"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	1.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0631	0.3102	3.7330
+	}
+}
+{Volume "body"
+	{Box 4.43436 4.72417 1.89473}
+	{Bone "eng_helm"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	1.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.1631	0.0493	4.1453
+	}
+}

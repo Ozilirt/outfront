@@ -1,0 +1,37 @@
+{fx 
+	{ParticleView 
+		{Generator 
+			{TotalParticles 30 }
+			{EmissionArea 
+				{radius 1 1 }
+				{alpha0 0 }
+				{alpha1 8 5 }
+			}
+			{ParticleInit 
+				{Speed 3 3 }
+				{Lifetime 0.5 0.2 }
+			}
+		}
+		{Mover 
+			{Gravity 
+				{Value 0.15 }
+			}
+			{Damping 0.97 }
+			{Collisions 
+				{Terrain }
+				{Restitution 0.2 }
+			}
+		}
+		{visualizer 
+			{Stage 
+				{Sprite "/FX/_BMP/Particle/Grit.ebm" 
+					{Scale 0.2 0.15 }
+				}
+				{Sprite "/fx/_BMP/Particle/Grunt4.ebm" 
+					{Scale 0.25 0.15 }
+				}
+			}
+		}
+		{NotifyOwner }
+	}
+}

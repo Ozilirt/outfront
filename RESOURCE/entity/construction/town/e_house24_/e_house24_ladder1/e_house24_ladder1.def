@@ -1,0 +1,35 @@
+{game_entity
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow 128 128}
+	{name "shadow"}
+  }
+	{Extension "e_house24_ladder1.mdl"}
+	{props "cornered" "concrete" "windowed" "parts" "construction"}
+
+	{Volume "Body6"
+		{Thickness 10}
+		{able {visible 0}}				
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body4"
+		{Thickness 10}
+		{able {visible 0}}				
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 10}
+	}
+}

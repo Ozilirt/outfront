@@ -1,0 +1,19 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/entourage.inc" sx(0.35) sy(1.6) pturn(0) ofsx(0) ofsy(-2))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "beam.mdl"}
+	{props "wood" "construction" "one" "staged" "disable_area" "no_destroyed_stamp"}
+	{Volume "beam1"
+		{thickness	4}
+		{tags "body"}
+	}
+	{Volume "beam"
+		{thickness	4}
+		{tags "body"}
+	}
+	("declare_fire_volumes") 	
+}

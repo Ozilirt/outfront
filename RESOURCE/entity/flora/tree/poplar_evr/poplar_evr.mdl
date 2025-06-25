@@ -1,0 +1,27 @@
+;Exported by: sat
+;Date:        Mon Dec 01 16:06:50 2003
+;File:        D:\-Project-\-3DWork-\Poligontrees\poplar_evr.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "poplar"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	-0.0029	-0.0013
+			-0.0029	-1.0000	0.0033
+			0.0013	0.0033	1.0000
+		}
+		{VolumeView "poplar.ply"}
+	}
+}
+{Volume "bole"
+	{Cylinder 3.00683 206.443}
+	{Bone "poplar"}
+	{Position 1.0440	-0.2565	103.1835}
+}
+{Volume "crown"
+	{Box 39.3701 39.3701 157.445}
+	{Bone "poplar"}
+	{Position 2.5947	-0.3461	109.7455}
+}

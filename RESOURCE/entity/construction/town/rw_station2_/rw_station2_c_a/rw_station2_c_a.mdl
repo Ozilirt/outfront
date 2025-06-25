@@ -1,0 +1,184 @@
+;Exported by: ubrashaev
+;Date:        Thu Mar 25 12:47:08 2004
+;File:        D:\-Projects-\-work-\3d\construction\city\rw_station2_a.max
+{Skeleton
+	{bone "rw_station2_c_a"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "rw_station2_c_a.ply"}
+		{bone "window1"
+			{Position -7.4008	-41.8584	107.2154}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.6814	1.4066	3.8655
+				}
+			}
+		}
+		{bone "window2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-38.5942	33.1694	156.4638
+			}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass2"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.3754	-2.1807	3.1086
+				}
+			}
+		}
+		{bone "attach1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-6.6122	-27.8279	72.7080
+			}
+		}
+		{bone "attach2"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				-27.4089	33.3693	138.3476
+			}
+		}
+		{bone "Body6"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				0.0000	1.0000	-0.0000
+				1.7105	-34.0511	70.9064
+			}
+			{visibility 0}
+		}
+		{bone "window1_x"
+			{Position -7.4008	-41.0812	107.2154}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2_x"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-38.1203	33.1694	156.4638
+			}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+	}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center 35.1999 31.9751}
+		{Extent 9.73573 3.88824}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center -21.3414 31.7937}
+		{Extent 18.9125 4.1672}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle03"
+	{Obb2
+		{Center 1.39582 21.5883}
+		{Extent 1.26477 9.68684}
+		{Axis -0.906308 -0.422618}
+	}
+	{Rotate}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center -37.5562 -2.31721}
+		{Extent 3.93702 38.3096}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Hole2"
+	{Box 20.6693 28.3465 37.1457}
+	{Bone "rw_station2_c_a"}
+	{Position 8.0197	-32.8943	18.5159}
+}
+{Volume "Body5"
+	{Box 93.6169 4.96063 100.768}
+	{Bone "rw_station2_c_a"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.5919	-0.8060
+		0.0000	0.8060	0.5919
+		-2.2594	-6.7142	165.7571
+	}
+}
+{Volume "Body4"
+	{Polyhedron "Body4.vol"}
+	{Bone "rw_station2_c_a"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-37.5562	26.7880	145.2346
+	}
+}
+{Volume "Body2"
+	{Box 78.6696 7.87402 72.4948}
+	{Bone "rw_station2_c_a"}
+	{Position -2.2594	-37.7477	106.2906}
+}
+{Volume "Hole1"
+	{Box 13.7795 15.748 21.5064}
+	{Bone "rw_station2_c_a"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-37.6036	33.1632	156.4497
+	}
+}
+{Volume "Hole0"
+	{Box 19.685 15.748 33.4646}
+	{Bone "rw_station2_c_a"}
+	{Position -8.1549	-37.9921	107.2712}
+}
+{Volume "Body1"
+	{Box 76.6192 7.87402 146.439}
+	{Bone "rw_station2_c_a"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-37.5562	2.3172	73.2197
+	}
+}
+{Volume "Body"
+	{Box 86.4501 7.87402 72.4948}
+	{Bone "rw_station2_c_a"}
+	{Position 1.7105	-32.0239	36.2474}
+}
+{Volume "window2"
+	{Box 13.6886 1.33001 21.548}
+	{Bone "window2"}
+	{Position -0.0000	-0.0000	-0.0000}
+}
+{Volume "window1"
+	{Box 19.6065 2.18001 33.527}
+	{Bone "window1"}
+	{Position -0.6340	3.3187	0.0572}
+}

@@ -1,0 +1,41 @@
+;Exported by: ubrashaev
+;Date:        Mon May 17 11:37:53 2004
+;File:        D:\-Projects-\-work-\3d\sk\build-05.max
+{Skeleton
+	{bone "build-05_wall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "build-05_wall.ply"}
+	}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center -0.0569153 0.0542159}
+		{Extent 6.09846 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body1"
+	{Box 9.84252 83.0611 14.4988}
+	{Bone "build-05_wall"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0569	-0.0542	61.9823
+	}
+}
+{Volume "Body"
+	{Box 9.84252 12.1969 65.9038}
+	{Bone "build-05_wall"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0569	-0.0542	32.9519
+	}
+}

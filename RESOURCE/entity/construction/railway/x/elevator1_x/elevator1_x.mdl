@@ -1,0 +1,218 @@
+;Exported by: sk
+;Date:        Mon Sep 27 10:46:01 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\ÆÄ\Elevator\elevator_x(new).max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "elevator1"
+			{Position -1.4831	-20.5770	35.8626}
+			{VolumeView "elevator1.ply"}
+		}
+		{bone "Piece0"
+			{Position 8.0732	-64.9050	95.4722}
+			{VolumeView "Piece0.ply"}
+		}
+		{bone "Piece1"
+			{Position -0.4694	50.5040	95.5116}
+			{VolumeView "Piece1.ply"}
+		}
+		{bone "Piece2"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-13.7914	-82.7538	97.9230
+			}
+			{VolumeView "Piece2.ply"}
+		}
+		{bone "Piece3"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				1.0000	0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				-22.7782	43.7145	99.4492
+			}
+			{VolumeView "Piece3.ply"}
+		}
+		{bone "Piece4"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				1.0000	0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				-22.7782	-47.8436	99.4492
+			}
+			{VolumeView "Piece4.ply"}
+		}
+		{bone "Piece5"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-12.9797	-63.0184	91.3254
+			}
+			{VolumeView "Piece5.ply"}
+		}
+		{bone "Piece6"
+			{Position -0.6950	-104.8899	95.4722}
+			{VolumeView "Piece6.ply"}
+		}
+	}
+}
+{Obstacle "Piece6"
+	{Obb2
+		{Center 8.57228 102.806}
+		{Extent 11.8362 15.4328}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Piece3a"
+	{Obb2
+		{Center -13.8688 -37.9814}
+		{Extent 9.59685 20.8594}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Piece3"
+	{Obb2
+		{Center -22.4171 -44.0094}
+		{Extent 1.15164 30.2683}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Piece2a"
+	{Obb2
+		{Center -13.4867 94.2661}
+		{Extent 10.962 10.7678}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Piece2"
+	{Obb2
+		{Center -22.3127 95.0366}
+		{Extent 0.984245 21.4939}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Piece1"
+	{Obb2
+		{Center 8.16738 -49.0348}
+		{Extent 12.4439 27.492}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Piece0"
+	{Obb2
+		{Center 8.07318 62.4}
+		{Extent 12.5046 30.0887}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Support"
+	{Obb2
+		{Center -0.071682 -0.0608749}
+		{Extent 10.4253 9.40076}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Piece6a"
+	{Box 2.55273 17.9317 35.8901}
+	{Bone "Piece6"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		20.1425	4.2035	0.0000
+	}
+}
+{Volume "Piece6"
+	{Box 23.6723 8.6072 30.8655}
+	{Bone "Piece6"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		9.2672	2.0840	-4.7812
+	}
+}
+{Volume "Piece5"
+	{Box 17.4935 0.61937 42.9369}
+	{Bone "Piece5"}
+	{Position 0.2142	-0.3097	-0.7119}
+}
+{Volume "Piece4"
+	{Box 17.9624 1.7252 46.6248}
+	{Bone "Piece4"}
+	{Position -0.0000	-0.0000	1.4583}
+}
+{Volume "Piece3a"
+	{Box 1.53468 19.1937 41.7187}
+	{Bone "Piece3"}
+	{Position 9.3428	8.9094	5.7331}
+}
+{Volume "Piece3"
+	{Box 21.924 2.30324 60.5366}
+	{Bone "Piece3"}
+	{Position 1.9808	0.3611	-0.2949}
+}
+{Volume "Piece2a"
+	{Box 1.96849 21.924 21.5356}
+	{Bone "Piece2"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		-0.0000	-0.0000	1.0000
+		0.3046	-9.1112	11.5123
+	}
+}
+{Volume "Piece2"
+	{Box 1.96849 21.924 42.9878}
+	{Bone "Piece2"}
+	{Position -8.5214	0.0000	12.2829}
+}
+{Volume "Piece1"
+	{Box 24.8879 6.81403 54.984}
+	{Bone "Piece1"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	-0.0000
+		8.6368	-1.4691	-4.6650
+	}
+}
+{Volume "Piece0"
+	{Box 25.0092 7.55282 60.1775}
+	{Bone "Piece0"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		0.0000	2.5050	-4.8471
+	}
+}
+{Volume "Body"
+	{Box 23.7765 59.8385 8.54496}
+	{Bone "elevator1"}
+	{Position 8.6188	10.8652	54.7114}
+}
+{Volume "Support1"
+	{Box 10.2168 5.45244 77.6814}
+	{Bone "elevator1"}
+	{Position 1.4166	20.6379	11.2858}
+}
+{Volume "Support"
+	{Box 20.8506 18.8015 45.1636}
+	{Bone "elevator1"}
+	{Position 1.4114	20.6379	-49.6739}
+}

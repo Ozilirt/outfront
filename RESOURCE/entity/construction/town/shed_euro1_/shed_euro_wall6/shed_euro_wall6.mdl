@@ -1,0 +1,147 @@
+;Exported by: ubrashaev
+;Date:        Tue May 18 19:08:24 2004
+;File:        D:\-Projects-\-work-\3d\shed_euro1.max
+{Skeleton
+	{bone "shed_euro6"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_euro6.ply"}
+		{bone "window2"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				1.0000	-0.0000	-0.0000
+				0.0000	-0.0000	1.0000
+				-31.2954	-25.2139	33.0081
+			}
+			{VolumeView "window2.ply"}
+			{bone "fx_glass2"
+				{Matrix34
+					-1.0000	0.0000	-0.0000
+					-0.0000	1.0000	-0.0000
+					0.0000	0.0000	1.0000
+					-0.7380	-0.6666	-0.5521
+				}
+			}
+		}
+		{bone "window2_x"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				1.0000	-0.0000	-0.0000
+				0.0000	-0.0000	1.0000
+				-31.2954	-25.6365	33.0081
+			}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+		{bone "attach4"
+			{Matrix34
+				0.0000	-1.0000	-0.0000
+				1.0000	0.0000	0.0000
+				-0.0000	-0.0000	1.0000
+				-31.9620	-6.3385	0.0000
+			}
+		}
+		{bone "exterior"
+			{Position 7.2771	0.0340	76.3237}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "body15"
+	{Obb2
+		{Center 3.45016 13.819}
+		{Extent 2.95276 13.0598}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center 1.85318 -5.20546}
+		{Extent 40.3543 25.5905}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle04"
+	{Obb2
+		{Center 3.45016 13.4762}
+		{Extent 2.95276 12.8575}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body18"
+	{Obb2
+		{Center -21.2616 23.4556}
+		{Extent 21.9103 3.90236}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body16"
+	{Obb2
+		{Center 18.4409 18.5347}
+		{Extent 11.9556 2.95275}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body15"
+	{Box 5.90551 26.1196 45.5162}
+	{Bone "shed_euro6"}
+	{Position 3.4502	-13.8190	22.7120}
+}
+{Volume "roof9"
+	{Box 46.9582 67.7456 2.1964}
+	{Bone "exterior"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.7474	0.6644
+		0.0000	-0.6644	0.7474
+		23.1012	2.1266	-3.3968
+	}
+}
+{Volume "roof10"
+	{Box 44.1407 77.9075 2.1964}
+	{Bone "exterior"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.7474	0.6644
+		0.0000	-0.6644	0.7474
+		-20.6991	-2.8954	1.3297
+	}
+}
+{Volume "window2"
+	{Box 13.8815 1.84128 14.0979}
+	{Bone "window2"}
+	{Matrix34
+		-0.0000	-1.0000	-0.0000
+		-1.0000	0.0000	0.0000
+		-0.0000	0.0000	-1.0000
+		-0.3997	-0.5541	-0.4213
+	}
+}
+{Volume "hole3"
+	{Box 14.8779 20.3183 13.3387}
+	{Bone "shed_euro6"}
+	{Position -31.4845	-23.8022	32.5237}
+}
+{Volume "body18"
+	{Box 43.8207 7.80472 55}
+	{Bone "shed_euro6"}
+	{Position -21.2616	-23.4556	27.5000}
+}
+{Volume "body16"
+	{Box 23.9112 5.90551 49}
+	{Bone "shed_euro6"}
+	{Position 18.4409	-18.5347	24.6545}
+}
+{Volume "body17"
+	{Polyhedron "body17.vol"}
+	{Bone "shed_euro6"}
+	{Position 3.4502	1.2978	0.1553}
+}

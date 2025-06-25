@@ -1,0 +1,35 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{Extension "stack_big2d.mdl"}
+	{props "stack"}
+	{TexMods
+    	{"Autumn" "aut"	  }
+		{"burned" "burned"}
+		{"crushed" "crushed"}		
+	}
+	{volume	"body"
+		{thickness 0.01}
+	}
+	("declare_fire_volumes")
+
+;	{DecalView
+;	{OwnerShadow stencil 64 64}
+;	{Sprite "/properties/shadow/round2.ebm"
+;  		{PrescaleX 7.2 }
+;  		{PrescaleY 2.8 }
+;		{Visibility 0.7}
+;		{PreshiftX -90}
+;		{PreshiftY -45}
+;	}
+;	{name "shadow"}
+;	{UseDirection}    
+;	{layer groundshadow}
+;	}
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+
+
+}
+

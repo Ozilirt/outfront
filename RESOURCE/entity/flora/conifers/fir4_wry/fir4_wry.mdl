@@ -1,0 +1,54 @@
+;Exported by: sat
+;Date:        Mon Mar 22 13:50:53 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\fir4_wry.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "fir4_wry"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fir4_wry.ply"}
+	}
+}
+{Obstacle "obstacle"
+	{Circle2
+		{Radius 3.80862}
+		{Center 0.982415 8.03396e-010}
+	}
+	{Rotate}
+}
+{Volume "bole_vol1"
+	{Cylinder 2.75035 94.435}
+	{Bone "fir4_wry"}
+	{Matrix34
+		0.9842	-0.0069	-0.1768
+		0.0066	1.0000	-0.0024
+		0.1768	0.0012	0.9842
+		40.2686	0.2443	106.6703
+	}
+}
+{Volume "bole"
+	{Cylinder 3.60776 70.0635}
+	{Bone "fir4_wry"}
+	{Matrix34
+		0.8931	-0.0098	-0.4498
+		0.0013	0.9998	-0.0192
+		0.4499	0.0166	0.8929
+		15.3945	-0.3430	29.1402
+	}
+}
+{Volume "crown"
+	{Box 38.4042 40.3209 70.7203}
+	{Bone "fir4_wry"}
+	{Matrix34
+		0.9801	0.0000	-0.1986
+		0.0000	1.0000	0.0000
+		0.1986	0.0000	0.9801
+		49.5560	-0.7019	115.8497
+	}
+}

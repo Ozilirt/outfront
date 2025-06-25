@@ -1,0 +1,22 @@
+;Exported by: sk
+;Date:        Tue Jul 22 17:42:39 2003
+
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush1.anm"}}
+	}
+	{bone "trafficator"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "trafficator.ply"}
+	}
+}
+{Volume "body"
+	{Box 3.08959 3.08535 68.4697}
+	{Bone "trafficator"}
+		{Position -0.0507	-0.0873	34.2349}
+}

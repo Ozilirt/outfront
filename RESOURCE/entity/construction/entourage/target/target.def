@@ -1,0 +1,14 @@
+{actor
+	(include "/properties/construction.inc")
+	(include "/properties/shadow/construction.inc" sx(0.08) sy(0.09) ofsx(0) ofsy(0))
+
+	{Extension "target.mdl"}
+
+	{props "wood" "fence" "animated_crush" "mockup"}
+	{Volume "target"
+		{Thickness 1}
+	}
+	{volume "body"
+		{thickness 1}
+	}
+}

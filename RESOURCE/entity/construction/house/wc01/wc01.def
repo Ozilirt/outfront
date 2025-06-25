@@ -1,0 +1,35 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.3) sy(0.6) ofsx(-6) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "wc01.mdl"}
+	{props "one" "staged" "wood" "construction" "disable_area" "no_destroyed_stamp"}
+
+	{Volume "door"
+		{able {contact 0}}
+		{thickness 5}
+	}
+	{Volume "body"
+		{tags "body" "fire"}
+		{thickness 5}
+	}
+	{volume "seat"
+		{tags "attach" "pan"}
+		{able clear {touch}}
+	}
+
+	{placer
+		{place "pan" {attach  squat_lie} {linkbone "seat"}}
+	}
+	{boarder
+		{anm "enter"
+			{forward	{begin	"board_bigcar"}		{base "open"}}
+			{reverse 	{end	"board_bigcar" -1}	{base "open" -1}}
+		}
+		{door "emit"}
+		{link "emit" "pan" {anm "enter"} {forward putoff} {reverse puton}}
+	}
+}

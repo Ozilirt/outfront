@@ -1,0 +1,284 @@
+{fx
+;	{Sound "explosion.tank"}
+	{ParticleView
+		{EntityGenerator
+			{TotalParticles 3}
+			{EmissionArea
+				{radius 14}
+				{alpha0 0 5}
+				{alpha1 15 10}
+			}
+			{ParticleInit
+				{Speed 12 7}
+				{Lifetime 1.8 1}
+			}
+			{AxisZ}
+			{Entity "#metall1"}
+			{Entity "#metall3"	{fx "smoke_barrel_small"}}
+			{Entity "#metall2"	{fx "smoke_barrel_small"}}
+		}
+	}
+	{ParticleView
+		{Generator
+			{TotalParticles 7}
+			{EmissionArea
+				{radius 15 15}
+				{alpha0 0}
+				{alpha1 90}
+			}
+			{ParticleInit
+				{Speed 7 2}
+				{Lifetime 1.5 0.4}
+			}
+			{AxisZ}
+			{StartParticles 7}
+			{TimeToLive 0.1}
+		}
+		{Mover
+			{Gravity
+				{Value 0.2}
+			}
+			{Damping 0.98}
+			{Collisions
+				{Terrain}
+				{Restitution 0.5}
+			}
+		}
+		{Visualizer
+			{Stage initial
+				{Sprite "/FX/_BMP/Particle/pieces2.ebm"
+					{Turn
+						{Power
+							{min 10 10}
+							{max 90 90}
+							{pow 1.7}
+						}
+					}
+					{Scale 0.15 0.08}
+					{Timer
+						{Mode play}
+						{Duration -1}
+					}
+				}
+				{Sprite "/FX/_BMP/Particle/pieces.ebm"
+					{Turn
+						{Power
+							{min 90 90}
+							{max 0 5}
+							{pow 1.5}
+						}
+					}
+					{Scale 0.15 0.05}
+					{Timer
+						{Mode play}
+						{Duration -1}
+					}
+				}
+			}
+			{Stage collided dying
+				{flags KillParticle Ground}
+				{Sprite "/FX/_BMP/Particle/pieces.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{Scale 0.15 0.05}
+					{Turn 90 45}
+					{Timer
+						{Mode play}
+						{Duration 6}
+					}
+				}
+				{Sprite "/FX/_BMP/Particle/pieces2.ebm"
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+					{Scale 0.15 0.08}
+					{Turn 90 45}
+					{Timer
+						{Mode play}
+						{Duration 6}
+					}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{Generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 5 5}
+				{alpha0 0}
+				{alpha1 90 30}
+			}
+			{ParticleInit
+				{Speed 6 5}
+				{Lifetime 1.5 1.5}
+			}
+			{StartParticles 20}
+			{ParticlesInBlock 20}
+			{TimeToLive 1}
+			{AxisZ}
+		}
+		{Mover
+			{Damping 0.97}
+			{Gravity
+				{Value 0.2}
+			}
+			{Collisions
+				{Terrain}
+				{Restitution 0.5}
+			}
+		}
+		{Visualizer
+			{Stage
+				{Sprite "/FX/_BMP/Particle/Oskolki.ebm"
+					{Scale 0.25 0.1}
+				}
+				{Sprite "/FX/_BMP/Particle/Oskolki2.ebm"
+					{Scale 0.25 0.1}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+;	{ParticleView
+;		{Generator
+;			{TotalParticles 30}
+;			{EmissionArea
+;				{radius 7 7}
+;				{alpha0 0}
+;				{alpha1 60}
+;			}
+;			{ParticleInit
+;				{Speed 2 2}
+;				{Lifetime 1.2 0.4}
+;			}
+;			{AxisZ}
+;			{StartParticles 30}
+;			{TimeToLive 0.1}
+;		}
+;		{Mover
+;			{Gravity
+;				{Value -0.001}
+;			}
+;			{Damping 0.97}
+;			{Collisions
+;				{Terrain}
+;				{Restitution 0.4}
+;			}
+;		}
+;		{Visualizer
+;			{Stage
+;				{Sprite "/FX/_BMP/Smoke/SmokeSmal10ANM.ebm"
+;					{Scale
+;						{Linear
+;							{min 1 0.3}
+;							{max 2.5 1}
+;						}
+;					}
+;					{Visibility
+;						{Linear
+;							{min 0.8}
+;							{max 0}
+;						}
+;					}
+;					{Turn
+;						{Linear
+;							{min 10 20}
+;							{max 90 15}
+;						}
+;					}
+;					{preTurn 0 90}
+;					{Timer
+;						{Mode play}
+;						{Duration 1 0.4}
+;					}
+;				}
+;				{Sprite "/FX/_BMP/Smoke/smokesmal4b.ebm"
+;					{Scale
+;						{Linear
+;							{min 1 0.3}
+;							{max 3 1.5}
+;						}
+;					}
+;					{Visibility
+;						{Linear
+;							{min 0.6}
+;							{max 0}
+;						}
+;					}
+;					{Turn
+;						{Linear
+;							{min 10 20}
+;							{max 90 15}
+;						}
+;					}
+;					{preTurn 0 90}
+;					{Highlight 0x00404040}
+;					{Timer
+;						{Mode play}
+;						{Duration 1 0.4}
+;					}
+;				}
+;				{Sprite "/FX/_BMP/Smoke/SmTankO.ebm"
+;					{Scale
+;						{Linear
+;							{min 1 0.3}
+;							{max 2.5 1}
+;						}
+;					}
+;					{Turn
+;						{Linear
+;							{min 10 20}
+;							{max 90 15}
+;						}
+;					}
+;					{Light
+;						{Linear
+;							{min 1}
+;							{max 0}
+;						}
+;					}
+;					{preTurn 0 90}
+;					{Timer
+;						{Mode play}
+;						{Duration 1 0.4}
+;					}
+;				}
+;				{Sprite "/FX/_BMP/Smoke/smokesmal4b.ebm"
+;					{Scale
+;						{Linear
+;							{min 1 0.3}
+;							{max 3 1.5}
+;						}
+;					}
+;					{Visibility
+;						{Linear
+;							{min 0.6}
+;							{max 0}
+;						}
+;					}
+;					{Turn
+;						{Linear
+;							{min 10 20}
+;							{max 90 15}
+;						}
+;					}
+;					{preTurn 0 90}
+;					{Highlight 0x00404040}
+;					{Timer
+;						{Mode play}
+;						{Duration 1 0.4}
+;					}
+;				}
+;			}
+;		}
+;	}
+}

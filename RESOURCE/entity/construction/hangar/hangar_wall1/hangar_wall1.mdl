@@ -1,0 +1,97 @@
+;Exported by: sk
+;Date:        Wed Jan 14 17:55:33 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Hangar_big\Hangar_big.max
+{Skeleton
+	{bone "hangar_wall1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hangar_wall1.ply"}
+		{bone "window1"
+			{Position -50.4977	2.8821	92.6349}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.9542	-1.1195	7.6493
+				}
+			}
+		}
+		{bone "window2"
+			{Position 0.0429	2.8821	92.6349}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass2"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					1.4096	-1.1195	7.6493
+				}
+			}
+		}
+		{bone "window3"
+			{Position 50.5371	2.8821	92.6349}
+			{VolumeView "window3.ply"}
+			{bone "FX_glass3"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.2645	-1.1195	7.6493
+				}
+			}
+		}
+		{bone "window1_x"
+			{Position -50.4977	3.2758	92.6349}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2_x"
+			{Position 0.0429	3.2137	92.6349}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+		{bone "window3_x"
+			{Position 50.5371	3.2479	92.6349}
+			{visibility 0}
+			{VolumeView "window3_x.ply"}
+		}
+	}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center 0.174538 -3.00647}
+		{Extent 75.7701 3.14961}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "window3"
+	{Box 48.7082 0 48.9215}
+	{Bone "window3"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "window2"
+	{Box 48.7082 0 48.9215}
+	{Bone "window2"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "window1"
+	{Box 48.7082 0 48.9215}
+	{Bone "window1"}
+	{Position -0.0000	0.0000	0.0000}
+}
+{Volume "Body"
+	{Box 7.87402 189.425 84.696}
+	{Bone "hangar_wall1"}
+	{Matrix34
+		0.0000	0.8000	0.0000
+		-0.8000	0.0000	0.0000
+		0.0000	0.0000	0.8000
+		0.1745	3.0065	33.9261
+	}
+}

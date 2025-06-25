@@ -1,0 +1,36 @@
+;Exported by: shevchenko
+;Date:        Fri May 14 20:04:30 2004
+;File:        D:\-Projects-\-3DWork-\sheva\rocks\rocks.max
+{Skeleton
+	{bone "rock"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "rock.ply"}
+	}
+}
+{Obstacle "Obstacle"
+	{Polygon2
+		{Radius 0}
+		{Vertex -11.7915 -12.6266}
+		{Vertex -0.80668 -13.2479}
+		{Vertex 10.4394 -10.1824}
+		{Vertex 15.6251 -2.61477}
+		{Vertex 11.3805 18.3805}
+		{Vertex -1.2202 18.6445}
+		{Vertex -20.9403 -0.652072}
+	}
+	{Rotate}
+}
+{Volume "rock"
+	{Box 28.966 23.634 15.9755}
+	{Bone "rock"}
+	{Matrix34
+		0.8192	-0.5736	0.0000
+		0.5736	0.8192	0.0000
+		0.0000	0.0000	1.0000
+		-1.5371	-1.2180	7.9878
+	}
+}

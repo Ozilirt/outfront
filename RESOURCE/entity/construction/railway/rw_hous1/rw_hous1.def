@@ -1,0 +1,121 @@
+{game_entity
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.85) sy(1.85) ofsx(-4) ofsy(2))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "massive_building" "construction" "wall_piece" "concrete" "windowed"}
+	{Extension "rw_hous1.mdl"}
+
+	{mass 100000000}
+	{TexMods
+		{"v1" "1"}
+	}
+
+	{Volume "wall1"
+		{thickness 10}
+		{tags "body"}
+		{able {holed}}
+	}
+	{Volume "wall2"
+		{thickness 10}
+		{tags "body"}
+		{able {holed}}
+	}
+	{Volume "wall3"
+		{thickness 10}
+		{tags "body"}
+		{able {holed}}
+	}
+	{Volume "wall4"
+		{thickness 10}
+		{tags "body"}
+		{able {holed}}
+	}
+	{Volume "wall5"
+		{thickness 10}
+		{tags "body"}
+	}
+	{Volume "wall6"
+		{thickness 10}
+		{tags "body"}
+		{able {holed}}
+	}
+	{Volume "wall7"
+		{thickness 10}
+		{tags "body"}
+		{able {holed}}
+	}
+	{Volume "wall8"
+		{thickness 10}
+		{tags "body"}
+		{able {holed}}
+	}
+
+	{Volume "window7"
+		{thickness 0.01}
+		{able {visible 0} {window}}
+	}
+	{Volume "window6"
+		{thickness 0.01}
+		{able {visible 0} {window}}
+	}
+	{Volume "window5"
+		{thickness 0.01}
+		{able {visible 0} {window}}
+	}
+	{Volume "window4"
+		{thickness 0.01}
+		{able {visible 0} {window}}
+	}
+	{Volume "window3"
+		{thickness 0.01}
+		{able {visible 0} {window}}
+	}
+	{Volume "window2"
+		{thickness 0.01}
+		{able {visible 0} {window}}
+	}
+	{Volume "window1"
+		{thickness 0.01}
+		{able {visible 0} {window}}
+	}
+
+	{Volume "door"
+		{thickness 5}
+	}
+
+	{Volume "roof"
+		{thickness hollow 10}
+		{able {visible 0}}
+	}
+
+	{Volume "hole1"
+		{able clear {hole} }
+		{tags "cover"}
+	}
+	{Volume "hole2"
+		{able clear {hole} }
+		{tags "cover"}
+	}
+	{Volume "hole3"
+		{able clear {hole} }
+		{tags "cover"}
+	}
+	{Volume "hole4"
+		{able clear {hole} }
+		{tags "cover"}
+	}
+	{Volume "hole5"
+		{able clear {hole} }
+		{tags "cover"}
+	}
+	{Volume "hole6"
+		{able clear {hole} }
+		{tags "cover"}
+	}
+	{Volume "hole7"
+		{able clear {hole} }
+	}
+}

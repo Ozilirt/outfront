@@ -1,0 +1,23 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "e-wall2a.mdl"}
+	{props "cornered" "concrete" "parts" "construction" "wall"}
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+	}
+
+	{Volume "body2"
+		{tags "body"}
+		{thickness 30}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{thickness 30}
+	}
+}

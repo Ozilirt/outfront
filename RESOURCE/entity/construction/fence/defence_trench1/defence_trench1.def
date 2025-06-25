@@ -1,0 +1,18 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.1) sy(1.4) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+;	{obstacleID "unbreakable"}
+;	{constrain zero}
+	{Extension "defence_trench1.mdl"}
+	{props "wood" "sand_bag" "construction" "no_destroyed_stamp"}
+	{volume	"body"
+		{thickness 20}
+		{tags "body"}
+		{tags "climb"}
+		{able {visible 0} {touch}}
+	}
+}

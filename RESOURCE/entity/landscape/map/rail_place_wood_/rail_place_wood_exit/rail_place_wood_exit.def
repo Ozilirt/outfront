@@ -1,0 +1,34 @@
+{game_entity
+	{Extension "rail_place_wood_exit.mdl"}
+	{obstacleid "unbreakable"}
+	{Volume "body3"
+		{thickness 10}
+		{able {visible 0}}
+		{tags "body"}
+	}
+	{Volume "body2"
+		{thickness 10}
+		{able {visible 0}}
+		{tags "body"}
+	}
+	{Volume "body1"
+		{thickness 10}
+		{able {visible 0}}
+		{tags "body"}
+	}
+	{Volume "body"
+		{thickness 10}
+		{able {visible 0}}
+		{tags "body"}
+	}
+	{extender "land"
+		{Heightmap "rail_place_wood_exit.net"}
+		{Boundary
+			{Box2
+				{Origin 14 -139}
+				{Destination 63 -120}
+			}
+		}
+	}
+	{constrain zero}
+}

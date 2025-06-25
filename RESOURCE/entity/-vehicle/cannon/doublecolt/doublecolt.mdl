@@ -1,0 +1,76 @@
+;Exported by: garry
+;Date:        Mon Mar 01 17:42:39 2004
+;File:        D:\-Projects-\-3DWork-\Model\-Marine\MTB_D3\guns.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "turret"
+			{speed 0.0100}
+			{Position 0.0000	-0.0000	-0.0374}
+			{VolumeView "turret.ply"}
+			{bone "gunner"
+				{Matrix34
+					1.0000	0.0000	-0.0013
+					0.0000	1.0000	0.0001
+					0.0013	-0.0001	1.0000
+					-11.8548	-0.0002	8.2780
+				}
+			}
+			{bone revolute "gun_rot"
+				{limits -10.0000 10.0000}
+				{speed 0.0500}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-0.0000	1.0000
+					0.0000	-1.0000	-0.0000
+					6.3130	-0.0000	23.5171
+				}
+				{VolumeView "gun_rot.ply"}
+				{bone "mgun"
+					{parameters "ID=gun;"}
+					{VolumeView "mgun.ply"}
+					{bone "foresight1"
+						{Position 40.5249	0.5931	0.2361}
+					}
+					{bone "shooter00"
+						{Position 28.0759	0.5931	-1.9448}
+					}
+					{bone "shooter01"
+						{Position 28.0759	0.5931	2.6329}
+					}
+				}
+				{bone "Visor"
+					{Matrix34
+						1.0000	0.0018	-0.0002
+						0.0018	-0.9998	-0.0175
+						-0.0002	0.0175	-0.9998
+						6.6125	6.7688	0.0825
+					}
+				}
+			}
+		}
+		{bone "emit"
+			{Position -11.8548	-0.0002	8.2406}
+			{visibility 0}
+		}
+	}
+}
+{Volume "gun"
+	{Box 5.87728 1.21995 27.4273}
+	{Bone "mgun"}
+	{Matrix34
+		-0.0000	0.0000	-1.0000
+		-0.0000	1.0000	0.0000
+		1.0000	0.0000	-0.0000
+		13.8982	0.4850	0.2099
+	}
+}
+{Volume "turret"
+	{Box 10.243 9.24465 15.4093}
+	{Bone "turret"}
+	{Position 7.4282	-0.0294	17.6634}
+}

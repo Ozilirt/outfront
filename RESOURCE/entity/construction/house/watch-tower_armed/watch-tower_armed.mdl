@@ -1,0 +1,160 @@
+;Exported by: shevchenko
+;Date:        Wed Mar 24 17:43:11 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\watch-tower_new.max
+{Skeleton
+	{bone "watch-tower_armed"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "watch-tower_armed.ply"}
+		{bone "Attach"
+			{Position 11.7675	-1.3089	121.3493}
+		}
+		{bone "emit"
+			{parameters "Group=gunner;"}
+			{Position -53.4340	-1.0174	0.0176}
+			{visibility 0}
+		}
+		{bone "node_ladder_bottom"
+			{Position -40.1430	-0.9628	13.7795}
+		}
+		{bone "node_ladder_top"
+			{Position -26.5465	-1.0664	115.2052}
+		}
+	}
+}
+{Obstacle "Obstacle"
+	{Obb2
+		{Center 2.36776 -0.110184}
+		{Extent 35.5597 35.151}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "watch-tower_armed"}
+	{Position 2.7034	0.1272	155.0514}
+}
+{Volume "fire5"
+	{Box 14.5256 2.95276 114.583}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		0.0014	1.0000	-0.0000
+		0.9947	-0.0014	-0.1027
+		0.1027	-0.0001	0.9947
+		-32.7117	-1.4540	57.0395
+	}
+}
+{Volume "fire4"
+	{Box 5.90551 5.90551 107.087}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		-0.0000	0.9962	0.0872
+		-0.9962	0.0076	-0.0868
+		-0.0872	-0.0868	0.9924
+		29.7705	27.2262	54.2833
+	}
+}
+{Volume "fire3"
+	{Box 5.90551 5.90551 107.087}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		0.0000	0.9962	0.0872
+		0.9962	0.0076	-0.0868
+		0.0872	-0.0868	0.9924
+		-25.1284	27.4875	54.2833
+	}
+}
+{Volume "fire2"
+	{Box 5.90551 5.90551 107.087}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		-0.9962	-0.0000	0.0872
+		-0.0076	0.9962	-0.0868
+		0.0868	0.0872	0.9924
+		-25.1284	-26.7945	54.2833
+	}
+}
+{Volume "fire1"
+	{Box 5.90551 5.90551 107.087}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		0.9962	0.0000	0.0872
+		0.0076	0.9962	-0.0868
+		-0.0868	0.0872	0.9924
+		30.2318	-26.8856	54.2833
+	}
+}
+{Volume "fire0"
+	{Box 62.6754 64.215 6.20033}
+	{Bone "watch-tower_armed"}
+	{Position 4.4745	0.1023	116.5576}
+}
+{Volume "body7"
+	{Box 9.52441 38.2186 16.9262}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.9063	23.4248	127.2784
+	}
+}
+{Volume "body6"
+	{Box 9.52441 38.2186 16.9262}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		1.9063	-22.7216	127.2784
+	}
+}
+{Volume "body5"
+	{Box 11.0472 38.9868 16.9262}
+	{Bone "watch-tower_armed"}
+	{Position 23.7894	0.0349	127.2784}
+}
+{Volume "body4"
+	{Box 5.41339 5.41339 125.545}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		0.9962	-0.0000	0.0872
+		0.0076	-0.9962	-0.0868
+		-0.0868	-0.0872	0.9924
+		29.7705	27.2262	54.2833
+	}
+}
+{Volume "body3"
+	{Box 5.41339 5.41339 125.545}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		-0.9962	0.0000	0.0872
+		-0.0076	-0.9962	-0.0868
+		0.0868	-0.0872	0.9924
+		-25.1284	27.4875	54.2833
+	}
+}
+{Volume "body2"
+	{Box 5.41339 5.41339 125.545}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		-0.9962	-0.0000	0.0872
+		-0.0076	0.9962	-0.0868
+		0.0868	0.0872	0.9924
+		-25.1284	-26.7945	54.2833
+	}
+}
+{Volume "body1"
+	{Box 5.41339 5.41339 125.545}
+	{Bone "watch-tower_armed"}
+	{Matrix34
+		0.9962	0.0000	0.0872
+		0.0076	0.9962	-0.0868
+		-0.0868	0.0872	0.9924
+		30.2318	-26.8856	54.2833
+	}
+}

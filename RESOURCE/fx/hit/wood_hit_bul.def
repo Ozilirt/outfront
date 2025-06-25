@@ -1,0 +1,58 @@
+{fx 
+    {sound "ricochet"}
+	{ParticleView 
+		{Generator 
+			{TotalParticles 10 }
+			{EmissionArea 
+				{radius 1 1 }
+				{alpha0 0 }
+				{alpha1 180 }
+			}
+			{ParticleInit 
+				{Speed 2 2 }
+				{Lifetime 0.8 0.2 }
+			}
+			{StartParticles 10 }
+			{TimeToLive 0.08 }
+		}
+		{Mover 
+			{Damping 0.95 }
+			{Gravity 
+				{Value 0.1 }
+			}
+		}
+		{Visualizer 
+			{Stage 
+				{Sprite "/FX/_BMP/Particle/doski3.ebm" 
+						{Turn 
+							{Linear 
+								{min 0 10 }
+								{max 90 30 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration 0.8 0.2 }
+						}
+						{Scale 0.13 0.06 }
+						{preTurn 90 90 }
+				}
+				{Sprite "/FX/_BMP/Particle/doski3.ebm" 
+						{Turn 
+							{Linear 
+								{min 90 10 }
+								{max 0 10 }
+							}
+						}
+						{Timer
+							{Mode play }
+							{Duration 0.8 0.2 }
+						}
+						{Scale 0.1 0.05 }
+						{preTurn 90 90 }
+				}
+			}
+		}
+		{NotifyOwner }
+	}
+}

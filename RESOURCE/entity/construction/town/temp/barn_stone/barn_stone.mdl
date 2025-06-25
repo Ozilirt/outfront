@@ -1,0 +1,117 @@
+;Exported by: ubrashaev
+;Date:        Sat Apr 17 10:56:35 2004
+;File:        D:\-Projects-\-work-\3d\House_euro.max
+{Skeleton
+	{bone "barn_stone"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "barn_stone.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -8.12369 -52.0713}
+		{Extent 19.0828 1.97508}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body6"
+	{Obb2
+		{Center 11.4642 30.7755}
+		{Extent 1.54985 20.088}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -14.5695 56.2534}
+		{Extent 9.32152 0.579296}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -23.3343 35.213}
+		{Extent 0.890488 21.188}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -6.34305 9.38617}
+		{Extent 18.4868 3.42546}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -22.9912 -20.0219}
+		{Extent 2.79672 32.9128}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle08"
+	{Obb2
+		{Center 11.6641 -35.5589}
+		{Extent 1.60342 15.3455}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle07"
+	{Obb2
+		{Center 19.4663 -1.66144}
+		{Extent 1.43108 11.9757}
+		{Axis -0.819152 -0.573576}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Box 43.6289 2.22997 67.2682}
+	{Bone "barn_stone"}
+	{Matrix34
+		0.9659	-0.0000	0.2588
+		0.2588	-0.0000	-0.9659
+		0.0000	1.0000	-0.0000
+		-3.8726	21.4783	46.9312
+	}
+}
+{Volume "body"
+	{Box 38.1656 3.95016 42.5853}
+	{Bone "barn_stone"}
+	{Position -8.1237	52.0713	21.2926}
+}
+{Volume "body6"
+	{Box 3.0997 40.1761 16.2994}
+	{Bone "barn_stone"}
+	{Position 11.4642	-30.7755	8.1497}
+}
+{Volume "body5"
+	{Box 18.643 1.15859 16.5175}
+	{Bone "barn_stone"}
+	{Position -14.5695	-56.2534	8.2588}
+}
+{Volume "body4"
+	{Box 1.78098 42.3761 15.3341}
+	{Bone "barn_stone"}
+	{Position -23.3343	-35.2130	7.6670}
+}
+{Volume "body3"
+	{Box 36.9737 6.85092 42.4218}
+	{Bone "barn_stone"}
+	{Position -6.3430	-9.3862	21.2109}
+}
+{Volume "body1"
+	{Box 5.59344 65.8256 38.9238}
+	{Bone "barn_stone"}
+	{Position -22.9912	20.0219	19.4619}
+}

@@ -1,0 +1,44 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+
+	("crew_inside")
+	("crew_human" place(driver)		bone(driver)	door(emit1) animation(driver))
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+;		base(doorleft)
+	)
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+
+	{Extension "Universal.mdl"}
+	{Volume "wheelright1"
+	}
+	{Volume "wheelleft1"
+	}
+	{Volume "wheelleft2"
+	}
+	{Volume "wheelright2"
+	}
+	{Volume "inventory"
+	}
+	{Volume "fuel"
+	}
+	{Volume "engine"
+	}
+	{Volume "body"
+	}
+}

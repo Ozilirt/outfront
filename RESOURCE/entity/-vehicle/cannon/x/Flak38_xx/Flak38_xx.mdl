@@ -1,0 +1,179 @@
+;Exported by: garry
+;Date:        Mon Feb 23 18:11:14 2004
+;File:        D:\-Projects-\-3DWork-\Model\cannons\zenit\flak38-4\flak-38_xx.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone revolute "Body"
+			{parameters "ID=body;"}
+			{Position -7.8841	-0.4305	3.2395}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=Turret;"}
+				{Position 6.2921	0.2445	3.2946}
+				{VolumeView "Turret.ply"}
+					{bone revolute "gun_rot"
+						{parameters "ID=gun;"}
+						{limits -45.0000 10.0000}
+						{speed 0.0200}
+						{Matrix34
+							0.9981	-0.0000	-0.0610
+							-0.0610	-0.0000	-0.9981
+							-0.0000	1.0000	-0.0000
+							4.8900	-0.1136	10.9928
+						}
+						{VolumeView "gun_rot.ply"}
+						{bone "gun2"
+							{parameters "ID=gun;"}
+							{Matrix34
+								0.0087	-0.9994	0.0349
+								-0.0000	-0.0349	-0.9994
+								1.0000	0.0087	-0.0003
+								7.5159	2.4136	4.9879
+							}
+							{VolumeView "gun2.ply"}
+						}
+						{bone "gun3"
+							{parameters "ID=gun;"}
+							{Matrix34
+								-0.0175	0.9992	-0.0349
+								0.0000	-0.0349	-0.9994
+								0.9998	0.0174	-0.0006
+								7.5159	-3.5217	-5.3329
+							}
+							{VolumeView "gun3.ply"}
+						}
+					}
+				{bone "shield_right"
+					{parameters "ID=shield_right;"}
+					{Matrix34
+						0.8387	-0.0081	-0.5445
+						-0.0068	0.9997	-0.0253
+						0.5446	0.0249	0.8384
+						14.2677	0.9761	-1.3707
+					}
+					{VolumeView "shield_right.ply"}
+				}
+				{bone revolute "shield_left"
+					{parameters "ID=shield_left;"}
+					{Matrix34
+						0.8387	-0.0081	-0.5445
+						-0.0068	0.9997	-0.0253
+						0.5446	0.0249	0.8384
+						14.2677	0.0000	-1.3707
+					}
+					{VolumeView "shield_left.ply"}
+				}
+				{bone "part3"
+					{Matrix34
+						0.8387	-0.0081	-0.5445
+						-0.0068	0.9997	-0.0253
+						0.5446	0.0249	0.8384
+						21.1062	13.4245	11.1402
+					}
+					{VolumeView "part3.ply"}
+				}
+				{bone "part5"
+					{Matrix34
+						-0.0610	-0.0349	-0.9975
+						0.1238	-0.9919	0.0271
+						0.9904	0.1218	-0.0648
+						12.2446	-5.2898	8.1249
+					}
+					{VolumeView "part5.ply"}
+				}
+			}
+			{bone "part1"
+				{Position 1.9780	-0.4292	20.0749}
+				{VolumeView "part1.ply"}
+			}
+			{bone "part2"
+				{Matrix34
+					1.0000	0.0000	-0.0000
+					-0.0000	-0.0000	-1.0000
+					-0.0000	1.0000	-0.0000
+					10.2883	0.1309	15.4096
+				}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part4"
+				{Position 23.3905	19.1729	-1.8893}
+				{VolumeView "part4.ply"}
+			}
+		}
+	}
+}
+{Volume "part4"
+	{Cylinder 1.78235 2.54182}
+	{Bone "part4"}
+	{Position -0.0913	-0.1044	-0.0793}
+}
+{Volume "part2"
+	{Cylinder 1.49483 48.7047}
+	{Bone "part2"}
+	{Matrix34
+		-0.0262	0.0000	-0.9997
+		0.0436	-0.9990	-0.0011
+		-0.9987	-0.0436	0.0262
+		17.2263	-2.0007	4.7330
+	}
+}
+{Volume "part1"
+	{Polyhedron "part1.vol"}
+	{Bone "part1"}
+	{Position 1.0704	0.5728	-3.4131}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "Body"}
+	{Position 0.9010	0.0651	-3.0423}
+}
+{Volume "part5"
+	{Cylinder 1.49483 42.3731}
+	{Bone "part5"}
+	{Matrix34
+		0.0274	0.9996	-0.0036
+		-0.9994	0.0273	-0.0213
+		0.0211	-0.0042	-0.9998
+		0.1877	-0.2007	13.6109
+	}
+}
+{Volume "part3"
+	{Box 0.895827 18.1456 12.3526}
+	{Bone "part3"}
+	{Matrix34
+		0.8921	0.0622	0.4476
+		0.0573	-0.9981	0.0246
+		-0.4483	-0.0037	0.8939
+		-0.2050	-0.0628	0.1624
+	}
+}
+{Volume "shield_left"
+	{Box 0.895827 18.1456 9.26941}
+	{Bone "shield_left"}
+	{Matrix34
+		0.9940	0.0762	-0.0783
+		0.0758	-0.9971	-0.0080
+		0.0786	-0.0020	0.9969
+		0.4004	12.6801	4.9672
+	}
+}
+{Volume "shield_right"
+	{Polyhedron "shield_right.vol"}
+	{Bone "shield_right"}
+	{Matrix34
+		0.9681	0.0016	0.2504
+		-0.0081	0.9997	0.0249
+		-0.2503	-0.0261	0.9678
+		1.5289	-12.6591	-0.5510
+	}
+}
+{Volume "Turret"
+	{Polyhedron "Turret.vol"}
+	{Bone "Turret"}
+	{Position 6.0733	-0.1441	0.5942}
+}

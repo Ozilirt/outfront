@@ -1,0 +1,52 @@
+;Exported by: sk
+;Date:        Wed Jun 02 17:18:46 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\pier.max
+{Skeleton
+	{bone "hous-pier"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hous-pier.ply"}
+	}
+}
+{Obstacle "hous-pier_vol3"
+	{Obb2
+		{Center 30.2121 61.2559}
+		{Extent 29.7198 25.6705}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "hous-pier_vol2"
+	{Obb2
+		{Center 26.769 -63.2798}
+		{Extent 48.7211 19.8996}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "hous-pier_vol1"
+	{Obb2
+		{Center 0.476227 -4.13843}
+		{Extent 78.5823 39.3453}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "hous-pier_vol3"
+	{Box 59.4397 51.341 49.4279}
+	{Bone "hous-pier"}
+	{Position 30.2121	-61.2559	24.7139}
+}
+{Volume "hous-pier_vol2"
+	{Box 97.4421 39.7993 43.8647}
+	{Bone "hous-pier"}
+	{Position 26.7690	63.2798	21.9324}
+}
+{Volume "hous-pier_vol1"
+	{Box 157.165 78.6906 49.2862}
+	{Bone "hous-pier"}
+	{Position 0.4762	4.1384	24.6431}
+}

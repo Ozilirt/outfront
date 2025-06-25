@@ -1,0 +1,20 @@
+{fx
+	{SpriteView "start"
+		{Sprite "/FX/_BMP/Particle/Biood3.ebm"
+			{Visibility
+				{Linear
+					{min 0.5 0.2}
+					{max 0}
+				}
+			}
+			{timer
+				{duration 4}
+			}
+			{Scale 1.6}
+			{preTurn 180 180}
+		}
+		{ground}
+		{layer grounddynamic}
+		{NotifyOwner}
+	}
+}

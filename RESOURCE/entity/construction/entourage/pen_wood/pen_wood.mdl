@@ -1,0 +1,79 @@
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush.anm"} {duration percent 60}}
+	}
+	{bone "pen"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "pen.ply"}
+	}
+}
+{Obstacle "Rectangle4"
+	{Capsule2
+		{Radius 6.71989}
+		{Origin -26.5712 30.6706}
+		{Destination -26.5713 -2.20377}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle3"
+	{Capsule2
+		{Radius 1.51059}
+		{Origin 32.0431 -39.7381}
+		{Destination -33.8021 -39.7381}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle2"
+	{Capsule2
+		{Radius 1.26077}
+		{Origin 34.4332 38.1102}
+		{Destination -36.1922 38.1102}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle1"
+	{Capsule2
+		{Radius 1.26077}
+		{Origin 28.7325 40.8819}
+		{Destination 28.7324 -42.3634}
+	}
+	{Rotate}
+}
+
+
+{Volume "pen3"
+	{Box 3.28057 61.6625 22.1794}
+	{Bone "pen"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0990	40.0045	11.1929
+	}
+}
+{Volume "pen2"
+	{Box 3.28057 64.8403 19.2953}
+	{Bone "pen"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-1.1854	-37.8907	9.7508
+	}
+}
+{Volume "pen1"
+	{Box 3.28057 81.0242 29.2352}
+	{Bone "pen"}
+	{Position 28.8138	1.2220	14.7208}
+}
+{Volume "pen"
+	{Box 10.2518 43.5614 10.4412}
+	{Bone "pen"}
+	{Position -25.8826	-14.7529	10.8928}
+}
+

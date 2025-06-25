@@ -1,0 +1,55 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1) sy(0.18) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "brok_wall8.mdl"}
+	{props "cornered" "concrete" "construction" "parts" "wall"}
+	{TexMods
+		{"_x" "_x"}
+		{"1" "1"}
+		{"1_x" "1_x"}
+		{"2" "2"}
+		{"2_x" "2_x"}
+		{"3" "3"}
+		{"3_x" "3_x"}
+		{"4" "4"}
+		{"5" "5"}
+		{"6" "6"}
+		{"7" "7"}
+		{"8" "8"}
+		{"9" "9"}
+		{"10" "10"}
+	}
+
+	{Volume "hole3"
+		{able clear {visible 0}{hole}}
+	}
+	{Volume "hole2"
+		{able clear {visible 0}{hole}}
+	}
+	{Volume "hole1"
+		{able clear {visible 0}{hole}}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 20}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 20}
+		{able {visible 0}{holed}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 20}
+		{able {holed}}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 20}
+		{able {holed}}
+	}
+}

@@ -1,0 +1,27 @@
+{game_entity
+	{obstacleid "construction"}
+	{props "cornered" "parts" "construction" "bridge" "no_destroyed_stamp"}
+
+	{Extension "automobile_bridge_part3.mdl"}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}}
+		{able {obstacle 0}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+		{able {obstacle 0}}
+	}
+	{Extender "land"
+		{Heightmap "automobile_bridge_part3.net"}
+		{Boundary
+			{Box2
+				{Origin -128 -100}
+				{Destination 0 57}
+			}
+		}
+	}
+}

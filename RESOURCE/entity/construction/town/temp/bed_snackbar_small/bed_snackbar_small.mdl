@@ -1,0 +1,31 @@
+;Exported by: ubrashaev
+;Date:        Thu Dec 04 22:21:54 2003
+;File:        D:\-Projects-\-work-\3d\sk\House_suburb1(small).max
+{Skeleton
+	{bone "bed"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "bed.ply"}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center 2.14577e-006 4.76837e-007}
+		{Extent 5.37402 5.37402}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 15.3543 15.3543 26.0618}
+	{Bone "bed"}
+	{Matrix34
+		-0.0000	0.7000	0.0000
+		-0.7000	-0.0000	0.0000
+		0.0000	0.0000	0.7000
+		-0.0000	-0.0000	9.1216
+	}
+}

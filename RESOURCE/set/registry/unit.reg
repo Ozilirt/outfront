@@ -1,0 +1,549 @@
+;SDL
+{units
+	{"steam_locomotive"
+		{desc "desc/vehicle/loco"}
+		{bar "vehicle"}
+	}
+	{"c-47"
+		{desc "desc/vehicle/c47"}
+		{bar "vehicle_weapon"}
+	}
+	{"M3A1"
+		{desc "desc/vehicle/m3a1"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/arm_car2xt/bkg.ebm"}
+		{equipment "arm_car_m3"}
+	}
+	{"sdkfz-223"
+		{desc "desc/vehicle/sd223"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/arm_car4x4/bkg.ebm"}
+		{equipment "arm_car_sdkfz223"}
+	}
+	{"SdKfz250_3"
+		{desc "desc/vehicle/sd2503"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/arm_car2xt_gun/bkg.ebm"}
+		{equipment "arm_car_sdkfz250"}
+	}
+	{"SdKfz234"
+		{desc "desc/vehicle/sd234"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/arm_car8x8_gun/bkg.ebm"}
+		{equipment "tank_puma"}
+	}
+	{"sdkfz232"
+		{desc "desc/vehicle/sd232"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/arm_car8x8_gun/bkg.ebm"}
+		{equipment "tank_puma"}
+	}
+	{"ba-20m"
+		{desc "desc/vehicle/ba-20m"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/arm_car4x4/bkg.ebm"}
+		{equipment "arm_car_sdkfz223"}
+	}
+	{"fw-190g8"
+		{desc "desc/vehicle/fw"}
+		{bar "vehicle_weapon"}
+	}
+	{"p-51mustang"
+		{desc "desc/vehicle/p51"}
+		{bar "vehicle_weapon"}
+	}
+	{"cg-4a"
+		{desc "desc/vehicle/cg"}
+		{bar "vehicle_weapon"}
+	}
+	{"mk-ii"
+		{desc "desc/vehicle/mk"}
+		{bar "vehicle_weapon"}
+	}
+	{"fw-190g8-2"
+		{desc "desc/vehicle/fw-190g8"}
+		{bar "vehicle_weapon"}
+	}
+	{"ju52"
+		{desc "desc/vehicle/Ju52"}
+		{bar "vehicle_weapon"}
+	}
+	{"flak38"
+		{desc "desc/vehicle/flak38"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/cannon/flak38_4/bkg.ebm"}
+		{equipment "cannon_flak38_4"}
+	}
+	{"flak-38-1"
+		{desc "desc/vehicle/flak-38-1"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/cannon/flak38_1/bkg.ebm"}
+		{equipment "cannon_flak38_1"}
+	}
+	{"DoubleColt"
+		{desc "desc/vehicle/mgunColt"}
+		{bar "vehicle_weapon"}
+	}
+	{"shipflak"
+		{desc "desc/vehicle/25-mm cannon"}
+		{bar "vehicle_weapon"}
+	}
+	{"flak41"
+		{desc "desc/vehicle/flak41"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/cannon/flak41/bkg.ebm"}
+		{equipment "cannon_flak41"}
+	}
+	{"flak41s"
+		{desc "desc/vehicle/flak41"}
+		{bar "vehicle_weapon"}
+	}
+	{"pak40"
+		{desc "desc/vehicle/pak40"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/cannon/bkg.ebm"}
+		{equipment "cannon"}
+	}
+	{"6-funt"
+		{desc "desc/vehicle/6-funt"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/cannon/bkg.ebm"}
+		{equipment "cannon"}
+	}
+	{"zis-3"
+		{desc "desc/vehicle/zis-3"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/cannon/bkg.ebm"}
+		{equipment "cannon"}
+	}
+	{"mortar"
+		{desc "desc/vehicle/mortar"}
+		{bar "vehicle_weapon"}
+	}
+	{"mg34_stan"
+		{desc "desc/weapon/mg34_stan"}
+		{bar "vehicle_weapon"}
+	}
+	{"browning_stan"
+		{desc "desc/weapon/browningstan"}
+		{bar "vehicle_weapon"}
+	}
+	{"degtyarev_stan"
+		{desc "desc/weapon/degtyar"}
+		{bar "vehicle_weapon"}
+	}
+	{"mg34_tower"
+		{desc "desc/weapon/hmg"}
+		{bar "vehicle_weapon"}
+	}
+	{"mg34_dot"
+		{desc "desc/weapon/hmg"}
+		{bar "vehicle_weapon"}
+	}
+	{"autodraesine"
+		{desc "desc/vehicle/autodraesine"}
+		{bar "vehicle"}
+	}
+	{"air-bag"
+		{desc "desc/vehicle/air-bag"}
+		{bar "vehicle"}
+	}
+	{"Blitz-3.6"
+		{desc "desc/vehicle/blitz36"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/truck4x4/bkg.ebm"}
+	}
+	{"GMC"
+		{desc "desc/vehicle/gmc"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/truck6x6/bkg.ebm"}
+	}
+	{"Blitz-Fuel"
+		{desc "desc/vehicle/blitz36"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/truck4x4/bkg.ebm"}
+	}
+	{"Blitz-Medic"
+		{desc "desc/vehicle/blitz36"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/truck4x4/bkg.ebm"}
+	}
+	{"bm-13"
+		{desc "desc/vehicle/zis6"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/truck6x6/bkg.ebm"}
+	}
+	{"Nebelwerfer41"
+		{desc "desc/vehicle/nebel"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/cannon/nebelwerfer41/bkg.ebm"}
+		{equipment "cannon_nebelwerfer41"}
+	}                              
+	{"bmw-r12"
+		{desc "desc/vehicle/bmwr12"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/moto/bkg.ebm"}
+		{equipment "moto"}
+	}
+	{"kubel"
+		{desc "desc/vehicle/kubel"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/car4x4/bkg.ebm"}
+		{equipment "car_kubelwagn"}
+	}
+	{"willysmb"
+		{desc "desc/vehicle/willysMB"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/car4x4_gun/bkg.ebm"}
+		{equipment "car_willys"}
+	}
+	{"DodgeWC56"
+		{desc "desc/vehicle/dodgeWC56"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/car4x4/bkg.ebm"}
+		{equipment "car_dodge"}
+	}
+	{"gaz-m1"
+		{desc "desc/vehicle/gaz_m1"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/car4x4/bkg.ebm"}
+		{equipment "car_kubelwagn"}
+	}
+	{"horch"
+		{desc "desc/vehicle/horch"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/car4x4/bkg.ebm"}
+		{equipment "car_kubelwagn"}
+	}
+	{"SdKfz7"
+		{desc "desc/vehicle/SdKfz7"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/truck2xt/bkg.ebm"}
+	}
+	{"Sdkfz251_1"
+		{desc "desc/vehicle/sdkfz251_1"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/arm_car2xt/bkg.ebm"}
+		{equipment "arm_car_sdkfz251"}
+	}
+	{"zis-5"
+		{desc "desc/vehicle/zis5"}
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/truck4x4/bkg.ebm"}
+	}
+	{"kv-1"
+		{desc "desc/vehicle/kv1"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/bkg.ebm"}
+		{equipment "tank_kv-1"}
+	}
+	{"kv-85"
+		{desc "desc/vehicle/kv85"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/bkg.ebm"}
+		{equipment "tank_kv-1"}
+	}
+	{"is-2"
+		{desc "desc/vehicle/is2"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/bkg.ebm"}
+		{equipment "tank_kv-1"}
+	}
+
+	{"kv-2"
+		{desc "desc/vehicle/kv2"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/kv2/bkg.ebm"}
+		{equipment "tank_kv-1"}
+	}
+	{"bt-7"
+		{desc "desc/vehicle/bt7"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/bt7/bkg.ebm"}
+		{equipment "tank_bt-7"}
+	}
+	{"bt-7a"
+		{desc "desc/vehicle/bt7a"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/bt7a/bkg.ebm"}
+		{equipment "tank_bt-7"}
+	}
+	{"PZ-1B"
+		{desc "desc/vehicle/pz1b"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/pz-1b/bkg.ebm"}
+		{equipment "tank_pz-1b"}
+	}
+	{"panzerflak"
+		{desc "desc/vehicle/panzerflak"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/panzerflak/bkg.ebm"}
+		{equipment "tank_panzerflak"}
+	}
+	{"Pz-2F"
+		{desc "desc/vehicle/pz2f"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/pz-2f/bkg.ebm"}
+		{equipment "tank_pz-2f"}
+	}
+	{"Matilda"
+		{desc "desc/vehicle/matilda"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/bkg.ebm"}
+		{equipment "tank_matilda"}
+	}
+	{"Cromwell"
+		{desc "desc/vehicle/Cromwell"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/cromwell/bkg.ebm"}
+		{equipment "tank_cromwell"}
+	}
+	{"m8-scott"
+		{desc "desc/vehicle/m8scott"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/bkg.ebm"}
+		{equipment "tank_m8scott"}
+	}
+	{"sdkfz10-5"
+		{desc "desc/vehicle/sd105"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/arm_car2xt_gun/bkg.ebm"}
+		{equipment "arm_car_sdkfz250"}
+	}
+	{"Chaffee"
+		{desc "desc/vehicle/chaffee"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/m24/bkg.ebm"}
+	}
+	{"T-26"
+		{desc "desc/vehicle/t26"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/t26/bkg.ebm"}
+		{equipment "tank_t26"}
+	}
+	{"Vickers-B"
+		{desc "desc/vehicle/vickersB"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/t26/bkg.ebm"}
+		{equipment "tank_t26"}
+	}
+	{"PZ-3G"
+		{desc "desc/vehicle/pz3g"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/PZ-4g/bkg.ebm"}
+	}
+	{"PZ-4d"
+		{desc "desc/vehicle/pz4d"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/PZ-4g/bkg.ebm"}
+	}
+	{"PZ-4g"
+		{desc "desc/vehicle/pz4g"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/PZ-4g/bkg.ebm"}
+	}
+	{"PZ-5"
+		{desc "desc/vehicle/pz5"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/pz-5/bkg.ebm"}
+		{equipment "tank_pz-5"}
+	}
+	{"PZ-6"
+		{desc "desc/vehicle/pz6"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/pz6/bkg.ebm"}
+		{equipment "tank_pz-6"}
+	}
+	{"PZ-6E"
+		{desc "desc/vehicle/pz6"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/pz6/bkg.ebm"}
+		{equipment "tank_pz-6"}
+	}
+	{"PZ-6B"
+		{desc "desc/vehicle/pz6b"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/pz-6b/bkg.ebm"}
+		{equipment "tank_pz-6b"}
+	}
+	{"isu-152"
+		{desc "desc/vehicle/isu-152"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/isu-152/bkg.ebm"}
+		{equipment "tank_isu-152"}
+	}
+	{"Ferdinand"
+		{desc "desc/vehicle/ferdinand"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/ferdinand/bkg.ebm"}
+		{equipment "tank_ferdinand"}
+	}                        
+	{"M7Priest"
+		{desc "desc/vehicle/m7priest"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/priest/bkg.ebm"}
+		{equipment "tank_m7priest"}
+	}
+	{"Hummel"
+		{desc "desc/vehicle/hummel"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/hummel/bkg.ebm"}
+		{equipment "tank_hummel"}
+	}                           
+	{"stug-4g"
+		{desc "desc/vehicle/stug4g"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/bkg.ebm"}
+		{equipment "tank_stug"}
+	}
+	{"Jugdpanther"
+		{desc "desc/vehicle/jugdp"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/jugdpanther/bkg.ebm"}
+		{equipment "tank_jugdpanther"}
+	}
+	{"StuG-3b"
+		{desc "desc/vehicle/stug3d"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/bkg.ebm"}
+		{equipment "tank_stug"}
+	}
+	{"StuG-40b"
+		{desc "desc/vehicle/stug40b"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/bkg.ebm"}
+		{equipment "tank_stug"}
+	}
+	{"StuG-4g"
+		{desc "desc/vehicle/stug4g"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/bkg.ebm"}
+		{equipment "tank_stug"}
+	}
+	{"StuG-4gs"
+		{desc "desc/vehicle/stug4g"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/spg/bkg.ebm"}
+		{equipment "tank_stug"}
+	}
+	{"t-34-76-41"
+		{desc "desc/vehicle/t34"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/t34/bkg.ebm"}
+		{equipment "tank_t-34-76-41"}
+	}
+	{"t-34-85"
+		{desc "desc/vehicle/t3485"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/t34/bkg.ebm"}
+		{equipment "tank_t-34-76-41"}
+	}
+	{"M4A2"
+		{desc "desc/vehicle/M4A2"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/m4/bkg.ebm"}
+		{equipment "tank_m4"}
+	}
+	{"M4A3"
+		{desc "desc/vehicle/M4A3"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/m4/bkg.ebm"}
+		{equipment "tank_m4"}
+	}
+	{"m10achilles"
+		{desc "desc/vehicle/m10achilles"}
+		{bar "vehicle_weapon"}
+		{structure_view "/interface/scene/vehicle/structure/tank/m4/bkg.ebm"}
+		{equipment "tank_m4"}
+	}
+	{"freight-bm"
+		{desc "desc/vehicle/zis5"}
+		{bar "vehicle"}
+	}
+	{"train"
+		{desc "desc/vehicle/train"}
+		{bar "vehicle"}
+	}
+	{"mtb_d3"
+		{desc "desc/vehicle/mtb_d3"}
+		{bar "vehicle"}
+	}
+	{"fishboat"
+		{desc "desc/vehicle/fishboat"}
+		{bar "vehicle"}
+	}
+	{"watch-tower"
+		{desc "desc/construction/tower"}
+		{bar "vehicle_weapon"}
+	}
+	{"searchlight"
+		{desc "desc/vehicle/searchlight"}
+		{bar "vehicle"}
+	}
+
+;inventory	
+	{"boxes1"
+		{desc "desc/container/boxes1"}
+	}
+	{"shoulderbag"
+		{desc "desc/container/shoulderbag"}
+	}
+	{"box1"
+		{desc "desc/container/box1"}
+	}
+	{"box2"
+		{desc "desc/container/box2"}
+	}
+
+;humans
+	{"_infantry2_rus"
+		{bar "human"}
+		{desc "desc/human/soldier"}
+	}
+	{"hero.dittman"
+		{desc "desc/human/hero.dittman"}
+	}
+	{"hero.douglas"
+		{desc "desc/human/hero.douglas"}
+	}
+	{"hero.hinds"
+		{desc "desc/human/hero.hinds"}
+	}
+	{"hero.mainsfield"
+		{desc "desc/human/hero.mainsfield"}
+	}
+	{"hero.carpenter"
+		{desc "desc/human/hero.carpenter"}
+	}
+	{"hero.viar"
+		{desc "desc/human/hero.viar"}
+	}
+	{"hero.perkings"
+		{desc "desc/human/hero.perkings"}
+	}
+	{"hero.watchtower"
+		{desc "desc/human/hero.watchtower"}
+	}
+	{"hero.fain"
+		{desc "desc/human/hero.fain"}
+	}
+	{"hero.markham"
+		{desc "desc/human/hero.markham"}
+	}
+	{"hero.liberty"
+		{desc "desc/human/hero.liberty"}
+	}
+	{"hero.kurennoy"
+		{desc "desc/human/hero.kurennoy"}
+	}
+	{"hero.prokhorov"
+		{desc "desc/human/hero.prokhorov"}
+	}
+	{"hero.dudkov"
+		{desc "desc/human/hero.dudkov"}
+	}
+	{"hero.lesin"
+		{desc "desc/human/hero.lesin"}
+	}
+}
+

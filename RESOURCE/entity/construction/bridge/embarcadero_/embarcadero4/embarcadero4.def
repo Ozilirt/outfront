@@ -1,0 +1,44 @@
+{game_entity
+	{props "cornered" "parts" "construction" "bridge" "wood" "disable_area" "no_destroyed_stamp"}
+	{obstacleid "construction"}
+	{Extension "embarcadero4.mdl"}
+	
+	{Volume "railing2"
+		{thickness 2}
+		{able {visible 0}{bullet 0}}
+		{able {obstacle 0}}
+	}
+	{Volume "railing1"
+		{thickness 2}
+		{able {visible 0}{bullet 0}}
+		{able {obstacle 0}}
+	}
+	{Volume "transition"
+		{thickness 2}
+		{able {obstacle 0}}
+	}
+	{Volume "body"
+		{tags "body"}
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{Volume "beam2"
+		{tags "body"}
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{Volume "beam1"
+		{tags "body"}
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{extender "land"
+		{Heightmap "embarcadero4.net"}
+		{Boundary
+			{Box2
+				{Origin -25 -45}
+				{Destination 25 44}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.5) sy(0.1) ofsx(5) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "fence_wire4.mdl"}
+	{props "fence" "steel" "animated_crush"}
+	{volume "body" 
+		{thickness 3}
+		{able {bullet 0} {visible 0}}
+	}
+}

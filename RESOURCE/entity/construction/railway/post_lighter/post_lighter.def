@@ -1,0 +1,32 @@
+{construction
+	(include "/properties/post.inc")
+	{Extension "post_lighter.mdl"}
+	{props "concrete" "construction"}
+	{volume	"body"
+		{thickness	3}
+	}
+	{volume	"lamp1"
+		{thickness	1}
+	}
+	{extender "light"
+		{lamp "1"}
+	}
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{ScaleX 	0.8}
+;			{ScaleY 	0.8}
+;  			{shiftX	0	}
+;  			{shiftY	0	}
+;			{Preturn	-45	}
+;			{Visibility	0.6	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

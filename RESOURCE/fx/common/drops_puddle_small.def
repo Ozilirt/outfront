@@ -1,0 +1,156 @@
+{fx
+	{Sound "explosion.water"}
+	{ParticleView
+		{generator
+			{TotalParticles 10}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 1 0}
+				{speed 0.14}
+			}
+			{ParticleInit
+				{Speed 0 0}
+				{Lifetime 0.6 0.2}
+			}
+			{StartParticles 1}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.5}
+			}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Flash/Drops.ebm"
+					{Scale
+						{Linear
+							{min 0.15 0.05}
+							{max 0.2 0.1}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 -180}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1.8}
+					}
+					{Highlight 0x807653}
+					{Light 2}
+				}
+			}
+			{stage collided dying
+				{sprite "/FX/_BMP/Flash/ripples_w.ebm"
+					{Scale
+						{Linear
+							{min 0.2 0.1}
+							{max 0.8 0.2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 0.8}
+					}
+					{Highlight 0x82634d}
+					{Visibility
+						{Linear
+							{min 1}
+							{max 0}
+						}
+					}
+				}
+				{flags KillParticle Ground}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 40}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 1 0}
+				{speed 0.3}
+			}
+			{ParticleInit
+				{Speed 0 0}
+				{Lifetime 0.6 0.2}
+			}
+			{StartParticles 1}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/FX/_BMP/Flash/Drops.ebm"
+					{Scale
+						{Linear
+							{min 0.15 0.05}
+							{max 0.2 0.1}
+						}
+					}
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 360 -180}
+						}
+					}
+					{timer
+						{mode play}
+						{duration 1.8}
+					}
+					{Highlight 0x807653}
+					{Light 2}
+				}
+			}
+		}
+		{NotifyOwner}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 20}
+			{EmissionArea
+				{radius 0.2 0.2}
+				{alpha0 0}
+				{alpha1 5 0}
+				{speed 0.3}
+			}
+			{ParticleInit
+				{Speed 0 0}
+				{Lifetime 0.6 0.2}
+			}
+			{StartParticles 1}
+			{Color 0xb3a98a}
+			{Color 0xa2956c}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0.1}
+			}
+			{collisions
+				{terrain}
+				{restitution 1}
+			}
+		}
+		{NotifyOwner}
+	}
+}

@@ -1,0 +1,132 @@
+;Exported by: garry
+;Date:        Fri Apr 02 11:31:54 2004
+;File:        D:\-Projects-\-3DWork-\Model\Танки\Sherman\M4A3_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "CommonMesh;ID=body;"}
+			{animation
+				{sequence "break" {file "body.anm"} {speed 0.6}}
+			}
+			{Position -1.4430	-0.0347	22.0793}
+			{VolumeView "Body.ply"}
+			{bone revolute "Turret"
+				{parameters "ID=turret;"}
+				{animation
+					{sequence "break" {file "turret_b.anm"} {speed 0.7}}
+				}
+				{Position -0.3911	0.5258	15.4250}
+				{VolumeView "Turret.ply"}
+				{bone revolute "Gun_rot"
+					{parameters "ID=gun;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	-0.0000	1.0000
+						0.0000	-1.0000	-0.0000
+						15.2440	-0.0000	6.2247
+					}
+					{VolumeView "Gun_rot.ply"}
+					{bone "Gun"
+						{parameters "ID=gun;"}
+						{Matrix34
+							1.0000	0.0000	0.0000
+							0.0000	0.0000	-1.0000
+							0.0000	1.0000	0.0000
+							66.2487	1.6918	-0.0563
+						}
+						{VolumeView "Gun.ply"}
+					}
+				}
+			}
+			{bone revolute "WheelL1"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-0.9935	-0.0007	-0.1142
+					-0.1142	-0.0001	0.9935
+					-0.0007	1.0000	-0.0000
+					50.9408	26.7657	-7.4152
+				}
+				{VolumeView "WheelL1.ply"}
+			}
+			{bone revolute "WheelR1"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-0.9935	-0.0007	-0.1142
+					-0.1142	-0.0001	0.9935
+					0.0007	-1.0000	0.0000
+					50.9408	-27.2923	-7.4152
+				}
+				{VolumeView "WheelR1.ply"}
+			}
+			{bone revolute "WheelR2"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-0.9970	0.0000	-0.0768
+					-0.0768	0.0000	0.9970
+					-0.0000	-1.0000	0.0000
+					-45.5539	-27.2923	-7.4152
+				}
+				{VolumeView "WheelR2.ply"}
+			}
+			{bone revolute "WheelL2"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-0.9970	0.0000	-0.0768
+					-0.0768	0.0000	0.9970
+					0.0000	1.0000	-0.0000
+					-45.5539	26.7657	-7.4152
+				}
+				{VolumeView "WheelL2.ply"}
+			}
+			{bone "engine"
+				{Matrix34
+					0.0000	-0.0000	1.0000
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	-0.0000
+					-33.4278	-0.3452	-0.4269
+				}
+			}
+		}
+		{bone "WheelsL"
+			{parameters "ID=trackleft;"}
+			{animation
+				{sequence "break" {file "trackL.anm"} {speed 0.6}}
+			}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				-5.6604	20.5032	11.3966
+			}
+			{VolumeView "WheelsL.ply"}
+			{bone "TrackL"
+				{parameters "CommonMesh;ID=trackleft;"}
+				{Position -6.9483	2.4758	1.6266}
+				{VolumeView "TrackL.ply"}
+			}
+		}
+		{bone "WheelsR"
+			{parameters "ID=trackright;"}
+			{animation
+				{sequence "break" {file "trackR.anm"} {speed 0.7}}
+			}
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-5.6604	-20.1576	11.3966
+			}
+			{VolumeView "WheelsR.ply"}
+			{bone "TrackR"
+				{parameters "CommonMesh;ID=trackright;"}
+				{Position -6.9483	2.4758	2.0471}
+				{VolumeView "TrackR.ply"}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{building
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.35) sy(2.05) ofsx(-2.5) ofsy(20))
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{Extension "hangar2.mdl"}
+;	{props "two" "staged" "wood" "construction"}
+	{volume	"body"
+		{thickness hollow 5}
+	}
+	("declare_fire_volumes")
+}

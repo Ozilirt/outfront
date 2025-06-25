@@ -1,0 +1,19 @@
+;Exported by: sat
+;Date:        Mon Sep 22 11:37:09 2003
+
+{Skeleton
+	{bone "water"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	-0.0000
+			0.0000	-0.0000	1.0000
+		}
+		{VolumeView "water.ply" {layer water}}
+    	{Animation
+    		{uv "run"
+   				{shiftV 0 1 0.002 }	;min max delta [pingpong]
+   				;{shiftU 0 1 0.01 pingpong}	;min max delta [pingpong]
+    		}
+    	}
+	}
+}

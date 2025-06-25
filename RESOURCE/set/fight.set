@@ -1,0 +1,150 @@
+{fight
+
+	;hand kick
+	{blow "facer_front"
+		{distance medium}
+		{self
+			{animation "fight_front_punch"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -40}
+			{knock_down_time 4}
+			{animation "stand_die_back_2"}
+		}
+	}
+	{blow "head_back"
+		{distance medium}
+		{self
+			{animation "fight_front_punch"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -60}
+			{knock_down_time 5}
+			{animation "stand_die_front_2"}
+		}
+	}
+
+	;item kick
+	{blow "item_facer_front"
+		{distance medium}
+		{self
+			{animation "fight_front_punch"}
+			{item "pistol"}
+			{item "grenade"}
+			{item "axe"}
+			{item "crow_bar"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -60}
+			{knock_down_time 4}
+			{animation "stand_die_back_2"}
+		}
+	}
+	{blow "item_head_back"
+		{distance medium}
+		{self
+			{animation "fight_front_punch"}
+			{item "pistol"}
+			{item "grenade"}
+			{item "axe"}
+			{item "crow_bar"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -80}
+			{knock_down_time 5}
+			{animation "stand_die_front_2"}
+		}
+	}
+
+	;knife kick
+	{blow "knife_force_front"
+		{distance far}
+		{self
+			{animation "fight_front_knife"}
+			{item "knife"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+	{blow "knife_throat_back"
+		{distance medium}
+		{self
+			{animation "fight_front_knife"}
+			{item "knife"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+
+	;weapon kick
+	{blow "kick_butt_front"
+		{distance far}
+		{self
+			{animation "fight_front_club"}
+			{item "smg"}
+			{item "mgun"}
+			{item "rifle"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -70}
+			{knock_down_time 8}
+			{animation "stand_die_back_1"}
+		}
+	}
+	{blow "kick_butt_back"
+		{distance far}
+		{self
+			{animation "fight_front_club"}
+			{item "smg"}
+			{item "mgun"}
+			{item "rifle"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -80}
+			{knock_down_time 8}
+			{animation "stand_die_front_2"}
+		}
+	}
+}

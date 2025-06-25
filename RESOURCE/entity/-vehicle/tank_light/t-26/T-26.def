@@ -1,0 +1,95 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/structure/tank_t26.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "turret_rotator"}
+	
+	{TexMods
+		{"variant2" "2"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{thickness 15 0.3}
+	}
+	{Volume "Crew"
+		{able {contact_ground 0}}
+	}
+
+	
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "45mm_20k"}
+			{Mounted}
+		}
+		{place "mgun"
+			{DefaultWeapon "dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+
+	("crew_4_human")
+	("seat_2_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 600}
+			{item "ammo bullet45 ap" 50}
+			{item "ammo bullet45 fg" 27}
+		}
+	}
+	
+	{mass 10250}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    15} ; максимальная скорость, kmph
+			{StartTime 		10} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		2} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{extension "T-26.mdl"}
+}

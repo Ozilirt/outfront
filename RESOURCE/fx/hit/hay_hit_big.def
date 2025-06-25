@@ -1,0 +1,296 @@
+{fx
+	{Sound "hit_tree"}
+	{ParticleView
+		{generator
+			{TotalParticles 35}
+			{EmissionArea
+				{radius 14 14}
+				{alpha0 0}
+				{alpha1 60 30}
+			}
+			{ParticleInit
+				{Speed 4 3}
+				{Lifetime 3.5 1}
+			}
+			{StartParticles 35}
+			{TimeToLive 1}
+			{AxisZ}
+			{ParticlesInBlock 35}
+		}
+		{mover
+			{damping 0.95}
+			{gravity
+				{value 0.055}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+		}
+		{visualizer
+			{stage
+				{sprite "/FX/_BMP/Smoke/SmokeSmal7.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max -90 40}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.5}
+							{max 0}
+						}
+					}
+					{Scale
+						{Linear
+							{min 1.5 0.5}
+							{max 4 1.5}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{preTurn 90 30}
+					{Highlight 0x00C7C2B1}
+				}
+				{sprite "/FX/_BMP/Smoke/Dust.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max -60 30}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.6}
+							{max 0}
+						}
+					}
+					{Scale
+						{Linear
+							{min 1.5 0.5}
+							{max 6 2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{preTurn 90 30}
+					{Highlight 0x00CDC7B4}
+				}
+				{sprite "/FX/_BMP/Smoke/Pil2.ebm"
+					{Turn
+						{Linear
+							{min 10 10}
+							{max 90 30}
+						}
+					}
+					{Visibility
+						{Linear
+							{min 0.4}
+							{max 0}
+						}
+					}
+					{Scale
+						{Linear
+							{min 1.5 0.5}
+							{max 6 2}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{preTurn 90 30}
+					{Highlight 0x00E9E9E4}
+				}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 100}
+			{EmissionArea
+				{radius 30 20}
+				{alpha0 0}
+				{alpha1 60 40}
+			}
+			{ParticleInit
+				{Speed 3.5 2}
+				{Lifetime 3 1}
+			}
+			{StartParticles 100}
+			{TimeToLive 1}
+			{AxisZ}
+			{ParticlesInBlock 100}
+			{Color 0x005E5233}
+			{Color 0x00C7AE63}
+			{Color 0x00E6DBB5}
+		}
+		{mover
+			{damping 0.96}
+			{gravity
+				{value 0.065}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+		}
+	}
+	{ParticleView
+		{generator
+			{TotalParticles 100}
+			{EmissionArea
+				{radius 10 10}
+				{alpha0 0}
+				{alpha1 100 30}
+			}
+			{ParticleInit
+				{Speed 4 4}
+				{Lifetime 3 1}
+			}
+			{StartParticles 100}
+			{TimeToLive 0.1}
+			{AxisZ}
+			{ParticlesInBlock 100}
+		}
+		{mover
+			{damping 0.98}
+			{gravity
+				{value 0.065}
+			}
+			{collisions
+				{terrain}
+				{restitution 0.05}
+			}
+		}
+		{visualizer
+			{stage initial
+				{sprite "/FX/_BMP/Particle/Trava.ebm"
+					{Turn
+						{Power
+							{min 10 10}
+							{max 90 20}
+							{pow 1.6}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.2 0.1}
+					{preTurn 90 90}
+					{Highlight 0x00C7C1AF}
+				}
+				{sprite "/FX/_BMP/Particle/hay2.ebm"
+					{Turn
+						{Power
+							{min 10 10}
+							{max 90 20}
+							{pow 1.6}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.5 0.3}
+					{preTurn 60 60}
+				}
+				{sprite "/FX/_BMP/Particle/hay1.ebm"
+					{Turn
+						{Power
+							{min 10 10}
+							{max 90 20}
+							{pow 1.6}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.5 0.3}
+					{preTurn 100 50}
+					{Highlight 0x00CECCC1}
+				}
+				{sprite "/FX/_BMP/Particle/Trava.ebm"
+					{Turn
+						{Power
+							{min 90 10}
+							{max 10 20}
+							{pow 1.5}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.2 0.15}
+					{preTurn 90 90}
+				}
+				{sprite "/FX/_BMP/Particle/hay2.ebm"
+					{Turn
+						{Power
+							{min 90 10}
+							{max 10 20}
+							{pow 1.4}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.5 0.3}
+					{preTurn 60 60}
+				}
+				{sprite "/FX/_BMP/Particle/hay1.ebm"
+					{Turn
+						{Power
+							{min 90 10}
+							{max 10 20}
+							{pow 1.5}
+						}
+					}
+					{timer
+						{mode play}
+						{duration -1}
+					}
+					{Scale 0.5 0.3}
+					{preTurn 100 50}
+				}
+			}
+			{stage collided dying
+				{sprite "/FX/_BMP/Particle/Trava.ebm"
+					{Scale 0.3 0.3}
+					{Turn 90 60}
+					{timer
+						{mode play}
+						{duration 1.8 0.5}
+					}
+				}
+				{sprite "/FX/_BMP/Particle/hay2.ebm"
+					{Scale 0.5 0.3}
+					{Turn 90 60}
+					{timer
+						{mode play}
+						{duration 1.9 0.6}
+					}
+				}
+				{sprite "/FX/_BMP/Particle/hay1.ebm"
+					{Scale 0.5 0.3}
+					{Turn 90 60}
+					{timer
+						{mode play}
+						{duration 1.9 0.8}
+					}
+				}
+				{flags KillParticle Ground}
+			}
+		}
+		{NotifyOwner}
+	}
+}

@@ -1,0 +1,53 @@
+;Exported by: shevchenko
+;Date:        Fri Feb 13 19:38:08 2004
+;File:        D:\-Projects-\-3DWork-\sheva\river-wall2_curve_new.max
+{Skeleton
+	{bone "river-wall_column"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "river-wall_column.ply"}
+		{bone "piece0"
+			{Position -30.3401	-0.1945	12.8402}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "FX_dust1"
+			{Matrix34
+				-0.0000	-0.0000	1.0000
+				1.0000	0.0007	0.0000
+				0.0007	-1.0000	-0.0000
+				-31.7552	0.0502	8.5965
+			}
+		}
+		{bone "FX_stone1"
+			{Matrix34
+				-0.0000	-0.0000	1.0000
+				1.0000	0.0007	0.0000
+				0.0007	-1.0000	-0.0000
+				-30.2824	-0.1564	8.3781
+			}
+		}
+	}
+}
+{Volume "piece0"
+	{Box 11.7662 18.6844 9.76453}
+	{Bone "piece0"}
+	{Matrix34
+		-0.0026	-1.0000	-0.0000
+		-1.0000	0.0026	-0.0000
+		-0.0000	0.0000	1.0000
+		-0.4796	-0.0430	2.0834
+	}
+}
+{Volume "body1"
+	{Box 11.7662 22.2433 52.1609}
+	{Bone "river-wall_column"}
+	{Matrix34
+		-0.0026	-1.0000	-0.0000
+		-1.0000	0.0026	-0.0000
+		-0.0000	0.0000	1.0000
+		-29.1643	-0.2363	-14.5180
+	}
+}

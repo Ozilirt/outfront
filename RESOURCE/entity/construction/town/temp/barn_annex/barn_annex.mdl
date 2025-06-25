@@ -1,0 +1,42 @@
+;Exported by: sk
+;Date:        Mon Nov 17 15:54:24 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\House_euro.max
+{Skeleton
+	{bone "barn_annex"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "barn_annex.ply"}
+	}
+}
+{Obstacle "Rectangle06"
+	{Obb2
+		{Center 11.6445 49.1146}
+		{Extent 8.41384 7.85814}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle05"
+	{Obb2
+		{Center 3.11469 25.9059}
+		{Extent 17.0735 15.4081}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center 2.15663 -22.3818}
+		{Extent 18.1337 33.0064}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 36.2674 66.0128 44.1774}
+	{Bone "barn_annex"}
+	{Position 2.1566	22.3818	22.0887}
+}

@@ -1,0 +1,28 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.3) sy(0.35) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{obstacleId "car_empty"}
+	{colliderId "vehicle"}
+	{collideWith "construction" "vehicle" "armored" "tank" "tree" "bush" "human" "particle" "particle.big" "mine_at"}
+	{simulation {able 1}}
+	{Extension "car-dead3.mdl"}
+	{props "steel" "dead_vehicle" "big" "part"}
+
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+		{"3" "3"}
+	}
+	{volume	"body1"
+		{thickness 8}
+		{tags "body"}
+	}
+	{volume	"body2"
+		{thickness 10}
+		{tags "body"}
+	}
+}

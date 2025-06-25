@@ -1,0 +1,28 @@
+{Building
+	(include "/properties/post.inc")
+	{Extension "post-wood3.mdl"}
+	{props "wood" "disable_area"}
+	{volume	"body"
+		{able {visible 0}}
+		{thickness 3}
+	}
+
+;	{DecalView "shadow"
+;	 {OwnerShadow 64 64}
+;	 {Sprite "/properties/shadow/round.ebm"
+;		{PreScaleX 	0.9}
+;		{PreScaleY 	0.9}
+;  		{PreshiftX	0	}
+;  		{PreshiftY	0	}
+;		{Visibility	0.7	}
+;	 }
+;	 {layer groundshadow}
+;    {UseDirection}    
+;   }
+
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

@@ -1,0 +1,36 @@
+;Exported by: SK
+;Date:        Tue Jun 17 11:54:06 2003
+
+{Skeleton
+	{animation
+		{sequence {name "crush1"} {file "crush1.anm"} {duration percent 40}}
+		{sequence {name "crush2"} {file "crush2.anm"} {duration percent 40}}
+	}
+	{bone "shed-haulm1"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed-haulm1.ply"}
+		{bone "FX_haulm2"
+			{Position -0.1858	3.1599	13.3333}
+		}
+		{bone "FX_smoke2"
+			{Position -44.0141	12.1659	9.9408}
+		}
+		{bone "FX_fire2"
+			{Position -15.7465	-0.7572	8.7057}
+		}
+		{bone "FX_fire1"
+			{Position 30.9595	-16.8152	8.7057}
+		}
+		{bone "FX_fire1a"
+			{Position -36.1797	-19.6652	8.7057}
+		}
+		{bone "FX_smoke2a"
+			{Position 46.8519	-3.9097	9.9408}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+;Exported by: shevchenko
+;Date:        Thu Mar 04 16:10:26 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\Kazarma.max
+{Skeleton
+	{bone "werk"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "werk.ply"}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 2.76736 -0.39389}
+		{Extent 66.9495 48.5026}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body2"
+	{Box 143.055 62.4924 22.1117}
+	{Bone "werk"}
+	{Position 2.7674	0.3939	76.6595}
+}
+{Volume "body1"
+	{Box 133.899 97.0051 69.3399}
+	{Bone "werk"}
+	{Position 2.7674	0.3939	34.6699}
+}

@@ -1,0 +1,143 @@
+;Exported by: ubrashaev
+;Date:        Sat Dec 06 20:26:24 2003
+;File:        D:\-Projects-\-work-\3d\shed-haulm2.max
+{Skeleton
+	{bone "shed"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed.ply"}
+		{bone "exterior"
+			{Position 1.3017	1.9270	49.8576}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 1.02047 -0.65108}
+		{Extent 64.0407 28.7022}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "door_vol"
+	{Obb2
+		{Center 2.48339 -20.3715}
+		{Extent 11.8283 2.40107}
+		{Axis 0.25946 0.965754}
+	}
+	{Rotate}
+}
+{Obstacle "body5_vol"
+	{Obb2
+		{Center -67.5132 -0.00769997}
+		{Extent 4.69261 37.6442}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4_vol"
+	{Obb2
+		{Center 69.8079 -0.00769997}
+		{Extent 4.69261 37.6442}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3_vol"
+	{Obb2
+		{Center 44.796 -34.0407}
+		{Extent 27.3351 4.6926}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2_vol"
+	{Obb2
+		{Center -36.6175 -34.0407}
+		{Extent 34.2189 4.6926}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1_vol"
+	{Obb2
+		{Center 0.661873 32.8873}
+		{Extent 72.8527 4.6926}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "shed"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.5628	2.3549	40.8418
+	}
+}
+{Volume "fire3"
+	{Box 127.851 11.3207 35.2699}
+	{Bone "shed"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.7901	0.6129
+		-0.0000	0.6129	0.7901
+		-0.5498	-23.7686	50.6038
+	}
+}
+{Volume "fire2"
+	{Box 127.851 11.3207 35.2699}
+	{Bone "shed"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.8567	0.5159
+		0.0000	-0.5159	0.8567
+		-0.5498	27.3684	47.9957
+	}
+}
+{Volume "fire1"
+	{Box 71.8263 11.3207 35.2699}
+	{Bone "shed"}
+	{Position -14.1622	33.6554	17.6350}
+}
+{Volume "body5"
+	{Box 75.2884 9.3852 41.2949}
+	{Bone "shed"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-67.5132	0.0077	20.6475
+	}
+}
+{Volume "body4"
+	{Box 75.2884 9.3852 39.4179}
+	{Bone "shed"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		69.8079	0.0077	19.7089
+	}
+}
+{Volume "body3"
+	{Box 54.6703 9.3852 40.8256}
+	{Bone "shed"}
+	{Position 44.7960	34.0407	20.4128}
+}
+{Volume "body2"
+	{Box 68.4378 9.3852 39.8871}
+	{Bone "shed"}
+	{Position -36.6175	34.0407	19.9436}
+}
+{Volume "body1"
+	{Box 145.705 9.3852 41.2949}
+	{Bone "shed"}
+	{Position 0.6619	-32.8873	20.6475}
+}

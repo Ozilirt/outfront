@@ -1,0 +1,34 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/entourage.inc" sx(0.2) sy(0.1) pturn(0) ofsx(0) ofsy())
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "scarecrow.mdl"}
+	{props "one" "staged" "wood" "construction" "disable_area" "no_destroyed_stamp"}
+		
+	{Volume "fire0"
+		{able {visible 0}}	
+	}
+	{Volume "fire1"
+		{able {visible 0}}	
+	}
+	{Volume "head"
+		{Thickness  2}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 2}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 2}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 2}
+	}
+	("declare_fire_volumes")
+}
+

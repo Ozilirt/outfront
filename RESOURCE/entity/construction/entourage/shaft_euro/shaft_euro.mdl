@@ -1,0 +1,82 @@
+;Exported by: sk
+;Date:        Sat Jan 17 14:26:59 2004
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\Колодец.max
+{Skeleton
+	{bone "shaft_euro"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shaft_euro.ply"}
+	}
+}
+{Obstacle "Body2"
+	{Obb2
+		{Center -18.4654 0.0131078}
+		{Extent 1.99115 1.86659}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center 24.1541 0.0131078}
+		{Extent 1.99115 1.86659}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center 2.92874 0.0389709}
+		{Extent 19.4157 19.1207}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body5"
+	{Box 2.44432 13.65 50.4565}
+	{Bone "shaft_euro"}
+	{Matrix34
+		-0.0000	-0.5736	-0.8192
+		-0.0000	-0.8192	0.5736
+		1.0000	-0.0000	0.0000
+		3.4848	4.5693	51.3312
+	}
+}
+{Volume "Body4"
+	{Box 2.44432 13.65 50.4565}
+	{Bone "shaft_euro"}
+	{Matrix34
+		0.0000	0.5736	-0.8192
+		-0.0000	0.8192	0.5736
+		1.0000	-0.0000	0.0000
+		3.4848	-4.9390	51.3312
+	}
+}
+{Volume "Body3"
+	{Box 6.96903 6.94372 39.4192}
+	{Bone "shaft_euro"}
+	{Matrix34
+		0.0000	0.7071	-0.7071
+		-0.0000	0.7071	0.7071
+		1.0000	-0.0000	0.0000
+		2.9277	-0.2755	32.4977
+	}
+}
+{Volume "Body2"
+	{Box 3.9823 3.73318 48.6656}
+	{Bone "shaft_euro"}
+	{Position -18.4654	-0.0131	24.3328}
+}
+{Volume "Body1"
+	{Box 3.9823 3.73318 48.6656}
+	{Bone "shaft_euro"}
+	{Position 24.1541	-0.0131	24.3328}
+}
+{Volume "Body"
+	{Cylinder 19.4157 18.6173}
+	{Bone "shaft_euro"}
+	{Position 2.9287	-0.0390	9.3086}
+}

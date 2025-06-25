@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Tue Jan 13 18:42:12 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Вокзал\навес_x.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "platform_roof1_x"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "platform_roof1_x.ply"}
+		{bone "Piece0"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.3241	0.9460
+				0.0000	-0.9460	0.3241
+				4.1752	23.6302	63.7672
+			}
+			{VolumeView "Piece0.ply"}
+		}
+	}
+}
+{Volume "Piece0"
+	{Box 48.1627 1.88457 47.9606}
+	{Bone "Piece0"}
+	{Position -0.9181	0.6454	24.3207}
+}

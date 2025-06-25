@@ -1,0 +1,50 @@
+{game_entity
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{props "cornered" "concrete" "windowed" "parts" "construction"}
+	{Extension "aero_corner2.mdl"}
+
+	{Volume "body6"
+		{able {visible 0}}
+		{Thickness 100}
+	}
+
+	{Volume "body5"
+		{able {visible 0}}
+		{Thickness 100}
+	}
+
+	{Volume "body4"
+		{able {visible 0}}
+		{Thickness 100}
+	}
+
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 100}
+	}
+	{Volume "window4"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window3"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+}

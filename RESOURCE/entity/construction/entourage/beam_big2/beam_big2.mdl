@@ -1,0 +1,23 @@
+;Exported by: ubrashaev
+;Date:        Thu Sep 23 17:49:12 2004
+;File:        D:\-Projects-\-work-\3d\wood.max
+{Skeleton
+	{bone "beam_big2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "beam_big2.ply"}
+	}
+}
+{Volume "fire1"
+	{Box 46.8125 99.8697 25.6566}
+	{Bone "beam_big2"}
+	{Position -3.1597	1.2462	41.2073}
+}
+{Volume "body"
+	{Box 53.3125 99.8697 48.8976}
+	{Bone "beam_big2"}
+	{Position -3.1597	1.2462	24.4488}
+}

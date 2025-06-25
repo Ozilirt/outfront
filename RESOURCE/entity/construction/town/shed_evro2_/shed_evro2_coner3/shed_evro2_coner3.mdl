@@ -1,0 +1,79 @@
+;Exported by: shevchenko
+;Date:        Sat Mar 27 11:41:52 2004
+;File:        D:\-Projects-\-3DWork-\sheva\shed_evro2.max
+{Skeleton
+	{bone "shed_evro2_coner3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_evro2_coner3.ply"}
+		{bone "exterior"
+			{Position 0.0000	0.0000	60.9926}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -3.20441 1.48928}
+		{Extent 19.685 25.5906}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "beam"
+	{Obb2
+		{Center -21.0007 -1.55785}
+		{Extent 1.47638 1.47638}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 19.4425 1.01014}
+		{Extent 2.95275 26.0827}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 0.717917 30.062}
+		{Extent 21.6725 2.94572}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Box 59.6457 60.0394 0.984252}
+	{Bone "exterior"}
+	{Matrix34
+		-0.8283	0.0000	0.5603
+		-0.0000	1.0000	-0.0000
+		0.5603	0.0000	0.8283
+		3.2616	-5.8089	1.6634
+	}
+}
+{Volume "beam"
+	{Box 2.95276 2.95276 49.2126}
+	{Bone "shed_evro2_coner3"}
+	{Position -21.0007	1.5578	24.6063}
+}
+{Volume "body2"
+	{Box 5.90551 52.1654 49.2126}
+	{Bone "shed_evro2_coner3"}
+	{Position 19.4425	-1.0101	24.6063}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "shed_evro2_coner3"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		-4.4056	-27.1163	41.3386
+	}
+}

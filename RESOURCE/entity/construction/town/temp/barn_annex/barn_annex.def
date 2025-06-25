@@ -1,0 +1,20 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{props "concrete" "construction" "fence"}
+	{Extension "barn_annex.mdl"}
+
+	{constrain zero}
+	{TexMods
+		{"1" "1"}
+	}
+
+	{volume	"body"
+		{thickness hollow 10}
+		{tags "body"}
+	}
+}

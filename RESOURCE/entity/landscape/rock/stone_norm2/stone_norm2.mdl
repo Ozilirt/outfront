@@ -1,0 +1,36 @@
+;Exported by: shevchenko
+;Date:        Fri May 14 20:05:18 2004
+;File:        D:\-Projects-\-3DWork-\sheva\rocks\stone.max
+{Skeleton
+	{bone "stone_norm12"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "stone_norm12.ply"}
+	}
+}
+{Obstacle "Obstacle"
+	{Polygon2
+		{Radius 0}
+		{Vertex -16.1446 -47.2621}
+		{Vertex 3.21361 -58.1513}
+		{Vertex 40.2221 -44.2637}
+		{Vertex 46.9991 -17.5968}
+		{Vertex 28.6827 49.515}
+		{Vertex -7.85947 62.9519}
+		{Vertex -24.9284 42.4676}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "stone_norm12"}
+	{Matrix34
+		0.9972	-0.0728	0.0174
+		0.0728	0.9973	0.0041
+		-0.0177	-0.0029	0.9998
+		10.4141	-3.1874	-2.6396
+	}
+}

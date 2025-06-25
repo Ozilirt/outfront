@@ -1,0 +1,137 @@
+;Exported by: shevchenko
+;Date:        Fri Apr 16 17:25:07 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\Kazarma1.max
+{Skeleton
+	{bone "kaserne1_hall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "kaserne1_hall.ply"}
+		{bone "window9"
+			{Position -29.1534	9.5522	20.9381}
+			{VolumeView "window9.ply"}
+			{bone "FX_glass9"
+				{Matrix34
+					-0.9848	-0.0000	-0.1736
+					0.0000	-1.0000	0.0000
+					-0.1736	-0.0000	0.9848
+					0.0067	1.1053	14.3438
+				}
+			}
+		}
+		{bone "window9_x"
+			{Position -29.1534	9.5522	20.9381}
+			{visibility 0}
+			{VolumeView "window9_x.ply"}
+		}
+		{bone "exterior"
+			{Position -6.9627	9.2396	55.9856}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "door"
+	{Obb2
+		{Center 9.87949 38.3852}
+		{Extent 10.0706 1.03135}
+		{Axis 0.423139 0.906065}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -3.75327 -9.72956}
+		{Extent 23.7268 34.5668}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 11.4627 27.1585}
+		{Extent 5.85239 2.46063}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -23.2194 27.1585}
+		{Extent 9.23375 2.46063}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -30.0083 -9.75214}
+		{Extent 2.46063 34.5233}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -7.38437 -46.7392}
+		{Extent 24.9798 2.46063}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "door"
+	{Box 20.1322 1.9685 39.767}
+	{Bone "kaserne1_hall"}
+	{Matrix34
+		0.4189	-0.9080	0.0000
+		0.9080	0.4189	0.0000
+		0.0000	0.0000	1.0000
+		9.8795	-38.3852	29.7101
+	}
+}
+{Volume "roof"
+	{Box 59.8007 85.8171 1.9685}
+	{Bone "exterior"}
+	{Matrix34
+		0.9920	-0.0000	0.1259
+		0.0000	1.0000	0.0000
+		-0.1259	0.0000	0.9920
+		-0.6440	0.6866	0.1391
+	}
+}
+{Volume "body4"
+	{Box 11.7048 4.92126 57.6334}
+	{Bone "kaserne1_hall"}
+	{Position 11.4627	-27.1585	28.8167}
+}
+{Volume "body3"
+	{Box 18.4675 4.92126 52.8746}
+	{Bone "kaserne1_hall"}
+	{Position -23.2194	-27.1585	26.4373}
+}
+{Volume "body2"
+	{Box 69.0467 4.92126 52.3459}
+	{Bone "kaserne1_hall"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-30.0083	9.7521	26.1729
+	}
+}
+{Volume "body1"
+	{Box 49.9596 4.92126 58.104}
+	{Bone "kaserne1_hall"}
+	{Position -7.3844	46.7392	29.0520}
+}
+{Volume "window9"
+	{Box 1.51508 41.2459 18.9259}
+	{Bone "window9"}
+	{Position 0.0110	0.0000	9.4629}
+}
+{Volume "hole9"
+	{Box 8.98462 41.2459 18.9259}
+	{Bone "kaserne1_hall"}
+	{Position -29.6864	9.5522	30.4010}
+}

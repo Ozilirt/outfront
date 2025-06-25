@@ -1,0 +1,227 @@
+;Exported by: ubrashaev
+;Date:        Mon Dec 08 16:27:51 2003
+;File:        D:\-Projects-\-work-\3d\hous_haulm2.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "hous-haulm2"
+			{Position -11.7969	-0.7563	-1.6497}
+			{VolumeView "hous-haulm2.ply"}
+		}
+		{bone "exterior"
+			{Position -3.0780	-0.7563	65.1953}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "body7_vol"
+	{Obb2
+		{Center -9.73242 45.9622}
+		{Extent 17.78 5.71729}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1_vol"
+	{Obb2
+		{Center 72.0848 -15.4275}
+		{Extent 5.71729 34.6882}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body6_vol"
+	{Obb2
+		{Center 7.21017 30.6656}
+		{Extent 4.17362 21.0231}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5_vol"
+	{Obb2
+		{Center -78.9075 0.131426}
+		{Extent 5.71729 49.9765}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4_vol"
+	{Obb2
+		{Center -66.0404 47.865}
+		{Extent 17.78 5.71729}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2_vol"
+	{Obb2
+		{Center 37.9489 14.9673}
+		{Extent 34.2416 5.71729}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3_vol"
+	{Obb2
+		{Center -96.8147 14.9805}
+		{Extent 12.4696 24.8092}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center -3.94669 -46.3377}
+		{Extent 78.0979 5.71729}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -6.58527 0.86442}
+		{Extent 80.8279 48.2743}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body7"
+	{Box 11.4346 35.5599 47.7366}
+	{Bone "Basis"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-9.7324	-45.9622	22.2186
+	}
+}
+{Volume "body1"
+	{Box 11.4346 69.3764 47.7366}
+	{Bone "Basis"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		72.0848	15.4275	22.2186
+	}
+}
+{Volume "body6"
+	{Box 8.34724 42.0463 47.7366}
+	{Bone "Basis"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		7.2102	-30.6656	22.2186
+	}
+}
+{Volume "body5"
+	{Box 11.4346 99.9531 47.7366}
+	{Bone "Basis"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-78.9075	-0.1314	22.2186
+	}
+}
+{Volume "body4"
+	{Box 11.4346 35.5599 47.7366}
+	{Bone "Basis"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-66.0404	-47.8650	22.2186
+	}
+}
+{Volume "body2"
+	{Box 11.4346 68.4832 47.7366}
+	{Bone "Basis"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		37.9489	-14.9673	22.2186
+	}
+}
+{Volume "fire7"
+	{Box 105.087 0.59485 22.669}
+	{Bone "Basis"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9063	0.4226
+		0.0000	-0.4226	0.9063
+		-5.6517	55.4890	50.0004
+	}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "Basis"}
+	{Position -3.1444	-0.8234	45.7927}
+}
+{Volume "fire6"
+	{Box 32.8617 55.8248 3.06619}
+	{Bone "Basis"}
+	{Matrix34
+		0.9897	0.0000	0.1434
+		0.0000	1.0000	0.0000
+		-0.1434	0.0000	0.9897
+		-99.4559	-15.4275	44.8082
+	}
+}
+{Volume "fire5"
+	{Box 95.3791 4.05294 11.5912}
+	{Bone "Basis"}
+	{Position 12.4842	52.1878	27.3423}
+}
+{Volume "fire4"
+	{Box 3.72128 12.2735 11.7763}
+	{Bone "Basis"}
+	{Position 77.8559	13.5881	28.4490}
+}
+{Volume "fire3"
+	{Box 105.087 0.590551 23.6546}
+	{Bone "Basis"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9063	-0.4226
+		0.0000	0.4226	0.9063
+		-5.6517	-56.4670	51.9609
+	}
+}
+{Volume "fire2"
+	{Box 39.1273 3.73299 11.8742}
+	{Bone "Basis"}
+	{Position 46.4259	-17.1903	27.4743}
+}
+{Volume "fire1"
+	{Box 41.0761 3.81496 35.8864}
+	{Bone "Basis"}
+	{Position -27.1465	-52.6130	16.4104}
+}
+{Volume "fire0"
+	{Box 26.9319 3.81028 41.2298}
+	{Bone "Basis"}
+	{Position -96.1444	-42.1300	20.6149}
+}
+{Volume "body3"
+	{Box 24.9392 49.6185 43.4353}
+	{Bone "Basis"}
+	{Position -96.8147	-14.9805	20.0679}
+}
+{Volume "body"
+	{Box 11.4346 156.196 47.7366}
+	{Bone "Basis"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-3.9467	46.3377	22.2186
+	}
+}

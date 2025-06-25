@@ -1,0 +1,53 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/structure/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "turret" "wheeled"}
+;	{props "emit_on_attack"}
+	(include "/properties/dummy_fsm.inc")
+;	{simulation {able 0}}
+
+	{TexMods
+ 		{"ambush" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("crew_2_human")
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "76mm_zis3"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet76 ap" 10}
+			{item "bullet76 fg" 10}
+		}
+	}
+	{mass 10000}
+	{Extension "zis-3.mdl"}
+}

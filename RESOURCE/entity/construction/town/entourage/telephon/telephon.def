@@ -1,0 +1,23 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.85) sy(1.5) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "telephon.mdl"}
+	{props  "construction" "two" "staged" "windowed" "steel" "no_destroyed_stamp"}
+	{Volume "body"
+		{Thickness 0.1}
+	}
+	{Volume "window1"
+		{Thickness 0.1}
+	}
+	{Volume "window2"
+		{Thickness 0.1}
+	}
+	{Volume "window3"
+		{Thickness 0.1}
+	}
+	
+}

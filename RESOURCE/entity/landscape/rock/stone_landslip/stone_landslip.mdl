@@ -1,0 +1,140 @@
+;Exported by: vic
+;Date:        Thu Jun 03 15:40:44 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Stone\Stone11_Z.max
+{Skeleton
+	{bone "stone_landslip"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "stone_landslip.ply"}
+		{bone "Part1"
+			{Matrix34
+				-0.9863	0.1650	0.0000
+				-0.1650	-0.9863	0.0000
+				0.0000	0.0000	1.0000
+				86.7034	-73.4002	6.5199
+			}
+			{VolumeView "Part1.ply"}
+		}
+		{bone "Part2"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				78.6927	-42.7210	142.3089
+			}
+			{VolumeView "Part2.ply"}
+		}
+		{bone "Part3"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				73.4143	-27.2626	184.9269
+			}
+			{VolumeView "Part3.ply"}
+		}
+		{bone "Part4"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				73.1695	19.9903	184.9269
+			}
+			{VolumeView "Part4.ply"}
+		}
+		{bone "Part5"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				89.4981	-18.7652	119.3997
+			}
+			{VolumeView "Part5.ply"}
+		}
+		{bone "Part6"
+			{Matrix34
+				-1.0000	-0.0000	0.0000
+				0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				85.4684	35.8078	131.8204
+			}
+			{VolumeView "Part6.ply"}
+		}
+	}
+}
+{Obstacle "Obstacle1"
+	{Polygon2
+		{Radius 0}
+		{Vertex 0.536765 -132.602}
+		{Vertex 96.4261 -100.091}
+		{Vertex 117.003 -10.3746}
+		{Vertex 106.715 39.0104}
+		{Vertex 68.8528 120.084}
+		{Vertex 12.8832 132.842}
+		{Vertex -69.4252 110.207}
+		{Vertex -116.753 37.7759}
+		{Vertex -83.4177 -108.322}
+	}
+	{Rotate}
+}
+{Obstacle "Part1"
+	{Obb2
+		{Center 91.9018 72.2665}
+		{Extent 33.0496 21.4241}
+		{Axis 0.0356776 0.999363}
+	}
+	{Rotate}
+}
+{Volume "support1"
+	{Box 12.1091 105.979 75.5906}
+	{Bone "stone_landslip"}
+	{Position 102.2845	10.5885	37.7953}
+}
+{Volume "Part6"
+	{Polyhedron "Part6.vol"}
+	{Bone "Part6"}
+	{Position -0.0000	0.0000	0.0000}
+}
+{Volume "Part5"
+	{Polyhedron "Part5.vol"}
+	{Bone "Part5"}
+	{Position -0.0000	0.0000	0.0000}
+}
+{Volume "Part4"
+	{Polyhedron "Part4.vol"}
+	{Bone "Part4"}
+	{Position -0.0000	0.0000	0.0000}
+}
+{Volume "Part3"
+	{Polyhedron "Part3.vol"}
+	{Bone "Part3"}
+	{Position -0.0000	0.0000	0.0000}
+}
+{Volume "Part2"
+	{Polyhedron "Part2.vol"}
+	{Bone "Part2"}
+	{Matrix34
+		-1.0000	-0.0000	0.0000
+		0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.2742	-0.0000	-1.3624
+	}
+}
+{Volume "Part1"
+	{Polyhedron "Part1.vol"}
+	{Bone "Part1"}
+	{Matrix34
+		-0.9814	-0.1715	-0.0865
+		0.1645	-0.9829	0.0831
+		-0.0993	0.0673	0.9928
+		-6.0025	-1.5061	10.5655
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "stone_landslip"}
+	{Position -15.5505	9.4355	0.0000}
+}

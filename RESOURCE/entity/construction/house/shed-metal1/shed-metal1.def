@@ -1,0 +1,101 @@
+{building
+   	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.35) sy(2.05) ofsx(-2.5) ofsy(20))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "shed-metal1.mdl"}
+	{props "two" "concrete" "staged" "construction" "windowed"}
+    
+	{DecalView
+		{Sprite "/properties/shadow/house2.ebm"
+  			{PrescaleX 1.1 }
+	   		{PrescaleY 0.8 }
+			{Visibility 0.9}
+			{shiftX 0}
+			{shiftY 0}
+		}
+		{layer grounddecal}
+		{UseDirection}    
+	}
+
+	{DecalView
+			{Sprite "/properties/shadow/house3.ebm"
+  			{PrescaleX 0.7 }
+	   		{PrescaleY 0.5 }
+     		{Visibility 0.8}
+			{shiftX 5}
+			{shiftY 65}
+		}
+		{layer grounddecal}
+		{UseDirection}    
+	}
+
+	{volume "roof"
+		{able {visible 0} }
+		{thickness hollow 5}
+	}
+	{volume "roof2"
+		{able {visible 0}}
+		{thickness hollow 5}
+	}
+
+	{volume "body"
+		{thickness 5}
+		{tags "body"}	
+	}
+    {volume	"body1"
+		{thickness 5}
+		{able {holed}}
+		{tags "body"}
+	}
+    {volume	"body2"
+		{thickness 5}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume "body4"
+		{thickness 5}
+		{tags "body"}
+	}
+	{volume	"body5"
+		{thickness 5}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume	"body6"
+		{thickness 5}
+		{able {holed}}
+		{tags "body"}
+	}
+	{volume "body7"
+		{thickness 5}
+		{tags "body"}
+	}
+
+	{volume "hole1"
+		{able clear {hole}}
+	}
+	{volume "hole2"
+		{able clear {hole}}
+	}
+	{volume "hole3"
+		{able clear {hole}}
+	}
+	{volume "hole4"
+		{able clear {hole}}
+	}
+ 	{volume "hole5"
+		{able clear {hole}}
+	}
+
+ 	{volume "window1"
+		{able  {visible 0} {window}}
+		{thickness 1}
+	}
+ 	{volume "window2"
+		{able  {visible 0} {window}}
+		{thickness 1}
+	}
+}

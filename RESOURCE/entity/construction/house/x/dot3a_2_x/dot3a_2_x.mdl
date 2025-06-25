@@ -1,0 +1,257 @@
+;Exported by: shevchenko
+;Date:        Fri Apr 23 20:13:11 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\dot_new_x.max
+{Skeleton
+	{bone "dot3a_2"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "dot3a_2.ply"}
+		{bone "exterior"
+			{Position -21.7738	-27.0004	58.0709}
+			{VolumeView "exterior.ply"}
+		}
+		{bone "piece0"
+			{Position -60.1830	-55.7589	33.4646}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "piece1"
+			{Position -57.5862	22.0288	22.2697}
+			{VolumeView "piece1.ply"}
+		}
+		{bone "piece2"
+			{Position -7.0580	61.5817	14.6418}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Position -50.3405	36.7631	46.2119}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece4"
+			{Position -19.8235	61.5791	46.2119}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "piece5"
+			{Position -22.3991	36.0502	58.0709}
+			{VolumeView "piece5.ply"}
+		}
+		{bone "piece6"
+			{Position 22.2516	-30.0810	57.9110}
+			{VolumeView "piece6.ply"}
+		}
+		{bone "FX_dust1"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				20.3572	-24.6399	0.0000
+			}
+		}
+		{bone "FX_smoke2"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-29.0592	34.3985	1.6638
+			}
+		}
+		{bone "FX_stone1"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-3.4926	59.8849	18.0256
+			}
+		}
+		{bone "FX_stone2"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-59.4388	16.9858	18.4011
+			}
+		}
+	}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 11.9987 36.3461}
+		{Extent 12.7415 5.68385}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body6"
+	{Obb2
+		{Center -60.272 23.6981}
+		{Extent 6.57195 31.1192}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -11.5419 3.38158}
+		{Extent 43.3071 57.0866}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -40.6639 36.3461}
+		{Extent 13.9037 5.68385}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body7"
+	{Obb2
+		{Center 42.8153 36.3461}
+		{Extent 18.0752 5.68385}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -18.0393 -61.7002}
+		{Extent 21.2399 6.39433}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -48.529 -49.9653}
+		{Extent 6.40194 19.1376}
+		{Axis 0.707388 0.706825}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -60.272 -22.7282}
+		{Extent 6.57195 15.5039}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "piece6"
+	{Box 9.81949 38.7118 56.6235}
+	{Bone "piece6"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		-0.9397	0.3420	-0.0000
+		0.3420	0.9397	0.0000
+		1.2470	-0.7800	0.2171
+	}
+}
+{Volume "piece5"
+	{Box 9.81949 79.7463 56.6235}
+	{Bone "piece5"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		-1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	-0.0000
+		-2.2896	0.8031	0.0572
+	}
+}
+{Volume "piece4"
+	{Box 11.975 37.9528 13.8783}
+	{Bone "piece4"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0103	0.0522	-0.0032
+	}
+}
+{Volume "piece7"
+	{Box 11.975 37.9528 13.8783}
+	{Bone "piece3"}
+	{Matrix34
+		0.7071	-0.7071	0.0000
+		0.7071	0.7071	0.0000
+		0.0000	0.0000	1.0000
+		1.9522	13.0441	-0.0032
+	}
+}
+{Volume "piece3"
+	{Box 11.975 31.8931 13.8783}
+	{Bone "piece3"}
+	{Position -9.9920	-13.4575	-0.0032}
+}
+{Volume "piece2"
+	{Box 11.975 29.9827 18.8745}
+	{Bone "piece2"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.1880	0.0496	1.2265
+	}
+}
+{Volume "piece1"
+	{Box 11.975 53.8993 17.4867}
+	{Bone "piece1"}
+	{Matrix34
+		0.9982	0.0163	0.0583
+		0.0043	0.9415	-0.3370
+		-0.0604	0.3366	0.9397
+		-3.2746	1.8546	-0.1471
+	}
+}
+{Volume "piece0"
+	{Box 11.975 16.2655 37.749}
+	{Bone "piece0"}
+	{Position -0.1495	1.1538	0.5643}
+}
+{Volume "body4"
+	{Box 25.4831 11.3677 53.1496}
+	{Bone "dot3a_2"}
+	{Position 11.9987	-36.3461	26.5748}
+}
+{Volume "body6"
+	{Box 13.1439 62.2383 53.1496}
+	{Bone "dot3a_2"}
+	{Position -60.2720	-23.6981	26.5748}
+}
+{Volume "roof"
+	{Box 76.9685 77.7978 9.63451}
+	{Bone "exterior"}
+	{Position -6.0928	2.3065	0.0652}
+}
+{Volume "body5"
+	{Box 27.8073 11.3677 53.1496}
+	{Bone "dot3a_2"}
+	{Position -40.6639	-36.3461	26.5748}
+}
+{Volume "body7"
+	{Box 36.1504 11.3677 30.2953}
+	{Bone "dot3a_2"}
+	{Position 42.8153	-36.3461	15.1476}
+}
+{Volume "body3"
+	{Box 42.4798 12.7887 19.1339}
+	{Bone "dot3a_2"}
+	{Position -18.0393	61.7002	9.5669}
+}
+{Volume "body2"
+	{Box 38.2701 12.7887 25.5118}
+	{Bone "dot3a_2"}
+	{Matrix34
+		0.7071	0.7071	0.0000
+		-0.7071	0.7071	0.0000
+		0.0000	0.0000	1.0000
+		-48.5290	49.9653	12.7559
+	}
+}
+{Volume "body1"
+	{Box 13.1439 31.0077 25.5118}
+	{Bone "dot3a_2"}
+	{Position -60.2720	22.7282	12.7559}
+}

@@ -1,0 +1,16 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.55) sy(0.9) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "rail1.mdl"}
+	{obstacleID "unbreakable"}
+	{props "steel" "construction" "two" "staged" "no_destroyed_stamp"}
+	{Volume "body"
+		{thickness 300}
+		{tags "body"}
+	}
+	("declare_fire_volumes") 		
+}

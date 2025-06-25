@@ -1,0 +1,8 @@
+;SDL
+(include "stuff_small.ext")
+{props "grenade" "steel"}
+{rejectColliderByVolume}
+{pointCollider}
+{simulatorId "grenade"}
+{body {proper body sensible} {permit body}}
+{collidewith "human" "stuff" "particle"}

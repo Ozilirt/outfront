@@ -1,0 +1,62 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+    {mass 10000}
+	{Extension "tendor.mdl"}
+	{props "steel" "train_part"}
+
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+	}
+
+    {Volume "body1"
+    	{thickness 30}
+    	{component "body"}
+	}
+	{Volume "body"
+    	{thickness 30}
+    	{component "body"}
+	}
+	{Volume "body2"
+    	{thickness 30}
+	}
+	{Volume "body3"
+    	{thickness 30}
+	}
+	{Volume "body4"
+    	{thickness 30}
+	}
+	
+	{Volume "suspender_right"
+    	{thickness 20}
+	}
+	{Volume "suspender_left"
+    	{thickness 20}
+	}
+	{Volume "suspender_right1"
+    	{thickness 20}
+	}
+	{Volume "suspender_left1"
+    	{thickness 20}
+	}
+
+	{component "body"
+		{Able {break_by_pierce}}
+	}
+	{component "body1"
+		{Able {break_by_pierce}}
+	}
+	{component "suspender_right"
+		{Able {break_by_pierce}}
+	}
+	{component "suspender_right1"
+		{Able {break_by_pierce}}
+	}
+	{component "suspender_left"
+		{Able {break_by_pierce}}
+	}
+	{component "suspender_left1"
+		{Able {break_by_pierce}}
+	}
+}

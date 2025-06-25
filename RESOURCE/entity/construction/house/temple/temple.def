@@ -1,0 +1,376 @@
+{game_entity
+	(include "/properties/building.inc")
+
+	{DecalView
+		{ownershadow  64 64}
+		{name "shadow"}
+	}
+
+	{Extension "temple.mdl"}
+	{props "massive_building" "windowed" "construction" "concrete"}
+	{mass 100000000}
+
+	{placer
+		{place "1" {attach squat_lie} {linkbone "node1"}}
+		{place "2" {attach squat_lie} {linkbone "node2"}}
+		{place "3" {attach squat_lie} {linkbone "node3"}}
+		{place "4" {attach squat_lie} {linkbone "node4"}}
+		{place "5" {attach squat_lie} {linkbone "node5"}}
+		{place "6" {attach squat_lie} {linkbone "node6"}}
+		{place "7" {attach squat_lie} {linkbone "node7"}}
+		{place "8" {attach squat_lie} {linkbone "node8"}}
+		{place "9" {attach squat_lie} {linkbone "node9"}}
+		{place "10" {attach squat_lie} {linkbone "node10"}}
+		{place "11" {attach squat_lie} {linkbone "node11"}}
+	}
+	{boarder
+		{door "ladder1"}
+		{door "ladder4"}
+
+		{node "ladder1"}
+		{node "ladder2"}
+		{node "ladder4"}
+		{node "ladder5"}
+		{node "node1"}
+		{node "node2"}
+		{node "node3"}
+		{node "node4"}
+		{node "node5"}
+		{node "node6"}
+		{node "node7"}
+		{node "node8"}
+		{node "node9"}
+		{node "node10"}
+		{node "node11"}
+
+		{anm "ladder"
+			{forward {speed 2}}
+			{reverse {speed 2}}
+		}
+
+		{anm "walk"
+			{forward {speed 3}}
+			{reverse {speed 3}}
+		}
+
+		{link "ladder1" "ladder2"	{anm "walk"} {forward putoff} {reverse puton}}
+    	{link "ladder2" "node6" 	{anm "walk"}}
+		{link "node6"	"node5" 	{anm "walk"}}
+		{link "node5"	"node4" 	{anm "walk"}}
+		{link "node4"	"node3" 	{anm "walk"}}
+		{link "node3"	"node2" 	{anm "walk"}}
+		{link "node2"	"node1" 	{anm "walk"}}
+		{link "node1"	"node7" 	{anm "walk"}}
+		{link "node7"	"ladder2"	{anm "walk"}}
+		{link "ladder2"	"ladder4"	{anm "walk"}}
+		{link "ladder2"	"node6"		{anm "walk"}}
+		{link "ladder4" "ladder5"	{anm "walk"} {forward putoff} {reverse puton}}
+
+		{link "ladder5"	"node9"		{anm "walk"}}
+		{link "node9"	"node10"	{anm "walk"}}
+		{link "node10"	"node11"	{anm "walk"}}
+		{link "node11"	"node8"		{anm "walk"}}
+		{link "node8"	"ladder5"	{anm "walk"}}
+
+    	{link "node1"	"1"		 	{anm "walk"}}
+    	{link "node2"	"2"		 	{anm "walk"}}
+    	{link "node3"	"3"		 	{anm "walk"}}
+    	{link "node4"	"4"		 	{anm "walk"}}
+    	{link "node5"	"5"		 	{anm "walk"}}
+    	{link "node6"	"6"		 	{anm "walk"}}
+    	{link "node7"	"7"		 	{anm "walk"}}
+    	{link "node8"	"8"		 	{anm "walk"}}
+    	{link "node9"	"9"		 	{anm "walk"}}
+    	{link "node10"	"10"	 	{anm "walk"}}
+    	{link "node11"	"11"	 	{anm "walk"}}
+	}
+
+
+	{Volume "wall_p10"
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall_p11"
+		{able  {visible 0}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall_p8"
+		{able  {visible 0}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall_p6"
+		{able  {visible 0}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall_p5"
+		{able  {visible 0}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall_p3"
+		{able  {visible 0}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall2_p"
+		{able  {visible 0}}
+		{tags "body"}
+		{thickness 50}
+	}
+
+	{Volume "wall7"
+		{able {visible 0} {holed}}
+		{tags "body"}
+		{thickness 50}
+	}         
+	{Volume "wall6"
+		{thickness 50}
+		{able {holed}}
+		{tags "body"}
+	}
+	{Volume "wall5"
+		{thickness 50}
+		{able {holed}}
+		{tags "body"}
+	}
+	{Volume "wall4c"
+		{thickness 50}
+		{tags "body"}
+	}
+	{Volume "wall4b"
+		{able {holed}}
+		{thickness 50}
+		{tags "body"}
+	}
+	{Volume "wall4a"
+		{able {holed}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall4"
+		{thickness 50}
+		{able {holed}}
+		{tags "body"}
+	}
+	{Volume "wall3b"
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall3a"
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall3"
+		{able  {holed}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall2c"
+		{able  {holed}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall2b"
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall2a"
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall2"
+		{able {holed}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall1a"
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall1"
+		{able {holed}}
+		{tags "body"}
+		{thickness 50}
+	}
+	{Volume "wall0"
+		{thickness 50}
+		{able {holed}}
+		{tags "body"}
+	}
+
+
+	{Volume "piece1"
+		{able {visible 0}}
+		{thickness 100}
+	}
+	{Volume "piece12"
+		{able {visible 0} {holed}}
+		{thickness 100}
+	}
+	{Volume "roof"
+		{thickness 100}
+		{able {visible 0}}
+	}
+	{Volume "roof_small"
+		{thickness 100}
+		{able {visible 0}}
+	}
+
+
+	{Volume "window8"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window7"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window6"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window5"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window4"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window3"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window2"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+	{Volume "window1"
+		{able {visible 0} {window}}
+		{thickness 0.01}
+	}
+
+
+	{Volume "hole1"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole2"
+		{able clear {hole}}
+	}
+	{Volume "hole3"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole4"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole5"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole6"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole7"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole8"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole9"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole10"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+
+	{Volume "hole11"
+		{able clear {hole} {touch} }
+		{tags "attach" "10"}
+	}
+	{Volume "hole12"
+		{able clear {hole} {touch}}
+		{tags "attach" "8"}
+	}
+	{Volume "hole13"
+		{able clear {hole} {touch}}
+		{tags "attach" "9"}
+	}
+	{Volume "hole14"
+		{able clear {hole} {touch}}
+		{tags "attach" "11"}
+	}
+	{Volume "hole15"
+		{able clear {hole}}
+		{tags "cover"}
+	}
+	{Volume "hole16"
+		{able clear {hole} {touch}}
+		{tags "attach" "3"}
+	}
+	{Volume "hole17"
+		{able clear {hole} {touch}}
+		{tags "attach" "2"}
+	}
+	{Volume "hole18"
+		{able clear {hole} {touch}}
+		{tags "attach" "6"}
+	}
+	{Volume "hole19"
+		{able clear {hole} {touch}}
+		{tags "attach" "6"}
+	}
+	{Volume "hole20"
+		{able clear {hole} {touch}}
+		{tags "attach" "7"}
+	}
+	{Volume "hole21"
+		{able clear {hole} {touch}}
+		{tags "attach" "1"}
+	}
+	{Volume "hole22"
+		{able clear {hole} {touch}}
+		{tags "attach" "5"}
+	}
+	{Volume "hole23"
+		{able clear {hole} {touch}}
+		{tags "attach" "4"}
+	}
+
+	{Volume "door5"
+		{thickness 30}
+	}
+	{Volume "door4"
+		{thickness 30}
+	}
+	{Volume "door3"
+		{thickness 30}
+	}
+	{Volume "door2"
+		{thickness 30}
+	}
+	{Volume "door1"
+		{able  {holed}}
+		{thickness 30}
+	}
+	{Volume "door"
+		{thickness 30}
+		{able {holed}}
+	}
+
+;	{Volume "piece0"
+;		{thickness 10}
+;		{able {touch 0} {visible 0} {holed}}
+;	}
+
+}

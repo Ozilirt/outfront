@@ -1,0 +1,71 @@
+;Exported by: sk
+;Date:        Wed Jan 14 11:51:18 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Вокзал\roof_x.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.4}}
+	}
+	{bone "roof_x"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "roof_x.ply"}
+		{bone "Piece0"
+			{parameters "CommonMesh;"}
+			{animation
+				{sequence "crush" {speed 0.4}}
+			}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.9659	0.2588
+				0.0000	-0.2588	0.9659
+				-42.8467	-2.2867	76.1900
+			}
+			{VolumeView "Piece0.ply"}
+		}
+		{bone "Piece1"
+			{parameters "CommonMesh;"}
+			{animation
+				{sequence "crush" {speed 0.4}}
+			}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.9659	0.2588
+				0.0000	-0.2588	0.9659
+				-13.1646	-2.2867	76.1900
+			}
+			{VolumeView "Piece1.ply"}
+		}
+		{bone "Piece2"
+			{parameters "CommonMesh;"}
+			{animation
+				{sequence "crush" {speed 0.4}}
+			}
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	0.9659	0.2588
+				0.0000	-0.2588	0.9659
+				29.5288	-2.2867	76.1900
+			}
+			{VolumeView "Piece2.ply"}
+		}
+	}
+}
+{Volume "Piece2"
+	{Box 52.4519 59.2814 2.44373}
+	{Bone "Piece2"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "Piece1"
+	{Box 37.4182 59.2814 2.44373}
+	{Bone "Piece1"}
+	{Position 0.0000	0.0000	0.0000}
+}
+{Volume "Piece0"
+	{Box 25.816 59.2814 2.44373}
+	{Bone "Piece0"}
+	{Position 0.0000	0.0000	0.0000}
+}

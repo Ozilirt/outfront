@@ -1,0 +1,35 @@
+{game_entity
+	(include "/properties/post.inc")
+	{Extension "post-wood4.mdl"}
+	{props "wood"}
+	{volume	"post"
+		{thickness 4}
+		{tags "body"}
+		{able {visible 0}}	
+	}
+	{volume	"support"
+		{thickness 4}
+		{tags "body"}
+		{able {visible 0}}	
+	}
+
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 2.6}
+;			{PreScaleY 0.7}
+;  			{PreshiftX	-7}
+;  			{PreshiftY	7}
+;  			{Preturn -35}
+;			{Visibility	0.7}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;   }
+
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+    
+}

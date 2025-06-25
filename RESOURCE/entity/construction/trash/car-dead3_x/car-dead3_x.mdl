@@ -1,0 +1,88 @@
+;Exported by: grechishkin
+;Date:        Thu Nov 06 12:21:23 2003
+;File:        D:\-Projects-\-3DWork-\Model\xlam-right\xlam-right_x.max
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			-1.0000	-0.0000	0.0000
+			-0.0000	1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.9990	0.0435	-0.0038
+				0.0034	-0.1657	-0.9862
+				-0.0435	0.9852	-0.1657
+				2.0936	-20.6326	19.4052
+			}
+			{VolumeView "Body.ply"}
+			{bone "part4"
+				{Position -0.0000	0.0000	0.0000}
+				{VolumeView "part4.ply"}
+			}
+			{bone "part3"
+				{Position -0.0000	0.0000	0.0000}
+				{VolumeView "part3.ply"}
+			}
+			{bone "part2"
+				{Position -0.0000	0.0000	0.0000}
+				{VolumeView "part2.ply"}
+			}
+			{bone "part1"
+				{Position -0.0000	0.0000	0.0000}
+				{VolumeView "part1.ply"}
+			}
+		}
+	}
+}
+{Volume "part1"
+	{Box 16.7818 20.1872 0.906707}
+	{Bone "part1"}
+	{Matrix34
+		-0.7328	0.6803	-0.0108
+		-0.1106	-0.1348	-0.9847
+		-0.6713	-0.7204	0.1741
+		12.7412	-20.2332	19.8009
+	}
+}
+{Volume "part2"
+	{Box 12.6954 19.3696 0.7435}
+	{Bone "part2"}
+	{Matrix34
+		-0.9931	-0.0038	-0.1171
+		0.1171	-0.0189	-0.9929
+		0.0016	-0.9998	0.0192
+		13.7362	-14.2461	21.2586
+	}
+}
+{Volume "part3"
+	{Box 13.838 19.3696 0.7435}
+	{Bone "part3"}
+	{Matrix34
+		-0.9843	0.1567	-0.0810
+		0.0865	0.0286	-0.9958
+		-0.1537	-0.9872	-0.0417
+		-2.0582	15.4876	20.7049
+	}
+}
+{Volume "Body"
+	{Polyhedron "Body.vol"}
+	{Bone "Body"}
+	{Matrix34
+		-0.9990	-0.0034	0.0435
+		-0.0435	0.1657	-0.9852
+		-0.0038	-0.9862	-0.1657
+		13.7986	16.0833	21.0671
+	}
+}
+{Volume "part4"
+	{Box 38.6528 18.7373 27.0516}
+	{Bone "part4"}
+	{Matrix34
+		-0.9990	-0.0034	0.0435
+		-0.0435	0.1657	-0.9852
+		-0.0038	-0.9862	-0.1657
+		-26.2385	0.1567	16.0061
+	}
+}

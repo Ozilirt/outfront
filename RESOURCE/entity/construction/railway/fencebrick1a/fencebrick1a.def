@@ -1,0 +1,26 @@
+{building
+	(include "/properties/construction.inc")
+	{Extension "fencebrick1a.mdl"}
+	{props	"fence" "concrete"}
+	{volume	"body"
+		{thickness	5}
+	}
+;	{DecalView
+;		{OwnerShadow stencil 128 128}
+;		{Sprite "/properties/shadow/fence.ebm"
+;  			{PrescaleX 1.0}
+;  			{PrescaleY 1.5}
+;			{Visibility 0.7}
+;			{PreshiftX -30}
+;			{PreshiftY -3}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}    
+;		{name "shadow"}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+}

@@ -1,0 +1,14 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "fence-grate01-02.mdl"}
+;   {props "concrete" "fence"}
+	{props "one" "staged" "concrete" "construction" "no_destroyed_stamp"}
+	{volume	"body"
+		{thickness 30}
+	}
+}

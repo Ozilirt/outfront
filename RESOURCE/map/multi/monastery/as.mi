@@ -1,0 +1,152 @@
+{mission
+	{Camera
+		{Position 7150.8 2860.27}
+		{Distance 1200}
+		{ViewAngle 0.523599}
+		{YawAngle 2.4805}
+	}
+	{Environment "day1"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "start_point" 0x8000
+		{Position 4788.33 5509.16 -26.1675}
+		{Turn -73.8795}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "start_point" 0x8002
+		{Position 5359.87 5559.52 13.0216}
+		{Turn -89.2704}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "start_point" 0x8003
+		{Position 7201.65 2439.41 25.0097}
+		{Turn 125.562}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "start_point" 0x8004
+		{Position 7378.91 2481.58 15.8905}
+		{Turn 129.186}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "start_point" 0x8005
+		{Position 7442.7 2629.56 15.0118}
+		{Turn 141.383}
+		{Extender "start_point"
+			{mapPoint "a"}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "map_point" 0x8006
+		{Position 7245.71 2662.37 2.10184}
+		{Turn 121.191}
+		{Extender "map_point"
+			{name "a"}
+			{caption "ATeam"}
+			{teams "a"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "map_point" 0x8007
+		{Position 5349.5 4716.23 59}
+		{Turn -56.3794}
+		{Extender "map_point"
+			{name "d"}
+			{caption "DTeam"}
+			{teams "d"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "start_point" 0x8009
+		{Position 4456.56 4986.42 -9}
+		{Turn -35.714}
+		{Extender "start_point"
+			{mapPoint "d"}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Helpers
+		{trigger "1"
+			{actions
+				{"task"
+					{name "def"}
+				}
+				{"task"
+					{name "ass"}
+				}
+			}
+		}
+		{trigger "zone"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "zone"}
+					}
+				}
+			}
+		}
+		{waypoints
+		}
+		{zone "circle"
+			{position 5709.54 4444.4 59}
+			{Name "zone"}
+			{Radius 600}
+		}
+		{task
+			{name "def"}
+			{desc "mission/mp/monastery/as_def"}
+			{primary}
+			{team "d"}
+		}
+		{task
+			{name "ass"}
+			{desc "mission/mp/monastery/as_ass"}
+			{primary}
+			{team "a"}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

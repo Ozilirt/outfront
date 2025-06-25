@@ -1,0 +1,451 @@
+{game_entity
+    (include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  256 256}
+	{name "shadow"}
+  }
+	{Extension "church-tower3.mdl"}
+	{props "concrete" "construction" "windowed"}	
+	{obstacleID "unbreakable"}
+
+	{Volume "door3"
+		{Thickness 5}
+		{able {visible 1}}
+	}
+	{Volume "door2"
+		{Thickness 5}
+		{able {visible 1}}
+	}
+	{Volume "door1"
+		{Thickness 5}
+		{able {visible 1}}
+	}
+	{Volume "window9"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window8"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window7"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window6"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window15"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window14"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window13"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window12"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window11"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window10"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window5"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window4"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window3"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "window0"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	{Volume "roof"
+		{Tags  "body"}
+		{Thickness 20}
+		{able {visible 0}}
+	}
+	{Volume "hole9"
+		{Tags  "attach" "9"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole8"
+		{Tags  "attach" "8"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole7"
+		{Tags  "attach" "7"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole6"
+		{Tags  "attach" "6"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole5"
+		{Tags  "attach" "5"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole4"
+		{Tags  "attach" "4"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole3"
+		{Tags  "attach" "3"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole31"
+		{Tags  "attach" "31"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole30"
+		{Tags  "attach" "30"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole2"
+		{Tags  "attach" "2"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole29"
+		{Tags  "attach" "29"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole28"
+		{Tags  "attach" "28"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole27"
+		{Tags  "attach" "27"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole26"
+		{Tags  "attach" "26"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole25"
+		{Tags  "attach" "25"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole24"
+		{Tags  "attach" "24"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole23"
+		{Tags  "attach" "23"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole22"
+		{Tags  "attach" "22"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole21"
+		{Tags  "attach" "21"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole20"
+		{Tags  "attach" "20"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole1"
+		{Tags  "attach" "1"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole19"
+		{Tags  "attach" "19"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole18"
+		{Tags  "attach" "18"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole17"
+		{Tags  "attach" "17"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole16"
+		{Tags  "attach" "16"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole15"
+		{Tags  "attach" "15"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole14"
+		{Tags  "attach" "14"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole13"
+		{Tags  "attach" "13"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole12"
+		{Tags  "attach" "12"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole11"
+		{Tags  "attach" "11"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole10"
+		{Tags  "attach" "10"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole0"
+		{Tags  "attach" "0"}
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "body9"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body8"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}{holed}}
+	}
+	{Volume "body7"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}{holed}}
+	}
+	{Volume "body6"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}{holed}}
+	}
+	{Volume "body5"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body4"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body3"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 0}{holed}}
+	}
+	{Volume "body12"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body11"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body10"
+		{Tags  "body"}
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{mass 50000}
+
+	{placer
+		{place "0" {attach  squat_lie} 		{linkbone "attach0"}}
+		{place "1" {attach  squat_lie} 		{linkbone "attach1"}}
+		{place "2" {attach  squat_lie} 		{linkbone "attach2"}}
+		{place "3" {attach  squat_lie} 		{linkbone "attach3"}}
+		{place "4" {attach  squat_lie} 		{linkbone "attach4"}}
+		{place "5" {attach  squat_lie} 		{linkbone "attach5"}}
+		{place "6" {attach  squat_lie} 		{linkbone "attach6"}}
+		{place "7" {attach  squat_lie} 		{linkbone "attach7"}}
+		{place "8" {attach  squat_lie} 		{linkbone "attach8"}}
+		{place "9" {attach  squat_lie} 		{linkbone "attach9"}}
+		{place "10" {attach  squat_lie}		{linkbone "attach10"}}
+		{place "11" {attach  squat_lie}		{linkbone "attach11"}}
+		{place "12" {attach  squat_lie}		{linkbone "attach12"}}
+		{place "13" {attach  squat_lie}		{linkbone "attach13"}}
+		{place "14" {attach  squat_lie}		{linkbone "attach14"}}
+		{place "15" {attach  squat_lie}		{linkbone "attach15"}}
+		{place "16" {attach  squat_lie}		{linkbone "attach16"}}
+		{place "17" {attach  squat_lie}		{linkbone "attach17"}}
+		{place "18" {attach  squat_lie}		{linkbone "attach18"}}
+		{place "19" {attach  squat_lie}		{linkbone "attach19"}}
+		{place "20" {attach  squat_lie}		{linkbone "attach20"}}
+		{place "21" {attach  squat_lie}		{linkbone "attach21"}}
+		{place "22" {attach  squat_lie}		{linkbone "attach22"}}
+		{place "23" {attach  squat_lie}		{linkbone "attach23"}}
+		{place "24" {attach  squat_lie}		{linkbone "attach24"}}
+		{place "25" {attach  squat_lie}		{linkbone "attach25"}}
+		{place "26" {attach  squat_lie}		{linkbone "attach26"}}
+		{place "27" {attach  squat_lie}		{linkbone "attach27"}}
+		{place "28" {attach  squat_lie}		{linkbone "attach28"}}
+		{place "29" {attach  squat_lie}		{linkbone "attach29"}}
+		{place "30" {attach  squat_lie}		{linkbone "attach30"}}
+		{place "31" {attach  squat_lie}		{linkbone "attach31"}}
+	}
+
+	{Boarder
+		{door "emit" {queue 0}}
+		{node "node_ladder_bottom"}
+		{node "node_ladder_top1"}
+		{node "node_ladder_top2"}
+		{node "node_ladder_top3"}
+		{anm "ladder_bind"
+			{forward	{begin	"stand_climb_stairs"}}
+			{reverse	{end	"stand_climb_stairs" -1}}
+		}
+		{anm "ladder"
+			{forward	{speed 1.2} {loop "stand_upstairs"}}
+			{reverse	{speed 1.2} {loop "stand_upstairs" -1}}
+		}
+		{anm "walk"
+			{forward {speed 3}}
+			{reverse {speed 3}}
+		}
+	
+		{link "emit" "node_ladder_bottom" {anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_ladder_bottom" "node_ladder_top1" {anm "ladder"} {forward puton} {reverse putoff}}
+		{link "node_ladder_top1" "2" {anm "walk"}}
+		{link "node_ladder_top1" "4" {anm "walk"}}
+		{link "node_ladder_top1" "5" {anm "walk"}}
+		{link "node_ladder_top1" "6" {anm "walk"}}
+		{link "node_ladder_top1" "7" {anm "walk"}}
+		{link "node_ladder_top1" "11" {anm "walk"}}
+		{link "node_ladder_top1" "12" {anm "walk"}}
+		{link "node_ladder_top1" "14" {anm "walk"}}
+
+		{link "emit" "node_ladder_bottom" {anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_ladder_bottom" "node_ladder_top2" {anm "ladder"} {forward puton} {reverse putoff}}
+		{link "node_ladder_top2" "0" {anm "walk"}}
+		{link "node_ladder_top2" "1" {anm "walk"}}
+		{link "node_ladder_top2" "3" {anm "walk"}}
+		{link "node_ladder_top2" "8" {anm "walk"}}
+		{link "node_ladder_top2" "9" {anm "walk"}}
+		{link "node_ladder_top2" "10" {anm "walk"}}
+		{link "node_ladder_top2" "13" {anm "walk"}}
+		{link "node_ladder_top2" "15" {anm "walk"}}
+
+		{link "emit" "node_ladder_bottom" {anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_ladder_bottom" "node_ladder_top3" {anm "ladder"} {forward puton} {reverse putoff}}
+		{link "node_ladder_top3" "16" {anm "walk"}}
+		{link "node_ladder_top3" "17" {anm "walk"}}
+		{link "node_ladder_top3" "18" {anm "walk"}}
+		{link "node_ladder_top3" "19" {anm "walk"}}
+		{link "node_ladder_top3" "20" {anm "walk"}}
+		{link "node_ladder_top3" "21" {anm "walk"}}
+		{link "node_ladder_top3" "22" {anm "walk"}}
+		{link "node_ladder_top3" "23" {anm "walk"}}
+		{link "node_ladder_top3" "24" {anm "walk"}}
+		{link "node_ladder_top3" "25" {anm "walk"}}
+		{link "node_ladder_top3" "26" {anm "walk"}}
+		{link "node_ladder_top3" "27" {anm "walk"}}
+		{link "node_ladder_top3" "28" {anm "walk"}}
+		{link "node_ladder_top3" "29" {anm "walk"}}
+		{link "node_ladder_top3" "30" {anm "walk"}}
+		{link "node_ladder_top3" "31" {anm "walk"}}
+	
+
+		{link "attach2" "attach4"	{anm "walk"}}
+    	{link "attach4" "attach5" 	{anm "walk"}}
+		{link "attach5"	"attach6" 	{anm "walk"}}
+		{link "attach6"	"attach7" 	{anm "walk"}}
+		{link "attach7"	"attach11" 	{anm "walk"}}
+		{link "attach11"	"attach12" {anm "walk"}}
+		{link "attach12"	"attach14" {anm "walk"}}
+		{link "attach14"	"node_ladder_top1" {anm "walk"} {forward putoff} {reverse puton}}
+
+		{link "node_ladder_top1" "node_ladder_top2"	{anm "ladder"} {forward puton} {reverse putoff}}
+    	{link "node_ladder_top2" "attach0" 	{anm "walk"}}
+		{link "attach0"	"attach1" 	{anm "walk"}}
+		{link "attach1"	"attach3" 	{anm "walk"}}
+		{link "attach3"	"attach8" 	{anm "walk"}}
+		{link "attach8"	"attach9" 	{anm "walk"}}
+		{link "attach9"	"attach10" 	{anm "walk"}}
+		{link "attach10"	"attach13" 	{anm "walk"}}
+		{link "attach13"	"attach15" 	{anm "walk"}}
+		{link "attach15"	"node_ladder_top2" 	{anm "walk"} {forward putoff} {reverse puton}}
+
+		{link "node_ladder_top2" "node_ladder_top3"	{anm "ladder"} {forward puton} {reverse putoff}}
+		{link "node_ladder_top3" "attach16"	{anm "walk"}}
+    	{link "attach16" "attach17" 	{anm "walk"}}
+		{link "attach17"	"attach18" 	{anm "walk"}}
+		{link "attach18"	"attach19" 	{anm "walk"}}
+		{link "attach19"	"attach20" 	{anm "walk"}}
+		{link "attach20"	"attach21" 	{anm "walk"}}
+		{link "attach21"	"attach22" 	{anm "walk"}}
+		{link "attach22"	"attach23" 	{anm "walk"}}
+		{link "attach23"	"attach24" 	{anm "walk"}}
+		{link "attach24"	"attach25" 	{anm "walk"}}
+		{link "attach25"	"attach26" 	{anm "walk"}}
+		{link "attach26"	"attach27" 	{anm "walk"}}
+		{link "attach27"	"attach28" 	{anm "walk"}}
+		{link "attach28"	"attach29" 	{anm "walk"}}
+		{link "attach29"	"attach30" 	{anm "walk"}}
+		{link "attach30"	"attach31" 	{anm "walk"}}
+		{link "attach31"	"node_ladder_top3" 	{anm "walk"} {forward putoff} {reverse puton}}
+
+       	{link "attach1"	"1"		 	{anm "walk"}}
+       	{link "attach2"	"2"		 	{anm "walk"}}
+       	{link "attach3"	"3"		 	{anm "walk"}}
+       	{link "attach4"	"4"		 	{anm "walk"}}
+       	{link "attach5"	"5"		 	{anm "walk"}}
+       	{link "attach6"	"6"		 	{anm "walk"}}
+       	{link "attach7"	"7"		 	{anm "walk"}}
+       	{link "attach8"	"8"		 	{anm "walk"}}
+       	{link "attach9"	"7"		 	{anm "walk"}}
+       	{link "attach10"	"10"		 	{anm "walk"}}
+       	{link "attach11"	"11"		 	{anm "walk"}}
+       	{link "attach12"	"12"		 	{anm "walk"}}
+       	{link "attach13"	"13"		 	{anm "walk"}}
+       	{link "attach14"	"14"		 	{anm "walk"}}
+       	{link "attach15"	"15"		 	{anm "walk"}}
+       	{link "attach16"	"16"		 	{anm "walk"}}
+       	{link "attach17"	"17"		 	{anm "walk"}}
+       	{link "attach18"	"18"		 	{anm "walk"}}
+       	{link "attach19"	"19"		 	{anm "walk"}}
+       	{link "attach20"	"20"		 	{anm "walk"}}
+       	{link "attach21"	"21"		 	{anm "walk"}}
+       	{link "attach22"	"22"		 	{anm "walk"}}
+       	{link "attach23"	"23"		 	{anm "walk"}}
+       	{link "attach24"	"24"		 	{anm "walk"}}
+       	{link "attach25"	"25"		 	{anm "walk"}}
+       	{link "attach26"	"26"		 	{anm "walk"}}
+       	{link "attach27"	"27"		 	{anm "walk"}}
+       	{link "attach28"	"28"		 	{anm "walk"}}
+       	{link "attach29"	"29"		 	{anm "walk"}}
+       	{link "attach30"	"30"		 	{anm "walk"}}
+       	{link "attach31"	"31"		 	{anm "walk"}}
+       	
+	}
+}

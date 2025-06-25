@@ -1,0 +1,39 @@
+;Exported by: ubrashaev
+;Date:        Sat Mar 27 11:02:19 2004
+;File:        D:\-Projects-\-work-\3d\model\soldiers\rus_infantry2(moving).max
+{Skeleton
+	{animation
+		{sequence "flattern" {speed 0.4}}
+	}
+	{bone "barrow"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "barrow.ply"}
+		{bone "Skin02"
+			{parameters "CommonMesh;"}
+			{Matrix34
+				0.4226	0.0000	0.9063
+				0.0000	-1.0000	-0.0000
+				-0.9063	-0.0000	0.4226
+				-9.4676	0.5224	7.4369
+			}
+			{VolumeView "Skin02.ply"}
+		}
+	}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center 0.645805 -0.473934}
+		{Extent 17.4693 6.21027}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body1"
+	{Box 34.9386 12.4205 8.07425}
+	{Bone "barrow"}
+	{Position 0.6458	0.4739	5.7066}
+}

@@ -1,0 +1,27 @@
+;Exported by: sat
+;Date:        Sat Mar 20 12:36:54 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\plantree3.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "Group01"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Group01.ply"}
+	}
+}
+{Volume "bole"
+	{Cylinder 3.80853 98.363}
+	{Bone "Group01"}
+	{Position -0.2305	-0.3023	49.4395}
+}
+{Volume "crown"
+	{Box 43.924 40.1574 70.6386}
+	{Bone "Group01"}
+	{Position 1.8819	6.8768	96.6527}
+}

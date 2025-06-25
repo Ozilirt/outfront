@@ -1,0 +1,40 @@
+;Exported by: ubrashaev
+;Date:        Thu Jan 15 16:39:27 2004
+;File:        D:\-Projects-\-work-\3d\stog\Seno2.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.5}}
+	}
+	{bone "stack_big1"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "stack_big1.ply"}
+		{bone "locomotive"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	0.0000
+				0.0000	0.0000	1.0000
+				10.2232	0.9924	43.6883
+			}
+		}
+	}
+}
+{Volume "fire1"
+	{Box 246.816 50.7969 17.8288}
+	{Bone "locomotive"}
+	{Position -4.9826	-0.0280	-4.4740}
+}
+{Volume "body"
+	{Box 246.816 50.7969 52.4377}
+	{Bone "stack_big1"}
+	{Matrix34
+		-1.0000	0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		15.2058	1.0204	24.5864
+	}
+}

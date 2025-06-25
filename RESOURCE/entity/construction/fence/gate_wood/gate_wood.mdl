@@ -1,0 +1,53 @@
+{Skeleton
+	{animation
+		{sequence {name "crush"} {file "crush.anm"} {duration percent 60}}
+	}
+	{bone "gate_wood"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate_wood.ply"}
+	}
+}
+{Obstacle "Rectangle13"
+	{Capsule2
+		{Radius 3.83194}
+		{Origin 1.38741 -39.4742}
+		{Destination 0.27082 -39.4742}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle12"
+	{Capsule2
+		{Radius 3.83194}
+		{Origin 1.38741 39.7366}
+		{Destination 0.27082 39.7366}
+	}
+	{Rotate}
+}
+
+
+{Volume "gate_vol02"
+	{Box 10.4891 93.6459 11.3719}
+	{Bone "gate_wood"}
+	{Position 1.2358	-0.0599	55.2067}
+}
+{Volume "gate_vol01"
+	{Box 3.50805 4.59849 52.2083}
+	{Bone "gate_wood"}
+	{Matrix34
+		0.9953	-0.0042	0.0968
+		-0.0000	0.9991	0.0434
+		-0.0969	-0.0432	0.9944
+		-1.2939	-40.8681	25.9568
+	}
+}
+{Volume "gate"
+	{Box 3.50805 4.59849 51.4227}
+	{Bone "gate_wood"}
+	{Position 1.2358	39.3267	25.7113}
+}
+

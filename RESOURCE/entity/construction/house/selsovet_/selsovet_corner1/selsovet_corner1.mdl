@@ -1,0 +1,120 @@
+;Exported by: vic
+;Date:        Tue Jan 27 18:05:07 2004
+;File:        D:\-Projects-\Celpo\Selsovet_new.max
+{Skeleton
+	{bone "selsovet_corner1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "selsovet_corner1.ply"}
+		{bone "exterior"
+			{Position 0.9811	2.9764	77.5400}
+			{VolumeView "exterior.ply"}
+		}
+		{bone "window1"
+			{Position 26.8913	-11.8421	35.4480}
+			{VolumeView "window1.ply"}
+			{bone "FX_glass1"
+				{Position 0.2584	-0.0217	0.1942}
+			}
+		}
+		{bone "window1_x"
+			{Position 26.2611	-11.8421	35.4480}
+			{visibility 0}
+			{VolumeView "window1_x.ply"}
+		}
+		{bone "window2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.9400	-39.3938	35.4480
+			}
+			{VolumeView "window2.ply"}
+			{bone "FX_glass2"
+				{Position 0.2339	-0.0067	0.1942}
+			}
+		}
+		{bone "window2_x"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.9400	-38.7486	35.4480
+			}
+			{visibility 0}
+			{VolumeView "window2_x.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -6.7318 -7.50596}
+		{Extent 28.2264 41.052}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -0.558239 37.4354}
+		{Extent 29.5276 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 24.9654 7.08543}
+		{Extent 3.93701 26.4387}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Hole2"
+	{Box 15.748 19.685 28.3465}
+	{Bone "selsovet_corner1"}
+	{Position -0.8939	-38.1922	35.0188}
+}
+{Volume "Hole1"
+	{Box 19.685 15.748 28.3465}
+	{Bone "selsovet_corner1"}
+	{Position 25.3680	-11.8183	35.0188}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "selsovet_corner1"}
+	{Position -0.5582	-37.4354	-0.0000}
+}
+{Volume "body"
+	{Box 7.87402 52.8775 59.0551}
+	{Bone "selsovet_corner1"}
+	{Position 24.9654	-7.0854	29.5276}
+}
+{Volume "window2"
+	{Box 1.9685 15.748 28.3071}
+	{Bone "window2"}
+	{Position -0.9715	0.0185	-0.4439}
+}
+{Volume "window1"
+	{Box 1.9685 15.748 28.3071}
+	{Bone "window1"}
+	{Position -0.9471	0.0035	-0.4439}
+}
+{Volume "roof"
+	{Box 1.9685 80.0151 74.4757}
+	{Bone "exterior"}
+	{Matrix34
+		0.5455	0.0000	0.8381
+		0.0000	1.0000	0.0000
+		-0.8381	0.0000	0.5455
+		-0.9028	3.0272	-0.6885
+	}
+}
+{Volume "floor"
+	{Box 51.8222 71.1756 1.9685}
+	{Bone "exterior"}
+	{Position -3.1283	-2.3035	-19.0108}
+}

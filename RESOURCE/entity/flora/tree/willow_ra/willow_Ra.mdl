@@ -1,0 +1,38 @@
+;Exported by: sat
+;Date:        Sat Mar 20 11:59:19 2004
+;File:        D:\-Project-\-3DWork-\Poligontrees\willow_Ra.max
+{Skeleton
+	{animation
+		{sequence "stir"}
+	}
+	{bone "willow"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "willow.ply"}
+	}
+}
+{Obstacle "obstacle"
+	{Circle2
+		{Radius 2.79058}
+		{Center 0.158224 -0.00880124}
+	}
+}
+{Volume "bole"
+	{Cylinder 2.78953 87.2425}
+	{Bone "willow"}
+	{Matrix34
+		0.9976	0.0049	-0.0696
+		-0.0000	0.9976	0.0698
+		0.0698	-0.0696	0.9951
+		3.0429	-3.0355	43.4090
+	}
+}
+{Volume "crown"
+	{Box 63.7238 45.3653 80.3838}
+	{Bone "willow"}
+	{Position 1.7524	-2.1276	60.0406}
+}

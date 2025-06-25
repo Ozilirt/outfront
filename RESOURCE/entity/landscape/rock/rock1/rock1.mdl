@@ -1,0 +1,70 @@
+;Exported by: shevchenko
+;Date:        Sat May 15 10:25:45 2004
+;File:        D:\-Projects-\-3DWork-\sheva\rocks\rocks.max
+{Skeleton
+	{bone "rocks"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "rocks.ply"}
+	}
+}
+{Obstacle "Obstacle3"
+	{Polygon2
+		{Radius 0}
+		{Vertex -49.6452 16.848}
+		{Vertex -36.1733 19.9098}
+		{Vertex -30.6621 35.9842}
+		{Vertex -37.5511 42.1077}
+		{Vertex -51.9415 42.4139}
+		{Vertex -58.2182 32.4631}
+	}
+	{Rotate}
+}
+{Obstacle "Obstacle2"
+	{Polygon2
+		{Radius 0}
+		{Vertex 29.0426 23.584}
+		{Vertex 32.4106 18.8382}
+		{Vertex 50.0158 18.8382}
+		{Vertex 64.4062 29.8606}
+		{Vertex 60.8851 45.1695}
+		{Vertex 41.1366 53.2832}
+		{Vertex 29.9611 39.3521}
+	}
+	{Rotate}
+}
+{Obstacle "Obstacle1"
+	{Polygon2
+		{Radius 0}
+		{Vertex -22.6462 -38.9674}
+		{Vertex 13.6546 -41.2521}
+		{Vertex 45.1323 -0.128082}
+		{Vertex 20.2548 34.1419}
+		{Vertex -25.9462 48.1038}
+		{Vertex -38.8927 -0.381927}
+	}
+	{Rotate}
+}
+{Volume "rock3"
+	{Box 25.7949 23.6641 17.5564}
+	{Bone "rocks"}
+	{Matrix34
+		0.7071	-0.7071	0.0000
+		0.7071	0.7071	0.0000
+		0.0000	0.0000	1.0000
+		45.4201	-34.9269	8.7782
+	}
+}
+{Volume "rock2"
+	{Box 22.4303 20.0543 17.5564}
+	{Bone "rocks"}
+	{Position -44.2604	-30.4763	8.7782}
+}
+{Volume "rock1"
+	{Polyhedron "rock1.vol"}
+	{Bone "rocks"}
+	{Position -1.2461	-3.6570	0.0000}
+}

@@ -1,0 +1,84 @@
+;Exported by: shevchenko
+;Date:        Sun May 09 15:21:59 2004
+;File:        D:\-Projects-\-3DWork-\sheva\bridge_town.max
+{Skeleton
+	{bone "bridge_town"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "bridge_town.ply"}
+		{bone "bridge_town_lend"
+			{parameters "Land;Ground;"}
+			{Position 0.0000	-0.0000	0.0000}
+			{VolumeView "bridge_town_lend.ply" {Ground}}
+		}
+	}
+}
+{Obstacle "railing1"
+	{Obb2
+		{Center -94.8184 1.52588e-005}
+		{Extent 4.91775 162.977}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "railing"
+	{Obb2
+		{Center 94.1476 1.52588e-005}
+		{Extent 4.91775 162.977}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body3"
+	{Box 197.182 74.1323 3.93701}
+	{Bone "bridge_town"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9697	-0.2443
+		0.0000	0.2443	0.9697
+		-0.2654	120.7728	12.1216
+	}
+}
+{Volume "body"
+	{Box 197.182 85.9842 3.93701}
+	{Bone "bridge_town"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0005
+		0.0000	-0.0005	1.0000
+		-0.2654	42.7439	19.8158
+	}
+}
+{Volume "body1"
+	{Box 197.182 86.0342 3.93701}
+	{Bone "bridge_town"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0015
+		0.0000	-0.0015	1.0000
+		-0.2654	-42.7516	19.8158
+	}
+}
+{Volume "body2"
+	{Box 197.182 74.8811 3.93701}
+	{Bone "bridge_town"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9699	0.2436
+		0.0000	-0.2436	0.9699
+		-0.2654	-121.0470	12.6768
+	}
+}
+{Volume "railing1"
+	{Polyhedron "railing1.vol"}
+	{Bone "bridge_town"}
+	{Position -94.8184	-0.0000	-98.4252}
+}
+{Volume "railing"
+	{Polyhedron "railing.vol"}
+	{Bone "bridge_town"}
+	{Position 94.1476	-0.0000	-98.4252}
+}

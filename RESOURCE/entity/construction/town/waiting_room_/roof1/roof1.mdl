@@ -1,0 +1,59 @@
+;Exported by: sk
+;Date:        Wed Jan 14 10:44:48 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Вокзал\rw_station2.max
+{Skeleton
+	{bone "roof1"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "roof1.ply"}
+	}
+}
+{Obstacle "Body1"
+	{Obb2
+		{Center -42.9628 21.4887}
+		{Extent 1.47638 1.47638}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body2"
+	{Obb2
+		{Center 6.15294 21.4887}
+		{Extent 1.47638 1.47638}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 91.6806 2.04724 59.3238}
+	{Bone "roof1"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.2607	-0.9654
+		0.0000	0.9654	0.2607
+		2.1918	-0.1384	76.2299
+	}
+}
+{Volume "Body1"
+	{Box 2.95276 2.95276 70.0217}
+	{Bone "roof1"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-42.9628	-21.4887	35.0108
+	}
+}
+{Volume "Body2"
+	{Box 2.95276 2.95276 70.0217}
+	{Bone "roof1"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		6.1529	-21.4887	35.0108
+	}
+}

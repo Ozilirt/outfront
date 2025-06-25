@@ -1,0 +1,30 @@
+;Exported by: GARRY
+;Date:        Thu Jun 19 17:33:54 2003
+
+{Skeleton
+	{animation
+		{sequence {name "crush1"} {file "crush1.anm"} {duration percent 40}}
+		{sequence {name "crush2"} {file "crush2.anm"} {duration percent 40}}
+	}
+	{bone "shed"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed.ply"}
+		{bone "FX_dust2"
+			{Position 22.7633	0.9633	1.6907}
+		}
+		{bone "FX_haulm2"
+			{Position 54.6647	-0.2477	40.3428}
+		}
+		{bone "FX_wood2"
+			{Position -25.8112	-28.2356	39.5461}
+		}
+		{bone "FX_dust2a"
+			{Position -58.0267	-26.6765	1.9294}
+		}
+	}
+}

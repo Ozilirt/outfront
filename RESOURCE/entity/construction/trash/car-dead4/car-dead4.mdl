@@ -1,0 +1,42 @@
+;Exported by: grechishkin
+;Date:        Thu Nov 06 12:10:39 2003
+
+{Skeleton
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				6.1510	0.0635	13.9279
+			}
+			{VolumeView "Body.ply"}
+		}
+	}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "Body"}
+		{Matrix34
+			0.0000	-1.0000	0.0000
+			1.0000	0.0000	0.0000
+			0.0000	0.0000	1.0000
+			2.8175	-24.5857	-10.6208
+		}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "Body"}
+		{Matrix34
+			0.0000	-1.0000	0.0000
+			1.0000	0.0000	0.0000
+			0.0000	0.0000	1.0000
+			-0.3218	19.1497	-13.9279
+		}
+}

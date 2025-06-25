@@ -1,0 +1,120 @@
+;Exported by: ubrashaev
+;Date:        Wed Sep 29 10:41:50 2004
+;File:        D:\-Projects-\-work-\3d\construction\oldfarm\oldfarm.max
+{Skeleton
+	{bone "oldfarm_corner6"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "oldfarm_corner6.ply"}
+		{bone "exterior"
+			{Matrix34
+				-1.0000	-0.0000	-0.0000
+				0.0000	-1.0000	0.0000
+				-0.0000	-0.0000	1.0000
+				21.6768	-96.8857	57.7410
+			}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center -3.7186 6.33853}
+		{Extent 64.9212 60.834}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center 49.3065 -0.0723984}
+		{Extent 13.1357 4.18532}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 17.1632 -0.0723968}
+		{Extent 17.751 4.18532}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -48.7397 69.5865}
+		{Extent 8.0274 5.04528}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 23.9454 70.1531}
+		{Extent 44.4084 5.33522}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 63.3751 0.460926}
+		{Extent 4.97864 65.3882}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "hole1"
+	{Box 34.2964 35.4731 24.6023}
+	{Bone "oldfarm_corner6"}
+	{Position 64.7738	34.7328	30.2296}
+}
+{Volume "roof2"
+	{Polyhedron "roof2.vol"}
+	{Bone "exterior"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		9.0937	24.4865	-1.5719
+	}
+}
+{Volume "roof1"
+	{Box 5.57607 130.776 114.567}
+	{Bone "exterior"}
+	{Matrix34
+		-0.5736	-0.0000	0.8192
+		0.0000	-1.0000	-0.0000
+		0.8192	0.0000	0.5736
+		4.9357	-31.0315	36.9813
+	}
+}
+{Volume "body5"
+	{Box 26.2715 8.37064 53.252}
+	{Bone "oldfarm_corner6"}
+	{Position 49.3065	0.0724	26.6260}
+}
+{Volume "body4"
+	{Box 35.502 8.37064 24.2126}
+	{Bone "oldfarm_corner6"}
+	{Position 17.1632	0.0724	12.1063}
+}
+{Volume "body3"
+	{Box 16.0548 10.0906 59.0551}
+	{Bone "oldfarm_corner6"}
+	{Position -48.7397	-69.5865	29.5276}
+}
+{Volume "body2"
+	{Box 88.8167 10.6704 59.0769}
+	{Bone "oldfarm_corner6"}
+	{Position 23.9454	-70.1531	29.5025}
+}
+{Volume "body1"
+	{Box 9.95728 130.776 59.0551}
+	{Bone "oldfarm_corner6"}
+	{Position 63.3751	-0.4609	29.5275}
+}

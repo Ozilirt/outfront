@@ -1,0 +1,32 @@
+;Exported by: SAT
+;Date:        Wed Jun 11 11:12:54 2003
+
+{Skeleton
+	{animation
+		{sequence {name "stir"} {file "stir.anm"}}
+	}
+	{bone "pine"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "pine.ply"}
+	}
+}
+{Volume "crown"
+	{Box 60.3097 60.3053 135.514}
+	{Bone "pine"}
+		{Matrix34
+			0.7193	0.6947	-0.0000
+			-0.6947	0.7193	0.0000
+			0.0000	-0.0000	1.0000
+			-1.0908	4.8210	133.2394
+		}
+}
+{Volume "bole"
+	{Cylinder 4.24247 199.257}
+	{Bone "pine"}
+		{Position 0.1835	0.2384	98.9990}
+}

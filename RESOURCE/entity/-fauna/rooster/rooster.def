@@ -1,0 +1,18 @@
+{entity
+	(include "/properties/animal.ext")
+	(include "/properties/shadow/animal.inc")
+	{mass 3.5}
+	{simulation {able 1}}
+	{props "chicken"}
+	{Chassis "foot"
+		{Walk
+			{Slow	1	100}
+			{Normal	7	200}
+			{Fast	25	500}
+		}
+	}
+
+	("declare_health" args 30)
+
+	{Extension "rooster.mdl"}
+}

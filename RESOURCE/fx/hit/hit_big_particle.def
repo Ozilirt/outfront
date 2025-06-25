@@ -1,0 +1,26 @@
+{fx
+	{ParticleView
+		{EntityGenerator
+			{TotalParticles 3}
+			{EmissionArea
+				{radius 12}
+				{alpha0 0 5}
+				{alpha1 30 15}
+			}
+			{ParticleInit
+				{Speed 7 4}
+				{Lifetime 1.8 1}
+			}
+			{AxisZ}
+;			{Entity "#grunt1"	{fx "dust_small"}}
+;			{Entity "#grunt2"	{fx "dust_small"}}
+			{Entity "#wall_w_big1"		{fx "dust_small"}}
+			{Entity "#wall_w_big2"		{fx "dust_small"}}
+			{Entity "#wall_w_big3"		{fx "dust_small"}}
+			{Entity "#wall_w_small1"	{fx "dust_small"}}
+			{Entity "#wall_w_small2"	{fx "dust_small"}}
+		}
+		{offset 0 0 10}
+		{NotifyOwner}
+	}
+}

@@ -1,0 +1,18 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.3) sy(1.1) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "fence_stone3.mdl"}
+	{props "cornered" "concrete" "parts" "construction" "wall"}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 10}
+	}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 10}
+	}
+}

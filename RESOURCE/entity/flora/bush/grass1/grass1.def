@@ -1,0 +1,19 @@
+{
+	(include "/properties/bush.inc")
+	{Extension "grass1.mdl"}
+	{props "delete_after_burn" "stamp" "delete_after_blast"}
+	
+	{DecalView "shadow"
+	{OwnerShadow 64 64}
+; 	{Sprite "/properties/shadow/flora.ebm"
+;		{ScaleX		1.7	}
+;		{ScaleY		0.9	}
+;		{Visibility	0.4	}
+;	}
+	{layer groundshadow}
+;	{UseDirection}    
+	}
+	{Volume "crown"
+		{able {visible 0}}
+	}
+}

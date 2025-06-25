@@ -1,0 +1,131 @@
+{
+	(include "/properties/tank.ext")
+	(include "/properties/structure/spg_ferdinand.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.4))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "-turret" "self_propelled"}
+
+	{TexMods
+		{"ambush1" "1"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 80
+		    {front  200}
+			{bottom	45}
+			{top 45}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 80
+		    {front  200}
+			{bottom	45}
+			{top 45}
+		}   
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 80
+		    {front  200}
+			{bottom	45}
+			{top 45}
+		}   
+	}
+
+	("crew_4_human")
+	("seat_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	{Weaponry
+		{TargetZone 5}
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "88mm_pak43"}
+			{Mounted}
+		}
+		{place "mgun"
+			{Rotate}
+			{DefaultWeapon "mg34"}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 600}
+			{item "ammo bullet88 ap" 50}
+			{item "ammo bullet88 fg" 27}
+		}
+	}
+	
+	{mass 28500}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")
+			{maxspeed 10}
+			{TurnTime 15}
+		}
+		{speed
+			{Slow	5	}	; km/h
+			{Normal	8	}
+			{Fast	10	}
+		}
+	}
+	("tracks_forced")
+	{Extension "Ferdinand.mdl"}
+
+	(mod "mp"
+		{sensor
+			{visor "main"
+				{vision
+					{uncover 2}
+				    {human 50
+				    	{crawl 40}
+				    }
+				    {actor "vehicle" 70}
+				    {actor 55}
+					{h_fov 30}
+					{wide 2}
+					{v_fov 120}
+					{fog_range 70}
+					{fog_fov 60}
+				}	
+				{bone "visor1"}
+			}
+			{Visor "driver"
+				{vision
+					{h_fov 160}
+					{v_fov 90}
+					{uncover 1}
+				    {human 30
+				    	{crawl 25}
+				    }
+				    {actor "vehicle" 40}
+				    {actor 25}
+					{fog_range 50}
+					{fog_fov 160}
+				}
+				{bone "visor2"}
+			}
+		}
+	)
+}

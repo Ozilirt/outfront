@@ -1,0 +1,34 @@
+{Building
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.55) sy(1.7) ofsx(-3) ofsy(-3))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "shed-wood4.mdl"}
+	{props "two" "staged" "wood" "construction"}
+
+	{Volume "body2"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 1}}
+	}
+	{Volume "fire3"
+		{able {visible 0}}
+	}
+	{Volume "fire2"
+		{able {visible 0}}
+	}
+	{Volume "fire1"
+		{able {visible 0}}
+	}
+	{Volume "fire0"
+		{able {visible 0}}
+	}
+	{Volume "body1"
+		{Tags  "body"}
+		{Thickness 20}
+		{able {visible 1}}
+	}
+    ("declare_fire_volumes")
+}

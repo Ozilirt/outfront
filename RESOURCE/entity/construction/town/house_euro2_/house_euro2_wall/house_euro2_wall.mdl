@@ -1,0 +1,85 @@
+;Exported by: vic
+;Date:        Wed Dec 03 15:55:54 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\wall4a_x.max
+{Skeleton
+	{bone "house_euro2_wall"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "house_euro2_wall.ply"}
+		{bone "attach1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-2.7272	16.5857	75.0907
+			}
+		}
+	}
+}
+{Obstacle "Body1_vol"
+	{Obb2
+		{Center -18.6732 0.263786}
+		{Extent 2.95276 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body2_vol"
+	{Obb2
+		{Center 17.2305 0.263786}
+		{Extent 5.90551 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center 8.46063 -1.73877}
+		{Extent 30.0057 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "floor"
+	{Polyhedron "floor.vol"}
+	{Bone "house_euro2_wall"}
+	{Position 2.7255	34.3293	72.3425}
+}
+{Volume "Body1"
+	{Box 5.90551 9.84252 62.2733}
+	{Bone "house_euro2_wall"}
+	{Position -18.6732	-0.2638	31.1366}
+}
+{Volume "Body2"
+	{Box 11.811 9.84252 62.2733}
+	{Bone "house_euro2_wall"}
+	{Position 17.2305	-0.2638	31.1366}
+}
+{Volume "Body5"
+	{Polyhedron "Body5.vol"}
+	{Bone "house_euro2_wall"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		10.2739	4.6839	92.3782
+	}
+}
+{Volume "Body"
+	{Box 60.0114 5.90551 25.5906}
+	{Bone "house_euro2_wall"}
+	{Position 8.4606	1.7388	12.7953}
+}
+{Volume "Hole_1"
+	{Box 19.685 29.5276 19.685}
+	{Bone "house_euro2_wall"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		-2.4308	-0.9991	105.2691
+	}
+}

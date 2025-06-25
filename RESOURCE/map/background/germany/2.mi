@@ -1,0 +1,67 @@
+{mission
+	{Camera
+		{Position 2955.48 1771.22}
+		{Distance 650.708}
+		{ViewAngle 0.0578799}
+		{YawAngle -4.14817}
+	}
+	{Environment "main-germany"}
+	{User 0}
+	{Registry
+		{ShadowMaps "multi"}
+	}
+	{Helpers
+		{event "1_cancel" id 0 state 0}
+		{event "1_cancel" id 1 state 0}
+		{trigger "start"
+			{actions
+				{"actor_to_waypoint" off
+					{"waypoint/uid" "2"}
+				}
+				{"actor_to_waypoint" off
+					{"waypoint/uid" "1"}
+				}
+				{"actor_to_waypoint" off
+					{"waypoint/uid" "0"}
+				}
+				{"camera"
+					{"camera" "1"}
+					{"action" "activate"}
+				}
+			}
+		}
+		{waypoints
+			{0
+				{position 2898.43 3649.75 17}
+				{transition 1}
+			}
+			{1
+				{position 2836.91 3394.72 17}
+				{transition 2}
+			}
+			{2
+				{position 2811.93 3125.21 -20.8988}
+				{transition 3}
+			}
+			{3
+				{position 2651.16 2208.23 -103.884}
+				{transition 4}
+			}
+			{4
+				{position 2753.12 1571.06 -74.6875}
+				{transition 5}
+			}
+			{5
+				{position 2460.32 339.115 -54.9675}
+			}
+		}
+		{camerapath "1" {EvCancel 1}
+			{Key 0 3504.41 1423.83 37.642 2955.48 1771.22 0 0.785398 0 0 1}
+			{Key 21826 3504.41 1423.83 37.6419 2955.48 1771.22 0 0.785398 0 0 1}
+			{Key 50000 3504.41 1423.83 37.6419 2955.48 1771.22 0 0.785398 0 0 1}
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

@@ -1,0 +1,46 @@
+;Exported by: garry
+;Date:        Wed Sep 17 18:08:03 2003
+
+{Skeleton
+	{animation
+		{sequence "run"}
+		{sequence "eat"}
+		{sequence "walk"}
+		{sequence "passive"}
+	}
+	{bone "Basis"
+		{Orientation
+			1.0000	0.0017	-0.0000
+			0.0000	-0.0000	1.0000
+			-0.0017	1.0000	0.0000
+		}
+		{bone "chik"
+			{parameters "CommonMesh;"}
+			{Matrix34
+				-0.0000	-0.0000	-1.0000
+				-0.0000	1.0000	-0.0000
+				1.0000	0.0000	0.0000
+				2.0885	5.6647	0.0252
+			}
+			{VolumeView "chik.ply"}
+					{bone "head"
+						{Matrix34
+							-0.0001	-0.0002	1.0000
+							0.0000	1.0000	0.0002
+							-1.0000	0.0000	-0.0001
+							0.3597	3.6826	5.2480
+						}
+					}
+		}
+	}
+}
+{Volume "body"
+	{Box 8.49352 4.48017 5.8184}
+	{Bone "chik"}
+		{Matrix34
+			0.0020	-0.0000	1.1520
+			0.0000	1.1520	-0.0000
+			-1.1520	0.0000	0.0020
+			0.4644	-0.3191	-1.2729
+		}
+}

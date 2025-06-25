@@ -1,0 +1,39 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.4))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "flak" "turret_ai_rotate"}
+;	{extension "/properties/structure/truck.ext"}
+	(include "/properties/dummy_fsm.inc")
+	{TexMods
+		{"ambush1" "green"}
+	}
+	{simulation {able 1}}
+	
+	("crew_stan_gunner")
+	
+	{Weaponry
+		{place "gun"
+			{foresight "foresight1"}
+			{Barrels 2}
+			{DefaultWeapon "doublecolt"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{size 8 6}
+			{item  "ammo mgun" 2000}
+		}
+	}
+	{volume "turret"
+		{thickness 5
+			{front  15}
+		}
+	}
+
+	{mass 10000}
+	{Extension "DoubleColt.mdl"}
+}

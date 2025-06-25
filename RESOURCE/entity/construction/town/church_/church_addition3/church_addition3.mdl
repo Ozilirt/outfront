@@ -1,0 +1,73 @@
+;Exported by: shevchenko
+;Date:        Sat Jan 17 12:11:00 2004
+;File:        D:\-Projects-\-3DWork-\sheva\ch1c.max
+{Skeleton
+	{bone "church_addition3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "church_addition3.ply"}
+		{bone "window1"
+			{Matrix34
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	1.0000	-0.0000
+				-0.4582	-28.8280	33.4646
+			}
+			{VolumeView "window1.ply"}
+		}
+	}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -2.38445 30.1235}
+		{Extent 29.5276 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 31.0379 -0.378019}
+		{Extent 3.93702 34.4488}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "roof"
+	{Box 78.7402 3.93701 42.7268}
+	{Bone "church_addition3"}
+	{Matrix34
+		0.0000	0.9394	0.3428
+		-0.0000	-0.3428	0.9394
+		-1.0000	0.0000	-0.0000
+		15.7717	-0.8049	72.9662
+	}
+}
+{Volume "hole1"
+	{Box 19.685 31.4961 19.685}
+	{Bone "church_addition3"}
+	{Matrix34
+		-1.0000	0.0000	-0.0000
+		0.0000	0.0000	1.0000
+		0.0000	1.0000	-0.0000
+		-0.4581	-30.1269	31.4961
+	}
+}
+{Volume "body2"
+	{Box 59.0551 7.87402 59.0551}
+	{Bone "church_addition3"}
+	{Position -2.3844	-30.1235	29.5276}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "church_addition3"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		-0.0000	-1.0000	-0.0000
+		-0.0000	-0.0000	1.0000
+		31.0379	0.3780	0.0000
+	}
+}

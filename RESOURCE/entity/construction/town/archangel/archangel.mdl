@@ -1,0 +1,36 @@
+;Exported by: shevchenko
+;Date:        Tue Jun 01 20:07:30 2004
+;File:        D:\-PROJE~1\-3DWork-\sheva\SK\new\ARCHAN~1.MAX
+{Skeleton
+	{bone "archangel"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "archangel.ply"}
+	}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center 9.53674e-007 9.53674e-007}
+		{Extent 14.7638 14.7638}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 29.5276 29.5276 43.5539}
+	{Bone "archangel"}
+	{Position 0.0000	-0.0000	27.5834}
+}
+{Volume "Body2"
+	{Box 16.4562 14.6811 65.4993}
+	{Bone "archangel"}
+	{Position -2.7970	-0.0000	81.9830}
+}
+{Volume "Body1"
+	{Box 53.3858 53.9197 6.09755}
+	{Bone "archangel"}
+	{Position 0.0000	-0.0000	3.0488}
+}

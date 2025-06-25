@@ -1,0 +1,24 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	{DecalView "shadow"
+;		{OwnerShadow 64 64}
+;		{Sprite "/properties/shadow/round.ebm"
+;			{PreScaleX 	0.6}
+;			{PreScaleY 	0.6}
+;  			{PreshiftX	0	}
+;  			{PreshiftY	0	}
+;			{Visibility	0.6	}
+;		}
+;		{layer groundshadow}
+;		{UseDirection}
+;	}
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "highnet.mdl"}
+	{props "flag" "wood" "one" "staged" "construction" "no_destroyed_stamp"}
+	{Volume "body"
+		{thickness 3}
+	}
+}

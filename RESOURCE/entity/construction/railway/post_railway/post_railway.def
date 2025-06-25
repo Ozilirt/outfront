@@ -1,0 +1,29 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{Extension "post_railway.mdl"}
+	{props "fence" "wood" "animated_crush"}
+
+	{Volume "body"
+		{thickness	3}
+		{tags "body"}
+	}
+; {DecalView "shadow"
+;	{OwnerShadow 64 64}
+;	{Sprite "/properties/shadow/fence.ebm"
+;		{ScaleX	1 }
+;		{ScaleY	1 }
+;  		{shiftX	0 }
+;  		{shiftY	0 }
+;		{Preturn 90	}
+;		{Visibility	0.5	}
+;	}
+;	{layer groundshadow}
+;	{UseDirection}    
+; }
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+
+
+}

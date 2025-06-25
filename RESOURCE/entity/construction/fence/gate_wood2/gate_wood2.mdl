@@ -1,0 +1,93 @@
+;Exported by: ubrashaev
+;Date:        Sat Feb 14 09:57:47 2004
+;File:        D:\-Projects-\-work-\3d\Vorota.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.4} {resume}}
+	}
+	{bone "gate_wood2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate_wood2.ply"}
+		{bone "left"
+			{Position -58.2615	9.9552	26.1614}
+			{VolumeView "left.ply"}
+		}
+		{bone "right"
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				0.0000	1.0000	-0.0000
+				0.0000	0.0000	1.0000
+				58.7421	9.9552	26.1614
+			}
+			{VolumeView "right.ply"}
+		}
+	}
+}
+{Obstacle "right"
+	{Obb2
+		{Center -70.2632 15.5358}
+		{Extent 30.4263 2.55906}
+		{Axis 0.422618 -0.906308}
+	}
+	{Rotate}
+}
+{Obstacle "left"
+	{Obb2
+		{Center 71.2059 16.4052}
+		{Extent 29.6552 2.87402}
+		{Axis -0.422618 -0.906308}
+	}
+	{Rotate}
+}
+{Obstacle "close"
+	{Obb2
+		{Center 0.563759 -10.634}
+		{Extent 65.9005 5.34677}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 3.20178 3.40437 57.1147}
+	{Bone "gate_wood2"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-60.7750	9.9941	27.0458
+	}
+}
+{Volume "Body1"
+	{Box 3.20178 3.40437 57.1147}
+	{Bone "gate_wood2"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		61.0117	9.9941	27.0458
+	}
+}
+{Volume "right"
+	{Box 1.7638 59.0551 40.9646}
+	{Bone "right"}
+	{Matrix34
+		0.0000	1.0000	-0.0000
+		1.0000	-0.0000	0.0000
+		-0.0000	0.0000	1.0000
+		28.7985	0.0544	-0.0061
+	}
+}
+{Volume "left"
+	{Box 1.7638 59.0551 40.9646}
+	{Bone "left"}
+	{Matrix34
+		-0.0000	1.0000	-0.0000
+		-1.0000	-0.0000	-0.0000
+		0.0000	0.0000	1.0000
+		28.8929	0.0544	-0.0061
+	}
+}

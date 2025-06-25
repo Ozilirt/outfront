@@ -1,0 +1,31 @@
+;Exported by: sk
+;Date:        Tue May 18 12:56:21 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Chapel_big\chapel1-euro.max
+{Skeleton
+	{bone "Box01"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "Box01.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -1.23859 0.975822}
+		{Extent 17.2106 41.6414}
+		{Axis 0.342602 0.939481}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 83.2616 34.3696 15.9746}
+	{Bone "Box01"}
+	{Matrix34
+		0.9397	0.3420	0.0000
+		-0.3420	0.9397	0.0000
+		0.0000	0.0000	1.0000
+		-1.2386	-0.9758	7.9873
+	}
+}

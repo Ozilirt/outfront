@@ -1,0 +1,149 @@
+;SDL
+{main_menu_skin
+	{dialog
+		{frame_size 1}
+		{face_color  "0 0 0"}
+		{text_style "f(arial)s(10)c(150 150 150)"}
+		{frame_color "153 153 153"}
+	}	
+	{inputline
+		{selection
+			{face_color "255 204 51"}
+			{text_color	"0 0 0"}
+			{ro_face_color "155 104 0"}
+			{ro_text_color "0 0 0"}
+		}
+		{text_style	"f(arial)s(10)c(150 150 150)"}
+		{ro_text_color "150 150 150"}
+		{disable_text_color "120 120 120"}
+		{modal_frame_color "255 255 255"}
+		{cursor_char "_"}
+		{blink_period "0.5"}
+	}
+	{slider
+		{up_button		"/interface/skin/game/slider/up.ebm"}
+		{down_button	"/interface/skin/game/slider/down.ebm"}
+		{left_button	"/interface/skin/game/slider/left.ebm"}
+		{right_button	"/interface/skin/game/slider/right.ebm"}
+		{hbackground	"/interface/skin/game/slider/h_background.ebm"}
+		{vbackground	"/interface/skin/game/slider/v_background.ebm"}
+		{hpoint_button	"/interface/skin/game/slider/h_point.ebm"}
+		{vpoint_button	"/interface/skin/game/slider/v_point.ebm"}
+	}
+	{listbox
+		{face_color "64 64 64"}
+		{separator_color "77 77 77"}
+		{item
+			{normal
+				{text_style "f(arial)s(10)c(150 150 150)"}
+				{face_color "64 64 64"}
+			}
+			{selected
+				{text_style "f(arial)s(10)c(250 250 250)"}
+				{face_color "140 140 255"}
+			}
+			{focused
+				{text_style "f(arial)s(10)c(250 250 250)"}
+				{face_color "255 204 51"}
+			}
+		}
+	}
+	{combobox
+		{button "/interface/skin/game/combobox/down.ebm"}
+		{drop_offset "8"}
+	}
+	{checkbox
+		{normal
+			{text_style "f(arial)s(10)c(150 150 150)"}
+			{face_color "64 64 64"}
+		}
+		{focused
+			{text_style "f(arial)s(10)c(180 180 180)"}
+			{face_color "84 84 84"}
+		}
+		{pressed
+			{text_style "f(arial)s(10)c(160 160 160)"}
+			{face_color "50 50 50"}
+		}
+		{disabled
+			{text_style "f(arial)s(10)c(0 0 0)"}
+			{face_color "40 40 40"}
+		}
+		{check "/interface/skin/game/checkbox/checkbox.ebm"}
+	}
+	{button
+		{text_style "f(bookman_hq)s(12)b+c(245 245 245)e(shadow_ex)"}
+		{focused
+			{text_style "f(bookman_hq)s(12)b+c(247 148 28)e(highlight)"}
+			{face_color "102 102 102"}
+		}
+		{pressed
+			{text_style "f(bookman_hq)s(12)b+c(247 148 28)e(highlight)"}
+			{face_color "178 178 178"}
+		}
+		{disabled
+			{text_style "f(bookman_hq)s(12)b+c(10 10 10)e(shadow_ex)"}
+			{face_color "77 77 77"}
+		}
+	}
+	{frame_control
+		{top			"/interface/skin/game/frame/top.ebm"}
+		{bottom			"/interface/skin/game/frame/bottom.ebm"}
+		{left			"/interface/skin/game/frame/left.ebm"}
+		{right			"/interface/skin/game/frame/right.ebm"}
+		{top_left		"/interface/skin/game/frame/top_left.ebm"}
+		{top_right		"/interface/skin/game/frame/top_right.ebm"}
+		{bottom_left	"/interface/skin/game/frame/bottom_left.ebm"}
+		{bottom_right	"/interface/skin/game/frame/bottom_right.ebm"}
+		{client			"/interface/skin/game/frame/client.ebm"}
+		{title_center	"/interface/skin/game/frame/title_center.ebm"}
+		{title_left		"/interface/skin/game/frame/title_left.ebm"}
+		{title_right	"/interface/skin/game/frame/title_right.ebm"}
+		{title_text		"f(bookman_hq)s(13)c(180 180 180)"}
+	}	
+	{frame_window
+		{top			"/interface/skin/game/window/top.ebm"}
+		{bottom			"/interface/skin/game/window/bottom.ebm"}
+		{left			"/interface/skin/game/window/left.ebm"}
+		{right			"/interface/skin/game/window/right.ebm"}
+		{top_left		"/interface/skin/game/window/top_left.ebm"}
+		{top_right		"/interface/skin/game/window/top_right.ebm"}
+		{bottom_left	"/interface/skin/game/window/bottom_left.ebm"}
+		{bottom_right	"/interface/skin/game/window/bottom_right.ebm"}
+		{client			"/interface/skin/game/window/client.ebm"}
+		{title_center	"/interface/skin/game/window/title_center.ebm"}
+		{title_left		"/interface/skin/game/window/title_left.ebm"}
+		{title_right	"/interface/skin/game/window/title_right.ebm"}
+		{title_text		"f(bookman_hq)s(13)c(180 180 180)"}
+	}	
+	{frame_control_popup
+		{top			"/interface/skin/game/frame_popup/top.ebm"}
+		{bottom			"/interface/skin/game/frame_popup/bottom.ebm"}
+		{left			"/interface/skin/game/frame_popup/left.ebm"}
+		{right			"/interface/skin/game/frame_popup/right.ebm"}
+		{top_left		"/interface/skin/game/frame_popup/top_left.ebm"}
+		{top_right		"/interface/skin/game/frame_popup/top_right.ebm"}
+		{bottom_left	"/interface/skin/game/frame_popup/bottom_left.ebm"}
+		{bottom_right	"/interface/skin/game/frame_popup/bottom_right.ebm"}
+		{client			"/interface/skin/game/frame_popup/client.ebm"}
+		{title_center	"/interface/skin/game/frame/title_center.ebm"}
+		{title_left		"/interface/skin/game/frame/title_left.ebm"}
+		{title_right	"/interface/skin/game/frame/title_right.ebm"}
+		{title_text		"f(bookman_hq)s(13)c(180 180 180)"}
+	}	
+	{frame_window_popup
+		{top			"/interface/skin/game/window_popup/top.ebm"}
+		{bottom			"/interface/skin/game/window_popup/bottom.ebm"}
+		{left			"/interface/skin/game/window_popup/left.ebm"}
+		{right			"/interface/skin/game/window_popup/right.ebm"}
+		{top_left		"/interface/skin/game/window_popup/top_left.ebm"}
+		{top_right		"/interface/skin/game/window_popup/top_right.ebm"}
+		{bottom_left	"/interface/skin/game/window_popup/bottom_left.ebm"}
+		{bottom_right	"/interface/skin/game/window_popup/bottom_right.ebm"}
+		{client			"/interface/skin/game/window_popup/client.ebm"}
+		{title_center	"/interface/skin/game/window/title_center.ebm"}
+		{title_left		"/interface/skin/game/window/title_left.ebm"}
+		{title_right	"/interface/skin/game/window/title_right.ebm"}
+		{title_text		"f(bookman_hq)s(13)c(180 180 180)"}
+	}	
+}

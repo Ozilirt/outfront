@@ -1,0 +1,28 @@
+;Exported by: sk
+;Date:        Mon Nov 03 11:59:50 2003
+;File:        D:\-PROJE~1\-3DWork-\CONSTR~1\CitY\fence.max
+{Skeleton
+	{bone "fence_euro1c"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence_euro1c.ply"}
+	}
+}
+{Volume "metall"
+	{Box 79.5276 1.13967 31.9657}
+	{Bone "fence_euro1c"}
+	{Position -4.8837	-0.0214	30.3286}
+}
+{Volume "body1"
+	{Box 79.5276 7.79528 13.9588}
+	{Bone "fence_euro1c"}
+	{Position -4.8837	-0.0214	6.9794}
+}
+{Volume "body"
+	{Box 9.68504 9.68504 51.6929}
+	{Bone "fence_euro1c"}
+	{Position 38.9842	-0.0214	25.8465}
+}

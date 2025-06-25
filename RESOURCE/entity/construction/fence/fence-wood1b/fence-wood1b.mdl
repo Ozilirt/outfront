@@ -1,0 +1,36 @@
+;Exported by: shevchenko
+;Date:        Thu Mar 18 21:22:36 2004
+;File:        D:\-Projects-\-3DWork-\sheva\Dima Danjko\newhouses.max
+{Skeleton
+	{bone "fence2"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence2.ply"}
+		{bone "climb1"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.5684	-23.6988	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				-0.5684	15.6557	0.0000
+			}
+			{visibility 0}
+		}
+	}
+}
+{Volume "fence"
+	{Box 118.11 9.28136 23.622}
+	{Bone "fence2"}
+	{Position 0.1657	0.4232	11.8110}
+}

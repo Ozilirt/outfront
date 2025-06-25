@@ -1,0 +1,50 @@
+;Exported by: vic
+;Date:        Wed Feb 04 16:35:03 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\monastery\Monastery2_x.max
+{Skeleton
+	{bone "wall_x"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "sub_piece1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				0.0000	0.0000	38.3788
+			}
+			{VolumeView "sub_piece1.ply"}
+		}
+		{bone "sub_piece0"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				0.0286	1.2747	7.7212
+			}
+			{VolumeView "sub_piece0.ply"}
+		}
+	}
+}
+{Volume "sub_piece0"
+	{Box 11.7823 23.6121 14.3868}
+	{Bone "sub_piece0"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		-1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	0.0000
+		-0.0041	-0.5278	-0.0140
+	}
+}
+{Volume "sub_piece1"
+	{Box 11.7823 23.6121 19.6717}
+	{Bone "sub_piece1"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		-1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	0.0000
+		-1.2788	-2.1736	-0.0426
+	}
+}

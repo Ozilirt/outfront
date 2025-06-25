@@ -1,0 +1,55 @@
+;Exported by: shevchenko
+;Date:        Wed Mar 03 12:54:34 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\Vorota_x.max
+{Skeleton
+	{animation
+		{sequence "crush2" {speed 0.4}}
+	}
+	{bone "gate"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "gate.ply"}
+		{bone "right"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				-0.0000	1.0000	-0.0000
+				-1.0000	-0.0000	0.0000
+				94.8155	10.0229	6.3061
+			}
+			{VolumeView "right.ply"}
+			{bone "wire_right"
+				{parameters "CommonMesh;"}
+				{Matrix34
+					-0.0000	-0.0000	-1.0000
+					0.4543	0.8908	-0.0000
+					-0.8564	0.5163	-0.0000
+					-24.7048	-7.4693	47.6545
+				}
+				{VolumeView "wire_right.ply"}
+			}
+		}
+		{bone "left"
+			{Matrix34
+				0.0000	-0.0000	-1.0000
+				-0.0000	1.0000	-0.0000
+				1.0000	0.0000	0.0000
+				-94.4280	10.0229	6.3061
+			}
+			{VolumeView "left.ply"}
+			{bone "wire_left"
+				{parameters "CommonMesh;"}
+				{Matrix34
+					-0.0000	-0.0000	1.0000
+					0.4543	0.8908	0.0000
+					-0.8564	0.5163	0.0000
+					-24.7048	-7.4693	47.4924
+				}
+				{VolumeView "wire_left.ply"}
+			}
+		}
+	}
+}

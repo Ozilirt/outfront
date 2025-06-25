@@ -1,0 +1,27 @@
+{building
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1) sy(0.18) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "wall-2level_1.mdl"}
+	{props "cornered" "concrete" "construction" "parts" "wall"}
+	{Volume "wall4"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "wall3"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+	{Volume "wall2"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 0}}
+	}
+	{Volume "wall1"
+		{Tags  "body"}
+		{Thickness 30}
+	}
+}

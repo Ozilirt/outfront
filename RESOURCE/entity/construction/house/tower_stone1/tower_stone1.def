@@ -1,0 +1,17 @@
+{building
+	(include "/properties/building.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.35) sy(2.05) ofsx(-2.5) ofsy(20))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{Extension "tower_stone1.mdl"}
+	{props "cornered" "concrete" "parts" "construction"}
+	{volume	"body"
+		{thickness hollow 50}
+	}
+	{volume	"body2"
+		{thickness hollow 50}
+	}
+}
+	

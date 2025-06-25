@@ -1,0 +1,59 @@
+;SDL
+actor
+
+(include "vehicle.ext")
+{Chassis "water"
+	("chassis_defaults")
+}
+
+{extender "inventory"
+	{box
+		{size 8 6}
+		{Weight 3000}
+	}
+}
+
+{volume "cabin"
+	{thickness hollow 4}
+}
+{volume "body"
+	{thickness 5}
+}
+{volume "engine"
+	{thickness 3}
+}
+{volume "inventory"
+	{tags "explosive"}
+	{thickness 0.2}
+}
+{volume "fuel"
+	{tags "explosive"}
+	{thickness 1}
+}
+	
+{component "body"
+}
+{component "cabin"
+	{RepairTime 15}
+	{Able {repair}}
+}
+{component "engine"
+	{RepairTime 15}
+	{Able {Repair}}
+}
+{component "fuel"
+	{Able {break_by_pierce}}
+}
+
+(define "locomotion"
+	{MaxSpeed	25	}		; максимальная скорость, kmph
+	{StartTime	10	}		; время разгона до макс. скорости с 0, seconds
+	{BrakeTime	2	}		; время торможения с макс. скорости до 0, seconds
+	{StopTime	4	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
+	{TurnRadius	8	}		; мин. радиус разворота, meter
+	{SplineRadius 3}		; ограничение радиуса поворота на сплайнах, метров
+
+	{TurnTime		15} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+	{TurnStart		 5}	; время разгона до макс. угловой скорости с 0, seconds
+	{TurnStop	   2.5}	; время остановки с макс. угловой скорости до 0, seconds
+)

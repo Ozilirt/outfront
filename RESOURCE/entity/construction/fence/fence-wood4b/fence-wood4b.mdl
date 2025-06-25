@@ -1,0 +1,46 @@
+;Exported by: sk
+;Date:        Wed Nov 26 13:56:00 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\woodfence.max
+{Skeleton
+	{bone "fence-wood4b"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence-wood4b.ply"}
+		{bone "climb1"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				15.2338	21.4435	0.0000
+			}
+			{visibility 0}
+		}
+		{bone "climb2"
+			{Matrix34
+				-0.0000	1.0000	0.0000
+				-1.0000	-0.0000	0.0000
+				0.0000	0.0000	1.0000
+				15.2338	-20.2139	0.0000
+			}
+			{visibility 0}
+		}
+	}
+}
+{Volume "fire1"
+	{Box 84.1404 3.93701 13.3194}
+	{Bone "fence-wood4b"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.9397	-0.3420
+		0.0000	0.3420	0.9397
+		7.8310	3.2276	6.1305
+	}
+}
+{Volume "body"
+	{Box 56.47 4.89078 18.7597}
+	{Bone "fence-wood4b"}
+	{Position 16.7992	0.9499	9.3798}
+}

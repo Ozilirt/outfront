@@ -1,0 +1,36 @@
+;Exported by: garry
+;Date:        Mon Apr 26 13:49:17 2004
+;File:        \\sharepoint\gamedev\DESIGN\-Projects-\-3DWork-\Constructions\searchlight\searchlight_x.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone revolute "turret"
+			{speed 0.0200}
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	0.0000
+				0.0000	0.0000	1.0000
+				0.0000	0.3363	3.0978
+			}
+			{VolumeView "turret.ply"}
+			{bone revolute "Gun"
+				{parameters "ID=gun;"}
+				{animation
+					{sequence "break" {file "lamp_b.anm"} {speed 0.5}}
+				}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					-0.0000	1.0000	-0.0000
+					-0.3198	0.0164	16.5808
+				}
+				{VolumeView "Gun.ply"}
+			}
+		}
+	}
+}

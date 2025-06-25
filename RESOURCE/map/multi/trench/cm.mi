@@ -1,0 +1,394 @@
+{mission
+	{Camera
+		{Position 1757.37 -175.264}
+		{Distance 1200}
+		{ViewAngle 0.629482}
+		{YawAngle 25.0453}
+	}
+	{Environment "day3"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "blitz-medic" 0x8000
+		{Position 523.325 -1957.71 56}
+		{Turn 62.7799}
+		{Fogable never}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "crane_m" 0x8002
+		{Position 462.356 -1303.7 -9}
+		{Turn -123.717}
+		{Fogable never}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "crane_platform" 0x8003
+		{Position 909.357 -881.92 -9}
+	}
+	{Entity "passengervan" 0x8004
+		{Position 648.01 -642.181 -9}
+		{Turn 56.1278}
+		{Fogable never}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Placer
+			{State "seat00" {Broken}}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "platform" 0x8800
+		{Position 678.76 -784.291 -9}
+		{Turn 56.3075}
+		{Fogable never}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "platform" 0x8801
+		{Position 567.296 -951.471 -9}
+		{Turn 56.3067}
+		{Fogable never}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "platform" 0x8802
+		{Position 455.832 -1118.65 -9}
+		{Turn 56.3075}
+		{Fogable never}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "universal" 0x8005
+		{Position 1244.55 796.608 -9}
+		{Turn -39.7189}
+		{Player 0}
+		{MID 6}
+		{Chassis
+			{FuelBag
+				{Remain 0}
+			}
+		}
+	}
+	{Entity "blitz-3.6" 0x8009
+		{Position 916.81 1631.44 -9}
+		{Turn -80}
+		{Fogable never}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "tradevan_explosive" 0x8007
+		{Position 9.63058 -1785.41 -9}
+		{Turn 56.3075}
+		{Fogable never}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "start_point" 0x8001
+		{Position 2597.2 1864.97 56}
+		{Turn -128.338}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "start_point" 0x8006
+		{Position 509.344 -2182.27 56}
+		{Turn 60.3147}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "start_point" 0x8008
+		{Position 343.238 -2023.86 54.3238}
+		{Turn 52.0968}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "map_point" 0x800a
+		{Position 546.041 -1429.39 -9}
+		{Turn 37.2717}
+		{Extender "map_point"
+			{name "z"}
+			{teams "z"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 13}
+	}
+	{Entity "start_point" 0x800b
+		{Position 84.2526 -1780.53 -9}
+		{Turn 48.2595}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 14}
+	}
+	{Entity "start_point" 0x800c
+		{Position 2811.8 1776.24 56}
+		{Turn -132.232}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 16}
+	}
+	{Entity "start_point" 0x800d
+		{Position 2298.7 1945.55 56}
+		{Turn -111.552}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 18}
+	}
+	{Entity "map_point" 0x800e
+		{Position 2379.41 1429.55 56}
+		{Turn -122.808}
+		{Extender "map_point"
+			{name "x"}
+			{visor "SpawnPoints"}
+			{teams "x"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 15}
+	}
+	{Entity "birds" 0x800f
+		{Position 3428.18 219.839 151.649}
+		{Extender "speaker"
+			{SoundName "world.birds03"}
+		}
+	}
+	{Entity "birds" 0x8010
+		{Position 350.931 3590.75 84.0012}
+		{Extender "speaker"
+			{SoundName "world.birds02"}
+		}
+	}
+	{Entity "birds" 0x8011
+		{Position 1700.98 1320.61 51.2939}
+		{Extender "speaker"
+			{SoundName "world.nature"}
+		}
+	}
+	{Entity "birds" 0x8012
+		{Position 2753.49 1017.74 84.792}
+		{Extender "speaker"
+			{SoundName "world.birds03"}
+		}
+	}
+	{Entity "birds" 0x8013
+		{Position 190.844 1463.42 29.923}
+		{Extender "speaker"
+			{SoundName "world.nature"}
+		}
+	}
+	{Entity "map_point" 0x9000
+		{Position 2094.75 -300.243 -14}
+		{Extender "map_point"
+			{name "dm"}
+			{match "DeathMatch"}
+			{unitset "man"}
+		}
+		{Player 0}
+		{MID 17}
+	}
+	{Entity "start_point" 0x9001
+		{Position 2488.09 1649.17 56}
+		{Turn -106.849}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 19}
+	}
+	{Entity "start_point" 0x9002
+		{Position 3063.95 1193 123}
+		{Turn 178.66}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 20}
+	}
+	{Entity "start_point" 0x9003
+		{Position 3161.18 506.575 123}
+		{Turn -176.972}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 21}
+	}
+	{Entity "start_point" 0x9004
+		{Position 3124.59 -494.444 56}
+		{Turn 179.531}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 22}
+	}
+	{Entity "start_point" 0x8014
+		{Position 2618.05 -1177.93 56}
+		{Turn 124.377}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 23}
+	}
+	{Entity "start_point" 0x8015
+		{Position 1755.18 -1812.36 56}
+		{Turn 76.3534}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 24}
+	}
+	{Entity "start_point" 0x8016
+		{Position 280.451 -1769.21 -9}
+		{Turn 52.0703}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 25}
+	}
+	{Entity "start_point" 0x9005
+		{Position 213.454 -538.216 -9}
+		{Turn 8.99387}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 26}
+	}
+	{Entity "start_point" 0x9006
+		{Position 266.364 585.917 -9}
+		{Turn 5.37243}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 27}
+	}
+	{Entity "start_point" 0x9007
+		{Position 1312.3 1469.45 -9}
+		{Turn -80.5549}
+		{Extender "start_point"
+			{mapPoint "dm"}
+		}
+		{Player 0}
+		{MID 28}
+	}
+	{Brain 0x8000
+		{HoldFire}
+	}
+	{Brain 0x8002
+		{HoldFire}
+	}
+	{Brain 0x8004
+		{HoldFire}
+	}
+	{Brain 0x8800
+		{HoldFire}
+	}
+	{Brain 0x8005
+		{HoldFire}
+	}
+	{Brain 0x8801
+		{HoldFire}
+	}
+	{Brain 0x8802
+		{HoldFire}
+	}
+	{Brain 0x8007
+		{HoldFire}
+	}
+	{Brain 0x8009
+		{HoldFire}
+	}
+	{Helpers
+		{trigger "11111"
+			{actions
+				{"task"
+					{name "primary1"}
+				}
+			}
+		}
+		{waypoints
+		}
+		{task
+			{name "primary1"}
+			{desc "mission/mp/trench/dm"}
+			{primary}
+			{state "hidden"}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

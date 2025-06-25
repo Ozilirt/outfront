@@ -1,0 +1,26 @@
+;Exported by: vic
+;Date:        Mon Nov 03 16:54:00 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\kolonka3.max
+{Skeleton
+	{bone "kolonka"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "kolonka.ply"}
+	}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center 0.352417 0.0106659}
+		{Extent 2.95276 2.95276}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 5.90551 5.90551 19.685}
+	{Bone "kolonka"}
+	{Position 0.3524	-0.0107	9.8425}
+}

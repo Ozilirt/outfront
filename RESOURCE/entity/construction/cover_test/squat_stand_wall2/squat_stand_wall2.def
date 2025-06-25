@@ -1,0 +1,27 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.1) sy(1.4) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "squat_stand_wall2.mdl"}
+	{props "concrete" "fence"}
+
+	{volume	"body1"
+		{thickness 500}
+		{tags "body"}
+	}
+	{volume	"body2"
+		{thickness 500}
+		{tags "body"}
+	}
+	{volume	"body3"
+		{thickness 500}
+		{tags "body"}
+	}
+	{volume	"body4"
+		{thickness 500}
+		{tags "body"}
+	}
+}

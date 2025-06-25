@@ -1,0 +1,19 @@
+{construction
+	(include "/properties/construction.inc")
+	{Extension "elevator6.mdl"}
+	{props "two" "staged" "concrete" "construction"}
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Volume "Support1"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 1}{touch 1}{obstacle 0}}
+	}
+	{Volume "Support"
+		{Tags  "body"}
+		{Thickness 30}
+		{able {visible 1}{touch 1}}
+	}
+}

@@ -1,0 +1,271 @@
+{mission
+	{Camera
+		{Position 3386.6 3718.12}
+		{Distance 1200}
+		{ViewAngle 0.60272}
+		{YawAngle 11.2946}
+	}
+	{Environment "day_tropic"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "map_point" 0x8000
+		{Position 5239.18 1822.55 13.8352}
+		{Turn 112.941}
+		{Extender "map_point"
+			{name "z"}
+			{caption "ZTeam"}
+			{visor SpawnPoints}
+			{teams "z"}
+			{unitset "man|marine"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "map_point" 0x8001
+		{Position 494.954 5364.76 42.4668}
+		{Turn -55.9761}
+		{Extender "map_point"
+			{name "x"}
+			{caption "XTeam"}
+			{visor SpawnPoints}
+			{teams "x"}
+			{unitset "man|marine"}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "start_point" 0x8002
+		{Position 574.161 5595.83 21.7544}
+		{Turn -44.5974}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "start_point" 0x8003
+		{Position 5066.48 1267.31 11.1857}
+		{Turn 138.262}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "fishboat" 0x8004
+		{Position 999.822 4325.63 20}
+		{Turn 73.5939}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "start_point" 0x8005
+		{Position 5313.1 1540.27 13.6461}
+		{Turn 133.993}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "start_point" 0x8006
+		{Position 458.976 5208.69 16.9301}
+		{Turn -39.5247}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "flag_point" 0x8007
+		{Position 2967.16 3696.46 207}
+		{Extender "map_point"
+			{show All}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "side_star" 0x8008
+		{Position 2967.05 3696.44 338.498}
+		{Orientation
+			  0.000000  -1.000000   0.000000
+			  1.000000   0.000000   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Link 0x8008 To 0x8007 "side_pointer"}
+	{Brain 0x8004
+		{HoldFire}
+	}
+	{Tags 0x8007 "watch"}
+	{Helpers
+		{event "delete_boat" id 0 state 0}
+		{event "x" id 1 state 0}
+		{trigger "1"
+			{actions
+				{"task"
+					{name "primary1"}
+				}
+			}
+		}
+		{trigger "addpoint1"
+			{condition
+				{type 2}
+				{expression "1 & !2 & 3"}
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 3 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "x"}
+				}
+				{"event"
+					{event 1}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "addpoint2"
+			{condition
+				{type 2}
+				{expression "1 & !2 & 3"}
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "z"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/zone" "zone"}
+						{"actors/team" "x"}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+				}
+				{term 3 "event"
+					{id 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"mp_event"
+					{event "onpoint"}
+					{team "z"}
+				}
+				{"event"
+					{event 1}
+					{mode toggle}
+					{delay 1}
+				}
+			}
+		}
+		{trigger "st"
+			{actions
+				{"event"
+					{event 0}
+					{mode set}
+					{delay 0}
+				}
+				{"event"
+					{event 1}
+					{mode set}
+					{delay 0}
+				}
+			}
+		}
+		{trigger "zone"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/zone" "island"}
+						{"actors/type" vehicle}
+						{"actors/state" "not inhabited"}
+					}
+				}
+				{term 2 "event"
+					{id 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"delete"
+					{selector
+						{"actors/zone" "island"}
+						{"actors/type" vehicle}
+						{"actors/state" "not inhabited"}
+					}
+				}
+				{"event"
+					{event 0}
+					{mode toggle}
+					{delay 2}
+				}
+			}
+		}
+		{waypoints
+		}
+		{zone "circle"
+			{position 3008.47 3649.2 207}
+			{Name "island"}
+			{Radius 2325.22}
+		}
+		{zone "circle"
+			{position 2977.11 3698.8 207}
+			{Name "zone"}
+			{Radius 120}
+		}
+		{task
+			{name "primary1"}
+			{desc "mission/mp/island/kh"}
+			{primary}
+			{state hidden}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

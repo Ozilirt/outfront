@@ -1,0 +1,26 @@
+;Exported by: GARRY
+;Date:        Wed Jun 25 18:10:18 2003
+
+{Skeleton
+	{bone "pistol"
+		{Orientation
+			1.0000	-0.0000	-0.0000
+			0.0000	-1.0000	-0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "pistol.ply"}
+		{bone "Foresight3"
+			{Position 5.4823	1.4865	0.0000}
+		}
+	}
+}
+{Volume "select"
+	{Box 10.7531 7.21492 2.73165}
+	{Bone "pistol"}
+		{Position 1.1722	-0.2411	0.6765}
+}
+{Volume "body"
+	{Box 6.75451 4.59413 1.26975}
+	{Bone "pistol"}
+		{Position 1.1722	-0.2411	-0.0545}
+}

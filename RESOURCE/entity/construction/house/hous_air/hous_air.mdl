@@ -1,0 +1,240 @@
+;Exported by: sk
+;Date:        Fri Feb 06 19:00:34 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Aerodrome\hous_air.max
+{Skeleton
+	{bone "hous_air"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "hous_air.ply"}
+		{bone "exterior"
+			{Position -0.1633	-7.9229	110.9207}
+			{VolumeView "exterior.ply"}
+		}
+		{bone "window4"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				0.0000	1.0000	-0.0000
+				-23.4978	37.9911	31.5972
+			}
+			{VolumeView "window4.ply"}
+			{bone "FX_glass04"
+				{Matrix34
+					-0.0872	0.0000	0.9962
+					-0.9962	-0.0000	-0.0872
+					0.0000	-1.0000	0.0000
+					-0.1091	-0.2697	1.6744
+				}
+			}
+		}
+		{bone "window5"
+			{Position -25.4423	-55.1222	31.5972}
+			{VolumeView "window5.ply"}
+			{bone "FX_glass05"
+				{Matrix34
+					-0.0000	-1.0000	0.0000
+					1.0000	-0.0000	0.0000
+					0.0000	0.0000	1.0000
+					0.1415	-1.6744	0.2697
+				}
+			}
+		}
+		{bone "window6"
+			{Matrix34
+				-1.0000	-0.0000	-0.0000
+				-0.0000	0.0000	-1.0000
+				0.0000	-1.0000	-0.0000
+				20.2946	-54.4644	31.5972
+			}
+			{VolumeView "window6.ply"}
+			{bone "FX_glass06"
+				{Matrix34
+					0.0000	0.0000	1.0000
+					-1.0000	-0.0000	0.0000
+					0.0000	-1.0000	-0.0000
+					-0.5130	-0.2697	2.2058
+				}
+			}
+		}
+		{bone "window4_x"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	-1.0000
+				0.0000	1.0000	-0.0000
+				-23.4978	37.5433	31.5972
+			}
+			{visibility 0}
+			{VolumeView "window4_x.ply"}
+		}
+		{bone "window6_x"
+			{Matrix34
+				-1.0000	-0.0000	-0.0000
+				-0.0000	0.0000	-1.0000
+				0.0000	-1.0000	-0.0000
+				20.2946	-53.9676	31.5972
+			}
+			{visibility 0}
+			{VolumeView "window6_x.ply"}
+		}
+		{bone "window5_x"
+			{Position -25.4423	-54.6800	31.5972}
+			{visibility 0}
+			{VolumeView "window5_x.ply"}
+		}
+	}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center 0.387085 54.8139}
+		{Extent 65.973 3.04752}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -60.9629 8.44283}
+		{Extent 3.12228 49.6036}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 47.4615 -37.316}
+		{Extent 18.531 3.04752}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center 60.8669 8.74078}
+		{Extent 2.84908 49.1076}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -26.2168 -37.4845}
+		{Extent 37.8183 3.04752}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle08"
+	{Obb2
+		{Center -50.4971 16.5379}
+		{Extent 7.25433 8.61452}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle07"
+	{Obb2
+		{Center 28.9576 -31.5979}
+		{Extent 1.5144 10.7172}
+		{Axis -0.996195 -0.0871554}
+	}
+	{Rotate}
+}
+{Area "interior2"
+	{Obb2
+		{Center 20.5807 -35.8275}
+		{Extent 8.66699 2.65601}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -0.108154 8.62571}
+		{Extent 58.1511 43.2417}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "window4hole"
+	{Box 16.1052 21.3056 19.6577}
+	{Bone "hous_air"}
+	{Position -23.8804	38.0931	31.5474}
+}
+{Volume "window5hole"
+	{Box 15.8897 22.1399 19.6663}
+	{Bone "hous_air"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-25.2250	-54.8074	31.5727
+	}
+}
+{Volume "window6hole"
+	{Box 16.1816 21.7312 19.5716}
+	{Bone "hous_air"}
+	{Position 21.1798	-51.3181	31.6589}
+}
+{Volume "body5"
+	{Box 131.946 6.09503 59.4}
+	{Bone "hous_air"}
+	{Position 0.3871	-54.8139	29.7000}
+}
+{Volume "body"
+	{Box 6.24456 99.2073 59.4}
+	{Bone "hous_air"}
+	{Position -60.9629	-8.4428	29.7000}
+}
+{Volume "body3"
+	{Box 37.0619 6.09503 59.4}
+	{Bone "hous_air"}
+	{Position 47.4615	37.3160	29.7000}
+}
+{Volume "body4"
+	{Box 5.69816 98.2152 59.4}
+	{Bone "hous_air"}
+	{Position 60.8669	-8.7408	29.7000}
+}
+{Volume "body2"
+	{Box 75.6366 6.09503 59.4}
+	{Bone "hous_air"}
+	{Position -26.2168	37.4845	29.7000}
+}
+{Volume "window6"
+	{Box 15.4639 1.21935 19.4869}
+	{Bone "window6"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		0.0000	-0.0000	1.0000
+		-0.0000	-1.0000	-0.0000
+		-0.8004	0.0150	-0.1223
+	}
+}
+{Volume "window5"
+	{Box 15.9102 1.28539 19.6781}
+	{Bone "window5"}
+	{Position 0.0925	0.0456	0.0806}
+}
+{Volume "window4"
+	{Box 16.1945 1.24829 19.7622}
+	{Bone "window4"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0000	1.0000
+		0.0000	-1.0000	-0.0000
+		-0.2932	-0.0386	-0.1627
+	}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "exterior"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		-0.0000	0.0000	1.0000
+		-1.0000	0.0000	-0.0000
+		66.5758	-0.1581	-38.1593
+	}
+}

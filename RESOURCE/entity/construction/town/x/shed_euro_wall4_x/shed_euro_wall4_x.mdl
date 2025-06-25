@@ -1,0 +1,100 @@
+;Exported by: ubrashaev
+;Date:        Tue May 18 18:56:31 2004
+;File:        D:\-Projects-\-work-\3d\shed_euro1_x.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.8}}
+	}
+	{bone "shed_euro4"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "shed_euro4.ply"}
+		{bone "piece2"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				21.2890	1.8424	36.8566
+			}
+			{VolumeView "piece2.ply"}
+		}
+		{bone "piece3"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				21.2796	-2.3306	66.1368
+			}
+			{VolumeView "piece3.ply"}
+		}
+		{bone "piece4"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				3.8197	20.4304	29.5276
+			}
+			{VolumeView "piece4.ply"}
+		}
+		{bone "piece6"
+			{Matrix34
+				1.0000	0.0000	0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				-10.2879	23.3832	20.6693
+			}
+			{VolumeView "piece6.ply"}
+		}
+		{bone "piece7"
+			{Matrix34
+				-0.0000	-1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				24.2417	14.9657	27.8871
+			}
+			{VolumeView "piece7.ply"}
+		}
+		{bone "exterior"
+			{Position 0.0008	-0.6773	70.7677}
+		}
+	}
+}
+{Volume "piece7"
+	{Box 5.64271 20.5984 10.246}
+	{Bone "piece7"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		-0.0000	1.0000	0.0000
+		1.0000	0.0000	0.0000
+		-0.1173	0.1749	2.6378
+	}
+}
+{Volume "piece6"
+	{Box 10.1378 14.1732 5}
+	{Bone "piece6"}
+	{Position -0.1476	-2.3054	2.4223}
+}
+{Volume "piece4"
+	{Box 14.5295 21.4567 5}
+	{Bone "piece4"}
+	{Position 0.1865	-0.6399	-0.5304}
+}
+{Volume "piece3"
+	{Box 5.68426 24.3544 19.9841}
+	{Bone "piece3"}
+	{Position 0.3243	-0.3292	1.4329}
+}
+{Volume "piece2"
+	{Box 6.38681 17.2726 11.227}
+	{Bone "piece2"}
+	{Matrix34
+		0.0000	0.0000	-1.0000
+		-0.0000	1.0000	0.0000
+		1.0000	0.0000	0.0000
+		-0.6294	-0.3099	-0.3149
+	}
+}

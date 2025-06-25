@@ -1,0 +1,62 @@
+;;; Выбор оптимального оружия ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+{select_ammo
+	{"bullet"
+		{human		11					}
+;		{car		10 	{volume "mover"}}
+;		{car		15 	{bone "seat driver"}}
+;		{car		10	{bone "seat"}	}
+;		{car		5					}
+		
+		{car		5					}
+		{tank		0}
+		{unknown	1}
+		(mod "dl_easy"
+			{unknown	5}
+		)
+	}
+
+	{"zenite"
+		{human		10					}
+		{car		10					}
+		{tank		3					}
+		{unknown	5					}
+	}
+
+	{"fg"
+		{human		10	{ground}		}
+;		{humans		15			{ground}}
+		{car		10					}
+;		{tank		10	{volume "mover"}}
+;		{tank		5					}
+		{unknown	5					}
+	}
+
+	{"ap"
+		{tank	 	10	{volume "body"}	}
+		{tank		8					}
+		{car		5					}
+		{human		2					}
+		{unknown	1	{ground}		}
+	}
+
+	{"grenade ap"
+		{tank		10}
+		{car		9}
+		{unknown	2}
+		{human		1}
+	}
+
+	{"grenade fg"
+		{car		10 {ground}}
+		{tank		9 {ground}}
+		{human		8 {ground}}
+		{unknown	9 {ground}}
+		(mod "dl_easy"
+			{unknown 1 {ground}}
+		)
+	}
+
+	{"knife"
+		{human		10					}
+	}
+}

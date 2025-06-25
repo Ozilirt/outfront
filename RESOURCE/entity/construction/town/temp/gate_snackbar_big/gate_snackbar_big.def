@@ -1,0 +1,22 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+  {DecalView
+	{ownershadow  128 128}
+	{name "shadow"}
+  }
+	{props "parts" "construction" "cornered" "small_steel" "no_destroyed_stamp" "wall"}
+	{Extension "gate_snackbar_big.mdl"}
+	{volume	"body2"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume	"body1"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume	"body"
+		{thickness 10}
+		{tags "body"}
+	}
+}

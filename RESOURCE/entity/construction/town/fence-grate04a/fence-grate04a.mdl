@@ -1,0 +1,26 @@
+;Exported by: shevchenko
+;Date:        Tue Jan 20 13:43:39 2004
+;File:        D:\-Projects-\-3DWork-\sheva\fence-grate.max
+{Skeleton
+	{bone "fence-grate04a"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence-grate04a.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.0385742 -0.0400429}
+		{Extent 29.7832 1.67002}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 59.5664 3.34004 21.4511}
+	{Bone "fence-grate04a"}
+	{Position 0.0386	0.0400	10.7255}
+}

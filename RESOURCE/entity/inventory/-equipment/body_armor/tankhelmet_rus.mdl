@@ -1,0 +1,31 @@
+;Exported by: dan
+;Date:        Wed Aug 06 20:12:16 2003
+
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "handle"
+			{Matrix34
+				1.0000	0.0000	-0.0000
+				0.0000	-0.0000	1.0000
+				0.0000	-1.0000	-0.0000
+				0.2107	-1.4803	2.7468
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 9.84252 9.84252 3.68412}
+	{Bone "body"}
+		{Position -0.1353	0.1502	3.7330}
+}
+{Volume "body"
+	{Box 3.85597 3.60074 2.97107}
+	{Bone "body"}
+		{Position 0.0278	0.0123	3.3765}
+}

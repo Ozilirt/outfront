@@ -1,0 +1,13 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.15) sy(1.2) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{props "concrete" "fence" "big"}
+	{volume	"body"
+		{thickness hollow 5}
+	}
+	{Extension "snipe_wall2.mdl"}
+}

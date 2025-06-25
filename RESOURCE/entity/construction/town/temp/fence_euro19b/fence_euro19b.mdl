@@ -1,0 +1,26 @@
+;Exported by: sk
+;Date:        Wed Oct 29 17:27:31 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\Parkovyi_kompleks.max
+{Skeleton
+	{bone "fence_euro19b"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "fence_euro19b.ply"}
+	}
+}
+{Obstacle "Body_vol"
+	{Obb2
+		{Center 0.0495911 0.0746422}
+		{Extent 6.58992 7.23461}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Body"
+	{Box 13.1798 14.4692 69.244}
+	{Bone "fence_euro19b"}
+	{Position 0.0496	-0.0746	34.6220}
+}

@@ -1,0 +1,40 @@
+{actor
+	(include "/properties/railway.ext")
+	(include "/properties/shadow/marine.inc" scaleX(1.7) scaleY(0.9))
+	{props "vehicle" "steel" "train_part"}
+	{mass 5000}
+	{Extension "cistern.mdl"}
+
+	{Volume "fuel"
+		{thickness hollow 4}
+	}
+	{Volume "body"
+		{tags "body"}
+		{thickness 10}
+		{component "body"}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{component "body"
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "fuel"
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "wheelleft1"
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "wheelright1"
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "wheelleft2"
+		{Able {repair} {break_by_pierce}}
+	}
+	{component "wheelright2"
+		{Able {repair} {break_by_pierce}}
+	}
+}

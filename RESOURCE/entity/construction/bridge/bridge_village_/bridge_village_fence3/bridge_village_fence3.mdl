@@ -1,0 +1,31 @@
+;Exported by: vic
+;Date:        Wed Jan 14 17:23:08 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\bridge_village.max
+{Skeleton
+	{bone "bridge_village_fence3"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "bridge_village_fence3.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center 0.0340652 4.99924}
+		{Extent 1.92878 24.8642}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 3.85757 1.88001 49.7111}
+	{Bone "bridge_village_fence3"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	-0.0649	0.9979
+		0.0000	-0.9979	-0.0649
+		0.0341	-4.9992	28.9317
+	}
+}

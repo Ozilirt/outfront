@@ -1,0 +1,21 @@
+{construction
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(1.2) sy(1.9) ofsx(0) ofsy(-5))
+	  {DecalView
+		{ownershadow  64 64}
+		{name "shadow"}
+	  }
+	  {Extension "fence-bridge1.mdl"}
+	  {props "one" "staged" "concrete" "construction" "disable_area" "no_destroyed_stamp"}
+
+	{Volume "body"
+		{tags "body"}
+		{Thickness 1}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{Thickness 1}
+	}
+	
+}
+

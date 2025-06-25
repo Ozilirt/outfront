@@ -1,0 +1,72 @@
+;Exported by: sk
+;Date:        Mon Dec 15 12:45:07 2003
+;File:        D:\-Projects-\-3DWork-\Constructions\CitY\build-21.max
+{Skeleton
+	{bone "build-21_corner5"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "build-21_corner5.ply"}
+	}
+}
+{Obstacle "body_vol"
+	{Obb2
+		{Center -26.5886 -22.6774}
+		{Extent 3.93701 31.0469}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1_vol"
+	{Obb2
+		{Center 0.00897217 4.46115}
+		{Extent 30.3862 3.93701}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3_vol"
+	{Obb2
+		{Center -5.19077 26.4672}
+		{Extent 19.685 47.0648}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 7.87402 62.0938 48.6029}
+	{Bone "build-21_corner5"}
+	{Position -26.5886	22.6774	24.3015}
+}
+{Volume "body2"
+	{Box 7.87402 50.1726 70.8485}
+	{Bone "build-21_corner5"}
+	{Matrix34
+		0.0000	-0.0000	-1.0000
+		-1.0000	-0.0000	0.0000
+		-0.0000	1.0000	-0.0000
+		-2.8910	34.4712	44.8375
+	}
+}
+{Volume "body1"
+	{Box 7.87402 60.7724 48.6029}
+	{Bone "build-21_corner5"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0090	-4.4612	24.3015
+	}
+}
+{Volume "body3"
+	{Box 39.3701 80.879 48.6029}
+	{Bone "build-21_corner5"}
+	{Matrix34
+		1.0000	0.0000	0.0000
+		0.0000	0.8192	0.5736
+		0.0000	-0.5736	0.8192
+		-5.1908	-26.4672	3.9542
+	}
+}

@@ -1,0 +1,54 @@
+;Exported by: vic
+;Date:        Sun May 16 13:38:00 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\NEW\Ruini\elements town10_xx.max
+{Skeleton
+	{bone "e-house1012_x"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "piece0"
+			{Matrix34
+				0.9784	0.2069	0.0000
+				-0.1792	0.8473	0.5000
+				0.1035	-0.4892	0.8660
+				-4.3374	1.5938	8.6685
+			}
+			{VolumeView "piece0.ply"}
+		}
+		{bone "sub_piece0"
+			{Position 10.1415	-3.8427	7.7507}
+			{VolumeView "sub_piece0.ply"}
+		}
+		{bone "sub_piece1"
+			{Matrix34
+				0.9397	-0.3420	0.0000
+				0.3420	0.9397	0.0000
+				0.0000	0.0000	1.0000
+				-13.0299	-5.1050	6.8163
+			}
+			{VolumeView "sub_piece1.ply"}
+		}
+	}
+}
+{Volume "sub_piece1"
+	{Box 14.5346 5.90551 10.6028}
+	{Bone "sub_piece1"}
+	{Position 0.6605	0.2715	-1.5149}
+}
+{Volume "sub_piece0"
+	{Box 23.0756 5.90551 15.5255}
+	{Bone "sub_piece0"}
+	{Position -0.1745	0.0267	0.0121}
+}
+{Volume "piece0"
+	{Box 14.1073 5.90551 18.8379}
+	{Bone "piece0"}
+	{Matrix34
+		0.9994	-0.0293	0.0169
+		0.0293	0.9996	0.0002
+		-0.0169	0.0002	0.9999
+		0.4621	0.4866	-0.4485
+	}
+}

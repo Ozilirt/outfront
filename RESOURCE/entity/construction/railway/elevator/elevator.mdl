@@ -1,0 +1,52 @@
+;Exported by: ubrashaev
+;Date:        Sat Sep 25 10:08:01 2004
+;File:        D:\-Projects-\-work-\3d\construction\eskalator1.max
+{Skeleton
+	{bone "elevator"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "elevator.ply"}
+	}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center -83.5317 13.8127}
+		{Extent 20.0015 1.41585}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center -83.3922 -11.6749}
+		{Extent 20.0015 1.41585}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -14.2143 -0.0987616}
+		{Extent 44.9438 14.543}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 90.57 29.527 4.12966}
+	{Bone "elevator"}
+	{Matrix34
+		0.9063	0.0000	-0.4226
+		0.0000	1.0000	0.0000
+		0.4226	0.0000	0.9063
+		-99.1357	0.0988	59.9060
+	}
+}
+{Volume "body"
+	{Box 89.8875 29.0861 22.2811}
+	{Bone "elevator"}
+	{Position -14.2143	0.0988	11.1406}
+}

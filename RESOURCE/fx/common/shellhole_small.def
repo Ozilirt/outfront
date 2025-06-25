@@ -1,0 +1,20 @@
+{fx
+	{SpriteView "start"
+		{Sprite "/fx/_bmp/explosion/woronka4.ebm"
+			{Visibility
+				{Linear
+					{min 1}
+					{max 0}
+				}
+			}
+			{timer
+				{duration 4}
+			}
+			{Scale 0.6}
+			{preTurn 30 30}
+		}
+		{ground}
+		{layer grounddynamic}
+		{NotifyOwner}
+	}
+}

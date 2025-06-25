@@ -1,0 +1,33 @@
+;Exported by: shevchenko
+;Date:        Tue May 04 13:22:05 2004
+;File:        D:\-Projects-\-3DWork-\sheva\scarecrow_x.max
+{Skeleton
+	{animation
+		{sequence "crush2" {speed 0.5}}
+	}
+	{bone "scarecrow"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "scarecrow.ply"}
+		{bone "FX_fabric"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-0.1311	-0.0396	40.1329
+			}
+		}
+		{bone "FX_wood"
+			{Matrix34
+				-0.0000	0.0000	1.0000
+				0.0000	1.0000	0.0000
+				-1.0000	0.0000	-0.0000
+				-3.0065	-0.0396	43.5110
+			}
+		}
+	}
+}

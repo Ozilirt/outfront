@@ -1,0 +1,360 @@
+;Exported by: sk
+;Date:        Mon May 31 11:09:09 2004
+;File:        D:\-PROJE~1\-3DWork-\Model\-Plane\Ju-52_1\Ju52_x.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "Body"
+			{parameters "ID=body;"}
+			{Matrix34
+				-0.0025	-1.0000	-0.0000
+				0.9804	-0.0025	-0.1971
+				0.1971	-0.0005	0.9804
+				28.5470	0.2031	29.1350
+			}
+			{VolumeView "Body.ply"}
+			{bone "cabin"
+				{parameters "CommonMesh;ID=cabin;"}
+				{animation
+					{sequence "break" {file "cabin.anm"}}
+				}
+				{Matrix34
+					1.0000	-0.0000	-0.0000
+					0.0000	0.9848	0.1736
+					0.0000	-0.1736	0.9848
+					-0.6659	48.6471	53.2619
+				}
+				{VolumeView "cabin.ply"}
+			}
+			{bone "doorL"
+				{parameters "ID=body;"}
+				{Matrix34
+					0.9960	0.0129	-0.0881
+					-0.0000	0.9895	0.1444
+					0.0891	-0.1438	0.9856
+					-15.9089	-66.6495	12.4337
+				}
+				{VolumeView "doorL.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "ID=turret;"}
+				{speed 0.0400}
+				{Matrix34
+					0.9998	-0.0197	-0.0040
+					0.0201	0.9802	0.1971
+					-0.0000	-0.1971	0.9804
+					-1.3199	-126.1433	12.2806
+				}
+				{VolumeView "turret.ply"}
+			}
+			{bone "engine1"
+				{parameters "CommonMesh;ID=engine1;"}
+				{animation
+					{sequence "break" {file "engine1.anm"}}
+				}
+				{Matrix34
+					0.9997	-0.0235	-0.0005
+					0.0231	0.9778	0.2082
+					-0.0044	-0.2082	0.9781
+					-0.7238	79.9029	39.1264
+				}
+				{VolumeView "engine1.ply"}
+				{bone "propeller1_work"
+					{parameters "ID=propeller1;"}
+					{Matrix34
+						-0.5781	-0.0017	0.8160
+						-0.8159	-0.0138	-0.5780
+						-0.0123	0.9999	-0.0066
+						-0.2854	20.4634	0.8419
+					}
+					{visibility 0}
+					{VolumeView "propeller1_work.ply"}
+				}
+				{bone "propeller1"
+					{parameters "ID=propeller1;"}
+					{Matrix34
+						-0.5770	-0.0110	-0.8167
+						-0.8167	0.0041	0.5770
+						-0.0031	0.9999	-0.0113
+						-0.3004	25.3748	0.7861
+					}
+					{VolumeView "propeller1.ply"}
+				}
+			}
+			{bone "bodyback"
+				{parameters "ID=bodyback;"}
+				{Position -2.2648	-184.4773	7.7750}
+				{VolumeView "bodyback.ply"}
+				{bone "rudder"
+					{parameters "ID=bodyback;"}
+					{Matrix34
+						1.0000	0.0000	0.0000
+						0.0000	0.9856	0.1693
+						0.0000	-0.1693	0.9856
+						-0.0119	-55.1113	14.7231
+					}
+					{VolumeView "rudder.ply"}
+				}
+				{bone "elevator1"
+					{parameters "ID=bodyback;"}
+					{Matrix34
+						-0.0752	0.0000	-0.9972
+						0.0000	1.0000	-0.0000
+						0.9972	0.0000	-0.0752
+						-49.5972	-36.9031	0.8887
+					}
+					{VolumeView "elevator1.ply"}
+				}
+				{bone "elevator2"
+					{parameters "ID=bodyback;"}
+					{Matrix34
+						0.0659	0.0000	-0.9978
+						0.0000	1.0000	-0.0000
+						0.9978	-0.0000	0.0659
+						49.4969	-36.5230	2.4077
+					}
+					{VolumeView "elevator2.ply"}
+				}
+				{bone "support3"
+					{Matrix34
+						0.0201	0.9802	0.1971
+						-0.9998	0.0197	0.0040
+						0.0000	-0.1971	0.9804
+						0.1448	-48.1893	-30.7840
+					}
+				}
+			}
+			{bone "retract_wheelR"
+				{parameters "ID=retract_wheelL;"}
+				{Matrix34
+					1.0000	-0.0000	-0.0000
+					0.0000	0.9848	0.1736
+					0.0000	-0.1736	0.9848
+					31.1216	30.2248	8.0070
+				}
+				{VolumeView "retract_wheelR.ply"}
+				{bone "support2"
+					{Matrix34
+						0.1285	0.3642	0.9224
+						-0.9882	-0.0307	0.1497
+						0.0828	-0.9308	0.3560
+						7.2617	-9.2596	-13.9975
+					}
+				}
+			}
+			{bone "glass"
+				{parameters "ID=glass;"}
+				{Matrix34
+					0.0025	-0.9804	-0.1971
+					0.0000	-0.1971	0.9804
+					1.0000	0.0025	0.0005
+					11.9084	-16.8225	31.7070
+				}
+				{VolumeView "glass.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Matrix34
+				0.9997	-0.0226	0.0000
+				0.0226	0.9997	0.0000
+				0.0000	0.0000	1.0000
+				56.2407	-0.2444	9.9441
+			}
+			{bone "WingL1"
+				{parameters "ID=wingL1;"}
+				{Matrix34
+					0.0201	-0.9998	-0.0000
+					0.9802	0.0197	-0.1971
+					0.1971	0.0040	0.9804
+					-29.1400	52.3251	32.6225
+				}
+				{VolumeView "WingL1.ply"}
+				{bone "WingL2"
+					{parameters "ID=wingL2;"}
+					{Position -117.4588	-7.9715	6.0039}
+					{VolumeView "WingL2.ply"}
+					{bone "aileron1"
+						{parameters "ID=wingL2;"}
+						{Matrix34
+							-0.1039	-0.0008	-0.9946
+							0.0792	0.9968	-0.0091
+							0.9914	-0.0797	-0.1035
+							-32.0635	-24.3001	-1.5856
+						}
+						{VolumeView "aileron1.ply"}
+					}
+					{bone "WingL3"
+						{parameters "ID=wingL2;"}
+						{Position -0.0000	-0.0000	-0.0000}
+						{VolumeView "WingL3.ply"}
+					}
+				}
+				{bone "retract_wheelL"
+					{parameters "ID=retract_wheelL;"}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						0.0000	0.9848	0.1736
+						0.0000	-0.1736	0.9848
+						18.6076	15.1716	-9.1028
+					}
+					{VolumeView "retract_wheelL.ply"}
+					{bone "support1"
+						{Matrix34
+							0.1285	0.3642	0.9224
+							-0.9883	-0.0307	0.1497
+							-0.0828	0.9308	-0.3560
+							-3.8089	11.2264	-30.0660
+						}
+					}
+				}
+				{bone "flap1"
+					{parameters "ID=wingL1;"}
+					{Matrix34
+						-0.1590	-0.0953	-0.9827
+						0.0596	0.9926	-0.1059
+						0.9855	-0.0754	-0.1522
+						-26.1027	-41.4289	-13.8586
+					}
+					{VolumeView "flap1.ply"}
+				}
+				{bone "engine2"
+					{parameters "CommonMesh;ID=engine2;"}
+					{animation
+						{sequence "break" {file "engine2.anm"}}
+					}
+					{Position -19.8672	39.7587	7.9538}
+					{VolumeView "engine2.ply"}
+						{bone "propeller2_work"
+							{parameters "ID=propeller2;"}
+							{Matrix34
+								0.6937	-0.1439	0.7058
+								0.7203	0.1321	-0.6810
+								0.0048	0.9807	0.1953
+								-0.5297	25.0071	4.3101
+							}
+							{visibility 0}
+							{VolumeView "propeller2_work.ply"}
+						}
+						{bone "propeller2"
+							{parameters "ID=propeller2;"}
+							{Matrix34
+								-0.4881	-0.1615	0.8577
+								0.8725	-0.1137	0.4752
+								0.0208	0.9803	0.1965
+								-0.4282	29.8219	5.2757
+							}
+							{VolumeView "propeller2.ply"}
+						}
+				}
+			}
+			{bone "WingR1"
+				{parameters "ID=wingR1;"}
+				{Matrix34
+					0.0201	-0.9998	-0.0000
+					0.9802	0.0197	-0.1971
+					0.1971	0.0040	0.9804
+					-27.0709	-116.3525	34.3447
+				}
+				{VolumeView "WingR1.ply"}
+				{bone "WingR2"
+					{parameters "ID=wingR2;"}
+					{Position 110.2653	-9.1879	11.4923}
+					{VolumeView "WingR2.ply"}
+					{bone "aileron2"
+						{parameters "ID=wingR2;"}
+						{Matrix34
+							-0.1381	-0.0124	0.9903
+							-0.0897	0.9960	0.0000
+							-0.9864	-0.0888	-0.1386
+							-26.4562	-21.0297	-9.1141
+						}
+						{VolumeView "aileron2.ply"}
+					}
+					{bone "WingR3"
+						{parameters "ID=wingR2;"}
+						{Position 31.0616	0.0770	0.0155}
+						{VolumeView "WingR3.ply"}
+					}
+				}
+				{bone "engine3"
+					{parameters "ID=engine3;"}
+					{Matrix34
+						0.9996	-0.0272	-0.0034
+						0.0273	0.9802	0.1960
+						-0.0020	-0.1960	0.9806
+						-46.8331	51.8028	8.9288
+					}
+					{VolumeView "engine3.ply"}
+					{bone "propeller3"
+						{parameters "ID=propeller3;"}
+						{Matrix34
+							-0.8918	-0.0050	0.4523
+							0.4523	0.0006	0.8918
+							-0.0047	1.0000	0.0018
+							0.1913	19.2264	-0.5475
+						}
+						{VolumeView "propeller3.ply"}
+					}
+					{bone "propeller3_work"
+						{parameters "ID=propeller3;"}
+						{Matrix34
+							0.7016	0.0086	0.7125
+							-0.7124	-0.0130	0.7017
+							-0.0153	0.9999	0.0030
+							0.2170	14.3148	-0.5555
+						}
+						{visibility 0}
+						{VolumeView "propeller3_work.ply"}
+					}
+				}
+				{bone "flap2"
+					{parameters "ID=wingR1;"}
+					{Matrix34
+						0.1509	-0.0000	-0.9886
+						-0.0609	0.9981	-0.0093
+						0.9867	0.0616	0.1506
+						-39.5954	-39.8907	-14.6309
+					}
+					{VolumeView "flap2.ply"}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -187.9294	0.2252	50.8991}
+			{bone "steer_back"
+				{parameters "ID=body;"}
+				{Matrix34
+					-0.0025	-1.0000	-0.0000
+					0.9804	-0.0025	-0.1971
+					0.1971	-0.0005	0.9804
+					-12.6335	2.4183	7.9083
+				}
+				{VolumeView "steer_back.ply"}
+			}
+		}
+	}
+}
+{Volume "retract_wheelL"
+	{Polyhedron "retract_wheelL.vol"}
+	{Bone "retract_wheelL"}
+	{Matrix34
+		1.0000	-0.0000	-0.0000
+		0.0000	0.9848	-0.1736
+		0.0000	0.1736	0.9848
+		2.1193	8.1880	-30.5898
+	}
+}
+{Volume "retract_wheelR"
+	{Polyhedron "retract_wheelR.vol"}
+	{Bone "retract_wheelR"}
+	{Matrix34
+		-1.0000	-0.0051	-0.0001
+		0.0048	-0.9549	0.2967
+		-0.0016	0.2967	0.9550
+		3.6074	-7.9893	-16.6723
+	}
+}

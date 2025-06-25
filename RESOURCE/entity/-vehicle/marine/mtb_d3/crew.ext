@@ -1,0 +1,94 @@
+;SDL
+
+{Placer
+	{place "driver"
+		{Group "crew"}	
+		{LinkBone "driver"}	
+		{turnoff {sensor} {shadow} {visible}}
+	}
+	{place "gunner"
+		{Group "crew"}	
+		{LinkBone "gunner"}	
+		{turnoff {sensor} {shadow} {visible}}
+		{worker charger}
+	}	
+	{place "front"
+		{entity "doublecolt"}
+		{Linkbone "attach_gun1"}
+		{handlebone "basis"}
+	}
+	{place "rear"
+		{entity "shipflak"}
+		{Linkbone "attach_gun2"}
+		{handlebone "basis"}
+	}
+}
+
+{boarder
+	{door "emit1"}
+	{door "emit2"}
+	{door "emit3"}
+	{door "emit4"}
+	{door "emitx"}
+
+	{node "node_l1"}
+	{node "node_l2"}
+	{node "node_l3"}
+	{node "node_l4"}
+	{node "node_l5"}
+
+	{node "node_r1"}
+	{node "node_r2"}
+	{node "node_r3"}
+	{node "node_r4"}
+	{node "node_r5"}
+
+	(define "climb"
+		{anm "climb%0"
+			{forward	{begin	"board_torpedo_boat"} {base "rope%0"}}
+			{reverse 	{end	"emit_torpedo_boat"}}
+		}
+	)
+	("climb" args 1)
+	("climb" args 2)
+	("climb" args 3)
+	("climb" args 4)
+	{anm "seat" {forward {end "seat_passenger"}}}
+
+;	{anm "walk"
+;		{forward {speed 3} {loop "run_strap" +3}}
+;		{reverse {speed 3} {loop "run_strap" +3}}
+;	}
+
+	{link "emit1"	"node_r1"	{anm "climb1"} {forward putoff} {reverse puton}}
+	{link "emit2"	"node_l1"	{anm "climb2"} {forward putoff} {reverse puton}}
+	{link "emit3"	"node_l5"	{anm "climb3"} {forward putoff} {reverse puton}}
+	{link "emit4"	"node_r5"	{anm "climb4"} {forward putoff} {reverse puton}}
+
+	{link "node_r1"	"node_r2"	} ;{anm "walk"}
+	{link "node_r2"	"node_r3"	} ;{anm "walk"}
+	{link "node_r3"	"node_r4"	} ;{anm "walk"}
+	{link "node_r4"	"node_r5"	} ;{anm "walk"}
+	                                          
+	{link "node_l1"	"node_l2"	} ;{anm "walk"}
+	{link "node_l2"	"node_l3"	} ;{anm "walk"}
+	{link "node_l3"	"node_l4"	} ;{anm "walk"}
+	{link "node_l4"	"node_l5"	} ;{anm "walk"}
+	                                          
+	{link "node_r3" "driver" {anm "seat"}}
+	{link "node_r3" "gunner" {anm "seat"}}
+	{link "node_l3" "driver" {anm "seat"}}
+	{link "node_l3" "gunner" {anm "seat"}}
+	                                          
+	{link "node_r2"	"front"		} ;{anm "walk"}
+	{link "node_l2" "front"		} ;{anm "walk"}
+	                                          
+	{link "node_r4"	"rear"		} ;{anm "walk"}
+	{link "node_l4" "rear"		} ;{anm "walk"}
+
+;hack board to any place from berth
+	{link "emitx"	"driver"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"gunner"	{forward putoff} {reverse puton} {anm "seat"}}
+	{link "emitx"	"front"		{forward putoff} {reverse puton}}
+	{link "emitx"	"rear"	    {forward putoff} {reverse puton}}
+}

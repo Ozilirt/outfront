@@ -1,0 +1,87 @@
+;Exported by: shevchenko
+;Date:        Sun Apr 18 14:44:22 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\build-05x.max
+{Skeleton
+	{bone "build-05_wall_x"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "build-05_wall_x.ply"}
+		{bone "Piece1"
+			{Position -30.3148	-0.0000	61.2438}
+			{VolumeView "Piece1.ply"}
+		}
+		{bone "Piece2"
+			{Position -0.0865	-0.0000	58.7228}
+			{VolumeView "Piece2.ply"}
+			{bone "Sub_piece0"
+				{Position 30.9427	0.0000	2.7394}
+				{VolumeView "Sub_piece0.ply"}
+			}
+		}
+		{bone "Piece3"
+			{Position -0.0176	0.0000	35.7260}
+			{VolumeView "Piece3.ply"}
+		}
+	}
+}
+{Obstacle "Body"
+	{Obb2
+		{Center -0.0569153 0.0542159}
+		{Extent 6.09846 4.92126}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Volume "Piece3"
+	{Box 9.84252 11.9608 19.1151}
+	{Bone "Piece3"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0393	-0.0542	2.0903
+	}
+}
+{Volume "Piece2"
+	{Box 9.84252 33.2244 16.9636}
+	{Bone "Piece2"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.0296	-0.0542	0.3240
+	}
+}
+{Volume "Sub_piece0"
+	{Box 9.84252 25.2506 11.196}
+	{Bone "Sub_piece0"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.7238	-0.0542	-1.0593
+	}
+}
+{Volume "Piece1"
+	{Box 9.84252 17.6089 11.3656}
+	{Bone "Piece1"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		0.5489	-0.0542	-0.6343
+	}
+}
+{Volume "Body"
+	{Box 9.84252 12.1969 19.1121}
+	{Bone "build-05_wall_x"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.0569	-0.0542	9.5561
+	}
+}

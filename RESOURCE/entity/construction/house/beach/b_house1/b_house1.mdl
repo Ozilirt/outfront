@@ -1,0 +1,210 @@
+;Exported by: ubrashaev
+;Date:        Mon Jul 05 10:24:00 2004
+;File:        D:\-Projects-\-work-\3d\beach]\house1.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "body.ply"}
+		{bone "exterior"
+			{Position 1.6369	3.6712	48.3485}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Obstacle "Rectangle02"
+	{Obb2
+		{Center -7.07414 48.8093}
+		{Extent 8.65385 0.778389}
+		{Axis -0.5 -0.866026}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center -32.2106 -24.2623}
+		{Extent 8.65384 0.778389}
+		{Axis -0.766044 -0.642788}
+	}
+	{Rotate}
+}
+{Obstacle "body8"
+	{Obb2
+		{Center 24.5368 -8.59343}
+		{Extent 3.26357 21.4511}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body7"
+	{Obb2
+		{Center 24.5368 -41.5823}
+		{Extent 3.26356 11.5206}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body6"
+	{Obb2
+		{Center 24.5368 27.8345}
+		{Extent 3.26357 15.0008}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -25.2863 21.0708}
+		{Extent 3.26357 21.9581}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -25.2863 -36.0646}
+		{Extent 3.26357 17.0218}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center 17.6667 39.7809}
+		{Extent 10.0091 3.26356}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center -18.6957 39.7809}
+		{Extent 6.33674 3.26356}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -0.0141945 -49.875}
+		{Extent 24.4768 3.26356}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Obb2
+		{Center -0.449726 -4.18848}
+		{Extent 22.4359 42.033}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body8"
+	{Box 42.9023 6.52712 19.3997}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		24.5368	8.5934	9.6999
+	}
+}
+{Volume "body7"
+	{Box 23.0412 6.52712 40.2818}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		24.5368	41.5823	20.1409
+	}
+}
+{Volume "body6"
+	{Box 30.0016 6.52712 40.2818}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		24.5368	-27.8345	20.1409
+	}
+}
+{Volume "body5"
+	{Box 43.9161 6.52712 40.2818}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-25.2863	-21.0708	20.1409
+	}
+}
+{Volume "body4"
+	{Box 34.0435 6.52712 40.2818}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-1.0000	0.0000
+		1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		-25.2863	36.0646	20.1409
+	}
+}
+{Volume "body3"
+	{Box 20.0182 6.52712 40.2818}
+	{Bone "body"}
+	{Position 17.6667	-39.7809	20.1409}
+}
+{Volume "body2"
+	{Box 12.6735 6.52712 40.2818}
+	{Bone "body"}
+	{Position -18.6957	-39.7809	20.1409}
+}
+{Volume "body1"
+	{Box 48.9535 6.52712 40.2818}
+	{Bone "body"}
+	{Position -0.0142	49.8750	20.1409}
+}
+{Volume "fire2"
+	{Box 34.7985 98.3516 4.39561}
+	{Bone "exterior"}
+	{Matrix34
+		0.8660	0.0000	0.5000
+		0.0000	1.0000	0.0000
+		-0.5000	0.0000	0.8660
+		-20.2319	2.1896	2.6916
+	}
+}
+{Volume "fire1"
+	{Box 34.7985 98.3516 4.39561}
+	{Bone "exterior"}
+	{Matrix34
+		-0.8660	0.0000	0.5000
+		-0.0000	-1.0000	-0.0000
+		0.5000	-0.0000	0.8660
+		15.3173	2.1896	2.6535
+	}
+}
+{Volume "roof2"
+	{Box 34.7985 98.3516 4.39561}
+	{Bone "exterior"}
+	{Matrix34
+		0.8660	0.0000	0.5000
+		0.0000	1.0000	0.0000
+		-0.5000	0.0000	0.8660
+		-18.8593	2.1896	0.3142
+	}
+}
+{Volume "roof1"
+	{Box 34.7985 98.3516 4.39561}
+	{Bone "exterior"}
+	{Matrix34
+		-0.8660	0.0000	0.5000
+		-0.0000	-1.0000	-0.0000
+		0.5000	-0.0000	0.8660
+		13.9667	2.1896	0.3142
+	}
+}

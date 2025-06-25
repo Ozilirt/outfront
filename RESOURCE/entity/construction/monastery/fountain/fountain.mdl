@@ -1,0 +1,34 @@
+;Exported by: sk
+;Date:        Thu Feb 05 11:19:20 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Monastery\fountain.max
+{Skeleton
+	{bone "wall-foun"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "wall-foun.ply"}
+	}
+}
+{Obstacle "Circle01"
+	{Circle2
+		{Radius 64.01}
+		{Center -0.532959 -0.317963}
+	}
+}
+{Volume "Body3"
+	{Cylinder 78.2621 23.5138}
+	{Bone "wall-foun"}
+	{Position -0.5330	0.3180	85.7861}
+}
+{Volume "Body2"
+	{Cylinder 64.1493 20.9011}
+	{Bone "wall-foun"}
+	{Position -0.5330	0.3180	10.5636}
+}
+{Volume "Body"
+	{Cylinder 37.1026 76.8424}
+	{Bone "wall-foun"}
+	{Position -0.5330	0.3180	38.4212}
+}

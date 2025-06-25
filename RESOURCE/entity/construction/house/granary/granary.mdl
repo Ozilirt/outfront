@@ -1,0 +1,123 @@
+;Exported by: shevchenko
+;Date:        Thu Apr 22 12:50:16 2004
+;File:        D:\-Projects-\-3DWork-\sheva\SK\hous-wood2.max
+{Skeleton
+	{bone "granary"
+		{parameters " ;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "granary.ply"}
+		{bone "exterior"
+			{Position 0.0000	-21.7750	79.6219}
+			{VolumeView "exterior.ply"}
+		}
+	}
+}
+{Area "interior"
+	{Obb2
+		{Center 1.66745 25.6263}
+		{Extent 72.2377 59.6894}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle3"
+	{Obb2
+		{Center -74.639 17.2581}
+		{Extent 66.2986 4.4602}
+		{Axis 0 1}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle2"
+	{Obb2
+		{Center 37.0454 -9.32489}
+		{Extent 35.2439 44.602}
+		{Axis 0 1}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle2"
+	{Obb2
+		{Center 4.47302 -65.3933}
+		{Extent 27.6395 1.54965}
+		{Axis -0.5 0.866025}
+	}
+	{Rotate}
+}
+{Obstacle "Rectangle1"
+	{Obb2
+		{Center 76.3261 83.2664}
+		{Extent 3.21476 2.76723}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "exterior"}
+	{Position 0.4228	2.6658	0.7738}
+}
+{Volume "fire5"
+	{Box 9.75719 57.5982 34.4254}
+	{Bone "granary"}
+	{Position 88.3600	9.8203	33.2738}
+}
+{Volume "fire4"
+	{Box 11.2865 92.9003 49.8919}
+	{Bone "granary"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		38.1854	47.8286	27.4065
+	}
+}
+{Volume "fire3"
+	{Box 24.1854 92.9003 49.8919}
+	{Bone "granary"}
+	{Matrix34
+		-0.0000	1.0000	0.0000
+		-1.0000	-0.0000	0.0000
+		0.0000	0.0000	1.0000
+		36.7767	-34.3257	27.4065
+	}
+}
+{Volume "fire2"
+	{Box 5.42339 127.738 66.3269}
+	{Bone "granary"}
+	{Matrix34
+		-0.4429	-0.0000	-0.8966
+		0.0000	-1.0000	0.0000
+		-0.8966	-0.0000	0.4429
+		58.9520	-18.4257	76.9337
+	}
+}
+{Volume "fire1"
+	{Box 5.42339 127.738 66.3269}
+	{Bone "granary"}
+	{Matrix34
+		0.4226	0.0000	-0.9063
+		0.0000	1.0000	0.0000
+		0.9063	0.0000	0.4226
+		-64.1912	-18.4257	75.6776
+	}
+}
+{Volume "fire0"
+	{Box 14.6578 116.125 58.6964}
+	{Bone "granary"}
+	{Position -74.9033	-18.6700	29.3482}
+}
+{Volume "body2"
+	{Box 6.42886 135.029 58.6964}
+	{Bone "granary"}
+	{Position -73.6402	-18.6700	29.3482}
+}
+{Volume "body"
+	{Box 81.4018 67.6756 58.6964}
+	{Bone "granary"}
+	{Position 37.6205	8.4497	29.3482}
+}

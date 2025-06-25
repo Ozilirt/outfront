@@ -1,0 +1,14 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/construction.inc" sx(0.18) sy(0.4) ofsx(0) ofsy(0))
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "barrel1a_a.mdl"}
+	{props "steel" "shed"}	
+	{Volume "body"
+		{thickness 3}
+		{tags "body"}
+	}
+}

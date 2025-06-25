@@ -1,0 +1,71 @@
+;Exported by: ubrashaev
+;Date:        Wed Jan 21 15:38:12 2004
+;File:        D:\-Projects-\-work-\3d\budka.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.2} {resume}}
+	}
+	{bone "barrier02"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "barrier02.ply"}
+		{bone "bar02"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				49.2176	-0.0045	23.0821
+			}
+			{VolumeView "bar02.ply"}
+		}
+	}
+}
+{Obstacle "Rectangle01"
+	{Obb2
+		{Center 61.5916 -0.550919}
+		{Extent 13.5102 4.68189}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Obstacle "close"
+	{Obb2
+		{Center -14.8599 -0.0858002}
+		{Extent 74.4478 4.75863}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "fire1"
+	{Box 4.29868 4.61602 168.287}
+	{Bone "barrier02"}
+	{Matrix34
+		0.0000	0.0000	1.0000
+		-0.0000	1.0000	-0.0000
+		-1.0000	-0.0000	0.0000
+		-6.7973	0.1230	23.0197
+	}
+}
+{Volume "fire2"
+	{Box 4.89813 9.314 31.5235}
+	{Bone "barrier02"}
+	{Position 49.0113	0.1230	14.1457}
+}
+{Volume "barrier"
+	{Box 3.03365 3.2599 168.287}
+	{Bone "bar02"}
+	{Matrix34
+		0.0000	1.0000	-0.0000
+		1.0000	-0.0000	0.0000
+		-0.0000	0.0000	1.0000
+		0.1275	-0.0625	56.0149
+	}
+}
+{Volume "body"
+	{Box 3.03365 9.314 29.7391}
+	{Bone "barrier02"}
+	{Position 49.0113	0.1230	13.2536}
+}

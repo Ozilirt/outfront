@@ -1,9 +1,9 @@
 {mission
 	{Camera
-		{Position 5520.7 4400.77}
-		{Distance 851}
-		{ViewAngle 0.457207}
-		{YawAngle 0.64638}
+		{Position 5517.26 4395.54}
+		{Distance 1001}
+		{ViewAngle 0.45837}
+		{YawAngle 0.833704}
 	}
 	{Environment "day_mist2"}
 	{User 2}
@@ -14,9 +14,12 @@
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo mgun" 600 {cell 3 0}}
+				{item "ammo mgun" 2000 {cell 3 0}}
 				{item "bullet57 ap" 39 {cell 0 0}}
-				{item "bullet57 fg" 5 {cell 0 1}}
+				{item "bullet57 fg" 20 {cell 0 1}}
+				{item "repair_kit" {cell 3 1}}
+				{item "barrel" {cell 0 2}}
+				{item "weapon panzerfaust" 10 filling "ammo panzerfaust" {cell 0 5}}
 			}
 		}
 		{Player 2}
@@ -29,12 +32,13 @@
 	}
 	{Entity "bmw-r12j" 0x8001
 		{Position 5689.97 4599.34 26.9219}
-		{Turn -134.676}
+		{Turn -134.677}
+		{TexMod ""}
 		{Extender "inventory"
 			{box
 				{clear}
 				{item "ammo mgun" 200 {cell 0 0}}
-				{item "morphine" {cell 3 0}}
+				{item "morphine" 15 {cell 3 0}}
 			}
 		}
 		{Player 2}
@@ -48,9 +52,9 @@
 	{Human "jap.infantry_rifle" 0x8002
 		{Position 5689.12 4607.66 26.0238}
 		{Orientation
-			 -0.699200  -0.707835  -0.100568
-			  0.711099  -0.703077   0.004596
-			 -0.073960  -0.068300   0.994932
+			 -0.699212  -0.707822  -0.100568
+			  0.711087  -0.703090   0.004595
+			 -0.073961  -0.068300   0.994932
 		}
 		{Extender "inventory"
 			{box
@@ -62,7 +66,10 @@
 				{item "pala" {cell 5 1}}
 				{item "grenade smoke" {cell 6 2}}
 				{item "grenade smoke" {cell 5 2}}
-				{item "arisaka" filling "ammo rifle" 5 {cell 0 0}}
+				{item "grenade type3at" {cell 0 0}}
+				{item "grenade type3at" {cell 2 0}}
+				{item "grenade type23" {cell 4 0}}
+				{item "arisaka" filling "ammo rifle" 5 {cell 0 1}}
 			}
 		}
 		{DisableObstacles}
@@ -73,16 +80,29 @@
 		{FsmState "board"}
 	}
 	{Human "jap.infantry_mgun" 0x8003
-		{Position 5701.77 4599.66 27.2433}
-		{Turn -134.676}
+		{Position 5694.9 4613.55 33.7997}
+		{Orientation
+			 -0.692575  -0.699297   0.176894
+			  0.711087  -0.703090   0.004595
+			  0.121159   0.128970   0.984203
+		}
 		{Extender "inventory"
 			{box
 				{clear}
 				{item "grenade type23" {cell 7 1}}
-				{item "ammo mgun" 80 {cell 6 0}}
+				{item "ammo mgun" 100 {cell 6 0}}
 				{item "knife" {cell 6 3}}
 				{item "grenade type23" {cell 6 1}}
 				{item "bandage" 4 {cell 6 2}}
+				{item "type99" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 0 2}}
+				{item "ammo mgun" 100 {cell 2 2}}
+				{item "ammo mgun" 100 {cell 4 2}}
+				{item "grenade type3at" {cell 0 3}}
+				{item "grenade type3at" {cell 2 3}}
+				{item "grenade m18" {cell 5 0}}
+				{item "grenade m18" {cell 5 1}}
+				{item "grenade molotov_coctail" {cell 4 3}}
 			}
 		}
 		{DisableObstacles}
@@ -92,22 +112,22 @@
 		{FsmState "board"}
 	}
 	{Human "jap.infantry_smg" 0x8004
-		{Position 5694.9 4613.55 33.7997}
-		{Orientation
-			 -0.692563  -0.699308   0.176895
-			  0.711099  -0.703077   0.004596
-			  0.121157   0.128973   0.984203
-		}
+		{Position 5701.77 4599.66 27.2433}
+		{Turn -134.677}
 		{Extender "inventory"
 			{box
 				{clear}
 				{item "grenade type23" {cell 6 1}}
-				{item "ammo pistol" 90 {cell 6 0}}
+				{item "ammo pistol" 100 {cell 6 0}}
 				{item "grenade type23" {cell 7 1}}
 				{item "grenade type3at" {cell 6 2}}
 				{item "bandage" 5 {cell 6 3}}
-				{item "ammo pistol" 60 {cell 4 0}}
-				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "grenade type3at" {cell 0 0}}
+				{item "mine antitank" {cell 2 0}}
+				{item "ammo pistol" 100 {cell 0 1}}
+				{item "ammo pistol" 100 {cell 4 1}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 2}}
 			}
 		}
 		{DisableObstacles}
@@ -118,17 +138,28 @@
 		{FsmState "board"}
 	}
 	{Human "jap.infantry_rifle" 0x8005
-		{Position 5809.44 4734.65 44}
-		{Turn 132.035}
+		{Position 5798.74 4696.83 27}
+		{Orientation
+			 -0.742736  -0.669584  -0.000000
+			 -0.669584   0.742736  -0.000000
+			 -0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "grenade type23" {cell 7 0}}
-				{item "ammo rifle" 25 {cell 6 0}}
+				{item "morphine" 5 {cell 4 0}}
+				{item "grenade type3at" {cell 6 0}}
+				{item "grenade type3at" {cell 6 1}}
+				{item "grenade type23" {cell 0 2}}
+				{item "grenade type23" {cell 1 2}}
+				{item "grenade type23" {cell 2 2}}
+				{item "grenade type23" {cell 3 2}}
+				{item "ammo rifle" 100 {cell 4 2}}
+				{item "ammo rifle" 100 {cell 5 2}}
+				{item "ammo rifle" 100 {cell 6 2}}
 				{item "arisaka_kn" filling "ammo rifle" 5 {cell 0 0}}
 			}
 		}
-		{DisableObstacles}
 		{Player 2}
 		{MID 6}
 		{NameId 73 78}
@@ -142,9 +173,14 @@
 			{box
 				{clear}
 				{item "ammo rifle" 25 {cell 7 0}}
-				{item "arisaka_kn" filling "ammo rifle" 5 {cell 0 0}}
 				{item "pala" {cell 5 0}}
 				{item "grenade type3at" {cell 6 1}}
+				{item "grenade type3at" {cell 0 0}}
+				{item "grenade type23" {cell 2 0}}
+				{item "grenade type23" {cell 3 0}}
+				{item "grenade type23" {cell 4 0}}
+				{item "morphine" 5 {cell 0 1}}
+				{item "arisaka_kn" filling "ammo rifle" 5 {cell 2 1}}
 			}
 		}
 		{DisableObstacles}
@@ -165,8 +201,14 @@
 			{box
 				{clear}
 				{item "ammo pistol" 30 {cell 2 0}}
-				{item "morphine" 2 {cell 6 0}}
-				{item "type26" filling "ammo pistol" 6 {cell 0 0}}
+				{item "morphine" 3 {cell 6 0}}
+				{item "grenade type3at" {cell 0 0}}
+				{item "grenade type3at" {cell 4 0}}
+				{item "grenade type23" {cell 0 1}}
+				{item "grenade type23" {cell 1 1}}
+				{item "grenade type23" {cell 2 1}}
+				{item "grenade type23" {cell 3 1}}
+				{item "type26" filling "ammo pistol" 6 {cell 4 1}}
 			}
 		}
 		{Player 2}
@@ -185,9 +227,18 @@
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 30 {cell 2 0}}
-				{item "morphine" 2 {cell 6 0}}
-				{item "type26" filling "ammo pistol" 6 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 2 0}}
+				{item "morphine" 5 {cell 6 0}}
+				{item "ammo pistol" 100 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "ammo pistol" 100 {cell 0 1}}
+				{item "grenade type23" {cell 2 1}}
+				{item "grenade type23" {cell 3 1}}
+				{item "grenade type23" {cell 4 1}}
+				{item "grenade type23" {cell 5 1}}
+				{item "grenade type3at" {cell 0 2}}
+				{item "grenade type3at" {cell 2 2}}
+				{item "type26" filling "ammo pistol" 6 {cell 4 2}}
 			}
 		}
 		{Player 2}
@@ -197,22 +248,26 @@
 		{FsmState "board"}
 	}
 	{Human "jap.tankman" 0x8009
-		{Position 5798.74 4696.83 27}
-		{Orientation
-			 -0.742736  -0.669584  -0.000000
-			 -0.669584   0.742736  -0.000000
-			 -0.000000   0.000000   1.000000
-		}
+		{Position 5809.44 4734.65 44}
+		{Turn 132.035}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60 {cell 6 0}}
+				{item "ammo pistol" 100 {cell 6 0}}
 				{item "bandage" 4 {cell 6 2}}
 				{item "grenade type23" {cell 7 1}}
 				{item "grenade m18" {cell 6 1}}
-				{item "type100" filling "ammo pistol" 30 {cell 0 0}}
+				{item "grenade type3at" {cell 0 0}}
+				{item "grenade type3at" {cell 2 0}}
+				{item "grenade type23" {cell 4 0}}
+				{item "grenade type23" {cell 5 0}}
+				{item "ammo pistol" 100 {cell 0 1}}
+				{item "ammo pistol" 100 {cell 2 1}}
+				{item "ammo pistol" 100 {cell 4 1}}
+				{item "type100" filling "ammo pistol" 30 {cell 0 2}}
 			}
 		}
+		{DisableObstacles}
 		{Player 2}
 		{MID 10}
 		{NameId 61 20}
@@ -396,10 +451,9 @@
 		{Turn 48.7116}
 		{Player 1}
 		{MID 21}
-		
 	}
 	{Human "eng.tankman" 0x8019
-		{Position 3842.05 4515.18 40.6145}
+		{Position 3840.69 4505.53 36.4545}
 		{Orientation
 			  0.616477   0.701250   0.358000
 			 -0.751002   0.660300  -0.000100
@@ -423,7 +477,7 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x801a
-		{Position 3860.53 4498.95 40.5934}
+		{Position 3853.89 4496.69 35.9934}
 		{Orientation
 			  0.616477   0.701250   0.358000
 			 -0.751002   0.660300  -0.000100
@@ -476,7 +530,6 @@
 		}
 		{Player 1}
 		{MID 25}
-		
 	}
 	{Entity "valentine" 0x801d
 		{Position 3737.9 5775.34 0}
@@ -490,7 +543,6 @@
 		}
 		{Player 1}
 		{MID 26}
-		
 	}
 	{Entity "valentine" 0x801e
 		{Position 3727.21 5709.95 0}
@@ -504,12 +556,10 @@
 		}
 		{Player 1}
 		{MID 27}
-		
 	}
 	{Entity "vickers-b" 0x801f
 		{Position 2754.25 3495.11 0}
 		{Turn 46.3007}
-		{TexMod "n23"}
 		{Player 1}
 		{MID 28}
 		{Chassis
@@ -521,7 +571,6 @@
 	{Entity "vickers-b" 0x8020
 		{Position 2499.22 3714.15 0}
 		{Turn 46.4865}
-		{TexMod "n35"}
 		{Player 1}
 		{MID 29}
 		{Chassis
@@ -560,7 +609,6 @@
 		}
 		{Player 1}
 		{MID 31}
-		
 	}
 	{Entity "carrier" 0x8023
 		{Position 73.9757 100.391 0}
@@ -578,18 +626,22 @@
 		}
 		{Player 1}
 		{MID 32}
-		
 	}
 	{Entity "rolls_royce" 0x8024
 		{Position 5347.85 161.232 0}
 		{Turn 122.113}
 		{Player 1}
 		{MID 33}
-		
 	}
 	{Entity "bedf-engin" 0x8025
 		{Position 5404.98 76.2462 0}
 		{Turn 122.938}
+		{Placer
+			{State "seat1" {Broken}}
+			{State "seat2" {Broken}}
+			{State "seat3" {Broken}}
+			{State "seat4" {Broken}}
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -604,7 +656,6 @@
 		}
 		{Player 1}
 		{MID 34}
-		
 		{Chassis
 			{FuelBag
 				{Remain 37.5}
@@ -625,7 +676,6 @@
 		}
 		{Player 1}
 		{MID 35}
-		
 		{Chassis
 			{FuelBag
 				{Remain 44.2}
@@ -635,26 +685,20 @@
 	{Entity "vickers-b" 0x8027
 		{Position 47.5628 5165.31 0}
 		{Turn -32.994}
-		{TexMod "n14"}
 		{Player 1}
 		{MID 36}
-		
 	}
 	{Entity "vickers-b" 0x8028
 		{Position 75.7744 5145.29 0}
 		{Turn -34.0131}
-		{TexMod "n19"}
 		{Player 1}
 		{MID 37}
-		
 	}
 	{Entity "vickers-b" 0x8029
 		{Position 107.741 5122.71 0}
 		{Turn -34.1223}
-		{TexMod "n33"}
 		{Player 1}
 		{MID 38}
-		
 	}
 	{Human "eng.soldier_smg" 0x802a
 		{Position 3781.51 1025.53 28.4532}
@@ -732,8 +776,8 @@
 		{FsmState "squat"}
 	}
 	{Human "eng.tankman" 0x802d
-		{Position 3484.83 751.02 0}
-		{Turn -70.5248}
+		{Position 3483.71 757.658 -0.127299}
+		{Turn -104.648}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -752,8 +796,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x802e
-		{Position 3464.62 743.609 0}
-		{Turn -70.5248}
+		{Position 3468.93 744.105 -0.0815992}
+		{Turn -49.6494}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -772,8 +816,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x802f
-		{Position 3483.41 769.471 0}
-		{Turn -70.5248}
+		{Position 3482.79 779.291 0}
+		{Turn -93.0469}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -792,8 +836,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x8030
-		{Position 3454.21 758.639 0}
-		{Turn -70.5248}
+		{Position 3448.38 767.786 0}
+		{Turn -50.5193}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -973,8 +1017,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.suboficer" 0x803a
-		{Position 3707.59 5747.98 14.901}
-		{Turn 171.773}
+		{Position 3712.42 5752.65 19.969}
+		{Orientation
+			 -0.877430   0.472415   0.083200
+			 -0.472350  -0.881178   0.022400
+			  0.083858  -0.019601   0.996300
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -992,8 +1040,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_rifle" 0x803b
-		{Position 3739.94 5759.39 14.9014}
-		{Turn 81.7732}
+		{Position 3752.22 5726.93 19.488}
+		{Orientation
+			  0.935165  -0.309298   0.172300
+			  0.310186   0.950395   0.022600
+			 -0.170726   0.032363   0.984800
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1010,8 +1062,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_rifle" 0x803c
-		{Position 3758.1 5752.31 14.9013}
-		{Turn -8.22681}
+		{Position 3754.17 5743.05 19.0329}
+		{Orientation
+			  0.916461   0.372697   0.145900
+			 -0.362327   0.927389  -0.093000
+			 -0.169920   0.032347   0.984900
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1027,8 +1083,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite1" 0x803d
-		{Position 3709.23 5759.28 14.9013}
-		{Turn 171.773}
+		{Position 3710.44 5733.7 19.4819}
+		{Orientation
+			 -0.964643  -0.204876   0.165800
+			  0.198813  -0.978619  -0.052100
+			  0.172901  -0.017319   0.984800
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1044,8 +1104,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_rifle" 0x803e
-		{Position 3720.41 5824.85 14.9013}
-		{Turn 171.2}
+		{Position 3721.36 5799.26 19.4819}
+		{Orientation
+			 -0.966645  -0.195210   0.165800
+			  0.189008  -0.980560  -0.052100
+			  0.172719  -0.019049   0.984800
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 59}
@@ -1054,8 +1118,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_rifle" 0x803f
-		{Position 3751.12 5824.65 14.9014}
-		{Turn 81.1997}
+		{Position 3763.08 5792.06 19.488}
+		{Orientation
+			  0.932023  -0.318642   0.172300
+			  0.319683   0.947243   0.022600
+			 -0.170394   0.034070   0.984800
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1072,8 +1140,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_smg" 0x8040
-		{Position 3769.21 5817.39 14.9013}
-		{Turn -8.80031}
+		{Position 3765.19 5808.17 19.0329}
+		{Orientation
+			  0.920145   0.363505   0.145900
+			 -0.353026   0.930970  -0.093000
+			 -0.169588   0.034046   0.984900
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1089,8 +1161,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_smg" 0x8041
-		{Position 3718.67 5813.56 14.901}
-		{Turn 171.2}
+		{Position 3723.53 5818.19 19.969}
+		{Orientation
+			 -0.872658   0.481174   0.083200
+			 -0.481147  -0.876406   0.022400
+			  0.083658  -0.020440   0.996300
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1107,8 +1183,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_smg" 0x8042
-		{Position 3725.35 5876.54 14.901}
-		{Turn 171.479}
+		{Position 3730.2 5881.19 19.969}
+		{Orientation
+			 -0.874997   0.476906   0.083200
+			 -0.476861  -0.878745   0.022400
+			  0.083757  -0.020031   0.996300
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1125,8 +1205,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x8043
-		{Position 3757.75 5887.78 14.9014}
-		{Turn 81.4795}
+		{Position 3769.86 5855.26 19.488}
+		{Orientation
+			  0.933568  -0.314087   0.172300
+			  0.315054   0.948793   0.022600
+			 -0.170558   0.033237   0.984800
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1143,8 +1227,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x8044
-		{Position 3775.88 5880.61 14.9013}
-		{Turn -8.52051}
+		{Position 3771.9 5871.37 19.0329}
+		{Orientation
+			  0.918359   0.367994   0.145900
+			 -0.357568   0.929235  -0.093000
+			 -0.169752   0.033218   0.984900
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1161,8 +1249,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_mg" 0x8045
-		{Position 3727.04 5887.83 14.9013}
-		{Turn 171.479}
+		{Position 3728.12 5862.25 19.4819}
+		{Orientation
+			 -0.965680  -0.199928   0.165800
+			  0.193794  -0.979626  -0.052100
+			  0.172810  -0.018205   0.984800
+		}
 		{TexMod "2"}
 		{Extender "inventory"
 			{box
@@ -1180,6 +1272,12 @@
 	}
 	{Entity "bedf-engin" 0x8046
 		{Position 2725.45 4893.8 31}
+		{Placer
+			{State "seat1" {Broken}}
+			{State "seat2" {Broken}}
+			{State "seat3" {Broken}}
+			{State "seat4" {Broken}}
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1190,7 +1288,6 @@
 		}
 		{Player 1}
 		{MID 67}
-		
 		{Chassis
 			{FuelBag
 				{Remain 62.8}
@@ -1200,6 +1297,9 @@
 	{Entity "bedf-empty" 0x8047
 		{Position 2662.2 4491.98 31}
 		{Turn -171.148}
+		{Placer
+			{State "commander" {Broken}}
+		}
 		{Player 1}
 		{MID 68}
 		{Chassis
@@ -1441,7 +1541,7 @@
 	}
 	{Entity "box_metal" 0x8052
 		{Position 5396.12 3431.26 36.4667}
-		{Turn -52.536}
+		{Turn -52.5374}
 		{Constrain surface}
 		{Extender "inventory"
 			{box
@@ -1474,7 +1574,7 @@
 	}
 	{Entity "box_metal" 0x8053
 		{Position 5360.46 3452.72 28.7127}
-		{Turn -70.7924}
+		{Turn -70.7422}
 		{Constrain surface}
 		{Extender "inventory"
 			{box
@@ -1607,12 +1707,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "eng.soldier_rifle" 0x805b
-		{Position 3174.41 867.064 0.304924}
-		{Orientation
-			  0.915407  -0.402282  -0.014000
-			  0.402322   0.915498   0.000000
-			  0.012817  -0.005633   0.999900
-		}
+		{Position 3168 869.881 0}
+		{Turn -23.7234}
 		{DisableObstacles}
 		{Player 1}
 		{MID 81}
@@ -1666,6 +1762,9 @@
 	{Entity "kurogane" 0x805f
 		{Position 3674 52.595 0}
 		{Turn 86.5172}
+		{Placer
+			{State "commander" {Broken}}
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1673,7 +1772,6 @@
 		}
 		{Player 2}
 		{MID 85}
-		
 	}
 	{Human "eng.suboficer" 0x8060
 		{Position 4334.89 846.833 0}
@@ -1888,8 +1986,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x806f
-		{Position 37.8573 5195.46 14.3496}
-		{Turn 57.006}
+		{Position 8.7633 5169.36 19.0374}
+		{Orientation
+			 -0.758072  -0.617234   0.210700
+			  0.617981  -0.782998  -0.070400
+			  0.208426   0.076784   0.975000
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 101}
@@ -1898,8 +2000,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x8070
-		{Position 16.1407 5161.99 14.3496}
-		{Turn -122.994}
+		{Position 28.5056 5201.31 16.1496}
+		{Orientation
+			  0.578033   0.801967   0.150700
+			 -0.814128   0.553976   0.174300
+			  0.056275  -0.223487   0.973100
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 102}
@@ -1908,8 +2014,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x8071
-		{Position 44.2983 5142.53 14.3496}
-		{Turn -124.013}
+		{Position 57.3604 5181.62 16.1496}
+		{Orientation
+			  0.592205   0.791559   0.150700
+			 -0.804147   0.568368   0.174300
+			  0.052292  -0.224453   0.973100
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 103}
@@ -1918,8 +2028,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x8072
-		{Position 66.6066 5175.6 14.3496}
-		{Turn 55.9869}
+		{Position 37.0531 5150.03 19.0374}
+		{Orientation
+			 -0.768930  -0.603653   0.210700
+			  0.603957  -0.793866  -0.070400
+			  0.209759   0.073065   0.975000
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 104}
@@ -1928,8 +2042,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x8073
-		{Position 76.2598 5120.01 14.3496}
-		{Turn -124.122}
+		{Position 89.3963 5159.08 16.1496}
+		{Orientation
+			  0.593712   0.790429   0.150700
+			 -0.803062   0.569899   0.174300
+			  0.051864  -0.224552   0.973100
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 105}
@@ -1938,8 +2056,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x8074
-		{Position 98.631 5153.04 14.3496}
-		{Turn 55.8777}
+		{Position 69.0288 5127.52 19.0374}
+		{Orientation
+			 -0.770079  -0.602187   0.210700
+			  0.602443  -0.795015  -0.070400
+			  0.209898   0.072665   0.975000
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 106}
@@ -2100,8 +2222,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x8082
-		{Position 5423.76 15.1675 26.3}
-		{Turn 32.938}
+		{Position 5404.98 76.2462 0}
+		{Orientation
+			 -0.543731   0.839259   0.000000
+			  0.839259   0.543731   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2112,7 +2238,6 @@
 				{item "enfieldmk3" filling "ammo rifle" 10 {cell 0 0}}
 			}
 		}
-		{DisableObstacles}
 		{Player 1}
 		{MID 115}
 		{NameId 70 52}
@@ -2120,8 +2245,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite1" 0x8083
-		{Position 5455.81 35.5753 26.3}
-		{Turn -147.062}
+		{Position 5404.98 76.2462 0}
+		{Orientation
+			 -0.543731   0.839259   0.000000
+			  0.839259   0.543731   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2130,7 +2259,6 @@
 				{item "bren" filling "ammo mgun" 30 {cell 0 0}}
 			}
 		}
-		{DisableObstacles}
 		{Player 1}
 		{MID 116}
 		{NameId 50 44}
@@ -2157,8 +2285,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x8085
-		{Position 5438.1 49.7973 26.3}
-		{Turn -57.062}
+		{Position 5404.98 76.2462 0}
+		{Orientation
+			 -0.543731   0.839259   0.000000
+			  0.839259   0.543731   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2166,7 +2298,6 @@
 				{item "boys" filling "ammo ptr" 5 {cell 0 1}}
 			}
 		}
-		{DisableObstacles}
 		{Player 1}
 		{MID 118}
 		{NameId 50 54}
@@ -2174,8 +2305,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x8086
-		{Position 5418.38 37.01 26.3}
-		{Turn -57.062}
+		{Position 5404.98 76.2462 0}
+		{Orientation
+			 -0.543731   0.839259   0.000000
+			  0.839259   0.543731   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2186,7 +2321,6 @@
 				{item "enfieldmk3" filling "ammo rifle" 10 {cell 0 0}}
 			}
 		}
-		{DisableObstacles}
 		{Player 1}
 		{MID 119}
 		{NameId 72 51}
@@ -2315,7 +2449,7 @@
 		}
 	}
 	{Human "eng.soldier_smg" 0x808c
-		{Position 92.4277 107.816 7.934}
+		{Position 72.5971 115.019 10.0825}
 		{Turn 48.2761}
 		{Extender "inventory"
 			{box
@@ -2332,8 +2466,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_smg" 0x808d
-		{Position 77.9923 120.689 7.934}
-		{Turn 48.2761}
+		{Position 87.1097 102.076 10.0468}
+		{Turn 48.3493}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2349,8 +2483,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_smg" 0x808e
-		{Position 106.985 152.516 7.934}
-		{Turn 48.2222}
+		{Position 116.085 133.895 10.0468}
+		{Turn 48.2954}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2367,8 +2501,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_smg" 0x808f
-		{Position 102.036 109.619 12.1533}
-		{Turn 138.222}
+		{Position 94.6988 106.376 12.7213}
+		{Turn 138.234}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2384,8 +2518,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite1" 0x8090
-		{Position 83.8622 89.8743 12.1533}
-		{Turn 138.276}
+		{Position 77.0262 87.2622 12.7034}
+		{Turn 138.362}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2401,8 +2535,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite1" 0x8091
-		{Position 79.3806 129.86 12.1396}
-		{Turn -41.7778}
+		{Position 77.4948 120.922 12.6521}
+		{Turn -41.3767}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2418,8 +2552,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.oficer2" 0x8092
-		{Position 57.3326 105.77 12.1396}
-		{Turn -41.7239}
+		{Position 59.4974 101 12.6737}
+		{Turn -41.7697}
 		{DisableObstacles}
 		{Player 1}
 		{MID 126}
@@ -2428,8 +2562,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.oficer2" 0x8093
-		{Position 86.311 137.617 12.1396}
-		{Turn -41.7778}
+		{Position 88.4712 132.845 12.6737}
+		{Turn -41.8236}
 		{DisableObstacles}
 		{Player 1}
 		{MID 127}
@@ -2438,8 +2572,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_rifle" 0x8094
-		{Position 112.826 121.696 12.1533}
-		{Turn 138.222}
+		{Position 105.987 119.09 12.7034}
+		{Turn 138.308}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2456,8 +2590,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_rifle" 0x8095
-		{Position 50.4096 98.0066 12.1396}
-		{Turn -41.7239}
+		{Position 48.5321 89.0674 12.6521}
+		{Turn -41.3228}
 		{DisableObstacles}
 		{Player 1}
 		{MID 129}
@@ -2466,7 +2600,7 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_smg" 0x8096
-		{Position 121.408 139.63 7.934}
+		{Position 101.584 146.851 10.0825}
 		{Turn 48.2222}
 		{TexMod "2"}
 		{Extender "inventory"
@@ -2484,8 +2618,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x8097
-		{Position 73.0841 77.7873 12.1533}
-		{Turn 138.276}
+		{Position 65.7498 74.5374 12.7213}
+		{Turn 138.288}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2748,10 +2882,8 @@
 	{Entity "vickers-b" 0x80a4
 		{Position 61.9627 3645.81 0}
 		{Turn -7.20957}
-		{TexMod "n12"}
 		{Player 1}
 		{MID 144}
-		
 	}
 	{Entity "austin_tilly" 0x80a5
 		{Position 180.72 3629.06 0}
@@ -2799,8 +2931,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80a9
-		{Position 35.1113 3629.16 14.3496}
-		{Turn -97.2096}
+		{Position 29.1446 3669.93 16.1496}
+		{Orientation
+			  0.171637   0.973557   0.150700
+			 -0.974043   0.144685   0.174300
+			  0.147886  -0.176757   0.973100
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 149}
@@ -2809,8 +2945,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80aa
-		{Position 40.1101 3668.73 14.3496}
-		{Turn 82.7904}
+		{Position 25.2648 3632.58 19.0374}
+		{Orientation
+			 -0.414107  -0.885531   0.210700
+			  0.897046  -0.436227  -0.070400
+			  0.154275   0.159802   0.975000
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 150}
@@ -3390,10 +3530,8 @@
 	{Entity "vickers-b" 0x80cc
 		{Position 1521.97 59.7622 0}
 		{Turn 46.2411}
-		{TexMod "n28"}
 		{Player 1}
 		{MID 183}
-		
 	}
 	{Entity "barrel1" 0x80cd
 		{Position 1975.92 2783.82 0}
@@ -3472,8 +3610,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite1" 0x80dc
-		{Position 1490.54 55.8583 14.3496}
-		{Turn 136.241}
+		{Position 1510.74 22.4018 19.0374}
+		{Orientation
+			  0.464780  -0.860017   0.210700
+			  0.884645   0.460857  -0.070400
+			 -0.036503   0.219100   0.975000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -3491,8 +3633,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x80dd
-		{Position 1519.36 28.2739 14.3496}
-		{Turn -43.7589}
+		{Position 1483.05 47.7639 16.1496}
+		{Orientation
+			 -0.679889   0.717651   0.150700
+			 -0.696289  -0.696330   0.174300
+			  0.230065   0.013542   0.973100
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -3511,26 +3657,23 @@
 		{FsmState "board"}
 	}
 	{Entity "mkivchurchill" 0x80de
-		{Position 5789.9 2386.87 1.21992}
-		{Turn -179.648}
+		{Position 5789.9 2386.87 1.22004}
+		{Turn -179.615}
 		{Player 1}
 		{MID 189}
-		
 	}
 	{Entity "mkivchurchill" 0x80df
-		{Position 5820 2387.04 0.951607}
-		{Turn -179.23}
-		{TexMod "n29"}
+		{Position 5820 2387.04 0.951577}
+		{Turn -179.208}
 		{Player 1}
 		{MID 190}
-		
 	}
 	{Human "eng.tankman" 0x80e0
-		{Position 5820 2387.04 0.951607}
+		{Position 5820 2387.04 0.951577}
 		{Orientation
-			 -0.999874  -0.013444   0.008465
-			 -0.013041   0.998853   0.046074
-			  0.009075  -0.045958   0.998902
+			 -0.999869  -0.013828   0.008448
+			 -0.013424   0.998847   0.046100
+			  0.009075  -0.045981   0.998901
 		}
 		{Player 1}
 		{MID 191}
@@ -3539,11 +3682,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x80e1
-		{Position 5820 2387.04 0.951607}
+		{Position 5820 2387.04 0.951577}
 		{Orientation
-			 -0.999874  -0.013444   0.008465
-			 -0.013041   0.998853   0.046074
-			  0.009075  -0.045958   0.998902
+			 -0.999869  -0.013828   0.008448
+			 -0.013424   0.998847   0.046100
+			  0.009075  -0.045981   0.998901
 		}
 		{Player 1}
 		{MID 192}
@@ -3552,11 +3695,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x80e2
-		{Position 5820 2387.04 0.951607}
+		{Position 5820 2387.04 0.951577}
 		{Orientation
-			 -0.999874  -0.013444   0.008465
-			 -0.013041   0.998853   0.046074
-			  0.009075  -0.045958   0.998902
+			 -0.999869  -0.013828   0.008448
+			 -0.013424   0.998847   0.046100
+			  0.009075  -0.045981   0.998901
 		}
 		{Extender "inventory"
 			{box
@@ -3572,11 +3715,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x80e3
-		{Position 5789.9 2386.87 1.21992}
+		{Position 5789.9 2386.87 1.22004}
 		{Orientation
-			 -0.999911  -0.006148   0.011880
-			 -0.005561   0.998789   0.048880
-			  0.012166  -0.048810   0.998734
+			 -0.999907  -0.006722   0.011833
+			 -0.006136   0.998787   0.048865
+			  0.012147  -0.048788   0.998735
 		}
 		{Player 1}
 		{MID 194}
@@ -3585,11 +3728,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x80e4
-		{Position 5789.9 2386.87 1.21992}
+		{Position 5789.9 2386.87 1.22004}
 		{Orientation
-			 -0.999911  -0.006148   0.011880
-			 -0.005561   0.998789   0.048880
-			  0.012166  -0.048810   0.998734
+			 -0.999907  -0.006722   0.011833
+			 -0.006136   0.998787   0.048865
+			  0.012147  -0.048788   0.998735
 		}
 		{Player 1}
 		{MID 195}
@@ -3598,11 +3741,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x80e5
-		{Position 5789.9 2386.87 1.21992}
+		{Position 5789.9 2386.87 1.22004}
 		{Orientation
-			 -0.999911  -0.006148   0.011880
-			 -0.005561   0.998789   0.048880
-			  0.012166  -0.048810   0.998734
+			 -0.999907  -0.006722   0.011833
+			 -0.006136   0.998787   0.048865
+			  0.012147  -0.048788   0.998735
 		}
 		{Extender "inventory"
 			{box
@@ -3618,11 +3761,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.ofitank" 0x80e6
-		{Position 5789.9 2386.87 1.21992}
+		{Position 5789.9 2386.87 1.22004}
 		{Orientation
-			 -0.999911  -0.006148   0.011880
-			 -0.005561   0.998789   0.048880
-			  0.012166  -0.048810   0.998734
+			 -0.999907  -0.006722   0.011833
+			 -0.006136   0.998787   0.048865
+			  0.012147  -0.048788   0.998735
 		}
 		{Player 1}
 		{MID 197}
@@ -3631,11 +3774,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.ofitank" 0x80e7
-		{Position 5820 2387.04 0.951607}
+		{Position 5820 2387.04 0.951577}
 		{Orientation
-			 -0.999874  -0.013444   0.008465
-			 -0.013041   0.998853   0.046074
-			  0.009075  -0.045958   0.998902
+			 -0.999869  -0.013828   0.008448
+			 -0.013424   0.998847   0.046100
+			  0.009075  -0.045981   0.998901
 		}
 		{Player 1}
 		{MID 198}
@@ -3644,11 +3787,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80e8
-		{Position 5827.47 2413.66 24.6269}
+		{Position 5776.73 2413.84 31.2017}
 		{Orientation
-			 -0.005561   0.998789   0.048880
-			 -0.999911  -0.006148   0.011880
-			  0.012166  -0.048810   0.998734
+			 -0.093304   0.994405   0.049711
+			 -0.995573  -0.093790   0.007527
+			  0.012147  -0.048788   0.998735
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3658,11 +3801,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80e9
-		{Position 5814.29 2413.58 24.7834}
+		{Position 5851.66 2414.32 30.7568}
 		{Orientation
-			 -0.005561   0.998789   0.048880
-			 -0.999911  -0.006148   0.011880
-			  0.012166  -0.048810   0.998734
+			  0.513470   0.827566   0.226925
+			 -0.855458   0.472803   0.211226
+			  0.067490  -0.302610   0.950719
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3672,11 +3815,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80ea
-		{Position 5814.6 2358.9 22.1075}
+		{Position 5852.1 2354.58 29.2627}
 		{Orientation
-			  0.005561  -0.998789  -0.048880
-			  0.999911   0.006148  -0.011880
-			  0.012166  -0.048810   0.998734
+			 -0.514352  -0.812984   0.273029
+			  0.831094  -0.551006  -0.074973
+			  0.211403   0.188357   0.959135
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3686,11 +3829,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80eb
-		{Position 5827.81 2358.99 21.9509}
+		{Position 5774.73 2354.93 27.0506}
 		{Orientation
-			  0.005561  -0.998789  -0.048880
-			  0.999911   0.006148  -0.011880
-			  0.012166  -0.048810   0.998734
+			 -0.290009  -0.919549   0.265095
+			  0.946151  -0.317106  -0.064946
+			  0.143739   0.231951   0.962087
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3706,6 +3849,9 @@
 			  0.999911   0.006148  -0.011880
 			  0.012166  -0.048810   0.998734
 		}
+		{Extender "vitality"
+			{Energy 28.6238}
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 203}
@@ -3719,6 +3865,9 @@
 			 -0.005561   0.998789   0.048880
 			 -0.999911  -0.006148   0.011880
 			  0.012166  -0.048810   0.998734
+		}
+		{Extender "vitality"
+			{Energy 28.3688}
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3734,6 +3883,9 @@
 			  0.999874   0.013444  -0.008465
 			  0.009075  -0.045958   0.998902
 		}
+		{Extender "vitality"
+			{Energy 28.6238}
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 205}
@@ -3748,6 +3900,9 @@
 			 -0.999874  -0.013444   0.008465
 			  0.009075  -0.045958   0.998902
 		}
+		{Extender "vitality"
+			{Energy 28.3688}
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 206}
@@ -3756,11 +3911,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80f0
-		{Position 5844.83 2359.31 22.0018}
+		{Position 5882.33 2355.27 29.2943}
 		{Orientation
-			  0.013041  -0.998853  -0.046074
-			  0.999874   0.013444  -0.008465
-			  0.009075  -0.045958   0.998902
+			 -0.509474  -0.815889   0.273509
+			  0.835253  -0.545260  -0.070630
+			  0.206770   0.192472   0.959328
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3770,11 +3925,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80f1
-		{Position 5858.04 2359.5 21.8903}
+		{Position 5804.97 2355.06 26.818}
 		{Orientation
-			  0.013041  -0.998853  -0.046074
-			  0.999874   0.013444  -0.008465
-			  0.009075  -0.045958   0.998902
+			 -0.284351  -0.920871   0.266631
+			  0.948604  -0.310519  -0.060854
+			  0.138787   0.235590   0.961930
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3784,11 +3939,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80f2
-		{Position 5857.29 2414.17 24.4126}
+		{Position 5806.53 2413.99 30.8141}
 		{Orientation
-			 -0.013041   0.998853   0.046074
-			 -0.999874  -0.013444   0.008465
-			  0.009075  -0.045958   0.998902
+			 -0.100562   0.993845   0.046662
+			 -0.994899  -0.100875   0.004396
+			  0.009075  -0.045981   0.998901
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3798,11 +3953,11 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x80f3
-		{Position 5844.12 2413.99 24.5241}
+		{Position 5881.46 2415.01 30.6229}
 		{Orientation
-			 -0.013041   0.998853   0.046074
-			 -0.999874  -0.013444   0.008465
-			  0.009075  -0.045958   0.998902
+			  0.506777   0.831825   0.226398
+			 -0.859525   0.467257   0.207013
+			  0.066391  -0.299531   0.951771
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -4006,7 +4161,7 @@
 	}
 	{Entity "mine_tablet" 0x8102
 		{Position 3682.07 3085.72 39.6612}
-		{Turn -159.871}
+		{Turn -160.025}
 		{Constrain surface}
 		{TexMod "v5"}
 	}
@@ -5041,11 +5196,11 @@
 		{FsmState "snipe"}
 	}
 	{Entity "bino" 0x8189
-		{Position 2513.93 3654.99 16.5002}
+		{Position 2512.59 3656.14 16.507}
 		{Orientation
-			 -0.610827  -0.727471  -0.312684
-			  0.206373   0.235000  -0.949884
-			  0.764422  -0.644683   0.006586
+			 -0.609643  -0.725090  -0.320426
+			  0.215027   0.237814  -0.947260
+			  0.762980  -0.646330   0.010932
 		}
 		{DisableObstacles}
 	}
@@ -5524,10 +5679,9 @@
 		{Turn 49.9281}
 		{Player 1}
 		{MID 245}
-		
 	}
 	{Human "eng.tankman" 0x81a1
-		{Position 2723.5 2623.61 8.5934}
+		{Position 2716.91 2621.21 3.9934}
 		{Orientation
 			  0.601450   0.714180   0.358000
 			 -0.764851   0.644207  -0.000100
@@ -5551,7 +5705,7 @@
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x81a2
-		{Position 2704.68 2639.44 8.6145}
+		{Position 2703.52 2629.76 4.4545}
 		{Orientation
 			  0.601450   0.714180   0.358000
 			 -0.764851   0.644207  -0.000100
@@ -5883,7 +6037,7 @@
 		{FsmState "snipe"}
 	}
 	{Entity "bino" 0x81b2
-		{Position 3660.35 4570.8 16.3346}
+		{Position 3659.65 4569.15 16.38}
 		{Orientation
 			  0.886415  -0.383885  -0.258833
 			 -0.247818   0.078855  -0.965641
@@ -5942,7 +6096,6 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 263}
-		
 		{NameId 18 27}
 		{FsmState "board"}
 	}
@@ -5956,7 +6109,6 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 264}
-		
 		{NameId 2 12}
 		{FsmState "board"}
 	}
@@ -5977,7 +6129,6 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 265}
-		
 		{NameId 50 50}
 		{FsmState "board"}
 	}
@@ -6750,8 +6901,8 @@
 		{FsmState "stand"}
 	}
 	{Human "eng.soldier_elite2" 0x81dc
-		{Position 20.4143 453.442 19.8861}
-		{Turn 138.095}
+		{Position 66.715 433.916 20.8512}
+		{Turn -46.9074}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -6767,8 +6918,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x81dd
-		{Position 33.9055 468.536 21.5184}
-		{Turn 138.089}
+		{Position 55.5206 422.055 19.751}
+		{Turn -66.9041}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -6784,8 +6935,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x81de
-		{Position 70.0077 436.215 21.5184}
-		{Turn -41.9049}
+		{Position 31.7028 466.259 20.8478}
+		{Turn 138.095}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -6803,9 +6954,14 @@
 	{Entity "mk4crusader" 0x81df
 		{Position 67.4947 470.63 0}
 		{Turn 48.0951}
+		{Volume "shield_left"
+			{Able {visible 0}{bullet 0}{contact 0}{contact_ground 0}{blast 0}}
+		}
+		{Volume "shield_right"
+			{Able {visible 0}{bullet 0}{contact 0}{contact_ground 0}{blast 0}}
+		}
 		{Player 1}
 		{MID 302}
-		
 	}
 	{Human "eng.tankman" 0x81e0
 		{Position 67.4947 470.63 0}
@@ -6867,8 +7023,12 @@
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite1" 0x9000
-		{Position 56.51 421.174 19.886}
-		{Turn -41.9049}
+		{Position 19.422 453.096 20.8131}
+		{Orientation
+			 -0.840108   0.501045   0.207600
+			 -0.500476  -0.863729   0.059700
+			  0.209188  -0.053767   0.976400
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -6884,13 +7044,13 @@
 		{FsmState "board"}
 	}
 	{Link 0x8002 To 0x8001 "driver"}
-	{Link 0x8003 To 0x8001 "gunner"}
-	{Link 0x8004 To 0x8001 "passenger"}
-	{Link 0x8005 To 0x8000 "seat2"}
+	{Link 0x8003 To 0x8001 "passenger"}
+	{Link 0x8004 To 0x8001 "gunner"}
+	{Link 0x8005 To 0x8000 "driver"}
 	{Link 0x8006 To 0x8000 "seat1"}
-	{Link 0x8007 To 0x8000 "charger"}
-	{Link 0x8008 To 0x8000 "gunner"}
-	{Link 0x8009 To 0x8000 "driver"}
+	{Link 0x8007 To 0x8000 "gunner"}
+	{Link 0x8008 To 0x8000 "charger"}
+	{Link 0x8009 To 0x8000 "seat2"}
 	{Link 0x800b To 0x800a "mgun"}
 	{Link 0x800d To 0x800c "mgun"}
 	{Link 0x800f To 0x800e "mgun"}
@@ -7000,10 +7160,6 @@
 	{Link 0x80e9 To 0x80de "seat2"}
 	{Link 0x80ea To 0x80de "seat3"}
 	{Link 0x80eb To 0x80de "seat4"}
-	{Link 0x80ec To 0x80de "seat5"}
-	{Link 0x80ed To 0x80de "seat6"}
-	{Link 0x80ee To 0x80df "seat5"}
-	{Link 0x80ef To 0x80df "seat6"}
 	{Link 0x80f0 To 0x80df "seat3"}
 	{Link 0x80f1 To 0x80df "seat4"}
 	{Link 0x80f2 To 0x80df "seat1"}
@@ -7426,7 +7582,7 @@
 					{text "mission/12_2/able"}
 				}
 				{"timer"
-					{time 1200}
+					{time 2400}
 					{title "mission/12_2/timer"}
 				}
 				{"event"
@@ -10577,7 +10733,3 @@
 	}
 	{MissionMusic "STOP"}
 }
-
-
-
-

@@ -251,3 +251,138 @@
 		}
 	}
 }
+{"snake"
+	{on "damage"
+		{spawn "blood_small"}
+		{start_sound "world.snake"}
+	}
+	{on "die"
+		{call "explosion"}
+	}
+	{on "explosion"
+		{start_sound "world.snake"}
+		{spawn "rabbit_hit"}
+		{spawn "blood"}
+		{delete}
+	}
+	{on "avoid"
+		{if rand 0.25
+			{start_sound "world.snake"}
+		}
+	}
+	{on ground_hit
+		{call "feather"}
+	}
+	{on contact
+		{if velocity 4
+			{call "feather"}
+		}
+	}
+	{on "feather"
+		{if not "feather"
+			{set "feather" 1}
+			{start_sound "world.snake"}
+			{delay 0.2
+				{set "feather" 0}
+			}
+		}
+	}
+}
+{"crocodile"
+	{on "damage"
+		{spawn "blood_small"}
+		{start_sound "world.crocodile"}
+	}
+	{on "die"
+		{call "explosion"}
+	}
+	{on "explosion"
+		{spawn "rabbit_hit"}
+		{spawn "blood"}
+		{delete}
+	}
+	{on "avoid"
+		{if rand 0.4
+			{start_sound "world.crocodile"}
+		}
+	}
+	{on ground_hit
+		{call "feather"}
+	}
+	{on contact
+		{if velocity 4
+			{call "feather"}
+		}
+	}
+	{on "feather"
+		{if not "feather"
+			{set "feather" 1}
+			{start_sound "world.crocodile"}
+			{delay 0.2
+				{set "feather" 0}
+			}
+		}
+	}
+}
+{"spider"
+	{on "damage"
+		{spawn "blood_small"}
+	}
+	{on "die"
+		{spawn "blood_small"}
+		{volumes disable contact}
+		{die}
+		{delay 5
+			{volumes enable contact}
+			{update_visibility_patch}
+			{delete}
+		}
+	}
+	{on ground_hit
+		{call "feather"}
+	}
+	{on contact
+		{if velocity 2
+			{call "feather"}
+		}
+	}
+	{on "feather"
+		{if not "feather"
+			{set "feather" 1}
+			{delay 0.2
+				{set "feather" 0}
+			}
+		}
+	}
+}
+{"fly"
+	{on spawn
+		{if rand 0.5
+			{spawn "flies"}
+		else 	{spawn "flies2"}
+		}
+	}
+}
+{"shark"
+	{on "damage"
+		{spawn "blood_small"}
+	}
+	{on "die"
+		{call "explosion"}
+	}
+	{on "explosion"
+		{spawn "rabbit_hit"}
+		{spawn "blood"}
+		{delay 3
+			{volumes enable contact}
+			{update_visibility_patch}
+			{delete}
+		}
+	}
+	{on move on
+		{ani_play "walk"}
+	}
+	{on move off
+		{ani_stop "walk"}
+	}
+}

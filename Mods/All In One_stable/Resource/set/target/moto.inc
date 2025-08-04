@@ -1,5 +1,5 @@
 {selector
-	{units "bmw-r12" "bmw-r12r" "bmw-r12a" "bmw-r12b"}
+	{units "bmw-r12" "bmw-r12r" "bmw-r12a" "bmw-r12b""bmw-r12j" "bike"}
 
 	{group
 		{sort {class human} {weapon "ap"}}

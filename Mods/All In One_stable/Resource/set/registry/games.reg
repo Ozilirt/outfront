@@ -445,8 +445,99 @@
 			}
 		}
 	}
-	
-	{"5. Katyusha (USSR)"
+	{"5. Bonus missions"
+		{name "Bonus missions"}
+		{background "background/scene-1:1"
+			{screenshot "/interface/background/main.ebm"}
+			{media "bonus bkg"}
+		}
+		{multiplayer "1"}
+		{bonus}
+		{missions
+			{"Tank_attack"
+				{name "mission/b_1/name"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/bonus/tank.ebm"}
+				}
+				{side_music
+					{"start" "bridge"}
+					{"main_loop" "bridge"}
+				}
+				{scene "single/tank_attack:0"}
+			}
+			{"Outfront"
+				{name "mission/b_2/name"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/bonus/outfront.ebm"}
+				}
+				{side_music
+					{"start" "depo"}
+					{"main_loop" "depo"}
+				}
+				{scene "single/outfront:0"}
+			}
+			{"Frontline"
+				{name "mission/b_3/name"}
+				{coopBreed "usa.infantry_smg"}
+				{intro
+					{background "/video/bonus/frontline.ebm"}
+				}
+				{side_music
+					{"start" "edge"}
+					{"main_loop" "edge"}
+				}
+				{scene "single/front_line:0"}
+				{multiplayer 0}
+			}
+			{"Hutor"
+				{name "mission/b_4/name"}
+				{scene "1-katusha/1_1-hutor_chepel:0"}
+				{coopBreed "rus.infantry_smg"}
+				{side_music
+					{"start" "visadka"}
+					{"main_loop" "visadka"}
+				}
+				{intro
+					{background "/video/bonus/hutor.ebm"}
+				}
+			}
+			{"Defend"
+				{name "mission/b_5/name"}
+				{coopBreed "rus.infantry_smg"}
+				{side_music
+					{"start" "hill213"}
+					{"main_loop" "theme_i"}
+				}
+				{intro
+					{background "/video/bonus/defend.ebm"}
+				}
+				{scene "single/defend:0"}
+			}
+			{"Mastogne"
+				{name "mission/b_6/name"}
+				{coopBreed "usa.infantry_smg"}
+				{intro
+					{background "/video/bonus/mastogne.ebm"}
+				}
+				{side_music
+					{"start" "phones2"}
+					{"main_loop" "phones2"}
+				}
+				{scene "single/mastogne:0"}
+			}
+			{"Officer"
+				{name "mission/b_7/name"}
+				{coopBreed "usa.infantry_smg"}
+				{intro
+					{background "/video/bonus/officer.ebm"}
+				}
+				{scene "single/town_officer:0"}
+			}
+		}
+	}
+	{"6. German1"
 		{name "mission/5_/name"}
 		{multiplayer "1"}
 		{background "background/1/rus:rus"
@@ -456,7 +547,7 @@
 		{missions
 			{"Chepel"
 				{name "mission/5_2/name"}
-				{scene "5-katusha/1_2-chepel:0"}
+				{scene "2PZ15\mis1\germis1-1:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					{background "/video/5katusha/2-chepel.ebm"}
@@ -468,7 +559,7 @@
 			}
 			{"Monastery"
 				{name "mission/5_3/name"}
-				{scene "5-katusha/1_3-monastery:0"}
+				{scene "2PZ15\mis1\germis1-2:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					{background "/video/5katusha/3-mon.ebm"}
@@ -479,7 +570,7 @@
 			}
 			{"Last Ride"
 				{name "mission/5_4/name"}
-				{scene "5-katusha/1_4-vokzal:0"}
+				{scene "2PZ15\mis1\germis1-3:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					{background "/video/5katusha/4-vok.ebm"}
@@ -490,7 +581,7 @@
 			}
 			{"Theft"
 				{name "mission/5_5/name"}
-				{scene "5-katusha/1_5-depo:0"}
+				{scene "2PZ15\mis1\germis1-4:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					{background "/video/5katusha/5-depo.ebm"}
@@ -502,7 +593,7 @@
 			{"Prishib Station"
 				{name "mission/5_6/name"}
 				{coopBreed "ger.infantry_smg"}
-				{scene "5-katusha/1_6-base:0"}
+				{scene "2PZ15\mis1\germis1-5:0"}
 				{intro
 					{background "/video/5katusha/6-base.ebm"}
 				}
@@ -512,7 +603,7 @@
 			}
 		}
 	}
-	{"6. Project America (UK)"
+	{"7. German2"
 		{name "mission/6_/name"}
 		{multiplayer "1"}
 		{background "background/1/eng:eng"
@@ -524,7 +615,7 @@
 			{"Lighthouse"
 				{name "mission/6_1/name"}
 				{coopBreed "ger.infantry_smg"}
-				{scene "6-fau/2_1-sealanding:0"}
+				{scene "2PZ15\mis2\germis2-1:0"}
 				{intro
 					
 					{background "/video/6fau/1-lighthouse.ebm"}
@@ -539,7 +630,7 @@
 			{"Rendezvous"
 				{name "mission/6_2/name"}
 				{coopBreed "ger.infantry_smg"}
-				{scene "6-fau/2_2-resident:0"}
+				{scene "2PZ15\mis2\germis2-2:0"}
 				{intro
 					
 					{background "/video/6fau/2-resident.ebm"}
@@ -551,7 +642,7 @@
 				}				
 			}
 			{"Crash Site"
-				{scene "6-fau/2_3-swamp:0"}
+				{scene "2PZ15\mis2\germis2-3:0"}
 				{coopBreed "ger.infantry_smg"}
 				{name "mission/6_3/name"}
 				{intro
@@ -567,7 +658,7 @@
 			}
 			{"Ambush"
 				{name "mission/6_4/name"}
-				{scene "6-fau/2_4-ambush:0"}
+				{scene "2PZ15\mis2\germis2-4:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					
@@ -582,7 +673,7 @@
 			}
 			{"Rescue"
 				{name "mission/6_5/name"}
-				{scene "6-fau/2_5-air_landing:0"}
+				{scene "2PZ15\mis2\germis2-5:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					
@@ -596,7 +687,7 @@
 			}
 			{"Freedom"
 				{name "mission/6_6/name"}
-				{scene "6-fau/2_6-aerodrome:0"}
+				{scene "2PZ15\mis2\germis2-6:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					
@@ -610,7 +701,7 @@
 			}
 		}
 	}
-	{"7. The Way to Berlin (USA)"
+	{"8. German3"
 		{name "mission/7_/name"}
 		{multiplayer "1"}
 		{background "background/1/usa2:usa2"
@@ -621,7 +712,7 @@
 		{missions
 			{"Drop Zone"
 				{name "mission/7_1/name"}
-				{scene "7-way_to_berlin/3_1-landing:0"}
+				{scene "2PZ15\mis3\germis3-1:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					
@@ -638,7 +729,7 @@
 			{"Nijmegen"
 				{name "mission/7_2/name"}
 				{coopBreed "ger.infantry_smg"}
-				{scene "7-way_to_berlin/3_2-edge:0"}
+				{scene "2PZ15\mis3\germis3-2:0"}
 				{intro
 					
 					{background "/video/7berlin/2-edge.ebm"}
@@ -653,7 +744,7 @@
 			{"Minefields"
 				{name "mission/7_3/name"}
 				{coopBreed "ger.infantry_smg"}
-				{scene "7-way_to_berlin/3_3-minefields:0"}
+				{scene "2PZ15\mis3\germis3-3:0"}
 				{intro
 					
 					{background "/video/7berlin/3-minefields.ebm"}
@@ -667,7 +758,7 @@
 			}
 			{"Artillery Assault"
 				{name "mission/7_4/name"}
-				{scene "7-way_to_berlin/3_4-kitchengardens:0"}
+				{scene "2PZ15\mis3\germis3-4:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					
@@ -683,7 +774,7 @@
 			{"Last Stand"
 				{name "mission/7_5/name"}
 				{coopBreed "ger.infantry_smg"}
-				{scene "7-way_to_berlin/3_5-bridge_defence:0"}
+				{scene "2PZ15\mis3\germis3-5:0"}
 				{intro
 					
 					{background "/video/7berlin/5-bridge.ebm"}
@@ -707,7 +798,7 @@
 			{"En Route"
 				{name "mission/8_1/name"}
 				{coopBreed "ger.infantry_smg"}
-				{scene "8-hunter/4_1-water_mill:0"}
+				{scene "2PZ15\mis4\germis4-1:0"}
 				{intro
 					{background "/video/8villers/1-water.ebm"}
 					{text "mission/briefing/g_1"}
@@ -718,7 +809,7 @@
 			}
 			{"Reconnaissance"
 				{name "mission/8_2/name"}
-				{scene "8-hunter/4_2-hill-213:0"}
+				{scene "2PZ15\mis4\germis4-2:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					{background "/video/8villers/2-hill.ebm"}
@@ -730,7 +821,7 @@
 			{"Villers-Bocage"
 				{name "mission/8_3/name"}
 				{coopBreed "ger.infantry_smg"}
-				{scene "8-hunter/4_3-villers-213:0"}
+				{scene "2PZ15\mis4\germis4-3:0"}
 				{intro
 					{background "/video/8villers/3-villers.ebm"}
 				}
@@ -741,7 +832,7 @@
 			{"Hunter"
 				{name "mission/8_4/name"}
 				{coopBreed "ger.infantry_smg"}
-				{scene "8-hunter/4_4-out_villers:0"}
+				{scene "2PZ15\mis4\germis4-4:0"}
 				{intro
 					{background "/video/8villers/4-outvillers.ebm"}
 				}
@@ -751,7 +842,7 @@
 			}
 			{"Liberation"
 				{name "mission/8_5/name"}
-				{scene "8-hunter/4_5-destr_villers:0"}
+				{scene "2PZ15\mis4\germis4-5:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					{background "/video/8villers/5-d_villers.ebm"}
@@ -778,7 +869,7 @@
 				{intro
 					{background "/video/9bonus/bonus01.ebm"}
 				}
-				{scene "singl/bonus01:0"}
+				{scene "2PZ15/bonus/gerbonus01:0"}
 			}
 			{"bm02"
 				{name "mission/9_2/name"}
@@ -786,7 +877,7 @@
 				{intro
 					{background "/video/9bonus/bonus02.ebm"}
 				}
-				{scene "singl/bonus02:0"}
+				{scene "2PZ15/bonus/gerbonus02:0"}
 			}
 			{"bm03"
 				{name "mission/9_3/name"}
@@ -794,7 +885,7 @@
 				{intro
 					{background "/video/9bonus/bonus03.ebm"}
 				}
-				{scene "singl/bonus03:0"}
+				{scene "2PZ15/bonus/gerbonus03:0"}
 			}
 			{"bm04"
 				{name "mission/9_4/name"}
@@ -802,7 +893,7 @@
 				{intro
 					{background "/video/9bonus/bonus04.ebm"}
 				}
-				{scene "singl/bonus04:0"}
+				{scene "2PZ15/bonus/gerbonus04:0"}
 			}
 			{"bm05"
 				{name "mission/9_5/name"}
@@ -810,7 +901,7 @@
 				{intro
 					{background "/video/9bonus/bonus05.ebm"}
 				}
-				{scene "singl/bonus05:0"}
+				{scene "2PZ15/bonus/gerbonus05:0"}
 			}
 			{"bm06"
 				{name "mission/9_6/name"}
@@ -818,7 +909,7 @@
 				{intro
 					{background "/video/9bonus/bonus06.ebm"}
 				}
-				{scene "singl/bonus06:0"}
+				{scene "2PZ15/bonus/gerbonus06:0"}
 			}
 			{"bm07"
 				{name "mission/9_7/name"}
@@ -826,7 +917,7 @@
 				{intro
 					{background "/video/9bonus/bonus07.ebm"}
 				}
-				{scene "singl/bonus07:0"}
+				{scene "2PZ15/bonus/gerbonus07:0"}
 			}
 			{"bm08"
 				{name "mission/9_8/name"}
@@ -834,7 +925,7 @@
 				{intro
 					{background "/video/9bonus/bonus08.ebm"}
 				}
-				{scene "singl/bonus08:0"}
+				{scene "2PZ15/bonus/gerbonus08:0"}
 			}
 			{"bm09"
 				{name "mission/9_9/name"}
@@ -842,7 +933,7 @@
 				{intro
 					{background "/video/9bonus/bonus09.ebm"}
 				}
-				{scene "singl/bonus09:0"}
+				{scene "2PZ15/bonus/gerbonus09:0"}
 			}
 			{"bm10"
 				{name "mission/9_10/name"}
@@ -850,7 +941,7 @@
 				{intro
 					{background "/video/9bonus/bonus10.ebm"}
 				}
-				{scene "singl/bonus10:0"}
+				{scene "2PZ15/bonus/gerbonus10:0"}
 			}
 			{"extra1"
 				{name "mission/9_11/name"}
@@ -858,7 +949,7 @@
 				{intro
 					{background "/video/9bonus/extra1.ebm"}
 				}
-				{scene "singl/extra1:0"}
+				{scene "2PZ15/bonus/gerextra1:0"}
 			}
 			{"extra2"
 				{name "mission/9_12/name"}
@@ -866,7 +957,7 @@
 				{intro
 					{background "/video/9bonus/extra2.ebm"}
 				}
-				{scene "singl/extra2:0"}
+				{scene "2PZ15/bonus/gerextra2:0"}
 			}
 			{"extra3"
 				{name "mission/9_13/name"}
@@ -874,7 +965,7 @@
 				{intro
 					{background "/video/9bonus/extra3.ebm"}
 				}
-				{scene "singl/extra3:0"}
+				{scene "2PZ15/bonus/gerextra3:0"}
 			}
 			{"extra4"
 				{name "mission/9_14/name"}
@@ -882,7 +973,7 @@
 				{intro
 					{background "/video/9bonus/extra4.ebm"}
 				}
-				{scene "singl/extra4:0"}
+				{scene "2PZ15/bonus/gerextra4:0"}
 			}
 			{"extra5"
 				{name "mission/9_15/name"}
@@ -890,7 +981,7 @@
 				{intro
 					{background "/video/9bonus/extra5.ebm"}
 				}
-				{scene "singl/extra5:0"}
+				{scene "2PZ15/bonus/gerextra5:0"}
 			}
 			{"extra6"
 				{name "mission/9_16/name"}
@@ -898,7 +989,7 @@
 				{intro
 					{background "/video/9bonus/extra6.ebm"}
 				}
-				{scene "singl/extra6:0"}
+				{scene "2PZ15/bonus/gerextra6:0"}
 			}
 			{"extra7"
 				{name "mission/9_17/name"}
@@ -906,7 +997,114 @@
 				{intro
 					{background "/video/9bonus/extra7.ebm"}
 				}
-				{scene "singl/extra7:0"}
+				{scene "2PZ15/bonus/gerextra7:0"}
+			}
+		}
+	}
+	{"11. Training"
+		{name "mission/training_camp/name"} ;Training missions
+		{multiplayer "1"}
+		{background "background/1/training:training2"
+			{screenshot "/interface/background/training.ebm"}
+			{media "training bkg"}
+		}
+		
+		{missions
+			{"Training1"
+				{name "mission/training_camp1/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/camp1.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-1:0"}
+			}
+			{"Training2"
+				{name "mission/training_camp2/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/camp2.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-2:0"}
+			}
+			{"Training3"
+				{name "mission/training_camp3/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/3-training.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-3:0"}
+			}
+			{"Training4"
+				{name "mission/training_camp4/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/camp4.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-4:0"}
+			}
+			{"Training5"
+				{name "mission/training_camp5/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/camp5.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-5:0"}
+			}
+			{"Training6"
+				{name "mission/training_camp6/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/camp6.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-6:0"}
+			}
+			{"Training7"
+				{name "mission/training_camp7/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/camp7.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-7:0"}
+			}
+			{"Training8"
+				{name "mission/training_camp8/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/camp8.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-8:0"}
+			}
+			{"Training9"
+				{name "mission/training_camp9/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/camp9.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-9:0"}
+			}
+			{"Training10"
+				{name "mission/training_camp10/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/campa.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-10:0"}
+			}
+			{"Training11"
+				{name "mission/training_camp11/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/campb.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-11:0"}
+			}
+			{"Training12"
+				{name "mission/training_camp12/name"}
+				{multiplayer "1"}
+				{intro
+					{background "/video/training/campc.ebm"}
+				}
+				{scene "2PZ15/mis5/germis5-12:0"}
 			}
 		}
 	}
@@ -926,13 +1124,13 @@
 				{intro
 					{background "/video/bonus/svarog-1.ebm"}
 				}
-				{scene "single1/svarog-1:0"}
+				{scene "CCCP/svarog-1:0"}
 			}
 		    {"bunker2"
 				{name "mission/b_bunker2/name"}
 				{multiplayer "1"}
 				
-				{scene "single/bunker2:0"}
+				{scene "bunker2/bunker2:0"}
 			}
 			{"ChepelReload"
 				{name "mission/10_3/name"}
@@ -942,7 +1140,7 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single/ChepelReload:0"}
+				{scene "ChepelReload:0"}
 			}
 			{"Death"
 				{name "mission/10_4/name"}
@@ -956,7 +1154,7 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single/Death:mission"}
+				{scene "Death:mission"}
 				{outro
 					{text "mission/briefing/d_2"}
 					{voice "g_int"}
@@ -973,7 +1171,7 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single/defection:0"}
+				{scene "defection:0"}
 			}
 			{"jaeger_ambush"
 				{name "mission/10_6/name"}
@@ -981,7 +1179,7 @@
 				{intro
 					{background "/video/bonus/jaeger_ambush.ebm"}
 				}
-				{scene "single/jaeger_ambush:0"}
+				{scene "Finland.at.war.1939-1944/jaeger_ambush:0"}
 			}
 			{"line_of_fire"
 				{name "mission/10_7/name"}
@@ -989,7 +1187,7 @@
 				{intro
 					{background "/video/bonus/line_of_fire.ebm"}
 				}
-				{scene "single/line_of_fire:0"}
+				{scene "Finland.at.war.1939-1944/line_of_fire:0"}
 			}
 			{"Infantry_Attack_X"
 				{name "mission/10_8/name"}
@@ -1014,7 +1212,7 @@
 					{"start" "bridge"}
 					{"main_loop" "preview"}
 				}
-				{scene "single/Битва за Мидуэй:0"}
+				{scene "Midzui:0"}
 			 }
 			{"Minefields Reloaded"
 				{name "mission/10_10/name"}
@@ -1026,7 +1224,7 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single/Minefields Reloaded:0"}
+				{scene "Minefields Reloaded:0"}
 			}
 			{"Mortarshell heroes"
 			
@@ -1040,118 +1238,12 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single/Mortarshell heroes:0"}
+				{scene "Mortarshell heroes:0"}
 			}
 		}
 	}
 	
-	{"11. Training"
-		{name "mission/training_camp/name"} ;Training missions
-		{multiplayer "1"}
-		{background "background/1/training:training2"
-			{screenshot "/interface/background/training.ebm"}
-			{media "training bkg"}
-		}
-		
-		{missions
-			{"Training1"
-				{name "mission/training_camp1/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/camp1.ebm"}
-				}
-				{scene "0-training/camp1:0"}
-			}
-			{"Training2"
-				{name "mission/training_camp2/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/camp2.ebm"}
-				}
-				{scene "0-training/camp2:0"}
-			}
-			{"Training3"
-				{name "mission/training_camp3/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/3-training.ebm"}
-				}
-				{scene "0-training/camp3:0"}
-			}
-			{"Training4"
-				{name "mission/training_camp4/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/camp4.ebm"}
-				}
-				{scene "0-training/camp4:0"}
-			}
-			{"Training5"
-				{name "mission/training_camp5/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/camp5.ebm"}
-				}
-				{scene "0-training/camp5:0"}
-			}
-			{"Training6"
-				{name "mission/training_camp6/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/camp6.ebm"}
-				}
-				{scene "0-training/camp6:0"}
-			}
-			{"Training7"
-				{name "mission/training_camp7/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/7-training.ebm"}
-				}
-				{scene "0-training/camp7:0"}
-			}
-			{"Training8"
-				{name "mission/training_camp8/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/camp8.ebm"}
-				}
-				{scene "0-training/camp8:0"}
-			}
-			{"Training9"
-				{name "mission/training_camp9/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/camp9.ebm"}
-				}
-				{scene "0-training/camp9:0"}
-			}
-			{"Training10"
-				{name "mission/training_camp10/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/campa.ebm"}
-				}
-				{scene "0-training/campa:0"}
-			}
-			{"Training11"
-				{name "mission/training_camp11/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/campb.ebm"}
-				}
-				{scene "0-training/campb:0"}
-			}
-			{"Training12"
-				{name "mission/training_camp12/name"}
-				{multiplayer "1"}
-				{intro
-					{background "/video/training/campc.ebm"}
-				}
-				{scene "0-training/campc:0"}
-			}
-		}
-	}
+	
 	{"12. K1"
 		{name "mission/12_/name"}
 		{multiplayer "1"}
@@ -1366,7 +1458,7 @@
 			}
 		}		
 	}
-	{"4. Wrath of the Tiger (Ger)"
+	{"16. k4"
 		{name "mission/15_/name"}
 		{multiplayer "1"}
 		{background "background/eng:c4"
@@ -1376,7 +1468,7 @@
 			{"En Route"
 				{name "mission/15_1/name"}
 				{coopBreed "eng.soldier"}
-				{scene "single1/4-hunter/4_1-water_mill:0"}
+				{scene "pacific\k4\k4_1:0"}
 				{intro
 					{background "/video/Japan/K4/1-water.ebm"}
 				}
@@ -1386,7 +1478,7 @@
 			}
 			{"Reconnaissance"
 				{name "mission/15_2/name"}
-				{scene "single1/4-hunter/4_2-hill-213:0"}
+				{scene "pacific\k4\k4_2:0"}
 				{coopBreed "eng.soldier"}
 				{intro
 					{background "/video/Japan/K4/2-hill.ebm"}
@@ -1398,7 +1490,7 @@
 			{"Villers-Bocage"
 				{name "mission/15_3/name"}
 				{coopBreed "eng.soldier"}
-				{scene "single1/4-hunter/4_3-villers-213:0"}
+				{scene "pacific\k4\k4_3:0"}
 				{intro
 					{background "/video/Japan/K4/3-villers.ebm"}
 				}
@@ -1409,7 +1501,7 @@
 			{"Hunter"
 				{name "mission/15_4/name"}
 				{coopBreed "eng.soldier"}
-				{scene "single1/4-hunter/4_4-out_villers:0"}
+				{scene "pacific\k4\k4_4:0"}
 				{intro
 					{background "/video/Japan/K4/4-outvillers.ebm"}
 				}
@@ -1419,7 +1511,7 @@
 			}
 			{"Liberation"
 				{name "mission/15_5/name"}
-				{scene "single1/4-hunter/4_5-destr_villers:0"}
+				{scene "pacific\k4\k4_5:0"}
 				{coopBreed "eng.soldier"}
 				{intro
 					{background "/video/Japan/K4/5-d_villers.ebm"}
@@ -1430,7 +1522,7 @@
 			}
 		}
 	}
-	{"5. Bonus missions"
+	{"k5"
 		{name "mission/16_/name"}
 		{background "background/scene-1:2"
 			{media "bonus bkg"}
@@ -1448,7 +1540,7 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single1/single/bonus01:0"}
+				{scene "pacific\k5\k5_1:0"}
 			}
 			{"bonus 2"
 				{name "mission/16_2/name"}
@@ -1460,7 +1552,7 @@
 					{"start" "depo"}
 					{"main_loop" "depo"}
 				}
-				{scene "single1/single/bonus02:0"}
+				{scene "pacific\k5\k5_2:0"}
 			}
 			{"bonus 3"
 				{name "mission/16_3/name"}
@@ -1472,7 +1564,7 @@
 					{"start" "edge"}
 					{"main_loop" "edge"}
 				}
-				{scene "single1/single/bonus03:0"}
+				{scene "pacific\k5\k5_3:0"}
 			}
 			{"bonus 4"
 				{name "mission/16_4/name"}
@@ -1484,7 +1576,7 @@
 				{intro
 					{background "/video/bonus/bonus04.ebm"}
 				}
-				{scene "single1/single/bonus04:0"}
+				{scene "pacific\k5\k5_4:0"}
 			}
 			{"bonus 5"
 				{name "mission/16_5/name"}
@@ -1496,7 +1588,7 @@
 				{intro
 					{background "/video/bonus/bonus05.ebm"}
 				}
-				{scene "single1/single/bonus05:0"}
+				{scene "pacific\k5\k5_5:0"}
 			}
 			{"bonus 6"
 				{name "mission/16_6/name"}
@@ -1508,7 +1600,7 @@
 					{"start" "phones2"}
 					{"main_loop" "phones2"}
 				}
-				{scene "single1/single/bonus06:0"}
+				{scene "pacific\k5\k5_6:0"}
 			}
 			{"bonus 7"
 				{name "mission/16_7/name"}
@@ -1516,7 +1608,7 @@
 				{intro
 					{background "/video/bonus/bonus07.ebm"}
 				}
-				{scene "single1/single/bonus07:0"}
+				{scene "pacific\k5\k5_7:0"}
 			}
 			{"bonus 8"
 				{name "mission/16_8/name"}
@@ -1524,7 +1616,7 @@
 				{intro
 					{background "/video/bonus/bonus08.ebm"}
 				}
-				{scene "single1/single/bonus08:0"}
+				{scene "pacific\k5\k5_8:0"}
 			}
 		}
 	}
@@ -1602,8 +1694,15 @@
 
 }
 ; legend: 0 - USSR, 1 - USA, 2 - GER, 3 - GBR, 4 - JAP
-; path character '/' must be replaced with '\'
+; символ пути "/" должен быть заменен на "\"
 {sides
+    {"1-katusha" 0}
+	{"2-fau" 3}
+	{"3-way_to_berlin" 1}
+	{"4-hunter" 2}
+	
+	{"pacific" 0}
+	
 	{"single1\1-katusha" 4}
 	{"single1\2-fau" 4}
 	{"single1\3-way_to_berlin" 4}

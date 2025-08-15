@@ -546,7 +546,7 @@
 		}
 		{missions
 			{"Chepel"
-				{name "mission/5_2/name"}
+				{name "mission/5_1/name"}
 				{scene "2PZ15\mis1\germis1-1:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
@@ -558,7 +558,7 @@
 				}
 			}
 			{"Monastery"
-				{name "mission/5_3/name"}
+				{name "mission/5_2/name"}
 				{scene "2PZ15\mis1\germis1-2:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
@@ -569,7 +569,7 @@
 				}
 			}
 			{"Last Ride"
-				{name "mission/5_4/name"}
+				{name "mission/5_3/name"}
 				{scene "2PZ15\mis1\germis1-3:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
@@ -580,7 +580,7 @@
 				}
 			}
 			{"Theft"
-				{name "mission/5_5/name"}
+				{name "mission/5_4/name"}
 				{scene "2PZ15\mis1\germis1-4:0"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
@@ -591,7 +591,7 @@
 				}
 			}
 			{"Prishib Station"
-				{name "mission/5_6/name"}
+				{name "mission/5_5/name"}
 				{coopBreed "ger.infantry_smg"}
 				{scene "2PZ15\mis1\germis1-5:0"}
 				{intro
@@ -785,6 +785,21 @@
 					
 				}				
 			}
+			{"Last Stand"
+				{name "mission/7_6/name"}
+				{coopBreed "ger.infantry_smg"}
+				{scene "2PZ15\mis3\germis3-6:0"}
+				{intro
+					
+					{background "/video/7berlin/6-airport.ebm"}
+					
+					}
+				{outro
+					{text "mission/briefing/fail"}
+					
+				}				
+			}
+			
 		}		
 	}
 	{"8. Wrath of the Tiger (Ger)"
@@ -1001,7 +1016,7 @@
 			}
 		}
 	}
-	{"11. Training"
+	{"10. Training"
 		{name "mission/training_camp/name"} ;Training missions
 		{multiplayer "1"}
 		{background "background/1/training:training2"
@@ -1108,7 +1123,7 @@
 			}
 		}
 	}
-    {"10. Bonus missions"
+    {"11. Bonus missions"
 		{name "mission/10_/name"}
 		{multiplayer "1"}
 		{background "background/scene-2:1"
@@ -1119,21 +1134,33 @@
 	
 		{missions
 			{"Svarog-1"
-				{name "mission/10_1/name"}
+				{name "mission/11_1/name"}
 				{multiplayer "1"}
 				{intro
 					{background "/video/bonus/svarog-1.ebm"}
 				}
 				{scene "CCCP/svarog-1:0"}
 			}
+			{"dock"
+				{name "mission/11_2/name"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/bonus/pobeg.ebm"}
+				}
+				{side_music
+					{"start" "edge"}
+					{"main_loop" "edge"}
+				}
+				{scene "beach:0"}
+			}
 		    {"bunker2"
-				{name "mission/b_bunker2/name"}
+				{name "mission/11_3/name"}
 				{multiplayer "1"}
 				
 				{scene "bunker2/bunker2:0"}
 			}
 			{"ChepelReload"
-				{name "mission/10_3/name"}
+				{name "mission/11_4/name"}
 				{multiplayer "1"}
 				
 				{side_music
@@ -1143,7 +1170,7 @@
 				{scene "ChepelReload:0"}
 			}
 			{"Death"
-				{name "mission/10_4/name"}
+				{name "mission/11_5/name"}
 				{coopBreed "rus.infantry_smg"}
 				{intro
 					{background "/video/bonus/pic.ebm"}
@@ -1162,7 +1189,7 @@
 				}
 			}
 			{"Defection"
-				{name "mission/10_5/name"}
+				{name "mission/11_6/name"}
 				{coopBreed "rus.infantry_smg"}
 				{intro
 					{background "/video/bonus/defection.ebm"}
@@ -1174,7 +1201,7 @@
 				{scene "defection:0"}
 			}
 			{"jaeger_ambush"
-				{name "mission/10_6/name"}
+				{name "mission/11_7/name"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					{background "/video/bonus/jaeger_ambush.ebm"}
@@ -1182,7 +1209,7 @@
 				{scene "Finland.at.war.1939-1944/jaeger_ambush:0"}
 			}
 			{"line_of_fire"
-				{name "mission/10_7/name"}
+				{name "mission/11_8/name"}
 				{coopBreed "ger.infantry_smg"}
 				{intro
 					{background "/video/bonus/line_of_fire.ebm"}
@@ -1190,7 +1217,7 @@
 				{scene "Finland.at.war.1939-1944/line_of_fire:0"}
 			}
 			{"Infantry_Attack_X"
-				{name "mission/10_8/name"}
+				{name "mission/11_9/name"}
 				{coopBreed "rus.infantry_smg"}
 				{intro
 					{background "/video/bonus/infantry.ebm"}
@@ -1199,10 +1226,10 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single/infantry_attack_x:0"}
+				{scene "infantry_attack_x:0"}
 			}
 			 {"Битва за Мидуэй"
-				{name "mission/10_9/name"}
+				{name "mission/11_10/name"}
 				{coopBreed "rus.infantry_smg"}
 				{intro
 					{background "/video/bonus/Битва за Мидуэй.ebm"}
@@ -1215,7 +1242,7 @@
 				{scene "Midzui:0"}
 			 }
 			{"Minefields Reloaded"
-				{name "mission/10_10/name"}
+				{name "mission/11_11/name"}
 				{coopBreed "rus.infantry_smg"}
 				{intro
 					{background "/video/bonus/3-minefields.ebm"}
@@ -1228,7 +1255,7 @@
 			}
 			{"Mortarshell heroes"
 			
-				{name "mission/10_11/name"}
+				{name "mission/11_12/name"}
 				{coopBreed "rus.infantry_smg"}
 				{intro
 					{background "/video/bonus/Mortarshell heroes.ebm"}
@@ -1638,7 +1665,7 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "multi/kharkov:0"}
+				{scene "New_Mission:0"}
 			}
 			{"Panfilov"
 				{name "mission/17_2/name"}
@@ -1651,7 +1678,7 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single/Panfilov:0"}
+				{scene "Panfilov:0"}
 			}
 			{"August 1944"
 				{name "mission/17_3/name"}
@@ -1663,7 +1690,7 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single/August 1944:0"}
+				{scene "August 1944:0"}
 			}
 			{"Набат"
 				{name "mission/17_4/name"}
@@ -1675,7 +1702,7 @@
 					{"start" "bridge"}
 					{"main_loop" "bridge"}
 				}
-				{scene "single/Nabat:Mifile1.mi"}
+				{scene "Nabat:Mifile1.mi"}
 			}
 			{"pobeg"
 				{name "mission/17_5/name"}
@@ -1687,7 +1714,49 @@
 					{"start" "edge"}
 					{"main_loop" "edge"}
 				}
-				{scene "single/pobeg:0"}
+				{scene "pobeg:0"}
+			}
+			
+			{"Castle"
+				{name "mission/17_6/name"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/bonus/brest2.ebm"}
+				}
+				{side_music
+					{"start" "bridge"}
+					{"main_loop" "bridge"}
+				}
+				{scene "Castle:0"}
+				{outro
+					{text "mission/briefing/br_2"}
+					{voice "g_int"}
+					{text_1 "mission/briefing/br_2"}
+				}
+			}
+			{"Fix Bayonets"
+				{name "mission/17_7/name"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/bonus/tank.ebm"}
+				}
+				{side_music
+					{"start" "bridge"}
+					{"main_loop" "bridge"}
+				}
+				{scene "Fix_Bayonets:Mifile5"}
+			}
+			{"hutorharder"
+				{name "mission/17_8/name"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/bonus/tank.ebm"}
+				}
+				{side_music
+					{"start" "bridge"}
+					{"main_loop" "bridge"}
+				}
+				{scene "hutorharder:0"}
 			}
 		}
 	}

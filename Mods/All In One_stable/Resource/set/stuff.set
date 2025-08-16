@@ -1996,7 +1996,7 @@
 		{mass 0.1}
 	}
 	{item "ammo ptr"
-		{tag "bullet zenite"}
+		{tag "ap zenite"}
 		{inventory
 			{size 2 1 }
 			{weight 20}
@@ -2004,23 +2004,23 @@
 		}
 		{mass 0.1}
 	}
-		{item "ptrd" from "mg34"
-		{tag "weapon rifle bullet to_hand nokeep"}
+	{item "ptrd"
+		{tag "weapon ptr mgun ap to_hand nokeep"}
 		{filling "ammo ptr" 1}
-		{desc "desc/weapon/ptrd"}
 		{inventory
-			{view "/interface/scene/stuff/ptrd.ebm"}
+            {link_bone "gun_back"}
 			{size 8 2 }
 		}
 		{mass 18}
-		{entity "ptrs"}
+            {StateForPick		"pickup-hand"}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+		{entity "ptrd"}
 	}
 	{item "ptrs" from "ptrd"
 		{filling "ammo ptr" 5}
-		{desc "desc/weapon/ptrs"}
-		{inventory
-			{view "/interface/scene/stuff/ptrs.ebm"}
-		}
+		{entity "ptrs"}
 	}
 	{item "pzb39" from "ptrd"
 		{filling "ammo ptr" 1}

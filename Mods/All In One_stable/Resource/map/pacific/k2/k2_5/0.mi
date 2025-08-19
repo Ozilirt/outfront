@@ -1,38 +1,39 @@
 {mission
 	{Camera
-		{Position 8074.76 3257.69}
-		{Distance 951}
-		{ViewAngle 0.224659}
-		{YawAngle -24.4442}
+		{Position 8256.76 3476.19}
+		{Distance 913}
+		{ViewAngle 0.537562}
+		{YawAngle -24.5977}
 	}
-	{Environment "daynw4"}
 	{User 2}
 	{GameProgress 0 0}
-	{Human "usa.marine.mgun" 0x8000
+	{Human "pavpetrovjap" 0x8000
 		{Position 8211.5 3501.92 16}
-		{Turn -159.173}
+		{Turn -159.213}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "grenade m61" {cell 7 0}}
-				{item "ammo mgun" 100 {cell 5 0}}
-				{item "knife" {cell 6 1}}
-				{item "bandage" 4 {cell 6 2}}
-				{item "pala" {cell 6 3}}
+				{item "mosin_m91-30" filling "ammo rifle" 5 {cell 0 0}}
+				{item "ammo rifle" 100 {cell 4 0}}
+				{item "grenade pwm1" {cell 5 0}}
+				{item "grenade pwm1" {cell 4 1}}
+				{item "grenade pwm1" {cell 6 1}}
+				{item "morphine" 5 {cell 0 2}}
+				{item "weapon panzerpatrone" filling "ammo panzerfaust" {cell 2 2}}
+				{item "bandage" 5 {cell 6 2}}
+				{item "grenade f1" {cell 7 0}}
+				{item "grenade f1" {cell 2 3}}
+				{item "grenade f1" {cell 3 3}}
+				{item "grenade f1" {cell 4 3}}
+			}
+			{armor "body"
+				{Removed}
 			}
 		}
 		{Player 2}
 		{MID 1}
-		
-		{Weaponry
-			{State
-				{Mounted "m1919a6"}
-				{Weapon
-					{Ammo "ammo mgun" 100}
-				}
-			}
-		}
-		{NameId 69 61}
+		{NameId 57 7}
+		{LastItem "m1919a6"}
 		{FsmState "lie"}
 	}
 	{Human "usa.marine_medic" 0x8001
@@ -43,58 +44,64 @@
 				{clear}
 				{item "bandage" 5 {cell 6 0}}
 				{item "bandage" 5 {cell 6 1}}
-				{item "knife" {cell 6 3}}
 				{item "morphine" 6 {cell 4 2}}
 				{item "grenade m18" {cell 6 2}}
 				{item "grenade m18" {cell 7 2}}
-				{item "ammo pistol" 21 {cell 4 1}}
-				{item "colt" filling "ammo pistol" 7 {cell 4 0}}
 				{item "m2_carbine" filling "ammo rifle" 15 {cell 0 0}}
-				{item "medkit" filling "drug" 100 {cell 0 2}}
-				{item "ammo rifle" 30 {cell 3 2}}
+				{item "grenade type3at" {cell 4 0}}
+				{item "grenade type3at" {cell 4 1}}
+				{item "ammo rifle" 100 {cell 0 2}}
+				{item "mine antitank" {cell 1 2}}
 			}
 		}
 		{Player 2}
 		{MID 2}
-		
 		{NameId 125 12}
 		{FsmState "squat"}
 	}
-	{Human "usa.marine_medic" 0x8002
+	{Human "denpetrovjap" 0x8002
 		{Position 8219.64 3476.81 17.3436}
 		{Turn -148.424}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "morphine" 6 {cell 4 2}}
-				{item "bandage" 5 {cell 6 1}}
-				{item "bandage" 5 {cell 4 1}}
-				{item "pala" {cell 6 2}}
-				{item "winchester1912" filling "ammo cartuchos" 6 {cell 0 0}}
-				{item "ammo cartuchos" 36 {cell 3 0}}
-				{item "knife" {cell 6 0}}
-				{item "grenade m61" {cell 5 0}}
+				{item "rpd" filling "ammo mgun" 100 {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "grenade molotov_coctail" {cell 2 2}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "ammo mgun" 100 {cell 0 2}}
+				{item "ammo mgun" 100 {cell 0 3}}
+				{item "ammo mgun" 100 {cell 2 3}}
+				{item "grenade type3at" {cell 4 3}}
+				{item "grenade m39" {cell 7 1}}
+				{item "grenade type3at" {cell 4 2}}
+				{item "morphine" 5 {cell 6 2}}
+			}
+			{armor "body"
+				{Removed}
 			}
 		}
 		{Player 2}
 		{MID 3}
-		
-		{NameId 102 99}
+		{NameId 61 98}
 		{FsmState "squat"}
 	}
 	{Human "usa.marine.rifle" 0x8003
-		{Position 8252.49 3419.36 20.0484}
+		{Position 8252.49 3419.36 20.0481}
 		{Turn -164.686}
 		{Extender "inventory"
 			{box
 				{clear}
 				{item "m1" filling "ammo rifle" 8 {cell 0 0}}
 				{item "grenade m61" {cell 7 0}}
-				{item "ammo rifle" 40 {cell 5 0}}
 				{item "grenade m61" {cell 6 0}}
 				{item "bandage" 4 {cell 6 1}}
-				{item "pala" {cell 6 2}}
-				{item "tnt" {cell 6 3}}
+				{item "grenade n73at" {cell 4 1}}
+				{item "grenade n73at" {cell 0 2}}
+				{item "ammo rifle" 100 {cell 4 0}}
+				{item "morphine" 5 {cell 2 2}}
+				{item "mine antitank" {cell 4 2}}
 			}
 			{armor "body"
 				{Item "usa_equip2"}
@@ -120,6 +127,8 @@
 				{item "grenade smoke" {cell 5 1}}
 				{item "bandage" 2 {cell 6 2}}
 				{item "grenade n73at" {cell 6 1}}
+				{item "morphine" 5 {cell 0 2}}
+				{item "mine antitank" {cell 2 2}}
 			}
 		}
 		{Player 2}
@@ -140,12 +149,14 @@
 				{item "grenade m61" {cell 5 1}}
 				{item "dynamite" {cell 6 0}}
 				{item "bandage" 3 {cell 6 2}}
-				{item "maps2" {cell 4 2}}
+				{item "morphine" 5 {cell 0 2}}
+				{item "grenade type3at" {cell 2 2}}
+				{item "grenade type3at" {cell 2 3}}
+				{item "mine antitank" {cell 4 2}}
 			}
 		}
 		{Player 2}
 		{MID 6}
-		
 		{NameId 74 27}
 		{FsmState "squat"}
 	}
@@ -299,7 +310,6 @@
 		}
 		{Player 0}
 		{MID 10}
-		
 		{NameId 69 62}
 		{FsmState "stand"}
 	}
@@ -319,7 +329,6 @@
 		}
 		{Player 0}
 		{MID 11}
-		
 		{NameId 125 13}
 		{FsmState "stand"}
 	}
@@ -333,13 +342,9 @@
 			{armor "head"
 				{Removed}
 			}
-			{armor "body"
-				{Removed}
-			}
 		}
 		{Player 0}
 		{MID 12}
-		
 		{NameId 102 0}
 		{FsmState "stand"}
 	}
@@ -359,7 +364,6 @@
 		}
 		{Player 0}
 		{MID 13}
-		
 		{NameId 87 23}
 		{FsmState "stand"}
 	}
@@ -437,12 +441,11 @@
 		{Position 345.734 2961.11 -22}
 	}
 	{Entity "ha-go" 0x801a
-		{Position 390.336 3473.58 -17.2614}
-		{Turn 75.7975}
+		{Position 390.336 3473.58 -17.2615}
+		{Turn 75.7837}
 		{TexMod "ambush"}
 		{Player 1}
 		{MID 18}
-		
 	}
 	{Entity "type93_stan" 0x801b
 		{Position 1201.67 3994.28 0}
@@ -757,7 +760,7 @@
 		}
 		{Player 1}
 		{MID 31}
-		{NameId 88 57}
+		{NameId 64 61}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite1" 0x8029
@@ -852,7 +855,7 @@
 				}
 			}
 		}
-		{NameId 81 90}
+		{NameId 10 12}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite1" 0x802d
@@ -926,7 +929,7 @@
 		{Position 392.994 3561.37 -16.2994}
 		{Player 1}
 		{MID 39}
-		{NameId 90 7}
+		{NameId 57 99}
 		{FsmState "stand"}
 	}
 	{Human "jap.oficer" 0x8031
@@ -1145,7 +1148,6 @@
 		}
 		{Player 1}
 		{MID 52}
-		
 		{Weaponry
 			{State "gun"
 				{Weapon
@@ -1167,7 +1169,6 @@
 		}
 		{Player 1}
 		{MID 53}
-		
 	}
 	{Entity "type97_81" 0x8040
 		{Position -1545.7 725.884 87}
@@ -1386,7 +1387,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 64}
-		{NameId 88 58}
+		{NameId 47 22}
 		{LastItem "arisaka_kn"}
 		{FsmState "board"}
 	}
@@ -1406,7 +1407,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 65}
-		{NameId 66 100}
+		{NameId 44 40}
 		{LastItem "arisaka_kn"}
 		{FsmState "board"}
 	}
@@ -1454,7 +1455,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 68}
-		{NameId 81 91}
+		{NameId 49 27}
 		{LastItem "type26"}
 		{FsmState "board"}
 	}
@@ -1551,7 +1552,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 72}
-		{NameId 90 8}
+		{NameId 79 91}
 		{LastItem "arisaka_kn"}
 		{FsmState "board"}
 	}
@@ -1835,7 +1836,6 @@
 		{Turn 90.8002}
 		{Player 1}
 		{MID 86}
-		
 	}
 	{Human "jap.crewman" 0x806e
 		{Position 7972.76 -3037.81 58}
@@ -1973,7 +1973,7 @@
 				}
 			}
 		}
-		{NameId 88 59}
+		{NameId 55 23}
 		{Cover
 			{sector 8217.42 -2370.15 {type "squat_lie"}
 				{wall 0 0 8165.58 -2374.15 8225.97 -2361.15}
@@ -1998,7 +1998,7 @@
 		}
 		{Player 1}
 		{MID 94}
-		{NameId 66 101}
+		{NameId 70 49}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite3" 0x8076
@@ -2060,7 +2060,7 @@
 		}
 		{Player 1}
 		{MID 97}
-		{NameId 81 92}
+		{NameId 50 41}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite3" 0x8079
@@ -2106,8 +2106,8 @@
 		{FsmState "stand"}
 	}
 	{Human "jap.elite1" 0x807b
-		{Position 7990.99 -1033.62 17.0347}
-		{Turn 180}
+		{Position 7990.99 -1033.62 38.737}
+		{Turn 102.38}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2128,8 +2128,7 @@
 		}
 		{NameId 29 73}
 		{Cover
-			{sector 7990.99 -1033.62 {type "snipe_cover"}
-				{wall 0 0 7983.99 -1059.12 7983.99 -1019.38}
+			{sector 7988 -1020 {type "bush_stand"}
 			}
 		}
 		{FsmState "snipe"}
@@ -2147,7 +2146,7 @@
 		}
 		{Player 1}
 		{MID 101}
-		{NameId 90 9}
+		{NameId 50 13}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite1" 0x807d
@@ -2282,7 +2281,7 @@
 		{FsmState "squat"}
 	}
 	{Human "jap.elite2" 0x8083
-		{Position 7634.81 -1961.84 -13.8781}
+		{Position 7634.81 -1961.84 0}
 		{Turn 134.769}
 		{Extender "inventory"
 			{box
@@ -2306,7 +2305,7 @@
 				}
 			}
 		}
-		{NameId 83 53}
+		{NameId 50 52}
 		{Cover
 			{sector 7631 -1958 {type "bush_stand"}
 			}
@@ -2318,21 +2317,18 @@
 		{Turn 141.174}
 		{Player 1}
 		{MID 109}
-		
 	}
 	{Entity "chi-ha47" 0x8085
 		{Position 8642.1 -2179.42 0}
 		{Turn 141.232}
 		{Player 1}
 		{MID 110}
-		
 	}
 	{Entity "ha-go" 0x8086
 		{Position 8613.7 -2159.37 0}
 		{Turn 140.921}
 		{Player 1}
 		{MID 111}
-		
 	}
 	{Human "jap.ofitank" 0x8087
 		{Position 8642.1 -2179.42 0}
@@ -2343,7 +2339,7 @@
 		}
 		{Player 1}
 		{MID 112}
-		{NameId 88 6}
+		{NameId 13 66}
 		{LastItem "nambu"}
 		{FsmState "board"}
 	}
@@ -2447,7 +2443,7 @@
 		}
 		{Player 1}
 		{MID 120}
-		{NameId 86 93}
+		{NameId 72 49}
 		{LastItem "type100"}
 		{FsmState "board"}
 	}
@@ -2460,7 +2456,7 @@
 		}
 		{Player 1}
 		{MID 121}
-		{NameId 88 96}
+		{NameId 27 26}
 		{LastItem "type100"}
 		{FsmState "board"}
 	}
@@ -2544,7 +2540,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 126}
-		{NameId 82 88}
+		{NameId 37 74}
 		{LastItem "type100"}
 		{FsmState "board"}
 	}
@@ -2679,21 +2675,18 @@
 		{Turn -88.4818}
 		{Player 1}
 		{MID 133}
-		
 	}
 	{Entity "isuzu_aa" 0x809d
 		{Position -37.3362 4014.68 0}
 		{Turn -88.8002}
 		{Player 1}
 		{MID 134}
-		
 	}
 	{Entity "isuzu" 0x809e
 		{Position -37.5426 3996.59 0}
 		{Turn -90.5068}
 		{Player 1}
 		{MID 135}
-		
 	}
 	{Human "jap.crewman" 0x809f
 		{Position -42.6335 3993.57 15.1503}
@@ -2834,7 +2827,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 143}
-		{NameId 88 60}
+		{NameId 42 1}
 		{LastItem "arisaka_kn"}
 		{FsmState "board"}
 	}
@@ -2932,7 +2925,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 147}
-		{NameId 81 93}
+		{NameId 50 20}
 		{LastItem "arisaka_kn"}
 		{FsmState "board"}
 	}
@@ -3029,7 +3022,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 151}
-		{NameId 90 10}
+		{NameId 53 83}
 		{FsmState "board"}
 	}
 	{Human "jap.elite2" 0x80af
@@ -3197,7 +3190,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 158}
-		{NameId 83 54}
+		{NameId 46 53}
 		{LastItem "type100"}
 		{FsmState "board"}
 	}
@@ -3221,7 +3214,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 159}
-		{NameId 88 7}
+		{NameId 24 41}
 		{LastItem "type100"}
 		{FsmState "board"}
 	}
@@ -3687,7 +3680,7 @@
 				}
 			}
 		}
-		{NameId 88 61}
+		{NameId 50 29}
 		{LastItem "type5"}
 		{Cover
 			{sector 1751.08 -89.0276 {type "squat_lie"}
@@ -3851,14 +3844,12 @@
 		{Turn 32.4629}
 		{Player 1}
 		{MID 183}
-		
 	}
 	{Entity "type93" 0x80d5
 		{Position 2521.66 -3133.96 0}
 		{Turn 32.4462}
 		{Player 1}
 		{MID 184}
-		
 	}
 	{Human "jap.crewman" 0x80d6
 		{Position 2556.32 -3111.76 0}
@@ -4292,7 +4283,7 @@
 		}
 		{Player 1}
 		{MID 211}
-		{NameId 88 62}
+		{NameId 34 81}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite3" 0x80f3
@@ -4371,7 +4362,7 @@
 		}
 		{Player 1}
 		{MID 215}
-		{NameId 81 94}
+		{NameId 19 78}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite3" 0x80f7
@@ -4455,7 +4446,7 @@
 		}
 		{Player 1}
 		{MID 219}
-		{NameId 90 11}
+		{NameId 29 99}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite3" 0x80fb
@@ -8207,7 +8198,3 @@
 	}
 	{MissionMusic "STOP"}
 }
-
-
-
-

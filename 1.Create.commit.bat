@@ -4,4 +4,4 @@ git init
 git add .
 git status
 pause
-git commit -m "edit"
+git commit -m "k3-1"

@@ -1,5 +1,8 @@
-f:
-cd F:\Игры\В тылу врага\3
+D:
+cd D:\Denis\outfront
 git init
+pause
 git add .
-git commit -m "4.K2&K3"
+pause
+git commit -m "new user"
+pause

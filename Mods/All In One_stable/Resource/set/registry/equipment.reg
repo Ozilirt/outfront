@@ -85,6 +85,16 @@
 		}
 		("moto_equipment")
 	}
+	{"moto2"
+		{bkg "/interface/scene/inventory/moto2/moto2_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/moto2/moto2_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		
+		("moto_equipment")
+	}
 	{"box"
 		{inventory
 			{view "/interface/scene/inventory/box/box_inventory_bkg.ebm"}
@@ -142,6 +152,19 @@
 	}
 	{"t-38"
 		{bkg "/interface/scene/inventory/tank/T-38_bkg.ebm"}
+		{inventory
+			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
+			{location "16 23"}
+			{box_offset "12 7"}
+		}
+		{holder "mgun"
+			{view "/interface/scene/inventory/tank/mgun.ebm"}
+			{location "280 74"}
+		}
+		("tank_equipment")
+	}
+	{"te-ke"
+		{bkg "/interface/scene/inventory/tank/te-ke_bkg.ebm"}
 		{inventory
 			{view "/interface/scene/inventory/tank/tank_inventory_bkg.ebm"}
 			{location "16 23"}

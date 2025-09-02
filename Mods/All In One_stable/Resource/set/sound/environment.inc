@@ -73,6 +73,16 @@
 	{file "/SOUND/world/coupling.wav"			"tr_stack"	}
         	{file "/SOUND/world/bell.wav"		        		"bell"	}
         	{file "/SOUND/world/loosing.wav"		        	"loosing" }
+	{file "/SOUND/world/japcri01.wav"		"japcri01"}
+	{file "/SOUND/world/japcri02.wav"		"japcri02"}
+	{file "/SOUND/world/japcri03.wav"		"japcri03"}
+	{file "/SOUND/world/japcri04.wav"		"japcri04"}
+	{file "/SOUND/world/japcri05.wav"		"japcri05"}
+	{file "/SOUND/world/snake.wav"			"snake"}
+	{file "/SOUND/world/crocodile.wav"		"crocodile"}
+	{file "/SOUND/world/jungle01.wav"		"jungle01"}
+	{file "/SOUND/world/jungle02.wav"		"jungle02"}
+	{file "/SOUND/world/jungle03.wav"		"jungle03"}		
 }
 {"battle"
 	{loudness "canonade"}

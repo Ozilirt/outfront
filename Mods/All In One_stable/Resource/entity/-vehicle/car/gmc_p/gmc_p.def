@@ -1,0 +1,90 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors" "tent" "emit_on_attack"}
+	{extension "/properties/structure/truck6x6.ext"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_big-highcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-highcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	("seat_inside")
+
+	("crew_human" place(seat1)	bone(seat01)	door(emit3)	animation(passenger))
+	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger))
+	("crew_human" place(seat3)	bone(seat03)	door(emit3)	animation(passenger))
+	("crew_human" place(seat4)	bone(seat04)	door(emit4)	animation(passenger))
+	("crew_human" place(seat5)	bone(seat05)	door(emit3)	animation(passenger))
+	("crew_human" place(seat6)	bone(seat06)	door(emit4)	animation(passenger))
+	("crew_human" place(seat7)	bone(seat07)	door(emit3)	animation(passenger))
+	("crew_human" place(seat8)	bone(seat08)	door(emit4)	animation(passenger))
+	("crew_human" place(seat9)	bone(seat09)	door(emit3)	animation(passenger))
+	("crew_human" place(seat10)	bone(seat10)	door(emit4)	animation(passenger))
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{volume "shield_left"	
+		{thickness 0.1}
+	}
+	{Volume "bodyback"
+		{thickness 2}
+	}
+	{component "shield_left"	
+		{Able {repair} {break_by_pierce}}
+		{RepairTime 10}
+	}
+
+	{extender "shield"
+		{on}
+		(mod "mp"
+			{on}
+		)
+	}
+
+	{mass 5000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "gmc_p.mdl"}
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "grenade n73at" 30}
+				{item "ammo mgun" 2000}
+				{item "ammo pistol" 1500}
+				{item "ammo rifle" 300}
+				{item "ammo 81mm_mine" 60}
+				{item "can" filling "fuel" 25}
+				{item "repair_kit" 1}
+				{item "grenade 50mm_mine" 100}
+			}
+		}
+	)
+	(mod "game:escort"
+		{props "escort_truck"}
+		{component "body"
+			{Able {break_by_pierce 0}}
+		}
+		{volume "wheelright1"	{thickness 4}}
+		{volume "wheelleft1"	{thickness 4}}
+		{volume "wheelright2"	{thickness 4}}
+		{volume "wheelleft2"	{thickness 4}}
+	)
+}

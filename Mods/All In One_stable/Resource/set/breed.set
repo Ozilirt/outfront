@@ -1181,105 +1181,21 @@
 			{item "grenade gr31"}
 		}
 	}
-	{"civilian1"
-		{props
-			{name "civilian1"}
-			{behaviour "civilian"}
-			{skin "man1"}
-			{portrait "man1"}
-			{nationality "english"}
-			{"perks/pistol" "none"}
-			{"perks/smg" "none"}
-			{"perks/mgun" "none"}
-			{"perks/rifle" "none"}
-			{"perks/vision" "human"}
-			{"perks/health" "100%"}
-			{"perks/power" "100%"}
-		}
-	}
-	{"civilian2"
-		{props
-			{name "civilian2"}
-			{behaviour "civilian"}
-			{skin "man2"}
-			{portrait "man2"}
-			{nationality "russian"}
-			{"perks/pistol" "none"}
-			{"perks/smg" "none"}
-			{"perks/mgun" "none"}
-			{"perks/rifle" "none"}
-			{"perks/vision" "human"}
-			{"perks/health" "100%"}
-			{"perks/power" "100%"}
-		}
-	}
-	{"civilian3"
-		{props
-			{name "civilian3"}
-			{behaviour "civilian"}
-			{skin "man3"}
-			{portrait "man3"}
-			{nationality "russian"}
-			{"perks/pistol" "none"}
-			{"perks/smg" "basic"}
-			{"perks/mgun" "none"}
-			{"perks/rifle" "none"}
-			{"perks/vision" "human"}
-			{"perks/health" "100%"}
-			{"perks/power" "100%"}
-		}
-	}
-	{"civilian4"
-		{props
-			{name "civilian4"}
-			{behaviour "civilian"}
-			{skin "man4"}
-			{portrait "man4"}
-			{nationality "german"}
-			{"perks/pistol" "none"}
-			{"perks/smg" "basic"}
-			{"perks/mgun" "none"}
-			{"perks/rifle" "none"}
-			{"perks/vision" "human"}
-			{"perks/health" "100%"}
-			{"perks/power" "100%"}
-		}
-	}
-	{"civilian5"
-		{props
-			{name "civilian5"}
-			{behaviour "civilian"}
-			{skin "civ-woman2"}
-			{portrait "viar"}
-			{nationality "english"}
-			{"perks/pistol" "none"}
-			{"perks/smg" "none"}
-			{"perks/mgun" "none"}
-			{"perks/rifle" "none"}
-			{"perks/vision" "human"}
-			{"perks/health" "100%"}
-			{"perks/power" "100%"}
-			{"perks/stealth" "none"}
-		}
-		{inventory
-			{item "medkit" filling "drug" 100}
-			{in_hands 0}
-		}
-	}
+	
 	{"skeleton"
-		{props
-			{name "skeleton"}
-			{behaviour "civilian"}
-			{skin "skeleton"}
-			{portrait "skeleton"}
-			{nationality "german"}
-			{"perks/pistol" "none"}
-			{"perks/smg" "none"}
-			{"perks/mgun" "none"}
-			{"perks/rifle" "none"}
-			{"perks/vision" "human"}
-			{"perks/health" "100%"}
-			{"perks/power" "100%"}
+	{props
+		{name "skeleton"}
+		{behaviour "civilian"}
+		{skin "skeleton"}
+		{portrait "skeleton"}
+		{nationality "german"}
+		{"perks/pistol" "none"}
+		{"perks/smg" "none"}
+		{"perks/mgun" "none"}
+		{"perks/rifle" "none"}
+		{"perks/vision" "human"}
+		{"perks/health" "100%"}
+		{"perks/power" "100%"}
 		}
 	}
 	{"rus.sailor1"
@@ -4989,6 +4905,7 @@
 			{item "knife"}
 		}
 	}
+	
 	{"paratrooper"
 		{props
 			{name "paratrooper"}
@@ -7816,6 +7733,121 @@
 			{item "nagan" filling "ammo pistol" 6}
 			{item "ammo pistol" 30}
 			{in_hands 2}
+		}
+	}
+	{"DenPetrov"
+		{props
+			{name "DenPetrov"}
+			{hero}
+			{skin "civil5"}
+			{portrait "den"}
+			{nationality "russian"}
+			{"armors/head" "helmet2_rus"}
+			{"perks/pistol" "basic"}
+			{"perks/smg" "basic"}
+			{"perks/mgun" "expert"}
+			{"perks/rifle" "basic"}
+			{"perks/vision" "mp_soldier"}
+			{"perks/health" "100%"}
+			{"perks/power" "100%"}
+		}
+		{inventory
+			{item "rpd" filling "ammo mgun" 100}
+			{item "ammo mgun" 300}
+			{item "knife"}
+			{item "grenade rpg40" 2}
+			{item "grenade molotov_coctail" 2}
+			{item "grenade smoke" 2}
+			{item "grenade f1"}
+		}
+	}
+	{"DenPetrovJap"
+		{props
+			{name "DenPetrovJap"}
+			{hero}
+			{skin "civil5"}
+			{portrait "denjap"}
+			{nationality "japan"}
+			{"armors/head" "helmet2_rus"}
+			{"perks/pistol" "basic"}
+			{"perks/smg" "basic"}
+			{"perks/mgun" "expert"}
+			{"perks/rifle" "basic"}
+			{"perks/vision" "mp_soldier"}
+			{"perks/health" "100%"}
+			{"perks/power" "100%"}
+			{"perks/MGUN_12.7" "expert"}
+			
+		}
+		{inventory
+			{item "rpd" filling "ammo mgun" 100}
+			{item "ammo mgun" 100}
+			{item "knife"}
+			{item "grenade rpg43"}
+			{item "grenade molotov_coctail" 2}
+			{item "grenade smoke" 2}
+			{item "grenade f1"}
+		}
+	}
+	{"PavPetrov"
+		{props
+			{name "PavPetrov"}
+			{hero}
+			{skin "abuelo"}
+			{portrait "pav"}
+			{nationality "russian"}
+			{"armors/head" "helmet2_rus"}
+			{"perks/pistol" "basic"}
+			{"perks/smg" "basic"}
+			{"perks/mgun" "basic"}
+			{"perks/rifle" "expert"}
+			{"perks/vision" "mp_soldier"}
+			{"perks/health" "100%"}
+			{"perks/power" "100%"}
+			{"perks/bazooka" "expert"}
+			{"perks/stealth" "basic"}
+			{"perks/rpg" "expert"}
+			{"perks/throwing" "expert"}
+		}
+		{inventory
+			{item "mosin_m91-30" filling "ammo rifle" 5}
+			{item "ammo rifle" 100}
+			{item "tt" filling "ammo pistol" 8}
+			{item "ammo pistol" 16}
+			{item "knife"}
+			{item "grenade rpg40" 2}
+			{item "grenade molotov_coctail" 2}
+			{item "grenade smoke" 2}
+			{item "grenade f1"}
+			
+		}
+	}
+	{"PavPetrovJap"
+		{props
+			{name "PavPetrovJap"}
+			{hero}
+			{skin "abuelo"}
+			{portrait "pavjap"}
+			{nationality "russian"}
+			{"armors/head" "helmet2_rus"}
+			{"perks/pistol" "basic"}
+			{"perks/smg" "basic"}
+			{"perks/mgun" "basic"}
+			{"perks/rifle" "expert"}
+			{"perks/vision" "mp_soldier"}
+			{"perks/health" "100%"}
+			{"perks/power" "100%"}
+			{"perks/bazooka" "expert"}
+			{"perks/stealth" "basic"}
+			{"perks/rpg" "expert"}
+			{"perks/throwing" "expert"}
+		}
+		{inventory
+			{item "mosin_m91-30" filling "ammo rifle" 5}
+			{item "ammo rifle" 15}
+			{item "tt" filling "ammo pistol" 8}
+			{item "ammo pistol" 16}
+			{item "knife"}
 		}
 	}
 }

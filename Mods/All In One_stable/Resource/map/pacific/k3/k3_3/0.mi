@@ -1,35 +1,31 @@
 {mission
 	{Camera
-		{Position 3323.99 750.476}
-		{Distance 1071}
-		{ViewAngle 0.361914}
-		{YawAngle 9.7573}
+		{Position 3217.62 683.041}
+		{Distance 900}
+		{ViewAngle 0.425853}
+		{YawAngle 9.5026}
 	}
 	{Environment "day7"}
 	{User 2}
 	{GameProgress 0 0}
 	{Entity "c-47_2" 0x8000
-		{Position 2544.96 -6832.4 1.39537}
+		{Position 2544.96 -6832.4 -18.3044}
 		{Turn 90.2662}
-		{TexMod "n2"}
 		{Player 1}
 		{MID 1}
-		
 	}
 	{Entity "c-47_2" 0x8001
-		{Position 1928.79 -6132.39 1.39536}
+		{Position 1928.79 -6132.39 -18.3044}
 		{Turn 88.818}
-		{TexMod "n1"}
 		{Player 1}
 		{MID 2}
-		
 	}
 	{Human "usa.tankman" 0x8002
-		{Position 2537.26 -6698.49 57.8938}
+		{Position 2551.21 -6684.41 34.2231}
 		{Orientation
-			 -0.004570   0.983669   0.179930
-			 -0.999989  -0.004646  -0.000001
-			  0.000835  -0.179928   0.983679
+			 -0.004599   0.989864   0.141942
+			 -0.999989  -0.004646   0.000001
+			  0.000661  -0.141941   0.989875
 		}
 		{Extender "inventory"
 			{box
@@ -46,11 +42,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.tankman" 0x8003
-		{Position 2551.82 -6698.43 57.8939}
+		{Position 2539.77 -6684.13 40.4845}
 		{Orientation
-			 -0.004570   0.983669   0.179930
-			 -0.999989  -0.004646  -0.000001
-			  0.000835  -0.179928   0.983679
+			 -0.004414   0.950177   0.311627
+			 -0.999989  -0.004646   0.000001
+			  0.001449  -0.311624   0.950188
 		}
 		{Extender "inventory"
 			{box
@@ -67,11 +63,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.tankman" 0x8004
-		{Position 1924.47 -5998.33 57.8939}
+		{Position 1938.78 -5984.6 34.2231}
 		{Orientation
-			  0.020292   0.983470   0.179930
+			  0.020419   0.989664   0.141942
 			 -0.999787   0.020628   0.000001
-			 -0.003711  -0.179892   0.983679
+			 -0.002927  -0.141912   0.989875
 		}
 		{Extender "inventory"
 			{box
@@ -88,11 +84,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.tankman" 0x8005
-		{Position 1939.04 -5998.63 57.8939}
+		{Position 1927.35 -5984.04 40.4845}
 		{Orientation
-			  0.020292   0.983470   0.179930
+			  0.019601   0.949985   0.311627
 			 -0.999787   0.020628   0.000001
-			 -0.003711  -0.179892   0.983679
+			 -0.006428  -0.311561   0.950188
 		}
 		{Extender "inventory"
 			{box
@@ -220,11 +216,10 @@
 		{FsmState "board"}
 	}
 	{Entity "isuzu_aa" 0x8013
-		{Position 1890.3 2581.42 -1.74011}
-		{Turn 87.0786}
+		{Position 1890.3 2581.42 -1.74012}
+		{Turn 87.0713}
 		{Player 3}
 		{MID 16}
-		
 		{Chassis
 			{FuelBag
 				{Remain 92.6}
@@ -245,7 +240,6 @@
 		}
 		{Player 3}
 		{MID 17}
-		
 		{Chassis
 			{FuelBag
 				{Remain 64.8}
@@ -255,6 +249,7 @@
 	{Entity "bmw-r12j" 0x8015
 		{Position 3133.73 1181.79 -3}
 		{Turn -3.14163}
+		{TexMod ""}
 		{Player 3}
 		{MID 18}
 		{Chassis
@@ -407,7 +402,7 @@
 		}
 		{Player 3}
 		{MID 28}
-		{NameId 88 57}
+		{NameId 64 61}
 		{FsmState "stand"}
 	}
 	{Entity "hangar_wall1_nodestroy" 0x8027
@@ -481,35 +476,17 @@
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "grenade type23" {cell 0 0}}
-				{item "grenade type23" {cell 1 0}}
-				{item "grenade type23" {cell 2 0}}
-				{item "grenade type23" {cell 1 1}}
-				{item "grenade type23" {cell 0 1}}
-				{item "grenade type23" {cell 2 1}}
 				{item "weapon mortar_50mm" filling "grenade 50mm_mine" {cell 6 3}}
-				{item "grenade 50mm_mine" {cell 4 5}}
-				{item "grenade 50mm_mine" {cell 4 4}}
-				{item "grenade 50mm_mine" {cell 2 5}}
-				{item "grenade 50mm_mine" {cell 2 4}}
-				{item "grenade 50mm_mine" {cell 0 5}}
-				{item "grenade 50mm_mine" {cell 0 4}}
-				{item "grenade type3at" {cell 0 3}}
-				{item "grenade type3at" {cell 2 3}}
-				{item "ammo ptr20" 7 {cell 6 0}}
-				{item "ammo ptr20" 7 {cell 4 0}}
-				{item "ammo bazooka" {cell 4 2}}
-				{item "ammo bazooka" {cell 6 2}}
-				{item "ammo bazooka" {cell 4 3}}
-				{item "grenade type23" {cell 3 0}}
-				{item "grenade type23" {cell 3 1}}
-				{item "ammo rifle" 5 {cell 0 2}}
-				{item "ammo rifle" 5 {cell 1 2}}
-				{item "ammo rifle" 5 {cell 2 2}}
-				{item "ammo rifle" 5 {cell 3 2}}
-				{item "ammo ptr20" 7 {cell 6 1}}
-				{item "ammo rifle" 5 {cell 4 1}}
-				{item "ammo rifle" 5 {cell 5 1}}
+				{item "weapon type4_launcher" {cell 0 4}}
+				{item "ammo rifle" 1030 {cell 5 5}}
+				{item "ammo ptr20" 21 {cell 4 3}}
+				{item "ammo bazooka" 50 {cell 2 3}}
+				{item "mine antitank" 10 {cell 0 2}}
+				{item "mine antipersonnel" 10 {cell 2 2}}
+				{item "grenade type3at" 2 {cell 4 2}}
+				{item "grenade 50mm_mine" 15 {cell 6 2}}
+				{item "pzb39" {cell 0 0}}
+				{item "ammo rifle" 1000 {cell 5 4}}
 			}
 		}
 	}
@@ -587,27 +564,24 @@
 	}
 	{Entity "val" 0x803a
 		{Position 2747.41 2194.06 -11.1661}
-		{Turn -176.873}
+		{Turn -176.862}
 		{TexMod "other"}
 		{Player 3}
 		{MID 33}
-		
 	}
 	{Entity "val" 0x803b
-		{Position 3060.87 1728.47 -11.166}
-		{Turn -177.797}
+		{Position 3060.87 1728.47 -11.1661}
+		{Turn -177.786}
 		{TexMod "other"}
 		{Player 3}
 		{MID 34}
-		
 	}
 	{Entity "val" 0x803c
-		{Position 2742.26 1757.78 -11.1661}
-		{Turn -176.738}
+		{Position 2742.26 1757.78 -11.166}
+		{Turn -176.727}
 		{TexMod "other"}
 		{Player 3}
 		{MID 35}
-		
 	}
 	{Entity "box2" 0x803d
 		{Position 1999.12 812.695 0}
@@ -770,7 +744,6 @@
 		{Turn -48.2148}
 		{Player 3}
 		{MID 39}
-		
 		{NameId 18 32}
 		{FsmState "stand"}
 	}
@@ -803,7 +776,6 @@
 		}
 		{Player 3}
 		{MID 41}
-		
 		{NameId 18 33}
 		{FsmState "stand"}
 	}
@@ -839,11 +811,11 @@
 		{OffsetZ 90}
 	}
 	{Entity "hackle" 0x804c
-		{Position 5492.81 2987.08 9.57292}
+		{Position 5492.87 2986.24 9.32132}
 		{Orientation
-			 -0.223479   0.229106  -0.947401
-			 -0.694784   0.644262   0.319689
-			  0.683616   0.729683   0.015200
+			 -0.199608   0.150749  -0.968210
+			 -0.707891   0.661028   0.248861
+			  0.677530   0.735063  -0.025233
 		}
 		{DisableObstacles}
 	}
@@ -1194,7 +1166,7 @@
 	}
 	{Human "usa.marine2.all" 0x805d
 		{Position 5533.34 2692.69 3.93744}
-		{Turn -69.8437}
+		{Turn -69.6167}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1262,39 +1234,34 @@
 		{Turn 0.302701}
 	}
 	{Entity "m3stuart" 0x8063
-		{Position 1941.23 -1228.06 0.425768}
-		{Turn 100.102}
+		{Position 1941.23 -1228.06 0.425714}
+		{Turn 100.16}
 		{Player 1}
 		{MID 60}
-		
 	}
 	{Entity "m3stuart" 0x8064
-		{Position 1935.79 -1204.68 0.839966}
-		{Turn 103.543}
+		{Position 1935.79 -1204.68 0.839737}
+		{Turn 103.588}
 		{Player 1}
 		{MID 61}
-		
 	}
 	{Entity "m3stuart" 0x8065
 		{Position 4307.84 -1189.86 0}
 		{Turn 120.297}
 		{Player 1}
 		{MID 62}
-		
 	}
 	{Entity "m3stuart" 0x8066
 		{Position 4322.59 -1215.87 0}
 		{Turn 118.785}
 		{Player 1}
 		{MID 63}
-		
 	}
 	{Entity "m3stuart" 0x8067
 		{Position 4333.45 -1236.96 0}
 		{Turn 118.541}
 		{Player 1}
 		{MID 64}
-		
 	}
 	{Entity "m4a1" 0x8068
 		{Position 2770.25 -1186.27 0}
@@ -1302,7 +1269,6 @@
 		{TexMod "n689"}
 		{Player 1}
 		{MID 65}
-		
 	}
 	{Entity "m4a1" 0x8069
 		{Position 2765.99 -1200.97 0}
@@ -1310,7 +1276,6 @@
 		{TexMod "n663"}
 		{Player 1}
 		{MID 66}
-		
 	}
 	{Entity "m3a1" 0x806a
 		{Position 5901.39 1440.1 0}
@@ -1323,7 +1288,6 @@
 		}
 		{Player 1}
 		{MID 67}
-		
 	}
 	{Entity "gmc_p" 0x806b
 		{Position 5938.85 1441.01 0}
@@ -1336,15 +1300,12 @@
 		}
 		{Player 1}
 		{MID 68}
-		
 	}
 	{Entity "m4a2" 0x806c
 		{Position 108.166 272.393 0}
 		{Turn -3.33451}
-		{TexMod "n108"}
 		{Player 1}
 		{MID 69}
-		
 	}
 	{Entity "m3a1" 0x806d
 		{Position 134.255 270.218 0}
@@ -1357,7 +1318,6 @@
 		}
 		{Player 1}
 		{MID 70}
-		
 		{Weaponry
 			{State
 				{Mounted "50cal"}
@@ -2024,11 +1984,11 @@
 		{FsmState "stand"}
 	}
 	{Human "usa.tankman" 0x8094
-		{Position 1935.79 -1204.68 0.839966}
+		{Position 1935.79 -1204.68 0.839737}
 		{Orientation
-			 -0.234150   0.972101   0.013917
-			  0.970845   0.233044   0.056121
-			 -0.051312  -0.026652   0.998327
+			 -0.234910   0.971918   0.013858
+			  0.970662   0.233806   0.056121
+			 -0.051305  -0.026635   0.998328
 		}
 		{Player 1}
 		{MID 109}
@@ -2037,11 +1997,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.tankman" 0x8095
-		{Position 1935.79 -1204.68 0.839966}
+		{Position 1935.79 -1204.68 0.839737}
 		{Orientation
-			 -0.234150   0.972101   0.013917
-			  0.970845   0.233044   0.056121
-			 -0.051312  -0.026652   0.998327
+			 -0.234910   0.971918   0.013858
+			  0.970662   0.233806   0.056121
+			 -0.051305  -0.026635   0.998328
 		}
 		{Player 1}
 		{MID 110}
@@ -2050,11 +2010,11 @@
 		{FsmState "board"}
 	}
 	{Human "x.a.tankman" 0x8096
-		{Position 1935.79 -1204.68 0.839966}
+		{Position 1935.79 -1204.68 0.839737}
 		{Orientation
-			 -0.234150   0.972101   0.013917
-			  0.970845   0.233044   0.056121
-			 -0.051312  -0.026652   0.998327
+			 -0.234910   0.971918   0.013858
+			  0.970662   0.233806   0.056121
+			 -0.051305  -0.026635   0.998328
 		}
 		{Extender "inventory"
 			{box
@@ -2070,11 +2030,11 @@
 		{FsmState "board"}
 	}
 	{Human "x.a.tankman" 0x8097
-		{Position 1935.79 -1204.68 0.839966}
+		{Position 1935.79 -1204.68 0.839737}
 		{Orientation
-			 -0.234150   0.972101   0.013917
-			  0.970845   0.233044   0.056121
-			 -0.051312  -0.026652   0.998327
+			 -0.234910   0.971918   0.013858
+			  0.970662   0.233806   0.056121
+			 -0.051305  -0.026635   0.998328
 		}
 		{Extender "inventory"
 			{box
@@ -2090,11 +2050,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.tankman" 0x8098
-		{Position 1941.23 -1228.06 0.425768}
+		{Position 1941.23 -1228.06 0.425714}
 		{Orientation
-			 -0.175354   0.984253   0.022306
-			  0.983668   0.174226   0.045184
-			 -0.040587  -0.029865   0.998730
+			 -0.176349   0.984076   0.022263
+			  0.983492   0.175222   0.045167
+			 -0.040547  -0.029860   0.998731
 		}
 		{Player 1}
 		{MID 113}
@@ -2103,11 +2063,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.tankman" 0x8099
-		{Position 1941.23 -1228.06 0.425768}
+		{Position 1941.23 -1228.06 0.425714}
 		{Orientation
-			 -0.175354   0.984253   0.022306
-			  0.983668   0.174226   0.045184
-			 -0.040587  -0.029865   0.998730
+			 -0.176349   0.984076   0.022263
+			  0.983492   0.175222   0.045167
+			 -0.040547  -0.029860   0.998731
 		}
 		{Player 1}
 		{MID 114}
@@ -2116,11 +2076,11 @@
 		{FsmState "board"}
 	}
 	{Human "x.a.tankman" 0x809a
-		{Position 1941.23 -1228.06 0.425768}
+		{Position 1941.23 -1228.06 0.425714}
 		{Orientation
-			 -0.175354   0.984253   0.022306
-			  0.983668   0.174226   0.045184
-			 -0.040587  -0.029865   0.998730
+			 -0.176349   0.984076   0.022263
+			  0.983492   0.175222   0.045167
+			 -0.040547  -0.029860   0.998731
 		}
 		{Extender "inventory"
 			{box
@@ -2136,11 +2096,11 @@
 		{FsmState "board"}
 	}
 	{Human "x.a.tankman" 0x809b
-		{Position 1941.23 -1228.06 0.425768}
+		{Position 1941.23 -1228.06 0.425714}
 		{Orientation
-			 -0.175354   0.984253   0.022306
-			  0.983668   0.174226   0.045184
-			 -0.040587  -0.029865   0.998730
+			 -0.176349   0.984076   0.022263
+			  0.983492   0.175222   0.045167
+			 -0.040547  -0.029860   0.998731
 		}
 		{Extender "inventory"
 			{box
@@ -2427,7 +2387,7 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.mgun" 0x80ac
-		{Position 54.2777 251.22 24.0988}
+		{Position 57.1385 250.481 26.7135}
 		{Turn -93.3345}
 		{Extender "inventory"
 			{box
@@ -2444,8 +2404,8 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.rifle" 0x80ad
-		{Position 58.8143 300.201 24.0988}
-		{Turn 86.6655}
+		{Position 60.6378 298.731 25.6685}
+		{Turn 81.663}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2462,8 +2422,8 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.rifle" 0x80ae
-		{Position 52.0908 281.195 24.0988}
-		{Turn 176.665}
+		{Position 76.8981 297.497 26.8334}
+		{Turn 61.6662}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2479,8 +2439,12 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.smg" 0x80af
-		{Position 65.6779 250.556 24.0988}
-		{Turn -93.3345}
+		{Position 74.1076 249.603 27.9952}
+		{Orientation
+			  0.132048  -0.969222   0.207600
+			  0.975881   0.163815   0.144600
+			 -0.174119   0.183538   0.967500
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -3459,25 +3423,28 @@
 		{NameId 55 56}
 		{FsmState "stand"}
 	}
-	{Entity "willysmb" 0x80db
-		{Position 1012.59 5006.78 6.90057}
-		{Turn -109.542}
+	{Entity "willysmb_p" 0x80db
+		{Position 1012.59 5006.78 6.89648}
+		{Turn -109.801}
 		{Player 1}
 		{MID 181}
-		
 	}
 	{Entity "jeep" 0x80dc
-		{Position 1009.78 4989.34 8.29281}
-		{Turn -105.236}
+		{Position 1055.04 5009.01 9.10413}
+		{Orientation
+			 -0.278321  -0.953745   0.113616
+			  0.953097  -0.259594   0.155620
+			 -0.118927   0.151599   0.981261
+		}
 		{Player 1}
 		{MID 182}
 	}
 	{Human "usa.marine2.all" 0x80dd
-		{Position 1001.41 4995.11 15.3068}
+		{Position 1046.93 5018.05 17.3119}
 		{Orientation
-			 -0.256132  -0.893336   0.369351
-			  0.964628  -0.260939   0.037810
-			  0.062599   0.365963   0.928573
+			  0.952336  -0.258624   0.161900
+			  0.278321   0.953745  -0.113616
+			 -0.125027   0.153260   0.980265
 		}
 		{Extender "inventory"
 			{box
@@ -3502,11 +3469,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.all" 0x80de
-		{Position 1019.72 4995.76 19.6227}
+		{Position 1067.58 5027.83 18.0175}
 		{Orientation
-			 -0.867630  -0.497214   0.002081
-			  0.496369  -0.865839   0.062840
-			 -0.029473   0.055594   0.998045
+			 -0.870462  -0.491183  -0.031958
+			  0.477134  -0.857952   0.190376
+			 -0.120898   0.150488   0.981194
 		}
 		{Extender "inventory"
 			{box
@@ -3533,6 +3500,9 @@
 			  0.262431   0.964037  -0.042142
 			 -0.021981   0.049635   0.998552
 		}
+		{Extender "vitality"
+			{Energy 20.0763}
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -3552,11 +3522,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine2.all" 0x80e0
-		{Position 1027.29 5013.5 19.9978}
+		{Position 1049.8 5032.3 15.1723}
 		{Orientation
-			 -0.964540   0.260745  -0.041404
-			 -0.262613  -0.963636   0.049529
-			 -0.026984   0.058646   0.997941
+			  0.871750  -0.456589   0.177418
+			  0.474703   0.876803  -0.075991
+			 -0.120898   0.150488   0.981194
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3566,11 +3536,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.all" 0x80e1
-		{Position 1006.11 5018.57 17.038}
+		{Position 1005.68 5015.68 16.2697}
 		{Orientation
-			  0.941544  -0.329429   0.070895
-			  0.333834   0.940502  -0.063339
-			 -0.045812   0.083304   0.995498
+			  0.939717  -0.333117   0.077496
+			  0.338072   0.938997  -0.063176
+			 -0.051723   0.085567   0.995010
 		}
 		{Extender "inventory"
 			{box
@@ -3594,11 +3564,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.all" 0x80e2
-		{Position 1022.75 5012.75 18.2909}
+		{Position 1020.52 5010.01 17.1445}
 		{Orientation
-			 -0.901822  -0.432083  -0.005267
-			  0.429711  -0.897966   0.094940
-			 -0.045778   0.083398   0.995491
+			 -0.903626  -0.428232  -0.007910
+			  0.425630  -0.899890   0.094964
+			 -0.047752   0.082463   0.995452
 		}
 		{Extender "inventory"
 			{box
@@ -3615,11 +3585,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine2.all" 0x80e3
-		{Position 1018.55 5030.08 20.5505}
+		{Position 1017.38 5027.29 18.5512}
 		{Orientation
-			 -0.333863  -0.940585   0.063345
-			  0.941540  -0.329440   0.070896
-			 -0.045813   0.083302   0.995487
+			 -0.354395  -0.933079   0.060625
+			  0.933910  -0.350025   0.072116
+			 -0.046147   0.082211   0.995547
 		}
 		{Extender "inventory"
 			{box
@@ -3904,32 +3874,27 @@
 	{Entity "m4a2" 0x80f6
 		{Position 5945.26 1439.31 0}
 		{Turn -179.103}
-		{TexMod "n274"}
 		{Player 1}
 		{MID 204}
-		
 	}
 	{Entity "m4a2" 0x80f7
 		{Position 4322.44 -1210.88 0}
 		{Turn 119.515}
-		{TexMod "n273"}
 		{Player 1}
 		{MID 205}
-		
 	}
 	{Entity "m8grayhound" 0x80f8
-		{Position 1943.36 -1229.12 0.454391}
-		{Turn 101.424}
+		{Position 1943.36 -1229.12 0.454209}
+		{Turn 101.483}
 		{Player 1}
 		{MID 206}
-		
 	}
 	{Human "usa.tankman" 0x80f9
-		{Position 1943.36 -1229.12 0.454391}
+		{Position 1943.36 -1229.12 0.454209}
 		{Orientation
-			 -0.198015   0.979942   0.022462
-			  0.979371   0.196853   0.045623
-			 -0.040286  -0.031032   0.998706
+			 -0.199022   0.979738   0.022434
+			  0.979168   0.197862   0.045604
+			 -0.040241  -0.031043   0.998708
 		}
 		{Player 1}
 		{MID 207}
@@ -3938,11 +3903,11 @@
 		{FsmState "board"}
 	}
 	{Human "usa.tankman" 0x80fa
-		{Position 1943.36 -1229.12 0.454391}
+		{Position 1943.36 -1229.12 0.454209}
 		{Orientation
-			 -0.198015   0.979942   0.022462
-			  0.979371   0.196853   0.045623
-			 -0.040286  -0.031032   0.998706
+			 -0.199022   0.979738   0.022434
+			  0.979168   0.197862   0.045604
+			 -0.040241  -0.031043   0.998708
 		}
 		{Player 1}
 		{MID 208}
@@ -3951,11 +3916,11 @@
 		{FsmState "board"}
 	}
 	{Human "x.a.tankman" 0x80fb
-		{Position 1943.36 -1229.12 0.454391}
+		{Position 1943.36 -1229.12 0.454209}
 		{Orientation
-			 -0.198015   0.979942   0.022462
-			  0.979371   0.196853   0.045623
-			 -0.040286  -0.031032   0.998706
+			 -0.199022   0.979738   0.022434
+			  0.979168   0.197862   0.045604
+			 -0.040241  -0.031043   0.998708
 		}
 		{Extender "inventory"
 			{box
@@ -3971,11 +3936,11 @@
 		{FsmState "board"}
 	}
 	{Human "x.a.tankman" 0x80fc
-		{Position 1943.36 -1229.12 0.454391}
+		{Position 1943.36 -1229.12 0.454209}
 		{Orientation
-			 -0.198015   0.979942   0.022462
-			  0.979371   0.196853   0.045623
-			 -0.040286  -0.031032   0.998706
+			 -0.199022   0.979738   0.022434
+			  0.979168   0.197862   0.045604
+			 -0.040241  -0.031043   0.998708
 		}
 		{Extender "inventory"
 			{box
@@ -4057,8 +4022,8 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.smg" 0x8101
-		{Position 5996.53 1415.22 24.0988}
-		{Turn -89.103}
+		{Position 5994.6 1416.55 25.6685}
+		{Turn -94.1055}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -4074,8 +4039,8 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine2.mgun" 0x8102
-		{Position 6001.83 1434.67 24.0988}
-		{Turn 0.89699}
+		{Position 5978.29 1416.58 26.8334}
+		{Turn -114.102}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -4091,8 +4056,12 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.rifle" 0x8103
-		{Position 5986.02 1464.22 24.0988}
-		{Turn 90.897}
+		{Position 5977.54 1464.55 27.9952}
+		{Orientation
+			 -0.203204   0.956836   0.207600
+			 -0.961133  -0.235375   0.144600
+			  0.187187  -0.170190   0.967500
+		}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -4109,7 +4078,7 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.rifle" 0x8104
-		{Position 5997.44 1464.4 24.0988}
+		{Position 5994.53 1464.93 26.7135}
 		{Turn 90.897}
 		{Extender "inventory"
 			{box
@@ -4193,8 +4162,8 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.smg" 0x8109
-		{Position 4325.85 -1267.42 24.0988}
-		{Turn -150.485}
+		{Position 4326.09 -1265.1 25.6685}
+		{Turn -155.487}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -4211,8 +4180,8 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.smg" 0x810a
-		{Position 4345.46 -1262.76 24.0988}
-		{Turn -60.485}
+		{Position 4318.31 -1250.77 26.8334}
+		{Turn -175.484}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -4234,8 +4203,12 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine2.smg" 0x810b
-		{Position 4363.83 -1234.73 24.0988}
-		{Turn 29.515}
+		{Position 4360.06 -1227.13 27.9952}
+		{Orientation
+			  0.742614   0.636673   0.207600
+			 -0.666972   0.730977   0.144600
+			 -0.059742  -0.245835   0.967500
+		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 225}
@@ -4244,7 +4217,7 @@
 		{FsmState "board"}
 	}
 	{Human "usa.marine.rifle" 0x810c
-		{Position 4369.46 -1244.67 24.0988}
+		{Position 4368.53 -1241.86 26.7135}
 		{Turn 29.515}
 		{DisableObstacles}
 		{Player 1}
@@ -4839,7 +4812,6 @@
 	{Link 0x80b7 To 0x806d "seat3"}
 	{Link 0x80dd To 0x80dc "driver"}
 	{Link 0x80de To 0x80dc "seat1"}
-	{Link 0x80df To 0x80dc "seat3"}
 	{Link 0x80e0 To 0x80dc "seat2"}
 	{Link 0x80e1 To 0x80db "driver"}
 	{Link 0x80e2 To 0x80db "commander"}
@@ -10464,7 +10436,3 @@
 	}
 	{MissionMusic "STOP"}
 }
-
-
-
-

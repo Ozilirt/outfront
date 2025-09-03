@@ -1,9 +1,9 @@
 {mission
 	{Camera
-		{Position -4031.12 -4120.31}
-		{Distance 1521}
-		{ViewAngle 0.456119}
-		{YawAngle 47.8731}
+		{Position -4393.99 -4311.55}
+		{Distance 1200}
+		{ViewAngle 0.523599}
+		{YawAngle 47.1772}
 	}
 	{Environment "day6"}
 	{User 2}
@@ -13,25 +13,24 @@
 		{Turn -90.6225}
 		{Player 1}
 		{MID 1}
-		
 	}
 	{Entity "type1_stan" 0x8001
-		{Position -1189.48 -1664.35 148.7}
+		{Position -1190.05 -1663.68 151.257}
 		{Orientation
-			 -0.011416  -0.999808  -0.015942
-			  0.999876  -0.011241  -0.011049
-			  0.010867  -0.016066   0.999812
+			 -0.010960  -0.999917   0.006787
+			  0.999894  -0.010893   0.009696
+			 -0.009621   0.006893   0.999930
 		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 2}
 	}
 	{Entity "type1_stan" 0x8002
-		{Position -1185.01 -1324.15 139.297}
+		{Position -1185.43 -1323.77 134.14}
 		{Orientation
-			  0.011416   0.999808   0.015942
-			 -0.999876   0.011241   0.011049
-			  0.010867  -0.016066   0.999812
+			  0.010960   0.999917  -0.006787
+			 -0.999894   0.010893  -0.009696
+			 -0.009621   0.006893   0.999930
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -42,25 +41,27 @@
 		{Turn 89.0601}
 		{Player 1}
 		{MID 4}
-		
 	}
 	{Entity "type2_ship" 0x8004
-		{Position -1635.27 -1380.75 139.319}
+		{Position -1634.81 -1381.3 142.841}
 		{Orientation
-			  0.017229   0.999565  -0.023935
-			 -0.999478   0.016563  -0.027733
-			 -0.027324   0.024400   0.999329
+			  0.017142   0.999850   0.002622
+			 -0.999834   0.017157  -0.006120
+			 -0.006164  -0.002517   0.999978
+		}
+		{Placer
+			{State "commander" {Broken}}
 		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 5}
 	}
 	{Entity "type1_stan" 0x8005
-		{Position -1639.52 -1628.33 144.629}
+		{Position -1639.05 -1628.94 141.574}
 		{Orientation
-			 -0.017229  -0.999565   0.023935
-			  0.999478  -0.016563   0.027733
-			 -0.027324   0.024400   0.999329
+			 -0.017142  -0.999850  -0.002622
+			  0.999834  -0.017157   0.006120
+			 -0.006164  -0.002517   0.999978
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -71,42 +72,36 @@
 		{Turn -89.9468}
 		{Player 1}
 		{MID 7}
-		
 	}
 	{Entity "type10" 0x8007
 		{Position 1929.58 -2216.79 137}
 		{Turn -88.7468}
 		{Player 1}
 		{MID 8}
-		
 	}
 	{Entity "type10" 0x8008
 		{Position 1640.8 -2218.71 135.08}
 		{Turn -88.9441}
 		{Player 1}
 		{MID 9}
-		
 	}
 	{Entity "type10" 0x8009
 		{Position -1990.2 -2219.91 137}
 		{Turn -90.2736}
 		{Player 1}
 		{MID 10}
-		
 	}
 	{Entity "type10" 0x800a
 		{Position -2479.24 -2218.46 137}
 		{Turn -89.5677}
 		{Player 1}
 		{MID 11}
-		
 	}
 	{Entity "type10" 0x800b
 		{Position -2962.73 -2221.36 137}
 		{Turn -90.2552}
 		{Player 1}
 		{MID 12}
-		
 	}
 	{Entity "type96_2" 0x800c
 		{Position -768.894 -2336.42 224.598}
@@ -114,7 +109,6 @@
 		{OffsetZ 167}
 		{Player 1}
 		{MID 13}
-		
 	}
 	{Entity "type96_2" 0x800d
 		{Position 60.8014 -2335.91 224.823}
@@ -122,7 +116,6 @@
 		{OffsetZ 166}
 		{Player 1}
 		{MID 14}
-		
 	}
 	{Entity "type96_2" 0x800e
 		{Position 887.673 -2344.66 224.823}
@@ -130,7 +123,6 @@
 		{OffsetZ 187}
 		{Player 1}
 		{MID 15}
-		
 	}
 	{Human "jap.sailor3" 0x800f
 		{Position -2979.09 -2221.66 144.238}
@@ -210,7 +202,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 24}
-		{NameId 88 57}
+		{NameId 10 12}
 		{FsmState "board"}
 	}
 	{Human "jap.sailor3" 0x8018
@@ -258,7 +250,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 28}
-		{NameId 81 90}
+		{NameId 47 22}
 		{LastItem "type26"}
 		{FsmState "board"}
 	}
@@ -346,7 +338,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 32}
-		{NameId 90 7}
+		{NameId 57 99}
 		{LastItem "type26"}
 		{FsmState "board"}
 	}
@@ -374,35 +366,31 @@
 	}
 	{Entity "zero" 0x801f
 		{Position 3653.92 3868.37 155.886}
-		{Turn 41.5904}
+		{Turn 41.5838}
 		{TexMod "marine"}
 		{Player 1}
 		{MID 34}
-		
 	}
 	{Entity "zero" 0x8020
 		{Position 3316.34 4191.63 155.886}
-		{Turn 45.8588}
+		{Turn 45.8522}
 		{TexMod "marine"}
 		{Player 1}
 		{MID 35}
-		
 	}
 	{Entity "zero" 0x8021
 		{Position 3696.02 4576.07 155.886}
-		{Turn -134.76}
+		{Turn -134.766}
 		{TexMod "marine"}
 		{Player 1}
 		{MID 36}
-		
 	}
 	{Entity "zero" 0x8022
 		{Position 4029.92 4244.98 155.886}
-		{Turn -134.926}
+		{Turn -134.932}
 		{TexMod "marine"}
 		{Player 1}
 		{MID 37}
-		
 	}
 	{Entity "crane" 0x8023
 		{Position 1491.11 -1171.4 137}
@@ -417,13 +405,11 @@
 		{Turn -0.479555}
 		{Player 0}
 		{MID 39}
-		
 	}
 	{Entity "crane2" 0x8025
 		{Position 663.773 -1164.86 137}
 		{Player 0}
 		{MID 40}
-		
 	}
 	{Entity "horch" 0x8026
 		{Position -711.883 3400.77 137}
@@ -449,7 +435,7 @@
 	}
 	{Entity "ho-ha" 0x8028
 		{Position 2051.51 4475.78 141.873}
-		{Turn -97.8891}
+		{Turn -97.8939}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -472,7 +458,7 @@
 	}
 	{Entity "bulldozer" 0x802a
 		{Position 1799.14 4886.04 138.131}
-		{Turn -178.147}
+		{Turn -178.145}
 		{Player 1}
 		{MID 45}
 		{Chassis
@@ -506,7 +492,6 @@
 		}
 		{Player 1}
 		{MID 47}
-		
 		{Chassis
 			{FuelBag
 				{Remain 90}
@@ -515,7 +500,7 @@
 	}
 	{Entity "isuzu" 0x802d
 		{Position 2076.44 5187.93 137.352}
-		{Turn 84.4922}
+		{Turn 84.4942}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -526,7 +511,6 @@
 		}
 		{Player 1}
 		{MID 48}
-		
 		{Chassis
 			{FuelBag
 				{Remain 87.3}
@@ -535,7 +519,7 @@
 	}
 	{Entity "isuzu" 0x802e
 		{Position -436.064 3401.2 137.694}
-		{Turn -107.793}
+		{Turn -107.791}
 		{Player 1}
 		{MID 49}
 		{Chassis
@@ -549,14 +533,12 @@
 		{Turn 123.006}
 		{Player 1}
 		{MID 50}
-		
 	}
 	{Entity "isuzu-fuel" 0x8030
-		{Position 2410.45 3298.81 138.63}
-		{Turn -59.9362}
+		{Position 2410.45 3298.81 138.631}
+		{Turn -59.8388}
 		{Player 1}
 		{MID 51}
-		
 	}
 	{Entity "isuzu-ammo" 0x8031
 		{Position 2233.94 3166.36 137}
@@ -597,7 +579,6 @@
 		}
 		{Player 1}
 		{MID 53}
-		
 		{Chassis
 			{FuelBag
 				{Remain 9.8}
@@ -618,13 +599,15 @@
 	{Entity "isuzu94-cargo1" 0x8034
 		{Position -74.9392 -2012.86 137}
 		{Turn 47.7863}
+		{Placer
+			{State "commander" {Broken}}
+		}
 		{Player 1}
 		{MID 55}
-		
 	}
 	{Entity "isuzu94" 0x8035
 		{Position 3665.68 4963.35 139.32}
-		{Turn 160.067}
+		{Turn 160.053}
 		{Player 1}
 		{MID 56}
 		{Chassis
@@ -638,7 +621,6 @@
 		{Turn 63.0746}
 		{Player 1}
 		{MID 57}
-		
 		{Chassis
 			{FuelBag
 				{Remain 34.6}
@@ -659,6 +641,9 @@
 	{Entity "isuzu94-cargo3" 0x8038
 		{Position -1616.55 -377.965 137}
 		{Turn -142.777}
+		{Placer
+			{State "commander" {Broken}}
+		}
 		{Player 1}
 		{MID 59}
 		{Chassis
@@ -670,9 +655,11 @@
 	{Entity "isuzu94-cargo2" 0x8039
 		{Position -1520.63 -645.958 137}
 		{Turn 89.8472}
+		{Placer
+			{State "commander" {Broken}}
+		}
 		{Player 1}
 		{MID 60}
-		
 		{Chassis
 			{FuelBag
 				{Remain 36.5}
@@ -810,12 +797,8 @@
 		{MID 70}
 	}
 	{Human "jap.sailor2" 0x8049
-		{Position -1185.4 -1338.39 139.073}
-		{Orientation
-			  0.011402   0.999829   0.014642
-			 -0.999877   0.011242   0.010949
-			  0.010782  -0.014765   0.999834
-		}
+		{Position -1185.81 -1338.02 134.234}
+		{Turn 89.3713}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -832,12 +815,8 @@
 		{FsmState "board"}
 	}
 	{Human "jap.sailor3" 0x804a
-		{Position -1189.1 -1650.11 148.925}
-		{Orientation
-			 -0.011430  -0.999787  -0.017242
-			  0.999875  -0.011239  -0.011149
-			  0.010952  -0.017367   0.999790
-		}
+		{Position -1189.67 -1649.43 151.163}
+		{Turn -90.6272}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -854,12 +833,8 @@
 		{FsmState "board"}
 	}
 	{Human "jap.sailor3" 0x804b
-		{Position -1639.04 -1614.09 144.295}
-		{Orientation
-			 -0.017193  -0.999597   0.022635
-			  0.999481  -0.016566   0.027633
-			 -0.027247   0.023099   0.999363
-		}
+		{Position -1638.58 -1614.7 141.612}
+		{Turn -90.9817}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -876,11 +851,11 @@
 		{FsmState "board"}
 	}
 	{Human "jap.sailor3" 0x804c
-		{Position -1636.01 -1391.62 139.284}
+		{Position -1635.55 -1392.17 142.529}
 		{Orientation
-			  0.006804   0.942021   0.335426
-			 -0.999465   0.017161  -0.027847
-			 -0.031980  -0.335057   0.941634
+			  0.014298   0.932650   0.360443
+			 -0.999823   0.017758  -0.006219
+			 -0.012192  -0.360291   0.932739
 		}
 		{Extender "inventory"
 			{box
@@ -965,7 +940,6 @@
 		}
 		{Player 1}
 		{MID 79}
-		
 		{Weaponry
 			{State
 				{Weapon
@@ -986,7 +960,6 @@
 		}
 		{Player 1}
 		{MID 80}
-		
 		{Weaponry
 			{State
 				{Weapon
@@ -1077,8 +1050,8 @@
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x805c
-		{Position 3387.74 473.06 151.972}
-		{Turn -176.996}
+		{Position 3380.84 484.159 151.972}
+		{Turn -128.952}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1111,8 +1084,8 @@
 		{FsmState "board"}
 	}
 	{Human "jap.sailor3" 0x805e
-		{Position 3358.73 471.631 151.98}
-		{Turn -86.9964}
+		{Position 3362.51 461.631 151.98}
+		{Turn -38.9525}
 		{DisableObstacles}
 		{Player 1}
 		{MID 92}
@@ -1133,7 +1106,7 @@
 		{Turn 91.5186}
 		{Player 1}
 		{MID 94}
-		{NameId 88 58}
+		{NameId 70 49}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x8061
@@ -1150,7 +1123,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 95}
-		{NameId 66 100}
+		{NameId 55 23}
 		{FsmState "board"}
 	}
 	{Human "jap.sailor2" 0x8062
@@ -1342,11 +1315,11 @@
 		{MID 102}
 	}
 	{Human "eng.soldier_smg" 0x806c
-		{Position -4335.43 -4548.56 110.245}
+		{Position -4335.45 -4548.54 110.113}
 		{Orientation
-			  0.074010   0.908391   0.411609
-			 -0.996408   0.050211   0.068196
-			  0.041278  -0.415118   0.908763
+			  0.080167   0.899374   0.429852
+			 -0.995352   0.049038   0.082885
+			  0.053462  -0.434438   0.899046
 		}
 		{TexMod "2"}
 		{Extender "inventory"
@@ -1363,16 +1336,15 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 103}
-		
-		{NameId 64 61}
+		{NameId 50 13}
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_elite2" 0x806d
-		{Position -4349.8 -4575.56 110.699}
+		{Position -4349.82 -4575.55 110.187}
 		{Orientation
-			  0.569630   0.751674   0.332542
-			 -0.790237   0.612152  -0.030033
-			 -0.226170  -0.245713   0.942611
+			  0.574567   0.744235   0.340681
+			 -0.790214   0.612886  -0.006141
+			 -0.213399  -0.265715   0.940159
 		}
 		{Extender "inventory"
 			{box
@@ -1389,16 +1361,15 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 104}
-		
-		{NameId 10 12}
+		{NameId 50 41}
 		{FsmState "board"}
 	}
 	{Human "eng.soldier_mg" 0x806e
-		{Position -4349.29 -4519.67 108.332}
+		{Position -4349.31 -4519.61 109.007}
 		{Orientation
-			  0.568005   0.754083   0.424396
-			 -0.791777   0.614434   0.057023
-			 -0.225409  -0.246840   0.899632
+			  0.574200   0.744683   0.432579
+			 -0.790562   0.613310   0.080958
+			 -0.213227  -0.265924   0.897160
 		}
 		{Extender "inventory"
 			{box
@@ -1414,16 +1385,15 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 105}
-		
-		{NameId 57 99}
+		{NameId 27 26}
 		{FsmState "board"}
 	}
 	{Human "eng.medic3" 0x806f
-		{Position -4338.68 -4574.2 110.86}
+		{Position -4338.7 -4574.19 110.225}
 		{Orientation
-			  0.074010   0.908391   0.411609
-			 -0.996408   0.050211   0.068196
-			  0.041278  -0.415118   0.908763
+			  0.080167   0.899374   0.429852
+			 -0.995352   0.049038   0.082885
+			  0.053462  -0.434438   0.899046
 		}
 		{Extender "inventory"
 			{box
@@ -1440,16 +1410,15 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 106}
-		
 		{NameId 64 62}
 		{FsmState "board"}
 	}
 	{Human "eng.tankman" 0x8070
-		{Position -4336.21 -4520.3 108.58}
+		{Position -4336.22 -4520.25 109.062}
 		{Orientation
-			 -0.169048   0.933984   0.314691
-			 -0.984642  -0.173949  -0.012862
-			  0.042672  -0.312110   0.949109
+			 -0.164180   0.927102   0.336839
+			 -0.984828  -0.173345  -0.003092
+			  0.055468  -0.332314   0.941558
 		}
 		{Extender "inventory"
 			{box
@@ -1462,15 +1431,15 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 107}
-		{NameId 49 27}
+		{NameId 72 49}
 		{FsmState "board"}
 	}
 	{Human "eng.soldier" 0x8071
-		{Position -4352.26 -4546.5 108.983}
+		{Position -4352.29 -4546.45 109.125}
 		{Orientation
-			  0.074010   0.908391   0.411609
-			 -0.996408   0.050211   0.068196
-			  0.041278  -0.415118   0.908763
+			  0.080167   0.899374   0.429852
+			 -0.995352   0.049038   0.082885
+			  0.053462  -0.434438   0.899046
 		}
 		{Extender "inventory"
 			{box
@@ -1484,17 +1453,12 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 108}
-		
-		{NameId 79 91}
+		{NameId 50 52}
 		{FsmState "board"}
 	}
 	{Human "jap.sailor3" 0x8072
-		{Position -1186.91 -1554.39 141.061}
-		{Orientation
-			 -0.011416  -0.999808  -0.015942
-			  0.999876  -0.011241  -0.011049
-			  0.010867  -0.016066   0.999812
-		}
+		{Position -1187.33 -1553.91 141.15}
+		{Turn -90.628}
 		{DisableObstacles}
 		{Player 1}
 		{MID 109}
@@ -1523,7 +1487,6 @@
 		{TexMod "ambush"}
 		{Player 1}
 		{MID 112}
-		
 	}
 	{Entity "ha-go" 0x8076
 		{Position 4375.9 876.446 137}
@@ -1531,7 +1494,6 @@
 		{TexMod "ambush"}
 		{Player 1}
 		{MID 113}
-		
 	}
 	{Entity "chi-he" 0x8077
 		{Position 4352.34 881.051 137}
@@ -1539,7 +1501,6 @@
 		{TexMod "ambush"}
 		{Player 1}
 		{MID 114}
-		
 	}
 	{Human "jap.crewman" 0x8078
 		{Position 4337.62 878.893 137}
@@ -1667,7 +1628,7 @@
 		}
 		{Player 1}
 		{MID 124}
-		{NameId 88 59}
+		{NameId 13 66}
 		{LastItem "type26"}
 		{FsmState "board"}
 	}
@@ -1685,7 +1646,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 125}
-		{NameId 66 101}
+		{NameId 53 83}
 		{LastItem "arisaka"}
 		{FsmState "board"}
 	}
@@ -1732,7 +1693,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 128}
-		{NameId 81 91}
+		{NameId 37 74}
 		{LastItem "type99"}
 		{FsmState "board"}
 	}
@@ -2037,7 +1998,7 @@
 				}
 			}
 		}
-		{NameId 88 60}
+		{NameId 46 53}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x8096
@@ -2138,7 +2099,7 @@
 				}
 			}
 		}
-		{NameId 81 92}
+		{NameId 50 20}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x809a
@@ -2239,7 +2200,7 @@
 				}
 			}
 		}
-		{NameId 90 8}
+		{NameId 24 41}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x809e
@@ -2421,7 +2382,7 @@
 				}
 			}
 		}
-		{NameId 83 53}
+		{NameId 42 1}
 		{Cover
 			{sector 211.147 45.8066 {type "snipe_cover"}
 				{wall 0 0 261.262 39.1651 157.224 38.4206}
@@ -2449,7 +2410,7 @@
 				}
 			}
 		}
-		{NameId 88 6}
+		{NameId 50 29}
 		{Cover
 			{sector 1722.04 91.2942 {type "snipe_cover"}
 				{wall 0 0 1739.12 84.2942 1692.3 84.2942}
@@ -2509,8 +2470,8 @@
 		{FsmState "snipe"}
 	}
 	{Human "jap.elite4" 0x80a8
-		{Position -3333.08 1981.52 202.308}
-		{Turn 151.56}
+		{Position -3409.53 1949.26 208.07}
+		{Turn -117.473}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2525,16 +2486,16 @@
 		{FsmState "stand"}
 	}
 	{Human "jap.elite3" 0x80a9
-		{Position -3396.29 1952.6 207.629}
-		{Turn 54.6529}
+		{Position -3463.98 1938.21 210}
+		{Turn 25.2874}
 		{Player 1}
 		{MID 164}
 		{NameId 2 18}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite2" 0x80aa
-		{Position -3478.97 1967.6 209}
-		{Turn 168.105}
+		{Position -3440 1961.47 209}
+		{Turn -52.5392}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2546,16 +2507,11 @@
 		{Player 1}
 		{MID 165}
 		{NameId 61 25}
-		{Cover
-			{sector -3478.97 1967.6 {type "squat_lie"}
-				{wall 0 0 -3493.34 1933.35 -3483.71 1979.07}
-			}
-		}
-		{FsmState "squat"}
+		{FsmState "stand"}
 	}
 	{Human "jap.elite1" 0x80ab
-		{Position -3483.03 1921.5 210}
-		{Turn -136.344}
+		{Position -3417.7 1921.7 209.961}
+		{Turn 106.736}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -2567,12 +2523,7 @@
 		{Player 1}
 		{MID 166}
 		{NameId 73 85}
-		{Cover
-			{sector -3483.03 1921.5 {type "squat_lie"}
-				{wall 0 0 -3462.91 1890.27 -3495.17 1924.08}
-			}
-		}
-		{FsmState "squat"}
+		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x80ac
 		{Position -575.129 175.927 137}
@@ -2656,7 +2607,6 @@
 		{Turn 88.1638}
 		{Player 1}
 		{MID 173}
-		
 	}
 	{Human "jap.sailor2" 0x80b2
 		{Position -1855.06 -1524.52 137}
@@ -2807,7 +2757,7 @@
 		{Turn -5.2855}
 		{Player 1}
 		{MID 183}
-		{NameId 88 61}
+		{NameId 34 81}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x80bc
@@ -2847,7 +2797,7 @@
 		{Turn -5.2855}
 		{Player 1}
 		{MID 187}
-		{NameId 81 93}
+		{NameId 19 78}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x80c0
@@ -2963,7 +2913,7 @@
 		{Turn -64.5857}
 		{Player 1}
 		{MID 198}
-		{NameId 83 54}
+		{NameId 29 99}
 		{FsmState "stand"}
 	}
 	{Human "jap.ofisailor" 0x80cb
@@ -2971,7 +2921,7 @@
 		{Turn -105.9}
 		{Player 1}
 		{MID 199}
-		{NameId 88 7}
+		{NameId 62 16}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor3" 0x80cc
@@ -3109,7 +3059,7 @@
 		{Turn 49.3127}
 		{Player 1}
 		{MID 207}
-		{NameId 86 93}
+		{NameId 72 16}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x80d4
@@ -3125,7 +3075,7 @@
 		}
 		{Player 1}
 		{MID 208}
-		{NameId 88 96}
+		{NameId 48 89}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x80d5
@@ -3196,7 +3146,7 @@
 		}
 		{Player 1}
 		{MID 213}
-		{NameId 82 88}
+		{NameId 11 94}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x80da
@@ -3518,7 +3468,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 233}
-		{NameId 81 94}
+		{NameId 49 27}
 		{FsmState "board"}
 	}
 	{Human "jap.elite1" 0x80ef
@@ -3539,8 +3489,8 @@
 		{FsmState "board"}
 	}
 	{Entity "type91" 0x80f0
-		{Position 1810.18 1839.69 163.748}
-		{Turn -95.7231}
+		{Position 1810.18 1839.69 163.747}
+		{Turn -95.7521}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -3550,11 +3500,10 @@
 		}
 		{Player 1}
 		{MID 235}
-		
 	}
 	{Entity "type91" 0x80f1
 		{Position 3264.86 2183.22 182.404}
-		{Turn -97.7068}
+		{Turn -97.7968}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -3565,14 +3514,13 @@
 		}
 		{Player 1}
 		{MID 236}
-		
 	}
 	{Human "jap.elite1" 0x80f2
-		{Position 3260 2198.42 183.188}
+		{Position 3260.03 2198.43 183.188}
 		{Orientation
-			  0.212923  -0.976346   0.037598
-			  0.976883   0.213475   0.011283
-			 -0.019082   0.034319   0.999230
+			  0.211390  -0.976679   0.037599
+			  0.977217   0.211942   0.011331
+			 -0.019075   0.034340   0.999229
 		}
 		{Extender "inventory"
 			{box
@@ -3591,11 +3539,11 @@
 		{FsmState "board"}
 	}
 	{Human "jap.elite1" 0x80f3
-		{Position 3279.41 2203.44 183.34}
+		{Position 3279.44 2203.42 183.342}
 		{Orientation
-			 -0.678090  -0.734959   0.011689
-			  0.734773  -0.677309   0.038293
-			 -0.020257   0.034578   0.999197
+			 -0.679243  -0.733894   0.011651
+			  0.733708  -0.678462   0.038322
+			 -0.020250   0.034601   0.999197
 		}
 		{Extender "inventory"
 			{box
@@ -3614,11 +3562,11 @@
 		{FsmState "board"}
 	}
 	{Human "jap.elite3" 0x80f4
-		{Position 3288.68 2221.9 180.989}
+		{Position 3288.74 2221.86 180.991}
 		{Orientation
-			 -0.516444  -0.855996   0.020441
-			  0.856007  -0.515721   0.034996
-			 -0.019416   0.035574   0.999178
+			 -0.517787  -0.855185   0.020409
+			  0.855195  -0.517064   0.035032
+			 -0.019408   0.035596   0.999178
 		}
 		{Extender "inventory"
 			{box
@@ -3637,16 +3585,16 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 239}
-		{NameId 90 10}
+		{NameId 61 98}
 		{LastItem "arisaka"}
 		{FsmState "board"}
 	}
 	{Human "jap.elite3" 0x80f5
-		{Position 3252.91 2227.9 180.08}
+		{Position 3252.98 2227.92 180.081}
 		{Orientation
-			  0.198046  -0.979445   0.038720
-			  0.980018   0.198635   0.011972
-			 -0.019416   0.035574   0.999178
+			  0.196508  -0.979755   0.038721
+			  0.980328   0.197098   0.012020
+			 -0.019408   0.035596   0.999178
 		}
 		{Extender "inventory"
 			{box
@@ -3669,11 +3617,11 @@
 		{FsmState "board"}
 	}
 	{Human "jap.elite3" 0x80f6
-		{Position 1824.05 1860.39 164.465}
+		{Position 1824.06 1860.39 164.464}
 		{Orientation
-			 -0.652379  -0.757641   0.022132
-			  0.757948  -0.651900   0.025436
-			 -0.004877   0.033391   0.999431
+			 -0.652762  -0.757310   0.022147
+			  0.757617  -0.652284   0.025445
+			 -0.004857   0.033411   0.999431
 		}
 		{Extender "inventory"
 			{box
@@ -3695,11 +3643,11 @@
 		{FsmState "board"}
 	}
 	{Human "jap.elite3" 0x80f7
-		{Position 1796.68 1883.94 161.669}
+		{Position 1796.7 1883.95 161.668}
 		{Orientation
-			  0.231903  -0.972147   0.034422
-			  0.972748   0.231904  -0.004024
-			 -0.004071   0.034416   0.999399
+			  0.231411  -0.972264   0.034438
+			  0.972865   0.231411  -0.004030
+			 -0.004051   0.034435   0.999399
 		}
 		{Extender "inventory"
 			{box
@@ -3721,11 +3669,11 @@
 		{FsmState "board"}
 	}
 	{Human "jap.elite1" 0x80f8
-		{Position 1832.64 1879.16 161.98}
+		{Position 1832.66 1879.15 161.979}
 		{Orientation
-			 -0.486581  -0.873105   0.028085
-			  0.873537  -0.486274   0.020304
-			 -0.004071   0.034416   0.999399
+			 -0.487023  -0.872858   0.028101
+			  0.873290  -0.486716   0.020310
+			 -0.004051   0.034435   0.999399
 		}
 		{Extender "inventory"
 			{box
@@ -3744,11 +3692,11 @@
 		{FsmState "board"}
 	}
 	{Human "jap.elite1" 0x80f9
-		{Position 1804.82 1854.71 164.628}
+		{Position 1804.83 1854.72 164.627}
 		{Orientation
-			  0.246645  -0.968543   0.033057
-			  0.969099   0.246628  -0.004646
-			 -0.003693   0.033173   0.999444
+			  0.246155  -0.968667   0.033073
+			  0.969224   0.246137  -0.004652
+			 -0.003674   0.033191   0.999443
 		}
 		{Extender "inventory"
 			{box
@@ -3979,7 +3927,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 256}
-		{NameId 88 62}
+		{NameId 53 7}
 		{FsmState "board"}
 	}
 	{Human "jap.elite1" 0x8106
@@ -4065,7 +4013,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 260}
-		{NameId 81 95}
+		{NameId 64 61}
 		{Cover
 			{sector 2124.65 4287.22 {type "snipe_cover"}
 				{wall 0 0 2112.59 4285.36 2127.04 4299.19}
@@ -4135,7 +4083,6 @@
 		{Turn 133.229}
 		{Player 1}
 		{MID 263}
-		
 	}
 	{Entity "barrel1" 0x810d
 		{Position 2981.99 3876.3 137}
@@ -4397,12 +4344,12 @@
 		}
 		{Player 1}
 		{MID 275}
-		{NameId 88 63}
+		{NameId 31 74}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite2" 0x811e
 		{Position -1826 5073 233.58}
-		{Turn -105.698}
+		{Turn -105.192}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -4457,7 +4404,7 @@
 		}
 		{Player 1}
 		{MID 278}
-		{NameId 81 96}
+		{NameId 76 1}
 		{FsmState "squat"}
 	}
 	{Entity "crate3" 0x8121
@@ -4735,7 +4682,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 288}
-		{NameId 88 64}
+		{NameId 79 91}
 		{FsmState "board"}
 	}
 	{Human "jap.elite1" 0x812e
@@ -4838,7 +4785,7 @@
 				}
 			}
 		}
-		{NameId 81 97}
+		{NameId 42 89}
 		{Cover
 			{sector 1051.44 4156.32 {type "snipe_cover"}
 				{wall 0 0 1063.54 4157.66 1047.44 4143.45}
@@ -4940,7 +4887,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 296}
-		{NameId 90 11}
+		{NameId 44 40}
 		{LastItem "type26"}
 		{FsmState "board"}
 	}
@@ -5222,7 +5169,7 @@
 				}
 			}
 		}
-		{NameId 88 65}
+		{NameId 34 96}
 		{FsmState "stand"}
 	}
 	{Human "jap.elite3" 0x8141
@@ -5283,13 +5230,13 @@
 		}
 		{Player 1}
 		{MID 311}
-		{NameId 81 98}
+		{NameId 56 57}
 		{FsmState "stand"}
 	}
 	{Entity "bino" 0x8145
-		{Position 3406.09 510.017 158.434}
+		{Position 3407.65 510.912 158.48}
 		{Orientation
-			 -0.474888   0.841178  -0.258834
+			 -0.474888   0.841178  -0.258833
 			  0.149953  -0.212476  -0.965641
 			 -0.867190  -0.497338  -0.025233
 		}
@@ -5314,9 +5261,9 @@
 		{FsmState "stand"}
 	}
 	{Entity "bino" 0x8147
-		{Position -310.999 623.226 153.335}
+		{Position -312.764 622.879 153.38}
 		{Orientation
-			  0.179641  -0.949120  -0.258833
+			  0.179641  -0.949120  -0.258834
 			 -0.073787   0.249374  -0.965641
 			  0.980963   0.192550  -0.025233
 		}
@@ -5765,11 +5712,11 @@
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor3" 0x8163
-		{Position 77.8162 -756.875 137}
-		{Turn 63.2402}
+		{Position 26.9712 -791.629 137}
+		{Turn -145.646}
 		{Player 1}
 		{MID 329}
-		{NameId 88 66}
+		{NameId 59 70}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor4" 0x8164
@@ -5836,7 +5783,7 @@
 		}
 		{Player 1}
 		{MID 333}
-		{NameId 81 99}
+		{NameId 77 7}
 		{FsmState "stand"}
 	}
 	{Human "jap.sailor2" 0x8168
@@ -5939,7 +5886,6 @@
 		{Position -3097.68 -1054.57 137}
 		{Player 1}
 		{MID 340}
-		
 	}
 	{Human "jap.crewman" 0x816f
 		{Position -3097.68 -1054.57 137}
@@ -6198,7 +6144,7 @@
 	}
 	{Human "jap.elite5" 0x817e
 		{Position -441.76 3399.94 152.878}
-		{Turn -107.793}
+		{Turn -107.791}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -6269,6 +6215,33 @@
 		{Position -2502.5 -1817.07 159}
 		{Turn 88.8425}
 		{OffsetZ 22}
+	}
+	{Entity "arbusto2" 0x8185
+		{Position -4120.67 1821 171.866}
+	}
+	{Entity "arbusto2" 0x8186
+		{Position -4040.03 1885.17 153.483}
+	}
+	{Entity "arbusto2" 0x8187
+		{Position -3983.43 2035.39 134.012}
+	}
+	{Entity "arbusto2" 0x8188
+		{Position -4053.84 2109.97 147.989}
+	}
+	{Entity "arbusto2" 0x8189
+		{Position -3915.59 1947.73 148.236}
+	}
+	{Entity "arbusto3" 0x818a
+		{Position -3959.76 1813.82 160.015}
+	}
+	{Entity "arbusto3" 0x818b
+		{Position -3885.73 1886.44 161.21}
+	}
+	{Entity "arbusto3" 0x818c
+		{Position -3783.31 2050.23 170.015}
+	}
+	{Entity "arbusto3" 0x818d
+		{Position -3712.78 1763.67 198.722}
 	}
 	{Link 0x8001 To 0x8000 "front"}
 	{Link 0x8002 To 0x8000 "rear"}
@@ -10094,7 +10067,3 @@
 	}
 	{MissionMusic "STOP"}
 }
-
-
-
-

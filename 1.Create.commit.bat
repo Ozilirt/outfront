@@ -1,16 +1,7 @@
-
-:: Для получения пользовательского
-:: FOR /F "tokens=*" %%A IN ('TYPE CON') DO SET INPUT=%%A
-:: ECHO Вы ввели: "%INPUT%"
-pause
-::f:
-::cd F:\\Игры\В тылу врага\3\outfront
-git init
-pause
 git add .
 pause
-git commit -m "new "
+git commit -m "new files GIT"
 pause
 git status
-
+pause
 

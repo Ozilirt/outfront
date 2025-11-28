@@ -1,3 +1,4 @@
+chcp 65001
 f:
 cd F:\Игры\В тылу врага\3\outfront
 git add .

@@ -1,9 +1,9 @@
 {mission
 	{Camera
-		{Position -4360.32 -4029.74}
-		{Distance 1950}
-		{ViewAngle 0.266454}
-		{YawAngle -134.233}
+		{Position -4772.82 -4130.85}
+		{Distance 1200}
+		{ViewAngle 0.523599}
+		{YawAngle -141.502}
 	}
 	{Environment "bluemoon"}
 	{User 2}
@@ -168,11 +168,11 @@
 		{Able {crew 1}}
 	}
 	{Entity "ubgun20" 0x801c
-		{Position -4763.57 -4543.68 198.245}
+		{Position -4763.85 -4541.43 200.193}
 		{Orientation
-			 -0.452397  -0.891594  -0.019946
-			  0.891811  -0.452201  -0.013708
-			  0.003203  -0.023989   0.999707
+			 -0.452172  -0.891914  -0.005423
+			  0.891931  -0.452157  -0.003727
+			  0.000873  -0.006522   0.999978
 		}
 		{DisableObstacles}
 		{Player 2}
@@ -182,6 +182,8 @@
 	{Human "ger.albert" 0x801d
 		{Position -2316.04 -2317.12 137}
 		{Turn -151.531}
+		{Constrain none}
+		{Fogable never}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -200,14 +202,17 @@
 				{Item "mp-ammo-holder"}
 			}
 		}
+		{DisableObstacles}
 		{Player 2}
 		{MID 17}
+		{Able {crew 0}{repair 0}{talk 0}{fight 0}}
 		{NameId 1 1}
 		{FsmState "stand"}
 	}
 	{Human "ger.franz" 0x801e
 		{Position -2349.7 -2316.76 137}
 		{Turn -82.8933}
+		{Fogable never}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -226,14 +231,17 @@
 				{Item "mp-ammo-holder"}
 			}
 		}
+		{DisableObstacles}
 		{Player 2}
 		{MID 18}
+		{Able {crew 0}{repair 0}{talk 0}{fight 0}}
 		{NameId 2 2}
 		{FsmState "stand"}
 	}
 	{Human "ger.karl2" 0x801f
 		{Position -2389.49 -2311.21 137}
 		{Turn -51.9384}
+		{Fogable never}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -253,12 +261,14 @@
 		}
 		{Player 2}
 		{MID 19}
+		{Able {crew 0}{repair 0}{talk 0}{fight 0}}
 		{NameId 3 3}
 		{FsmState "stand"}
 	}
 	{Human "ger.markus" 0x8020
 		{Position -2334.26 -2317.4 137}
 		{Turn -88.7858}
+		{Fogable never}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -271,14 +281,17 @@
 				{item "ammo pistol" 96 {cell 5 0}}
 			}
 		}
+		{DisableObstacles}
 		{Player 2}
 		{MID 20}
+		{Able {crew 0}{repair 0}{talk 0}{fight 0}}
 		{NameId 4 4}
 		{FsmState "stand"}
 	}
 	{Human "ger.otto" 0x8021
 		{Position -2405.33 -2314.35 136.533}
 		{Turn 59.208}
+		{Fogable never}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -301,12 +314,14 @@
 		}
 		{Player 2}
 		{MID 21}
+		{Able {crew 0}{repair 0}{talk 0}{fight 0}}
 		{NameId 5 5}
 		{FsmState "stand"}
 	}
 	{Human "ger.ulrich" 0x8022
 		{Position -2369.98 -2314.8 136.998}
 		{Turn -175.05}
+		{Fogable never}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -326,6 +341,7 @@
 		}
 		{Player 2}
 		{MID 22}
+		{Able {crew 0}{repair 0}{talk 0}{fight 0}}
 		{NameId 6 6}
 		{FsmState "stand"}
 	}
@@ -639,22 +655,22 @@
 		{MID 41}
 	}
 	{Entity "shipflak2" 0x8044
-		{Position 4151.76 -3995.1 143.003}
+		{Position 4151.3 -3995.5 140.857}
 		{Orientation
-			 -0.998103   0.060257   0.012609
-			 -0.060213  -0.998178   0.003874
-			  0.012820   0.003107   0.999913
+			 -0.998144   0.060405  -0.007738
+			 -0.060271  -0.998046  -0.016486
+			 -0.008719  -0.015989   0.999834
 		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 42}
 	}
 	{Entity "vickers_ship" 0x8045
-		{Position 4299.84 -4004.01 145.138}
+		{Position 4299.3 -4004.5 146.01}
 		{Orientation
-			 -0.998103   0.060257   0.012609
-			 -0.060213  -0.998178   0.003874
-			  0.012820   0.003107   0.999913
+			 -0.998144   0.060405  -0.007738
+			 -0.060271  -0.998046  -0.016486
+			 -0.008719  -0.015989   0.999834
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -675,31 +691,31 @@
 		{MID 45}
 	}
 	{Entity "naval_105" 0x8048
-		{Position 618.692 -2058.05 185.525}
+		{Position 619.413 -2058.65 180.955}
 		{Orientation
-			  0.002401  -0.999990   0.003773
-			  0.999997   0.002402   0.000030
-			 -0.000039   0.003773   0.999993
+			  0.002401  -0.999991  -0.003506
+			  0.999960   0.002431  -0.008583
+			  0.008592  -0.003486   0.999957
 		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 46}
 	}
 	{Entity "mg_cab" 0x8049
-		{Position 617.775 -842.615 131.439}
+		{Position 618.068 -842.861 135.702}
 		{Orientation
-			 -0.002401   0.999990  -0.003773
-			 -0.999997  -0.002402  -0.000030
-			 -0.000039   0.003773   0.999993
+			 -0.002401   0.999991   0.003506
+			 -0.999960  -0.002431   0.008583
+			  0.008592  -0.003486   0.999957
 		}
 		{DisableObstacles}
 	}
 	{Entity "vickers_ship" 0x804a
-		{Position 614.755 -835.362 200.412}
+		{Position 615.644 -836.109 204.75}
 		{Orientation
-			  0.002401  -0.999990   0.003773
-			  0.999997   0.002402   0.000030
-			 -0.000039   0.003773   0.999993
+			  0.002401  -0.999991  -0.003506
+			  0.999960   0.002431  -0.008583
+			  0.008592  -0.003486   0.999957
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -730,11 +746,11 @@
 		{MID 50}
 	}
 	{Human "civilian3" 0x804e
-		{Position -4215.98 -853.839 128.122}
+		{Position -4216.75 -851.526 124.864}
 		{Orientation
-			 -0.566357  -0.823909  -0.020332
-			  0.823501  -0.564746  -0.053936
-			  0.032956  -0.047290   0.998337
+			 -0.569112  -0.821189   0.041959
+			  0.822245  -0.568048   0.035144
+			 -0.005025   0.054502   0.998501
 		}
 		{DisableObstacles}
 		{Player 0}
@@ -743,16 +759,16 @@
 		{FsmState "board"}
 	}
 	{Human "civilian4" 0x804f
-		{Position -4512.22 -1296.1 128.122}
+		{Position -4513.19 -1298.34 124.864}
 		{Orientation
-			  0.971819   0.234849  -0.020332
-			 -0.235622   0.970347  -0.053936
-			  0.007062   0.057206   0.998337
+			  0.972052   0.230985   0.041959
+			 -0.232481   0.971966   0.035144
+			 -0.032665  -0.043917   0.998501
 		}
 		{DisableObstacles}
 		{Player 0}
 		{MID 52}
-		{NameId 132 115}
+		{NameId 64 63}
 		{FsmState "board"}
 	}
 	{Entity "besa_stan" 0x8050
@@ -1022,11 +1038,11 @@
 		{MID 71}
 	}
 	{Human "x.e.prof_smg" 0x8067
-		{Position 4174.34 -3996.25 146.007}
+		{Position 4173.8 -3996.71 144.325}
 		{Orientation
-			 -0.998103   0.060257   0.012609
-			 -0.060213  -0.998178   0.003874
-			  0.012820   0.003107   0.999913
+			 -0.998144   0.060405  -0.007738
+			 -0.060271  -0.998046  -0.016486
+			 -0.008719  -0.015989   0.999834
 		}
 		{Extender "inventory"
 			{box
@@ -1045,11 +1061,11 @@
 		{FsmState "board"}
 	}
 	{Human "x.e.prof_smg" 0x8068
-		{Position 4285.36 -4000.63 145.313}
+		{Position 4284.82 -4001.12 145.938}
 		{Orientation
-			  0.998087  -0.060261  -0.013909
-			  0.060212   0.998178  -0.003974
-			  0.014123   0.003128   0.999896
+			  0.998155  -0.060384   0.006438
+			  0.060272   0.998047   0.016386
+			 -0.007415  -0.015968   0.999846
 		}
 		{Extender "inventory"
 			{box
@@ -1066,11 +1082,11 @@
 		{FsmState "board"}
 	}
 	{Human "x.e.prof_smg" 0x8069
-		{Position 4205.74 -3998.57 133.497}
+		{Position 4205.47 -3998.81 132.452}
 		{Orientation
-			 -0.998103   0.060257   0.012609
-			 -0.060213  -0.998178   0.003874
-			  0.012820   0.003107   0.999913
+			 -0.998144   0.060405  -0.007738
+			 -0.060271  -0.998046  -0.016486
+			 -0.008719  -0.015989   0.999834
 		}
 		{Extender "inventory"
 			{box
@@ -1098,7 +1114,7 @@
 		}
 		{Player 1}
 		{MID 75}
-		{NameId 64 63}
+		{NameId 10 14}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.rifle" 0x806b
@@ -1114,7 +1130,7 @@
 		}
 		{Player 1}
 		{MID 76}
-		{NameId 10 14}
+		{NameId 57 2}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.rifle" 0x806c
@@ -1129,7 +1145,7 @@
 		}
 		{Player 1}
 		{MID 77}
-		{NameId 57 2}
+		{NameId 47 23}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.rifle" 0x806d
@@ -1143,7 +1159,7 @@
 		}
 		{Player 1}
 		{MID 78}
-		{NameId 47 23}
+		{NameId 44 41}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x806e
@@ -1158,7 +1174,7 @@
 		}
 		{Player 1}
 		{MID 79}
-		{NameId 44 41}
+		{NameId 49 28}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x806f
@@ -1173,7 +1189,7 @@
 		}
 		{Player 1}
 		{MID 80}
-		{NameId 49 28}
+		{NameId 79 92}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x8070
@@ -1187,7 +1203,7 @@
 		}
 		{Player 1}
 		{MID 81}
-		{NameId 79 92}
+		{NameId 55 24}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x8071
@@ -1203,7 +1219,7 @@
 		}
 		{Player 1}
 		{MID 82}
-		{NameId 55 24}
+		{NameId 70 50}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x8072
@@ -1218,7 +1234,7 @@
 		}
 		{Player 1}
 		{MID 83}
-		{NameId 70 50}
+		{NameId 50 41}
 		{FsmState "stand"}
 	}
 	{Human "eng.oficer" 0x8073
@@ -1226,7 +1242,7 @@
 		{Turn -26.8618}
 		{Player 1}
 		{MID 84}
-		{NameId 50 41}
+		{NameId 50 14}
 		{FsmState "stand"}
 	}
 	{Human "eng.tankman" 0x8074
@@ -1882,7 +1898,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 115}
-		{NameId 50 14}
+		{NameId 50 53}
 		{LastItem "enfieldmk3"}
 		{FsmState "board"}
 	}
@@ -1900,7 +1916,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 116}
-		{NameId 50 53}
+		{NameId 72 50}
 		{LastItem "enfieldmk3"}
 		{FsmState "board"}
 	}
@@ -2238,7 +2254,7 @@
 		{DisableObstacles}
 		{Player 1}
 		{MID 138}
-		{NameId 72 50}
+		{NameId 27 28}
 		{LastItem "enfieldmk3"}
 		{FsmState "board"}
 	}
@@ -3164,17 +3180,17 @@
 		{MID 191}
 	}
 	{Entity "mg_cab" 0x80f0
-		{Position 3866.7 -2483.29 134.986}
+		{Position 3866.73 -2483.28 134.361}
 		{Orientation
-			  0.008094   0.999961  -0.003506
-			 -0.999931   0.008064  -0.008583
-			 -0.008555   0.003576   0.999957
+			  0.008094   0.999942  -0.007133
+			 -0.999955   0.008059  -0.005021
+			 -0.004963   0.007173   0.999962
 		}
 		{DisableObstacles}
 	}
 	{Human "eng.infantry.smg" 0x80f1
-		{Position 3776.22 -2788.86 135.717}
-		{Turn -90.4631}
+		{Position 3776.24 -2788.83 136.517}
+		{Turn -90.4634}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -3190,22 +3206,22 @@
 		{FsmState "board"}
 	}
 	{Entity "besa15mm" 0x80f2
-		{Position 3776.09 -2804.71 135.532}
+		{Position 3776.11 -2804.69 136.389}
 		{Orientation
-			 -0.008094  -0.999961   0.003506
-			  0.999931  -0.008064   0.008583
-			 -0.008555   0.003576   0.999957
+			 -0.008094  -0.999942   0.007133
+			  0.999955  -0.008059   0.005021
+			 -0.004963   0.007173   0.999962
 		}
 		{DisableObstacles}
 		{Player 1}
 		{MID 193}
 	}
 	{Entity "besa15mm" 0x80f3
-		{Position 3941.55 -2806.05 136.952}
+		{Position 3941.57 -2806.02 137.22}
 		{Orientation
-			 -0.008094  -0.999961   0.003506
-			  0.999931  -0.008064   0.008583
-			 -0.008555   0.003576   0.999957
+			 -0.008094  -0.999942   0.007133
+			  0.999955  -0.008059   0.005021
+			 -0.004963   0.007173   0.999962
 		}
 		{DisableObstacles}
 		{Player 1}
@@ -3246,8 +3262,8 @@
 		{Turn 153.823}
 	}
 	{Human "eng.infantry.smg" 0x80f9
-		{Position 3941.68 -2790.19 137.137}
-		{Turn -90.4631}
+		{Position 3941.7 -2790.17 137.347}
+		{Turn -90.4634}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -4035,7 +4051,7 @@
 		}
 		{Player 1}
 		{MID 210}
-		{NameId 27 28}
+		{NameId 13 68}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.rifle" 0x8135
@@ -4052,7 +4068,7 @@
 		}
 		{Player 1}
 		{MID 211}
-		{NameId 13 68}
+		{NameId 37 76}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.rifle" 0x8136
@@ -4070,7 +4086,7 @@
 		}
 		{Player 1}
 		{MID 212}
-		{NameId 37 76}
+		{NameId 53 85}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x8137
@@ -4088,7 +4104,7 @@
 		}
 		{Player 1}
 		{MID 213}
-		{NameId 53 85}
+		{NameId 46 55}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x8138
@@ -4103,7 +4119,7 @@
 		}
 		{Player 1}
 		{MID 214}
-		{NameId 46 55}
+		{NameId 50 22}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x8139
@@ -4118,7 +4134,7 @@
 		}
 		{Player 1}
 		{MID 215}
-		{NameId 50 22}
+		{NameId 24 43}
 		{Cover
 			{sector 872.071 4865.78 {type "snipe_cover"}
 				{wall 0 0 879.058 4901.03 879.087 4825.4}
@@ -4137,7 +4153,7 @@
 		}
 		{Player 1}
 		{MID 216}
-		{NameId 24 43}
+		{NameId 42 3}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x813b
@@ -4151,7 +4167,7 @@
 		}
 		{Player 1}
 		{MID 217}
-		{NameId 42 3}
+		{NameId 50 31}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x813c
@@ -4166,7 +4182,7 @@
 		}
 		{Player 1}
 		{MID 218}
-		{NameId 50 31}
+		{NameId 34 83}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x813d
@@ -4182,7 +4198,7 @@
 		}
 		{Player 1}
 		{MID 219}
-		{NameId 34 83}
+		{NameId 19 80}
 		{Cover
 			{sector 871.931 4992.41 {type "snipe_cover"}
 				{wall 0 0 879.269 5027.59 878.543 4951.96}
@@ -4195,7 +4211,7 @@
 		{Turn -14.3089}
 		{Player 1}
 		{MID 220}
-		{NameId 19 80}
+		{NameId 29 1}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.rifle" 0x813f
@@ -4213,7 +4229,7 @@
 		}
 		{Player 1}
 		{MID 221}
-		{NameId 29 1}
+		{NameId 62 18}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.rifle" 0x8140
@@ -4231,7 +4247,7 @@
 		}
 		{Player 1}
 		{MID 222}
-		{NameId 62 18}
+		{NameId 72 18}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.rifle" 0x8141
@@ -4249,7 +4265,7 @@
 		}
 		{Player 1}
 		{MID 223}
-		{NameId 72 18}
+		{NameId 48 91}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.rifle" 0x8142
@@ -4268,7 +4284,7 @@
 		}
 		{Player 1}
 		{MID 224}
-		{NameId 48 91}
+		{NameId 11 95}
 		{Cover
 			{sector 1500.63 5841.08 {type "snipe_cover"}
 				{wall 0 0 1531.64 5833.97 1448.25 5834.27}
@@ -4291,7 +4307,7 @@
 		}
 		{Player 1}
 		{MID 225}
-		{NameId 11 95}
+		{NameId 61 99}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x8144
@@ -4309,7 +4325,7 @@
 		}
 		{Player 1}
 		{MID 226}
-		{NameId 61 99}
+		{NameId 53 8}
 		{FsmState "stand"}
 	}
 	{Human "eng.oficer" 0x8145
@@ -4317,7 +4333,7 @@
 		{Turn -78.9169}
 		{Player 1}
 		{MID 227}
-		{NameId 53 8}
+		{NameId 31 75}
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.mgun" 0x8146
@@ -4332,7 +4348,7 @@
 		}
 		{Player 1}
 		{MID 228}
-		{NameId 31 75}
+		{NameId 76 2}
 		{FsmState "stand"}
 	}
 	{Human "eng.tankman" 0x8147
@@ -4347,7 +4363,7 @@
 		}
 		{Player 1}
 		{MID 229}
-		{NameId 76 2}
+		{NameId 42 90}
 		{FsmState "stand"}
 	}
 	{Human "eng.tankman" 0x8148
@@ -4361,7 +4377,7 @@
 		}
 		{Player 1}
 		{MID 230}
-		{NameId 42 90}
+		{NameId 34 97}
 		{FsmState "stand"}
 	}
 	{Human "eng.tankman" 0x8149
@@ -4369,7 +4385,7 @@
 		{Turn 83.7193}
 		{Player 1}
 		{MID 231}
-		{NameId 34 97}
+		{NameId 56 59}
 		{FsmState "stand"}
 	}
 	{Human "eng.tankman" 0x814a
@@ -6374,8 +6390,8 @@
 		{FsmState "stand"}
 	}
 	{Human "eng.infantry.smg" 0x81be
-		{Position 631.861 -2043.05 185.125}
-		{Turn -129.865}
+		{Position 632.578 -2043.66 180.55}
+		{Turn -129.864}
 		{DisableObstacles}
 		{Player 1}
 		{MID 327}
@@ -6383,8 +6399,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.infantry.smg" 0x8808
-		{Position 607.464 -2043.36 185.125}
-		{Turn -54.8628}
+		{Position 608.181 -2043.96 180.759}
+		{Turn -54.8635}
 		{DisableObstacles}
 		{Player 1}
 		{MID 328}
@@ -6392,8 +6408,8 @@
 		{FsmState "board"}
 	}
 	{Human "eng.infantry.smg" 0x81bf
-		{Position 612.296 -850.03 200.467}
-		{Turn 90.1376}
+		{Position 613.185 -850.777 204.72}
+		{Turn 90.1382}
 		{DisableObstacles}
 		{Player 1}
 		{MID 329}
@@ -7751,7 +7767,7 @@
 				}
 			}
 		}
-		{NameId 56 59}
+		{NameId 59 72}
 		{Cover
 			{sector -2470.56 4455.76 {type "squat_lie"}
 				{wall 0 0 -2416.08 4486.9 -2504.94 4421.96}
@@ -7772,7 +7788,7 @@
 		}
 		{Player 1}
 		{MID 403}
-		{NameId 59 72}
+		{NameId 77 9}
 		{FsmState "stand"}
 	}
 	{Human "x.e.prof_rifle" 0x820a
@@ -7796,7 +7812,7 @@
 				}
 			}
 		}
-		{NameId 77 9}
+		{NameId 14 38}
 		{Cover
 			{sector -2601.21 4639.13 {type "snipe_cover"}
 				{wall 0 0 -2560.85 4580.89 -2625.89 4657.33}
@@ -8679,12 +8695,8 @@
 		{Scale 2.4}
 	}
 	{Human "ger.albert" 0x8232
-		{Position -4702.57 -4406.94 140.934}
-		{Orientation
-			  0.447107   0.867415   0.218041
-			 -0.891811   0.452201   0.013708
-			 -0.078592  -0.204695   0.975627
-		}
+		{Position -4656.59 -4332.32 171.129}
+		{Turn 63.1168}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -8697,17 +8709,12 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 443}
-		{Able {repair 0}{talk 0}{fight 0}}
 		{NameId 100 50}
 		{FsmState "board"}
 	}
 	{Human "ger.franz" 0x9001
-		{Position -4754.15 -4525.27 198.611}
-		{Orientation
-			 -0.452401  -0.891562  -0.021245
-			 -0.891811   0.452203   0.013608
-			  0.002525  -0.025103   0.999683
-		}
+		{Position -4734.58 -4480.78 190.354}
+		{Turn 63.1165}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -8720,76 +8727,15 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 444}
-		{Able {repair 0}{talk 0}{fight 0}}
 		{NameId 132 114}
 		{FsmState "board"}
 	}
-	{Human "ger.ulrich" 0x8233
-		{Position -4734.31 -4482.87 189.398}
-		{Orientation
-			  0.452397   0.891594   0.019946
-			 -0.891811   0.452201   0.013708
-			  0.003203  -0.023989   0.999707
-		}
-		{Extender "inventory"
-			{box
-				{clear}
-				{item "mg34" {cell 0 0}}
-			}
-			{armor "head"
-				{Item "helmet3_ger"}
-			}
-		}
-		{DisableObstacles}
-		{Player 2}
-		{MID 445}
-		{Able {repair 0}{talk 0}{fight 0}}
-		{NameId 123 101}
-		{FsmState "board"}
-	}
-	{Human "ger.karl2" 0x8234
-		{Position -4667.36 -4424.19 134.088}
-		{Orientation
-			  0.891811  -0.452201  -0.013708
-			  0.452397   0.891594   0.019946
-			  0.003203  -0.023989   0.999707
-		}
-		{Extender "inventory"
-			{box
-				{clear}
-				{item "mp40" {cell 0 0}}
-			}
-			{armor "head"
-				{Item "tank_cap1_ger"}
-			}
-		}
-		{DisableObstacles}
-		{Player 2}
-		{MID 446}
-		{Able {repair 0}{talk 0}{fight 0}}
-		{NameId 9 53}
-		{FsmState "board"}
-	}
-	{Human "ger.medic" 0x8235
-		{Position -4660.84 -4411.35 134.376}
-		{Orientation
-			  0.891811  -0.452201  -0.013708
-			  0.452397   0.891594   0.019946
-			  0.003203  -0.023989   0.999707
-		}
-		{DisableObstacles}
-		{Player 2}
-		{MID 447}
-		{Able {repair 0}{talk 0}{fight 0}}
-		{NameId 39 117}
-		{FsmState "board"}
-	}
 	{Human "ger.otto" 0x8236
-		{Position -4656.33 -4334.11 172.588}
+		{Position -4660.99 -4410.22 134.261}
 		{Orientation
-			  0.452393   0.891625   0.018646
-			 -0.891811   0.452203   0.013608
-			  0.003702  -0.022785   0.999734
+			  0.891931  -0.452157  -0.003727
+			  0.452172   0.891914   0.005423
+			  0.000873  -0.006522   0.999978
 		}
 		{Extender "inventory"
 			{box
@@ -8803,7 +8749,6 @@
 		{DisableObstacles}
 		{Player 2}
 		{MID 448}
-		{Able {repair 0}{talk 0}{fight 0}}
 		{NameId 1 133}
 		{FsmState "board"}
 	}
@@ -8938,12 +8883,9 @@
 	{Link 0x8226 To 0x8224 "driver"}
 	{Link 0x8227 To 0x8224 "commander"}
 	{Link 0x8228 To 0x8224 "gunner"}
-	{Link 0x8232 To 0x801b "seat2"}
-	{Link 0x9001 To 0x801c "gunner"}
-	{Link 0x8233 To 0x801b "driver"}
-	{Link 0x8234 To 0x801b "seat3"}
-	{Link 0x8235 To 0x801b "seat1"}
-	{Link 0x8236 To 0x801b "gunner"}
+	{Link 0x8232 To 0x801b "gunner"}
+	{Link 0x9001 To 0x801b "driver"}
+	{Link 0x8236 To 0x801b "seat1"}
 	{Brain 0x8017
 		{LookAround 1}
 	}
@@ -9317,12 +9259,12 @@
 	{Brain 0x8230
 		{HoldPosition}
 	}
-	{Tags 0x801d "pl pl_assign pl_hero hidden"}
-	{Tags 0x801e "pl pl_assign pl_hero hidden"}
-	{Tags 0x801f "pl pl_assign hidden"}
-	{Tags 0x8020 "pl pl_assign hidden"}
-	{Tags 0x8021 "pl pl_assign pl_hero hidden"}
-	{Tags 0x8022 "pl pl_assign pl_hero hidden"}
+	{Tags 0x801d "pl pl_assign pl_hero 17"}
+	{Tags 0x801e "pl pl_assign pl_hero 18"}
+	{Tags 0x801f "pl pl_assign 19"}
+	{Tags 0x8020 "pl pl_assign 20"}
+	{Tags 0x8021 "pl pl_assign pl_hero 21"}
+	{Tags 0x8022 "pl pl_assign pl_hero 22"}
 	{Tags 0x804e "civ"}
 	{Tags 0x804f "civ"}
 	{Tags 0x805a "trn1"}
@@ -9535,14 +9477,11 @@
 	{Tags 0x8061 "chtk"}
 	{Tags 0x8060 "chtk"}
 	{Tags 0x8231 "red"}
-	{Tags 0x801b "бот"}
 	{Tags 0x801c "бот"}
-	{Tags 0x8232 "фантомы"}
-	{Tags 0x9001 "фантомы"}
-	{Tags 0x8233 "фантомы"}
-	{Tags 0x8234 "фантомы"}
-	{Tags 0x8235 "фантомы"}
-	{Tags 0x8236 "фантомы"}
+	{Tags 0x8236 "fant pl"}
+	{Tags 0x8232 "fant"}
+	{Tags 0x9001 "fant"}
+	{Tags 0x801b "bot"}
 	{Helpers
 		{event "inicio" id 0 state 0}
 		{event "trn1" id 1 state 0}
@@ -10132,6 +10071,69 @@
 				}
 			}
 		}
+		{trigger "desant"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 16}
+						{"actors/zone" "vysad"}
+					}
+				}
+			}
+			{actions
+				{"delete"
+					{selector
+						{"actors/tag" "fant"}
+					}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 17}
+					}
+					{"waypoint/uid" 247}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 18}
+					}
+					{approach force}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 19}
+					}
+					{"waypoint/uid" 247}
+					{approach teleport}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 20}
+					}
+					{"waypoint/uid" 247}
+					{approach "teleport & rotate"}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 21}
+					}
+					{"waypoint/uid" 247}
+					{approach "safe teleport"}
+				}
+				{"actor_state"
+					{selector
+						{"actors/mids" 22}
+					}
+					{hide_mode off}
+					{waypoint_only on}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "pl"}
+					}
+					{visible on}
+				}
+			}
+		}
 		{trigger "g00_on"
 			{condition
 				{term 1 "task"
@@ -10546,9 +10548,15 @@
 				}
 				{"actor_to_waypoint"
 					{selector
-						{"actors/mids" 15 16 444 445 446 447 448 449}
+						{"actors/mids" 15 16 444 448 449}
 					}
 					{"waypoint/uid" 245}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "pl"}
+					}
+					{visible off}
 				}
 			}
 		}
@@ -11552,38 +11560,6 @@
 						{"actors/mids" 403}
 					}
 					{"waypoint/uid" 233}
-				}
-			}
-		}
-		{trigger "десант"
-			{condition
-				{term 1 "actors"
-					{selector
-						{"actors/mids" 16}
-						{"actors/zone" "высадка"}
-					}
-				}
-			}
-			{actions
-				{"delete"
-					{selector
-						{"actors/tag" "фантомы"}
-					}
-				}
-				{"actor_to_waypoint"
-					{selector
-						{"actors/tag" "pl"}
-					}
-					{"waypoint/uid" 247}
-					{approach "teleport & rotate"}
-				}
-				{"actor_state"
-					{selector
-						{"actors/tag" "pl"}
-					}
-					{control user}
-					{speed_kph 1}
-					{waypoint_only on}
 				}
 			}
 		}
@@ -12985,6 +12961,11 @@
 			{Name "trn01_open"}
 			{Radius 120}
 		}
+		{zone "circle"
+			{position -2481.08 -2558.12 -70}
+			{Name "vysad"}
+			{Radius 165.287}
+		}
 		{zone "poly"
 			{position 1511.2 4914.44 137}
 			{Name "z_mis10"}
@@ -13056,11 +13037,6 @@
 			{Point -64.8792 204.946}
 			{Point 46.4883 204.372}
 			{Point 48.071 -234.534}
-		}
-		{zone "circle"
-			{position -2483.44 -2558.17 -70}
-			{Name "высадка"}
-			{Radius 166.151}
 		}
 		{task
 			{name "mis01"}

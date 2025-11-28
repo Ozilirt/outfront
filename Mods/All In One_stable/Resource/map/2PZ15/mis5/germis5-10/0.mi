@@ -1,9 +1,9 @@
 {mission
 	{Camera
-		{Position -1156.38 11895.4}
-		{Distance 801}
-		{ViewAngle 0.180372}
-		{YawAngle 62.25}
+		{Position -1283.24 12091.2}
+		{Distance 900}
+		{ViewAngle 0.698132}
+		{YawAngle 61.8975}
 	}
 	{Environment "dayend5"}
 	{User 2}
@@ -18,10 +18,12 @@
 				{item "knife" {cell 4 1}}
 				{item "bandage" 3 {cell 6 2}}
 				{item "grenade rpg40" {cell 6 1}}
+				{item "morphine" 5 {cell 0 0}}
 			}
 		}
 		{Player 2}
 		{MID 1}
+		{Able {personage 1}}
 		{Weaponry
 			{State
 				{Mounted "ppsh"}
@@ -40,16 +42,18 @@
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo mgun" 63 {cell 6 1}}
-				{item "ammo mgun" 63 {cell 6 0}}
+				{item "ammo mgun" 100 {cell 6 1}}
+				{item "ammo mgun" 100 {cell 6 0}}
 				{item "grenade rgd33" {cell 6 2}}
 				{item "knife" {cell 6 3}}
 				{item "bandage" 4 {cell 4 3}}
+				{item "morphine" 5 {cell 0 0}}
+				{item "ammo mgun" 100 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 2}
-		
+		{Able {personage 1}}
 		{Weaponry
 			{State
 				{Mounted "weapon dt"}
@@ -66,17 +70,22 @@
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo rifle" 40 {cell 5 0}}
+				{item "ammo rifle" 100 {cell 5 0}}
 				{item "grenade f1" {cell 6 0}}
 				{item "grenade f1" {cell 6 1}}
 				{item "bayonet" {cell 7 0}}
 				{item "bandage" 4 {cell 6 3}}
 				{item "grenade f1" {cell 6 2}}
+				{item "ammo bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 2 0}}
+				{item "ammo bazooka" {cell 0 1}}
+				{item "weapon bazooka" {cell 0 2}}
+				{item "ammo rifle" 100 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 3}
-		
+		{Able {personage 1}}
 		{Weaponry
 			{State
 				{Mounted "svtautomatic"}
@@ -98,11 +107,12 @@
 				{item "ammo pistol" 70 {cell 6 0}}
 				{item "grenade rpg40" {cell 6 1}}
 				{item "grenade f1" {cell 6 2}}
+				{item "morphine" 5 {cell 0 0}}
 			}
 		}
 		{Player 2}
 		{MID 4}
-		
+		{Able {personage 1}}
 		{Weaponry
 			{State
 				{Mounted "pps"}
@@ -125,10 +135,12 @@
 				{item "grenade f1" {cell 6 1}}
 				{item "dynamite" {cell 6 2}}
 				{item "bandage" 2 {cell 4 1}}
+				{item "morphine" 5 {cell 0 0}}
 			}
 		}
 		{Player 2}
 		{MID 5}
+		{Able {personage 1}}
 		{Weaponry
 			{State
 				{Mounted "ppsh"}
@@ -150,11 +162,12 @@
 				{item "grenade rgd33" {cell 5 0}}
 				{item "bandage" 5 {cell 6 3}}
 				{item "grenade rg42x3" {cell 5 1}}
+				{item "morphine" 5 {cell 0 0}}
 			}
 		}
 		{Player 2}
 		{MID 6}
-		
+		{Able {personage 1}}
 		{Weaponry
 			{State
 				{Mounted "svtautomatic"}
@@ -376,7 +389,7 @@
 		}
 		{Player 0}
 		{MID 19}
-		{NameId 122 37}
+		{NameId 64 61}
 		{LastThrowItem "hackle"}
 		{Cover
 			{sector 2876.42 5432.64 {type "snipe_cover"}
@@ -448,21 +461,21 @@
 		{Turn 77.7217}
 		{Player 0}
 		{MID 28}
-		{NameId 25 113}
+		{NameId 10 13}
 		{FsmState "stand"}
 	}
 	{Human "civilian4" 0x801c
 		{Position 2991.46 10288.5 0}
 		{Player 0}
 		{MID 29}
-		{NameId 62 117}
+		{NameId 57 0}
 		{FsmState "stand"}
 	}
 	{Human "civilian4" 0x801d
 		{Position 3273.69 10292.9 0}
 		{Player 0}
 		{MID 30}
-		{NameId 66 130}
+		{NameId 47 22}
 		{FsmState "stand"}
 	}
 	{Human "hero.potts" 0x801e
@@ -582,14 +595,12 @@
 		{Turn 108.304}
 		{Player 1}
 		{MID 22}
-		
 	}
 	{Entity "blitz-fuel" 0x9001
 		{Position 593.25 9031.32 0}
 		{Turn 18.1639}
 		{Player 1}
 		{MID 47}
-		
 	}
 	{Entity "blitz-ammo3" 0x802f
 		{Position 214.783 8946.16 0}
@@ -990,7 +1001,6 @@
 		}
 		{Player 1}
 		{MID 81}
-		
 		{Chassis
 			{MaxSpeed 3}
 			{Links 79}
@@ -1136,7 +1146,6 @@
 		{Turn 19.3778}
 		{Player 1}
 		{MID 87}
-		
 	}
 	{Human "ger.tank_crew" 0x806a
 		{Position -1404.9 6753.8 0}
@@ -2369,7 +2378,6 @@
 		{Turn -179.354}
 		{Player 1}
 		{MID 158}
-		
 	}
 	{Human "ger.tankman" 0x80b0
 		{Position 4260.67 9817.31 0}
@@ -2738,7 +2746,7 @@
 	}
 	{Human "ger.oficer" 0x80c0
 		{Position 241.496 6744.35 0}
-		{Turn 180}
+		{Turn -180}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -3244,7 +3252,7 @@
 		{DisableObstacles}
 		{Player 0}
 		{MID 210}
-		{NameId 64 61}
+		{NameId 44 40}
 		{FsmState "board"}
 	}
 	{Entity "sdkfz-222e" 0x9017
@@ -3252,7 +3260,6 @@
 		{Turn -148.724}
 		{Player 1}
 		{MID 211}
-		
 	}
 	{Entity "sdkfz234" 0x9018
 		{Position 4192.81 4733.56 0}
@@ -3260,7 +3267,6 @@
 		{TexMod "ambush1"}
 		{Player 1}
 		{MID 212}
-		
 	}
 	{Entity "pz38tc" 0x80dc
 		{Position -1374.17 5741.69 0}
@@ -3268,14 +3274,12 @@
 		{TexMod "n44"}
 		{Player 1}
 		{MID 213}
-		
 	}
 	{Entity "sdkfz232" 0x80dd
 		{Position -20.9321 4596.8 0}
 		{Turn 79.8583}
 		{Player 1}
 		{MID 214}
-		
 	}
 	{Entity "blitz-3.6" 0x80de
 		{Position 591.411 12164.8 0}
@@ -4001,7 +4005,6 @@
 		}
 		{Player 0}
 		{MID 207}
-		
 		{Chassis
 			{Locomotive 1}
 			{MaxSpeed 3}
@@ -4019,7 +4022,7 @@
 		{TexMod "2"}
 		{Player 0}
 		{MID 283}
-		{NameId 10 13}
+		{NameId 49 27}
 		{FsmState "stand"}
 	}
 	{Human "hero.juanita" 0x811c
@@ -4028,7 +4031,7 @@
 		{TexMod "2"}
 		{Player 0}
 		{MID 284}
-		{NameId 57 0}
+		{NameId 79 91}
 		{FsmState "stand"}
 	}
 	{Human "ger.infantry_smg" 0x9025
@@ -4537,7 +4540,6 @@
 		}
 		{Player 1}
 		{MID 208}
-		
 		{Chassis
 			{FuelBag
 				{Remain 20}
@@ -6715,7 +6717,3 @@
 	}
 	{MissionMusic "STOP"}
 }
-
-
-
-

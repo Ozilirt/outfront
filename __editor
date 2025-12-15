@@ -7630,13 +7630,13 @@
 	}
 	{mission
 		{Camera
-			{Position 6713.18 -1784.67}
-			{Distance 893.989}
-			{ViewAngle 0.432869}
-			{YawAngle 14.8375}
+			{Position 6455.07 -1596.2}
+			{Distance 800}
+			{ViewAngle 0.394473}
+			{YawAngle 14.6878}
 		}
 		{Environment "day1"}
-		{User 2}
+		{User 4}
 		{GameProgress 0 0}
 		{Entity "birds" 0x8000
 			{Position 703.139 574.236 29.2194}
@@ -7745,6 +7745,14 @@
 		{Entity "wz33_dot" 0x800d
 			{Position 3529.45 1821.43 90}
 			{Turn 96.1535}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1000 {cell 0 0}}
+					{item "ammo mgun" 1000 {cell 2 0}}
+					{item "ammo mgun" 1000 {cell 4 0}}
+				}
+			}
 			{Player 1}
 			{MID 6}
 		}
@@ -8181,6 +8189,14 @@
 		{Entity "bt-7" 0x802c
 			{Position 6778.96 -898.798 90}
 			{Turn 166.988}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1700 {cell 0 0}}
+					{item "bullet45 ap" 50 {cell 2 0}}
+					{item "bullet45 fg" 27 {cell 0 1}}
+				}
+			}
 			{Player 3}
 			{MID 36}
 			{Weaponry
@@ -8192,6 +8208,12 @@
 		{Entity "ba-20m" 0x802d
 			{Position 6673.97 -871.979 90}
 			{Turn 164.844}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1400 {cell 0 0}}
+				}
+			}
 			{Player 3}
 			{MID 37}
 		}
@@ -8372,6 +8394,12 @@
 			{Position 6554.11 -1706.18 90}
 			{Turn 100.699}
 			{TexMod "n27"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1800 {cell 0 0}}
+				}
+			}
 			{Player 3}
 			{MID 47}
 		}
@@ -8379,6 +8407,12 @@
 			{Position 6621.23 -1828.76 90}
 			{Turn 101.539}
 			{TexMod "n23"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1800 {cell 0 0}}
+				}
+			}
 			{Player 3}
 			{MID 48}
 		}
@@ -8484,8 +8518,12 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "ammo rifle" 40 {cell 7 0}}
+					{item "ammo rifle" 100 {cell 7 0}}
 					{item "svtautomatic" filling "ammo rifle" 10 {cell 0 0}}
+					{item "ammo rifle" 100 {cell 6 0}}
+					{item "grenade m39" {cell 4 0}}
+					{item "grenade m39" {cell 5 0}}
+					{item "grenade m39" {cell 4 1}}
 				}
 			}
 			{DisableObstacles}
@@ -8506,8 +8544,12 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "ammo mgun" 47 {cell 5 0}}
+					{item "ammo mgun" 100 {cell 5 0}}
 					{item "weapon dp" filling "ammo mgun" 47 {cell 0 0}}
+					{item "ammo mgun" 100 {cell 5 1}}
+					{item "grenade m61" {cell 7 0}}
+					{item "grenade m61" {cell 7 1}}
+					{item "grenade m61" {cell 0 2}}
 				}
 			}
 			{DisableObstacles}
@@ -8528,8 +8570,12 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "ammo pistol" 71 {cell 6 0}}
+					{item "ammo pistol" 100 {cell 6 0}}
 					{item "ppsh" filling "ammo pistol" 71 {cell 0 0}}
+					{item "ammo pistol" 100 {cell 4 0}}
+					{item "grenade mk1" {cell 4 1}}
+					{item "grenade mk1" {cell 5 1}}
+					{item "grenade mk1" {cell 6 1}}
 				}
 			}
 			{DisableObstacles}
@@ -8550,8 +8596,12 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "ammo pistol" 71 {cell 6 0}}
+					{item "ammo pistol" 100 {cell 6 0}}
 					{item "ppsh" filling "ammo pistol" 71 {cell 0 0}}
+					{item "ammo pistol" 100 {cell 4 0}}
+					{item "grenade gr31" {cell 6 1}}
+					{item "grenade gr31" {cell 4 1}}
+					{item "grenade gr31" {cell 5 1}}
 				}
 			}
 			{DisableObstacles}
@@ -8573,8 +8623,12 @@
 			{MID 57}
 		}
 		{Human "rus.tank_com" 0x8040
-			{Position -1464.29 6138.87 85.4987}
-			{Turn -23.4318}
+			{Position -1462.25 6140.48 89.6012}
+			{Orientation
+				  0.917102  -0.398375  -0.014856
+				  0.397986   0.917088  -0.023606
+				  0.023028   0.015736   0.999611
+			}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -8594,8 +8648,12 @@
 			{FsmState "board"}
 		}
 		{Human "rus.tankman" 0x8041
-			{Position -1456.11 6158.21 85.5897}
-			{Turn -23.4318}
+			{Position -1454.06 6159.82 89.1082}
+			{Orientation
+				  0.917102  -0.398375  -0.014856
+				  0.397986   0.917088  -0.023606
+				  0.023028   0.015736   0.999611
+			}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -8623,22 +8681,22 @@
 			{MID 60}
 		}
 		{Entity "degtyarev_stan" 0x8043
-			{Position -748.295 5833.88 39.0828}
+			{Position -748.223 5833.66 38.4126}
 			{Orientation
-				  0.882449  -0.470239  -0.012592
-				  0.469932   0.882445  -0.021341
-				  0.021147   0.012915   0.999693
+				  0.882459  -0.470025  -0.018485
+				  0.469801   0.882640  -0.015281
+				  0.023498   0.004801   0.999712
 			}
 			{DisableObstacles}
 			{Player 3}
 			{MID 61}
 		}
 		{Entity "degtyarev_stan" 0x8044
-			{Position -1048.32 5994.25 28.535}
+			{Position -1048.29 5994.08 29.8731}
 			{Orientation
-				 -0.882449   0.470239   0.012592
-				 -0.469932  -0.882445   0.021341
-				  0.021147   0.012915   0.999693
+				 -0.882459   0.470025   0.018485
+				 -0.469801  -0.882640   0.015281
+				  0.023498   0.004801   0.999712
 			}
 			{DisableObstacles}
 			{Player 3}
@@ -8651,8 +8709,12 @@
 			{MID 63}
 		}
 		{Human "rus.tank_com" 0x8046
-			{Position -1287.37 6097.31 85.5897}
-			{Turn -26.5985}
+			{Position -1285.24 6098.8 89.1082}
+			{Orientation
+				  0.893695  -0.448428  -0.014856
+				  0.448039   0.893702  -0.023606
+				  0.023862   0.014440   0.999611
+			}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -8672,8 +8734,12 @@
 			{FsmState "board"}
 		}
 		{Human "rus.tankman" 0x8047
-			{Position -1296.61 6078.44 85.4987}
-			{Turn -26.5985}
+			{Position -1294.48 6079.95 89.6012}
+			{Orientation
+				  0.893695  -0.448428  -0.014856
+				  0.448039   0.893702  -0.023606
+				  0.023862   0.014440   0.999611
+			}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -8695,11 +8761,11 @@
 			{FsmState "board"}
 		}
 		{Human "rus.sailor1" 0x8048
-			{Position -844.763 5886.68 31.0619}
+			{Position -844.714 5886.51 31.0476}
 			{Orientation
-				  0.882449  -0.470239  -0.012592
-				  0.469932   0.882445  -0.021341
-				  0.021147   0.012915   0.999693
+				  0.882459  -0.470025  -0.018485
+				  0.469801   0.882640  -0.015281
+				  0.023498   0.004801   0.999712
 			}
 			{Extender "inventory"
 				{box
@@ -8716,11 +8782,11 @@
 			{FsmState "board"}
 		}
 		{Human "rus.sailor6" 0x8049
-			{Position -952.94 5923.24 30.177}
+			{Position -952.896 5923.07 30.7141}
 			{Orientation
-				 -0.469932  -0.882445   0.021341
-				  0.882449  -0.470239  -0.012592
-				  0.021147   0.012915   0.999693
+				 -0.469801  -0.882640   0.015281
+				  0.882459  -0.470025  -0.018485
+				  0.023498   0.004801   0.999712
 			}
 			{Extender "inventory"
 				{box
@@ -8737,11 +8803,11 @@
 			{FsmState "board"}
 		}
 		{Human "rus.sailor5" 0x804a
-			{Position -1035.86 5987.35 28.3604}
+			{Position -1035.82 5987.19 29.6131}
 			{Orientation
-				 -0.882477   0.470222   0.011292
-				 -0.469934  -0.882446   0.021241
-				  0.019953   0.013438   0.999711
+				 -0.882490   0.470019   0.017186
+				 -0.469804  -0.882640   0.015181
+				  0.022304   0.005323   0.999738
 			}
 			{Extender "inventory"
 				{box
@@ -8756,11 +8822,11 @@
 			{FsmState "board"}
 		}
 		{Human "rus.sailor5" 0x804b
-			{Position -760.761 5840.78 39.2574}
+			{Position -760.689 5840.56 38.6725}
 			{Orientation
-				  0.882422  -0.470256  -0.013892
-				  0.469930   0.882443  -0.021441
-				  0.022341   0.012392   0.999674
+				  0.882429  -0.470031  -0.019785
+				  0.469799   0.882639  -0.015381
+				  0.024693   0.004278   0.999687
 			}
 			{Extender "inventory"
 				{box
@@ -8778,11 +8844,11 @@
 			{FsmState "board"}
 		}
 		{Human "rus.sailor3" 0x804c
-			{Position -880.892 5896.72 33.9971}
+			{Position -880.837 5896.53 34.1492}
 			{Orientation
-				  0.882449  -0.470239  -0.012592
-				  0.469932   0.882445  -0.021341
-				  0.021147   0.012915   0.999693
+				  0.882459  -0.470025  -0.018485
+				  0.469801   0.882640  -0.015281
+				  0.023498   0.004801   0.999712
 			}
 			{Extender "inventory"
 				{box
@@ -8799,11 +8865,11 @@
 			{FsmState "board"}
 		}
 		{Human "rus.sailor1" 0x804d
-			{Position -857.714 5893.63 33.5467}
+			{Position -857.66 5893.45 33.6193}
 			{Orientation
-				  0.882449  -0.470239  -0.012592
-				  0.469932   0.882445  -0.021341
-				  0.021147   0.012915   0.999693
+				  0.882459  -0.470025  -0.018485
+				  0.469801   0.882640  -0.015281
+				  0.023498   0.004801   0.999712
 			}
 			{Extender "inventory"
 				{box
@@ -8820,11 +8886,11 @@
 			{FsmState "board"}
 		}
 		{Human "rus.sailor1" 0x804e
-			{Position -873.373 5910.84 33.6556}
+			{Position -873.32 5910.65 33.9047}
 			{Orientation
-				  0.882449  -0.470239  -0.012592
-				  0.469932   0.882445  -0.021341
-				  0.021147   0.012915   0.999693
+				  0.882459  -0.470025  -0.018485
+				  0.469801   0.882640  -0.015281
+				  0.023498   0.004801   0.999712
 			}
 			{Extender "inventory"
 				{box
@@ -8841,11 +8907,11 @@
 			{FsmState "board"}
 		}
 		{Human "rus.sailor1" 0x804f
-			{Position -957.277 5968.3 28.8864}
+			{Position -957.24 5968.14 29.7996}
 			{Orientation
-				  0.469932   0.882445  -0.021341
-				 -0.882449   0.470239   0.012592
-				  0.021147   0.012915   0.999693
+				  0.469801   0.882640  -0.015281
+				 -0.882459   0.470025   0.018485
+				  0.023498   0.004801   0.999712
 			}
 			{Extender "inventory"
 				{box
@@ -8862,11 +8928,11 @@
 			{FsmState "board"}
 		}
 		{Human "rus.sailor2" 0x8050
-			{Position -970.589 5932.64 30.4289}
+			{Position -970.545 5932.47 31.0838}
 			{Orientation
-				 -0.469932  -0.882445   0.021341
-				  0.882449  -0.470239  -0.012592
-				  0.021147   0.012915   0.999693
+				 -0.469801  -0.882640   0.015281
+				  0.882459  -0.470025  -0.018485
+				  0.023498   0.004801   0.999712
 			}
 			{Extender "inventory"
 				{box
@@ -8905,6 +8971,13 @@
 				  0.117222   0.034813   0.992495
 			}
 			{TexMod "variant1"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1500 {cell 0 0}}
+					{item "bullet37 ap" 32 {cell 2 0}}
+				}
+			}
 			{Player 1}
 			{MID 76}
 		}
@@ -8926,6 +8999,13 @@
 			{Position 3727.51 601.574 90.7523}
 			{Turn -35.5954}
 			{TexMod "variant1"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1500 {cell 0 0}}
+					{item "repair_kit" {cell 2 0}}
+				}
+			}
 			{Player 1}
 			{MID 79}
 		}
@@ -8933,6 +9013,13 @@
 			{Position 3538.35 -557.034 96.5021}
 			{Turn -8.09302}
 			{TexMod "variant1"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1500 {cell 0 0}}
+					{item "bullet37 ap" 32 {cell 2 0}}
+				}
+			}
 			{Player 1}
 			{MID 80}
 		}
@@ -8940,12 +9027,24 @@
 			{Position -1415.37 973.207 18.6699}
 			{Turn 1.98569}
 			{TexMod "5579"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1500 {cell 0 0}}
+				}
+			}
 			{Player 1}
 			{MID 81}
 		}
 		{Entity "wz-34" 0x8058
 			{Position -1453.91 970.282 18.3169}
 			{Turn 2.8177}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1500 {cell 0 0}}
+				}
+			}
 			{Player 1}
 			{MID 82}
 		}
@@ -9802,11 +9901,11 @@
 			{MID 129}
 		}
 		{Entity "wz33_stan" 0x8085
-			{Position 5268.96 4845.44 14.3664}
+			{Position 5269.48 4846.32 15.0707}
 			{Orientation
-				 -0.971256   0.237729  -0.018498
-				 -0.236468  -0.970267  -0.053479
-				 -0.030656  -0.047558   0.998398
+				 -0.970997   0.239457  -0.004698
+				 -0.239380  -0.970940  -0.013019
+				 -0.007677  -0.011515   0.999904
 			}
 			{DisableObstacles}
 			{Player 1}
@@ -9816,15 +9915,22 @@
 			{Position 3910.77 1861.93 1}
 			{Turn 176.258}
 			{TexMod "type2"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "morphine" 3 {cell 0 0}}
+					{item "repair_kit" {cell 2 0}}
+				}
+			}
 			{Player 1}
 			{MID 131}
 		}
 		{Human "pol.gunner" 0x8087
-			{Position 5364.16 4823.93 18.0664}
+			{Position 5364.7 4824.71 17.3515}
 			{Orientation
-				 -0.974376   0.224101  -0.019243
-				 -0.222827  -0.973405  -0.053209
-				 -0.030656  -0.047558   0.998398
+				 -0.974157   0.225820  -0.004879
+				 -0.225742  -0.974101  -0.012951
+				 -0.007677  -0.011515   0.999904
 			}
 			{DisableObstacles}
 			{Player 1}
@@ -9833,11 +9939,11 @@
 			{FsmState "board"}
 		}
 		{Human "pol.infantry_smg" 0x8088
-			{Position 5282.74 4841.83 14.6179}
+			{Position 5283.26 4842.69 15.1347}
 			{Orientation
-				 -0.971216   0.237791  -0.019796
-				 -0.236465  -0.970263  -0.053579
-				 -0.031942  -0.047346   0.998369
+				 -0.970987   0.239472  -0.005998
+				 -0.239379  -0.970939  -0.013119
+				 -0.008964  -0.011301   0.999897
 			}
 			{Extender "inventory"
 				{box
@@ -9856,11 +9962,11 @@
 			{FsmState "board"}
 		}
 		{Human "pol.infantry_smg" 0x8089
-			{Position 5323.32 4819.66 13.6423}
+			{Position 5323.77 4820.39 14.0253}
 			{Orientation
-				 -0.663752  -0.668901   0.334777
-				  0.729276  -0.678081   0.091054
-				  0.166067   0.304592   0.937879
+				 -0.657043  -0.654675   0.373853
+				  0.729967  -0.676276   0.098627
+				  0.188227   0.337712   0.922222
 			}
 			{DisableObstacles}
 			{Player 1}
@@ -9869,11 +9975,11 @@
 			{FsmState "board"}
 		}
 		{Human "pol.infantry_rifle" 0x808a
-			{Position 5341.7 4808.59 12.3647}
+			{Position 5342.09 4809.23 12.7248}
 			{Orientation
-				 -0.917255   0.275284   0.288034
-				 -0.326704  -0.933439  -0.148245
-				  0.227980  -0.230058   0.946063
+				 -0.909864   0.287878   0.298958
+				 -0.331713  -0.937309  -0.106950
+				  0.249353  -0.196458   0.948243
 			}
 			{DisableObstacles}
 			{Player 1}
@@ -9882,11 +9988,11 @@
 			{FsmState "board"}
 		}
 		{Human "pol.infantry_rifle" 0x808b
-			{Position 5297.1 4853.4 13.3699}
+			{Position 5297.6 4854.16 13.1407}
 			{Orientation
-				  0.177640   0.819190   0.545278
-				 -0.974376   0.224101  -0.019243
-				 -0.137962  -0.527888   0.838008
+				  0.191654   0.837814   0.511168
+				 -0.974157   0.225820  -0.004879
+				 -0.119520  -0.497022   0.859442
 			}
 			{Extender "inventory"
 				{box
@@ -10260,10 +10366,14 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "ammo pistol" 71 {cell 4 0}}
-					{item "grenade rgd33" {cell 6 1}}
+					{item "ammo pistol" 100 {cell 4 0}}
+					{item "ptrd" {cell 0 2}}
+					{item "ammo ptr" 5 {cell 0 0}}
+					{item "ammo ptr" 5 {cell 2 0}}
+					{item "ammo ptr" 5 {cell 0 1}}
+					{item "ammo pistol" 100 {cell 2 1}}
 					{item "grenade rgd33" {cell 4 1}}
-					{item "ammo pistol" 71 {cell 6 0}}
+					{item "morphine" 3 {cell 6 0}}
 				}
 			}
 			{Player 2}
@@ -10285,53 +10395,31 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "ppsh" filling "ammo pistol" 71 {cell 0 0}}
-					{item "ammo pistol" 71 {cell 4 0}}
-					{item "ammo pistol" 71 {cell 4 1}}
-					{item "grenade rpg40" {cell 6 0}}
-					{item "grenade f1" {cell 6 2}}
-					{item "bandage" 4 {cell 6 3}}
-					{item "grenade f1" {cell 7 2}}
-					{item "grenade molotov_coctail" {cell 6 1}}
+					{item "morphine" 3 {cell 5 0}}
+					{item "ammo pistol" 100 {cell 0 2}}
+					{item "ammo pistol" 100 {cell 2 2}}
+					{item "bandage" 4 {cell 4 2}}
+					{item "grenade f1" {cell 7 0}}
+					{item "grenade f1" {cell 7 1}}
+					{item "weapon bazooka" {cell 0 0}}
+					{item "ammo bazooka" {cell 6 2}}
+					{item "ammo bazooka" {cell 0 3}}
+					{item "ammo bazooka" {cell 2 3}}
+					{item "ammo bazooka" {cell 4 3}}
+					{item "ammo pistol" 100 {cell 6 3}}
 				}
 			}
 			{Player 2}
 			{MID 201}
-			{NameId 32 14}
-			{FsmState "squat"}
-		}
-		{Human "rus.sailor9" 0x8802
-			{Position 6727.68 -1697.58 90}
-			{Turn 138.761}
-			{Impregnability}
-			{Extender "inventory"
-				{box
-					{clear}
-					{item "ammo rifle" 40 {cell 5 0}}
-					{item "knife" {cell 6 0}}
-					{item "bandage" 5 {cell 6 1}}
-					{item "dynamite" {cell 6 2}}
-					{item "grenade smoke" {cell 4 0}}
-					{item "grenade pwm1" {cell 0 0}}
-					{item "grenade type3at" {cell 2 0}}
-					{item "grenade n73at" {cell 0 1}}
-					{item "grenade m24x5" {cell 2 1}}
-					{item "grenade rg42x3" {cell 4 1}}
-					{item "grenade rpg43" {cell 0 2}}
-					{item "morphine" 5 {cell 2 2}}
-				}
-			}
-			{Player 2}
-			{MID 202}
 			{Weaponry
 				{State
-					{Mounted "svtautomatic"}
+					{Mounted "ppsh"}
 					{Weapon
-						{Ammo "ammo rifle" 10}
+						{Ammo "ammo pistol" 71}
 					}
 				}
 			}
-			{NameId 40 1}
+			{NameId 32 14}
 			{FsmState "squat"}
 		}
 		{Human "rus.sailor9" 0x8803
@@ -10342,39 +10430,20 @@
 				{box
 					{clear}
 					{item "svtautomatic" filling "ammo rifle" 10 {cell 0 0}}
-					{item "ammo rifle" 40 {cell 5 0}}
+					{item "ammo rifle" 100 {cell 5 0}}
 					{item "dynamite" {cell 6 2}}
 					{item "grenade smoke" {cell 4 0}}
 					{item "knife" {cell 6 0}}
 					{item "bandage" 4 {cell 6 1}}
+					{item "ammo rifle" 100 {cell 5 1}}
+					{item "ammo rifle" 100 {cell 5 2}}
+					{item "morphine" 3 {cell 0 2}}
+					{item "grenade rpg40" {cell 2 2}}
 				}
 			}
 			{Player 2}
 			{MID 203}
 			{NameId 87 24}
-			{FsmState "squat"}
-		}
-		{Human "rus.sailor2" 0x8804
-			{Position 6737.49 -1749.7 90}
-			{Turn 143.519}
-			{Extender "inventory"
-				{box
-					{clear}
-					{item "ammo mgun" 63 {cell 5 0}}
-					{item "grenade f1" {cell 7 0}}
-				}
-			}
-			{Player 2}
-			{MID 204}
-			{Weaponry
-				{State
-					{Mounted "weapon dt"}
-					{Weapon
-						{Ammo "ammo mgun" 63}
-					}
-				}
-			}
-			{NameId 51 92}
 			{FsmState "squat"}
 		}
 		{Human "rus.sailor8" 0x8805
@@ -10383,22 +10452,21 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "ammo pistol" 71 {cell 6 0}}
-					{item "ammo pistol" 71 {cell 4 0}}
+					{item "ammo pistol" 100 {cell 6 0}}
+					{item "ammo pistol" 100 {cell 4 0}}
 					{item "grenade rgd33" {cell 6 1}}
 					{item "grenade rgd33" {cell 4 1}}
+					{item "ppsh" filling "ammo pistol" 71 {cell 0 0}}
+					{item "ammo pistol" 100 {cell 6 2}}
+					{item "ammo pistol" 100 {cell 6 3}}
+					{item "morphine" 3 {cell 0 2}}
+					{item "grenade rpg40" {cell 2 2}}
+					{item "grenade rpg40" {cell 4 2}}
+					{item "grenade molotov_coctail" {cell 2 3}}
 				}
 			}
 			{Player 2}
 			{MID 205}
-			{Weaponry
-				{State
-					{Mounted "ppsh"}
-					{Weapon
-						{Ammo "ammo pistol" 71}
-					}
-				}
-			}
 			{NameId 11 24}
 			{FsmState "lie"}
 		}
@@ -10701,6 +10769,12 @@
 			{Position 898.534 -440.648 0}
 			{Turn 45.8581}
 			{TexMod "5561"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1500 {cell 0 0}}
+				}
+			}
 			{Player 1}
 			{MID 168}
 		}
@@ -11801,18 +11875,13 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "morphine" {cell 0 0}}
-					{item "morphine" {cell 3 0}}
-					{item "morphine" {cell 6 0}}
-					{item "medkit" filling "drug" 100 {cell 5 4}}
-					{item "medkit" filling "drug" 100 {cell 0 4}}
+					{item "morphine" 6 {cell 0 0}}
+					{item "medkit" 2 filling "drug" 100 {cell 0 4}}
 					{item "bandage" 10 {cell 1 3}}
 					{item "bandage" 10 {cell 3 3}}
-					{item "bandage" 10 {cell 5 3}}
-					{item "bandage" 10 {cell 4 2}}
-					{item "bandage" 10 {cell 2 2}}
-					{item "bandage" 10 {cell 6 2}}
-					{item "bandage" 10 {cell 0 2}}
+					{item "bandage" 20 {cell 0 2}}
+					{item "bandage" 10 {cell 2 0}}
+					{item "bandage" 20 {cell 2 2}}
 				}
 			}
 		}
@@ -11837,6 +11906,7 @@
 					{item "grenade smoke" 2 {cell 4 2}}
 					{item "grenade smoke" 2 {cell 5 2}}
 					{item "axe" {cell 2 3}}
+					{item "repair_kit" {cell 0 3}}
 				}
 			}
 		}
@@ -11846,7 +11916,7 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "ammo pistol" 35 {cell 0 0}}
+					{item "ammo pistol" 1035 {cell 0 0}}
 					{item "ammo pistol" 35 {cell 0 1}}
 					{item "ammo pistol" 35 {cell 0 2}}
 					{item "ammo pistol" 35 {cell 0 3}}
@@ -11879,7 +11949,7 @@
 			{Extender "inventory"
 				{box
 					{clear}
-					{item "ammo mgun" 20 {cell 0 0}}
+					{item "ammo mgun" 1020 {cell 0 0}}
 					{item "ammo mgun" 20 {cell 0 1}}
 					{item "ammo mgun" 20 {cell 0 2}}
 					{item "ammo mgun" 20 {cell 2 0}}
@@ -11892,7 +11962,7 @@
 					{item "ammo mgun" 20 {cell 4 2}}
 					{item "ammo mgun" 20 {cell 6 2}}
 					{item "ammo rifle" 10 {cell 0 5}}
-					{item "ammo rifle" 10 {cell 0 4}}
+					{item "ammo rifle" 1010 {cell 0 4}}
 					{item "ammo rifle" 10 {cell 1 4}}
 					{item "ammo rifle" 10 {cell 1 5}}
 					{item "ammo rifle" 10 {cell 2 4}}
@@ -12184,6 +12254,12 @@
 			{Position 69.8027 3510.93 137}
 			{Turn -63.8793}
 			{TexMod "poland"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1900 {cell 0 0}}
+				}
+			}
 			{Player 1}
 			{MID 226}
 		}
@@ -12191,6 +12267,12 @@
 			{Position -59.7616 3821.76 136.6}
 			{Turn -136.097}
 			{TexMod "poland"}
+			{Extender "inventory"
+				{box
+					{clear}
+					{item "ammo mgun" 1900 {cell 0 0}}
+				}
+			}
 			{Player 1}
 			{MID 227}
 		}
@@ -12434,6 +12516,22 @@
 			{NameId 32 25}
 			{LastItem "vis"}
 			{FsmState "board"}
+		}
+		{Human "denpetrov" 0x813c
+			{Position 6773.58 -1706.74 90}
+			{Turn 160.707}
+			{Player 4}
+			{MID 246}
+			{NameId 38 79}
+			{FsmState "stand"}
+		}
+		{Human "pavpetrov" 0x813d
+			{Position 6729.47 -1651.37 90}
+			{Turn 110.144}
+			{Player 4}
+			{MID 247}
+			{NameId 32 26}
+			{FsmState "stand"}
 		}
 		{Link 0x8010 To 0x800d "gunner"}
 		{Link 0x8012 To 0x800c "gunner"}
@@ -12701,18 +12799,7 @@
 			{HoldPosition}
 			{Control 1}
 		}
-		{Brain 0x8802
-			{ReturnFire}
-			{HoldPosition}
-			{Control 1}
-			{FixInventory}
-		}
 		{Brain 0x8803
-			{ReturnFire}
-			{HoldPosition}
-			{Control 1}
-		}
-		{Brain 0x8804
 			{ReturnFire}
 			{HoldPosition}
 			{Control 1}
@@ -12771,9 +12858,7 @@
 		{Tags 0x8027 "p1"}
 		{Tags 0x8800 "pl pl_assign"}
 		{Tags 0x8801 "pl pl_assign"}
-		{Tags 0x8802 "pl pl_assign pl_hero"}
 		{Tags 0x8803 "pl pl_assign pl_hero"}
-		{Tags 0x8804 "pl pl_assign pl_hero"}
 		{Tags 0x8805 "pl pl_assign"}
 		{Tags 0x803f "ferry2"}
 		{Tags 0x8045 "ferry1"}
@@ -12842,6 +12927,8 @@
 		{Tags 0x8037 "ally"}
 		{Tags 0x8038 "ally"}
 		{Tags 0x8139 "wz34"}
+		{Tags 0x813c "pl pl_assign pl_hero"}
+		{Tags 0x813d "pl pl_assign pl_hero"}
 		{Helpers
 			{event "convoy_on" id 0 state 0}
 			{event "fish" id 1 state 0}
@@ -13960,13 +14047,13 @@
 						{delay 30}
 					}
 					{"timer"
-						{time 3600}
+						{time 10800}
 						{title "mission/training_camp9/timer"}
 					}
 					{"event"
 						{event 15}
 						{mode set}
-						{delay 3600}
+						{delay 10800}
 					}
 					{"task"
 						{name "mis3"}

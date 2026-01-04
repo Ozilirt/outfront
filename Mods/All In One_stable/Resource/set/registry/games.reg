@@ -1760,7 +1760,103 @@
 			}
 		}
 	}
-
+	{"18. Operation Houndsworth (UK)"
+		{name "mission/18_/name"}
+		{multiplayer "1"}
+		{background "background/eng2:eng2"
+			{screenshot "/video/hound/hdw.ebm"}
+			{media "fau bkg"}
+		}
+		{intro
+			{media "oh intro"}
+			{text "mission/briefing/600_INT"}
+		}
+		{outro   
+                      	{media "oh intro"}
+			{text "mission/briefing/600_OUT"}
+		}
+		{missions
+			{"Insertion"
+				{name "mission/18_1/name"}
+				{coopBreed "eng.infantry.smg"}
+				{scene "600-sas/600_1-para_arrive:0"}
+				{intro
+					{video "loading_2_1"}
+					{background "/video/hound/hdw.ebm"}
+					{text "mission/briefing/600_1"}
+				}
+				{outro
+					{text "mission/briefing/600_xf"}
+				}
+			}
+			{"Lormes"
+				{name "mission/18_2/name"}
+				{coopBreed "eng.infantry.smg"}
+				{scene "600-sas/600_2-lormes:0"}
+				{intro
+					{video "loading_2_2"}
+					{background "/video/hound/hdw.ebm"}
+					{text "mission/briefing/600_2"}
+				}
+				{outro
+					{text "mission/briefing/600_xf"}
+				}
+			}
+			{"Base Camp 1"
+			        {name "mission/18_3/name"}
+				{scene "600-sas/600_3-base01:0"}
+				{coopBreed "eng.infantry.smg"}
+				{name "mission/2_3/name"}
+				{intro
+					{video "loading_2_3"}
+					{background "/video/hound/hdw.ebm"}
+					{text "mission/briefing/600_3"}
+				}
+				{outro
+					{text "mission/briefing/600_xf"}
+				}
+			}
+			{"Corbigny"
+				{name "mission/18_4/name"}
+				{scene "600-sas/600_4-corbigny:0"}
+				{coopBreed "eng.infantry.smg"}
+				{intro
+					{video "loading_2_4"}
+					{background "/video/hound/hdw.ebm"}
+					{text "mission/briefing/600_4"}
+				}
+				{outro
+					{text "mission/briefing/600_xf"}
+				}
+			}
+			{"Base Camp 2"
+				{name "mission/18_5/name"}
+				{scene "600-sas/600_5-base02:0"}
+				{coopBreed "eng.infantry.smg"}
+				{intro
+					{video "loading_2_5"}
+					{background "/video/hound/hdw.ebm"}
+					{text "mission/briefing/600_5"}
+				}
+				{outro
+					{text "mission/briefing/600_xf"}
+				}
+			}
+			{"Cervon"
+				{name "mission/18_6/name"}
+				{scene "600-sas/600_6-cervon:0"}
+				{coopBreed "eng.infantry.smg"}
+				{intro
+					{video "loading_2_6"}
+					{background "/video/hound/hdw.ebm"}
+					{text "mission/briefing/600_6"}
+				}
+				{outro
+					{text "mission/briefing/600_xf"}
+				}
+			}
+		}
+	}
 }
 ; legend: 0 - USSR, 1 - USA, 2 - GER, 3 - GBR, 4 - JAP
 ; символ пути "/" должен быть заменен на "\"

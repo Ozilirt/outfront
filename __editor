@@ -1417,7 +1417,7 @@
 		}
 		{Entity "brok_wall4" 0xf9
 			{Position 619.074 1017.41 31.3517}
-			{Turn 13.1973}
+			{Turn 11.6024}
 			{Constrain surface}
 		}
 		{Entity "brok_wall4" 0xfa
@@ -5721,18 +5721,17 @@
 	}
 	{mission
 		{Camera
-			{Position 1540.55 3835.77}
-			{Distance 590.56}
-			{ViewAngle 0.489745}
-			{YawAngle 0.796959}
+			{Position 1525.53 3935.35}
+			{Distance 800}
+			{ViewAngle 0.524762}
+			{YawAngle -5.2605}
 		}
 		{Environment "moon_night_rain"}
 		{User 1}
 		{GameProgress 0 0}
-		{Entity "willysmb" 0x8000
+		{Entity "willysmb_p" 0x8000
 			{Position 440.192 2090.07 0}
 			{Turn -93.8141}
-			{TexMod "ambush2"}
 			{Player 1}
 			{MID 1}
 			{Chassis
@@ -5843,20 +5842,20 @@
 			{FsmState "stand"}
 		}
 		{Entity "dog" 0x801f
-			{Position 1214.56 2237.63 43.1082}
-			{Turn -172.087}
+			{Position 1416.49 3826.88 0}
+			{Turn 26.4738}
 			{Player 2}
 			{MID 23}
 		}
 		{Entity "dog" 0x801e
-			{Position 1034.91 2569.14 -10.5771}
-			{Turn -7.55796}
+			{Position 1795.01 3481.73 38.016}
+			{Turn -54.5845}
 			{Player 2}
 			{MID 24}
 		}
 		{Entity "dog" 0x801d
-			{Position 678.456 3376.53 0}
-			{Turn 34.5235}
+			{Position 739.213 2743.19 1}
+			{Turn -179.365}
 			{Player 2}
 			{MID 25}
 		}
@@ -5954,8 +5953,8 @@
 			{FsmState "stand"}
 		}
 		{Human "ger.infantry_smg" 0x8014
-			{Position 1189.94 3747.77 0}
-			{Turn 31.5298}
+			{Position 1918.13 2895.3 0}
+			{Turn -135.461}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -5971,8 +5970,8 @@
 			{FsmState "stand"}
 		}
 		{Human "ger.infantry_rifle" 0x8013
-			{Position 1380.25 3858.33 7.64081}
-			{Turn 32.9664}
+			{Position 2183.09 2901.56 0}
+			{Turn -167.633}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -5986,8 +5985,8 @@
 			{FsmState "stand"}
 		}
 		{Human "ger.infantry_smg" 0x8012
-			{Position 2198.28 2904.88 0}
-			{Turn -167.498}
+			{Position 156.828 2950.97 0}
+			{Turn 149.737}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -6003,8 +6002,8 @@
 			{FsmState "stand"}
 		}
 		{Human "ger.infantry_rifle" 0x8011
-			{Position 2158.67 2896.2 0}
-			{Turn -167.633}
+			{Position 222.531 2941.31 0}
+			{Turn 137.66}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -6018,8 +6017,8 @@
 			{FsmState "stand"}
 		}
 		{Human "ger.infantry_smg" 0x8007
-			{Position 1604.49 3749.07 8.9296}
-			{Turn -53.6987}
+			{Position 1225.24 2539.79 -16}
+			{Turn 172.231}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -6035,8 +6034,8 @@
 			{FsmState "stand"}
 		}
 		{Human "ger.infantry_rifle" 0x8010
-			{Position 1787.13 3763.29 52.3414}
-			{Turn -62.5662}
+			{Position 1331.18 2555.32 -12.9448}
+			{Turn -166.011}
 			{Extender "inventory"
 				{box
 					{clear}
@@ -6055,8 +6054,8 @@
 			{MID 26}
 		}
 		{Entity "rabbit" 0x800e
-			{Position 517.345 1860.28 0}
-			{Turn -79.8005}
+			{Position 602.843 1940.02 4.28622}
+			{Turn 136.736}
 			{Player 3}
 			{MID 27}
 		}
@@ -6165,10 +6164,9 @@
 			{NameId 46 53}
 			{FsmState "stand"}
 		}
-		{Entity "willysmb" 0x8001
+		{Entity "willysmb_p" 0x8001
 			{Position 386.459 2101.61 0}
 			{Turn -70.56}
-			{TexMod "ambush2"}
 			{Player 1}
 			{MID 2}
 			{Chassis
@@ -6206,43 +6204,49 @@
 		{Brain 0x8007
 			{WaypointProcessor
 				{Stage 1}
-				{To 4}
-				{Next 1}
+				{To 2}
+				{Next 3}
+				{Stopped}
 			}
 		}
 		{Brain 0x8010
 			{WaypointProcessor
 				{Stage 1}
-				{To 4}
-				{Next 1}
+				{To 1}
+				{Next 2}
+				{Stopped}
 			}
 		}
 		{Brain 0x8011
 			{WaypointProcessor
 				{Stage 1}
-				{To 1}
-				{Next 2}
+				{To 2}
+				{Next 3}
+				{Stopped}
 			}
 		}
 		{Brain 0x8012
 			{WaypointProcessor
 				{Stage 1}
-				{To 1}
-				{Next 2}
+				{To 2}
+				{Next 3}
+				{Stopped}
 			}
 		}
 		{Brain 0x8013
 			{WaypointProcessor
 				{Stage 1}
-				{To 3}
-				{Next 4}
+				{To 1}
+				{Next 2}
+				{Stopped}
 			}
 		}
 		{Brain 0x8014
 			{WaypointProcessor
 				{Stage 1}
-				{To 3}
-				{Next 4}
+				{To 1}
+				{Next 2}
+				{Stopped}
 			}
 		}
 		{Brain 0x8015
@@ -6268,24 +6272,27 @@
 			{HoldFire}
 			{WaypointProcessor
 				{Stage 1}
-				{To 0}
+				{To 4}
 				{Next 1}
+				{Stopped}
 			}
 		}
 		{Brain 0x801e
 			{HoldFire}
 			{WaypointProcessor
 				{Stage 1}
-				{To 1}
-				{Next 2}
+				{To 4}
+				{Next 1}
+				{Stopped}
 			}
 		}
 		{Brain 0x801d
 			{HoldFire}
 			{WaypointProcessor
 				{Stage 1}
-				{To 3}
-				{Next 4}
+				{To 2}
+				{Next 3}
+				{Stopped}
 			}
 		}
 		{Brain 0x800f
@@ -6327,15 +6334,13 @@
 			{event "exitopen" id 1 state 0}
 			{trigger "failed"
 				{condition
-					{type 2}
-					{expression "!1"}
 					{term 1 "actors"
 						{selector
-							{"actors/player" "1"}
+							{"actors/tag" "pl"}
 							{"actors/type" human}
 							{"actors/state" "not dead"}
 						}
-						{"limits/>=" 0}
+						{"limits/<<=" 0}
 					}
 				}
 				{actions
@@ -6373,6 +6378,20 @@
 					{"task"
 						{name "primary1"}
 					}
+					{"actor_state"
+						{selector
+							{"actors/mids" 22 23 24}
+							{"actors/state" "not dead"}
+						}
+						{hold_position off}
+						{fire_mode open}
+					}
+					{"actor_fire"
+						{selector
+							{"actors/mids" 23 24 22}
+						}
+						{deviate}
+					}
 				}
 			}
 			{trigger "tasks/primary1_complete"
@@ -6386,6 +6405,7 @@
 							{"actors/type" human}
 							{"actors/state" "not dead"}
 						}
+						{"limits/>=" 1}
 					}
 					{term 2 "actors"
 						{selector
@@ -6394,6 +6414,7 @@
 							{"actors/type" human}
 							{"actors/state" "not dead"}
 						}
+						{"limits/>=" 1}
 					}
 				}
 				{actions
@@ -6418,13 +6439,14 @@
 			{trigger "tasks/primary2_complete"
 				{condition
 					{type 2}
-					{expression "!1"}
+					{expression "1"}
 					{term 1 "actors"
 						{selector
 							{"actors/player" "2"}
 							{"actors/type" human}
 							{"actors/state" "not dead"}
 						}
+						{"limits/<<=" 0}
 					}
 				}
 				{actions

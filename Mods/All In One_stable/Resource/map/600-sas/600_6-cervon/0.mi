@@ -8,7 +8,7 @@
 	{Environment "main-rus2"}
 	{User 1}
 	{GameProgress 0 0}
-	{Entity "willysmb" 0x8000
+	{Entity "willysmb_p" 0x8000
 		{Position 3170.603516 4689.317871 -1.404142}
 		{Turn -90.000000}
 		{Player 1}
@@ -230,7 +230,7 @@
 		{FsmState "stand"}
 		{Breed "sas"}
 	}
-	{Entity "willysmb" 0x8064
+	{Entity "willysmb_p" 0x8064
 		{Position 3335.091553 991.676147 0.186629}
 		{Turn -172.875000}
 		{Player 1}
@@ -274,7 +274,7 @@
 			}
 		}
 	}
-	{Entity "willysmb" 0x8063
+	{Entity "willysmb_p" 0x8063
 		{Position 3245.485107 971.201599 -0.034742}
 		{Turn -172.875000}
 		{Player 1}
@@ -2724,7 +2724,7 @@
 			}
 			{actions
 				{"message"
-					{"text" "mission/600_6/begin"}
+					{"text" "mission/18_6/begin"}
 					{"event_on_next" 3}
 					{"event_on_cancel" 3}
 				}
@@ -2838,7 +2838,7 @@
 				}
 				{"timer"
 					{"time" "60"}
-					{"title" "Reinforcments:"}
+					{"title" "Подкрепление:"}
 				}
 				{"event"
 					{"event" 0}
@@ -4132,43 +4132,43 @@
 		}
 		{task
 			{"name" "primary1"}
-			{"desc" "Zone 1 : WMB"}
+			{"desc" "Зона 1 : WMB"}
 			{"primary"}
 			{"point" "point_1"}
 		}
 		{task
 			{"name" "primary2"}
-			{"desc" "Zone 2 : M8 Scott"}
+			{"desc" "Зона 2 : M8 Scott"}
 			{"primary"}
 			{"point" "point_2"}
 		}
 		{task
 			{"name" "primary3"}
-			{"desc" "Zone 3 : M4a3 sherman"}
+			{"desc" "Зона 3 : M4a3 sherman"}
 			{"primary"}
 			{"point" "point_3"}
 		}
 		{task
 			{"name" "primary4"}
-			{"desc" "Zone 4 : M3A1"}
+			{"desc" "Зона 4 : M3A1"}
 			{"primary"}
 			{"point" "point_4"}
 		}
 		{task
 			{"name" "primary5"}
-			{"desc" "Zone 5 : M36"}
+			{"desc" "Зона 5 : M36"}
 			{"primary"}
 			{"point" "point_5"}
 		}
 		{task
 			{"name" "primary6"}
-			{"desc" "Zone 6 : Victory"}
+			{"desc" "Зона 6 : Победа"}
 			{"primary"}
 			{"point" "point_6"}
 		}
 		{task
 			{"name" "primary7"}
-			{"desc" "Note: You can only take Zone 6 after 1 to 5"}
+			{"desc" "Примечание: Вы можете перейти в зону 6 только после 1-5"}
 			{"primary"}
 		}
 	}

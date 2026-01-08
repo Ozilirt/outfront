@@ -303,6 +303,30 @@
 		{maxRange}					; m
 	)
 }
+{weapon "stensd" from "smg"
+	{fireSound	"pistol_shot_silent.welrod"}
+	{reloadSound "reload.sten_r"}
+	{maxRange 55}					; m
+	{spreading
+		{SpreadRadius 3.0}; m
+		{SpreadPower	3}
+
+	}
+	{recoveryTime 0.1}			; s
+	{rechargeTime 3}			; s
+	{speed 220}					; m/s
+	{Automatic}
+	{traceFreq 0.5}
+	{piercing   10 3  30 3   70 0}
+	{healthing 30 22 100 0}
+	{burst
+		{short 2.5 1.5}
+		{long 7.5 1.5}
+	}	
+	(mod "mp"
+		{maxRange}					; m
+	)
+}
 {weapon "stenmk5" from "smg"
 	{fireSound	"smg_shot.stenmk5"}
 	{reloadSound "reload.sten_r"}

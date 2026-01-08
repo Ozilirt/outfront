@@ -310,6 +310,11 @@
 		{call "feather"}
 	}
 	{on contact
+		; Урон от укуса крокодила
+		{if effector "human"
+			{health_damage_count "hit" "damage" "die" "crush" 40}
+		}
+		; Старая логика звука при падении
 		{if velocity 4
 			{call "feather"}
 		}

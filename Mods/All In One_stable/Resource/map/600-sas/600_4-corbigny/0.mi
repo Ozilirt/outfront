@@ -1,74 +1,17 @@
 {mission
 	{Camera
-		{Position 3034.889893 3495.453125}
-		{Distance 558.624817}
-		{ViewAngle 0.501912}
-		{YawAngle 0.160749}
+		{Position 3018.93 3641.84}
+		{Distance 450}
+		{ViewAngle 0.580609}
+		{YawAngle -0.269764}
 	}
 	{Environment "day"}
 	{User 1}
 	{GameProgress 0 0}
 	{Entity "panzerflak" 0x8000
-		{Position 1112.859985 -17.508499 0.000000}
+		{Position 1112.86 -17.5085 0}
 		{Turn -85.947}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis wheelsl wheell6"
-				{Value 0.265606}
-			}
-			{BoneSave "basis wheelsl wheell5"
-				{Value 2.19917}
-			}
-			{BoneSave "basis wheelsl wheell4"
-				{Value 0.393753}
-			}
-			{BoneSave "basis wheelsl wheell3"
-				{Value 2.91271}
-			}
-			{BoneSave "basis wheelsl wheell2"
-				{Value 0.841779}
-			}
-			{BoneSave "basis wheelsr wheelr2"
-				{Value -1.77217}
-			}
-			{BoneSave "basis wheelsr wheelr3"
-				{Value 2.402}
-			}
-			{BoneSave "basis wheelsr wheelr4"
-				{Value -1.40481}
-			}
-			{BoneSave "basis wheelsr wheelr5"
-				{Value 3.10552}
-			}
-			{BoneSave "basis wheelsr wheelr6"
-				{Value -1.20115}
-			}
-			{BoneSave "basis body"
-				{Orientation 0.000000 1.000000 0.000000 -0.002150 0.000000 0.999998 0.999998 0.000000 0.002150}
-			}
-			{BoneSave "basis body turret"
-				{Value -2.79753}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.0026044}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value -0.438177}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -0.164002}
-			}
-			{BoneSave "basis body cover"
-				{View "cover"
-					{LastMeshAnm "open"}
-				}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 1}
 		{Weaponry
@@ -79,11 +22,9 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 0}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "birds" 0x80ba
@@ -122,500 +63,314 @@
 			{SoundName "world.crows"}
 		}
 	}
-	{Entity "_infantry2_rus" 0x80b4
-		{Position 3097.988037 3621.249512 -15.678358}
-		{Turn -138.013000}
+	{Human "sas" 0x80b4
+		{Position 3097.99 3621.25 -8.47699}
+		{Turn -138.013}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "sten" filling "ammo pistol" 33 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "grenade n73at" {cell 6 1}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "bandage" 5 {cell 4 1}}
+				{item "knife" {cell 6 2}}
+				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
+			}
+		}
+		{Player 1}
 		{MID 178}
-		{Player 1}
+		{Able {personage 1}}
+		{NameId 64 61}
 		{FsmState "stand"}
-		{Breed "sas"}
-		{Extender "inventory"
-			{box
-				{clear}
-				{item "sten" filling "ammo pistol" 33
-					{cell 0 0}
-				}
-				{item "ammo pistol" 100
-					{cell 4 0}
-				}
-				{item "grenade n73at" 1
-					{cell 6 1}
-				}
-				{item "grenade smoke" 1
-					{cell 7 0}
-				}
-				{item "bandage" 5
-					{cell 4 1}
-				}
-				{item "knife hand" 1
-					{cell 6 2}
-				}
-				{item "grenade f1" 1
-					{cell 6 0}
-				}
-			}
-		}
 	}
-	{Entity "_infantry2_rus" 0x80b3
-		{Position 3013.822754 3608.510986 2.265956}
-		{Turn -58.392502}
-		{MID 177}
-		{Player 1}
-		{FsmState "stand"}
-		{Breed "sas"}
+	{Human "sas" 0x80b3
+		{Position 3013.82 3608.51 -0.764526}
+		{Turn -58.3925}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "sten" filling "ammo pistol" 33
-					{cell 0 0}
-				}
-				{item "ammo pistol" 100
-					{cell 4 0}
-				}
-				{item "grenade n73at" 1
-					{cell 6 1}
-				}
-				{item "grenade smoke" 1
-					{cell 7 0}
-				}
-				{item "bandage" 5
-					{cell 4 1}
-				}
-				{item "knife hand" 1
-					{cell 6 2}
-				}
-				{item "grenade f1" 1
-					{cell 6 0}
-				}
+				{item "sten" filling "ammo pistol" 33 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "grenade n73at" {cell 6 1}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "bandage" 5 {cell 4 1}}
+				{item "knife" {cell 6 2}}
+				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
+		{Player 1}
+		{MID 177}
+		{Able {personage 1}}
+		{NameId 10 12}
+		{FsmState "stand"}
 	}
 	{Entity "willysmb_p" 0x805a
-		{Position 3147.997070 3632.255615 -1.962645}
-		{Turn -137.490005}
-		{Player 1}
-		{MID 90}
-		{TexMod "ambush2"}
+		{Position 3148 3632.26 -0.375156}
+		{Turn -137.07}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "grenade rpg40" 6
-					{cell 2 1}
-				}
-				{item "grenade rpg43" 2
-					{cell 2 2}
-				}
-				{item "colt" filling "ammo pistol" 7
-					{cell 2 3}
-				}
-				{item "repair_kit" 1
-					{cell 0 2}
-				}
-				{item "grenade molotov_coctail" 4
-					{cell 2 0}
-				}
-				{item "mine antitank" 2
-					{cell 0 0}
-				}
-				{item "mine antipersonnel" 4
-					{cell 0 4}
-				}
-				{item "ammo rifle" 20
-					{cell 2 4}
-				}
-				{item "ammo pistol" 300
-					{cell 0 5}
-				}
-				{item "grenade smoke" 4
-					{cell 3 4}
-				}
-				{item "ammo mgun" 400
-					{cell 2 5}
-				}
+				{item "grenade rpg40" 6 {cell 2 1}}
+				{item "grenade rpg43" 2 {cell 2 2}}
+				{item "colt" filling "ammo pistol" 7 {cell 2 3}}
+				{item "repair_kit" {cell 0 2}}
+				{item "grenade molotov_coctail" 4 {cell 2 0}}
+				{item "mine antitank" 2 {cell 0 0}}
+				{item "mine antipersonnel" 4 {cell 4 0}}
+				{item "ammo rifle" 20 {cell 6 0}}
+				{item "ammo pistol" 300 {cell 4 1}}
+				{item "grenade smoke" 4 {cell 7 0}}
+				{item "ammo mgun" 400 {cell 6 1}}
 			}
 		}
-		{Weaponry
-			{State
-				{Weapon
-					{Ammo "ammo mgun" 200}
-				}
-			}
-		}
+		{Player 1}
+		{MID 90}
 		{Chassis
 			{FuelBag
 				{Remain 90}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pointer" 0x80d0
-		{Position 1129.410034 951.177979 138.000000}
+		{Position 1129.41 951.178 138}
 		{OffsetZ 150}
-		{BoneSave
-			{BoneSave "pointer"
-				{Position 8.76269e-024 -4.85299e-007 -17.7482}
-				{State 0x4}
-			}
-		}
 	}
-	{Entity "_infantry2_rus" 0x80b2
-		{Position 507.735992 1460.189941 0.000000}
-		{Turn -129.142}
+	{Human "ger.infantry_rifle" 0x80b2
+		{Position 501.753 1514.29 0}
+		{Turn -104.54}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 176}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 100 50}
 		{Cover
-			{sector 507.736 1460.19
-				{type "squat_lie"}
-				{wall 0 0 525.938 1436.35 491.474 1464.4}
+			{sector 501.753 1514.29 {type "look_right"}
+				{wall 0 0 494.901 1523.3 513.331 1518.52}
 			}
 		}
-		{FsmState "squat"}
+		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80b1
-		{Position 1459.300049 2244.399902 0.000000}
+	{Human "ger.infantry_rifle" 0x80b1
+		{Position 1459.3 2244.4 0}
 		{Turn -87.9687}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 175}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 132 114}
 		{Cover
-			{sector 1459.3 2244.4
-				{type "squat_lie"}
+			{sector 1459.3 2244.4 {type "squat_lie"}
 				{wall 0 0 1489.03 2238.45 1421.93 2236.07}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x80b0
-		{Position 1354.449951 1575.000000 0.000000}
+	{Human "ger.infantry_rifle" 0x80b0
+		{Position 1354.45 1575 0}
 		{Turn -93.9625}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 174}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 123 101}
 		{Cover
-			{sector 1354.45 1575
-				{type "snipe_cover"}
+			{sector 1354.45 1575 {type "snipe_cover"}
 				{wall 0 0 1384.03 1565.94 1304.63 1571.44}
 			}
 		}
 		{FsmState "snipe"}
 	}
-	{Entity "_infantry2_rus" 0x80af
-		{Position 2735.409912 243.050995 10.458700}
+	{Human "ger.infantry_rifle" 0x80af
+		{Position 2735.41 243.051 10.4587}
 		{Turn 76.205}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 173}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 9 53}
 		{Cover
-			{sector 2735.41 243.051
-				{type "squat_lie"}
+			{sector 2735.41 243.051 {type "squat_lie"}
 				{wall 0 0 2665.47 267.432 2795.91 235.405}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x80ae
-		{Position 915.651978 1896.099976 0.000000}
+	{Human "ger.infantry_rifle" 0x80ae
+		{Position 915.652 1896.1 0}
 		{Turn 90}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 172}
-		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 126 137}
 		{Cover
-			{sector 915.652 1896.1
-				{type "hide_stand"}
+			{sector 915.652 1896.1 {type "hide_stand"}
 				{wall 0 0 966.705 1889.1 884.375 1889.1}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80ad
-		{Position 883.294006 2162.989990 0.000000}
+	{Human "ger.infantry_rifle" 0x80ad
+		{Position 883.294 2162.99 0}
 		{Turn -180}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 171}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 1 133}
 		{Cover
-			{sector 883.294 2162.99
-				{type "hide_stand"}
+			{sector 883.294 2162.99 {type "hide_stand"}
 				{wall 0 0 890.294 2191.18 890.294 2114.37}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80ac
-		{Position 2212.929932 1801.069946 0.000000}
+	{Human "ger.infantry_rifle" 0x80ac
+		{Position 2212.93 1801.07 0}
 		{Turn 18.7538}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 170}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 39 117}
 		{Cover
-			{sector 2212.93 1801.07
-				{type "snipe_cover"}
+			{sector 2212.93 1801.07 {type "snipe_cover"}
 				{wall 0 0 2206.41 1842.07 2224.13 1789.88}
 			}
 		}
 		{FsmState "snipe"}
 	}
-	{Entity "_infantry2_rus" 0x80ab
-		{Position 2204.739990 1825.219971 0.000000}
+	{Human "ger.infantry_rifle" 0x80ab
+		{Position 2204.74 1825.22 0}
 		{Turn 18.7538}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 169}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 25 112}
 		{Cover
-			{sector 2204.74 1825.22
-				{type "squat_lie"}
+			{sector 2204.74 1825.22 {type "squat_lie"}
 				{wall 0 0 2206.41 1842.07 2224.13 1789.88}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x80aa
-		{Position 529.997986 1265.000000 0.000000}
+	{Human "ger.infantry_rifle" 0x80aa
+		{Position 529.998 1265 0}
 		{Turn -87.7777}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 168}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 62 116}
 		{Cover
-			{sector 529.998 1265
-				{type "bush_stand"}
+			{sector 529.998 1265 {type "bush_stand"}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a9
-		{Position 614.823975 1517.349976 0.000000}
+	{Human "ger.infantry_rifle" 0x80a9
+		{Position 614.824 1517.35 0}
 		{Turn 95.3802}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 167}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 66 130}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a8
-		{Position 2267.169922 1914.280029 0.000000}
+	{Human "ger.bazoker" 0x80a8
+		{Position 2267.17 1914.28 0}
 		{Turn 109.691}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo bazooka"
-					{cell 0 0}
-				}
-				{item "ammo bazooka"
-					{cell 2 0}
-				}
-				{item "ammo bazooka"
-					{cell 4 0}
-				}
-				{item "ammo bazooka"
-					{cell 6 0}
-				}
-				{item "ammo bazooka"
-					{cell 0 1}
-				}
-				{item "ammo pistol" 30
-					{cell 2 1}
-				}
-				{item "valter"
-					{cell 4 1}
-				}
-				{item "weapon panzershreck"
-					{cell 0 2}
-				}
+				{item "ammo bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 2 0}}
+				{item "ammo bazooka" {cell 4 0}}
+				{item "ammo bazooka" {cell 6 0}}
+				{item "ammo bazooka" {cell 0 1}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "valter" {cell 4 1}}
+				{item "weapon panzershreck" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 166}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.bazoker"}
 		{NameId 140 21}
 		{Cover
-			{sector 2267.17 1914.28
-				{type "look_right"}
+			{sector 2267.17 1914.28 {type "look_right"}
 				{wall 0 0 2317.33 1924.79 2259.88 1904.23}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a7
-		{Position 2198.959961 355.591003 14.797600}
+	{Human "ger.bazoker" 0x80a7
+		{Position 2198.96 355.591 14.7976}
 		{Turn 46.0906}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo bazooka"
-					{cell 0 0}
-				}
-				{item "ammo bazooka"
-					{cell 2 0}
-				}
-				{item "ammo bazooka"
-					{cell 4 0}
-				}
-				{item "ammo bazooka"
-					{cell 6 0}
-				}
-				{item "ammo bazooka"
-					{cell 0 1}
-				}
-				{item "ammo pistol" 30
-					{cell 2 1}
-				}
-				{item "weapon panzershreck"
-					{cell 0 2}
-				}
+				{item "ammo bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 2 0}}
+				{item "ammo bazooka" {cell 4 0}}
+				{item "ammo bazooka" {cell 6 0}}
+				{item "ammo bazooka" {cell 0 1}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "weapon panzershreck" {cell 0 2}}
 			}
 		}
 		{Player 2}
@@ -628,576 +383,340 @@
 				}
 			}
 		}
-		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
-		}
-		{Breed "ger.bazoker"}
 		{NameId 60 100}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a6
-		{Position 1387.680054 -414.410004 0.000000}
+	{Human "ger.bazoker" 0x80a6
+		{Position 1280.97 -448.694 0}
+		{Turn -135}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo bazooka"
-					{cell 0 0}
-				}
-				{item "ammo bazooka"
-					{cell 2 0}
-				}
-				{item "ammo bazooka"
-					{cell 4 0}
-				}
-				{item "ammo bazooka"
-					{cell 6 0}
-				}
-				{item "ammo bazooka"
-					{cell 0 1}
-				}
-				{item "ammo pistol" 30
-					{cell 2 1}
-				}
-				{item "valter"
-					{cell 4 1}
-				}
-				{item "weapon panzershreck"
-					{cell 0 2}
-				}
+				{item "ammo bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 2 0}}
+				{item "ammo bazooka" {cell 4 0}}
+				{item "ammo bazooka" {cell 6 0}}
+				{item "ammo bazooka" {cell 0 1}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "valter" {cell 4 1}}
+				{item "weapon panzershreck" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 164}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.bazoker"}
 		{NameId 122 37}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a5
-		{Position -104.591003 2485.929932 0.000000}
+	{Human "ger.bazoker" 0x80a5
+		{Position -104.591 2485.93 0}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo bazooka"
-					{cell 0 0}
-				}
-				{item "ammo bazooka"
-					{cell 2 0}
-				}
-				{item "ammo bazooka"
-					{cell 4 0}
-				}
-				{item "ammo bazooka"
-					{cell 6 0}
-				}
-				{item "ammo bazooka"
-					{cell 0 1}
-				}
-				{item "ammo pistol" 30
-					{cell 2 1}
-				}
-				{item "valter"
-					{cell 4 1}
-				}
-				{item "weapon panzershreck"
-					{cell 0 2}
-				}
+				{item "ammo bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 2 0}}
+				{item "ammo bazooka" {cell 4 0}}
+				{item "ammo bazooka" {cell 6 0}}
+				{item "ammo bazooka" {cell 0 1}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "valter" {cell 4 1}}
+				{item "weapon panzershreck" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 163}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.bazoker"}
 		{NameId 27 26}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a4
-		{Position 596.869995 1064.699951 0.000000}
+	{Human "ger.bazoker" 0x80a4
+		{Position 596.87 1064.7 0}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo bazooka"
-					{cell 0 0}
-				}
-				{item "ammo bazooka"
-					{cell 2 0}
-				}
-				{item "ammo bazooka"
-					{cell 4 0}
-				}
-				{item "ammo bazooka"
-					{cell 6 0}
-				}
-				{item "ammo bazooka"
-					{cell 0 1}
-				}
-				{item "ammo pistol" 30
-					{cell 2 1}
-				}
-				{item "valter"
-					{cell 4 1}
-				}
-				{item "weapon panzershreck"
-					{cell 0 2}
-				}
+				{item "ammo bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 2 0}}
+				{item "ammo bazooka" {cell 4 0}}
+				{item "ammo bazooka" {cell 6 0}}
+				{item "ammo bazooka" {cell 0 1}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "valter" {cell 4 1}}
+				{item "weapon panzershreck" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 162}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.bazoker"}
 		{NameId 11 126}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a3
-		{Position 2888.050049 2273.540039 -0.354248}
+	{Human "ger.bazoker" 0x80a3
+		{Position 2888.05 2273.54 -0.354248}
 		{Turn 148}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo bazooka"
-					{cell 0 0}
-				}
-				{item "ammo bazooka"
-					{cell 2 0}
-				}
-				{item "ammo bazooka"
-					{cell 4 0}
-				}
-				{item "ammo bazooka"
-					{cell 6 0}
-				}
-				{item "ammo bazooka"
-					{cell 0 1}
-				}
-				{item "ammo pistol" 30
-					{cell 2 1}
-				}
-				{item "valter"
-					{cell 4 1}
-				}
-				{item "weapon panzershreck"
-					{cell 0 2}
-				}
+				{item "ammo bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 2 0}}
+				{item "ammo bazooka" {cell 4 0}}
+				{item "ammo bazooka" {cell 6 0}}
+				{item "ammo bazooka" {cell 0 1}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "valter" {cell 4 1}}
+				{item "weapon panzershreck" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 161}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.bazoker"}
 		{NameId 43 11}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a2
-		{Position 1937.260010 2765.540039 -5.554260}
+	{Human "ger.infantry_smg" 0x80a2
+		{Position 1937.26 2765.54 -5.55426}
 		{Turn 51.1186}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 160}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 57 120}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a1
-		{Position 1955.680054 2798.899902 -8.890230}
+	{Human "ger.infantry_smg" 0x80a1
+		{Position 1955.68 2798.9 -8.89023}
 		{Turn -110.34}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 159}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 58 42}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x80a0
-		{Position 1717.790039 2832.020020 -3.823880}
+	{Human "ger.infantry_rifle" 0x80a0
+		{Position 1717.79 2832.02 -3.82388}
 		{Turn 173.652}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 158}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 104 56}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x805b
-		{Position 1691.619995 2841.500000 -3.162260}
+	{Human "ger.infantry_rifle" 0x805b
+		{Position 1691.62 2841.5 -3.16226}
 		{Turn -20.5127}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 91}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 138 0}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x809f
-		{Position 2492.149902 933.366028 0.000000}
+	{Human "ger.oficer" 0x809f
+		{Position 2492.15 933.366 0}
 		{Turn -1.6084}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 157}
-		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
-		}
-		{Breed "ger.oficer"}
 		{NameId 2 122}
 		{Cover
-			{sector 2492.15 933.366
-				{type "hide_stand"}
+			{sector 2492.15 933.366 {type "hide_stand"}
 				{wall 0 0 2484.9 924.566 2485.89 959.823}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x809e
-		{Position 2063.810059 297.199005 0.274563}
+	{Human "ger.oficer" 0x809e
+		{Position 2063.81 297.199 0.274563}
 		{Turn 110.208}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 156}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.oficer"}
 		{NameId 58 88}
 		{Cover
-			{sector 2063.81 297.199
-				{type "squat_lie"}
+			{sector 2063.81 297.199 {type "squat_lie"}
 				{wall 0 0 2052.95 300.659 2109.32 321.408}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x809d
-		{Position 2925.550049 1754.790039 0.000000}
+	{Human "ger.oficer" 0x809d
+		{Position 2925.55 1754.79 0}
 		{Turn -64.6639}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 155}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.oficer"}
 		{NameId 46 133}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x809c
-		{Position 1166.900024 2410.969971 0.000000}
-		{Turn 176.665}
+	{Human "ger.oficer" 0x809c
+		{Position 1209.33 2597.64 0}
+		{Turn 90}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 154}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.oficer"}
 		{NameId 123 29}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x809b
-		{Position 1023.690002 374.657013 0.000000}
+	{Human "ger.oficer" 0x809b
+		{Position 1023.69 374.657 0}
 		{Turn -8.69717}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 153}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.oficer"}
 		{NameId 13 101}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x809a
-		{Position 1611.280029 2098.169922 0.000000}
+	{Human "ger.oficer" 0x809a
+		{Position 1611.28 2098.17 0}
 		{Turn -177.092}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 152}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.oficer"}
 		{NameId 48 135}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8099
-		{Position 961.679993 1566.750000 0.000000}
+	{Human "ger.oficer" 0x8099
+		{Position 961.68 1566.75 0}
 		{Turn -80.6048}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 151}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.oficer"}
 		{NameId 106 104}
 		{Cover
-			{sector 961.68 1566.75
-				{type "squat_lie"}
+			{sector 961.68 1566.75 {type "squat_lie"}
 				{wall 0 0 996 1565.34 916.707 1552.22}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x8098
-		{Position 404.759003 2968.530029 11.523800}
+	{Human "ger.oficer" 0x8098
+		{Position 404.759 2968.53 11.5238}
 		{Turn -118.116}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 150}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.oficer"}
 		{NameId 62 7}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8097
-		{Position 355.105988 1538.130005 0.000000}
+	{Human "ger.oficer" 0x8097
+		{Position 355.106 1538.13 0}
 		{Turn -106.264}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 149}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.oficer"}
 		{NameId 13 96}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8096
-		{Position -204.832993 2395.790039 0.000000}
+	{Human "ger.oficer" 0x8096
+		{Position -204.833 2395.79 0}
 		{Turn -30.4876}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "valter"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 32
-					{cell 2 0}
-				}
-				{item "knife hand"
-					{cell 4 0}
-				}
+				{item "valter" {cell 0 0}}
+				{item "ammo pistol" 32 {cell 2 0}}
+				{item "knife" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 148}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.oficer"}
 		{NameId 21 98}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8095
-		{Position 2495.169922 335.574005 0.000000}
+	{Human "ger.infantry_ss" 0x8095
+		{Position 2340.07 375.38 0}
 		{Turn 165.606}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
@@ -1210,32 +729,19 @@
 				}
 			}
 		}
-		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 45 116}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8094
-		{Position 2140.139893 320.923004 9.078090}
-		{Turn -121.211}
+	{Human "ger.infantry_ss" 0x8094
+		{Position 2106.28 265.033 1.13184}
+		{Turn 45.0651}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
@@ -1248,605 +754,354 @@
 				}
 			}
 		}
-		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 75 146}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8093
-		{Position 2883.879883 1729.760010 0.000000}
+	{Human "ger.infantry_ss" 0x8093
+		{Position 2883.88 1729.76 0}
 		{Turn 12.8094}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mp40"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
 		{MID 145}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 23 66}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8092
-		{Position 1164.579956 2364.250000 0.000000}
-		{Turn 144.754}
+	{Human "ger.infantry_ss" 0x8092
+		{Position 1300.86 2500.53 0}
+		{Turn 44.9997}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mp40"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
 		{MID 144}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 46 147}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8091
-		{Position 1269.489990 -5.622210 0.000000}
+	{Human "ger.infantry_ss" 0x8091
+		{Position 1269.49 -5.62221 0}
 		{Turn -90}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mp40"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
 		{MID 143}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 108 147}
 		{Cover
-			{sector 1269.49 -5.62221
-				{type "look_2way"}
+			{sector 1269.49 -5.62221 {type "look_2way"}
 				{wall 0 0 1255.36 1.37778 1284.88 1.37779}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8090
-		{Position 2045.920044 1074.670044 14.494200}
+	{Human "ger.infantry_ss" 0x8090
+		{Position 2045.92 1074.67 14.4942}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mp40"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
 		{MID 142}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 26 67}
 		{Cover
-			{sector 2045.92 1074.67
-				{type "look_right"}
+			{sector 2045.92 1074.67 {type "look_right"}
 				{wall 0 0 2038.9 1005.76 2038.94 1120}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x808f
-		{Position 979.681030 1569.729980 0.000000}
-		{Turn -80.6048}
+	{Human "ger.infantry_ss" 0x808f
+		{Position 958.468 1608.52 0}
+		{Turn -135}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mp40"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
 		{MID 141}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 124 43}
-		{Cover
-			{sector 979.681 1569.73
-				{type "squat_lie"}
-				{wall 0 0 996 1565.34 916.707 1552.22}
-			}
-		}
-		{FsmState "squat"}
+		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x808e
-		{Position 2843.580078 2271.030029 -0.103271}
+	{Human "ger.infantry_ss" 0x808e
+		{Position 2843.58 2271.03 -0.103271}
 		{Turn 69.359}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mp40"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
 		{MID 140}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 143 39}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x808d
-		{Position 446.911987 1513.400024 0.000000}
+	{Human "ger.infantry_ss" 0x808d
+		{Position 446.912 1513.4 0}
 		{Turn -123.67}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mp40"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
 		{MID 139}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 125 107}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x808c
-		{Position -153.315002 2405.889893 0.000000}
+	{Human "ger.infantry_ss" 0x808c
+		{Position -153.315 2405.89 0}
 		{Turn -133.498}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mp40"
-					{cell 0 0}
-				}
-				{item "ammo pistol" 70
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 4 1}
-				}
-				{item "bandage" 3
-					{cell 6 1}
-				}
+				{item "mp40" {cell 0 0}}
+				{item "ammo pistol" 70 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 4 1}}
+				{item "bandage" 3 {cell 6 1}}
 			}
 		}
 		{Player 2}
 		{MID 138}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_ss"}
 		{NameId 6 8}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x808b
-		{Position 2457.919922 1008.280029 0.000000}
+	{Human "ger.infantry_smg" 0x808b
+		{Position 2457.92 1008.28 0}
 		{Turn -161.865}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 137}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 120 61}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x808a
-		{Position 1711.760010 169.811996 0.000000}
+	{Human "ger.infantry_smg" 0x808a
+		{Position 1711.76 169.812 0}
 		{Turn 27.9217}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 136}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 96 22}
 		{Cover
-			{sector 1711.76 169.812
-				{type "squat_lie"}
+			{sector 1711.76 169.812 {type "squat_lie"}
 				{wall 0 0 1698.69 209.425 1755.84 101.586}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x8089
-		{Position 2667.409912 1588.119995 0.000000}
+	{Human "ger.infantry_smg" 0x8089
+		{Position 2667.41 1588.12 0}
 		{Turn -75.7369}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 135}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 138 43}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8088
-		{Position 1114.500000 2352.810059 0.000000}
-		{Turn 48.1104}
+	{Human "ger.infantry_smg" 0x8088
+		{Position 1178.14 2650.69 0}
+		{Turn 90}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 134}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 73 102}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8087
-		{Position 1341.040039 2199.360107 0.000000}
+	{Human "ger.infantry_smg" 0x8087
+		{Position 1341.04 2199.36 0}
 		{Turn 178.003}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 133}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 128 108}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8086
-		{Position 1430.209961 334.446991 0.543234}
+	{Human "ger.infantry_smg" 0x8086
+		{Position 1430.21 334.447 0.543234}
 		{Turn -83.2567}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 132}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 66 11}
 		{Cover
-			{sector 1430.21 334.447
-				{type "look_2way"}
+			{sector 1430.21 334.447 {type "look_2way"}
 				{wall 0 0 1414.05 339.586 1445.96 343.359}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8085
-		{Position 1708.760010 773.242981 0.000000}
+	{Human "ger.infantry_smg" 0x8085
+		{Position 1708.76 773.243 0}
 		{Turn -90}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 131}
-		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 83 49}
 		{Cover
-			{sector 1708.76 773.243
-				{type "squat_lie"}
+			{sector 1708.76 773.243 {type "squat_lie"}
 				{wall 0 0 1740.22 766.243 1681.17 766.243}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x8084
-		{Position 418.049988 2932.290039 10.194800}
+	{Human "ger.infantry_smg" 0x8084
+		{Position 418.05 2932.29 10.1948}
 		{Turn 103.231}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 130}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 116 32}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8083
-		{Position 396.234985 1725.239990 0.000000}
+	{Human "ger.infantry_smg" 0x8083
+		{Position 396.235 1725.24 0}
 		{Turn 172.994}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 129}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 25 66}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8082
-		{Position -180.779007 2370.219971 0.000000}
+	{Human "ger.infantry_smg" 0x8082
+		{Position -180.779 2370.22 0}
 		{Turn 107.264}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "mp41"
-					{cell 4 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "mp41" {cell 4 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 128}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 38 20}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8081
-		{Position 1613.650024 564.112000 0.000000}
-		{Turn 180}
+	{Human "ger.infantry_rifle" 0x8081
+		{Position 1690.79 372.117 0}
+		{Turn -90.0688}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
@@ -1859,1248 +1114,858 @@
 				}
 			}
 		}
-		{Chassis
-			{MovementMode 2}
-			{MovementSpeed 1.66667}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 141 127}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8080
-		{Position 1703.489990 185.423996 0.000000}
+	{Human "ger.infantry_rifle" 0x8080
+		{Position 1703.49 185.424 0}
 		{Turn 27.9217}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 126}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 112 133}
 		{Cover
-			{sector 1703.49 185.424
-				{type "squat_lie"}
+			{sector 1703.49 185.424 {type "squat_lie"}
 				{wall 0 0 1698.69 209.425 1755.84 101.586}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x807f
-		{Position 2443.020020 1496.040039 5.280520}
+	{Human "ger.infantry_rifle" 0x807f
+		{Position 2443.02 1496.04 5.28052}
 		{Turn -107.114}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 125}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 50 8}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x807e
-		{Position 952.068970 1854.770020 0.000000}
-		{Turn -5.14419}
+	{Human "ger.infantry_rifle" 0x807e
+		{Position 973.282 1995.98 0}
+		{Turn 90}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 124}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 127 65}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x807d
-		{Position 1272.060059 27.249300 0.000000}
+	{Human "ger.infantry_rifle" 0x807d
+		{Position 1272.06 27.2493 0}
 		{Turn 180}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 123}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 97 107}
 		{Cover
-			{sector 1272.06 27.2493
-				{type "snipe_cover"}
+			{sector 1272.06 27.2493 {type "snipe_cover"}
 				{wall 0 0 1265.06 8.02753 1265.06 68.0389}
 			}
 		}
 		{FsmState "snipe"}
 	}
-	{Entity "_infantry2_rus" 0x807c
-		{Position 1582.449951 2104.439941 0.000000}
+	{Human "ger.infantry_rifle" 0x807c
+		{Position 1582.45 2104.44 0}
 		{Turn -24.4797}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 122}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 28 126}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x807b
-		{Position 981.906006 1588.760010 0.000000}
-		{Turn -157.71}
+	{Human "ger.infantry_rifle" 0x807b
+		{Position 957.664 1588.76 0}
+		{Turn 173.606}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 121}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 61 103}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x807a
-		{Position 2819.899902 2292.169922 -1.000000}
+	{Human "ger.infantry_rifle" 0x807a
+		{Position 2819.9 2292.17 -1}
 		{Turn -5.24304}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 120}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 113 69}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8079
-		{Position 441.584015 923.400024 0.000000}
+	{Human "ger.infantry_rifle" 0x8079
+		{Position 441.584 923.4 0}
 		{Turn 175.482}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
-				{item "mauzer" filling "ammo rifle" 5
-					{cell 0 0}
-				}
+				{item "ammo rifle" 6 {cell 4 0}}
+				{item "mauzer" filling "ammo rifle" 5 {cell 0 0}}
 			}
 		}
 		{Player 2}
 		{MID 119}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 140 150}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8078
-		{Position -659.047974 2058.479980 0.000000}
+	{Human "ger.infantry_rifle" 0x8078
+		{Position -659.048 2058.48 0}
 		{Turn -107.504}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mauzer"
-					{cell 0 0}
-				}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "mauzer" {cell 0 0}}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 118}
-		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 57 112}
 		{Cover
-			{sector -659.048 2058.48
-				{type "hide_stand"}
+			{sector -659.048 2058.48 {type "hide_stand"}
 				{wall 0 0 -681.221 2072.81 -631.472 2057.12}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8077
-		{Position 2766.320068 941.562988 0.000000}
+	{Human "ger.infantry_mgun" 0x8077
+		{Position 2766.32 941.563 0}
 		{Turn -2.77614}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 117}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 92 48}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8076
-		{Position 1736.589966 122.976997 0.000000}
+	{Human "ger.infantry_mgun" 0x8076
+		{Position 1736.59 122.977 0}
 		{Turn 27.9217}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 116}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 49 63}
 		{Cover
-			{sector 1736.59 122.977
-				{type "squat_lie"}
+			{sector 1736.59 122.977 {type "squat_lie"}
 				{wall 0 0 1698.69 209.425 1755.84 101.586}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x8075
-		{Position 3120.000000 1441.729980 0.000000}
+	{Human "ger.infantry_mgun" 0x8075
+		{Position 3120 1441.73 0}
 		{Turn 128.498}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 115}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 9 145}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8074
-		{Position 1123.939941 2415.600098 0.000000}
-		{Turn -3.30241}
+	{Human "ger.infantry_mgun" 0x8074
+		{Position 1051.51 2373.17 0}
+		{Turn -180}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 114}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 24 145}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8073
-		{Position 1042.689941 376.122986 0.000000}
+	{Human "ger.infantry_mgun" 0x8073
+		{Position 1042.69 376.123 0}
 		{Turn -167.577}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 113}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 26 78}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8072
-		{Position 1767.199951 773.752991 0.000000}
+	{Human "ger.infantry_mgun" 0x8072
+		{Position 1767.2 773.753 0}
 		{Turn -90}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 112}
-		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 77 150}
 		{Cover
-			{sector 1767.2 773.753
-				{type "squat_lie"}
+			{sector 1767.2 773.753 {type "squat_lie"}
 				{wall 0 0 1853.76 766.753 1739.53 766.753}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x8071
-		{Position 943.677979 1563.780029 0.000000}
+	{Human "ger.infantry_mgun" 0x8071
+		{Position 943.678 1563.78 0}
 		{Turn -80.6048}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 111}
-		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 19 40}
 		{Cover
-			{sector 943.678 1563.78
-				{type "squat_lie"}
+			{sector 943.678 1563.78 {type "squat_lie"}
 				{wall 0 0 996 1565.34 916.707 1552.22}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x8070
-		{Position 382.334991 2957.209961 12.000000}
+	{Human "ger.infantry_mgun" 0x8070
+		{Position 382.335 2957.21 12}
 		{Turn 18.4818}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 110}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 112 56}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x806f
-		{Position 57.763699 1106.859985 0.000000}
+	{Human "ger.infantry_mgun" 0x806f
+		{Position 57.7637 1106.86 0}
 		{Turn -8.39147}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 109}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 21 5}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8056
-		{Position -617.544006 2043.189941 0.000000}
+	{Human "ger.infantry_mgun" 0x8056
+		{Position -617.544 2043.19 0}
 		{Turn -18.6603}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "mg42"
-					{cell 0 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 0}
-				}
-				{item "ammo mgun" 100
-					{cell 5 1}
-				}
-				{item "grenade m24"
-					{cell 0 2}
-				}
+				{item "mg42" {cell 0 0}}
+				{item "ammo mgun" 100 {cell 5 0}}
+				{item "ammo mgun" 100 {cell 5 1}}
+				{item "grenade m24" {cell 0 2}}
 			}
 		}
 		{Player 2}
 		{MID 87}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_mgun"}
 		{NameId 0 15}
 		{Cover
-			{sector -617.544 2043.19
-				{type "hide_stand"}
+			{sector -617.544 2043.19 {type "hide_stand"}
 				{wall 0 0 -656.029 1951.11 -593.151 2137.3}
 			}
 		}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x806e
-		{Position 1927.619995 2244.899902 0.000000}
-		{Orientation -0.270399 0.962748 0.000000 0.962748 0.270399 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x806e
+		{Position 1927.62 2244.9 0}
+		{Orientation
+			 -0.270399   0.962748   0.000000
+			  0.962748   0.270399   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 108}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 98 68}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x806d
-		{Position 1927.619995 2244.899902 0.000000}
-		{Orientation -0.270399 0.962748 0.000000 0.962748 0.270399 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x806d
+		{Position 1927.62 2244.9 0}
+		{Orientation
+			 -0.270399   0.962748   0.000000
+			  0.962748   0.270399   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 85.0315}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 107}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 122 97}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x806c
-		{Position 1927.619995 2244.899902 0.000000}
-		{Orientation -0.270399 0.962748 0.000000 0.962748 0.270399 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x806c
+		{Position 1927.62 2244.9 0}
+		{Orientation
+			 -0.270399   0.962748   0.000000
+			  0.962748   0.270399   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 84.6813}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 106}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 6 18}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x806b
-		{Position 2632.350098 178.500000 3.192980}
-		{Orientation 0.999643 -0.008267 0.025423 -0.003483 -0.983158 -0.182722 -0.026506 -0.182569 0.982836}
+	{Human "ger.tank_crew" 0x806b
+		{Position 2632.35 178.5 3.20953}
+		{Orientation
+			  0.999230  -0.033482   0.020457
+			 -0.029129  -0.982322  -0.184918
+			 -0.026287  -0.184179   0.982541
+		}
 		{Extender "vitality"
 			{Energy 98.3973}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 105}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 105 121}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x806a
-		{Position 2623.830078 176.464996 24.920601}
-		{Orientation 0.235682 0.660267 0.713167 -0.951032 0.307689 0.029424 -0.200006 -0.685179 0.700452}
+	{Human "ger.tank_crew" 0x806a
+		{Position 2630.99 181.898 26.1788}
+		{Orientation
+			  0.803491  -0.133073   0.580344
+			  0.029129   0.982322   0.184918
+			 -0.594692  -0.131675   0.793164
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 104}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 87 17}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8069
-		{Position 2641.459961 172.725006 24.739901}
-		{Orientation -0.426646 0.594401 0.681621 -0.865033 -0.488041 -0.115875 0.263832 -0.639110 0.722533}
+	{Human "ger.tank_crew" 0x8069
+		{Position 2632.37 164.231 22.9037}
+		{Orientation
+			  0.550331   0.473943   0.687357
+			 -0.723037   0.682152   0.108527
+			 -0.417456  -0.556793   0.718216
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 103}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 83 135}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8068
-		{Position 2023.010010 -396.704010 23.980000}
-		{Orientation -0.463420 0.886026 -0.010300 -0.886115 -0.463466 0.000000 -0.004774 0.009127 0.999900}
+	{Human "ger.tank_crew" 0x8068
+		{Position 2023.07 -396.816 24.0629}
+		{Orientation
+			 -0.463420   0.886026  -0.010300
+			 -0.886115  -0.463466   0.000000
+			 -0.004774   0.009127   0.999900
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 102}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 50 9}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8067
-		{Position 2008.420044 -396.588989 0.000000}
-		{Orientation -0.463466 0.886115 0.000000 0.886115 0.463466 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8067
+		{Position 2008.42 -396.589 0}
+		{Orientation
+			 -0.463466   0.886115   0.000000
+			  0.886115   0.463466   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 101}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 46 112}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8066
-		{Position 2008.420044 -396.588989 0.000000}
-		{Orientation -0.463466 0.886115 0.000000 0.886115 0.463466 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8066
+		{Position 2008.42 -396.589 0}
+		{Orientation
+			 -0.463466   0.886115   0.000000
+			  0.886115   0.463466   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 93.942}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 100}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 24 53}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8065
-		{Position 1112.859985 -17.508499 0.000000}
-		{Orientation 0.070679 -0.997499 0.000000 -0.997499 -0.070679 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8065
+		{Position 1112.86 -17.5085 0}
+		{Orientation
+			  0.070679  -0.997499   0.000000
+			 -0.997499  -0.070679   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 95.1788}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 99}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 66 129}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8063
-		{Position 1112.859985 -17.508499 0.000000}
-		{Orientation 0.070679 -0.997499 0.000000 -0.997499 -0.070679 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8063
+		{Position 1112.86 -17.5085 0}
+		{Orientation
+			  0.070679  -0.997499   0.000000
+			 -0.997499  -0.070679   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 96.0655}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 98}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 140 20}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8062
-		{Position 1123.239990 -18.204300 21.972099}
-		{Orientation -0.438240 0.693292 0.572048 -0.844850 -0.534901 0.001019 0.306750 -0.482868 0.820284}
+	{Human "ger.tank_crew" 0x8062
+		{Position 1102.57 -19.1386 21.978}
+		{Orientation
+			  0.645917  -0.503707   0.573600
+			  0.614905   0.788533   0.000000
+			 -0.452360   0.352710   0.819200
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 97}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 60 99}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8061
-		{Position 963.052979 464.829987 0.000000}
-		{Orientation 0.977616 0.210395 0.000000 0.210395 -0.977616 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8061
+		{Position 1623.74 568.089 0}
+		{Orientation
+			  0.991271   0.131841   0.000000
+			  0.131841  -0.991271   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 96}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 73 126}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8060
-		{Position 963.052979 464.829987 0.000000}
-		{Orientation 0.977616 0.210395 0.000000 0.210395 -0.977616 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8060
+		{Position 1623.74 568.089 0}
+		{Orientation
+			  0.991271   0.131841   0.000000
+			  0.131841  -0.991271   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 95}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 30 94}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x805f
-		{Position 963.052979 464.829987 0.000000}
-		{Orientation 0.977616 0.210395 0.000000 0.210395 -0.977616 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x805f
+		{Position 1623.74 568.089 0}
+		{Orientation
+			  0.991271   0.131841   0.000000
+			  0.131841  -0.991271   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 85.18}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 94}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 101 20}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x805e
-		{Position 299.556000 1981.729980 0.000000}
-		{Orientation -0.254923 -0.966961 0.000000 -0.966961 0.254923 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x805e
+		{Position 300.103 1976.55 -0.324843}
+		{Orientation
+			 -0.178190  -0.983996   0.000161
+			 -0.983996   0.178189  -0.000991
+			 -0.000947   0.000335   1.000000
+		}
 		{Extender "vitality"
 			{Energy 62.1671}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 93}
-		{Chassis
-			{MovementModeLimit 1}
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 50 25}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x805d
-		{Position 299.556000 1981.729980 0.000000}
-		{Orientation -0.254923 -0.966961 0.000000 -0.966961 0.254923 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x805d
+		{Position 300.103 1976.55 -0.324843}
+		{Orientation
+			 -0.178190  -0.983996   0.000161
+			 -0.983996   0.178189  -0.000991
+			 -0.000947   0.000335   1.000000
+		}
 		{Extender "vitality"
 			{Energy 81.2981}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 92}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 81 44}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8059
-		{Position 2922.360107 2003.030029 0.020233}
-		{Orientation -0.922180 0.386760 -0.000867 0.386759 0.922180 0.001190 -0.001260 -0.000762 0.999999}
+	{Human "ger.tank_crew" 0x8059
+		{Position 2922.36 2003.03 0.0202332}
+		{Orientation
+			 -0.922180   0.386760  -0.000867
+			  0.386759   0.922180   0.001190
+			 -0.001260  -0.000762   0.999999
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 89}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 73 42}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8057
-		{Position 2922.360107 2003.030029 0.020233}
-		{Orientation -0.922180 0.386760 -0.000867 0.386759 0.922180 0.001190 -0.001260 -0.000762 0.999999}
+	{Human "ger.tank_crew" 0x8057
+		{Position 2922.36 2003.03 0.0202332}
+		{Orientation
+			 -0.922180   0.386760  -0.000867
+			  0.386759   0.922180   0.001190
+			 -0.001260  -0.000762   0.999999
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 88}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 4 100}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8055
-		{Position -392.934998 555.432983 0.000000}
-		{Orientation -0.003028 0.999995 0.000000 0.999995 0.003028 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8055
+		{Position -392.935 555.433 0}
+		{Orientation
+			 -0.003028   0.999995   0.000000
+			  0.999995   0.003028   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 75.5237}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 86}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 137 137}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8054
-		{Position -61.407700 120.055000 0.013099}
-		{Orientation 0.900440 0.434979 -0.000561 0.434980 -0.900440 0.000771 0.000170 0.000938 1.000000}
+	{Human "ger.tank_crew" 0x8054
+		{Position -61.4077 120.055 0.0130987}
+		{Orientation
+			  0.900440   0.434979  -0.000561
+			  0.434980  -0.900440   0.000771
+			  0.000170   0.000938   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40" filling "ammo pistol" 31
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" filling "ammo pistol" 31 {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 85}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 1 39}
 		{LastItem "mp40"}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8053
-		{Position -534.357971 2188.350098 0.000000}
-		{Orientation 0.949622 -0.313398 0.000000 -0.313398 -0.949622 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8053
+		{Position -534.358 2188.35 0}
+		{Orientation
+			  0.949622  -0.313398   0.000000
+			 -0.313398  -0.949622   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 81.3413}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 84}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 80 77}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8052
-		{Position 2086.909912 1839.180054 0.000000}
+	{Human "ger.tank_crew" 0x8052
+		{Position 2086.91 1839.18 0}
 		{Turn 92.6186}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
 			}
 		}
 		{Player 2}
@@ -3113,1808 +1978,1317 @@
 				}
 			}
 		}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 32 129}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x8051
-		{Position 299.556000 1981.729980 0.000000}
-		{Orientation -0.254923 -0.966961 0.000000 -0.966961 0.254923 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8051
+		{Position 300.103 1976.55 -0.324843}
+		{Orientation
+			 -0.178190  -0.983996   0.000161
+			 -0.983996   0.178189  -0.000991
+			 -0.000947   0.000335   1.000000
+		}
 		{Extender "vitality"
 			{Energy 65.7801}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 82}
-		{Chassis
-			{MovementModeLimit 1}
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 34 47}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8050
-		{Position -450.319000 2405.280029 0.000000}
-		{Orientation 0.904311 0.426875 0.000000 0.426875 -0.904311 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8050
+		{Position -450.319 2405.28 0}
+		{Orientation
+			  0.904311   0.426875   0.000000
+			  0.426875  -0.904311   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 83.844}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 81}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 50 11}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x804f
-		{Position -449.656006 2394.590088 21.960600}
-		{Orientation 0.561874 0.594427 0.575239 -0.726319 0.687279 -0.000781 -0.395821 -0.417426 0.818049}
+	{Human "ger.tank_crew" 0x804f
+		{Position -445.077 2396.28 21.978}
+		{Orientation
+			  0.235814   0.784424   0.573600
+			 -0.957615   0.287863   0.000000
+			 -0.165098  -0.549342   0.819200
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 80}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 82 16}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x804e
-		{Position -534.357971 2188.350098 0.000000}
-		{Orientation 0.949622 -0.313398 0.000000 -0.313398 -0.949622 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x804e
+		{Position -534.358 2188.35 0}
+		{Orientation
+			  0.949622  -0.313398   0.000000
+			 -0.313398  -0.949622   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 80.3679}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 79}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 6 94}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x804d
-		{Position -534.357971 2188.350098 0.000000}
-		{Orientation 0.949622 -0.313398 0.000000 -0.313398 -0.949622 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x804d
+		{Position -534.358 2188.35 0}
+		{Orientation
+			  0.949622  -0.313398   0.000000
+			 -0.313398  -0.949622   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 75.4785}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 78}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 72 111}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x804c
-		{Position -61.407700 120.055000 0.013099}
-		{Orientation 0.900440 0.434979 -0.000561 0.434980 -0.900440 0.000771 0.000170 0.000938 1.000000}
+	{Human "ger.tank_crew" 0x804c
+		{Position -61.4077 120.055 0.0130987}
+		{Orientation
+			  0.900440   0.434979  -0.000561
+			  0.434980  -0.900440   0.000771
+			  0.000170   0.000938   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 77}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 40 114}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x804b
-		{Position 2237.639893 1345.760010 0.000000}
-		{Orientation -0.275503 0.961300 0.000000 0.961300 0.275503 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x804b
+		{Position 2237.64 1345.76 0}
+		{Orientation
+			 -0.275503   0.961300   0.000000
+			  0.961300   0.275503   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 76}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 70 15}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x804a
-		{Position 2922.360107 2003.030029 0.020233}
-		{Orientation -0.922180 0.386760 -0.000867 0.386759 0.922180 0.001190 -0.001260 -0.000762 0.999999}
+	{Human "ger.tank_crew" 0x804a
+		{Position 2922.36 2003.03 0.0202332}
+		{Orientation
+			 -0.922180   0.386760  -0.000867
+			  0.386759   0.922180   0.001190
+			 -0.001260  -0.000762   0.999999
+		}
 		{Extender "vitality"
 			{Energy 76.032}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 75}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 45 68}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8049
-		{Position 2897.689941 1084.930054 0.000000}
-		{Orientation 0.945397 -0.325921 0.000000 -0.325921 -0.945397 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8049
+		{Position 2897.69 1084.93 0}
+		{Orientation
+			  0.945397  -0.325921   0.000000
+			 -0.325921  -0.945397   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 74}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 22 116}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8048
-		{Position 2730.070068 914.343018 0.000000}
-		{Orientation 0.003948 0.999992 0.000000 0.999992 -0.003948 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8048
+		{Position 2730.07 914.343 0}
+		{Orientation
+			  0.003948   0.999992   0.000000
+			  0.999992  -0.003948   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 97.3245}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 73}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 143 116}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8047
-		{Position 2897.689941 1084.930054 0.000000}
-		{Orientation 0.945397 -0.325921 0.000000 -0.325921 -0.945397 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8047
+		{Position 2897.69 1084.93 0}
+		{Orientation
+			  0.945397  -0.325921   0.000000
+			 -0.325921  -0.945397   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 87.3189}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 72}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 93 62}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8046
-		{Position 1523.930054 2477.459961 0.000000}
-		{Orientation -0.703680 0.710517 0.000000 0.710517 0.703680 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x8046
+		{Position 1523.93 2477.46 0}
+		{Orientation
+			 -0.703680   0.710517   0.000000
+			  0.710517   0.703680   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 79.4434}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 71}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 101 144}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8045
-		{Position -406.984985 548.448975 24.031300}
-		{Orientation -0.003028 0.999895 -0.010300 -0.999995 -0.003028 0.000000 -0.000031 0.010300 0.999900}
+	{Human "ger.tank_crew" 0x8045
+		{Position -406.985 548.401 24.0629}
+		{Orientation
+			 -0.003028   0.999895  -0.010300
+			 -0.999995  -0.003028   0.000000
+			 -0.000031   0.010300   0.999900
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 70}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 85 67}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8044
-		{Position -392.934998 555.432983 0.000000}
-		{Orientation -0.003028 0.999995 0.000000 0.999995 0.003028 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8044
+		{Position -392.935 555.433 0}
+		{Orientation
+			 -0.003028   0.999995   0.000000
+			  0.999995   0.003028   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 69}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 137 29}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8043
-		{Position -450.319000 2405.280029 0.000000}
-		{Orientation 0.904311 0.426875 0.000000 0.426875 -0.904311 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8043
+		{Position -450.319 2405.28 0}
+		{Orientation
+			  0.904311   0.426875   0.000000
+			  0.426875  -0.904311   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 95.5775}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 68}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 138 79}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8042
-		{Position 2730.070068 914.343018 0.000000}
-		{Orientation 0.003948 0.999992 0.000000 0.999992 -0.003948 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8042
+		{Position 2730.07 914.343 0}
+		{Orientation
+			  0.003948   0.999992   0.000000
+			  0.999992  -0.003948   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 94.3742}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 67}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 127 61}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8041
-		{Position -61.407700 120.055000 0.013099}
-		{Orientation 0.900440 0.434979 -0.000561 0.434980 -0.900440 0.000771 0.000170 0.000938 1.000000}
+	{Human "ger.tank_crew" 0x8041
+		{Position -61.4077 120.055 0.0130987}
+		{Orientation
+			  0.900440   0.434979  -0.000561
+			  0.434980  -0.900440   0.000771
+			  0.000170   0.000938   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 66}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 122 108}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8040
-		{Position 1523.930054 2477.459961 0.000000}
-		{Orientation -0.703680 0.710517 0.000000 0.710517 0.703680 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8040
+		{Position 1523.93 2477.46 0}
+		{Orientation
+			 -0.703680   0.710517   0.000000
+			  0.710517   0.703680   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 86.0437}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 65}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 9 28}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x803f
-		{Position 2719.639893 912.552979 22.025101}
-		{Orientation 0.597573 -0.555759 0.577915 0.683908 0.729473 -0.005685 -0.418471 0.398644 0.816142}
+	{Human "ger.tank_crew" 0x803f
+		{Position 2740.45 915.201 21.978}
+		{Orientation
+			 -0.606532   0.550499   0.573600
+			 -0.672028  -0.740453   0.000000
+			  0.424782  -0.385480   0.819200
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 64}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 142 61}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x803e
-		{Position 1978.109985 577.791992 0.237887}
-		{Orientation -0.999819 0.018323 -0.005067 0.018393 0.999733 -0.013992 -0.004809 0.014083 0.999889}
+	{Human "ger.tank_crew" 0x803e
+		{Position 813.555 473.255 0}
+		{Orientation
+			  0.914783   0.403946   0.000000
+			  0.403946  -0.914783   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 63}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 93 110}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x803d
-		{Position 1978.109985 577.791992 0.237887}
-		{Orientation -0.999819 0.018323 -0.005067 0.018393 0.999733 -0.013992 -0.004809 0.014083 0.999889}
+	{Human "ger.tank_crew" 0x803d
+		{Position 813.555 473.255 0}
+		{Orientation
+			  0.914783   0.403946   0.000000
+			  0.403946  -0.914783   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 62}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 142 84}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x803c
-		{Position 1978.109985 577.791992 0.237887}
-		{Orientation -0.999819 0.018323 -0.005067 0.018393 0.999733 -0.013992 -0.004809 0.014083 0.999889}
+	{Human "ger.tank_crew" 0x803c
+		{Position 813.555 473.255 0}
+		{Orientation
+			  0.914783   0.403946   0.000000
+			  0.403946  -0.914783   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 61}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 1 85}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x803b
-		{Position 1523.930054 2477.459961 0.000000}
-		{Orientation -0.703680 0.710517 0.000000 0.710517 0.703680 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x803b
+		{Position 1523.93 2477.46 0}
+		{Orientation
+			 -0.703680   0.710517   0.000000
+			  0.710517   0.703680   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 63.4261}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 60}
-		{Chassis
-			{MovementModeLimit 1}
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 93 141}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x803a
-		{Position 1523.930054 2477.459961 0.000000}
-		{Orientation -0.703680 0.710517 0.000000 0.710517 0.703680 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x803a
+		{Position 1523.93 2477.46 0}
+		{Orientation
+			 -0.703680   0.710517   0.000000
+			  0.710517   0.703680   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 59}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 40 68}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8039
-		{Position 2897.689941 1084.930054 0.000000}
-		{Orientation 0.945397 -0.325921 0.000000 -0.325921 -0.945397 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8039
+		{Position 2897.69 1084.93 0}
+		{Orientation
+			  0.945397  -0.325921   0.000000
+			 -0.325921  -0.945397   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 92.2507}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 58}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 126 15}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8038
-		{Position 1592.890015 438.734009 0.000000}
-		{Orientation -0.160519 0.987033 0.000000 0.987033 0.160519 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8038
+		{Position 1592.89 438.734 0}
+		{Orientation
+			 -0.160519   0.987033   0.000000
+			  0.987033   0.160519   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 57}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 7 86}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8037
-		{Position 1592.890015 438.734009 0.000000}
-		{Orientation -0.160519 0.987033 0.000000 0.987033 0.160519 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8037
+		{Position 1592.89 438.734 0}
+		{Orientation
+			 -0.160519   0.987033   0.000000
+			  0.987033   0.160519   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 56}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 44 29}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8036
-		{Position 1592.890015 438.734009 0.000000}
-		{Orientation -0.160519 0.987033 0.000000 0.987033 0.160519 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8036
+		{Position 1592.89 438.734 0}
+		{Orientation
+			 -0.160519   0.987033   0.000000
+			  0.987033   0.160519   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 55}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 84 1}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8035
-		{Position 768.072998 310.411011 0.000000}
-		{Orientation 0.467888 0.883788 0.000000 0.883788 -0.467888 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8035
+		{Position 768.073 310.411 0}
+		{Orientation
+			  0.467888   0.883788   0.000000
+			  0.883788  -0.467888   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 54}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 134 67}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8034
-		{Position 768.072998 310.411011 0.000000}
-		{Orientation 0.467888 0.883788 0.000000 0.883788 -0.467888 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8034
+		{Position 768.073 310.411 0}
+		{Orientation
+			  0.467888   0.883788   0.000000
+			  0.883788  -0.467888   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 53}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 93 0}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8033
-		{Position 768.072998 310.411011 0.000000}
-		{Orientation 0.467888 0.883788 0.000000 0.883788 -0.467888 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8033
+		{Position 768.073 310.411 0}
+		{Orientation
+			  0.467888   0.883788   0.000000
+			  0.883788  -0.467888   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 52}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 105 113}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8032
-		{Position 651.156006 731.422974 0.000000}
-		{Orientation 0.774684 0.632348 0.000000 0.632348 -0.774684 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8032
+		{Position 651.156 731.423 0}
+		{Orientation
+			  0.774684   0.632348   0.000000
+			  0.632348  -0.774684   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 79.9515}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 51}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 83 20}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8031
-		{Position 651.156006 731.422974 0.000000}
-		{Orientation 0.774684 0.632348 0.000000 0.632348 -0.774684 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8031
+		{Position 651.156 731.423 0}
+		{Orientation
+			  0.774684   0.632348   0.000000
+			  0.632348  -0.774684   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 82.5109}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 50}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 24 140}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8030
-		{Position 651.156006 731.422974 0.000000}
-		{Orientation 0.774684 0.632348 0.000000 0.632348 -0.774684 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x8030
+		{Position 651.156 731.423 0}
+		{Orientation
+			  0.774684   0.632348   0.000000
+			  0.632348  -0.774684   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 84.7147}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 49}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 54 78}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x802f
-		{Position 2237.639893 1345.760010 0.000000}
-		{Orientation -0.275503 0.961300 0.000000 0.961300 0.275503 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x802f
+		{Position 2237.64 1345.76 0}
+		{Orientation
+			 -0.275503   0.961300   0.000000
+			  0.961300   0.275503   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 48}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 94 100}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x802e
-		{Position 2237.639893 1345.760010 0.000000}
-		{Orientation -0.275503 0.961300 0.000000 0.961300 0.275503 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x802e
+		{Position 2237.64 1345.76 0}
+		{Orientation
+			 -0.275503   0.961300   0.000000
+			  0.961300   0.275503   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 47}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 5 26}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x802d
-		{Position 2237.639893 1345.760010 0.000000}
-		{Orientation -0.275503 0.961300 0.000000 0.961300 0.275503 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_crew" 0x802d
+		{Position 2237.64 1345.76 0}
+		{Orientation
+			 -0.275503   0.961300   0.000000
+			  0.961300   0.275503   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 40
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "grenade m24"
-					{cell 4 0}
-				}
-				{item "mp40"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 40 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "grenade m24" {cell 4 0}}
+				{item "mp40" {cell 0 1}}
 			}
 		}
 		{Player 2}
 		{MID 46}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_crew"}
 		{NameId 83 3}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x802c
-		{Position -392.934998 555.432983 0.000000}
-		{Orientation -0.003028 0.999995 0.000000 0.999995 0.003028 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x802c
+		{Position -392.935 555.433 0}
+		{Orientation
+			 -0.003028   0.999995   0.000000
+			  0.999995   0.003028   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 75.5834}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 45}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 114 14}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x802b
-		{Position 2632.350098 178.500000 3.192980}
-		{Orientation 0.999643 -0.008267 0.025423 -0.003483 -0.983158 -0.182722 -0.026506 -0.182569 0.982836}
+	{Human "ger.tank_com" 0x802b
+		{Position 2632.35 178.5 3.20953}
+		{Orientation
+			  0.999230  -0.033482   0.020457
+			 -0.029129  -0.982322  -0.184918
+			 -0.026287  -0.184179   0.982541
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter" filling "ammo pistol" 6
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" filling "ammo pistol" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 44}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 88 20}
 		{LastItem "valter"}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x802a
-		{Position 2922.360107 2003.030029 0.020233}
-		{Orientation -0.922180 0.386760 -0.000867 0.386759 0.922180 0.001190 -0.001260 -0.000762 0.999999}
+	{Human "ger.tank_com" 0x802a
+		{Position 2922.36 2003.03 0.0202332}
+		{Orientation
+			 -0.922180   0.386760  -0.000867
+			  0.386759   0.922180   0.001190
+			 -0.001260  -0.000762   0.999999
+		}
 		{Extender "vitality"
 			{Energy 68.7581}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 43}
-		{Chassis
-			{MovementModeLimit 1}
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 89 4}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8028
-		{Position 1927.619995 2244.899902 0.000000}
-		{Orientation -0.270399 0.962748 0.000000 0.962748 0.270399 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x8028
+		{Position 1927.62 2244.9 0}
+		{Orientation
+			 -0.270399   0.962748   0.000000
+			  0.962748   0.270399   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 41}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 42 102}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8027
-		{Position -534.357971 2188.350098 0.000000}
-		{Orientation 0.949622 -0.313398 0.000000 -0.313398 -0.949622 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x8027
+		{Position -534.358 2188.35 0}
+		{Orientation
+			  0.949622  -0.313398   0.000000
+			 -0.313398  -0.949622   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 90.6028}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 40}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 56 92}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8026
-		{Position 963.052979 464.829987 0.000000}
-		{Orientation 0.977616 0.210395 0.000000 0.210395 -0.977616 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x8026
+		{Position 1623.74 568.089 0}
+		{Orientation
+			  0.991271   0.131841   0.000000
+			  0.131841  -0.991271   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter" filling "ammo pistol" 6
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" filling "ammo pistol" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 39}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 88 14}
 		{LastItem "valter"}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8025
-		{Position 1105.469971 -15.196400 21.962999}
-		{Orientation 0.221043 0.790019 0.571941 -0.962879 0.269934 -0.000725 -0.154959 -0.550549 0.820359}
+	{Human "ger.tank_com" 0x8025
+		{Position 1120.32 -15.9766 21.978}
+		{Orientation
+			  0.057900  -0.817151   0.573600
+			  0.997499   0.070679   0.000000
+			 -0.040542   0.572165   0.819200
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 38}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 0 14}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8024
-		{Position 2737.600098 914.093018 22.012600}
-		{Orientation -0.016456 -0.814556 0.579943 0.999798 -0.020108 0.000125 0.011559 0.579828 0.814722}
+	{Human "ger.tank_com" 0x8024
+		{Position 2722.52 913.372 21.978}
+		{Orientation
+			  0.003234   0.819194   0.573600
+			 -0.999992   0.003948   0.000000
+			 -0.002264  -0.573596   0.819200
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 37}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 2 52}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8023
-		{Position -451.113007 2412.550049 21.974199}
-		{Orientation 0.817833 -0.020793 0.575172 0.024738 0.999694 0.000966 -0.575016 0.013439 0.818096}
+	{Human "ger.tank_com" 0x8023
+		{Position -454.445 2411.68 21.978}
+		{Orientation
+			  0.740811   0.349696   0.573600
+			 -0.426875   0.904311   0.000000
+			 -0.518713  -0.244855   0.819200
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{DisableObstacles}
 		{Player 2}
 		{MID 36}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 94 59}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8022
-		{Position 299.556000 1981.729980 0.000000}
-		{Orientation -0.254923 -0.966961 0.000000 -0.966961 0.254923 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x8022
+		{Position 300.103 1976.55 -0.324843}
+		{Orientation
+			 -0.178190  -0.983996   0.000161
+			 -0.983996   0.178189  -0.000991
+			 -0.000947   0.000335   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 35}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 132 89}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8021
-		{Position -61.407700 120.055000 0.013099}
-		{Orientation 0.900440 0.434979 -0.000561 0.434980 -0.900440 0.000771 0.000170 0.000938 1.000000}
+	{Human "ger.tank_com" 0x8021
+		{Position -61.4077 120.055 0.0130987}
+		{Orientation
+			  0.900440   0.434979  -0.000561
+			  0.434980  -0.900440   0.000771
+			  0.000170   0.000938   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 34}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 18 144}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8020
-		{Position 1978.109985 577.791992 0.237887}
-		{Orientation -0.999819 0.018323 -0.005067 0.018393 0.999733 -0.013992 -0.004809 0.014083 0.999889}
+	{Human "ger.tank_com" 0x8020
+		{Position 813.555 473.255 0}
+		{Orientation
+			  0.914783   0.403946   0.000000
+			  0.403946  -0.914783   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 33}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 140 108}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x801e
-		{Position 2897.689941 1084.930054 0.000000}
-		{Orientation 0.945397 -0.325921 0.000000 -0.325921 -0.945397 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x801e
+		{Position 2897.69 1084.93 0}
+		{Orientation
+			  0.945397  -0.325921   0.000000
+			 -0.325921  -0.945397   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 31}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 133 140}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x801d
-		{Position 1592.890015 438.734009 0.000000}
-		{Orientation -0.160519 0.987033 0.000000 0.987033 0.160519 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x801d
+		{Position 1592.89 438.734 0}
+		{Orientation
+			 -0.160519   0.987033   0.000000
+			  0.987033   0.160519   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 30}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 37 114}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x801c
-		{Position 768.072998 310.411011 0.000000}
-		{Orientation 0.467888 0.883788 0.000000 0.883788 -0.467888 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x801c
+		{Position 768.073 310.411 0}
+		{Orientation
+			  0.467888   0.883788   0.000000
+			  0.883788  -0.467888   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 29}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 134 37}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x801b
-		{Position 651.156006 731.422974 0.000000}
-		{Orientation 0.774684 0.632348 0.000000 0.632348 -0.774684 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x801b
+		{Position 651.156 731.423 0}
+		{Orientation
+			  0.774684   0.632348   0.000000
+			  0.632348  -0.774684   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "vitality"
 			{Energy 92.1653}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 28}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 76 121}
 		{FsmState "board"}
 	}
-	{Entity "_infantry2_rus" 0x8016
-		{Position 2008.420044 -396.588989 0.000000}
-		{Orientation -0.463466 0.886115 0.000000 0.886115 0.463466 0.000000 0.000000 0.000000 1.000000}
+	{Human "ger.tank_com" 0x8016
+		{Position 2008.42 -396.589 0}
+		{Orientation
+			 -0.463466   0.886115   0.000000
+			  0.886115   0.463466   0.000000
+			  0.000000   0.000000   1.000000
+		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 60
-					{cell 0 0}
-				}
-				{item "knife hand"
-					{cell 2 0}
-				}
-				{item "valter"
-					{cell 4 0}
-				}
+				{item "ammo pistol" 60 {cell 0 0}}
+				{item "knife" {cell 2 0}}
+				{item "valter" {cell 4 0}}
 			}
 		}
 		{Player 2}
 		{MID 23}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.tank_com"}
 		{NameId 71 2}
 		{FsmState "board"}
 	}
 	{Entity "willysmb_p" 0x8029
-		{Position 3144.135742 3716.052979 3.340412}
-		{Turn -119.357750}
-		{Player 1}
-		{MID 42}
-		{TexMod "ambush2"}
+		{Position 3144.14 3716.05 -0.162536}
+		{Turn -119.334}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "grenade rpg40" 6
-					{cell 2 1}
-				}
-				{item "grenade rpg43" 2
-					{cell 2 2}
-				}
-				{item "colt" filling "ammo pistol" 7
-					{cell 2 3}
-				}
-				{item "repair_kit" 1
-					{cell 0 2}
-				}
-				{item "grenade molotov_coctail" 4
-					{cell 2 0}
-				}
-				{item "mine antitank" 2
-					{cell 0 0}
-				}
-				{item "mine antipersonnel" 4
-					{cell 0 4}
-				}
-				{item "ammo rifle" 20
-					{cell 2 4}
-				}
-				{item "ammo pistol" 300
-					{cell 0 5}
-				}
-				{item "grenade smoke" 4
-					{cell 3 4}
-				}
-				{item "ammo mgun" 400
-					{cell 2 5}
-				}
+				{item "grenade rpg40" 6 {cell 2 1}}
+				{item "grenade rpg43" 2 {cell 2 2}}
+				{item "colt" filling "ammo pistol" 7 {cell 2 3}}
+				{item "repair_kit" {cell 0 2}}
+				{item "grenade molotov_coctail" 4 {cell 2 0}}
+				{item "mine antitank" 2 {cell 0 0}}
+				{item "mine antipersonnel" 4 {cell 4 0}}
+				{item "ammo rifle" 20 {cell 6 0}}
+				{item "ammo pistol" 300 {cell 4 1}}
+				{item "grenade smoke" 4 {cell 7 0}}
+				{item "ammo mgun" 400 {cell 6 1}}
 			}
 		}
-		{Weaponry
-			{State
-				{Weapon
-					{Ammo "ammo mgun" 200}
-				}
-			}
-		}
+		{Player 1}
+		{MID 42}
 		{Chassis
 			{FuelBag
 				{Remain 90}
 			}
-			{CurrentGearDir 0}
 		}
 	}
-	{Entity "_infantry2_rus" 0x801f
-		{Position 3053.647705 3569.161865 -11.351362}
+	{Human "sas" 0x801f
+		{Position 3053.65 3569.16 -11.0957}
 		{Turn 78.7241}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "sten" filling "ammo pistol" 33 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "grenade n73at" {cell 6 1}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "bandage" 5 {cell 4 1}}
+				{item "knife" {cell 6 2}}
+				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
+			}
+		}
 		{Player 1}
 		{MID 32}
-		{Breed "sas"}
+		{Able {personage 1}}
+		{NameId 57 99}
 		{FsmState "stand"}
+	}
+	{Human "sas" 0x8015
+		{Position 3032 3619.19 -5.60077}
+		{Turn -103.238}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "sten" filling "ammo pistol" 33
-					{cell 0 0}
-				}
-				{item "ammo pistol" 100
-					{cell 4 0}
-				}
-				{item "grenade n73at" 1
-					{cell 6 1}
-				}
-				{item "grenade smoke" 1
-					{cell 7 0}
-				}
-				{item "bandage" 5
-					{cell 4 1}
-				}
-				{item "knife hand" 1
-					{cell 6 2}
-				}
-				{item "grenade f1" 1
-					{cell 6 0}
-				}
+				{item "sten" filling "ammo pistol" 33 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "grenade n73at" {cell 6 1}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "bandage" 5 {cell 4 1}}
+				{item "knife" {cell 6 2}}
+				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
-	}
-	{Entity "_infantry2_rus" 0x8015
-		{Position 3031.997559 3619.187256 -0.768781}
-		{Turn -103.238}
 		{Player 1}
 		{MID 22}
-		{Breed "sas"}
+		{Able {personage 1}}
 		{NameId 78 8}
 		{FsmState "stand"}
+	}
+	{Human "sas" 0x8014
+		{Position 3080.41 3630.64 -13.7733}
+		{Turn -85.0288}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "sten" filling "ammo pistol" 33
-					{cell 0 0}
-				}
-				{item "ammo pistol" 100
-					{cell 4 0}
-				}
-				{item "grenade n73at" 1
-					{cell 6 1}
-				}
-				{item "grenade smoke" 1
-					{cell 7 0}
-				}
-				{item "bandage" 5
-					{cell 4 1}
-				}
-				{item "knife hand" 1
-					{cell 6 2}
-				}
-				{item "grenade f1" 1
-					{cell 6 0}
-				}
+				{item "sten" filling "ammo pistol" 33 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "grenade n73at" {cell 6 1}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "bandage" 5 {cell 4 1}}
+				{item "knife" {cell 6 2}}
+				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
-	}
-	{Entity "_infantry2_rus" 0x8014
-		{Position 3080.414063 3630.642822 -17.250046}
-		{Turn -85.028801}
 		{Player 1}
 		{MID 21}
-		{Breed "sas"}
+		{Able {personage 1}}
 		{NameId 57 91}
 		{FsmState "stand"}
+	}
+	{Human "sas" 0x8013
+		{Position 3057.41 3628.97 -13.2238}
+		{Turn -112.34}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "sten" filling "ammo pistol" 33
-					{cell 0 0}
-				}
-				{item "ammo pistol" 100
-					{cell 4 0}
-				}
-				{item "grenade n73at" 1
-					{cell 6 1}
-				}
-				{item "grenade smoke" 1
-					{cell 7 0}
-				}
-				{item "bandage" 5
-					{cell 4 1}
-				}
-				{item "knife hand" 1
-					{cell 6 2}
-				}
-				{item "grenade f1" 1
-					{cell 6 0}
-				}
+				{item "sten" filling "ammo pistol" 33 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 4 0}}
+				{item "grenade n73at" {cell 6 1}}
+				{item "grenade smoke" {cell 7 0}}
+				{item "bandage" 5 {cell 4 1}}
+				{item "knife" {cell 6 2}}
+				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
-	}
-	{Entity "_infantry2_rus" 0x8013
-		{Position 3057.406006 3628.967285 -8.397627}
-		{Turn -112.34}
 		{Player 1}
 		{MID 20}
-		{Breed "sas"}
+		{Able {personage 1}}
 		{NameId 63 75}
 		{FsmState "stand"}
-		{Extender "inventory"
-			{box
-				{clear}
-				{item "sten" filling "ammo pistol" 33
-					{cell 0 0}
-				}
-				{item "ammo pistol" 100
-					{cell 4 0}
-				}
-				{item "grenade n73at" 1
-					{cell 6 1}
-				}
-				{item "grenade smoke" 1
-					{cell 7 0}
-				}
-				{item "bandage" 5
-					{cell 4 1}
-				}
-				{item "knife hand" 1
-					{cell 6 2}
-				}
-				{item "grenade f1" 1
-					{cell 6 0}
-				}
-			}
-		}
 	}
-	{Entity "_infantry2_rus" 0x801a
-		{Position 1594.709961 1117.719971 0.000000}
+	{Human "ger.infantry_smg" 0x801a
+		{Position 1594.71 1117.72 0}
 		{Turn 100.286}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 45
-					{cell 0 0}
-				}
-				{item "grenade m24"
-					{cell 2 0}
-				}
-				{item "bandage"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 45 {cell 0 0}}
+				{item "grenade m24" {cell 2 0}}
+				{item "bandage" {cell 0 1}}
 			}
 		}
 		{Player 2}
@@ -4927,22 +3301,16 @@
 				}
 			}
 		}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_smg"}
 		{NameId 142 21}
 		{FsmState "stand"}
 	}
-	{Entity "_infantry2_rus" 0x8019
-		{Position 1579.369995 1102.430054 0.000000}
+	{Human "ger.infantry_rifle" 0x8019
+		{Position 1579.37 1102.43 0}
 		{Turn 162.992}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo rifle" 6
-					{cell 4 0}
-				}
+				{item "ammo rifle" 6 {cell 4 0}}
 			}
 		}
 		{Player 2}
@@ -4955,46 +3323,27 @@
 				}
 			}
 		}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.infantry_rifle"}
 		{NameId 131 47}
 		{Cover
-			{sector 1579.37 1102.43
-				{type "squat_lie"}
+			{sector 1579.37 1102.43 {type "squat_lie"}
 				{wall 0 0 1570.04 1095.87 1583.71 1140.56}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x8018
-		{Position 1574.339966 803.049011 0.000000}
+	{Human "ger.bazoker" 0x8018
+		{Position 1574.34 803.049 0}
 		{Turn 164.244}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo bazooka"
-					{cell 0 0}
-				}
-				{item "ammo bazooka"
-					{cell 2 0}
-				}
-				{item "ammo bazooka"
-					{cell 4 0}
-				}
-				{item "ammo bazooka"
-					{cell 6 0}
-				}
-				{item "ammo bazooka"
-					{cell 0 1}
-				}
-				{item "ammo pistol" 30
-					{cell 2 1}
-				}
-				{item "weapon panzershreck"
-					{cell 0 2}
-				}
+				{item "ammo bazooka" {cell 0 0}}
+				{item "ammo bazooka" {cell 2 0}}
+				{item "ammo bazooka" {cell 4 0}}
+				{item "ammo bazooka" {cell 6 0}}
+				{item "ammo bazooka" {cell 0 1}}
+				{item "ammo pistol" 30 {cell 2 1}}
+				{item "weapon panzershreck" {cell 0 2}}
 			}
 		}
 		{Player 2}
@@ -5007,40 +3356,25 @@
 				}
 			}
 		}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.bazoker"}
 		{NameId 133 62}
 		{Cover
-			{sector 1574.34 803.049
-				{type "squat_lie"}
+			{sector 1574.34 803.049 {type "squat_lie"}
 				{wall 0 0 1565.16 796.288 1577.85 841.264}
 			}
 		}
 		{FsmState "squat"}
 	}
-	{Entity "_infantry2_rus" 0x8017
-		{Position 1588.369995 775.992004 0.000000}
+	{Human "ger.elite_ss" 0x8017
+		{Position 1588.37 775.992 0}
 		{Turn -151.26}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "ammo pistol" 100
-					{cell 0 0}
-				}
-				{item "ammo pistol" 100
-					{cell 2 0}
-				}
-				{item "bandage" 3
-					{cell 4 0}
-				}
-				{item "grenade m24"
-					{cell 6 0}
-				}
-				{item "grenade m24"
-					{cell 0 1}
-				}
+				{item "ammo pistol" 100 {cell 0 0}}
+				{item "ammo pistol" 100 {cell 2 0}}
+				{item "bandage" 3 {cell 4 0}}
+				{item "grenade m24" {cell 6 0}}
+				{item "grenade m24" {cell 0 1}}
 			}
 		}
 		{Player 2}
@@ -5053,134 +3387,36 @@
 				}
 			}
 		}
-		{Chassis
-			{MovementSpeed 1.11111}
-		}
-		{Breed "ger.elite_ss"}
 		{NameId 89 128}
 		{Cover
-			{sector 1588.37 775.992
-				{type "squat_lie"}
+			{sector 1588.37 775.992 {type "squat_lie"}
 				{wall 0 0 1586.56 764.735 1564.09 805.709}
 			}
 		}
 		{FsmState "squat"}
 	}
 	{Entity "stug-4g" 0x8012
-		{Position -392.934998 555.432983 0.000000}
+		{Position -392.935 555.433 0}
 		{Turn 90.1735}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis body"
-				{Position 1.4312 -1.00048 19.8355}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -0.327996}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value -0.321588}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value -0.321778}
-			}
-			{BoneSave "basis body wheell2"
-				{Value -0.327802}
-			}
-			{BoneSave "basis body gun_rot"
-				{Value -0.00740892}
-			}
-			{BoneSave "basis body shield_right"
-				{State 0x4}
-			}
-			{BoneSave "basis body shield_left"
-				{State 0x4}
-			}
-			{BoneSave "basis wheelsl trackl"
-				{View "trackl"
-					{LastMeshAnm "start"}
-				}
-			}
-			{BoneSave "basis wheelsr trackr"
-				{View "trackr"
-					{LastMeshAnm "start"}
-				}
-			}
-		}
 		{Volume "shield_left"
-			{Able
-				{visible 0}
-				{bullet 0}
-				{contact 0}
-				{contact_ground 0}
-				{blast 0}
-			}
+			{Able {visible 0}{bullet 0}{contact 0}{contact_ground 0}{blast 0}}
 		}
 		{Volume "shield_right"
-			{Able
-				{visible 0}
-				{bullet 0}
-				{contact 0}
-				{contact_ground 0}
-				{blast 0}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
+			{Able {visible 0}{bullet 0}{contact 0}{contact_ground 0}{blast 0}}
 		}
 		{Player 2}
 		{MID 19}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "stug-3b" 0x8011
-		{Position 2008.420044 -396.588989 0.000000}
+		{Position 2008.42 -396.589 0}
 		{Turn 117.611}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis body"
-				{Position 1.50988 -1.00048 19.7842}
-			}
-			{BoneSave "basis body gun_rot1"
-				{Value -0.174533}
-			}
-			{BoneSave "basis body gun_rot1 gun_rot"
-				{Value 0.0190246}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -0.49043}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 2.59089}
-			}
-			{BoneSave "basis body wheelr3"
-				{Value 2.31505}
-			}
-			{BoneSave "basis body wheell3"
-				{Value -0.208036}
-			}
-			{BoneSave "basis wheelsr trackr"
-				{View "trackr"
-					{LastMeshAnm "stop"}
-				}
-			}
-			{BoneSave "basis wheelsl trackl"
-				{View "trackl"
-					{LastMeshAnm "stop"}
-				}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 18}
 		{Weaponry
@@ -5197,58 +3433,22 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 0}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-6e" 0x8010
-		{Position 1735.439941 582.276001 0.000000}
-		{Turn 178.941}
+		{Position 2434.33 528.458 0}
+		{Turn 171.016}
 		{TexMod "ambush"}
-		{BoneSave
-			{BoneSave "basis body track_deform_l wheell2"
-				{Value -0.739925}
-			}
-			{BoneSave "basis body track_deform_l wheell1"
-				{Value -0.775063}
-			}
-			{BoneSave "basis body turret"
-				{Value -0.00398351}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.00931978}
-			}
-			{BoneSave "basis body track_deform_r wheelr1"
-				{Value 0.73572}
-			}
-			{BoneSave "basis body track_deform_r wheelr2"
-				{Value 0.80317}
-			}
-			{WorkingViews "exhaust"}
-		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "bullet88 ap" 30
-					{cell 0 0}
-				}
-				{item "bullet88 fg" 30
-					{cell 0 1}
-				}
-				{item "repair_kit"
-					{cell 0 2}
-				}
-				{item "can" filling "fuel" 20
-					{cell 2 2}
-				}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
+				{item "bullet88 ap" 30 {cell 0 0}}
+				{item "bullet88 fg" 30 {cell 0 1}}
+				{item "repair_kit" {cell 0 2}}
+				{item "can" filling "fuel" 20 {cell 2 2}}
 			}
 		}
 		{Player 2}
@@ -5267,65 +3467,25 @@
 			}
 		}
 		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.888889}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentSpeed 0.888889}
-			{CurrentGear 3}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-6b" 0x800f
-		{Position 651.156006 731.422974 0.000000}
+		{Position 651.156 731.423 0}
 		{Turn 39.2236}
 		{TexMod "ambush2"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value 1.80557}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.00167584}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -0.142687}
-			}
-			{BoneSave "basis body wheell2"
-				{Value 0.651781}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 2.53191}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value 1.74282}
-			}
-		}
 		{Placer
-			{State "seat5"
-				{Broken}
-			}
-			{State "seat6"
-				{Broken}
-			}
+			{State "seat5" {Broken}}
+			{State "seat6" {Broken}}
 		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "repair_kit"
-					{cell 0 0}
-				}
-				{item "bullet88 fg" 30
-					{cell 0 2}
-				}
-				{item "bullet88 ap" 50
-					{cell 0 3}
-				}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
+				{item "repair_kit" {cell 0 0}}
+				{item "bullet88 fg" 30 {cell 0 2}}
+				{item "bullet88 ap" 50 {cell 0 3}}
 			}
 		}
 		{Player 2}
@@ -5344,105 +3504,36 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 0.888889}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-6" 0x800e
-		{Position 2237.639893 1345.760010 0.000000}
+		{Position 2237.64 1345.76 0}
 		{Turn 105.992}
 		{TexMod "ambush"}
-		{BoneSave
-			{BoneSave "basis body"
-				{Orientation -1.000000 0.000014 0.000026 -0.000014 -0.999999 0.001147 0.000026 0.001147 0.999999}
-			}
-			{BoneSave "basis body track_deform_l wheell2"
-				{Value -1.72864}
-			}
-			{BoneSave "basis body track_deform_l wheell1"
-				{Value -1.89068}
-			}
-			{BoneSave "basis body turret"
-				{Value 0.537534}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.00396729}
-			}
-			{BoneSave "basis body track_deform_r wheelr1"
-				{Value 0.256513}
-			}
-			{BoneSave "basis body track_deform_r wheelr2"
-				{Value 0.21628}
-			}
-		}
 		{Extender "inventory"
 			{box
 				{clear}
-				{item "repair_kit"
-					{cell 0 0}
-				}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
+				{item "repair_kit" {cell 0 0}}
 			}
 		}
 		{Player 2}
 		{MID 15}
 		{Weaponry
 			{Number 1}
-			{State "gun"
-				{Weapon
-					{Ammo "bullet88 ap" 1}
-				}
-			}
-			{State "mgun"
-				{Weapon
-					{Ammo "ammo mgun" 100}
-				}
-			}
 		}
 		{Chassis
-			{MovementSpeed 0.888889}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-4g" 0x800d
-		{Position 1592.890015 438.734009 0.000000}
+		{Position 1592.89 438.734 0}
 		{Turn 99.237}
 		{TexMod "ambush"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value 1.17787}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.00187841}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -1.0396}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 0.284277}
-			}
-			{BoneSave "basis body wheell2"
-				{Value -0.0571492}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value -0.496948}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 14}
 		{Weaponry
@@ -5459,42 +3550,15 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGearDir 1}
 		}
 	}
 	{Entity "pz-4g" 0x800c
-		{Position 768.072998 310.411011 0.000000}
+		{Position 768.073 310.411 0}
 		{Turn 62.1027}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value 0.811868}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.00199171}
-			}
-			{BoneSave "basis body wheell1"
-				{Value 0.715328}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 0.585537}
-			}
-			{BoneSave "basis body wheell2"
-				{Value 0.722645}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value 0.57971}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 13}
 		{Weaponry
@@ -5511,52 +3575,15 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-4d" 0x800b
-		{Position -534.357971 2188.350098 0.000000}
+		{Position -534.358 2188.35 0}
 		{Turn -18.2641}
 		{TexMod "ambush5"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value 1.0643}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.00203356}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -1.8005}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 2.69812}
-			}
-			{BoneSave "basis body wheell2"
-				{Value -0.564826}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value 1.82784}
-			}
-			{BoneSave "basis wheelsl trackl"
-				{View "trackl"
-					{LastMeshAnm "stop"}
-				}
-			}
-			{BoneSave "basis wheelsr trackr"
-				{View "trackr"
-					{LastMeshAnm "stop"}
-				}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 12}
 		{Weaponry
@@ -5567,42 +3594,15 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-3g" 0x800a
-		{Position 1927.619995 2244.899902 0.000000}
+		{Position 1927.62 2244.9 0}
 		{Turn 105.688}
 		{TexMod "ambush2"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value -1.29216}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.0020022}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value -0.400503}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -0.3593}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value -0.40078}
-			}
-			{BoneSave "basis body wheell2"
-				{Value -0.359017}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 11}
 		{Weaponry
@@ -5619,43 +3619,15 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGearDir 1}
 		}
 	}
 	{Entity "pz-3g" 0x8009
-		{Position 1112.770020 486.669006 0.000000}
-		{Turn 8.0921}
+		{Position 504.095 -418.074 0}
+		{Turn -178.52}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value -0.478515}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.00236909}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 2.73859}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -1.04367}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value 2.55917}
-			}
-			{BoneSave "basis body wheell2"
-				{Value -0.860249}
-			}
-			{WorkingViews "exhaust"}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 10}
 		{Weaponry
@@ -5672,52 +3644,17 @@
 			}
 		}
 		{Chassis
-			{MovementMode 0}
-			{MovementSpeed 0.555556}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentSpeed 0.555556}
-			{CurrentGear 1}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-2f" 0x8008
-		{Position 2922.360107 2003.030029 0.020233}
+		{Position 2922.36 2003.03 0.0202332}
 		{Turn 157.247}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value 1.62322}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.000949949}
-			}
-			{BoneSave "basis body turret gun_rot foresight3"
-				{Value 0.0450638}
-			}
-			{BoneSave "basis body wheell2"
-				{Value 1.62883}
-			}
-			{BoneSave "basis body wheell1"
-				{Value 1.33285}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 2.02646}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value 1.75621}
-			}
-		}
 		{Placer
-			{State "seat4"
-				{Broken}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
+			{State "seat4" {Broken}}
 		}
 		{Player 2}
 		{MID 9}
@@ -5735,46 +3672,17 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-2f" 0x8007
-		{Position 2897.689941 1084.930054 0.000000}
+		{Position 2897.69 1084.93 0}
 		{Turn -19.0214}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value 2.06154}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.0024112}
-			}
-			{BoneSave "basis body wheell2"
-				{Value 0.712744}
-			}
-			{BoneSave "basis body wheell1"
-				{Value 1.41415}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 1.19026}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value 1.82587}
-			}
-		}
 		{Placer
-			{State "seat4"
-				{Broken}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
+			{State "seat4" {Broken}}
 		}
 		{Player 2}
 		{MID 8}
@@ -5786,47 +3694,21 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGear 1}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-2f" 0x8006
-		{Position 299.556000 1981.729980 0.000000}
-		{Turn -104.769}
+		{Position 300.103 1976.55 -0.324843}
+		{Orientation
+			 -0.178190  -0.983996   0.000161
+			  0.983996  -0.178189   0.000991
+			 -0.000947   0.000335   1.000000
+		}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value -2.17377}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value 0.00248957}
-			}
-			{BoneSave "basis body wheell2"
-				{Value -0.492819}
-			}
-			{BoneSave "basis body wheell1"
-				{Value 0.0565116}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value -2.30174}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value -1.79955}
-			}
-		}
 		{Placer
-			{State "seat4"
-				{Broken}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
+			{State "seat4" {Broken}}
 		}
 		{Player 2}
 		{MID 7}
@@ -5838,40 +3720,15 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGear 1}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "pz-1b" 0x8005
-		{Position 1523.930054 2477.459961 0.000000}
+		{Position 1523.93 2477.46 0}
 		{Turn 134.723}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value -2.54718}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value 1.05679}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 0.97433}
-			}
-			{BoneSave "basis body wheell2"
-				{Value 0.376902}
-			}
-			{BoneSave "basis body wheell1"
-				{Value 0.448122}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 6}
 		{Weaponry
@@ -5882,39 +3739,15 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGearDir 1}
 		}
 	}
 	{Entity "pz-1b" 0x8004
-		{Position -61.407700 120.055000 0.013099}
+		{Position -61.4077 120.055 0.0130987}
 		{Turn 25.784}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis body turret"
-				{Value -3.05668}
-			}
-			{BoneSave "basis body wheelr2"
-				{Value 1.24945}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 0.576755}
-			}
-			{BoneSave "basis body wheell2"
-				{Value -1.40704}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -0.734406}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 5}
 		{Weaponry
@@ -5925,75 +3758,15 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 100}
 			}
-			{CurrentGear 1}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "panzerflak" 0x8003
-		{Position 2632.350098 178.500000 3.192980}
-		{Turn -0.473814}
+		{Position 2632.35 178.5 3.20953}
+		{Turn -1.91912}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis wheelsl wheell6"
-				{Value -2.70116}
-			}
-			{BoneSave "basis wheelsl wheell5"
-				{Value -2.70116}
-			}
-			{BoneSave "basis wheelsl wheell4"
-				{Value -2.70116}
-			}
-			{BoneSave "basis wheelsl wheell3"
-				{Value -2.70116}
-			}
-			{BoneSave "basis wheelsl wheell2"
-				{Value -2.70116}
-			}
-			{BoneSave "basis wheelsr wheelr2"
-				{Value -2.70116}
-			}
-			{BoneSave "basis wheelsr wheelr3"
-				{Value -2.70116}
-			}
-			{BoneSave "basis wheelsr wheelr4"
-				{Value -2.70116}
-			}
-			{BoneSave "basis wheelsr wheelr5"
-				{Value -2.70116}
-			}
-			{BoneSave "basis wheelsr wheelr6"
-				{Value -2.70116}
-			}
-			{BoneSave "basis body"
-				{Orientation 0.000000 1.000000 0.000000 -0.002150 0.000000 0.999998 0.999998 0.000000 0.002150}
-			}
-			{BoneSave "basis body turret"
-				{Value -1.26131}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value -0.183514}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value -2.70116}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -2.70116}
-			}
-			{BoneSave "basis body cover"
-				{View "cover"
-					{LastMeshAnm "open"}
-				}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 4}
 		{Weaponry
@@ -6004,145 +3777,27 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 0}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "panzerflak" 0x8002
-		{Position -450.319000 2405.280029 0.000000}
+		{Position -450.319 2405.28 0}
 		{Turn 25.2694}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis wheelsl wheell6"
-				{Value 2.67408}
-			}
-			{BoneSave "basis wheelsl wheell5"
-				{Value -2.47663}
-			}
-			{BoneSave "basis wheelsl wheell4"
-				{Value 1.69719}
-			}
-			{BoneSave "basis wheelsl wheell3"
-				{Value -1.58045}
-			}
-			{BoneSave "basis wheelsl wheell2"
-				{Value -2.85776}
-			}
-			{BoneSave "basis wheelsr wheelr2"
-				{Value 1.72744}
-			}
-			{BoneSave "basis wheelsr wheelr3"
-				{Value 0.439017}
-			}
-			{BoneSave "basis wheelsr wheelr4"
-				{Value -2.85726}
-			}
-			{BoneSave "basis wheelsr wheelr5"
-				{Value 1.31677}
-			}
-			{BoneSave "basis wheelsr wheelr6"
-				{Value 2.46152}
-			}
-			{BoneSave "basis body"
-				{Orientation 0.000000 1.000000 0.000000 -0.002150 0.000000 0.999998 0.999998 0.000000 0.002150}
-			}
-			{BoneSave "basis body turret"
-				{Value 0.465776}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value -0.00137281}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 2.08353}
-			}
-			{BoneSave "basis body wheell1"
-				{Value -2.79772}
-			}
-			{BoneSave "basis body cover"
-				{View "cover"
-					{LastMeshAnm "open"}
-				}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 3}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 0}
 			}
-			{CurrentGearDir 1}
 		}
 	}
 	{Entity "panzerflak" 0x8001
-		{Position 2730.070068 914.343018 0.000000}
+		{Position 2730.07 914.343 0}
 		{Turn 89.7738}
 		{TexMod "ambush1"}
-		{BoneSave
-			{BoneSave "basis wheelsl wheell6"
-				{Value 0.499401}
-			}
-			{BoneSave "basis wheelsl wheell5"
-				{Value -0.876838}
-			}
-			{BoneSave "basis wheelsl wheell4"
-				{Value -1.44826}
-			}
-			{BoneSave "basis wheelsl wheell3"
-				{Value -0.675976}
-			}
-			{BoneSave "basis wheelsl wheell2"
-				{Value 0.648108}
-			}
-			{BoneSave "basis wheelsr wheelr2"
-				{Value -1.91113}
-			}
-			{BoneSave "basis wheelsr wheelr3"
-				{Value -0.567234}
-			}
-			{BoneSave "basis wheelsr wheelr4"
-				{Value 0.225704}
-			}
-			{BoneSave "basis wheelsr wheelr5"
-				{Value -0.364561}
-			}
-			{BoneSave "basis wheelsr wheelr6"
-				{Value -1.76042}
-			}
-			{BoneSave "basis body"
-				{Orientation 0.000000 1.000000 0.000000 0.007765 0.000000 0.999970 0.999970 0.000000 -0.007765}
-			}
-			{BoneSave "basis body turret"
-				{Value -3.12543}
-			}
-			{BoneSave "basis body turret gun_rot"
-				{Value -0.00724669}
-			}
-			{BoneSave "basis body wheelr1"
-				{Value 2.79608}
-			}
-			{BoneSave "basis body wheell1"
-				{Value 2.34714}
-			}
-			{BoneSave "basis body cover"
-				{View "cover"
-					{LastMeshAnm "open"}
-				}
-			}
-		}
-		{Interaction
-			{Calls
-				{"check_sinking" 1719 0.04}
-			}
-		}
 		{Player 2}
 		{MID 2}
 		{Weaponry
@@ -6153,321 +3808,225 @@
 			}
 		}
 		{Chassis
-			{MovementSpeed 1.66667}
 			{FuelBag
 				{Remain 0}
 			}
-			{CurrentGearDir 0}
 		}
 	}
 	{Entity "concrete_fence_destroy" 0x8403
-		{Position 1646.890015 -613.931030 13.496400}
+		{Position 1646.89 -613.931 13.4964}
 		{Turn 1.90043}
 	}
 	{Entity "piece_large_concrete" 0x8064
 		{Position 2489.91 -949.679 -1014}
-		{Orientation -0.988030 0.154005 -0.008907 -0.008797 0.001396 0.999960 0.154012 0.988069 -0.000024}
-		{Interaction
-			{Flags "crush"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			 -0.988030   0.154005  -0.008907
+			 -0.008797   0.001396   0.999960
+			  0.154012   0.988069  -0.000024
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x8058
 		{Position 1739.87 781.987 -1014}
 		{Turn -160.425}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
-		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9d00
 		{Position 2088.4 867.49 -1014}
-		{Orientation 0.949330 0.314282 -0.000244 0.125418 -0.379552 -0.916630 -0.288173 0.870154 -0.399736}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			  0.949330   0.314282  -0.000244
+			  0.125418  -0.379552  -0.916630
+			 -0.288173   0.870154  -0.399736
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9d02
 		{Position 1948.92 851.252 -1014}
-		{Orientation 0.991727 -0.003437 0.128322 -0.018378 0.985542 0.168433 -0.127046 -0.169398 0.977325}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			  0.991727  -0.003437   0.128322
+			 -0.018378   0.985542   0.168433
+			 -0.127046  -0.169398   0.977325
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9d04
 		{Position 2002.17 866.988 -1014}
-		{Orientation 0.998919 -0.043563 -0.016218 -0.018905 -0.061980 -0.997899 0.042466 0.997126 -0.062736}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			  0.998919  -0.043563  -0.016218
+			 -0.018905  -0.061980  -0.997899
+			  0.042466   0.997126  -0.062736
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9d06
 		{Position 2060.91 861.346 -1014}
-		{Orientation -0.169367 -0.985548 -0.003163 -0.985553 0.169365 0.000747 -0.000201 0.003244 -0.999995}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			 -0.169367  -0.985548  -0.003163
+			 -0.985553   0.169365   0.000747
+			 -0.000201   0.003244  -0.999995
 		}
 		{DisableObstacles}
 	}
 	{Entity "piece_large_concrete" 0x9d08
 		{Position 2003.32 856.586 -1014}
-		{Orientation -0.543536 0.839056 -0.023533 0.043302 0.056027 0.997490 0.838268 0.541152 -0.066785}
-		{Interaction
-			{Flags "crush"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			 -0.543536   0.839056  -0.023533
+			  0.043302   0.056027   0.997490
+			  0.838268   0.541152  -0.066785
 		}
 		{DisableObstacles}
 	}
 	{Entity "piece_large_concrete" 0x9d0c
 		{Position 1939.1 839.62 -1014}
-		{Orientation 0.113211 -0.269784 0.956243 0.896145 -0.387904 -0.215535 0.429078 0.881333 0.197850}
-		{Interaction
-			{Flags "crush"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			  0.113211  -0.269784   0.956243
+			  0.896145  -0.387904  -0.215535
+			  0.429078   0.881333   0.197850
 		}
 		{DisableObstacles}
 	}
 	{Entity "piece_large_concrete" 0x9d0e
 		{Position 2025.36 849.712 -1014}
-		{Orientation -0.989844 -0.130170 0.057128 0.133386 -0.989445 0.056623 0.049155 0.063668 0.996760}
-		{Interaction
-			{Flags "crush"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			 -0.989844  -0.130170   0.057128
+			  0.133386  -0.989445   0.056623
+			  0.049155   0.063668   0.996760
 		}
 		{DisableObstacles}
 	}
 	{Entity "piece_large_concrete" 0x9d10
 		{Position 2073.61 875.651 -1014}
-		{Orientation -0.617850 0.786246 0.008860 0.005453 -0.006984 0.999961 0.786277 0.617874 0.000028}
-		{Interaction
-			{Flags "crush"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			 -0.617850   0.786246   0.008860
+			  0.005453  -0.006984   0.999961
+			  0.786277   0.617874   0.000028
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9d15
 		{Position 2087.99 810.173 -1014}
-		{Orientation 0.009579 -0.015021 0.999841 -0.535102 0.844599 0.017815 -0.844733 -0.535188 0.000052}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			  0.009579  -0.015021   0.999841
+			 -0.535102   0.844599   0.017815
+			 -0.844733  -0.535188   0.000052
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9d19
 		{Position 2070.35 814.697 -1014}
 		{Turn 45.7734}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
-		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9d1d
 		{Position 2073.18 788.814 -1014}
-		{Orientation 0.999333 -0.036520 -0.000993 0.000998 0.000118 1.000000 -0.036520 -0.999333 0.000155}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			  0.999333  -0.036520  -0.000993
+			  0.000998   0.000117   1.000000
+			 -0.036520  -0.999333   0.000154
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9d1f
 		{Position 2071.41 763.65 -1014}
 		{Turn 42.896}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
-		}
 		{DisableObstacles}
 	}
 	{Entity "destroy_pit" 0x805c
-		{Position -26.785400 1735.589966 0.000000}
+		{Position -26.7854 1735.59 0}
 	}
 	{Entity "concrete_fence_destroy" 0x9c01
-		{Position 3167.800049 -363.777008 0.000000}
+		{Position 3167.8 -363.777 0}
 		{Turn -94.3706}
 	}
 	{Entity "concrete_fence_destroy" 0x9c03
-		{Position 3221.770020 -366.832001 0.000000}
+		{Position 3221.77 -366.832 0}
 		{Turn -93.4139}
 	}
 	{Entity "building_part_concrete" 0x9000
 		{Position 603.622 884.88 -1014}
-		{Orientation -0.337830 -0.941207 -0.000021 -0.941196 0.337826 0.004865 -0.004572 0.001663 -0.999988}
-		{Slicer 0x8c
-			{"sub_piece0" 0xffff "building_part_concrete_subpiece"}
-			{"sub_piece1" 0xffff "building_part_concrete_subpiece"}
+		{Orientation
+			 -0.337828  -0.941208  -0.000021
+			 -0.941197   0.337824   0.004865
+			 -0.004572   0.001663  -0.999988
 		}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Extender "slicer"
+			0x8c
+			{"sub_piece0" "building_part_concrete_subpiece"}
+			{"sub_piece1" "building_part_concrete_subpiece"}
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9002
 		{Position 605.93 858.983 -1014}
 		{Turn -83.0411}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
-		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9006
 		{Position 602.544 911.069 -1014}
-		{Orientation 0.160733 -0.986998 0.000006 -0.986996 -0.160732 0.002173 -0.002144 -0.000355 -0.999998}
-		{Slicer 0x8c
-			{"sub_piece3" 0xffff "building_part_concrete_subpiece"}
+		{Orientation
+			  0.160733  -0.986998   0.000006
+			 -0.986996  -0.160732   0.002173
+			 -0.002144  -0.000355  -0.999998
+		}
+		{Extender "slicer"
+			0x8c
+			{"sub_piece3" "building_part_concrete_subpiece"}
 			{"sub_piece4" 0x9025 "building_part_concrete_subpiece"}
-		}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x900e
 		{Position 610.069 883.511 -1014}
-		{Orientation -0.001034 0.001913 0.999998 0.769493 0.638656 -0.000426 -0.638655 0.769490 -0.002132}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			 -0.001034   0.001913   0.999998
+			  0.769492   0.638656  -0.000426
+			 -0.638655   0.769490  -0.002132
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9014
 		{Position 609.189 925.971 -1014}
 		{Turn -93.1614}
-		{Interaction
-			{Flags "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
-		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x9018
 		{Position 604.127 931.844 -1014}
-		{Orientation 0.001240 -0.002586 0.999996 0.963976 0.265989 -0.000507 -0.265987 0.963973 0.002823}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			  0.001240  -0.002586   0.999996
+			  0.963976   0.265989  -0.000507
+			 -0.265987   0.963973   0.002823
 		}
 		{DisableObstacles}
 	}
 	{Entity "piece_large_concrete" 0x9025
 		{Position 591.692 914.114 -1014}
-		{Orientation -0.971485 -0.237101 0.000330 -0.237101 0.971485 -0.000038 -0.000312 -0.000115 -1.000000}
-		{Interaction
-			{Flags "crush"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			 -0.971485  -0.237101   0.000330
+			 -0.237101   0.971485  -0.000038
+			 -0.000312  -0.000115  -1.000000
 		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x880a
 		{Position 589.223 795.386 -1014}
 		{Turn -69.9815}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
-		}
 		{DisableObstacles}
 	}
 	{Entity "building_part_concrete" 0x8816
 		{Position 568.965 774.656 -1014}
-		{Orientation -0.996767 -0.080350 0.000257 0.000259 -0.000010 1.000000 -0.080350 0.996767 0.000031}
-		{Interaction
-			{Flags "crush" "sliced"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			 -0.996767  -0.080350   0.000257
+			  0.000259  -0.000010   1.000000
+			 -0.080350   0.996767   0.000031
 		}
 		{DisableObstacles}
 	}
 	{Entity "piece_large_concrete" 0x9802
 		{Position 648.749 786.097 -1014}
-		{Orientation 0.215172 0.976576 0.000014 0.976576 -0.215172 0.000581 0.000570 -0.000111 -1.000000}
-		{Interaction
-			{Flags "crush"}
-		}
-		{Simulation
-			{State 1}
-			{Velocity 0 0 -7.84798 0 0 0}
+		{Orientation
+			  0.215172   0.976576   0.000014
+			  0.976576  -0.215172   0.000581
+			  0.000570  -0.000111  -1.000000
 		}
 		{DisableObstacles}
 	}
@@ -6547,11 +4106,6 @@
 	{Link 0x801c To 0x800c "commander"}
 	{Link 0x801b To 0x800f "charger"}
 	{Link 0x8016 To 0x8011 "commander"}
-	{Brain 0x80b3
-		{Control 1}
-		{ReturnFire}
-		{HoldPosition}
-	}
 	{Brain 0x8001
 		{HoldPosition}
 	}
@@ -6569,11 +4123,10 @@
 	}
 	{Brain 0x8009
 		{HoldPosition}
-		{Order "eComplexOrder"}
 		{WaypointProcessor
 			{Stage 1}
-			{To 18}
-			{Next 19}
+			{To 15}
+			{Next 16}
 		}
 	}
 	{Brain 0x800c
@@ -6583,11 +4136,10 @@
 		{HoldPosition}
 	}
 	{Brain 0x8010
-		{Order "eComplexOrder"}
 		{WaypointProcessor
 			{Stage 1}
-			{To 27}
-			{Next 28}
+			{To 26}
+			{Next 27}
 		}
 	}
 	{Brain 0x8011
@@ -6614,9 +4166,6 @@
 	}
 	{Brain 0x8017
 		{HoldPosition}
-		{Order "eComplexOrder"
-			{eWait 87}
-		}
 	}
 	{Brain 0x8018
 		{HoldPosition}
@@ -6634,34 +4183,15 @@
 	}
 	{Brain 0x8029
 		{Control 1}
-		{IdleMovement 0 1 0}
 	}
 	{Brain 0x8052
 		{HoldPosition}
 	}
-	{Brain 0x8056
-		{Order "eComplexOrder"
-			{eWait 40}
-		}
-	}
 	{Brain 0x8072
 		{HoldPosition}
-		{Order "eComplexOrder"
-			{eWait 56}
-		}
-	}
-	{Brain 0x807d
-		{Order "eComplexOrder"
-			{eWait 83}
-		}
 	}
 	{Brain 0x8085
 		{HoldPosition}
-	}
-	{Brain 0x8086
-		{Order "eComplexOrder"
-			{eWait 93}
-		}
 	}
 	{Brain 0x8089
 		{HoldPosition}
@@ -6669,50 +4199,14 @@
 	{Brain 0x8090
 		{HoldPosition}
 	}
-	{Brain 0x8091
-		{Order "eComplexOrder"
-			{eWait 0}
-		}
-	}
 	{Brain 0x8093
 		{HoldPosition}
-	}
-	{Brain 0x8094
-		{Order "eComplexOrder"
-			{eMoveTask 2106.28 265.033}
-			{eRotate 2 2262.8 421.909 0 0}
-		}
-	}
-	{Brain 0x8095
-		{Order "eComplexOrder"
-			{eMoveTask 2340.07 375.38}
-			{eWait 1058642182}
-			{eMoveTask 2390.91 231.549}
-			{eWait 0}
-			{eMoveTask 2406 753.998}
-			{eRotate 2 2262.8 421.909 0 0}
-		}
 	}
 	{Brain 0x8096
 		{HoldPosition}
 	}
-	{Brain 0x8099
-		{Order "eComplexOrder"
-			{eWait 23}
-		}
-	}
 	{Brain 0x809d
 		{HoldPosition}
-	}
-	{Brain 0x809e
-		{Order "eComplexOrder"
-			{eWait 57}
-		}
-	}
-	{Brain 0x809f
-		{Order "eComplexOrder"
-			{eWait 7}
-		}
 	}
 	{Brain 0x80a9
 		{HoldPosition}
@@ -6734,21 +4228,20 @@
 	}
 	{Brain 0x80af
 		{HoldPosition}
-		{Order "eComplexOrder"
-			{eWait 20}
-		}
 	}
 	{Brain 0x80b0
 		{HoldPosition}
-		{Order "eComplexOrder"
-			{eWait 4}
-		}
 	}
 	{Brain 0x80b1
 		{HoldPosition}
 	}
 	{Brain 0x80b2
 		{HoldPosition}
+	}
+	{Brain 0x80b3
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
 	}
 	{Tags 0x80b3 "pl pl_assign pl_hero pl_replace pl_carryover"}
 	{Tags 0x8013 "pl pl_assign pl_hero pl_replace pl_carryover"}
@@ -6757,8 +4250,10 @@
 	{Tags 0x801f "pl pl_assign pl_hero pl_replace pl_carryover"}
 	{Tags 0x80b4 "pl pl_assign pl_hero pl_replace pl_carryover"}
 	{Tags 0x80d0 "pointer point_tiger"}
+	{Tags 0x1c2 "wood"}
+	{Tags 0x269 "wood"}
 	{Helpers
-		{event "car" id 0 state 0}
+		{event "car" id 0 state 1}
 		{event "eng_attack" id 1 state 0}
 		{event "c1_cancel" id 2 state 0}
 		{event "c2_cancel" id 3 state 0}
@@ -6778,14 +4273,13 @@
 		{event "infantry_attack" id 17 state 0}
 		{event "complete_event" id 18 state 0}
 		{event "wayp_only_off" id 19 state 0}
-		{event delayed 1433 0 1}
 		{trigger "000"
 			{on}
 			{actions
 				{"event"
-					{"event" 8}
-					{"mode" "set"}
-					{"delay" "0.1"}
+					{event 8}
+					{mode set}
+					{delay "0.1"}
 				}
 			}
 		}
@@ -6794,64 +4288,65 @@
 				{type 2}
 				{expression "!1"}
 				{term 1 "actors"
-					{"selector"
-						{"actors/player" 3}
-						{"actors/type" "human"}
+					{selector
+						{"actors/player" "2"}
+						{"actors/type" human}
 						{"actors/state" "not dead"}
 					}
 				}
 			}
 			{actions
 				{"mission_music"
-					{"action" "WON"}
+					{action WON}
 				}
 				{"gameover"
-					{"result" "win"}
+					{result win}
 				}
 			}
 		}
 		{trigger "failed"
 			{condition
 				{type 2}
-				{expression "!1"}
+				{expression "1"}
 				{term 1 "actors"
-					{"selector"
-						{"actors/player" 2}
-						{"actors/type" "human"}
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/type" human}
 						{"actors/state" "not dead"}
 					}
+					{"limits/<<=" 0}
 				}
 			}
 			{actions
 				{"gameover"
-					{"result" "loose"}
+					{result loose}
 				}
 				{"mission_music"
-					{"action" "LOST"}
+					{action LOST}
 				}
 			}
 		}
 		{trigger "musik/musik_resume"
 			{condition
 				{term 1 "event"
-					{"id" 14}
+					{id 14}
 				}
 			}
 			{actions
 				{"mission_music"
-					{"action" "RESUME"}
+					{action RESUME}
 				}
 			}
 		}
 		{trigger "musik/resume"
 			{condition
 				{term 1 "event"
-					{"id" 11}
+					{id 11}
 				}
 			}
 			{actions
 				{"mission_music"
-					{"action" "RESUME"}
+					{action RESUME}
 				}
 			}
 		}
@@ -6859,12 +4354,12 @@
 			{on}
 			{condition
 				{term 1 "event"
-					{"id" 13}
+					{id 13}
 				}
 			}
 			{actions
 				{"mission_music"
-					{"action" "START"}
+					{action START}
 				}
 			}
 		}
@@ -6872,10 +4367,10 @@
 			{on}
 			{actions
 				{"actor_to_waypoint"
-					{"selector"
-						{"actors/mids" "10"}
+					{selector
+						{"actors/mids" 10}
 					}
-					{"waypoint/uid" "16"}
+					{"waypoint/uid" 16}
 				}
 			}
 		}
@@ -6883,16 +4378,16 @@
 			{on}
 			{actions
 				{"actor_to_waypoint"
-					{"selector"
-						{"actors/mids" "17"}
+					{selector
+						{"actors/mids" 17}
 					}
-					{"waypoint/uid" "24"}
+					{"waypoint/uid" 24}
 				}
 				{"actor_to_waypoint"
-					{"selector"
-						{"actors/mids" "18"}
+					{selector
+						{"actors/mids" 18}
 					}
-					{"waypoint/uid" "23"}
+					{"waypoint/uid" 23}
 				}
 			}
 		}
@@ -6900,42 +4395,42 @@
 			{on}
 			{condition
 				{term 1 "event"
-					{"id" 8}
+					{id 8}
 				}
 			}
 			{actions
 				{"event"
-					{"event" 0}
-					{"mode" "set"}
-					{"delay" "120"}
+					{event 0}
+					{mode set}
+					{delay 120}
 				}
 				{"camera"
-					{"camera" "c1"}
-					{"action" "activate"}
+					{camera "c1"}
+					{action activate}
 				}
 				{"music"
-					{"start" "g_5u0n"}
+					{start "g_5u0n"}
 				}
 				{"message"
-					{"text" "mission/4_5/first1"}
+					{text "mission/4_5/first1"}
 				}
 				{"event"
-					{"event" 13}
-					{"mode" "set"}
-					{"delay" "24"}
+					{event 13}
+					{mode set}
+					{delay 24}
 				}
 			}
 		}
 		{trigger "tasks/complete_event"
 			{condition
 				{term 1 "event"
-					{"id" 18}
+					{id 18}
 				}
 			}
 			{actions
 				{"task"
-					{"name" "primary2"}
-					{"state" "complete"}
+					{name "primary2"}
+					{state complete}
 				}
 			}
 		}
@@ -6943,15 +4438,15 @@
 			{condition
 				{type 1}
 				{term 1 "event"
-					{"id" 5}
+					{id 5}
 				}
 				{term 2 "event"
-					{"id" 2}
+					{id 2}
 				}
 			}
 			{actions
 				{"task"
-					{"name" "primary1"}
+					{name "primary1"}
 				}
 			}
 		}
@@ -6960,804 +4455,801 @@
 				{type 2}
 				{expression "!1"}
 				{term 1 "actors"
-					{"selector"
-						{"actors/player" 3}
-						{"actors/type" "human"}
+					{selector
+						{"actors/player" "2"}
+						{"actors/type" human}
 						{"actors/state" "not dead"}
 					}
 				}
 			}
 			{actions
 				{"task"
-					{"name" "primary1"}
-					{"state" "complete"}
+					{name "primary1"}
+					{state complete}
 				}
 			}
 		}
 		{trigger "tranzit/tr1"
 			{condition
 				{term 1 "event"
-					{"id" 0}
+					{id 0}
 				}
 			}
 			{autoreset}
 			{actions
 				{"actor_to_waypoint"
-					{"selector"
-						{"actors/mids" "6"}
+					{selector
+						{"actors/mids" 6}
 					}
-					{"waypoint/uid" "0"}
-					{"clone"}
+					{"waypoint/uid" 0}
+					{clone}
 				}
 				{"event"
-					{"event" 0}
-					{"mode" "toggle"}
-					{"delay" "400"}
+					{event 0}
+					{mode toggle}
+					{delay 400}
 				}
 			}
 		}
 		{waypoints
 			{0
-				{position 227.697006 -732.919006 0.000000}
+				{position 227.697 -732.919 0}
 				{transition 1}
 			}
 			{1
-				{position 210.022003 -432.872986 0.000000}
+				{position 210.022 -432.873 0}
 				{transition 2}
 			}
 			{2
-				{position 114.095001 -123.095001 0.000000}
+				{position 114.095 -123.095 0}
 				{transition 3}
 			}
 			{3
-				{position 61.008701 69.060097 0.000000}
+				{position 61.0087 69.0601 0}
 				{transition 4}
 			}
 			{4
-				{position 282.885010 264.700989 0.000000}
+				{position 282.885 264.701 0}
 				{transition 5}
 			}
 			{5
-				{position 627.405029 399.524994 0.000000}
+				{position 627.405 399.525 0}
 				{transition 6}
 			}
 			{6
-				{position 732.932983 527.414001 0.000000}
+				{position 732.933 527.414 0}
 				{transition 7}
 			}
 			{7
-				{position 764.395996 918.309998 0.000000}
+				{position 764.396 918.31 0}
 				{transition 8}
 			}
 			{8
-				{position 816.612000 1200.260010 0.000000}
+				{position 816.612 1200.26 0}
 				{transition 9}
 			}
 			{9
-				{position 999.783997 1455.300049 0.000000}
+				{position 999.784 1455.3 0}
 				{transition 10}
 			}
 			{10
-				{position 1673.510010 1360.839966 0.000000}
+				{position 1673.51 1360.84 0}
 				{transition 11}
 			}
 			{11
-				{position 2183.129883 1330.209961 0.000000}
+				{position 2183.13 1330.21 0}
 				{transition 12}
 			}
 			{12
-				{position 2418.139893 1325.369995 0.000000}
+				{position 2418.14 1325.37 0}
 				{transition 13}
 			}
 			{13
-				{position 2911.860107 1501.849976 0.000000}
+				{position 2911.86 1501.85 0}
 				{transition 14}
 			}
 			{14
-				{position 4548.540039 2080.969971 0.000000}
+				{position 4548.54 2080.97 0}
 				{commands
 					{"delete"}
 				}
 			}
 			{15
-				{position 240.809006 -401.048004 0.000000}
+				{position 240.809 -401.048 0}
 				{transition 16}
 				{commands
 					{"wait"
-						{"time" "12"}
+						{time 12}
 					}
 				}
 			}
 			{16
-				{position 115.975998 163.526993 0.000000}
+				{position 115.976 163.527 0}
 				{transition 17}
 			}
 			{17
-				{position 1149.900024 504.886993 0.000000}
+				{position 1149.9 504.887 0}
 				{transition 18}
 			}
 			{18
-				{position 1701.680054 511.862000 0.000000}
+				{position 1701.68 511.862 0}
 				{transition 19}
 			}
 			{19
-				{position 2071.669922 -242.298996 0.000000}
+				{position 2071.67 -242.299 0}
 				{transition 20}
 				{commands
 					{"wait"
-						{"time" "15"}
+						{time 15}
 					}
 				}
 			}
 			{20
-				{position 1930.579956 -305.796997 0.000000}
+				{position 1930.58 -305.797 0}
 				{transition 21}
 			}
 			{21
-				{position 1408.079956 -338.243011 0.000000}
+				{position 1408.08 -338.243 0}
 				{transition 22}
 			}
 			{22
-				{position 1017.679993 -404.588013 0.000000}
+				{position 1017.68 -404.588 0}
 				{transition 15}
 			}
 			{23
-				{position 3305.580078 249.869003 0.000000}
+				{position 3305.58 249.869 0}
 				{transition 24}
 			}
 			{24
-				{position 2994.560059 370.981995 0.000000}
+				{position 2994.56 370.982 0}
 				{transition 25}
 			}
 			{25
-				{position 2481.750000 520.520996 0.000000}
+				{position 2481.75 520.521 0}
 				{transition 26}
 			}
 			{26
-				{position 2138.689941 574.763977 0.000000}
+				{position 2138.69 574.764 0}
 				{transition 27}
 			}
 			{27
-				{position 1723.780029 582.491028 0.000000}
+				{position 1723.78 582.491 0}
 				{transition 28}
 			}
 			{28
-				{position 1482.010010 588.916992 0.000000}
+				{position 1482.01 588.917 0}
 				{transition 29}
 			}
 			{29
-				{position 1426.670044 965.804016 0.000000}
+				{position 1426.67 965.804 0}
 				{transition 30}
 			}
 			{30
-				{position 1440.229980 1301.119995 0.000000}
+				{position 1440.23 1301.12 0}
 				{transition 31}
 			}
 			{31
-				{position 1119.250000 1444.760010 0.000000}
+				{position 1119.25 1444.76 0}
 				{transition 32}
 			}
 			{32
-				{position 991.945984 1823.040039 0.000000}
+				{position 991.946 1823.04 0}
 				{transition 33}
 			}
 			{33
-				{position 1051.810059 2523.679932 0.000000}
+				{position 1051.81 2523.68 0}
 				{transition 34}
 			}
 			{34
-				{position 780.679016 2596.889893 -4.000000}
+				{position 780.679 2596.89 -4}
 				{transition 35}
 			}
 			{35
-				{position 348.596008 2532.409912 -5.140140}
+				{position 348.596 2532.41 -5.14014}
 				{transition 36}
 			}
 			{36
-				{position 299.587006 2004.589966 0.000000}
+				{position 299.587 2004.59 0}
 				{transition 37}
 			}
 			{37
-				{position 155.753998 1517.319946 0.000000}
+				{position 155.754 1517.32 0}
 				{transition 38}
 			}
 			{38
-				{position 250.931000 1300.550049 0.000000}
+				{position 250.931 1300.55 0}
 				{transition 39}
 			}
 			{39
-				{position 158.255997 792.138000 0.000000}
+				{position 158.256 792.138 0}
 				{transition 40}
 			}
 			{40
-				{position 43.830700 201.132996 0.000000}
+				{position 43.8307 201.133 0}
 				{transition 41}
 			}
 			{41
-				{position 364.122009 275.877991 0.000000}
+				{position 364.122 275.878 0}
 				{transition 42}
 			}
 			{42
-				{position 865.697998 493.187988 0.000000}
+				{position 865.698 493.188 0}
 				{transition 43}
 			}
 			{43
-				{position 1456.550049 533.215027 0.000000}
+				{position 1456.55 533.215 0}
 				{transition 44}
 			}
 			{44
-				{position 1775.859985 443.139008 0.000000}
+				{position 1775.86 443.139 0}
 				{transition 45}
 			}
 			{45
-				{position 1982.760010 -25.808901 0.000000}
+				{position 1982.76 -25.8089 0}
 				{transition 46}
 			}
 			{46
-				{position 2107.199951 -288.119995 0.000000}
+				{position 2107.2 -288.12 0}
 				{transition 47}
 			}
 			{47
-				{position 2527.310059 -272.065002 0.000000}
+				{position 2527.31 -272.065 0}
 				{transition 48}
 			}
 			{48
-				{position 2977.239990 -244.100998 0.000000}
+				{position 2977.24 -244.101 0}
 				{transition 49}
 			}
 			{49
-				{position 3211.020020 -153.927002 0.000000}
+				{position 3211.02 -153.927 0}
 				{transition 23}
 			}
 			{50
-				{position -508.028992 429.998993 0.000000}
+				{position -508.029 429.999 0}
 			}
 			{51
-				{position -793.500977 964.888000 0.000000}
+				{position -793.501 964.888 0}
 				{commands
 					{"board"
-						{"mids" "35"}
+						{mids 35}
 					}
 					{"actor_state"
-						{"waypoint_only" "off"}
+						{waypoint_only off}
 					}
 				}
 			}
 			{52
-				{position 1075.469971 1235.349976 0.000000}
+				{position 1075.47 1235.35 0}
 				{commands
 					{"board"
-						{"mids" "69"}
+						{mids 69}
 					}
 					{"actor_state"
-						{"waypoint_only" "off"}
+						{waypoint_only off}
 					}
 				}
 			}
 			{53
-				{position 3595.010010 1894.959961 0.000000}
+				{position 3595.01 1894.96 0}
 				{transition 54}
 			}
 			{54
-				{position 3378.979980 1605.729980 0.000000}
+				{position 3378.98 1605.73 0}
 				{transition 55}
 			}
 			{55
-				{position 3194.449951 1327.449951 0.000000}
+				{position 3194.45 1327.45 0}
 				{transition 56}
 			}
 			{56
-				{position 2952.409912 1095.640015 0.000000}
+				{position 2952.41 1095.64 0}
 				{transition 57}
 			}
 			{57
-				{position 2744.510010 1085.540039 0.000000}
+				{position 2744.51 1085.54 0}
 			}
 			{86
-				{position 3274.290039 -239.192001 0.000000}
+				{position 3274.29 -239.192 0}
 				{transition 87}
 			}
 			{87
-				{position 2802.550049 -291.763000 0.000000}
+				{position 2802.55 -291.763 0}
 				{transition 88}
 			}
 			{88
-				{position 2328.209961 -328.032990 0.000000}
+				{position 2328.21 -328.033 0}
 				{transition 89}
 			}
 			{89
-				{position 1917.219971 63.618000 0.000000}
+				{position 1917.22 63.618 0}
 				{transition 90}
 			}
 			{90
-				{position 1816.239990 451.734009 0.000000}
+				{position 1816.24 451.734 0}
 			}
 			{91
-				{position 2705.500000 -252.570007 0.000000}
+				{position 2705.5 -252.57 0}
 				{commands
 					{"camera_move"
-						{"selector"
-							{source "local"}
+						{selector {source "local"}
 						}
 					}
 					{"event"
-						{"event" 7}
-						{"mode" "set"}
-						{"delay" "3"}
+						{event 7}
+						{mode set}
+						{delay 3}
 					}
 				}
 			}
 			{92
-				{position 2523.810059 4731.490234 0.000000}
+				{position 2523.81 4731.49 0}
 				{transition 93}
 			}
 			{93
-				{position 2477.189941 4362.830078 0.000000}
+				{position 2477.19 4362.83 0}
 				{transition 94}
 			}
 			{94
-				{position 2465.189941 3872.620117 0.645318}
+				{position 2465.19 3872.62 0.645318}
 				{transition 95}
 			}
 			{95
-				{position 2275.929932 3443.639893 -4.000000}
+				{position 2275.93 3443.64 -4}
 				{transition 129}
 				{commands
 					{"emit"
-						{"selector"
-							{source "local"}
+						{selector {source "local"}
 							{"actors/tag" "eng_btr"}
 						}
-						{"waypoint/uid" "96"}
-						{"emit/mode" "passengers"}
+						{"waypoint/uid" 96}
+						{"emit/mode" passengers}
 					}
 					{"wait"
-						{"time" "6"}
+						{time 6}
 					}
 				}
 			}
 			{96
-				{position 2218.649902 3344.209961 -3.421260}
+				{position 2218.65 3344.21 -3.42126}
 				{transition 97}
 				{transition 104}
 				{transition 112}
 				{transition 118}
 				{commands
 					{"actor_state"
-						{"speed" "fast"}
-						{"weapon_prepare" "on"}
+						{speed fast}
+						{weapon_prepare on}
 					}
 				}
 			}
 			{97
-				{position 2344.659912 2548.199951 7.179750}
+				{position 2344.66 2548.2 7.17975}
 				{transition 98}
 			}
 			{98
-				{position 2600.629883 2348.610107 6.000000}
+				{position 2600.63 2348.61 6}
 				{transition 99}
 			}
 			{99
-				{position 2646.060059 1925.089966 0.000000}
+				{position 2646.06 1925.09 0}
 				{transition 100}
 				{commands
 					{"actor_state"
-						{"waypoint_only" "off"}
+						{waypoint_only off}
 					}
 				}
 			}
 			{100
-				{position 2543.370117 1172.119995 0.000000}
+				{position 2543.37 1172.12 0}
 				{transition 101}
 			}
 			{101
-				{position 2263.469971 756.710022 0.000000}
+				{position 2263.47 756.71 0}
 				{transition 102}
 			}
 			{102
-				{position 1860.020020 623.853027 0.000000}
+				{position 1860.02 623.853 0}
 				{transition 103}
 			}
 			{103
-				{position 1260.869995 732.771973 0.000000}
+				{position 1260.87 732.772 0}
 			}
 			{104
-				{position 1955.699951 3167.800049 -0.094427}
+				{position 1955.7 3167.8 -0.0944272}
 				{transition 105}
 			}
 			{105
-				{position 1718.670044 3196.000000 0.000000}
+				{position 1718.67 3196 0}
 				{transition 106}
 			}
 			{106
-				{position 1663.349976 2796.500000 9.831280}
+				{position 1663.35 2796.5 9.83128}
 				{transition 107}
 			}
 			{107
-				{position 1539.810059 2534.679932 0.000000}
+				{position 1539.81 2534.68 0}
 				{transition 108}
 			}
 			{108
-				{position 1227.819946 2303.889893 0.000000}
+				{position 1227.82 2303.89 0}
 				{transition 109}
 			}
 			{109
-				{position 1067.770020 2014.670044 0.000000}
+				{position 1067.77 2014.67 0}
 				{transition 110}
 				{commands
 					{"actor_state"
-						{"waypoint_only" "off"}
+						{waypoint_only off}
 					}
 				}
 			}
 			{110
-				{position 1087.699951 1396.400024 0.000000}
+				{position 1087.7 1396.4 0}
 				{transition 111}
 			}
 			{111
-				{position 1388.079956 993.260986 0.000000}
+				{position 1388.08 993.261 0}
 				{transition 193}
 			}
 			{112
-				{position 1602.880005 3305.629883 0.000000}
+				{position 1602.88 3305.63 0}
 				{transition 113}
 			}
 			{113
-				{position 1330.660034 3062.350098 -2.545130}
+				{position 1330.66 3062.35 -2.54513}
 				{transition 114}
 			}
 			{114
-				{position 1314.589966 2558.159912 0.000000}
+				{position 1314.59 2558.16 0}
 				{transition 115}
 			}
 			{115
-				{position 1249.260010 2020.739990 0.000000}
+				{position 1249.26 2020.74 0}
 				{transition 116}
 				{commands
 					{"actor_state"
-						{"waypoint_only" "off"}
+						{waypoint_only off}
 					}
 				}
 			}
 			{116
-				{position 1192.420044 1484.900024 0.000000}
+				{position 1192.42 1484.9 0}
 				{transition 117}
 			}
 			{117
-				{position 1259.979980 592.116028 0.000000}
+				{position 1259.98 592.116 0}
 				{transition 190}
 			}
 			{118
-				{position 2424.540039 3037.949951 0.000000}
+				{position 2424.54 3037.95 0}
 				{transition 119}
 			}
 			{119
-				{position 2577.449951 2626.129883 1.457010}
+				{position 2577.45 2626.13 1.45701}
 				{transition 120}
 			}
 			{120
-				{position 2741.739990 2509.370117 5.000000}
+				{position 2741.74 2509.37 5}
 				{transition 121}
 			}
 			{121
-				{position 2812.419922 2420.590088 -1.881470}
+				{position 2812.42 2420.59 -1.88147}
 				{transition 122}
 			}
 			{122
-				{position 2920.679932 2041.699951 0.000000}
+				{position 2920.68 2041.7 0}
 				{transition 123}
 				{commands
 					{"actor_state"
-						{"waypoint_only" "off"}
+						{waypoint_only off}
 					}
 				}
 			}
 			{123
-				{position 3024.129883 1711.890015 0.000000}
+				{position 3024.13 1711.89 0}
 				{transition 124}
 			}
 			{124
-				{position 2868.239990 1272.560059 0.000000}
+				{position 2868.24 1272.56 0}
 				{transition 125}
 			}
 			{125
-				{position 2458.610107 881.668030 0.000000}
+				{position 2458.61 881.668 0}
 				{transition 126}
 			}
 			{126
-				{position 2294.179932 901.456970 0.000000}
+				{position 2294.18 901.457 0}
 				{transition 127}
 			}
 			{127
-				{position 1999.349976 1290.660034 0.000000}
+				{position 1999.35 1290.66 0}
 				{transition 128}
 			}
 			{128
-				{position 1356.739990 1124.939941 0.000000}
+				{position 1356.74 1124.94 0}
 			}
 			{129
-				{position 2301.070068 2765.879883 -31.588200}
+				{position 2301.07 2765.88 -31.5882}
 				{transition 130}
 			}
 			{130
-				{position 2229.280029 2517.439941 5.856570}
+				{position 2229.28 2517.44 5.85657}
 				{transition 131}
 			}
 			{131
-				{position 1929.660034 2488.560059 0.000000}
+				{position 1929.66 2488.56 0}
 				{transition 132}
 			}
 			{132
-				{position 1384.949951 2495.580078 0.000000}
+				{position 1384.95 2495.58 0}
 				{transition 133}
 			}
 			{133
-				{position 1112.689941 2301.129883 0.000000}
+				{position 1112.69 2301.13 0}
 				{transition 134}
 			}
 			{134
-				{position 1096.069946 1582.420044 0.000000}
+				{position 1096.07 1582.42 0}
 				{transition 135}
 			}
 			{135
-				{position 1385.030029 896.008972 0.000000}
+				{position 1385.03 896.009 0}
 				{transition 191}
 			}
 			{136
-				{position 722.275024 4939.029785 17.675400}
+				{position 722.275 4939.03 17.6754}
 				{transition 137}
 			}
 			{137
-				{position 923.346985 4711.770020 0.000000}
+				{position 923.347 4711.77 0}
 				{transition 138}
 			}
 			{138
-				{position 955.783997 4505.910156 0.000000}
+				{position 955.784 4505.91 0}
 				{transition 139}
 			}
 			{139
-				{position 781.914001 3920.179932 -6.598450}
+				{position 781.914 3920.18 -6.59845}
 				{transition 140}
 			}
 			{140
-				{position 684.067017 3529.149902 -15.000000}
+				{position 684.067 3529.15 -15}
 				{transition 141}
 			}
 			{141
-				{position 817.202026 3155.879883 -15.000000}
+				{position 817.202 3155.88 -15}
 				{commands
 					{"emit"
-						{"selector"
-							{source "local"}
+						{selector {source "local"}
 							{"actors/tag" "eng_car"}
 						}
-						{"waypoint/uid" "142"}
-						{"emit/mode" "passengers"}
+						{"waypoint/uid" 142}
+						{"emit/mode" passengers}
 					}
 					{"wait"
-						{"time" "6"}
+						{time 6}
 					}
 				}
 			}
 			{142
-				{position 817.481018 3046.169922 -15.000000}
+				{position 817.481 3046.17 -15}
 				{transition 143}
 				{transition 156}
 				{transition 166}
 				{commands
 					{"actor_state"
-						{"speed" "fast"}
-						{"weapon_prepare" "on"}
+						{speed fast}
+						{weapon_prepare on}
 					}
 				}
 			}
 			{143
-				{position 1082.550049 2813.830078 0.000000}
+				{position 1082.55 2813.83 0}
 				{transition 144}
 			}
 			{144
-				{position 1088.750000 2314.810059 0.000000}
+				{position 1088.75 2314.81 0}
 				{transition 145}
 			}
 			{145
-				{position 1286.250000 2126.310059 0.000000}
+				{position 1286.25 2126.31 0}
 				{transition 146}
 			}
 			{146
-				{position 1519.130005 1984.339966 0.000000}
+				{position 1519.13 1984.34 0}
 				{transition 147}
 				{commands
 					{"actor_state"
-						{"waypoint_only" "off"}
+						{waypoint_only off}
 					}
 				}
 			}
 			{147
-				{position 1717.530029 1527.569946 0.000000}
+				{position 1717.53 1527.57 0}
 				{transition 148}
 			}
 			{148
-				{position 1588.810059 1225.640015 0.000000}
+				{position 1588.81 1225.64 0}
 				{transition 149}
 			}
 			{149
-				{position 1464.569946 872.515991 0.000000}
+				{position 1464.57 872.516 0}
 				{transition 150}
 			}
 			{150
-				{position 1706.810059 550.177002 0.000000}
+				{position 1706.81 550.177 0}
 				{transition 151}
 			}
 			{151
-				{position 2249.260010 629.385010 0.000000}
+				{position 2249.26 629.385 0}
 				{transition 152}
 			}
 			{152
-				{position 2177.389893 1257.130005 0.000000}
+				{position 2177.39 1257.13 0}
 				{transition 153}
 			}
 			{153
-				{position 2111.770020 1702.660034 0.000000}
+				{position 2111.77 1702.66 0}
 				{transition 154}
 			}
 			{154
-				{position 1685.030029 1737.750000 0.000000}
+				{position 1685.03 1737.75 0}
 				{transition 155}
 			}
 			{155
-				{position 1157.099976 1183.000000 0.000000}
+				{position 1157.1 1183 0}
 			}
 			{156
-				{position 634.218018 2782.840088 -4.000000}
+				{position 634.218 2782.84 -4}
 				{transition 157}
 			}
 			{157
-				{position 320.803986 2524.000000 -8.838680}
+				{position 320.804 2524 -8.83868}
 				{transition 158}
 			}
 			{158
-				{position 464.191010 2015.780029 0.000000}
+				{position 464.191 2015.78 0}
 				{transition 159}
 			}
 			{159
-				{position 673.659973 1700.489990 0.000000}
+				{position 673.66 1700.49 0}
 				{transition 160}
 			}
 			{160
-				{position 657.091003 1369.489990 0.000000}
+				{position 657.091 1369.49 0}
 				{transition 161}
 			}
 			{161
-				{position 782.033997 732.181030 0.000000}
+				{position 782.034 732.181 0}
 				{transition 162}
 			}
 			{162
-				{position 415.269989 373.016998 0.000000}
+				{position 415.27 373.017 0}
 				{transition 163}
 			}
 			{163
-				{position 130.429001 387.679993 0.000000}
+				{position 130.429 387.68 0}
 				{transition 164}
 			}
 			{164
-				{position 145.037994 972.820984 0.000000}
+				{position 145.038 972.821 0}
 				{transition 165}
 			}
 			{165
-				{position 304.161011 1251.239990 0.000000}
+				{position 304.161 1251.24 0}
 				{transition 160}
 			}
 			{166
-				{position 794.403992 2516.860107 -4.000000}
+				{position 794.404 2516.86 -4}
 				{transition 167}
 			}
 			{167
-				{position 1043.109985 2168.040039 0.000000}
+				{position 1043.11 2168.04 0}
 				{transition 168}
 			}
 			{168
-				{position 1025.790039 1655.170044 0.000000}
+				{position 1025.79 1655.17 0}
 				{transition 169}
 			}
 			{169
-				{position 1376.800049 813.771973 0.000000}
+				{position 1376.8 813.772 0}
 				{transition 170}
 			}
 			{170
-				{position 1609.030029 392.838989 0.000000}
+				{position 1609.03 392.839 0}
 				{transition 171}
 			}
 			{171
-				{position 1861.180054 -16.087200 0.000000}
+				{position 1861.18 -16.0872 0}
 				{transition 172}
 			}
 			{172
-				{position 1671.510010 -206.302994 0.000000}
+				{position 1671.51 -206.303 0}
 				{transition 173}
 			}
 			{173
-				{position 1448.459961 37.870499 0.032701}
+				{position 1448.46 37.8705 0.0327009}
 				{transition 174}
 			}
 			{174
-				{position 895.656006 99.889503 0.000000}
+				{position 895.656 99.8895 0}
 				{transition 175}
 			}
 			{175
-				{position 713.729980 689.203003 0.000000}
+				{position 713.73 689.203 0}
 				{transition 176}
 			}
 			{176
-				{position 898.572998 1057.979980 0.000000}
+				{position 898.573 1057.98 0}
 			}
 			{177
-				{position 1507.930054 4815.430176 0.000000}
+				{position 1507.93 4815.43 0}
 				{transition 178}
 			}
 			{178
-				{position 1496.250000 4458.479980 0.000000}
+				{position 1496.25 4458.48 0}
 				{transition 179}
 			}
 			{179
-				{position 1459.589966 3841.370117 -3.000000}
+				{position 1459.59 3841.37 -3}
 				{transition 180}
 			}
 			{180
-				{position 1412.949951 3402.110107 -2.000000}
+				{position 1412.95 3402.11 -2}
 				{transition 181}
 			}
 			{181
-				{position 1238.750000 2879.780029 0.000000}
+				{position 1238.75 2879.78 0}
 				{transition 182}
 			}
 			{182
-				{position 1071.489990 2386.530029 0.000000}
+				{position 1071.49 2386.53 0}
 				{transition 183}
 			}
 			{183
-				{position 1088.079956 1641.900024 0.000000}
+				{position 1088.08 1641.9 0}
 				{transition 184}
 			}
 			{184
-				{position 1303.060059 1213.849976 0.000000}
+				{position 1303.06 1213.85 0}
 				{transition 185}
 			}
 			{185
-				{position 1390.670044 768.580017 0.000000}
+				{position 1390.67 768.58 0}
 				{transition 186}
 			}
 			{186
-				{position 1200.560059 561.937988 0.000000}
+				{position 1200.56 561.938 0}
 				{transition 187}
 			}
 			{187
-				{position 775.560974 590.500977 0.000000}
+				{position 775.561 590.501 0}
 				{transition 188}
 			}
 			{188
-				{position 708.408020 1025.079956 0.000000}
+				{position 708.408 1025.08 0}
 				{transition 189}
 			}
 			{189
-				{position 962.557007 1282.079956 0.000000}
+				{position 962.557 1282.08 0}
 				{transition 110}
 			}
 			{190
-				{position 1775.089966 520.294006 0.000000}
+				{position 1775.09 520.294 0}
 			}
 			{191
-				{position 1863.349976 533.388000 0.000000}
+				{position 1863.35 533.388 0}
 				{transition 192}
 			}
 			{192
-				{position 1998.060059 629.715027 0.000000}
+				{position 1998.06 629.715 0}
 			}
 			{193
-				{position 1732.270020 1354.430054 0.000000}
+				{position 1732.27 1354.43 0}
 				{transition 194}
 			}
 			{194
-				{position 2381.899902 1268.030029 0.000000}
+				{position 2381.9 1268.03 0}
 			}
 		}
 		{zone "circle"
@@ -7766,76 +5258,30 @@
 			{Radius 5000}
 		}
 		{zone "circle"
-			{Position 3097.988037 3621.249512 0.000000}
+			{position 3097.99 3621.25 -8.47699}
 			{Name "pl"}
 			{GlobalWP ""
 				{Orientation 5.06145}
-				{Condition}
-			}
+				{Condition}}
 			{Radius 150}
 		}
 		{task
-			{"name" "primary1"}
-			{"desc" "mission/18_4/primary1"}
-			{"primary"}
-			{"point" "point_tiger"}
-			{status -4577}
+			{name "primary1"}
+			{desc "mission/18_4/primary1"}
+			{primary}
+			{point "point_tiger"}
+			{status -32965}
 		}
 		{task
-			{"name" "primary2"}
-			{"desc" "mission/18_1/primary2"}
-			{"primary"}
-			{"state" "hidden"}
-			{"point" "last_pointer"}
-			{status -4577}
+			{name "primary2"}
+			{desc "mission/18_1/primary2"}
+			{primary}
+			{state hidden}
+			{point "last_pointer"}
+			{status -32965}
 		}
 	}
-	{Players}
-	{Damages
-		{fire
-			{Owner 0x1c2}
-			{Position 1755.22 1058.34 9.86888 1755.22 1058.34 9.86888}
-			{Desc Fire
-				{Radius 0.7}
-				{Heating 0.3}
-				{Time 7108.46}
-				{FollowOwner}
-				{Safe}
-			}
-		}
-		{fire
-			{Owner 0x269}
-			{Position 1669.19 855.442 5.08893 1669.19 855.442 5.08893}
-			{Desc Fire
-				{Radius 0.7}
-				{Heating 0.3}
-				{Time 7108.46}
-				{FollowOwner}
-				{Safe}
-			}
-		}
-		{fire
-			{Owner 0x1c2}
-			{Position 1755.22 1058.34 9.86888 1755.22 1058.34 9.86888}
-			{Desc Fire
-				{Radius 0.7}
-				{Heating 0.3}
-				{Time 7194.54}
-				{FollowOwner}
-				{Safe}
-			}
-		}
-		{fire
-			{Owner 0x269}
-			{Position 1669.19 855.442 5.08893 1669.19 855.442 5.08893}
-			{Desc Fire
-				{Radius 0.7}
-				{Heating 0.3}
-				{Time 7194.54}
-				{FollowOwner}
-				{Safe}
-			}
-		}
+	{Players
 	}
 	{MissionMusic "MAIN_LOOP"}
 }

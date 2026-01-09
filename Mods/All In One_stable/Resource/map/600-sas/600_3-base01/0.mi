@@ -1,15 +1,15 @@
 {mission
 	{Camera
-		{Position 377.892 1884.45}
-		{Distance 817.47}
-		{ViewAngle 0.600394}
-		{YawAngle 2.7347}
+		{Position 407.694 1932.93}
+		{Distance 367.47}
+		{ViewAngle 0.586431}
+		{YawAngle 2.55319}
 	}
 	{Environment "day"}
 	{User 1}
 	{GameProgress 0 0}
 	{Entity "willysmb_p" 0x8000
-		{Position 440.192 2090.07 0}
+		{Position 449.819 2081.62 0}
 		{Turn -93.8141}
 		{Player 1}
 		{MID 1}
@@ -188,8 +188,8 @@
 		}
 	}
 	{Human "hero.viar" 0x8016
-		{Position 394.485 1905.01 0}
-		{Turn -85.0213}
+		{Position 147.554 1833.64 0}
+		{Turn -33.222}
 		{Player 3}
 		{MID 15}
 		{NameId 57 99}
@@ -322,7 +322,7 @@
 		{FsmState "stand"}
 	}
 	{Entity "willysmb_p" 0x8001
-		{Position 386.459 2101.61 0}
+		{Position 391.101 2074.88 0}
 		{Turn -70.56}
 		{Player 1}
 		{MID 2}
@@ -379,9 +379,10 @@
 	}
 	{Brain 0x8016
 		{WaypointProcessor
-			{Stage 1}
-			{To 4}
-			{Next 0}
+			{Stage 2}
+			{To 3}
+			{Next 4}
+			{Process 1}
 		}
 	}
 	{Brain 0x801c
@@ -603,8 +604,8 @@
 				{expression "1"}
 				{term 1 "actors"
 					{selector
+						{"actors/tag" "pl"}
 						{"actors/zone" "exit"}
-						{"actors/player" "1"}
 						{"actors/type" human}
 						{"actors/state" "not dead"}
 					}
@@ -704,7 +705,7 @@
 			{desc "mission/18_3/primary1"}
 			{primary}
 			{point "point_2"}
-			{status -129399}
+			{status -145160}
 		}
 	}
 	{Players

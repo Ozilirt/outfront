@@ -29,7 +29,7 @@
 	{file "/sound/shot/smg/mp40.WAV"			"mp40"		}
         {file "/sound/shot/smg/mp40_I.WAV"			"mp40_I"	}
 	{file "/sound/shot/smg/sten.WAV"			"sten"		}
-	{file "/sound/shot/smg/sten.WAV"			"stensd"		}
+	{file "/sound/shot/smg/stensd.WAV"			"stensd"		}
 	{file "/sound/shot/smg/stenmk5.WAV"			"stenmk5"	}
 	{file "/sound/shot/smg/mp41.WAV"			"mp41"		}
 	{file "/sound/shot/smg/mp44.WAV"			"mp44"		}

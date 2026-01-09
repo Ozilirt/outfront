@@ -1,9 +1,9 @@
 {mission
 	{Camera
-		{Position 3173.99 985.192}
-		{Distance 459.283}
-		{ViewAngle 0.480751}
-		{YawAngle 2.16129}
+		{Position 3162.45 1006.79}
+		{Distance 750}
+		{ViewAngle 0.603884}
+		{YawAngle 1.61675}
 	}
 	{Environment "main-rus2"}
 	{User 1}
@@ -20,8 +20,8 @@
 		}
 	}
 	{Human "sas" 0x806a
-		{Position 3146.1 1055.04 0}
-		{Turn -180}
+		{Position 3142.5 1060.36 0}
+		{Turn -172.385}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -32,6 +32,7 @@
 				{item "bandage" 5 {cell 4 1}}
 				{item "knife" {cell 6 2}}
 				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
 		{Player 1}
@@ -40,8 +41,8 @@
 		{FsmState "stand"}
 	}
 	{Human "sas" 0x8069
-		{Position 3149.32 968.299 0}
-		{Turn -180}
+		{Position 3144.06 978.541 0}
+		{Turn 168.198}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -52,6 +53,7 @@
 				{item "bandage" 5 {cell 4 1}}
 				{item "knife" {cell 6 2}}
 				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
 		{Player 1}
@@ -60,8 +62,8 @@
 		{FsmState "stand"}
 	}
 	{Human "sas" 0x8068
-		{Position 3145.93 990.695 0}
-		{Turn -180}
+		{Position 3146.26 998.002 0}
+		{Turn 171.822}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -72,6 +74,7 @@
 				{item "bandage" 5 {cell 4 1}}
 				{item "knife" {cell 6 2}}
 				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
 		{Player 1}
@@ -80,8 +83,8 @@
 		{FsmState "stand"}
 	}
 	{Human "sas" 0x8067
-		{Position 3141.96 1016.29 0}
-		{Turn -180}
+		{Position 3142.52 1019.83 0}
+		{Turn -179.464}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -92,6 +95,7 @@
 				{item "bandage" 5 {cell 4 1}}
 				{item "knife" {cell 6 2}}
 				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
 		{Player 1}
@@ -100,8 +104,8 @@
 		{FsmState "stand"}
 	}
 	{Human "sas" 0x8066
-		{Position 3141.88 1034.28 0}
-		{Turn -180}
+		{Position 3144.87 1040.11 0}
+		{Turn -175.89}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -112,6 +116,7 @@
 				{item "bandage" 5 {cell 4 1}}
 				{item "knife" {cell 6 2}}
 				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
 		{Player 1}
@@ -132,6 +137,7 @@
 				{item "bandage" 5 {cell 4 1}}
 				{item "knife" {cell 6 2}}
 				{item "grenade f1" {cell 6 0}}
+				{item "morphine" 3 {cell 0 2}}
 			}
 		}
 		{Player 1}
@@ -140,8 +146,8 @@
 		{FsmState "stand"}
 	}
 	{Entity "willysmb_p" 0x8064
-		{Position 3335.09 991.676 -2.41562}
-		{Turn -173.556}
+		{Position 3335.09 991.676 -2.40765}
+		{Turn -173.78}
 		{Extender "inventory"
 			{box
 				{clear}
@@ -1841,6 +1847,23 @@
 					{event 11}
 					{mode set}
 					{delay "0.1"}
+				}
+			}
+		}
+		{trigger "failed"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/state" "not dead"}
+					}
+					{"limits/<<=" 0}
+				}
+			}
+			{actions
+				{"task"
+					{name "primary1"}
+					{state fail}
 				}
 			}
 		}

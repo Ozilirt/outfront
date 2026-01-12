@@ -1,0 +1,92 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors" "tent" "truck"}
+	{Props "emit_on_attack"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_Kubel_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_Kubel_commander)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+	("passenger_10_human_invisible")
+
+	{boarder
+		{anm "passenger"
+			{forward	{begin	"board_body"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	
+	{Volume "cabin"
+		{thickness 5}
+	}
+	
+	{Volume "body"
+		{thickness 20}
+	}	
+	
+	{Volume "fuel"
+		{thickness 7}
+	}	
+	
+	{Volume "glass1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+
+	{Volume "glass3"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass4"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass5"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass6"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+
+	{Volume "glass7"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass8"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}			
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "renaultagr.mdl"}
+}

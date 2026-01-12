@@ -1,0 +1,72 @@
+;SDL
+(include "tank.ext")
+{sensor
+	{visor "main"
+		{vision "tank-main"}
+		{bone "visor1"}
+	}
+	{visor "turret2"
+		{vision "tank-main"}
+		{bone "visor3"}
+	}
+	{visor "turret3"
+		{vision "tank-main"}
+		{bone "visor4"}
+	}	
+}
+
+{Weaponry
+	{place "gun"
+		{Rotate}
+	}
+	{place "mgun"
+	}
+	{place "mgun2"
+	}
+	{place "mgun3"
+	}
+	
+}
+{extender "inventory"
+	{weapon "mgun"
+		{mask "weapon mgun"}
+	}
+	{weapon "mgun2"
+		{mask "weapon mgun"}
+	}
+	{weapon "mgun3"
+		{mask "weapon mgun"}
+	}
+}
+{component "turret2"
+	{RepairTime 20}
+	{Able {repair} {break_by_pierce}}
+}
+{volume "turret2"
+	{component "turret2"}
+	{tags "turret2"}
+}
+{component "turret3"
+	{RepairTime 20}
+	{Able {repair} {break_by_pierce}}
+}
+{volume "turret3"
+	{component "turret3"}
+	{tags "turret3"}
+}
+{component "turret4"
+	{RepairTime 20}
+	{Able {repair} {break_by_pierce}}
+}
+{volume "turret4"
+	{component "turret4"}
+	{tags "turret4"}
+}
+{component "turret5"
+	{RepairTime 20}
+	{Able {repair} {break_by_pierce}}
+}
+{volume "turret5"
+	{component "turret5"}
+	{tags "turret5"}
+}

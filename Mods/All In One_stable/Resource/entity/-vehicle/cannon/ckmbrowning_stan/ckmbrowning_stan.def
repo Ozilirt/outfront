@@ -1,0 +1,17 @@
+{actor
+	(include "/properties/cannon_mgun.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.3))
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "ckmbrowning_tasma"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 330}}
+		}
+	}
+	{extender "inventory"
+		{box
+			{item "ammo mgun" 660}
+		}
+	}  	
+	{Extension "ckmbrowning_stan.mdl"}
+}

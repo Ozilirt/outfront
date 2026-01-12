@@ -1,0 +1,126 @@
+{entity
+	(include "/properties/tank_2km.ext")
+	(include "/properties/shadow/tank.inc" scale(0.9))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props  "light" "tank2" "turret2" "turret_rotator" "turret_2nd"}
+	
+	{TexMods
+		{"variant2" "2"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+			{top	10}
+			{bottom	 6}
+		}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 12
+			{front	 15}
+			{top 10}
+		}		
+	}
+	{volume "turret2"
+		{tags "turret2"}
+		{component "turret2"}
+		{thickness 12
+			{front	 15}
+			{top 10}
+		}		
+	}
+
+
+	{Volume "Crew"
+		{able {contact_ground 0}}
+	}
+
+	("crew_3_human_7TP")	
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+
+	{Weaponry
+		{place "mgun"
+			{DefaultWeapon "dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+		{place "mgun2"
+			{foresight "foresight2"}
+			{DefaultWeapon "dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+
+	{extender "inventory"
+		{box
+			{item  "ammo mgun" 1200}
+		}
+	}
+	
+	{mass 10250}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    15} ; максимальная скорость, kmph
+			{StartTime 		10} ; время разгона до макс. скорости с 0, seconds
+			{BrakeTime 		2} ; время торможения с макс. скорости до 0, seconds
+			{StopTime		 1} ; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius     5} ; мин. радиус разворота, meter
+			{TurnTime		5} ; время на разворот на 360 градусов при макс. скорости разворота, seconds
+			{TurnStart		 2}	; время разгона до макс. угловой скорости с 0, seconds
+			{TurnStop	   0.5}	; время остановки с макс. угловой скорости до 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears 0.2 0.5} ; передаточные коэф-ты коробки передач
+		}
+	}
+	{extension "T-26.mdl"}
+	(mod "mp"
+		{Chassis
+			{speed
+				{Slow	8	}	; km/h
+				{Normal	13	}
+				{Fast	18	}
+			}
+			{Locomotion ("locomotion")
+				{MaxSpeed 18}
+			}
+		}
+		{Sensor
+			{Visor "main"
+				{vision "tank_light"}
+			}
+		}
+	)
+}

@@ -1,0 +1,15 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/entourage.inc" sx(1.3) sy(0.1) pturn(0) ofsx(-7) ofsy(0))
+  {DecalView
+	{ownershadow  64 64}
+	{name "shadow"}
+  }
+	{Extension "slup.mdl"}
+	{props "construction" "one" "staged" "no_destroyed_stamp" "disable_area"}	
+	{Volume "body"
+		{thickness 3}
+		{tags "body"}
+	}
+	("declare_fire_volumes") 	
+}

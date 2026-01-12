@@ -1,0 +1,79 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "truck" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+
+	("crew_2_human")
+
+
+("crew_human" place(seat1)	bone(seat01)	door(emit4)	animation(passenger1))
+("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger))
+("crew_human" place(seat3)	bone(seat03)	door(emit3)	animation(passenger))
+("crew_human" place(seat4)	bone(seat04)	door(emit3)	animation(passenger1))
+("crew_human" place(seat5)	bone(seat05)	door(emit4)	animation(passenger1))
+("crew_human" place(seat6)	bone(seat06)	door(emit4)	animation(passenger))
+("crew_human" place(seat7)	bone(seat07)	door(emit3)	animation(passenger1))
+("crew_human" place(seat8)	bone(seat08)	door(emit3)	animation(passenger))
+("crew_human" place(seat9)	bone(seat09)	door(emit4)	animation(passenger1))
+("crew_human" place(seat10)	bone(seat10)	door(emit4)	animation(passenger))
+
+
+("board_animation" place(passenger)		board_begin(board_SdKfz7) board_end(seat_passenger)	 base(doorpassenger))
+("board_animation" place(passenger1)	board_begin(board_SdKfz7) board_end(seat_passenger)	 base(doorpassenger))
+
+{boarder
+	{anm "passenger"
+		{reverse 	{end	"emit_tank_1" 1}}
+	}
+	{anm "passenger1"
+		{reverse 	{end	"emit_body" 1}}
+	}
+}
+
+
+	("board_animation"
+		place(driver)
+		board_begin(board_big-midcar_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-midcar)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Volume "bodyback"
+		{thickness 5}
+	}
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "ZIS-5.mdl"}
+
+	(mod "mp"
+		{extender "inventory"
+			{box
+				{clear}
+				{item "repair_kit" {cell 0 0}}
+				{item "can" {cell 6 0}}
+				{item "mine antitank" 10 {cell 2 0}}
+				{item "mine antitank" 10 {cell 4 0}}
+				{item "mine antipersonnel" 25 {cell 0 2}}
+				{item "grenade rpg40" 20 {cell 6 2}}
+				{item "bandage" 20 {cell 2 2}}
+				{item "bandage" 20 {cell 4 2}}
+				{item "ammo katusha" 32}
+			}
+		}
+	)
+}

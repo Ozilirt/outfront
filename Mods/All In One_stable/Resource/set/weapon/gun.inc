@@ -165,6 +165,26 @@
 		{spreading {spreadradius 7.2}}	; m
 	)
 }
+; GSTM NNPlaya
+{weapon "nkm_wz38" from "20mm_kwk30"
+	{aimRange 50}					; m
+	{maxRange 50}
+	{rechargeTime 6}
+	{RecoveryTime 0.6}
+	{piercing   7 30     25 40    120 0}	
+	{Automatic}	
+
+} ; TKS z nkm-em
+
+{weapon "25mm_sa34" from "20mm_kwk30" ;AMR 1935
+	{aimRange 50}					; m
+	{maxRange 50}
+	{rechargeTime 0.6}
+	{RecoveryTime 0.6}
+	{piercing   7 30     25 40    120 0}	
+	{Automatic}	
+} 
+; end of GSTM
 {weapon "20mm_flak38" from "gun"	; Panzerflak, SdKfz-10/5, Flak-38, Flak-37
 	{fireSound "heavy_shot.20mm"}
         {reloadSound "reload.mg2_r"}
@@ -411,6 +431,56 @@
 		{piercing  20 38 100 29 200 25 300 16 500 10}
 	)
 }
+{weapon "37mm_bofors" from "gun"		; 7TP, 10TP
+	{fireSound "heavy_shot.37mm"}
+	{reloadSound "reload.gun_r02"}
+	{aimRange 80}					; m
+	{minRange 3}					; m
+	{maxRange 60}					; m
+	{spreading {SpreadRadius 1.5}}	; m
+	{rechargeTime 6}				; s
+	{speed 300}						; m/s
+	{piercing    10 50    20 35    80 0}
+	{shellEnergy 10}
+	(mod "mp"
+		{maxRange}					; m
+		{rechargeTime 1}				; s
+		{piercing    5 46  10 30   20 20  50 10 100 0}
+	)
+}
+{weapon "37mm_puteaux" from "gun"		; wz34, Peugeot, wz29
+	{fireSound "heavy_shot.37mm"}
+	{reloadSound "reload.gun_r02"}
+	{aimRange 80}					; m
+	{minRange 3}					; m
+	{maxRange 60}					; m
+	{spreading {SpreadRadius 1.5}}	; m
+	{rechargeTime 3.2}				; s
+	{speed 200}						; m/s
+	{piercing    10 50    20 35    80 0}
+	{shellEnergy 10}
+	(mod "mp"
+		{maxRange}					; m
+		{rechargeTime 1}				; s
+		{piercing    5 46  10 30   20 20  50 10 100 0}
+	)
+}
+{weapon "37mm_skoda34" from "gun"		; pzkpfw35t
+	{fireSound "heavy_shot.37mm"}
+	{reloadSound "reload.gun_r02"}
+	{aimRange 80}					; m
+	{minRange 3}					; m
+	{maxRange 60}					; m
+	{spreading {SpreadRadius 1.5}}	; m
+	{rechargeTime 3}				; s
+	{speed 200}						; m/s
+	{piercing    10 50    20 35    80 0}
+	{shellEnergy 10}
+	(mod "mp"
+		{maxRange}					; m
+		{piercing    5 46  10 30   20 20  50 10 100 0}
+	)
+}
 {weapon "37mm_KwK38" from "gun"		; pz-38t
 	{fireSound "heavy_shot.37mm"}
 	{reloadSound "reload.pak35_r"}
@@ -612,6 +682,59 @@
 		{piercing  20 59 100 43 200 28 300 21 500 14}
 	)
 }
+;GSMT
+{weapon "37mm_kwk35" from "gun"		; Pzkpfw 3 A-E
+	{fireSound "heavy_shot.37mm"}
+	{reloadSound "reload.gun_r02"}
+	{aimRange 80}					; m
+	{minRange 3}					; m
+	{maxRange 60}					; m
+	{spreading {SpreadRadius 1.5}}	; m
+	{rechargeTime 3}				; s
+	{speed 200}						; m/s
+	{piercing    10 50    20 35    80 0}
+	{shellEnergy 10}
+	(mod "mp"
+		{maxRange}					; m
+		{rechargeTime 1}				; s
+		{piercing    5 46  10 30   20 20  50 10 100 0}
+	)
+}
+
+{weapon "75mm_schneider" from "gun"      ; MLE 1897
+	{fireSound "heavy_shot.pietrusSzot"}
+	{reloadSound "reload.gun_r00"}
+	{aimRange 120}					; m
+	{maxRange 120}					; m
+	{minRange 5}					; m
+	{spreading {SpreadRadius 1.0}}	; m
+	{rechargeTime 3.5}              ; s
+	{speed 250}						; m/s
+	{piercing	10 100     30 60    100 0}
+	(mod "mp"
+		{maxRange}					; m
+		{piercing	10 100     200 60    500 0}
+	)
+}
+
+;ENDOF GSMT
+{weapon "QFSA" from "gun"		 ; Tetrach
+	{fireSound "heavy_shot.45mm"}
+	{reloadSound "reload.pak35_r"}
+	{aimRange 80}					; m
+	{minRange 2}					; m
+	{maxRange 60}					; m
+	{spreading {SpreadRadius 1.5}}	; m
+	{rechargeTime 3}				; s
+	{speed 200}						; m/s
+	{piercing    10 50    20 35    100 0}
+	{shellEnergy 10}
+	(mod "mp"
+		{maxRange}					; m
+		{rechargeTime 1}				; s
+		{piercing    5 60  10 30   20 20  50 10 100 0}
+	)
+}
 {weapon "45mm_20k" from "gun"		; T-26, BT-7, Vickers-b
 	{fireSound "heavy_shot.45mm"}
 	{reloadSound "reload.gun_r02"}
@@ -729,6 +852,15 @@
 		{rechargeTime 3.8}				; s
 	)
 }
+;GSTM NNPlaya
+{weapon "45mm_kt28" from "45mm_20k"
+	{maxRange 80}
+	{aimRange 90}	
+} ; T-28
+{weapon "47mm_20k" from "45mm_20k"
+	{piercing    10 60    20 45    80 0}
+}
+;end of GSTM	
 {weapon "47mm_Sa35" from "gun"		; Char B1bis, S35
 	{fireSound "heavy_shot.47mm"}
 	{reloadSound "reload.gun_r02"}
@@ -1183,6 +1315,21 @@
 		{spreading {SpreadRadius 10.0}}	; m
 		{speed 50}		
 		{piercing  20 22 100 16 200 12 300 8 500 8}
+	)
+}
+{weapon "76mm_l10" from "gun"     ; T-28
+	{fireSound "heavy_shot.75mm"}
+	{reloadSound "reload.gun_r03"}
+	{aimRange 70}					; m
+	{maxRange 60}					; m
+	{minRange 2}					; m
+	{spreading {SpreadRadius 2.0}}	; m
+	{rechargeTime 5.0}				; s
+	{speed 250}						; m/s
+	{piercing	10 90     30 55    110 0}
+	(mod "mp"
+		{maxRange}					; m
+		{piercing	10 90     40 45    60 30 110 0}
 	)
 }
 {weapon "76mm_kt26" from "gun"      ; BT-7A
@@ -1868,6 +2015,30 @@
 		{piercing	10 150         200 0}
 	)
 }
+{weapon "150mm_sfh18longrange" from "150mm_sfh18" ;special purpose
+	{aimRange 330}					; m
+	{maxRange 320}					; m
+	{spreading {SpreadRadius 35.0}}	; m	
+}
+
+{weapon "155mm_schneider" from "gun"    ; "Schneider 155mm"
+	{fireSound "heavy_shot.152mm"}
+	{aimRange 130}					; m
+	{maxRange 120}					; m
+	{minRange 8}					; m
+	{spreading {SpreadRadius 15.0}}	; m
+	{rechargeTime 12}				; s
+	{gravity 1}
+	{speed 54}						; m/s
+  {piercing	50 160         500 20}
+	(mod "mp"
+	  {maxRange 320}					; m	
+		{maxRange}					; m
+		{aimRange 160}				; m
+		{piercing	50 160         500 20}
+		{speed 54}					; m/s
+	)
+}
 {weapon "152mm_ML20" from "gun"     ; KV-2
 	{fireSound "heavy_shot.152mm"}
         {reloadSound "reload.gun_r01"}
@@ -2033,5 +2204,40 @@
 	(mod "mp"
 		{maxRange 400}					; m
 		{piercing	100 120  200 100  300 75  400 50}
+	)
+}
+{weapon pattern "gun2"
+	{type bullet}
+	{foresight "Foresight2"}
+	{aimRange 200}				; m
+	{maxRange 200}					; m
+	{minRange 2}				; m
+	{spreading {SpreadRadius 5.0}	}	; m
+	{healthing 20 3000 50 1000 100 500 200 100 500 0}
+	{rechargeTime 5.0}			; s
+	{speed 280}					; m/s
+	{AimingTolerance 2}			; degree
+	{RelaxationTime 0.5}
+	{cursor "/interface/cursor/cannon_on_2.ebm"}
+	(mod "mp"
+		{maxRange 200}					; m
+	)
+}
+
+
+{weapon "75mm_sa35" from "gun2"     ; CharB1bis
+	{fireSound "heavy_shot.75mm"}
+	{reloadSound "reload.gun_r00"}
+	{aimRange "tank" 30}			; m
+	{aimRange 240}					; m
+	{maxRange 240}					; m
+	{minRange 2}					; m
+	{spreading {SpreadRadius 7.5}}	; m
+	{rechargeTime 5.5}				; s
+	{speed 220}						; m/s
+	{piercing  20 72 100 66 200 55 300 45 500 25}
+	(mod "mp"
+		{maxRange 240}					; m
+		{piercing  20 72 100 66 200 55 300 45 500 25}
 	)
 }

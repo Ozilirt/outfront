@@ -1,0 +1,62 @@
+  
+
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.6))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "wheeled" "-turret" "self_propelled"}
+;	{props "emit_on_attack"}
+	(include "/properties/dummy_fsm.inc")
+;	{simulation {able 0}}
+	{placer	{place "gunner" {visor "main"} {nouseVision} {worker charger}}}	
+	{sensor
+		{Visor "main"
+			{vision "6funt"}
+			{bone "visor"}
+		}
+	}
+	{TexMods
+ 		{"ambush" "1"}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 15
+		}
+	}
+	{Volume "turret"
+		{thickness 15}
+	}
+	{Volume "gun"
+		{thickness 15}
+	}
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+
+	("crew_2_human")
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_kwk35"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet37" 100}
+		}
+	}
+	{mass 10000}
+	{Extension "pak37.mdl"}
+}
+  
+

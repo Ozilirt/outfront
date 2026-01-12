@@ -1,0 +1,36 @@
+;SDL
+(include "tank.ext")
+{sensor
+	{visor "main"
+		{vision "tank-main"}
+		{bone "visor1"}
+	}
+	{visor "turret2"
+		{vision "tank-main"}
+		{bone "visor3"}
+	}
+}
+
+{Weaponry
+	{place "mgun"
+	}
+	{place "mgun2"
+	}
+	
+}
+{extender "inventory"
+	{weapon "mgun"
+		{mask "weapon mgun"}
+	}
+	{weapon "mgun2"
+		{mask "weapon mgun"}
+	}
+}
+{component "turret2"
+	{RepairTime 20}
+	{Able {repair} {break_by_pierce}}
+}
+{volume "turret2"
+	{component "turret2"}
+	{tags "turret2"}
+}

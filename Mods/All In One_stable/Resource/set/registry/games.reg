@@ -1269,8 +1269,6 @@
 			}
 		}
 	}
-	
-	
 	{"12. K1"
 		{name "mission/12_/name"}
 		{multiplayer "1"}
@@ -1853,6 +1851,28 @@
 				}
 				{outro
 					{text "mission/briefing/600_xf"}
+				}
+			}
+		}
+	}
+	{"19. September Campaing"
+		{name "mission/19_/name"}
+		{multiplayer "1"}
+		{background "background/rus:rus"}
+			{screenshot "/interface/background/katusha1.ebm"}
+			{media "katusha bkg"}
+		{missions
+			{"Insertion"
+				{name "mission/19_1/name"}
+				{coopBreed "rus.infantry_smg"}
+				{scene "1939aSeptemberCampaign/1-katusha/1939-1_2-chepel:0"}
+				{intro
+					{video "loading_2_1"}
+					{background "/video\1939aSeptemberCampaign/2-CHEPEL.ebm"}
+					{text "mission/briefing/19_1"}
+				}
+				{outro
+					{text "mission/briefing/19_xf"}
 				}
 			}
 		}

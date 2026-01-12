@@ -1,0 +1,165 @@
+;Exported by: Enforcer
+;Date:        Fri May 27 14:39:59 2011
+;File:        C:\Users\Enforcer\Desktop\Renault AGR\renault_agr.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "Id=body;"}
+			{Matrix34
+				-0.0000	-1.0000	-0.0000
+				-0.0000	-0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				-33.7402	-5.5383	17.5309
+			}
+			{VolumeView "body.ply"}
+			{bone "bodyback"
+				{Matrix34
+					-0.0000	-0.0000	-1.0000
+					-0.0000	1.0000	-0.0000
+					1.0000	0.0000	-0.0000
+					-27.1473	3.2914	-12.9862
+				}
+				{VolumeView "bodyback.ply"}
+			}
+			{bone "Cabin"
+				{parameters "Id=cabin;"}
+				{Matrix34
+					-0.0000	-0.0000	-1.0000
+					-0.0000	1.0000	-0.0000
+					1.0000	0.0000	-0.0000
+					-5.3412	9.8069	-74.7898
+				}
+				{VolumeView "Cabin.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 33.1911	-0.0000	9.1373}
+			{bone revolute "Steer_L"
+				{limits -30.0000 30.0000}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	-0.0000
+					-0.0000	-0.0000	1.0000
+					0.0000	16.1423	0.0000
+				}
+				{bone revolute "WheelL1"
+					{parameters "ID=wheelleft1;"}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						-0.0000	0.0000	-1.0000
+						-0.0000	1.0000	0.0000
+						-0.3555	-2.0842	-0.2213
+					}
+					{VolumeView "WheelL1.ply"}
+				}
+			}
+			{bone revolute "Steer_R"
+				{limits -30.0000 30.0000}
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	-0.0000
+					-0.0000	-0.0000	1.0000
+					-0.0000	-16.5030	-0.0000
+				}
+				{bone revolute "WheelR1"
+					{parameters "ID=wheelright1;"}
+					{Matrix34
+						1.0000	0.0000	-0.0000
+						-0.0000	0.0000	-1.0000
+						-0.0000	1.0000	0.0000
+						-0.3555	2.2120	-0.2213
+					}
+					{VolumeView "WheelR1.ply"}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -33.9535	-0.0000	9.4690}
+			{bone revolute "WheelR2"
+				{parameters "ID=wheelright2;"}
+				{Matrix34
+					-1.0000	0.0000	-0.0000
+					-0.0000	-0.0000	1.0000
+					-0.0000	-1.0000	-0.0000
+					-0.0329	-18.0275	-0.1104
+				}
+				{VolumeView "WheelR2.ply"}
+			}
+			{bone revolute "WheelL2"
+				{parameters "ID=wheelleft2;"}
+				{Matrix34
+					-1.0000	0.0000	-0.0000
+					-0.0000	-0.0000	1.0000
+					-0.0000	-1.0000	-0.0000
+					-0.0329	17.5957	-0.1104
+				}
+				{VolumeView "WheelL2.ply"}
+			}
+		}
+	}
+}
+{Volume "WheelL2"
+	{Cylinder 9.33605 3.39202}
+	{Bone "WheelL2"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	-0.0000
+		-0.0000	0.0000	1.0000
+		0.0974	0.1593	-1.1952
+	}
+}
+{Volume "WheelR2"
+	{Cylinder 9.33605 3.39202}
+	{Bone "WheelR2"}
+	{Matrix34
+		-1.0000	-0.0000	-0.0000
+		-0.0000	1.0000	-0.0000
+		-0.0000	0.0000	1.0000
+		0.0973	0.1593	2.0283
+	}
+}
+{Volume "WheelR1"
+	{Cylinder 9.33605 3.39202}
+	{Bone "WheelR1"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.6385	-0.6019	0.3319
+	}
+}
+{Volume "WheelL1"
+	{Cylinder 9.33605 3.39202}
+	{Bone "WheelL1"}
+	{Matrix34
+		1.0000	-0.0000	0.0000
+		-0.0000	-1.0000	0.0000
+		0.0000	0.0000	1.0000
+		-0.6385	-0.6019	-0.5644
+	}
+}
+{Volume "body"
+	{Box 83.7569 34.7043 8.45758}
+	{Bone "body"}
+	{Matrix34
+		-0.0000	-0.0000	-1.0000
+		-1.0000	-0.0000	0.0000
+		-0.0000	1.0000	-0.0000
+		-5.5415	-1.2260	-13.6147
+	}
+}
+{Volume "cabin"
+	{Polyhedron "cabin.vol"}
+	{Bone "Cabin"}
+	{Matrix34
+		1.0000	0.0000	-0.0000
+		-0.0000	0.0000	-1.0000
+		-0.0000	1.0000	0.0000
+		-0.7378	-18.9258	-0.4705
+	}
+}

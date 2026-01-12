@@ -1,0 +1,98 @@
+{entitymanager
+	{group "dead" actor dead
+		{remove dissolve}
+		{limit 30}
+		{entity "_infantry2_rus"}
+	}
+	
+	{group "piece" gameentity
+		{limit 20}
+		{remove dissolve}
+		{entity "piece_big_steel"}
+		{entity "piece_large_steel"}
+		{entity "piece_medium_steel"}
+		{DeadVehicles}
+	}
+	
+	{group "stuff" stuff
+		{remove dissolve}
+		{limit 40}
+		{entity "axe"}
+		{entity "bar"}
+		{entity "bazoka"}
+		{entity "bren"}
+		{entity "browning"}
+		{entity "colt"}
+		{entity "crow_bar"}
+		{entity "ds39"}
+		{entity "dt29"}
+		{entity "grenade_f1"}
+		{entity "grenade_m24"}
+		{entity "grenade_m24x5"}
+		{entity "grenade_rpg40"}
+		{entity "grenade_smoke"}
+		{entity "knife"}
+		{entity "m1_carbine"}
+		{entity "m3a"}
+		{entity "mg34"}
+		{entity "molotov_coctail"}
+		{entity "mp40"}
+		{entity "muffledpistol"}
+		{entity "panzerfaust60"}
+		{entity "panzershreck"}
+		{entity "pistol"}
+		{entity "ppsh"}
+		{entity "ptrs"}
+		{entity "rifle"}
+		{entity "sg44"}
+		{entity "sten"}
+		{entity "thompson"}
+; GSTM NNPlaya
+		{entity "karppanc"}
+		{entity "vis"}
+		{entity "mauzerpol"}
+		{entity "ckmbrowning"}
+		{entity "ckmbrowning_tasma"}
+		{entity "rkmbrowning"}
+		{entity "hotchkiss"}
+		{entity "mors"}
+		{entity "grzaczepny"}
+		{entity "grobronny"}
+		{entity "szabla"}
+; end of GSTM
+	}
+	
+	{group "equip" stuff
+		{remove dissolve}
+		{limit 15}
+		{entity "beret_eng"}
+		{entity "beret_eng1"}
+		{entity "body_armor"}
+		{entity "cap1_ger"}
+		{entity "cap1_rus"}
+		{entity "commando-cap1"}
+		{entity "fieldcap_ger"}
+		{entity "fieldcap_rus"}
+		{entity "helmet1_eng"}
+		{entity "helmet1_ger"}
+		{entity "helmet1_rus"}
+		{entity "helmet1_usa"}
+		{entity "helmet2_ger"}
+		{entity "helmet2_usa"}
+		{entity "helmet3_usa"}
+		{entity "raf-helmet"}
+		{entity "rw_cap"}
+		{entity "tank_cap_eng"}
+		{entity "tank_cap1_ger"}
+		{entity "tank_cap2_ger"}
+		{entity "tankhelmet_rus"}
+		{entity "usmc-cap1"}
+; GSTM NNPlaya
+		{entity "rogatywka1_pol"}
+		{entity "helmet1_pol"}
+		{entity "helmet2_pol"}
+		{entity "policecap_pol"}
+		{entity "beret_pol"}
+; end of GSTM
+	}
+}

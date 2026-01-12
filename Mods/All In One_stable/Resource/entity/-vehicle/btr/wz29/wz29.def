@@ -1,0 +1,144 @@
+{entity
+	(include "/properties/bronik_multyturret.ext")
+	(include "/properties/structure/arm_car4x4.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.8))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "armored_car" "tank" "tank2" "turret" "turret2" "mgun2" "mgun3" "wheeled" "with_doors"}
+	{PatherId "tank"}
+	{extension "crew.ext"}
+	{TexMods
+		{"ambush1" "1"}
+	}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 25
+		    {front  25}
+			{top	20}
+			{bottom	15}
+			{rear   28}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 25
+		    {front  25}
+			{top	20}
+			{bottom	20}
+			{rear   20}
+		}   
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 30
+		    {front  30}
+			{top	12}
+			{rear   30}
+        	}   
+	}
+	{volume "turret2"
+		{tags "turret"}
+		{component "turret2"}
+		{thickness 15
+		    {front  15}
+			{top	15}
+			{bottom	15}
+			{rear   15}
+		}   
+        } 
+	{volume "gun"
+                {component "gun"}
+		{thickness 10}  
+	}
+	{volume "engine"
+		{thickness 10
+                      {rear 15}
+		}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{Volume "fuel"
+		{thickness 1}
+	}
+	{component "turret"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+        }
+	{component "turret2"
+		{RepairTime 20}
+		{Able {repair} {break_by_pierce}}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_puteaux"}
+			{RestoreIKAfterAim}
+			{Mounted}
+			{weapon {ammo "ammo bullet37 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "hotchkiss"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 300}}
+                }
+		{place "mgun2"
+			{foresight "foresight2"}
+                        {Rotate}
+			{DefaultWeapon "hotchkiss"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 300}}
+                }
+		{place "mgun3"
+			{foresight "foresight6"}
+                        {Rotate}
+			{DefaultWeapon "hotchkiss"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 300}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+                {weapon "mgun2"
+			{mask "weapon mgun"}
+                }
+                {weapon "mgun3"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 2500}
+			{item "ammo bullet37 ap" 60}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	{mass 15000}
+	{Chassis
+          {speed
+		{Slow	8}
+		{Normal	16}
+		{Fast	22	}
+		}
+		{Locomotion
+			{MaxSpeed	22	}		; максимальная скорость, kmph
+			{StartTime	8	}		; время разгона до макс. скорости с 0, seconds
+			{BrakeTime	4	}		; время торможения с макс. скорости до 0, seconds
+			{StopTime	6	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
+			{TurnRadius	7	}		; мин. радиус разворота, meter
+			{Gears		0.35 0.5 0.7 1.0} ; передаточные коэф-ты коробки передач
+			{RearGears	0.33 0.5}	; передаточные коэф-ты коробки передач
+			{SteerOn	40}			; скорость поворота колес, градусов в секунду
+			{SteerOff	40}         ; скорость возврата колес в исх. состояние, градусов в секунду
+			{SplineRadius 1}		; ограничение радиуса поворота на сплайнах, метров
+		}
+	}
+	{Extension "wz29.mdl"}
+}

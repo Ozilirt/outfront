@@ -1,0 +1,90 @@
+	
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	;	{props "emit_on_attack"} ;To mnie zawsze wk***ło - Enforcer
+	(include "/properties/structure/car4x4.ext")
+	{PatherId "vehicle.small"}
+        {sensor
+		{Visor "main"
+			{vision "gaz67b"}
+			{bone "visor"}
+		}
+	}
+	
+	("crew_2_human")
+
+	("board_animation"
+		place(driver)
+		board_begin(board_willis_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_willis)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+	
+	{boarder
+		{anm "gunner"
+			{forward	{begin	"board_LowTank_stand"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold" 1}}
+		}
+	}
+
+	("crew_human"		place(gunner)	bone(gunner)	door(emit1)		animation(gunner))
+	
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "commander"	{group "crew"}}
+		{place "gunner"		{group "crew"} {worker charger}}		
+  }
+  
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "ckmbrowning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{Box
+			{size 5 6}
+			{item  "ammo mgun" 600}
+		}
+	}	
+
+	{mass 1500}
+	
+	{Chassis
+		{Locomotion ("locomotion")
+			{Maxspeed 40}
+			{StartTime	3}		
+		}
+	}
+	{Extension "fiat508.mdl"}
+	{Volume "engine"
+                {tags "engine"}
+		{component "engine"}
+		{thickness 6}
+	}
+	{Volume "Body"
+		{tags "body"}
+		{component "body"}
+		{thickness 7}   
+	}
+}

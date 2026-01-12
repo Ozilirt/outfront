@@ -1,0 +1,82 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light"}
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{bottom 8}
+			{top 10}
+			{rear 10}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{top 10}
+			{rear 10}
+		}
+	}
+	{volume "turret"
+		{thickness 13 
+			{top	5}
+			{bottom	5}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "25mm_sa34"}
+			{Mounted}
+			{weapon {ammo "ammo bullet25" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "hotchkiss"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 250}}
+		}		
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet25" 50}
+			{item  "ammo mgun" 660}			
+		}
+	}
+	
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+
+	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(driver))
+	("crew_human" 			place(gunner)		door1(emit1) door2(emit2) visor(main))
+
+	{placer
+		{place "driver" {visor "driver"}}
+		{place "gunner" {worker charger} {visor "main"}}
+	}
+
+	{placer
+		{place "driver" 	{group "crew"}}
+		{place "gunner" 	{group "crew"}}
+	}	
+	
+	{mass 10250}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+
+	{Extension "amr1935.mdl"}
+}

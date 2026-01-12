@@ -1,0 +1,18 @@
+{game_entity
+	(include "/properties/construction.inc")
+;	(include "/properties/shadow/entourage.inc" sx(0.17) sy(0.85) pturn(-11) ofsx(-6) ofsy(3) )
+  {DecalView
+	{ownershadow  32 32}
+	{name "shadow"}
+  }
+	{Extension "boat3.mdl"}
+	{TexMods
+		{"1" "1"}
+		{"2" "2"}
+		{"3" "3"}
+		{"4" "4"}
+	}
+	{Volume "body"
+		{thickness 500}
+	}
+}

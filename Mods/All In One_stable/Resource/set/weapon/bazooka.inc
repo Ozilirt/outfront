@@ -83,7 +83,7 @@
 		{SpreadRadius 2.2}		; m
 	}
 	{rechargeTime 3.0}
-        {piercing 50 130}
+         {piercing 50 130 55 1}
         {healthing  1000 200}
 	{speed 80}	
 }

@@ -1,0 +1,96 @@
+{ArmoredCar 
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew" "with_gun"}
+	{PatherId "vehicle.small"}
+
+	{TexMods
+		{"wersja policyjna" "1"}
+	}
+	{extension "crew.ext"}
+
+   {extender "light"
+      {lightfx "light_boat"}
+      {breakfx "glass_hit"}
+      {lamp "1"}
+   }
+
+   {extender "light"
+      {lightfx "light_boat"}
+      {breakfx "glass_hit"}
+      {lamp "2"}
+   }
+
+   {Volume "lamp1"
+      {thickness 2}
+   }
+   {Volume "lamp2"
+      {thickness 2}
+   }
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 13}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 13}
+	}
+;silnik
+	{volume "engine"
+		{thickness 12}
+	}
+
+	{component "engine"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+;end of silnik
+;scianki
+	{volume "sciana1"
+		{thickness 13}
+	}
+	{volume "sciana2"
+		{thickness 13}
+	}
+	{volume "sciana3"
+		{thickness 13}
+	}
+	{volume "sciana4"
+		{thickness 13}
+	}
+	{volume "sciana5"
+		{thickness 13}
+	}
+	{volume "mgun_shield1"
+		{thickness 13}
+	}
+;end of scianki
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_puteaux"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "ammo bullet37" 50}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "peugeot2.mdl"}
+}

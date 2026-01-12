@@ -1,0 +1,81 @@
+{entity
+	(include "/properties/tank.ext")
+  (include "/properties/tank_crew.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "turret_rotator"}
+	{extension "crew.ext"}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 13 1.6
+			{top	6}
+			{bottom	6}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 13 1.6
+			{top	6}
+			{bottom	6}
+		}
+	}
+	{volume "turret"
+		{thickness 6 2.0
+			{front  13 0.25}
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("crew_human2" place(commander)	bone(commander) door1(emit2) animation(gunner))
+        ("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+        ("seat_human" place(seat3) bone(seat03) door(emit2)  animation(armor))
+        ("seat_human" place(seat4) bone(seat04) door(emit5)  animation(armor))
+        ("seat_human" place(seat5) bone(seat05) door(emit6)  animation(armor))
+        ("seat_human" place(seat6) bone(seat06) door(emit5)  animation(armor))   
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "47mm_20k"}
+			{Mounted}
+			{weapon {ammo "ammo bullet47 ap" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "ckmbrowning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 330}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 660}
+			{item "ammo bullet47 ap" 50}
+			{item "ammo bullet47 fg" 27}
+		}
+	}
+	
+	{mass 8000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{Extension "Vickers_E.mdl"}
+}

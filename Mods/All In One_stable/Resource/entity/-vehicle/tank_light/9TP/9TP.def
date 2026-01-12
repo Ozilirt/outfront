@@ -1,0 +1,99 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light"}
+
+
+   {extender "light"
+      {lightfx "light_boat"}
+      {breakfx "glass_hit"}
+      {lamp "1"}
+   }
+
+   {extender "light"
+      {lightfx "light_boat"}
+      {breakfx "glass_hit"}
+      {lamp "2"}
+   }
+
+   {Volume "lamp1"
+      {thickness 2}
+   }
+   {Volume "lamp2"
+      {thickness 2}
+   }
+	
+	{TexMods
+		{"variant2" "2"}
+	}
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 40	}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 40}
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 40}
+	}
+	{volume "turret"
+		{thickness 40}
+	}
+	{volume "engine"
+		{thickness 30}
+	}
+
+	("crew_3_human_7TP")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "37mm_bofors"}
+			{Mounted}
+			{weapon {ammo "ammo bullet37" 1}}
+		}
+		{place "mgun"
+			{DefaultWeapon "ckmbrowning"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 330}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 660}
+			{item "ammo bullet37" 50}
+		}
+	}
+	
+	{mass 10250}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{Extension "7TP.mdl"}
+}

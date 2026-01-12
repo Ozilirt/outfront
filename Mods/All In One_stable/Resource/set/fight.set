@@ -16,6 +16,70 @@
 			{health -200}
 		}
 	}
+; GSTM NNPlaya
+; **** BAGNET ****
+	{blow "bagnet_force_front"
+		{distance far}
+		{self
+			{animation "fight_front_knife"}
+			{item "mauzerpol"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+	{blow "bagnet_throat_back"
+		{distance far}
+		{self
+			{animation "fight_front_knife"} 
+			{item "mauzerpol"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+; **** SZABLA ****
+	{blow "szabla_force_front"
+		{distance far}
+		{self
+			{animation "fight_front_knife"}
+			{item "szabla"}
+		}
+		{opponent
+			{orientation front}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+	{blow "szabla_throat_back"
+		{distance far}
+		{self
+			{animation "fight_front_knife"} 
+			{item "szabla"}
+		}
+		{opponent
+			{orientation back}
+			{movement stand squat}
+		}
+		{damage
+			{delay 0.5}
+			{health -200}
+		}
+	}
+; end of GSTM 
 	{blow "knife_throat_back"
 		{distance medium}
 		{self

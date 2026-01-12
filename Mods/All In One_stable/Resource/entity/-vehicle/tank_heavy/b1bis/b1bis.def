@@ -1,0 +1,118 @@
+{game_entity
+
+	(include "/properties/tank.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "turret_rotator" "huge"}
+
+	{Volume "trackleft"
+	}
+	{Volume "trackright"
+	}
+	{Volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+			{front  60 0.2}
+        {rear 55 0.43}
+        {top 14}
+        {bottom 20}
+		} 	
+	}
+	{Volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+			{front  60 0.2}
+        {rear 55 0.43}
+        {top 14}
+        {bottom 20}
+		} 	
+	}
+	{Volume "turret"
+		{thickness 46 0.23
+			{front  56}
+			{top	30}
+		}  	
+	}
+	
+	("crew_4_human")	
+	
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}	
+	
+	{Weaponry
+		
+		{place "gun"
+			{Rotate}
+			{DefaultWeapon "47mm_sa35"}
+			{Mounted}
+			{weapon {ammo "ammo bullet47 ap" 1}}
+            	}
+	     	{place "mgun"
+			{DefaultWeapon "reibel"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 150}}
+		}
+		{place "gun2"
+			{Rotate}
+			{DefaultWeapon "75mm_sa35"}
+			{Mounted}
+			{weapon {ammo "ammo bullet75 fg" 1}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun2" {fixed}}
+		{weapon "gun" {fixed}}
+		{weapon "mgun" {fixed}{mask "weapon mgun"}}
+		{box
+			{item "ammo mgun" 600}
+			{item "ammo bullet47 ap" 42}
+			{item "ammo bullet47 fg" 78}
+			{item "ammo bullet75 fg" 30}
+		}
+	}	
+	
+  {Chassis
+    {speed
+      {Slow	5}
+		  {Normal	8}
+		  {Fast	13}
+    }
+    
+    {FuelBag
+      {volume 336 }	; liters
+	    {rate   426 }   	; liters per kilometer
+	    {remain 336 }
+      {fuel "fuel"}
+    }
+  
+  }	
+  
+	{mass 28000}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion 
+			{MaxSpeed 	    13} ; ¬ Şá¨¬ «ě­ ď áŞ®ŕ®áâě, kmph
+			{StartTime 		 7} ; ˘ŕĄ¬ď ŕ §Ł®­  ¤® ¬ Şá. áŞ®ŕ®áâ¨ á 0, seconds
+			{BrakeTime 		1} ; ˘ŕĄ¬ď â®ŕ¬®¦Ą­¨ď á ¬ Şá. áŞ®ŕ®áâ¨ ¤® 0, seconds
+			{StopTime		 1} ; ˘ŕĄ¬ď ®áâ ­®˘Ş¨ Ż®á«Ą ®âŞ«îçĄ­¨ď ¤˘¨Ł âĄ«ď á ¬ Şá. áŞ®ŕ®áâ¨ ¤® 0, seconds
+			{TurnRadius     5} ; ¬¨­. ŕ ¤¨ăá ŕ §˘®ŕ®â , meter
+			{TurnTime		10} ; ˘ŕĄ¬ď ­  ŕ §˘®ŕ®â ­  360 Łŕ ¤ăá®˘ Żŕ¨ ¬ Şá. áŞ®ŕ®áâ¨ ŕ §˘®ŕ®â , seconds
+			{TurnStart		 2}	; ˘ŕĄ¬ď ŕ §Ł®­  ¤® ¬ Şá. ăŁ«®˘®© áŞ®ŕ®áâ¨ á 0, seconds
+			{TurnStop	   0.5}	; ˘ŕĄ¬ď ®áâ ­®˘Ş¨ á ¬ Şá. ăŁ«®˘®© áŞ®ŕ®áâ¨ ¤® 0, seconds
+			{Gears 0.2 0.3 0.5 0.7 1.0} ; ŻĄŕĄ¤ â®ç­ëĄ Ş®íä-âë Ş®ŕ®ˇŞ¨ ŻĄŕĄ¤ ç
+			{RearGears 0.2 0.5} ; ŻĄŕĄ¤ â®ç­ëĄ Ş®íä-âë Ş®ŕ®ˇŞ¨ ŻĄŕĄ¤ ç
+		}
+	}  
+	
+	{Extension "b1bis.mdl"}
+}

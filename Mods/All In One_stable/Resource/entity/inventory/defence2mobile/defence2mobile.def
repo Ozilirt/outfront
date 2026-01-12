@@ -1,0 +1,24 @@
+{game_entity
+	(include "/properties/construction.inc")
+	
+  {DecalView
+    {ownershadow  64 64}
+    {name "shadow"}
+  }
+	
+	{obstacleID "unbreakable"}
+
+	{props "wood" "sand_bag" "construction" "no_destroyed_stamp"}
+	
+	{volume	"body"
+		{thickness 30}
+		{tags "climb"}
+	}
+  
+  {extender "stuff"
+		{item "sandOhyeah"}
+	}
+	
+	{mass 80}
+	{Extension "defence2.mdl"}
+}

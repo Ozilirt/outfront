@@ -1,0 +1,38 @@
+;Exported by: ubrashaev
+;Date:        Wed Jan 14 11:34:25 2004
+;File:        D:\-Projects-\-work-\3d\budka.max
+{Skeleton
+	{animation
+		{sequence "crush1" {speed 0.5}}
+	}
+	{bone "barrier02"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "barrier02.ply"}
+		{bone "bar02"
+			{Matrix34
+				0.0000	1.0000	0.0000
+				-0.0000	0.0000	1.0000
+				-1.0000	0.0000	-0.0000
+				49.2176	-0.0045	23.0821
+			}
+			{VolumeView "bar02.ply"}
+            {bone "eagle"
+                {Matrix34
+                    0.9994 -0.0070 0.0349
+                    0.0077 0.9998 -0.0208
+                    0.0347 -0.0210 -0.9992
+                    -1.6000 -0.4000 72.4000
+                }
+                {VolumeView "eagle.ply"}
+            }			
+		}
+		{bone "fx_dust1a"
+			{Position 45.0025	-3.3667	11.1171}
+		}
+	}
+}

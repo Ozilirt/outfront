@@ -1,0 +1,23 @@
+;SDL
+(include "tank_unarmed.ext")
+
+{Weaponry
+	{place "gun"
+		{Rotate}
+;		{RestoreIKAfterAim}
+	}
+	{place "mgun"
+	}
+	{place "mgun2"
+	}	
+}
+{extender "inventory"
+	{weapon "mgun"
+		{mask "weapon mgun"}
+	}
+	{weapon "mgun2"
+		{mask "weapon mgun"}
+	}
+}
+
+{props "with_gun"}

@@ -1,0 +1,379 @@
+{mission
+	{Camera
+		{Position 2882.48 1059.53}
+		{Distance 3100}
+		{ViewAngle 0.694641}
+		{YawAngle -22.8895}
+	}
+	{Environment "day_tropic"}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "start_point" 0x8000
+		{Position -1608.89 4238.61 0}
+		{Turn -2.09668}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "start_point" 0x8001
+		{Position -1405.92 4237.79 1.31813}
+		{Turn -13.0815}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "start_point" 0x8002
+		{Position -1289.96 4086.41 2.35876}
+		{Turn -0.381495}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "start_point" 0x8003
+		{Position -1108.4 4115.42 0}
+		{Turn -6.59158}
+		{Extender "start_point"
+			{mapPoint "z"}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "start_point" 0x8008
+		{Position 6499.81 -1584.85 0}
+		{Turn 126.453}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "start_point" 0x8009
+		{Position 6410.38 -1725.39 -2}
+		{Turn 130.686}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "start_point" 0x800a
+		{Position 6400.02 -1328.83 -0.000264817}
+		{Turn 129.159}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "start_point" 0x800b
+		{Position 6347.1 -1501.72 0}
+		{Turn 125.293}
+		{Extender "start_point"
+			{mapPoint "x"}
+		}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "map_point" 0x802c
+		{Position 1552.34 1188.29 8.76575}
+		{Turn -39.524}
+		{Extender "map_point"
+			{name "z"}
+			{caption "ZTeam"}
+			{teams "z"}
+			{unitset "reg"}
+		}
+		{Player 0}
+		{MID 45}
+	}
+	{Entity "map_point" 0x802d
+		{Position 5590.03 1932.74 19.271}
+		{Turn -140.902}
+		{Extender "map_point"
+			{name "x"}
+			{caption "XTeam"}
+			{teams "x"}
+			{unitset "reg"}
+		}
+		{Player 0}
+		{MID 46}
+	}
+	{Entity "flag_point" 0x802f
+		{Position 2583.57 1740.33 34.8949}
+		{Turn -108.815}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 0}
+		{MID 48}
+	}
+	{Entity "flag_point" 0x8030
+		{Position -967.922 -1156.9 21.7543}
+		{Turn -86.066}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "z x"}
+			{"allow/release" "z x"}
+		}
+		{Player 0}
+		{MID 49}
+	}
+	{Entity "flag_point" 0x8032
+		{Position 5553.62 4343.91 0}
+		{Turn -130.097}
+		{Extender "map_point"
+			{show All}
+			{visor MapPoint}
+			{zone 10}
+			{"allow/capture" "x z"}
+			{"allow/release" "x z "}
+		}
+		{Player 0}
+		{MID 51}
+	}
+	{Entity "side_star" 0x8035
+		{Position 2583.59 1740.44 166.393}
+		{Orientation
+			 -0.946565   0.322514   0.000000
+			 -0.322514  -0.946565   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8036
+		{Position -967.946 -1156.79 153.252}
+		{Orientation
+			 -0.997644  -0.068607   0.000000
+			  0.068607  -0.997644   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Entity "side_star" 0x8038
+		{Position 5553.68 4344.01 131.498}
+		{Orientation
+			 -0.764955   0.644084   0.000000
+			 -0.644084  -0.764955   0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{SpawnedInFog}
+		{DisableObstacles}
+	}
+	{Link 0x8035 To 0x802f "side_pointer"}
+	{Link 0x8036 To 0x8030 "side_pointer"}
+	{Link 0x8038 To 0x8032 "side_pointer"}
+	{Brain 0x50f
+		{HoldFire}
+	}
+	{Brain 0x598
+		{HoldFire}
+	}
+	{Brain 0x599
+		{HoldFire}
+	}
+	{Brain 0x59a
+		{HoldFire}
+	}
+	{Brain 0x59b
+		{HoldFire}
+	}
+	{Brain 0x59c
+		{HoldFire}
+	}
+	{Brain 0x7c4
+		{HoldFire}
+	}
+	{Brain 0x7c5
+		{HoldFire}
+	}
+	{Brain 0x7c6
+		{HoldFire}
+	}
+	{Brain 0x7c7
+		{HoldFire}
+	}
+	{Brain 0x7c8
+		{HoldFire}
+	}
+	{Brain 0x7c9
+		{HoldFire}
+	}
+	{Brain 0x7ca
+		{HoldFire}
+	}
+	{Brain 0x7cb
+		{HoldFire}
+	}
+	{Brain 0x7cc
+		{HoldFire}
+	}
+	{Brain 0x7cd
+		{HoldFire}
+	}
+	{Brain 0x7ce
+		{HoldFire}
+	}
+	{Brain 0x7cf
+		{HoldFire}
+	}
+	{Brain 0x7d0
+		{HoldFire}
+	}
+	{Brain 0x7d1
+		{HoldFire}
+	}
+	{Brain 0x7d2
+		{HoldFire}
+	}
+	{Brain 0x7d3
+		{HoldFire}
+	}
+	{Brain 0x7d4
+		{HoldFire}
+	}
+	{Brain 0x7d5
+		{HoldFire}
+	}
+	{Brain 0x7d6
+		{HoldFire}
+	}
+	{Brain 0x7d7
+		{HoldFire}
+	}
+	{Brain 0x7d8
+		{HoldFire}
+	}
+	{Brain 0x7d9
+		{HoldFire}
+	}
+	{Brain 0x7da
+		{HoldFire}
+	}
+	{Brain 0x7db
+		{HoldFire}
+	}
+	{Brain 0x7dc
+		{HoldFire}
+	}
+	{Brain 0x7dd
+		{HoldFire}
+	}
+	{Brain 0x7de
+		{HoldFire}
+	}
+	{Brain 0x7df
+		{HoldFire}
+	}
+	{Brain 0x7e0
+		{HoldFire}
+	}
+	{Brain 0x7e1
+		{HoldFire}
+	}
+	{Brain 0x7e2
+		{HoldFire}
+	}
+	{Brain 0x7e3
+		{HoldFire}
+	}
+	{Brain 0x7e4
+		{HoldFire}
+	}
+	{Brain 0x7e5
+		{HoldFire}
+	}
+	{Brain 0x7e6
+		{HoldFire}
+	}
+	{Brain 0x89a
+		{HoldFire}
+	}
+	{Brain 0x89b
+		{HoldFire}
+	}
+	{Brain 0x89c
+		{HoldFire}
+	}
+	{Brain 0x89d
+		{HoldFire}
+	}
+	{Brain 0x89e
+		{HoldFire}
+	}
+	{Brain 0x89f
+		{HoldFire}
+	}
+	{Helpers
+		{trigger "1111"
+			{actions
+				{"task"
+					{name "primary1"}
+				}
+			}
+		}
+		{waypoints
+		}
+		{zone "circle"
+			{position -1107.82 3159.75 98.9698}
+			{Name "chiken"}
+			{Radius 700}
+		}
+		{zone "circle"
+			{position -131.999 2064.28 81.9145}
+			{Name "chiken2"}
+			{Radius 240}
+		}
+		{zone "circle"
+			{position 294.762 3145.43 70.8664}
+			{Name "cow"}
+			{Radius 400}
+		}
+		{zone "circle"
+			{position 2193.74 1973.95 0.522202}
+			{Name "rabbit"}
+			{Radius 700}
+		}
+		{zone "circle"
+			{position -270.422 -67.9468 0}
+			{Name "rabbit2"}
+			{Radius 320}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

@@ -1,0 +1,72 @@
+	
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.9))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors"}
+	{props "emit_on_attack"}
+	(include "/properties/structure/car4x4.ext")
+	{PatherId "vehicle.small"}
+        {sensor
+		{Visor "main"
+			{vision "gaz67b"}
+			{bone "visor"}
+		}
+	}
+	
+	("crew_2_human")
+
+	("board_animation"
+		place(driver)
+		board_begin(board_willis_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_willis)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+	
+	("board_animation"
+		place(passenger1)
+		board_begin(board_Horch_passanger_left)
+		board_end(seat_passenger)
+		base(doorleft)
+	)
+	("board_animation"
+		place(passenger2)
+		board_begin(board_willis)
+		board_end(seat_passenger)
+		base(doorleft)
+	)
+
+	("crew_human" place(seat1)	bone(seat01)	door(emit3)	animation(passenger1))
+	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger2))
+	
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "commander"	{group "crew"}}
+        }
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{mass 1500}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "fiat508.mdl"}
+	{Volume "engine"
+                {tags "engine"}
+		{component "engine"}
+		{thickness 6}
+	}
+	{Volume "Body"
+		{tags "body"}
+		{component "body"}
+		{thickness 7}   
+	}
+}

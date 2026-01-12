@@ -1,0 +1,117 @@
+;для корректной работы необходим модернизированный props "tank" от инженера Дена
+{entity
+	(include "/properties/tank_multyturret.ext")
+	(include "/properties/tank_crew.ext")	
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props  "medium" "tank" "tank2" "tank_multiturret" "turret" "turret_2nd" "turret_3rd"}
+	{extension "crew.ext"}
+	{TexMods
+		{"variant2" "2"}
+	}
+	{boarder
+	
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}	
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 35
+		    {front  50 0.4}
+		    {top	18}
+			{bottom	30}
+			{rear   20 0.2}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 35
+		    {front  50 0.4}
+		    {top	18}
+			{bottom	30}
+			{rear   20 0.2}
+		}   
+	}		
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 20 0.3 
+			{front	23}
+		}
+	}
+	{volume "turret2"
+		{tags "turret2"}
+		{component "turret2"}		
+		{thickness 20 0.3 
+			{front	23}
+		}
+	}
+	{volume "turret3"
+		{tags "turret3"}
+		{component "turret3"}		
+		{thickness 26 0.3 
+			{front	33}
+		}
+	}
+	{Volume "fxlight"
+		{thickness 1}
+	}
+	{Volume "HeadlightR"
+		{thickness 1}
+	}		
+                ("seat_6_human_Multi")	
+	("seat_human" place(seat1) bone(seat01) door(emit6)   animation(armor))
+                ("seat_human" place(seat2) bone(seat02) door(emit8)   animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit3)   animation(armor))
+                ("seat_human" place(seat4) bone(seat04) door(emit4)   animation(armor))
+        ("seat_human" place(seat5) bone(seat5) door(emit7)   animation(armor))
+                ("seat_human" place(seat6) bone(seat6) door(emit8)   animation(armor))
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "76mm_kt26"}
+			{Mounted}
+			{weapon {ammo "ammo bullet76 fg" 1}}
+		}		
+		{place "mgun"
+			{DefaultWeapon "dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+		{place "mgun2"
+			{foresight "foresight2"}			
+			{DefaultWeapon "dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+		{place "mgun3"
+			{foresight "foresight6"}			
+			{DefaultWeapon "dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+		{place "mgun4"
+			{foresight "foresight4"}			
+			{DefaultWeapon "dt"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 60}}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}		
+		{box
+			{item "ammo bullet76 fg" 27}	
+			{item "ammo bullet76 ap" 35}	
+			{item  "ammo mgun" 2650}				
+		}
+	}	
+	{mass 25250}
+	{Chassis
+		{track_size 0.6 0.7}
+		{Locomotion ("locomotion")}
+	}
+	{Extension "t-28-40.mdl"}
+}

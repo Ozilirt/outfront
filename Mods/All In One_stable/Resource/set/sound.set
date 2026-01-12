@@ -4,9 +4,9 @@
 	{percent "environment" 20}
 	{percent "main_environment" 10}
 
-	; minDistance -- for each minDistance meter loundness decreases doubly
-	;			nearer than minDistance loudness does not increase
-	; maxDistance -- on maxDistance sound is turned off
+	; minDistance -- на каждые minDistance метров громкость уменьшается вдвое
+	;				 ближе minDistance громкость не увеличивается
+	; maxDistance -- на maxDistance звук выключается
 	{loudness "default" 40 80}	; minDistance maxDistance (meters)
 	{loudness "local environment" 15 30}
 	{loudness "shoot muted" 15 30 10}

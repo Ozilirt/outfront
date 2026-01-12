@@ -1,0 +1,67 @@
+{entity
+	(include "/properties/cannon.ext")
+	(include "/properties/shadow/tank.inc"  scale(0.5))
+	(include "/properties/selection/vehicle.inc"  scale(0.7))
+	{props "vehicle" "cannon" "medium" "wheeled" "turret" "self_propelled"}
+	(include "/properties/dummy_fsm.inc")
+	
+	{Volume "gun"
+		{component "gun"}	
+		{thickness 15}
+	}
+	{Volume "turret"
+	  {thickness 8}
+	}
+	{Volume "wheelR"
+	  {thickness 8}	
+	}
+	{Volume "wheelL"
+	  {thickness 8}	
+	}
+	{Volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 15}
+	}	
+	
+	("crew_2_human")
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "155mm_schneider"}
+			{RestoreIKAfterAim}
+			{Mounted}
+		}
+	}
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item "bullet155 fg" 10}
+		}
+	}
+	{mass 10000}
+	
+		{Chassis
+			{Locomotion ;("locomotion")
+				{MaxSpeed 7}
+				{StartTime	10	}	
+				{BrakeTime	2	}	
+				{StopTime	4	}	
+				{TurnRadius	5	}	
+        {TurnTime 12}
+        {TurnStart 2}
+        {TurnStop 0.5}
+				{Gears		0.35 0.5 0.7 1.0}
+				{RearGears	0.33 0.5}	
+			}
+			{speed
+				{Slow	3	}
+				{Normal	5	}
+				{Fast	7	}
+			}
+		}		
+		
+	{Extension "schneider155mm.mdl"}		
+}

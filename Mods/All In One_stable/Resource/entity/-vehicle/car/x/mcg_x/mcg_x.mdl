@@ -1,0 +1,185 @@
+;Exported by: Enforcer
+;Date:        Sat Feb 04 17:38:43 2012
+;File:        C:\Users\Enforcer\Desktop\Somua MCG4\model\mcg5_x.max
+{Skeleton
+	{animation
+		{sequence "default" {resume} {autostart}}
+	}
+	{bone "basis"
+		{parameters "WheelRadius=0.5;SteerMax=30;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{bone "body"
+			{parameters "Id=body;"}
+			{Matrix34
+				0.9986	0.0000	0.0523
+				0.0000	1.0000	0.0000
+				-0.0523	0.0000	0.9986
+				1.8310	-0.1181	17.4101
+			}
+			{VolumeView "body.ply"}
+			{bone "bodyback"
+				{parameters "Id=bodyback;"}
+				{Position -25.6760	0.0552	27.8975}
+				{VolumeView "bodyback.ply"}
+			}
+			{bone "cabin"
+				{parameters "ID=cabin;"}
+				{Matrix34
+					1.0000	-0.0000	-0.0000
+					-0.0000	-1.0000	-0.0000
+					0.0000	-0.0000	1.0000
+					8.0596	-0.2689	19.9535
+				}
+				{VolumeView "cabin.ply"}
+				{bone "doorR"
+				  {parameters "ID=cabin;"}
+					{Matrix34
+						1.0000	-0.0000	0.0000
+						-0.0000	0.0000	1.0000
+						-0.0000	-1.0000	0.0000
+						8.4124	14.3453	-1.2086
+					}
+					{VolumeView "doorR.ply"}
+				}
+				{bone "doorL"
+				  {parameters "ID=cabin;"}
+					{Matrix34
+						0.9985	-0.0551	-0.0000
+						0.0000	-0.0000	1.0000
+						0.0551	0.9985	0.0000
+						8.4147	-15.1172	-1.2085
+					}
+					{VolumeView "doorL.ply"}
+				}
+				{bone "glass"
+					{Matrix34
+						0.0000	1.0000	0.0000
+						-0.0000	-0.0000	1.0000
+						-1.0000	0.0000	-0.0000
+						8.4793	-0.3464	8.8226
+					}
+					{VolumeView "glass.ply"}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{Matrix34
+					-1.0000	0.0000	0.0000
+					-0.0000	-1.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					30.5607	0.1212	18.3487
+				}
+				{VolumeView "engine.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 38.3449	0.0000	8.8273}
+			{bone revolute "Steer_L"
+				{Matrix34
+					1.0000	0.0000	0.0000
+					0.0000	-1.0000	0.0000
+					0.0000	-0.0000	-1.0000
+					0.0000	12.3495	-0.0000
+				}
+				{bone revolute "wheelL1"
+					{parameters "ID=wheelleft1;"}
+					{Matrix34
+						1.0000	-0.0000	-0.0000
+						0.0000	0.0984	0.9951
+						0.0000	0.9951	-0.0984
+						0.0000	-2.5914	-0.0000
+					}
+					{VolumeView "wheelL1.ply"}
+				}
+			}
+			{bone revolute "Steer_R"
+				{Matrix34
+					1.0000	-0.0000	0.0000
+					-0.0000	-1.0000	-0.0000
+					-0.0000	-0.0000	1.0000
+					0.0000	-12.4452	0.0000
+				}
+				{bone revolute "wheelR1"
+					{parameters "ID=wheelright1;"}
+					{Matrix34
+						0.9638	0.2324	-0.1307
+						-0.1307	-0.0155	-0.9913
+						0.2324	-0.9725	-0.0155
+						0.0000	2.4957	-0.0000
+					}
+					{VolumeView "wheelR1.ply"}
+				}
+			}
+		}
+		{bone "wheelsL"
+		  {parameters "ID=trackleft;"}
+			{Matrix34
+				-1.0000	0.0000	0.0000
+				-0.0000	-1.0000	-0.0000
+				0.0000	0.0000	-1.0000
+				-26.2695	18.9836	9.6053
+			}
+			{VolumeView "wheelsL.ply"}
+			{bone revolute "wheelL2"
+				{Matrix34
+					-0.9880	-0.1519	0.0282
+					-0.0047	0.2117	0.9773
+					-0.1544	0.9655	-0.2098
+					-25.1624	0.9613	-2.1789
+				}
+				{VolumeView "wheelL2.ply"}
+			}
+			{bone "TrackL"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1.0000	-0.0000	0.0000
+					-0.0000	-0.0000	-1.0000
+					0.0000	-1.0000	0.0000
+					-0.7385	3.7578	8.9388
+				}
+				{VolumeView "TrackL.ply"}
+			}
+			{bone revolute "wheelL3"
+				{Matrix34
+					-0.9980	0.0521	0.0355
+					0.0384	0.0560	0.9977
+					0.0500	0.9971	-0.0579
+					14.9341	2.9255	1.6139
+				}
+				{VolumeView "wheelL3.ply"}
+			}
+		}
+		{bone "wheelsR"
+		  {parameters "ID=trackright;"}
+			{Position -26.2695	-19.6498	9.6053}
+			{VolumeView "wheelsR.ply"}
+			{bone revolute "wheelR3"
+				{Matrix34
+					0.9922	-0.0832	-0.0926
+					-0.0844	0.0980	-0.9916
+					0.0916	0.9917	0.0902
+					-14.9341	0.9613	-1.6139
+				}
+				{VolumeView "wheelR3.ply"}
+			}
+			{bone "TrackR"
+				{parameters "ID=trackright;"}
+				{Position 5.6013	1.0019	0.7527}
+				{VolumeView "TrackR.ply"}
+			}
+			{bone revolute "wheelR2"
+				{Matrix34
+					0.9693	0.0756	0.2340
+					0.2439	-0.1733	-0.9542
+					-0.0315	0.9820	-0.1864
+					25.1624	0.9613	2.1790
+				}
+				{VolumeView "wheelR2.ply"}
+			}
+		}
+	}
+}

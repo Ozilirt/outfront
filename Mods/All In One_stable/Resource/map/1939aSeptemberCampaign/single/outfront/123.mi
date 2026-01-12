@@ -1,0 +1,91 @@
+{mission
+	{Camera
+		{Position 4981.3 512.972}
+		{Distance 700}
+		{ViewAngle 0.608539}
+		{YawAngle -0.308342}
+	}
+	{User 0}
+	{GameProgress 0 0}
+	{Entity "platform" 0x8000
+		{Position 4876.11 657.843 13}
+		{Turn -23.3111}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "t-34-85" 0x9000
+		{Position 4997.7 527.397 13}
+		{Turn 49.6019}
+		{Player 0}
+		{MID 2}
+	}
+	{Human "rus.tank_com" 0x9001
+		{Position 4997.7 527.397 13}
+		{Orientation
+			  0.648095   0.761560  -0.000000
+			  0.761560  -0.648095  -0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 0}
+		{MID 3}
+		{NameId 38 61}
+		{FsmState "board"}
+	}
+	{Human "rus.tankman" 0x9002
+		{Position 4997.7 527.397 13}
+		{Orientation
+			  0.648095   0.761560  -0.000000
+			  0.761560  -0.648095  -0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 0}
+		{MID 4}
+		{NameId 32 12}
+		{FsmState "board"}
+	}
+	{Human "rus.tankman" 0x9003
+		{Position 4997.7 527.397 13}
+		{Orientation
+			  0.648095   0.761560  -0.000000
+			  0.761560  -0.648095  -0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 0}
+		{MID 5}
+		{NameId 40 99}
+		{FsmState "board"}
+	}
+	{Human "rus.tankman" 0x9004
+		{Position 4997.7 527.397 13}
+		{Orientation
+			  0.648095   0.761560  -0.000000
+			  0.761560  -0.648095  -0.000000
+			  0.000000   0.000000   1.000000
+		}
+		{Player 0}
+		{MID 6}
+		{NameId 87 22}
+		{FsmState "board"}
+	}
+	{Link 0x9001 To 0x9000 "driver"}
+	{Link 0x9002 To 0x9000 "commander"}
+	{Link 0x9003 To 0x9000 "charger"}
+	{Link 0x9004 To 0x9000 "gunner"}
+  {Link 0x9000 To 0x8000 "vehicle"}
+	{Brain 0x8000
+		{HoldFire}
+	}
+	{Helpers
+		{waypoints
+		}
+	}
+	{Players
+	}
+	{MissionMusic "STOP"}
+}

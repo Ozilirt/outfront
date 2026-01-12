@@ -1,0 +1,103 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors" "tent" "truck"}
+	
+	{TexMods
+		{"variant2" "1"}
+	}	
+	
+	("crew_2_human")	
+	("board_animation"
+		place(driver)
+		board_begin(board_big-highcar_driver)
+		board_end(seat_driver_car)
+		base(doorright)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_big-highcar)
+		board_end(seat_passenger)
+		base(doorleft)
+	)	
+	
+	{boarder
+	  {anm "seat1"
+		  {forward	{begin	"board_SdKfz251-1"} {end "squat_from_stand_empty"}}
+		  {reverse 	{end	"emit_tank_1"}}
+	  }
+	  {anm "seat2"
+	  	{forward	{begin	"board_SdKfz251-1"} {end "squat_from_stand_empty"}}
+  		{reverse 	{end	"emit_tank_1"}}
+	  }
+	  {anm "seat3"
+		  {forward	{begin	"board_SdKfz251-1"} {end "squat_from_stand_empty"}}
+		  {reverse 	{end	"emit_tank_1"}}
+	  }
+    {anm "seat4"
+		  {forward	{begin	"board_SdKfz251-1"} {end "squat_from_stand_empty"}}
+		  {reverse 	{end	"emit_tank_1"}}
+	  }		
+	}
+	
+	{Placer 
+  	{place "seat1"		{LinkBone "seat01"}	{Group "passengers"}	{turnoff {sensor} {shadow}} {visor "crew"}}
+	  {place "seat2"		{LinkBone "seat02"}	{Group "passengers"}	{turnoff {sensor} {shadow}} {visor "crew"}}
+	  {place "seat3"		{LinkBone "seat03"}	{Group "passengers"}	{turnoff {sensor} {shadow}} {visor "crew"}}
+	  {place "seat4"		{LinkBone "seat04"}	{Group "passengers"}	{turnoff {sensor} {shadow}} {visor "crew"}}	
+	}
+	
+	(define "crew_human"
+	  {boarder
+		  {door "%door"}
+		  {link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+	  }
+  )
+  
+  ("crew_human" place(seat1)	door(emit3))
+  ("crew_human" place(seat2)	door(emit3))
+  ("crew_human" place(seat3)	door(emit3))
+  ("crew_human" place(seat4)	door(emit3))
+	
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")	
+	("tracks")
+	
+	{Volume "wheelL1"
+		{thickness 5}
+	}	
+	
+	{Volume "wheelR1"
+		{thickness 5}
+	}	
+	
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	; left track must be first
+   		{Track "left"
+			  {TextureScroller
+			   	{Bone "TrackL"}
+   		 		{Length 2.0}		; meters per animation
+   		 	}
+   		 	{Tracer
+          {View "tracks"}
+          {Bone "FXtraceL2"}
+          {Step 0.7}			; in meters
+   		 }
+   		}
+   		{Track "right"
+        {TextureScroller
+          {Bone "TrackR"}	
+          {Length 2.0}		; meters per animation
+        }
+        {Tracer
+          {View "tracks"}
+          {Bone "FXtraceR2"}
+          {Step 0.7}			; in meters
+   		 }
+ 		}		
+	}
+	{Extension "mcg.mdl"}
+}

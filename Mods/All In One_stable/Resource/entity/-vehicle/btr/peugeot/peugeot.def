@@ -1,0 +1,109 @@
+{ArmoredCar 
+	(include "/properties/armoredcar.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew"}
+	{PatherId "vehicle.small"}
+
+	{TexMods
+		{"wersja policyjna" "1"}
+	}
+	{extension "crew.ext"}
+
+   {extender "light"
+      {lightfx "light_boat"}
+      {breakfx "glass_hit"}
+      {lamp "1"}
+   }
+
+   {extender "light"
+      {lightfx "light_boat"}
+      {breakfx "glass_hit"}
+      {lamp "2"}
+   }
+
+   {Volume "lamp1"
+      {thickness 2}
+   }
+   {Volume "lamp2"
+      {thickness 2}
+   }
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 13}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 13}
+	}
+;silnik
+	{volume "engine"
+		{thickness 12}
+	}
+
+	{component "engine"
+		{RepairTime 15}
+		{Able {repair} {break_by_pierce}}
+	}
+;end of silnik
+;scianki
+	{volume "sciana1"
+		{thickness 13}
+	}
+	{volume "sciana2"
+		{thickness 13}
+	}
+	{volume "sciana3"
+		{thickness 13}
+	}
+	{volume "sciana4"
+		{thickness 13}
+	}
+	{volume "sciana5"
+		{thickness 13}
+	}
+	{volume "mgun_shield1"
+		{thickness 13}
+	}
+	{volume "mgun_shield2"
+		{thickness 13}
+	}
+;end of scianki
+
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "hotchkiss"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 300}}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item  "ammo mgun" 600}
+		}
+	}
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{mass 15000}
+	{Chassis
+		{speed
+				{Slow	16	}
+				{Normal	21	}
+				{Fast	25	}
+		}
+	
+		{Locomotion ("locomotion")}
+	}
+	{Extension "peugeot.mdl"}
+}

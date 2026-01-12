@@ -49,7 +49,29 @@
 {say "enemy car"
 	("versions" args serious_things)
 }
+{say "explosion"
+	("versions" args assessment_explosion)
+}
 
+{say "bullet missed"
+	("versions" args dismay)
+	{freq 0.2}
+}
+
+{say "i am rambo"
+	("versions" args triumph)
+}
+
+{say "ally die"
+	("versions" args serious_things)
+}
+
+{say "cant turn railway switch"
+	{version
+		{text_dbg "cant turn railway switch"}
+		{text "cant turn railway switch"}
+	}
+}
 ;неиспользованные переговоры
 {say "move far"}
 {say "too heavy inventory"}

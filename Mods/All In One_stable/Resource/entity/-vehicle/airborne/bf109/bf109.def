@@ -1,0 +1,61 @@
+{actor
+	(include "/properties/airborne.ext")
+	{PatherID  "airborne"}
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/airborne.inc" scale(2.0))
+	(include "/properties/car_crew.ext")
+	
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_plane_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"board_plane_left" -1}}
+		}
+	}
+	("crew_human"
+		place(driver)
+		bone(driver)
+		door(emit2)
+		animation(driver)
+	)
+	{Placer
+		{place "driver" {worker charger}}	
+	}
+
+	{Chassis ("chassis_defaults")
+		{Locomotion ("locomotion") 
+			{Maxspeed 85}
+		}
+    	{maxSideSlope 70}	;degree
+    	{onAirTurnRadius 100}
+		{sideSlopeSpeed 35}			;degree/s
+		{maxElevationSpeed 10}		;m/s
+		{elevationAcceleration 3}	;m/s^2
+       	{speed
+       		{Slow	15  }	; km/h
+       		{Normal	65	}
+       		{Fast	100	}
+       	}
+	}
+	{mass 3000}
+	{Weaponry
+		{place "gun"
+			{DefaultWeapon "mg34a"}
+			{Mounted}
+		}
+	}  	
+	{extender "inventory"
+		{weapon "gun" {fixed}}
+		{box
+			{item  "ammo mgun" 1000}
+		}
+	}
+	{Sensor
+		{Visor "main"
+			{bone	 "pivot_back"}
+		}
+	}	
+	
+	{Extension "bf109.mdl"}
+	{Volume "body"
+	}
+}

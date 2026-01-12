@@ -52,6 +52,26 @@
 	{item "flg_j2" from "flag_white"
 		{entity "flg_j2"}
 	}
+; GSTM NNPlaya
+	{item "flag_pol" from "flag_red"
+		{entity "flag_pol"}
+	}
+	{item "sandOhyeah"
+		{tag "itemin2hands keepEntity"}
+		{entity "defence2mobile"}
+		{desc "desc/container/box"}
+		{inventory
+			{view "/interface/scene/stuff/sandbags.ebm"}			
+			{size 4 3}
+			{weight 1000}
+		}
+		{mass 2}
+		{StateForPick	"pickup-stand"}
+		{StateForHold	"hold-item"}
+		{StateForMount	"inventory-pick-stand"}
+		{StateForUnmount"inventory-drop"}
+	}	
+; end of GSTM
 	{item "barrel"
 		{tag "itemin2hands capacity"}
 		{filling "liquid" 75}
@@ -511,6 +531,41 @@
 	{item "helmet1_rus" from "helmet1_ger"
 		{entity "helmet1_rus"}
 	}
+;GSTM NNPlaya
+	{item "helmet1_pol" from "helmet1_ger"
+		{inventory
+			{view "/interface/scene/stuff/helmets/helmet1_pol.ebm"}		
+		}
+		{entity "helmet1_pol"}
+	}
+	{item "helmet2_pol" from "helmet1_ger"
+		{inventory
+			{view "/interface/scene/stuff/helmets/helmet2_pol.ebm"}		
+		}
+		{entity "helmet2_pol"}
+	}
+	{item "helmet1_par" from "helmet1_ger"
+		{inventory
+			{view "/interface/scene/stuff/helmets/helmet1_pol.ebm"}		
+		}
+		{entity "helmet1_par"}
+	}
+	{item "helmet2_par" from "helmet1_ger"
+		{inventory
+			{view "/interface/scene/stuff/helmets/helmet2_pol.ebm"}		
+		}
+		{entity "helmet2_par"}
+	}
+	{item "rabbit_ears" from "helmet1_ger"
+		{entity "rabbit_ears"}
+	}
+	{item "helmet1_fr" from "helmet1_pol"
+		{entity "helmet1_fr"}
+	}	
+	{item "helmet2_fr" from "helmet1_pol"
+		{entity "helmet2_fr"}
+	}		
+;end of GSTM	
 	{item "helmet2_eng" from "helmet1_eng"
 		{entity "helmet2_eng"}
 	}
@@ -566,6 +621,9 @@
 	}
 	{item "cap2_rus" from "fieldcap_rus"
 		{entity "cap2_rus"}
+			{inventory
+                {view "/interface/scene/item/head/nkvd_rus.ebm"}
+            }
 	}
 	{item "bezkazirka" from "fieldcap_rus"
 		{entity "bezkazirka"}
@@ -636,6 +694,39 @@
 	{item "beret_eng1" from "fieldcap_rus"
 		{entity "beret_eng1"}
 	}
+;GSTM NNPlaya
+	{item "rogatywka1_pol" from "fieldcap_rus"
+		{inventory
+			{view "/interface/scene/stuff/helmets/rogatywka1_pol.ebm"}		
+		}
+		{entity "rogatywka1_pol"}
+	}
+	{item "policecap_pol" from "fieldcap_rus"
+		{inventory
+			{view "/interface/scene/stuff/helmets/policecap_pol.ebm"}		
+		}
+		{entity "policecap_pol"}
+	}
+	{item "kop_cap" from "fieldcap_rus"
+		{inventory
+			{view "/interface/scene/stuff/helmets/kop_cap.ebm"}		
+		}
+		{entity "kop_cap"}
+	}	
+	{item "beret_pol" from "beret_eng1"
+		{entity "beret_pol"}
+	}
+	{item "ocap_ger" from "tank_cap1_ger"
+		{entity "ocap_ger"}
+	}
+  {item "cap_fr" from "fieldcap_rus"
+		{entity "cap_fr"}
+    {desc "Kepi"}
+	}		
+	{item "cap2_fr" from "fieldcap_rus"
+    {entity "cap2_fr"}
+	}
+;end of GSTM
 	{item "beret_can" from "fieldcap_rus"
 		{entity "beret_can"}
 	}
@@ -713,6 +804,82 @@
 		{StateForUnmount"belt-drop"}
 		{StateForThrow	"throw"}
 	}
+;pіaszcz
+	{item "french_coat" from "pattern overcoat"
+		{inventory
+			{size 2 4}
+			{weight 150}
+			{view "/interface/scene/stuff/plecak1_pol.ebm"}
+		}
+		{mass 6}
+		{entity "french_coat"}
+	}
+;TEST
+	{item "pattern ammoholder"
+		{tag "smallitemin1hand body"}
+		{mass 0.1}
+		{StateForPick	"pickup-hand"}
+		{StateForHold	"hold-item"}
+		{StateForMount	"belt-pick"}
+		{StateForUnmount"belt-drop"}
+		{StateForThrow	"throw"}
+	}	
+	{item "shoulder_equip" from "pattern ammoholder" ;zrolowany koc KOPu
+		{tag "smallitemin1hand body"}	
+		{inventory
+			{size 2 2}
+			{weight 10}
+		}
+		{entity "shoulder_equip"}
+	}
+	{item "shoulder_equip2" from "pattern ammoholder" ;dekoracja do NKVD
+		{tag "smallitemin1hand body"}	
+		{inventory
+			{size 2 2}
+			{weight 10}
+		}
+		{entity "shoulder_equip2"}
+	}	
+	{item "raportowka" from "pattern ammoholder" ;raportowka
+		{tag "smallitemin1hand body"}	
+    {inventory 
+      {size 2 2}
+			{weight 150}
+      {view "/interface/scene/stuff/raportowka.ebm"}
+    }
+		{entity "raportowka"}
+	}	
+	{item "french_coat2" from "pattern ammoholder"
+		{tag "smallitemin1hand body"}	
+		{inventory
+			{size 2 4}
+			{weight 150}
+			{link_bone "foot2R"}
+			{view "/interface/scene/stuff/plecak1_pol.ebm"}
+		}
+		{mass 6}
+		{entity "french_coat"}
+	}
+	{item "plecak1_pol" from "pattern ammoholder"
+		{inventory
+			{size 2 4}
+			{weight 150}
+			{view "/interface/scene/stuff/plecak1_pol.ebm"}
+		}
+		{mass 6}
+		{entity "plecak1_pol"}
+	}	
+	{item "shoulder_radio" from "pattern ammoholder"
+		{inventory
+			{size 2 4}
+			{weight 150}
+			{view "/interface/scene/stuff/shoulder_radio.ebm"}
+		}
+		{mass 6}
+		{entity "shoulder_radio"}
+		{desc "Radio"}
+	}		
+;ENDOF TEST
 	{item "body_armor" from "pattern overcoat"
 		{tag "armor"}
 		{inventory
@@ -1121,6 +1288,22 @@
 		{mass 1.075}
 		{entity "colt"}
 	}
+;GSTM NNPlaya
+	{item "vis" from "pattern pistol"
+		{filling "ammo pistol" 8}
+		{mass 1.075}
+		{inventory
+			{view "/interface/scene/stuff/pistol/vis.ebm"}
+		}
+		{entity "vis"}
+	}
+	{item "mle1935" from "vis"
+		{inventory
+			{view "/interface/scene/stuff/pistol/mle1935.ebm"}
+		}
+		{desc "MLE 1935"}
+	}	
+; endof GSTM
 	{item "webley" from "pattern pistol"
 		{filling "ammo pistol" 6}
 		{mass 0.975}
@@ -1210,6 +1393,53 @@
 		{StateForUnmount	"inventory-drop"}
 		{StateForHold		"hold-item"}
 	}
+; GSTM NNplaya
+	{item "mors" from "ppsh"
+		{filling "ammo pistol" 25}
+		{inventory
+			{view "/interface/scene/stuff/smg/mors.ebm"}
+		}
+		{entity "mors"}
+	}
+	{item "ribeyrolle1918" from "mors"
+		{inventory
+			{view "/interface/scene/stuff/smg/ribeyrolle1918.ebm"}
+		}
+		{entity "m3a"}
+		{desc "Ribeyrolle 1918"}			
+	}
+	{item "lightning" from "ppsh"
+		{filling "ammo pistol" 32}
+		{inventory
+			{view "/interface/scene/stuff/smg/lightning.ebm"}
+		}
+		{entity "lightning"}
+	}
+	{item "thompson1928" from "ppsh"
+		{filling "ammo pistol" 50}
+		{inventory
+			{view "/interface/scene/stuff/smg/thompson1928.ebm"}
+		}
+		{entity "thompson1928"}
+		{desc "Thompson 1928"}
+	}
+	{item "mas1938" from "ppsh"
+		{filling "ammo pistol" 32}
+		{inventory
+			{view "/interface/scene/stuff/smg/mas1938.ebm"}
+		}
+		{entity "mas1938"}
+		{desc "MAS 1938"}
+	}
+	{item "zk383" from "ppsh"
+		{filling "ammo pistol" 30}
+		{inventory
+			{view "/interface/scene/stuff/smg/zk383.ebm"}
+		}
+		{entity "zk383"}
+		{desc "ZK 383"}
+	}			
+; end of GSTM
 	{item "ppsh35" from "ppsh"
 		{filling "ammo pistol" 35}
 	      {inventory
@@ -1401,6 +1631,10 @@
 		{entity "mg34"}
 		{mass 12}
 	}
+	{item "mg34a" from "mg34"
+		{desc " "}
+		{filling "ammo mgun" 300}
+	}
 	{item "dual_mg34"
 		{tag "weapon mgun mg bullet to_hand"}
 		{filling "ammo mgun" 200}
@@ -1514,6 +1748,79 @@
 		{entity "Browning"}
 		{mass 12.33}
 	}
+; GSTM NNPlaya
+	{item "ckmbrowning" from "mg34"
+		{filling "ammo mgun" 330}
+		{inventory
+			{view "/interface/scene/stuff/mgun/ckmbrowning.ebm"}
+		}
+		{entity "ckmbrowning"}
+		{mass 15}
+	}
+	{item "ckmbrowning_tasma" from "ckmbrowning"
+		{entity "ckmbrowning_tasma"}
+		{mass 15}
+	}
+	{item "mg34_tower" from "ckmbrowning_tasma"
+	}		
+	{item "hotchkiss" from "ckmbrowning"
+		{filling "ammo mgun" 250}
+		{inventory
+			{view "/interface/scene/stuff/mgun/hotchkiss.ebm"}
+		}
+		{entity "hotchkiss"}
+	}
+	{item "reibel" from "ckmbrowning"
+		{filling "ammo mgun" 150}
+		{inventory
+			{view "/interface/scene/stuff/mgun/reibel.ebm"}
+		}
+		{desc "Reibel"}
+		{entity "besa"}
+	}	
+	{item "mp34" from "type100"
+		{tag "smg weapon bullet to_hand"}
+		{filling "ammo pistol" 32}
+		{inventory
+			{view "/interface/scene/stuff/smg/mp34.ebm"}
+		}
+		{mass 4}
+		{entity "mp34"}
+	}
+	{item "PPD" from "ppsh"
+		{filling "ammo pistol" 25}
+		{inventory
+			{view "/interface/scene/stuff/smg/ppd.ebm"}
+		}
+		{entity "PPD"}
+	}
+	{item "PPD38" from "PPD"
+		{filling "ammo pistol" 71}
+		{inventory
+			{view "/interface/scene/stuff/smg/ppd38.ebm"}
+		}
+		{entity "PPD"}
+		{desc "PPD-34/38"}
+	}	
+  {item "besa"
+		{tag "weapon mgun bullet to_hand"}
+		{filling "ammo mgun" 225}
+		{inventory
+			{view "/interface/scene/stuff/mgun/besa.ebm"}
+			{size 6 2 }
+			{link_bone "gun_back"}
+			{weight 100}
+		}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+		{entity "besa"}
+		{mass 19}
+	}	
+;================= 2nd mgun
+	{item "ckmbrowning_2" from "ckmbrowning"}
+	{item "hotchkiss_2" from "hotchkiss"}
+; end of GSTM
 	{item "browning100" from "browning"
 		{filling "ammo mgun" 100}
 	}
@@ -1723,6 +2030,56 @@
 		{entity "bar"}
 		{mass 9}
 	}
+{item "bar"
+		{tag "weapon mgun bullet to_hand"}
+		{filling "ammo mgun" 20}
+		{inventory
+			{size 5 2 }
+			{link_bone "gun_back"}
+			{weight 100}
+		}
+		{StateForPick		"pickup-hand"}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+		{entity "bar"}
+		{mass 9}
+	}
+; GSMT Enforcer
+	{item "rkmbrowning"
+		{tag "weapon mgun bullet to_hand"}
+		{filling "ammo mgun" 20}
+		{inventory
+			{view "/interface/scene/stuff/mgun/rkmbrowning.ebm"}
+			{size 5 2 }
+			{link_bone "gun_back"}
+			{weight 100}
+		}
+		{StateForPick		"pickup-hand"}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}
+		{entity "rkmbrowning"}
+		{mass 9}
+	}
+    {item "chatellerault29" 
+		{tag "weapon mgun bullet to_hand"}
+		{filling "ammo mgun" 25}
+		{inventory
+			{view "/interface/scene/stuff/mgun/chatellerault29.ebm"}
+			{size 5 2 }
+			{link_bone "gun_back"}
+			{weight 100}
+		}
+		{StateForPick		"pickup-hand"}
+		{StateForMount		"inventory-pick"}
+		{StateForUnmount	"inventory-drop"}
+		{StateForHold		"hold-item"}		
+		{entity "chatellerault29"}
+		{desc "Chatellerault 29"}		
+		{mass 8.9}
+	}	
+; end of GSMT	
 	{item "RKM" from "bar"
 		{filling "ammo mgun" 20}
        	{entity "bar"}
@@ -2026,6 +2383,27 @@
 		{StateForHold		"hold-item"}
 		{entity "ptrd"}
 	}
+; GSTM NNPlaya
+	{item "karppanc" from "mg34"
+		{tag "weapon ap to_hand nokeep"} ; rifle bullet
+		{filling "ammo ptr" 4}
+		{inventory
+			{view "/interface/scene/stuff/karppanc.ebm"}
+			{size 8 2 }
+		}
+		{mass 18}
+		{entity "karppanc"}
+	}
+	{item "germanska_rusznica" from "karppanc"
+	  {tag "weapon ap to_hand nokeep"}
+		{filling "ammo ptr" 1}
+		{inventory
+			{view "/interface/scene/stuff/g_rusznica.ebm"}
+			{size 8 2 }
+		}
+		{entity "ptrs"}
+	}
+; end of GSTM	
 	{item "ptrs" from "ptrd"
 		{filling "ammo ptr" 5}
 		{entity "ptrs"}
@@ -2178,7 +2556,59 @@
 		{entity "rifle"}
 		{mass 4.5} ; kg
 	}
-      {item "mosin_kn" from "mosin"
+; GSTM NNPlaya
+	{item "mauzerpol" from "mosin"
+		{inventory
+			{view "/interface/scene/stuff/rifle/mauzerpol.ebm"}
+		}
+		{entity "mauzerpol"}		
+	}
+	{item "mas1936" from "mosin"
+		{inventory
+			{view "/interface/scene/stuff/rifle/mas1936.ebm"}
+		}
+		{entity "mas1936"}	
+		{desc "MAS 1936"}			
+	}	
+	{item "mauzerpol_police" from "mosin"
+		{inventory
+			{view "/interface/scene/stuff/rifle/mauzerpol2.ebm"}
+		}
+	}
+	{item "wz38m" from "mosin"
+		{filling "ammo rifle" 10}	
+		{inventory
+			{view "/interface/scene/stuff/rifle/wz38m.ebm"}
+		}
+		{entity "wz38m"}
+		{desc "Kbsp wz. 38M"}
+	}
+	{item "zh29" from "mosin"
+		{filling "ammo rifle" 10}	
+		{inventory
+			{view "/interface/scene/stuff/rifle/zh29.ebm"}
+		}
+		{entity "zh29"}
+		{desc "ZH 29"}
+	}		
+	{item "rsc-mle-1918" from "mosin"
+		{filling "ammo rifle" 5}	
+		{inventory
+			{view "/interface/scene/stuff/rifle/rsc-mle-1918.ebm"}
+		}
+		{entity "rsc-mle-1918"}
+		{desc "RSC Mle 1918"}
+	}
+	{item "avs36" from "mosin"
+		{filling "ammo rifle" 10}	
+		{inventory
+			{view "/interface/scene/stuff/rifle/aws36.ebm"}
+		}
+		{entity "SVT"}
+		{desc "AVS 36"}
+	}		
+; end of GSTM	
+    {item "mosin_kn" from "mosin"
 		{filling "ammo rifle" 5}
             {entity "rifle_kn"}
 	}
@@ -2593,6 +3023,7 @@
 		}
 		{mass 12}
 	}
+
 	{item "ammo 82mm_mine"
 		{tag "shell ap fg"}
 		{inventory
@@ -3356,6 +3787,19 @@
 	{item "25mm_type96_3" from "pattern gun"				      {filling "bullet25 zenite" 45}{desc "Type96 25mm"}	}
 	{item "25mm_type96_2" from "pattern gun"				      {filling "bullet25 zenite" 30}{desc "Type96 25mm"}	}
 	{item "25mm_type96_1" from "pattern gun"				      {filling "bullet25 zenite" 15}{desc "Type96 25mm"}	}
+	{item "25mm_sa34" from "pattern gun"		{filling "bullet25"}		}
+; GSMT Enforcer
+	{item "nkm_wz38" from "pattern gun" 		{filling "bullet20" 5} 		}
+	{item "45mm_kt28" from "pattern gun"		{filling "bullet45"}		}
+	{item "47mm_20k" from "pattern gun"		{filling "bullet47"}		}
+	{item "40mm_mk1" from "pattern gun"	      {filling "bullet40_zenite" 8}	}
+	{item "37mm_Sa18" from "pattern gun"			{filling "bullet37"}		}	
+	{item "37mm_bofors" from "pattern gun"			{filling "bullet37"}		}
+	{item "37mm_puteaux" from "pattern gun"			{filling "bullet37"}		}
+	{item "37mm_skoda34" from "pattern gun"			{filling "bullet37"}		}
+	{item "25mm_Sa35" from "pattern gun" {filling "bullet25"} }
+  {item "QFSA" from "pattern gun" {filling "bullet40"} }
+; end of GSTM
 	{item "25mm_SA35" from "pattern gun"					{filling "bullet25"}		{desc "SA35 25mm"}	}
 	{item "37mm_m6" from "pattern gun"						{filling "bullet37"}		}
       {item "37mm_A7" from "pattern gun"						{filling "bullet37"}		}
@@ -3364,6 +3808,7 @@
       {item "37mm_flak43" from "pattern gun"	                        {filling "bullet37 zenite" 8}	{desc "37mm Flak43"}}
 	  {item "37mm_gun_m1" from "pattern gun"	                        {filling "bullet37 zenite" 10}{desc "37mm Gun M1"}	}
       {item "37mm_KwK38" from "pattern gun"					{filling "bullet37"}		}
+	  {item "37mm_kwk35" from "pattern gun"			{filling "bullet37"}		}
 	{item "40mm_mk1" from "pattern gun"					      {filling "bullet40 zenite" 20}		}
 	{item "37mm_pak35" from "pattern gun"					{filling "bullet37"}		}
 	{item "37mm_type94" from "pattern gun"					{filling "bullet37"}		{desc "37mm Type94"}	}
@@ -3414,10 +3859,16 @@
 	{item "76mm_mk4" from "pattern gun"						{filling "bullet77"}		}
       {item "76mm_m1A2" from "pattern gun"					{filling "bullet77"}		}
 	{item "77mm_OQF" from "pattern gun"						{filling "bullet77"}		}
+;GSMT NNPlaya
+	{item "75mm_sa35" from "75mm_kwk37"	{desc "47mm SA35"}	}
+	{item "75mm_schneider" from "75mm_kwk37"								}
+	{item "155mm_schneider" from "pattern gun" {filling "bullet155"} }	
+	{item "76mm_l10" from "pattern gun"		{filling "bullet76"}		}	
+; end of GSMT
       {item "85mm_zis53" from "pattern gun"					{filling "bullet85"}		}
 	{item "85mm_d5" from "85mm_zis53"						{filling "bullet85"}		}
 	{item "87mm_QQF" 	from "pattern gun"					{filling "bullet87"}		}
-      {item "88mm_kwk36" from "pattern gun"					{filling "bullet88"}		}
+    {item "88mm_kwk36" from "pattern gun"					{filling "bullet88"}		}
 	{item "88mm_kwk43" from "88mm_kwk36"					{filling "bullet88"}		}
 	{item "88mm_flak41" from "88mm_kwk36"					{filling "bullet88"}		}
 	{item "88mm_pak43" from "88mm_kwk36"					{filling "bullet88"}		}
@@ -3443,6 +3894,7 @@
       {item "128mm_pak44" from "pattern gun"					{filling "bullet128"}		}
 	  {item "140mm_type11" from "pattern gun"					{filling "bullet140"}		{desc "14cm Type11"}	}
 	{item "150mm_sfh18" from "pattern gun"					{filling "bullet150"}		}
+	{item "150mm_sfh18longrange" from "pattern gun"		{filling "bullet150"}		}
       {item "150mm_sIG33" from "pattern gun"					{filling "bullet150"}		}
 	{item "150mm_mortar" from "pattern gun"					{filling "bullet150m"}		}
 	{item "150mm_type38" from "pattern gun"					{filling "bullet150"}		{desc "15cm Type38"}	}
@@ -3555,6 +4007,13 @@
 		}
 		{entity "grenade_f1"}
 	}
+	{item "grenade f1f" from "grenade f1"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed"}	
+		{inventory
+      {view "/interface/scene/stuff/f1f.ebm"}
+		}
+		{desc "F1"}			
+	}
 	{item "grenade mk26" from "pattern grenade"
 		{tag "hurtful fg smallitemin1hand throwable dropboxed"}
 		{inventory
@@ -3652,6 +4111,26 @@
 		{entity "molotov_coctail"}
 		{mass 0.6}
 	}
+; GSTM NNPlaya
+	{item "grenade grobronny" from "pattern grenade"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed"}
+		{inventory
+			{size 1 1}
+			{view "/interface/scene/stuff/grobronny.ebm"}
+		}	
+		{entity "grobronny"}
+		{mass 0.5}
+	}
+	{item "grenade grzaczepny" from "pattern grenade"
+		{tag "hurtful fg smallitemin1hand throwable dropboxed"}
+		{inventory
+			{size 1 1}
+			{view "/interface/scene/stuff/grzaczepny.ebm"}
+		}	
+		{entity "grzaczepny"}
+		{mass 0.3}
+	}
+; end of GSTM
 	{item "grenade an_m14" from "pattern grenade"
 		{tag "hurtful smallitemin1hand throwable dropboxed an_m14"}
 		{inventory
@@ -3837,6 +4316,23 @@
 		{StateForHold		"hold-item"}
 		{StateForThrow		"throw"}
 	}
+;GSTM NNPlaya
+	{item "melee" {inventory {noView}}}
+	{item "szabla" from "melee"
+		{tag "melee"}
+		{inventory
+			{size 5 1}
+			{link_bone "Sabre_placement"}
+			{view "/interface/scene/stuff/melee/szabla.ebm"}
+		}
+		{mass 3}	
+		{entity "szabla"}
+		{StateForPick		"pickup-hand"}
+		{StateForMount		"belt-pick"}
+		{StateForUnmount	"belt-drop"}
+		{StateForHold		"hold-item"}
+	}
+;end of GSTM	
 	{item "searchlight" from "pattern gun"
 		{inventory
 			{noView}

@@ -1,0 +1,71 @@
+;Exported by: sk
+;Date:        Tue Jun 01 13:43:28 2004
+;File:        D:\-Projects-\-3DWork-\Constructions\Aerodrome\budka.max
+{Skeleton
+	{animation
+		{sequence "crush" {speed 0.5}}
+	}
+	{bone "eg"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	0.0000
+			0.0000	0.0000	1.0000
+		}
+		{VolumeView "eg.ply"}
+	}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -1.42832 1.52719}
+		{Extent 1.96851 22.2173}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center -2.64699 -9.35404}
+		{Extent 22.2717 1.97539}
+		{Axis 0.81933 0.573323}
+	}
+	{Rotate}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 1.11996 -5.4508}
+		{Extent 2.17202 23.8986}
+		{Axis 0.242574 0.970133}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 3.93701 3.93701 59.0551}
+	{Bone "eg"}
+	{Matrix34
+		0.0000	0.7091	-0.7052
+		-1.0000	0.0000	0.0000
+		0.0000	0.7052	0.7091
+		-1.4283	-1.5272	15.6364
+	}
+}
+{Volume "body1"
+	{Box 3.93701 3.93701 59.0551}
+	{Bone "eg"}
+	{Matrix34
+		-0.5736	-0.8192	0.0000
+		0.5792	-0.4056	-0.7071
+		0.5792	-0.4056	0.7071
+		-2.6470	9.3540	15.5789
+	}
+}
+{Volume "body2"
+	{Box 3.93701 3.93701 59.0551}
+	{Bone "eg"}
+	{Matrix34
+		-0.6484	-0.0627	-0.7587
+		0.1814	-0.9806	-0.0741
+		-0.7393	-0.1857	0.6472
+		1.1200	5.4508	13.8111
+	}
+}

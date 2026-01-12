@@ -1,0 +1,128 @@
+{entity
+	(include "/properties/car.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0))
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{props "vehicle" "car" "wheeled" "with_doors" "truck"}
+
+	("crew_2_human")
+	("board_animation"
+		place(driver)
+		board_begin(board_Kubel_driver)
+		board_end(seat_driver_car)
+		base(doorleft)
+	)
+	("board_animation"
+		place(commander)
+		board_begin(board_Kubel_commander)
+		board_end(seat_passenger)
+		base(doorright)
+	)
+
+	{boarder
+		{anm "gunner"
+			{forward	{begin	"board_LowTank_stand"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold" 1}}
+		}
+	}
+	
+	("crew_human"		place(gunner)	bone(gunner)	door(emit3)		animation(gunner))
+
+	{placer
+		{place "driver"		{group "crew"}}
+		{place "commander"	{group "crew"}}
+		{place "gunner"		{group "crew"} {worker charger}}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	
+	{Volume "cabin"
+		{thickness 5}
+	}
+	
+	{Volume "body"
+		{thickness 20}
+	}	
+	
+	{Volume "fuel"
+		{thickness 7}
+	}	
+	
+	{Volume "glass1"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass2"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+
+	{Volume "glass3"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass4"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass5"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass6"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+
+	{Volume "glass7"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}
+	
+	{Volume "glass8"
+		{Thickness 0.1}
+		{able {visible 0} {window}}
+	}			
+
+	{Weaponry
+		{place "mgun"
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{DefaultWeapon "hotchkiss"}
+			{Mounted}
+			{weapon {ammo "ammo mgun" 200}}
+		}
+	}
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{Box
+			{size 5 6}
+			{item  "ammo mgun" 600}
+		}
+	}
+	
+{sensor
+	{visor "main"
+		{vision "wmb-main"}
+		{bone "visor1"}
+	}
+	{Visor "driver"
+		{vision "wmb-driver"}
+		{bone "visor2"}
+	}
+}	
+
+	{mass 15000}
+	{Chassis
+		{Locomotion ("locomotion")}
+	}
+	{Extension "renaultagr.mdl"}
+}

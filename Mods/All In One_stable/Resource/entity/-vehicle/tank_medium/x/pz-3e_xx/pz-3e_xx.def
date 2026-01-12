@@ -1,0 +1,32 @@
+{game_entity
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	{obstacleId "tank"}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+			{bottom	10}
+			{rear   50}
+		}   
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		    {front  50}
+			{bottom	10}
+			{rear   50}
+		}
+	}
+	{volume "turret"
+		{thickness 30 0.3
+			{front  50}
+		}
+	}
+	{Extension "PZ-3G_xx.mdl"}
+	{TexMods
+		{"ambush1" "1"}
+		{"ambush2" "2"}
+	}
+}

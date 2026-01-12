@@ -1,0 +1,3172 @@
+{mission
+	{Camera
+		{Position 6265.33 3186.94}
+		{Distance 658.34}
+		{ViewAngle 0.638793}
+		{YawAngle 43.8004}
+	}
+	{Environment "morning"}
+	{User 1}
+	{GameProgress 0 0}
+	{Human "hero.gorki" 0x8000
+		{Position 6244.9 3336.01 69}
+		{Turn 69.8731}
+		{Player 1}
+		{MID 1}
+		{NameId 38 61}
+		{FsmState "squat"}
+	}
+	{Human "hero.petrenko" 0x8001
+		{Position 6268.72 3334.47 69}
+		{Turn 112.651}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ppd" {cell 0 0}}
+				{item "ammo pistol" 68 {cell 4 0}}
+				{item "knife" {cell 6 0}}
+				{item "dynamite" {cell 4 1}}
+			}
+		}
+		{Player 1}
+		{MID 2}
+		{NameId 32 12}
+		{FsmState "squat"}
+	}
+	{Entity "bofors" 0x8002
+		{Position 3372.89 2872.92 -3}
+		{Turn -11.7195}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bullet37 ap" 3 {cell 0 0}}
+				{item "bullet37 fg" 4 {cell 0 1}}
+			}
+		}
+		{Player 2}
+		{MID 3}
+		{Weaponry
+			{State
+				{Weapon
+					{Ammo "bullet37 ap" 1}
+				}
+			}
+		}
+	}
+	{Entity "bofors" 0x8003
+		{Position 2124.14 7046.47 1.76784}
+		{Turn 101.891}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bullet37 ap" 3 {cell 0 0}}
+				{item "bullet37 fg" 2 {cell 0 1}}
+			}
+		}
+		{Player 2}
+		{MID 4}
+		{Weaponry
+			{State
+				{Weapon
+					{Ammo "bullet37 ap" 1}
+				}
+			}
+		}
+	}
+	{Entity "ckmbrowning_stan" 0x8004
+		{Position 2191.92 7073.65 0.807571}
+		{Turn 94.2123}
+		{Player 2}
+		{MID 5}
+	}
+	{Human "pol.kop.rifle" 0x8005
+		{Position 3358.4 2868.96 -6.2816}
+		{Turn 8.27927}
+		{DisableObstacles}
+		{Player 2}
+		{MID 6}
+		{NameId 26 76}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8006
+		{Position 3354.76 2888.68 -6.1273}
+		{Turn -46.719}
+		{DisableObstacles}
+		{Player 2}
+		{MID 7}
+		{NameId 14 27}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.mgun" 0x8007
+		{Position 3393.53 2918.31 -3}
+		{Turn 1.87611}
+		{Player 2}
+		{MID 8}
+		{NameId 13 19}
+		{Cover
+			{sector 3393.53 2918.31 {type "squat_lie"}
+				{wall 0 0 3399.33 2955.01 3400.86 2908.3}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "pol.kop.smg" 0x8008
+		{Position 3237.17 2950.93 -3}
+		{Turn 128.816}
+		{Player 2}
+		{MID 9}
+		{NameId 45 27}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8009
+		{Position 3216.87 2964.37 -3}
+		{Turn -8.92994}
+		{Player 2}
+		{MID 10}
+		{NameId 6 15}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x800a
+		{Position 3239.41 2970.9 -3}
+		{Turn -134.424}
+		{Player 2}
+		{MID 11}
+		{NameId 49 17}
+		{FsmState "stand_melee"}
+	}
+	{Entity "box_metal" 0x800b
+		{Position 3377.3 2955.75 -3}
+		{Turn -27.8193}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bullet37 ap" 6 {cell 0 0}}
+				{item "bullet37 fg" 6 {cell 0 1}}
+			}
+		}
+	}
+	{Entity "boxes1" 0x800c
+		{Position 3056.78 3129.36 -3}
+		{Turn 77.7074}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ckmbrowning" {cell 0 0}}
+			}
+		}
+	}
+	{Entity "boxes1" 0x800d
+		{Position 3133.56 3090.79 -3}
+		{Turn 43.7963}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ammo rifle" 500 {cell 0 0}}
+				{item "ammo mgun" 1000 {cell 1 0}}
+				{item "grenade grobronny" 5 {cell 3 0}}
+				{item "grenade grzaczepny" 3 {cell 4 0}}
+			}
+		}
+	}
+	{Entity "box2" 0x800e
+		{Position 3112.43 3115.17 -3}
+		{Turn 30.6043}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bandage" 5 {cell 0 0}}
+			}
+		}
+	}
+	{Human "pol.kop.rifle" 0x800f
+		{Position 3967.51 2952.96 118.918}
+		{Turn -66.9924}
+		{DisableObstacles}
+		{Player 2}
+		{MID 12}
+		{NameId 27 11}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8010
+		{Position 3173.32 2578.51 118.918}
+		{Turn -66.9924}
+		{DisableObstacles}
+		{Player 2}
+		{MID 13}
+		{NameId 17 53}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8011
+		{Position 3619.07 3779.71 118.918}
+		{Turn -8.16455}
+		{DisableObstacles}
+		{Player 2}
+		{MID 14}
+		{NameId 10 19}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8012
+		{Position 3980.62 4694.49 118.918}
+		{Turn 57.318}
+		{DisableObstacles}
+		{Player 2}
+		{MID 15}
+		{NameId 32 6}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8013
+		{Position 3149.1 5535.56 -3}
+		{Turn -146.454}
+		{Player 2}
+		{MID 16}
+		{NameId 16 48}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8014
+		{Position 3193.84 5442.93 -3}
+		{Turn -165.009}
+		{Player 2}
+		{MID 17}
+		{NameId 42 67}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8015
+		{Position 3187.49 3128.12 -3}
+		{Turn 19.2331}
+		{Player 2}
+		{MID 18}
+		{NameId 28 79}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8016
+		{Position 3158.95 3184.4 -3}
+		{Turn 20.2633}
+		{Player 2}
+		{MID 19}
+		{NameId 31 56}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8017
+		{Position 2775.16 7082.74 118.918}
+		{Turn 111.118}
+		{DisableObstacles}
+		{Player 2}
+		{MID 20}
+		{NameId 27 51}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8018
+		{Position 2192.74 7059.42 0.807571}
+		{Turn 94.2123}
+		{DisableObstacles}
+		{Player 2}
+		{MID 21}
+		{NameId 25 69}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8019
+		{Position 2398.61 7068.15 -3}
+		{Turn -155.393}
+		{Player 2}
+		{MID 22}
+		{NameId 41 3}
+		{Cover
+			{sector 2398.61 7068.15 {type "look_2way"}
+				{wall 0 0 2398.83 7084.48 2411.64 7056.51}
+			}
+		}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x801a
+		{Position 2133.67 7034.76 -1.11773}
+		{Orientation
+			 -0.528059   0.848836  -0.025172
+			 -0.848634  -0.528559  -0.021107
+			 -0.031186   0.010236   0.999462
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 23}
+		{NameId 38 58}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x801b
+		{Position 2117.06 7023.52 -1.36622}
+		{Orientation
+			  0.392291   0.919897   0.002215
+			 -0.919408   0.392159  -0.031706
+			 -0.029992   0.010386   0.999497
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 24}
+		{NameId 6 0}
+		{FsmState "board"}
+	}
+	{Entity "fiat" 0x801c
+		{Position 2744.03 6362.93 -3}
+		{Turn -173.717}
+		{Player 2}
+		{MID 25}
+	}
+	{Entity "fiat" 0x801d
+		{Position 2678.92 6450.86 -3}
+		{Turn -155.676}
+		{Player 2}
+		{MID 26}
+	}
+	{Entity "fiat508" 0x801e
+		{Position 2666.23 8746.66 1.52337}
+		{Turn -79.4059}
+		{Player 2}
+		{MID 27}
+		{Able {any_crew 1}}
+	}
+	{Entity "fiat" 0x801f
+		{Position 6503.16 2006 0.510866}
+		{Turn 172.724}
+		{Player 2}
+		{MID 28}
+	}
+	{Human "pol.tankman" 0x8020
+		{Position 6491.78 2000.71 13.0871}
+		{Orientation
+			 -0.975637   0.119899   0.183249
+			 -0.126676  -0.991613  -0.025629
+			  0.178639  -0.048218   0.982642
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 29}
+		{NameId 2 51}
+		{FsmState "board"}
+	}
+	{Human "pol.tankman" 0x8021
+		{Position 6497.37 2011.71 13.5522}
+		{Orientation
+			 -0.991851   0.126636   0.002748
+			 -0.126676  -0.991613  -0.025629
+			 -0.000521  -0.025769   0.999574
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 30}
+		{NameId 28 71}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8022
+		{Position 6528.02 1991.09 22.4972}
+		{Orientation
+			  0.028301   0.978141   0.205923
+			 -0.999503   0.028850   0.000207
+			 -0.005730  -0.205779   0.978533
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 31}
+		{NameId 8 64}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8023
+		{Position 6540.63 2010.96 22.41}
+		{Orientation
+			 -0.193827  -0.980337   0.037760
+			  0.980803  -0.194348  -0.012744
+			  0.019820   0.034571   0.999159
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 32}
+		{NameId 10 36}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8024
+		{Position 6551.79 2009.8 22.9192}
+		{Orientation
+			 -0.034639  -0.987270   0.155189
+			  0.999300  -0.035174  -0.000359
+			  0.005895   0.155137   0.987845
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 33}
+		{NameId 19 33}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8025
+		{Position 6559.13 1983.83 21.8831}
+		{Orientation
+			  0.028301   0.978141   0.205923
+			 -0.999503   0.028850   0.000207
+			 -0.005730  -0.205779   0.978533
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 34}
+		{NameId 1 19}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.mgun" 0x8026
+		{Position 6530.6 2012.44 22.9524}
+		{Orientation
+			 -0.105481  -0.982255   0.155241
+			  0.994247  -0.107088  -0.002244
+			  0.018879   0.154183   0.987855
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 35}
+		{NameId 18 6}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.smg" 0x8027
+		{Position 6520.61 2013.72 23.2127}
+		{Orientation
+			 -0.034639  -0.987270   0.155189
+			  0.999300  -0.035174  -0.000359
+			  0.005895   0.155137   0.987845
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 36}
+		{NameId 44 76}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.smg" 0x8028
+		{Position 6538.04 1990.08 21.6734}
+		{Orientation
+			  0.187551   0.978278   0.088528
+			 -0.981989   0.188675  -0.003818
+			 -0.020406  -0.086164   0.995995
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 37}
+		{NameId 36 49}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.smg" 0x8029
+		{Position 6563.18 2007.78 23.0806}
+		{Orientation
+			 -0.249209  -0.955843   0.155893
+			  0.967315  -0.253204  -0.006068
+			  0.045277   0.149302   0.987712
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 38}
+		{NameId 33 64}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x802a
+		{Position 6549.17 1987.81 22.254}
+		{Orientation
+			  0.099097   0.973538   0.205781
+			 -0.994847   0.100816   0.002086
+			 -0.018740  -0.205024   0.978518
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 39}
+		{NameId 29 8}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x802b
+		{Position 6517.67 1991.12 22.6084}
+		{Orientation
+			  0.243135   0.947991   0.205255
+			 -0.968893   0.247158   0.005898
+			 -0.045163  -0.200342   0.978656
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 40}
+		{NameId 3 57}
+		{FsmState "board"}
+	}
+	{Entity "steam_locomotive" 0x802c
+		{Position 6020.29 925.446 -3}
+		{Turn 153.556}
+		{TexMod "2"}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 41}
+		{Chassis
+			{Locomotive 1}
+			{MaxSpeed 3}
+			{Links 42}
+		}
+	}
+	{Entity "tendor" 0x802d
+		{Position 6227.51 822.841 -3}
+		{Turn 153.717}
+		{TexMod "2"}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 42}
+		{Chassis
+			{Links 43 41}
+		}
+	}
+	{Entity "cistern" 0x802e
+		{Position 6389.44 742.864 -3}
+		{Turn -26.2834}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 43}
+		{Chassis
+			{Links 44 42}
+		}
+	}
+	{Entity "cistern" 0x802f
+		{Position 6556.36 660.426 -3}
+		{Turn -26.2834}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 44}
+		{Chassis
+			{Links 45 43}
+		}
+	}
+	{Entity "cistern" 0x8030
+		{Position 6721.11 573.891 -3}
+		{Turn -28.9413}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 45}
+		{Chassis
+			{Links 46 44}
+		}
+	}
+	{Entity "cistern" 0x8031
+		{Position 6884.03 483.8 -3}
+		{Turn -28.9413}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 46}
+		{Chassis
+			{Links 47 45}
+		}
+	}
+	{Entity "cistern" 0x8032
+		{Position 7046.9 393.612 -3}
+		{Turn -28.9413}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 47}
+		{Chassis
+			{Links 48 46}
+		}
+	}
+	{Entity "cistern" 0x8033
+		{Position 7209.81 303.498 -3}
+		{Turn -28.9703}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 48}
+		{Chassis
+			{Links 49 47}
+		}
+	}
+	{Entity "cistern" 0x8034
+		{Position 7372.71 213.384 -3}
+		{Turn -28.9413}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 49}
+		{Chassis
+			{Links 50 48}
+		}
+	}
+	{Entity "cistern" 0x8035
+		{Position 7535.64 123.294 -3}
+		{Turn -28.9411}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 50}
+		{Chassis
+			{Links 51 49}
+		}
+	}
+	{Entity "cistern" 0x8036
+		{Position 7698.56 33.204 -3}
+		{Turn -28.9413}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 51}
+		{Chassis
+			{Links 52 50}
+		}
+	}
+	{Entity "cistern" 0x8037
+		{Position 7861.35 -57.1057 -3}
+		{Turn -29.2116}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 52}
+		{Chassis
+			{Links 51}
+		}
+	}
+	{Human "hero.dudkov" 0x8038
+		{Position 6135.67 892.871 35.4949}
+		{Turn 153.556}
+		{DisableObstacles}
+		{Player 2}
+		{MID 53}
+		{NameId 48 74}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.mgun" 0x8039
+		{Position 2479.2 4969.78 -3}
+		{Turn 144.308}
+		{Player 2}
+		{MID 54}
+		{NameId 26 77}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x803a
+		{Position 2373.16 5028.46 -3}
+		{Turn 123.84}
+		{Player 2}
+		{MID 55}
+		{NameId 14 28}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x803b
+		{Position 2355.09 5044.64 -3}
+		{Turn -13.7004}
+		{Player 2}
+		{MID 56}
+		{NameId 13 20}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x803c
+		{Position 2373.02 5053.42 -3}
+		{Turn -121.505}
+		{Player 2}
+		{MID 57}
+		{NameId 45 28}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x803d
+		{Position 2476.65 5041.8 -3}
+		{Turn 3.04395}
+		{Player 2}
+		{MID 58}
+		{NameId 6 16}
+		{Cover
+			{sector 2476.65 5041.8 {type "snipe_cover"}
+				{wall 0 0 2481.53 5081.83 2488.45 4951.7}
+			}
+		}
+		{FsmState "snipe"}
+	}
+	{Human "pol.kop.rifle" 0x803e
+		{Position 2380.36 5132.13 -3}
+		{Turn 167.503}
+		{Player 2}
+		{MID 59}
+		{NameId 49 18}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x803f
+		{Position 2373.12 5193.95 -3}
+		{Turn -175.393}
+		{Player 2}
+		{MID 60}
+		{NameId 27 12}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8040
+		{Position 1951.55 5800.46 -3}
+		{Turn 168.55}
+		{Player 2}
+		{MID 61}
+		{NameId 17 54}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8041
+		{Position 1937.07 5823.09 -3}
+		{Turn -83.1033}
+		{Player 2}
+		{MID 62}
+		{NameId 10 20}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8042
+		{Position 1919.34 5814.68 -3}
+		{Turn -47.0948}
+		{Player 2}
+		{MID 63}
+		{NameId 32 7}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8043
+		{Position 1924.18 5795.59 -3}
+		{Turn 52.413}
+		{Player 2}
+		{MID 64}
+		{NameId 16 49}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8044
+		{Position 1941.39 5783.01 -3}
+		{Turn 87.6796}
+		{Player 2}
+		{MID 65}
+		{NameId 42 68}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8045
+		{Position 1840.09 6210.46 -3}
+		{Player 2}
+		{MID 66}
+		{NameId 28 80}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8046
+		{Position 1858.83 6224.72 -3}
+		{Turn -94.5753}
+		{Player 2}
+		{MID 67}
+		{NameId 31 57}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8047
+		{Position 1787.48 6193.76 -3}
+		{Turn 28.3681}
+		{Player 2}
+		{MID 68}
+		{NameId 27 52}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8048
+		{Position 1814.55 6208.41 -3}
+		{Turn -169.339}
+		{Player 2}
+		{MID 69}
+		{NameId 25 70}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.mgun" 0x8049
+		{Position 1873.95 6198.37 -3}
+		{Turn 169.663}
+		{Player 2}
+		{MID 70}
+		{NameId 41 4}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x804a
+		{Position 1852.15 6188.13 -3}
+		{Turn 89.6482}
+		{Player 2}
+		{MID 71}
+		{NameId 38 59}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x804b
+		{Position 1457.19 6485.9 118.918}
+		{Turn 111.118}
+		{DisableObstacles}
+		{Player 2}
+		{MID 72}
+		{NameId 6 1}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.mgun" 0x804c
+		{Position 1767.73 6425.93 -3}
+		{Turn 39.4771}
+		{Player 2}
+		{MID 73}
+		{NameId 2 52}
+		{Cover
+			{sector 1767.73 6425.93 {type "squat_lie"}
+				{wall 0 0 1741.19 6469.16 1792.76 6406.55}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "pol.kop.rifle" 0x804d
+		{Position 1775.31 6386.88 -3}
+		{Player 2}
+		{MID 74}
+		{NameId 28 72}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x804e
+		{Position 1715 6395.15 -3}
+		{Turn 58.0899}
+		{Player 2}
+		{MID 75}
+		{NameId 8 65}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x804f
+		{Position 1700.24 6408.15 -3}
+		{Player 2}
+		{MID 76}
+		{NameId 10 37}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8050
+		{Position 1707.3 6433.03 -3}
+		{Turn -53.3481}
+		{Player 2}
+		{MID 77}
+		{NameId 19 34}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8051
+		{Position 1735.49 6426.52 -3}
+		{Turn -173.534}
+		{Player 2}
+		{MID 78}
+		{NameId 1 20}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8052
+		{Position 1732.75 6456.89 -3}
+		{Player 2}
+		{MID 79}
+		{NameId 18 7}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8053
+		{Position 2660.63 8748.75 12.4855}
+		{Orientation
+			  0.186326  -0.981075   0.052854
+			  0.980091   0.181849  -0.079702
+			  0.068582   0.066653   0.995426
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 80}
+		{NameId 44 77}
+		{FsmState "board"}
+	}
+	{Human "pol.kop.rifle" 0x8054
+		{Position 2671.68 8750.88 11.569}
+		{Orientation
+			  0.185114  -0.982129   0.035522
+			  0.980091   0.181849  -0.079702
+			  0.071818   0.049568   0.996239
+		}
+		{DisableObstacles}
+		{Player 2}
+		{MID 81}
+		{NameId 36 50}
+		{FsmState "board"}
+	}
+	{Entity "box_metal" 0x8055
+		{Position 2219.57 7040.27 -0.931146}
+		{Turn 124.763}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bullet37 fg" 3 {cell 0 1}}
+				{item "bullet37 ap" 4 {cell 0 0}}
+			}
+		}
+	}
+	{Entity "barrel1" 0x8056
+		{Position 3313.17 5431.68 -3}
+		{Turn -98.1288}
+		{Scale 1.5}
+		{Extender "stuff"
+			{Item "barrel" filling "fuel" 50}
+		}
+	}
+	{Entity "barrel1" 0x8057
+		{Position 3307.38 5457.58 -3}
+		{Turn 46.8103}
+		{Scale 1.5}
+		{Extender "stuff"
+			{Item "barrel" filling "fuel" 50}
+		}
+	}
+	{Entity "barrel1" 0x8058
+		{Position 3329.98 5445.16 -3}
+		{Turn -9.1336}
+		{Scale 1.5}
+		{Extender "stuff"
+			{Item "barrel" filling "fuel" 50}
+		}
+	}
+	{Entity "tradevan_explosive" 0x8059
+		{Position 5079.83 4790.11 -3}
+		{Turn 17.62}
+		{TexMod "ambush3"}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "ckmbrowning_tasma" 5 {cell 0 2}}
+				{item "mauzerpol_police" 12 {cell 0 4}}
+				{item "grenade grzaczepny" 250 {cell 6 0}}
+				{item "ammo pistol" 1000 {cell 4 0}}
+				{item "ammo rifle" 1000 {cell 5 1}}
+				{item "ammo mgun" 1000 {cell 3 1}}
+				{item "mine antipersonnel" 7 {cell 2 0}}
+				{item "grenade grobronny" 250 {cell 2 1}}
+				{item "mine antitank" 3 {cell 0 0}}
+			}
+		}
+		{Player 2}
+		{MID 82}
+		{Chassis
+			{Links 83}
+		}
+	}
+	{Entity "tradevan_explosive" 0x805a
+		{Position 4886.64 4728.53 -3}
+		{Turn 17.902}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Extender "inventory"
+			{box
+				{clear}
+				{item "bullet150 fg" 250 {cell 2 0}}
+				{item "bullet75 fg" 250 {cell 2 1}}
+				{item "bullet75 ap" 250 {cell 2 2}}
+				{item "dynamite" 2 {cell 0 0}}
+			}
+		}
+		{Player 2}
+		{MID 83}
+		{Chassis
+			{Links 82}
+		}
+	}
+	{Human "pol.kop.rifle" 0x805b
+		{Position 2682.94 6528.9 -3}
+		{Turn -135.233}
+		{Player 2}
+		{MID 84}
+		{NameId 26 78}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x805c
+		{Position 2692.19 6511.24 -3}
+		{Turn -176.945}
+		{Player 2}
+		{MID 85}
+		{NameId 14 29}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x805d
+		{Position 2681.19 6498.63 -3}
+		{Turn 130.43}
+		{Player 2}
+		{MID 86}
+		{NameId 13 21}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x805e
+		{Position 2790.15 6769 -3}
+		{Turn -105.255}
+		{Player 2}
+		{MID 87}
+		{NameId 45 29}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x805f
+		{Position 2839.03 6580.21 -3}
+		{Turn 72.1066}
+		{Player 2}
+		{MID 88}
+		{NameId 6 17}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8060
+		{Position 2820.32 6598.59 -3}
+		{Turn -10.213}
+		{Player 2}
+		{MID 89}
+		{NameId 49 19}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8061
+		{Position 2866.34 6609.74 -3}
+		{Turn -138.292}
+		{Player 2}
+		{MID 90}
+		{NameId 27 13}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8062
+		{Position 2870.55 6588.21 -3}
+		{Turn 140.968}
+		{Player 2}
+		{MID 91}
+		{NameId 17 55}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8063
+		{Position 2798.04 6743.65 -3}
+		{Turn -163.669}
+		{Player 2}
+		{MID 92}
+		{NameId 10 21}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8064
+		{Position 2780 6737.98 -3}
+		{Turn 35.9559}
+		{Player 2}
+		{MID 93}
+		{NameId 32 8}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.mgun" 0x8065
+		{Position 2834.27 6628.16 -3}
+		{Turn -63.609}
+		{Player 2}
+		{MID 94}
+		{NameId 16 50}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8066
+		{Position 2768.09 6756.14 -3}
+		{Turn -16.7099}
+		{Player 2}
+		{MID 95}
+		{NameId 42 69}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x9000
+		{Position 2755.82 6329.3 -3}
+		{Turn -124.078}
+		{Player 2}
+		{MID 96}
+		{NameId 31 58}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x9001
+		{Position 2734.21 6321.23 -3}
+		{Turn -27.9309}
+		{Player 2}
+		{MID 97}
+		{NameId 27 53}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x9002
+		{Position 3961.07 4431.71 -3}
+		{Turn -69.0315}
+		{Player 2}
+		{MID 98}
+		{NameId 25 71}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x9003
+		{Position 3862.82 4400.85 -3}
+		{Turn -76.0266}
+		{Player 2}
+		{MID 99}
+		{NameId 41 5}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8067
+		{Position 3843.95 4116.67 165.587}
+		{Turn 65.9818}
+		{DisableObstacles}
+		{Player 2}
+		{MID 100}
+		{NameId 38 60}
+		{Cover
+			{sector 3843.95 4116.67 {type "squat_lie"}
+				{wall 0 0 3837.67 4127.13 3855.94 4118.99}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "pol.kop.rifle" 0x8068
+		{Position 2476.57 4656.92 -3}
+		{Turn 135.519}
+		{Player 2}
+		{MID 101}
+		{NameId 6 2}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8069
+		{Position 2489.91 4674.34 -3}
+		{Turn 176.704}
+		{Player 2}
+		{MID 102}
+		{NameId 2 53}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.mgun" 0x806a
+		{Position 2473.14 4826.93 165.587}
+		{Turn 23.8854}
+		{DisableObstacles}
+		{Player 2}
+		{MID 103}
+		{NameId 28 73}
+		{Cover
+			{sector 2473.14 4826.93 {type "squat_lie"}
+				{wall 0 0 2475.49 4838.91 2483.59 4820.62}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "pol.kop.rifle" 0x806b
+		{Position 2505.43 4792.53 165.587}
+		{Turn -66.1159}
+		{DisableObstacles}
+		{Player 2}
+		{MID 104}
+		{NameId 8 66}
+		{Cover
+			{sector 2505.43 4792.53 {type "squat_lie"}
+				{wall 0 0 2517.41 4790.18 2499.12 4782.08}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "pol.kop.rifle" 0x806c
+		{Position 2456.05 4866.67 165.587}
+		{Turn 118.888}
+		{DisableObstacles}
+		{Player 2}
+		{MID 105}
+		{NameId 10 38}
+		{Cover
+			{sector 2456.05 4866.67 {type "squat_lie"}
+				{wall 0 0 2443.92 4867.96 2461.43 4877.63}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "pol.kop.mgun" 0x806d
+		{Position 2593.82 4560.97 -3}
+		{Turn 59.0156}
+		{Player 2}
+		{MID 106}
+		{NameId 19 35}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x806e
+		{Position 2588.56 4585.24 -3}
+		{Turn -62.0003}
+		{Player 2}
+		{MID 107}
+		{NameId 1 21}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x806f
+		{Position 2612.22 4583.76 -3}
+		{Turn -154.044}
+		{Player 2}
+		{MID 108}
+		{NameId 18 8}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.mgun" 0x8070
+		{Position 3412.05 4122.54 63.3878}
+		{Turn 111.882}
+		{DisableObstacles}
+		{Player 2}
+		{MID 109}
+		{NameId 44 78}
+		{Cover
+			{sector 3412.05 4122.54 {type "squat_lie"}
+				{wall 0 0 3400.16 4125.3 3418.72 4132.76}
+			}
+		}
+		{FsmState "squat"}
+	}
+	{Human "pol.kop.rifle" 0x8071
+		{Position 4106.48 4108.91 -3}
+		{Player 2}
+		{MID 110}
+		{NameId 36 51}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8072
+		{Position 4145.6 4100.08 -3}
+		{Turn 157.593}
+		{Player 2}
+		{MID 111}
+		{NameId 33 65}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8073
+		{Position 4135.09 4118.88 -3}
+		{Turn -108.809}
+		{Player 2}
+		{MID 112}
+		{NameId 29 9}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8074
+		{Position 4504.92 4357.26 -3}
+		{Turn -105.887}
+		{Player 2}
+		{MID 113}
+		{NameId 3 58}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8075
+		{Position 4495.01 4311.83 -3}
+		{Turn 105.565}
+		{Player 2}
+		{MID 114}
+		{NameId 51 64}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8076
+		{Position 4458.26 4345.46 -3}
+		{Turn -40.1822}
+		{Player 2}
+		{MID 115}
+		{NameId 10 56}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8077
+		{Position 4524.11 4331.02 -3}
+		{Turn 150.348}
+		{Player 2}
+		{MID 116}
+		{NameId 12 59}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8078
+		{Position 4454.88 4320.16 -3}
+		{Turn 33.4592}
+		{Player 2}
+		{MID 117}
+		{NameId 44 11}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x8079
+		{Position 4354.27 4181.05 -3}
+		{Turn 156.964}
+		{Player 2}
+		{MID 118}
+		{NameId 4 52}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x807a
+		{Position 4306.7 4227.69 -3}
+		{Turn -18.727}
+		{Player 2}
+		{MID 119}
+		{NameId 9 10}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.mgun" 0x807b
+		{Position 4343.04 4224.04 -3}
+		{Turn -163.642}
+		{Player 2}
+		{MID 120}
+		{NameId 3 17}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x807c
+		{Position 4331.79 4163.77 -3}
+		{Turn 40.4479}
+		{Player 2}
+		{MID 121}
+		{NameId 12 52}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x807d
+		{Position 4301.86 4190.6 -3}
+		{Player 2}
+		{MID 122}
+		{NameId 4 37}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x807e
+		{Position 4727.2 4540.7 -3}
+		{Turn -162.546}
+		{Player 2}
+		{MID 123}
+		{NameId 26 79}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.rifle" 0x807f
+		{Position 4710.35 4594.39 -3}
+		{Turn -165.701}
+		{Player 2}
+		{MID 124}
+		{NameId 14 30}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8083
+		{Position 5145.63 4738.46 -3}
+		{Turn -133.721}
+		{Player 2}
+		{MID 128}
+		{NameId 49 20}
+		{FsmState "stand_melee"}
+	}
+	{Human "pol.kop.smg" 0x8084
+		{Position 5144.72 4713.84 -3}
+		{Turn 162.118}
+		{Player 2}
+		{MID 129}
+		{NameId 27 14}
+		{FsmState "stand_melee"}
+	}
+	{Entity "steam_locomotive" 0x8080
+		{Position 981.25 8853.9 -3}
+		{Turn -65.6688}
+		{TexMod "2"}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 125}
+		{Chassis
+			{Locomotive 1}
+			{MaxSpeed 3}
+			{Links 126}
+		}
+	}
+	{Entity "tendor" 0x8081
+		{Position 886.205 9064.69 -3}
+		{Turn -65.765}
+		{TexMod "2"}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 126}
+		{Chassis
+			{Links 127 125}
+		}
+	}
+	{Entity "cistern" 0x8800
+		{Position 811.342 9231 -3}
+		{Turn -65.7644}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 127}
+		{Chassis
+			{Links 130 126}
+		}
+	}
+	{Entity "cistern" 0x8801
+		{Position 734.922 9400.76 -3}
+		{Turn -65.765}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 130}
+		{Chassis
+			{Links 131 127}
+		}
+	}
+	{Entity "cistern" 0x8802
+		{Position 658.089 9570.33 -3}
+		{Turn -65.2585}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 131}
+		{Chassis
+			{Links 132 130}
+		}
+	}
+	{Entity "cistern" 0x8803
+		{Position 577.428 9738.09 -3}
+		{Turn -63.942}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 132}
+		{Chassis
+			{Links 133 131}
+		}
+	}
+	{Entity "cistern" 0x8804
+		{Position 494.206 9904.55 -3}
+		{Turn -62.1316}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 133}
+		{Chassis
+			{Links 134 132}
+		}
+	}
+	{Entity "cistern" 0x8805
+		{Position 405.715 10068.3 -3}
+		{Turn -61.4109}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 134}
+		{Chassis
+			{Links 135 133}
+		}
+	}
+	{Entity "cistern" 0x8806
+		{Position 316.495 10231.7 -3}
+		{Turn -61.243}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 135}
+		{Chassis
+			{Links 137 134}
+		}
+	}
+	{Human "hero.dudkov" 0x8807
+		{Position 912.474 8952.09 35.4949}
+		{Turn -65.6688}
+		{DisableObstacles}
+		{Player 2}
+		{MID 136}
+		{NameId 38 62}
+		{FsmState "board"}
+	}
+	{Entity "cistern" 0x8082
+		{Position 227.27 10395.1 -3}
+		{Turn -61.4109}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 137}
+		{Chassis
+			{Links 138 135}
+		}
+	}
+	{Entity "cistern" 0x8085
+		{Position 138.177 10558.6 -3}
+		{Turn -61.4109}
+		{Volume "link1"
+			{Able {visible 0}{bullet 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Volume "link2"
+			{Able {visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 1}}
+		}
+		{Player 2}
+		{MID 138}
+		{Chassis
+			{Links 137}
+		}
+	}
+	{Link 0x8005 To 0x8002 "gunner"}
+	{Link 0x8006 To 0x8002 "commander"}
+	{Link 0x800f To 0x1819 "gunner"}
+	{Link 0x8010 To 0x3af "gunner"}
+	{Link 0x8011 To 0x181b "gunner"}
+	{Link 0x8012 To 0x181d "gunner"}
+	{Link 0x8017 To 0x1817 "gunner"}
+	{Link 0x8018 To 0x8004 "gunner"}
+	{Link 0x801a To 0x8003 "gunner"}
+	{Link 0x801b To 0x8003 "commander"}
+	{Link 0x8020 To 0x801f "commander"}
+	{Link 0x8021 To 0x801f "driver"}
+	{Link 0x8022 To 0x801f "seat9"}
+	{Link 0x8023 To 0x801f "seat3"}
+	{Link 0x8024 To 0x801f "seat4"}
+	{Link 0x8025 To 0x801f "seat6"}
+	{Link 0x8026 To 0x801f "seat2"}
+	{Link 0x8027 To 0x801f "seat1"}
+	{Link 0x8028 To 0x801f "seat8"}
+	{Link 0x8029 To 0x801f "seat5"}
+	{Link 0x802a To 0x801f "seat7"}
+	{Link 0x802b To 0x801f "seat10"}
+	{Link 0x8038 To 0x802c "driver"}
+	{Link 0x804b To 0x1815 "gunner"}
+	{Link 0x8053 To 0x801e "driver"}
+	{Link 0x8054 To 0x801e "commander"}
+	{Link 0x8067 To 0x7e "6"}
+	{Link 0x806a To 0x403 "1"}
+	{Link 0x806b To 0x403 "5"}
+	{Link 0x806c To 0x403 "3"}
+	{Link 0x8070 To 0x78 "2"}
+	{Link 0x8807 To 0x8080 "driver"}
+	{Brain 0x8000
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8001
+		{ReturnFire}
+		{HoldPosition}
+		{Control 1}
+	}
+	{Brain 0x8002
+		{HoldPosition}
+	}
+	{Brain 0x8003
+		{HoldPosition}
+	}
+	{Brain 0x8007
+		{HoldPosition}
+	}
+	{Brain 0x8013
+		{HoldPosition}
+	}
+	{Brain 0x8014
+		{HoldPosition}
+	}
+	{Brain 0x8015
+		{HoldPosition}
+	}
+	{Brain 0x8016
+		{HoldPosition}
+	}
+	{Brain 0x8019
+		{HoldPosition}
+	}
+	{Brain 0x801c
+		{HoldFire}
+	}
+	{Brain 0x801d
+		{HoldFire}
+	}
+	{Brain 0x801e
+		{HoldFire}
+	}
+	{Brain 0x801f
+		{HoldFire}
+	}
+	{Brain 0x802c
+		{HoldFire}
+	}
+	{Brain 0x802d
+		{HoldFire}
+	}
+	{Brain 0x802e
+		{HoldFire}
+	}
+	{Brain 0x802f
+		{HoldFire}
+	}
+	{Brain 0x8030
+		{HoldFire}
+	}
+	{Brain 0x8031
+		{HoldFire}
+	}
+	{Brain 0x8032
+		{HoldFire}
+	}
+	{Brain 0x8033
+		{HoldFire}
+	}
+	{Brain 0x8034
+		{HoldFire}
+	}
+	{Brain 0x8035
+		{HoldFire}
+	}
+	{Brain 0x8036
+		{HoldFire}
+	}
+	{Brain 0x8037
+		{HoldFire}
+	}
+	{Brain 0x804c
+		{HoldPosition}
+	}
+	{Brain 0x8059
+		{HoldFire}
+	}
+	{Brain 0x805a
+		{HoldFire}
+	}
+	{Brain 0x9002
+		{HoldPosition}
+	}
+	{Brain 0x9003
+		{HoldPosition}
+	}
+	{Brain 0x807e
+		{HoldPosition}
+	}
+	{Brain 0x807f
+		{HoldPosition}
+	}
+	{Brain 0x8080
+		{HoldFire}
+	}
+	{Brain 0x8081
+		{HoldFire}
+	}
+	{Brain 0x8800
+		{HoldFire}
+	}
+	{Brain 0x8801
+		{HoldFire}
+	}
+	{Brain 0x8802
+		{HoldFire}
+	}
+	{Brain 0x8803
+		{HoldFire}
+	}
+	{Brain 0x8804
+		{HoldFire}
+	}
+	{Brain 0x8805
+		{HoldFire}
+	}
+	{Brain 0x8806
+		{HoldFire}
+	}
+	{Brain 0x8082
+		{HoldFire}
+	}
+	{Brain 0x8085
+		{HoldFire}
+	}
+	{Brain 0x3cd
+		{HoldFire}
+		{HoldPosition}
+	}
+	{Tags 0x3c1 "pointer hidden obj01"}
+	{Tags 0x3c2 "pointer hidden obj02"}
+	{Tags 0x5c "brama2"}
+	{Tags 0x5d "brama1"}
+	{Tags 0x801e "car hidden"}
+	{Tags 0x801f "hidden"}
+	{Tags 0x802c "train hidden train01"}
+	{Tags 0x802d "train hidden train01"}
+	{Tags 0x802e "train hidden train01"}
+	{Tags 0x802f "train hidden train01"}
+	{Tags 0x8030 "train hidden train01"}
+	{Tags 0x8031 "train hidden train01"}
+	{Tags 0x8032 "train hidden train01"}
+	{Tags 0x8033 "train hidden train01"}
+	{Tags 0x8034 "train hidden train01"}
+	{Tags 0x8035 "train hidden train01"}
+	{Tags 0x8036 "train hidden train01"}
+	{Tags 0x8037 "train hidden train01"}
+	{Tags 0x8038 "train01_driver"}
+	{Tags 0x1400 "brama3"}
+	{Tags 0x1401 "brama4"}
+	{Tags 0x1600 "brama5"}
+	{Tags 0x45 "wall1"}
+	{Tags 0x46 "wall1"}
+	{Tags 0x47 "wall1"}
+	{Tags 0x44 "wall1"}
+	{Tags 0x805a "train_obj"}
+	{Tags 0x8059 "train_obj mine_box"}
+	{Tags 0x8074 "train_watch"}
+	{Tags 0x8075 "train_watch"}
+	{Tags 0x8076 "train_watch"}
+	{Tags 0x8077 "train_watch"}
+	{Tags 0x8078 "train_watch"}
+	{Tags 0x8079 "train_watch"}
+	{Tags 0x807a "train_watch"}
+	{Tags 0x807b "train_watch"}
+	{Tags 0x807c "train_watch"}
+	{Tags 0x807d "train_watch"}
+	{Tags 0x8083 "train_watch"}
+	{Tags 0x8084 "train_watch"}
+	{Tags 0x8000 "pl pl_hero pl_carryover pl_assign"}
+	{Tags 0x8001 "pl pl_hero pl_carryover pl_assign"}
+	{Tags 0x3d0 "pointer hidden obj03"}
+	{Tags 0x8080 "train2 hidden"}
+	{Tags 0x8081 "train2 hidden"}
+	{Tags 0x8800 "train2 hidden"}
+	{Tags 0x8801 "train2 hidden"}
+	{Tags 0x8802 "train2 hidden"}
+	{Tags 0x8803 "train2 hidden"}
+	{Tags 0x8804 "train2 hidden"}
+	{Tags 0x8805 "train2 hidden"}
+	{Tags 0x8806 "train2 hidden"}
+	{Tags 0x8082 "train2 hidden"}
+	{Tags 0x8085 "train2 hidden"}
+	{Tags 0x3d1 "pointer obj04 hidden"}
+	{Helpers
+		{event "gate1_opened" id 0 state 0}
+		{event "gate2_opened" id 1 state 0}
+		{event "gate3_opened" id 2 state 0}
+		{event "gate4_opened" id 3 state 0}
+		{event "gate5_opened" id 4 state 0}
+		{event "truck01" id 5 state 0}
+		{event "start" id 6 state 0}
+		{event "train01" id 7 state 0}
+		{event "car_on_route" id 9 state 0}
+		{event "train_explodes" id 8 state 0}
+		{event "obj03_delay" id 10 state 0}
+		{event "train_delay" id 11 state 0}
+		{event "obj03_failed" id 12 state 0}
+		{trigger "beginning/start"
+			{actions
+				{"event"
+					{event 6}
+					{mode set}
+					{delay "0.1"}
+				}
+			}
+		}
+		{trigger "beginning/start_true"
+			{condition
+				{term 1 "event"
+					{id 6}
+				}
+			}
+			{actions
+				{"event"
+					{event 5}
+					{mode set}
+					{delay 18}
+				}
+				{"event"
+					{event 7}
+					{mode set}
+					{delay 500}
+				}
+				{"event"
+					{event 9}
+					{mode set}
+					{delay 20}
+				}
+				{"actor_state"
+					{selector
+						{"actors/mids" 10002}
+					}
+					{speed fast}
+				}
+				{"music"
+					{start "russianstealth"}
+					{loop}
+				}
+				{"message"
+					{text "mission/3_1/text01"}
+				}
+				{"task"
+					{name "01_fuelexplosion"}
+				}
+			}
+		}
+		{trigger "cars/barkingdog"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "car"}
+						{"actors/zone" "carstop01"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 10002}
+					}
+					{"waypoint/uid" 74}
+				}
+				{"message"
+					{sound "dog_aw.0"}
+				}
+			}
+		}
+		{trigger "cars/car01"
+			{condition
+				{term 1 "event"
+					{id 9}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 27}
+					}
+					{"waypoint/uid" 35}
+					{clone}
+					{approach "teleport & rotate"}
+				}
+				{"event"
+					{event 9}
+					{mode toggle}
+					{delay 420}
+				}
+			}
+		}
+		{trigger "cars/train01"
+			{condition
+				{term 1 "event"
+					{id 7}
+				}
+			}
+			{actions
+				{"entity_state"
+					{selector
+						{"actors/tag" "train01"}
+					}
+					{tag_remove "hidden"}
+					{inactive off}
+					{visible on}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 41}
+					}
+					{"waypoint/uid" 34}
+				}
+			}
+		}
+		{trigger "cars/train01_exit"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/tag" "train"}
+						{"actors/zone" "train_exit"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"delete"
+					{selector
+						{"actors/tag" "train01"}
+					}
+				}
+			}
+		}
+		{trigger "cars/train02_exit"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 125}
+						{"actors/zone" "train_exit2"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"delete"
+					{selector
+						{"entities/tag" "train2"}
+					}
+				}
+			}
+		}
+		{trigger "cars/truck"
+			{condition
+				{term 1 "event"
+					{id 5}
+				}
+			}
+			{autoreset}
+			{actions
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 28}
+					}
+					{"waypoint/uid" 0}
+					{clone}
+					{approach "teleport & rotate"}
+				}
+				{"event"
+					{event 5}
+					{mode toggle}
+					{delay 600}
+				}
+			}
+		}
+		{trigger "gates/gate1_close"
+			{condition
+				{term 1 "event"
+					{id 0}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "train"}
+						{"actors/zone" "brama1"}
+					}
+					{"limits/<<=" 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama1"}
+					}
+					{effect "close"}
+				}
+				{"event"
+					{event 0}
+					{mode reset}
+				}
+			}
+		}
+		{trigger "gates/gate1_open"
+			{condition
+				{type 2}
+				{expression "!1 & 2"}
+				{term 1 "event"
+					{id 0}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "train"}
+						{"actors/zone" "brama1"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama1"}
+					}
+					{effect "open"}
+				}
+				{"event"
+					{event 0}
+					{mode set}
+				}
+			}
+		}
+		{trigger "gates/gate2_close"
+			{condition
+				{term 1 "event"
+					{id 1}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "train2"}
+						{"actors/zone" "brama2"}
+					}
+					{"limits/<<=" 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama2"}
+					}
+					{effect "close"}
+				}
+				{"event"
+					{event 1}
+					{mode reset}
+				}
+			}
+		}
+		{trigger "gates/gate2_open"
+			{condition
+				{type 2}
+				{expression "!1 & 2"}
+				{term 1 "event"
+					{id 1}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "train2"}
+						{"actors/zone" "brama2"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama2"}
+					}
+					{effect "open"}
+				}
+				{"event"
+					{event 1}
+					{mode set}
+				}
+			}
+		}
+		{trigger "gates/gate3_close"
+			{condition
+				{term 1 "event"
+					{id 2}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "train"}
+						{"actors/zone" "brama3"}
+					}
+					{"limits/<<=" 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama3"}
+					}
+					{effect "close"}
+				}
+				{"event"
+					{event 2}
+					{mode reset}
+				}
+			}
+		}
+		{trigger "gates/gate3_open"
+			{condition
+				{type 2}
+				{expression "!1 & 2"}
+				{term 1 "event"
+					{id 2}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "train"}
+						{"actors/zone" "brama3"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama3"}
+					}
+					{effect "open"}
+				}
+				{"event"
+					{event 2}
+					{mode set}
+				}
+			}
+		}
+		{trigger "gates/gate4_close"
+			{condition
+				{term 1 "event"
+					{id 3}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "train2"}
+						{"actors/zone" "brama4"}
+					}
+					{"limits/<<=" 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama4"}
+					}
+					{effect "close"}
+				}
+				{"event"
+					{event 3}
+					{mode reset}
+				}
+			}
+		}
+		{trigger "gates/gate4_open"
+			{condition
+				{type 2}
+				{expression "!1 & 2"}
+				{term 1 "event"
+					{id 3}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "train2"}
+						{"actors/zone" "brama4"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama4"}
+					}
+					{effect "open"}
+				}
+				{"event"
+					{event 3}
+					{mode set}
+				}
+			}
+		}
+		{trigger "gates/gate5_close"
+			{condition
+				{term 1 "event"
+					{id 4}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "car"}
+						{"actors/zone" "brama5"}
+					}
+					{"limits/<<=" 0}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama5"}
+					}
+					{effect "close"}
+				}
+				{"event"
+					{event 4}
+					{mode reset}
+				}
+			}
+		}
+		{trigger "gates/gate5_open"
+			{condition
+				{type 2}
+				{expression "!1 & 2"}
+				{term 1 "event"
+					{id 4}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "car"}
+						{"actors/zone" "brama5"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{autoreset}
+			{actions
+				{"effect"
+					{selector
+						{"entities/tag" "brama5"}
+					}
+					{effect "open"}
+				}
+				{"event"
+					{event 4}
+					{mode set}
+				}
+			}
+		}
+		{trigger "mission/lost"
+			{condition
+				{type 1}
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 1}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/<<=" 0}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/mids" 2}
+						{"actors/type" human}
+						{"actors/state" "not dead"}
+					}
+					{"limits/<<=" 0}
+				}
+			}
+			{actions
+				{"music"
+					{stop "russianwinning"}
+				}
+				{"music"
+					{start "russianlost"}
+					{stop "russianstealth"}
+				}
+				{"task"
+					{name "05_secondaryHeroes"}
+					{state fail}
+				}
+				{"gameover"
+					{result loose}
+				}
+			}
+		}
+		{trigger "mission/obj01"
+			{condition
+				{term 1 "signal"
+					{zone "fuel"}
+					{signals "explosion"}
+				}
+			}
+			{actions
+				{"task"
+					{name "01_fuelexplosion"}
+					{state complete}
+				}
+				{"task"
+					{name "02_trainexplosion"}
+				}
+				{"task"
+					{name "02a_takie_aamines"}
+				}
+				{"task"
+					{name "05_secondaryHeroes"}
+				}
+				{"effect"
+					{selector
+						{"entities/tag" "wall1"}
+					}
+					{effect "break"}
+				}
+				{"message"
+					{sound "world.sirene00"}
+				}
+				{"message"
+					{text "mission/3_1/text02"}
+				}
+				{"actor_state"
+					{selector
+						{"actors/tag" "train_watch"}
+					}
+					{speed fast}
+					{weapon_prepare on}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "train_watch"}
+					}
+					{"waypoint/uid" 83}
+				}
+			}
+		}
+		{trigger "mission/obj02"
+			{condition
+				{term 1 "actors"
+					{selector
+						{"actors/mids" 82}
+						{"actors/tag" "destroyed"}
+					}
+					{"limits/>=" 1}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/mids" 83}
+						{"actors/tag" "destroyed"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"task"
+					{name "02_trainexplosion"}
+					{state complete}
+				}
+				{"message"
+					{sound "world.sirene00"}
+				}
+				{"event"
+					{event 8}
+					{mode set}
+					{delay 5}
+				}
+				{"event"
+					{event 10}
+					{mode set}
+					{delay 10}
+				}
+			}
+		}
+		{trigger "mission/obj02_completed"
+			{condition
+				{term 1 "event"
+					{id 8}
+				}
+			}
+			{actions
+				{"message"
+					{text "mission/3_1/text03"}
+				}
+			}
+		}
+		{trigger "mission/obj03_completed"
+			{condition
+				{term 1 "event"
+					{id 10}
+				}
+				{term 2 "signal"
+					{zone "minezone"}
+					{signals "explosion"}
+				}
+			}
+			{actions
+				{"effect"
+					{selector
+						{"actors/mids" 127}
+					}
+					{effect "explosion"}
+				}
+				{"message"
+					{text "mission/3_1/text05"}
+				}
+				{"event"
+					{event 12}
+					{mode reset}
+				}
+				{"task"
+					{name "03_minerailorad"}
+					{state complete}
+				}
+				{"task"
+					{name "04_escape"}
+				}
+			}
+		}
+		{trigger "mission/obj03_failed"
+			{condition
+				{term 1 "trigger"
+					{name "cars/train02_exit"}
+				}
+			}
+			{actions
+				{"music"
+					{start "russianlost"}
+					{stop "russianwinning"}
+				}
+				{"gameover"
+					{result loose}
+				}
+				{"task"
+					{name "03_minerailorad"}
+					{state fail}
+				}
+			}
+		}
+		{trigger "mission/obj03_show"
+			{condition
+				{term 1 "event"
+					{id 10}
+				}
+			}
+			{actions
+				{"message"
+					{text "mission/3_1/text04"}
+				}
+				{"task"
+					{name "03_minerailorad"}
+				}
+				{"timer"
+					{time 300}
+					{title "mission/3_1/train_comes_in"}
+				}
+				{"event"
+					{event 11}
+					{mode set}
+					{delay 300}
+				}
+			}
+		}
+		{trigger "mission/obj03_train"
+			{condition
+				{term 1 "event"
+					{id 11}
+				}
+			}
+			{actions
+				{"timer"
+					{hide}
+				}
+				{"entity_state"
+					{selector
+						{"entities/tag" "train2"}
+					}
+					{tag_remove "hidden"}
+					{inactive off}
+					{visible on}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/mids" 125}
+					}
+					{"waypoint/uid" 87}
+				}
+			}
+		}
+		{trigger "mission/obj2a_completed"
+			{condition
+				{term 1 "inventory"
+					{selector
+						{"entities/tag" "pl"}
+					}
+					{item "mine antitank"}
+				}
+			}
+			{actions
+				{"task"
+					{name "02a_takie_aamines"}
+					{state complete}
+				}
+				{"music"
+					{start "russianwinning"}
+					{stop "russianstealth"}
+					{loop}
+				}
+			}
+		}
+		{trigger "mission/obj2a_failed"
+			{condition
+				{type 2}
+				{expression "1 & !2"}
+				{term 1 "event"
+					{id 8}
+				}
+				{term 2 "trigger"
+					{name "mission/obj2a_completed"}
+				}
+			}
+			{actions
+				{"music"
+					{start "russianlost"}
+					{stop "russianstealth"}
+				}
+				{"task"
+					{name "02a_takie_aamines"}
+					{state fail}
+				}
+				{"gameover"
+					{result loose}
+				}
+			}
+		}
+		{trigger "mission/securitybreachsector02"
+			{condition
+				{term 1 "signal"
+					{zone "zone02"}
+					{signals "shot explosion"}
+				}
+			}
+			{actions
+				{"message"
+					{sound "world.sirene00"}
+				}
+				{"actor_state"
+					{selector
+						{"actors/tag" "train_watch"}
+					}
+					{weapon_prepare on}
+				}
+				{"actor_to_waypoint"
+					{selector
+						{"actors/tag" "train_watch"}
+					}
+					{"waypoint/uid" 84}
+				}
+			}
+		}
+		{trigger "mission/win"
+			{condition
+				{term 1 "trigger"
+					{name "mission/obj03_completed"}
+				}
+				{term 2 "actors"
+					{selector
+						{"actors/tag" "pl"}
+						{"actors/zone" "evac"}
+					}
+					{"limits/>=" 1}
+				}
+			}
+			{actions
+				{"music"
+					{start "russianwon"}
+					{stop "russianwinning"}
+				}
+				{"task"
+					{name "04_escape"}
+					{state complete}
+				}
+				{"gameover"
+					{result win}
+				}
+			}
+		}
+		{waypoints
+			{34
+				{position 186.352 10693.5 -3}
+			}
+			{83
+				{position 2842.42 5457.37 -3}
+				{radius 400}
+				{commands
+					{"actor_state"
+						{weapon_prepare on}
+					}
+					{"actor_watch"
+						{"waypoint/uid" 85}
+						{radius 50}
+					}
+				}
+			}
+			{84
+				{position 4460.79 4498.69 -3}
+				{commands
+					{"actor_watch"
+						{"waypoint/uid" 86}
+						{radius 50}
+					}
+				}
+			}
+			{85
+				{position 3003.06 5532.31 -3}
+			}
+			{86
+				{position 4558.79 4497.1 -3}
+			}
+			{87
+				{position 7948.47 -261.008 -3}
+			}
+		}
+		{waypoints "truck01"
+			{0
+				{position 6417.5 2016.71 0}
+				{transition 1}
+				{commands
+					{"actor_state"
+						{speed fast}
+					}
+				}
+			}
+			{1
+				{position 6117.13 2060.36 0}
+				{transition 2}
+			}
+			{2
+				{position 5841.64 2144.05 0}
+				{transition 3}
+			}
+			{3
+				{position 5626.39 2233.43 2}
+				{transition 4}
+			}
+			{4
+				{position 5394.63 2320.83 1.03867}
+				{transition 5}
+			}
+			{5
+				{position 4974.8 2376.13 2.61343}
+				{transition 6}
+			}
+			{6
+				{position 4640.44 2340.53 7}
+				{transition 7}
+			}
+			{7
+				{position 4300.96 2220.53 -3}
+				{transition 8}
+			}
+			{8
+				{position 3876.55 1996.42 -0.655457}
+				{transition 9}
+			}
+			{9
+				{position 3510.02 1873.71 -1.62857}
+				{transition 10}
+			}
+			{10
+				{position 3234.35 1854.57 0}
+				{transition 11}
+			}
+			{11
+				{position 2892.64 1870.33 -1}
+				{transition 12}
+			}
+			{12
+				{position 2589.39 1985.66 0}
+				{transition 13}
+			}
+			{13
+				{position 2358.49 2125.99 0}
+				{transition 14}
+			}
+			{14
+				{position 2172.76 2282.76 2}
+				{transition 15}
+			}
+			{15
+				{position 2022.74 2480.17 0}
+				{transition 16}
+			}
+			{16
+				{position 1913.42 2659.78 0}
+				{transition 17}
+			}
+			{17
+				{position 1804.13 2913.46 0}
+				{transition 18}
+			}
+			{18
+				{position 1688.78 3252.13 0}
+				{transition 19}
+			}
+			{19
+				{position 879.215 5988.88 4.92195}
+				{transition 20}
+			}
+			{20
+				{position 864.646 6294.74 3.46504}
+				{transition 21}
+			}
+			{21
+				{position 896.897 6554.78 6}
+				{transition 22}
+			}
+			{22
+				{position 961.962 6758.45 5.32079}
+				{transition 23}
+			}
+			{23
+				{position 1045.58 6925.71 6}
+				{transition 24}
+			}
+			{24
+				{position 1213.79 7073.28 6}
+				{transition 25}
+			}
+			{25
+				{position 1374.05 7185.53 4.85204}
+				{transition 26}
+			}
+			{26
+				{position 2044.78 7499.54 0}
+				{transition 27}
+			}
+			{27
+				{position 2246.18 7642.6 1}
+				{transition 28}
+			}
+			{28
+				{position 2391.33 7793.72 2.13345}
+				{transition 29}
+			}
+			{29
+				{position 2503.95 8034.57 1.93805}
+				{transition 30}
+			}
+			{30
+				{position 2566.46 8225.63 4}
+				{transition 31}
+			}
+			{31
+				{position 2613.9 8443.73 1.76385}
+				{transition 32}
+			}
+			{32
+				{position 2626.13 8610.66 3.61343}
+				{transition 33}
+			}
+			{33
+				{position 2609.95 8735.87 1.99084}
+				{commands
+					{"delete"}
+				}
+			}
+		}
+		{waypoints "car01"
+			{35
+				{position 2677.25 8647.22 1.27457}
+				{transition 36}
+			}
+			{36
+				{position 2676.27 8506.76 1.37256}
+				{transition 39}
+			}
+			{37
+				{position 2609.23 8146.77 2.67743}
+				{transition 38}
+			}
+			{38
+				{position 2528.17 7948.73 4}
+				{transition 41}
+			}
+			{39
+				{position 2670.26 8412.02 1.97357}
+				{transition 40}
+			}
+			{40
+				{position 2661 8349.11 1.89957}
+				{transition 37}
+				{commands
+					{"wait"
+						{time 15}
+					}
+				}
+			}
+			{41
+				{position 2413.83 7749.35 2.61655}
+				{transition 82}
+			}
+			{42
+				{position 2192.71 7541.55 0.113215}
+				{transition 43}
+			}
+			{43
+				{position 2167.48 7476.96 -1.22722}
+				{transition 44}
+			}
+			{44
+				{position 2178.37 7400.85 -3}
+				{transition 45}
+			}
+			{45
+				{position 2313.09 7060.74 -3}
+				{transition 46}
+				{commands
+					{"wait"
+						{time 2}
+					}
+				}
+			}
+			{46
+				{position 2444.18 6729.91 -3}
+				{transition 47}
+			}
+			{47
+				{position 2483.18 6606.23 -3}
+				{transition 48}
+			}
+			{48
+				{position 2531.72 6415.44 -3}
+				{transition 49}
+			}
+			{49
+				{position 2627.36 6261.89 -3}
+				{transition 50}
+			}
+			{50
+				{position 2861.98 6058.05 -3}
+				{transition 51}
+			}
+			{51
+				{position 2980.64 5902.49 -3}
+				{transition 52}
+			}
+			{52
+				{position 3071.19 5859.39 -3}
+				{transition 53}
+			}
+			{53
+				{position 3140.14 5882.48 -3}
+				{transition 54}
+			}
+			{54
+				{position 3230.71 5922.81 -3}
+				{transition 55}
+			}
+			{55
+				{position 3292.47 5901.68 -3}
+				{transition 56}
+			}
+			{56
+				{position 3324.41 5846.78 -3}
+				{transition 57}
+			}
+			{57
+				{position 3294.48 5789.55 -3}
+				{transition 58}
+			}
+			{58
+				{position 3213.46 5789.41 -3}
+				{transition 59}
+			}
+			{59
+				{position 2998.36 5806.17 -3}
+				{transition 60}
+			}
+			{60
+				{position 2840.69 5921.89 -3}
+				{transition 61}
+			}
+			{61
+				{position 2744.34 6018.03 -3}
+				{transition 62}
+				{commands
+					{"wait"
+						{time 30}
+					}
+				}
+			}
+			{62
+				{position 2554.44 6331.02 -3}
+				{transition 63}
+			}
+			{63
+				{position 2414.52 6814.18 -3}
+				{transition 64}
+				{commands
+					{"wait"
+						{time 1}
+					}
+				}
+			}
+			{64
+				{position 2228.87 7279.13 -3}
+				{transition 65}
+			}
+			{65
+				{position 2159.73 7458.57 -1.97722}
+				{transition 66}
+			}
+			{66
+				{position 2174.93 7585.48 0}
+				{transition 67}
+			}
+			{67
+				{position 2301 7687.59 2}
+				{transition 68}
+			}
+			{68
+				{position 2414.98 7844.5 4}
+				{transition 69}
+			}
+			{69
+				{position 2499.08 8027.97 2.18397}
+				{transition 70}
+			}
+			{70
+				{position 2564.48 8193.91 4}
+				{transition 71}
+			}
+			{71
+				{position 2608.85 8393.88 0.885437}
+				{transition 72}
+			}
+			{72
+				{position 2624.1 8567.5 3.41046}
+				{transition 73}
+			}
+			{73
+				{position 2610.13 8722.95 2.01343}
+				{commands
+					{"delete"}
+				}
+			}
+			{74
+				{position 2647.31 8170.65 2.33398}
+				{transition 75}
+				{commands
+					{"actor_state"
+						{speed fast}
+						{hold_position on}
+						{waypoint_only on}
+					}
+				}
+			}
+			{75
+				{position 2629.01 8229.06 4}
+				{transition 76}
+			}
+			{76
+				{position 2637.87 8277.42 3.84221}
+				{transition 77}
+				{commands
+					{"wait"
+						{time 7}
+					}
+				}
+			}
+			{77
+				{position 2789.09 8163.63 -3}
+				{transition 78}
+				{commands
+					{"actor_state"
+						{waypoint_only off}
+					}
+				}
+			}
+			{78
+				{position 2755.5 8140.89 -3}
+				{transition 79}
+			}
+			{79
+				{position 2734.58 8113.67 -3}
+				{transition 80}
+			}
+			{80
+				{position 2701.17 8108.51 -3}
+				{transition 81}
+			}
+			{81
+				{position 2662.72 8131.51 -0.231193}
+			}
+			{82
+				{position 2288.71 7603.58 0.440943}
+				{transition 42}
+			}
+		}
+		{zone "poly"
+			{position 3861.5 2817.48 -3}
+			{Name "brama1"}
+			{GlobalWP ""
+				{Orientation 1.98968}
+				{Condition}}
+			{Point 235.976 -538.385}
+			{Point -139.814 284.175}
+			{Point -114.892 300.181}
+			{Point 272.754 -523.236}
+		}
+		{zone "poly"
+			{position 3757.31 2761.28 -3}
+			{Name "brama2"}
+			{GlobalWP ""
+				{Orientation 1.98968}
+				{Condition}}
+			{Point 152.122 -563.8}
+			{Point -207.696 251.258}
+			{Point -73.6079 320.546}
+			{Point 316.071 -497.121}
+		}
+		{zone "poly"
+			{position 2051.43 6784.9 -3}
+			{Name "brama3"}
+			{GlobalWP ""
+				{Orientation 1.98968}
+				{Condition}}
+			{Point 212.69 -507.663}
+			{Point -235.461 476.432}
+			{Point -206.147 488.795}
+			{Point 233.939 -486.127}
+		}
+		{zone "poly"
+			{position 1936.11 6737.92 -3}
+			{Name "brama4"}
+			{GlobalWP ""
+				{Orientation 1.98968}
+				{Condition}}
+			{Point 129.708 -534.036}
+			{Point -277.903 437.125}
+			{Point -154.577 499.005}
+			{Point 293.781 -476.135}
+		}
+		{zone "poly"
+			{position 2372.5 6933.35 -3}
+			{Name "brama5"}
+			{GlobalWP ""
+				{Orientation 1.98968}
+				{Condition}}
+			{Point 111.379 -484.062}
+			{Point -82.0898 127.896}
+			{Point -39.5808 147.957}
+			{Point 219.891 -483.998}
+		}
+		{zone "circle"
+			{position 2663.15 8406.52 2.68457}
+			{Name "carstop01"}
+			{Radius 27.5944}
+		}
+		{zone "circle"
+			{position 6271.58 2058 0.968381}
+			{Name "evac"}
+			{Radius 150}
+		}
+		{zone "circle"
+			{position 3353.37 5471.39 -3}
+			{Name "fuel"}
+			{Radius 108.429}
+		}
+		{zone "poly"
+			{position 4778.6 1423.51 -3}
+			{Name "minezone"}
+			{Point -165.099 66.6208}
+			{Point -148.92 94.9393}
+			{Point 222.869 -96.1997}
+			{Point 205.866 -122.686}
+		}
+		{zone "circle"
+			{position 6256.38 3344 69}
+			{Name "pl"}
+			{GlobalWP ""
+				{Orientation 2.0944}
+				{Condition}}
+			{Radius 127.62}
+		}
+		{zone "poly"
+			{position 284.309 10611.9 -3}
+			{Name "train_exit"}
+			{GlobalWP ""
+				{Orientation 1.98968}
+				{Condition}}
+			{Point 19.206 -236.333}
+			{Point -198.557 132.969}
+			{Point -0.717926 175.006}
+			{Point 153.14 -209.308}
+		}
+		{zone "circle"
+			{position 7698.28 -120.013 -3}
+			{Name "train_exit2"}
+			{Radius 186.062}
+		}
+		{zone "poly"
+			{position 4927.52 4529.72 -3}
+			{Name "zone02"}
+			{GlobalWP ""
+				{Orientation 1.98968}
+				{Condition}}
+			{Point -180.301 -393.735}
+			{Point -383.513 300.758}
+			{Point 222.991 494.86}
+			{Point 435.85 -209.958}
+		}
+		{task
+			{name "01_fuelexplosion"}
+			{desc "mission/3_1/primary1"}
+			{primary}
+			{state hidden}
+			{point "obj01"}
+		}
+		{task
+			{name "02_trainexplosion"}
+			{desc "mission/3_1/primary2"}
+			{primary}
+			{state hidden}
+			{point "obj02"}
+		}
+		{task
+			{name "03_minerailorad"}
+			{desc "mission/3_1/primary3"}
+			{primary}
+			{state hidden}
+			{point "obj03"}
+		}
+		{task
+			{name "04_escape"}
+			{desc "mission/3_1/primary4"}
+			{primary}
+			{state hidden}
+			{point "obj04"}
+		}
+		{task
+			{name "05_secondaryHeroes"}
+			{desc "mission/3_1/secondary1"}
+			{state hidden}
+		}
+		{task
+			{name "02a_takie_aamines"}
+			{desc "mission/3_1/primary2a"}
+			{primary}
+			{state hidden}
+		}
+	}
+	{Players
+		{diplomacy
+			1 0 0 1 1 1 1 1
+			0 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+			1 1 1 1 1 1 1 1
+		}
+	}
+	{MissionMusic "STOP"}
+}

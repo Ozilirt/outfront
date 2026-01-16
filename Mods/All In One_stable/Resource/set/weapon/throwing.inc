@@ -39,7 +39,27 @@
 			{aimRange 20}
 		)
 	}
-        {item "mk26"
+	; GSMT Enforcer
+	{item "grobronny"
+		{aimRange 25}
+		(mod "mp"
+			{aimRange 30}
+		)
+	}
+	{item "grzaczepny"
+		{aimRange 25}
+		(mod "mp"
+			{aimRange 30}
+		)
+	}
+	{item "f1f"
+		{aimRange 25}
+		(mod "mp"
+			{aimRange 30}
+		)
+	}
+; end of GSMT
+    {item "mk26"
 		{aimRange 25}
 		(mod "mp"
 			{aimRange 24}
@@ -206,7 +226,17 @@
 	}
 	{detonationTime 4}
 }
-
+; GSTM Enforcer
+{ammo "grenade grzaczepny" from "grenade f1"}
+{ammo "grenade f1f" from "grenade f1"}
+{ammo "grenade grobronny" from "grenade"
+	{damage blastwave
+		{energy 0.5} ; kg
+		{area 2 5}	 ; m
+	}
+	{detonationTime 5}
+}
+; end of GSMT
 {ammo "grenade gr31" from "grenade f1"}
 
 {ammo "grenade mk1" from "grenade f1"}

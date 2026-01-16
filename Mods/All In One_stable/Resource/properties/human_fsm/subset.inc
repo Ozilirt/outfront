@@ -29,3 +29,13 @@
 	{disable "squat"}
 	{enable  "board"}
 }
+;GSMT NNPlaya
+{subset "with_melee_weapon" from "default"
+	{enable  "blow"}
+	{disable "repair"}
+}
+{subset "with_mortar" from "with_weapon"
+	{disable "down"}
+	{disable "looking"}
+}
+;end of GSMT

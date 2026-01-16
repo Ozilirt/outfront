@@ -88,6 +88,7 @@
 {ammo "bullet25 zenite" from "ap_light"}
 {ammo "bullet37 zenite" from "ap_light"}
 {ammo "bullet40 zenite" from "ap_light"}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;{ammo "bullet40_zenite" from "ap_light"}
 {ammo "bullet20 fg" 	from "fg_light"
 	{detonationThickness 2}
 	{damage blastwave

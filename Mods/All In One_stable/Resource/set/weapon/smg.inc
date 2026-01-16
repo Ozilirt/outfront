@@ -489,3 +489,73 @@
 		{maxRange}					; m
 	)
 }
+; GSMT Enforcer |||||||||||||||||
+{weapon pattern "smg2" from "bullet"
+	{aimRange 35}				; m
+	{spreading
+		{SpreadRadius 2.0}; m
+		{SpreadXYRatio	2.5}
+		{SpreadPower	3}
+	}
+	{recoveryTime 0.1}			; s
+	{rechargeTime 3}			; s
+	{speed 500}					; m/s
+	{Automatic}
+	{maxRange 60}					; m
+	{traceFreq 0.4}
+	{piercing   10 3  30 2   60 0}
+  {healthing 35 20 100 0}
+
+	{burst
+		{short 2.5 1.5}
+		{long 7.5 1.5}
+	}	
+	(mod "mp"
+		{maxRange}					; m
+	)
+}
+
+{weapon pattern "smg3" from "smg2"
+	{aimRange 50}				; m
+	{maxRange 65}					; m	
+	{speed 500}					; m/s
+  {healthing 35 25 100 0}	
+	(mod "mp"
+		{maxRange}					; m
+	)
+}
+
+{weapon "mors" from "smg2"
+	{recoveryTime 0.12}
+	{fireSound	"smg_shot.mors"}
+}
+{weapon "ribeyrolle1918" from "smg2"
+	{fireSound	"smg_shot.ribeyrolle"}
+	{recoveryTime 0.2}
+}
+{weapon "PPD" from "smg2"
+	{fireSound	"smg_shot.ppsh"}
+	{reloadSound "reload.mp44_r"}
+	{recoveryTime 0.12}
+}
+{weapon "PPD38" from "smg3"
+	{fireSound	"smg_shot.ppsh"}
+	{reloadSound "reload.mp44_r"}
+	{recoveryTime 0.12}
+}
+{weapon "lightning" from "smg2"
+	{recoveryTime 0.12}
+}
+{weapon "mp34" from "smg2"
+	{recoveryTime 0.12}
+	{fireSound	"smg_shot.mp34"}
+}
+{weapon "thompson1928" from "smg3"
+	{fireSound	"smg_shot.thompson"}
+}
+{weapon "zk383" from "smg3"
+	{fireSound	"smg_shot.sten"}
+	{reloadSound "reload.sten_r"}
+	{recoveryTime 0.08}
+}
+; end of GSMT

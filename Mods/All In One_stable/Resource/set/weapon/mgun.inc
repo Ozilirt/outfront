@@ -1,5 +1,4 @@
 ;SDL
-;SDL
 
 {weapon pattern "mgun" from "bullet"
 	{aimRange 50}				; m
@@ -400,6 +399,19 @@
 		{maxRange 150}					; m
 	)
 }
+; GSTM NNPlaya
+{weapon "ckmbrowning" from "mgun"
+	{fireSound	"mgun_shot.browningwz30"}
+	{reloadSound "reload.dt1_r"}
+	{maxRange 60}					; m
+	(mod "mp"
+		{maxRange}					; m
+	)
+}
+{weapon "ckmbrowning_tasma" from "ckmbrowning"}
+{weapon "hotchkiss" from "ckmbrowning"
+  {fireSound	"mgun_shot.hotchkiss"}
+}
 {weapon "rpd" from "mgun"
 	{fireSound	"mgun_shot.rpd"}
 	{reloadSound "reload.dt1_r"}
@@ -694,6 +706,32 @@
 		{maxRange 30}					; m
 	)
 }
+; GSMT Enforcer
+{weapon "rkmbrowning" from "mgun"
+	{fireSound	"mgun_shot.bar"}
+	{reloadSound "reload.bar_r"}
+	{rechargeTime 3}			; s
+	{maxRange 60}					; m
+	{Spreading
+		{SpreadRadius 2.0}
+	}
+	(mod "mp"
+		{maxRange}					; m
+	)
+}
+{weapon "chatellerault29" from "mgun"
+	{fireSound	"mgun_shot.chatellerault"}		
+	{maxRange 100}      					; m
+	{Spreading
+		{SpreadRadius 3.0}
+	}
+  {recoveryTime 0.125}			; s
+	{rechargeTime 3.0}			; s
+	(mod "mp"
+		{maxRange}					; m
+	)
+}
+; end of GSTM
 {ammo "ammo mgun" from "ammo bullet"}
 {ammo "ammo fire" from "ammo bullet"
 	{view "fire_ammo"
@@ -706,3 +744,4 @@
 		{heating 3}
 	}
 }
+

@@ -154,6 +154,7 @@
                 {aimRange 50}
 	)
 }
+{weapon "mle1935" from "vis"}
 {weapon "welrod" from "tt"
 	{fireSound	"pistol_shot_silent.welrod2"}
 	{maxRange 30}				; m

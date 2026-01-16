@@ -26,6 +26,10 @@
 		{desc "MG AirBoat"}
 		{structure "air-bag_gun"}
 	}
+	{"mortar80"
+		{structure "mortar"}
+    {equipment "cannon"}		
+	}
 	{"pz-2c"
 		{structure "pz-2f"}
 		{equipment "pz-2f"}
@@ -38,6 +42,14 @@
 		{structure "ft17-31"}
 		{equipment "ft17-31"}
 	}
+	{"ft17pl"
+		{structure "ft17"}
+		{equipment "ft17"}
+	}
+	{"ft17-31pl"
+		{structure "ft17-31"}
+		{equipment "ft17-31"}
+	}	
 	{"s35"
 		{structure "m4"}
 		{equipment "matilda"}
@@ -88,14 +100,31 @@
 		{desc "Bedford"} 
 		{structure "truck4x4"}
 	}
+;GSTM NNPlaya
+  {"pz-3e"
+    {structure "pz-4g"}
+    {equipment "tank_2km"}
+  }
+  {"pz-4c"
+    {structure "pz-4g"}
+  }
 	{"h35"
 		{desc "Hotchkiss H35"}
 		{structure "m4"}
 	}
+	{"t-28-40"
+    {structure "t-34"}
+  }
+;end of GSTM
 	{"h35_pl"
 		{desc "Hotchkiss H35"}
 		{structure "m4"}
 	}
+	{"b1bis"
+		{desc "Char B1bis"} 
+		{structure "charb1bis"}
+	}
+	
 	{"CharB1bis"
 		{desc "Char B1bis"} 
 		{structure "cromwell"}
@@ -116,6 +145,10 @@
 	{"GunCarrier"
 		{structure "Carrier"}
 		{equipment "GunCarrier"}
+	}
+	{"fcm2c"
+		{desc "FCM 2C"} 
+		{structure "charb1bis"}
 	}
 	{"t-20"
 		{structure "t-20"}
@@ -246,6 +279,15 @@
 	{"gaz-aaa"
 		{structure "truck6x6"}
 	}
+	{"wz29"
+    {desc "wz. 29"}
+		{structure "arm_car4x4"}
+		{equipment "M8Grayhound"}
+	}
+	{"v15t"
+		{structure "car4x4_gun"}
+		{desc "Laffly V15T"}
+	}
 	{"GMC"
 		{structure "truck6x6"}
 	}
@@ -304,6 +346,9 @@
             {equipment "jeep"}
 	}
 	{"willysmb"
+		{structure "car4x4_gun"}
+	}
+	{"willysmb_p"
 		{structure "car4x4_gun"}
 	}
 	{"willysmb_LL"
@@ -413,6 +458,9 @@
 	}
 	{"kv-2"
 		{equipment "kv-1"}
+	}
+	{"bmw-r12p"
+		{structure "moto"}
 	}
 	{"kv-2_42"
 		{equipment "kv-1"}
@@ -643,6 +691,12 @@
 		{structure "cannon"}
 	}
 	{"2-funt"
+		{structure "cannon"}
+	}
+	{"pak37"
+		{structure "cannon"}
+	}
+	{"Bofors_AA"
 		{structure "cannon"}
 	}
 	{"45mm-37"
@@ -906,6 +960,107 @@
 		{bar "vehicle_weapon"}
 		{structure "truck2xt"} 
 	}
+; GSTM NNPlaya
+	{"7TP"
+		{structure "t-26"}
+		{equipment "t-26"}
+	}
+	{"9TP"
+		{structure "t-26"}
+		{equipment "t-26"}
+	}	
+	{"vickers-e"
+		{structure "t-26"}
+		{equipment "t-26"}
+	}
+	{"TKS"
+		{structure "tks"}
+		{equipment "tks"}
+	}
+	{"TKS_KM"
+		{structure "tks"}
+		{equipment "tks_km"}
+	}
+	{"TK3"
+		{structure "tks"}
+		{equipment "tks_km"}
+	}
+	{"fiat"
+		{structure "truck4x4"}
+	}
+	{"Fiat621L"
+		{structure "truck4x4"}
+	}	
+	{"sokol"
+		{bar "vehicle"}
+		{structure_view "/interface/scene/vehicle/structure/sokol/bkg.ebm"}
+	}
+	{"wz34"
+		{structure "arm_car4x4"}
+		{equipment "sdkfz-223"}
+	}
+	{"sdkfz232rad"
+		{structure "arm_car8x8_gun"}
+		{equipment "SdKfz234"}
+	}
+	{"peugeot"
+		{structure "arm_car4x4"}
+		{equipment "sdkfz-223"}
+	}
+	{"peugeot_puteaux"
+		{structure "arm_car4x4"}
+		{equipment "tks"}
+	}
+	{"7tp_dt"
+		{structure "tank_dt"}
+		{equipment "tank_DT"}
+	}
+	{"t-26-31"
+		{structure "tank_dt"}
+		{equipment "tank_DT"}
+	}
+	{"t-28"
+		{structure "spg"}
+		{equipment "tank_mt"}
+	}
+	{"fiat508"
+		{structure "car4x4"}
+		{equipment "dodgewc56"}
+	}
+	{"fiat508_2"
+		{structure "car4x4"}
+    {equipment "kubel"}	
+  }
+	{"fiat508mg"
+		{structure "car4x4"}
+    {equipment "kubel_mg"}	
+  } 
+	{"kfz15"
+		{structure "car4x4"}
+    {equipment "kubel_mg"}	
+  }    
+	{"c4p"
+		{structure "truck2xt"}
+	}
+	{"10tp"
+		{structure "10tp"}
+		{equipment "tank_2km"}
+	}
+	{"14tp"
+		{structure "10tp"}
+		{equipment "tank_2km"}
+		{desc "14TP"}
+	}	
+	{"pzkpfw35t"
+		{structure "pz-2f"}
+		{equipment "pz-2f"}
+	}
+	{"amr1935"
+		{structure "pz-2f"}
+		{equipment "pz-2f"}
+		{desc "AMR 1935"}
+	}
+; end of GSTM
 	{"pz38tC"
 		{structure "pz-4g"}
 	}
@@ -951,6 +1106,19 @@
 	{"maxim_2"
 		{structure "maxim_2"}
 		{equipment "maxim_2"}
+	}
+		{"sznajder"
+		{structure "cannon"}
+	}
+	{"regimental1927"
+    {structure "cannon"}
+	}
+	{"schneider155mm"
+		{structure "cannon"}
+	}	
+	{"ml20"
+		{structure "sfh18"}
+    {equipment "cannon"}			
 	}
 	{"sfh18"
 		{structure "sfh18"}

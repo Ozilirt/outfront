@@ -131,12 +131,45 @@
 	{tag "belt-drop"}
 	{tag "up"}
 }
+;GSMT NNPlaya
+{State "stand_melee"
+	{split "stand" "linked"}
+	{to "stand_animation"}
+	{to "stand_inventory_in"}
+	{to "stand_inventory_out"}
+	{to "stand_reload"}
+	{to "stand_unload"}
+	{to "stand_switch"}
+	{to "walk"}
+;	{to "repair"}
+;	{to "idle"}
+	{to "kick"}
+
+	{tag "up"}
+	{tag "stored"}
+	{tag "look-out"}
+	{tag "rotate"}
+	{tag "hold-item"}
+	{tag "hold-nothing"}
+	{tag "hold-bazooka"}
+	{tag "unboard-to-ground"}
+	{tag "board-begin"}
+	{tag "switch-move"}
+	{tag "stop-move"}
+	{tag "stop-repair"}
+	{tag "stop-rotate"}
+	{tag "stop-animation"}
+	{tag "stop-hold-back"}
+}
+
 {State "stand_belt_out"
 	{split "stand" "belt_out"}
-	{to "stand"}
+	{to "stand_melee"}
+	{to "kick"}
 	{tag "belt-pick"}
 	{tag "up"}
 }
+;ENDOF GSMT
 {State "stand_pistol_in"
 	{split "stand" "pistol_in"}
 	{from "stand"}

@@ -466,6 +466,8 @@
 			{add_view "flash_gun_small" "flashbarrel" "foresight3"}
 		 else name "mgun"
 			{add_view "flash_gun_small" "flashbarrel" "foresight3"}
+		 else name "melee" ;GSMT
+			{add_view "flash_gun_small" "flashbarrel" "foresight2"} ;GSMT
 		 else name "nothing"
 		 	{view hide "flashbarrel"}
 		}

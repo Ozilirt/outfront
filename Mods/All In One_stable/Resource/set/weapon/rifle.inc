@@ -31,6 +31,13 @@
 		{maxRange}					; m
 	)
 }
+;GSTM NNPlaya
+{weapon "mauzerpol" from "mauzer"}
+{weapon "mauzerpol_police" from "mauzer"}
+{weapon "mas1936" from "mauzer"
+	{fireSound "rifle_shot.mas36"}
+}
+;end of GSTM
 {weapon "mauzer_kn" from "rifle"
 	{fireSound "rifle_shot.mauzer"}
 	{maxRange 100}					; m
@@ -49,6 +56,60 @@
 		{maxRange}					; m
 	)
 }
+;GSMT Enforcer
+{weapon "wz38m" from "rifle"
+	{fireSound "rifle_shot.kbsp38"}
+	{reloadSound "reload.m1_r"}
+	{recoveryTime 0.6}			; s
+	{healthing 45 60 150 0}
+	{rechargeTime 4}
+	{maxRange 75}					; m
+	{Automatic}
+	(mod "mp"
+		{maxRange}					; m
+		{recoveryTime 0.6}			; s
+	)
+}
+{weapon "zh29" from "rifle"
+	{fireSound "rifle_shot.zh29"}
+	{reloadSound "reload.m1_r"}
+	{recoveryTime 0.6}			; s
+	{healthing 45 60 150 0}
+	{rechargeTime 4}
+	{maxRange 75}					; m
+	{Automatic}
+	(mod "mp"
+		{maxRange}					; m
+		{recoveryTime 0.6}			; s
+	)
+}
+{weapon "rsc-mle-1918" from "rifle"
+	{fireSound "rifle_shot.rsc1918"}
+	{reloadSound "reload.m1_r"}
+	{recoveryTime 0.58}			; s
+	{healthing 45 60 150 0}
+	{rechargeTime 4}
+	{maxRange 75}					; m
+	{Automatic}
+	(mod "mp"
+		{maxRange}					; m
+		{recoveryTime 0.6}			; s
+	)
+}
+{weapon "avs36" from "rifle"
+	{fireSound "rifle_shot.svt"}
+	{reloadSound "reload.m1_r"}
+	{recoveryTime 0.6}			; s
+	{healthing 45 60 150 0}
+	{rechargeTime 4}
+	{maxRange 75}					; m
+	{Automatic}
+	(mod "mp"
+		{maxRange}					; m
+		{recoveryTime 0.6}			; s
+	)
+}
+;endof GSMT
 {weapon "mosin" from "rifle"
 	{fireSound "rifle_shot.mosin"}
 	{maxRange 100}	
@@ -485,6 +546,35 @@
 }
 
 {ammo "ammo rifle" from "ammo bullet"}
+
+; GSTM NNPlaya
+
+{weapon "karppanc" from "rifle"
+	{maxRange 40}					; m
+	{aimRange 40}				; m
+	{spreading
+		{SpreadRadius 1}		; m
+	}
+	{recoveryTime 5}
+	{rechargeTime 5}			; s
+	{piercing  5 50  10 35     30 20    150 0}
+	{healthing 10 550 50 350 100 150 200 0}
+	{fireSound	"rifle_shot.ptrs"}
+	{reloadSound "reload.ptrd_r"}
+}
+{weapon "germanska_rusznica" from "rifle"
+	{maxRange 40}					; m
+	{aimRange 40}				; m
+	{spreading
+		{SpreadRadius 1}		; m
+	}
+	{rechargeTime 5}			; s
+	{piercing 5 50  10 35  30 20    150 0}
+	{healthing 10 550 50 350 100 150 200 0}
+	{fireSound	"rifle_shot.ptrs"}
+	{reloadSound "reload.ptrd_r"}
+}
+; end of GSTM
 
 
 

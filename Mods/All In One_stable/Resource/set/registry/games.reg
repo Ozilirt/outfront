@@ -1855,24 +1855,63 @@
 			}
 		}
 	}
-	{"19. September Campaing"
+	{"19. 1939 September Campaing"
 		{name "mission/19_/name"}
 		{multiplayer "1"}
 		{background "background/rus:rus"}
 			{screenshot "/interface/background/katusha1.ebm"}
 			{media "katusha bkg"}
 		{missions
-			{"Insertion"
+			{"19.1"
 				{name "mission/19_1/name"}
 				{coopBreed "rus.infantry_smg"}
 				{scene "1939aSeptemberCampaign/1-katusha/1939-1_2-chepel:0"}
 				{intro
 					{video "loading_2_1"}
-					{background "/video\1939aSeptemberCampaign/2-CHEPEL.ebm"}
+					{background "/video/1939aSeptemberCampaign/2-CHEPEL.ebm"}
 					{text "mission/briefing/19_1"}
 				}
 				{outro
 					{text "mission/briefing/19_xf"}
+				}
+			}
+			{"19.2"
+				{name "mission/19_2/name"}
+				{scene "1939aSeptemberCampaign\1-katusha\1939-1_3-monastery:0"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/1939aSeptemberCampaign/3-mon.ebm"}
+					{text "mission/briefing/r_2"}
+				}
+				{outro
+					{text "mission/briefing/r_2f"}
+				}
+			}
+			{"19.3"
+				{name "mission/19_3/name"}
+				{scene "1939aSeptemberCampaign\1-katusha\1939-1_4-vokzal:0"}
+				{coopBreed "rus.infantry_smg"}
+				{intro
+					{background "/video/1939aSeptemberCampaign/4-vok.ebm"}
+					{text "mission/briefing/r_3++"}
+				}
+				{outro
+					{text "mission/briefing/r_3f"}
+				}
+			}
+			{"19.4 "
+				{name "mission/19_4/name"}
+				{intro
+					{background "/video/training/3-training.ebm"}
+				}
+				{scene "1939aSeptemberCampaign\0-training\camp3:1"}
+			}
+			{"19.5"
+				{name "mission/19_5/name"}
+				{coopBreed "ger.ssmanrifle"}
+				{scene "1939aSeptemberCampaign\2-fau\2_1-sealanding:0"}
+				{intro
+					{background "/video/1939aSeptemberCampaign/1-lighthouse.ebm"}
 				}
 			}
 		}

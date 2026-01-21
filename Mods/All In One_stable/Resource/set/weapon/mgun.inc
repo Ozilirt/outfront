@@ -147,6 +147,14 @@
 		{maxRange 150}					; m
 	)
 }
+{weapon "mg34a" from "mg34"
+	{maxRange}					; m
+	{aimRange 300}
+	{speed 350}					; m/s
+	{piercing   50 80     200 50  300 25    400 0}
+	{healthing 20 300 50 200 100 100 300 0}
+	{shellEnergy 5}	
+}
 {weapon "dual_mg34" from "mgun"
 	{fireSound	"mgun_shot.mg34"}
 	{reloadSound "reload.mg1_r"}	
